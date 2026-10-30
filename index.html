@@ -8,56 +8,88 @@
     <title>Știrile zilei</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,600;6..72,700;6..72,800&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800&family=Newsreader:opsz,wght@6..72,500;6..72,600;6..72,700;6..72,800&family=Source+Sans+3:wght@400;600;700;800&display=swap" rel="stylesheet" />
     <style>
       :root{
-        --bg:#f6f7f7;
+        --bg:#ece4cf;
+        --panel:#f7f2e2;
         --surface:#ffffff;
-        --surface-2:#eef1f2;
-        --ink:#171a1f;
-        --muted:#5c6773;
-        --line:#dde2e5;
-        --accent:#9e1b23;
-        --accent-ink:#7f141b;
-        --accent-soft:#fbeeee;
-        --green:#1d6b45;
-        --green-soft:#e9f3ec;
-        --amber:#7a5200;
-        --amber-soft:#fdf3d7;
-        --shadow:0 1px 2px rgba(20,24,28,.06),0 10px 30px rgba(20,24,28,.05);
+        --surface-2:#f4efe0;
+        --ink:#182635;
+        --muted:#5d6b7a;
+        --line:#ddd3ba;
+        --accent:#1d5fd1;
+        --accent-ink:#1a54b8;
+        --accent-soft:#e9f0fb;
+        --green:#0c6b3a;
+        --green-soft:#e4f5ea;
+        --amber:#8a5a00;
+        --amber-soft:#fdf6dd;
+        --shadow:0 1px 2px rgba(60,48,20,.07),0 10px 30px rgba(60,48,20,.06);
         --radius:12px;
         --pbi-yellow:#f2c811;
-        --cat-sec:#1b4f72;
-        --cat-sec-bg:#eaf2f8;
+        --kicker:#c0560a;
+        --cat-sec:#1d5f8a;
+        --cat-sec-bg:#e8f1f8;
         --cat-ro:#9e1b23;
         --cat-ro-bg:#fbeeee;
         --cat-tech:#0e6b5e;
         --cat-tech-bg:#e6f4f1;
-        --kpi-ink:#171a1f;
+        --kpi-sel-bg:#1e3247;
+        --kpi-sel-ink:#f4f7fa;
+        --kpi-sel-muted:#b7c5d3;
+        --sev-red:#a31621;
+        --sev-red-bg:#fdeeee;
+        --sev-red-border:#efb9b9;
+        --sev-amber:#8a5a00;
+        --sev-amber-bg:#fdf6dd;
+        --sev-amber-border:#e8cf87;
+        --sev-green:#0c6b3a;
+        --sev-green-bg:#e4f5ea;
+        --sev-green-border:#a9d9ba;
+        --sand:#f4efe6;
+        --sand-2:#ede7dc;
+        --sand-line:#e5dcce;
       }
       @media (prefers-color-scheme: dark){
         :root{
-          --bg:#101214;
-          --surface:#171a1e;
-          --surface-2:#1f2329;
-          --ink:#e9ebee;
-          --muted:#a5aeb9;
-          --line:#2b313a;
-          --accent:#ff7a7f;
-          --accent-ink:#ffb1b4;
-          --accent-soft:#2b1c1e;
-          --green:#6fd598;
-          --green-soft:#172a20;
-          --amber:#f2c14e;
-          --amber-soft:#2b2413;
+          --bg:#0f141b;
+          --panel:#182029;
+          --surface:#1d2632;
+          --surface-2:#242f3e;
+          --ink:#eaf0f6;
+          --muted:#a3b0bf;
+          --line:#2f3c4d;
+          --accent:#8ab4ff;
+          --accent-ink:#a9c8ff;
+          --accent-soft:#1d2c44;
+          --green:#8fdcab;
+          --green-soft:#14301f;
+          --amber:#f5cd7a;
+          --amber-soft:#332a14;
           --shadow:0 1px 2px rgba(0,0,0,.35),0 10px 30px rgba(0,0,0,.25);
-          --cat-sec:#7fb3d5;
-          --cat-sec-bg:#162a3a;
-          --cat-ro:#ff7a7f;
-          --cat-ro-bg:#2b1c1e;
-          --cat-tech:#5fd3bc;
-          --cat-tech-bg:#12302a;
-          --kpi-ink:#e9ebee;
+          --kicker:#f0a35e;
+          --cat-sec:#8fc3e8;
+          --cat-sec-bg:#17334a;
+          --cat-ro:#ff9a9e;
+          --cat-ro-bg:#2f1d22;
+          --cat-tech:#6fd8c2;
+          --cat-tech-bg:#14332c;
+          --kpi-sel-bg:#3b4f68;
+          --kpi-sel-ink:#f2f6fa;
+          --kpi-sel-muted:#c2d0de;
+          --sev-red:#ffb3b3;
+          --sev-red-bg:#331b1e;
+          --sev-red-border:#8a3a41;
+          --sev-amber:#f5cd7a;
+          --sev-amber-bg:#332a14;
+          --sev-amber-border:#8a6d1e;
+          --sev-green:#8fdcab;
+          --sev-green-bg:#14301f;
+          --sev-green-border:#2e6b45;
+          --sand:#1d2530;
+          --sand-2:#232d3a;
+          --sand-line:#2f3c4d;
         }
       }
       *{box-sizing:border-box}
@@ -99,35 +131,43 @@
       .refresh-btn:hover{border-color:var(--accent);color:var(--accent-ink)}
       .refresh-btn svg{width:15px;height:15px}
 
-      /* Masthead — compact, dashboard style */
-      .masthead{padding:26px 0 0}
+      /* Masthead — Spark Briefing style: orange kicker, bold navy title */
+      .masthead{
+        margin-top:20px;padding:22px 24px;
+        background:linear-gradient(180deg,var(--sand),var(--sand-2));
+        border:1px solid var(--sand-line);border-radius:16px;
+      }
+      .kicker{
+        color:var(--kicker);font-weight:800;font-size:.82rem;letter-spacing:.09em;
+        text-transform:uppercase;margin:0 0 8px;
+      }
       .date-line{
         display:flex;align-items:center;gap:10px;flex-wrap:wrap;
         color:var(--muted);font-size:.88rem;margin-bottom:8px;
       }
       .date-line .day{color:#171a1f;background:var(--pbi-yellow);font-weight:700;font-size:.75rem;letter-spacing:.06em;text-transform:uppercase;padding:3px 8px;border-radius:4px}
       h1{
-        font-family:"Source Sans 3",-apple-system,sans-serif;
-        font-weight:700;font-size:clamp(1.9rem,5vw,2.6rem);
-        line-height:1.05;letter-spacing:-.02em;margin:0 0 6px;
+        font-family:"Archivo","Source Sans 3",-apple-system,sans-serif;
+        font-weight:800;font-size:clamp(2rem,6vw,2.9rem);text-transform:uppercase;
+        line-height:1.02;letter-spacing:-.01em;margin:0 0 8px;color:var(--ink);
       }
       .lede{font-size:.98rem;color:var(--muted);max-width:68ch;margin:0}
       .lede strong{color:var(--ink)}
 
       /* ── Power BI–style dashboard ── */
       .dashboard{
-        margin:20px 0 0;background:var(--surface);border:1px solid var(--line);
+        margin:20px 0 0;background:var(--panel);border:1px solid var(--line);
         border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden;
       }
       .dash-head{
         display:flex;align-items:center;gap:10px;flex-wrap:wrap;
-        padding:12px 16px;border-bottom:1px solid var(--line);background:var(--surface-2);
+        padding:12px 16px;border-bottom:1px solid var(--line);background:transparent;
       }
       .dash-head .dash-title{font-weight:700;font-size:.82rem;letter-spacing:.07em;text-transform:uppercase;color:var(--ink);display:flex;align-items:center;gap:8px}
       .dash-head .dash-title::before{content:"";width:10px;height:10px;background:var(--pbi-yellow);border-radius:2px;flex:none}
       .dash-head .dash-meta{margin-left:auto;font-size:.82rem;color:var(--muted);font-variant-numeric:tabular-nums}
       .dash-head .dash-meta strong{color:var(--ink)}
-      .live-pill{display:inline-flex;align-items:center;gap:6px;font-size:.78rem;font-weight:700;color:var(--green);background:var(--green-soft);padding:3px 9px;border-radius:999px}
+      .live-pill{display:inline-flex;align-items:center;gap:6px;font-size:.78rem;font-weight:700;color:var(--green);background:var(--green-soft);padding:3px 9px;border-radius:6px}
       .live-pill i{width:7px;height:7px;border-radius:50%;background:var(--green);display:block}
 
       /* KPI + slicer tiles — the whole tile is the filter button */
@@ -159,21 +199,19 @@
       .kpi[data-filter="securitate"] .kpi-value{color:var(--cat-sec)}
       .kpi[data-filter="romania"] .kpi-value{color:var(--cat-ro)}
       .kpi[data-filter="tech"] .kpi-value{color:var(--cat-tech)}
-      .kpi[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
-      .kpi[aria-pressed="true"] .kpi-label,.kpi[aria-pressed="true"] .kpi-sub{color:var(--muted)}
-      @media (prefers-color-scheme: dark){ .kpi[aria-pressed="true"] .kpi-label,.kpi[aria-pressed="true"] .kpi-sub{color:#a5aeb9} }
+      .kpi[aria-pressed="true"]{background:var(--kpi-sel-bg);color:var(--kpi-sel-ink)}
+      .kpi[aria-pressed="true"] .kpi-label,.kpi[aria-pressed="true"] .kpi-sub{color:var(--kpi-sel-muted)}
       .kpi[aria-pressed="true"] .kpi-value{color:var(--pbi-yellow)}
       .kpi[aria-pressed="true"] .kpi-check{background:var(--pbi-yellow);border-color:var(--pbi-yellow);color:#171a1f}
-      .kpi[aria-pressed="true"] .kpi-bar{background:rgba(128,128,128,.35)}
+      .kpi[aria-pressed="true"] .kpi-bar{background:color-mix(in srgb, var(--kpi-sel-ink) 28%, transparent)}
       .kpi .kpi-hint{font-size:.75rem;font-weight:600;color:var(--muted);margin-top:6px}
       .kpi[aria-pressed="true"] .kpi-hint{color:var(--pbi-yellow)}
 
       /* Bottom row of dashboard: rhythm + status */
       .dash-foot{
-        display:grid;grid-template-columns:1.35fr 1fr;gap:0;
+        display:grid;grid-template-columns:1.35fr 1fr;gap:10px;padding:10px;
       }
-      .dash-panel{padding:14px 16px 16px}
-      .dash-panel + .dash-panel{border-left:1px solid var(--line)}
+      .dash-panel{padding:14px 16px 16px;background:var(--surface);border:1px solid var(--line);border-radius:10px}
       .dash-panel h3{margin:0 0 10px;font-size:.78rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
       .rhythm{display:flex;align-items:flex-end;gap:10px;height:64px}
       .rhythm .col{flex:1;display:flex;flex-direction:column;align-items:center;gap:5px;height:100%;justify-content:flex-end}
@@ -195,6 +233,56 @@
         font:inherit;font-size:.83rem;font-weight:600;padding:5px 11px;border-radius:999px;cursor:pointer;
       }
       .filter-reset:hover{border-color:var(--ink)}
+
+      /* ── Chenar permanent: știrea cea mai importantă, culoare după gravitate ──
+         Nivelul se setează prin clasa de pe secțiune: .sev-green / .sev-amber / .sev-red */
+      .spot{
+        margin-top:14px;border-radius:16px;padding:20px 22px;box-shadow:var(--shadow);
+        background:var(--sb);border:1.5px solid var(--sbd);
+      }
+      .sev-green{--sb:var(--sev-green-bg);--sbd:var(--sev-green-border);--si:var(--sev-green)}
+      .sev-amber{--sb:var(--sev-amber-bg);--sbd:var(--sev-amber-border);--si:var(--sev-amber)}
+      .sev-red{--sb:var(--sev-red-bg);--sbd:var(--sev-red-border);--si:var(--sev-red)}
+      .spot-head{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+      .spot-kicker{
+        display:inline-flex;align-items:center;gap:7px;color:var(--si);
+        font-weight:800;font-size:.8rem;letter-spacing:.08em;text-transform:uppercase;
+      }
+      .spot-kicker svg{width:16px;height:16px;flex:none}
+      .spot-time{color:var(--muted);font-size:.86rem;font-weight:600;font-variant-numeric:tabular-nums}
+      .spot-pill{
+        margin-left:auto;flex:none;border:1.5px solid var(--si);color:var(--si);
+        font-size:.78rem;font-weight:800;letter-spacing:.04em;text-transform:uppercase;
+        padding:3px 10px;border-radius:6px;white-space:nowrap;
+      }
+      .spot-title{
+        font-family:"Newsreader",Georgia,"Times New Roman",serif;
+        font-weight:700;font-size:clamp(1.5rem,4vw,2rem);line-height:1.16;letter-spacing:-.01em;
+        margin:12px 0 10px;text-wrap:balance;
+      }
+      .spot-lead{margin:10px 0 0;font-size:1rem}
+      .spot-why{
+        margin:12px 0 0;padding:11px 13px;font-size:1rem;font-weight:600;line-height:1.5;
+        background:color-mix(in srgb, var(--si) 9%, var(--sb));
+        border-left:3px solid var(--si);border-radius:4px;
+      }
+      .spot-why strong{color:var(--si);font-weight:800}
+      .spot-foot{
+        display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-top:14px;
+      }
+      .spot-link{font-weight:700;color:var(--si);white-space:nowrap}
+      .sev-scale{display:flex;align-items:center;gap:14px;flex-wrap:wrap;font-size:.8rem;color:var(--muted)}
+      .sev-item{display:inline-flex;align-items:center;gap:6px}
+      .sev-item.on{color:var(--ink);font-weight:700}
+      .sev-dot{width:10px;height:10px;border-radius:50%;flex:none;display:inline-block}
+      .sev-dot.g{background:#2e9e5b}
+      .sev-dot.y{background:#e0a800}
+      .sev-dot.r{background:#d43a3a}
+      .spot-tag{
+        flex:none;font-size:.74rem;font-weight:800;letter-spacing:.05em;text-transform:uppercase;
+        background:var(--sev-red-bg);color:var(--sev-red);border:1px solid var(--sev-red-border);
+        padding:3px 9px;border-radius:6px;white-space:nowrap;
+      }
 
       /* Index — table-like, synced with the slicers */
       .index{
@@ -229,14 +317,14 @@
 
       /* Follow-up + action lines on cards */
       .followup,.action-line{
-        display:flex;gap:10px;align-items:flex-start;margin-top:14px;
-        border-radius:10px;padding:11px 13px;font-size:.95rem;
+        display:flex;gap:10px;align-items:flex-start;margin-top:12px;
+        border-radius:8px;padding:10px 12px;font-size:.95rem;
       }
       .followup{background:var(--surface-2)}
-      .action-line{background:var(--amber-soft)}
+      .action-line{background:var(--amber-soft);border:1px solid var(--sev-amber-border)}
       .followup .tag,.action-line .tag{
         flex:none;font-size:.74rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;
-        padding:3px 8px;border-radius:999px;margin-top:1px;white-space:nowrap;
+        padding:3px 8px;border-radius:6px;margin-top:1px;white-space:nowrap;
       }
       .followup .tag{background:var(--surface);border:1px solid var(--line);color:var(--ink)}
       .action-line .tag{background:var(--amber);color:#fff}
@@ -247,23 +335,23 @@
       /* Article — reading width kept, radius tightened to match dashboard */
       article{
         background:var(--surface);border:1px solid var(--line);border-radius:14px;
-        box-shadow:var(--shadow);padding:26px 26px 22px;margin-top:18px;
+        box-shadow:var(--shadow);padding:20px 22px 18px;margin-top:14px;
         scroll-margin-top:76px;
       }
       article.hidden{display:none}
-      .a-meta{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:12px}
+      .a-meta{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:10px}
       .a-time{
         font-variant-numeric:tabular-nums;font-weight:700;font-size:.9rem;color:var(--accent-ink);
-        background:var(--accent-soft);padding:4px 10px;border-radius:999px;
+        background:var(--accent-soft);padding:4px 10px;border-radius:6px;
       }
       .a-cat{font-size:.8rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
       .a-num{margin-left:auto;color:var(--muted);font-size:.85rem;font-variant-numeric:tabular-nums}
       article h2{
         font-family:"Newsreader",Georgia,"Times New Roman",serif;
-        font-weight:700;font-size:clamp(1.45rem,3.6vw,1.9rem);line-height:1.18;letter-spacing:-.01em;
-        margin:0 0 16px;text-wrap:balance;
+        font-weight:700;font-size:clamp(1.35rem,3.4vw,1.72rem);line-height:1.18;letter-spacing:-.01em;
+        margin:0 0 12px;text-wrap:balance;
       }
-      .sec{margin-top:16px}
+      .sec{margin-top:12px}
       .sec:first-of-type{margin-top:0}
       .sec-label{
         font-size:.78rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase;
@@ -273,19 +361,19 @@
       .sec p + p{margin-top:8px}
 
       .verify{
-        background:var(--green-soft);border-radius:14px;padding:14px 16px;margin-top:18px;
+        background:var(--sev-green-bg);border:1px solid var(--sev-green-border);border-radius:8px;padding:12px 14px;margin-top:14px;
       }
       .verify .sec-label{color:var(--green)}
       .status{
         display:inline-block;font-size:.78rem;font-weight:700;letter-spacing:.04em;
-        background:var(--green);color:#fff;padding:2px 9px;border-radius:999px;text-transform:none;letter-spacing:0;
+        background:var(--green);color:#fff;padding:2px 9px;border-radius:6px;text-transform:none;letter-spacing:0;
       }
       @media (prefers-color-scheme: dark){ .status{color:#0d1a12} }
       .verify p{margin:0}
       .sources{list-style:none;margin:10px 0 0;padding:0;display:flex;flex-direction:column;gap:6px}
       .sources a{
         display:flex;align-items:center;gap:9px;text-decoration:none;font-weight:600;font-size:.95rem;
-        background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:8px 12px;color:var(--ink);
+        background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:8px 12px;color:var(--ink);
         word-break:break-word;
       }
       .sources a:hover{border-color:var(--green)}
@@ -293,15 +381,16 @@
       .sources a .host{color:var(--muted);font-weight:400;font-size:.85rem;margin-left:auto;flex:none}
 
       .opposing{
-        background:var(--surface-2);border-radius:14px;padding:14px 16px;margin-top:14px;
+        background:var(--sev-amber-bg);border:1px solid var(--sev-amber-border);border-radius:8px;padding:12px 14px;margin-top:12px;
       }
+      .opposing .sec-label{color:var(--amber)}
       .impact{
-        margin-top:18px;padding-top:14px;border-top:1px solid var(--line);
+        margin-top:14px;padding-top:12px;border-top:1px solid var(--line);
         display:flex;gap:12px;align-items:flex-start;
       }
       .impact .badge{
         flex:none;font-size:.78rem;font-weight:700;background:var(--amber-soft);color:var(--amber);
-        padding:4px 10px;border-radius:999px;margin-top:2px;white-space:nowrap;
+        padding:4px 10px;border-radius:6px;margin-top:2px;white-space:nowrap;
       }
       .impact p{margin:0}
 
@@ -314,12 +403,14 @@
         .kpi{min-height:104px;padding:13px 14px 12px}
         .kpi .kpi-value{font-size:2rem}
         .dash-foot{grid-template-columns:1fr}
-        .dash-panel + .dash-panel{border-left:0;border-top:1px solid var(--line)}
       }
       @media (max-width:560px){
         body{font-size:16px}
         .wrap{padding:0 14px 56px}
-        article{padding:20px 17px 18px;border-radius:12px}
+        .masthead{margin-top:14px;padding:17px 15px}
+        article{padding:17px 15px 15px;border-radius:12px}
+        .spot{padding:17px 15px;border-radius:14px}
+        .spot-pill{margin-left:0}
         .index li a{gap:9px}
         .index .cat-dot{display:none}
         .impact{flex-direction:column;gap:6px}
@@ -349,13 +440,40 @@
 
     <div class="wrap">
       <header class="masthead">
+        <p class="kicker">Briefing de știri · Securitate · România · Tech &amp; AI</p>
+        <h1>Știrile zilei</h1>
         <div class="date-line">
           <span class="day">Ediția de azi</span>
           <span>Vineri, 30 octombrie 2026 · Europe/Brussels</span>
         </div>
-        <h1>Știrile zilei</h1>
         <p class="lede">Panou de ansamblu sus, articole complete jos. <strong>Apasă pe un tile de categorie</strong> ca să filtrezi pagina — cardurile rămân întregi, la lățime de citit, cele mai noi primele.</p>
       </header>
+
+      <!-- Chenar permanent: știrea cea mai importantă a zilei — chiar sub masthead,
+           ÎNAINTEA dashboardului, vizibilă din prima, fără scroll.
+           Nivelul de azi: ROȘU (sev-red) — furt record, grav.
+           La altă ediție, clasa se schimbă: sev-green (normal) / sev-amber (de urmărit) / sev-red (grav). -->
+      <section class="spot sev-red" aria-label="Știrea cea mai importantă a zilei">
+        <div class="spot-head">
+          <span class="spot-kicker">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13 2 4.5 13.5H11L9.5 22 19 10h-6.5L13 2z"/></svg>
+            Știrea zilei · Atenție rapidă
+          </span>
+          <span class="spot-time">30 oct · 17:00</span>
+          <span class="spot-pill">Nivel roșu — grav</span>
+        </div>
+        <h2 class="spot-title">Binance, lovită de cel mai mare furt cibernetic din istorie: cel puțin 6,3 mld $ furați, atribuiți hackerilor nord-coreeni</h2>
+        <p class="spot-why"><strong>De ce e în față:</strong> incident major de securitate cibernetică, atribuit grupului nord-coreean TraderTraitor (TRM Labs și Chainalysis) — direct relevant profesional, ca studiu de caz de incident management: un singur laptop compromis, tranzacții neautorizate de miliarde. Pentru tine: fără expunere cunoscută pe crypto, fără acțiune azi.</p>
+        <p class="spot-lead">În circa 20 de minute, atacatorii au sustras cel puțin 6,3 mld $ în criptomonede din portofelele Binance, traversând zece blockchainuri — de peste patru ori recordul anterior (Bybit, 1,5 mld $, februarie 2025). Circa 3 mld $ au fost înghețați între timp; fondurile utilizatorilor sunt în siguranță, iar pierderile vor fi acoperite din fondul SAFU și din fonduri proprii.</p>
+        <div class="spot-foot">
+          <a class="spot-link" href="#stire-3">Citește știrea completă ↓</a>
+          <div class="sev-scale" role="img" aria-label="Scară de gravitate: verde — normal, galben — de urmărit, roșu — grav. Nivelul de azi: roșu.">
+            <span class="sev-item"><i class="sev-dot g" aria-hidden="true"></i>Verde · normal</span>
+            <span class="sev-item"><i class="sev-dot y" aria-hidden="true"></i>Galben · de urmărit</span>
+            <span class="sev-item on"><i class="sev-dot r" aria-hidden="true"></i>Roșu · grav</span>
+          </div>
+        </div>
+      </section>
 
       <!-- Dashboard -->
       <section class="dashboard" aria-label="Panou de ansamblu">
@@ -518,6 +636,7 @@
           <div class="a-meta">
             <span class="a-time">30 oct · 17:00</span>
             <span class="a-cat">Securitate cibernetică · Crypto</span>
+            <span class="spot-tag">Știrea zilei</span>
             <span class="a-num">#3 / 9</span>
           </div>
           <h2>Binance, lovită de cel mai mare furt cibernetic din istorie: cel puțin 6,3 mld $ furați, atribuiți hackerilor nord-coreeni</h2>
