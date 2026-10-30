@@ -1,0 +1,660 @@
+<!doctype html>
+<html lang="ro">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="color-scheme" content="light dark" />
+    <link rel="icon" href="data:," />
+    <title>Știrile zilei</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,600;6..72,700;6..72,800&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet" />
+    <style>
+      :root{
+        --bg:#f6f7f7;
+        --surface:#ffffff;
+        --surface-2:#eef1f2;
+        --ink:#171a1f;
+        --muted:#5c6773;
+        --line:#dde2e5;
+        --accent:#9e1b23;
+        --accent-ink:#7f141b;
+        --accent-soft:#fbeeee;
+        --green:#1d6b45;
+        --green-soft:#e9f3ec;
+        --amber:#7a5200;
+        --amber-soft:#fdf3d7;
+        --shadow:0 1px 2px rgba(20,24,28,.06),0 10px 30px rgba(20,24,28,.05);
+        --radius:18px;
+      }
+      @media (prefers-color-scheme: dark){
+        :root{
+          --bg:#101214;
+          --surface:#171a1e;
+          --surface-2:#1f2329;
+          --ink:#e9ebee;
+          --muted:#a5aeb9;
+          --line:#2b313a;
+          --accent:#ff7a7f;
+          --accent-ink:#ffb1b4;
+          --accent-soft:#2b1c1e;
+          --green:#6fd598;
+          --green-soft:#172a20;
+          --amber:#f2c14e;
+          --amber-soft:#2b2413;
+          --shadow:0 1px 2px rgba(0,0,0,.35),0 10px 30px rgba(0,0,0,.25);
+        }
+      }
+      *{box-sizing:border-box}
+      html{scroll-behavior:smooth}
+      body{
+        margin:0;
+        background:var(--bg);
+        color:var(--ink);
+        font-family:"Source Sans 3",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+        font-size:17px;
+        line-height:1.6;
+        -webkit-font-smoothing:antialiased;
+      }
+      a{color:var(--accent-ink);text-underline-offset:3px}
+      a:hover{text-decoration-thickness:2px}
+      .wrap{max-width:880px;margin:0 auto;padding:0 20px 72px}
+
+      /* Top utility bar */
+      .topbar{
+        position:sticky;top:0;z-index:20;
+        background:color-mix(in srgb, var(--bg) 88%, transparent);
+        backdrop-filter:blur(10px);
+        border-bottom:1px solid var(--line);
+      }
+      .topbar-inner{
+        max-width:880px;margin:0 auto;padding:10px 20px;
+        display:flex;align-items:center;gap:12px;flex-wrap:wrap;
+        font-size:.86rem;color:var(--muted);
+      }
+      .topbar strong{color:var(--ink)}
+      .dot{width:7px;height:7px;border-radius:50%;background:var(--green);display:inline-block;flex:none}
+      .topbar .spacer{flex:1}
+      .refresh-btn{
+        appearance:none;border:1px solid var(--line);background:var(--surface);
+        color:var(--ink);font:inherit;font-size:.86rem;font-weight:600;
+        padding:7px 14px;border-radius:999px;cursor:pointer;
+        display:inline-flex;align-items:center;gap:7px;
+      }
+      .refresh-btn:hover{border-color:var(--accent);color:var(--accent-ink)}
+      .refresh-btn svg{width:15px;height:15px}
+
+      /* Masthead */
+      .masthead{padding:38px 0 8px}
+      .date-line{
+        display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;
+        color:var(--muted);font-size:.95rem;margin-bottom:10px;
+      }
+      .date-line .day{color:var(--accent-ink);font-weight:700;letter-spacing:.02em;text-transform:uppercase;font-size:.82rem}
+      h1{
+        font-family:"Newsreader",Georgia,"Times New Roman",serif;
+        font-weight:800;font-size:clamp(2.3rem,6vw,3.6rem);
+        line-height:1.02;letter-spacing:-.02em;margin:0 0 14px;
+      }
+      .lede{font-size:1.08rem;color:var(--muted);max-width:62ch;margin:0}
+      .lede strong{color:var(--ink)}
+
+      .update-note{
+        margin:26px 0 8px;background:var(--surface);border:1px solid var(--line);
+        border-radius:var(--radius);padding:16px 18px;box-shadow:var(--shadow);
+        display:flex;gap:14px;align-items:flex-start;
+      }
+      .update-note .ic{
+        flex:none;width:38px;height:38px;border-radius:10px;background:var(--accent-soft);
+        display:grid;place-items:center;color:var(--accent-ink);
+      }
+      .update-note .ic svg{width:20px;height:20px}
+      .update-note p{margin:0;font-size:.97rem}
+      .update-note p + p{margin-top:4px;color:var(--muted);font-size:.9rem}
+
+      /* Index */
+      .index{
+        margin:28px 0 6px;background:var(--surface);border:1px solid var(--line);
+        border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden;
+      }
+      .index-head{
+        padding:14px 18px 10px;display:flex;align-items:baseline;justify-content:space-between;gap:12px;flex-wrap:wrap;
+        border-bottom:1px solid var(--line);
+      }
+      .index-head h2{font-family:"Newsreader",Georgia,serif;font-size:1.25rem;margin:0}
+      .index-head span{color:var(--muted);font-size:.88rem}
+      .index ol{list-style:none;margin:0;padding:6px 8px 10px;counter-reset:idx}
+      .index li a{
+        display:flex;gap:14px;align-items:baseline;padding:10px 10px;border-radius:10px;
+        text-decoration:none;color:var(--ink);
+      }
+      .index li a:hover{background:var(--surface-2)}
+      .index time{
+        flex:none;font-variant-numeric:tabular-nums;font-weight:700;color:var(--accent-ink);
+        font-size:.9rem;min-width:44px;
+      }
+      .index .t{font-weight:600;line-height:1.35}
+      .index .n{flex:none;color:var(--muted);font-size:.82rem;font-variant-numeric:tabular-nums}
+
+      /* Filters */
+      .filters{display:flex;gap:8px;flex-wrap:wrap;margin:26px 0 4px}
+      .chip{
+        appearance:none;border:1px solid var(--line);background:var(--surface);color:var(--ink);
+        font:inherit;font-size:.88rem;font-weight:600;padding:8px 14px;border-radius:999px;cursor:pointer;
+      }
+      .chip[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+      .empty{display:none;background:var(--surface);border:1px dashed var(--line);border-radius:var(--radius);padding:22px;text-align:center;color:var(--muted);margin-top:18px}
+      .empty.show{display:block}
+
+      /* Article */
+      article{
+        background:var(--surface);border:1px solid var(--line);border-radius:22px;
+        box-shadow:var(--shadow);padding:26px 26px 22px;margin-top:22px;
+        scroll-margin-top:76px;
+      }
+      article.hidden{display:none}
+      .a-meta{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:12px}
+      .a-time{
+        font-variant-numeric:tabular-nums;font-weight:700;font-size:.9rem;color:var(--accent-ink);
+        background:var(--accent-soft);padding:4px 10px;border-radius:999px;
+      }
+      .a-cat{font-size:.8rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+      .a-num{margin-left:auto;color:var(--muted);font-size:.85rem;font-variant-numeric:tabular-nums}
+      article h2{
+        font-family:"Newsreader",Georgia,"Times New Roman",serif;
+        font-weight:700;font-size:clamp(1.45rem,3.6vw,1.9rem);line-height:1.18;letter-spacing:-.01em;
+        margin:0 0 16px;text-wrap:balance;
+      }
+      .sec{margin-top:16px}
+      .sec:first-of-type{margin-top:0}
+      .sec-label{
+        font-size:.78rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase;
+        color:var(--muted);margin:0 0 5px;display:flex;align-items:center;gap:8px;
+      }
+      .sec p{margin:0}
+      .sec p + p{margin-top:8px}
+
+      .verify{
+        background:var(--green-soft);border-radius:14px;padding:14px 16px;margin-top:18px;
+      }
+      .verify .sec-label{color:var(--green)}
+      .status{
+        display:inline-block;font-size:.78rem;font-weight:700;letter-spacing:.04em;
+        background:var(--green);color:#fff;padding:2px 9px;border-radius:999px;text-transform:none;letter-spacing:0;
+      }
+      @media (prefers-color-scheme: dark){ .status{color:#0d1a12} }
+      .verify p{margin:0}
+      .sources{list-style:none;margin:10px 0 0;padding:0;display:flex;flex-direction:column;gap:6px}
+      .sources a{
+        display:flex;align-items:center;gap:9px;text-decoration:none;font-weight:600;font-size:.95rem;
+        background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:8px 12px;color:var(--ink);
+        word-break:break-word;
+      }
+      .sources a:hover{border-color:var(--green)}
+      .sources a svg{width:14px;height:14px;flex:none;color:var(--green)}
+      .sources a .host{color:var(--muted);font-weight:400;font-size:.85rem;margin-left:auto;flex:none}
+
+      .opposing{
+        background:var(--surface-2);border-radius:14px;padding:14px 16px;margin-top:14px;
+      }
+      .impact{
+        margin-top:18px;padding-top:14px;border-top:1px solid var(--line);
+        display:flex;gap:12px;align-items:flex-start;
+      }
+      .impact .badge{
+        flex:none;font-size:.78rem;font-weight:700;background:var(--amber-soft);color:var(--amber);
+        padding:4px 10px;border-radius:999px;margin-top:2px;white-space:nowrap;
+      }
+      .impact p{margin:0}
+
+      footer{margin-top:44px;color:var(--muted);font-size:.9rem;text-align:center}
+      footer .rule{width:56px;height:3px;background:var(--accent);border-radius:2px;margin:0 auto 18px}
+      .to-top{display:inline-block;margin-top:10px;font-weight:600}
+
+      @media (max-width:560px){
+        body{font-size:16px}
+        .wrap{padding:0 14px 56px}
+        article{padding:20px 17px 18px;border-radius:18px}
+        .index li a{gap:10px}
+        .impact{flex-direction:column;gap:6px}
+        .topbar-inner{padding:9px 14px}
+      }
+      @media (prefers-reduced-motion: reduce){
+        html{scroll-behavior:auto}
+      }
+    </style>
+  </head>
+  <body>
+    <div class="topbar">
+      <div class="topbar-inner">
+        <span class="dot" aria-hidden="true"></span>
+        <span><strong>Vineri, 30 octombrie 2026</strong> · actualizat la <strong>20:05</strong></span>
+        <span aria-hidden="true">·</span>
+        <span>9 știri</span>
+        <span class="spacer"></span>
+        <button class="refresh-btn" type="button" id="refreshBtn" aria-label="Reîmprospătează pagina">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg>
+          Refresh
+        </button>
+      </div>
+    </div>
+
+    <div class="wrap">
+      <header class="masthead">
+        <div class="date-line">
+          <span class="day">Ediția de azi</span>
+          <span>Vineri, 30 octombrie 2026 · Europe/Brussels</span>
+        </div>
+        <h1>Știrile zilei</h1>
+        <p class="lede">Știrile verificate ale zilei, <strong>cele mai noi primele</strong> — fiecare cu ce s-a întâmplat, de ce contează, sursele care o confirmă, tabăra adversă și impactul direct.</p>
+      </header>
+
+      <div class="update-note" role="note">
+        <div class="ic" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+        </div>
+        <div>
+          <p><strong>Pagina se actualizează la fiecare rulare a monitorizării</strong> — la circa 3 ore, în fereastra 06:15–21:30.</p>
+          <p>Dă refresh în browser pentru noutăți. Ultima actualizare: azi, 20:05.</p>
+        </div>
+      </div>
+
+      <nav class="index" aria-label="Cuprinsul zilei">
+        <div class="index-head">
+          <h2>Cuprins — de aici știi unde ai rămas</h2>
+          <span>apasă pe un titlu ca să sari direct la știre</span>
+        </div>
+        <ol>
+          <li><a href="#stire-1"><time>20:05</time><span class="t">Bulgaria intră în inițiativa NATO anti-dronă pentru amenințări la joasă altitudine</span><span class="n">#1</span></a></li>
+          <li><a href="#stire-2"><time>20:05</time><span class="t">Comerțul agentic: agenții AI terți au plasat doar „câteva sute” de comenzi la DoorDash</span><span class="n">#2</span></a></li>
+          <li><a href="#stire-3"><time>17:00</time><span class="t">Binance: cel mai mare furt cibernetic din istorie — 6,3 mld $</span><span class="n">#3</span></a></li>
+          <li><a href="#stire-4"><time>17:00</time><span class="t">Pentagonul ar fi cerut aliaților NATO să tempereze retorica despre Rusia</span><span class="n">#4</span></a></li>
+          <li><a href="#stire-5"><time>14:00</time><span class="t">Wabi, agentul AI care construiește mini-aplicații — evaluare de 1,25 mld $</span><span class="n">#5</span></a></li>
+          <li><a href="#stire-6"><time>14:00</time><span class="t">Urmare: Guvernul Niculescu a adoptat prima rectificare bugetară din 2026</span><span class="n">#6</span></a></li>
+          <li><a href="#stire-7"><time>11:15</time><span class="t">NATO DIANA și Ucraina: memorandum de cooperare în inovarea pentru apărare</span><span class="n">#7</span></a></li>
+          <li><a href="#stire-8"><time>11:15</time><span class="t">Putin îl numește pe Musk „geniu” — „contact strâns” pe constelația Rassvet</span><span class="n">#8</span></a></li>
+          <li><a href="#stire-9"><time>08:05</time><span class="t">Prima rectificare bugetară 2026: proiectul publicat, pe masa ședinței de vineri</span><span class="n">#9</span></a></li>
+        </ol>
+      </nav>
+
+      <div class="filters" role="group" aria-label="Filtrează după temă">
+        <button class="chip" type="button" data-filter="toate" aria-pressed="true">Toate</button>
+        <button class="chip" type="button" data-filter="securitate" aria-pressed="false">Securitate &amp; NATO</button>
+        <button class="chip" type="button" data-filter="romania" aria-pressed="false">România</button>
+        <button class="chip" type="button" data-filter="tech" aria-pressed="false">Tech &amp; AI</button>
+      </div>
+      <p class="empty" id="emptyMsg">Nicio știre în această categorie azi.</p>
+
+      <main>
+        <!-- 1 -->
+        <article id="stire-1" data-cats="securitate">
+          <div class="a-meta">
+            <span class="a-time">30 oct · 20:05</span>
+            <span class="a-cat">NATO · Apărare aeriană</span>
+            <span class="a-num">#1 / 9</span>
+          </div>
+          <h2>Bulgaria intră azi în inițiativa NATO împotriva amenințărilor aeriene de joasă altitudine (anti-dronă)</h2>
+
+          <div class="sec">
+            <p class="sec-label">Ce s-a întâmplat</p>
+            <p>Vineri, 30 octombrie 2026, ministrul bulgar al apărării Dimitar Stoyanov a semnat nota de aderare prin care Bulgaria intră în proiectul NATO „Air Defence Capabilities Against Lower-Level Air Threats” (High Visibility Project). Inițiativa, stabilită în februarie 2025, oferă aliaților un cadru comun pentru a achiziționa, dezvolta și desfășura capacități împotriva amenințărilor care zboară sub 150 de metri — drone, rachete de croazieră și bombe planante — cu accent pe detectare, identificare, urmărire și neutralizare.</p>
+            <p>La proiect participă deja, între alții, Belgia, Danemarca, Finlanda, Grecia, România, Suedia și Turcia; documentul Bulgariei merge acum la parlament pentru ratificare, iar agenția NATO de achiziții (NSPA) va face un studiu de piață și un catalog al tehnologiilor existente și emergente.</p>
+          </div>
+
+          <div class="sec">
+            <p class="sec-label">De ce contează</p>
+            <p>Este pasul concret care urmează cererii Bulgariei din 16 octombrie și atacurilor cu drone asupra navelor comerciale din Marea Neagră din 6 și 13 octombrie — inclusiv nava HS Dignity, scufundată pe 13 octombrie. Pentru România, vecină la Marea Neagră și deja participantă, înseamnă interoperabilitate mai mare și achiziții comune pe exact amenințarea urmărită în ultimele două săptămâni.</p>
+          </div>
+
+          <div class="verify">
+            <p class="sec-label">Verificare <span class="status">Sursă primară</span></p>
+            <p>Anunțul propriu NATO din 30 octombrie 2026, confirmat de Radio Bulgaria (BNR, 30 octombrie) și de comunicatul Ministerului bulgar al Apărării relatat de Novinite/BGNES.</p>
+            <ul class="sources">
+              <li><a href="https://nato.int/en/news-and-events/articles/news/2026/10/30/bulgaria-to-join-natos-initiative-against-lower-level-air-threats" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>NATO — anunțul oficial<span class="host">nato.int</span></a></li>
+              <li><a href="https://bnrnews.bg/en/post/550683/bulgaria-signs-agreement-to-join-nato-air-defence-initiative" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Radio Bulgaria (BNR)<span class="host">bnrnews.bg</span></a></li>
+            </ul>
+          </div>
+
+          <div class="impact">
+            <span class="badge">Impact direct</span>
+            <p>Minim azi, fără acțiune imediată; relevanță profesională înaltă — Incident Management Coordinator la NCIA, pe arcul amenințărilor hibride și anti-dronă din Marea Neagră urmărit constant.</p>
+          </div>
+        </article>
+
+        <!-- 2 -->
+        <article id="stire-2" data-cats="tech">
+          <div class="a-meta">
+            <span class="a-time">30 oct · 20:05</span>
+            <span class="a-cat">Tech · Comerț agentic</span>
+            <span class="a-num">#2 / 9</span>
+          </div>
+          <h2>Comerțul agentic, realitatea cifrelor: agenții AI terți au plasat doar „câteva sute” de comenzi la DoorDash</h2>
+
+          <div class="sec">
+            <p class="sec-label">Ce s-a întâmplat</p>
+            <p>La conferința de rezultate pentru trimestrul 3 din 2026 (29 octombrie), CEO-ul DoorDash, Tony Xu, a spus că agenții AI terți — precum Muse, Instinct și Fo — au generat în total doar „câteva sute” de comenzi de când sunt activi, în timp ce DoorDash a procesat 993 de milioane de comenzi doar în trimestrul 3 (venituri 4,6 mld $, +34%).</p>
+            <p>Xu a explicat că utilizatorii comandă în continuare predominant prin aplicația DoorDash însăși, iar zona rămâne „foarte dinamică”; compania are propriii agenți (chatbot Ask DoorDash din iunie, agent CLI din iulie, text-to-order din septembrie) și un conector MCP prin care agenții externi pot comanda.</p>
+          </div>
+
+          <div class="sec">
+            <p class="sec-label">De ce contează</p>
+            <p>Este primul număr concret, la scară, despre comerțul agentic — după săptămâni în care Walmart a deschis poarta agenților (Agent Gateway, 21 octombrie) iar Amazon i-a blocat. Hype-ul despre „agenții care preiau cumpărăturile” nu se vede încă în volume reale: canalul terț este, deocamdată, o eroare de rotunjire, nu o amenințare existențială la relația cu clientul.</p>
+          </div>
+
+          <div class="verify">
+            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
+            <p>Relatarea TechCrunch din 30 octombrie 2026, bazată pe declarația CEO-ului în call-ul de rezultate, cu transcriptul call-ului republicat independent (Motley Fool / MarketBeat).</p>
+            <ul class="sources">
+              <li><a href="https://techcrunch.com/2026/10/30/doordash-said-its-only-received-several-hundred-orders-from-ai-agents/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>TechCrunch — declarația DoorDash<span class="host">techcrunch.com</span></a></li>
+            </ul>
+          </div>
+
+          <div class="impact">
+            <span class="badge">Impact direct</span>
+            <p>Minim azi, fără acțiune; relevanță practică pentru hobby-ul de automatizări cu agenți AI — lecția este că infrastructura agentică (MCP, aprobări, limite) contează mai mult decât hype-ul, iar adopția reală a comenzilor prin agenți terți abia începe.</p>
+          </div>
+        </article>
+
+        <!-- 3 -->
+        <article id="stire-3" data-cats="securitate tech">
+          <div class="a-meta">
+            <span class="a-time">30 oct · 17:00</span>
+            <span class="a-cat">Securitate cibernetică · Crypto</span>
+            <span class="a-num">#3 / 9</span>
+          </div>
+          <h2>Binance, lovită de cel mai mare furt cibernetic din istorie: cel puțin 6,3 mld $ furați, atribuiți hackerilor nord-coreeni</h2>
+
+          <div class="sec">
+            <p class="sec-label">Ce s-a întâmplat</p>
+            <p>Hackerii au sustras cel puțin 6,3 mld $ în criptomonede din portofelele Binance, de peste patru ori recordul anterior (Bybit, 1,5 mld $, februarie 2025). Atacul a durat circa 20 de minute și a traversat zece blockchainuri; circa 3 mld $ au fost înghețați între timp.</p>
+            <p>Ancheta inițială indică un laptop compromis al unui inginer DevOps, prin care atacatorul a ajuns la un container de serviciu și a trimis retrageri neautorizate. Fondurile utilizatorilor sunt în siguranță, iar pierderile vor fi acoperite din fondul SAFU și din fonduri proprii.</p>
+          </div>
+
+          <div class="sec">
+            <p class="sec-label">De ce contează</p>
+            <p>Caz manual de incident management — un singur endpoint compromis a dus la tranzacții neautorizate de miliarde, în 20 de minute. Atribuirea către grupul nord-coreean TraderTraitor vine de la TRM Labs și Chainalysis, nu de la victimă.</p>
+          </div>
+
+          <div class="verify">
+            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
+            <p>The Wall Street Journal și Reuters (atribuirea TRM Labs, „cu încredere ridicată”), plus Chainalysis. Binance n-a confirmat încă atribuirea.</p>
+            <ul class="sources">
+              <li><a href="https://techcrunch.com/2026/10/30/north-korean-hackers-blamed-for-stealing-record-6-3b-in-binance-breach/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>TechCrunch — relatarea atacului<span class="host">techcrunch.com</span></a></li>
+              <li><a href="https://www.wsj.com/finance/currencies/binance-founder-says-exchange-may-be-victim-of-biggest-ever-crypto-heist-24a82e5f" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>The Wall Street Journal<span class="host">wsj.com</span></a></li>
+              <li><a href="https://www.reuters.com/legal/government/blockchain-analysis-firm-trm-says-north-korea-behind-binance-crypto-theft-2026-10-30/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Reuters — atribuirea TRM Labs<span class="host">reuters.com</span></a></li>
+            </ul>
+          </div>
+
+          <div class="impact">
+            <span class="badge">Impact direct</span>
+            <p>Minim — fără expunere cunoscută pe crypto; relevanță profesională ridicată ca studiu de caz.</p>
+          </div>
+        </article>
+
+        <!-- 4 -->
+        <article id="stire-4" data-cats="securitate">
+          <div class="a-meta">
+            <span class="a-time">30 oct · 17:00</span>
+            <span class="a-cat">NATO · Politică de apărare</span>
+            <span class="a-num">#4 / 9</span>
+          </div>
+          <h2>Pentagonul le-ar fi cerut privat mai multor țări NATO să-și tempereze retorica despre Rusia — „nu-l împungeți” pe Putin</h2>
+
+          <div class="sec">
+            <p class="sec-label">Ce s-a întâmplat</p>
+            <p>Oficiali ai Pentagonului le-au cerut în ultimele săptămâni mai multor țări NATO, printre care Lituania, Letonia și Estonia, să-și modereze declarațiile publice despre amenințarea rusă, pe motiv că unele formulări ar submina securitatea continentului, relatează Reuters pe baza a patru surse.</p>
+            <p>Printre emițători s-ar afla Elbridge Colby, șeful de politici al Pentagonului, care i-ar fi spus unui oficial baltic să nu existe „poking” la adresa rușilor. Contextul: administrația Trump reia efortul pentru o încheiere negociată a războiului din Ucraina.</p>
+          </div>
+
+          <div class="sec">
+            <p class="sec-label">De ce contează</p>
+            <p>Fricțiunea transatlantică din interiorul NATO, pe arcul urmărit deja (patrule suplimentare în Marea Neagră, alertă Bundeswehr).</p>
+          </div>
+
+          <div class="verify">
+            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
+            <p>Reuters (relatarea originală, 30 oct 2026), preluată de Defense News.</p>
+            <ul class="sources">
+              <li><a href="https://www.defensenews.com/global/europe/2026/10/30/pentagon-tells-europeans-to-cool-their-rhetoric-on-russia-sources-say/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Defense News<span class="host">defensenews.com</span></a></li>
+              <li><a href="https://www.reuters.com/business/finance/pentagon-tells-europeans-cool-their-rhetoric-russia-sources-say-2026-10-30/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Reuters — relatarea originală<span class="host">reuters.com</span></a></li>
+            </ul>
+          </div>
+
+          <div class="opposing">
+            <p class="sec-label">Tabăra adversă</p>
+            <p>Premierul eston Kristen Michal a reacționat public pe 30 oct: „Nu am de gând să mă abțin. Putin e un dictator care ucide femei și copii” — și spune că nu a primit direct o astfel de cerere de la SUA. Pentagonul a refuzat să comenteze.</p>
+          </div>
+
+          <div class="impact">
+            <span class="badge">Impact direct</span>
+            <p>Minim azi — context din interiorul alianței.</p>
+          </div>
+        </article>
+
+        <!-- 5 -->
+        <article id="stire-5" data-cats="tech">
+          <div class="a-meta">
+            <span class="a-time">30 oct · 14:00</span>
+            <span class="a-cat">Tech · Agenți AI</span>
+            <span class="a-num">#5 / 9</span>
+          </div>
+          <h2>Wabi, agentul AI personal care construiește mini-aplicații, ajunge la evaluare de 1,25 mld $ după o rundă de 55 mil. $</h2>
+
+          <div class="sec">
+            <p class="sec-label">Ce s-a întâmplat</p>
+            <p>Startupul fondat de Eugenia Kuyda (creatoarea Replika) a anunțat o rundă de 55 mil. $ condusă de IVP, la o evaluare de 1,25 mld $. Wabi a pivotat spre „Wabi 2.0”: un mesager AI în care agentul construiește pe loc interfețele de care ai nevoie — mini-aplicații pentru planificarea meselor, restaurante locale, planuri de fitness sau jocuri de trivia — în conversații de grup.</p>
+          </div>
+
+          <div class="sec">
+            <p class="sec-label">De ce contează</p>
+            <p>Direcția urmărită la agenți AI — nu un chatbot care răspunde, ci un agent care acționează și construiește interfețe la cerere. Unghi profesional de incident management: un agent cu autoritate de a crea lucruri în numele utilizatorului e o suprafață nouă de risc.</p>
+          </div>
+
+          <div class="verify">
+            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
+            <p>TechCrunch (29 oct 2026) și Dealroom (29 oct 2026), aceleași cifre.</p>
+            <ul class="sources">
+              <li><a href="https://techcrunch.com/2026/10/29/wabi-the-ai-agent-that-builds-mini-apps-now-valued-at-1-25b-after-latest-round/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>TechCrunch<span class="host">techcrunch.com</span></a></li>
+              <li><a href="https://dealroom.co/news/168035-replika-creators-wabi-raises-55m-at-1-25b-to-build-ai-for-groups/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Dealroom<span class="host">dealroom.co</span></a></li>
+            </ul>
+          </div>
+
+          <div class="opposing">
+            <p class="sec-label">Tabăra adversă</p>
+            <p>Dealroom notează că runda „reflectă mai mult convingerea investitorilor în oportunitatea agenților de consum decât o tracțiune dovedită”.</p>
+          </div>
+
+          <div class="impact">
+            <span class="badge">Impact direct</span>
+            <p>Minim azi — relevanță de context, nu o unealtă de adoptat imediat.</p>
+          </div>
+        </article>
+
+        <!-- 6 -->
+        <article id="stire-6" data-cats="romania">
+          <div class="a-meta">
+            <span class="a-time">30 oct · 14:00</span>
+            <span class="a-cat">România · Buget</span>
+            <span class="a-num">#6 / 9</span>
+          </div>
+          <h2>Urmare — Guvernul Niculescu a adoptat vineri la prânz prima rectificare bugetară din 2026</h2>
+
+          <div class="sec">
+            <p class="sec-label">Ce s-a întâmplat</p>
+            <p>Guvernul a aprobat rectificarea: fonduri urgente pentru Sănătate, plata pensiilor până la finalul anului și PNRR. Cifrele: veniturile scad cu 4,7 mld lei, cheltuielile cu 1,2 mld lei, deficitul nominal crește cu 3,5 mld lei, la 130,3 mld lei — dar ținta de deficit cash rămâne 6,2% din PIB.</p>
+            <p>Execuția pe primele 9 luni: deficit 3,81% din PIB, față de 5,31% în aceeași perioadă din 2025. Rectificarea se face prin rețineri de 10% de la ministere, iar o a doua rectificare e programată spre finalul lui noiembrie.</p>
+          </div>
+
+          <div class="sec">
+            <p class="sec-label">De ce contează</p>
+            <p>Prima rectificare a guvernului învestit acum 10 zile și testul lui concret de credibilitate fiscală. Pentru expunerile din RO (TVBETETF, apartamentul din București, legea CEI) înseamnă un cadru fiscal ceva mai predictibil pe final de an, fără taxe noi anunțate.</p>
+          </div>
+
+          <div class="verify">
+            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
+            <p>Agerpres, romnews.ro, ziarulromanul.ro (surse Economedia/G4Media), proiectul Ministerului Finanțelor (sursă primară).</p>
+            <ul class="sources">
+              <li><a href="https://presaromania.ro/niculescu-prima-rectificare-bugetara-aduce-bani-pentru-medicamente-si-servicii-medicale/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Agerpres, via PresaRomania<span class="host">presaromania.ro</span></a></li>
+              <li><a href="https://romnews.ro/politica/guvernul-aproba-vineri-prima-rectificare-bugetara-din-2026-fonduri-pentru-sanatate-pensii-si-primarii/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>RomNews<span class="host">romnews.ro</span></a></li>
+              <li><a href="https://ziarulromanul.ro/stire/surse-guvernul-adopta-vineri-rectificarea-bugetara-retineri-de-10-de-la-ministere-o-a-doua-rectificare-in-noiembrie" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Ziarul Românul<span class="host">ziarulromanul.ro</span></a></li>
+            </ul>
+          </div>
+
+          <div class="opposing">
+            <p class="sec-label">Tabăra adversă</p>
+            <p>Grupul parlamentar USR acuză că PSD și AUR au făcut alianță pentru ca ministrul Finanțelor, Alexandru Nazare, să nu vină luni în Parlament să explice cifrele.</p>
+          </div>
+
+          <div class="impact">
+            <span class="badge">Impact direct</span>
+            <p>Minim azi — context fiscal.</p>
+          </div>
+        </article>
+
+        <!-- 7 -->
+        <article id="stire-7" data-cats="securitate">
+          <div class="a-meta">
+            <span class="a-time">30 oct · 11:15</span>
+            <span class="a-cat">NATO · Inovare în apărare</span>
+            <span class="a-num">#7 / 9</span>
+          </div>
+          <h2>NATO DIANA și Ucraina semnează un memorandum de cooperare în inovarea pentru apărare — primul de acest fel cu un partener NATO</h2>
+
+          <div class="sec">
+            <p class="sec-label">Ce s-a întâmplat</p>
+            <p>NATO DIANA și Ucraina au semnat pe 29 octombrie, la sediul NATO, un memorandum de cooperare în inovarea pentru apărare. NATO își formalizează canalul de absorbție a inovației testate în război din Ucraina (drone, tehnologii dual-use).</p>
+          </div>
+
+          <div class="sec">
+            <p class="sec-label">De ce contează</p>
+            <p>NATO + Ucraina + inovare tehnologică în apărare = mediul profesional direct (NCIA, infrastructură tehnologică), pe linia arcului anti-dronă / Marea Neagră.</p>
+          </div>
+
+          <div class="verify">
+            <p class="sec-label">Verificare <span class="status">Sursă primară</span></p>
+            <p>Anunțul propriu al NATO din 29 oct.</p>
+            <ul class="sources">
+              <li><a href="https://www.nato.int/en/news-and-events/articles/news/2026/10/29/natos-diana-and-ukraine-strengthen-cooperation-on-defence-innovation" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>NATO — anunțul oficial<span class="host">nato.int</span></a></li>
+            </ul>
+          </div>
+
+          <div class="impact">
+            <span class="badge">Impact direct</span>
+            <p>Minim azi — context profesional.</p>
+          </div>
+        </article>
+
+        <!-- 8 -->
+        <article id="stire-8" data-cats="securitate tech">
+          <div class="a-meta">
+            <span class="a-time">30 oct · 11:15</span>
+            <span class="a-cat">Spațiu · Comunicații critice</span>
+            <span class="a-num">#8 / 9</span>
+          </div>
+          <h2>Putin îl numește pe Musk „geniu” și spune că Rusia e „în contact strâns” cu el pe tema constelației Rassvet, rivalul rus al Starlink</h2>
+
+          <div class="sec">
+            <p class="sec-label">Ce s-a întâmplat</p>
+            <p>La summitul Rusia–Africa (28 oct), Putin l-a numit pe Musk „geniu” și a afirmat că Rusia e în contact strâns cu el pe coordonarea orbitală, pe fondul constelației rusești Rassvet (Bureau 1440, circa 31 de sateliți) față de Starlink (circa 11.000).</p>
+          </div>
+
+          <div class="sec">
+            <p class="sec-label">De ce contează</p>
+            <p>Armata ucraineană depinde masiv de Starlink pentru comunicații și drone, iar un furnizor comercial unic devine punct critic — zona de comunicații și infrastructură critică la NCIA/ESOC.</p>
+          </div>
+
+          <div class="verify">
+            <p class="sec-label">Verificare <span class="status">Confirmat pentru declarații</span></p>
+            <p>TechCrunch + BBC și CNBC + Silicon Report + WarBrief Live. Notă: afirmația de „contact strâns” rămâne doar afirmația lui Putin, neconfirmată de SpaceX.</p>
+            <ul class="sources">
+              <li><a href="https://techcrunch.com/2026/10/29/elon-musk-is-truly-a-genius-says-vladimir-putin/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>TechCrunch<span class="host">techcrunch.com</span></a></li>
+              <li><a href="https://www.siliconreport.com/putin-reveals-close-contact-with-elon-musk-on-satellite-technology" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Silicon Report<span class="host">siliconreport.com</span></a></li>
+            </ul>
+          </div>
+
+          <div class="opposing">
+            <p class="sec-label">Tabăra adversă</p>
+            <p>Musk susține că Ucraina a încălcat termenii Starlink și că Starshield e controlat de guvernul SUA; Trump a negat că ar fi ordonat limitările.</p>
+          </div>
+
+          <div class="impact">
+            <span class="badge">Impact direct</span>
+            <p>Minim azi — relevanță de context înaltă.</p>
+          </div>
+        </article>
+
+        <!-- 9 -->
+        <article id="stire-9" data-cats="romania">
+          <div class="a-meta">
+            <span class="a-time">30 oct · 08:05</span>
+            <span class="a-cat">România · Buget</span>
+            <span class="a-num">#9 / 9</span>
+          </div>
+          <h2>Guvernul Niculescu: prima rectificare bugetară din 2026 — proiect publicat 29 oct, pe masa ședinței de vineri 30 oct</h2>
+
+          <div class="sec">
+            <p class="sec-label">Ce s-a întâmplat</p>
+            <p>Ministerul Finanțelor a publicat proiectul primei rectificări bugetare: sănătate +3,22 mld lei, transferuri pentru pensii +3,47 mld lei, bugete locale +2,808 mld lei din TVA; deficit menținut la ținta de 6,2% din PIB, nominal în creștere la 130,3 mld lei; tăieri la Dezvoltare, Transporturi, Agricultură, Educație și Energie; o a doua rectificare anunțată la jumătatea lui noiembrie.</p>
+          </div>
+
+          <div class="sec">
+            <p class="sec-label">De ce contează</p>
+            <p>Prima rectificare concretă a guvernului Niculescu, cu cifre oficiale — context fiscal pentru expunerile din România.</p>
+          </div>
+
+          <div class="verify">
+            <p class="sec-label">Verificare <span class="status">Sursă primară + confirmat</span></p>
+            <p>Proiectul MF + G4Media/Economedia + FlashRomania + Universul + ClasicRadio + Ekronomica.</p>
+            <ul class="sources">
+              <li><a href="https://flashromania.ro/rectificare-bugetara-2026-proiect-transparenta-sanatate-taieri-ministere/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>FlashRomania — proiectul în transparență<span class="host">flashromania.ro</span></a></li>
+            </ul>
+          </div>
+
+          <div class="opposing">
+            <p class="sec-label">Tabăra adversă</p>
+            <p>USR acuză că PSD s-a asigurat ca ministrul Finanțelor să nu vină luni în Parlament; PNL contestă estimarea PSD privind o gaură de cel puțin 35 mld lei lăsată de Guvernul Bolojan.</p>
+          </div>
+
+          <div class="impact">
+            <span class="badge">Impact direct</span>
+            <p>Minim azi ca acțiune imediată.</p>
+          </div>
+        </article>
+      </main>
+
+      <footer>
+        <div class="rule" aria-hidden="true"></div>
+        <p>Sfârșitul ediției de azi · Ultima actualizare: vineri, 30 octombrie 2026, 20:05<br />Monitorizarea rulează la circa 3 ore, în fereastra 06:15–21:30 — dă refresh pentru noutăți.</p>
+        <a class="to-top" href="#stire-3">↑ Înapoi la cea mai nouă știre</a>
+      </footer>
+    </div>
+
+    <script>
+      (function () {
+        var refreshBtn = document.getElementById('refreshBtn');
+        refreshBtn.addEventListener('click', function () {
+          window.location.reload();
+        });
+
+        var chips = Array.prototype.slice.call(document.querySelectorAll('.chip'));
+        var articles = Array.prototype.slice.call(document.querySelectorAll('article[data-cats]'));
+        var emptyMsg = document.getElementById('emptyMsg');
+
+        chips.forEach(function (chip) {
+          chip.addEventListener('click', function () {
+            chips.forEach(function (c) { c.setAttribute('aria-pressed', 'false'); });
+            chip.setAttribute('aria-pressed', 'true');
+            var f = chip.getAttribute('data-filter');
+            var visible = 0;
+            articles.forEach(function (a) {
+              var show = f === 'toate' || (a.getAttribute('data-cats') || '').split(' ').indexOf(f) !== -1;
+              a.classList.toggle('hidden', !show);
+              if (show) visible++;
+            });
+            emptyMsg.classList.toggle('show', visible === 0);
+          });
+        });
+      })();
+    </script>
+  </body>
+</html>
