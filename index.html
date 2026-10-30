@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="color-scheme" content="light dark" />
+    <meta name="tirile-versiune" content="2026-10-30T21:37+01:00|10|red" />
     <link rel="icon" href="data:," />
     <title>Știrile zilei</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -131,6 +132,49 @@
       .refresh-btn:hover{border-color:var(--accent);color:var(--accent-ink)}
       .refresh-btn svg{width:15px;height:15px}
 
+      /* Bandă de actualizare — apare doar când există o versiune mai nouă.
+         Fixă sus, nedemodală: nu fură focusul, nu blochează citirea;
+         spațiul ei se rezervă prin padding pe body, iar poziția de citire se păstrează. */
+      .update-banner{
+        position:fixed;top:0;left:0;right:0;z-index:60;
+        background:var(--panel);color:var(--ink);
+        border-bottom:2px solid var(--accent);
+        box-shadow:0 6px 18px rgba(0,0,0,.14);
+        transform:translateY(-110%);visibility:hidden;
+        transition:transform .28s ease,visibility 0s linear .28s;
+      }
+      .update-banner.show{transform:translateY(0);visibility:visible;transition:transform .28s ease}
+      .update-banner.urgent{background:#a31621;border-bottom-color:#7d0f18;color:#fff}
+      @media (prefers-color-scheme: dark){
+        .update-banner.urgent{background:#8c1d24;border-bottom-color:#5f1218;color:#ffe9e9}
+      }
+      .update-banner-inner{
+        max-width:880px;margin:0 auto;padding:10px 20px;
+        display:flex;align-items:center;gap:12px;flex-wrap:wrap;
+        font-size:.95rem;
+      }
+      .update-banner-text{font-weight:700;display:inline-flex;align-items:center;gap:8px}
+      .update-banner .spacer{flex:1}
+      .update-banner button{
+        appearance:none;font:inherit;font-size:.88rem;font-weight:700;cursor:pointer;
+        padding:7px 14px;border-radius:999px;border:1px solid var(--line);
+        background:var(--surface);color:var(--ink);
+      }
+      .update-banner button:hover{border-color:var(--accent);color:var(--accent-ink)}
+      .update-banner button.primary{background:var(--accent);border-color:var(--accent);color:#fff}
+      .update-banner button.primary:hover{background:var(--accent-ink);color:#fff}
+      .update-banner.urgent button{border-color:rgba(255,255,255,.55);background:transparent;color:#fff}
+      .update-banner.urgent button:hover{border-color:#fff;color:#fff}
+      .update-banner.urgent button.primary{background:#fff;border-color:#fff;color:#a31621}
+      .update-banner.urgent button.primary:hover{background:#ffe9e9;color:#7d0f18}
+      @media (max-width:560px){
+        .update-banner-inner{padding:9px 14px;gap:9px}
+        .update-banner .spacer{display:none}
+      }
+      @media (prefers-reduced-motion: reduce){
+        .update-banner{transition:none}
+      }
+
       /* Masthead — Spark Briefing style: orange kicker, bold navy title */
       .masthead{
         margin-top:20px;padding:22px 24px;
@@ -213,12 +257,27 @@
       }
       .dash-panel{padding:14px 16px 16px;background:var(--surface);border:1px solid var(--line);border-radius:10px}
       .dash-panel h3{margin:0 0 10px;font-size:.78rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
-      .rhythm{display:flex;align-items:flex-end;gap:10px;height:64px}
-      .rhythm .col{flex:1;display:flex;flex-direction:column;align-items:center;gap:5px;height:100%;justify-content:flex-end}
-      .rhythm .bar{width:100%;max-width:44px;border-radius:4px 4px 0 0;background:var(--ink);min-height:8px}
+      .rhythm{display:flex;align-items:flex-end;gap:8px;height:64px}
+      .rhythm .col{
+        appearance:none;border:0;background:transparent;color:var(--ink);font:inherit;cursor:pointer;
+        flex:1;display:flex;flex-direction:column;align-items:center;gap:5px;height:100%;justify-content:flex-end;
+        padding:6px 2px 4px;border-radius:8px;
+      }
+      .rhythm .col:hover{background:var(--surface-2)}
+      .rhythm .col:focus-visible{outline:3px solid var(--pbi-yellow);outline-offset:-3px}
+      .rhythm .bar{width:100%;max-width:44px;border-radius:4px 4px 0 0;background:var(--ink);min-height:8px;pointer-events:none}
       .rhythm .col:last-child .bar{background:var(--pbi-yellow)}
-      .rhythm .t{font-size:.75rem;color:var(--muted);font-variant-numeric:tabular-nums;font-weight:600}
-      .rhythm .n{font-size:.72rem;color:var(--muted)}
+      .rhythm .t{font-size:.75rem;color:var(--muted);font-variant-numeric:tabular-nums;font-weight:600;pointer-events:none}
+      .rhythm .n{font-size:.72rem;color:var(--muted);pointer-events:none}
+      /* Bara selectată — același stil ca tile-ul KPI selectat:
+         bleumarin în tema luminoasă; în tema neagră --kpi-sel-bg e ardezie deschisă,
+         cu cifra galbenă (--pbi-yellow), niciodată alb. */
+      .rhythm .col[aria-pressed="true"]{background:var(--kpi-sel-bg);color:var(--kpi-sel-ink)}
+      .rhythm .col[aria-pressed="true"]:hover{background:var(--kpi-sel-bg)}
+      .rhythm .col[aria-pressed="true"] .bar{background:var(--pbi-yellow)}
+      .rhythm .col[aria-pressed="true"] .n{color:var(--pbi-yellow);font-weight:800;font-size:.8rem}
+      .rhythm .col[aria-pressed="true"] .t{color:var(--kpi-sel-ink);font-weight:700}
+      .rhythm-hint{margin:9px 0 0;font-size:.78rem;color:var(--muted)}
       .status-list{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px;font-size:.9rem}
       .status-list li{display:flex;gap:9px;align-items:baseline}
       .status-list .k{flex:none;width:118px;color:var(--muted);font-size:.83rem}
@@ -424,6 +483,15 @@
     </style>
   </head>
   <body>
+    <div class="update-banner" id="updateBanner" role="region" aria-label="Notificare actualizare" aria-live="polite" hidden>
+      <div class="update-banner-inner">
+        <span class="update-banner-text" id="updateBannerText">Au apărut știri noi</span>
+        <span class="spacer"></span>
+        <button type="button" class="primary" id="updateNowBtn">Actualizează</button>
+        <button type="button" id="updateLaterBtn">Mai târziu</button>
+      </div>
+    </div>
+
     <div class="topbar">
       <div class="topbar-inner">
         <span class="dot" aria-hidden="true"></span>
@@ -517,14 +585,15 @@
         <div class="dash-foot">
           <div class="dash-panel">
             <h3>Ritmul zilei — știri pe rulare</h3>
-            <div class="rhythm" aria-label="1 știre la 08:05, 2 la 11:15, 2 la 14:00, 2 la 17:00, 2 la 20:05, 1 la 21:37">
-              <div class="col"><span class="n">1</span><span class="bar" style="height:22px"></span><span class="t">08:05</span></div>
-              <div class="col"><span class="n">2</span><span class="bar" style="height:40px"></span><span class="t">11:15</span></div>
-              <div class="col"><span class="n">2</span><span class="bar" style="height:40px"></span><span class="t">14:00</span></div>
-              <div class="col"><span class="n">2</span><span class="bar" style="height:40px"></span><span class="t">17:00</span></div>
-              <div class="col"><span class="n">2</span><span class="bar" style="height:40px"></span><span class="t">20:05</span></div>
-              <div class="col"><span class="n">1</span><span class="bar" style="height:22px"></span><span class="t">21:37</span></div>
+            <div class="rhythm" role="group" aria-label="Filtru după ora publicării — apasă pe o rulare ca să vezi doar știrile ei">
+              <button class="col" type="button" data-hour="08:05" aria-pressed="false" aria-label="Filtrează știrile de la ora 08:05 — 1 știre"><span class="n">1</span><span class="bar" style="height:22px"></span><span class="t">08:05</span></button>
+              <button class="col" type="button" data-hour="11:15" aria-pressed="false" aria-label="Filtrează știrile de la ora 11:15 — 2 știri"><span class="n">2</span><span class="bar" style="height:40px"></span><span class="t">11:15</span></button>
+              <button class="col" type="button" data-hour="14:00" aria-pressed="false" aria-label="Filtrează știrile de la ora 14:00 — 2 știri"><span class="n">2</span><span class="bar" style="height:40px"></span><span class="t">14:00</span></button>
+              <button class="col" type="button" data-hour="17:00" aria-pressed="false" aria-label="Filtrează știrile de la ora 17:00 — 2 știri"><span class="n">2</span><span class="bar" style="height:40px"></span><span class="t">17:00</span></button>
+              <button class="col" type="button" data-hour="20:05" aria-pressed="false" aria-label="Filtrează știrile de la ora 20:05 — 2 știri"><span class="n">2</span><span class="bar" style="height:40px"></span><span class="t">20:05</span></button>
+              <button class="col" type="button" data-hour="21:37" aria-pressed="false" aria-label="Filtrează știrile de la ora 21:37 — 1 știre"><span class="n">1</span><span class="bar" style="height:22px"></span><span class="t">21:37</span></button>
             </div>
+            <p class="rhythm-hint">Apasă pe o bară ca să vezi doar știrile din rularea aceea; apasă din nou pe ea pentru toate.</p>
           </div>
           <div class="dash-panel">
             <h3>Stare ediție</h3>
@@ -955,6 +1024,7 @@
         refreshBtn.addEventListener('click', function () { window.location.reload(); });
 
         var tiles = Array.prototype.slice.call(document.querySelectorAll('.kpi[data-filter]'));
+        var bars = Array.prototype.slice.call(document.querySelectorAll('.rhythm .col[data-hour]'));
         var articles = Array.prototype.slice.call(document.querySelectorAll('article[data-cats]'));
         var indexItems = Array.prototype.slice.call(document.querySelectorAll('#indexList li[data-cats]'));
         var emptyMsg = document.getElementById('emptyMsg');
@@ -972,42 +1042,191 @@
           if (h) hintsDefault[t.getAttribute('data-filter')] = h.textContent;
         });
 
-        function matches(el, f) {
-          return f === 'toate' || (el.getAttribute('data-cats') || '').split(' ').indexOf(f) !== -1;
+        // Ora rulării pentru fiecare articol — luată din eticheta de oră de pe card
+        // (ex. „30 oct · 17:00") și din <time> pentru rândurile din cuprins.
+        function hourOfArticle(a) {
+          var t = a.querySelector('.a-time');
+          if (!t) return '';
+          var m = t.textContent.match(/(\d{1,2}:\d{2})/g);
+          return m ? m[m.length - 1] : '';
+        }
+        function hourOfIndex(li) {
+          var t = li.querySelector('time');
+          return t ? t.textContent.trim() : '';
+        }
+        articles.forEach(function (a) { a.setAttribute('data-hour', hourOfArticle(a)); });
+        indexItems.forEach(function (li) { li.setAttribute('data-hour', hourOfIndex(li)); });
+
+        // Model de selecție unică: o singură selecție activă odată —
+        // {type:'all'} | {type:'cat', value:'securitate'} | {type:'hour', value:'17:00'}.
+        // O bară de oră anulează orice filtru de categorie și invers.
+        var selection = { type: 'all' };
+
+        function matches(el) {
+          if (selection.type === 'all') return true;
+          if (selection.type === 'hour') return el.getAttribute('data-hour') === selection.value;
+          return (el.getAttribute('data-cats') || '').split(' ').indexOf(selection.value) !== -1;
         }
 
-        function applyFilter(f) {
+        function applyFilter() {
           tiles.forEach(function (t) {
-            var active = t.getAttribute('data-filter') === f;
+            var f = t.getAttribute('data-filter');
+            var active = (selection.type === 'all' && f === 'toate') ||
+                         (selection.type === 'cat' && f === selection.value);
             t.setAttribute('aria-pressed', active ? 'true' : 'false');
             var h = t.querySelector('.kpi-hint');
-            if (h) h.textContent = active ? (f === 'toate' ? 'Filtru activ — toate' : 'Filtru activ — apasă „Toate” pentru reset') : hintsDefault[t.getAttribute('data-filter')];
+            if (h) h.textContent = active ? (f === 'toate' ? 'Filtru activ — toate' : 'Filtru activ — apasă „Toate” pentru reset') : hintsDefault[f];
+          });
+          bars.forEach(function (b) {
+            var active = selection.type === 'hour' && b.getAttribute('data-hour') === selection.value;
+            b.setAttribute('aria-pressed', active ? 'true' : 'false');
           });
           var visible = 0;
           articles.forEach(function (a) {
-            var show = matches(a, f);
+            var show = matches(a);
             a.classList.toggle('hidden', !show);
             if (show) visible++;
           });
-          indexItems.forEach(function (li) { li.classList.toggle('hidden', !matches(li, f)); });
+          indexItems.forEach(function (li) { li.classList.toggle('hidden', !matches(li)); });
           emptyMsg.classList.toggle('show', visible === 0);
-          filterLabel.innerHTML = 'Se afișează: <strong>' + labels[f] + ' — ' + visible + ' din ' + articles.length + ' știri</strong>';
-          filterReset.hidden = f === 'toate';
+          if (selection.type === 'hour') {
+            filterLabel.innerHTML = 'Se afișează: <strong>Filtru: ora ' + selection.value + ' — ' + visible + ' din ' + articles.length + ' știri</strong>';
+          } else if (selection.type === 'cat') {
+            filterLabel.innerHTML = 'Se afișează: <strong>' + labels[selection.value] + ' — ' + visible + ' din ' + articles.length + ' știri</strong>';
+          } else {
+            filterLabel.innerHTML = 'Se afișează: <strong>' + labels.toate + ' — ' + visible + ' din ' + articles.length + ' știri</strong>';
+          }
+          filterReset.hidden = selection.type === 'all';
+        }
+
+        function scrollToFirst() {
+          var first = document.querySelector('article[data-cats]:not(.hidden)');
+          if (first) first.scrollIntoView({ behavior: 'smooth', block: 'start' });
         }
 
         tiles.forEach(function (tile) {
           tile.addEventListener('click', function () {
             var f = tile.getAttribute('data-filter');
-            // Clicking the already-active category tile (other than "Toate") clears back to Toate, like a Power BI slicer toggle.
-            if (tile.getAttribute('aria-pressed') === 'true' && f !== 'toate') f = 'toate';
-            applyFilter(f);
-            if (f !== 'toate') {
-              var first = document.querySelector('article[data-cats]:not(.hidden)');
-              if (first) first.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            if (f === 'toate') {
+              selection = { type: 'all' };
+            } else if (selection.type === 'cat' && selection.value === f) {
+              // Clicking the already-active category tile clears back to Toate, like a Power BI slicer toggle.
+              selection = { type: 'all' };
+            } else {
+              selection = { type: 'cat', value: f };
             }
+            applyFilter();
+            if (selection.type === 'cat') scrollToFirst();
           });
         });
-        filterReset.addEventListener('click', function () { applyFilter('toate'); });
+
+        bars.forEach(function (bar) {
+          bar.addEventListener('click', function () {
+            var h = bar.getAttribute('data-hour');
+            // Al doilea click pe aceeași bară revine la toate știrile.
+            if (selection.type === 'hour' && selection.value === h) {
+              selection = { type: 'all' };
+            } else {
+              selection = { type: 'hour', value: h };
+            }
+            applyFilter();
+            if (selection.type === 'hour') scrollToFirst();
+          });
+        });
+
+        filterReset.addEventListener('click', function () {
+          selection = { type: 'all' };
+          applyFilter();
+        });
+      })();
+    </script>
+    <script>
+      // Verificare versiune nouă la fiecare 5 minute — fără reload forțat.
+      // Compară marcatorul <meta name="tirile-versiune"> din pagina încărcată
+      // cu cel din versiunea descărcată proaspăt (cache: no-store, aceeași adresă).
+      (function () {
+        var CHECK_MS = 5 * 60 * 1000;
+        var meta = document.querySelector('meta[name="tirile-versiune"]');
+        var currentMarker = meta ? (meta.getAttribute('content') || '').trim() : '';
+        if (!currentMarker) return; // fără marcator în pagina curentă, nu verificăm nimic
+
+        var banner = document.getElementById('updateBanner');
+        var bannerText = document.getElementById('updateBannerText');
+        var nowBtn = document.getElementById('updateNowBtn');
+        var laterBtn = document.getElementById('updateLaterBtn');
+        var dismissedMarker = null; // versiunea respinsă cu „Mai târziu" — nu mai apare pentru ea
+        var pendingMarker = null;
+        var bannerHeight = 0;
+
+        function markerTime(m) { return Date.parse((m || '').split('|')[0]); }
+        function markerSeverity(m) { return ((m || '').split('|')[2] || '').trim(); }
+
+        function isNewer(fetched) {
+          if (!fetched || fetched === currentMarker) return false;
+          var ft = markerTime(fetched), ct = markerTime(currentMarker);
+          if (!isNaN(ft) && !isNaN(ct)) return ft > ct;
+          return true; // marcatori diferiți, fără ore comparabile — tratăm ca versiune nouă
+        }
+
+        function showBanner(marker) {
+          pendingMarker = marker;
+          var urgent = markerSeverity(marker) === 'red';
+          banner.classList.toggle('urgent', urgent);
+          bannerText.textContent = urgent ? '🔴 Știre urgentă nouă' : 'Au apărut știri noi';
+          var wasHidden = banner.hidden;
+          banner.hidden = false;
+          // Rezervăm spațiul benzii fără să acoperim conținutul și fără să pierdem poziția de citire:
+          bannerHeight = banner.offsetHeight;
+          if (wasHidden && bannerHeight > 0) {
+            var y = window.scrollY || window.pageYOffset || 0;
+            document.body.style.paddingTop = bannerHeight + 'px';
+            var topbar = document.querySelector('.topbar');
+            if (topbar) topbar.style.top = bannerHeight + 'px'; // bara utilitară rămâne vizibilă sub bandă
+            if (y > 0) window.scrollTo(0, y + bannerHeight);
+          }
+          requestAnimationFrame(function () { banner.classList.add('show'); });
+        }
+
+        function hideBanner() {
+          banner.classList.remove('show');
+          banner.hidden = true;
+          if (bannerHeight > 0) {
+            var y = window.scrollY || window.pageYOffset || 0;
+            document.body.style.paddingTop = '';
+            var topbar = document.querySelector('.topbar');
+            if (topbar) topbar.style.top = '';
+            if (y > bannerHeight) window.scrollTo(0, y - bannerHeight);
+            bannerHeight = 0;
+          }
+        }
+
+        nowBtn.addEventListener('click', function () { window.location.reload(); });
+        laterBtn.addEventListener('click', function () {
+          dismissedMarker = pendingMarker; // banda reapare doar la o versiune și mai nouă
+          pendingMarker = null;
+          hideBanner();
+        });
+
+        function checkForUpdate() {
+          if (!window.fetch || !window.DOMParser) return;
+          var url = window.location.href.split('#')[0];
+          fetch(url, { cache: 'no-store', credentials: 'same-origin' })
+            .then(function (res) { return res.ok ? res.text() : null; })
+            .then(function (html) {
+              if (!html) return;
+              var doc = new DOMParser().parseFromString(html, 'text/html');
+              var fetchedMeta = doc.querySelector('meta[name="tirile-versiune"]');
+              if (!fetchedMeta) return; // copie veche, fără marcator — nu facem nimic
+              var fetched = (fetchedMeta.getAttribute('content') || '').trim();
+              if (!fetched) return;
+              if (fetched === dismissedMarker) return; // aceeași versiune respinsă — tăcere
+              if (pendingMarker === fetched) return; // deja afișată pentru versiunea asta
+              if (isNewer(fetched)) showBanner(fetched);
+            })
+            .catch(function () { /* rețea indisponibilă — încercăm din nou la următorul ciclu */ });
+        }
+
+        setInterval(checkForUpdate, CHECK_MS);
       })();
     </script>
   </body>
