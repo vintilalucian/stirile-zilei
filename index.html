@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="color-scheme" content="light dark" />
-    <meta name="tirile-versiune" content="2026-10-30T21:37+01:00|10|red" />
+    <meta name="tirile-versiune" content="2026-10-31T08:05+01:00|2|amber" />
     <link rel="icon" href="data:," />
     <title>Știrile zilei</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -343,6 +343,20 @@
         padding:3px 9px;border-radius:6px;white-space:nowrap;
       }
 
+      /* Zi de arhivă — antet pentru edițiile anterioare păstrate pe pagină */
+      .day-archive{margin-top:42px}
+      .day-head{
+        display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;
+        padding:14px 18px;margin:0 0 2px;
+        background:linear-gradient(180deg,var(--sand),var(--sand-2));
+        border:1px solid var(--sand-line);border-radius:14px;
+      }
+      .day-head h2{
+        font-family:"Archivo","Source Sans 3",-apple-system,sans-serif;
+        font-weight:800;font-size:1.2rem;text-transform:uppercase;letter-spacing:.01em;margin:0;
+      }
+      .day-head span{color:var(--muted);font-size:.88rem}
+
       /* Index — table-like, synced with the slicers */
       .index{
         margin:18px 0 6px;background:var(--surface);border:1px solid var(--line);
@@ -495,9 +509,9 @@
     <div class="topbar">
       <div class="topbar-inner">
         <span class="dot" aria-hidden="true"></span>
-        <span><strong>Vineri, 30 octombrie 2026</strong> · actualizat la <strong>21:37</strong></span>
+        <span><strong>Sâmbătă, 31 octombrie 2026</strong> · actualizat la <strong>08:05</strong></span>
         <span aria-hidden="true">·</span>
-        <span>10 știri</span>
+        <span>2 știri azi</span>
         <span class="spacer"></span>
         <button class="refresh-btn" type="button" id="refreshBtn" aria-label="Reîmprospătează pagina">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg>
@@ -512,16 +526,203 @@
         <h1>Știrile zilei</h1>
         <div class="date-line">
           <span class="day">Ediția de azi</span>
-          <span>Vineri, 30 octombrie 2026 · Europe/Brussels</span>
+          <span>Sâmbătă, 31 octombrie 2026 · Europe/Brussels</span>
         </div>
         <p class="lede">Panou de ansamblu sus, articole complete jos. <strong>Apasă pe un tile de categorie</strong> ca să filtrezi pagina — cardurile rămân întregi, la lățime de citit, cele mai noi primele.</p>
       </header>
 
+      <section class="day" id="zi-2026-10-31">
       <!-- Chenar permanent: știrea cea mai importantă a zilei — chiar sub masthead,
            ÎNAINTEA dashboardului, vizibilă din prima, fără scroll.
-           Nivelul de azi: ROȘU (sev-red) — furt record, grav.
-           La altă ediție, clasa se schimbă: sev-green (normal) / sev-amber (de urmărit) / sev-red (grav). -->
-      <section class="spot sev-red" aria-label="Știrea cea mai importantă a zilei">
+           Nivelul de azi: GALBEN (sev-amber) — finanțarea AI se tensionează, de urmărit.
+           La altă ediție, clasa se schimbă: sev-green (normal) / sev-amber (de urmărit) / sev-red (grav).
+           Chenarul rămâne în afara logicii de filtrare: vizibil indiferent de filtrul de categorie. -->
+      <section class="spot sev-amber" aria-label="Știrea cea mai importantă a zilei">
+        <div class="spot-head">
+          <span class="spot-kicker">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13 2 4.5 13.5H11L9.5 22 19 10h-6.5L13 2z"/></svg>
+            Știrea zilei · Atenție rapidă
+          </span>
+          <span class="spot-time">31 oct · 08:00</span>
+          <span class="spot-pill">Nivel galben — de urmărit</span>
+        </div>
+        <h2 class="spot-title">Nvidia ar putea garanta miliarde din datoria Nscale pentru centrul de date Anthropic din Virginia de Vest</h2>
+        <p class="spot-why"><strong>De ce e în față:</strong> cel mai nou semnal concret că finanțarea boom-ului AI se tensionează — furnizorul de cipuri ar urma să garanteze și datoria clientului, nu doar să-i vândă cipuri.</p>
+        <p class="spot-lead">Nvidia discută să garanteze miliarde de dolari din datoria furnizorului de cloud Nscale pentru campusul din Virginia de Vest destinat Anthropic, printr-o garanție de valoare reziduală. Anthropic are un contract de 44,6 miliarde de dolari doar pentru prima clădire de 460 MW, iar expunerea cumulată a Nvidia în investiții și sprijin de credit către clienții AI e estimată la circa 170 de miliarde de dolari.</p>
+        <div class="spot-foot">
+          <a class="spot-link" href="#stire-11">Citește știrea completă ↓</a>
+          <div class="sev-scale" role="img" aria-label="Scară de gravitate: verde — normal, galben — de urmărit, roșu — grav. Nivelul de azi: galben.">
+            <span class="sev-item"><i class="sev-dot g" aria-hidden="true"></i>Verde · normal</span>
+            <span class="sev-item on"><i class="sev-dot y" aria-hidden="true"></i>Galben · de urmărit</span>
+            <span class="sev-item"><i class="sev-dot r" aria-hidden="true"></i>Roșu · grav</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Dashboard -->
+      <section class="dashboard" aria-label="Panou de ansamblu">
+        <div class="dash-head">
+          <span class="dash-title">Dashboard · Azi</span>
+          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 08:05</span>
+          <span class="dash-meta">Fereastră monitorizare <strong>L–V 06:00–22:00 · S–D 07:30–22:00</strong> · pas ~3 ore</span>
+        </div>
+
+        <div class="kpi-grid" role="group" aria-label="Filtrează după categorie — apasă pe un tile">
+          <button class="kpi" type="button" data-filter="toate" aria-pressed="true">
+            <span class="kpi-top"><span class="kpi-label">Toate știrile</span><span class="kpi-check" aria-hidden="true">✓</span></span>
+            <span class="kpi-value">2</span>
+            <span class="kpi-sub">știri verificate azi, în 1 rulare</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:100%"></i></span>
+            <span class="kpi-hint">Apasă pentru toate</span>
+          </button>
+          <button class="kpi" type="button" data-filter="securitate" aria-pressed="false">
+            <span class="kpi-top"><span class="kpi-label">Securitate &amp; NATO</span><span class="kpi-check" aria-hidden="true">✓</span></span>
+            <span class="kpi-value">1</span>
+            <span class="kpi-sub">NATO, apărare anti-dronă, flanc estic</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:50%"></i></span>
+            <span class="kpi-hint">Apasă pentru a filtra →</span>
+          </button>
+          <button class="kpi" type="button" data-filter="romania" aria-pressed="false">
+            <span class="kpi-top"><span class="kpi-label">România</span><span class="kpi-check" aria-hidden="true">✓</span></span>
+            <span class="kpi-value">0</span>
+            <span class="kpi-sub">nicio știre azi</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:0%"></i></span>
+            <span class="kpi-hint">Apasă pentru a filtra →</span>
+          </button>
+          <button class="kpi" type="button" data-filter="tech" aria-pressed="false">
+            <span class="kpi-top"><span class="kpi-label">Tech &amp; AI</span><span class="kpi-check" aria-hidden="true">✓</span></span>
+            <span class="kpi-value">1</span>
+            <span class="kpi-sub">AI, finanțarea infrastructurii</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:50%"></i></span>
+            <span class="kpi-hint">Apasă pentru a filtra →</span>
+          </button>
+        </div>
+
+        <div class="dash-foot">
+          <div class="dash-panel">
+            <h3>Ritmul zilei — știri pe rulare</h3>
+            <div class="rhythm" role="group" aria-label="Filtru după ora publicării — apasă pe o rulare ca să vezi doar știrile ei">
+              <button class="col" type="button" data-hour="08:00" aria-pressed="false" aria-label="Filtrează știrile de la ora 08:00 — 2 știri"><span class="n">2</span><span class="bar" style="height:40px"></span><span class="t">08:00</span></button>
+            </div>
+            <p class="rhythm-hint">Apasă pe o bară ca să vezi doar știrile din rularea aceea; apasă din nou pe ea pentru toate.</p>
+          </div>
+          <div class="dash-panel">
+            <h3>Stare ediție</h3>
+            <ul class="status-list">
+              <li><span class="k">Ultima actualizare</span><span class="v">Azi, 08:05</span></li>
+              <li><span class="k">Cea mai nouă</span><span class="v">Nvidia garantează datoria Nscale · 08:00</span></li>
+              <li><span class="k">Acoperire</span><span class="v">Ultimele 7 zile în arhivă</span></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <div class="filter-status" aria-live="polite">
+        <span class="filter-label">Se afișează: <strong>Toate categoriile — 2 din 2 știri</strong></span>
+        <button class="filter-reset" type="button" hidden>Resetează filtrul</button>
+      </div>
+
+      <nav class="index" aria-label="Cuprinsul zilei">
+        <div class="index-head">
+          <h2>Cuprins</h2>
+          <span>apasă pe un titlu ca să sari direct la știre · se sincronizează cu filtrul</span>
+        </div>
+        <ol class="index-list">
+          <li data-cats="tech"><a href="#stire-11"><time>08:00</time><span class="cat-dot tech" aria-hidden="true"></span><span class="t">Nvidia ar putea garanta miliarde din datoria Nscale pentru centrul de date Anthropic din Virginia de Vest</span><span class="n">#1</span></a></li>
+          <li data-cats="securitate"><a href="#stire-12"><time>08:00</time><span class="cat-dot sec" aria-hidden="true"></span><span class="t">NATO testează în Letonia un lanț senzor–trăgător anti-dronă care să funcționeze între națiuni</span><span class="n">#2</span></a></li>
+        </ol>
+      </nav>
+
+      <p class="empty">Nicio știre în această categorie azi.</p>
+
+      <main>
+        <!-- 1 · 31 oct -->
+        <article id="stire-11" data-cats="tech">
+          <div class="a-meta">
+            <span class="a-time">31 oct · 08:00</span>
+            <span class="a-cat">Tech &amp; AI · Finanțarea infrastructurii AI</span>
+            <span class="spot-tag">Știrea zilei</span>
+            <span class="a-num">#1 / 2</span>
+          </div>
+          <h2>Nvidia ar putea garanta miliarde din datoria Nscale pentru centrul de date Anthropic din Virginia de Vest</h2>
+
+          <div class="followup">
+            <span class="tag">Urmare la</span>
+            <p><a href="#zi-2026-10-30">știrea din 30 octombrie despre posibilul rating „junk” al Anthropic după IPO</a> — același fir: finanțarea Anthropic și presiunea pe costul expansiunii AI.</p>
+          </div>
+
+          <div class="sec">
+            <p class="sec-label">Ce s-a întâmplat</p>
+            <p>Nvidia discută să garanteze miliarde de dolari din finanțarea prin datorie a furnizorului de cloud Nscale pentru campusul din Virginia de Vest destinat Anthropic, printr-o garanție de valoare reziduală: dacă Nscale nu achită plățile de construcție, Nvidia ar prelua temporar facilitatea și ar căuta un cumpărător sau un chiriaș nou. Anthropic are un contract de 44,6 miliarde de dolari doar pentru prima clădire de 460 MW, care ar urma să folosească cipurile Vera Rubin de nouă generație ale Nvidia, iar o a doua clădire, de circa 45 de miliarde de dolari, este în discuție. Nscale vizează o listare la bursă la o evaluare de până la 35 de miliarde de dolari, deși în august avea în funcțiune doar circa 25.000 de cipuri avansate, dintr-un plan de aproape 500.000.</p>
+          </div>
+
+          <div class="sec">
+            <p class="sec-label">De ce contează</p>
+            <p>Semnal concret că finanțarea expansiunii AI se tensionează: pe măsură ce investitorii devin mai prudenți față de sumele implicate, furnizorul de cipuri ar deveni și garant al datoriei clientului său — o expunere cumulată pe care The Information o estimează la circa 170 de miliarde de dolari în investiții și sprijin de credit către neoclouduri și mari clienți. Relevant pentru urmărirea sustenabilității evaluărilor din sectorul AI și a contextului de piață al investițiilor.</p>
+          </div>
+
+          <div class="verify">
+            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
+            <p>Verdict: confirmat — The Information (relatarea inițială) și Bloomberg (coroborare, citată de TechCrunch, 31 octombrie 2026).</p>
+            <ul class="sources">
+              <li><a href="https://techcrunch.com/2026/10/30/nvidia-weighs-playing-the-cosigner-for-nscales-ai-data-center-in-west-virginia/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>TechCrunch — relatarea coroborată<span class="host">techcrunch.com</span></a></li>
+            </ul>
+          </div>
+
+          <div class="impact">
+            <span class="badge">Impact direct</span>
+            <p>Impact direct azi: minim, fără acțiune; relevanță de context pentru investiții și pentru tema finanțării infrastructurii AI.</p>
+          </div>
+        </article>
+
+        <!-- 2 · 31 oct -->
+        <article id="stire-12" data-cats="securitate">
+          <div class="a-meta">
+            <span class="a-time">31 oct · 08:00</span>
+            <span class="a-cat">NATO · Apărare anti-dronă</span>
+            <span class="a-num">#2 / 2</span>
+          </div>
+          <h2>NATO testează în Letonia un lanț senzor–trăgător anti-dronă care să funcționeze între națiuni</h2>
+
+          <div class="followup">
+            <span class="tag">Urmare la</span>
+            <p><a href="#stire-2">„Bulgaria intră azi în inițiativa NATO împotriva amenințărilor aeriene de joasă altitudine (anti-dronă)”</a> — 30 octombrie, 20:05 (#2). Același arc: apărarea anti-dronă și amenințările de joasă altitudine pe flancul estic.</p>
+          </div>
+
+          <div class="sec">
+            <p class="sec-label">Ce s-a întâmplat</p>
+            <p>La Riga, pe 30 octombrie 2026, președintele Comitetului Militar al NATO, amiralul Giuseppe Cavo Dragone, a asistat la evenimentul de experimentare FUSE (Federated Unified Sensing and Effects), după aproape două săptămâni în care aliați, operatori militari și industrie au testat în Letonia cum pot lucra împreună tehnologii din mai multe națiuni împotriva amenințărilor în evoluție rapidă: conectivitate digitală, apărare anti-dronă și țintire de nouă generație, sub conducerea Comandamentului Aliat pentru Transformare. Cavo Dragone a spus că «Ucraina ne-a învățat că ciclurile de adaptare se măsoară acum în săptămâni, nu în ani» și că anul viitor se așteaptă un lanț senzor–trăgător împotriva roiurilor de drone, funcțional între sistemele mai multor națiuni și desfășurat cu unități de pe flancul estic.</p>
+          </div>
+
+          <div class="sec">
+            <p class="sec-label">De ce contează</p>
+            <p>Reper profesional direct: apărarea anti-dronă și interoperabilitatea între națiuni sunt exact arcul urmărit constant (atacuri cu drone în Marea Neagră, inițiativa NATO împotriva amenințărilor de joasă altitudine la care Bulgaria a aderat tot pe 30 octombrie).</p>
+          </div>
+
+          <div class="verify">
+            <p class="sec-label">Verificare <span class="status">Sursă primară</span></p>
+            <p>Verdict: sursă primară — chiar NATO anunță propria activitate (comunicat NATO, 30 octombrie 2026).</p>
+            <ul class="sources">
+              <li><a href="https://www.nato.int/en/news-and-events/articles/news/2026/10/30/chair-of-the-nato-military-committee-visits-nato-fuse-in-riga" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>NATO — comunicatul oficial<span class="host">www.nato.int</span></a></li>
+            </ul>
+          </div>
+
+          <div class="impact">
+            <span class="badge">Impact direct</span>
+            <p>Impact direct azi: minim, fără acțiune imediată; reper profesional de urmărit.</p>
+          </div>
+        </article>
+      </main>
+      </section>
+
+      <section class="day day-archive" id="zi-2026-10-30">
+        <div class="day-head">
+          <h2>Vineri, 30 octombrie 2026</h2>
+          <span>Ediția de ieri · 10 știri · arhivă (ultimele 7 zile)</span>
+        </div>
+
+      <!-- Chenarul ediției de vineri, 30 octombrie: nivelul a fost ROȘU (sev-red) — furt record, grav. -->
+      <section class="spot sev-red" aria-label="Știrea cea mai importantă a zilei de vineri, 30 octombrie">
         <div class="spot-head">
           <span class="spot-kicker">
             <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13 2 4.5 13.5H11L9.5 22 19 10h-6.5L13 2z"/></svg>
@@ -607,8 +808,8 @@
       </section>
 
       <div class="filter-status" aria-live="polite">
-        <span id="filterLabel">Se afișează: <strong>Toate categoriile — 10 din 10 știri</strong></span>
-        <button class="filter-reset" type="button" id="filterReset" hidden>Resetează filtrul</button>
+        <span class="filter-label">Se afișează: <strong>Toate categoriile — 10 din 10 știri</strong></span>
+        <button class="filter-reset" type="button" hidden>Resetează filtrul</button>
       </div>
 
       <nav class="index" aria-label="Cuprinsul zilei">
@@ -616,7 +817,7 @@
           <h2>Cuprins</h2>
           <span>apasă pe un titlu ca să sari direct la știre · se sincronizează cu filtrul</span>
         </div>
-        <ol id="indexList">
+        <ol class="index-list">
           <li data-cats="securitate"><a href="#stire-1"><time>21:37</time><span class="cat-dot sec" aria-hidden="true"></span><span class="t">Ucraina a finalizat partea sa din scutul antirachetă european Freyja — testele depind acum de parteneri</span><span class="n">#1</span></a></li>
           <li data-cats="securitate"><a href="#stire-2"><time>20:05</time><span class="cat-dot sec" aria-hidden="true"></span><span class="t">Bulgaria intră în inițiativa NATO anti-dronă pentru amenințări la joasă altitudine</span><span class="n">#2</span></a></li>
           <li data-cats="tech"><a href="#stire-3"><time>20:05</time><span class="cat-dot tech" aria-hidden="true"></span><span class="t">Comerțul agentic: agenții AI terți au plasat doar „câteva sute” de comenzi la DoorDash</span><span class="n">#3</span></a></li>
@@ -630,9 +831,9 @@
         </ol>
       </nav>
 
-      <p class="empty" id="emptyMsg">Nicio știre în această categorie azi.</p>
+      <p class="empty">Nicio știre în această categorie azi.</p>
 
-      <main>
+      <div class="day-cards">
         <!-- 1 -->
         <article id="stire-1" data-cats="securitate">
           <div class="a-meta">
@@ -1009,12 +1210,13 @@
             <p>Minim azi ca acțiune imediată.</p>
           </div>
         </article>
-      </main>
+      </div>
+      </section>
 
       <footer>
         <div class="rule" aria-hidden="true"></div>
-        <p>Sfârșitul ediției de azi · Ultima actualizare: vineri, 30 octombrie 2026, 21:37<br />Monitorizarea rulează la circa 3 ore, în fereastra L–V 06:00–22:00 · S–D 07:30–22:00 — dă refresh pentru noutăți.</p>
-        <a class="to-top" href="#stire-1">↑ Înapoi la cea mai nouă știre</a>
+        <p>Sfârșitul ediției de azi · Ultima actualizare: sâmbătă, 31 octombrie 2026, 08:05<br />Monitorizarea rulează la circa 3 ore, în fereastra L–V 06:00–22:00 · S–D 07:30–22:00 — dă refresh pentru noutăți.</p>
+        <a class="to-top" href="#stire-11">↑ Înapoi la cea mai nouă știre</a>
       </footer>
     </div>
 
@@ -1023,19 +1225,23 @@
         var refreshBtn = document.getElementById('refreshBtn');
         refreshBtn.addEventListener('click', function () { window.location.reload(); });
 
-        var tiles = Array.prototype.slice.call(document.querySelectorAll('.kpi[data-filter]'));
-        var bars = Array.prototype.slice.call(document.querySelectorAll('.rhythm .col[data-hour]'));
-        var articles = Array.prototype.slice.call(document.querySelectorAll('article[data-cats]'));
-        var indexItems = Array.prototype.slice.call(document.querySelectorAll('#indexList li[data-cats]'));
-        var emptyMsg = document.getElementById('emptyMsg');
-        var filterLabel = document.getElementById('filterLabel');
-        var filterReset = document.getElementById('filterReset');
         var labels = {
           toate: 'Toate categoriile',
           securitate: 'Securitate & NATO',
           romania: 'România',
           tech: 'Tech & AI'
         };
+
+        // Filtrarea rulează independent în fiecare secțiune de zi (.day):
+        // tile-urile și barele unei zile filtrează doar cardurile și cuprinsul acelei zile.
+        Array.prototype.slice.call(document.querySelectorAll('.day')).forEach(function (section) {
+        var tiles = Array.prototype.slice.call(section.querySelectorAll('.kpi[data-filter]'));
+        var bars = Array.prototype.slice.call(section.querySelectorAll('.rhythm .col[data-hour]'));
+        var articles = Array.prototype.slice.call(section.querySelectorAll('article[data-cats]'));
+        var indexItems = Array.prototype.slice.call(section.querySelectorAll('.index-list li[data-cats]'));
+        var emptyMsg = section.querySelector('.empty');
+        var filterLabel = section.querySelector('.filter-label');
+        var filterReset = section.querySelector('.filter-reset');
         var hintsDefault = {};
         tiles.forEach(function (t) {
           var h = t.querySelector('.kpi-hint');
@@ -1100,7 +1306,7 @@
         }
 
         function scrollToFirst() {
-          var first = document.querySelector('article[data-cats]:not(.hidden)');
+          var first = section.querySelector('article[data-cats]:not(.hidden)');
           if (first) first.scrollIntoView({ behavior: 'smooth', block: 'start' });
         }
 
@@ -1137,6 +1343,7 @@
         filterReset.addEventListener('click', function () {
           selection = { type: 'all' };
           applyFilter();
+        });
         });
       })();
     </script>
