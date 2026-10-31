@@ -1396,9 +1396,13 @@
           tech: 'Tech & AI'
         };
 
-        // Filtrarea rulează independent în fiecare secțiune de zi (.day):
+        // Filtrarea rulează independent în fiecare secțiune de zi (section.day):
         // tile-urile și barele unei zile filtrează doar cardurile și cuprinsul acelei zile.
-        Array.prototype.slice.call(document.querySelectorAll('.day')).forEach(function (section) {
+        // ATENȚIE: selectorul trebuie să fie „section.day", nu „.day" — pastila
+        // „Ediția de azi" din masthead are și ea clasa „day" (span.day); cu „.day"
+        // bucla pornea pe acel span, unde .filter-reset lipsește (null), iar eroarea
+        // oprea tot scriptul înainte să lege vreun buton de filtru.
+        Array.prototype.slice.call(document.querySelectorAll('section.day')).forEach(function (section) {
         var tiles = Array.prototype.slice.call(section.querySelectorAll('.kpi[data-filter]'));
         var bars = Array.prototype.slice.call(section.querySelectorAll('.rhythm .col[data-hour]'));
         var articles = Array.prototype.slice.call(section.querySelectorAll('article[data-cats]'));
@@ -1458,15 +1462,17 @@
             if (show) visible++;
           });
           indexItems.forEach(function (li) { li.classList.toggle('hidden', !matches(li)); });
-          emptyMsg.classList.toggle('show', visible === 0);
-          if (selection.type === 'hour') {
-            filterLabel.innerHTML = 'Se afișează: <strong>Filtru: ora ' + selection.value + ' — ' + visible + ' din ' + articles.length + ' știri</strong>';
-          } else if (selection.type === 'cat') {
-            filterLabel.innerHTML = 'Se afișează: <strong>' + labels[selection.value] + ' — ' + visible + ' din ' + articles.length + ' știri</strong>';
-          } else {
-            filterLabel.innerHTML = 'Se afișează: <strong>' + labels.toate + ' — ' + visible + ' din ' + articles.length + ' știri</strong>';
+          if (emptyMsg) emptyMsg.classList.toggle('show', visible === 0);
+          if (filterLabel) {
+            if (selection.type === 'hour') {
+              filterLabel.innerHTML = 'Se afișează: <strong>Filtru: ora ' + selection.value + ' — ' + visible + ' din ' + articles.length + ' știri</strong>';
+            } else if (selection.type === 'cat') {
+              filterLabel.innerHTML = 'Se afișează: <strong>' + labels[selection.value] + ' — ' + visible + ' din ' + articles.length + ' știri</strong>';
+            } else {
+              filterLabel.innerHTML = 'Se afișează: <strong>' + labels.toate + ' — ' + visible + ' din ' + articles.length + ' știri</strong>';
+            }
           }
-          filterReset.hidden = selection.type === 'all';
+          if (filterReset) filterReset.hidden = selection.type === 'all';
         }
 
         function scrollToFirst() {
@@ -1504,7 +1510,7 @@
           });
         });
 
-        filterReset.addEventListener('click', function () {
+        if (filterReset) filterReset.addEventListener('click', function () {
           selection = { type: 'all' };
           applyFilter();
         });
