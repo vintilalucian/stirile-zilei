@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="color-scheme" content="light dark" />
-    <meta name="tirile-versiune" content="2026-11-01T14:01:00+01:00|4|amber" />
+    <meta name="tirile-versiune" content="2026-11-01T17:04:00+01:00|5|amber" />
     <link rel="icon" href="data:," />
     <title>Știrile zilei</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -509,9 +509,9 @@
     <div class="topbar">
       <div class="topbar-inner">
         <span class="dot" aria-hidden="true"></span>
-        <span><strong>Duminică, 1 noiembrie 2026</strong> · actualizat la <strong>14:01</strong></span>
+        <span><strong>Duminică, 1 noiembrie 2026</strong> · actualizat la <strong>17:04</strong></span>
         <span aria-hidden="true">·</span>
-        <span>4 știri azi</span>
+        <span>5 știri azi</span>
         <span class="spacer"></span>
         <button class="refresh-btn" type="button" id="refreshBtn" aria-label="Reîmprospătează pagina">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg>
@@ -563,15 +563,15 @@
       <section class="dashboard" aria-label="Panou de ansamblu">
         <div class="dash-head">
           <span class="dash-title">Dashboard · Azi</span>
-          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 14:01</span>
+          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 17:04</span>
           <span class="dash-meta">Fereastră monitorizare <strong>L–V 06:00–22:00 · S–D 07:30–22:00</strong> · pas ~3 ore</span>
         </div>
 
         <div class="kpi-grid" role="group" aria-label="Filtrează după categorie — apasă pe un tile">
           <button class="kpi" type="button" data-filter="toate" aria-pressed="true">
             <span class="kpi-top"><span class="kpi-label">Toate știrile</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">4</span>
-            <span class="kpi-sub">știri verificate azi, în 3 rulări</span>
+            <span class="kpi-value">5</span>
+            <span class="kpi-sub">știri verificate azi, în 4 rulări</span>
             <span class="kpi-bar" aria-hidden="true"><i style="width:100%"></i></span>
             <span class="kpi-hint">Apasă pentru toate</span>
           </button>
@@ -579,7 +579,7 @@
             <span class="kpi-top"><span class="kpi-label">Securitate &amp; NATO</span><span class="kpi-check" aria-hidden="true">✓</span></span>
             <span class="kpi-value">3</span>
             <span class="kpi-sub">Portaluri fiscale online · dragor pentru Bulgaria · pactul Hansa</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:75%"></i></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:60%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="romania" aria-pressed="false">
@@ -591,9 +591,9 @@
           </button>
           <button class="kpi" type="button" data-filter="tech" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">Tech &amp; AI</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">0</span>
-            <span class="kpi-sub">nicio știre azi</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:0%"></i></span>
+            <span class="kpi-value">1</span>
+            <span class="kpi-sub">Procesul NAACP vs xAI — turbine fără autorizație la Colossus</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:20%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
         </div>
@@ -605,14 +605,15 @@
               <button class="col" type="button" data-hour="08:00" aria-pressed="false" aria-label="Filtrează știrile de la ora 08:00 — 1 știre"><span class="n">1</span><span class="bar" style="height:22px"></span><span class="t">08:00</span></button>
               <button class="col" type="button" data-hour="11:06" aria-pressed="false" aria-label="Filtrează știrile de la ora 11:06 — 2 știri"><span class="n">2</span><span class="bar" style="height:40px"></span><span class="t">11:06</span></button>
               <button class="col" type="button" data-hour="14:01" aria-pressed="false" aria-label="Filtrează știrile de la ora 14:01 — 1 știre"><span class="n">1</span><span class="bar" style="height:22px"></span><span class="t">14:01</span></button>
+              <button class="col" type="button" data-hour="17:00" aria-pressed="false" aria-label="Filtrează știrile de la ora 17:00 — 1 știre"><span class="n">1</span><span class="bar" style="height:22px"></span><span class="t">17:00</span></button>
             </div>
             <p class="rhythm-hint">Apasă pe o bară ca să vezi doar știrile din rularea aceea; apasă din nou pe ea pentru toate.</p>
           </div>
           <div class="dash-panel">
             <h3>Stare ediție</h3>
             <ul class="status-list">
-              <li><span class="k">Ultima actualizare</span><span class="v">Azi, 14:01</span></li>
-              <li><span class="k">Cea mai nouă</span><span class="v">Norvegia și Germania încep producția de tancuri Leopard 2A8 în Norvegia · 14:01</span></li>
+              <li><span class="k">Ultima actualizare</span><span class="v">Azi, 17:04</span></li>
+              <li><span class="k">Cea mai nouă</span><span class="v">Procesul NAACP împotriva xAI pentru turbinele fără autorizație de la Colossus merge mai departe · 17:04</span></li>
               <li><span class="k">Acoperire</span><span class="v">Ultimele 7 zile în arhivă</span></li>
             </ul>
           </div>
@@ -620,7 +621,7 @@
       </section>
 
       <div class="filter-status" aria-live="polite">
-        <span class="filter-label">Se afișează: <strong>Toate categoriile — 4 din 4 știri</strong></span>
+        <span class="filter-label">Se afișează: <strong>Toate categoriile — 5 din 5 știri</strong></span>
         <button class="filter-reset" type="button" hidden>Resetează filtrul</button>
       </div>
 
@@ -630,22 +631,64 @@
           <span>apasă pe un titlu ca să sari direct la știre · se sincronizează cu filtrul</span>
         </div>
         <ol class="index-list">
-          <li data-cats="securitate"><a href="#stire-20"><time>14:01</time><span class="cat-dot sec" aria-hidden="true"></span><span class="t">Norvegia și Germania încep producția de tancuri Leopard 2A8 în Norvegia, în cadrul pactului de apărare „Hansa” — de la tancuri la spațiu</span><span class="n">#1</span></a></li>
-          <li data-cats="securitate"><a href="#stire-18"><time>11:06</time><span class="cat-dot sec" aria-hidden="true"></span><span class="t">Portalurile fiscale belgiene MyMinfin, Tax-on-Web și Biztax sunt din nou online după atacul cibernetic din 28 octombrie; termenul de depunere prelungit până la 16 noiembrie</span><span class="n">#2</span></a></li>
-          <li data-cats="securitate"><a href="#stire-19"><time>11:06</time><span class="cat-dot sec" aria-hidden="true"></span><span class="t">Belgia a predat Bulgariei primul dragor de mine Tripartite, Bellis (redenumit Briz) — primul pas din transferul a șapte nave pentru securitatea Mării Negre</span><span class="n">#3</span></a></li>
-          <li data-cats="belgia"><a href="#stire-17"><time>08:00</time><span class="cat-dot" style="background:var(--muted)" aria-hidden="true"></span><span class="t">Ce se schimbă în Belgia de la 1 noiembrie: salariu net, taxă pe coletele din afara UE, vaccinuri</span><span class="n">#4</span></a></li>
+          <li data-cats="tech"><a href="#stire-21"><time>17:00</time><span class="cat-dot tech" aria-hidden="true"></span><span class="t">Procesul NAACP împotriva xAI pentru turbinele fără autorizație de la Colossus merge mai departe — judecătorul respinge cererea de clasare</span><span class="n">#1</span></a></li>
+          <li data-cats="securitate"><a href="#stire-20"><time>14:01</time><span class="cat-dot sec" aria-hidden="true"></span><span class="t">Norvegia și Germania încep producția de tancuri Leopard 2A8 în Norvegia, în cadrul pactului de apărare „Hansa” — de la tancuri la spațiu</span><span class="n">#2</span></a></li>
+          <li data-cats="securitate"><a href="#stire-18"><time>11:06</time><span class="cat-dot sec" aria-hidden="true"></span><span class="t">Portalurile fiscale belgiene MyMinfin, Tax-on-Web și Biztax sunt din nou online după atacul cibernetic din 28 octombrie; termenul de depunere prelungit până la 16 noiembrie</span><span class="n">#3</span></a></li>
+          <li data-cats="securitate"><a href="#stire-19"><time>11:06</time><span class="cat-dot sec" aria-hidden="true"></span><span class="t">Belgia a predat Bulgariei primul dragor de mine Tripartite, Bellis (redenumit Briz) — primul pas din transferul a șapte nave pentru securitatea Mării Negre</span><span class="n">#4</span></a></li>
+          <li data-cats="belgia"><a href="#stire-17"><time>08:00</time><span class="cat-dot" style="background:var(--muted)" aria-hidden="true"></span><span class="t">Ce se schimbă în Belgia de la 1 noiembrie: salariu net, taxă pe coletele din afara UE, vaccinuri</span><span class="n">#5</span></a></li>
         </ol>
       </nav>
 
       <p class="empty">Nicio știre în această categorie azi.</p>
 
       <main>
-        <!-- 1 · 1 nov · 14:01 -->
+        <!-- 1 · 1 nov · 17:00 -->
+        <article id="stire-21" data-cats="tech">
+          <div class="a-meta">
+            <span class="a-time">1 nov · 17:00</span>
+            <span class="a-cat">Tech &amp; AI · Centre de date · Litigii de mediu</span>
+            <span class="a-num">#1 / 5</span>
+          </div>
+          <h2>Procesul NAACP împotriva xAI pentru turbinele fără autorizație de la Colossus merge mai departe — judecătorul respinge cererea de clasare</h2>
+
+          <div class="sec">
+            <p class="sec-label">Ce s-a întâmplat</p>
+            <p>Judecătoarea federală Debra M. Brown a respins, printr-o decizie din 30 octombrie 2026 relatată pe 31 octombrie, cererea xAI de clasare a procesului intentat de NAACP în temeiul Clean Air Act privind turbinele pe gaz care alimentează centrul de date Colossus de lângă Memphis. Potrivit plângerii, relatate de TechCrunch, Southern Environmental Law Center, în numele NAACP, susține că xAI „a instalat și a operat cel puțin 35 de turbine cu combustie și alte surse de poluare a aerului la amplasamentul Colossus fără să obțină vreodată autorizațiile prealabile de construcție sau de funcționare necesare”.</p>
+            <p>Judecătoarea a respins argumentele xAI — că turbinele montate pe remorci ar fi „surse mobile” scutite de autorizații și că procesele cetățenești ar fi neconstituționale — și a decis că pretențiile „vor merge mai departe”.</p>
+            <p>Precizare de integritate: decizia nu stabilește încă o încălcare; procesul continuă, iar o cerere de injuncție provizorie a NAACP rămâne nesoluționată.</p>
+          </div>
+
+          <div class="sec">
+            <p class="sec-label">De ce contează</p>
+            <p>Este un precedent de autorizare pentru infrastructura AI: extinderea centrelor de date nu mai e frânată doar de costuri și de energie, ci și de litigii de mediu care pot întârzia alimentarea cu energie a noilor capacități de calcul. Continuă arcul de la 31 octombrie despre reacția publică și politică împotriva centrelor de date AI (moratorii locale, subiect electoral în SUA) și despre încetinirea finanțărilor AI.</p>
+          </div>
+
+          <div class="verify">
+            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
+            <p>Verdict: sursă primară + confirmat — ordinul judecătoresc din 30 octombrie 2026 (sursă primară, citat în comunicatul Southern Environmental Law Center), TechCrunch (sursă curatoriată, 31 octombrie 2026) și Technopolis News (31 octombrie 2026) relatează aceeași decizie: respingerea cererii de clasare și continuarea procesului.</p>
+            <ul class="sources">
+              <li><a href="https://techcrunch.com/2026/10/31/judge-allows-naacp-lawsuit-over-xai-data-center-pollution-to-move-forward/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>TechCrunch — „Judge allows NAACP lawsuit over xAI data center pollution to move forward” (31 octombrie 2026)<span class="host">techcrunch.com</span></a></li>
+              <li><a href="https://technopolis.news/en/xai-pollution-lawsuit-survives-dismissal/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Technopolis News — „xAI pollution lawsuit survives dismissal” (31 octombrie 2026)<span class="host">technopolis.news</span></a></li>
+            </ul>
+          </div>
+
+          <div class="opposing">
+            <p class="sec-label">Tabăra adversă</p>
+            <p>xAI susține că turbinele sunt surse mobile scutite de autorizațiile pentru centrale fixe — argumentul respins de judecătoare (sursa: <a href="https://techcrunch.com/2026/10/31/judge-allows-naacp-lawsuit-over-xai-data-center-pollution-to-move-forward/" target="_blank" rel="noopener">TechCrunch</a>).</p>
+          </div>
+
+          <div class="impact">
+            <span class="badge">Impact direct</span>
+            <p>Impact direct minim pentru el azi — nu operează centre de date și nu e parte în litigiu. Relevanță de context: automatizările lui rulează pe infrastructură AI cloud, iar blocajele de autorizare și litigii ca acesta se adaugă presiunii asupra costurilor și ritmului de extindere a capacității AI, deja vizibilă în vânzările de acțiuni tech de la 31 octombrie.</p>
+          </div>
+        </article>
+
+        <!-- 2 · 1 nov · 14:01 -->
         <article id="stire-20" data-cats="securitate">
           <div class="a-meta">
             <span class="a-time">1 nov · 14:01</span>
             <span class="a-cat">Securitate &amp; NATO</span>
-            <span class="a-num">#1 / 4</span>
+            <span class="a-num">#2 / 5</span>
           </div>
           <h2>Norvegia și Germania încep producția de tancuri Leopard 2A8 în Norvegia, în cadrul pactului de apărare „Hansa” — de la tancuri la spațiu</h2>
 
@@ -677,13 +720,13 @@
           </div>
         </article>
 
-        <!-- 2 · 1 nov · 11:06 -->
+        <!-- 3 · 1 nov · 11:06 -->
         <article id="stire-18" data-cats="securitate">
           <div class="a-meta">
             <span class="a-time">1 nov · 11:06</span>
             <span class="a-cat">Securitate &amp; NATO · Incident cibernetic — infrastructură publică</span>
             <span class="spot-tag">Știrea zilei</span>
-            <span class="a-num">#2 / 4</span>
+            <span class="a-num">#3 / 5</span>
           </div>
           <h2>Portalurile fiscale belgiene MyMinfin, Tax-on-Web și Biztax sunt din nou online după atacul cibernetic din 28 octombrie; termenul de depunere prelungit până la 16 noiembrie</h2>
 
@@ -720,12 +763,12 @@
           </div>
         </article>
 
-        <!-- 3 · 1 nov · 11:06 -->
+        <!-- 4 · 1 nov · 11:06 -->
         <article id="stire-19" data-cats="securitate">
           <div class="a-meta">
             <span class="a-time">1 nov · 11:06</span>
             <span class="a-cat">Securitate &amp; NATO · Marea Neagră — contramăsuri miniere</span>
-            <span class="a-num">#3 / 4</span>
+            <span class="a-num">#4 / 5</span>
           </div>
           <h2>Belgia a predat Bulgariei primul dragor de mine Tripartite, Bellis (redenumit Briz) — primul pas din transferul a șapte nave pentru securitatea Mării Negre</h2>
 
@@ -758,12 +801,12 @@
           </div>
         </article>
 
-        <!-- 4 · 1 nov -->
+        <!-- 5 · 1 nov -->
         <article id="stire-17" data-cats="belgia">
           <div class="a-meta">
             <span class="a-time">1 nov · 08:00</span>
             <span class="a-cat">Belgia · Schimbări de la 1 noiembrie</span>
-            <span class="a-num">#4 / 4</span>
+            <span class="a-num">#5 / 5</span>
           </div>
           <h2>Ce se schimbă în Belgia de la 1 noiembrie: salariu net, taxă pe coletele din afara UE, vaccinuri</h2>
 
