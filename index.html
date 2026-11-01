@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="color-scheme" content="light dark" />
-    <meta name="tirile-versiune" content="2026-10-31T20:06+01:00|6|amber" />
+    <meta name="tirile-versiune" content="2026-11-01T08:10:00+01:00|1|green" />
     <link rel="icon" href="data:," />
     <title>Știrile zilei</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -509,9 +509,9 @@
     <div class="topbar">
       <div class="topbar-inner">
         <span class="dot" aria-hidden="true"></span>
-        <span><strong>Sâmbătă, 31 octombrie 2026</strong> · actualizat la <strong>20:06</strong></span>
+        <span><strong>Duminică, 1 noiembrie 2026</strong> · actualizat la <strong>08:10</strong></span>
         <span aria-hidden="true">·</span>
-        <span>6 știri azi</span>
+        <span>1 știre azi</span>
         <span class="spacer"></span>
         <button class="refresh-btn" type="button" id="refreshBtn" aria-label="Reîmprospătează pagina">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg>
@@ -526,12 +526,162 @@
         <h1>Știrile zilei</h1>
         <div class="date-line">
           <span class="day">Ediția de azi</span>
-          <span>Sâmbătă, 31 octombrie 2026 · Europe/Brussels</span>
+          <span>Duminică, 1 noiembrie 2026 · Europe/Brussels</span>
         </div>
         <p class="lede">Panou de ansamblu sus, articole complete jos. <strong>Apasă pe un tile de categorie</strong> ca să filtrezi pagina — cardurile rămân întregi, la lățime de citit, cele mai noi primele.</p>
       </header>
 
-      <section class="day" id="zi-2026-10-31">
+      <section class="day" id="zi-2026-11-01">
+      <!-- Chenar permanent: știrea cea mai importantă a zilei — chiar sub masthead,
+           ÎNAINTEA dashboardului, vizibilă din prima, fără scroll.
+           Nivelul de azi: VERDE (sev-green) — cea mai importantă, dar fără gravitate:
+           situație calmă, fără acțiune imediată.
+           Chenarul rămâne în afara logicii de filtrare: vizibil indiferent de filtrul de categorie. -->
+      <section class="spot sev-green" aria-label="Știrea cea mai importantă a zilei">
+        <div class="spot-head">
+          <span class="spot-kicker">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13 2 4.5 13.5H11L9.5 22 19 10h-6.5L13 2z"/></svg>
+            Știrea zilei · Atenție rapidă
+          </span>
+          <span class="spot-time">1 nov · 08:00</span>
+          <span class="spot-pill">Nivel verde — normal</span>
+        </div>
+        <h2 class="spot-title">Ce se schimbă în Belgia de la 1 noiembrie: salariu net, taxă pe coletele din afara UE, vaccinuri</h2>
+        <p class="spot-why"><strong>De ce e în față:</strong> te privește direct, de azi — recalcularea reținerii la sursă îți schimbă salariul net din noiembrie fără să faci nimic, iar taxa nouă de manipulare se adaugă la coletele comandate din afara UE.</p>
+        <p class="spot-lead">De la 1 noiembrie 2026, Belgia recalculează reținerea la sursă pe salarii după reforma fiscală din legea din 15 iulie 2026, adaugă o taxă suplimentară de manipulare de 2 euro pe categorie de produs la coletele din magazine online din afara UE și schimbă calendarul vaccinării sugarilor în Valonia și Bruxelles.</p>
+        <div class="spot-foot">
+          <a class="spot-link" href="#stire-17">Citește știrea completă ↓</a>
+          <div class="sev-scale" role="img" aria-label="Scară de gravitate: verde — normal, galben — de urmărit, roșu — grav. Nivelul de azi: verde.">
+            <span class="sev-item on"><i class="sev-dot g" aria-hidden="true"></i>Verde · normal</span>
+            <span class="sev-item"><i class="sev-dot y" aria-hidden="true"></i>Galben · de urmărit</span>
+            <span class="sev-item"><i class="sev-dot r" aria-hidden="true"></i>Roșu · grav</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Dashboard -->
+      <section class="dashboard" aria-label="Panou de ansamblu">
+        <div class="dash-head">
+          <span class="dash-title">Dashboard · Azi</span>
+          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 08:10</span>
+          <span class="dash-meta">Fereastră monitorizare <strong>L–V 06:00–22:00 · S–D 07:30–22:00</strong> · pas ~3 ore</span>
+        </div>
+
+        <div class="kpi-grid" role="group" aria-label="Filtrează după categorie — apasă pe un tile">
+          <button class="kpi" type="button" data-filter="toate" aria-pressed="true">
+            <span class="kpi-top"><span class="kpi-label">Toate știrile</span><span class="kpi-check" aria-hidden="true">✓</span></span>
+            <span class="kpi-value">1</span>
+            <span class="kpi-sub">știre verificată azi, în 1 rulare</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:100%"></i></span>
+            <span class="kpi-hint">Apasă pentru toate</span>
+          </button>
+          <button class="kpi" type="button" data-filter="securitate" aria-pressed="false">
+            <span class="kpi-top"><span class="kpi-label">Securitate &amp; NATO</span><span class="kpi-check" aria-hidden="true">✓</span></span>
+            <span class="kpi-value">0</span>
+            <span class="kpi-sub">nicio știre azi</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:0%"></i></span>
+            <span class="kpi-hint">Apasă pentru a filtra →</span>
+          </button>
+          <button class="kpi" type="button" data-filter="romania" aria-pressed="false">
+            <span class="kpi-top"><span class="kpi-label">România</span><span class="kpi-check" aria-hidden="true">✓</span></span>
+            <span class="kpi-value">0</span>
+            <span class="kpi-sub">nicio știre azi</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:0%"></i></span>
+            <span class="kpi-hint">Apasă pentru a filtra →</span>
+          </button>
+          <button class="kpi" type="button" data-filter="tech" aria-pressed="false">
+            <span class="kpi-top"><span class="kpi-label">Tech &amp; AI</span><span class="kpi-check" aria-hidden="true">✓</span></span>
+            <span class="kpi-value">0</span>
+            <span class="kpi-sub">nicio știre azi</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:0%"></i></span>
+            <span class="kpi-hint">Apasă pentru a filtra →</span>
+          </button>
+        </div>
+
+        <div class="dash-foot">
+          <div class="dash-panel">
+            <h3>Ritmul zilei — știri pe rulare</h3>
+            <div class="rhythm" role="group" aria-label="Filtru după ora publicării — apasă pe o rulare ca să vezi doar știrile ei">
+              <button class="col" type="button" data-hour="08:00" aria-pressed="false" aria-label="Filtrează știrile de la ora 08:00 — 1 știre"><span class="n">1</span><span class="bar" style="height:22px"></span><span class="t">08:00</span></button>
+            </div>
+            <p class="rhythm-hint">Apasă pe o bară ca să vezi doar știrile din rularea aceea; apasă din nou pe ea pentru toate.</p>
+          </div>
+          <div class="dash-panel">
+            <h3>Stare ediție</h3>
+            <ul class="status-list">
+              <li><span class="k">Ultima actualizare</span><span class="v">Azi, 08:10</span></li>
+              <li><span class="k">Cea mai nouă</span><span class="v">Schimbări în Belgia de la 1 noiembrie · 08:00</span></li>
+              <li><span class="k">Acoperire</span><span class="v">Ultimele 7 zile în arhivă</span></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <div class="filter-status" aria-live="polite">
+        <span class="filter-label">Se afișează: <strong>Toate categoriile — 1 din 1 știri</strong></span>
+        <button class="filter-reset" type="button" hidden>Resetează filtrul</button>
+      </div>
+
+      <nav class="index" aria-label="Cuprinsul zilei">
+        <div class="index-head">
+          <h2>Cuprins</h2>
+          <span>apasă pe un titlu ca să sari direct la știre · se sincronizează cu filtrul</span>
+        </div>
+        <ol class="index-list">
+          <li data-cats="belgia"><a href="#stire-17"><time>08:00</time><span class="cat-dot" style="background:var(--muted)" aria-hidden="true"></span><span class="t">Ce se schimbă în Belgia de la 1 noiembrie: salariu net, taxă pe coletele din afara UE, vaccinuri</span><span class="n">#1</span></a></li>
+        </ol>
+      </nav>
+
+      <p class="empty">Nicio știre în această categorie azi.</p>
+
+      <main>
+        <!-- 1 · 1 nov -->
+        <article id="stire-17" data-cats="belgia">
+          <div class="a-meta">
+            <span class="a-time">1 nov · 08:00</span>
+            <span class="a-cat">Belgia · Schimbări de la 1 noiembrie</span>
+            <span class="spot-tag">Știrea zilei</span>
+            <span class="a-num">#1 / 1</span>
+          </div>
+          <h2>Ce se schimbă în Belgia de la 1 noiembrie: salariu net, taxă pe coletele din afara UE, vaccinuri</h2>
+
+          <div class="sec">
+            <p class="sec-label">Ce s-a întâmplat</p>
+            <p>De astăzi, 1 noiembrie 2026, intră în vigoare în Belgia mai multe schimbări. Reținerea la sursă pe salarii (précompte professionnel) se recalculează după reforma fiscală din legea din 15 iulie 2026, astfel încât salariul net se modifică automat începând cu plata din noiembrie, fără ca angajatul să facă nimic — angajatorul sau secretariatul social aplică noul calcul.</p>
+            <p>Coletele din magazine online din afara UE primesc o taxă suplimentară de manipulare de 2 euro pe categorie de produs, peste taxa de colet de 3 euro deja existentă. În Valonia și Bruxelles se schimbă și calendarul vaccinării sugarilor (hexavalent la 2, 4 și 12 luni; ultima doză PCV13 mutată de la 12 la 15 luni), iar Valonia reformează regulile de înmormântare.</p>
+          </div>
+
+          <div class="sec">
+            <p class="sec-label">De ce contează</p>
+            <p>Lucian este angajat permanent în Belgia (NCIA, din toamna lui 2026), deci recalcularea reținerii la sursă îi afectează direct fluturașul de salariu din noiembrie. Taxa de 2 euro pe coletele din afara UE îl privește la comenzile online din afara Uniunii.</p>
+          </div>
+
+          <div class="verify">
+            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
+            <p>Verdict: confirmat — The Brussels Times (1 noiembrie 2026), BelgiumNow (29 și 28 octombrie 2026) și PwC Belgia descriu aceleași schimbări intrate în vigoare azi.</p>
+            <p>Efectul exact pe fluturaș depinde de componența gospodăriei: potrivit BelgiumNow (care citează La DH), persoanele singure fără copii câștigă fix 8,47 euro/lună, în cuplurile cu două venituri câștigul de 8,47 euro se aplică fiecărui partener, familiile cu doi copii aflați în întreținere câștigă 9,47 euro/lună, iar gospodăriile cu un singur venit pot pierde până la 30 de euro/lună.</p>
+            <ul class="sources">
+              <li><a href="https://www.brusselstimes.com/belgium/2384984/body-bag-burial-changed-wages-package-tax-what-changes-in-belgium-on-1-november" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>The Brussels Times — „Body bag burial, changed wages, package tax: What changes in Belgium on 1 November?” (1 noiembrie 2026, 05:41)<span class="host">brusselstimes.com</span></a></li>
+              <li><a href="https://belgium-now.com/2026/10/29/new-withholding-tax-rules-change-belgian-net-pay/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>BelgiumNow — „New withholding tax rules change Belgian take-home pay from November” (29 octombrie 2026)<span class="host">belgium-now.com</span></a></li>
+              <li><a href="https://belgium-now.com/2026/10/28/what-changes-in-belgium-1-november-2026/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>BelgiumNow — „What changes in Belgium on 1 November 2026: pay, vaccines, burials, parcels” (28 octombrie 2026)<span class="host">belgium-now.com</span></a></li>
+              <li><a href="https://www.pwc.be/en/news-publications/news/individuals.html" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>PwC Belgia — pagina „Individuals” despre legea din 15 iulie 2026<span class="host">pwc.be</span></a></li>
+            </ul>
+          </div>
+
+          <div class="impact">
+            <span class="badge">Impact direct</span>
+            <p>Impact direct mic, fără acțiune urgentă: merită verificat fluturașul de salariu din noiembrie, ca să vadă în ce direcție s-a mișcat netul; la comenzile online din afara UE, taxa suplimentară de 2 euro pe categorie se adaugă la costul coletului.</p>
+          </div>
+        </article>
+      </main>
+      </section>
+
+      <section class="day day-archive" id="zi-2026-10-31">
+        <div class="day-head">
+          <h2>Sâmbătă, 31 octombrie 2026</h2>
+          <span>Ediția de ieri · 6 știri · arhivă (ultimele 7 zile)</span>
+        </div>
+
       <!-- Chenar permanent: știrea cea mai importantă a zilei — chiar sub masthead,
            ÎNAINTEA dashboardului, vizibilă din prima, fără scroll.
            Nivelul de azi: GALBEN (sev-amber) — finanțarea AI se tensionează, de urmărit.
@@ -1379,8 +1529,8 @@
 
       <footer>
         <div class="rule" aria-hidden="true"></div>
-        <p>Sfârșitul ediției de azi · Ultima actualizare: sâmbătă, 31 octombrie 2026, 17:06<br />Monitorizarea rulează la circa 3 ore, în fereastra L–V 06:00–22:00 · S–D 07:30–22:00 — dă refresh pentru noutăți.</p>
-        <a class="to-top" href="#stire-13">↑ Înapoi la cea mai nouă știre</a>
+        <p>Sfârșitul ediției de azi · Ultima actualizare: duminică, 1 noiembrie 2026, 08:10<br />Monitorizarea rulează la circa 3 ore, în fereastra L–V 06:00–22:00 · S–D 07:30–22:00 — dă refresh pentru noutăți.</p>
+        <a class="to-top" href="#stire-17">↑ Înapoi la cea mai nouă știre</a>
       </footer>
     </div>
 
