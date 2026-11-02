@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="color-scheme" content="light dark" />
-    <meta name="tirile-versiune" content="2026-11-02T17:04:00+01:00|4|amber" />
+    <meta name="tirile-versiune" content="2026-11-02T20:06:00+01:00|5|amber" />
     <link rel="icon" href="data:," />
     <title>Știrile zilei</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -509,9 +509,9 @@
     <div class="topbar">
       <div class="topbar-inner">
         <span class="dot" aria-hidden="true"></span>
-        <span><strong>Luni, 2 noiembrie 2026</strong> · actualizat la <strong>17:04</strong></span>
+        <span><strong>Luni, 2 noiembrie 2026</strong> · actualizat la <strong>20:06</strong></span>
         <span aria-hidden="true">·</span>
-        <span>4 știri azi</span>
+        <span>5 știri azi</span>
         <span class="spacer"></span>
         <button class="refresh-btn" type="button" id="refreshBtn" aria-label="Reîmprospătează pagina">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg>
@@ -563,15 +563,15 @@
       <section class="dashboard" aria-label="Panou de ansamblu">
         <div class="dash-head">
           <span class="dash-title">Dashboard · Azi</span>
-          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 17:04</span>
+          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 20:06</span>
           <span class="dash-meta">Fereastră monitorizare <strong>L–V 06:00–22:00 · S–D 07:30–22:00</strong> · pas ~3 ore</span>
         </div>
 
         <div class="kpi-grid" role="group" aria-label="Filtrează după categorie — apasă pe un tile">
           <button class="kpi" type="button" data-filter="toate" aria-pressed="true">
             <span class="kpi-top"><span class="kpi-label">Toate știrile</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">4</span>
-            <span class="kpi-sub">știri verificate azi, în 4 rulări</span>
+            <span class="kpi-value">5</span>
+            <span class="kpi-sub">știri verificate azi, în 5 rulări</span>
             <span class="kpi-bar" aria-hidden="true"><i style="width:100%"></i></span>
             <span class="kpi-hint">Apasă pentru toate</span>
           </button>
@@ -579,7 +579,7 @@
             <span class="kpi-top"><span class="kpi-label">Securitate &amp; NATO</span><span class="kpi-check" aria-hidden="true">✓</span></span>
             <span class="kpi-value">1</span>
             <span class="kpi-sub">Atac cibernetic suspect la frigiderele Delhaize și Carrefour</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:25%"></i></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:20%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="romania" aria-pressed="false">
@@ -591,9 +591,9 @@
           </button>
           <button class="kpi" type="button" data-filter="tech" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">Tech &amp; AI</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">1</span>
-            <span class="kpi-sub">OpenAI unește taburile Chat și Work în ChatGPT</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:25%"></i></span>
+            <span class="kpi-value">2</span>
+            <span class="kpi-sub">Musk strânge limitele Grok Bot · OpenAI unește taburile Chat și Work în ChatGPT</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:40%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
         </div>
@@ -606,14 +606,15 @@
               <button class="col" type="button" data-hour="11:00" aria-pressed="false" aria-label="Filtrează știrile de la ora 11:00 — 1 știre"><span class="n">1</span><span class="bar" style="height:22px"></span><span class="t">11:00</span></button>
               <button class="col" type="button" data-hour="14:03" aria-pressed="false" aria-label="Filtrează știrile de la ora 14:03 — 1 știre"><span class="n">1</span><span class="bar" style="height:22px"></span><span class="t">14:03</span></button>
               <button class="col" type="button" data-hour="17:04" aria-pressed="false" aria-label="Filtrează știrile de la ora 17:04 — 1 știre"><span class="n">1</span><span class="bar" style="height:22px"></span><span class="t">17:04</span></button>
+              <button class="col" type="button" data-hour="20:00" aria-pressed="false" aria-label="Filtrează știrile de la ora 20:00 — 1 știre"><span class="n">1</span><span class="bar" style="height:22px"></span><span class="t">20:00</span></button>
             </div>
             <p class="rhythm-hint">Apasă pe o bară ca să vezi doar știrile din rularea aceea; apasă din nou pe ea pentru toate.</p>
           </div>
           <div class="dash-panel">
             <h3>Stare ediție</h3>
             <ul class="status-list">
-              <li><span class="k">Ultima actualizare</span><span class="v">Azi, 17:04</span></li>
-              <li><span class="k">Cea mai nouă</span><span class="v">OpenAI unește taburile Chat și Work în ChatGPT — iar ChatGPT și Codex vor împărți aceeași limită de utilizare · 17:04</span></li>
+              <li><span class="k">Ultima actualizare</span><span class="v">Azi, 20:06</span></li>
+              <li><span class="k">Cea mai nouă</span><span class="v">Musk strânge limitele Grok Bot: costurile de servire, «nesustenabil de mari» față de venituri · 20:00</span></li>
               <li><span class="k">Acoperire</span><span class="v">Ultimele 7 zile în arhivă</span></li>
             </ul>
           </div>
@@ -621,7 +622,7 @@
       </section>
 
       <div class="filter-status" aria-live="polite">
-        <span class="filter-label">Se afișează: <strong>Toate categoriile — 4 din 4 știri</strong></span>
+        <span class="filter-label">Se afișează: <strong>Toate categoriile — 5 din 5 știri</strong></span>
         <button class="filter-reset" type="button" hidden>Resetează filtrul</button>
       </div>
 
@@ -631,22 +632,64 @@
           <span>apasă pe un titlu ca să sari direct la știre · se sincronizează cu filtrul</span>
         </div>
         <ol class="index-list">
-          <li data-cats="tech"><a href="#stire-26"><time>17:04</time><span class="cat-dot tech" aria-hidden="true"></span><span class="t">OpenAI unește taburile Chat și Work în ChatGPT — iar ChatGPT și Codex vor împărți aceeași limită de utilizare</span><span class="n">#1</span></a></li>
-          <li data-cats="belgia"><a href="#stire-25"><time>14:03</time><span class="cat-dot" style="background:var(--muted)" aria-hidden="true"></span><span class="t">De Wever și-a prezentat demisia regelui, după ce negocierile pentru buget au picat peste noapte — regele își rezervă decizia</span><span class="n">#2</span></a></li>
-          <li data-cats="securitate belgia"><a href="#stire-24"><time>11:00</time><span class="cat-dot sec" aria-hidden="true"></span><span class="t">Atac cibernetic suspect la frigiderele Delhaize și Carrefour din Belgia: cel puțin 40 de magazine Delhaize și 15 Carrefour afectate peste noapte</span><span class="n">#3</span></a></li>
-          <li data-cats="belgia"><a href="#stire-23"><time>08:07</time><span class="cat-dot" style="background:var(--muted)" aria-hidden="true"></span><span class="t">Criza bugetară belgiană: negocierile au picat peste noapte, iar De Wever ar putea să-și prezinte demisia regelui</span><span class="n">#4</span></a></li>
+          <li data-cats="tech"><a href="#stire-27"><time>20:00</time><span class="cat-dot tech" aria-hidden="true"></span><span class="t">Musk strânge limitele Grok Bot: costurile de servire, «nesustenabil de mari» față de venituri</span><span class="n">#1</span></a></li>
+          <li data-cats="tech"><a href="#stire-26"><time>17:04</time><span class="cat-dot tech" aria-hidden="true"></span><span class="t">OpenAI unește taburile Chat și Work în ChatGPT — iar ChatGPT și Codex vor împărți aceeași limită de utilizare</span><span class="n">#2</span></a></li>
+          <li data-cats="belgia"><a href="#stire-25"><time>14:03</time><span class="cat-dot" style="background:var(--muted)" aria-hidden="true"></span><span class="t">De Wever și-a prezentat demisia regelui, după ce negocierile pentru buget au picat peste noapte — regele își rezervă decizia</span><span class="n">#3</span></a></li>
+          <li data-cats="securitate belgia"><a href="#stire-24"><time>11:00</time><span class="cat-dot sec" aria-hidden="true"></span><span class="t">Atac cibernetic suspect la frigiderele Delhaize și Carrefour din Belgia: cel puțin 40 de magazine Delhaize și 15 Carrefour afectate peste noapte</span><span class="n">#4</span></a></li>
+          <li data-cats="belgia"><a href="#stire-23"><time>08:07</time><span class="cat-dot" style="background:var(--muted)" aria-hidden="true"></span><span class="t">Criza bugetară belgiană: negocierile au picat peste noapte, iar De Wever ar putea să-și prezinte demisia regelui</span><span class="n">#5</span></a></li>
         </ol>
       </nav>
 
       <p class="empty">Nicio știre în această categorie azi.</p>
 
       <main>
-        <!-- 1 · 2 nov · 17:04 -->
+        <!-- 1 · 2 nov · 20:00 -->
+        <article id="stire-27" data-cats="tech">
+          <div class="a-meta">
+            <span class="a-time">2 nov · 20:00</span>
+            <span class="a-cat">Tech &amp; AI · Agenți AI · Costuri de servire</span>
+            <span class="a-num">#1 / 5</span>
+          </div>
+          <h2>Musk strânge limitele Grok Bot: costurile de servire, «nesustenabil de mari» față de venituri</h2>
+
+          <div class="sec">
+            <p class="sec-label">Ce s-a întâmplat</p>
+            <p>În weekendul Halloween, utilizatori ai Grok Bot au constatat că limitele săptămânale de utilizare s-au epuizat brusc, unii de la circa 50% la 100% peste noapte, fără utilizare suplimentară. Elon Musk a confirmat duminică, 1 noiembrie, pe X că „costul servirii Grok Bot a fost nesustenabil de mare față de venituri”, fără să dea cifre, fără să anunțe noi limite și fără să promită un reset al contoarelor. xAI a invocat parțial și o eroare de afișare în panoul de facturare, alături de ajustări deliberate ale alocării de utilizare.</p>
+          </div>
+
+          <div class="sec">
+            <p class="sec-label">De ce contează</p>
+            <p>Este un semnal concret că agenții AI „always-on” costă mai mult decât aduc din abonamente — aceeași presiune de cost care a mișcat bursele Big Tech săptămâna trecută. Pentru cine construiește automatizări pe agenți, limitele și prețurile se pot schimba fără preaviz.</p>
+          </div>
+
+          <div class="verify">
+            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
+            <p>Verdict: confirmat — TechCrunch (sursă curatoriată, 2 noiembrie 2026) relatează confirmarea lui Musk de pe X, iar TechSpot, Gizmodo și CryptoBriefing confirmă independent epuizarea bruscă a limitelor și reacția utilizatorilor.</p>
+            <ul class="sources">
+              <li><a href="https://techcrunch.com/2026/11/02/elon-musk-throttles-grok-bot-limits-due-to-unsustainably-high-costs/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>TechCrunch — „Elon Musk throttles Grok Bot limits due to unsustainably high costs” (2 noiembrie 2026, sursă curatoriată)<span class="host">techcrunch.com</span></a></li>
+              <li><a href="https://www.techspot.com/news/114413-grok-bot-users-accuse-xai-indirect-rug-pull.html" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>TechSpot — „Grok Bot users accuse xAI of indirect rug pull”<span class="host">techspot.com</span></a></li>
+              <li><a href="https://gizmodo.com/elon-musk-needs-to-save-money-on-grok-days-after-saying-ai-makes-saving-money-pointless-2000833812" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Gizmodo — „Elon Musk needs to save money on Grok, days after saying AI makes saving money pointless”<span class="host">gizmodo.com</span></a></li>
+              <li><a href="https://cryptobriefing.com/musk-grok-bot-usage-limits-high-costs/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>CryptoBriefing — relatarea despre limitele Grok Bot și costurile ridicate<span class="host">cryptobriefing.com</span></a></li>
+            </ul>
+          </div>
+
+          <div class="opposing">
+            <p class="sec-label">Tabăra adversă</p>
+            <p>Utilizatorii afectați, relatați de TechSpot, acuză o „tăiere indirectă” (indirect rug pull) fără anunț prealabil; unii spun că, după consumul observat, Grok Bot ar fi de circa 3 ori mai scump.</p>
+          </div>
+
+          <div class="impact">
+            <span class="badge">Impact direct</span>
+            <p>Impact direct minim — nu este vorba de un serviciu plătit folosit aici; relevanță de context pentru costurile agenților AI folosiți zilnic.</p>
+          </div>
+        </article>
+
+        <!-- 2 · 2 nov · 17:04 -->
         <article id="stire-26" data-cats="tech">
           <div class="a-meta">
             <span class="a-time">2 nov · 17:04</span>
             <span class="a-cat">Tech &amp; AI · Aplicații AI</span>
-            <span class="a-num">#1 / 4</span>
+            <span class="a-num">#2 / 5</span>
           </div>
           <h2>OpenAI unește taburile Chat și Work în ChatGPT — iar ChatGPT și Codex vor împărți aceeași limită de utilizare</h2>
 
@@ -675,13 +718,13 @@
           </div>
         </article>
 
-        <!-- 2 · 2 nov · 14:03 -->
+        <!-- 3 · 2 nov · 14:03 -->
         <article id="stire-25" data-cats="belgia">
           <div class="a-meta">
             <span class="a-time">2 nov · 14:03</span>
             <span class="a-cat">Belgia · Criză guvernamentală · Politică federală</span>
             <span class="spot-tag">Știrea zilei</span>
-            <span class="a-num">#2 / 4</span>
+            <span class="a-num">#3 / 5</span>
           </div>
           <h2>De Wever și-a prezentat demisia regelui, după ce negocierile pentru buget au picat peste noapte — regele își rezervă decizia</h2>
 
@@ -716,12 +759,12 @@
           </div>
         </article>
 
-        <!-- 3 · 2 nov · 11:00 -->
+        <!-- 4 · 2 nov · 11:00 -->
         <article id="stire-24" data-cats="securitate belgia">
           <div class="a-meta">
             <span class="a-time">2 nov · 11:00</span>
             <span class="a-cat">Belgia · Securitate cibernetică</span>
-            <span class="a-num">#3 / 4</span>
+            <span class="a-num">#4 / 5</span>
           </div>
           <h2>Atac cibernetic suspect la frigiderele Delhaize și Carrefour din Belgia: cel puțin 40 de magazine Delhaize și 15 Carrefour afectate peste noapte</h2>
 
@@ -752,12 +795,12 @@
           </div>
         </article>
 
-        <!-- 4 · 2 nov · 08:07 -->
+        <!-- 5 · 2 nov · 08:07 -->
         <article id="stire-23" data-cats="belgia">
           <div class="a-meta">
             <span class="a-time">2 nov · 08:07</span>
             <span class="a-cat">Belgia · Criză bugetară · Politică federală</span>
-            <span class="a-num">#4 / 4</span>
+            <span class="a-num">#5 / 5</span>
           </div>
           <h2>Criza bugetară belgiană: negocierile au picat peste noapte, iar De Wever ar putea să-și prezinte demisia regelui</h2>
 
@@ -2010,8 +2053,8 @@
 
       <footer>
         <div class="rule" aria-hidden="true"></div>
-        <p>Sfârșitul ediției de azi · Ultima actualizare: luni, 2 noiembrie 2026, 17:04<br />Monitorizarea rulează la circa 3 ore, în fereastra L–V 06:00–22:00 · S–D 07:30–22:00 — dă refresh pentru noutăți.</p>
-        <a class="to-top" href="#stire-26">↑ Înapoi la cea mai nouă știre</a>
+        <p>Sfârșitul ediției de azi · Ultima actualizare: luni, 2 noiembrie 2026, 20:06<br />Monitorizarea rulează la circa 3 ore, în fereastra L–V 06:00–22:00 · S–D 07:30–22:00 — dă refresh pentru noutăți.</p>
+        <a class="to-top" href="#stire-27">↑ Înapoi la cea mai nouă știre</a>
       </footer>
     </div>
 
