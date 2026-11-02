@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="color-scheme" content="light dark" />
-    <meta name="tirile-versiune" content="2026-11-01T20:07:00+01:00|6|amber" />
+    <meta name="tirile-versiune" content="2026-11-02T08:07:00+01:00|1|amber" />
     <link rel="icon" href="data:," />
     <title>Știrile zilei</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -509,9 +509,9 @@
     <div class="topbar">
       <div class="topbar-inner">
         <span class="dot" aria-hidden="true"></span>
-        <span><strong>Duminică, 1 noiembrie 2026</strong> · actualizat la <strong>20:07</strong></span>
+        <span><strong>Luni, 2 noiembrie 2026</strong> · actualizat la <strong>08:07</strong></span>
         <span aria-hidden="true">·</span>
-        <span>6 știri azi</span>
+        <span>1 știre azi</span>
         <span class="spacer"></span>
         <button class="refresh-btn" type="button" id="refreshBtn" aria-label="Reîmprospătează pagina">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg>
@@ -526,12 +526,164 @@
         <h1>Știrile zilei</h1>
         <div class="date-line">
           <span class="day">Ediția de azi</span>
-          <span>Duminică, 1 noiembrie 2026 · Europe/Brussels</span>
+          <span>Luni, 2 noiembrie 2026 · Europe/Brussels</span>
         </div>
         <p class="lede">Panou de ansamblu sus, articole complete jos. <strong>Apasă pe un tile de categorie</strong> ca să filtrezi pagina — cardurile rămân întregi, la lățime de citit, cele mai noi primele.</p>
       </header>
 
-      <section class="day" id="zi-2026-11-01">
+      <section class="day" id="zi-2026-11-02">
+      <!-- Chenar permanent: știrea cea mai importantă a zilei — chiar sub masthead,
+           ÎNAINTEA dashboardului, vizibilă din prima, fără scroll.
+           Nivelul de azi: GALBEN (sev-amber) — de urmărit, evoluție importantă,
+           fără acțiune imediată: criza bugetară belgiană, cu termen-limită marți, 3 noiembrie.
+           Chenarul rămâne în afara logicii de filtrare: vizibil indiferent de filtrul de categorie. -->
+      <section class="spot sev-amber" aria-label="Știrea cea mai importantă a zilei">
+        <div class="spot-head">
+          <span class="spot-kicker">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13 2 4.5 13.5H11L9.5 22 19 10h-6.5L13 2z"/></svg>
+            Știrea zilei · Atenție rapidă
+          </span>
+          <span class="spot-time">2 nov · 08:07</span>
+          <span class="spot-pill">Nivel galben — de urmărit</span>
+        </div>
+        <h2 class="spot-title">Criza bugetară belgiană: negocierile au picat peste noapte, iar De Wever ar putea să-și prezinte demisia regelui</h2>
+        <p class="spot-why"><strong>De ce e în față:</strong> Guvernul țării în care locuiește și lucrează ar putea cădea chiar azi din cauza bugetului, iar termenul-limită de marți decide dacă Belgia intră în buget provizoriu și ce măsuri fiscale ajung în pachet — subiect fiscal belgian urmărit deja de la 1 noiembrie.</p>
+        <p class="spot-lead">Cabinetul restrâns („kern”) s-a despărțit luni, în jurul orei 01:00, fără un acord asupra bugetului federal, după un weekend de discuții bilaterale între premierul Bart De Wever și vicepremierii săi; miza este un efort bugetar de 10 miliarde de euro până în 2029. Potrivit ziarului De Tijd, citat de Reuters, De Wever urma să se întâlnească luni cu regele Philippe pentru a-i prezenta demisia guvernului. Termenul-limită este marți, 3 noiembrie: fără acord până atunci, Belgia riscă să intre în buget provizoriu („noodbegroting”).</p>
+        <div class="spot-foot">
+          <a class="spot-link" href="#stire-23">Citește știrea completă ↓</a>
+          <div class="sev-scale" role="img" aria-label="Scară de gravitate: verde — normal, galben — de urmărit, roșu — grav. Nivelul de azi: galben.">
+            <span class="sev-item"><i class="sev-dot g" aria-hidden="true"></i>Verde · normal</span>
+            <span class="sev-item on"><i class="sev-dot y" aria-hidden="true"></i>Galben · de urmărit</span>
+            <span class="sev-item"><i class="sev-dot r" aria-hidden="true"></i>Roșu · grav</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Dashboard -->
+      <section class="dashboard" aria-label="Panou de ansamblu">
+        <div class="dash-head">
+          <span class="dash-title">Dashboard · Azi</span>
+          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 08:07</span>
+          <span class="dash-meta">Fereastră monitorizare <strong>L–V 06:00–22:00 · S–D 07:30–22:00</strong> · pas ~3 ore</span>
+        </div>
+
+        <div class="kpi-grid" role="group" aria-label="Filtrează după categorie — apasă pe un tile">
+          <button class="kpi" type="button" data-filter="toate" aria-pressed="true">
+            <span class="kpi-top"><span class="kpi-label">Toate știrile</span><span class="kpi-check" aria-hidden="true">✓</span></span>
+            <span class="kpi-value">1</span>
+            <span class="kpi-sub">știre verificată azi, în 1 rulare</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:100%"></i></span>
+            <span class="kpi-hint">Apasă pentru toate</span>
+          </button>
+          <button class="kpi" type="button" data-filter="securitate" aria-pressed="false">
+            <span class="kpi-top"><span class="kpi-label">Securitate &amp; NATO</span><span class="kpi-check" aria-hidden="true">✓</span></span>
+            <span class="kpi-value">0</span>
+            <span class="kpi-sub">nicio știre azi</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:0%"></i></span>
+            <span class="kpi-hint">Apasă pentru a filtra →</span>
+          </button>
+          <button class="kpi" type="button" data-filter="romania" aria-pressed="false">
+            <span class="kpi-top"><span class="kpi-label">România</span><span class="kpi-check" aria-hidden="true">✓</span></span>
+            <span class="kpi-value">0</span>
+            <span class="kpi-sub">nicio știre azi</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:0%"></i></span>
+            <span class="kpi-hint">Apasă pentru a filtra →</span>
+          </button>
+          <button class="kpi" type="button" data-filter="tech" aria-pressed="false">
+            <span class="kpi-top"><span class="kpi-label">Tech &amp; AI</span><span class="kpi-check" aria-hidden="true">✓</span></span>
+            <span class="kpi-value">0</span>
+            <span class="kpi-sub">nicio știre azi</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:0%"></i></span>
+            <span class="kpi-hint">Apasă pentru a filtra →</span>
+          </button>
+        </div>
+
+        <div class="dash-foot">
+          <div class="dash-panel">
+            <h3>Ritmul zilei — știri pe rulare</h3>
+            <div class="rhythm" role="group" aria-label="Filtru după ora publicării — apasă pe o rulare ca să vezi doar știrile ei">
+              <button class="col" type="button" data-hour="08:07" aria-pressed="false" aria-label="Filtrează știrile de la ora 08:07 — 1 știre"><span class="n">1</span><span class="bar" style="height:22px"></span><span class="t">08:07</span></button>
+            </div>
+            <p class="rhythm-hint">Apasă pe o bară ca să vezi doar știrile din rularea aceea; apasă din nou pe ea pentru toate.</p>
+          </div>
+          <div class="dash-panel">
+            <h3>Stare ediție</h3>
+            <ul class="status-list">
+              <li><span class="k">Ultima actualizare</span><span class="v">Azi, 08:07</span></li>
+              <li><span class="k">Cea mai nouă</span><span class="v">Criza bugetară belgiană: negocierile au picat peste noapte, iar De Wever ar putea să-și prezinte demisia regelui · 08:07</span></li>
+              <li><span class="k">Acoperire</span><span class="v">Ultimele 7 zile în arhivă</span></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <div class="filter-status" aria-live="polite">
+        <span class="filter-label">Se afișează: <strong>Toate categoriile — 1 din 1 știri</strong></span>
+        <button class="filter-reset" type="button" hidden>Resetează filtrul</button>
+      </div>
+
+      <nav class="index" aria-label="Cuprinsul zilei">
+        <div class="index-head">
+          <h2>Cuprins</h2>
+          <span>apasă pe un titlu ca să sari direct la știre · se sincronizează cu filtrul</span>
+        </div>
+        <ol class="index-list">
+          <li data-cats="belgia"><a href="#stire-23"><time>08:07</time><span class="cat-dot" style="background:var(--muted)" aria-hidden="true"></span><span class="t">Criza bugetară belgiană: negocierile au picat peste noapte, iar De Wever ar putea să-și prezinte demisia regelui</span><span class="n">#1</span></a></li>
+        </ol>
+      </nav>
+
+      <p class="empty">Nicio știre în această categorie azi.</p>
+
+      <main>
+        <!-- 1 · 2 nov · 08:07 -->
+        <article id="stire-23" data-cats="belgia">
+          <div class="a-meta">
+            <span class="a-time">2 nov · 08:07</span>
+            <span class="a-cat">Belgia · Criză bugetară · Politică federală</span>
+            <span class="spot-tag">Știrea zilei</span>
+            <span class="a-num">#1 / 1</span>
+          </div>
+          <h2>Criza bugetară belgiană: negocierile au picat peste noapte, iar De Wever ar putea să-și prezinte demisia regelui</h2>
+
+          <div class="sec">
+            <p class="sec-label">Ce s-a întâmplat</p>
+            <p>Cabinetul restrâns („kern”) s-a despărțit în jurul orei 01:00 luni, 2 noiembrie, fără un acord asupra bugetului federal, după un weekend de discuții bilaterale între premierul Bart De Wever și vicepremierii săi; miza este un efort bugetar de 10 miliarde de euro până în 2029. Potrivit ziarului De Tijd, citat de Reuters, De Wever urma să se întâlnească luni cu regele Philippe pentru a-i prezenta demisia guvernului, iar regele probabil nu ar accepta-o imediat; agenția Belga confirmă deplasarea premierului la rege, în timp ce HLN nu confirmase încă motivul. Termenul-limită este marți, 3 noiembrie: fără acord până atunci, Belgia riscă să intre în buget provizoriu („noodbegroting”), sistemul folosit și anul trecut.</p>
+          </div>
+
+          <div class="sec">
+            <p class="sec-label">De ce contează</p>
+            <p>Locuiește în Belgia și lucrează la Bruxelles, iar deznodământul de marți decide dacă Belgia are un buget complet pe 2027 de la 1 ianuarie sau funcționează provizoriu, plus ce măsuri fiscale ajung în pachet — în continuarea schimbărilor fiscale belgiene de la 1 noiembrie deja semnalate în pagină.</p>
+          </div>
+
+          <div class="verify">
+            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
+            <p>Verdict: confirmat — Reuters (2 noiembrie 2026) relatează prăbușirea negocierilor bugetare și demisia așteptată, citând De Tijd; Belga și HLN, prin BelgiumNow (2 noiembrie 2026, 02:08 CET), confirmă încheierea fără acord a ședinței cabinetului restrâns și termenul-limită de marți; agenda din The Brussels Times (domeniu monitorizat) confirma azi, pe homepage, continuarea discuțiilor bugetare ale lui De Wever.</p>
+            <ul class="sources">
+              <li><a href="https://www.reuters.com/business/belgian-government-crisis-looms-budget-talks-collapse-de-tijd-reports-2026-11-02/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Reuters — „Belgian government crisis looms as budget talks collapse, De Tijd reports” (2 noiembrie 2026)<span class="host">reuters.com</span></a></li>
+              <li><a href="https://belgium-now.com/2026/11/02/belgian-core-cabinet-budget-talks-no-deal/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Belga și HLN, prin BelgiumNow — „Belgian core cabinet ends night of budget talks without a deal as Tuesday deadline looms” (2 noiembrie 2026, 02:08 CET)<span class="host">belgium-now.com</span></a></li>
+              <li><a href="https://www.brusselstimes.com/belgium/2386980/bart-de-wever-continues-budget-talks" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>The Brussels Times — „Bart De Wever continues budget talks” (agenda de pe homepage, verificat azi)<span class="host">brusselstimes.com</span></a></li>
+            </ul>
+          </div>
+
+          <div class="opposing">
+            <p class="sec-label">Tabăra adversă</p>
+            <p>Vicepremierul David Clarinval (MR) a spus că situația rămâne „blocată”; Vooruit vrea venituri suplimentare de 1,5 miliarde de euro de la „cei cu umerii mai puternici”, iar Les Engagés a propus ridicarea impozitului pe câștiguri de capital la 15%; N-VA și MR caută tăieri la cheltuielile cu sănătatea, în timp ce partenerii socialiști și centriști cer impozite mai mari pe avere.</p>
+          </div>
+
+          <div class="impact">
+            <span class="badge">Impact direct</span>
+            <p>Impact direct minim azi — nicio schimbare imediată de salariu sau taxe; relevanță de context înaltă, de urmărit marți, când se decide bugetul și pachetul fiscal.</p>
+          </div>
+        </article>
+      </main>
+      </section>
+
+      <section class="day day-archive" id="zi-2026-11-01">
+        <div class="day-head">
+          <h2>Duminică, 1 noiembrie 2026</h2>
+          <span>Ediția de ieri · 6 știri · arhivă (ultimele 7 zile)</span>
+        </div>
+
       <!-- Chenar permanent: știrea cea mai importantă a zilei — chiar sub masthead,
            ÎNAINTEA dashboardului, vizibilă din prima, fără scroll.
            Nivelul de azi: GALBEN (sev-amber) — de urmărit, cu termen concret:
@@ -1742,8 +1894,8 @@
 
       <footer>
         <div class="rule" aria-hidden="true"></div>
-        <p>Sfârșitul ediției de azi · Ultima actualizare: duminică, 1 noiembrie 2026, 14:01<br />Monitorizarea rulează la circa 3 ore, în fereastra L–V 06:00–22:00 · S–D 07:30–22:00 — dă refresh pentru noutăți.</p>
-        <a class="to-top" href="#stire-18">↑ Înapoi la cea mai nouă știre</a>
+        <p>Sfârșitul ediției de azi · Ultima actualizare: luni, 2 noiembrie 2026, 08:07<br />Monitorizarea rulează la circa 3 ore, în fereastra L–V 06:00–22:00 · S–D 07:30–22:00 — dă refresh pentru noutăți.</p>
+        <a class="to-top" href="#stire-23">↑ Înapoi la cea mai nouă știre</a>
       </footer>
     </div>
 
