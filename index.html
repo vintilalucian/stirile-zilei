@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="color-scheme" content="light dark" />
-    <meta name="tirile-versiune" content="2026-11-02T08:07:00+01:00|1|amber" />
+    <meta name="tirile-versiune" content="2026-11-02T11:15:00+01:00|2|amber" />
     <link rel="icon" href="data:," />
     <title>Știrile zilei</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -509,9 +509,9 @@
     <div class="topbar">
       <div class="topbar-inner">
         <span class="dot" aria-hidden="true"></span>
-        <span><strong>Luni, 2 noiembrie 2026</strong> · actualizat la <strong>08:07</strong></span>
+        <span><strong>Luni, 2 noiembrie 2026</strong> · actualizat la <strong>11:15</strong></span>
         <span aria-hidden="true">·</span>
-        <span>1 știre azi</span>
+        <span>2 știri azi</span>
         <span class="spacer"></span>
         <button class="refresh-btn" type="button" id="refreshBtn" aria-label="Reîmprospătează pagina">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg>
@@ -563,23 +563,23 @@
       <section class="dashboard" aria-label="Panou de ansamblu">
         <div class="dash-head">
           <span class="dash-title">Dashboard · Azi</span>
-          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 08:07</span>
+          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 11:15</span>
           <span class="dash-meta">Fereastră monitorizare <strong>L–V 06:00–22:00 · S–D 07:30–22:00</strong> · pas ~3 ore</span>
         </div>
 
         <div class="kpi-grid" role="group" aria-label="Filtrează după categorie — apasă pe un tile">
           <button class="kpi" type="button" data-filter="toate" aria-pressed="true">
             <span class="kpi-top"><span class="kpi-label">Toate știrile</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">1</span>
-            <span class="kpi-sub">știre verificată azi, în 1 rulare</span>
+            <span class="kpi-value">2</span>
+            <span class="kpi-sub">știri verificate azi, în 2 rulări</span>
             <span class="kpi-bar" aria-hidden="true"><i style="width:100%"></i></span>
             <span class="kpi-hint">Apasă pentru toate</span>
           </button>
           <button class="kpi" type="button" data-filter="securitate" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">Securitate &amp; NATO</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">0</span>
-            <span class="kpi-sub">nicio știre azi</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:0%"></i></span>
+            <span class="kpi-value">1</span>
+            <span class="kpi-sub">Atac cibernetic suspect la frigiderele Delhaize și Carrefour</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:50%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="romania" aria-pressed="false">
@@ -603,14 +603,15 @@
             <h3>Ritmul zilei — știri pe rulare</h3>
             <div class="rhythm" role="group" aria-label="Filtru după ora publicării — apasă pe o rulare ca să vezi doar știrile ei">
               <button class="col" type="button" data-hour="08:07" aria-pressed="false" aria-label="Filtrează știrile de la ora 08:07 — 1 știre"><span class="n">1</span><span class="bar" style="height:22px"></span><span class="t">08:07</span></button>
+              <button class="col" type="button" data-hour="11:00" aria-pressed="false" aria-label="Filtrează știrile de la ora 11:00 — 1 știre"><span class="n">1</span><span class="bar" style="height:22px"></span><span class="t">11:00</span></button>
             </div>
             <p class="rhythm-hint">Apasă pe o bară ca să vezi doar știrile din rularea aceea; apasă din nou pe ea pentru toate.</p>
           </div>
           <div class="dash-panel">
             <h3>Stare ediție</h3>
             <ul class="status-list">
-              <li><span class="k">Ultima actualizare</span><span class="v">Azi, 08:07</span></li>
-              <li><span class="k">Cea mai nouă</span><span class="v">Criza bugetară belgiană: negocierile au picat peste noapte, iar De Wever ar putea să-și prezinte demisia regelui · 08:07</span></li>
+              <li><span class="k">Ultima actualizare</span><span class="v">Azi, 11:15</span></li>
+              <li><span class="k">Cea mai nouă</span><span class="v">Atac cibernetic suspect la frigiderele Delhaize și Carrefour din Belgia: cel puțin 40 de magazine Delhaize și 15 Carrefour afectate peste noapte · 11:00</span></li>
               <li><span class="k">Acoperire</span><span class="v">Ultimele 7 zile în arhivă</span></li>
             </ul>
           </div>
@@ -618,7 +619,7 @@
       </section>
 
       <div class="filter-status" aria-live="polite">
-        <span class="filter-label">Se afișează: <strong>Toate categoriile — 1 din 1 știri</strong></span>
+        <span class="filter-label">Se afișează: <strong>Toate categoriile — 2 din 2 știri</strong></span>
         <button class="filter-reset" type="button" hidden>Resetează filtrul</button>
       </div>
 
@@ -628,20 +629,57 @@
           <span>apasă pe un titlu ca să sari direct la știre · se sincronizează cu filtrul</span>
         </div>
         <ol class="index-list">
-          <li data-cats="belgia"><a href="#stire-23"><time>08:07</time><span class="cat-dot" style="background:var(--muted)" aria-hidden="true"></span><span class="t">Criza bugetară belgiană: negocierile au picat peste noapte, iar De Wever ar putea să-și prezinte demisia regelui</span><span class="n">#1</span></a></li>
+          <li data-cats="securitate belgia"><a href="#stire-24"><time>11:00</time><span class="cat-dot sec" aria-hidden="true"></span><span class="t">Atac cibernetic suspect la frigiderele Delhaize și Carrefour din Belgia: cel puțin 40 de magazine Delhaize și 15 Carrefour afectate peste noapte</span><span class="n">#1</span></a></li>
+          <li data-cats="belgia"><a href="#stire-23"><time>08:07</time><span class="cat-dot" style="background:var(--muted)" aria-hidden="true"></span><span class="t">Criza bugetară belgiană: negocierile au picat peste noapte, iar De Wever ar putea să-și prezinte demisia regelui</span><span class="n">#2</span></a></li>
         </ol>
       </nav>
 
       <p class="empty">Nicio știre în această categorie azi.</p>
 
       <main>
-        <!-- 1 · 2 nov · 08:07 -->
+        <!-- 1 · 2 nov · 11:00 -->
+        <article id="stire-24" data-cats="securitate belgia">
+          <div class="a-meta">
+            <span class="a-time">2 nov · 11:00</span>
+            <span class="a-cat">Belgia · Securitate cibernetică</span>
+            <span class="a-num">#1 / 2</span>
+          </div>
+          <h2>Atac cibernetic suspect la frigiderele Delhaize și Carrefour din Belgia: cel puțin 40 de magazine Delhaize și 15 Carrefour afectate peste noapte</h2>
+
+          <div class="sec">
+            <p class="sec-label">Ce s-a întâmplat</p>
+            <p>În noaptea de duminică spre luni, sistemele de refrigerare și congelare din cel puțin 40 de magazine Delhaize din Flandra și Valonia au fost afectate, iar Carrefour Belgia a raportat 15 magazine afectate; Delhaize a confirmat un „incident IT” la instalațiile de refrigerare, cu creșteri bruște de temperatură semnalate managerilor de magazine în cursul nopții. Ahold Delhaize a confirmat incidentul și pentru Luxemburg și a anunțat că investighează; în aceeași noapte au fost raportate probleme similare și la magazine ICA din Suedia.</p>
+          </div>
+
+          <div class="sec">
+            <p class="sec-label">De ce contează</p>
+            <p>Locuiește în Belgia și face cumpărături la supermarketuri din țară, deci stocul proaspăt/congelat din magazinele afectate poate fi compromis azi; profesional, ca Incident Management Coordinator la NCIA, este un incident de securitate cibernetică pe sisteme OT/IoT (controlere de refrigerare conectate), în aceeași tipologie cu atacul din octombrie asupra a sute de supermarketuri din Franța și cu incidentul cibernetic din octombrie de la compania-mamă Ahold Delhaize.</p>
+          </div>
+
+          <div class="verify">
+            <p class="sec-label">Verificare <span class="status">Confirmat, cu rezervă pe atribuire</span></p>
+            <p>Verdict: sursă primară + confirmat pentru incident, cu rezervă explicită pe atribuire — Delhaize însăși vorbește de „incident IT”, nu de atac confirmat de companie; calificarea de „hack” vine din presa belgiană. Reuters, prin DevDiscourse (2 noiembrie 2026), citează declarația purtătoarei de cuvânt Sarah De Meester; RetailDetail consemnează confirmarea Delhaize către HLN și VTM Nieuws. Notă de integritate: cifra de 70 de grade vehiculată de HLN NU este confirmată de purtătoarea de cuvânt și nu trebuie prezentată ca fapt; cifra raportată cu sursă este de circa 15 grade (RTL Info, prin RetailDetail).</p>
+            <ul class="sources">
+              <li><a href="https://www.devdiscourse.com/article/international/4000604-ahold-delhaize-says-it-incident-hit-store-fridges-in-belgium-luxembourg" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Reuters, prin DevDiscourse — „Ahold Delhaize says 'IT incident' hit store fridges in Belgium, Luxembourg” (declarația purtătoarei de cuvânt Sarah De Meester, 2 noiembrie 2026)<span class="host">devdiscourse.com</span></a></li>
+              <li><a href="https://www.brusselstimes.com/belgium/suspected-cyberattack-hits-fridges-and-freezers-at-dozens-of-belgian-supermarkets" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>The Brussels Times — „Suspected cyberattack hits fridges and freezers at dozens of Belgian supermarkets” (2 noiembrie 2026, 10:15)<span class="host">brusselstimes.com</span></a></li>
+              <li><a href="https://www.retaildetail.eu/news/food/refrigerated-display-cases-at-delhaize-supermarkets-hacked/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>RetailDetail — „Refrigerators at Delhaize and Carrefour supermarkets hacked” (2 noiembrie 2026; confirmarea Delhaize către HLN și VTM Nieuws, temperatura de circa 15 grade raportată de RTL Info)<span class="host">retaildetail.eu</span></a></li>
+              <li><a href="https://belgium-now.com/2026/11/02/delhaize-fridges-freezers-hacked-belgian-stores/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Belgium-Now — „Delhaize confirms fridges and freezers hacked in dozens of Belgian stores” (2 noiembrie 2026; confirmarea purtătoarei de cuvânt către VTM Nieuws și HLN)<span class="host">belgium-now.com</span></a></li>
+            </ul>
+          </div>
+
+          <div class="impact">
+            <span class="badge">Impact direct</span>
+            <p>Impact practic azi: la cumpărături în magazinele Delhaize/Carrefour afectate, produsele proaspete și congelate din vitrinele cu temperatură crescută pot fi compromise — merită verificat dacă magazinul a retras stocul înainte de a cumpăra. Impact profesional: incident OT la scară, cu același tipar ca în Franța în octombrie, pe infrastructura de retail alimentar — exact terenul de incident management. Nu există, în sursele de azi, vreo informație că ar fi fost furate date ale clienților în acest incident.</p>
+          </div>
+        </article>
+
+        <!-- 2 · 2 nov · 08:07 -->
         <article id="stire-23" data-cats="belgia">
           <div class="a-meta">
             <span class="a-time">2 nov · 08:07</span>
             <span class="a-cat">Belgia · Criză bugetară · Politică federală</span>
             <span class="spot-tag">Știrea zilei</span>
-            <span class="a-num">#1 / 1</span>
+            <span class="a-num">#2 / 2</span>
           </div>
           <h2>Criza bugetară belgiană: negocierile au picat peste noapte, iar De Wever ar putea să-și prezinte demisia regelui</h2>
 
