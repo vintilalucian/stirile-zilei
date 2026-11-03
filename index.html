@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="color-scheme" content="light dark" />
-    <meta name="tirile-versiune" content="2026-11-03T11:10:00+01:00|4|amber" />
+    <meta name="tirile-versiune" content="2026-11-03T14:03:00+01:00|5|amber" />
     <link rel="icon" href="data:," />
     <title>Știrile zilei</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -509,9 +509,9 @@
     <div class="topbar">
       <div class="topbar-inner">
         <span class="dot" aria-hidden="true"></span>
-        <span><strong>Marți, 3 noiembrie 2026</strong> · actualizat la <strong>11:10</strong></span>
+        <span><strong>Marți, 3 noiembrie 2026</strong> · actualizat la <strong>14:03</strong></span>
         <span aria-hidden="true">·</span>
-        <span>4 știri azi</span>
+        <span>5 știri azi</span>
         <span class="spacer"></span>
         <button class="refresh-btn" type="button" id="refreshBtn" aria-label="Reîmprospătează pagina">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg>
@@ -564,37 +564,37 @@
       <section class="dashboard" aria-label="Panou de ansamblu">
         <div class="dash-head">
           <span class="dash-title">Dashboard · Azi</span>
-          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 11:10</span>
+          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 14:03</span>
           <span class="dash-meta">Fereastră monitorizare <strong>L–V 06:00–22:00 · S–D 07:30–22:00</strong> · pas ~3 ore</span>
         </div>
 
         <div class="kpi-grid" role="group" aria-label="Filtrează după categorie — apasă pe un tile">
           <button class="kpi" type="button" data-filter="toate" aria-pressed="true">
             <span class="kpi-top"><span class="kpi-label">Toate știrile</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">4</span>
-            <span class="kpi-sub">știri verificate azi, în 2 rulări</span>
+            <span class="kpi-value">5</span>
+            <span class="kpi-sub">știri verificate azi, în 3 rulări</span>
             <span class="kpi-bar" aria-hidden="true"><i style="width:100%"></i></span>
             <span class="kpi-hint">Apasă pentru toate</span>
           </button>
           <button class="kpi" type="button" data-filter="securitate" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">Securitate &amp; NATO</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">2</span>
-            <span class="kpi-sub">Războiul se extinde în Marea Neagră · drone rusești cu antene Kometa tot mai mari</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:50%"></i></span>
+            <span class="kpi-value">3</span>
+            <span class="kpi-sub">Războiul se extinde în Marea Neagră · drone rusești cu antene Kometa tot mai mari · receptorul D·Vision SDR citește camerele dronelor rusești</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:60%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="romania" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">România</span><span class="kpi-check" aria-hidden="true">✓</span></span>
             <span class="kpi-value">1</span>
             <span class="kpi-sub">România a împrumutat 4,5 miliarde de euro prin euroobligațiuni</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:25%"></i></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:20%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="tech" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">Tech &amp; AI</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">1</span>
-            <span class="kpi-sub">Anthropic, «foarte aproape» de pragul RSI din dosarul S-1A</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:25%"></i></span>
+            <span class="kpi-value">2</span>
+            <span class="kpi-sub">Anthropic, «foarte aproape» de pragul RSI din dosarul S-1A · receptorul D·Vision SDR al ucrainenilor</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:40%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
         </div>
@@ -605,14 +605,15 @@
             <div class="rhythm" role="group" aria-label="Filtru după ora publicării — apasă pe o rulare ca să vezi doar știrile ei">
               <button class="col" type="button" data-hour="08:00" aria-pressed="false" aria-label="Filtrează știrile de la ora 08:00 — 2 știri"><span class="n">2</span><span class="bar" style="height:40px"></span><span class="t">08:00</span></button>
               <button class="col" type="button" data-hour="11:10" aria-pressed="false" aria-label="Filtrează știrile de la ora 11:10 — 2 știri"><span class="n">2</span><span class="bar" style="height:40px"></span><span class="t">11:10</span></button>
+              <button class="col" type="button" data-hour="14:03" aria-pressed="false" aria-label="Filtrează știrile de la ora 14:03 — 1 știre"><span class="n">1</span><span class="bar" style="height:22px"></span><span class="t">14:03</span></button>
             </div>
             <p class="rhythm-hint">Apasă pe o bară ca să vezi doar știrile din rularea aceea; apasă din nou pe ea pentru toate.</p>
           </div>
           <div class="dash-panel">
             <h3>Stare ediție</h3>
             <ul class="status-list">
-              <li><span class="k">Ultima actualizare</span><span class="v">Azi, 11:10</span></li>
-              <li><span class="k">Cea mai nouă</span><span class="v">Războiul se extinde în Marea Neagră și testează liniile roșii ale NATO · 11:10</span></li>
+              <li><span class="k">Ultima actualizare</span><span class="v">Azi, 14:03</span></li>
+              <li><span class="k">Cea mai nouă</span><span class="v">Ucraina întoarce camerele dronelor rusești împotriva lor: receptorul D·Vision SDR · 14:03</span></li>
               <li><span class="k">Acoperire</span><span class="v">Ultimele 7 zile în arhivă</span></li>
             </ul>
           </div>
@@ -620,7 +621,7 @@
       </section>
 
       <div class="filter-status" aria-live="polite">
-        <span class="filter-label">Se afișează: <strong>Toate categoriile — 4 din 4 știri</strong></span>
+        <span class="filter-label">Se afișează: <strong>Toate categoriile — 5 din 5 știri</strong></span>
         <button class="filter-reset" type="button" hidden>Resetează filtrul</button>
       </div>
 
@@ -630,23 +631,63 @@
           <span>apasă pe un titlu ca să sari direct la știre · se sincronizează cu filtrul</span>
         </div>
         <ol class="index-list">
-          <li data-cats="securitate"><a href="#stire-31"><time>11:10</time><span class="cat-dot sec" aria-hidden="true"></span><span class="t">Războiul se extinde în Marea Neagră și testează liniile roșii ale NATO: 7 nave lovite în octombrie, iar o navă-container grecească a fost scufundată de drone navale în zona economică a Bulgariei</span><span class="n">#1</span></a></li>
-          <li data-cats="romania"><a href="#stire-30"><time>11:10</time><span class="cat-dot ro" aria-hidden="true"></span><span class="t">România a împrumutat 4,5 miliarde de euro prin euroobligațiuni — prima ieșire pe piețele externe după instalarea Guvernului Niculescu, cu cerere de peste 8,5 miliarde</span><span class="n">#2</span></a></li>
-          <li data-cats="tech"><a href="#stire-29"><time>08:00</time><span class="cat-dot tech" aria-hidden="true"></span><span class="t">Anthropic avertizează că e «foarte aproape» de RSI — AI care se construiește singur</span><span class="n">#3</span></a></li>
-          <li data-cats="securitate"><a href="#stire-28"><time>08:00</time><span class="cat-dot sec" aria-hidden="true"></span><span class="t">Rusia își echipează dronele cu antene mai mari ca să treacă de bruiajul ucrainean</span><span class="n">#4</span></a></li>
+          <li data-cats="securitate tech"><a href="#stire-32"><time>14:03</time><span class="cat-dot sec" aria-hidden="true"></span><span class="t">Ucraina întoarce camerele dronelor rusești împotriva lor: receptorul de buzunar D·Vision SDR captează live video necriptat</span><span class="n">#1</span></a></li>
+          <li data-cats="securitate"><a href="#stire-31"><time>11:10</time><span class="cat-dot sec" aria-hidden="true"></span><span class="t">Războiul se extinde în Marea Neagră și testează liniile roșii ale NATO: 7 nave lovite în octombrie, iar o navă-container grecească a fost scufundată de drone navale în zona economică a Bulgariei</span><span class="n">#2</span></a></li>
+          <li data-cats="romania"><a href="#stire-30"><time>11:10</time><span class="cat-dot ro" aria-hidden="true"></span><span class="t">România a împrumutat 4,5 miliarde de euro prin euroobligațiuni — prima ieșire pe piețele externe după instalarea Guvernului Niculescu, cu cerere de peste 8,5 miliarde</span><span class="n">#3</span></a></li>
+          <li data-cats="tech"><a href="#stire-29"><time>08:00</time><span class="cat-dot tech" aria-hidden="true"></span><span class="t">Anthropic avertizează că e «foarte aproape» de RSI — AI care se construiește singur</span><span class="n">#4</span></a></li>
+          <li data-cats="securitate"><a href="#stire-28"><time>08:00</time><span class="cat-dot sec" aria-hidden="true"></span><span class="t">Rusia își echipează dronele cu antene mai mari ca să treacă de bruiajul ucrainean</span><span class="n">#5</span></a></li>
         </ol>
       </nav>
 
       <p class="empty">Nicio știre în această categorie azi.</p>
 
       <main>
-        <!-- 1 · 3 nov · 11:10 -->
+        <!-- 1 · 3 nov · 14:03 -->
+        <article id="stire-32" data-cats="securitate tech">
+          <div class="a-meta">
+            <span class="a-time">3 nov · 14:03</span>
+            <span class="a-cat">Securitate &amp; NATO / Tech &amp; AI · Război electronic · Drone</span>
+            <span class="a-num">#1 / 5</span>
+          </div>
+          <h2>Ucraina întoarce camerele dronelor rusești împotriva lor: receptorul de buzunar D·Vision SDR captează live video necriptat</h2>
+
+          <div class="sec">
+            <p class="sec-label">Ce s-a întâmplat</p>
+            <p>Startupul din Kyiv CODE380 a atras atenția cu D·Vision SDR, un receptor de buzunar cu radio definit prin software care captează în timp real fluxul video analogic necriptat transmis de multe drone rusești și îl afișează pe ecran, astfel încât o unitate ucraineană poate vedea ce vede pilotul dronei inamice — direcția și ținta — înainte de lovitură. Dispozitivul cântărește circa 280 g (aprox. 10 uncii, sub jumătate față de modelele ucrainene concurente), scanează între 500 MHz și 8,7 GHz, funcționează pasiv (nu emite semnal care să trădeze poziția) și se actualizează prin software de circa două ori pe lună. Acoperă și banda 4,1–4,5 GHz pe care dronele rusești de atac Molniya au început să transmită video din iunie; potrivit cifrelor producătorului, afișează video analogic până la circa 10 km pe 540 MHz–6 GHz și 3,5–5 km la frecvențe mai mari.</p>
+          </div>
+
+          <div class="sec">
+            <p class="sec-label">De ce contează</p>
+            <p>Este cealaltă față a războiului dronelor urmărit în pagină — după ce Rusia își adaptează dronele ca să treacă de bruiaj, Ucraina răspunde cu senzori pasivi ieftini, care transformă o slăbiciune a inamicului (video necriptat) în avertizare timpurie de câteva secunde, decisive pe front. Arhitectura software-first (capabilități noi prin cod, nu prin hardware nou) este exact lecția de adaptare rapidă relevantă pentru oricine urmărește războiul electronic și counter-drone.</p>
+          </div>
+
+          <div class="verify">
+            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
+            <p>Verdict: confirmat. Surse: TechCrunch, „Ukraine's new pocket-sized gadget turns Russian drones' cameras against them” (2 noiembrie 2026); Defense News, „Tiny Ukrainian receiver intercepts Russian drone feeds in real time” (2 noiembrie 2026); DOU (platforma ucraineană de IT, interviu cu dezvoltatorii din 17 octombrie, relatat de cele de mai sus); Militarnyi (cifrele producătorului privind razele de acțiune). Notă de integritate: performanțele (raze, sensibilitate, lipsa „punctelor oarbe”) sunt revendicări ale producătorului, nu măsurători independente verificate.</p>
+            <ul class="sources">
+              <li><a href="https://techcrunch.com/2026/11/02/ukraines-new-pocket-sized-gadget-turns-russian-drones-cameras-against-them/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>TechCrunch — „Ukraine's new pocket-sized gadget turns Russian drones' cameras against them” (2 noiembrie 2026)<span class="host">techcrunch.com</span></a></li>
+              <li><a href="https://www.defensenews.com/industry/techwatch/2026/11/02/tiny-ukrainian-receiver-intercepts-russian-drone-feeds-in-real-time/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Defense News — „Tiny Ukrainian receiver intercepts Russian drone feeds in real time” (2 noiembrie 2026)<span class="host">defensenews.com</span></a></li>
+            </ul>
+          </div>
+
+          <div class="opposing">
+            <p class="sec-label">Tabăra adversă</p>
+            <p>Serhii „Flash” Beskrestnov, specialist radio și consilier al președintelui Ucrainei, avertizează că încrederea excesivă într-un detector se poate dovedi fatală și că trecerea la video digital ar orbi receptoare ca D·Vision; The New York Times a relatat în august că unele drone Molniya au deja ghidaj AI și nu emit semnale detectabile (relatat de Defense News, 2 noiembrie 2026).</p>
+          </div>
+
+          <div class="impact">
+            <span class="badge">Impact direct</span>
+            <p>Impact direct minim azi — fără acțiune imediată; relevanță profesională de context înaltă: Incident Management la NCIA / ESOC Mons, pe arcul amenințărilor hibride și al războiului cu drone urmărit constant în pagină (inclusiv cardul de azi-dimineață despre antenele mai mari ale dronelor rusești).</p>
+          </div>
+        </article>
+
+        <!-- 2 · 3 nov · 11:10 -->
         <article id="stire-31" data-cats="securitate">
           <div class="a-meta">
             <span class="a-time">3 nov · 11:10</span>
             <span class="a-cat">Securitate &amp; NATO · Marea Neagră · Flancul estic</span>
             <span class="spot-tag">Știrea zilei</span>
-            <span class="a-num">#1 / 4</span>
+            <span class="a-num">#2 / 5</span>
           </div>
           <h2>Războiul se extinde în Marea Neagră și testează liniile roșii ale NATO: 7 nave lovite în octombrie, iar o navă-container grecească a fost scufundată de drone navale în zona economică a Bulgariei</h2>
 
@@ -685,12 +726,12 @@
           </div>
         </article>
 
-        <!-- 2 · 3 nov · 11:10 -->
+        <!-- 3 · 3 nov · 11:10 -->
         <article id="stire-30" data-cats="romania">
           <div class="a-meta">
             <span class="a-time">3 nov · 11:10</span>
             <span class="a-cat">România · Finanțe · Euroobligațiuni</span>
-            <span class="a-num">#2 / 4</span>
+            <span class="a-num">#3 / 5</span>
           </div>
           <h2>România a împrumutat 4,5 miliarde de euro prin euroobligațiuni — prima ieșire pe piețele externe după instalarea Guvernului Niculescu, cu cerere de peste 8,5 miliarde</h2>
 
@@ -723,12 +764,12 @@
           </div>
         </article>
 
-        <!-- 3 · 3 nov · 08:00 -->
+        <!-- 4 · 3 nov · 08:00 -->
         <article id="stire-29" data-cats="tech">
           <div class="a-meta">
             <span class="a-time">3 nov · 08:00</span>
             <span class="a-cat">Tech &amp; AI · Siguranță AI · RSI</span>
-            <span class="a-num">#3 / 4</span>
+            <span class="a-num">#4 / 5</span>
           </div>
           <h2>Anthropic avertizează că e «foarte aproape» de RSI — AI care se construiește singur</h2>
 
@@ -758,12 +799,12 @@
           </div>
         </article>
 
-        <!-- 4 · 3 nov · 08:00 -->
+        <!-- 5 · 3 nov · 08:00 -->
         <article id="stire-28" data-cats="securitate">
           <div class="a-meta">
             <span class="a-time">3 nov · 08:00</span>
             <span class="a-cat">Securitate &amp; NATO · Război electronic · Drone</span>
-            <span class="a-num">#4 / 4</span>
+            <span class="a-num">#5 / 5</span>
           </div>
           <h2>Rusia își echipează dronele cu antene mai mari ca să treacă de bruiajul ucrainean</h2>
 
