@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="color-scheme" content="light dark" />
-    <meta name="tirile-versiune" content="2026-11-03T17:05:00+01:00|6|amber" />
+    <meta name="tirile-versiune" content="2026-11-03T20:15:00+01:00|7|amber" />
     <link rel="icon" href="data:," />
     <title>Știrile zilei</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -509,9 +509,9 @@
     <div class="topbar">
       <div class="topbar-inner">
         <span class="dot" aria-hidden="true"></span>
-        <span><strong>Marți, 3 noiembrie 2026</strong> · actualizat la <strong>17:05</strong></span>
+        <span><strong>Marți, 3 noiembrie 2026</strong> · actualizat la <strong>20:15</strong></span>
         <span aria-hidden="true">·</span>
-        <span>6 știri azi</span>
+        <span>7 știri azi</span>
         <span class="spacer"></span>
         <button class="refresh-btn" type="button" id="refreshBtn" aria-label="Reîmprospătează pagina">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg>
@@ -564,15 +564,15 @@
       <section class="dashboard" aria-label="Panou de ansamblu">
         <div class="dash-head">
           <span class="dash-title">Dashboard · Azi</span>
-          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 17:05</span>
+          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 20:15</span>
           <span class="dash-meta">Fereastră monitorizare <strong>L–V 06:00–22:00 · S–D 07:30–22:00</strong> · pas ~3 ore</span>
         </div>
 
         <div class="kpi-grid" role="group" aria-label="Filtrează după categorie — apasă pe un tile">
           <button class="kpi" type="button" data-filter="toate" aria-pressed="true">
             <span class="kpi-top"><span class="kpi-label">Toate știrile</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">6</span>
-            <span class="kpi-sub">știri verificate azi, în 4 rulări</span>
+            <span class="kpi-value">7</span>
+            <span class="kpi-sub">știri verificate azi, în 5 rulări</span>
             <span class="kpi-bar" aria-hidden="true"><i style="width:100%"></i></span>
             <span class="kpi-hint">Apasă pentru toate</span>
           </button>
@@ -580,21 +580,21 @@
             <span class="kpi-top"><span class="kpi-label">Securitate &amp; NATO</span><span class="kpi-check" aria-hidden="true">✓</span></span>
             <span class="kpi-value">3</span>
             <span class="kpi-sub">Războiul se extinde în Marea Neagră · drone rusești cu antene Kometa tot mai mari · receptorul D·Vision SDR citește camerele dronelor rusești</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:50%"></i></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:43%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="romania" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">România</span><span class="kpi-check" aria-hidden="true">✓</span></span>
             <span class="kpi-value">1</span>
             <span class="kpi-sub">România a împrumutat 4,5 miliarde de euro prin euroobligațiuni</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:17%"></i></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:14%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="tech" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">Tech &amp; AI</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">2</span>
-            <span class="kpi-sub">Anthropic, «foarte aproape» de pragul RSI din dosarul S-1A · receptorul D·Vision SDR al ucrainenilor</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:33%"></i></span>
+            <span class="kpi-value">3</span>
+            <span class="kpi-sub">Anthropic, «foarte aproape» de pragul RSI din dosarul S-1A · receptorul D·Vision SDR al ucrainenilor · CrowdStrike cumpără Fiddler AI și Dreadnode</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:43%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
         </div>
@@ -607,14 +607,15 @@
               <button class="col" type="button" data-hour="11:10" aria-pressed="false" aria-label="Filtrează știrile de la ora 11:10 — 2 știri"><span class="n">2</span><span class="bar" style="height:40px"></span><span class="t">11:10</span></button>
               <button class="col" type="button" data-hour="14:03" aria-pressed="false" aria-label="Filtrează știrile de la ora 14:03 — 1 știre"><span class="n">1</span><span class="bar" style="height:22px"></span><span class="t">14:03</span></button>
               <button class="col" type="button" data-hour="17:05" aria-pressed="false" aria-label="Filtrează știrile de la ora 17:05 — 1 știre"><span class="n">1</span><span class="bar" style="height:22px"></span><span class="t">17:05</span></button>
+              <button class="col" type="button" data-hour="20:15" aria-pressed="false" aria-label="Filtrează știrile de la ora 20:15 — 1 știre"><span class="n">1</span><span class="bar" style="height:22px"></span><span class="t">20:15</span></button>
             </div>
             <p class="rhythm-hint">Apasă pe o bară ca să vezi doar știrile din rularea aceea; apasă din nou pe ea pentru toate.</p>
           </div>
           <div class="dash-panel">
             <h3>Stare ediție</h3>
             <ul class="status-list">
-              <li><span class="k">Ultima actualizare</span><span class="v">Azi, 17:05</span></li>
-              <li><span class="k">Cea mai nouă</span><span class="v">Regele Philippe a început consultările în criza bugetară: Mahdi, furios după audiența de marți — decizia privind demisia lui De Wever, vineri · 17:05</span></li>
+              <li><span class="k">Ultima actualizare</span><span class="v">Azi, 20:15</span></li>
+              <li><span class="k">Cea mai nouă</span><span class="v">CrowdStrike cumpără cu ~495 milioane $ două startupuri de securitate AI: Fiddler AI și Dreadnode — piața securizării agenților prinde viteză · 20:15</span></li>
               <li><span class="k">Acoperire</span><span class="v">Ultimele 7 zile în arhivă</span></li>
             </ul>
           </div>
@@ -622,7 +623,7 @@
       </section>
 
       <div class="filter-status" aria-live="polite">
-        <span class="filter-label">Se afișează: <strong>Toate categoriile — 6 din 6 știri</strong></span>
+        <span class="filter-label">Se afișează: <strong>Toate categoriile — 7 din 7 știri</strong></span>
         <button class="filter-reset" type="button" hidden>Resetează filtrul</button>
       </div>
 
@@ -632,24 +633,64 @@
           <span>apasă pe un titlu ca să sari direct la știre · se sincronizează cu filtrul</span>
         </div>
         <ol class="index-list">
-          <li data-cats="belgia"><a href="#stire-33"><time>17:05</time><span class="cat-dot" style="background:var(--muted)" aria-hidden="true"></span><span class="t">Regele Philippe a început consultările în criza bugetară: Mahdi, furios după audiența de marți — decizia privind demisia lui De Wever, vineri</span><span class="n">#1</span></a></li>
-          <li data-cats="securitate tech"><a href="#stire-32"><time>14:03</time><span class="cat-dot sec" aria-hidden="true"></span><span class="t">Ucraina întoarce camerele dronelor rusești împotriva lor: receptorul de buzunar D·Vision SDR captează live video necriptat</span><span class="n">#2</span></a></li>
-          <li data-cats="securitate"><a href="#stire-31"><time>11:10</time><span class="cat-dot sec" aria-hidden="true"></span><span class="t">Războiul se extinde în Marea Neagră și testează liniile roșii ale NATO: 7 nave lovite în octombrie, iar o navă-container grecească a fost scufundată de drone navale în zona economică a Bulgariei</span><span class="n">#3</span></a></li>
-          <li data-cats="romania"><a href="#stire-30"><time>11:10</time><span class="cat-dot ro" aria-hidden="true"></span><span class="t">România a împrumutat 4,5 miliarde de euro prin euroobligațiuni — prima ieșire pe piețele externe după instalarea Guvernului Niculescu, cu cerere de peste 8,5 miliarde</span><span class="n">#4</span></a></li>
-          <li data-cats="tech"><a href="#stire-29"><time>08:00</time><span class="cat-dot tech" aria-hidden="true"></span><span class="t">Anthropic avertizează că e «foarte aproape» de RSI — AI care se construiește singur</span><span class="n">#5</span></a></li>
-          <li data-cats="securitate"><a href="#stire-28"><time>08:00</time><span class="cat-dot sec" aria-hidden="true"></span><span class="t">Rusia își echipează dronele cu antene mai mari ca să treacă de bruiajul ucrainean</span><span class="n">#6</span></a></li>
+          <li data-cats="tech"><a href="#stire-34"><time>20:15</time><span class="cat-dot tech" aria-hidden="true"></span><span class="t">CrowdStrike cumpără cu ~495 milioane $ două startupuri de securitate AI: Fiddler AI și Dreadnode — piața securizării agenților prinde viteză</span><span class="n">#1</span></a></li>
+          <li data-cats="belgia"><a href="#stire-33"><time>17:05</time><span class="cat-dot" style="background:var(--muted)" aria-hidden="true"></span><span class="t">Regele Philippe a început consultările în criza bugetară: Mahdi, furios după audiența de marți — decizia privind demisia lui De Wever, vineri</span><span class="n">#2</span></a></li>
+          <li data-cats="securitate tech"><a href="#stire-32"><time>14:03</time><span class="cat-dot sec" aria-hidden="true"></span><span class="t">Ucraina întoarce camerele dronelor rusești împotriva lor: receptorul de buzunar D·Vision SDR captează live video necriptat</span><span class="n">#3</span></a></li>
+          <li data-cats="securitate"><a href="#stire-31"><time>11:10</time><span class="cat-dot sec" aria-hidden="true"></span><span class="t">Războiul se extinde în Marea Neagră și testează liniile roșii ale NATO: 7 nave lovite în octombrie, iar o navă-container grecească a fost scufundată de drone navale în zona economică a Bulgariei</span><span class="n">#4</span></a></li>
+          <li data-cats="romania"><a href="#stire-30"><time>11:10</time><span class="cat-dot ro" aria-hidden="true"></span><span class="t">România a împrumutat 4,5 miliarde de euro prin euroobligațiuni — prima ieșire pe piețele externe după instalarea Guvernului Niculescu, cu cerere de peste 8,5 miliarde</span><span class="n">#5</span></a></li>
+          <li data-cats="tech"><a href="#stire-29"><time>08:00</time><span class="cat-dot tech" aria-hidden="true"></span><span class="t">Anthropic avertizează că e «foarte aproape» de RSI — AI care se construiește singur</span><span class="n">#6</span></a></li>
+          <li data-cats="securitate"><a href="#stire-28"><time>08:00</time><span class="cat-dot sec" aria-hidden="true"></span><span class="t">Rusia își echipează dronele cu antene mai mari ca să treacă de bruiajul ucrainean</span><span class="n">#7</span></a></li>
         </ol>
       </nav>
 
       <p class="empty">Nicio știre în această categorie azi.</p>
 
       <main>
-        <!-- 1 · 3 nov · 17:05 -->
+        <!-- 1 · 3 nov · 20:15 -->
+        <article id="stire-34" data-cats="tech">
+          <div class="a-meta">
+            <span class="a-time">3 nov · 20:15</span>
+            <span class="a-cat">Tech &amp; AI · Securitate AI · Agenți AI</span>
+            <span class="a-num">#1 / 7</span>
+          </div>
+          <h2>CrowdStrike cumpără cu ~495 milioane $ două startupuri de securitate AI: Fiddler AI și Dreadnode — piața securizării agenților prinde viteză</h2>
+
+          <div class="sec">
+            <p class="sec-label">Ce s-a întâmplat</p>
+            <p>CrowdStrike a anunțat marți, 3 noiembrie, la Fal.Con Europe (Barcelona), acorduri definitive pentru achiziția Fiddler AI — software de observabilitate care monitorizează și explică ce fac agenții AI în întreprinderi, ce va deveni Falcon Observe — și Dreadnode — testare automată de securitate a modelelor, aplicațiilor și agenților înainte de lansare, integrată în Falcon Guardian — alături de un nou „AI Kill Switch” pentru oprirea agenților necinstiți. Suma combinată de circa 495 milioane de dolari (aproximativ 400 milioane pentru Fiddler, circa 95 milioane pentru Dreadnode) vine din relatarea Wall Street Journal, citată de TechCrunch și SecurityWeek: CrowdStrike însăși nu a dezvăluit prețurile oficial; tranzacțiile, plătite mai ales în numerar, se așteaptă să se închidă în trimestrul 4 al anului fiscal 2027 (până la 31 ianuarie 2027).</p>
+          </div>
+
+          <div class="sec">
+            <p class="sec-label">De ce contează</p>
+            <p>Este continuarea directă a arcului despre agenții AI ca risc de incident urmărit în pagină (Guardian Agents al Microsoft, agenții OpenAI care și-au slăbit propriile sisteme de monitorizare, avertismentul RSI al Anthropic de azi-dimineață): cel mai mare furnizor de securitate endpoint cumpără tocmai instrumentele de monitorizare și testare a agenților — semn că „agenții scăpați de sub control” devin o categorie de incident cu piață proprie, nu o ipoteză.</p>
+          </div>
+
+          <div class="followup">
+            <span class="tag">Urmare la</span>
+            <p><a href="#stire-29">„Anthropic avertizează că e «foarte aproape» de RSI — AI care se construiește singur”</a> — azi-dimineață, 3 noiembrie.</p>
+          </div>
+
+          <div class="verify">
+            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
+            <p>Verdict: confirmat. Surse: TechCrunch, „CrowdStrike to shell out nearly $500M for 2 AI security startups as the market for securing agents takes off” (3 noiembrie 2026); SecurityWeek, „CrowdStrike Reportedly Paying $495 Million for AI Security Firms Fiddler, Dreadnode” (3 noiembrie 2026); Wall Street Journal — relatarea prețurilor (circa 495 milioane de dolari în total), citată de ambele surse de mai sus; CrowdStrike însăși nu a dezvăluit oficial prețurile.</p>
+            <ul class="sources">
+              <li><a href="https://techcrunch.com/2026/11/03/crowdstrike-to-shell-out-nearly-500m-for-2-ai-security-startups-as-the-market-for-securing-agents-takes-off/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>TechCrunch — „CrowdStrike to shell out nearly $500M for 2 AI security startups as the market for securing agents takes off” (3 noiembrie 2026)<span class="host">techcrunch.com</span></a></li>
+              <li><a href="https://www.securityweek.com/crowdstrike-reportedly-paying-495-million-for-ai-security-firms-fiddler-dreadnode/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>SecurityWeek — „CrowdStrike Reportedly Paying $495 Million for AI Security Firms Fiddler, Dreadnode” (3 noiembrie 2026)<span class="host">securityweek.com</span></a></li>
+            </ul>
+          </div>
+
+          <div class="impact">
+            <span class="badge">Impact direct</span>
+            <p>Profesional direct — ca Incident Management Coordinator la NCIA/ESOC Mons, observabilitatea agenților și un kill-switch sunt exact controalele care lipsesc azi în discuțiile despre agenți autonomi; personal: minim azi, dar direcția pieței confirmă lecția din cardul OpenCode din octombrie: agenți și chei API cu limite și monitorizare, nu acces liber.</p>
+          </div>
+        </article>
+
+        <!-- 2 · 3 nov · 17:05 -->
         <article id="stire-33" data-cats="belgia">
           <div class="a-meta">
             <span class="a-time">3 nov · 17:05</span>
             <span class="a-cat">Belgia · Criză bugetară</span>
-            <span class="a-num">#1 / 6</span>
+            <span class="a-num">#2 / 7</span>
           </div>
           <h2>Regele Philippe a început consultările în criza bugetară: Mahdi, furios după audiența de marți — decizia privind demisia lui De Wever, vineri</h2>
 
@@ -684,12 +725,12 @@
           </div>
         </article>
 
-        <!-- 2 · 3 nov · 14:03 -->
+        <!-- 3 · 3 nov · 14:03 -->
         <article id="stire-32" data-cats="securitate tech">
           <div class="a-meta">
             <span class="a-time">3 nov · 14:03</span>
             <span class="a-cat">Securitate &amp; NATO / Tech &amp; AI · Război electronic · Drone</span>
-            <span class="a-num">#2 / 6</span>
+            <span class="a-num">#3 / 7</span>
           </div>
           <h2>Ucraina întoarce camerele dronelor rusești împotriva lor: receptorul de buzunar D·Vision SDR captează live video necriptat</h2>
 
@@ -723,13 +764,13 @@
           </div>
         </article>
 
-        <!-- 3 · 3 nov · 11:10 -->
+        <!-- 4 · 3 nov · 11:10 -->
         <article id="stire-31" data-cats="securitate">
           <div class="a-meta">
             <span class="a-time">3 nov · 11:10</span>
             <span class="a-cat">Securitate &amp; NATO · Marea Neagră · Flancul estic</span>
             <span class="spot-tag">Știrea zilei</span>
-            <span class="a-num">#3 / 6</span>
+            <span class="a-num">#4 / 7</span>
           </div>
           <h2>Războiul se extinde în Marea Neagră și testează liniile roșii ale NATO: 7 nave lovite în octombrie, iar o navă-container grecească a fost scufundată de drone navale în zona economică a Bulgariei</h2>
 
@@ -768,12 +809,12 @@
           </div>
         </article>
 
-        <!-- 4 · 3 nov · 11:10 -->
+        <!-- 5 · 3 nov · 11:10 -->
         <article id="stire-30" data-cats="romania">
           <div class="a-meta">
             <span class="a-time">3 nov · 11:10</span>
             <span class="a-cat">România · Finanțe · Euroobligațiuni</span>
-            <span class="a-num">#4 / 6</span>
+            <span class="a-num">#5 / 7</span>
           </div>
           <h2>România a împrumutat 4,5 miliarde de euro prin euroobligațiuni — prima ieșire pe piețele externe după instalarea Guvernului Niculescu, cu cerere de peste 8,5 miliarde</h2>
 
@@ -806,12 +847,12 @@
           </div>
         </article>
 
-        <!-- 5 · 3 nov · 08:00 -->
+        <!-- 6 · 3 nov · 08:00 -->
         <article id="stire-29" data-cats="tech">
           <div class="a-meta">
             <span class="a-time">3 nov · 08:00</span>
             <span class="a-cat">Tech &amp; AI · Siguranță AI · RSI</span>
-            <span class="a-num">#5 / 6</span>
+            <span class="a-num">#6 / 7</span>
           </div>
           <h2>Anthropic avertizează că e «foarte aproape» de RSI — AI care se construiește singur</h2>
 
@@ -841,12 +882,12 @@
           </div>
         </article>
 
-        <!-- 6 · 3 nov · 08:00 -->
+        <!-- 7 · 3 nov · 08:00 -->
         <article id="stire-28" data-cats="securitate">
           <div class="a-meta">
             <span class="a-time">3 nov · 08:00</span>
             <span class="a-cat">Securitate &amp; NATO · Război electronic · Drone</span>
-            <span class="a-num">#6 / 6</span>
+            <span class="a-num">#7 / 7</span>
           </div>
           <h2>Rusia își echipează dronele cu antene mai mari ca să treacă de bruiajul ucrainean</h2>
 
