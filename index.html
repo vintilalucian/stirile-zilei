@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="color-scheme" content="light dark" />
-    <meta name="tirile-versiune" content="2026-11-04T11:05:00+01:00|4|amber" />
+    <meta name="tirile-versiune" content="2026-11-04T11:15:00+01:00|4|amber" />
     <link rel="icon" href="data:," />
     <title>Știrile zilei</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -293,6 +293,41 @@
       }
       .filter-reset:hover{border-color:var(--ink)}
 
+      /* ── Ultimele știri — bandă compactă IMEDIAT deasupra chenarului „Știrea zilei"
+         (doar ziua curentă). Lista e generată de script din cardurile zilei,
+         cele mai noi primele; banda stă în afara logicii de filtrare. */
+      .latest-band{
+        margin-top:14px;background:var(--surface);border:1px solid var(--line);
+        border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden;
+      }
+      .latest-head{
+        padding:10px 16px;display:flex;align-items:baseline;justify-content:space-between;gap:12px;flex-wrap:wrap;
+        border-bottom:1px solid var(--line);background:var(--surface-2);
+      }
+      .latest-head h2{font-size:.82rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;margin:0;display:flex;align-items:center;gap:8px}
+      .latest-head h2::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--green);flex:none}
+      .latest-head span{color:var(--muted);font-size:.83rem}
+      .latest-list{list-style:none;margin:0;padding:4px}
+      .latest-list li a{
+        display:flex;gap:12px;align-items:center;padding:7px 10px;border-radius:8px;
+        text-decoration:none;color:var(--ink);
+      }
+      .latest-list li a:hover{background:var(--surface-2)}
+      .latest-list li a:focus-visible{outline:3px solid var(--pbi-yellow);outline-offset:-3px}
+      .latest-list time{
+        flex:none;font-variant-numeric:tabular-nums;font-weight:700;color:var(--accent-ink);
+        font-size:.88rem;min-width:44px;
+      }
+      .latest-list .t{
+        font-weight:600;line-height:1.35;flex:1;min-width:0;
+        white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+      }
+      .latest-list .arr{flex:none;color:var(--muted);font-size:.85rem}
+      @media (max-width:560px){
+        .latest-list li a{gap:9px}
+        .latest-head{padding:10px 14px}
+      }
+
       /* ── Chenar permanent: știrea cea mai importantă, culoare după gravitate ──
          Nivelul se setează prin clasa de pe secțiune: .sev-green / .sev-amber / .sev-red */
       .spot{
@@ -509,9 +544,9 @@
     <div class="topbar">
       <div class="topbar-inner">
         <span class="dot" aria-hidden="true"></span>
-        <span><strong>Miercuri, 4 noiembrie 2026</strong> · actualizat la <strong>08:15</strong></span>
+        <span><strong>Miercuri, 4 noiembrie 2026</strong> · actualizat la <strong>11:05</strong></span>
         <span aria-hidden="true">·</span>
-        <span>2 știri azi</span>
+        <span>4 știri azi</span>
         <span class="spacer"></span>
         <button class="refresh-btn" type="button" id="refreshBtn" aria-label="Reîmprospătează pagina">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg>
@@ -532,6 +567,19 @@
       </header>
 
       <section class="day" id="zi-2026-11-04">
+      <!-- Bandă „Ultimele știri" — IMEDIAT deasupra chenarului „Știrea zilei",
+           între masthead și chenar. Lista e generată de script din cardurile
+           zilei curente (cele mai noi primele, fiecare titlu link la #stire-N),
+           ca să rămână la zi singură la editările viitoare care adaugă carduri.
+           Banda stă în afara logicii de filtrare: vizibilă la orice filtru. -->
+      <nav class="latest-band" aria-label="Ultimele știri">
+        <div class="latest-head">
+          <h2>Ultimele știri</h2>
+          <span class="latest-count">cele mai noi primele · apasă pe un titlu ca să sari la știre</span>
+        </div>
+        <ol class="latest-list"></ol>
+      </nav>
+
       <!-- Chenar permanent: știrea cea mai importantă a zilei — chiar sub masthead,
            ÎNAINTEA dashboardului, vizibilă din prima, fără scroll.
            Nivelul de azi: GALBEN (sev-amber) — de urmărit, evoluție importantă, fără acțiune imediată:
@@ -579,7 +627,7 @@
           <button class="kpi" type="button" data-filter="securitate" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">Securitate &amp; NATO</span><span class="kpi-check" aria-hidden="true">✓</span></span>
             <span class="kpi-value">3</span>
-            <span class="kpi-sub">Franța lansează „pactul” pentru drone navale · anatomia furtului Binance de 6,3 mld $ · NATO testează apărarea anti-dronă pe 5G în Letonia</span>
+            <span class="kpi-sub">Franța lansează un «pact» pentru drone navale · furtul Binance a început cu un interviu de angajare fals · NATO a testat în Letonia apărarea anti-dronă pe rețele 5G comerciale</span>
             <span class="kpi-bar" aria-hidden="true"><i style="width:75%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
@@ -593,7 +641,7 @@
           <button class="kpi" type="button" data-filter="tech" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">Tech &amp; AI</span><span class="kpi-check" aria-hidden="true">✓</span></span>
             <span class="kpi-value">2</span>
-            <span class="kpi-sub">Anthropic lansează FlashProve: dovadă criptografică că un răspuns chiar vine de la modelul promis · anatomia furtului Binance de 6,3 mld $</span>
+            <span class="kpi-sub">Furtul Binance a început cu un interviu de angajare fals · Anthropic lansează FlashProve: dovadă criptografică că un răspuns chiar vine de la modelul promis</span>
             <span class="kpi-bar" aria-hidden="true"><i style="width:50%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
@@ -612,7 +660,7 @@
             <h3>Stare ediție</h3>
             <ul class="status-list">
               <li><span class="k">Ultima actualizare</span><span class="v">Azi, 11:05</span></li>
-              <li><span class="k">Cea mai nouă</span><span class="v">Franța lansează un „pact” pentru drone navale: industria și startupurile, chemate să livreze rapid sisteme pentru marină · 11:05</span></li>
+              <li><span class="k">Cea mai nouă</span><span class="v">Franța lansează un «pact» pentru drone navale: industria și startupurile, chemate să livreze rapid sisteme pentru marină · 11:05</span></li>
               <li><span class="k">Acoperire</span><span class="v">Ultimele 7 zile în arhivă</span></li>
             </ul>
           </div>
@@ -630,7 +678,7 @@
           <span>apasă pe un titlu ca să sari direct la știre · se sincronizează cu filtrul</span>
         </div>
         <ol class="index-list">
-          <li data-cats="securitate"><a href="#stire-38"><time>11:05</time><span class="cat-dot sec" aria-hidden="true"></span><span class="t">Franța lansează un „pact” pentru drone navale: industria și startupurile, chemate să livreze rapid sisteme pentru marină</span><span class="n">#1</span></a></li>
+          <li data-cats="securitate"><a href="#stire-38"><time>11:05</time><span class="cat-dot sec" aria-hidden="true"></span><span class="t">Franța lansează un «pact» pentru drone navale: industria și startupurile, chemate să livreze rapid sisteme pentru marină</span><span class="n">#1</span></a></li>
           <li data-cats="securitate tech"><a href="#stire-37"><time>11:05</time><span class="cat-dot sec" aria-hidden="true"></span><span class="t">Furtul Binance de 6,3 mld $ a început cu un interviu de angajare fals: campanie nord-coreeană de cinci luni, 57 de atacuri blocate înainte</span><span class="n">#2</span></a></li>
           <li data-cats="securitate"><a href="#stire-36"><time>08:00</time><span class="cat-dot sec" aria-hidden="true"></span><span class="t">NATO a testat în Letonia apărarea anti-dronă pe rețele 5G comerciale: exercițiul FUSE/DiBaX, cu aproape 400 de drone</span><span class="n">#3</span></a></li>
           <li data-cats="tech"><a href="#stire-35"><time>08:00</time><span class="cat-dot tech" aria-hidden="true"></span><span class="t">Anthropic lansează FlashProve: dovadă criptografică că un răspuns chiar vine de la modelul promis</span><span class="n">#4</span></a></li>
@@ -647,32 +695,33 @@
             <span class="a-cat">Securitate &amp; NATO · Drone navale · Franța</span>
             <span class="a-num">#1 / 4</span>
           </div>
-          <h2>Franța lansează un „pact” pentru drone navale: industria și startupurile, chemate să livreze rapid sisteme pentru marină</h2>
+          <h2>Franța lansează un «pact» pentru drone navale: industria și startupurile, chemate să livreze rapid sisteme pentru marină</h2>
 
           <div class="sec">
             <p class="sec-label">Ce s-a întâmplat</p>
-            <p>Ministrul francez al forțelor armate, Catherine Vautrin, a anunțat marți, 3 noiembrie, la deschiderea salonului Euronaval de lângă Paris, un „pact” guvern–industrie pentru drone navale, după modelul pactului pentru drone aeriene din 2024: mari producători și startupuri vor colabora ca marina franceză să primească rapid echipamente adaptate nevoilor ei, în loc de programe lungi de achiziție. Printre direcțiile vizate: deminarea marină, colectarea de date hidro- și oceanografice și explorarea fundului mării la adâncimi mari.</p>
-            <p>La același salon au venit și primele comenzi concrete: un al doilea ROV Deep Sea de la LD Travocean (3.600 kg, poate coborî la 6.000 m), opt roboți countermine A18 de la Exail pentru depistarea și caracterizarea minelor marine și un al doilea vehicul subacvatic de luptă fără echipaj de la Naval Group, de peste 10 m lungime și peste 10.000 kg. Tot la Euronaval, Naval Group și MBDA au semnat pentru mai multe interceptoare Aster pe fregatele FDI, iar Vautrin a prezentat bugetul apărării propus pentru 2027: 63,4 miliarde de euro, cu 6,5 miliarde mai mult decât în 2026, votul fiind programat luna aceasta.</p>
+            <p>Ministrul francez al forțelor armate, Catherine Vautrin, a anunțat marți, 3 noiembrie, la deschiderea salonului Euronaval de lângă Paris, un „pact” guvern–industrie pentru drone navale, după modelul pactului pentru drone aeriene din 2024: marii producători și startupurile sunt chemate să livreze rapid sisteme adaptate nevoilor marinei. Direcțiile anunțate: deminarea marină, colectarea de date hidro- și oceanografice și explorarea fundului mării la mare adâncime.</p>
+            <p>Anunțul a venit cu comenzi concrete: achiziția unui al doilea ROV Deep Sea de la LD Travocean (3.600 kg, capabil să coboare la 6.000 m), opt roboți countermine A18 de la Exail și un al doilea vehicul subacvatic de luptă fără echipaj de la Naval Group (peste 10 m lungime, peste 10.000 kg); oficialii au semnat și un acord Naval Group–MBDA pentru mai multe interceptoare Aster pe fregatele FDI. Vautrin a prezentat și bugetul apărării propus pentru 2027: 63,4 miliarde de euro, cu 6,5 miliarde mai mult decât în 2026, cu vot programat luna aceasta în parlament.</p>
           </div>
 
           <div class="sec">
             <p class="sec-label">De ce contează</p>
-            <p>Dronele navale sunt exact vectorul loviturilor din Marea Neagră urmărite în pagină din octombrie — nave comerciale lovite de drone în apropierea României și Bulgariei. Franța, aliat-cheie pe flanc, își organizează acum industria ca să livreze rapid sisteme navale fără echipaj: semn că războiul dronelor pe mare trece de la improvizație la program industrial, cu lecții de viteză de achiziție și interoperabilitate relevante și pentru NATO.</p>
+            <p>Dronele navale sunt vectorul loviturilor din Marea Neagră urmărite din octombrie — iar Franța răspunde cu același instrument ca la dronele aeriene: un cadru guvern–industrie care scurtează drumul de la prototip la dotare, cu comenzi reale deja semnate, nu doar intenții.</p>
           </div>
 
           <div class="verify">
             <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
-            <p>Verdict: confirmat. Surse: Defense News, „French defense minister kicks off ‘pact’ with industry in rush to field naval drones” (3 noiembrie 2026); Reuters, relatarea de la Euronaval din 3 noiembrie 2026 (preluată de SRN News și MarineLink); Breaking Defense, „France investing in naval power as military ambition is ‘to be feared’” (3 noiembrie 2026).</p>
+            <p>Verdict: confirmat. Surse: Defense News (3 noiembrie 2026) relatează anunțul pactului și comenzile anunțate la Euronaval; Reuters, prin SRN News și MarineLink (3 noiembrie 2026), confirmă salonul și angajamentul lui Vautrin pentru colaborarea industrie–startupuri pe drone navale; Breaking Defense (3 noiembrie 2026) confirmă discursul de deschidere și bugetul propus de 63,4 miliarde de euro pentru 2027.</p>
             <ul class="sources">
               <li><a href="https://www.defensenews.com/global/europe/2026/11/03/french-defense-minister-kicks-off-pact-with-industry-in-rush-to-field-naval-drones/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Defense News — „French defense minister kicks off ‘pact’ with industry in rush to field naval drones” (3 noiembrie 2026)<span class="host">defensenews.com</span></a></li>
-              <li><a href="https://srnnews.com/european-naval-defence-industry-meets-as-threats-drive-fleet-upgrades/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Reuters, via SRN News — „European naval defence industry meets as threats drive fleet upgrades” (3 noiembrie 2026)<span class="host">srnnews.com</span></a></li>
-              <li><a href="https://breakingdefense.com/2026/11/france-investing-in-naval-power-as-military-ambition-is-to-be-feared-armed-forces-minister/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Breaking Defense — „France investing in naval power as military ambition is ‘to be feared’” (3 noiembrie 2026)<span class="host">breakingdefense.com</span></a></li>
+              <li><a href="https://srnnews.com/european-naval-defence-industry-meets-as-threats-drive-fleet-upgrades/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Reuters via SRN News — „European naval defence industry meets as threats drive fleet upgrades” (3 noiembrie 2026)<span class="host">srnnews.com</span></a></li>
+              <li><a href="https://www.marinelink.com/news/euronaval-meets-amidst-global-maritime-544123" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Reuters via MarineLink — „Euronaval 2026 Meets Amidst Global Maritime Defense” (3 noiembrie 2026)<span class="host">marinelink.com</span></a></li>
+              <li><a href="https://breakingdefense.com/2026/11/france-investing-in-naval-power-as-military-ambition-is-to-be-feared-armed-forces-minister/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Breaking Defense — „France investing in naval power as military ambition is ‘to be feared’: Armed forces minister” (3 noiembrie 2026)<span class="host">breakingdefense.com</span></a></li>
             </ul>
           </div>
 
           <div class="impact">
             <span class="badge">Impact direct</span>
-            <p>Impact profesional direct, fără acțiune imediată: counter-drone naval, deminare marină și achiziție rapidă de sisteme fără echipaj sunt pe arcul Marea Neagră urmărit din octombrie; de urmărit ce capabilități ajung în dotarea aliaților și ce lecții de interoperabilitate apar. Personal/familie: minim, relevanță de context.</p>
+            <p>Impact profesional direct, fără acțiune imediată: counter-drone naval, deminare și achiziție rapidă de sisteme fără echipaj sunt exact direcțiile în care se mișcă cerințele de capabilități pe flancul maritim urmărit la muncă. Personal/familie: minim, relevanță de context.</p>
           </div>
         </article>
 
@@ -685,41 +734,41 @@
           </div>
           <h2>Furtul Binance de 6,3 mld $ a început cu un interviu de angajare fals: campanie nord-coreeană de cinci luni, 57 de atacuri blocate înainte</h2>
 
+          <div class="followup">
+            <span class="tag">Urmare la</span>
+            <p><a href="#stire-22">„Binance reia retragerile după cel mai mare furt cibernetic din istorie: 95% din cele 6,3 mld $ furate, acoperite; FBI îl acuză pe grupul nord-coreean TraderTraitor”</a> — duminică, 1 noiembrie 2026.</p>
+          </div>
+
           <div class="sec">
             <p class="sec-label">Ce s-a întâmplat</p>
-            <p>Binance a publicat marți, 3 noiembrie, primul raport de incident despre furtul din 29 octombrie, cel mai mare furt cibernetic din istorie: atacul n-a fost o singură breșă spectaculoasă, ci o campanie de cinci luni. În iunie, un inginer din echipa de portofele a descărcat un instrument software compromis; în septembrie, un al doilea inginer, aflat în căutare de job, a fost abordat pe o platformă legitimă de recrutare, a trecut prin interviuri video false — inclusiv cu un „CEO” fictiv — și a descărcat pe calculatorul de serviciu o „temă” de cod malițioasă. Pe 20 octombrie atacatorii au folosit acel calculator, plus un instrument AI intern al Binance, ca să preia calculatoarele a doi ingineri din echipa de portofele; pe 29 octombrie au scos 233,46 milioane de tokeni XRP din cinci portofele „hot” în patru minute, apoi și alte criptomonede, total circa 6,3 miliarde de dolari. Circa 2,85 miliarde de dolari au fost înghețați sau interceptați între timp, iar Binance spune că n-avea asigurare cibernetică pentru pierdere.</p>
-            <p>FBI atribuie atacul grupului nord-coreean TraderTraitor, iar Binance spune că a detectat și blocat 57 de atacuri suspecte cu legătură nord-coreeană în 2026, înainte ca acesta să treacă.</p>
+            <p>Raportul de incident publicat de Binance pe 3 noiembrie reconstruiește o campanie de cinci luni. În iunie, un inginer a descărcat un instrument software compromis. În septembrie, un al doilea inginer a fost abordat pe o platformă legitimă de recrutare de persoane care se dădeau drept reprezentanți ai unei companii inexistente: interviuri video false, inclusiv cu un „CEO” fictiv, iar „tema” de cod descărcată pe calculatorul de serviciu conținea cod malițios. Pe 20 octombrie, atacatorii au folosit calculatorul compromis și un instrument AI intern al Binance ca să preia calculatoarele a doi ingineri din echipa de portofele.</p>
+            <p>Pe 29 octombrie, din cinci portofele „hot” au fost scoși 233,46 milioane XRP în patru minute, parte dintr-un total de circa 6,3 miliarde de dolari; circa 2,85 miliarde de dolari au fost înghețați sau interceptați. Binance nu avea asigurare cibernetică pentru pierdere. FBI atribuie atacul grupului nord-coreean TraderTraitor, iar compania spune că în 2026 blocase deja 57 de atacuri suspecte similare.</p>
           </div>
 
           <div class="sec">
             <p class="sec-label">De ce contează</p>
-            <p>Anatomia completă a celui mai mare furt cibernetic din istorie schimbă lecția: nu o vulnerabilitate zero-day a spart seiful, ci răbdarea — luni de inginerie socială, instrumente de dezvoltator compromise și un instrument AI intern folosit ca multiplicator de acces, după ce apărarea blocase deja 57 de tentative similare. Pentru oricine gestionează incidente, e cazul-școală al anului despre cum arată un atacator persistent și despre ce înseamnă, practic, „a 58-a oară”.</p>
-          </div>
-
-          <div class="sec">
-            <p class="sec-label">Tabăra adversă</p>
-            <p>Coreea de Nord neagă implicarea: Kim Yo-jong, sora liderului Kim Jong-un, a numit acuzația SUA „retorică absurdă și nimic nou”, potrivit relatării The Guardian a comentariilor difuzate de agenția de stat KCNA.</p>
-          </div>
-
-          <div class="followup">
-            <span class="tag">Urmare la</span>
-            <p><a href="#stire-22">„Binance reia retragerile după cel mai mare furt cibernetic din istorie: 95% din cele 6,3 mld $ furate, acoperite; FBI îl acuză pe grupul nord-coreean TraderTraitor”</a> — 1 noiembrie.</p>
+            <p>Nu a fost o vulnerabilitate zero-day, ci răbdare: luni de inginerie socială, un instrument de dezvoltare compromis și un instrument AI intern folosit ca punte — lanțul complet al celui mai mare furt cibernetic din istorie a trecut prin oameni și prin uneltele lor obișnuite, nu prin codul bursei.</p>
           </div>
 
           <div class="verify">
             <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
-            <p>Verdict: confirmat. Surse: Binance, raportul propriu de incident (3 noiembrie 2026); TechCrunch, „Researchers warned of North Korean hacking tactics years before record $6.3B Binance heist” (3 noiembrie 2026); Reuters, „Binance hackers used fake job interview in $6.3 billion attack” (3 noiembrie 2026); Nextgov, „Binance says fake job interview helped North Korean hackers steal $6.3 billion in crypto” (3 noiembrie 2026).</p>
+            <p>Verdict: confirmat. Surse: raportul propriu de incident al Binance (3 noiembrie 2026) prezintă cronologia campaniei; TechCrunch (3 noiembrie 2026) și Nextgov (3 noiembrie 2026) relatează independent interviul fals și rolul instrumentului AI intern; Reuters (3 noiembrie 2026) confirmă atribuirea FBI și reacția Phenianului.</p>
             <ul class="sources">
+              <li><a href="https://www.binance.com/en/square/post/11-03-2026-binance-initial-report-fbi-attributes-6-34-billion-attack-to-north-korea-which-used-fake-job-interviews-and-an-ai-tool-to-reach-hot-wallets-users-fully-covered-384321660235967" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Binance — raportul propriu de incident (3 noiembrie 2026)<span class="host">binance.com</span></a></li>
               <li><a href="https://techcrunch.com/2026/11/03/researchers-warned-of-north-korean-hacking-tactics-years-before-record-6-3b-binance-heist/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>TechCrunch — „Researchers warned of North Korean hacking tactics years before record $6.3B Binance heist” (3 noiembrie 2026)<span class="host">techcrunch.com</span></a></li>
-              <li><a href="https://mymixfm.com/2026/11/03/binance-says-hackers-used-fake-job-interview-to-compromise-computer-before-6-3-billion-attack/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Reuters — „Binance hackers used fake job interview in $6.3 billion attack” (3 noiembrie 2026)<span class="host">mymixfm.com</span></a></li>
+              <li><a href="https://www.reuters.com/world/asia-pacific/north-korea-denies-binance-accusation-refuses-dialogue-with-washington-2026-11-03/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Reuters — „North Korea denies Binance accusation, refuses dialogue with Washington” (3 noiembrie 2026)<span class="host">reuters.com</span></a></li>
               <li><a href="https://www.nextgov.com/cybersecurity/2026/11/binance-says-fake-job-interview-helped-north-korean-hackers-steal-63-billion-crypto/417004/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Nextgov — „Binance says fake job interview helped North Korean hackers steal $6.3 billion in crypto” (3 noiembrie 2026)<span class="host">nextgov.com</span></a></li>
-              <li><a href="https://www.hcamag.com/au/specialisation/employment-law/fake-job-interview-behind-9bn-binance-heist-puts-hiring-on-notice/596045" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>HC Magazine — „Fake job interview behind $9bn Binance heist puts hiring on notice” (4 noiembrie 2026, cu poziția Coreei de Nord)<span class="host">hcamag.com</span></a></li>
             </ul>
+          </div>
+
+          <div class="opposing">
+            <p class="sec-label">Tabăra adversă</p>
+            <p>Coreea de Nord neagă implicarea: Kim Yo-jong a numit acuzația SUA „retorică absurdă”, într-o declarație preluată de agenția de stat KCNA (relatarea The Guardian, via KCNA).</p>
           </div>
 
           <div class="impact">
             <span class="badge">Impact direct</span>
-            <p>Impact profesional direct, fără acțiune imediată: inginerie socială pe luni de zile, instrumente de dezvoltator compromise și AI intern ca vector de escaladare sunt exact tipul de lanț de incident pe care îl gestionează la NCIA/ESOC; lecția practică e despre controale pe accesul inginerilor și pe instrumentele descărcate, nu doar pe perimetru. Personal: minim — fără impact direct asupra lui azi.</p>
+            <p>Impact profesional direct, fără acțiune imediată: lanțul de incident — inginerie socială, instrumente de dezvoltare compromise, AI intern ca vector de propagare — e un studiu de caz complet de incident management și de igienă a accesului la unelte interne. Personal/familie: minim.</p>
           </div>
         </article>
 
@@ -2724,6 +2773,60 @@
       </footer>
     </div>
 
+    <script>
+      // Banda „Ultimele știri" (doar ziua curentă, prima secțiune section.day
+      // fără clasa de arhivă): construită la încărcare din cardurile zilei,
+      // în ordinea din pagină — cardurile sunt deja cele mai noi primele —
+      // fiecare titlu devine link către ancora cardului (#stire-N).
+      // Fiind generată din DOM la fiecare încărcare, o știre adăugată de o
+      // rulare ulterioară apare automat în bandă, fără editare manuală.
+      // Banda nu are data-cats și nu e atinsă de logica de filtrare.
+      (function () {
+        var section = document.querySelector('section.day:not(.day-archive)');
+        if (!section) return;
+        var list = section.querySelector('.latest-list');
+        if (!list) return;
+        var articles = Array.prototype.slice.call(section.querySelectorAll('article[id]'));
+        var band = section.querySelector('.latest-band');
+        if (!articles.length) {
+          if (band) band.hidden = true;
+          return;
+        }
+        var built = 0;
+        articles.forEach(function (a) {
+          var h = a.querySelector('h2');
+          if (!h) return;
+          var timeText = '';
+          var t = a.querySelector('.a-time');
+          if (t) {
+            var m = t.textContent.match(/(\d{1,2}:\d{2})/g);
+            timeText = m ? m[m.length - 1] : '';
+          }
+          var li = document.createElement('li');
+          var link = document.createElement('a');
+          link.href = '#' + a.id;
+          var time = document.createElement('time');
+          time.textContent = timeText;
+          var title = document.createElement('span');
+          title.className = 't';
+          title.textContent = h.textContent.trim();
+          var arr = document.createElement('span');
+          arr.className = 'arr';
+          arr.setAttribute('aria-hidden', 'true');
+          arr.textContent = '→';
+          link.appendChild(time);
+          link.appendChild(title);
+          link.appendChild(arr);
+          li.appendChild(link);
+          list.appendChild(li);
+          built++;
+        });
+        var count = section.querySelector('.latest-count');
+        if (count && built) {
+          count.textContent = built + (built === 1 ? ' știre azi' : ' știri azi') + ' · cele mai noi primele · apasă pe un titlu ca să sari la știre';
+        }
+      })();
+    </script>
     <script>
       (function () {
         var refreshBtn = document.getElementById('refreshBtn');
