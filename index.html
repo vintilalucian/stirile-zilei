@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="color-scheme" content="light dark" />
-    <meta name="tirile-versiune" content="2026-11-04T12:57:52+01:00|5|amber" />
+    <meta name="tirile-versiune" content="2026-11-04T14:01:45+01:00|6|amber" />
     <link rel="icon" href="data:," />
     <title>Știrile zilei</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -633,9 +633,9 @@
     <div class="topbar">
       <div class="topbar-inner">
         <span class="dot" aria-hidden="true"></span>
-        <span><strong>Miercuri, 4 noiembrie 2026</strong> · actualizat la <strong>13:00</strong></span>
+        <span><strong>Miercuri, 4 noiembrie 2026</strong> · actualizat la <strong>14:00</strong></span>
         <span aria-hidden="true">·</span>
-        <span>5 știri azi</span>
+        <span>6 știri azi</span>
         <span class="spacer"></span>
         <button class="refresh-btn" type="button" id="refreshBtn" aria-label="Reîmprospătează pagina">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg>
@@ -711,23 +711,23 @@
       <section class="dashboard" aria-label="Panou de ansamblu">
         <div class="dash-head">
           <span class="dash-title">Dashboard · Azi</span>
-          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 13:00</span>
+          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 14:00</span>
           <span class="dash-meta">Fereastră monitorizare <strong>L–V 06:00–22:00 · S–D 07:30–22:00</strong> · pas ~3 ore</span>
         </div>
 
         <div class="kpi-grid" role="group" aria-label="Filtrează după categorie — apasă pe un tile">
           <button class="kpi" type="button" data-filter="toate" aria-pressed="true">
             <span class="kpi-top"><span class="kpi-label">Toate știrile</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">5</span>
-            <span class="kpi-sub">știri verificate azi, în 3 rulări</span>
+            <span class="kpi-value">6</span>
+            <span class="kpi-sub">știri verificate azi, în 4 rulări</span>
             <span class="kpi-bar" aria-hidden="true"><i style="width:100%"></i></span>
             <span class="kpi-hint">Apasă pentru toate</span>
           </button>
           <button class="kpi" type="button" data-filter="securitate" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">Securitate &amp; NATO</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">3</span>
-            <span class="kpi-sub">Franța lansează un «pact» pentru drone navale · furtul Binance a început cu un interviu de angajare fals · NATO a testat în Letonia apărarea anti-dronă pe rețele 5G comerciale</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:60%"></i></span>
+            <span class="kpi-value">4</span>
+            <span class="kpi-sub">BSI avertizează membrii Bundestagului: iPhone-urile lor ar putea fi vizate de spyware mercenar · Franța lansează un «pact» pentru drone navale · furtul Binance a început cu un interviu de angajare fals · NATO a testat în Letonia apărarea anti-dronă pe rețele 5G comerciale</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:67%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="romania" aria-pressed="false">
@@ -741,7 +741,7 @@
             <span class="kpi-top"><span class="kpi-label">Tech &amp; AI</span><span class="kpi-check" aria-hidden="true">✓</span></span>
             <span class="kpi-value">2</span>
             <span class="kpi-sub">Furtul Binance a început cu un interviu de angajare fals · Anthropic lansează FlashProve: dovadă criptografică că un răspuns chiar vine de la modelul promis</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:40%"></i></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:33%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
         </div>
@@ -755,7 +755,7 @@
       </section>
 
       <div class="filter-status" aria-live="polite">
-        <span class="filter-label">Se afișează: <strong>Toate categoriile — 5 din 5 știri</strong></span>
+        <span class="filter-label">Se afișează: <strong>Toate categoriile — 6 din 6 știri</strong></span>
         <button class="filter-reset" type="button" hidden>Resetează filtrul</button>
       </div>
 
@@ -765,13 +765,50 @@
       <p class="empty">Nicio știre în această categorie azi.</p>
 
       <main>
-        <!-- 1 · 4 nov · 13:00 -->
+        <!-- 1 · 4 nov · 14:00 -->
+        <article id="stire-40" data-cats="securitate" data-sev="amber">
+          <div class="a-meta">
+            <span class="a-time">4 nov · 14:00</span>
+            <span class="a-cat">Securitate &amp; NATO · Spyware mercenar · Germania</span>
+            <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
+            <span class="a-num">#1 / 6</span>
+          </div>
+          <h2>BSI avertizează membrii Bundestagului: iPhone-urile lor ar putea fi vizate de spyware mercenar — alerte Apple din 29 octombrie, în 99 de țări</h2>
+
+          <div class="sec">
+            <p class="sec-label">Ce s-a întâmplat</p>
+            <p>Biroul federal german pentru securitatea informațiilor (BSI) a avertizat membrii Bundestagului, membri ai guvernului federal și alte persoane publice că iPhone-urile lor ar putea fi vizate de spyware mercenar, după ce Apple a început din 29 octombrie să trimită notificări de amenințare către utilizatori vizați individual din 99 de țări. Într-o scrisoare din 30 octombrie, BSI le-a recomandat destinatarilor să presupună, ca măsură de precauție, că dispozitivul ar putea fi compromis, pentru că notificarea Apple nu arată dacă atacul a reușit.</p>
+            <p>Ministrul digital Karsten Wildberger a confirmat avertismentele duminică, 1 noiembrie, la ARD („Bericht aus Berlin”), iar purtătorul de cuvânt al guvernului, Stefan Kornelius, a spus că Berlinul ia incidentul „foarte în serios”, fără să precizeze dacă cancelarul Friedrich Merz a primit o alertă.</p>
+          </div>
+
+          <div class="sec">
+            <p class="sec-label">De ce contează</p>
+            <p>Oficiali guvernamentali ai celei mai mari armate europene din NATO, vizați cu instrumente de supraveghere vândute mai ales guvernelor — la două săptămâni după ce Bundeswehr a ridicat nivelul de alertă la sabotaj la „semnificativ”. Pentru un coordonator de gestionare a incidentelor, modelul de decizie de aici este instructiv: la o alertă fără confirmare de infecție, autoritatea germană a ales ipoteza „presupune compromiterea”, nu așteptarea dovezii.</p>
+          </div>
+
+          <div class="verify">
+            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
+            <p>Verdict: confirmat. Surse: TechCrunch (sursa curatoriată, 2 noiembrie 2026) relatează avertismentul BSI; Financial Times a relatat declarația lui Kornelius (citată de TechCrunch); ARD, „Bericht aus Berlin” — confirmarea ministrului Wildberger, 1 noiembrie (citată de SOFX); Deutsche Presse-Agentur, prin Yahoo (citată de SOFX); CyberScoop (30 octombrie) — despre valul de notificări Apple în 99 de țări; Gadgets360 (3 noiembrie 2026). Precizare importantă: nimeni nu a atribuit atacurile unui stat anume, niciun atacator și niciun produs spyware nu au fost numite public, iar BSI spune că nu știe dacă alertele înseamnă infecții reușite sau doar tentative.</p>
+            <ul class="sources">
+              <li><a href="https://techcrunch.com/2026/11/02/germany-says-lawmakers-iphones-may-have-been-hacked-with-spyware/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>TechCrunch — „Germany says lawmakers' iPhones may have been hacked with spyware” (2 noiembrie 2026)<span class="host">techcrunch.com</span></a></li>
+              <li><a href="https://www.sofx.com/germany-warns-officials-of-mercenary-spyware-following-apple-alerts-in-99-countries/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>SOFX — „Germany warns officials of mercenary spyware following Apple alerts in 99 countries”<span class="host">sofx.com</span></a></li>
+              <li><a href="https://www.gadgets360.com/mobiles/news/apple-sends-spyware-attack-alerts-iphone-users-99-countries-german-lawmakers-12276217/amp" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Gadgets360 — „Apple sends spyware attack alerts to iPhone users in 99 countries, German lawmakers” (3 noiembrie 2026)<span class="host">gadgets360.com</span></a></li>
+            </ul>
+          </div>
+
+          <div class="impact">
+            <span class="badge">Impact direct</span>
+            <p>Impact direct minim pentru el personal — telefonul lui actual este Pixel, nu iPhone, deci alertele Apple nu îl privesc direct. Relevanță profesională directă: incident de securitate asupra oficialilor guvernamentali dintr-un stat aliat cheie, cu instrumente zero-click (nu e nevoie ca victima să apese pe nimic), exact pe terenul lui de incident management la NCIA; de urmărit dacă apar atribuiri, confirmări de infecție sau ghidaj NATO/național similar.</p>
+          </div>
+        </article>
+
+        <!-- 2 · 4 nov · 13:00 -->
         <article id="stire-39" data-cats="belgia" data-sev="amber">
           <div class="a-meta">
             <span class="a-time">4 nov · 13:00</span>
             <span class="a-cat">Belgia · Politică-fiscal</span>
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
-            <span class="a-num">#1 / 5</span>
+            <span class="a-num">#2 / 6</span>
           </div>
           <h2>Criza bugetară belgiană: regele îi primește azi pe Rousseau și Bouchez; patronatele cer reluarea negocierilor, decizia privind demisia lui De Wever vine vineri</h2>
 
@@ -812,13 +849,13 @@
           </div>
         </article>
 
-        <!-- 2 · 4 nov · 11:05 -->
+        <!-- 3 · 4 nov · 11:05 -->
         <article id="stire-38" data-cats="securitate" data-sev="green">
           <div class="a-meta">
             <span class="a-time">4 nov · 11:05</span>
             <span class="a-cat">Securitate &amp; NATO · Drone navale · Franța</span>
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
-            <span class="a-num">#2 / 5</span>
+            <span class="a-num">#3 / 6</span>
           </div>
           <h2>Franța lansează un «pact» pentru drone navale: industria și startupurile, chemate să livreze rapid sisteme pentru marină</h2>
 
@@ -850,13 +887,13 @@
           </div>
         </article>
 
-        <!-- 3 · 4 nov · 11:05 -->
+        <!-- 4 · 4 nov · 11:05 -->
         <article id="stire-37" data-cats="securitate tech" data-sev="amber">
           <div class="a-meta">
             <span class="a-time">4 nov · 11:05</span>
             <span class="a-cat">Securitate &amp; NATO / Tech &amp; AI · Incident cibernetic · Inginerie socială</span>
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
-            <span class="a-num">#3 / 5</span>
+            <span class="a-num">#4 / 6</span>
           </div>
           <h2>Furtul Binance de 6,3 mld $ a început cu un interviu de angajare fals: campanie nord-coreeană de cinci luni, 57 de atacuri blocate înainte</h2>
 
@@ -898,14 +935,14 @@
           </div>
         </article>
 
-        <!-- 4 · 4 nov · 08:00 -->
+        <!-- 5 · 4 nov · 08:00 -->
         <article id="stire-36" data-cats="securitate" data-sev="amber">
           <div class="a-meta">
             <span class="a-time">4 nov · 08:00</span>
             <span class="a-cat">Securitate &amp; NATO · Apărare anti-dronă · Rețele 5G</span>
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="spot-tag">Știrea zilei</span>
-            <span class="a-num">#4 / 5</span>
+            <span class="a-num">#5 / 6</span>
           </div>
           <h2>NATO a testat în Letonia apărarea anti-dronă pe rețele 5G comerciale: exercițiul FUSE/DiBaX, cu aproape 400 de drone</h2>
 
@@ -937,13 +974,13 @@
           </div>
         </article>
 
-        <!-- 5 · 4 nov · 08:00 -->
+        <!-- 6 · 4 nov · 08:00 -->
         <article id="stire-35" data-cats="tech" data-sev="green">
           <div class="a-meta">
             <span class="a-time">4 nov · 08:00</span>
             <span class="a-cat">Tech &amp; AI · Siguranță AI · Inferență demonstrabilă</span>
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
-            <span class="a-num">#5 / 5</span>
+            <span class="a-num">#6 / 6</span>
           </div>
           <h2>Anthropic lansează FlashProve: dovadă criptografică că un răspuns chiar vine de la modelul promis</h2>
 
@@ -2896,8 +2933,8 @@
 
       <footer>
         <div class="rule" aria-hidden="true"></div>
-        <p>Sfârșitul ediției de azi · Ultima actualizare: miercuri, 4 noiembrie 2026, 13:00<br />Monitorizarea rulează la circa 3 ore, în fereastra L–V 06:00–22:00 · S–D 07:30–22:00 — dă refresh pentru noutăți.</p>
-        <a class="to-top" href="#stire-36">↑ Înapoi la cea mai nouă știre</a>
+        <p>Sfârșitul ediției de azi · Ultima actualizare: miercuri, 4 noiembrie 2026, 14:00<br />Monitorizarea rulează la circa 3 ore, în fereastra L–V 06:00–22:00 · S–D 07:30–22:00 — dă refresh pentru noutăți.</p>
+        <a class="to-top" href="#stire-40">↑ Înapoi la cea mai nouă știre</a>
       </footer>
     </div>
 
