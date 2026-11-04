@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="color-scheme" content="light dark" />
-    <meta name="tirile-versiune" content="2026-11-04T08:15:00+01:00|2|amber" />
+    <meta name="tirile-versiune" content="2026-11-04T11:05:00+01:00|4|amber" />
     <link rel="icon" href="data:," />
     <title>Știrile zilei</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -564,23 +564,23 @@
       <section class="dashboard" aria-label="Panou de ansamblu">
         <div class="dash-head">
           <span class="dash-title">Dashboard · Azi</span>
-          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 08:15</span>
+          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 11:05</span>
           <span class="dash-meta">Fereastră monitorizare <strong>L–V 06:00–22:00 · S–D 07:30–22:00</strong> · pas ~3 ore</span>
         </div>
 
         <div class="kpi-grid" role="group" aria-label="Filtrează după categorie — apasă pe un tile">
           <button class="kpi" type="button" data-filter="toate" aria-pressed="true">
             <span class="kpi-top"><span class="kpi-label">Toate știrile</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">2</span>
-            <span class="kpi-sub">știri verificate azi, în 1 rulare</span>
+            <span class="kpi-value">4</span>
+            <span class="kpi-sub">știri verificate azi, în 2 rulări</span>
             <span class="kpi-bar" aria-hidden="true"><i style="width:100%"></i></span>
             <span class="kpi-hint">Apasă pentru toate</span>
           </button>
           <button class="kpi" type="button" data-filter="securitate" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">Securitate &amp; NATO</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">1</span>
-            <span class="kpi-sub">NATO a testat în Letonia apărarea anti-dronă pe rețele 5G comerciale: exercițiul FUSE/DiBaX, cu aproape 400 de drone</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:50%"></i></span>
+            <span class="kpi-value">3</span>
+            <span class="kpi-sub">Franța lansează „pactul” pentru drone navale · anatomia furtului Binance de 6,3 mld $ · NATO testează apărarea anti-dronă pe 5G în Letonia</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:75%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="romania" aria-pressed="false">
@@ -592,8 +592,8 @@
           </button>
           <button class="kpi" type="button" data-filter="tech" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">Tech &amp; AI</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">1</span>
-            <span class="kpi-sub">Anthropic lansează FlashProve: dovadă criptografică că un răspuns chiar vine de la modelul promis</span>
+            <span class="kpi-value">2</span>
+            <span class="kpi-sub">Anthropic lansează FlashProve: dovadă criptografică că un răspuns chiar vine de la modelul promis · anatomia furtului Binance de 6,3 mld $</span>
             <span class="kpi-bar" aria-hidden="true"><i style="width:50%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
@@ -604,14 +604,15 @@
             <h3>Ritmul zilei — știri pe rulare</h3>
             <div class="rhythm" role="group" aria-label="Filtru după ora publicării — apasă pe o rulare ca să vezi doar știrile ei">
               <button class="col" type="button" data-hour="08:00" aria-pressed="false" aria-label="Filtrează știrile de la ora 08:00 — 2 știri"><span class="n">2</span><span class="bar" style="height:40px"></span><span class="t">08:00</span></button>
+              <button class="col" type="button" data-hour="11:05" aria-pressed="false" aria-label="Filtrează știrile de la ora 11:05 — 2 știri"><span class="n">2</span><span class="bar" style="height:40px"></span><span class="t">11:05</span></button>
             </div>
             <p class="rhythm-hint">Apasă pe o bară ca să vezi doar știrile din rularea aceea; apasă din nou pe ea pentru toate.</p>
           </div>
           <div class="dash-panel">
             <h3>Stare ediție</h3>
             <ul class="status-list">
-              <li><span class="k">Ultima actualizare</span><span class="v">Azi, 08:15</span></li>
-              <li><span class="k">Cea mai nouă</span><span class="v">NATO a testat în Letonia apărarea anti-dronă pe rețele 5G comerciale: exercițiul FUSE/DiBaX, cu aproape 400 de drone · 08:00</span></li>
+              <li><span class="k">Ultima actualizare</span><span class="v">Azi, 11:05</span></li>
+              <li><span class="k">Cea mai nouă</span><span class="v">Franța lansează un „pact” pentru drone navale: industria și startupurile, chemate să livreze rapid sisteme pentru marină · 11:05</span></li>
               <li><span class="k">Acoperire</span><span class="v">Ultimele 7 zile în arhivă</span></li>
             </ul>
           </div>
@@ -619,7 +620,7 @@
       </section>
 
       <div class="filter-status" aria-live="polite">
-        <span class="filter-label">Se afișează: <strong>Toate categoriile — 2 din 2 știri</strong></span>
+        <span class="filter-label">Se afișează: <strong>Toate categoriile — 4 din 4 știri</strong></span>
         <button class="filter-reset" type="button" hidden>Resetează filtrul</button>
       </div>
 
@@ -629,21 +630,106 @@
           <span>apasă pe un titlu ca să sari direct la știre · se sincronizează cu filtrul</span>
         </div>
         <ol class="index-list">
-          <li data-cats="securitate"><a href="#stire-36"><time>08:00</time><span class="cat-dot sec" aria-hidden="true"></span><span class="t">NATO a testat în Letonia apărarea anti-dronă pe rețele 5G comerciale: exercițiul FUSE/DiBaX, cu aproape 400 de drone</span><span class="n">#1</span></a></li>
-          <li data-cats="tech"><a href="#stire-35"><time>08:00</time><span class="cat-dot tech" aria-hidden="true"></span><span class="t">Anthropic lansează FlashProve: dovadă criptografică că un răspuns chiar vine de la modelul promis</span><span class="n">#2</span></a></li>
+          <li data-cats="securitate"><a href="#stire-38"><time>11:05</time><span class="cat-dot sec" aria-hidden="true"></span><span class="t">Franța lansează un „pact” pentru drone navale: industria și startupurile, chemate să livreze rapid sisteme pentru marină</span><span class="n">#1</span></a></li>
+          <li data-cats="securitate tech"><a href="#stire-37"><time>11:05</time><span class="cat-dot sec" aria-hidden="true"></span><span class="t">Furtul Binance de 6,3 mld $ a început cu un interviu de angajare fals: campanie nord-coreeană de cinci luni, 57 de atacuri blocate înainte</span><span class="n">#2</span></a></li>
+          <li data-cats="securitate"><a href="#stire-36"><time>08:00</time><span class="cat-dot sec" aria-hidden="true"></span><span class="t">NATO a testat în Letonia apărarea anti-dronă pe rețele 5G comerciale: exercițiul FUSE/DiBaX, cu aproape 400 de drone</span><span class="n">#3</span></a></li>
+          <li data-cats="tech"><a href="#stire-35"><time>08:00</time><span class="cat-dot tech" aria-hidden="true"></span><span class="t">Anthropic lansează FlashProve: dovadă criptografică că un răspuns chiar vine de la modelul promis</span><span class="n">#4</span></a></li>
         </ol>
       </nav>
 
       <p class="empty">Nicio știre în această categorie azi.</p>
 
       <main>
-        <!-- 1 · 4 nov · 08:00 -->
+        <!-- 1 · 4 nov · 11:05 -->
+        <article id="stire-38" data-cats="securitate">
+          <div class="a-meta">
+            <span class="a-time">4 nov · 11:05</span>
+            <span class="a-cat">Securitate &amp; NATO · Drone navale · Franța</span>
+            <span class="a-num">#1 / 4</span>
+          </div>
+          <h2>Franța lansează un „pact” pentru drone navale: industria și startupurile, chemate să livreze rapid sisteme pentru marină</h2>
+
+          <div class="sec">
+            <p class="sec-label">Ce s-a întâmplat</p>
+            <p>Ministrul francez al forțelor armate, Catherine Vautrin, a anunțat marți, 3 noiembrie, la deschiderea salonului Euronaval de lângă Paris, un „pact” guvern–industrie pentru drone navale, după modelul pactului pentru drone aeriene din 2024: mari producători și startupuri vor colabora ca marina franceză să primească rapid echipamente adaptate nevoilor ei, în loc de programe lungi de achiziție. Printre direcțiile vizate: deminarea marină, colectarea de date hidro- și oceanografice și explorarea fundului mării la adâncimi mari.</p>
+            <p>La același salon au venit și primele comenzi concrete: un al doilea ROV Deep Sea de la LD Travocean (3.600 kg, poate coborî la 6.000 m), opt roboți countermine A18 de la Exail pentru depistarea și caracterizarea minelor marine și un al doilea vehicul subacvatic de luptă fără echipaj de la Naval Group, de peste 10 m lungime și peste 10.000 kg. Tot la Euronaval, Naval Group și MBDA au semnat pentru mai multe interceptoare Aster pe fregatele FDI, iar Vautrin a prezentat bugetul apărării propus pentru 2027: 63,4 miliarde de euro, cu 6,5 miliarde mai mult decât în 2026, votul fiind programat luna aceasta.</p>
+          </div>
+
+          <div class="sec">
+            <p class="sec-label">De ce contează</p>
+            <p>Dronele navale sunt exact vectorul loviturilor din Marea Neagră urmărite în pagină din octombrie — nave comerciale lovite de drone în apropierea României și Bulgariei. Franța, aliat-cheie pe flanc, își organizează acum industria ca să livreze rapid sisteme navale fără echipaj: semn că războiul dronelor pe mare trece de la improvizație la program industrial, cu lecții de viteză de achiziție și interoperabilitate relevante și pentru NATO.</p>
+          </div>
+
+          <div class="verify">
+            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
+            <p>Verdict: confirmat. Surse: Defense News, „French defense minister kicks off ‘pact’ with industry in rush to field naval drones” (3 noiembrie 2026); Reuters, relatarea de la Euronaval din 3 noiembrie 2026 (preluată de SRN News și MarineLink); Breaking Defense, „France investing in naval power as military ambition is ‘to be feared’” (3 noiembrie 2026).</p>
+            <ul class="sources">
+              <li><a href="https://www.defensenews.com/global/europe/2026/11/03/french-defense-minister-kicks-off-pact-with-industry-in-rush-to-field-naval-drones/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Defense News — „French defense minister kicks off ‘pact’ with industry in rush to field naval drones” (3 noiembrie 2026)<span class="host">defensenews.com</span></a></li>
+              <li><a href="https://srnnews.com/european-naval-defence-industry-meets-as-threats-drive-fleet-upgrades/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Reuters, via SRN News — „European naval defence industry meets as threats drive fleet upgrades” (3 noiembrie 2026)<span class="host">srnnews.com</span></a></li>
+              <li><a href="https://breakingdefense.com/2026/11/france-investing-in-naval-power-as-military-ambition-is-to-be-feared-armed-forces-minister/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Breaking Defense — „France investing in naval power as military ambition is ‘to be feared’” (3 noiembrie 2026)<span class="host">breakingdefense.com</span></a></li>
+            </ul>
+          </div>
+
+          <div class="impact">
+            <span class="badge">Impact direct</span>
+            <p>Impact profesional direct, fără acțiune imediată: counter-drone naval, deminare marină și achiziție rapidă de sisteme fără echipaj sunt pe arcul Marea Neagră urmărit din octombrie; de urmărit ce capabilități ajung în dotarea aliaților și ce lecții de interoperabilitate apar. Personal/familie: minim, relevanță de context.</p>
+          </div>
+        </article>
+
+        <!-- 2 · 4 nov · 11:05 -->
+        <article id="stire-37" data-cats="securitate tech">
+          <div class="a-meta">
+            <span class="a-time">4 nov · 11:05</span>
+            <span class="a-cat">Securitate &amp; NATO / Tech &amp; AI · Incident cibernetic · Inginerie socială</span>
+            <span class="a-num">#2 / 4</span>
+          </div>
+          <h2>Furtul Binance de 6,3 mld $ a început cu un interviu de angajare fals: campanie nord-coreeană de cinci luni, 57 de atacuri blocate înainte</h2>
+
+          <div class="sec">
+            <p class="sec-label">Ce s-a întâmplat</p>
+            <p>Binance a publicat marți, 3 noiembrie, primul raport de incident despre furtul din 29 octombrie, cel mai mare furt cibernetic din istorie: atacul n-a fost o singură breșă spectaculoasă, ci o campanie de cinci luni. În iunie, un inginer din echipa de portofele a descărcat un instrument software compromis; în septembrie, un al doilea inginer, aflat în căutare de job, a fost abordat pe o platformă legitimă de recrutare, a trecut prin interviuri video false — inclusiv cu un „CEO” fictiv — și a descărcat pe calculatorul de serviciu o „temă” de cod malițioasă. Pe 20 octombrie atacatorii au folosit acel calculator, plus un instrument AI intern al Binance, ca să preia calculatoarele a doi ingineri din echipa de portofele; pe 29 octombrie au scos 233,46 milioane de tokeni XRP din cinci portofele „hot” în patru minute, apoi și alte criptomonede, total circa 6,3 miliarde de dolari. Circa 2,85 miliarde de dolari au fost înghețați sau interceptați între timp, iar Binance spune că n-avea asigurare cibernetică pentru pierdere.</p>
+            <p>FBI atribuie atacul grupului nord-coreean TraderTraitor, iar Binance spune că a detectat și blocat 57 de atacuri suspecte cu legătură nord-coreeană în 2026, înainte ca acesta să treacă.</p>
+          </div>
+
+          <div class="sec">
+            <p class="sec-label">De ce contează</p>
+            <p>Anatomia completă a celui mai mare furt cibernetic din istorie schimbă lecția: nu o vulnerabilitate zero-day a spart seiful, ci răbdarea — luni de inginerie socială, instrumente de dezvoltator compromise și un instrument AI intern folosit ca multiplicator de acces, după ce apărarea blocase deja 57 de tentative similare. Pentru oricine gestionează incidente, e cazul-școală al anului despre cum arată un atacator persistent și despre ce înseamnă, practic, „a 58-a oară”.</p>
+          </div>
+
+          <div class="sec">
+            <p class="sec-label">Tabăra adversă</p>
+            <p>Coreea de Nord neagă implicarea: Kim Yo-jong, sora liderului Kim Jong-un, a numit acuzația SUA „retorică absurdă și nimic nou”, potrivit relatării The Guardian a comentariilor difuzate de agenția de stat KCNA.</p>
+          </div>
+
+          <div class="followup">
+            <span class="tag">Urmare la</span>
+            <p><a href="#stire-22">„Binance reia retragerile după cel mai mare furt cibernetic din istorie: 95% din cele 6,3 mld $ furate, acoperite; FBI îl acuză pe grupul nord-coreean TraderTraitor”</a> — 1 noiembrie.</p>
+          </div>
+
+          <div class="verify">
+            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
+            <p>Verdict: confirmat. Surse: Binance, raportul propriu de incident (3 noiembrie 2026); TechCrunch, „Researchers warned of North Korean hacking tactics years before record $6.3B Binance heist” (3 noiembrie 2026); Reuters, „Binance hackers used fake job interview in $6.3 billion attack” (3 noiembrie 2026); Nextgov, „Binance says fake job interview helped North Korean hackers steal $6.3 billion in crypto” (3 noiembrie 2026).</p>
+            <ul class="sources">
+              <li><a href="https://techcrunch.com/2026/11/03/researchers-warned-of-north-korean-hacking-tactics-years-before-record-6-3b-binance-heist/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>TechCrunch — „Researchers warned of North Korean hacking tactics years before record $6.3B Binance heist” (3 noiembrie 2026)<span class="host">techcrunch.com</span></a></li>
+              <li><a href="https://mymixfm.com/2026/11/03/binance-says-hackers-used-fake-job-interview-to-compromise-computer-before-6-3-billion-attack/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Reuters — „Binance hackers used fake job interview in $6.3 billion attack” (3 noiembrie 2026)<span class="host">mymixfm.com</span></a></li>
+              <li><a href="https://www.nextgov.com/cybersecurity/2026/11/binance-says-fake-job-interview-helped-north-korean-hackers-steal-63-billion-crypto/417004/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Nextgov — „Binance says fake job interview helped North Korean hackers steal $6.3 billion in crypto” (3 noiembrie 2026)<span class="host">nextgov.com</span></a></li>
+              <li><a href="https://www.hcamag.com/au/specialisation/employment-law/fake-job-interview-behind-9bn-binance-heist-puts-hiring-on-notice/596045" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>HC Magazine — „Fake job interview behind $9bn Binance heist puts hiring on notice” (4 noiembrie 2026, cu poziția Coreei de Nord)<span class="host">hcamag.com</span></a></li>
+            </ul>
+          </div>
+
+          <div class="impact">
+            <span class="badge">Impact direct</span>
+            <p>Impact profesional direct, fără acțiune imediată: inginerie socială pe luni de zile, instrumente de dezvoltator compromise și AI intern ca vector de escaladare sunt exact tipul de lanț de incident pe care îl gestionează la NCIA/ESOC; lecția practică e despre controale pe accesul inginerilor și pe instrumentele descărcate, nu doar pe perimetru. Personal: minim — fără impact direct asupra lui azi.</p>
+          </div>
+        </article>
+
+        <!-- 3 · 4 nov · 08:00 -->
         <article id="stire-36" data-cats="securitate">
           <div class="a-meta">
             <span class="a-time">4 nov · 08:00</span>
             <span class="a-cat">Securitate &amp; NATO · Apărare anti-dronă · Rețele 5G</span>
             <span class="spot-tag">Știrea zilei</span>
-            <span class="a-num">#1 / 2</span>
+            <span class="a-num">#3 / 4</span>
           </div>
           <h2>NATO a testat în Letonia apărarea anti-dronă pe rețele 5G comerciale: exercițiul FUSE/DiBaX, cu aproape 400 de drone</h2>
 
@@ -675,12 +761,12 @@
           </div>
         </article>
 
-        <!-- 2 · 4 nov · 08:00 -->
+        <!-- 4 · 4 nov · 08:00 -->
         <article id="stire-35" data-cats="tech">
           <div class="a-meta">
             <span class="a-time">4 nov · 08:00</span>
             <span class="a-cat">Tech &amp; AI · Siguranță AI · Inferență demonstrabilă</span>
-            <span class="a-num">#2 / 2</span>
+            <span class="a-num">#4 / 4</span>
           </div>
           <h2>Anthropic lansează FlashProve: dovadă criptografică că un răspuns chiar vine de la modelul promis</h2>
 
