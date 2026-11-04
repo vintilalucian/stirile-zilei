@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="color-scheme" content="light dark" />
-    <meta name="tirile-versiune" content="2026-11-04T14:01:45+01:00|6|amber" />
+    <meta name="tirile-versiune" content="2026-11-04T15:10:05+01:00|7|amber" />
     <link rel="icon" href="data:," />
     <title>Știrile zilei</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -633,9 +633,9 @@
     <div class="topbar">
       <div class="topbar-inner">
         <span class="dot" aria-hidden="true"></span>
-        <span><strong>Miercuri, 4 noiembrie 2026</strong> · actualizat la <strong>14:00</strong></span>
+        <span><strong>Miercuri, 4 noiembrie 2026</strong> · actualizat la <strong>15:00</strong></span>
         <span aria-hidden="true">·</span>
-        <span>6 știri azi</span>
+        <span>7 știri azi</span>
         <span class="spacer"></span>
         <button class="refresh-btn" type="button" id="refreshBtn" aria-label="Reîmprospătează pagina">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg>
@@ -711,15 +711,15 @@
       <section class="dashboard" aria-label="Panou de ansamblu">
         <div class="dash-head">
           <span class="dash-title">Dashboard · Azi</span>
-          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 14:00</span>
+          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 15:00</span>
           <span class="dash-meta">Fereastră monitorizare <strong>L–V 06:00–22:00 · S–D 07:30–22:00</strong> · pas ~3 ore</span>
         </div>
 
         <div class="kpi-grid" role="group" aria-label="Filtrează după categorie — apasă pe un tile">
           <button class="kpi" type="button" data-filter="toate" aria-pressed="true">
             <span class="kpi-top"><span class="kpi-label">Toate știrile</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">6</span>
-            <span class="kpi-sub">știri verificate azi, în 4 rulări</span>
+            <span class="kpi-value">7</span>
+            <span class="kpi-sub">știri verificate azi, în 5 rulări</span>
             <span class="kpi-bar" aria-hidden="true"><i style="width:100%"></i></span>
             <span class="kpi-hint">Apasă pentru toate</span>
           </button>
@@ -727,7 +727,7 @@
             <span class="kpi-top"><span class="kpi-label">Securitate &amp; NATO</span><span class="kpi-check" aria-hidden="true">✓</span></span>
             <span class="kpi-value">4</span>
             <span class="kpi-sub">BSI avertizează membrii Bundestagului: iPhone-urile lor ar putea fi vizate de spyware mercenar · Franța lansează un «pact» pentru drone navale · furtul Binance a început cu un interviu de angajare fals · NATO a testat în Letonia apărarea anti-dronă pe rețele 5G comerciale</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:67%"></i></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:57%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="romania" aria-pressed="false">
@@ -739,9 +739,9 @@
           </button>
           <button class="kpi" type="button" data-filter="tech" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">Tech &amp; AI</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">2</span>
-            <span class="kpi-sub">Furtul Binance a început cu un interviu de angajare fals · Anthropic lansează FlashProve: dovadă criptografică că un răspuns chiar vine de la modelul promis</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:33%"></i></span>
+            <span class="kpi-value">3</span>
+            <span class="kpi-sub">Anthropic: compute-ul a ajuns la 58% din venituri — factura de 10 mld $ pe trimestru · Furtul Binance a început cu un interviu de angajare fals · Anthropic lansează FlashProve: dovadă criptografică că un răspuns chiar vine de la modelul promis</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:43%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
         </div>
@@ -755,7 +755,7 @@
       </section>
 
       <div class="filter-status" aria-live="polite">
-        <span class="filter-label">Se afișează: <strong>Toate categoriile — 6 din 6 știri</strong></span>
+        <span class="filter-label">Se afișează: <strong>Toate categoriile — 7 din 7 știri</strong></span>
         <button class="filter-reset" type="button" hidden>Resetează filtrul</button>
       </div>
 
@@ -765,13 +765,55 @@
       <p class="empty">Nicio știre în această categorie azi.</p>
 
       <main>
-        <!-- 1 · 4 nov · 14:00 -->
+        <!-- 1 · 4 nov · 15:00 -->
+        <article id="stire-41" data-cats="tech" data-sev="green">
+          <div class="a-meta">
+            <span class="a-time">4 nov · 15:00</span>
+            <span class="a-cat">Tech &amp; AI · Economie AI · Dosar S-1</span>
+            <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
+            <span class="a-num">#1 / 7</span>
+          </div>
+          <h2>Anthropic: compute-ul a ajuns la 58% din venituri — factura de 10 mld $ pe trimestru, jumătate pe contracte scurte scumpe</h2>
+
+          <div class="followup">
+            <span class="tag">Urmare la</span>
+            <p><a href="#stire-29">„Anthropic avertizează că e «foarte aproape» de RSI — AI care se construiește singur”</a> — marți, 3 noiembrie 2026.</p>
+          </div>
+
+          <div class="sec">
+            <p class="sec-label">Ce s-a întâmplat</p>
+            <p>Din amendamentul S-1 depus luni, 2 noiembrie, Anthropic raportează venituri de 17 mld $ în trimestrul al treilea (față de 11,5 mld $ în trimestrul anterior), dar factura de compute și infrastructură a urcat la circa 10 mld $ (9,86 mld $), adică 58% din venituri, față de 48% în trimestrul anterior. Jumătate din factură — 5 mld $ — vine din angajamente pe termen scurt, pe care compania însăși le recunoaște ca semnificativ mai scumpe decât capacitatea contractată multianual. Venitul generat per dolar cheltuit pe compute a scăzut de la puțin peste 2x la 1,72x, iar pierderea operațională a trimestrului a fost de 567 mil. $.</p>
+          </div>
+
+          <div class="sec">
+            <p class="sec-label">De ce contează</p>
+            <p>Este a treia piesă din același dosar S-1 urmărit în pagină (după avertismentul RSI și FlashProve) și arată prețul infrastructurii din spatele modelelor pe care cititorul le folosește zilnic (Claude): creșterea veniturilor cu circa 47% trimestrial nu mai ține pasul cu factura de compute, care a crescut cu 77%. Angajamentele totale de achiziții și leasing pentru compute și infrastructură ajung la circa 895 mld $, din care circa 70 mld $ scadente în următorul an — miza de capital a cursei AI, cu efecte posibile asupra prețurilor și limitelor API pe termen mediu.</p>
+          </div>
+
+          <div class="verify">
+            <p class="sec-label">Verificare <span class="status">Sursă primară + confirmat</span></p>
+            <p>Verdict: sursă primară + confirmat. Sursa primară este chiar Anthropic — Amendment No. 1 la Form S-1, depus la 2 noiembrie 2026. Relatarea TechCrunch (sursă monitorizată) este confirmată independent de SiliconANGLE (prin The Outpost), DatacenterDynamics (prin The Five Nines) și The AI Insider.</p>
+            <ul class="sources">
+              <li><a href="https://techcrunch.com/2026/11/03/anthropic-is-still-grappling-with-the-economics-of-compute/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>TechCrunch — „Anthropic is still grappling with the economics of compute” (3 noiembrie 2026)<span class="host">techcrunch.com</span></a></li>
+              <li><a href="https://theoutpost.ai/news-story/anthropic-ipo-filing-reveals-17b-revenue-against-900b-ai-infrastructure-commitments-33011/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>SiliconANGLE, prin The Outpost — „Anthropic IPO filing reveals $17B revenue against $900B AI infrastructure commitments”<span class="host">theoutpost.ai</span></a></li>
+              <li><a href="https://www.thefivenines.com/data-ai/anthropic-reports-17-billion-third-quarter-revenue-and-895-billion-in" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>DatacenterDynamics, prin The Five Nines — „Anthropic reports $17 billion third-quarter revenue and $895 billion in…”<span class="host">thefivenines.com</span></a></li>
+              <li><a href="https://theaiinsider.tech/2026/11/04/anthropics-compute-costs-climb-to-58-of-revenue-as-it-develops-flashprove-to-verify-ai-model-outputs/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>The AI Insider — „Anthropic's compute costs climb to 58% of revenue as it develops FlashProve to verify AI model outputs” (4 noiembrie 2026)<span class="host">theaiinsider.tech</span></a></li>
+            </ul>
+          </div>
+
+          <div class="impact">
+            <span class="badge">Impact direct</span>
+            <p>Impact direct minim azi; relevanță de context puternică pentru stack-ul propriu de automatizări (Claude/Gemini API) și pentru lectura boom-ului AI: marja laboratoarelor se subțiază chiar când veniturile cresc accelerat.</p>
+          </div>
+        </article>
+
+        <!-- 2 · 4 nov · 14:00 -->
         <article id="stire-40" data-cats="securitate" data-sev="amber">
           <div class="a-meta">
             <span class="a-time">4 nov · 14:00</span>
             <span class="a-cat">Securitate &amp; NATO · Spyware mercenar · Germania</span>
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
-            <span class="a-num">#1 / 6</span>
+            <span class="a-num">#2 / 7</span>
           </div>
           <h2>BSI avertizează membrii Bundestagului: iPhone-urile lor ar putea fi vizate de spyware mercenar — alerte Apple din 29 octombrie, în 99 de țări</h2>
 
@@ -808,7 +850,7 @@
             <span class="a-time">4 nov · 13:00</span>
             <span class="a-cat">Belgia · Politică-fiscal</span>
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
-            <span class="a-num">#2 / 6</span>
+            <span class="a-num">#3 / 7</span>
           </div>
           <h2>Criza bugetară belgiană: regele îi primește azi pe Rousseau și Bouchez; patronatele cer reluarea negocierilor, decizia privind demisia lui De Wever vine vineri</h2>
 
@@ -855,7 +897,7 @@
             <span class="a-time">4 nov · 11:05</span>
             <span class="a-cat">Securitate &amp; NATO · Drone navale · Franța</span>
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
-            <span class="a-num">#3 / 6</span>
+            <span class="a-num">#4 / 7</span>
           </div>
           <h2>Franța lansează un «pact» pentru drone navale: industria și startupurile, chemate să livreze rapid sisteme pentru marină</h2>
 
@@ -893,7 +935,7 @@
             <span class="a-time">4 nov · 11:05</span>
             <span class="a-cat">Securitate &amp; NATO / Tech &amp; AI · Incident cibernetic · Inginerie socială</span>
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
-            <span class="a-num">#4 / 6</span>
+            <span class="a-num">#5 / 7</span>
           </div>
           <h2>Furtul Binance de 6,3 mld $ a început cu un interviu de angajare fals: campanie nord-coreeană de cinci luni, 57 de atacuri blocate înainte</h2>
 
@@ -942,7 +984,7 @@
             <span class="a-cat">Securitate &amp; NATO · Apărare anti-dronă · Rețele 5G</span>
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="spot-tag">Știrea zilei</span>
-            <span class="a-num">#5 / 6</span>
+            <span class="a-num">#6 / 7</span>
           </div>
           <h2>NATO a testat în Letonia apărarea anti-dronă pe rețele 5G comerciale: exercițiul FUSE/DiBaX, cu aproape 400 de drone</h2>
 
@@ -980,7 +1022,7 @@
             <span class="a-time">4 nov · 08:00</span>
             <span class="a-cat">Tech &amp; AI · Siguranță AI · Inferență demonstrabilă</span>
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
-            <span class="a-num">#6 / 6</span>
+            <span class="a-num">#7 / 7</span>
           </div>
           <h2>Anthropic lansează FlashProve: dovadă criptografică că un răspuns chiar vine de la modelul promis</h2>
 
