@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="color-scheme" content="light dark" />
-    <meta name="tirile-versiune" content="2026-11-05T08:00:00+01:00|4|amber" />
+    <meta name="tirile-versiune" content="2026-11-05T09:00:00+01:00|6|amber" />
     <link rel="icon" href="data:," />
     <title>Știrile zilei</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -684,9 +684,9 @@
     <div class="topbar">
       <div class="topbar-inner">
         <span class="dot" aria-hidden="true"></span>
-        <span><strong>Joi, 5 noiembrie 2026</strong> · actualizat la <strong>08:00</strong></span>
+        <span><strong>Joi, 5 noiembrie 2026</strong> · actualizat la <strong>09:00</strong></span>
         <span aria-hidden="true">·</span>
-        <span>4 știri azi</span>
+        <span>6 știri azi</span>
         <span class="spacer"></span>
         <button class="refresh-btn" type="button" id="refreshBtn" aria-label="Reîmprospătează pagina">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg>
@@ -726,7 +726,7 @@
            „Ultimele știri", ÎNAINTEA dashboardului, vizibilă din prima, fără scroll.
            Nivelul de azi: GALBEN (sev-amber) — de urmărit, evoluție importantă, fără acțiune imediată:
            criza bugetară belgiană — regele încheie azi consultările, decizia privind
-           demisia lui De Wever vine vineri (cea mai importantă dintre cele trei
+           demisia lui De Wever vine vineri (cea mai importantă dintre cele cinci
            știri galbene ale zilei, țara în care locuiește).
            Chenarul rămâne în afara logicii de filtrare: vizibil indiferent de filtrul de categorie. -->
       <section class="spot sev-amber" aria-label="Știrea cea mai importantă a zilei">
@@ -741,7 +741,7 @@
         <h2 class="spot-title">Criza bugetară belgiană: regele încheie azi consultările; trei scenarii pe masă — alegeri, coaliție nouă sau acord pe buget</h2>
         <p class="spot-why"><strong>De ce e în față:</strong> miza e de 10 miliarde € în economii și venituri suplimentare până în 2029, într-o țară cu un deficit de 5,2% din PIB și o datorie publică de circa 108% din PIB, sub procedura UE de deficit excesiv — un guvern căzut sau alegeri anticipate ar prelungi incertitudinea fiscală exact când se decid taxele și cheltuielile pentru 2027.</p>
         <p class="spot-lead">Regele Philippe încheie azi consultările cu liderii coaliției, primind-o pe președinta N-VA, Valérie Van Peel, după ce marți și miercuri i-a primit pe liderii Les Engagés, CD&V, Vooruit și MR. Premierul Bart De Wever, care și-a prezentat demisia luni după eșecul negocierilor pentru bugetul 2027, revine vineri la Palat, la 10:30, când e așteptată decizia regelui. Brussels Times analizează azi trei scenarii: alegeri anticipate, o coaliție nouă sau un acord pe buget.</p>
-        <p class="spot-more"><span class="spot-more-text">Mai sunt și alte 2 știri cu aceeași severitate —</span> <button class="spot-more-btn" type="button" data-sev-value="amber" aria-label="Apasă aici ca să vezi doar știrile cu severitatea Galben — de urmărit">apasă aici</button></p>
+        <p class="spot-more"><span class="spot-more-text">Mai sunt și alte 4 știri cu aceeași severitate —</span> <button class="spot-more-btn" type="button" data-sev-value="amber" aria-label="Apasă aici ca să vezi doar știrile cu severitatea Galben — de urmărit">apasă aici</button></p>
         <div class="spot-foot">
           <a class="spot-link" href="#stire-52">Citește știrea completă ↓</a>
           <div class="sev-scale" role="img" aria-label="Scară de gravitate: verde — normal, galben — de urmărit, roșu — grav. Nivelul de azi: galben.">
@@ -756,15 +756,15 @@
       <section class="dashboard" aria-label="Panou de ansamblu">
         <div class="dash-head">
           <span class="dash-title">Dashboard · Azi</span>
-          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 08:00</span>
+          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 09:00</span>
           <span class="dash-meta">Fereastră monitorizare <strong>L–V 06:00–22:00 · S–D 07:30–22:00</strong> · pas ~3 ore</span>
         </div>
 
         <div class="kpi-grid" role="group" aria-label="Filtrează după categorie — apasă pe un tile">
           <button class="kpi" type="button" data-filter="toate" aria-pressed="true">
             <span class="kpi-top"><span class="kpi-label">Toate știrile</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">4</span>
-            <span class="kpi-sub">știri verificate azi, în 2 rulări</span>
+            <span class="kpi-value">6</span>
+            <span class="kpi-sub">știri verificate azi, în 3 rulări</span>
             <span class="kpi-bar" aria-hidden="true"><i style="width:100%"></i></span>
             <span class="kpi-hint">Apasă pentru toate</span>
           </button>
@@ -772,21 +772,21 @@
             <span class="kpi-top"><span class="kpi-label">Securitate &amp; NATO</span><span class="kpi-check" aria-hidden="true">✓</span></span>
             <span class="kpi-value">2</span>
             <span class="kpi-sub">atacuri cibernetice asupra frigiderelor · rachetă europeană de atac rapid</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:50%"></i></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:33%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="romania" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">România</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">0</span>
-            <span class="kpi-sub"></span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:0%"></i></span>
+            <span class="kpi-value">1</span>
+            <span class="kpi-sub">PNRR: 3,4 mld € în suspensie</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:17%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="tech" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">Tech &amp; AI</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">1</span>
-            <span class="kpi-sub">respingerea centrelor de date AI</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:25%"></i></span>
+            <span class="kpi-value">2</span>
+            <span class="kpi-sub">Apple taie bugetele AI · respingerea centrelor de date AI</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:33%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
         </div>
@@ -800,7 +800,7 @@
       </section>
 
       <div class="filter-status" aria-live="polite">
-        <span class="filter-label">Se afișează: <strong>Toate categoriile — 4 din 4 știri</strong></span>
+        <span class="filter-label">Se afișează: <strong>Toate categoriile — 6 din 6 știri</strong></span>
         <button class="filter-reset" type="button" hidden>Resetează filtrul</button>
       </div>
 
@@ -828,7 +828,83 @@
       <p class="empty">Nicio știre în această categorie azi.</p>
 
       <main>
-        <!-- 1 · 5 nov · 08:00 -->
+        <!-- 1 · 5 nov · 09:00 -->
+        <article id="stire-53" data-cats="romania" data-sev="amber" data-subiect="PNRR: 3,4 mld € în suspensie">
+          <div class="a-meta">
+            <span class="a-time">5 nov · 09:00</span>
+            <span class="a-cat">România · Fonduri europene · PNRR</span>
+            <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
+            <span class="subj-pill">PNRR: 3,4 mld € în suspensie</span>
+            <span class="a-num">#1 / 6</span>
+          </div>
+          <h2>România riscă să piardă 3,4 miliarde de euro din PNRR: ministrul Fondurilor Europene anunță că banii intră în suspendare</h2>
+
+          <div class="sec">
+            <p class="sec-label">Ce s-a întâmplat</p>
+            <p>Ministrul Investițiilor și Proiectelor Europene, Mihai Alexandru Ghigiu, a declarat miercuri, 4 noiembrie, că din cele 6,4 miliarde de euro rămase de atras prin cererile de plată 5 (2,08 miliarde) și 6 (4,35 miliarde), România estimează că va încasa doar circa 3 miliarde până la finalul anului, iar diferența de 3,4 miliarde intră într-o zonă de suspendare. Cauza sunt jaloanele neîndeplinite sau cu risc — 6 la cererea 5 și 32 din 104 la cererea 6, printre cele ratate definitiv numărându-se legea salarizării și legea decarbonizării. Comisia Europeană decide pe 20 noiembrie ce jaloane sunt îndeplinite; România trimite documente revizuite până vineri, 6 noiembrie, și are apoi două luni pentru explicații suplimentare ca să recupereze o parte din bani în primăvara lui 2027.</p>
+          </div>
+
+          <div class="sec">
+            <p class="sec-label">De ce contează</p>
+            <p>O parte din sumele respective era inclusă în ținta de deficit bugetar a României (6,2% din PIB), deci suspendarea sau pierderea lor apasă direct pe bugetul 2027 și pe capacitatea statului de a finanța investiții — context fiscal care contează pentru oricine are expuneri în România: investiția recurentă în TVBETETF, apartamentul din București și planurile de vacanță de Crăciun în țară.</p>
+          </div>
+
+          <div class="verify">
+            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
+            <p>Verdict: confirmat. Surse: declarația ministrului Ghigiu (conferință de presă, 4 noiembrie 2026), relatată independent de Adevărul Financiar, Prime24, Xpress News și Gazetari.ro. Nuanță de integritate: suspendarea celor 3,4 miliarde este deocamdată o estimare a ministrului, nu o decizie a Comisiei Europene — decizia oficială vine pe 20 noiembrie, iar o parte din bani ar putea fi recuperați prin contestații. Agenda zilei vine din G4Media; verificarea, din sursele de mai jos.</p>
+            <ul class="sources">
+              <li><a href="https://adevarulfinanciar.ro/macroeconomie/romania-ar-putea-incasa-3-miliarde-de-euro-pana-la-2568992.html" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Adevărul Financiar — „România ar putea încasa 3 miliarde de euro din PNRR până la finalul anului”<span class="host">adevarulfinanciar.ro</span></a></li>
+              <li><a href="https://www.prime24.ro/romania-estimeaza-incasari-de-3-miliarde-de-euro-din-pnrr-pana-la-finele-anului/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Prime24 — „România estimează încasări de 3 miliarde de euro din PNRR până la finele anului”<span class="host">prime24.ro</span></a></li>
+              <li><a href="https://xpressnews.ro/romania-ar-putea-primi-trei-miliarde-de-euro-din-pnrr-pana-la-finalul-anului-alte-34-miliarde-raman-suspendate/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Xpress News — „România ar putea primi trei miliarde de euro din PNRR până la finalul anului; alte 3,4 miliarde rămân suspendate”<span class="host">xpressnews.ro</span></a></li>
+              <li><a href="https://gazetari.ro/panica-la-palatul-victoria-pentru-salvarea-deficitului-premierul-luca-niculescu-si-ministrul-finantelor-avertizati-ca-romania-risca-sa-piarda-definitiv-34-miliarde-de-euro-din-pnrr/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Gazetari.ro — „România riscă să piardă definitiv 3,4 miliarde de euro din PNRR”<span class="host">gazetari.ro</span></a></li>
+            </ul>
+          </div>
+
+          <div class="impact">
+            <span class="badge">Impact direct</span>
+            <p>Impact direct minim azi — nu cere nicio acțiune imediată; relevanță de context înaltă: presiune pe deficitul și bugetul României, cu ecou pe piața de capital românească și pe finanțele publice în anul în care noul guvern își construiește primul buget.</p>
+          </div>
+        </article>
+
+        <!-- 2 · 5 nov · 09:00 -->
+        <article id="stire-54" data-cats="tech" data-sev="amber" data-subiect="Apple taie bugetele AI">
+          <div class="a-meta">
+            <span class="a-time">5 nov · 09:00</span>
+            <span class="a-cat">Tech &amp; AI · Costuri AI · Apple</span>
+            <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
+            <span class="subj-pill">Apple taie bugetele AI</span>
+            <span class="a-num">#2 / 6</span>
+          </div>
+          <h2>Apple taie bugetele interne de AI ale angajaților: plafonul zilnic scade de la 300 la 200 de dolari</h2>
+
+          <div class="sec">
+            <p class="sec-label">Ce s-a întâmplat</p>
+            <p>Apple a redus în octombrie plafonul zilnic de cheltuieli cu AI pentru unii ingineri de la 300 la 200 de dolari, iar pentru unele echipe se pregătesc reduceri până la 100 de dolari, relatează Bloomberg. Pentru multe echipe din afara ingineriei, unde plafonul este deja 100 de dolari, se ia în calcul coborârea la 25 de dolari. Plafoanele acoperă costul tokenilor la modelele folosite intern — Claude (Anthropic), ChatGPT (OpenAI) și Gemini (Google) — iar angajații care au nevoie de mai mult pot cere excepții de la conducere. Măsura face parte din campania de reducere a costurilor a noului CEO John Ternus, în timp ce cheltuielile de cercetare-dezvoltare ale Apple au crescut cu 32% în anul fiscal 2026, la 45,8 miliarde de dolari, în bună parte din cauza AI.</p>
+          </div>
+
+          <div class="sec">
+            <p class="sec-label">De ce contează</p>
+            <p>Continuă arcul costurilor AI urmărit în pagină (Anthropic: compute-ul a ajuns la 58% din venituri; Canva a tăiat 22% din posturi pe fondul costurilor de servire AI): după anii de entuziasm, și cel mai mare cumpărător de AI din lume își contabilizează fiecare token. Pentru un cititor care își construiește automatizările pe API-uri AI cu plată per token, e confirmarea practică a lecției de igienă a costurilor — limite de cheltuire, modele mai ieftine acolo unde se poate, alerte de spending.</p>
+          </div>
+
+          <div class="verify">
+            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
+            <p>Verdict: confirmat. Surse: Bloomberg (relatarea originală, 4 noiembrie 2026), Reuters (4 noiembrie 2026), 9to5Mac (4 noiembrie 2026), MacRumors (4 noiembrie 2026). Nuanță de integritate: puțini angajați foloseau plafonul maxim de 300 de dolari, deci economiile reale ale Apple ar putea fi mici — Bloomberg însuși notează incertitudinea.</p>
+            <ul class="sources">
+              <li><a href="https://techcrunch.com/2026/11/04/apple-is-reportedly-cutting-budgets-for-its-internal-ai-usage/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>TechCrunch — „Apple is reportedly cutting budgets for its internal AI usage” (4 noiembrie 2026)<span class="host">techcrunch.com</span></a></li>
+              <li><a href="https://www.reuters.com/business/retail-consumer/apple-cuts-employee-ai-budgets-cost-control-push-bloomberg-news-reports-2026-11-04/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Reuters — „Apple cuts employee AI budgets in cost-control push, Bloomberg News reports” (4 noiembrie 2026)<span class="host">reuters.com</span></a></li>
+              <li><a href="https://9to5mac.com/2026/11/04/report-apple-reduces-employees-ai-token-allowances-as-ternus-moves-to-cut-costs/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>9to5Mac — „Report: Apple reduces employees' AI token allowances as Ternus moves to cut costs” (4 noiembrie 2026)<span class="host">9to5mac.com</span></a></li>
+              <li><a href="https://www.macrumors.com/2026/11/04/apple-reducing-employee-ai-spending/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>MacRumors — „Apple reducing employee AI spending” (4 noiembrie 2026)<span class="host">macrumors.com</span></a></li>
+            </ul>
+          </div>
+
+          <div class="impact">
+            <span class="badge">Impact direct</span>
+            <p>Impact direct minim azi — nu schimbă nimic în contul cititorului; relevanță practică: semnal că era „AI pe gratis" s-a terminat și la marile companii, iar disciplina de cost pe API-uri devine standard de industrie.</p>
+          </div>
+        </article>
+
+        <!-- 3 · 5 nov · 08:00 -->
         <article id="stire-51" data-cats="securitate" data-sev="amber" data-subiect="atacuri cibernetice asupra frigiderelor">
           <div class="a-meta">
             <span class="a-time">5 nov · 08:00</span>
@@ -836,7 +912,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-24" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">atacuri cibernetice asupra frigiderelor</span>
-            <span class="a-num">#1 / 4</span>
+            <span class="a-num">#3 / 6</span>
           </div>
           <h2>Atacurile cibernetice asupra frigiderelor din Europa escaladează: trei bănci de sânge franceze lovite; România, printre țările vizate</h2>
 
@@ -877,7 +953,7 @@
           </div>
         </article>
 
-        <!-- 2 · 5 nov · 08:00 -->
+        <!-- 4 · 5 nov · 08:00 -->
         <article id="stire-52" data-cats="belgia" data-sev="amber" data-subiect="criza bugetară belgiană">
           <div class="a-meta">
             <span class="a-time">5 nov · 08:00</span>
@@ -886,7 +962,7 @@
             <span class="spot-tag">Știrea zilei</span>
             <a class="cont-pill" href="#stire-39" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">criza bugetară belgiană</span>
-            <span class="a-num">#2 / 4</span>
+            <span class="a-num">#4 / 6</span>
           </div>
           <h2>Criza bugetară belgiană: regele încheie azi consultările; trei scenarii pe masă — alegeri, coaliție nouă sau acord pe buget</h2>
 
@@ -927,14 +1003,14 @@
           </div>
         </article>
 
-        <!-- 3 · 5 nov · 06:00 -->
+        <!-- 5 · 5 nov · 06:00 -->
         <article id="stire-49" data-cats="tech" data-sev="amber" data-subiect="respingerea centrelor de date AI">
           <div class="a-meta">
             <span class="a-time">5 nov · 06:00</span>
             <span class="a-cat">Tech &amp; AI · Centre de date · Alegeri SUA</span>
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="subj-pill">respingerea centrelor de date AI</span>
-            <span class="a-num">#3 / 4</span>
+            <span class="a-num">#5 / 6</span>
           </div>
           <h2>Votanții americani au respins centrele de date AI la alegerile de la jumătatea mandatului: restricții în zeci de localități, Ohio în frunte</h2>
 
@@ -971,14 +1047,14 @@
           </div>
         </article>
 
-        <!-- 4 · 5 nov · 06:00 -->
+        <!-- 6 · 5 nov · 06:00 -->
         <article id="stire-50" data-cats="securitate" data-sev="green" data-subiect="rachetă europeană de atac rapid">
           <div class="a-meta">
             <span class="a-time">5 nov · 06:00</span>
             <span class="a-cat">Securitate &amp; NATO · Rachete · MBDA</span>
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <span class="subj-pill">rachetă europeană de atac rapid</span>
-            <span class="a-num">#4 / 4</span>
+            <span class="a-num">#6 / 6</span>
           </div>
           <h2>MBDA pregătește racheta supersonică Stratus RS: rază «mult, mult» peste Exocet, pentru Franța și Marea Britanie</h2>
 
