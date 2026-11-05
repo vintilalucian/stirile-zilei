@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="color-scheme" content="light dark" />
-    <meta name="tirile-versiune" content="2026-11-05T13:00:00+01:00|12|amber" />
+    <meta name="tirile-versiune" content="2026-11-05T14:00:00+01:00|13|amber" />
     <link rel="icon" href="data:," />
     <title>Știrile zilei</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -36,6 +36,8 @@
         --cat-ro-bg:#fbeeee;
         --cat-tech:#0e6b5e;
         --cat-tech-bg:#e6f4f1;
+        --cat-be:#9c7c00;
+        --cat-be-bg:#faf0cd;
         --kpi-sel-bg:#1e3247;
         --kpi-sel-ink:#f4f7fa;
         --kpi-sel-muted:#b7c5d3;
@@ -76,6 +78,8 @@
           --cat-ro-bg:#2f1d22;
           --cat-tech:#6fd8c2;
           --cat-tech-bg:#14332c;
+          --cat-be:#e6c34d;
+          --cat-be-bg:#2f2a10;
           --kpi-sel-bg:#3b4f68;
           --kpi-sel-ink:#f2f6fa;
           --kpi-sel-muted:#c2d0de;
@@ -219,6 +223,9 @@
         display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);
         border-bottom:1px solid var(--line);
       }
+      /* Ziua curentă are cinci tile-uri (cu Belgia): cinci coloane pe desktop;
+         în arhivă grila rămâne la patru, ca până acum. */
+      .kpi-grid.five{grid-template-columns:repeat(5,1fr)}
       .kpi{
         appearance:none;border:0;background:var(--surface);color:var(--ink);
         font:inherit;text-align:left;cursor:pointer;padding:16px 16px 14px;
@@ -239,9 +246,11 @@
       .kpi[data-filter="toate"] .kpi-bar i{background:var(--ink)}
       .kpi[data-filter="securitate"] .kpi-bar i{background:var(--cat-sec)}
       .kpi[data-filter="romania"] .kpi-bar i{background:var(--cat-ro)}
+      .kpi[data-filter="belgia"] .kpi-bar i{background:var(--cat-be)}
       .kpi[data-filter="tech"] .kpi-bar i{background:var(--cat-tech)}
       .kpi[data-filter="securitate"] .kpi-value{color:var(--cat-sec)}
       .kpi[data-filter="romania"] .kpi-value{color:var(--cat-ro)}
+      .kpi[data-filter="belgia"] .kpi-value{color:var(--cat-be)}
       .kpi[data-filter="tech"] .kpi-value{color:var(--cat-tech)}
       .kpi[aria-pressed="true"]{background:var(--kpi-sel-bg);color:var(--kpi-sel-ink)}
       .kpi[aria-pressed="true"] .kpi-label,.kpi[aria-pressed="true"] .kpi-sub{color:var(--kpi-sel-muted)}
@@ -329,10 +338,13 @@
          ziua curentă). Generat de script din cardurile zilei: lista completă,
          grupată pe ora publicării, cele mai noi primele. Antetul de oră al
          fiecărui grup e buton de filtru pe rulare (aceeași stare selectată ca
-         la tile-urile KPI și la vechile bare „Ritmul zilei"). Cuprinsul stă în
-         afara logicii de filtrare ca și conținut: rămâne integral vizibil la
-         orice filtru de categorie sau oră. Nu e pliabil: toate grupurile de
-         oră sunt extinse permanent, cu toate titlurile vizibile. */
+         la tile-urile KPI și la vechile bare „Ritmul zilei"). Cuprinsul
+         urmează filtrul activ, la fel ca și cardurile: la un filtru de
+         categorie, severitate sau oră arată doar rândurile știrilor care
+         trec filtrul, iar grupurile de oră rămase fără nicio știre vizibilă
+         se ascund; fără filtru (butonul „Toate") arată toate titlurile.
+         Nu e pliabil: grupurile vizibile sunt extinse permanent, cu toate
+         titlurile lor vizibile. */
       .day-toc{
         margin-top:14px;background:var(--surface);border:1px solid var(--line);
         border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden;
@@ -346,6 +358,8 @@
       .toc-head span{color:var(--muted);font-size:.83rem}
       .toc-group{display:flex;gap:12px;padding:8px 12px;align-items:flex-start}
       .toc-group + .toc-group{border-top:1px solid var(--line)}
+      .toc-group.hidden{display:none}
+      .toc-list li.hidden{display:none}
       .toc-hour{
         appearance:none;font:inherit;cursor:pointer;flex:none;align-self:flex-start;
         width:78px;padding:6px 6px 5px;border:1px solid var(--line);border-radius:8px;
@@ -648,6 +662,7 @@
 
       @media (max-width:700px){
         .kpi-grid{grid-template-columns:1fr 1fr}
+        .kpi-grid.five{grid-template-columns:1fr 1fr}
         .kpi{min-height:104px;padding:13px 14px 12px}
         .kpi .kpi-value{font-size:2rem}
         .dash-foot{grid-template-columns:1fr}
@@ -684,9 +699,9 @@
     <div class="topbar">
       <div class="topbar-inner">
         <span class="dot" aria-hidden="true"></span>
-        <span><strong>Joi, 5 noiembrie 2026</strong> · actualizat la <strong>13:00</strong></span>
+        <span><strong>Joi, 5 noiembrie 2026</strong> · actualizat la <strong>14:00</strong></span>
         <span aria-hidden="true">·</span>
-        <span>12 știri azi</span>
+        <span>13 știri azi</span>
         <span class="spacer"></span>
         <button class="refresh-btn" type="button" id="refreshBtn" aria-label="Reîmprospătează pagina">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg>
@@ -726,7 +741,7 @@
            „Ultimele știri", ÎNAINTEA dashboardului, vizibilă din prima, fără scroll.
            Nivelul de azi: GALBEN (sev-amber) — de urmărit, evoluție importantă, fără acțiune imediată:
            criza bugetară belgiană — regele încheie azi consultările, decizia privind
-           demisia lui De Wever vine vineri (cea mai importantă dintre cele cinci
+           demisia lui De Wever vine vineri (cea mai importantă dintre cele opt
            știri galbene ale zilei, țara în care locuiește).
            Chenarul rămâne în afara logicii de filtrare: vizibil indiferent de filtrul de categorie. -->
       <section class="spot sev-amber" aria-label="Știrea cea mai importantă a zilei">
@@ -741,7 +756,7 @@
         <h2 class="spot-title">Criza bugetară belgiană: regele încheie azi consultările; trei scenarii pe masă — alegeri, coaliție nouă sau acord pe buget</h2>
         <p class="spot-why"><strong>De ce e în față:</strong> miza e de 10 miliarde € în economii și venituri suplimentare până în 2029, într-o țară cu un deficit de 5,2% din PIB și o datorie publică de circa 108% din PIB, sub procedura UE de deficit excesiv — un guvern căzut sau alegeri anticipate ar prelungi incertitudinea fiscală exact când se decid taxele și cheltuielile pentru 2027.</p>
         <p class="spot-lead">Regele Philippe încheie azi consultările cu liderii coaliției, primind-o pe președinta N-VA, Valérie Van Peel, după ce marți și miercuri i-a primit pe liderii Les Engagés, CD&V, Vooruit și MR. Premierul Bart De Wever, care și-a prezentat demisia luni după eșecul negocierilor pentru bugetul 2027, revine vineri la Palat, la 10:30, când e așteptată decizia regelui. Brussels Times analizează azi trei scenarii: alegeri anticipate, o coaliție nouă sau un acord pe buget.</p>
-        <p class="spot-more"><span class="spot-more-text">Mai sunt și alte 6 știri cu aceeași severitate —</span> <button class="spot-more-btn" type="button" data-sev-value="amber" aria-label="Apasă aici ca să vezi doar știrile cu severitatea Galben — de urmărit">apasă aici</button></p>
+        <p class="spot-more"><span class="spot-more-text">Mai sunt și alte 7 știri cu aceeași severitate —</span> <button class="spot-more-btn" type="button" data-sev-value="amber" aria-label="Apasă aici ca să vezi doar știrile cu severitatea Galben — de urmărit">apasă aici</button></p>
         <div class="spot-foot">
           <a class="spot-link" href="#stire-52">Citește știrea completă ↓</a>
           <div class="sev-scale" role="img" aria-label="Scară de gravitate: verde — normal, galben — de urmărit, roșu — grav. Nivelul de azi: galben.">
@@ -756,37 +771,44 @@
       <section class="dashboard" aria-label="Panou de ansamblu">
         <div class="dash-head">
           <span class="dash-title">Dashboard · Azi</span>
-          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 13:00</span>
+          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 14:00</span>
           <span class="dash-meta">Fereastră monitorizare <strong>L–V 06:00–22:00 · S–D 07:30–22:00</strong> · pas ~3 ore</span>
         </div>
 
-        <div class="kpi-grid" role="group" aria-label="Filtrează după categorie — apasă pe un tile">
+        <div class="kpi-grid five" role="group" aria-label="Filtrează după categorie — apasă pe un tile">
           <button class="kpi" type="button" data-filter="toate" aria-pressed="true">
             <span class="kpi-top"><span class="kpi-label">Toate știrile</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">12</span>
-            <span class="kpi-sub">știri verificate azi, în 7 rulări</span>
+            <span class="kpi-value">13</span>
+            <span class="kpi-sub">știri verificate azi, în 8 rulări</span>
             <span class="kpi-bar" aria-hidden="true"><i style="width:100%"></i></span>
             <span class="kpi-hint">Apasă pentru toate</span>
           </button>
           <button class="kpi" type="button" data-filter="securitate" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">Securitate &amp; NATO</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">4</span>
-            <span class="kpi-sub">AI găsește 948 exploituri root Linux · Colby la București · atacuri cibernetice asupra frigiderelor · rachetă europeană de atac rapid</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:33%"></i></span>
+            <span class="kpi-value">5</span>
+            <span class="kpi-sub">amenințări cu bombă la avioane · AI găsește 948 exploituri root Linux · Colby la București · atacuri cibernetice asupra frigiderelor · rachetă europeană de atac rapid</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:38%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="romania" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">România</span><span class="kpi-check" aria-hidden="true">✓</span></span>
             <span class="kpi-value">2</span>
             <span class="kpi-sub">Colby la București · PNRR: 3,4 mld € în suspensie</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:17%"></i></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:15%"></i></span>
+            <span class="kpi-hint">Apasă pentru a filtra →</span>
+          </button>
+          <button class="kpi" type="button" data-filter="belgia" aria-pressed="false">
+            <span class="kpi-top"><span class="kpi-label">Belgia</span><span class="kpi-check" aria-hidden="true">✓</span></span>
+            <span class="kpi-value">3</span>
+            <span class="kpi-sub">amenințări cu bombă la avioane · Atacul cibernetic costă Ahold €250 mil. · criza bugetară belgiană</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:23%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="tech" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">Tech &amp; AI</span><span class="kpi-check" aria-hidden="true">✓</span></span>
             <span class="kpi-value">6</span>
             <span class="kpi-sub">AI găsește 948 exploituri root Linux · agenții AI nu comandă curse · PAC-urile AI au pierdut în SUA · Meta cumpără Conductor · Apple taie bugetele AI · respingerea centrelor de date AI</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:50%"></i></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:46%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
         </div>
@@ -800,7 +822,7 @@
       </section>
 
       <div class="filter-status" aria-live="polite">
-        <span class="filter-label">Se afișează: <strong>Toate categoriile — 12 din 12 știri</strong></span>
+        <span class="filter-label">Se afișează: <strong>Toate categoriile — 13 din 13 știri</strong></span>
         <button class="filter-reset" type="button" hidden>Resetează filtrul</button>
       </div>
 
@@ -814,9 +836,11 @@
            anulează filtrul de categorie și invers). Nu e pliabil: toate
            grupurile de oră sunt extinse permanent, cu toate titlurile
            vizibile — fără săgeți de pliere și fără buton de extindere.
-           Cuprinsul NU intră în logica de filtrare ca și conținut: rândurile
-           lui rămân integral vizibile indiferent de filtrul ales, la fel ca
-           chenarul. -->
+           Cuprinsul urmează filtrul activ, la fel ca și cardurile: la un
+           filtru de categorie, severitate sau oră arată doar rândurile
+           știrilor din selecția aceea, iar grupurile de oră rămase fără
+           nicio știre vizibilă se ascund; butonul „Toate" îl readuce la
+           toate titlurile zilei. Chenarul rămâne în afara filtrării. -->
       <nav class="day-toc" aria-label="Cuprinsul zilei">
         <div class="toc-head">
           <h2>Cuprins</h2>
@@ -828,14 +852,52 @@
       <p class="empty">Nicio știre în această categorie azi.</p>
 
       <main>
-        <!-- 1 · 5 nov · 13:00 -->
+        <!-- 1 · 5 nov · 14:00 -->
+        <article id="stire-61" data-cats="securitate belgia" data-sev="amber" data-subiect="amenințări cu bombă la avioane">
+          <div class="a-meta">
+            <span class="a-time">5 nov · 14:00</span>
+            <span class="a-cat">Securitate &amp; NATO · Belgia</span>
+            <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
+            <span class="subj-pill">amenințări cu bombă la avioane</span>
+            <span class="a-num">#1 / 13</span>
+          </div>
+          <h2>Val de amenințări cu bombă la zboruri europene: curse deviate în Franța, Belgia, Bulgaria și Italia — niciun dispozitiv găsit</h2>
+
+          <div class="sec">
+            <p class="sec-label">Ce s-a întâmplat</p>
+            <p>Joi dimineață, 5 noiembrie, cel puțin șapte-opt curse de pasageri din Europa au primit amenințări cu bombă — al treilea val de acest tip într-o săptămână, după cele din 2 și 3 noiembrie, cu circa 20 de zboruri afectate în total. Un Airbus A320 Aer Lingus Dublin–Roma (EI402) a fost interceptat de avioane de vânătoare franceze și deviat la baza aeriană Évreux; un zbor LOT Varșovia–Bruxelles (LO235) a aterizat la Zaventem; un Finnair Helsinki–Roma a fost escortat de avioane militare italiene. SRI a anunțat că și un zbor Wizz Air Milano–București a primit o amenințare, dar a aterizat în siguranță la destinație. Trei zboruri Ryanair spre Sofia și patru curse spre Praga au fost vizate. Nicăieri nu s-a găsit vreun dispozitiv exploziv.</p>
+          </div>
+
+          <div class="sec">
+            <p class="sec-label">De ce contează</p>
+            <p>Zboară frecvent din Belgia și are vacanța de Crăciun în România (22–31 decembrie); un zbor spre Bruxelles și unul spre București au fost direct vizate azi. E un val repetat, nu un incident izolat — a treia rundă într-o săptămână — iar autoritățile nu au stabilit încă cine transmite amenințările și dacă sunt legate între ele.</p>
+          </div>
+
+          <div class="verify">
+            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
+            <p>Verdict: confirmat. Confirmat de Reuters (relatare din 5 noiembrie, preluată de SRN News), The Guardian, Deutsche Welle, France 24 și Associated Press. Sursă curatoriată: The Brussels Times (5 noiembrie, 11:35) și G4Media (LIVE, 5 noiembrie). Atribuirea rămâne nestabilită: Matthew Borie, chief intelligence officer la Osprey Flight Solutions, a declarat pentru AP că ipotezele merg de la amenințări de tip copycat la un singur individ sau grup, iar implicarea unor actori statali sau a susținătorilor lor nu poate fi exclusă.</p>
+            <ul class="sources">
+              <li><a href="https://srnnews.com/bomb-alert-diverts-airbus-a320-plane-flying-from-dublin-to-rome-french-pm-says/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Reuters/SRN News — „Bomb alert diverts Airbus A320 plane flying from Dublin to Rome, French PM says” (5 noiembrie 2026)<span class="host">srnnews.com</span></a></li>
+              <li><a href="https://brusselssignal.eu/2026/11/hoax-bomb-threats-disrupt-european-aviation-for-third-time-in-a-week/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Brussels Signal (preia AP) — „Hoax bomb threats disrupt European aviation for third time in a week” (5 noiembrie 2026)<span class="host">brusselssignal.eu</span></a></li>
+              <li><a href="https://y.gogonow.de/sg.news.yahoo.com/factbox-europe-wide-bomb-threats-155057065.html" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Reuters factbox — „Factbox: Europe-wide bomb threats” (5 noiembrie 2026)<span class="host">y.gogonow.de</span></a></li>
+              <li><a href="https://lapresse.us/world/2026/11/05/bomb-threats-reported-on-eight-flights-across-europe-this-morning/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>LaPresse (preia The Guardian) — „Bomb threats reported on eight flights across Europe this morning” (5 noiembrie 2026)<span class="host">lapresse.us</span></a></li>
+            </ul>
+          </div>
+
+          <div class="impact">
+            <span class="badge">Impact direct</span>
+            <p>Impact direct azi: minim — nu are zbor programat azi; toate aeronavele vizate au aterizat în siguranță și nu s-a găsit niciun dispozitiv. Relevanță de context ridicată: la următoarea călătorie (Haga, 11–13 noiembrie) merită verificat statusul zborului înainte de plecare, iar valul repetat arată o campanie coordonată sau de tip copycat, nu incidente izolate.</p>
+          </div>
+        </article>
+
+        <!-- 2 · 5 nov · 13:00 -->
         <article id="stire-60" data-cats="securitate tech" data-sev="amber" data-subiect="AI găsește 948 exploituri root Linux">
           <div class="a-meta">
             <span class="a-time">5 nov · 13:00</span>
             <span class="a-cat">Tech &amp; AI / Securitate</span>
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="subj-pill">AI găsește 948 exploituri root Linux</span>
-            <span class="a-num">#1 / 12</span>
+            <span class="a-num">#2 / 13</span>
           </div>
           <h2>OpenAI: un pipeline AI a găsit 948 de exploituri root în kernelul Linux într-o singură rulare de ~30 de ore, cu 1,2 milioane $ costuri API</h2>
 
@@ -867,18 +929,18 @@
 
           <div class="impact">
             <span class="badge">Impact direct</span>
-            <p>Impact direct: minim azi — nu administrează servere Linux și nu există o listă de CVE-uri de verificat (raportul nu publică versiuni de kernel afectate sau identificatori CVE). Relevanță profesională ridicată: la NCIA/ESOC, un val de 948 de exploituri root validate de AI, cu patchuri-candidat în curs de raportare coordonată, înseamnă presiune pe ciclul de patchuire și pe monitorizarea vulnerabilităților — exact terenul de incident management. De urmărit: câte dintre cele 948 ajung CVE-uri publice și cât de repede le preiau distribuțiile Linux.</p>
+            <p>Impact direct: minim azi — nu administrează servere Linux și nu există o listă de CVE-uri de verificat (raportul nu publică versiuni de kernel afectate sau identificatori CVE). Relevanță profesională ridicată: un val de 948 de exploituri root validate de AI, cu patchuri-candidat în curs de raportare coordonată, înseamnă presiune pe ciclul de patchuire și pe monitorizarea vulnerabilităților — exact terenul de IT incident management. De urmărit: câte dintre cele 948 ajung CVE-uri publice și cât de repede le preiau distribuțiile Linux.</p>
           </div>
         </article>
 
-        <!-- 2 · 5 nov · 12:00 -->
+        <!-- 3 · 5 nov · 12:00 -->
         <article id="stire-59" data-cats="tech" data-sev="green" data-subiect="agenții AI nu comandă curse">
           <div class="a-meta">
             <span class="a-time">5 nov · 12:00</span>
             <span class="a-cat">Tech &amp; AI</span>
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <span class="subj-pill">agenții AI nu comandă curse</span>
-            <span class="a-num">#2 / 12</span>
+            <span class="a-num">#3 / 13</span>
           </div>
           <h2>Aproape nimeni nu folosește agenți AI ca să-și comande Uber: doar 4 curse într-o săptămână-record</h2>
 
@@ -914,14 +976,14 @@
           </div>
         </article>
 
-        <!-- 3 · 5 nov · 11:00 -->
+        <!-- 4 · 5 nov · 11:00 -->
         <article id="stire-57" data-cats="tech" data-sev="green" data-subiect="PAC-urile AI au pierdut în SUA">
           <div class="a-meta">
             <span class="a-time">5 nov · 11:00</span>
             <span class="a-cat">Tech &amp; AI</span>
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <span class="subj-pill">PAC-urile AI au pierdut în SUA</span>
-            <span class="a-num">#3 / 12</span>
+            <span class="a-num">#4 / 13</span>
           </div>
           <h2>PAC-urile AI au cheltuit milioane ca să-și aleagă Congresul — și au pierdut în mare parte</h2>
 
@@ -956,14 +1018,14 @@
           </div>
         </article>
 
-        <!-- 4 · 5 nov · 11:00 -->
-        <article id="stire-58" data-cats="" data-sev="green" data-subiect="Atacul cibernetic costă Ahold €250 mil.">
+        <!-- 5 · 5 nov · 11:00 -->
+        <article id="stire-58" data-cats="belgia" data-sev="green" data-subiect="Atacul cibernetic costă Ahold €250 mil.">
           <div class="a-meta">
             <span class="a-time">5 nov · 11:00</span>
             <span class="a-cat">Belgia</span>
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <span class="subj-pill">Atacul cibernetic costă Ahold €250 mil.</span>
-            <span class="a-num">#4 / 12</span>
+            <span class="a-num">#5 / 13</span>
           </div>
           <h2>Ahold Delhaize pune preț pe atacul cibernetic din octombrie: până la 250 de milioane € din vânzări pierdute</h2>
 
@@ -974,7 +1036,7 @@
 
           <div class="sec">
             <p class="sec-label">De ce contează</p>
-            <p>E unul dintre cei mai mari retaileri alimentari din Belgia, cu magazine Delhaize peste tot în țară, iar un incident care oprește o săptămână sistemele IT și costă un sfert de miliard arată cât de scumpă devine o breșă în infrastructura comercială — exact genul de incident pe care îl gestionează profesional, ca Incident Management Coordinator la NCIA.</p>
+            <p>E unul dintre cei mai mari retaileri alimentari din Belgia, cu magazine Delhaize peste tot în țară, iar un incident care oprește o săptămână sistemele IT și costă un sfert de miliard arată cât de scumpă devine o breșă în infrastructura comercială — exact genul de incident pe care îl gestionează profesional, ca IT incident Manager.</p>
           </div>
 
           <div class="verify">
@@ -993,14 +1055,14 @@
           </div>
         </article>
 
-        <!-- 5 · 5 nov · 10:00 -->
+        <!-- 6 · 5 nov · 10:00 -->
         <article id="stire-55" data-cats="securitate romania" data-sev="amber" data-subiect="Colby la București">
           <div class="a-meta">
             <span class="a-time">5 nov · 10:00</span>
             <span class="a-cat">Securitate &amp; NATO · România</span>
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="subj-pill">Colby la București</span>
-            <span class="a-num">#5 / 12</span>
+            <span class="a-num">#6 / 13</span>
           </div>
           <h2>Colby la București: România își mărește contribuția la NATO, în timp ce Pentagonul decide soarta trupelor SUA în Europa</h2>
 
@@ -1011,7 +1073,7 @@
 
           <div class="sec">
             <p class="sec-label">De ce contează</p>
-            <p>Atinge direct zona lui de lucru — NCIA, Flancul estic, Marea Neagră: prezența SUA în România e în revizuire la Pentagon (revizuirea pregătește opțiuni pentru secretarul Hegseth până pe 6 noiembrie), iar baza Mihail Kogălniceanu e piesa centrală a prezenței americane la Marea Neagră. O ofertă de plată directă ar face garanția americană tranzacțională, în linie cu ce s-a raportat și în octombrie.</p>
+            <p>Atinge direct zona lui de lucru — Flancul estic, Marea Neagră: prezența SUA în România e în revizuire la Pentagon (revizuirea pregătește opțiuni pentru secretarul Hegseth până pe 6 noiembrie), iar baza Mihail Kogălniceanu e piesa centrală a prezenței americane la Marea Neagră. O ofertă de plată directă ar face garanția americană tranzacțională, în linie cu ce s-a raportat și în octombrie.</p>
           </div>
 
           <div class="verify">
@@ -1026,18 +1088,18 @@
 
           <div class="impact">
             <span class="badge">Impact direct</span>
-            <p>Impact direct minim azi — nu cere nicio acțiune imediată; relevanță profesională înaltă: decizia privind trupele SUA în România (așteptată în decembrie, după revizuirea Pentagonului) atinge direct Flancul estic și Marea Neagră, zona lui de lucru la NCIA.</p>
+            <p>Impact direct minim azi — nu cere nicio acțiune imediată; relevanță profesională înaltă: decizia privind trupele SUA în România (așteptată în decembrie, după revizuirea Pentagonului) atinge direct Flancul estic și Marea Neagră, zona lui de lucru.</p>
           </div>
         </article>
 
-        <!-- 6 · 5 nov · 10:00 -->
+        <!-- 7 · 5 nov · 10:00 -->
         <article id="stire-56" data-cats="tech" data-sev="green" data-subiect="Meta cumpără Conductor">
           <div class="a-meta">
             <span class="a-time">5 nov · 10:00</span>
             <span class="a-cat">Tech &amp; AI</span>
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <span class="subj-pill">Meta cumpără Conductor</span>
-            <span class="a-num">#6 / 12</span>
+            <span class="a-num">#7 / 13</span>
           </div>
           <h2>Meta cumpără Conductor, startupul care rulează mai mulți agenți de coding AI în paralel</h2>
 
@@ -1066,14 +1128,14 @@
           </div>
         </article>
 
-        <!-- 7 · 5 nov · 09:00 -->
+        <!-- 8 · 5 nov · 09:00 -->
         <article id="stire-53" data-cats="romania" data-sev="amber" data-subiect="PNRR: 3,4 mld € în suspensie">
           <div class="a-meta">
             <span class="a-time">5 nov · 09:00</span>
             <span class="a-cat">România · Fonduri europene · PNRR</span>
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="subj-pill">PNRR: 3,4 mld € în suspensie</span>
-            <span class="a-num">#7 / 12</span>
+            <span class="a-num">#8 / 13</span>
           </div>
           <h2>România riscă să piardă 3,4 miliarde de euro din PNRR: ministrul Fondurilor Europene anunță că banii intră în suspendare</h2>
 
@@ -1104,14 +1166,14 @@
           </div>
         </article>
 
-        <!-- 8 · 5 nov · 09:00 -->
+        <!-- 9 · 5 nov · 09:00 -->
         <article id="stire-54" data-cats="tech" data-sev="amber" data-subiect="Apple taie bugetele AI">
           <div class="a-meta">
             <span class="a-time">5 nov · 09:00</span>
             <span class="a-cat">Tech &amp; AI · Costuri AI · Apple</span>
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="subj-pill">Apple taie bugetele AI</span>
-            <span class="a-num">#8 / 12</span>
+            <span class="a-num">#9 / 13</span>
           </div>
           <h2>Apple taie bugetele interne de AI ale angajaților: plafonul zilnic scade de la 300 la 200 de dolari</h2>
 
@@ -1142,7 +1204,7 @@
           </div>
         </article>
 
-        <!-- 9 · 5 nov · 08:00 -->
+        <!-- 10 · 5 nov · 08:00 -->
         <article id="stire-51" data-cats="securitate" data-sev="amber" data-subiect="atacuri cibernetice asupra frigiderelor">
           <div class="a-meta">
             <span class="a-time">5 nov · 08:00</span>
@@ -1150,7 +1212,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-24" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">atacuri cibernetice asupra frigiderelor</span>
-            <span class="a-num">#9 / 12</span>
+            <span class="a-num">#10 / 13</span>
           </div>
           <h2>Atacurile cibernetice asupra frigiderelor din Europa escaladează: trei bănci de sânge franceze lovite; România, printre țările vizate</h2>
 
@@ -1166,7 +1228,7 @@
 
           <div class="sec">
             <p class="sec-label">De ce contează</p>
-            <p>Ținta nu mai e un magazin, ci lanțul de sânge și medicamente: același tip de echipament (controlere frigorifice administrate de un furnizor extern) lovește acum infrastructura medicală. Pentru un incident manager la NCIA, e un caz manual de atac asupra unui furnizor terț care compromite sisteme operaționale, nu rețeaua IT centrală — iar ancheta agenției franceze de securitate cibernetică (ANSSI) și a Ministerului Sănătății din Franța e încă deschisă.</p>
+            <p>Ținta nu mai e un magazin, ci lanțul de sânge și medicamente: același tip de echipament (controlere frigorifice administrate de un furnizor extern) lovește acum infrastructura medicală. Pentru un IT incident Manager, e un caz manual de atac asupra unui furnizor terț care compromite sisteme operaționale, nu rețeaua IT centrală — iar ancheta agenției franceze de securitate cibernetică (ANSSI) și a Ministerului Sănătății din Franța e încă deschisă.</p>
           </div>
 
           <div class="verify">
@@ -1191,7 +1253,7 @@
           </div>
         </article>
 
-        <!-- 10 · 5 nov · 08:00 -->
+        <!-- 11 · 5 nov · 08:00 -->
         <article id="stire-52" data-cats="belgia" data-sev="amber" data-subiect="criza bugetară belgiană">
           <div class="a-meta">
             <span class="a-time">5 nov · 08:00</span>
@@ -1200,7 +1262,7 @@
             <span class="spot-tag">Știrea zilei</span>
             <a class="cont-pill" href="#stire-39" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">criza bugetară belgiană</span>
-            <span class="a-num">#10 / 12</span>
+            <span class="a-num">#11 / 13</span>
           </div>
           <h2>Criza bugetară belgiană: regele încheie azi consultările; trei scenarii pe masă — alegeri, coaliție nouă sau acord pe buget</h2>
 
@@ -1241,14 +1303,14 @@
           </div>
         </article>
 
-        <!-- 11 · 5 nov · 06:00 -->
+        <!-- 12 · 5 nov · 06:00 -->
         <article id="stire-49" data-cats="tech" data-sev="amber" data-subiect="respingerea centrelor de date AI">
           <div class="a-meta">
             <span class="a-time">5 nov · 06:00</span>
             <span class="a-cat">Tech &amp; AI · Centre de date · Alegeri SUA</span>
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="subj-pill">respingerea centrelor de date AI</span>
-            <span class="a-num">#11 / 12</span>
+            <span class="a-num">#12 / 13</span>
           </div>
           <h2>Votanții americani au respins centrele de date AI la alegerile de la jumătatea mandatului: restricții în zeci de localități, Ohio în frunte</h2>
 
@@ -1285,14 +1347,14 @@
           </div>
         </article>
 
-        <!-- 12 · 5 nov · 06:00 -->
+        <!-- 13 · 5 nov · 06:00 -->
         <article id="stire-50" data-cats="securitate" data-sev="green" data-subiect="rachetă europeană de atac rapid">
           <div class="a-meta">
             <span class="a-time">5 nov · 06:00</span>
             <span class="a-cat">Securitate &amp; NATO · Rachete · MBDA</span>
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <span class="subj-pill">rachetă europeană de atac rapid</span>
-            <span class="a-num">#12 / 12</span>
+            <span class="a-num">#13 / 13</span>
           </div>
           <h2>MBDA pregătește racheta supersonică Stratus RS: rază «mult, mult» peste Exocet, pentru Franța și Marea Britanie</h2>
 
@@ -1319,7 +1381,7 @@
 
           <div class="impact">
             <span class="badge">Impact direct</span>
-            <p>Impact direct: minim — relevanță de context pentru munca la NCIA/NATO; nicio acțiune concretă de făcut.</p>
+            <p>Impact direct: minim — relevanță de context pentru munca lui; nicio acțiune concretă de făcut.</p>
           </div>
         </article>
       </main>
@@ -1475,7 +1537,7 @@
 
           <div class="sec">
             <p class="sec-label">De ce contează</p>
-            <p>Pentru un Incident Management Coordinator, cazul e manual de lecții: un atac deliberat a stat nedetectat circa două luni într-un serviciu de hosting, iar vectorul furat nu e parola principală, ci credențiale FTP și tokenuri de sesiune — exact tipul de credențial care supraviețuiește unei schimbări de parolă dacă sesiunea nu e revocată. E continuarea directă a firului de incidente pe tooling/hosting urmărit în pagină (breșa OpenCode din 20 oct, PHP armageddon din 21 oct).</p>
+            <p>Pentru un IT incident Manager, cazul e manual de lecții: un atac deliberat a stat nedetectat circa două luni într-un serviciu de hosting, iar vectorul furat nu e parola principală, ci credențiale FTP și tokenuri de sesiune — exact tipul de credențial care supraviețuiește unei schimbări de parolă dacă sesiunea nu e revocată. E continuarea directă a firului de incidente pe tooling/hosting urmărit în pagină (breșa OpenCode din 20 oct, PHP armageddon din 21 oct).</p>
           </div>
 
           <div class="verify">
@@ -1768,7 +1830,7 @@
 
           <div class="sec">
             <p class="sec-label">De ce contează</p>
-            <p>Oficiali guvernamentali ai celei mai mari armate europene din NATO, vizați cu instrumente de supraveghere vândute mai ales guvernelor — la două săptămâni după ce Bundeswehr a ridicat nivelul de alertă la sabotaj la „semnificativ”. Pentru un coordonator de gestionare a incidentelor, modelul de decizie de aici este instructiv: la o alertă fără confirmare de infecție, autoritatea germană a ales ipoteza „presupune compromiterea”, nu așteptarea dovezii.</p>
+            <p>Oficiali guvernamentali ai celei mai mari armate europene din NATO, vizați cu instrumente de supraveghere vândute mai ales guvernelor — la două săptămâni după ce Bundeswehr a ridicat nivelul de alertă la sabotaj la „semnificativ”. Pentru un IT incident Manager, modelul de decizie de aici este instructiv: la o alertă fără confirmare de infecție, autoritatea germană a ales ipoteza „presupune compromiterea”, nu așteptarea dovezii.</p>
           </div>
 
           <div class="verify">
@@ -1783,7 +1845,7 @@
 
           <div class="impact">
             <span class="badge">Impact direct</span>
-            <p>Impact direct minim pentru el personal — telefonul lui actual este Pixel, nu iPhone, deci alertele Apple nu îl privesc direct. Relevanță profesională directă: incident de securitate asupra oficialilor guvernamentali dintr-un stat aliat cheie, cu instrumente zero-click (nu e nevoie ca victima să apese pe nimic), exact pe terenul lui de incident management la NCIA; de urmărit dacă apar atribuiri, confirmări de infecție sau ghidaj NATO/național similar.</p>
+            <p>Impact direct minim pentru el personal — telefonul lui actual este Pixel, nu iPhone, deci alertele Apple nu îl privesc direct. Relevanță profesională directă: incident de securitate asupra oficialilor guvernamentali dintr-un stat aliat cheie, cu instrumente zero-click (nu e nevoie ca victima să apese pe nimic), exact pe terenul lui de IT incident management; de urmărit dacă apar atribuiri, confirmări de infecție sau ghidaj NATO/național similar.</p>
           </div>
         </article>
 
@@ -1809,7 +1871,7 @@
 
           <div class="sec">
             <p class="sec-label">De ce contează</p>
-            <p>Belgia e țara de reședință și locul de muncă (NCIA, Mons); bugetul federal pe 2027 decide taxe și servicii, iar criza se joacă pe circa 10 miliarde de euro în măsuri până în 2029, cu un deficit de 5,2% din PIB și procedură UE de deficit excesiv. Vineri se decide dacă guvernul rămâne sau cade.</p>
+            <p>Belgia e țara de reședință și locul de muncă; bugetul federal pe 2027 decide taxe și servicii, iar criza se joacă pe circa 10 miliarde de euro în măsuri până în 2029, cu un deficit de 5,2% din PIB și procedură UE de deficit excesiv. Vineri se decide dacă guvernul rămâne sau cade.</p>
           </div>
 
           <div class="verify">
@@ -1951,7 +2013,7 @@
 
           <div class="impact">
             <span class="badge">Impact direct</span>
-            <p>Impact profesional direct, fără acțiune imediată: rețele reziliente, detecție 5G și AI agentic în lanțul senzor–decizie sunt exact terenul lui de incident management la NCIA/ESOC; de urmărit posibile cerințe noi de interoperabilitate și raportare pe măsură ce capabilitățile testate ajung în dotare. Personal/familie: minim, relevanță de context.</p>
+            <p>Impact profesional direct, fără acțiune imediată: rețele reziliente, detecție 5G și AI agentic în lanțul senzor–decizie sunt exact terenul lui de IT incident management; de urmărit posibile cerințe noi de interoperabilitate și raportare pe măsură ce capabilitățile testate ajung în dotare. Personal/familie: minim, relevanță de context.</p>
           </div>
         </article>
 
@@ -2148,7 +2210,7 @@
 
           <div class="impact">
             <span class="badge">Impact direct</span>
-            <p>Profesional direct — ca Incident Management Coordinator la NCIA/ESOC Mons, observabilitatea agenților și un kill-switch sunt exact controalele care lipsesc azi în discuțiile despre agenți autonomi; personal: minim azi, dar direcția pieței confirmă lecția din cardul OpenCode din octombrie: agenți și chei API cu limite și monitorizare, nu acces liber.</p>
+            <p>Profesional direct — ca IT incident Manager, observabilitatea agenților și un kill-switch sunt exact controalele care lipsesc azi în discuțiile despre agenți autonomi; personal: minim azi, dar direcția pieței confirmă lecția din cardul OpenCode din octombrie: agenți și chei API cu limite și monitorizare, nu acces liber.</p>
           </div>
         </article>
 
@@ -2227,7 +2289,7 @@
 
           <div class="impact">
             <span class="badge">Impact direct</span>
-            <p>Impact direct minim azi — fără acțiune imediată; relevanță profesională de context înaltă: Incident Management la NCIA / ESOC Mons, pe arcul amenințărilor hibride și al războiului cu drone urmărit constant în pagină (inclusiv cardul de azi-dimineață despre antenele mai mari ale dronelor rusești).</p>
+            <p>Impact direct minim azi — fără acțiune imediată; relevanță profesională de context înaltă pentru un IT incident Manager, pe arcul amenințărilor hibride și al războiului cu drone urmărit constant în pagină (inclusiv cardul de azi-dimineață despre antenele mai mari ale dronelor rusești).</p>
           </div>
         </article>
 
@@ -2272,7 +2334,7 @@
 
           <div class="impact">
             <span class="badge">Impact direct</span>
-            <p>Profesional direct — Flancul estic și Marea Neagră sunt zona operațională a rolului de Incident Management Coordinator la NCIA/ESOC Mons; personal și pentru familie: minim, relevanță de context (proiectul Neptun Deep, care va face din România cel mai mare producător de gaze al UE anul viitor, a fost abordat de o dronă navală în august).</p>
+            <p>Profesional direct — Flancul estic și Marea Neagră sunt zona operațională a rolului lui de IT incident Manager; personal și pentru familie: minim, relevanță de context (proiectul Neptun Deep, care va face din România cel mai mare producător de gaze al UE anul viitor, a fost abordat de o dronă navală în august).</p>
           </div>
         </article>
 
@@ -2330,7 +2392,7 @@
 
           <div class="sec">
             <p class="sec-label">De ce contează</p>
-            <p>Folosește Claude zilnic și construiește automatizări pe API-uri AI, iar ca Incident Management Coordinator la NCIA tocmai genul acesta de risc îl privește: un prag de siguranță al cărui detector, după recunoașterea companiei însăși, poate semnala abia retroactiv. În plus, potrivit AI Weekly, este primul document înregistrat la SEC al unui laborator frontieră care numește și definește formal un astfel de prag de capabilitate, ceea ce îl face citabil de orice regulator.</p>
+            <p>Folosește Claude zilnic și construiește automatizări pe API-uri AI, iar ca IT incident Manager tocmai genul acesta de risc îl privește: un prag de siguranță al cărui detector, după recunoașterea companiei însăși, poate semnala abia retroactiv. În plus, potrivit AI Weekly, este primul document înregistrat la SEC al unui laborator frontieră care numește și definește formal un astfel de prag de capabilitate, ceea ce îl face citabil de orice regulator.</p>
           </div>
 
           <div class="verify">
@@ -2635,7 +2697,7 @@
 
           <div class="sec">
             <p class="sec-label">De ce contează</p>
-            <p>Locuiește în Belgia și face cumpărături la supermarketuri din țară, deci stocul proaspăt/congelat din magazinele afectate poate fi compromis azi; profesional, ca Incident Management Coordinator la NCIA, este un incident de securitate cibernetică pe sisteme OT/IoT (controlere de refrigerare conectate), în aceeași tipologie cu atacul din octombrie asupra a sute de supermarketuri din Franța și cu incidentul cibernetic din octombrie de la compania-mamă Ahold Delhaize.</p>
+            <p>Locuiește în Belgia și face cumpărături la supermarketuri din țară, deci stocul proaspăt/congelat din magazinele afectate poate fi compromis azi; profesional, ca IT incident Manager, este un incident de securitate cibernetică pe sisteme OT/IoT (controlere de refrigerare conectate), în aceeași tipologie cu atacul din octombrie asupra a sute de supermarketuri din Franța și cu incidentul cibernetic din octombrie de la compania-mamă Ahold Delhaize.</p>
           </div>
 
           <div class="verify">
@@ -2919,7 +2981,7 @@
 
           <div class="sec">
             <p class="sec-label">De ce contează</p>
-            <p>Este modelul concret prin care Europa își leagă industria de apărare între aliați fără să aștepte Washingtonul — Germania, cea mai mare armată europeană din NATO, își ancorează producția de tancuri, submarine și supraveghere spațială în Norvegia, pe flancul nordic; pentru un coordonator de gestionare a incidentelor la NCIA, integrarea industrială și supravegherea spațială pe flancul nordic continuă arcul amenințărilor hibride și al protecției infrastructurii submarine urmărit în pagină.</p>
+            <p>Este modelul concret prin care Europa își leagă industria de apărare între aliați fără să aștepte Washingtonul — Germania, cea mai mare armată europeană din NATO, își ancorează producția de tancuri, submarine și supraveghere spațială în Norvegia, pe flancul nordic; pentru un IT incident Manager, integrarea industrială și supravegherea spațială pe flancul nordic continuă arcul amenințărilor hibride și al protecției infrastructurii submarine urmărit în pagină.</p>
           </div>
 
           <div class="verify">
@@ -2999,7 +3061,7 @@
 
           <div class="sec">
             <p class="sec-label">De ce contează</p>
-            <p>Belgia (țara de rezidență) transferă capacitate navală reală, nu doar declarații, către flancul Mării Negre — exact arcul urmărit în pagină (atacurile asupra navelor comerciale, condamnarea trilaterală din 29 octombrie, inițiativa NATO anti-dronă din 30 octombrie). Pentru un coordonator de gestionare a incidentelor la NCIA, cu centrul de operații la Mons, este un semnal concret despre cum se materializează postura aliată în Marea Neagră: prin nave, nu doar prin patrule aeriene.</p>
+            <p>Belgia (țara de rezidență) transferă capacitate navală reală, nu doar declarații, către flancul Mării Negre — exact arcul urmărit în pagină (atacurile asupra navelor comerciale, condamnarea trilaterală din 29 octombrie, inițiativa NATO anti-dronă din 30 octombrie). Pentru un IT incident Manager, este un semnal concret despre cum se materializează postura aliată în Marea Neagră: prin nave, nu doar prin patrule aeriene.</p>
           </div>
 
           <div class="verify">
@@ -3037,7 +3099,7 @@
 
           <div class="sec">
             <p class="sec-label">De ce contează</p>
-            <p>Lucian este angajat permanent în Belgia (NCIA, din toamna lui 2026), deci recalcularea reținerii la sursă îi afectează direct fluturașul de salariu din noiembrie. Taxa de 2 euro pe coletele din afara UE îl privește la comenzile online din afara Uniunii.</p>
+            <p>Lucian este angajat permanent în Belgia, deci recalcularea reținerii la sursă îi afectează direct fluturașul de salariu din noiembrie. Taxa de 2 euro pe coletele din afara UE îl privește la comenzile online din afara Uniunii.</p>
           </div>
 
           <div class="verify">
@@ -3246,7 +3308,7 @@
 
           <div class="impact">
             <span class="badge">Impact direct</span>
-            <p>Profesional — agenți AI cu autoritate operațională în logistica militară înseamnă o suprafață nouă de incidente (decizii automate sub presiune de timp și conectivitate, date de pe linia frontului), direct pe terenul de incident management la NCIA; personal — confirmă direcția arhitecturală discutată în acest watch (separarea inteligenței de autoritatea de a acționa), acum cu miză operațională, nu doar comercială.</p>
+            <p>Profesional — agenți AI cu autoritate operațională în logistica militară înseamnă o suprafață nouă de incidente (decizii automate sub presiune de timp și conectivitate, date de pe linia frontului), direct pe terenul de IT incident management; personal — confirmă direcția arhitecturală discutată în acest watch (separarea inteligenței de autoritatea de a acționa), acum cu miză operațională, nu doar comercială.</p>
           </div>
         </article>
 
@@ -3599,7 +3661,7 @@
 
           <div class="impact">
             <span class="badge">Impact direct</span>
-            <p>Minim azi, fără acțiune imediată; relevanță profesională înaltă — Incident Management Coordinator la NCIA, pe arcul amenințărilor hibride și anti-dronă din Marea Neagră urmărit constant.</p>
+            <p>Minim azi, fără acțiune imediată; relevanță profesională înaltă — pentru un IT incident Manager, pe arcul amenințărilor hibride și anti-dronă din Marea Neagră urmărit constant.</p>
           </div>
         </article>
 
@@ -3815,7 +3877,7 @@
 
           <div class="sec">
             <p class="sec-label">De ce contează</p>
-            <p>NATO + Ucraina + inovare tehnologică în apărare = mediul profesional direct (NCIA, infrastructură tehnologică), pe linia arcului anti-dronă / Marea Neagră.</p>
+            <p>NATO + Ucraina + inovare tehnologică în apărare = mediul profesional direct (infrastructură tehnologică), pe linia arcului anti-dronă / Marea Neagră.</p>
           </div>
 
           <div class="verify">
@@ -3848,7 +3910,7 @@
 
           <div class="sec">
             <p class="sec-label">De ce contează</p>
-            <p>Armata ucraineană depinde masiv de Starlink pentru comunicații și drone, iar un furnizor comercial unic devine punct critic — zona de comunicații și infrastructură critică la NCIA/ESOC.</p>
+            <p>Armata ucraineană depinde masiv de Starlink pentru comunicații și drone, iar un furnizor comercial unic devine punct critic — zona de comunicații și infrastructură critică.</p>
           </div>
 
           <div class="verify">
@@ -3931,9 +3993,11 @@
       // Fiind generate din DOM la fiecare încărcare, o știre adăugată de o
       // rulare ulterioară apare automat peste tot unde trebuie, cu
       // severitatea și eticheta ei scurtă (data-subiect), fără editare
-      // manuală. Cuprinsul nu are data-cats pe rânduri și nu e atins de
-      // logica de filtrare ca și conținut: rămâne integral vizibil la orice
-      // filtru, la fel ca chenarul „Știrea zilei".
+      // manuală. Fiecare rând din cuprins primește data-cats, data-sev și
+      // data-hour de pe cardul lui, ca scriptul de filtrare să-l trateze
+      // exact ca pe card: cuprinsul urmează filtrul activ (categorie,
+      // severitate sau oră), spre deosebire de chenarul „Știrea zilei",
+      // care rămâne mereu vizibil.
       (function () {
         var section = document.querySelector('section.day:not(.day-archive)');
         if (!section) return;
@@ -3966,7 +4030,7 @@
           var followHref = fu ? (fu.getAttribute('href') || '') : '';
           var g = byHour[hour];
           if (!g) { g = { hour: hour, items: [] }; byHour[hour] = g; groups.push(g); }
-          g.items.push({ id: a.id, title: h.textContent.trim(), dotCls: dotCls, num: i + 1, followHref: followHref });
+          g.items.push({ id: a.id, title: h.textContent.trim(), dotCls: dotCls, num: i + 1, followHref: followHref, cats: a.getAttribute('data-cats') || '', sev: a.getAttribute('data-sev') || '', hour: hour });
         });
         groups.forEach(function (g, gi) {
           var wrap = document.createElement('div');
@@ -3994,6 +4058,12 @@
           // de filtru pe rulare.
           g.items.forEach(function (it) {
             var li = document.createElement('li');
+            // Aceleași atribute de filtrare ca pe card (data-cats, data-sev,
+            // data-hour), ca rândul din cuprins să urmeze filtrul activ
+            // exact ca și cardul lui.
+            li.setAttribute('data-cats', it.cats);
+            li.setAttribute('data-sev', it.sev);
+            li.setAttribute('data-hour', it.hour);
             var link = document.createElement('a');
             link.className = 'toc-main';
             link.href = '#' + it.id;
@@ -4230,13 +4300,16 @@
           toate: 'Toate categoriile',
           securitate: 'Securitate & NATO',
           romania: 'România',
+          belgia: 'Belgia',
           tech: 'Tech & AI'
         };
 
         // Filtrarea rulează independent în fiecare secțiune de zi (section.day):
         // tile-urile și butoanele de oră ale unei zile filtrează doar cardurile
         // acelei zile (plus rândurile cuprinsului din arhivă, care se sincronizează
-        // ca înainte; cuprinsul zilei curente nu se ascunde niciodată).
+        // ca înainte). Cuprinsul zilei curente urmează și el filtrul activ:
+        // arată doar rândurile știrilor care trec filtrul, iar grupurile de
+        // oră rămase fără nicio știre vizibilă se ascund.
         // ATENȚIE: selectorul trebuie să fie „section.day", nu „.day" — pastila
         // „Ediția de azi" din masthead are și ea clasa „day" (span.day); cu „.day"
         // bucla pornea pe acel span, unde .filter-reset lipsește (null), iar eroarea
@@ -4252,6 +4325,13 @@
         var sevButtons = Array.prototype.slice.call(section.querySelectorAll('[data-sev-value]'));
         var articles = Array.prototype.slice.call(section.querySelectorAll('article[data-cats]'));
         var indexItems = Array.prototype.slice.call(section.querySelectorAll('.index-list li[data-cats]'));
+        // Cuprinsul zilei curente: grupurile de oră și rândurile lor, generate
+        // de scriptul anterior cu data-cats / data-sev / data-hour pe rânduri —
+        // se filtrează cu aceeași funcție matches() ca și cardurile.
+        var tocGroups = Array.prototype.slice.call(section.querySelectorAll('.day-toc .toc-group'));
+        var tocItems = Array.prototype.slice.call(section.querySelectorAll('.day-toc .toc-list li'));
+        var tocCount = section.querySelector('.toc-count');
+        var tocCountDefault = tocCount ? tocCount.textContent : '';
         var emptyMsg = section.querySelector('.empty');
         var filterLabel = section.querySelector('.filter-label');
         var filterReset = section.querySelector('.filter-reset');
@@ -4315,6 +4395,31 @@
             if (show) visible++;
           });
           indexItems.forEach(function (li) { li.classList.toggle('hidden', !matches(li)); });
+          // Cuprinsul zilei urmează filtrul activ, ca și cardurile: rândurile
+          // care nu trec filtrul se ascund, grupurile de oră rămase fără
+          // niciun rând vizibil se ascund și ele, iar numărul de pe antetul
+          // de oră și din capul cuprinsului arată doar știrile vizibile.
+          var tocVisible = 0;
+          tocGroups.forEach(function (group) {
+            var items = Array.prototype.slice.call(group.querySelectorAll('.toc-list li'));
+            var vis = 0;
+            items.forEach(function (li) {
+              var show = matches(li);
+              li.classList.toggle('hidden', !show);
+              if (show) vis++;
+            });
+            group.classList.toggle('hidden', vis === 0);
+            var thN = group.querySelector('.th-n');
+            if (thN) thN.textContent = vis + (vis === 1 ? ' știre' : ' știri');
+            tocVisible += vis;
+          });
+          if (tocCount) {
+            if (selection.type === 'all') {
+              tocCount.textContent = tocCountDefault;
+            } else {
+              tocCount.textContent = tocVisible + (tocVisible === 1 ? ' știre afișată' : ' știri afișate') + ' din ' + tocItems.length + ' · filtru activ';
+            }
+          }
           if (emptyMsg) emptyMsg.classList.toggle('show', visible === 0);
           if (filterLabel) {
             if (selection.type === 'hour') {
