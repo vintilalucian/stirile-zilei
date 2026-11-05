@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="color-scheme" content="light dark" />
-    <meta name="tirile-versiune" content="2026-11-05T10:00:00+01:00|8|amber" />
+    <meta name="tirile-versiune" content="2026-11-05T11:00:00+01:00|10|amber" />
     <link rel="icon" href="data:," />
     <title>Știrile zilei</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -684,9 +684,9 @@
     <div class="topbar">
       <div class="topbar-inner">
         <span class="dot" aria-hidden="true"></span>
-        <span><strong>Joi, 5 noiembrie 2026</strong> · actualizat la <strong>10:00</strong></span>
+        <span><strong>Joi, 5 noiembrie 2026</strong> · actualizat la <strong>11:00</strong></span>
         <span aria-hidden="true">·</span>
-        <span>8 știri azi</span>
+        <span>10 știri azi</span>
         <span class="spacer"></span>
         <button class="refresh-btn" type="button" id="refreshBtn" aria-label="Reîmprospătează pagina">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg>
@@ -756,15 +756,15 @@
       <section class="dashboard" aria-label="Panou de ansamblu">
         <div class="dash-head">
           <span class="dash-title">Dashboard · Azi</span>
-          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 10:00</span>
+          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 11:00</span>
           <span class="dash-meta">Fereastră monitorizare <strong>L–V 06:00–22:00 · S–D 07:30–22:00</strong> · pas ~3 ore</span>
         </div>
 
         <div class="kpi-grid" role="group" aria-label="Filtrează după categorie — apasă pe un tile">
           <button class="kpi" type="button" data-filter="toate" aria-pressed="true">
             <span class="kpi-top"><span class="kpi-label">Toate știrile</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">8</span>
-            <span class="kpi-sub">știri verificate azi, în 4 rulări</span>
+            <span class="kpi-value">10</span>
+            <span class="kpi-sub">știri verificate azi, în 5 rulări</span>
             <span class="kpi-bar" aria-hidden="true"><i style="width:100%"></i></span>
             <span class="kpi-hint">Apasă pentru toate</span>
           </button>
@@ -772,21 +772,21 @@
             <span class="kpi-top"><span class="kpi-label">Securitate &amp; NATO</span><span class="kpi-check" aria-hidden="true">✓</span></span>
             <span class="kpi-value">3</span>
             <span class="kpi-sub">Colby la București · atacuri cibernetice asupra frigiderelor · rachetă europeană de atac rapid</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:38%"></i></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:30%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="romania" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">România</span><span class="kpi-check" aria-hidden="true">✓</span></span>
             <span class="kpi-value">2</span>
             <span class="kpi-sub">Colby la București · PNRR: 3,4 mld € în suspensie</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:25%"></i></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:20%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="tech" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">Tech &amp; AI</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">3</span>
-            <span class="kpi-sub">Meta cumpără Conductor · Apple taie bugetele AI · respingerea centrelor de date AI</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:38%"></i></span>
+            <span class="kpi-value">4</span>
+            <span class="kpi-sub">PAC-urile AI au pierdut în SUA · Meta cumpără Conductor · Apple taie bugetele AI · respingerea centrelor de date AI</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:40%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
         </div>
@@ -800,7 +800,7 @@
       </section>
 
       <div class="filter-status" aria-live="polite">
-        <span class="filter-label">Se afișează: <strong>Toate categoriile — 8 din 8 știri</strong></span>
+        <span class="filter-label">Se afișează: <strong>Toate categoriile — 10 din 10 știri</strong></span>
         <button class="filter-reset" type="button" hidden>Resetează filtrul</button>
       </div>
 
@@ -828,14 +828,93 @@
       <p class="empty">Nicio știre în această categorie azi.</p>
 
       <main>
-        <!-- 1 · 5 nov · 10:00 -->
+        <!-- 1 · 5 nov · 11:00 -->
+        <article id="stire-57" data-cats="tech" data-sev="green" data-subiect="PAC-urile AI au pierdut în SUA">
+          <div class="a-meta">
+            <span class="a-time">5 nov · 11:00</span>
+            <span class="a-cat">Tech &amp; AI</span>
+            <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
+            <span class="subj-pill">PAC-urile AI au pierdut în SUA</span>
+            <span class="a-num">#1 / 10</span>
+          </div>
+          <h2>PAC-urile AI au cheltuit milioane ca să-și aleagă Congresul — și au pierdut în mare parte</h2>
+
+          <div class="sec">
+            <p class="sec-label">Ce s-a întâmplat</p>
+            <p>Grupurile politice pro și contra industriei AI au cheltuit milioane de dolari ca să influențeze alegerile de la jumătatea mandatului din SUA, de marți, 3 noiembrie, iar rezultatele au fost mixte, mulți dintre candidații cel mai susținuți pierzând. Două comitete de acțiune politică din industria AI — American Mission și Building the Future — au cheltuit împreună 4,8 milioane de dolari pentru candidata republicană la Senat din Carolina de Sud, Darline Graham, care a pierdut. Leading the Future, rețeaua susținută de președintele OpenAI Greg Brockman și de fondul Andreessen Horowitz, a cheltuit 27,38 milioane de dolari în primare, inclusiv 8 milioane doar împotriva lui Alex Bores din New York, care și-a pierdut candidatura la Congres în iunie.</p>
+          </div>
+
+          <div class="sec">
+            <p class="sec-label">De ce contează</p>
+            <p>Banii industriei AI nu au reușit să-și cumpere un Congres prietenos cu reglementarea laxă, iar direcția reglementării AI în SUA rămâne deschisă — exact mediul în care operează OpenAI și Anthropic, ale căror modele stau la baza automatizărilor cu plată per token.</p>
+          </div>
+
+          <div class="verify">
+            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
+            <p>Verdict: confirmat. Surse: TechCrunch (sursa curatoriată, 4 nov); Citation Needed (Molly White, 4 nov) — bilanț independent pe date FEC: circa 250 mil. $ cheltuiți de PAC-urile crypto+AI, 79 mil. $ doar AI pe 68 de locuri, 9 din 12 curse competitive pierdute de tabăra susținută de PAC-uri; PPC Land (4 nov) — analiză pe date FEC și AdExchanger.</p>
+            <ul class="sources">
+              <li><a href="https://techcrunch.com/2026/11/04/ai-pacs-spent-millions-trying-to-shape-congress-heres-how-they-fared/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>TechCrunch (sursa curatoriată) — „AI PACs spent millions trying to shape Congress — here's how they fared” (4 noiembrie 2026)<span class="host">techcrunch.com</span></a></li>
+              <li><a href="https://www.citationneeded.news/2026-election-results/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Citation Needed (Molly White) — bilanțul alegerilor din 2026, pe date FEC (4 noiembrie 2026)<span class="host">citationneeded.news</span></a></li>
+              <li><a href="https://ppc.land/democrats-win-congress-what-changes-for-ai-rules-privacy-and-advertising/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>PPC Land — ce se schimbă pentru regulile AI, confidențialitate și publicitate după victoria democraților în Congres, analiză pe date FEC și AdExchanger (4 noiembrie 2026)<span class="host">ppc.land</span></a></li>
+            </ul>
+          </div>
+
+          <div class="opposing">
+            <p class="sec-label">Tabăra adversă</p>
+            <p>Leading the Future susține că alegerile generale n-au fost miza principală — primarele sunt folosirea mai eficientă a banilor, pentru că acolo se construiește notorietatea și agenda de politici AI — și că va continua să cheltuie și la alegerile din 2028. (<a href="https://techcrunch.com/2026/11/04/ai-pacs-spent-millions-trying-to-shape-congress-heres-how-they-fared/" target="_blank" rel="noopener">TechCrunch</a>)</p>
+          </div>
+
+          <div class="impact">
+            <span class="badge">Impact direct</span>
+            <p>Impact direct minim azi — nu schimbă nimic în contul lui; relevanță de context: eșecul banilor industriei lasă deschisă reglementarea AI în SUA, cu efecte pe termen lung asupra costurilor și regulilor pentru modelele pe care le folosește.</p>
+          </div>
+        </article>
+
+        <!-- 2 · 5 nov · 11:00 -->
+        <article id="stire-58" data-cats="" data-sev="green" data-subiect="Atacul cibernetic costă Ahold €250 mil.">
+          <div class="a-meta">
+            <span class="a-time">5 nov · 11:00</span>
+            <span class="a-cat">Belgia</span>
+            <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
+            <span class="subj-pill">Atacul cibernetic costă Ahold €250 mil.</span>
+            <span class="a-num">#2 / 10</span>
+          </div>
+          <h2>Ahold Delhaize pune preț pe atacul cibernetic din octombrie: până la 250 de milioane € din vânzări pierdute</h2>
+
+          <div class="sec">
+            <p class="sec-label">Ce s-a întâmplat</p>
+            <p>Ahold Delhaize, grupul care deține Delhaize, Albert Heijn, Food Lion și Hannaford, a anunțat miercuri, 4 noiembrie, odată cu rezultatele pe trimestrul 3, că incidentul cibernetic din octombrie îi va reduce vânzările din trimestrul 4 cu 200–250 de milioane de euro și profitul operațional cu 75–100 de milioane de euro. Compania și-a redus previziunile pe 2026: creșterea profitului pe acțiune coboară la o singură cifră mică (de la o cifră medie–mare), iar fluxul de numerar liber estimat scade de la cel puțin 2,3 miliarde € la circa 2,1 miliarde €. Incidentul din octombrie a afectat comenzile online în Benelux și SUA și lanțul de aprovizionare din Benelux; compania spune că își revine și că e pregătită pentru sezonul sărbătorilor. Incidentul e distinct de atacurile asupra frigiderelor din supermarketuri relatate separat: compania n-a precizat ce tip de atac a fost și nici cine e în spate, iar ancheta continuă.</p>
+          </div>
+
+          <div class="sec">
+            <p class="sec-label">De ce contează</p>
+            <p>E unul dintre cei mai mari retaileri alimentari din Belgia, cu magazine Delhaize peste tot în țară, iar un incident care oprește o săptămână sistemele IT și costă un sfert de miliard arată cât de scumpă devine o breșă în infrastructura comercială — exact genul de incident pe care îl gestionează profesional, ca Incident Management Coordinator la NCIA.</p>
+          </div>
+
+          <div class="verify">
+            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
+            <p>Verdict: confirmat. Surse: The Brussels Times (sursa curatoriată, titlul de pe homepage, 5 nov); Grocery Dive (4 nov); RetailDetail EU (4 nov); WebProNews (4 nov). Toate pornesc de la comunicatul companiei din 4 nov, ora 07:30 CET.</p>
+            <ul class="sources">
+              <li><a href="https://www.grocerydive.com/news/ahold-delhaize-united-states-third-quarter-earnings/873745/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Grocery Dive — rezultatele Ahold Delhaize pe trimestrul 3 și costul incidentului cibernetic (4 noiembrie 2026)<span class="host">grocerydive.com</span></a></li>
+              <li><a href="https://www.retaildetail.eu/news/food/cyberattack-costs-ahold-delhaize-up-to-250-million-euros-in-revenue/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>RetailDetail EU — „Cyberattack costs Ahold Delhaize up to 250 million euros in revenue” (4 noiembrie 2026)<span class="host">retaildetail.eu</span></a></li>
+              <li><a href="https://www.webpronews.com/ahold-delhaize-cyberattack-cost-q4-sales-guidance-cut/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>WebProNews — costul atacului cibernetic pentru Ahold Delhaize și reducerea previziunilor (4 noiembrie 2026)<span class="host">webpronews.com</span></a></li>
+            </ul>
+          </div>
+
+          <div class="impact">
+            <span class="badge">Impact direct</span>
+            <p>Impact direct minim azi — nu cere nicio acțiune; relevanță de context: prețul concret al unui incident cibernetic major la un mare retailer din Belgia, în domeniul lui profesional.</p>
+          </div>
+        </article>
+
+        <!-- 3 · 5 nov · 10:00 -->
         <article id="stire-55" data-cats="securitate romania" data-sev="amber" data-subiect="Colby la București">
           <div class="a-meta">
             <span class="a-time">5 nov · 10:00</span>
             <span class="a-cat">Securitate &amp; NATO · România</span>
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="subj-pill">Colby la București</span>
-            <span class="a-num">#1 / 8</span>
+            <span class="a-num">#3 / 10</span>
           </div>
           <h2>Colby la București: România își mărește contribuția la NATO, în timp ce Pentagonul decide soarta trupelor SUA în Europa</h2>
 
@@ -865,14 +944,14 @@
           </div>
         </article>
 
-        <!-- 2 · 5 nov · 10:00 -->
+        <!-- 4 · 5 nov · 10:00 -->
         <article id="stire-56" data-cats="tech" data-sev="green" data-subiect="Meta cumpără Conductor">
           <div class="a-meta">
             <span class="a-time">5 nov · 10:00</span>
             <span class="a-cat">Tech &amp; AI</span>
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <span class="subj-pill">Meta cumpără Conductor</span>
-            <span class="a-num">#2 / 8</span>
+            <span class="a-num">#4 / 10</span>
           </div>
           <h2>Meta cumpără Conductor, startupul care rulează mai mulți agenți de coding AI în paralel</h2>
 
@@ -901,14 +980,14 @@
           </div>
         </article>
 
-        <!-- 3 · 5 nov · 09:00 -->
+        <!-- 5 · 5 nov · 09:00 -->
         <article id="stire-53" data-cats="romania" data-sev="amber" data-subiect="PNRR: 3,4 mld € în suspensie">
           <div class="a-meta">
             <span class="a-time">5 nov · 09:00</span>
             <span class="a-cat">România · Fonduri europene · PNRR</span>
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="subj-pill">PNRR: 3,4 mld € în suspensie</span>
-            <span class="a-num">#3 / 8</span>
+            <span class="a-num">#5 / 10</span>
           </div>
           <h2>România riscă să piardă 3,4 miliarde de euro din PNRR: ministrul Fondurilor Europene anunță că banii intră în suspendare</h2>
 
@@ -939,14 +1018,14 @@
           </div>
         </article>
 
-        <!-- 4 · 5 nov · 09:00 -->
+        <!-- 6 · 5 nov · 09:00 -->
         <article id="stire-54" data-cats="tech" data-sev="amber" data-subiect="Apple taie bugetele AI">
           <div class="a-meta">
             <span class="a-time">5 nov · 09:00</span>
             <span class="a-cat">Tech &amp; AI · Costuri AI · Apple</span>
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="subj-pill">Apple taie bugetele AI</span>
-            <span class="a-num">#4 / 8</span>
+            <span class="a-num">#6 / 10</span>
           </div>
           <h2>Apple taie bugetele interne de AI ale angajaților: plafonul zilnic scade de la 300 la 200 de dolari</h2>
 
@@ -977,7 +1056,7 @@
           </div>
         </article>
 
-        <!-- 5 · 5 nov · 08:00 -->
+        <!-- 7 · 5 nov · 08:00 -->
         <article id="stire-51" data-cats="securitate" data-sev="amber" data-subiect="atacuri cibernetice asupra frigiderelor">
           <div class="a-meta">
             <span class="a-time">5 nov · 08:00</span>
@@ -985,7 +1064,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-24" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">atacuri cibernetice asupra frigiderelor</span>
-            <span class="a-num">#5 / 8</span>
+            <span class="a-num">#7 / 10</span>
           </div>
           <h2>Atacurile cibernetice asupra frigiderelor din Europa escaladează: trei bănci de sânge franceze lovite; România, printre țările vizate</h2>
 
@@ -1026,7 +1105,7 @@
           </div>
         </article>
 
-        <!-- 6 · 5 nov · 08:00 -->
+        <!-- 8 · 5 nov · 08:00 -->
         <article id="stire-52" data-cats="belgia" data-sev="amber" data-subiect="criza bugetară belgiană">
           <div class="a-meta">
             <span class="a-time">5 nov · 08:00</span>
@@ -1035,7 +1114,7 @@
             <span class="spot-tag">Știrea zilei</span>
             <a class="cont-pill" href="#stire-39" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">criza bugetară belgiană</span>
-            <span class="a-num">#6 / 8</span>
+            <span class="a-num">#8 / 10</span>
           </div>
           <h2>Criza bugetară belgiană: regele încheie azi consultările; trei scenarii pe masă — alegeri, coaliție nouă sau acord pe buget</h2>
 
@@ -1076,14 +1155,14 @@
           </div>
         </article>
 
-        <!-- 7 · 5 nov · 06:00 -->
+        <!-- 9 · 5 nov · 06:00 -->
         <article id="stire-49" data-cats="tech" data-sev="amber" data-subiect="respingerea centrelor de date AI">
           <div class="a-meta">
             <span class="a-time">5 nov · 06:00</span>
             <span class="a-cat">Tech &amp; AI · Centre de date · Alegeri SUA</span>
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="subj-pill">respingerea centrelor de date AI</span>
-            <span class="a-num">#7 / 8</span>
+            <span class="a-num">#9 / 10</span>
           </div>
           <h2>Votanții americani au respins centrele de date AI la alegerile de la jumătatea mandatului: restricții în zeci de localități, Ohio în frunte</h2>
 
@@ -1120,14 +1199,14 @@
           </div>
         </article>
 
-        <!-- 8 · 5 nov · 06:00 -->
+        <!-- 10 · 5 nov · 06:00 -->
         <article id="stire-50" data-cats="securitate" data-sev="green" data-subiect="rachetă europeană de atac rapid">
           <div class="a-meta">
             <span class="a-time">5 nov · 06:00</span>
             <span class="a-cat">Securitate &amp; NATO · Rachete · MBDA</span>
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <span class="subj-pill">rachetă europeană de atac rapid</span>
-            <span class="a-num">#8 / 8</span>
+            <span class="a-num">#10 / 10</span>
           </div>
           <h2>MBDA pregătește racheta supersonică Stratus RS: rază «mult, mult» peste Exocet, pentru Franța și Marea Britanie</h2>
 
@@ -3748,7 +3827,7 @@
 
       <footer>
         <div class="rule" aria-hidden="true"></div>
-        <p>Sfârșitul ediției de azi · Ultima actualizare: joi, 5 noiembrie 2026, 06:00<br />Monitorizarea rulează la circa 3 ore, în fereastra L–V 06:00–22:00 · S–D 07:30–22:00 — dă refresh pentru noutăți.</p>
+        <p>Sfârșitul ediției de azi · Ultima actualizare: joi, 5 noiembrie 2026, 11:00<br />Monitorizarea rulează la circa 3 ore, în fereastra L–V 06:00–22:00 · S–D 07:30–22:00 — dă refresh pentru noutăți.</p>
         <a class="to-top" href="#stire-49">↑ Înapoi la cea mai nouă știre</a>
       </footer>
     </div>
