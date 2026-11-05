@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="color-scheme" content="light dark" />
-    <meta name="tirile-versiune" content="2026-11-05T16:00:00+01:00|15|amber" />
+    <meta name="tirile-versiune" content="2026-11-05T17:00:00+01:00|17|amber" />
     <link rel="icon" href="data:," />
     <title>Știrile zilei</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -699,9 +699,9 @@
     <div class="topbar">
       <div class="topbar-inner">
         <span class="dot" aria-hidden="true"></span>
-        <span><strong>Joi, 5 noiembrie 2026</strong> · actualizat la <strong>16:00</strong></span>
+        <span><strong>Joi, 5 noiembrie 2026</strong> · actualizat la <strong>17:00</strong></span>
         <span aria-hidden="true">·</span>
-        <span>15 știri azi</span>
+        <span>17 știri azi</span>
         <span class="spacer"></span>
         <button class="refresh-btn" type="button" id="refreshBtn" aria-label="Reîmprospătează pagina">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg>
@@ -741,7 +741,7 @@
            „Ultimele știri", ÎNAINTEA dashboardului, vizibilă din prima, fără scroll.
            Nivelul de azi: GALBEN (sev-amber) — de urmărit, evoluție importantă, fără acțiune imediată:
            criza bugetară belgiană — regele încheie azi consultările, decizia privind
-           demisia lui De Wever vine vineri (cea mai importantă dintre cele opt
+           demisia lui De Wever vine vineri (cea mai importantă dintre cele nouă
            știri galbene ale zilei, țara în care locuiește).
            Chenarul rămâne în afara logicii de filtrare: vizibil indiferent de filtrul de categorie. -->
       <section class="spot sev-amber" aria-label="Știrea cea mai importantă a zilei">
@@ -756,7 +756,7 @@
         <h2 class="spot-title">Criza bugetară belgiană: regele încheie azi consultările; trei scenarii pe masă — alegeri, coaliție nouă sau acord pe buget</h2>
         <p class="spot-why"><strong>De ce e în față:</strong> miza e de 10 miliarde € în economii și venituri suplimentare până în 2029, într-o țară cu un deficit de 5,2% din PIB și o datorie publică de circa 108% din PIB, sub procedura UE de deficit excesiv — un guvern căzut sau alegeri anticipate ar prelungi incertitudinea fiscală exact când se decid taxele și cheltuielile pentru 2027.</p>
         <p class="spot-lead">Regele Philippe încheie azi consultările cu liderii coaliției, primind-o pe președinta N-VA, Valérie Van Peel, după ce marți și miercuri i-a primit pe liderii Les Engagés, CD&V, Vooruit și MR. Premierul Bart De Wever, care și-a prezentat demisia luni după eșecul negocierilor pentru bugetul 2027, revine vineri la Palat, la 10:30, când e așteptată decizia regelui. Brussels Times analizează azi trei scenarii: alegeri anticipate, o coaliție nouă sau un acord pe buget.</p>
-        <p class="spot-more"><span class="spot-more-text">Mai sunt și alte 7 știri cu aceeași severitate —</span> <button class="spot-more-btn" type="button" data-sev-value="amber" aria-label="Apasă aici ca să vezi doar știrile cu severitatea Galben — de urmărit">apasă aici</button></p>
+        <p class="spot-more"><span class="spot-more-text">Mai sunt și alte 8 știri cu aceeași severitate —</span> <button class="spot-more-btn" type="button" data-sev-value="amber" aria-label="Apasă aici ca să vezi doar știrile cu severitatea Galben — de urmărit">apasă aici</button></p>
         <div class="spot-foot">
           <a class="spot-link" href="#stire-52">Citește știrea completă ↓</a>
           <div class="sev-scale" role="img" aria-label="Scară de gravitate: verde — normal, galben — de urmărit, roșu — grav. Nivelul de azi: galben.">
@@ -771,43 +771,43 @@
       <section class="dashboard" aria-label="Panou de ansamblu">
         <div class="dash-head">
           <span class="dash-title">Dashboard · Azi</span>
-          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 16:00</span>
+          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 17:00</span>
           <span class="dash-meta">Fereastră monitorizare <strong>L–V 06:00–22:00 · S–D 07:30–22:00</strong> · pas ~3 ore</span>
         </div>
 
         <div class="kpi-grid five" role="group" aria-label="Filtrează după categorie — apasă pe un tile">
           <button class="kpi" type="button" data-filter="toate" aria-pressed="true">
             <span class="kpi-top"><span class="kpi-label">Toate știrile</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">15</span>
-            <span class="kpi-sub">știri verificate azi, în 10 rulări</span>
+            <span class="kpi-value">17</span>
+            <span class="kpi-sub">știri verificate azi, în 11 rulări</span>
             <span class="kpi-bar" aria-hidden="true"><i style="width:100%"></i></span>
             <span class="kpi-hint">Apasă pentru toate</span>
           </button>
           <button class="kpi" type="button" data-filter="securitate" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">Securitate &amp; NATO</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">6</span>
-            <span class="kpi-sub">conferința de securitate Berlin · amenințări cu bombă la avioane · AI găsește 948 exploituri root Linux · Colby la București · atacuri cibernetice asupra frigiderelor · rachetă europeană de atac rapid</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:40%"></i></span>
+            <span class="kpi-value">7</span>
+            <span class="kpi-sub">amenințări cu bombă: «Male State» · conferința de securitate Berlin · amenințări cu bombă la avioane · AI găsește 948 exploituri root Linux · Colby la București · atacuri cibernetice asupra frigiderelor · rachetă europeană de atac rapid</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:41%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="romania" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">România</span><span class="kpi-check" aria-hidden="true">✓</span></span>
             <span class="kpi-value">2</span>
             <span class="kpi-sub">Colby la București · PNRR: 3,4 mld € în suspensie</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:13%"></i></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:12%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="belgia" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">Belgia</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">3</span>
-            <span class="kpi-sub">amenințări cu bombă la avioane · Atacul cibernetic costă Ahold €250 mil. · criza bugetară belgiană</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:20%"></i></span>
+            <span class="kpi-value">4</span>
+            <span class="kpi-sub">amenințări cu bombă: «Male State» · amenințări cu bombă la avioane · Atacul cibernetic costă Ahold €250 mil. · criza bugetară belgiană</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:24%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="tech" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">Tech &amp; AI</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">7</span>
-            <span class="kpi-sub">agenți AI caută în fișiere · AI găsește 948 exploituri root Linux · agenții AI nu comandă curse · PAC-urile AI au pierdut în SUA · Meta cumpără Conductor · Apple taie bugetele AI · respingerea centrelor de date AI</span>
+            <span class="kpi-value">8</span>
+            <span class="kpi-sub">Dropbox cumpără Tigris (350 mil. $) · agenți AI caută în fișiere · AI găsește 948 exploituri root Linux · agenții AI nu comandă curse · PAC-urile AI au pierdut în SUA · Meta cumpără Conductor · Apple taie bugetele AI · respingerea centrelor de date AI</span>
             <span class="kpi-bar" aria-hidden="true"><i style="width:47%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
@@ -822,7 +822,7 @@
       </section>
 
       <div class="filter-status" aria-live="polite">
-        <span class="filter-label">Se afișează: <strong>Toate categoriile — 15 din 15 știri</strong></span>
+        <span class="filter-label">Se afișează: <strong>Toate categoriile — 17 din 17 știri</strong></span>
         <button class="filter-reset" type="button" hidden>Resetează filtrul</button>
       </div>
 
@@ -852,14 +852,100 @@
       <p class="empty">Nicio știre în această categorie azi.</p>
 
       <main>
-        <!-- 1 · 5 nov · 16:00 -->
+        <!-- 1 · 5 nov · 17:00 -->
+        <article id="stire-64" data-cats="securitate belgia" data-sev="amber" data-subiect="amenințări cu bombă: «Male State»">
+          <div class="a-meta">
+            <span class="a-time">5 nov · 17:00</span>
+            <span class="a-cat">Securitate &amp; NATO · Belgia</span>
+            <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
+            <a class="cont-pill" href="#stire-61" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
+            <span class="subj-pill">amenințări cu bombă: «Male State»</span>
+            <span class="a-num">#1 / 17</span>
+          </div>
+          <h2>Amenințările cu bombă la avioanele europene: un e-mail revendicat de gruparea rusă «Male State»; până la 25 de zboruri afectate, niciun dispozitiv găsit</h2>
+
+          <div class="followup">
+            <span class="tag">Urmare la</span>
+            <p><a href="#stire-61">„Val de amenințări cu bombă la zboruri europene: curse deviate în Franța, Belgia, Bulgaria și Italia — niciun dispozitiv găsit”</a> — joi, 5 noiembrie 2026, ora 14:00.</p>
+          </div>
+
+          <div class="sec">
+            <p class="sec-label">Ce s-a întâmplat</p>
+            <p>Valul de amenințări cu bombă de joi, 5 noiembrie, a afectat până la 25 de zboruri europene — sute de pasageri evacuați, avioane de vânătoare trimise să escorteze curse, aeronave percheziționate și deviate, printre ele un Aer Lingus Dublin–Roma deviat la baza militară Évreux din Franța și un Finnair Helsinki–Roma. Un e-mail trimis joi aeroportului Fiumicino din Roma, semnat „Fighters of the Male State” (Luptătorii Statului Masculin), avertiza că au fost plasate bombe pe zborurile AY1761 (Helsinki–Roma) și EI402 (Dublin–Roma) și că „explozia va avea loc în 60 de minute. Azi cerul vostru va fi roșu”. Niciun dispozitiv nu a fost găsit la percheziții. „Male State” este o organizație rusă de extremă dreaptă, interzisă de un tribunal rus în 2021. Este al doilea val în două zile — marți, 3 noiembrie, șapte zboruri au fost vizate similar.</p>
+          </div>
+
+          <div class="sec">
+            <p class="sec-label">De ce contează</p>
+            <p>Atribuirea — chiar și doar revendicată prin e-mail — mută povestea din zona „amenințări copycat” în cea a amenințărilor hibride coordonate, exact arcul urmărit în ultimele săptămâni (sabotaj, drone, atacuri asupra infrastructurii). Pentru el: zboruri spre Bruxelles și București au fost direct vizate azi și în valul anterior. Notă de integritate: cine a trimis e-mailul NU este stabilit — revendicarea nu înseamnă dovadă a autorului.</p>
+          </div>
+
+          <div class="verify">
+            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
+            <p>Verdict: confirmat. Surse: The Times (5 noiembrie, relatarea e-mailului către Fiumicino și zborurile vizate); New York Post (5 noiembrie, 25 de zboruri afectate, detalii despre devieri); The Sun (5 noiembrie, textul e-mailului, zborurile AY1761 și EI402).</p>
+            <ul class="sources">
+              <li><a href="https://www.thetimes.com/world/europe/article/bomb-threats-planes-diverted-europe-today-r58s8rwjv" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>The Times — relatarea e-mailului către Fiumicino și zborurile vizate (5 noiembrie 2026)<span class="host">thetimes.com</span></a></li>
+              <li><a href="https://nypost.com/2026/11/05/world-news/bomb-hoaxes-grounding-25-planes-include-bizarre-anti-feminist-threat-to-turn-the-skies-red/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>New York Post — 25 de zboruri afectate, detalii despre devieri (5 noiembrie 2026)<span class="host">nypost.com</span></a></li>
+              <li><a href="https://www.thesun.co.uk/news/40928171/airline-bomb-threat-message-revealed/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>The Sun — textul e-mailului, zborurile AY1761 și EI402 (5 noiembrie 2026)<span class="host">thesun.co.uk</span></a></li>
+            </ul>
+          </div>
+
+          <div class="opposing">
+            <p class="sec-label">Tabăra adversă</p>
+            <p>Comisarul european pentru transporturi Apostolos Tzitzikostas susține că „e prea devreme pentru a spune dacă incidentele sunt legate; anchetele naționale continuă” (<a href="https://www.thetimes.com/world/europe/article/bomb-threats-planes-diverted-europe-today-r58s8rwjv" target="_blank" rel="noopener">The Times</a>).</p>
+          </div>
+
+          <div class="impact">
+            <span class="badge">Impact direct</span>
+            <p>Impact direct azi: minim — nu are zbor programat azi; toate aeronavele au aterizat în siguranță. De urmărit: dacă valul continuă, întârzieri și verificări suplimentare la zborurile europene, inclusiv pe rutele lui obișnuite (Bruxelles, București); verifică statusul zborului înainte de călătoria la Haga (11–13 nov).</p>
+          </div>
+        </article>
+
+        <!-- 2 · 5 nov · 17:00 -->
+        <article id="stire-65" data-cats="tech" data-sev="green" data-subiect="Dropbox cumpără Tigris (350 mil. $)">
+          <div class="a-meta">
+            <span class="a-time">5 nov · 17:00</span>
+            <span class="a-cat">Tech &amp; AI</span>
+            <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
+            <span class="subj-pill">Dropbox cumpără Tigris (350 mil. $)</span>
+            <span class="a-num">#2 / 17</span>
+          </div>
+          <h2>Dropbox cumpără Tigris Data cu 350 mil. $ și lansează DBX Agent Cloud — stocare gândită pentru agenți AI</h2>
+
+          <div class="sec">
+            <p class="sec-label">Ce s-a întâmplat</p>
+            <p>Dropbox a anunțat joi, 5 noiembrie, că a convenit achiziția Tigris Data, o platformă de stocare de obiecte distribuită global, compatibilă S3, construită pentru volume de lucru AI, pentru aproximativ 350 de milioane de dolari în numerar — cea mai mare achiziție din istoria companiei, fondată în 2007. Acordul definitiv a fost semnat pe 3 noiembrie, iar închiderea este așteptată în trimestrul 4 din 2026. Odată cu achiziția, Dropbox lansează DBX Agent Cloud, o platformă de stocare și date pentru companii și dezvoltatori care construiesc aplicații și agenți AI: la început stocare de obiecte independentă, compatibilă cu uneltele Amazon S3, urmând funcții de procesare a conținutului și sistem de fișiere. În paralel, Dropbox adaugă funcții AI în produsul de bază: utilizatorii pot cere AI-ului să facă acțiuni pe fișiere, să aleagă între modele și să conecteze conținutul la ChatGPT, Claude și Muse; lansarea inițială este pentru echipe eligibile Standard și Advanced din SUA, Marea Britanie și Australia, cu extindere mai largă în 2027.</p>
+          </div>
+
+          <div class="sec">
+            <p class="sec-label">De ce contează</p>
+            <p>Dropbox, un gigant al stocării de fișiere pentru consumatori, intră oficial în infrastructura pentru agenți AI — semnal că stratul de stocare și date pentru agenți devine o piață distinctă, nu doar o funcție a aplicațiilor. Pentru el, care își construiește automatizări pe API-uri AI, este confirmarea direcției discutate în ultimele săptămâni: agenții au nevoie de memorie și stocare persistentă, nu doar de modele.</p>
+          </div>
+
+          <div class="verify">
+            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
+            <p>Verdict: confirmat. Surse: TechCrunch (5 noiembrie, relatarea anunțului); Crunchbase News (5 noiembrie); Unite.ai (5 noiembrie); dosarul SEC 8-K al Dropbox (sursă primară, acord semnat 3 noiembrie, ~350 mil. $ numerar).</p>
+            <ul class="sources">
+              <li><a href="https://techcrunch.com/2026/11/05/dropbox-acquires-tigris-data-for-350m-to-bolster-its-ai-iinfrastructure/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>TechCrunch — relatarea anunțului (5 noiembrie 2026)<span class="host">techcrunch.com</span></a></li>
+              <li><a href="https://news.crunchbase.com/ma/dbx-ai-infrastructure-deal-tigris-acquisition/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Crunchbase News — achiziția Tigris de către Dropbox (5 noiembrie 2026)<span class="host">news.crunchbase.com</span></a></li>
+              <li><a href="https://www.unite.ai/dropbox-signs-tigris-deal-to-enter-ai-infrastructure/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Unite.ai — Dropbox intră în infrastructura AI prin acordul Tigris (5 noiembrie 2026)<span class="host">unite.ai</span></a></li>
+              <li><a href="https://secwatch.observer/filing/0001467623-26-000056" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Dropbox — dosarul SEC 8-K (sursă primară, acord semnat 3 noiembrie, ~350 mil. $ numerar)<span class="host">secwatch.observer</span></a></li>
+            </ul>
+          </div>
+
+          <div class="impact">
+            <span class="badge">Impact direct</span>
+            <p>Impact direct: minim azi — lansarea DBX Agent Cloud este la început doar pentru SUA, Marea Britanie și Australia, iar el este în Belgia; achiziția se închide abia în T4 2026. Relevanță de context: infrastructura pe care își construiește automatizările AI se maturizează rapid; de urmărit când ajunge în Europa, pentru că stocarea compatibilă S3 pentru agenți ar putea simplifica arhitectura propriilor lui automatizări.</p>
+          </div>
+        </article>
+
+        <!-- 3 · 5 nov · 16:00 -->
         <article id="stire-63" data-cats="tech" data-sev="green" data-subiect="agenți AI caută în fișiere">
           <div class="a-meta">
             <span class="a-time">5 nov · 16:00</span>
             <span class="a-cat">Tech &amp; AI</span>
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <span class="subj-pill">agenți AI caută în fișiere</span>
-            <span class="a-num">#1 / 15</span>
+            <span class="a-num">#3 / 17</span>
           </div>
           <h2>Box și Nvidia lansează un motor de căutare gândit pentru agenți AI: răspunsuri de 4 ori mai rapide în fișierele companiei</h2>
 
@@ -890,14 +976,14 @@
           </div>
         </article>
 
-        <!-- 2 · 5 nov · 15:00 -->
+        <!-- 4 · 5 nov · 15:00 -->
         <article id="stire-62" data-cats="securitate" data-sev="green" data-subiect="conferința de securitate Berlin">
           <div class="a-meta">
             <span class="a-time">5 nov · 15:00</span>
             <span class="a-cat">Securitate &amp; NATO</span>
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <span class="subj-pill">conferința de securitate Berlin</span>
-            <span class="a-num">#2 / 15</span>
+            <span class="a-num">#4 / 17</span>
           </div>
           <h2>Șeful Comitetului Militar al NATO, la Conferința de Securitate de la Berlin: «Nu suntem în război, dar cu siguranță nu suntem în pace»</h2>
 
@@ -925,14 +1011,14 @@
           </div>
         </article>
 
-        <!-- 3 · 5 nov · 14:00 -->
+        <!-- 5 · 5 nov · 14:00 -->
         <article id="stire-61" data-cats="securitate belgia" data-sev="amber" data-subiect="amenințări cu bombă la avioane">
           <div class="a-meta">
             <span class="a-time">5 nov · 14:00</span>
             <span class="a-cat">Securitate &amp; NATO · Belgia</span>
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="subj-pill">amenințări cu bombă la avioane</span>
-            <span class="a-num">#3 / 15</span>
+            <span class="a-num">#5 / 17</span>
           </div>
           <h2>Val de amenințări cu bombă la zboruri europene: curse deviate în Franța, Belgia, Bulgaria și Italia — niciun dispozitiv găsit</h2>
 
@@ -963,14 +1049,14 @@
           </div>
         </article>
 
-        <!-- 4 · 5 nov · 13:00 -->
+        <!-- 6 · 5 nov · 13:00 -->
         <article id="stire-60" data-cats="securitate tech" data-sev="amber" data-subiect="AI găsește 948 exploituri root Linux">
           <div class="a-meta">
             <span class="a-time">5 nov · 13:00</span>
             <span class="a-cat">Tech &amp; AI / Securitate</span>
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="subj-pill">AI găsește 948 exploituri root Linux</span>
-            <span class="a-num">#4 / 15</span>
+            <span class="a-num">#6 / 17</span>
           </div>
           <h2>OpenAI: un pipeline AI a găsit 948 de exploituri root în kernelul Linux într-o singură rulare de ~30 de ore, cu 1,2 milioane $ costuri API</h2>
 
@@ -1006,14 +1092,14 @@
           </div>
         </article>
 
-        <!-- 5 · 5 nov · 12:00 -->
+        <!-- 7 · 5 nov · 12:00 -->
         <article id="stire-59" data-cats="tech" data-sev="green" data-subiect="agenții AI nu comandă curse">
           <div class="a-meta">
             <span class="a-time">5 nov · 12:00</span>
             <span class="a-cat">Tech &amp; AI</span>
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <span class="subj-pill">agenții AI nu comandă curse</span>
-            <span class="a-num">#5 / 15</span>
+            <span class="a-num">#7 / 17</span>
           </div>
           <h2>Aproape nimeni nu folosește agenți AI ca să-și comande Uber: doar 4 curse într-o săptămână-record</h2>
 
@@ -1049,14 +1135,14 @@
           </div>
         </article>
 
-        <!-- 6 · 5 nov · 11:00 -->
+        <!-- 8 · 5 nov · 11:00 -->
         <article id="stire-57" data-cats="tech" data-sev="green" data-subiect="PAC-urile AI au pierdut în SUA">
           <div class="a-meta">
             <span class="a-time">5 nov · 11:00</span>
             <span class="a-cat">Tech &amp; AI</span>
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <span class="subj-pill">PAC-urile AI au pierdut în SUA</span>
-            <span class="a-num">#6 / 15</span>
+            <span class="a-num">#8 / 17</span>
           </div>
           <h2>PAC-urile AI au cheltuit milioane ca să-și aleagă Congresul — și au pierdut în mare parte</h2>
 
@@ -1091,14 +1177,14 @@
           </div>
         </article>
 
-        <!-- 7 · 5 nov · 11:00 -->
+        <!-- 9 · 5 nov · 11:00 -->
         <article id="stire-58" data-cats="belgia" data-sev="green" data-subiect="Atacul cibernetic costă Ahold €250 mil.">
           <div class="a-meta">
             <span class="a-time">5 nov · 11:00</span>
             <span class="a-cat">Belgia</span>
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <span class="subj-pill">Atacul cibernetic costă Ahold €250 mil.</span>
-            <span class="a-num">#7 / 15</span>
+            <span class="a-num">#9 / 17</span>
           </div>
           <h2>Ahold Delhaize pune preț pe atacul cibernetic din octombrie: până la 250 de milioane € din vânzări pierdute</h2>
 
@@ -1128,14 +1214,14 @@
           </div>
         </article>
 
-        <!-- 8 · 5 nov · 10:00 -->
+        <!-- 10 · 5 nov · 10:00 -->
         <article id="stire-55" data-cats="securitate romania" data-sev="amber" data-subiect="Colby la București">
           <div class="a-meta">
             <span class="a-time">5 nov · 10:00</span>
             <span class="a-cat">Securitate &amp; NATO · România</span>
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="subj-pill">Colby la București</span>
-            <span class="a-num">#8 / 15</span>
+            <span class="a-num">#10 / 17</span>
           </div>
           <h2>Colby la București: România își mărește contribuția la NATO, în timp ce Pentagonul decide soarta trupelor SUA în Europa</h2>
 
@@ -1165,14 +1251,14 @@
           </div>
         </article>
 
-        <!-- 9 · 5 nov · 10:00 -->
+        <!-- 11 · 5 nov · 10:00 -->
         <article id="stire-56" data-cats="tech" data-sev="green" data-subiect="Meta cumpără Conductor">
           <div class="a-meta">
             <span class="a-time">5 nov · 10:00</span>
             <span class="a-cat">Tech &amp; AI</span>
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <span class="subj-pill">Meta cumpără Conductor</span>
-            <span class="a-num">#9 / 15</span>
+            <span class="a-num">#11 / 17</span>
           </div>
           <h2>Meta cumpără Conductor, startupul care rulează mai mulți agenți de coding AI în paralel</h2>
 
@@ -1201,14 +1287,14 @@
           </div>
         </article>
 
-        <!-- 10 · 5 nov · 09:00 -->
+        <!-- 12 · 5 nov · 09:00 -->
         <article id="stire-53" data-cats="romania" data-sev="amber" data-subiect="PNRR: 3,4 mld € în suspensie">
           <div class="a-meta">
             <span class="a-time">5 nov · 09:00</span>
             <span class="a-cat">România · Fonduri europene · PNRR</span>
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="subj-pill">PNRR: 3,4 mld € în suspensie</span>
-            <span class="a-num">#10 / 15</span>
+            <span class="a-num">#12 / 17</span>
           </div>
           <h2>România riscă să piardă 3,4 miliarde de euro din PNRR: ministrul Fondurilor Europene anunță că banii intră în suspendare</h2>
 
@@ -1239,14 +1325,14 @@
           </div>
         </article>
 
-        <!-- 11 · 5 nov · 09:00 -->
+        <!-- 13 · 5 nov · 09:00 -->
         <article id="stire-54" data-cats="tech" data-sev="amber" data-subiect="Apple taie bugetele AI">
           <div class="a-meta">
             <span class="a-time">5 nov · 09:00</span>
             <span class="a-cat">Tech &amp; AI · Costuri AI · Apple</span>
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="subj-pill">Apple taie bugetele AI</span>
-            <span class="a-num">#11 / 15</span>
+            <span class="a-num">#13 / 17</span>
           </div>
           <h2>Apple taie bugetele interne de AI ale angajaților: plafonul zilnic scade de la 300 la 200 de dolari</h2>
 
@@ -1277,7 +1363,7 @@
           </div>
         </article>
 
-        <!-- 12 · 5 nov · 08:00 -->
+        <!-- 14 · 5 nov · 08:00 -->
         <article id="stire-51" data-cats="securitate" data-sev="amber" data-subiect="atacuri cibernetice asupra frigiderelor">
           <div class="a-meta">
             <span class="a-time">5 nov · 08:00</span>
@@ -1285,7 +1371,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-24" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">atacuri cibernetice asupra frigiderelor</span>
-            <span class="a-num">#12 / 15</span>
+            <span class="a-num">#14 / 17</span>
           </div>
           <h2>Atacurile cibernetice asupra frigiderelor din Europa escaladează: trei bănci de sânge franceze lovite; România, printre țările vizate</h2>
 
@@ -1326,7 +1412,7 @@
           </div>
         </article>
 
-        <!-- 13 · 5 nov · 08:00 -->
+        <!-- 15 · 5 nov · 08:00 -->
         <article id="stire-52" data-cats="belgia" data-sev="amber" data-subiect="criza bugetară belgiană">
           <div class="a-meta">
             <span class="a-time">5 nov · 08:00</span>
@@ -1335,7 +1421,7 @@
             <span class="spot-tag">Știrea zilei</span>
             <a class="cont-pill" href="#stire-39" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">criza bugetară belgiană</span>
-            <span class="a-num">#13 / 15</span>
+            <span class="a-num">#15 / 17</span>
           </div>
           <h2>Criza bugetară belgiană: regele încheie azi consultările; trei scenarii pe masă — alegeri, coaliție nouă sau acord pe buget</h2>
 
@@ -1376,14 +1462,14 @@
           </div>
         </article>
 
-        <!-- 14 · 5 nov · 06:00 -->
+        <!-- 16 · 5 nov · 06:00 -->
         <article id="stire-49" data-cats="tech" data-sev="amber" data-subiect="respingerea centrelor de date AI">
           <div class="a-meta">
             <span class="a-time">5 nov · 06:00</span>
             <span class="a-cat">Tech &amp; AI · Centre de date · Alegeri SUA</span>
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="subj-pill">respingerea centrelor de date AI</span>
-            <span class="a-num">#14 / 15</span>
+            <span class="a-num">#16 / 17</span>
           </div>
           <h2>Votanții americani au respins centrele de date AI la alegerile de la jumătatea mandatului: restricții în zeci de localități, Ohio în frunte</h2>
 
@@ -1420,14 +1506,14 @@
           </div>
         </article>
 
-        <!-- 15 · 5 nov · 06:00 -->
+        <!-- 17 · 5 nov · 06:00 -->
         <article id="stire-50" data-cats="securitate" data-sev="green" data-subiect="rachetă europeană de atac rapid">
           <div class="a-meta">
             <span class="a-time">5 nov · 06:00</span>
             <span class="a-cat">Securitate &amp; NATO · Rachete · MBDA</span>
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <span class="subj-pill">rachetă europeană de atac rapid</span>
-            <span class="a-num">#15 / 15</span>
+            <span class="a-num">#17 / 17</span>
           </div>
           <h2>MBDA pregătește racheta supersonică Stratus RS: rază «mult, mult» peste Exocet, pentru Franța și Marea Britanie</h2>
 
