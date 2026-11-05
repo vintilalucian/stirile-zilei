@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="color-scheme" content="light dark" />
-    <meta name="tirile-versiune" content="2026-11-04T22:00:00+01:00|14|amber" />
+    <meta name="tirile-versiune" content="2026-11-05T06:00:00+01:00|2|amber" />
     <link rel="icon" href="data:," />
     <title>Știrile zilei</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -325,13 +325,14 @@
       }
       .filter-reset:hover{border-color:var(--ink)}
 
-      /* ── Cuprinsul zilei — MUTAT SUS, imediat deasupra chenarului „Știrea zilei"
-         (doar ziua curentă; înlocuiește fosta bandă „Ultimele știri"). Generat de
-         script din cardurile zilei: lista completă, grupată pe ora publicării,
-         cele mai noi primele. Antetul de oră al fiecărui grup e buton de filtru
-         pe rulare (aceeași stare selectată ca la tile-urile KPI și la vechile
-         bare „Ritmul zilei"). Cuprinsul stă în afara logicii de filtrare ca și
-         conținut: rămâne integral vizibil la orice filtru de categorie sau oră. */
+      /* ── Cuprinsul zilei — sub banda dashboard, înaintea cardurilor (doar
+         ziua curentă). Generat de script din cardurile zilei: lista completă,
+         grupată pe ora publicării, cele mai noi primele. Antetul de oră al
+         fiecărui grup e buton de filtru pe rulare (aceeași stare selectată ca
+         la tile-urile KPI și la vechile bare „Ritmul zilei"). Cuprinsul stă în
+         afara logicii de filtrare ca și conținut: rămâne integral vizibil la
+         orice filtru de categorie sau oră. Nu e pliabil: toate grupurile de
+         oră sunt extinse permanent, cu toate titlurile vizibile. */
       .day-toc{
         margin-top:14px;background:var(--surface);border:1px solid var(--line);
         border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden;
@@ -343,12 +344,6 @@
       .toc-head h2{font-size:.82rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;margin:0;display:flex;align-items:center;gap:8px}
       .toc-head h2::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--green);flex:none}
       .toc-head span{color:var(--muted);font-size:.83rem}
-      .toc-toggle-all{
-        appearance:none;border:1px solid var(--line);background:var(--surface);color:var(--ink);
-        font:inherit;font-size:.83rem;font-weight:700;padding:6px 12px;border-radius:999px;cursor:pointer;flex:none;
-      }
-      .toc-toggle-all:hover{border-color:var(--accent);color:var(--accent-ink)}
-      .toc-toggle-all:focus-visible{outline:3px solid var(--pbi-yellow);outline-offset:2px}
       .toc-group{display:flex;gap:12px;padding:8px 12px;align-items:flex-start}
       .toc-group + .toc-group{border-top:1px solid var(--line)}
       .toc-hour{
@@ -357,17 +352,6 @@
         background:var(--surface-2);color:var(--ink);
         display:flex;flex-direction:column;align-items:center;gap:1px;
       }
-      .toc-toggle{
-        appearance:none;border:1px solid var(--line);background:var(--surface);color:var(--muted);
-        font:inherit;cursor:pointer;flex:none;align-self:flex-start;
-        width:30px;height:30px;border-radius:8px;display:grid;place-items:center;
-        font-size:1rem;line-height:1;
-      }
-      .toc-toggle:hover{border-color:var(--accent);color:var(--accent-ink)}
-      .toc-toggle:focus-visible{outline:3px solid var(--pbi-yellow);outline-offset:2px}
-      .toc-toggle .chev{display:inline-block;transition:transform .18s ease}
-      .toc-toggle[aria-expanded="false"] .chev{transform:rotate(-90deg)}
-      @media (prefers-reduced-motion: reduce){ .toc-toggle .chev{transition:none} }
       .toc-hour:hover{border-color:var(--accent)}
       .toc-hour:focus-visible{outline:3px solid var(--pbi-yellow);outline-offset:2px}
       .toc-hour .th-time{font-weight:800;font-size:1.02rem;line-height:1.15;font-variant-numeric:tabular-nums}
@@ -379,7 +363,6 @@
       .toc-hour[aria-pressed="true"] .th-n{color:var(--kpi-sel-muted)}
       .toc-hour[aria-pressed="true"] .th-act{color:var(--pbi-yellow)}
       .toc-list{list-style:none;margin:0;padding:0;flex:1;min-width:0;display:flex;flex-direction:column}
-      .toc-list[hidden]{display:none}
       .toc-list li a{
         display:flex;gap:10px;align-items:flex-start;padding:6px 8px;border-radius:8px;
         text-decoration:none;color:var(--ink);
@@ -392,12 +375,80 @@
       .toc-list .cat-dot.tech{background:var(--cat-tech)}
       .toc-list .t{font-weight:600;line-height:1.4;flex:1;min-width:0}
       .toc-list .n{flex:none;color:var(--muted);font-size:.82rem;font-variant-numeric:tabular-nums;margin-top:2px}
+      /* Rând de cuprins cu pastilă „Istoric": rândul devine flex, linkul
+         principal (către cardul știrii) ocupă restul, iar pastila stă ca link
+         separat, lângă el — către cardul anterior, ca linia „Urmare la". */
+      .toc-list li{display:flex;align-items:flex-start;gap:4px}
+      .toc-list li a.toc-main{flex:1;min-width:0}
+      .toc-list a.cont-pill{
+        margin-top:5px;padding:2px 8px;font-size:.7rem;gap:4px;
+        display:inline-flex;color:var(--accent-ink);border-radius:999px;
+      }
+      .toc-list a.cont-pill:hover{background:var(--accent-soft)}
       @media (max-width:560px){
         .toc-head{padding:10px 14px}
         .toc-group{gap:9px;padding:9px 10px}
         .toc-hour{width:70px}
         .toc-list .cat-dot{display:none}
       }
+
+      /* ── Fereastra „Ultimele știri" — sus, imediat deasupra chenarului
+         „Știrea zilei" (doar ziua curentă). Arată DOAR titlurile din cea mai
+         recentă rulare (1–2), fiecare link la cardul ei; conținutul se
+         generează de script din ultimul grup de oră al cardurilor, deci la
+         fiecare rulare nouă fereastra se suprascrie — nu se acumulează. */
+      .latest-window{
+        margin-top:14px;background:var(--surface);border:1px solid var(--line);
+        border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden;
+      }
+      .latest-head{
+        padding:10px 16px;display:flex;align-items:baseline;justify-content:space-between;gap:12px;flex-wrap:wrap;
+        border-bottom:1px solid var(--line);background:var(--surface-2);
+      }
+      .latest-head h2{font-size:.82rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;margin:0;display:flex;align-items:center;gap:8px}
+      .latest-head h2::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--green);flex:none}
+      .latest-head span{color:var(--muted);font-size:.83rem}
+      .latest-list{list-style:none;margin:0;padding:6px 8px;display:flex;flex-direction:column}
+      .latest-list li a{
+        display:flex;gap:10px;align-items:flex-start;padding:7px 8px;border-radius:8px;
+        text-decoration:none;color:var(--ink);
+      }
+      .latest-list li a:hover{background:var(--surface-2)}
+      .latest-list li a:focus-visible{outline:3px solid var(--pbi-yellow);outline-offset:-3px}
+      .latest-list .cat-dot{flex:none;width:9px;height:9px;border-radius:50%;margin-top:8px}
+      .latest-list .cat-dot.sec{background:var(--cat-sec)}
+      .latest-list .cat-dot.ro{background:var(--cat-ro)}
+      .latest-list .cat-dot.tech{background:var(--cat-tech)}
+      .latest-list .t{font-weight:600;line-height:1.4;flex:1;min-width:0}
+      @media (max-width:560px){
+        .latest-head{padding:10px 14px}
+        .latest-list .cat-dot{display:none}
+      }
+
+      /* Pastila cu eticheta scurtă de subiect, pe card (ziua curentă) —
+         aceeași etichetă (data-subiect) care alimentează tile-urile de
+         categorie din dashboard. */
+      .subj-pill{
+        flex:none;font-size:.74rem;font-weight:700;letter-spacing:.02em;
+        color:var(--muted);background:var(--surface-2);border:1px solid var(--line);
+        padding:3px 9px;border-radius:999px;
+      }
+
+      /* Pastila „Istoric" — legătura „Urmare la" făcută vizibilă fără
+         deschiderea cardului (doar ziua curentă): pe card, în rândul de meta
+         de lângă titlu, și în rândul din cuprins al știrii. E link către
+         același card anterior ca linia „Urmare la" din corpul cardului;
+         cardurile fără „Urmare la" nu o primesc. */
+      .cont-pill{
+        flex:none;display:inline-flex;align-items:center;gap:5px;
+        font-size:.74rem;font-weight:800;letter-spacing:.02em;
+        color:var(--accent-ink);background:var(--accent-soft);
+        border:1px solid var(--accent);padding:3px 9px;border-radius:999px;
+        text-decoration:none;white-space:nowrap;
+      }
+      .cont-pill::before{content:"↪";font-weight:800;line-height:1}
+      .cont-pill:hover{text-decoration:underline;text-underline-offset:2px}
+      .cont-pill:focus-visible{outline:3px solid var(--pbi-yellow);outline-offset:2px}
 
       /* ── Chenar permanent: știrea cea mai importantă, culoare după gravitate ──
          Nivelul se setează prin clasa de pe secțiune: .sev-green / .sev-amber / .sev-red */
@@ -633,9 +684,9 @@
     <div class="topbar">
       <div class="topbar-inner">
         <span class="dot" aria-hidden="true"></span>
-        <span><strong>Miercuri, 4 noiembrie 2026</strong> · actualizat la <strong>22:00</strong></span>
+        <span><strong>Joi, 5 noiembrie 2026</strong> · actualizat la <strong>06:00</strong></span>
         <span aria-hidden="true">·</span>
-        <span>14 știri azi</span>
+        <span>2 știri azi</span>
         <span class="spacer"></span>
         <button class="refresh-btn" type="button" id="refreshBtn" aria-label="Reîmprospătează pagina">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg>
@@ -650,36 +701,224 @@
         <h1>Știrile zilei</h1>
         <div class="date-line">
           <span class="day">Ediția de azi</span>
-          <span>Miercuri, 4 noiembrie 2026 · Europe/Brussels</span>
+          <span>Joi, 5 noiembrie 2026 · Europe/Brussels</span>
         </div>
         <p class="lede"><strong>Apasă pe un tile</strong> ca să filtrezi pagina — articole complete jos, cele mai noi primele.</p>
       </header>
 
-      <section class="day" id="zi-2026-11-04">
-      <!-- Cuprinsul zilei — MUTAT SUS: imediat deasupra chenarului „Știrea zilei",
-           între masthead și chenar (înlocuiește fosta bandă „Ultimele știri";
-           cuprinsul vechi de sub dashboard a dispărut — acesta e singurul).
-           Generat de script din cardurile zilei curente: lista completă a zilei,
-           grupată pe ora publicării, cele mai noi primele; fiecare titlu e link
-           la cardul lui (#stire-N), iar antetul de oră al fiecărui grup e buton
-           de filtru pe rulare — aceeași logică pe care o aveau barele „Ritmul
-           zilei" (selecție unică; al doilea click pe aceeași oră sau butonul de
-           reset revine la toate; o selecție de oră anulează filtrul de categorie
-           și invers).
-           Cuprinsul NU intră în logica de filtrare ca și conținut: rămâne
-           integral vizibil indiferent de filtrul de categorie sau de oră ales,
-           la fel ca chenarul. -->
+            <section class="day" id="zi-2026-11-05">
+      <!-- Fereastra „Ultimele știri" — sus, imediat deasupra chenarului
+           „Știrea zilei", între masthead și chenar. Arată DOAR titlurile din
+           cea mai recentă rulare (1–2), fiecare link la cardul ei (#stire-N).
+           Conținutul e generat de script din cardurile zilei curente (ultimul
+           grup de oră), deci la fiecare rulare nouă fereastra se suprascrie
+           automat — nu se acumulează. Cuprinsul complet al zilei stă jos,
+           sub dashboard (vezi nav.day-toc după banda dashboard). -->
+      <section class="latest-window" aria-label="Ultimele știri">
+        <div class="latest-head">
+          <h2>Ultimele știri</h2>
+          <span class="latest-hour"></span>
+        </div>
+        <ul class="latest-list"></ul>
+      </section>
+
+      <!-- Chenar permanent: știrea cea mai importantă a zilei — sub fereastra
+           „Ultimele știri", ÎNAINTEA dashboardului, vizibilă din prima, fără scroll.
+           Nivelul de azi: GALBEN (sev-amber) — de urmărit, evoluție importantă, fără acțiune imediată:
+           votanții americani au respins centrele de date AI la alegerile de la
+           jumătatea mandatului (singura știre galbenă a zilei).
+           Chenarul rămâne în afara logicii de filtrare: vizibil indiferent de filtrul de categorie. -->
+      <section class="spot sev-amber" aria-label="Știrea cea mai importantă a zilei">
+        <div class="spot-head">
+          <span class="spot-kicker">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13 2 4.5 13.5H11L9.5 22 19 10h-6.5L13 2z"/></svg>
+            Știrea zilei · Atenție rapidă
+          </span>
+          <span class="spot-time">5 nov · 06:00</span>
+          <span class="spot-pill">Nivel galben — de urmărit</span>
+        </div>
+        <h2 class="spot-title">Votanții americani au respins centrele de date AI la alegerile de la jumătatea mandatului: restricții în zeci de localități, Ohio în frunte</h2>
+        <p class="spot-why"><strong>De ce e în față:</strong> valul de opoziție locală, combinat cu un Congres cu majoritate democrată, pune presiune pe ritmul construcției de centre de date care alimentează boomul AI — costurile cu energia și autorizațiile devin variabila care poate încetini infrastructura AI.</p>
+        <p class="spot-lead">La alegerile de marți, 3 noiembrie 2026, măsurile de restricționare a centrelor de date au trecut în aproape toate localitățile unde au fost pe buletinul de vot: 33 de măsuri au trecut sau conduceau, față de o singură victorie a industriei, în Dakota de Nord, potrivit trackerului Data Centers on the Ballot. Ohio a fost epicentrul, cu 21 de măsuri.</p>
+        <p class="spot-more" hidden><span class="spot-more-text"></span> <button class="spot-more-btn" type="button">apasă aici</button></p>
+        <div class="spot-foot">
+          <a class="spot-link" href="#stire-49">Citește știrea completă ↓</a>
+          <div class="sev-scale" role="img" aria-label="Scară de gravitate: verde — normal, galben — de urmărit, roșu — grav. Nivelul de azi: galben.">
+            <span class="sev-item"><i class="sev-dot g" aria-hidden="true"></i>Verde · normal</span>
+            <span class="sev-item on"><i class="sev-dot y" aria-hidden="true"></i>Galben · de urmărit</span>
+            <span class="sev-item"><i class="sev-dot r" aria-hidden="true"></i>Roșu · grav</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Dashboard -->
+      <section class="dashboard" aria-label="Panou de ansamblu">
+        <div class="dash-head">
+          <span class="dash-title">Dashboard · Azi</span>
+          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 06:00</span>
+          <span class="dash-meta">Fereastră monitorizare <strong>L–V 06:00–22:00 · S–D 07:30–22:00</strong> · pas ~3 ore</span>
+        </div>
+
+        <div class="kpi-grid" role="group" aria-label="Filtrează după categorie — apasă pe un tile">
+          <button class="kpi" type="button" data-filter="toate" aria-pressed="true">
+            <span class="kpi-top"><span class="kpi-label">Toate știrile</span><span class="kpi-check" aria-hidden="true">✓</span></span>
+            <span class="kpi-value">2</span>
+            <span class="kpi-sub">știri verificate azi, în 1 rulare</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:100%"></i></span>
+            <span class="kpi-hint">Apasă pentru toate</span>
+          </button>
+          <button class="kpi" type="button" data-filter="securitate" aria-pressed="false">
+            <span class="kpi-top"><span class="kpi-label">Securitate &amp; NATO</span><span class="kpi-check" aria-hidden="true">✓</span></span>
+            <span class="kpi-value">1</span>
+            <span class="kpi-sub">rachetă europeană de atac rapid</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:50%"></i></span>
+            <span class="kpi-hint">Apasă pentru a filtra →</span>
+          </button>
+          <button class="kpi" type="button" data-filter="romania" aria-pressed="false">
+            <span class="kpi-top"><span class="kpi-label">România</span><span class="kpi-check" aria-hidden="true">✓</span></span>
+            <span class="kpi-value">0</span>
+            <span class="kpi-sub"></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:0%"></i></span>
+            <span class="kpi-hint">Apasă pentru a filtra →</span>
+          </button>
+          <button class="kpi" type="button" data-filter="tech" aria-pressed="false">
+            <span class="kpi-top"><span class="kpi-label">Tech &amp; AI</span><span class="kpi-check" aria-hidden="true">✓</span></span>
+            <span class="kpi-value">1</span>
+            <span class="kpi-sub">respingerea centrelor de date AI</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:50%"></i></span>
+            <span class="kpi-hint">Apasă pentru a filtra →</span>
+          </button>
+        </div>
+
+        <div class="dash-foot solo">
+          <div class="dash-panel">
+            <h3>Severitate — apasă un pătrat ca să vezi doar știrile de nivelul acela</h3>
+            <div class="sev-squares" role="group" aria-label="Filtrează după severitate — roșu, galben, verde"></div>
+          </div>
+        </div>
+      </section>
+
+      <div class="filter-status" aria-live="polite">
+        <span class="filter-label">Se afișează: <strong>Toate categoriile — 2 din 2 știri</strong></span>
+        <button class="filter-reset" type="button" hidden>Resetează filtrul</button>
+      </div>
+
+      <!-- Cuprinsul zilei — sub banda dashboard, înaintea cardurilor.
+           Generat de script din cardurile zilei curente: lista completă a
+           zilei, grupată pe ora publicării, cele mai noi primele; fiecare
+           titlu e link la cardul lui (#stire-N), iar antetul de oră al
+           fiecărui grup e buton de filtru pe rulare — aceeași logică pe care
+           o aveau barele „Ritmul zilei" (selecție unică; al doilea click pe
+           aceeași oră sau butonul de reset revine la toate; o selecție de oră
+           anulează filtrul de categorie și invers). Nu e pliabil: toate
+           grupurile de oră sunt extinse permanent, cu toate titlurile
+           vizibile — fără săgeți de pliere și fără buton de extindere.
+           Cuprinsul NU intră în logica de filtrare ca și conținut: rândurile
+           lui rămân integral vizibile indiferent de filtrul ales, la fel ca
+           chenarul. -->
       <nav class="day-toc" aria-label="Cuprinsul zilei">
         <div class="toc-head">
           <h2>Cuprins</h2>
           <span class="toc-count">cele mai noi primele · apasă pe o oră ca să filtrezi rularea, pe un titlu ca să sari la știre</span>
-          <button class="toc-toggle-all" type="button" aria-expanded="false">Vezi tot cuprinsul</button>
         </div>
         <div class="toc-groups"></div>
       </nav>
 
-      <!-- Chenar permanent: știrea cea mai importantă a zilei — chiar sub masthead,
-           ÎNAINTEA dashboardului, vizibilă din prima, fără scroll.
+      <p class="empty">Nicio știre în această categorie azi.</p>
+
+      <main>
+        <!-- 1 · 5 nov · 06:00 -->
+        <article id="stire-49" data-cats="tech" data-sev="amber" data-subiect="respingerea centrelor de date AI">
+          <div class="a-meta">
+            <span class="a-time">5 nov · 06:00</span>
+            <span class="a-cat">Tech &amp; AI · Centre de date · Alegeri SUA</span>
+            <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
+            <span class="spot-tag">Știrea zilei</span>
+            <span class="subj-pill">respingerea centrelor de date AI</span>
+            <span class="a-num">#1 / 2</span>
+          </div>
+          <h2>Votanții americani au respins centrele de date AI la alegerile de la jumătatea mandatului: restricții în zeci de localități, Ohio în frunte</h2>
+
+          <div class="sec">
+            <p class="sec-label">Ce s-a întâmplat</p>
+            <p>La alegerile de marți, 3 noiembrie 2026, măsurile de restricționare a centrelor de date au trecut în aproape toate localitățile unde au fost pe buletinul de vot: 33 de măsuri au trecut sau conduceau, față de o singură victorie a industriei, în Dakota de Nord, potrivit trackerului Data Centers on the Ballot. Ohio a fost epicentrul, cu 21 de măsuri: interdicții votate cu 76% la Urbana și 77% la Hubbard, plus o interdicție vizând un campus AWS de 18 clădiri la Trenton și un sit Meta la Piqua. Un sondaj NBC la ieșirea de la urne arată că 56% dintre votanți au spus că AI și centrele de date au fost un factor „crucial sau major" în votul pentru Congres.</p>
+          </div>
+
+          <div class="sec">
+            <p class="sec-label">De ce contează</p>
+            <p>Valul de opoziție locală, combinat cu un Congres cu majoritate democrată, pune presiune pe ritmul construcției de centre de date care alimentează boomul AI: Goldman Sachs anticipează deja întârzieri în state ca Georgia și Texas, iar în Congres se discută un moratoriu național până la noi garanții (propunerea Sanders/Ocasio-Cortez). Pentru urmărirea AI și a investițiilor în tehnologie, costurile cu energia și autorizațiile devin variabila care poate încetini infrastructura AI.</p>
+          </div>
+
+          <div class="verify">
+            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
+            <p>Verdict: confirmat. Surse: TechCrunch (sursa curatoriată) relatează valul de măsuri anti-centre de date de după alegerile de la jumătatea mandatului; Engadget, Euronews, Route Fifty și Inc. confirmă independent respingerea măsurilor pro-centre de date în zeci de localități, cu Ohio în frunte. Notă de integritate: cifrele diferă ușor între surse — 33 de măsuri trecute sau conducătoare, potrivit trackerului Data Centers on the Ballot, față de cel puțin 29 de jurisdicții, potrivit Washington Post — iar rezultatele rămân neoficiale până la certificare (24 noiembrie în Ohio).</p>
+            <ul class="sources">
+              <li><a href="https://techcrunch.com/2026/11/04/after-the-midterms-a-bigger-clash-over-data-centers-could-be-coming/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>TechCrunch (sursa curatoriată) — „After the midterms, a bigger clash over data centers could be coming" (4 noiembrie 2026)<span class="host">techcrunch.com</span></a></li>
+              <li><a href="https://www.engadget.com/2306534/americans-overwhelmingly-voted-against-data-centers-in-the-midterms/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Engadget — „Americans overwhelmingly voted against data centers in the midterms"<span class="host">engadget.com</span></a></li>
+              <li><a href="https://app.ekkow.com/1490652895598231589" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Euronews — relatarea rezultatelor privind centrele de date (prin Ekkow)<span class="host">app.ekkow.com</span></a></li>
+              <li><a href="https://www.route-fifty.com/artificial-intelligence/2026/11/voters-reject-data-centers-local-ballot-initiatives/417033/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Route Fifty — „Voters reject data centers in local ballot initiatives"<span class="host">route-fifty.com</span></a></li>
+              <li><a href="https://www.inc.com/chloe-aiello/voters-rejected-data-centers-across-america-this-1-state-just-fired-the-loudest-warning-shot/91431085" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Inc. — „Voters rejected data centers across America; this 1 state just fired the loudest warning shot"<span class="host">inc.com</span></a></li>
+            </ul>
+          </div>
+
+          <div class="opposing">
+            <p class="sec-label">Tabăra adversă</p>
+            <p>Leading the Future, grup pro-industrie susținut de președintele OpenAI Greg Brockman, pledează pentru un cadru național unic care să prevaleze asupra legilor statale (<a href="https://techcrunch.com/2026/11/04/after-the-midterms-a-bigger-clash-over-data-centers-could-be-coming/" target="_blank" rel="noopener">TechCrunch</a>).</p>
+          </div>
+
+          <div class="impact">
+            <span class="badge">Impact direct</span>
+            <p>Impact direct: minim — relevanță de context pentru urmărirea AI și a investițiilor în tehnologie; nicio acțiune concretă de făcut.</p>
+          </div>
+        </article>
+
+        <!-- 2 · 5 nov · 06:00 -->
+        <article id="stire-50" data-cats="securitate" data-sev="green" data-subiect="rachetă europeană de atac rapid">
+          <div class="a-meta">
+            <span class="a-time">5 nov · 06:00</span>
+            <span class="a-cat">Securitate &amp; NATO · Rachete · MBDA</span>
+            <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
+            <span class="subj-pill">rachetă europeană de atac rapid</span>
+            <span class="a-num">#2 / 2</span>
+          </div>
+          <h2>MBDA pregătește racheta supersonică Stratus RS: rază «mult, mult» peste Exocet, pentru Franța și Marea Britanie</h2>
+
+          <div class="sec">
+            <p class="sec-label">Ce s-a întâmplat</p>
+            <p>MBDA a prezentat la expoziția Euronaval de la Paris racheta Stratus RS — supersonică, cu motor ramjet cu combustibil lichid reglabil — pentru patru misiuni: atac în adâncime, anti-navă, suprimarea/distrugerea apărării antiaeriene inamice și lovirea țintelor aeriene de mare valoare (avioane de avertizare timpurie AWACS, avioane-cisternă). Raza va depăși „mult, mult" cei peste 200 km ai rachetei Exocet, a spus Olivier Gauffin, director adjunct pentru vânzări al MBDA; contractul de dezvoltare din partea Direcției Generale pentru Armament a Franței, în numele celor doi parteneri, este așteptat în timpul Euronaval. Testele de zbor ar urma să înceapă înainte de 2030, iar intrarea în serviciu la începutul anilor 2030, pe Rafale, Eurofighter Typhoon și viitorul avion din programul britanico-italiano-japonez GCAP.</p>
+          </div>
+
+          <div class="sec">
+            <p class="sec-label">De ce contează</p>
+            <p>NATO le-a cerut aliaților europeni să-și refacă capacitățile ofensive, iar armatele europene duc lipsă de arme capabile să distrugă apărarea antiaeriană inamică — Stratus RS umple exact acest gol, alături de varianta stealth Stratus LO (Franța, Marea Britanie, Italia).</p>
+          </div>
+
+          <div class="verify">
+            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
+            <p>Verdict: confirmat. Surse: Defense News (sursa curatoriată) relatează prezentarea rachetei Stratus RS la Euronaval și raza „mult, mult" peste Exocet; Armada International, EDR Magazine și Daily Caller confirmă independent programul Stratus și detaliile anunțului MBDA.</p>
+            <ul class="sources">
+              <li><a href="https://www.defensenews.com/global/europe/2026/11/04/mbda-high-speed-strike-missile-to-have-range-far-exceeding-exocet/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Defense News (sursa curatoriată) — „MBDA high-speed strike missile to have range far exceeding Exocet" (4 noiembrie 2026)<span class="host">defensenews.com</span></a></li>
+              <li><a href="https://www.armadainternational.com/2026/11/stratus-pheric-electronic-warfare/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Armada International — relatarea programului Stratus la Euronaval<span class="host">armadainternational.com</span></a></li>
+              <li><a href="https://www.edrmagazine.eu/mbda-stratus-weapon-family-nears-demonstration-and-manufacturing-phases-contract" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>EDR Magazine — „MBDA Stratus weapon family nears demonstration and manufacturing phases"<span class="host">edrmagazine.eu</span></a></li>
+              <li><a href="https://dailycaller.com/2026/11/04/new-missile-france-united-kingdom" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Daily Caller — „New missile: France, United Kingdom" (4 noiembrie 2026)<span class="host">dailycaller.com</span></a></li>
+            </ul>
+          </div>
+
+          <div class="impact">
+            <span class="badge">Impact direct</span>
+            <p>Impact direct: minim — relevanță de context pentru munca la NCIA/NATO; nicio acțiune concretă de făcut.</p>
+          </div>
+        </article>
+      </main>
+      </section>
+
+      <section class="day day-archive" id="zi-2026-11-04">
+        <div class="day-head">
+          <h2>Miercuri, 4 noiembrie 2026</h2>
+          <span>Ediția de ieri · 14 știri · arhivă (ultimele 7 zile)</span>
+        </div>
+      <!-- Chenar permanent: știrea cea mai importantă a zilei — sub fereastra
+           „Ultimele știri", ÎNAINTEA dashboardului, vizibilă din prima, fără scroll.
            Nivelul de azi: GALBEN (sev-amber) — de urmărit, evoluție importantă, fără acțiune imediată:
            NATO a testat în Letonia apărarea anti-dronă pe rețele 5G comerciale
            (exercițiul FUSE/DiBaX, cu aproape 400 de drone).
@@ -726,30 +965,51 @@
           <button class="kpi" type="button" data-filter="securitate" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">Securitate &amp; NATO</span><span class="kpi-check" aria-hidden="true">✓</span></span>
             <span class="kpi-value">6</span>
-            <span class="kpi-sub">Exercițiul Koalicja (9–22 noiembrie, Polonia): primul exercițiu major al Forței Multinaționale pentru Ucraina · Franța comandă submarinul-robot de luptă UCUV: Naval Group trece la producția demonstratorului · BSI avertizează membrii Bundestagului: iPhone-urile lor ar putea fi vizate de spyware mercenar · Franța lansează un «pact» pentru drone navale · furtul Binance a început cu un interviu de angajare fals · NATO a testat în Letonia apărarea anti-dronă pe rețele 5G comerciale</span>
+            <span class="kpi-sub">exercițiu Koalicja pentru Ucraina · Franța comandă submarin-robot UCUV · spyware pe iPhone-urile Bundestagului · pact pentru drone navale · furt Binance, interviu fals · NATO, apărare anti-dronă în Letonia</span>
             <span class="kpi-bar" aria-hidden="true"><i style="width:43%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="romania" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">România</span><span class="kpi-check" aria-hidden="true">✓</span></span>
             <span class="kpi-value">2</span>
-            <span class="kpi-sub">Taxele și impozitele locale din București rămân la nivelul din 2026 și în 2027 — proiectul Primăriei Capitalei, la vot în Consiliul General pe 12 noiembrie · Nuclearelectrica a început repornirea Unității 1 de la Cernavodă — reconectarea la rețea, estimată vineri, 6 noiembrie</span>
+            <span class="kpi-sub">taxe locale București înghețate · Cernavodă repornește Unitatea 1</span>
             <span class="kpi-bar" aria-hidden="true"><i style="width:14%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="tech" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">Tech &amp; AI</span><span class="kpi-check" aria-hidden="true">✓</span></span>
             <span class="kpi-value">6</span>
-            <span class="kpi-sub">DreamHost confirmă o breșă de două luni: parole FTP/SFTP și sesiuni webmail furate · Revolut valorează acum 115 miliarde $: cea mai valoroasă companie privată de tehnologie din Europa · Canva taie 22% din posturi (1.271 de roluri) pe fondul costurilor AI · Anthropic: compute-ul a ajuns la 58% din venituri — factura de 10 mld $ pe trimestru · Furtul Binance a început cu un interviu de angajare fals · Anthropic lansează FlashProve: dovadă criptografică că un răspuns chiar vine de la modelul promis</span>
+            <span class="kpi-sub">breșă DreamHost, parole furate · Revolut, evaluare 115 mld $ · Canva taie 22% din posturi · Anthropic, compute 58% din venituri · furt Binance, interviu fals · FlashProve, dovadă criptografică Anthropic</span>
             <span class="kpi-bar" aria-hidden="true"><i style="width:43%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
         </div>
 
-        <div class="dash-foot solo">
+        <div class="dash-foot">
           <div class="dash-panel">
-            <h3>Severitate — apasă un pătrat ca să vezi doar știrile de nivelul acela</h3>
-            <div class="sev-squares" role="group" aria-label="Filtrează după severitate — roșu, galben, verde"></div>
+            <h3>Ritmul zilei — știri pe rulare</h3>
+            <div class="rhythm" role="group" aria-label="Filtru după ora publicării — apasă pe o rulare ca să vezi doar știrile ei">
+              <button class="col" type="button" data-hour="08:00" aria-pressed="false" aria-label="Filtrează știrile de la ora 08:00 — 2 știri"><span class="n">2</span><span class="bar" style="height:40px"></span><span class="t">08:00</span></button>
+              <button class="col" type="button" data-hour="11:05" aria-pressed="false" aria-label="Filtrează știrile de la ora 11:05 — 2 știri"><span class="n">2</span><span class="bar" style="height:40px"></span><span class="t">11:05</span></button>
+              <button class="col" type="button" data-hour="13:00" aria-pressed="false" aria-label="Filtrează știrile de la ora 13:00 — 1 știre"><span class="n">1</span><span class="bar" style="height:22px"></span><span class="t">13:00</span></button>
+              <button class="col" type="button" data-hour="14:00" aria-pressed="false" aria-label="Filtrează știrile de la ora 14:00 — 1 știre"><span class="n">1</span><span class="bar" style="height:22px"></span><span class="t">14:00</span></button>
+              <button class="col" type="button" data-hour="15:00" aria-pressed="false" aria-label="Filtrează știrile de la ora 15:00 — 1 știre"><span class="n">1</span><span class="bar" style="height:22px"></span><span class="t">15:00</span></button>
+              <button class="col" type="button" data-hour="16:00" aria-pressed="false" aria-label="Filtrează știrile de la ora 16:00 — 1 știre"><span class="n">1</span><span class="bar" style="height:22px"></span><span class="t">16:00</span></button>
+              <button class="col" type="button" data-hour="17:00" aria-pressed="false" aria-label="Filtrează știrile de la ora 17:00 — 2 știri"><span class="n">2</span><span class="bar" style="height:40px"></span><span class="t">17:00</span></button>
+              <button class="col" type="button" data-hour="18:00" aria-pressed="false" aria-label="Filtrează știrile de la ora 18:00 — 1 știre"><span class="n">1</span><span class="bar" style="height:22px"></span><span class="t">18:00</span></button>
+              <button class="col" type="button" data-hour="19:00" aria-pressed="false" aria-label="Filtrează știrile de la ora 19:00 — 1 știre"><span class="n">1</span><span class="bar" style="height:22px"></span><span class="t">19:00</span></button>
+              <button class="col" type="button" data-hour="20:00" aria-pressed="false" aria-label="Filtrează știrile de la ora 20:00 — 1 știre"><span class="n">1</span><span class="bar" style="height:22px"></span><span class="t">20:00</span></button>
+              <button class="col" type="button" data-hour="22:00" aria-pressed="false" aria-label="Filtrează știrile de la ora 22:00 — 1 știre"><span class="n">1</span><span class="bar" style="height:22px"></span><span class="t">22:00</span></button>
+            </div>
+            <p class="rhythm-hint">Apasă pe o bară ca să vezi doar știrile din rularea aceea; apasă din nou pe ea pentru toate.</p>
+          </div>
+          <div class="dash-panel">
+            <h3>Stare ediție</h3>
+            <ul class="status-list">
+              <li><span class="k">Ultima actualizare</span><span class="v">Azi, 22:00</span></li>
+              <li><span class="k">Cea mai nouă</span><span class="v">DreamHost confirmă o breșă de două luni: parole FTP/SFTP și sesiuni webmail furate, atac nedetectat din august până pe 23 octombrie · 22:00</span></li>
+              <li><span class="k">Acoperire</span><span class="v">Ultimele 7 zile în arhivă</span></li>
+            </ul>
           </div>
         </div>
       </section>
@@ -759,18 +1019,37 @@
         <button class="filter-reset" type="button" hidden>Resetează filtrul</button>
       </div>
 
-      <!-- Cuprinsul zilei NU mai e aici: e mutat sus, imediat deasupra
-           chenarului „Știrea zilei" (vezi nav.day-toc la începutul secțiunii). -->
+      <nav class="index" aria-label="Cuprinsul zilei">
+        <div class="index-head">
+          <h2>Cuprins</h2>
+          <span>apasă pe un titlu ca să sari direct la știre · se sincronizează cu filtrul</span>
+        </div>
+        <ol class="index-list">
+          <li data-cats="tech"><a href="#stire-48"><time>22:00</time><span class="cat-dot tech" aria-hidden="true"></span><span class="t">DreamHost confirmă o breșă de două luni: parole FTP/SFTP și sesiuni webmail furate, atac nedetectat din august până pe 23 octombrie</span><span class="n">#1</span></a></li>
+          <li data-cats="romania"><a href="#stire-47"><time>20:00</time><span class="cat-dot ro" aria-hidden="true"></span><span class="t">Taxele și impozitele locale din București rămân la nivelul din 2026 și în 2027 — proiectul Primăriei Capitalei, la vot în Consiliul General pe 12 noiembrie</span><span class="n">#2</span></a></li>
+          <li data-cats="securitate"><a href="#stire-46"><time>19:00</time><span class="cat-dot sec" aria-hidden="true"></span><span class="t">Exercițiul Koalicja (9–22 noiembrie, Polonia): primul exercițiu major al Forței Multinaționale pentru Ucraina — 2.800 de militari din 11 țări, cu componenta aeriană coordonată din România</span><span class="n">#3</span></a></li>
+          <li data-cats="tech"><a href="#stire-45"><time>18:00</time><span class="cat-dot tech" aria-hidden="true"></span><span class="t">Revolut valorează acum 115 miliarde $: cea mai valoroasă companie privată de tehnologie din Europa</span><span class="n">#4</span></a></li>
+          <li data-cats="tech"><a href="#stire-44"><time>17:00</time><span class="cat-dot tech" aria-hidden="true"></span><span class="t">Canva taie 22% din posturi (1.271 de roluri) pe fondul costurilor AI: factura de servire AI ajunge să restructureze un SaaS mare</span><span class="n">#5</span></a></li>
+          <li data-cats="securitate"><a href="#stire-43"><time>17:00</time><span class="cat-dot sec" aria-hidden="true"></span><span class="t">Franța comandă submarinul-robot de luptă UCUV: Naval Group trece la producția demonstratorului, cu teste pe mare din 2028</span><span class="n">#6</span></a></li>
+          <li data-cats="romania"><a href="#stire-42"><time>16:00</time><span class="cat-dot ro" aria-hidden="true"></span><span class="t">Nuclearelectrica a început repornirea Unității 1 de la Cernavodă: reconectarea la rețea, estimată vineri, 6 noiembrie; Unitatea 2 rămâne dependentă de Dunăre</span><span class="n">#7</span></a></li>
+          <li data-cats="tech"><a href="#stire-41"><time>15:00</time><span class="cat-dot tech" aria-hidden="true"></span><span class="t">Anthropic: compute-ul a ajuns la 58% din venituri — factura de 10 mld $ pe trimestru, jumătate pe contracte scurte scumpe</span><span class="n">#8</span></a></li>
+          <li data-cats="securitate"><a href="#stire-40"><time>14:00</time><span class="cat-dot sec" aria-hidden="true"></span><span class="t">BSI avertizează membrii Bundestagului: iPhone-urile lor ar putea fi vizate de spyware mercenar — alerte Apple din 29 octombrie, în 99 de țări</span><span class="n">#9</span></a></li>
+          <li data-cats="belgia"><a href="#stire-39"><time>13:00</time><span class="cat-dot" style="background:var(--muted)" aria-hidden="true"></span><span class="t">Criza bugetară belgiană: regele îi primește azi pe Rousseau și Bouchez; patronatele cer reluarea negocierilor, decizia privind demisia lui De Wever vine vineri</span><span class="n">#10</span></a></li>
+          <li data-cats="securitate"><a href="#stire-38"><time>11:05</time><span class="cat-dot sec" aria-hidden="true"></span><span class="t">Franța lansează un «pact» pentru drone navale: industria și startupurile, chemate să livreze rapid sisteme pentru marină</span><span class="n">#11</span></a></li>
+          <li data-cats="securitate tech"><a href="#stire-37"><time>11:05</time><span class="cat-dot sec" aria-hidden="true"></span><span class="t">Furtul Binance de 6,3 mld $ a început cu un interviu de angajare fals: campanie nord-coreeană de cinci luni, 57 de atacuri blocate înainte</span><span class="n">#12</span></a></li>
+          <li data-cats="securitate"><a href="#stire-36"><time>08:00</time><span class="cat-dot sec" aria-hidden="true"></span><span class="t">NATO a testat în Letonia apărarea anti-dronă pe rețele 5G comerciale: exercițiul FUSE/DiBaX, cu aproape 400 de drone</span><span class="n">#13</span></a></li>
+          <li data-cats="tech"><a href="#stire-35"><time>08:00</time><span class="cat-dot tech" aria-hidden="true"></span><span class="t">Anthropic lansează FlashProve: dovadă criptografică că un răspuns chiar vine de la modelul promis</span><span class="n">#14</span></a></li>
+        </ol>
+      </nav>
 
       <p class="empty">Nicio știre în această categorie azi.</p>
 
       <main>
         <!-- 1 · 4 nov · 22:00 -->
-        <article id="stire-48" data-cats="tech" data-sev="amber">
+        <article id="stire-48" data-cats="tech">
           <div class="a-meta">
             <span class="a-time">4 nov · 22:00</span>
             <span class="a-cat">Tech &amp; AI · Securitate cibernetică</span>
-            <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="a-num">#1 / 14</span>
           </div>
           <h2>DreamHost confirmă o breșă de două luni: parole FTP/SFTP și sesiuni webmail furate, atac nedetectat din august până pe 23 octombrie</h2>
@@ -803,11 +1082,10 @@
         </article>
 
         <!-- 2 · 4 nov · 20:00 -->
-        <article id="stire-47" data-cats="romania" data-sev="green">
+        <article id="stire-47" data-cats="romania">
           <div class="a-meta">
             <span class="a-time">4 nov · 20:00</span>
             <span class="a-cat">România · București · Taxe locale</span>
-            <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <span class="a-num">#2 / 14</span>
           </div>
           <h2>Taxele și impozitele locale din București rămân la nivelul din 2026 și în 2027 — proiectul Primăriei Capitalei, la vot în Consiliul General pe 12 noiembrie</h2>
@@ -838,11 +1116,10 @@
         </article>
 
         <!-- 3 · 4 nov · 19:00 -->
-        <article id="stire-46" data-cats="securitate" data-sev="green">
+        <article id="stire-46" data-cats="securitate">
           <div class="a-meta">
             <span class="a-time">4 nov · 19:00</span>
             <span class="a-cat">Securitate &amp; NATO · Coaliția doritorilor · Ucraina</span>
-            <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <span class="a-num">#3 / 14</span>
           </div>
           <h2>Exercițiul Koalicja (9–22 noiembrie, Polonia): primul exercițiu major al Forței Multinaționale pentru Ucraina — 2.800 de militari din 11 țări, cu componenta aeriană coordonată din România</h2>
@@ -873,11 +1150,10 @@
         </article>
 
         <!-- 4 · 4 nov · 18:00 -->
-        <article id="stire-45" data-cats="tech" data-sev="green">
+        <article id="stire-45" data-cats="tech">
           <div class="a-meta">
             <span class="a-time">4 nov · 18:00</span>
             <span class="a-cat">Tech &amp; AI · Fintech · Evaluare</span>
-            <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <span class="a-num">#4 / 14</span>
           </div>
           <h2>Revolut valorează acum 115 miliarde $: cea mai valoroasă companie privată de tehnologie din Europa</h2>
@@ -909,11 +1185,10 @@
         </article>
 
         <!-- 5 · 4 nov · 17:00 -->
-        <article id="stire-44" data-cats="tech" data-sev="green">
+        <article id="stire-44" data-cats="tech">
           <div class="a-meta">
             <span class="a-time">4 nov · 17:00</span>
             <span class="a-cat">Tech &amp; AI · Restructurare · Costuri AI</span>
-            <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <span class="a-num">#5 / 14</span>
           </div>
           <h2>Canva taie 22% din posturi (1.271 de roluri) pe fondul costurilor AI: factura de servire AI ajunge să restructureze un SaaS mare</h2>
@@ -946,11 +1221,10 @@
         </article>
 
         <!-- 6 · 4 nov · 17:00 -->
-        <article id="stire-43" data-cats="securitate" data-sev="green">
+        <article id="stire-43" data-cats="securitate">
           <div class="a-meta">
             <span class="a-time">4 nov · 17:00</span>
             <span class="a-cat">Securitate &amp; NATO · Drone subacvatice · Franța</span>
-            <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <span class="a-num">#6 / 14</span>
           </div>
           <h2>Franța comandă submarinul-robot de luptă UCUV: Naval Group trece la producția demonstratorului, cu teste pe mare din 2028</h2>
@@ -983,11 +1257,10 @@
         </article>
 
         <!-- 7 · 4 nov · 16:00 -->
-        <article id="stire-42" data-cats="romania" data-sev="green">
+        <article id="stire-42" data-cats="romania">
           <div class="a-meta">
             <span class="a-time">4 nov · 16:00</span>
             <span class="a-cat">România · Energie · Cernavodă</span>
-            <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <span class="a-num">#7 / 14</span>
           </div>
           <h2>Nuclearelectrica a început repornirea Unității 1 de la Cernavodă: reconectarea la rețea, estimată vineri, 6 noiembrie; Unitatea 2 rămâne dependentă de Dunăre</h2>
@@ -1025,11 +1298,10 @@
         </article>
 
         <!-- 8 · 4 nov · 15:00 -->
-        <article id="stire-41" data-cats="tech" data-sev="green">
+        <article id="stire-41" data-cats="tech">
           <div class="a-meta">
             <span class="a-time">4 nov · 15:00</span>
             <span class="a-cat">Tech &amp; AI · Economie AI · Dosar S-1</span>
-            <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <span class="a-num">#8 / 14</span>
           </div>
           <h2>Anthropic: compute-ul a ajuns la 58% din venituri — factura de 10 mld $ pe trimestru, jumătate pe contracte scurte scumpe</h2>
@@ -1067,11 +1339,10 @@
         </article>
 
         <!-- 9 · 4 nov · 14:00 -->
-        <article id="stire-40" data-cats="securitate" data-sev="amber">
+        <article id="stire-40" data-cats="securitate">
           <div class="a-meta">
             <span class="a-time">4 nov · 14:00</span>
             <span class="a-cat">Securitate &amp; NATO · Spyware mercenar · Germania</span>
-            <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="a-num">#9 / 14</span>
           </div>
           <h2>BSI avertizează membrii Bundestagului: iPhone-urile lor ar putea fi vizate de spyware mercenar — alerte Apple din 29 octombrie, în 99 de țări</h2>
@@ -1104,11 +1375,10 @@
         </article>
 
         <!-- 10 · 4 nov · 13:00 -->
-        <article id="stire-39" data-cats="belgia" data-sev="amber">
+        <article id="stire-39" data-cats="belgia">
           <div class="a-meta">
             <span class="a-time">4 nov · 13:00</span>
             <span class="a-cat">Belgia · Politică-fiscal</span>
-            <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="a-num">#10 / 14</span>
           </div>
           <h2>Criza bugetară belgiană: regele îi primește azi pe Rousseau și Bouchez; patronatele cer reluarea negocierilor, decizia privind demisia lui De Wever vine vineri</h2>
@@ -1151,11 +1421,10 @@
         </article>
 
         <!-- 11 · 4 nov · 11:05 -->
-        <article id="stire-38" data-cats="securitate" data-sev="green">
+        <article id="stire-38" data-cats="securitate">
           <div class="a-meta">
             <span class="a-time">4 nov · 11:05</span>
             <span class="a-cat">Securitate &amp; NATO · Drone navale · Franța</span>
-            <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <span class="a-num">#11 / 14</span>
           </div>
           <h2>Franța lansează un «pact» pentru drone navale: industria și startupurile, chemate să livreze rapid sisteme pentru marină</h2>
@@ -1189,11 +1458,10 @@
         </article>
 
         <!-- 12 · 4 nov · 11:05 -->
-        <article id="stire-37" data-cats="securitate tech" data-sev="amber">
+        <article id="stire-37" data-cats="securitate tech">
           <div class="a-meta">
             <span class="a-time">4 nov · 11:05</span>
             <span class="a-cat">Securitate &amp; NATO / Tech &amp; AI · Incident cibernetic · Inginerie socială</span>
-            <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="a-num">#12 / 14</span>
           </div>
           <h2>Furtul Binance de 6,3 mld $ a început cu un interviu de angajare fals: campanie nord-coreeană de cinci luni, 57 de atacuri blocate înainte</h2>
@@ -1237,11 +1505,10 @@
         </article>
 
         <!-- 13 · 4 nov · 08:00 -->
-        <article id="stire-36" data-cats="securitate" data-sev="amber">
+        <article id="stire-36" data-cats="securitate">
           <div class="a-meta">
             <span class="a-time">4 nov · 08:00</span>
             <span class="a-cat">Securitate &amp; NATO · Apărare anti-dronă · Rețele 5G</span>
-            <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="spot-tag">Știrea zilei</span>
             <span class="a-num">#13 / 14</span>
           </div>
@@ -1276,11 +1543,10 @@
         </article>
 
         <!-- 14 · 4 nov · 08:00 -->
-        <article id="stire-35" data-cats="tech" data-sev="green">
+        <article id="stire-35" data-cats="tech">
           <div class="a-meta">
             <span class="a-time">4 nov · 08:00</span>
             <span class="a-cat">Tech &amp; AI · Siguranță AI · Inferență demonstrabilă</span>
-            <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <span class="a-num">#14 / 14</span>
           </div>
           <h2>Anthropic lansează FlashProve: dovadă criptografică că un răspuns chiar vine de la modelul promis</h2>
@@ -3234,21 +3500,24 @@
 
       <footer>
         <div class="rule" aria-hidden="true"></div>
-        <p>Sfârșitul ediției de azi · Ultima actualizare: miercuri, 4 noiembrie 2026, 20:00<br />Monitorizarea rulează la circa 3 ore, în fereastra L–V 06:00–22:00 · S–D 07:30–22:00 — dă refresh pentru noutăți.</p>
-        <a class="to-top" href="#stire-47">↑ Înapoi la cea mai nouă știre</a>
+        <p>Sfârșitul ediției de azi · Ultima actualizare: joi, 5 noiembrie 2026, 06:00<br />Monitorizarea rulează la circa 3 ore, în fereastra L–V 06:00–22:00 · S–D 07:30–22:00 — dă refresh pentru noutăți.</p>
+        <a class="to-top" href="#stire-49">↑ Înapoi la cea mai nouă știre</a>
       </footer>
     </div>
 
     <script>
-      // Cuprinsul zilei (doar ziua curentă, prima secțiune section.day fără
-      // clasa de arhivă): construit la încărcare din cardurile zilei, grupat
-      // pe ora publicării — cardurile sunt deja cele mai noi primele, deci
-      // grupurile ies în aceeași ordine — fiecare titlu devine link către
-      // ancora cardului (#stire-N), iar antetul de oră al fiecărui grup e un
-      // buton .toc-hour[data-hour] pe care scriptul de filtrare îl leagă la
-      // filtrul pe rulare (aceeași logică ca vechile bare „Ritmul zilei").
-      // Fiind generat din DOM la fiecare încărcare, o știre adăugată de o
-      // rulare ulterioară apare automat în cuprins, la ora ei, fără editare
+      // Ziua curentă (prima secțiune section.day fără clasa de arhivă):
+      // cuprinsul (sub dashboard), fereastra „Ultimele știri" (sus), pătratele
+      // de severitate, chenarul și tile-urile de categorie se construiesc la
+      // încărcare din cardurile zilei. Cuprinsul e grupat pe ora publicării —
+      // cardurile sunt deja cele mai noi primele, deci grupurile ies în
+      // aceeași ordine — fiecare titlu devine link către ancora cardului
+      // (#stire-N), iar antetul de oră al fiecărui grup e un buton
+      // .toc-hour[data-hour] pe care scriptul de filtrare îl leagă la filtrul
+      // pe rulare (aceeași logică ca vechile bare „Ritmul zilei").
+      // Fiind generate din DOM la fiecare încărcare, o știre adăugată de o
+      // rulare ulterioară apare automat peste tot unde trebuie, cu
+      // severitatea și eticheta ei scurtă (data-subiect), fără editare
       // manuală. Cuprinsul nu are data-cats pe rânduri și nu e atins de
       // logica de filtrare ca și conținut: rămâne integral vizibil la orice
       // filtru, la fel ca chenarul „Știrea zilei".
@@ -3280,12 +3549,12 @@
           for (var c = 0; c < cats.length; c++) {
             if (dotClass[cats[c]]) { dotCls = dotClass[cats[c]]; break; }
           }
+          var fu = a.querySelector('.followup a');
+          var followHref = fu ? (fu.getAttribute('href') || '') : '';
           var g = byHour[hour];
           if (!g) { g = { hour: hour, items: [] }; byHour[hour] = g; groups.push(g); }
-          g.items.push({ id: a.id, title: h.textContent.trim(), dotCls: dotCls, num: i + 1 });
+          g.items.push({ id: a.id, title: h.textContent.trim(), dotCls: dotCls, num: i + 1, followHref: followHref });
         });
-        var tocLists = [];
-        var tocToggles = [];
         groups.forEach(function (g, gi) {
           var wrap = document.createElement('div');
           wrap.className = 'toc-group';
@@ -3307,14 +3576,13 @@
           var ol = document.createElement('ol');
           ol.className = 'toc-list';
           ol.id = 'toc-list-' + gi;
-          // Pliere: implicit e extins doar grupul cu cele mai noi știri
-          // (primul în ordinea paginii, cardurile fiind cele mai noi primele);
-          // antetele de oră rămân vizibile pentru toate grupurile.
-          var expanded = gi === 0;
-          ol.hidden = !expanded;
+          // Fără pliere: toate grupurile sunt extinse permanent — titlurile
+          // fiecărui grup sunt mereu vizibile; antetul de oră rămâne buton
+          // de filtru pe rulare.
           g.items.forEach(function (it) {
             var li = document.createElement('li');
             var link = document.createElement('a');
+            link.className = 'toc-main';
             link.href = '#' + it.id;
             var dot = document.createElement('span');
             dot.className = 'cat-dot' + (it.dotCls ? ' ' + it.dotCls : '');
@@ -3330,56 +3598,22 @@
             link.appendChild(title);
             link.appendChild(num);
             li.appendChild(link);
+            // Pastila „Istoric" în cuprins — doar pentru știrile cu
+            // legătură „Urmare la"; link separat, către același card
+            // anterior ca linia din corpul cardului.
+            if (it.followHref) {
+              var contPill = document.createElement('a');
+              contPill.className = 'cont-pill';
+              contPill.href = it.followHref;
+              contPill.textContent = 'Istoric';
+              contPill.setAttribute('aria-label', 'Istoric — sari la știrea anterioară din același fir');
+              li.appendChild(contPill);
+            }
             ol.appendChild(li);
           });
           wrap.appendChild(ol);
-          // Control de pliere separat de butonul de filtru pe oră: săgeata
-          // arată/ascunde doar titlurile grupului, fără să atingă filtrul.
-          var tog = document.createElement('button');
-          tog.type = 'button';
-          tog.className = 'toc-toggle';
-          tog.setAttribute('aria-expanded', expanded ? 'true' : 'false');
-          tog.setAttribute('aria-controls', ol.id);
-          tog.setAttribute('aria-label', (expanded ? 'Restrânge' : 'Extinde') + ' titlurile de la ora ' + g.hour);
-          var chev = document.createElement('span');
-          chev.className = 'chev';
-          chev.textContent = '⌄';
-          chev.setAttribute('aria-hidden', 'true');
-          tog.appendChild(chev);
-          wrap.appendChild(tog);
-          tocLists.push(ol);
-          tocToggles.push(tog);
           groupsBox.appendChild(wrap);
         });
-        // „Vezi tot cuprinsul" extinde toate grupurile; „Restrânge" revine la
-        // starea inițială (doar grupul cu cele mai noi știri extins).
-        var tocAllBtn = nav.querySelector('.toc-toggle-all');
-        function syncTocAllBtn() {
-          if (!tocAllBtn) return;
-          var allOpen = tocLists.every(function (l) { return !l.hidden; });
-          tocAllBtn.textContent = allOpen ? 'Restrânge' : 'Vezi tot cuprinsul';
-          tocAllBtn.setAttribute('aria-expanded', allOpen ? 'true' : 'false');
-        }
-        function setTocGroup(i, open) {
-          tocLists[i].hidden = !open;
-          tocToggles[i].setAttribute('aria-expanded', open ? 'true' : 'false');
-          var hour = groups[i].hour;
-          tocToggles[i].setAttribute('aria-label', (open ? 'Restrânge' : 'Extinde') + ' titlurile de la ora ' + hour);
-        }
-        tocToggles.forEach(function (tog, i) {
-          tog.addEventListener('click', function () {
-            setTocGroup(i, tocLists[i].hidden);
-            syncTocAllBtn();
-          });
-        });
-        if (tocAllBtn) {
-          tocAllBtn.addEventListener('click', function () {
-            var allOpen = tocLists.every(function (l) { return !l.hidden; });
-            tocLists.forEach(function (l, i) { setTocGroup(i, allOpen ? i === 0 : true); });
-            syncTocAllBtn();
-          });
-        }
-        syncTocAllBtn();
         var count = section.querySelector('.toc-count');
         if (count) {
           var total = articles.length;
@@ -3509,6 +3743,69 @@
             }
           }
         }
+
+        // ── Fereastra „Ultimele știri" (sus, deasupra chenarului): doar
+        // titlurile din cea mai recentă rulare — primul grup de oră, cardurile
+        // fiind cele mai noi primele — fiecare link la cardul ei. Fiind
+        // generată din carduri la fiecare încărcare, o rulare nouă o
+        // suprascrie automat; nu se acumulează nimic de la o rulare la alta.
+        var latestBox = section.querySelector('.latest-window');
+        if (latestBox) {
+          if (groups.length) {
+            var latestHour = latestBox.querySelector('.latest-hour');
+            if (latestHour) latestHour.textContent = 'rularea de la ' + groups[0].hour + ' · se suprascrie la fiecare rulare nouă';
+            var latestList = latestBox.querySelector('.latest-list');
+            if (latestList) {
+              groups[0].items.forEach(function (it) {
+                var li = document.createElement('li');
+                var link = document.createElement('a');
+                link.href = '#' + it.id;
+                var dot = document.createElement('span');
+                dot.className = 'cat-dot' + (it.dotCls ? ' ' + it.dotCls : '');
+                if (!it.dotCls) dot.style.background = 'var(--muted)';
+                dot.setAttribute('aria-hidden', 'true');
+                var title = document.createElement('span');
+                title.className = 't';
+                title.textContent = it.title;
+                link.appendChild(dot);
+                link.appendChild(title);
+                li.appendChild(link);
+                latestList.appendChild(li);
+              });
+            }
+          } else {
+            latestBox.hidden = true;
+          }
+        }
+
+        // ── Tile-urile de categorie din dashboard: în locul titlurilor
+        // întregi, etichetele scurte de subiect (data-subiect de pe carduri),
+        // despărțite prin „ · ", cele mai noi primele. Numărătoarea și bara
+        // se recalculează tot din carduri, deci o știre nouă apare automat
+        // și aici. Tile-ul „Toate știrile" își păstrează textul succint:
+        // numărul total de știri + numărul de rulări (grupuri de oră).
+        var kpiTiles = section.querySelectorAll('.kpi[data-filter]');
+        Array.prototype.slice.call(kpiTiles).forEach(function (tile) {
+          var f = tile.getAttribute('data-filter');
+          var valueEl = tile.querySelector('.kpi-value');
+          var subEl = tile.querySelector('.kpi-sub');
+          var barEl = tile.querySelector('.kpi-bar i');
+          if (f === 'toate') {
+            if (valueEl) valueEl.textContent = articles.length;
+            if (subEl) subEl.textContent = 'știri verificate azi, în ' + groups.length + (groups.length === 1 ? ' rulare' : ' rulări');
+            if (barEl) barEl.style.width = '100%';
+            return;
+          }
+          var inCat = articles.filter(function (a) {
+            return (a.getAttribute('data-cats') || '').split(' ').indexOf(f) !== -1;
+          });
+          if (valueEl) valueEl.textContent = inCat.length;
+          if (subEl) {
+            var labs = inCat.map(function (a) { return a.getAttribute('data-subiect') || ''; }).filter(Boolean);
+            subEl.textContent = labs.join(' · ');
+          }
+          if (barEl && articles.length) barEl.style.width = Math.round(inCat.length / articles.length * 100) + '%';
+        });
       })();
     </script>
     <script>
@@ -3526,7 +3823,7 @@
         // Filtrarea rulează independent în fiecare secțiune de zi (section.day):
         // tile-urile și butoanele de oră ale unei zile filtrează doar cardurile
         // acelei zile (plus rândurile cuprinsului din arhivă, care se sincronizează
-        // ca înainte; cuprinsul mutat sus al zilei curente nu se ascunde niciodată).
+        // ca înainte; cuprinsul zilei curente nu se ascunde niciodată).
         // ATENȚIE: selectorul trebuie să fie „section.day", nu „.day" — pastila
         // „Ediția de azi" din masthead are și ea clasa „day" (span.day); cu „.day"
         // bucla pornea pe acel span, unde .filter-reset lipsește (null), iar eroarea
@@ -3534,7 +3831,7 @@
         Array.prototype.slice.call(document.querySelectorAll('section.day')).forEach(function (section) {
         var tiles = Array.prototype.slice.call(section.querySelectorAll('.kpi[data-filter]'));
         // Butoanele de oră: barele „Ritmul zilei" din arhivă și, la ziua
-        // curentă, anteturile de grup .toc-hour din cuprinsul mutat sus —
+        // curentă, anteturile de grup .toc-hour din cuprins —
         // aceeași selecție unică, același comportament de comutare.
         var bars = Array.prototype.slice.call(section.querySelectorAll('.rhythm .col[data-hour], .toc-hour[data-hour]'));
         // Butoanele de severitate (doar ziua curentă): pătratele din dashboard
