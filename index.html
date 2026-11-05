@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="color-scheme" content="light dark" />
-    <meta name="tirile-versiune" content="2026-11-05T11:00:00+01:00|10|amber" />
+    <meta name="tirile-versiune" content="2026-11-05T12:05:00+01:00|11|amber" />
     <link rel="icon" href="data:," />
     <title>Știrile zilei</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -684,9 +684,9 @@
     <div class="topbar">
       <div class="topbar-inner">
         <span class="dot" aria-hidden="true"></span>
-        <span><strong>Joi, 5 noiembrie 2026</strong> · actualizat la <strong>11:00</strong></span>
+        <span><strong>Joi, 5 noiembrie 2026</strong> · actualizat la <strong>12:05</strong></span>
         <span aria-hidden="true">·</span>
-        <span>10 știri azi</span>
+        <span>11 știri azi</span>
         <span class="spacer"></span>
         <button class="refresh-btn" type="button" id="refreshBtn" aria-label="Reîmprospătează pagina">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg>
@@ -756,15 +756,15 @@
       <section class="dashboard" aria-label="Panou de ansamblu">
         <div class="dash-head">
           <span class="dash-title">Dashboard · Azi</span>
-          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 11:00</span>
+          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 12:05</span>
           <span class="dash-meta">Fereastră monitorizare <strong>L–V 06:00–22:00 · S–D 07:30–22:00</strong> · pas ~3 ore</span>
         </div>
 
         <div class="kpi-grid" role="group" aria-label="Filtrează după categorie — apasă pe un tile">
           <button class="kpi" type="button" data-filter="toate" aria-pressed="true">
             <span class="kpi-top"><span class="kpi-label">Toate știrile</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">10</span>
-            <span class="kpi-sub">știri verificate azi, în 5 rulări</span>
+            <span class="kpi-value">11</span>
+            <span class="kpi-sub">știri verificate azi, în 6 rulări</span>
             <span class="kpi-bar" aria-hidden="true"><i style="width:100%"></i></span>
             <span class="kpi-hint">Apasă pentru toate</span>
           </button>
@@ -772,21 +772,21 @@
             <span class="kpi-top"><span class="kpi-label">Securitate &amp; NATO</span><span class="kpi-check" aria-hidden="true">✓</span></span>
             <span class="kpi-value">3</span>
             <span class="kpi-sub">Colby la București · atacuri cibernetice asupra frigiderelor · rachetă europeană de atac rapid</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:30%"></i></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:27%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="romania" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">România</span><span class="kpi-check" aria-hidden="true">✓</span></span>
             <span class="kpi-value">2</span>
             <span class="kpi-sub">Colby la București · PNRR: 3,4 mld € în suspensie</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:20%"></i></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:18%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="tech" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">Tech &amp; AI</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">4</span>
-            <span class="kpi-sub">PAC-urile AI au pierdut în SUA · Meta cumpără Conductor · Apple taie bugetele AI · respingerea centrelor de date AI</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:40%"></i></span>
+            <span class="kpi-value">5</span>
+            <span class="kpi-sub">agenții AI nu comandă curse · PAC-urile AI au pierdut în SUA · Meta cumpără Conductor · Apple taie bugetele AI · respingerea centrelor de date AI</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:45%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
         </div>
@@ -800,7 +800,7 @@
       </section>
 
       <div class="filter-status" aria-live="polite">
-        <span class="filter-label">Se afișează: <strong>Toate categoriile — 10 din 10 știri</strong></span>
+        <span class="filter-label">Se afișează: <strong>Toate categoriile — 11 din 11 știri</strong></span>
         <button class="filter-reset" type="button" hidden>Resetează filtrul</button>
       </div>
 
@@ -828,14 +828,57 @@
       <p class="empty">Nicio știre în această categorie azi.</p>
 
       <main>
-        <!-- 1 · 5 nov · 11:00 -->
+        <!-- 1 · 5 nov · 12:00 -->
+        <article id="stire-59" data-cats="tech" data-sev="green" data-subiect="agenții AI nu comandă curse">
+          <div class="a-meta">
+            <span class="a-time">5 nov · 12:00</span>
+            <span class="a-cat">Tech &amp; AI</span>
+            <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
+            <span class="subj-pill">agenții AI nu comandă curse</span>
+            <span class="a-num">#1 / 11</span>
+          </div>
+          <h2>Aproape nimeni nu folosește agenți AI ca să-și comande Uber: doar 4 curse într-o săptămână-record</h2>
+
+          <div class="sec">
+            <p class="sec-label">Ce s-a întâmplat</p>
+            <p>La apelul cu investitorii pentru rezultatele trimestrului 3, miercuri 4 noiembrie, Uber a dezvăluit pentru prima dată cifrele comenzilor venite prin agenți AI terți: în săptămâna Halloween — cea mai aglomerată din octombrie — doar 4 curse au fost comandate printr-un agent AI, din aproximativ 320 de milioane de curse și comenzi Uber și Uber Eats în aceeași săptămână; la Uber Eats, circa 500 de comenzi au venit prin agenți. CEO-ul Dara Khosrowshahi a numit tracțiunea „foarte devreme și foarte limitată”.</p>
+          </div>
+
+          <div class="sec">
+            <p class="sec-label">De ce contează</p>
+            <p>E primul număr dur, de la o companie publică, despre cât se cumpără efectiv prin agenți AI — și e practic zero. După săptămânile cu Guardian Agents (Microsoft), Agent Gateway (Walmart) și achiziția Conductor de către Meta, cifra Uber temperează teza „webului agentic”: infrastructura de agenți există, dar utilizatorii încă nu o folosesc pentru tranzacții.</p>
+          </div>
+
+          <div class="verify">
+            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
+            <p>Verdict: confirmat. Surse: TechCrunch (4 nov 2026); BigGo Finance; Unite.ai; TradingKey (rezumatul apelului cu investitorii). Cifrele vin din declarațiile CFO-ului Uber, Balaji Krishnamurthy, la apelul public cu investitorii.</p>
+            <ul class="sources">
+              <li><a href="https://techcrunch.com/2026/11/04/almost-no-one-uses-ai-agents-to-book-their-uber-company-says/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>TechCrunch — „Almost no one uses AI agents to book their Uber, company says” (4 noiembrie 2026)<span class="host">techcrunch.com</span></a></li>
+              <li><a href="https://finance.biggo.com/news/e8f7454e-1d52-4061-9de6-e1ccd47c8bc4" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>BigGo Finance — relatarea cifrelor Uber despre comenzile prin agenți AI<span class="host">finance.biggo.com</span></a></li>
+              <li><a href="https://www.unite.ai/uber-says-ai-agents-booked-just-four-rides-during-halloween-week/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Unite.ai — „Uber says AI agents booked just four rides during Halloween week”<span class="host">unite.ai</span></a></li>
+              <li><a href="https://www.tradingkey.com/news/stocks/262274497-" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>TradingKey — rezumatul apelului cu investitorii al Uber<span class="host">tradingkey.com</span></a></li>
+            </ul>
+          </div>
+
+          <div class="opposing">
+            <p class="sec-label">Tabăra adversă</p>
+            <p>Dara Khosrowshahi, CEO Uber, susține că e doar o fază incipientă și speră ca utilizarea să crească — agenții terți pot aduce cerere nouă pe platformă, nu doar pot fura din cea existentă.</p>
+          </div>
+
+          <div class="impact">
+            <span class="badge">Impact direct</span>
+            <p>Impact direct: minim — relevanță de context. Pentru automatizările lui cu API-uri AI nu se schimbă nimic azi; agenții cu bani reali rămân încă excepția, nu regula.</p>
+          </div>
+        </article>
+
+        <!-- 2 · 5 nov · 11:00 -->
         <article id="stire-57" data-cats="tech" data-sev="green" data-subiect="PAC-urile AI au pierdut în SUA">
           <div class="a-meta">
             <span class="a-time">5 nov · 11:00</span>
             <span class="a-cat">Tech &amp; AI</span>
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <span class="subj-pill">PAC-urile AI au pierdut în SUA</span>
-            <span class="a-num">#1 / 10</span>
+            <span class="a-num">#2 / 11</span>
           </div>
           <h2>PAC-urile AI au cheltuit milioane ca să-și aleagă Congresul — și au pierdut în mare parte</h2>
 
@@ -870,14 +913,14 @@
           </div>
         </article>
 
-        <!-- 2 · 5 nov · 11:00 -->
+        <!-- 3 · 5 nov · 11:00 -->
         <article id="stire-58" data-cats="" data-sev="green" data-subiect="Atacul cibernetic costă Ahold €250 mil.">
           <div class="a-meta">
             <span class="a-time">5 nov · 11:00</span>
             <span class="a-cat">Belgia</span>
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <span class="subj-pill">Atacul cibernetic costă Ahold €250 mil.</span>
-            <span class="a-num">#2 / 10</span>
+            <span class="a-num">#3 / 11</span>
           </div>
           <h2>Ahold Delhaize pune preț pe atacul cibernetic din octombrie: până la 250 de milioane € din vânzări pierdute</h2>
 
@@ -907,14 +950,14 @@
           </div>
         </article>
 
-        <!-- 3 · 5 nov · 10:00 -->
+        <!-- 4 · 5 nov · 10:00 -->
         <article id="stire-55" data-cats="securitate romania" data-sev="amber" data-subiect="Colby la București">
           <div class="a-meta">
             <span class="a-time">5 nov · 10:00</span>
             <span class="a-cat">Securitate &amp; NATO · România</span>
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="subj-pill">Colby la București</span>
-            <span class="a-num">#3 / 10</span>
+            <span class="a-num">#4 / 11</span>
           </div>
           <h2>Colby la București: România își mărește contribuția la NATO, în timp ce Pentagonul decide soarta trupelor SUA în Europa</h2>
 
@@ -944,14 +987,14 @@
           </div>
         </article>
 
-        <!-- 4 · 5 nov · 10:00 -->
+        <!-- 5 · 5 nov · 10:00 -->
         <article id="stire-56" data-cats="tech" data-sev="green" data-subiect="Meta cumpără Conductor">
           <div class="a-meta">
             <span class="a-time">5 nov · 10:00</span>
             <span class="a-cat">Tech &amp; AI</span>
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <span class="subj-pill">Meta cumpără Conductor</span>
-            <span class="a-num">#4 / 10</span>
+            <span class="a-num">#5 / 11</span>
           </div>
           <h2>Meta cumpără Conductor, startupul care rulează mai mulți agenți de coding AI în paralel</h2>
 
@@ -980,14 +1023,14 @@
           </div>
         </article>
 
-        <!-- 5 · 5 nov · 09:00 -->
+        <!-- 6 · 5 nov · 09:00 -->
         <article id="stire-53" data-cats="romania" data-sev="amber" data-subiect="PNRR: 3,4 mld € în suspensie">
           <div class="a-meta">
             <span class="a-time">5 nov · 09:00</span>
             <span class="a-cat">România · Fonduri europene · PNRR</span>
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="subj-pill">PNRR: 3,4 mld € în suspensie</span>
-            <span class="a-num">#5 / 10</span>
+            <span class="a-num">#6 / 11</span>
           </div>
           <h2>România riscă să piardă 3,4 miliarde de euro din PNRR: ministrul Fondurilor Europene anunță că banii intră în suspendare</h2>
 
@@ -1018,14 +1061,14 @@
           </div>
         </article>
 
-        <!-- 6 · 5 nov · 09:00 -->
+        <!-- 7 · 5 nov · 09:00 -->
         <article id="stire-54" data-cats="tech" data-sev="amber" data-subiect="Apple taie bugetele AI">
           <div class="a-meta">
             <span class="a-time">5 nov · 09:00</span>
             <span class="a-cat">Tech &amp; AI · Costuri AI · Apple</span>
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="subj-pill">Apple taie bugetele AI</span>
-            <span class="a-num">#6 / 10</span>
+            <span class="a-num">#7 / 11</span>
           </div>
           <h2>Apple taie bugetele interne de AI ale angajaților: plafonul zilnic scade de la 300 la 200 de dolari</h2>
 
@@ -1056,7 +1099,7 @@
           </div>
         </article>
 
-        <!-- 7 · 5 nov · 08:00 -->
+        <!-- 8 · 5 nov · 08:00 -->
         <article id="stire-51" data-cats="securitate" data-sev="amber" data-subiect="atacuri cibernetice asupra frigiderelor">
           <div class="a-meta">
             <span class="a-time">5 nov · 08:00</span>
@@ -1064,7 +1107,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-24" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">atacuri cibernetice asupra frigiderelor</span>
-            <span class="a-num">#7 / 10</span>
+            <span class="a-num">#8 / 11</span>
           </div>
           <h2>Atacurile cibernetice asupra frigiderelor din Europa escaladează: trei bănci de sânge franceze lovite; România, printre țările vizate</h2>
 
@@ -1105,7 +1148,7 @@
           </div>
         </article>
 
-        <!-- 8 · 5 nov · 08:00 -->
+        <!-- 9 · 5 nov · 08:00 -->
         <article id="stire-52" data-cats="belgia" data-sev="amber" data-subiect="criza bugetară belgiană">
           <div class="a-meta">
             <span class="a-time">5 nov · 08:00</span>
@@ -1114,7 +1157,7 @@
             <span class="spot-tag">Știrea zilei</span>
             <a class="cont-pill" href="#stire-39" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">criza bugetară belgiană</span>
-            <span class="a-num">#8 / 10</span>
+            <span class="a-num">#9 / 11</span>
           </div>
           <h2>Criza bugetară belgiană: regele încheie azi consultările; trei scenarii pe masă — alegeri, coaliție nouă sau acord pe buget</h2>
 
@@ -1155,14 +1198,14 @@
           </div>
         </article>
 
-        <!-- 9 · 5 nov · 06:00 -->
+        <!-- 10 · 5 nov · 06:00 -->
         <article id="stire-49" data-cats="tech" data-sev="amber" data-subiect="respingerea centrelor de date AI">
           <div class="a-meta">
             <span class="a-time">5 nov · 06:00</span>
             <span class="a-cat">Tech &amp; AI · Centre de date · Alegeri SUA</span>
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="subj-pill">respingerea centrelor de date AI</span>
-            <span class="a-num">#9 / 10</span>
+            <span class="a-num">#10 / 11</span>
           </div>
           <h2>Votanții americani au respins centrele de date AI la alegerile de la jumătatea mandatului: restricții în zeci de localități, Ohio în frunte</h2>
 
@@ -1199,14 +1242,14 @@
           </div>
         </article>
 
-        <!-- 10 · 5 nov · 06:00 -->
+        <!-- 11 · 5 nov · 06:00 -->
         <article id="stire-50" data-cats="securitate" data-sev="green" data-subiect="rachetă europeană de atac rapid">
           <div class="a-meta">
             <span class="a-time">5 nov · 06:00</span>
             <span class="a-cat">Securitate &amp; NATO · Rachete · MBDA</span>
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <span class="subj-pill">rachetă europeană de atac rapid</span>
-            <span class="a-num">#10 / 10</span>
+            <span class="a-num">#11 / 11</span>
           </div>
           <h2>MBDA pregătește racheta supersonică Stratus RS: rază «mult, mult» peste Exocet, pentru Franța și Marea Britanie</h2>
 
