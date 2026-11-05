@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="color-scheme" content="light dark" />
-    <meta name="tirile-versiune" content="2026-11-05T06:00:00+01:00|2|amber" />
+    <meta name="tirile-versiune" content="2026-11-05T08:00:00+01:00|4|amber" />
     <link rel="icon" href="data:," />
     <title>Știrile zilei</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -684,9 +684,9 @@
     <div class="topbar">
       <div class="topbar-inner">
         <span class="dot" aria-hidden="true"></span>
-        <span><strong>Joi, 5 noiembrie 2026</strong> · actualizat la <strong>06:00</strong></span>
+        <span><strong>Joi, 5 noiembrie 2026</strong> · actualizat la <strong>08:00</strong></span>
         <span aria-hidden="true">·</span>
-        <span>2 știri azi</span>
+        <span>4 știri azi</span>
         <span class="spacer"></span>
         <button class="refresh-btn" type="button" id="refreshBtn" aria-label="Reîmprospătează pagina">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg>
@@ -725,8 +725,9 @@
       <!-- Chenar permanent: știrea cea mai importantă a zilei — sub fereastra
            „Ultimele știri", ÎNAINTEA dashboardului, vizibilă din prima, fără scroll.
            Nivelul de azi: GALBEN (sev-amber) — de urmărit, evoluție importantă, fără acțiune imediată:
-           votanții americani au respins centrele de date AI la alegerile de la
-           jumătatea mandatului (singura știre galbenă a zilei).
+           criza bugetară belgiană — regele încheie azi consultările, decizia privind
+           demisia lui De Wever vine vineri (cea mai importantă dintre cele trei
+           știri galbene ale zilei, țara în care locuiește).
            Chenarul rămâne în afara logicii de filtrare: vizibil indiferent de filtrul de categorie. -->
       <section class="spot sev-amber" aria-label="Știrea cea mai importantă a zilei">
         <div class="spot-head">
@@ -734,15 +735,15 @@
             <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13 2 4.5 13.5H11L9.5 22 19 10h-6.5L13 2z"/></svg>
             Știrea zilei · Atenție rapidă
           </span>
-          <span class="spot-time">5 nov · 06:00</span>
+          <span class="spot-time">5 nov · 08:00</span>
           <span class="spot-pill">Nivel galben — de urmărit</span>
         </div>
-        <h2 class="spot-title">Votanții americani au respins centrele de date AI la alegerile de la jumătatea mandatului: restricții în zeci de localități, Ohio în frunte</h2>
-        <p class="spot-why"><strong>De ce e în față:</strong> valul de opoziție locală, combinat cu un Congres cu majoritate democrată, pune presiune pe ritmul construcției de centre de date care alimentează boomul AI — costurile cu energia și autorizațiile devin variabila care poate încetini infrastructura AI.</p>
-        <p class="spot-lead">La alegerile de marți, 3 noiembrie 2026, măsurile de restricționare a centrelor de date au trecut în aproape toate localitățile unde au fost pe buletinul de vot: 33 de măsuri au trecut sau conduceau, față de o singură victorie a industriei, în Dakota de Nord, potrivit trackerului Data Centers on the Ballot. Ohio a fost epicentrul, cu 21 de măsuri.</p>
-        <p class="spot-more" hidden><span class="spot-more-text"></span> <button class="spot-more-btn" type="button">apasă aici</button></p>
+        <h2 class="spot-title">Criza bugetară belgiană: regele încheie azi consultările; trei scenarii pe masă — alegeri, coaliție nouă sau acord pe buget</h2>
+        <p class="spot-why"><strong>De ce e în față:</strong> miza e de 10 miliarde € în economii și venituri suplimentare până în 2029, într-o țară cu un deficit de 5,2% din PIB și o datorie publică de circa 108% din PIB, sub procedura UE de deficit excesiv — un guvern căzut sau alegeri anticipate ar prelungi incertitudinea fiscală exact când se decid taxele și cheltuielile pentru 2027.</p>
+        <p class="spot-lead">Regele Philippe încheie azi consultările cu liderii coaliției, primind-o pe președinta N-VA, Valérie Van Peel, după ce marți și miercuri i-a primit pe liderii Les Engagés, CD&V, Vooruit și MR. Premierul Bart De Wever, care și-a prezentat demisia luni după eșecul negocierilor pentru bugetul 2027, revine vineri la Palat, la 10:30, când e așteptată decizia regelui. Brussels Times analizează azi trei scenarii: alegeri anticipate, o coaliție nouă sau un acord pe buget.</p>
+        <p class="spot-more"><span class="spot-more-text">Mai sunt și alte 2 știri cu aceeași severitate —</span> <button class="spot-more-btn" type="button" data-sev-value="amber" aria-label="Apasă aici ca să vezi doar știrile cu severitatea Galben — de urmărit">apasă aici</button></p>
         <div class="spot-foot">
-          <a class="spot-link" href="#stire-49">Citește știrea completă ↓</a>
+          <a class="spot-link" href="#stire-52">Citește știrea completă ↓</a>
           <div class="sev-scale" role="img" aria-label="Scară de gravitate: verde — normal, galben — de urmărit, roșu — grav. Nivelul de azi: galben.">
             <span class="sev-item"><i class="sev-dot g" aria-hidden="true"></i>Verde · normal</span>
             <span class="sev-item on"><i class="sev-dot y" aria-hidden="true"></i>Galben · de urmărit</span>
@@ -755,22 +756,22 @@
       <section class="dashboard" aria-label="Panou de ansamblu">
         <div class="dash-head">
           <span class="dash-title">Dashboard · Azi</span>
-          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 06:00</span>
+          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 08:00</span>
           <span class="dash-meta">Fereastră monitorizare <strong>L–V 06:00–22:00 · S–D 07:30–22:00</strong> · pas ~3 ore</span>
         </div>
 
         <div class="kpi-grid" role="group" aria-label="Filtrează după categorie — apasă pe un tile">
           <button class="kpi" type="button" data-filter="toate" aria-pressed="true">
             <span class="kpi-top"><span class="kpi-label">Toate știrile</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">2</span>
-            <span class="kpi-sub">știri verificate azi, în 1 rulare</span>
+            <span class="kpi-value">4</span>
+            <span class="kpi-sub">știri verificate azi, în 2 rulări</span>
             <span class="kpi-bar" aria-hidden="true"><i style="width:100%"></i></span>
             <span class="kpi-hint">Apasă pentru toate</span>
           </button>
           <button class="kpi" type="button" data-filter="securitate" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">Securitate &amp; NATO</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">1</span>
-            <span class="kpi-sub">rachetă europeană de atac rapid</span>
+            <span class="kpi-value">2</span>
+            <span class="kpi-sub">atacuri cibernetice asupra frigiderelor · rachetă europeană de atac rapid</span>
             <span class="kpi-bar" aria-hidden="true"><i style="width:50%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
@@ -785,7 +786,7 @@
             <span class="kpi-top"><span class="kpi-label">Tech &amp; AI</span><span class="kpi-check" aria-hidden="true">✓</span></span>
             <span class="kpi-value">1</span>
             <span class="kpi-sub">respingerea centrelor de date AI</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:50%"></i></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:25%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
         </div>
@@ -799,7 +800,7 @@
       </section>
 
       <div class="filter-status" aria-live="polite">
-        <span class="filter-label">Se afișează: <strong>Toate categoriile — 2 din 2 știri</strong></span>
+        <span class="filter-label">Se afișează: <strong>Toate categoriile — 4 din 4 știri</strong></span>
         <button class="filter-reset" type="button" hidden>Resetează filtrul</button>
       </div>
 
@@ -827,15 +828,113 @@
       <p class="empty">Nicio știre în această categorie azi.</p>
 
       <main>
-        <!-- 1 · 5 nov · 06:00 -->
+        <!-- 1 · 5 nov · 08:00 -->
+        <article id="stire-51" data-cats="securitate" data-sev="amber" data-subiect="atacuri cibernetice asupra frigiderelor">
+          <div class="a-meta">
+            <span class="a-time">5 nov · 08:00</span>
+            <span class="a-cat">Securitate &amp; NATO · Securitate cibernetică · Infrastructură medicală</span>
+            <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
+            <a class="cont-pill" href="#stire-24" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
+            <span class="subj-pill">atacuri cibernetice asupra frigiderelor</span>
+            <span class="a-num">#1 / 4</span>
+          </div>
+          <h2>Atacurile cibernetice asupra frigiderelor din Europa escaladează: trei bănci de sânge franceze lovite; România, printre țările vizate</h2>
+
+          <div class="followup">
+            <span class="tag">Urmare la</span>
+            <p><a href="#stire-24">„Atac cibernetic suspect la frigiderele Delhaize și Carrefour din Belgia: cel puțin 40 de magazine Delhaize și 15 Carrefour afectate peste noapte”</a> — luni, 2 noiembrie 2026.</p>
+          </div>
+
+          <div class="sec">
+            <p class="sec-label">Ce s-a întâmplat</p>
+            <p>În noaptea de 1 spre 2 noiembrie, un atac cibernetic a vizat sistemele de monitorizare și control ale frigiderelor de la trei centre ale Serviciului național francez de sânge (EFS), prin sistemul furnizorului extern de echipamente frigorifice. Setările de temperatură și dezgheț au fost modificate la valori extreme — presa franceză relatează un prag programat de 110°C, față de −30°C în mod normal — dar alarmele au detectat anomaliile, produsele au fost mutate în alte facilități, iar EFS confirmă că nu s-au pierdut produse din sânge și nu există consecințe pentru sănătate. Atacul vine în același val cu incidentele de la supermarketuri din 2 noiembrie, care au lovit magazine în mai multe țări europene — Belgia, Luxemburg, Suedia, Finlanda, Irlanda, Estonia și Țările de Jos — plus magazine vizate în Portugalia și România.</p>
+          </div>
+
+          <div class="sec">
+            <p class="sec-label">De ce contează</p>
+            <p>Ținta nu mai e un magazin, ci lanțul de sânge și medicamente: același tip de echipament (controlere frigorifice administrate de un furnizor extern) lovește acum infrastructura medicală. Pentru un incident manager la NCIA, e un caz manual de atac asupra unui furnizor terț care compromite sisteme operaționale, nu rețeaua IT centrală — iar ancheta agenției franceze de securitate cibernetică (ANSSI) și a Ministerului Sănătății din Franța e încă deschisă.</p>
+          </div>
+
+          <div class="verify">
+            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
+            <p>Verdict: confirmat. Surse: EFS, prin comunicatul propriu (sursă primară pentru propriul incident), confirmă atacul asupra celor trei centre, anomaliile de temperatură detectate de alarme și lipsa pierderilor de produse; Help Net Security (4 noiembrie) și Reuters (5 noiembrie) confirmă independent incidentul; The Brussels Times (4 noiembrie) consemnează că supermarketurile belgiene fuseseră avertizate de riscurile cibernetice înaintea valului de atacuri.</p>
+            <ul class="sources">
+              <li><a href="https://www.g4media.ro/trei-banci-de-sange-franceze-au-fost-atacate-cibernetic-temperatura-din-frigidere-a-crescut-brusc.html" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>EFS, comunicat (sursă primară pentru propriul incident, relatat de G4Media) — „Trei bănci de sânge franceze au fost atacate cibernetic, temperatura din frigidere a crescut brusc”<span class="host">g4media.ro</span></a></li>
+              <li><a href="https://www.helpnetsecurity.com/2026/11/04/cyberattack-hits-french-blood-banks/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Help Net Security — „Cyberattack hits French blood banks” (4 noiembrie 2026)<span class="host">helpnetsecurity.com</span></a></li>
+              <li><a href="https://www.thenews.pk/print/1446963-cyberattack-targets-french-blood-banks" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Reuters — „Cyberattack targets French blood banks” (5 noiembrie 2026, prin The News International)<span class="host">thenews.pk</span></a></li>
+              <li><a href="https://www.brusselstimes.com/belgium/2389696/belgian-supermarkets-were-warned-of-cyber-risks-could-the-attacks-have-been-prevented" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>The Brussels Times — „Belgian supermarkets were warned of cyber risks: could the attacks have been prevented?” (4 noiembrie 2026)<span class="host">brusselstimes.com</span></a></li>
+            </ul>
+          </div>
+
+          <div class="opposing">
+            <p class="sec-label">Tabăra adversă</p>
+            <p>Xavier Bellekens, directorul firmei de threat intelligence Lupovis, a declarat pentru <a href="https://www.helpnetsecurity.com/2026/11/04/cyberattack-hits-french-blood-banks/" target="_blank" rel="noopener">Help Net Security</a> că, din 20 octombrie, au fost observate încercări de autentificare asupra controlerelor frigorifice Danfoss venind din rețele folosite anterior de adversari ruși. ANSSI și EFS nu au atribuit public atacul, iar nicio dovadă publică nu leagă o vulnerabilitate Danfoss anume de incidentul EFS.</p>
+          </div>
+
+          <div class="impact">
+            <span class="badge">Impact direct</span>
+            <p>Impact direct: minim — nu s-au pierdut produse, nu există consecințe pentru sănătate; în Belgia, magazine Delhaize și Carrefour au avut rafturi golite temporar la 2 noiembrie. Relevanță profesională: modelul de atac (furnizor extern → sisteme operaționale) e exact tipul de incident urmărit în domeniul lui de incident management.</p>
+          </div>
+        </article>
+
+        <!-- 2 · 5 nov · 08:00 -->
+        <article id="stire-52" data-cats="belgia" data-sev="amber" data-subiect="criza bugetară belgiană">
+          <div class="a-meta">
+            <span class="a-time">5 nov · 08:00</span>
+            <span class="a-cat">Belgia · Criză bugetară · Politică federală</span>
+            <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
+            <span class="spot-tag">Știrea zilei</span>
+            <a class="cont-pill" href="#stire-39" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
+            <span class="subj-pill">criza bugetară belgiană</span>
+            <span class="a-num">#2 / 4</span>
+          </div>
+          <h2>Criza bugetară belgiană: regele încheie azi consultările; trei scenarii pe masă — alegeri, coaliție nouă sau acord pe buget</h2>
+
+          <div class="followup">
+            <span class="tag">Urmare la</span>
+            <p><a href="#stire-39">„Criza bugetară belgiană: regele îi primește azi pe Rousseau și Bouchez; patronatele cer reluarea negocierilor, decizia privind demisia lui De Wever vine vineri”</a> — miercuri, 4 noiembrie 2026, ora 13:00.</p>
+          </div>
+
+          <div class="sec">
+            <p class="sec-label">Ce s-a întâmplat</p>
+            <p>Regele Philippe încheie azi consultările cu liderii coaliției, primind-o pe președinta N-VA, Valérie Van Peel, după ce marți și miercuri i-a primit pe liderii Les Engagés, CD&V, Vooruit și MR. Premierul Bart De Wever, care și-a prezentat demisia luni după eșecul negocierilor pentru bugetul 2027, revine vineri la Palat, la 10:30, când e așteptată decizia regelui. Brussels Times analizează azi trei scenarii: alegeri anticipate, o coaliție nouă sau un acord pe buget. Între timp, un buget de urgență (douăsprezecimi provizorii) devine tot mai probabil dacă nu se ajunge la un acord — guvernul ar funcționa din nou cu buget provizoriu, al doilea an consecutiv.</p>
+          </div>
+
+          <div class="sec">
+            <p class="sec-label">De ce contează</p>
+            <p>Miza e de 10 miliarde € în economii și venituri suplimentare până în 2029, într-o țară cu un deficit de 5,2% din PIB și o datorie publică de circa 108% din PIB, sub procedura UE de deficit excesiv. Un guvern căzut sau alegeri anticipate ar prelungi incertitudinea fiscală exact când se decid taxele și cheltuielile pentru 2027.</p>
+          </div>
+
+          <div class="verify">
+            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
+            <p>Verdict: confirmat. Surse: The Brussels Times (5 noiembrie) analizează cele trei scenarii deschise în fața regelui — alegeri anticipate, coaliție nouă sau acord pe buget — iar tot Brussels Times (4 noiembrie) consemnează că bugetul de urgență devine tot mai probabil; ING Think (3 noiembrie) confirmă gravitatea situației bugetare; Belgium Now (4 noiembrie) confirmă programul consultărilor regale.</p>
+            <ul class="sources">
+              <li><a href="https://www.brusselstimes.com/belgium/2391073/elections-new-coalition-or-budget-deal-three-scenarios-as-king-weighs-up-de-wevers-resignation" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>The Brussels Times — „Elections, new coalition or budget deal: three scenarios as king weighs up De Wever's resignation” (5 noiembrie 2026)<span class="host">brusselstimes.com</span></a></li>
+              <li><a href="https://www.brusselstimes.com/politics/2388560/emergency-budget-becoming-inevitable-for-belgium-what-does-it-mean" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>The Brussels Times — „Emergency budget becoming inevitable for Belgium: what does it mean” (4 noiembrie 2026)<span class="host">brusselstimes.com</span></a></li>
+              <li><a href="https://think.ing.com/downloads/pdf/article/belgium-the-situation-is-serious-but-not-hopeless" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>ING Think — „Belgium: the situation is serious, but not hopeless” (3 noiembrie 2026)<span class="host">think.ing.com</span></a></li>
+              <li><a href="https://belgium-now.com/2026/11/04/king-receives-rousseau-bouchez-budget-deadlock/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Belgium Now — „King receives Rousseau, Bouchez — budget deadlock” (4 noiembrie 2026)<span class="host">belgium-now.com</span></a></li>
+            </ul>
+          </div>
+
+          <div class="opposing">
+            <p class="sec-label">Tabăra adversă</p>
+            <p>OCDE, într-o analiză citată de <a href="https://www.brusselstimes.com/belgium/2390096/more-cuts-over-tax-rises-oecd-weighs-in-on-belgiums-budget-debate" target="_blank" rel="noopener">Brussels Times</a> pe 4 noiembrie, pledează pentru mai multe tăieri de cheltuieli decât majorări de taxe în dezbaterea bugetară — o poziție care tensionează tocmai linia de fractură a coaliției, între socialiștii din Vooruit și liberalii din MR.</p>
+          </div>
+
+          <div class="impact">
+            <span class="badge">Impact direct</span>
+            <p>Impact direct: concret, dar amânat până vineri — decizia regelui stabilește dacă Belgia intră în alegeri anticipate sau rămâne cu un guvern care negociază mai departe; până atunci nu e nimic concret de făcut, doar de urmărit decizia de vineri.</p>
+          </div>
+        </article>
+
+        <!-- 3 · 5 nov · 06:00 -->
         <article id="stire-49" data-cats="tech" data-sev="amber" data-subiect="respingerea centrelor de date AI">
           <div class="a-meta">
             <span class="a-time">5 nov · 06:00</span>
             <span class="a-cat">Tech &amp; AI · Centre de date · Alegeri SUA</span>
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
-            <span class="spot-tag">Știrea zilei</span>
             <span class="subj-pill">respingerea centrelor de date AI</span>
-            <span class="a-num">#1 / 2</span>
+            <span class="a-num">#3 / 4</span>
           </div>
           <h2>Votanții americani au respins centrele de date AI la alegerile de la jumătatea mandatului: restricții în zeci de localități, Ohio în frunte</h2>
 
@@ -872,14 +971,14 @@
           </div>
         </article>
 
-        <!-- 2 · 5 nov · 06:00 -->
+        <!-- 4 · 5 nov · 06:00 -->
         <article id="stire-50" data-cats="securitate" data-sev="green" data-subiect="rachetă europeană de atac rapid">
           <div class="a-meta">
             <span class="a-time">5 nov · 06:00</span>
             <span class="a-cat">Securitate &amp; NATO · Rachete · MBDA</span>
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <span class="subj-pill">rachetă europeană de atac rapid</span>
-            <span class="a-num">#2 / 2</span>
+            <span class="a-num">#4 / 4</span>
           </div>
           <h2>MBDA pregătește racheta supersonică Stratus RS: rază «mult, mult» peste Exocet, pentru Franța și Marea Britanie</h2>
 
