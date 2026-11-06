@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="color-scheme" content="light dark" />
-    <meta name="tirile-versiune" content="2026-11-06T17:00:00+01:00|14|red" />
+    <meta name="tirile-versiune" content="2026-11-06T18:00:00+01:00|15|red" />
     <link rel="icon" href="data:," />
     <title>Știrile zilei</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -646,15 +646,15 @@
         background:var(--sev-amber-bg);border:1px solid var(--sev-amber-border);border-radius:8px;padding:12px 14px;margin-top:12px;
       }
       .opposing .sec-label{color:var(--amber)}
-      .impact{
+      .impact,.action{
         margin-top:14px;padding-top:12px;border-top:1px solid var(--line);
         display:flex;gap:12px;align-items:flex-start;
       }
-      .impact .badge{
+      .impact .badge,.action .badge{
         flex:none;font-size:.78rem;font-weight:700;background:var(--amber-soft);color:var(--amber);
         padding:4px 10px;border-radius:6px;margin-top:2px;white-space:nowrap;
       }
-      .impact p{margin:0}
+      .impact p,.action p{margin:0}
 
       footer{margin-top:44px;color:var(--muted);font-size:.9rem;text-align:center}
       footer .rule{width:56px;height:3px;background:var(--accent);border-radius:2px;margin:0 auto 18px}
@@ -676,7 +676,7 @@
         .spot-pill{margin-left:0}
         .index li a{gap:9px}
         .index .cat-dot{display:none}
-        .impact{flex-direction:column;gap:6px}
+        .impact,.action{flex-direction:column;gap:6px}
         .topbar-inner{padding:9px 14px}
         .status-list .k{width:102px}
         .followup,.action-line{flex-direction:column;gap:6px}
@@ -699,9 +699,9 @@
     <div class="topbar">
       <div class="topbar-inner">
         <span class="dot" aria-hidden="true"></span>
-        <span><strong>Vineri, 6 noiembrie 2026</strong> · actualizat la <strong>17:00</strong></span>
+        <span><strong>Vineri, 6 noiembrie 2026</strong> · actualizat la <strong>18:00</strong></span>
         <span aria-hidden="true">·</span>
-        <span>14 știri azi</span>
+        <span>15 știri azi</span>
         <span class="spacer"></span>
         <button class="refresh-btn" type="button" id="refreshBtn" aria-label="Reîmprospătează pagina">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg>
@@ -773,44 +773,44 @@
       <section class="dashboard" aria-label="Panou de ansamblu">
         <div class="dash-head">
           <span class="dash-title">Dashboard · Azi</span>
-          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 17:00</span>
+          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 18:00</span>
           <span class="dash-meta">Fereastră monitorizare <strong>L–V 06:00–22:00 · S–D 07:30–22:00</strong> · pas ~3 ore</span>
         </div>
 
         <div class="kpi-grid five" role="group" aria-label="Filtrează după categorie — apasă pe un tile">
           <button class="kpi" type="button" data-filter="toate" aria-pressed="true">
             <span class="kpi-top"><span class="kpi-label">Toate știrile</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">14</span>
-            <span class="kpi-sub">știri verificate azi, în 11 rulări</span>
+            <span class="kpi-value">15</span>
+            <span class="kpi-sub">știri verificate azi, în 12 rulări</span>
             <span class="kpi-bar" aria-hidden="true"><i style="width:100%"></i></span>
             <span class="kpi-hint">Apasă pentru toate</span>
           </button>
           <button class="kpi" type="button" data-filter="securitate" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">Securitate &amp; NATO</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">8</span>
-            <span class="kpi-sub">Shield AI cumpără Echodyne, radar anti-dronă · negocieri de pace Ucraina · amenințări cu bombă, ziua a 3-a · vizita von der Leyen în România · proiect de drone cu Ucraina · arhitectură de securitate europeană · plata trupelor SUA în România · atac double-tap în Ucraina</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:57%"></i></span>
+            <span class="kpi-value">9</span>
+            <span class="kpi-sub">vigilență EUCOM amenințări hibride · Shield AI cumpără Echodyne, radar anti-dronă · negocieri de pace Ucraina · amenințări cu bombă, ziua a 3-a · vizita von der Leyen în România · proiect de drone cu Ucraina · arhitectură de securitate europeană · plata trupelor SUA în România · atac double-tap în Ucraina</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:60%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="romania" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">România</span><span class="kpi-check" aria-hidden="true">✓</span></span>
             <span class="kpi-value">3</span>
             <span class="kpi-sub">vizita von der Leyen în România · proiect de drone cu Ucraina · plata trupelor SUA în România</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:21%"></i></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:20%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="belgia" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">Belgia</span><span class="kpi-check" aria-hidden="true">✓</span></span>
             <span class="kpi-value">2</span>
             <span class="kpi-sub">amenințări cu bombă, ziua a 3-a · criza bugetară belgiană</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:14%"></i></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:13%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="tech" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">Tech &amp; AI</span><span class="kpi-check" aria-hidden="true">✓</span></span>
             <span class="kpi-value">5</span>
             <span class="kpi-sub">cheltuieli AI stagnează, IPO Anthropic · cumpărături Alexa prin SMS · supraveghere AI respinsă · achiziție securitate agenți AI · IPO OpenAI în 2027</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:36%"></i></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:33%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
         </div>
@@ -824,7 +824,7 @@
       </section>
 
       <div class="filter-status" aria-live="polite">
-        <span class="filter-label">Se afișează: <strong>Toate categoriile — 14 din 14 știri</strong></span>
+        <span class="filter-label">Se afișează: <strong>Toate categoriile — 15 din 15 știri</strong></span>
         <button class="filter-reset" type="button" hidden>Resetează filtrul</button>
       </div>
 
@@ -854,7 +854,44 @@
       <p class="empty">Nicio știre în această categorie azi.</p>
 
       <main>
-        <!-- 1 · 6 nov · 17:00 -->
+        <!-- 1 · 6 nov · 18:00 -->
+        <article id="stire-87" data-cats="securitate" data-sev="amber" data-subiect="vigilență EUCOM amenințări hibride">
+          <div class="a-meta">
+            <span class="a-time">6 nov · 18:00</span>
+            <span class="a-cat">Securitate &amp; NATO</span>
+            <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
+            <span class="subj-pill">vigilență EUCOM amenințări hibride</span>
+            <span class="a-num">#1 / 15</span>
+          </div>
+          <h2>Comandamentul SUA în Europa lansează campania de vigilență „See Something, Do Something”: rute de navetă variate și geotagging oprit la aplicațiile de fitness</h2>
+          <div class="sec">
+            <p class="sec-label">Ce s-a întâmplat</p>
+            <p>Comandamentul SUA în Europa (EUCOM) a lansat campania de vigilență „See Something, Do Something”, prin care cere militarilor, familiilor lor și angajaților civili americani din Europa să fie atenți la comportamente suspecte în interiorul și în afara bazelor și să-și acopere urmele digitale în deplasări. Ghidul cere „disciplină digitală riguroasă”: verificarea setărilor de confidențialitate pe rețelele sociale, dezactivarea geotagging-ului la aplicațiile de fitness și pe dispozitivele mobile și evitarea postărilor despre locație și călătorii; plus varierea rutelor și orelor de navetă și a activităților din afara bazei, „pentru a reduce predictibilitatea”. EUCOM nu a indicat o amenințare concretă care să fi declanșat campania, dar contextul e cel al incursiunilor cu drone și al amenințărilor hibride: în septembrie Germania a acuzat Rusia de un atac eșuat cu drone încărcate cu explozivi la aeroportul Leipzig/Halle, iar în octombrie armata germană a ridicat evaluarea amenințării de sabotaj la „semnificativ”, al doilea cel mai înalt nivel.</p>
+          </div>
+          <div class="sec">
+            <p class="sec-label">De ce contează</p>
+            <p>Continuă direct arcul amenințărilor hibride urmărit în pagină (alerta Bundeswehr din 21 octombrie, arestarea pentru spionaj din 22 octombrie): de data asta nu e o alertă despre un incident, ci un ghid de conduită pentru personalul care lucrează în și în jurul instalațiilor aliate din Europa — exact mediul de lucru zilnic al cititorului, ca IT incident Manager. Recomandările nu sunt teoretice: naveta zilnică pe același traseu, la aceleași ore, și alergările înregistrate cu GPS și publicate online sunt exact tiparele pe care ghidul le cere variate, respectiv oprite.</p>
+          </div>
+          <div class="verify">
+            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
+            <p>Verdict: confirmat. Defense News (6 noiembrie 2026, 15:39 UTC) relatează anunțul EUCOM, cu citatul comandantului, generalul Alexus Grynkewich. Stars and Stripes a relatat prima campania (3 noiembrie), iar The Record confirmă independent conținutul ghidului (3 noiembrie), citând Stars and Stripes; SSBCrack News reia relatarea azi (6 noiembrie). Precizare de integritate: campania a fost lansată pe 3 noiembrie; articolul Defense News care o aduce în agenda de azi e din 6 noiembrie și se încadrează în fereastra de 48 de ore.</p>
+            <ul class="sources">
+              <li><a href="https://www.defensenews.com/news/2026/11/06/us-european-command-launches-vigilance-campaign-as-hybrid-threats-mount/" target="_blank" rel="noopener">Defense News — „US European Command launches vigilance campaign as hybrid threats mount” (6 noiembrie 2026)<span class="host">defensenews.com</span></a></li>
+              <li><a href="https://therecorddaily.com/eu-bases-on-edge-what-changed/" target="_blank" rel="noopener">The Record — „EU Bases On Edge – What Changed?” (3 noiembrie 2026)<span class="host">therecorddaily.com</span></a></li>
+              <li><a href="https://news.ssbcrack.com/u-s-european-command-launches-see-something-do-something-initiative-amid-security-concerns/" target="_blank" rel="noopener">SSBCrack News — „U.S. European Command Launches "See Something, Do Something" Initiative Amid Security Concerns” (6 noiembrie 2026)<span class="host">news.ssbcrack.com</span></a></li>
+            </ul>
+          </div>
+          <div class="impact">
+            <span class="badge">Impact direct</span>
+            <p>Impact direct concret: alergările cu GPS publicate online și naveta zilnică pe același traseu, la aceleași ore, sunt exact tiparele vizate de ghid — verificarea setărilor de geotagging și confidențialitate e o acțiune de câteva minute, nu o schimbare de program. Pentru familie: aceleași reguli se aplică și membrilor familiei când postează despre deplasări. Campania e un ghid de vigilență, nu o alertă despre o amenințare specifică — nu impune schimbări de rută sau de program.</p>
+          </div>
+          <div class="action">
+            <span class="badge">Acțiune</span>
+            <p>Verifică setările de geotagging și confidențialitate la aplicațiile de alergare/fitness (GPS oprit la publicare) și evită postările publice despre orele și traseul navetei.</p>
+          </div>
+        </article>
+
+        <!-- 2 · 6 nov · 17:00 -->
         <article id="stire-85" data-cats="tech" data-sev="amber" data-subiect="cheltuieli AI stagnează, IPO Anthropic">
           <div class="a-meta">
             <span class="a-time">6 nov · 17:00</span>
@@ -862,7 +899,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-41" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">cheltuieli AI stagnează, IPO Anthropic</span>
-            <span class="a-num">#1 / 14</span>
+            <span class="a-num">#2 / 15</span>
           </div>
           <h2>Cheltuielile cu AI stagnează chiar când Anthropic se apropie de IPO: evaluarea discutată a coborât la 1,2–1,3 trilioane $</h2>
 
@@ -898,14 +935,14 @@
           </div>
         </article>
 
-        <!-- 2 · 6 nov · 17:00 -->
+        <!-- 3 · 6 nov · 17:00 -->
         <article id="stire-86" data-cats="securitate" data-sev="green" data-subiect="Shield AI cumpără Echodyne, radar anti-dronă">
           <div class="a-meta">
             <span class="a-time">6 nov · 17:00</span>
             <span class="a-cat">Securitate &amp; NATO</span>
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <span class="subj-pill">Shield AI cumpără Echodyne, radar anti-dronă</span>
-            <span class="a-num">#2 / 14</span>
+            <span class="a-num">#3 / 15</span>
           </div>
           <h2>Shield AI cumpără producătorul de radare anti-dronă Echodyne cu 5,3 mld $ și se evaluează la 28,8 mld $</h2>
 
@@ -936,7 +973,7 @@
           </div>
         </article>
 
-        <!-- 3 · 6 nov · 16:00 -->
+        <!-- 4 · 6 nov · 16:00 -->
         <article id="stire-83" data-cats="securitate" data-sev="amber" data-subiect="negocieri de pace Ucraina">
           <div class="a-meta">
             <span class="a-time">6 nov · 16:00</span>
@@ -944,7 +981,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-77" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">negocieri de pace Ucraina</span>
-            <span class="a-num">#3 / 14</span>
+            <span class="a-num">#4 / 15</span>
           </div>
           <h2>Consiliul NATO–Ucraina, sesiune extraordinară la Bruxelles; Trump spune că acordul cu Rusia e «foarte aproape», după întâlnirea cu emisarul lui Putin</h2>
 
@@ -979,14 +1016,14 @@
           </div>
         </article>
 
-        <!-- 4 · 6 nov · 16:00 -->
+        <!-- 5 · 6 nov · 16:00 -->
         <article id="stire-84" data-cats="tech" data-sev="green" data-subiect="cumpărături Alexa prin SMS">
           <div class="a-meta">
             <span class="a-time">6 nov · 16:00</span>
             <span class="a-cat">Tech &amp; AI</span>
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <span class="subj-pill">cumpărături Alexa prin SMS</span>
-            <span class="a-num">#4 / 14</span>
+            <span class="a-num">#5 / 15</span>
           </div>
           <h2>Amazon lasă clienții să-i trimită SMS agentului Alexa ca să cumpere — după ce în septembrie a blocat agentul Muse al Meta</h2>
 
@@ -1017,7 +1054,7 @@
           </div>
         </article>
 
-        <!-- 5 · 6 nov · 15:00 -->
+        <!-- 6 · 6 nov · 15:00 -->
         <article id="stire-82" data-cats="securitate belgia" data-sev="amber" data-subiect="amenințări cu bombă, ziua a 3-a">
           <div class="a-meta">
             <span class="a-time">6 nov · 15:00</span>
@@ -1025,7 +1062,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-64" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">amenințări cu bombă, ziua a 3-a</span>
-            <span class="a-num">#5 / 14</span>
+            <span class="a-num">#6 / 15</span>
           </div>
           <h2>Amenințări cu bombă la zborurile europene, ziua a treia: cel puțin 35 de zboruri afectate; curse TAROM și Wizz Air spre București, amenințări trimise și redacțiilor de știri</h2>
 
@@ -1065,7 +1102,7 @@
           </div>
         </article>
 
-        <!-- 6 · 6 nov · 14:00 -->
+        <!-- 7 · 6 nov · 14:00 -->
         <article id="stire-81" data-cats="securitate romania" data-sev="green" data-subiect="vizita von der Leyen în România">
           <div class="a-meta">
             <span class="a-time">6 nov · 14:00</span>
@@ -1073,7 +1110,7 @@
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <a class="cont-pill" href="#stire-80" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">vizita von der Leyen în România</span>
-            <span class="a-num">#6 / 14</span>
+            <span class="a-num">#7 / 15</span>
           </div>
           <h2>Ursula von der Leyen vine luni la București, în turneu în regiunea Mării Negre: întâlniri cu Nicușor Dan și Luca Niculescu</h2>
 
@@ -1108,7 +1145,7 @@
           </div>
         </article>
 
-        <!-- 7 · 6 nov · 13:00 -->
+        <!-- 8 · 6 nov · 13:00 -->
         <article id="stire-79" data-cats="belgia" data-sev="amber" data-subiect="criza bugetară belgiană">
           <div class="a-meta">
             <span class="a-time">6 nov · 13:00</span>
@@ -1116,7 +1153,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-68" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">criza bugetară belgiană</span>
-            <span class="a-num">#7 / 14</span>
+            <span class="a-num">#8 / 15</span>
           </div>
           <h2>Regele Philippe nu a acceptat demisia lui De Wever: negocierile pentru bugetul 2027 se reiau imediat, cu raport la palat pe 16 noiembrie</h2>
 
@@ -1150,7 +1187,7 @@
           </div>
         </article>
 
-        <!-- 8 · 6 nov · 13:00 -->
+        <!-- 9 · 6 nov · 13:00 -->
         <article id="stire-80" data-cats="securitate romania" data-sev="amber" data-subiect="proiect de drone cu Ucraina">
           <div class="a-meta">
             <span class="a-time">6 nov · 13:00</span>
@@ -1158,7 +1195,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-55" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">proiect de drone cu Ucraina</span>
-            <span class="a-num">#8 / 14</span>
+            <span class="a-num">#9 / 15</span>
           </div>
           <h2>Niculescu anunță un proiect româno-ucrainean de drone de circa 200 mil. €: «Destul de des primesc mesaje noaptea privind dronele care vin în România»</h2>
 
@@ -1193,14 +1230,14 @@
           </div>
         </article>
 
-        <!-- 9 · 6 nov · 12:00 -->
+        <!-- 10 · 6 nov · 12:00 -->
         <article id="stire-78" data-cats="tech" data-sev="green" data-subiect="supraveghere AI respinsă">
           <div class="a-meta">
             <span class="a-time">6 nov · 12:00</span>
             <span class="a-cat">Tech &amp; AI</span>
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <span class="subj-pill">supraveghere AI respinsă</span>
-            <span class="a-num">#9 / 14</span>
+            <span class="a-num">#10 / 15</span>
           </div>
           <h2>Cel puțin 10 administrații locale din SUA au renunțat la camerele de supraveghere Flock din vară, pe fondul temerilor de supraveghere în masă</h2>
 
@@ -1235,14 +1272,14 @@
           </div>
         </article>
 
-        <!-- 10 · 6 nov · 11:00 -->
+        <!-- 11 · 6 nov · 11:00 -->
         <article id="stire-77" data-cats="securitate" data-sev="amber" data-subiect="arhitectură de securitate europeană">
           <div class="a-meta">
             <span class="a-time">6 nov · 11:00</span>
             <span class="a-cat">Securitate &amp; NATO</span>
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="subj-pill">arhitectură de securitate europeană</span>
-            <span class="a-num">#10 / 14</span>
+            <span class="a-num">#11 / 15</span>
           </div>
           <h2>Kushner propune cinci obiective pentru o «arhitectură de securitate europeană» mai amplă, înaintea discuțiilor trilaterale de la Abu Dhabi</h2>
 
@@ -1276,7 +1313,7 @@
           </div>
         </article>
 
-        <!-- 11 · 6 nov · 09:00 -->
+        <!-- 12 · 6 nov · 09:00 -->
         <article id="stire-76" data-cats="tech" data-sev="amber" data-subiect="achiziție securitate agenți AI">
           <div class="a-meta">
             <span class="a-time">6 nov · 09:00</span>
@@ -1284,7 +1321,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-34" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">achiziție securitate agenți AI</span>
-            <span class="a-num">#11 / 14</span>
+            <span class="a-num">#12 / 15</span>
           </div>
           <h2>Palo Alto Networks negociază cumpărarea Clutch Security, startup de securitate pentru agenți AI, pentru ~500 mil. $</h2>
 
@@ -1320,7 +1357,7 @@
           </div>
         </article>
 
-        <!-- 12 · 6 nov · 08:00 -->
+        <!-- 13 · 6 nov · 08:00 -->
         <article id="stire-75" data-cats="securitate romania" data-sev="amber" data-subiect="plata trupelor SUA în România">
           <div class="a-meta">
             <span class="a-time">6 nov · 08:00</span>
@@ -1328,7 +1365,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-55" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">plata trupelor SUA în România</span>
-            <span class="a-num">#12 / 14</span>
+            <span class="a-num">#13 / 15</span>
           </div>
           <h2>România, dispusă să plătească o parte din costurile trupelor SUA — mesajul transmis lui Colby de Niculescu și Nicușor Dan</h2>
 
@@ -1369,7 +1406,7 @@
           </div>
         </article>
 
-        <!-- 13 · 6 nov · 07:00 -->
+        <!-- 14 · 6 nov · 07:00 -->
         <article id="stire-74" data-cats="securitate" data-sev="red" data-subiect="atac double-tap în Ucraina">
           <div class="a-meta">
             <span class="a-time">6 nov · 07:00</span>
@@ -1377,7 +1414,7 @@
             <span class="sev-pill is-red"><i aria-hidden="true"></i>Roșu · grav</span>
             <span class="spot-tag">Știrea zilei</span>
             <span class="subj-pill">atac double-tap în Ucraina</span>
-            <span class="a-num">#13 / 14</span>
+            <span class="a-num">#14 / 15</span>
           </div>
           <h2>Atac rusesc „double-tap” asupra unui punct de ajutor umanitar în Komyshuvakha: cel puțin 42 de morți, zeci încă sub dărâmături</h2>
 
@@ -1412,7 +1449,7 @@
           </div>
         </article>
 
-        <!-- 14 · 6 nov · 06:00 -->
+        <!-- 15 · 6 nov · 06:00 -->
         <article id="stire-73" data-cats="tech" data-sev="green" data-subiect="IPO OpenAI în 2027">
           <div class="a-meta">
             <span class="a-time">6 nov · 06:00</span>
@@ -1420,7 +1457,7 @@
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <a class="cont-pill" href="#stire-16" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">IPO OpenAI în 2027</span>
-            <span class="a-num">#14 / 14</span>
+            <span class="a-num">#15 / 15</span>
           </div>
           <h2>OpenAI ar putea fi gata de IPO în 2027: veniturile din enterprise au devenit majoritare</h2>
 
