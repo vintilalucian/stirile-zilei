@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="color-scheme" content="light dark" />
-    <meta name="tirile-versiune" content="2026-11-06T18:00:00+01:00|15|red" />
+    <meta name="tirile-versiune" content="2026-11-06T20:00:00+01:00|16|red" />
     <link rel="icon" href="data:," />
     <title>Știrile zilei</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -699,7 +699,7 @@
     <div class="topbar">
       <div class="topbar-inner">
         <span class="dot" aria-hidden="true"></span>
-        <span><strong>Vineri, 6 noiembrie 2026</strong> · actualizat la <strong>18:00</strong></span>
+        <span><strong>Vineri, 6 noiembrie 2026</strong> · actualizat la <strong>20:00</strong></span>
         <span aria-hidden="true">·</span>
         <span>15 știri azi</span>
         <span class="spacer"></span>
@@ -773,7 +773,7 @@
       <section class="dashboard" aria-label="Panou de ansamblu">
         <div class="dash-head">
           <span class="dash-title">Dashboard · Azi</span>
-          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 18:00</span>
+          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 20:00</span>
           <span class="dash-meta">Fereastră monitorizare <strong>L–V 06:00–22:00 · S–D 07:30–22:00</strong> · pas ~3 ore</span>
         </div>
 
@@ -824,7 +824,7 @@
       </section>
 
       <div class="filter-status" aria-live="polite">
-        <span class="filter-label">Se afișează: <strong>Toate categoriile — 15 din 15 știri</strong></span>
+        <span class="filter-label">Se afișează: <strong>Toate categoriile — 16 din 16 știri</strong></span>
         <button class="filter-reset" type="button" hidden>Resetează filtrul</button>
       </div>
 
@@ -854,14 +854,50 @@
       <p class="empty">Nicio știre în această categorie azi.</p>
 
       <main>
-        <!-- 1 · 6 nov · 18:00 -->
+        <!-- 1 · 6 nov · 20:00 -->
+        <article id="stire-88" data-cats="tech securitate" data-sev="amber" data-subiect="instrument AI de hacking expus">
+          <div class="a-meta">
+            <span class="a-time">6 nov · 20:00</span>
+            <span class="a-cat">Tech &amp; AI</span>
+            <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
+            <span class="subj-pill">instrument AI de hacking expus</span>
+            <span class="a-num">#1 / 16</span>
+          </div>
+          <h2>Sute de copii ale instrumentului de hacking cu AI Artex, expuse public pe internet — oricine le poate folosi pentru atacuri cibernetice</h2>
+
+          <div class="sec">
+            <p class="sec-label">Ce s-a întâmplat</p>
+            <p>Firma de securitate Censys a descoperit peste 800 de instalări distincte ale Artex — un instrument open-source de testare a securității condus autonom de modele AI, lansat pe GitHub în iulie 2026 — accesibile public pe internet fără parolă. În total, Censys a numărat 1.465 de gazde cu consola Artex expusă; după eliminarea a două blocuri de hosting identic configurate rămân ~815 instalări distincte. Artex sondează automat sistemele în căutare de vulnerabilități și a fost deja legat de atacuri reale: industria financiară din Coreea de Sud în septembrie și atacul asupra gigantului de suport IT ConnectWise din octombrie, prin care hackeri legați de China au putut spiona mii de organizații ale căror date sunt găzduite în cloudul Microsoft. Pe 155 dintre gazdele expuse (10,6%), Censys a găsit și alte instrumente de atac — inclusiv 32 de directoare deschise cu kituri post-exploatare, stagers și implanturi. Nu fiecare instalare expusă e malițioasă — instrumentul e folosit și de testeri autorizați — dar oricine poate prelua acum o consolă gata făcută și o poate folosi pentru atacuri. Autorul Artex a anunțat că instrumentul devine closed-source, cu lansări viitoare doar pentru clienți plătitori.</p>
+          </div>
+
+          <div class="sec">
+            <p class="sec-label">De ce contează</p>
+            <p>Continuă direct arcul urmărit în pagină despre agenții AI ca sursă de incidente (breach-ul OpenCode din 20 octombrie, Guardian Agents ai Microsoft): de data asta nu e un agent care scapă de sub control, ci un instrument de atac cu AI, autonom, pus pe tavă — expus public, fără parolă, și deja folosit în campanii reale. Pentru un IT incident Manager, asta înseamnă că bariera de intrare pentru atacuri sofisticate coboară drastic: un atacator nu mai are nevoie să construiască infrastructura, o găsește gata expusă pe internet. Și reversul: instrumentele de testare cu AI pe care le-ar putea folosi și apărătorii devin, odată expuse, arme la îndemâna oricui.</p>
+          </div>
+
+          <div class="verify">
+            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
+            <p>Verdict: confirmat. TechCrunch (6 noiembrie 2026, 18:44 UTC) relatează raportul Censys din 5 noiembrie, semnat de cercetătorul principal Silas Cutler: peste 800 de instalări distincte ale Artex, accesibile fără parolă. InfoSecurity Magazine (6 noiembrie) confirmă independent cifrele — 1.465 de gazde cu consola expusă, ~815 instalări distincte, 155 de gazde cu alte amenințări detectate — iar CybersecurityNews (6 noiembrie) confirmă aceleași cifre și legătura cu atacurile asupra industriei financiare sud-coreene și asupra ConnectWise.</p>
+            <ul class="sources">
+              <li><a href="https://techcrunch.com/2026/11/06/hundreds-of-artex-ai-hacking-tools-found-publicly-exposed-to-the-web/" target="_blank" rel="noopener">TechCrunch — „Hundreds of Artex AI hacking tools found publicly exposed to the web” (6 noiembrie 2026)<span class="host">techcrunch.com</span></a></li>
+              <li><a href="https://www.infosecurity-magazine.com/news/artex-activity-exceeds-reported/" target="_blank" rel="noopener">InfoSecurity Magazine — „ARTEX Offensive AI Tool Activity Far Exceeds Reported Campaigns” (6 noiembrie 2026)<span class="host">infosecurity-magazine.com</span></a></li>
+              <li><a href="https://cybersecuritynews.com/artex-ai-hacking-framework/" target="_blank" rel="noopener">CybersecurityNews — „ARTEX AI Hacking Framework Found on 1,465 Public Servers, Some Hosting Cyberattack Tools” (6 noiembrie 2026)<span class="host">cybersecuritynews.com</span></a></li>
+            </ul>
+          </div>
+
+          <div class="impact">
+            <span class="badge">Impact direct</span>
+            <p>Impact direct: minim azi — nu administrează servere expuse și nu rulează Artex. Relevanță profesională ridicată: instrumentele autonome de pentest cu AI devin suprafață de incident la scară — un singur controler Artex a vizat peste 200 de organizații din cel puțin 14 țări în 11 zile, potrivit CrowdStrike. Pentru automatizările lui cu API-uri AI, lecția e aceeași ca la OpenCode: orice consolă sau cheie expusă public devine infrastructură de atac pentru altcineva.</p>
+          </div>
+        </article>
+        <!-- 2 · 6 nov · 18:00 -->
         <article id="stire-87" data-cats="securitate" data-sev="amber" data-subiect="vigilență EUCOM amenințări hibride">
           <div class="a-meta">
             <span class="a-time">6 nov · 18:00</span>
             <span class="a-cat">Securitate &amp; NATO</span>
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="subj-pill">vigilență EUCOM amenințări hibride</span>
-            <span class="a-num">#1 / 15</span>
+            <span class="a-num">#2 / 16</span>
           </div>
           <h2>Comandamentul SUA în Europa lansează campania de vigilență „See Something, Do Something”: rute de navetă variate și geotagging oprit la aplicațiile de fitness</h2>
           <div class="sec">
@@ -891,7 +927,7 @@
           </div>
         </article>
 
-        <!-- 2 · 6 nov · 17:00 -->
+        <!-- 3 · 6 nov · 17:00 -->
         <article id="stire-85" data-cats="tech" data-sev="amber" data-subiect="cheltuieli AI stagnează, IPO Anthropic">
           <div class="a-meta">
             <span class="a-time">6 nov · 17:00</span>
@@ -899,7 +935,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-41" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">cheltuieli AI stagnează, IPO Anthropic</span>
-            <span class="a-num">#2 / 15</span>
+            <span class="a-num">#3 / 16</span>
           </div>
           <h2>Cheltuielile cu AI stagnează chiar când Anthropic se apropie de IPO: evaluarea discutată a coborât la 1,2–1,3 trilioane $</h2>
 
@@ -935,14 +971,14 @@
           </div>
         </article>
 
-        <!-- 3 · 6 nov · 17:00 -->
+        <!-- 4 · 6 nov · 17:00 -->
         <article id="stire-86" data-cats="securitate" data-sev="green" data-subiect="Shield AI cumpără Echodyne, radar anti-dronă">
           <div class="a-meta">
             <span class="a-time">6 nov · 17:00</span>
             <span class="a-cat">Securitate &amp; NATO</span>
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <span class="subj-pill">Shield AI cumpără Echodyne, radar anti-dronă</span>
-            <span class="a-num">#3 / 15</span>
+            <span class="a-num">#4 / 16</span>
           </div>
           <h2>Shield AI cumpără producătorul de radare anti-dronă Echodyne cu 5,3 mld $ și se evaluează la 28,8 mld $</h2>
 
@@ -973,7 +1009,7 @@
           </div>
         </article>
 
-        <!-- 4 · 6 nov · 16:00 -->
+        <!-- 5 · 6 nov · 16:00 -->
         <article id="stire-83" data-cats="securitate" data-sev="amber" data-subiect="negocieri de pace Ucraina">
           <div class="a-meta">
             <span class="a-time">6 nov · 16:00</span>
@@ -981,7 +1017,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-77" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">negocieri de pace Ucraina</span>
-            <span class="a-num">#4 / 15</span>
+            <span class="a-num">#5 / 16</span>
           </div>
           <h2>Consiliul NATO–Ucraina, sesiune extraordinară la Bruxelles; Trump spune că acordul cu Rusia e «foarte aproape», după întâlnirea cu emisarul lui Putin</h2>
 
@@ -1016,14 +1052,14 @@
           </div>
         </article>
 
-        <!-- 5 · 6 nov · 16:00 -->
+        <!-- 6 · 6 nov · 16:00 -->
         <article id="stire-84" data-cats="tech" data-sev="green" data-subiect="cumpărături Alexa prin SMS">
           <div class="a-meta">
             <span class="a-time">6 nov · 16:00</span>
             <span class="a-cat">Tech &amp; AI</span>
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <span class="subj-pill">cumpărături Alexa prin SMS</span>
-            <span class="a-num">#5 / 15</span>
+            <span class="a-num">#6 / 16</span>
           </div>
           <h2>Amazon lasă clienții să-i trimită SMS agentului Alexa ca să cumpere — după ce în septembrie a blocat agentul Muse al Meta</h2>
 
@@ -1054,7 +1090,7 @@
           </div>
         </article>
 
-        <!-- 6 · 6 nov · 15:00 -->
+        <!-- 7 · 6 nov · 15:00 -->
         <article id="stire-82" data-cats="securitate belgia" data-sev="amber" data-subiect="amenințări cu bombă, ziua a 3-a">
           <div class="a-meta">
             <span class="a-time">6 nov · 15:00</span>
@@ -1062,7 +1098,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-64" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">amenințări cu bombă, ziua a 3-a</span>
-            <span class="a-num">#6 / 15</span>
+            <span class="a-num">#7 / 16</span>
           </div>
           <h2>Amenințări cu bombă la zborurile europene, ziua a treia: cel puțin 35 de zboruri afectate; curse TAROM și Wizz Air spre București, amenințări trimise și redacțiilor de știri</h2>
 
@@ -1102,7 +1138,7 @@
           </div>
         </article>
 
-        <!-- 7 · 6 nov · 14:00 -->
+        <!-- 8 · 6 nov · 14:00 -->
         <article id="stire-81" data-cats="securitate romania" data-sev="green" data-subiect="vizita von der Leyen în România">
           <div class="a-meta">
             <span class="a-time">6 nov · 14:00</span>
@@ -1110,7 +1146,7 @@
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <a class="cont-pill" href="#stire-80" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">vizita von der Leyen în România</span>
-            <span class="a-num">#7 / 15</span>
+            <span class="a-num">#8 / 16</span>
           </div>
           <h2>Ursula von der Leyen vine luni la București, în turneu în regiunea Mării Negre: întâlniri cu Nicușor Dan și Luca Niculescu</h2>
 
@@ -1145,7 +1181,7 @@
           </div>
         </article>
 
-        <!-- 8 · 6 nov · 13:00 -->
+        <!-- 9 · 6 nov · 13:00 -->
         <article id="stire-79" data-cats="belgia" data-sev="amber" data-subiect="criza bugetară belgiană">
           <div class="a-meta">
             <span class="a-time">6 nov · 13:00</span>
@@ -1153,7 +1189,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-68" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">criza bugetară belgiană</span>
-            <span class="a-num">#8 / 15</span>
+            <span class="a-num">#9 / 16</span>
           </div>
           <h2>Regele Philippe nu a acceptat demisia lui De Wever: negocierile pentru bugetul 2027 se reiau imediat, cu raport la palat pe 16 noiembrie</h2>
 
@@ -1187,7 +1223,7 @@
           </div>
         </article>
 
-        <!-- 9 · 6 nov · 13:00 -->
+        <!-- 10 · 6 nov · 13:00 -->
         <article id="stire-80" data-cats="securitate romania" data-sev="amber" data-subiect="proiect de drone cu Ucraina">
           <div class="a-meta">
             <span class="a-time">6 nov · 13:00</span>
@@ -1195,7 +1231,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-55" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">proiect de drone cu Ucraina</span>
-            <span class="a-num">#9 / 15</span>
+            <span class="a-num">#10 / 16</span>
           </div>
           <h2>Niculescu anunță un proiect româno-ucrainean de drone de circa 200 mil. €: «Destul de des primesc mesaje noaptea privind dronele care vin în România»</h2>
 
@@ -1230,14 +1266,14 @@
           </div>
         </article>
 
-        <!-- 10 · 6 nov · 12:00 -->
+        <!-- 11 · 6 nov · 12:00 -->
         <article id="stire-78" data-cats="tech" data-sev="green" data-subiect="supraveghere AI respinsă">
           <div class="a-meta">
             <span class="a-time">6 nov · 12:00</span>
             <span class="a-cat">Tech &amp; AI</span>
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <span class="subj-pill">supraveghere AI respinsă</span>
-            <span class="a-num">#10 / 15</span>
+            <span class="a-num">#11 / 16</span>
           </div>
           <h2>Cel puțin 10 administrații locale din SUA au renunțat la camerele de supraveghere Flock din vară, pe fondul temerilor de supraveghere în masă</h2>
 
@@ -1272,14 +1308,14 @@
           </div>
         </article>
 
-        <!-- 11 · 6 nov · 11:00 -->
+        <!-- 12 · 6 nov · 11:00 -->
         <article id="stire-77" data-cats="securitate" data-sev="amber" data-subiect="arhitectură de securitate europeană">
           <div class="a-meta">
             <span class="a-time">6 nov · 11:00</span>
             <span class="a-cat">Securitate &amp; NATO</span>
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="subj-pill">arhitectură de securitate europeană</span>
-            <span class="a-num">#11 / 15</span>
+            <span class="a-num">#12 / 16</span>
           </div>
           <h2>Kushner propune cinci obiective pentru o «arhitectură de securitate europeană» mai amplă, înaintea discuțiilor trilaterale de la Abu Dhabi</h2>
 
@@ -1313,7 +1349,7 @@
           </div>
         </article>
 
-        <!-- 12 · 6 nov · 09:00 -->
+        <!-- 13 · 6 nov · 09:00 -->
         <article id="stire-76" data-cats="tech" data-sev="amber" data-subiect="achiziție securitate agenți AI">
           <div class="a-meta">
             <span class="a-time">6 nov · 09:00</span>
@@ -1321,7 +1357,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-34" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">achiziție securitate agenți AI</span>
-            <span class="a-num">#12 / 15</span>
+            <span class="a-num">#13 / 16</span>
           </div>
           <h2>Palo Alto Networks negociază cumpărarea Clutch Security, startup de securitate pentru agenți AI, pentru ~500 mil. $</h2>
 
@@ -1357,7 +1393,7 @@
           </div>
         </article>
 
-        <!-- 13 · 6 nov · 08:00 -->
+        <!-- 14 · 6 nov · 08:00 -->
         <article id="stire-75" data-cats="securitate romania" data-sev="amber" data-subiect="plata trupelor SUA în România">
           <div class="a-meta">
             <span class="a-time">6 nov · 08:00</span>
@@ -1365,7 +1401,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-55" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">plata trupelor SUA în România</span>
-            <span class="a-num">#13 / 15</span>
+            <span class="a-num">#14 / 16</span>
           </div>
           <h2>România, dispusă să plătească o parte din costurile trupelor SUA — mesajul transmis lui Colby de Niculescu și Nicușor Dan</h2>
 
@@ -1406,7 +1442,7 @@
           </div>
         </article>
 
-        <!-- 14 · 6 nov · 07:00 -->
+        <!-- 15 · 6 nov · 07:00 -->
         <article id="stire-74" data-cats="securitate" data-sev="red" data-subiect="atac double-tap în Ucraina">
           <div class="a-meta">
             <span class="a-time">6 nov · 07:00</span>
@@ -1414,7 +1450,7 @@
             <span class="sev-pill is-red"><i aria-hidden="true"></i>Roșu · grav</span>
             <span class="spot-tag">Știrea zilei</span>
             <span class="subj-pill">atac double-tap în Ucraina</span>
-            <span class="a-num">#14 / 15</span>
+            <span class="a-num">#15 / 16</span>
           </div>
           <h2>Atac rusesc „double-tap” asupra unui punct de ajutor umanitar în Komyshuvakha: cel puțin 42 de morți, zeci încă sub dărâmături</h2>
 
@@ -1449,7 +1485,7 @@
           </div>
         </article>
 
-        <!-- 15 · 6 nov · 06:00 -->
+        <!-- 16 · 6 nov · 06:00 -->
         <article id="stire-73" data-cats="tech" data-sev="green" data-subiect="IPO OpenAI în 2027">
           <div class="a-meta">
             <span class="a-time">6 nov · 06:00</span>
@@ -1457,7 +1493,7 @@
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <a class="cont-pill" href="#stire-16" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">IPO OpenAI în 2027</span>
-            <span class="a-num">#15 / 15</span>
+            <span class="a-num">#16 / 16</span>
           </div>
           <h2>OpenAI ar putea fi gata de IPO în 2027: veniturile din enterprise au devenit majoritare</h2>
 
