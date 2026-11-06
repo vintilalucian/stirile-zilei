@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="color-scheme" content="light dark" />
-    <meta name="tirile-versiune" content="2026-11-06T11:05:00+01:00|5|red" />
+    <meta name="tirile-versiune" content="2026-11-06T12:00:00+01:00|6|red" />
     <link rel="icon" href="data:," />
     <title>Știrile zilei</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -699,9 +699,9 @@
     <div class="topbar">
       <div class="topbar-inner">
         <span class="dot" aria-hidden="true"></span>
-        <span><strong>Vineri, 6 noiembrie 2026</strong> · actualizat la <strong>11:00</strong></span>
+        <span><strong>Vineri, 6 noiembrie 2026</strong> · actualizat la <strong>12:00</strong></span>
         <span aria-hidden="true">·</span>
-        <span>5 știri azi</span>
+        <span>6 știri azi</span>
         <span class="spacer"></span>
         <button class="refresh-btn" type="button" id="refreshBtn" aria-label="Reîmprospătează pagina">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg>
@@ -773,15 +773,15 @@
       <section class="dashboard" aria-label="Panou de ansamblu">
         <div class="dash-head">
           <span class="dash-title">Dashboard · Azi</span>
-          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 11:00</span>
+          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 12:00</span>
           <span class="dash-meta">Fereastră monitorizare <strong>L–V 06:00–22:00 · S–D 07:30–22:00</strong> · pas ~3 ore</span>
         </div>
 
         <div class="kpi-grid five" role="group" aria-label="Filtrează după categorie — apasă pe un tile">
           <button class="kpi" type="button" data-filter="toate" aria-pressed="true">
             <span class="kpi-top"><span class="kpi-label">Toate știrile</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">5</span>
-            <span class="kpi-sub">știri verificate azi, în 5 rulări</span>
+            <span class="kpi-value">6</span>
+            <span class="kpi-sub">știri verificate azi, în 6 rulări</span>
             <span class="kpi-bar" aria-hidden="true"><i style="width:100%"></i></span>
             <span class="kpi-hint">Apasă pentru toate</span>
           </button>
@@ -789,14 +789,14 @@
             <span class="kpi-top"><span class="kpi-label">Securitate &amp; NATO</span><span class="kpi-check" aria-hidden="true">✓</span></span>
             <span class="kpi-value">3</span>
             <span class="kpi-sub">arhitectură de securitate europeană · plata trupelor SUA în România · atac double-tap în Ucraina</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:60%"></i></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:50%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="romania" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">România</span><span class="kpi-check" aria-hidden="true">✓</span></span>
             <span class="kpi-value">1</span>
             <span class="kpi-sub">plata trupelor SUA în România</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:20%"></i></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:17%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="belgia" aria-pressed="false">
@@ -808,9 +808,9 @@
           </button>
           <button class="kpi" type="button" data-filter="tech" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">Tech &amp; AI</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">2</span>
-            <span class="kpi-sub">achiziție securitate agenți AI · IPO OpenAI în 2027</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:40%"></i></span>
+            <span class="kpi-value">3</span>
+            <span class="kpi-sub">supraveghere AI respinsă · achiziție securitate agenți AI · IPO OpenAI în 2027</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:50%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
         </div>
@@ -824,7 +824,7 @@
       </section>
 
       <div class="filter-status" aria-live="polite">
-        <span class="filter-label">Se afișează: <strong>Toate categoriile — 5 din 5 știri</strong></span>
+        <span class="filter-label">Se afișează: <strong>Toate categoriile — 6 din 6 știri</strong></span>
         <button class="filter-reset" type="button" hidden>Resetează filtrul</button>
       </div>
 
@@ -854,14 +854,56 @@
       <p class="empty">Nicio știre în această categorie azi.</p>
 
       <main>
-        <!-- 1 · 6 nov · 11:00 -->
+        <!-- 1 · 6 nov · 12:00 -->
+        <article id="stire-78" data-cats="tech" data-sev="green" data-subiect="supraveghere AI respinsă">
+          <div class="a-meta">
+            <span class="a-time">6 nov · 12:00</span>
+            <span class="a-cat">Tech &amp; AI</span>
+            <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
+            <span class="subj-pill">supraveghere AI respinsă</span>
+            <span class="a-num">#1 / 6</span>
+          </div>
+          <h2>Cel puțin 10 administrații locale din SUA au renunțat la camerele de supraveghere Flock din vară, pe fondul temerilor de supraveghere în masă</h2>
+
+          <div class="sec">
+            <p class="sec-label">Ce s-a întâmplat</p>
+            <p>Din vară, cel puțin 10 administrații locale și departamente de poliție din SUA au restrâns sau au încheiat folosirea tehnologiei Flock Safety — camere cu citire automată a plăcuțelor de înmatriculare, drone și microfoane. În ultimele trei luni au renunțat Monroe (Ohio), Newburgh (New York), Richmond (Virginia), Hopkinton, New Bedford (Massachusetts) și Lansing (Michigan), iar locuitorii din League City (Texas) au votat săptămâna aceasta împotriva continuării folosirii, camerele urmând să fie demontate. Florida a interzis cititoarele de plăcuțe pe autostrăzile de stat, iar Texas a suspendat finanțarea de stat pentru Flock; compania a anunțat că scurtează stocarea implicită a datelor pentru clienții noi de la 30 la 7 zile.</p>
+          </div>
+
+          <div class="sec">
+            <p class="sec-label">De ce contează</p>
+            <p>Reacția face parte dintr-o respingere mai largă a tehnologiei AI de supraveghere — recunoaștere facială, baze de date cu mișcările vehiculelor, partajarea datelor cu agenții federale. Pentru cine urmărește agenții AI și infrastructura de supraveghere, cazul arată cum se pierde încrederea într-un furnizor: abuzuri documentate ale sistemului de către polițiști și întrebări fără răspuns despre cine poate interoga baza de date.</p>
+          </div>
+
+          <div class="verify">
+            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
+            <p>Verdict: confirmat. TechCrunch, 6 noiembrie 2026 (sursa curatoriată, relatarea originală). Confirmări independente din afara listei: The Washington Post (investigație din august 2026 cu 46 de cazuri de presupus abuz al sistemului de către polițiști), WIRED (relatări despre programul de plecări voluntare al companiei și îndoieli privind originea americană a camerelor), Newsweek (harta orașelor care renunță la Flock) și presa locală — South Coast Today (New Bedford, 6 noiembrie) și Herald Times Reporter (Two Rivers, 3 noiembrie).</p>
+            <ul class="sources">
+              <li><a href="https://techcrunch.com/2026/11/05/at-least-10-local-governments-have-moved-to-drop-flocks-surveillance-cameras-since-summer/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>TechCrunch — „At least 10 local governments have moved to drop Flock’s surveillance cameras since summer” (6 noiembrie 2026)<span class="host">techcrunch.com</span></a></li>
+              <li><a href="https://www.southcoasttoday.com/story/news/2026/11/06/new-bedford-eyes-new-post-flock-rules-heres-what-they-could-include/92626999007/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>South Coast Today — New Bedford, reguli post-Flock (6 noiembrie 2026)<span class="host">southcoasttoday.com</span></a></li>
+              <li><a href="https://www.htrnews.com/story/news/local/2026/11/03/two-rivers-ends-flock-safety-license-plate-camera-contract-manitowoc/92584923007/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Herald Times Reporter — Two Rivers încheie contractul Flock Safety (3 noiembrie 2026)<span class="host">htrnews.com</span></a></li>
+            </ul>
+          </div>
+
+          <div class="opposing">
+            <p class="sec-label">Tabăra adversă</p>
+            <p>Flock Safety, prin CEO Garrett Langley, susține că scopul final al companiei «nu este un viitor distopic al supravegherii» (Newsweek); compania afirmă că nu vinde date și că nu are contract cu ICE (TechCrunch). (<a href="https://techcrunch.com/2026/11/05/at-least-10-local-governments-have-moved-to-drop-flocks-surveillance-cameras-since-summer/" target="_blank" rel="noopener">techcrunch.com</a>)</p>
+          </div>
+
+          <div class="impact">
+            <span class="badge">Impact direct</span>
+            <p>Impact direct: minim — fenomen american, fără efect asupra vieții de zi cu zi în Belgia. Relevanță de context: supravegherea cu AI, retenția datelor și accesul agențiilor federale la baze de date private sunt exact temele de confidențialitate și incident management pe care le urmărește.</p>
+          </div>
+        </article>
+
+        <!-- 2 · 6 nov · 11:00 -->
         <article id="stire-77" data-cats="securitate" data-sev="amber" data-subiect="arhitectură de securitate europeană">
           <div class="a-meta">
             <span class="a-time">6 nov · 11:00</span>
             <span class="a-cat">Securitate &amp; NATO</span>
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="subj-pill">arhitectură de securitate europeană</span>
-            <span class="a-num">#1 / 5</span>
+            <span class="a-num">#2 / 6</span>
           </div>
           <h2>Kushner propune cinci obiective pentru o «arhitectură de securitate europeană» mai amplă, înaintea discuțiilor trilaterale de la Abu Dhabi</h2>
 
@@ -895,7 +937,7 @@
           </div>
         </article>
 
-        <!-- 2 · 6 nov · 09:00 -->
+        <!-- 3 · 6 nov · 09:00 -->
         <article id="stire-76" data-cats="tech" data-sev="amber" data-subiect="achiziție securitate agenți AI">
           <div class="a-meta">
             <span class="a-time">6 nov · 09:00</span>
@@ -903,7 +945,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-34" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">achiziție securitate agenți AI</span>
-            <span class="a-num">#2 / 5</span>
+            <span class="a-num">#3 / 6</span>
           </div>
           <h2>Palo Alto Networks negociază cumpărarea Clutch Security, startup de securitate pentru agenți AI, pentru ~500 mil. $</h2>
 
@@ -939,7 +981,7 @@
           </div>
         </article>
 
-        <!-- 3 · 6 nov · 08:00 -->
+        <!-- 4 · 6 nov · 08:00 -->
         <article id="stire-75" data-cats="securitate romania" data-sev="amber" data-subiect="plata trupelor SUA în România">
           <div class="a-meta">
             <span class="a-time">6 nov · 08:00</span>
@@ -947,7 +989,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-55" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">plata trupelor SUA în România</span>
-            <span class="a-num">#3 / 5</span>
+            <span class="a-num">#4 / 6</span>
           </div>
           <h2>România, dispusă să plătească o parte din costurile trupelor SUA — mesajul transmis lui Colby de Niculescu și Nicușor Dan</h2>
 
@@ -988,7 +1030,7 @@
           </div>
         </article>
 
-        <!-- 4 · 6 nov · 07:00 -->
+        <!-- 5 · 6 nov · 07:00 -->
         <article id="stire-74" data-cats="securitate" data-sev="red" data-subiect="atac double-tap în Ucraina">
           <div class="a-meta">
             <span class="a-time">6 nov · 07:00</span>
@@ -996,7 +1038,7 @@
             <span class="sev-pill is-red"><i aria-hidden="true"></i>Roșu · grav</span>
             <span class="spot-tag">Știrea zilei</span>
             <span class="subj-pill">atac double-tap în Ucraina</span>
-            <span class="a-num">#4 / 5</span>
+            <span class="a-num">#5 / 6</span>
           </div>
           <h2>Atac rusesc „double-tap” asupra unui punct de ajutor umanitar în Komyshuvakha: cel puțin 42 de morți, zeci încă sub dărâmături</h2>
 
@@ -1031,7 +1073,7 @@
           </div>
         </article>
 
-        <!-- 5 · 6 nov · 06:00 -->
+        <!-- 6 · 6 nov · 06:00 -->
         <article id="stire-73" data-cats="tech" data-sev="green" data-subiect="IPO OpenAI în 2027">
           <div class="a-meta">
             <span class="a-time">6 nov · 06:00</span>
@@ -1039,7 +1081,7 @@
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <a class="cont-pill" href="#stire-16" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">IPO OpenAI în 2027</span>
-            <span class="a-num">#5 / 5</span>
+            <span class="a-num">#6 / 6</span>
           </div>
           <h2>OpenAI ar putea fi gata de IPO în 2027: veniturile din enterprise au devenit majoritare</h2>
 
