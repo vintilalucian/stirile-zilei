@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="color-scheme" content="light dark" />
-    <meta name="tirile-versiune" content="2026-11-06T07:00:00+01:00|2|red" />
+    <meta name="tirile-versiune" content="2026-11-06T08:00:00+01:00|3|red" />
     <link rel="icon" href="data:," />
     <title>Știrile zilei</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -699,9 +699,9 @@
     <div class="topbar">
       <div class="topbar-inner">
         <span class="dot" aria-hidden="true"></span>
-        <span><strong>Vineri, 6 noiembrie 2026</strong> · actualizat la <strong>07:00</strong></span>
+        <span><strong>Vineri, 6 noiembrie 2026</strong> · actualizat la <strong>08:00</strong></span>
         <span aria-hidden="true">·</span>
-        <span>2 știri azi</span>
+        <span>3 știri azi</span>
         <span class="spacer"></span>
         <button class="refresh-btn" type="button" id="refreshBtn" aria-label="Reîmprospătează pagina">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg>
@@ -773,30 +773,30 @@
       <section class="dashboard" aria-label="Panou de ansamblu">
         <div class="dash-head">
           <span class="dash-title">Dashboard · Azi</span>
-          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 07:00</span>
+          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 08:00</span>
           <span class="dash-meta">Fereastră monitorizare <strong>L–V 06:00–22:00 · S–D 07:30–22:00</strong> · pas ~3 ore</span>
         </div>
 
         <div class="kpi-grid five" role="group" aria-label="Filtrează după categorie — apasă pe un tile">
           <button class="kpi" type="button" data-filter="toate" aria-pressed="true">
             <span class="kpi-top"><span class="kpi-label">Toate știrile</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">2</span>
-            <span class="kpi-sub">știri verificate azi, în 2 rulări</span>
+            <span class="kpi-value">3</span>
+            <span class="kpi-sub">știri verificate azi, în 3 rulări</span>
             <span class="kpi-bar" aria-hidden="true"><i style="width:100%"></i></span>
             <span class="kpi-hint">Apasă pentru toate</span>
           </button>
           <button class="kpi" type="button" data-filter="securitate" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">Securitate &amp; NATO</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">1</span>
-            <span class="kpi-sub">atac double-tap în Ucraina</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:50%"></i></span>
+            <span class="kpi-value">2</span>
+            <span class="kpi-sub">plata trupelor SUA în România · atac double-tap în Ucraina</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:67%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="romania" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">România</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">0</span>
-            <span class="kpi-sub"></span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:0%"></i></span>
+            <span class="kpi-value">1</span>
+            <span class="kpi-sub">plata trupelor SUA în România</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:33%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="belgia" aria-pressed="false">
@@ -810,7 +810,7 @@
             <span class="kpi-top"><span class="kpi-label">Tech &amp; AI</span><span class="kpi-check" aria-hidden="true">✓</span></span>
             <span class="kpi-value">1</span>
             <span class="kpi-sub">IPO OpenAI în 2027</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:50%"></i></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:33%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
         </div>
@@ -824,7 +824,7 @@
       </section>
 
       <div class="filter-status" aria-live="polite">
-        <span class="filter-label">Se afișează: <strong>Toate categoriile — 2 din 2 știri</strong></span>
+        <span class="filter-label">Se afișează: <strong>Toate categoriile — 3 din 3 știri</strong></span>
         <button class="filter-reset" type="button" hidden>Resetează filtrul</button>
       </div>
 
@@ -854,7 +854,56 @@
       <p class="empty">Nicio știre în această categorie azi.</p>
 
       <main>
-        <!-- 1 · 6 nov · 07:00 -->
+        <!-- 1 · 6 nov · 08:00 -->
+        <article id="stire-75" data-cats="securitate romania" data-sev="amber" data-subiect="plata trupelor SUA în România">
+          <div class="a-meta">
+            <span class="a-time">6 nov · 08:00</span>
+            <span class="a-cat">Securitate &amp; NATO · România</span>
+            <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
+            <a class="cont-pill" href="#stire-55" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
+            <span class="subj-pill">plata trupelor SUA în România</span>
+            <span class="a-num">#1 / 3</span>
+          </div>
+          <h2>România, dispusă să plătească o parte din costurile trupelor SUA — mesajul transmis lui Colby de Niculescu și Nicușor Dan</h2>
+
+          <div class="followup">
+            <span class="tag">Urmare la</span>
+            <p><a href="#stire-55">„Colby la București: România își mărește contribuția la NATO, în timp ce Pentagonul decide soarta trupelor SUA în Europa”</a> — joi, 5 noiembrie 2026, ora 10:00.</p>
+          </div>
+
+          <div class="sec">
+            <p class="sec-label">Ce s-a întâmplat</p>
+            <p>Președintele Nicușor Dan l-a primit miercuri, 4 noiembrie, la Cotroceni, pe Elbridge Colby, subsecretarul american pentru politica de apărare, iar joi, 5 noiembrie, premierul Luca Niculescu l-a primit pe Colby la Palatul Victoria. Surse guvernamentale citate de Digi24 — și surse citate de TVR — spun că principalul mesaj transmis oficialului american a fost disponibilitatea României de a suporta o parte din costurile staționării trupelor SUA, inclusiv costuri de bază și combustibil pentru avioane, fără a fi dezvăluită o sumă. Niculescu a confirmat ulterior că s-a discutat despre prezența militară americană și despre revenirea la efectivele anterioare. Colby este artizanul revizuirii prezenței SUA în Europa, ale cărei opțiuni ajung azi, 6 noiembrie, pe masa secretarului american al Apărării, Pete Hegseth, decizia finală fiind așteptată în decembrie.</p>
+          </div>
+
+          <div class="sec">
+            <p class="sec-label">De ce contează</p>
+            <p>Prezența militară americană în România și securitatea Mării Negre sunt direct pe zona profesională a cititorului, iar garanția transatlantică devine tranzacțională: Bucureștiul negociază menținerea trupelor SUA în timp ce Pentagonul decide azi ce opțiuni de retragere sau redistribuire îi prezintă lui Hegseth. În România se află în prezent circa 1.000 de militari americani, iar Polonia a anunțat deja în septembrie că e gata să plătească 15.000 de dolari pe an pentru fiecare militar SUA — Bucureștiul se alătură astfel unui model de cost-sharing promovat de Washington pentru aliații de pe Flancul estic.</p>
+          </div>
+
+          <div class="verify">
+            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
+            <p>Verdict: confirmat. Întâlnirile lui Colby cu Nicușor Dan și cu Niculescu sunt confirmate de Mediafax și Digi24; oferta de plată este relatată pe surse guvernamentale de Digi24 și de TVR — două relatări independente, nu un comunicat oficial. Precizare de integritate: nu există o sumă publică și niciun angajament bugetar oficial; informația despre plată rămâne, deocamdată, la nivel de surse.</p>
+            <ul class="sources">
+              <li><a href="https://www.digi24.ro/stiri/actualitate/politica/creierul-procesului-de-retragere-a-trupelor-americane-din-europa-ajunge-la-bucuresti-elbridge-colby-va-fi-primit-de-nicusor-dan-4021627" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Digi24 — „Creierul procesului de retragere a trupelor americane din Europa ajunge la București: Elbridge Colby va fi primit de Nicușor Dan”<span class="host">digi24.ro</span></a></li>
+              <li><a href="https://www.digi24.ro/stiri/actualitate/politica/ministrul-de-externe-a-discutat-cu-elbridge-colby-romania-isi-intensifica-contributia-pentru-nato-3-0-4022103" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Digi24 — „Ministrul de Externe a discutat cu Elbridge Colby: România își intensifică contribuția pentru NATO 3.0”<span class="host">digi24.ro</span></a></li>
+              <li><a href="https://www.mediafax.ro/politic/nicusor-dan-avertizeaza-ca-marea-neagra-a-devenit-una-dintre-cele-mai-periculoase-regiuni-ce-a-discutat-cu-oficialul-american-elbridge-colby-intalnire-si-cu-ministrul-afacerilor-externe-23837593" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Mediafax — „Nicușor Dan avertizează că Marea Neagră a devenit una dintre cele mai periculoase regiuni. Ce a discutat cu oficialul american Elbridge Colby”<span class="host">mediafax.ro</span></a></li>
+              <li><a href="https://tvuno.ro/2026/11/06/basescu-despre-plata-trupelor-americane-de-catre-romania-nu-poate-functiona/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>TV Uno — „Băsescu, despre plata trupelor americane de către România: «Nu poate funcționa»” (6 noiembrie 2026)<span class="host">tvuno.ro</span></a></li>
+            </ul>
+          </div>
+
+          <div class="opposing">
+            <p class="sec-label">Tabăra adversă</p>
+            <p>Traian Băsescu, fost președinte al României (B1 TV, 5 noiembrie, relatat de Digi24): ideea ca România să plătească pentru militarii americani staționați în țară este „proastă” — „Nu poate funcționa un asemenea sistem”. Exemplul lui: ce se întâmplă dacă România plătește pentru staționarea a 2.000 de militari la Mihail Kogălniceanu, iar în caz de luptă aceștia nu au ordin să intervină. (<a href="https://tvuno.ro/2026/11/06/basescu-despre-plata-trupelor-americane-de-catre-romania-nu-poate-functiona/" target="_blank" rel="noopener">tvuno.ro</a>)</p>
+          </div>
+
+          <div class="impact">
+            <span class="badge">Impact direct</span>
+            <p>Impact direct: minim pe termen scurt — nicio sumă publică, niciun angajament bugetar, nicio schimbare imediată pentru familie sau rutină. Relevanță profesională înaltă: semnal structural pentru Flancul estic și Marea Neagră — Bucureștiul negociază activ menținerea prezenței americane exact în ziua în care Pentagonul îi prezintă lui Hegseth opțiunile de retragere/redistribuire.</p>
+          </div>
+        </article>
+
+        <!-- 2 · 6 nov · 07:00 -->
         <article id="stire-74" data-cats="securitate" data-sev="red" data-subiect="atac double-tap în Ucraina">
           <div class="a-meta">
             <span class="a-time">6 nov · 07:00</span>
@@ -862,7 +911,7 @@
             <span class="sev-pill is-red"><i aria-hidden="true"></i>Roșu · grav</span>
             <span class="spot-tag">Știrea zilei</span>
             <span class="subj-pill">atac double-tap în Ucraina</span>
-            <span class="a-num">#1 / 2</span>
+            <span class="a-num">#2 / 3</span>
           </div>
           <h2>Atac rusesc „double-tap” asupra unui punct de ajutor umanitar în Komyshuvakha: cel puțin 42 de morți, zeci încă sub dărâmături</h2>
 
@@ -897,7 +946,7 @@
           </div>
         </article>
 
-        <!-- 2 · 6 nov · 06:00 -->
+        <!-- 3 · 6 nov · 06:00 -->
         <article id="stire-73" data-cats="tech" data-sev="green" data-subiect="IPO OpenAI în 2027">
           <div class="a-meta">
             <span class="a-time">6 nov · 06:00</span>
@@ -905,7 +954,7 @@
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <a class="cont-pill" href="#stire-16" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">IPO OpenAI în 2027</span>
-            <span class="a-num">#2 / 2</span>
+            <span class="a-num">#3 / 3</span>
           </div>
           <h2>OpenAI ar putea fi gata de IPO în 2027: veniturile din enterprise au devenit majoritare</h2>
 
@@ -4111,8 +4160,8 @@
 
       <footer>
         <div class="rule" aria-hidden="true"></div>
-        <p>Sfârșitul ediției de azi · Ultima actualizare: vineri, 6 noiembrie 2026, 07:00<br />Monitorizarea rulează la circa 3 ore, în fereastra L–V 06:00–22:00 · S–D 07:30–22:00 — dă refresh pentru noutăți.</p>
-        <a class="to-top" href="#stire-74">↑ Înapoi la cea mai nouă știre</a>
+        <p>Sfârșitul ediției de azi · Ultima actualizare: vineri, 6 noiembrie 2026, 08:00<br />Monitorizarea rulează la circa 3 ore, în fereastra L–V 06:00–22:00 · S–D 07:30–22:00 — dă refresh pentru noutăți.</p>
+        <a class="to-top" href="#stire-75">↑ Înapoi la cea mai nouă știre</a>
       </footer>
     </div>
 
