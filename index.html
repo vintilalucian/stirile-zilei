@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="color-scheme" content="light dark" />
-    <meta name="tirile-versiune" content="2026-11-06T06:05:00+01:00|1|green" />
+    <meta name="tirile-versiune" content="2026-11-06T07:00:00+01:00|2|red" />
     <link rel="icon" href="data:," />
     <title>Știrile zilei</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -699,9 +699,9 @@
     <div class="topbar">
       <div class="topbar-inner">
         <span class="dot" aria-hidden="true"></span>
-        <span><strong>Vineri, 6 noiembrie 2026</strong> · actualizat la <strong>06:05</strong></span>
+        <span><strong>Vineri, 6 noiembrie 2026</strong> · actualizat la <strong>07:00</strong></span>
         <span aria-hidden="true">·</span>
-        <span>1 știre azi</span>
+        <span>2 știri azi</span>
         <span class="spacer"></span>
         <button class="refresh-btn" type="button" id="refreshBtn" aria-label="Reîmprospătează pagina">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg>
@@ -739,30 +739,32 @@
 
       <!-- Chenar permanent: știrea cea mai importantă a zilei — sub fereastra
            „Ultimele știri", ÎNAINTEA dashboardului, vizibilă din prima, fără scroll.
-           Nivelul de azi: VERDE (sev-green) — normal: singura știre a dimineții,
-           declarația lui Greg Brockman (OpenAI) despre un posibil IPO în 2027 și
-           veniturile enterprise devenite majoritare, continuare a firului de
-           finanțare OpenAI din 31 octombrie.
+           Nivelul de azi: ROȘU (sev-red) — grav: atacul rusesc „double-tap”
+           asupra punctului de ajutor umanitar din Komyshuvakha (regiunea
+           Zaporojie) — cel puțin 42 de morți, zeci încă sub dărâmături —
+           documentat video de camera bodycam a unui polițist ucis în atac și
+           confirmat ca loc de BBC Verify; chenarul trece de la știrea OpenAI
+           (verde, 06:00) la această știre, singura roșie a zilei.
            Chenarul rămâne în afara logicii de filtrare: vizibil indiferent de filtrul de categorie. -->
-      <section class="spot sev-green" aria-label="Știrea cea mai importantă a zilei">
+      <section class="spot sev-red" aria-label="Știrea cea mai importantă a zilei">
         <div class="spot-head">
           <span class="spot-kicker">
             <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13 2 4.5 13.5H11L9.5 22 19 10h-6.5L13 2z"/></svg>
             Știrea zilei · Atenție rapidă
           </span>
-          <span class="spot-time">6 nov · 06:00</span>
-          <span class="spot-pill">Nivel verde — normal</span>
+          <span class="spot-time">6 nov · 07:00</span>
+          <span class="spot-pill">Nivel roșu — grav</span>
         </div>
-        <h2 class="spot-title">OpenAI ar putea fi gata de IPO în 2027: veniturile din enterprise au devenit majoritare</h2>
-        <p class="spot-why"><strong>De ce e în față:</strong> E singura știre a dimineții și continuă direct firul finanțării OpenAI urmărit din 31 octombrie: președintele companiei, Greg Brockman, spune că OpenAI ar putea fi gata de listare la bursă în 2027, iar vânzările către companii au devenit principala sursă de venit — semnalul că economia AI trece de la promisiuni de creștere la dovezi de venituri, exact ce cer investitorii după reducerea rundei private de finanțare.</p>
-        <p class="spot-lead">Președintele OpenAI, Greg Brockman, a declarat miercuri, 4 noiembrie, la conferința WSJ Tech din Napa, California, că OpenAI ar putea fi gata de listare la bursă în 2027 — „I think so" — fără să anunțe o dată, o bursă sau un preț. Tot atunci a spus că vânzările către companii au devenit principala sursă de venit a OpenAI, după o primă jumătate de an „destul de dificilă", iar în trimestrul 3 ritmul anualizat al veniturilor a crescut cu 70%, businessul enterprise dublându-se.</p>
+        <h2 class="spot-title">Atac rusesc „double-tap” asupra unui punct de ajutor umanitar în Komyshuvakha: cel puțin 42 de morți, zeci încă sub dărâmături</h2>
+        <p class="spot-why"><strong>De ce e în față:</strong> Cel mai grav fapt al zilei: un atac „double-tap” documentat video asupra civililor adunați pentru ajutor umanitar — 42 de morți, zeci încă sub dărâmături — în timp ce se pregătește reluarea negocierilor trilaterale la Abu Dhabi (10–11 noiembrie).</p>
+        <p class="spot-lead">Poliția ucraineană a publicat imaginile bodycam ale unui polițist ucis în atacul de luni asupra punctului de ajutor din Komyshuvakha; BBC Verify a confirmat locul filmării, iar bilanțul a ajuns la 42 de morți.</p>
         <p class="spot-more" hidden><span class="spot-more-text"></span> <button class="spot-more-btn" type="button">apasă aici</button></p>
         <div class="spot-foot">
-          <a class="spot-link" href="#stire-73">Citește știrea completă ↓</a>
-          <div class="sev-scale" role="img" aria-label="Scară de gravitate: verde — normal, galben — de urmărit, roșu — grav. Nivelul de azi: verde.">
-            <span class="sev-item on"><i class="sev-dot g" aria-hidden="true"></i>Verde · normal</span>
+          <a class="spot-link" href="#stire-74">Citește știrea completă ↓</a>
+          <div class="sev-scale" role="img" aria-label="Scară de gravitate: verde — normal, galben — de urmărit, roșu — grav. Nivelul de azi: roșu.">
+            <span class="sev-item"><i class="sev-dot g" aria-hidden="true"></i>Verde · normal</span>
             <span class="sev-item"><i class="sev-dot y" aria-hidden="true"></i>Galben · de urmărit</span>
-            <span class="sev-item"><i class="sev-dot r" aria-hidden="true"></i>Roșu · grav</span>
+            <span class="sev-item on"><i class="sev-dot r" aria-hidden="true"></i>Roșu · grav</span>
           </div>
         </div>
       </section>
@@ -771,23 +773,23 @@
       <section class="dashboard" aria-label="Panou de ansamblu">
         <div class="dash-head">
           <span class="dash-title">Dashboard · Azi</span>
-          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 06:05</span>
+          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 07:00</span>
           <span class="dash-meta">Fereastră monitorizare <strong>L–V 06:00–22:00 · S–D 07:30–22:00</strong> · pas ~3 ore</span>
         </div>
 
         <div class="kpi-grid five" role="group" aria-label="Filtrează după categorie — apasă pe un tile">
           <button class="kpi" type="button" data-filter="toate" aria-pressed="true">
             <span class="kpi-top"><span class="kpi-label">Toate știrile</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">1</span>
-            <span class="kpi-sub">știri verificate azi, în 1 rulare</span>
+            <span class="kpi-value">2</span>
+            <span class="kpi-sub">știri verificate azi, în 2 rulări</span>
             <span class="kpi-bar" aria-hidden="true"><i style="width:100%"></i></span>
             <span class="kpi-hint">Apasă pentru toate</span>
           </button>
           <button class="kpi" type="button" data-filter="securitate" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">Securitate &amp; NATO</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">0</span>
-            <span class="kpi-sub"></span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:0%"></i></span>
+            <span class="kpi-value">1</span>
+            <span class="kpi-sub">atac double-tap în Ucraina</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:50%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="romania" aria-pressed="false">
@@ -808,7 +810,7 @@
             <span class="kpi-top"><span class="kpi-label">Tech &amp; AI</span><span class="kpi-check" aria-hidden="true">✓</span></span>
             <span class="kpi-value">1</span>
             <span class="kpi-sub">IPO OpenAI în 2027</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:100%"></i></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:50%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
         </div>
@@ -822,7 +824,7 @@
       </section>
 
       <div class="filter-status" aria-live="polite">
-        <span class="filter-label">Se afișează: <strong>Toate categoriile — 1 din 1 știri</strong></span>
+        <span class="filter-label">Se afișează: <strong>Toate categoriile — 2 din 2 știri</strong></span>
         <button class="filter-reset" type="button" hidden>Resetează filtrul</button>
       </div>
 
@@ -852,16 +854,58 @@
       <p class="empty">Nicio știre în această categorie azi.</p>
 
       <main>
-        <!-- 1 · 6 nov · 06:00 -->
+        <!-- 1 · 6 nov · 07:00 -->
+        <article id="stire-74" data-cats="securitate" data-sev="red" data-subiect="atac double-tap în Ucraina">
+          <div class="a-meta">
+            <span class="a-time">6 nov · 07:00</span>
+            <span class="a-cat">Securitate &amp; NATO</span>
+            <span class="sev-pill is-red"><i aria-hidden="true"></i>Roșu · grav</span>
+            <span class="spot-tag">Știrea zilei</span>
+            <span class="subj-pill">atac double-tap în Ucraina</span>
+            <span class="a-num">#1 / 2</span>
+          </div>
+          <h2>Atac rusesc „double-tap” asupra unui punct de ajutor umanitar în Komyshuvakha: cel puțin 42 de morți, zeci încă sub dărâmături</h2>
+
+          <div class="sec">
+            <p class="sec-label">Ce s-a întâmplat</p>
+            <p>Luni, 2 noiembrie, nouă bombe planante rusești, unele de 3.000 kg, au lovit satul Komyshuvakha din regiunea Zaporojie, în timp ce localnicii se adunaseră la o școală pentru a primi ajutor umanitar. Prima lovitură a lovit oamenii adunați, iar a doua — după modelul „double-tap” — a lovit adăpostul subteran unde se refugiaseră civilii, salvatorii și polițiștii sosiți la fața locului. Poliția ucraineană a publicat miercuri imaginile de pe camera bodycam a unui polițist ucis în atac; BBC Verify a confirmat că filmarea e din același loc cu imaginile serviciului de urgență DSNS de după atac. Bilanțul a urcat la 42 de morți, cu până la 33 de persoane încă sub dărâmături, potrivit poliției citate de Reuters.</p>
+          </div>
+
+          <div class="sec">
+            <p class="sec-label">De ce contează</p>
+            <p>Războiul din Ucraina e firul central al zonei profesionale a cititorului — Flancul estic, Marea Neagră, postura NATO. Un atac „double-tap” documentat video asupra civililor adunați pentru ajutor, în săptămâna în care Zelenski a discutat cu emisarii lui Trump (Witkoff și Kushner) despre reluarea negocierilor trilaterale SUA–Ucraina–Rusia la Abu Dhabi (10–11 noiembrie), arată că Moscova intensifică atacurile asupra țintelor civile în timp ce Kievul a rămas, potrivit BBC, practic fără interceptoare occidentale. Atacul se adaugă unui val de lovituri asupra infrastructurii civile ucrainene din ultimele zile.</p>
+          </div>
+
+          <div class="verify">
+            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
+            <p>Verdict: confirmat. BBC — „Ukraine says bodycam video shows deadly Russian double-tap bombing” (4 noiembrie 2026, actualizat 5 noiembrie) — și Reuters — „Death toll from Russian strike on Ukrainian aid centre reaches 42, police say” (5 noiembrie 2026) — sunt două surse independente din afara listei curatoriate; misiunea ONU de monitorizare a drepturilor omului în Ucraina atribuie atacul forțelor ruse. Precizare de integritate: cifrele victimelor sunt cele raportate de autoritățile ucrainene (poliție, președintele Zelenski) și rămân provizorii cât timp continuă căutările; BBC Verify a confirmat independent doar locul filmării bodycam, nu bilanțul.</p>
+            <ul class="sources">
+              <li><a href="https://www.bbc.co.uk/news/articles/c98rz6penv86o" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>BBC — „Ukraine says bodycam video shows deadly Russian double-tap bombing” (4 noiembrie 2026)<span class="host">bbc.co.uk</span></a></li>
+              <li><a href="https://www.reuters.com/world/europe/death-toll-russian-strike-ukrainian-aid-centre-reaches-42-police-say-2026-11-05" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Reuters — „Death toll from Russian strike on Ukrainian aid centre reaches 42, police say” (5 noiembrie 2026)<span class="host">reuters.com</span></a></li>
+              <li><a href="https://www.newsmadeclear.com/en/news/a2935dc0-5cae-4fcb-99a0-1fe7d55d3935" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>NewsMadeClear — „Ukrainian police release bodycam footage from deadly shelter attack” (4 noiembrie 2026)<span class="host">newsmadeclear.com</span></a></li>
+            </ul>
+          </div>
+
+          <div class="opposing">
+            <p class="sec-label">Tabăra adversă</p>
+            <p>Ministerul rus al Apărării (raport zilnic, 3 noiembrie): forțele ruse au lovit unități militare ucrainene în zona Komyshuvakha și în alte două localități, susținând că au ucis până la 25 de militari — fără să comenteze direct lovitura asupra punctului de ajutor umanitar. (<a href="https://augerton.com/news/2026/11/04/russian-bombing-ukraine-zaporizhzhia-aid-point/" target="_blank" rel="noopener">augerton.com</a>)</p>
+          </div>
+
+          <div class="impact">
+            <span class="badge">Impact direct</span>
+            <p>Impact direct: minim — relevanță de context înaltă. Niciun efect imediat asupra rutinei zilnice sau a familiei; relevanța e profesională și de context: escaladarea atacurilor asupra civililor în Ucraina, chiar în săptămâna reluării negocierilor trilaterale la Abu Dhabi (10–11 noiembrie), modelează mediul de securitate al Flancului estic și al Mării Negre.</p>
+          </div>
+        </article>
+
+        <!-- 2 · 6 nov · 06:00 -->
         <article id="stire-73" data-cats="tech" data-sev="green" data-subiect="IPO OpenAI în 2027">
           <div class="a-meta">
             <span class="a-time">6 nov · 06:00</span>
             <span class="a-cat">Tech &amp; AI</span>
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
-            <span class="spot-tag">Știrea zilei</span>
             <a class="cont-pill" href="#stire-16" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">IPO OpenAI în 2027</span>
-            <span class="a-num">#1 / 1</span>
+            <span class="a-num">#2 / 2</span>
           </div>
           <h2>OpenAI ar putea fi gata de IPO în 2027: veniturile din enterprise au devenit majoritare</h2>
 
@@ -4067,8 +4111,8 @@
 
       <footer>
         <div class="rule" aria-hidden="true"></div>
-        <p>Sfârșitul ediției de azi · Ultima actualizare: vineri, 6 noiembrie 2026, 06:05<br />Monitorizarea rulează la circa 3 ore, în fereastra L–V 06:00–22:00 · S–D 07:30–22:00 — dă refresh pentru noutăți.</p>
-        <a class="to-top" href="#stire-73">↑ Înapoi la cea mai nouă știre</a>
+        <p>Sfârșitul ediției de azi · Ultima actualizare: vineri, 6 noiembrie 2026, 07:00<br />Monitorizarea rulează la circa 3 ore, în fereastra L–V 06:00–22:00 · S–D 07:30–22:00 — dă refresh pentru noutăți.</p>
+        <a class="to-top" href="#stire-74">↑ Înapoi la cea mai nouă știre</a>
       </footer>
     </div>
 
