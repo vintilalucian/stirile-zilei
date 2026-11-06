@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="color-scheme" content="light dark" />
-    <meta name="tirile-versiune" content="2026-11-06T08:00:00+01:00|3|red" />
+    <meta name="tirile-versiune" content="2026-11-06T09:00:00+01:00|4|red" />
     <link rel="icon" href="data:," />
     <title>Știrile zilei</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -699,9 +699,9 @@
     <div class="topbar">
       <div class="topbar-inner">
         <span class="dot" aria-hidden="true"></span>
-        <span><strong>Vineri, 6 noiembrie 2026</strong> · actualizat la <strong>08:00</strong></span>
+        <span><strong>Vineri, 6 noiembrie 2026</strong> · actualizat la <strong>09:00</strong></span>
         <span aria-hidden="true">·</span>
-        <span>3 știri azi</span>
+        <span>4 știri azi</span>
         <span class="spacer"></span>
         <button class="refresh-btn" type="button" id="refreshBtn" aria-label="Reîmprospătează pagina">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg>
@@ -773,15 +773,15 @@
       <section class="dashboard" aria-label="Panou de ansamblu">
         <div class="dash-head">
           <span class="dash-title">Dashboard · Azi</span>
-          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 08:00</span>
+          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 09:00</span>
           <span class="dash-meta">Fereastră monitorizare <strong>L–V 06:00–22:00 · S–D 07:30–22:00</strong> · pas ~3 ore</span>
         </div>
 
         <div class="kpi-grid five" role="group" aria-label="Filtrează după categorie — apasă pe un tile">
           <button class="kpi" type="button" data-filter="toate" aria-pressed="true">
             <span class="kpi-top"><span class="kpi-label">Toate știrile</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">3</span>
-            <span class="kpi-sub">știri verificate azi, în 3 rulări</span>
+            <span class="kpi-value">4</span>
+            <span class="kpi-sub">știri verificate azi, în 4 rulări</span>
             <span class="kpi-bar" aria-hidden="true"><i style="width:100%"></i></span>
             <span class="kpi-hint">Apasă pentru toate</span>
           </button>
@@ -789,14 +789,14 @@
             <span class="kpi-top"><span class="kpi-label">Securitate &amp; NATO</span><span class="kpi-check" aria-hidden="true">✓</span></span>
             <span class="kpi-value">2</span>
             <span class="kpi-sub">plata trupelor SUA în România · atac double-tap în Ucraina</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:67%"></i></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:50%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="romania" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">România</span><span class="kpi-check" aria-hidden="true">✓</span></span>
             <span class="kpi-value">1</span>
             <span class="kpi-sub">plata trupelor SUA în România</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:33%"></i></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:25%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="belgia" aria-pressed="false">
@@ -808,9 +808,9 @@
           </button>
           <button class="kpi" type="button" data-filter="tech" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">Tech &amp; AI</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">1</span>
-            <span class="kpi-sub">IPO OpenAI în 2027</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:33%"></i></span>
+            <span class="kpi-value">2</span>
+            <span class="kpi-sub">achiziție securitate agenți AI · IPO OpenAI în 2027</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:50%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
         </div>
@@ -824,7 +824,7 @@
       </section>
 
       <div class="filter-status" aria-live="polite">
-        <span class="filter-label">Se afișează: <strong>Toate categoriile — 3 din 3 știri</strong></span>
+        <span class="filter-label">Se afișează: <strong>Toate categoriile — 4 din 4 știri</strong></span>
         <button class="filter-reset" type="button" hidden>Resetează filtrul</button>
       </div>
 
@@ -854,7 +854,51 @@
       <p class="empty">Nicio știre în această categorie azi.</p>
 
       <main>
-        <!-- 1 · 6 nov · 08:00 -->
+        <!-- 1 · 6 nov · 09:00 -->
+        <article id="stire-76" data-cats="tech" data-sev="amber" data-subiect="achiziție securitate agenți AI">
+          <div class="a-meta">
+            <span class="a-time">6 nov · 09:00</span>
+            <span class="a-cat">Tech &amp; AI</span>
+            <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
+            <a class="cont-pill" href="#stire-34" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
+            <span class="subj-pill">achiziție securitate agenți AI</span>
+            <span class="a-num">#1 / 4</span>
+          </div>
+          <h2>Palo Alto Networks negociază cumpărarea Clutch Security, startup de securitate pentru agenți AI, pentru ~500 mil. $</h2>
+
+          <div class="followup">
+            <span class="tag">Urmare la</span>
+            <p><a href="#stire-34">„CrowdStrike cumpără cu ~495 milioane $ două startupuri de securitate AI: Fiddler AI și Dreadnode — piața securizării agenților prinde viteză”</a> — marți, 3 noiembrie 2026, ora 20:15.</p>
+          </div>
+
+          <div class="sec">
+            <p class="sec-label">Ce s-a întâmplat</p>
+            <p>Palo Alto Networks negociază achiziția Clutch Security, startup israelian fondat la sfârșitul lui 2023, care securizează identitățile non-umane — cheile API, conturile de serviciu, tokenurile și parolele cu care agenții AI accesează sistemele companiilor. Prețul vehiculat este de circa 500 de milioane de dolari în numerar, plus plăți condiționate de atingerea unor obiective, potrivit unei persoane familiarizate cu discuțiile, citată de TechCrunch; relatarea originală aparține The Information, din 4 noiembrie. Clutch se apropie de 10 milioane de dolari venituri recurente anuale, deci prețul ar însemna circa 50 de ori veniturile anuale — față de o evaluare de 85 de milioane de dolari la runda Series A de 20 de milioane din ianuarie 2025. Potrivit The Information, ar fi a cincea achiziție anunțată de Palo Alto în 2026 (PitchBook numără șapte, cu tot cu tranzacții mai mici). Nici Palo Alto, nici Clutch nu au comentat discuțiile, iar o tranzacție nu e sigură: negocierile sunt preliminare și s-ar putea să nu se încheie cu un acord.</p>
+          </div>
+
+          <div class="sec">
+            <p class="sec-label">De ce contează</p>
+            <p>Continuă direct firul din 3 noiembrie: CrowdStrike a plătit ~495 mil. $ pentru Fiddler AI și Dreadnode, iar acum un alt gigant al securității cibernetice negociază o sumă similară pentru același tip de țintă — securitatea agenților AI. Pentru cititor, miza e dublă: profesional, agenții autonomi cu acces la sisteme devin infrastructură de securitate gestionată la nivel enterprise, exact terenul de incident management; personal, Clutch păzește tocmai cheile API, tokenurile și conturile de serviciu — aceleași credențiale pe care le folosesc automatizările proprii — iar lecția breșei OpenCode din 20 octombrie rămâne valabilă: o cheie API furată nu se revocă prin schimbarea parolei.</p>
+          </div>
+
+          <div class="verify">
+            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
+            <p>Verdict: confirmat. TechCrunch (6 noiembrie 2026) relatează discuțiile pe propria sursă — o persoană familiarizată cu negocierile — și notează că The Information a relatat prima (4 noiembrie); Calcalist/CTech (5 noiembrie) și BigGo Finance (5 noiembrie) confirmă independent termenii discutați, citând relatarea The Information. Precizare de integritate: discuțiile sunt preliminare, fără acord semnat și fără confirmare oficială a prețului; ambele companii au refuzat să comenteze.</p>
+            <ul class="sources">
+              <li><a href="https://techcrunch.com/2026/11/05/palo-alto-networks-in-talks-to-buy-ai-agent-security-startup-clutch-for-500m/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>TechCrunch — „Palo Alto Networks in talks to buy AI agent security startup Clutch for $500M” (6 noiembrie 2026)<span class="host">techcrunch.com</span></a></li>
+              <li><a href="https://www.calcalistech.com/ctechnews/article/qx69w4bra" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Calcalist / CTech — „Palo Alto Networks in talks to acquire Israeli startup Clutch Security for $500 million” (5 noiembrie 2026)<span class="host">calcalistech.com</span></a></li>
+              <li><a href="https://finance.biggo.com/news/48f4d52c-30c2-42d0-a4b6-93aae9cf7154" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>BigGo Finance — „Palo Alto Networks Weighs $500 Million Purchase of AI Credential Startup Clutch Security” (5 noiembrie 2026)<span class="host">finance.biggo.com</span></a></li>
+              <li><a href="https://www.siliconreport.com/palo-alto-networks-in-talks-to-buy-clutch-security-for-about-500m" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Silicon Report — „Palo Alto Networks in talks to buy Clutch Security for about $500M” (5 noiembrie 2026)<span class="host">siliconreport.com</span></a></li>
+            </ul>
+          </div>
+
+          <div class="impact">
+            <span class="badge">Impact direct</span>
+            <p>Impact direct: minim azi — nicio schimbare imediată pentru rutină sau familie. Relevanță practică directă: piața securizării agenților AI se consolidează cu a doua tranzacție de ~500 mil. $ în patru zile (după CrowdStrike, 3 noiembrie), ceea ce confirmă că identitățile non-umane — chei API, tokenuri, conturi de serviciu — devin infrastructură critică de securitate; pentru automatizările proprii, regula rămâne: chei separate per tool, permisiuni minime și alerte de cheltuire pe fiecare cont.</p>
+          </div>
+        </article>
+
+        <!-- 2 · 6 nov · 08:00 -->
         <article id="stire-75" data-cats="securitate romania" data-sev="amber" data-subiect="plata trupelor SUA în România">
           <div class="a-meta">
             <span class="a-time">6 nov · 08:00</span>
@@ -862,7 +906,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-55" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">plata trupelor SUA în România</span>
-            <span class="a-num">#1 / 3</span>
+            <span class="a-num">#2 / 4</span>
           </div>
           <h2>România, dispusă să plătească o parte din costurile trupelor SUA — mesajul transmis lui Colby de Niculescu și Nicușor Dan</h2>
 
@@ -903,7 +947,7 @@
           </div>
         </article>
 
-        <!-- 2 · 6 nov · 07:00 -->
+        <!-- 3 · 6 nov · 07:00 -->
         <article id="stire-74" data-cats="securitate" data-sev="red" data-subiect="atac double-tap în Ucraina">
           <div class="a-meta">
             <span class="a-time">6 nov · 07:00</span>
@@ -911,7 +955,7 @@
             <span class="sev-pill is-red"><i aria-hidden="true"></i>Roșu · grav</span>
             <span class="spot-tag">Știrea zilei</span>
             <span class="subj-pill">atac double-tap în Ucraina</span>
-            <span class="a-num">#2 / 3</span>
+            <span class="a-num">#3 / 4</span>
           </div>
           <h2>Atac rusesc „double-tap” asupra unui punct de ajutor umanitar în Komyshuvakha: cel puțin 42 de morți, zeci încă sub dărâmături</h2>
 
@@ -946,7 +990,7 @@
           </div>
         </article>
 
-        <!-- 3 · 6 nov · 06:00 -->
+        <!-- 4 · 6 nov · 06:00 -->
         <article id="stire-73" data-cats="tech" data-sev="green" data-subiect="IPO OpenAI în 2027">
           <div class="a-meta">
             <span class="a-time">6 nov · 06:00</span>
@@ -954,7 +998,7 @@
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <a class="cont-pill" href="#stire-16" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">IPO OpenAI în 2027</span>
-            <span class="a-num">#3 / 3</span>
+            <span class="a-num">#4 / 4</span>
           </div>
           <h2>OpenAI ar putea fi gata de IPO în 2027: veniturile din enterprise au devenit majoritare</h2>
 
