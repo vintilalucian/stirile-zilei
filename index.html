@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="color-scheme" content="light dark" />
-    <meta name="tirile-versiune" content="2026-11-06T09:00:00+01:00|4|red" />
+    <meta name="tirile-versiune" content="2026-11-06T11:05:00+01:00|5|red" />
     <link rel="icon" href="data:," />
     <title>Știrile zilei</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -699,9 +699,9 @@
     <div class="topbar">
       <div class="topbar-inner">
         <span class="dot" aria-hidden="true"></span>
-        <span><strong>Vineri, 6 noiembrie 2026</strong> · actualizat la <strong>09:00</strong></span>
+        <span><strong>Vineri, 6 noiembrie 2026</strong> · actualizat la <strong>11:00</strong></span>
         <span aria-hidden="true">·</span>
-        <span>4 știri azi</span>
+        <span>5 știri azi</span>
         <span class="spacer"></span>
         <button class="refresh-btn" type="button" id="refreshBtn" aria-label="Reîmprospătează pagina">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg>
@@ -773,30 +773,30 @@
       <section class="dashboard" aria-label="Panou de ansamblu">
         <div class="dash-head">
           <span class="dash-title">Dashboard · Azi</span>
-          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 09:00</span>
+          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 11:00</span>
           <span class="dash-meta">Fereastră monitorizare <strong>L–V 06:00–22:00 · S–D 07:30–22:00</strong> · pas ~3 ore</span>
         </div>
 
         <div class="kpi-grid five" role="group" aria-label="Filtrează după categorie — apasă pe un tile">
           <button class="kpi" type="button" data-filter="toate" aria-pressed="true">
             <span class="kpi-top"><span class="kpi-label">Toate știrile</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">4</span>
-            <span class="kpi-sub">știri verificate azi, în 4 rulări</span>
+            <span class="kpi-value">5</span>
+            <span class="kpi-sub">știri verificate azi, în 5 rulări</span>
             <span class="kpi-bar" aria-hidden="true"><i style="width:100%"></i></span>
             <span class="kpi-hint">Apasă pentru toate</span>
           </button>
           <button class="kpi" type="button" data-filter="securitate" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">Securitate &amp; NATO</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">2</span>
-            <span class="kpi-sub">plata trupelor SUA în România · atac double-tap în Ucraina</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:50%"></i></span>
+            <span class="kpi-value">3</span>
+            <span class="kpi-sub">arhitectură de securitate europeană · plata trupelor SUA în România · atac double-tap în Ucraina</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:60%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="romania" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">România</span><span class="kpi-check" aria-hidden="true">✓</span></span>
             <span class="kpi-value">1</span>
             <span class="kpi-sub">plata trupelor SUA în România</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:25%"></i></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:20%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="belgia" aria-pressed="false">
@@ -810,7 +810,7 @@
             <span class="kpi-top"><span class="kpi-label">Tech &amp; AI</span><span class="kpi-check" aria-hidden="true">✓</span></span>
             <span class="kpi-value">2</span>
             <span class="kpi-sub">achiziție securitate agenți AI · IPO OpenAI în 2027</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:50%"></i></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:40%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
         </div>
@@ -824,7 +824,7 @@
       </section>
 
       <div class="filter-status" aria-live="polite">
-        <span class="filter-label">Se afișează: <strong>Toate categoriile — 4 din 4 știri</strong></span>
+        <span class="filter-label">Se afișează: <strong>Toate categoriile — 5 din 5 știri</strong></span>
         <button class="filter-reset" type="button" hidden>Resetează filtrul</button>
       </div>
 
@@ -854,7 +854,48 @@
       <p class="empty">Nicio știre în această categorie azi.</p>
 
       <main>
-        <!-- 1 · 6 nov · 09:00 -->
+        <!-- 1 · 6 nov · 11:00 -->
+        <article id="stire-77" data-cats="securitate" data-sev="amber" data-subiect="arhitectură de securitate europeană">
+          <div class="a-meta">
+            <span class="a-time">6 nov · 11:00</span>
+            <span class="a-cat">Securitate &amp; NATO</span>
+            <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
+            <span class="subj-pill">arhitectură de securitate europeană</span>
+            <span class="a-num">#1 / 5</span>
+          </div>
+          <h2>Kushner propune cinci obiective pentru o «arhitectură de securitate europeană» mai amplă, înaintea discuțiilor trilaterale de la Abu Dhabi</h2>
+
+          <div class="sec">
+            <p class="sec-label">Ce s-a întâmplat</p>
+            <p>Jared Kushner, trimisul special al președintelui american Donald Trump, a prezentat joi, 5 noiembrie, cinci obiective pentru o arhitectură de securitate europeană mai amplă, după discuții la Bruxelles cu Ucraina, NATO și parteneri europeni. Cele cinci obiective sunt: consultări permanente în materie de securitate, comunicare fiabilă în situații de criză, mai mare transparență militară, măsuri reciproce de reducere a riscurilor de escaladare și un cadru durabil pentru securitatea europeană pe termen lung. Anunțul vine înaintea discuțiilor trilaterale SUA–Ucraina–Rusia de la Abu Dhabi, programate pentru 10–11 noiembrie, primele de acest fel din februarie.</p>
+          </div>
+
+          <div class="sec">
+            <p class="sec-label">De ce contează</p>
+            <p>Kushner afirmă că NATO rămâne centrală în apărarea colectivă europeană și că inițiativa se construiește pe instituțiile și angajamentele existente, nu le înlocuiește — iar fiecare țară își păstrează dreptul suveran de a-și alege alianțele, fără drept de veto al altei țări. Pentru un IT incident Manager într-un mediu NATO, cadrul de securitate european și garanțiile pentru Ucraina sunt contextul operațional direct; discuțiile de la Abu Dhabi (10–11 noiembrie) cad chiar în săptămâna deplasării la Haga (11–13 noiembrie).</p>
+          </div>
+
+          <div class="verify">
+            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
+            <p>Verdict: confirmat. G4Media, 6 noiembrie 2026 (sursa de agendă); bne IntelliNews, 6 noiembrie 2026; Newsmax, 5 noiembrie 2026; Reuters (discuțiile de la Abu Dhabi, 10–11 noiembrie, relatate și de Newsmax). Cele cinci obiective sunt citate identic de mai multe redacții independente.</p>
+            <ul class="sources">
+              <li><a href="https://www.europesays.com/ukraine/66767/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>bne IntelliNews — relatarea celor cinci obiective propuse de Kushner (6 noiembrie 2026)<span class="host">europesays.com</span></a></li>
+              <li><a href="https://www.newsmax.com/newsfront/jared-kushner-ukraine-russia/2026/11/05/id/1275331" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Newsmax — Jared Kushner, Ucraina și Rusia; discuțiile trilaterale de la Abu Dhabi (5 noiembrie 2026)<span class="host">newsmax.com</span></a></li>
+            </ul>
+          </div>
+
+          <div class="opposing">
+            <p class="sec-label">Tabăra adversă</p>
+            <p>Volodimir Zelenski, președintele Ucrainei, a avertizat că garanțiile pentru Rusia, așa cum le înțelege Moscova, „înseamnă schimbarea arhitecturii de securitate în Europa și în lume” și vrea ca ele să fie discutate abia după încheierea războiului (<a href="https://www.europesays.com/ukraine/66767/" target="_blank" rel="noopener">europesays.com</a>). Dmitri Peskov, purtătorul de cuvânt al Kremlinului, a spus că „securitatea indivizibilă” este piatra de temelie a poziției Rusiei și că garanțiile „pot fi doar mutuale”.</p>
+          </div>
+
+          <div class="impact">
+            <span class="badge">Impact direct</span>
+            <p>Impact direct: minim — relevanță de context. Nicio decizie nu a fost luată încă; cadrul propus este în discuție și nu s-a anunțat niciun acord. De urmărit: rezultatul discuțiilor trilaterale de la Abu Dhabi din 10–11 noiembrie.</p>
+          </div>
+        </article>
+
+        <!-- 2 · 6 nov · 09:00 -->
         <article id="stire-76" data-cats="tech" data-sev="amber" data-subiect="achiziție securitate agenți AI">
           <div class="a-meta">
             <span class="a-time">6 nov · 09:00</span>
@@ -862,7 +903,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-34" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">achiziție securitate agenți AI</span>
-            <span class="a-num">#1 / 4</span>
+            <span class="a-num">#2 / 5</span>
           </div>
           <h2>Palo Alto Networks negociază cumpărarea Clutch Security, startup de securitate pentru agenți AI, pentru ~500 mil. $</h2>
 
@@ -898,7 +939,7 @@
           </div>
         </article>
 
-        <!-- 2 · 6 nov · 08:00 -->
+        <!-- 3 · 6 nov · 08:00 -->
         <article id="stire-75" data-cats="securitate romania" data-sev="amber" data-subiect="plata trupelor SUA în România">
           <div class="a-meta">
             <span class="a-time">6 nov · 08:00</span>
@@ -906,7 +947,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-55" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">plata trupelor SUA în România</span>
-            <span class="a-num">#2 / 4</span>
+            <span class="a-num">#3 / 5</span>
           </div>
           <h2>România, dispusă să plătească o parte din costurile trupelor SUA — mesajul transmis lui Colby de Niculescu și Nicușor Dan</h2>
 
@@ -947,7 +988,7 @@
           </div>
         </article>
 
-        <!-- 3 · 6 nov · 07:00 -->
+        <!-- 4 · 6 nov · 07:00 -->
         <article id="stire-74" data-cats="securitate" data-sev="red" data-subiect="atac double-tap în Ucraina">
           <div class="a-meta">
             <span class="a-time">6 nov · 07:00</span>
@@ -955,7 +996,7 @@
             <span class="sev-pill is-red"><i aria-hidden="true"></i>Roșu · grav</span>
             <span class="spot-tag">Știrea zilei</span>
             <span class="subj-pill">atac double-tap în Ucraina</span>
-            <span class="a-num">#3 / 4</span>
+            <span class="a-num">#4 / 5</span>
           </div>
           <h2>Atac rusesc „double-tap” asupra unui punct de ajutor umanitar în Komyshuvakha: cel puțin 42 de morți, zeci încă sub dărâmături</h2>
 
@@ -990,7 +1031,7 @@
           </div>
         </article>
 
-        <!-- 4 · 6 nov · 06:00 -->
+        <!-- 5 · 6 nov · 06:00 -->
         <article id="stire-73" data-cats="tech" data-sev="green" data-subiect="IPO OpenAI în 2027">
           <div class="a-meta">
             <span class="a-time">6 nov · 06:00</span>
@@ -998,7 +1039,7 @@
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <a class="cont-pill" href="#stire-16" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">IPO OpenAI în 2027</span>
-            <span class="a-num">#4 / 4</span>
+            <span class="a-num">#5 / 5</span>
           </div>
           <h2>OpenAI ar putea fi gata de IPO în 2027: veniturile din enterprise au devenit majoritare</h2>
 
@@ -4204,8 +4245,8 @@
 
       <footer>
         <div class="rule" aria-hidden="true"></div>
-        <p>Sfârșitul ediției de azi · Ultima actualizare: vineri, 6 noiembrie 2026, 08:00<br />Monitorizarea rulează la circa 3 ore, în fereastra L–V 06:00–22:00 · S–D 07:30–22:00 — dă refresh pentru noutăți.</p>
-        <a class="to-top" href="#stire-75">↑ Înapoi la cea mai nouă știre</a>
+        <p>Sfârșitul ediției de azi · Ultima actualizare: vineri, 6 noiembrie 2026, 11:00<br />Monitorizarea rulează la circa 3 ore, în fereastra L–V 06:00–22:00 · S–D 07:30–22:00 — dă refresh pentru noutăți.</p>
+        <a class="to-top" href="#stire-77">↑ Înapoi la cea mai nouă știre</a>
       </footer>
     </div>
 
