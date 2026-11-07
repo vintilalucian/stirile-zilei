@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="color-scheme" content="light dark" />
-    <meta name="tirile-versiune" content="2026-11-07T11:00:00+01:00|5|amber" />
+    <meta name="tirile-versiune" content="2026-11-07T12:00:00+01:00|7|amber" />
     <link rel="icon" href="data:," />
     <title>Știrile zilei</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -699,9 +699,9 @@
     <div class="topbar">
       <div class="topbar-inner">
         <span class="dot" aria-hidden="true"></span>
-        <span><strong>Sâmbătă, 7 noiembrie 2026</strong> · actualizat la <strong>11:00</strong></span>
+        <span><strong>Sâmbătă, 7 noiembrie 2026</strong> · actualizat la <strong>12:00</strong></span>
         <span aria-hidden="true">·</span>
-        <span>5 știri azi</span>
+        <span>7 știri azi</span>
         <span class="spacer"></span>
         <button class="refresh-btn" type="button" id="refreshBtn" aria-label="Reîmprospătează pagina">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg>
@@ -771,44 +771,44 @@
       <section class="dashboard" aria-label="Panou de ansamblu">
         <div class="dash-head">
           <span class="dash-title">Dashboard · Azi</span>
-          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 11:00</span>
+          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 12:00</span>
           <span class="dash-meta">Fereastră monitorizare <strong>L–V 06:00–22:00 · S–D 07:30–22:00</strong> · pas ~3 ore</span>
         </div>
 
         <div class="kpi-grid five" role="group" aria-label="Filtrează după categorie — apasă pe un tile">
           <button class="kpi" type="button" data-filter="toate" aria-pressed="true">
             <span class="kpi-top"><span class="kpi-label">Toate știrile</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">5</span>
-            <span class="kpi-sub">știri verificate azi, în 4 rulări</span>
+            <span class="kpi-value">7</span>
+            <span class="kpi-sub">știri verificate azi, în 5 rulări</span>
             <span class="kpi-bar" aria-hidden="true"><i style="width:100%"></i></span>
             <span class="kpi-hint">Apasă pentru toate</span>
           </button>
           <button class="kpi" type="button" data-filter="securitate" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">Securitate &amp; NATO</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">1</span>
-            <span class="kpi-sub">securitatea Europei negociată fără Europa</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:20%"></i></span>
+            <span class="kpi-value">3</span>
+            <span class="kpi-sub">atac masiv al Rusiei asupra Kievului · atac cibernetic la Finanțele belgiene · securitatea Europei negociată fără Europa</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:43%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="romania" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">România</span><span class="kpi-check" aria-hidden="true">✓</span></span>
             <span class="kpi-value">1</span>
             <span class="kpi-sub">rating România 2027</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:20%"></i></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:14%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="belgia" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">Belgia</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">0</span>
-            <span class="kpi-sub"></span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:0%"></i></span>
+            <span class="kpi-value">1</span>
+            <span class="kpi-sub">atacul cibernetic la Finanțele belgiene continuă</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:14%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="tech" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">Tech &amp; AI</span><span class="kpi-check" aria-hidden="true">✓</span></span>
             <span class="kpi-value">3</span>
             <span class="kpi-sub">finanțare OpenAI · centre de date AI · TikTok acuzat de încălcarea DSA</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:60%"></i></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:43%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
         </div>
@@ -822,7 +822,7 @@
       </section>
 
       <div class="filter-status" aria-live="polite">
-        <span class="filter-label">Se afișează: <strong>Toate categoriile — 5 din 5 știri</strong></span>
+        <span class="filter-label">Se afișează: <strong>Toate categoriile — 7 din 7 știri</strong></span>
         <button class="filter-reset" type="button" hidden>Resetează filtrul</button>
       </div>
 
@@ -852,7 +852,77 @@
       <p class="empty">Nicio știre în această categorie azi.</p>
 
       <main>
-        <!-- 1 · 7 nov · 11:00 -->
+        <!-- 1 · 7 nov · 12:00 -->
+<article id="stire-95" data-cats="securitate belgia" data-sev="amber" data-subiect="atacul cibernetic la Finanțele belgiene continuă">
+<div class="a-meta">
+<span class="a-time">7 nov · 12:00</span>
+<span class="a-cat">Belgia · Securitate cibernetică</span>
+<span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
+<span class="subj-pill">atacul cibernetic la Finanțele belgiene continuă</span>
+<span class="a-num">#1 / 7</span>
+</div>
+<h2>Atacul cibernetic la Finanțele belgiene continuă să blocheze firmele noi: serviciile online sunt încă oprite, la zece zile de la incident</h2>
+<div class="sec">
+<p class="sec-label">Ce s-a întâmplat</p>
+<p>The Brussels Times scrie azi, 7 noiembrie (10:21), că atacul cibernetic asupra Serviciului Public Federal Finanțe (SPF Finances) continuă să blocheze înființarea de firme noi: serviciile online ale fiscului sunt încă oprite, la zece zile de la incident. Atacul a început în noaptea de 27 spre 28 octombrie, când atacatorii au pătruns în mediul IT al instituției; administrația a izolat sistemele potențial compromise și a scos offline portalul MyMinfin, Tax-on-web și Biztax. Purtătorul de cuvânt Francis Adyns a declarat atunci că atacul a fost oprit în câteva ore, fără ca atacatorii să preia controlul aplicațiilor sau să ajungă la date, și că nu există indicii de scurgere de date. Termenele de depunere a declarațiilor scadente în jurul datei de 31 octombrie au fost prelungite până pe 16 noiembrie.</p>
+</div>
+<div class="sec">
+<p class="sec-label">De ce contează</p>
+<p>Un incident de securitate cibernetică la o instituție publică belgiană, ajuns la zece zile de întrerupere a serviciilor online — direct pe terenul profesional al unui IT incident Manager, în țara în care locuiește cu familia. Faptul că înființarea de firme noi rămâne blocată arată că impactul operațional se adâncește, nu se rezolvă: serviciile trebuie reconstruite într-un mediu izolat, un proces care durează. Pentru el personal, termenele fiscale prelungite până pe 16 noiembrie rămân valabile; nicio acțiune imediată.</p>
+</div>
+<div class="verify">
+<p class="sec-label">Verificare <span class="status">Sursă unică</span></p>
+<p>Verdict: sursă unică pentru noutatea de azi — faptul că serviciile sunt încă oprite și firmele noi rămân blocate apare, deocamdată, doar la The Brussels Times. Incidentul din 28 octombrie este confirmat independent: The Register (29 oct 2026) — atacul confirmat de SPF Finances, MyMinfin și alte servicii scoase offline, termene prelungite până pe 16 noiembrie; Orbitax (2 nov 2026) — prelungirea generală a termenelor după incidentul de securitate cibernetică.</p>
+<ul class="sources">
+<li><a href="https://www.brusselstimes.com/belgium/2396404/finance-ministry-cyberattack-continues-to-halt-new-businesses" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>The Brussels Times — „Finance Ministry cyberattack continues to halt new businesses" (7 nov 2026)<span class="host">brusselstimes.com</span></a></li>
+<li><a href="https://www.theregister.com/security/2026/10/29/belgiums-tax-agency-confirms-cyberattack-pulls-services-offline/5306409" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>The Register — „Belgium's tax agency confirms cyberattack, pulls services offline" (29 oct 2026)<span class="host">theregister.com</span></a></li>
+<li><a href="https://orbitax.com/news/country/article/Update---Belgium-Provides-Gene-63426" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Orbitax — „Update - Belgium Provides General Deadline Extension Following Cybersecurity Incident" (2 nov 2026)<span class="host">orbitax.com</span></a></li>
+</ul>
+</div>
+<div class="impact">
+<span class="badge">Impact direct</span>
+<p>Impact direct: minim azi — nicio acțiune imediată. Termenele fiscale prelungite până la 16 noiembrie rămân în vigoare; de urmărit anunțul repunerii în funcțiune a MyMinfin. Relevanță profesională directă: un incident guvernamental de securitate cibernetică, cu întrerupere de servicii de zece zile, în Belgia.</p>
+</div>
+</article>
+
+        <!-- 2 · 7 nov · 12:00 -->
+<article id="stire-96" data-cats="securitate" data-sev="amber" data-subiect="atac masiv al Rusiei asupra Kievului">
+<div class="a-meta">
+<span class="a-time">7 nov · 12:00</span>
+<span class="a-cat">Securitate &amp; NATO</span>
+<span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
+<span class="subj-pill">atac masiv al Rusiei asupra Kievului</span>
+<span class="a-num">#2 / 7</span>
+</div>
+<h2>Atac masiv al Rusiei asupra Kievului: 172 de drone și 36 de rachete au lovit podul de nord și infrastructura energetică, cu trei zile înainte de discuțiile de la Abu Dhabi</h2>
+<div class="sec">
+<p class="sec-label">Ce s-a întâmplat</p>
+<p>În noaptea de 6 spre 7 noiembrie, Rusia a lansat asupra Kievului și regiunii 172 de drone de atac — dintre care 137 cu reacție — și 36 de rachete balistice și de alt tip (Iskander-M, Zircon, KN-23 și S-400), potrivit Forțelor Aeriene ucrainene. Apărarea antiaeriană a interceptat 149 de drone și 4 rachete. Au fost lovite podul de nord peste Nipru, clădiri rezidențiale, o grădiniță și infrastructura energetică; părți ale capitalei au rămas fără curent, încălzire și apă. Președintele Zelenski a anunțat un mort și opt răniți, printre care un copil; primarul Vitali Kliciko a confirmat loviturile asupra podului de nord. Ministerul rus al Apărării a confirmat atacul și susține că țintele au fost din sectorul militar-industrial și din infrastructura energetică și de transport.</p>
+</div>
+<div class="sec">
+<p class="sec-label">De ce contează</p>
+<p>Un atac amplu asupra Kievului — trei valuri de rachete balistice, inclusiv hipersonice Zircon, și lovituri asupra unui pod-cheie peste Nipru — vine cu trei zile înainte de discuțiile trilaterale SUA–Ucraina–Rusia de la Abu Dhabi (10–11 noiembrie), pe fondul respingerii europene a planului SUA–Rusia (cardul de azi, 11:00). Escaladarea chiar înaintea negocierilor arată că Moscova își întărește poziția prin forță. Pentru el: relevanță directă pe arcul securității europene urmărit în pagină; impact direct minim, fără acțiune imediată.</p>
+</div>
+<div class="verify">
+<p class="sec-label">Verificare <span class="status">Confirmat</span></p>
+<p>Verdict: confirmat. Reuters (7 nov 2026, 07:31 UTC) — Moscova spune că a lovit ținte din sectorul militar-industrial și din infrastructura energetică și de transport din Kiev și împrejurimi; Forțele Aeriene ucrainene (7 nov) — 172 de drone și 36 de rachete lansate, 149 de drone și 4 rachete interceptate; președintele Zelenski (7 nov) — bilanțul atacului și pagubele. Nuanță: G4Media titrează „peste 450 de drone”, cifră care nu apare în bilanțurile oficiale ucrainene (172 de drone) — cardul folosește cifrele oficiale, confirmate de Reuters și de Forțele Aeriene.</p>
+<ul class="sources">
+<li><a href="https://www.g4media.ro/atac-masiv-al-rusiei-asupra-kievului-cu-peste-450-de-drone-si-30-de-rachete-pagube-la-infrastructura-civila-si-la-ambasada-azerbaidjanului-seful-onu-condamna-bombardamentul.html" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>G4Media — „Atac masiv al Rusiei asupra Kievului, cu peste 450 de drone și 30 de rachete" (7 nov 2026)<span class="host">g4media.ro</span></a></li>
+<li><a href="https://985theriver.com/2026/11/07/russia-says-it-hit-targets-in-and-around-kyiv-in-massive-overnight-strike/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Reuters — „Russia says it hit targets in and around Kyiv in massive overnight strike" (7 nov 2026) [republicare Reuters]<span class="host">985theriver.com</span></a></li>
+<li><a href="https://www.europesays.com/russia/86031/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>UNITED24 Media — „Russia Launches Three Waves of Ballistic Missiles at Kyiv Ahead of Trilateral Peace Talks" (7 nov 2026)<span class="host">europesays.com</span></a></li>
+</ul>
+</div>
+<div class="opposing">
+<p class="sec-label">Tabăra adversă</p>
+<p>Ministerul rus al Apărării susține că loviturile au vizat complexul militar-industrial și infrastructura energetică și de transport: podul de nord, pe care Moscova îl descrie drept rută de transport pentru armament și echipamente militare, și uzina Meridian, despre care Rusia afirmă că produce rachete de croazieră Flamingo (<a href="https://985theriver.com/2026/11/07/russia-says-it-hit-targets-in-and-around-kyiv-in-massive-overnight-strike/" target="_blank" rel="noopener">985theriver.com — republicare Reuters</a>).</p>
+</div>
+<div class="impact">
+<span class="badge">Impact direct</span>
+<p>Impact direct: minim azi — nicio acțiune imediată. Relevanță directă pe firul negocierilor de pace urmărit în pagină: discuțiile trilaterale de la Abu Dhabi sunt programate pe 10–11 noiembrie; de urmărit dacă escaladarea schimbă pozițiile la masă.</p>
+</div>
+</article>
+
+        <!-- 3 · 7 nov · 11:00 -->
         <article id="stire-94" data-cats="securitate" data-sev="amber" data-subiect="securitatea Europei negociată fără Europa">
           <div class="a-meta">
             <span class="a-time">7 nov · 11:00</span>
@@ -861,7 +931,7 @@
             <span class="spot-tag">Știrea zilei</span>
             <a class="cont-pill" href="#stire-77" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">securitatea Europei negociată fără Europa</span>
-            <span class="a-num">#1 / 5</span>
+            <span class="a-num">#3 / 7</span>
           </div>
           <h2>Europa respinge planul SUA–Rusia pentru o nouă arhitectură de securitate: aliații NATO n-au fost informați dinainte, iar Kallas spune că Putin „nu are drept de veto"</h2>
 
@@ -902,7 +972,7 @@
           </div>
         </article>
 
-        <!-- 2 · 7 nov · 10:00 -->
+        <!-- 4 · 7 nov · 10:00 -->
         <article id="stire-93" data-cats="tech" data-sev="amber" data-subiect="finanțare OpenAI">
           <div class="a-meta">
             <span class="a-time">7 nov · 10:00</span>
@@ -910,7 +980,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-73" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">finanțare OpenAI</span>
-            <span class="a-num">#2 / 5</span>
+            <span class="a-num">#4 / 7</span>
           </div>
           <h2>OpenAI a închis prima tranșă de 11 mld $ din noua rundă, la o evaluare de 1,25 trilioane $ — cu o treime mai puțin decât cerea inițial</h2>
 
@@ -945,14 +1015,14 @@
           </div>
         </article>
 
-        <!-- 3 · 7 nov · 09:00 -->
+        <!-- 5 · 7 nov · 09:00 -->
         <article id="stire-91" data-cats="romania" data-sev="amber" data-subiect="rating România 2027">
           <div class="a-meta">
             <span class="a-time">7 nov · 09:00</span>
             <span class="a-cat">România</span>
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="subj-pill">rating România 2027</span>
-            <span class="a-num">#3 / 5</span>
+            <span class="a-num">#5 / 7</span>
           </div>
           <h2>Nazare avertizează: România riscă „cartonașul roșu" de la agențiile de rating dacă bugetul pe 2027 nu e credibil</h2>
 
@@ -982,14 +1052,14 @@
           </div>
         </article>
 
-        <!-- 4 · 7 nov · 09:00 -->
+        <!-- 6 · 7 nov · 09:00 -->
         <article id="stire-92" data-cats="tech" data-sev="green" data-subiect="centre de date AI">
           <div class="a-meta">
             <span class="a-time">7 nov · 09:00</span>
             <span class="a-cat">Tech &amp; AI</span>
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <span class="subj-pill">centre de date AI</span>
-            <span class="a-num">#4 / 5</span>
+            <span class="a-num">#6 / 7</span>
           </div>
           <h2>Google preia de la Crusoe proiectul neterminat de centru de date din Wyoming și investește 17 mld $</h2>
 
@@ -1018,14 +1088,14 @@
           </div>
         </article>
 
-        <!-- 5 · 7 nov · 08:00 -->
+        <!-- 7 · 7 nov · 08:00 -->
         <article id="stire-90" data-cats="tech" data-sev="green" data-subiect="TikTok acuzat de încălcarea DSA">
           <div class="a-meta">
             <span class="a-time">7 nov · 08:00</span>
             <span class="a-cat">Tech &amp; AI</span>
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <span class="subj-pill">TikTok acuzat de încălcarea DSA</span>
-            <span class="a-num">#5 / 5</span>
+            <span class="a-num">#7 / 7</span>
           </div>
           <h2>Comisia Europeană acuză TikTok de încălcarea DSA: feedul „For You" ar crea „găuri de iepure" dăunătoare sănătății mintale — amendă posibilă de până la 6% din cifra de afaceri globală</h2>
 
@@ -4692,8 +4762,8 @@
 
       <footer>
         <div class="rule" aria-hidden="true"></div>
-        <p>Sfârșitul ediției de azi · Ultima actualizare: sâmbătă, 7 noiembrie 2026, 10:00<br />Monitorizarea rulează la circa 3 ore, în fereastra L–V 06:00–22:00 · S–D 07:30–22:00 — dă refresh pentru noutăți.</p>
-        <a class="to-top" href="#stire-93">↑ Înapoi la cea mai nouă știre</a>
+        <p>Sfârșitul ediției de azi · Ultima actualizare: sâmbătă, 7 noiembrie 2026, 12:00<br />Monitorizarea rulează la circa 3 ore, în fereastra L–V 06:00–22:00 · S–D 07:30–22:00 — dă refresh pentru noutăți.</p>
+        <a class="to-top" href="#stire-95">↑ Înapoi la cea mai nouă știre</a>
       </footer>
     </div>
 
