@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="color-scheme" content="light dark" />
-    <meta name="tirile-versiune" content="2026-11-07T18:00:00+01:00|14|amber" />
+    <meta name="tirile-versiune" content="2026-11-07T20:00:00+01:00|15|red" />
     <link rel="icon" href="data:," />
     <title>Știrile zilei</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -699,9 +699,9 @@
     <div class="topbar">
       <div class="topbar-inner">
         <span class="dot" aria-hidden="true"></span>
-        <span><strong>Sâmbătă, 7 noiembrie 2026</strong> · actualizat la <strong>18:00</strong></span>
+        <span><strong>Sâmbătă, 7 noiembrie 2026</strong> · actualizat la <strong>20:00</strong></span>
         <span aria-hidden="true">·</span>
-        <span>14 știri azi</span>
+        <span>15 știri azi</span>
         <span class="spacer"></span>
         <button class="refresh-btn" type="button" id="refreshBtn" aria-label="Reîmprospătează pagina">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg>
@@ -739,30 +739,30 @@
 
       <!-- Chenar permanent: știrea cea mai importantă a zilei — sub fereastra
            „Ultimele știri", ÎNAINTEA dashboardului, vizibilă din prima, fără scroll.
-           Nivelul de azi: GALBEN (sev-amber) — de urmărit: Europa respinge
-           planul SUA–Rusia pentru o nouă arhitectură de securitate, aliații
-           NATO nefiind informați dinainte — severitatea maximă a zilei,
-           peste știrile verzi.
+           Nivelul de azi: ROȘU (sev-red) — grav: atac armat în Piața Centrală
+           din Cracovia — șase morți și 15 răniți, atacatorul împușcat de
+           polițiști și reținut — prima știre cu severitate roșie a zilei,
+           severitatea maximă, peste știrile galbene și verzi.
            Chenarul rămâne în afara logicii de filtrare: vizibil indiferent de filtrul de categorie. -->
-      <section class="spot sev-amber" aria-label="Știrea cea mai importantă a zilei">
+      <section class="spot sev-red" aria-label="Știrea cea mai importantă a zilei">
         <div class="spot-head">
           <span class="spot-kicker">
             <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13 2 4.5 13.5H11L9.5 22 19 10h-6.5L13 2z"/></svg>
             Știrea zilei · Atenție rapidă
           </span>
-          <span class="spot-time">7 nov · 11:00</span>
-          <span class="spot-pill">Nivel galben — de urmărit</span>
+          <span class="spot-time">7 nov · 20:00</span>
+          <span class="spot-pill">Nivel roșu — grav</span>
         </div>
-        <h2 class="spot-title">Europa respinge planul SUA–Rusia pentru o nouă arhitectură de securitate: aliații NATO n-au fost informați dinainte, iar Kallas spune că Putin „nu are drept de veto"</h2>
-        <p class="spot-why"><strong>De ce e în față:</strong> Arhitectura de securitate a Europei se negociază între Washington și Moscova fără ca aliații europeni să fi fost informați dinainte — iar unii aliați se tem că inițiativa ar putea fi legată de revizuirea prezenței militare americane în Europa, așteptată în decembrie; e direct pe domeniul securității aliate urmărit în pagină.</p>
-        <p class="spot-lead">POLITICO a vorbit cu 12 diplomați NATO, trimiși ai UE și oficiali guvernamentali europeni: propunerea administrației Trump pentru un nou aranjament european de securitate cu Rusia — anunțată de președintele Trump după întâlnirea de joi cu emisarul lui Putin, Kirill Dmitriev, și detaliată de Jared Kushner în cinci obiective — a fost primită cu scepticism în capitalele europene. Trei diplomați ai alianței au spus că aliații NATO nu au fost informați în prealabil despre planurile americane. Vineri, la Varșovia, șefa diplomației UE, Kaja Kallas, a respins ideea renegocierii arhitecturii de securitate cu Moscova: „Avem deja o arhitectură europeană de securitate", referindu-se la NATO și UE, și a spus că Putin „nu are drept de veto asupra securității europene".</p>
+        <h2 class="spot-title">Atac armat în Piața Centrală din Cracovia: șase morți și 15 răniți — atacatorul a tras la întâmplare dintr-o mașină, a fost împușcat și reținut</h2>
+        <p class="spot-why"><strong>De ce e în față:</strong> Cel mai grav fapt al zilei: un atac armat cu șase morți și 15 răniți într-o piață plină din Cracovia, într-o țară aliată NATO și UE — primul incident cu severitate roșie al zilei, pe fondul săptămânii de alertă pe securitate publică în Europa.</p>
+        <p class="spot-lead">Un bărbat a intrat cu mașina în Piața Centrală din Cracovia și a tras la întâmplare asupra trecătorilor; șase oameni au murit și 15 au fost răniți, între care doi polițiști. Atacatorul a fost împușcat de polițiști, reținut și dus la spital; poliția spune că a acționat singur, iar motivul rămâne necunoscut.</p>
         <p class="spot-more" hidden><span class="spot-more-text"></span> <button class="spot-more-btn" type="button">apasă aici</button></p>
         <div class="spot-foot">
-          <a class="spot-link" href="#stire-94">Citește știrea completă ↓</a>
-          <div class="sev-scale" role="img" aria-label="Scară de gravitate: verde — normal, galben — de urmărit, roșu — grav. Nivelul de azi: galben.">
+          <a class="spot-link" href="#stire-104">Citește știrea completă ↓</a>
+          <div class="sev-scale" role="img" aria-label="Scară de gravitate: verde — normal, galben — de urmărit, roșu — grav. Nivelul de azi: roșu.">
             <span class="sev-item"><i class="sev-dot g" aria-hidden="true"></i>Verde · normal</span>
-            <span class="sev-item on"><i class="sev-dot y" aria-hidden="true"></i>Galben · de urmărit</span>
-            <span class="sev-item"><i class="sev-dot r" aria-hidden="true"></i>Roșu · grav</span>
+            <span class="sev-item"><i class="sev-dot y" aria-hidden="true"></i>Galben · de urmărit</span>
+            <span class="sev-item on"><i class="sev-dot r" aria-hidden="true"></i>Roșu · grav</span>
           </div>
         </div>
       </section>
@@ -771,44 +771,44 @@
       <section class="dashboard" aria-label="Panou de ansamblu">
         <div class="dash-head">
           <span class="dash-title">Dashboard · Azi</span>
-          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 18:00</span>
+          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 20:00</span>
           <span class="dash-meta">Fereastră monitorizare <strong>L–V 06:00–22:00 · S–D 07:30–22:00</strong> · pas ~3 ore</span>
         </div>
 
         <div class="kpi-grid five" role="group" aria-label="Filtrează după categorie — apasă pe un tile">
           <button class="kpi" type="button" data-filter="toate" aria-pressed="true">
             <span class="kpi-top"><span class="kpi-label">Toate știrile</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">14</span>
-            <span class="kpi-sub">știri verificate azi, în 11 rulări</span>
+            <span class="kpi-value">15</span>
+            <span class="kpi-sub">știri verificate azi, în 12 rulări</span>
             <span class="kpi-bar" aria-hidden="true"><i style="width:100%"></i></span>
             <span class="kpi-hint">Apasă pentru toate</span>
           </button>
           <button class="kpi" type="button" data-filter="securitate" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">Securitate &amp; NATO</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">5</span>
-            <span class="kpi-sub">campanie de vigilență EUCOM · mine navale în Marea Baltică · atacul cibernetic la Finanțele belgiene continuă · atac masiv al Rusiei asupra Kievului · securitatea Europei negociată fără Europa</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:36%"></i></span>
+            <span class="kpi-value">6</span>
+            <span class="kpi-sub">atac armat în Cracovia · campanie de vigilență EUCOM · mine navale în Marea Baltică · atacul cibernetic la Finanțele belgiene continuă · atac masiv al Rusiei asupra Kievului · securitatea Europei negociată fără Europa</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:40%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="romania" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">România</span><span class="kpi-check" aria-hidden="true">✓</span></span>
             <span class="kpi-value">3</span>
             <span class="kpi-sub">austeritate buget 2027 România · repornirea Unității 1 Cernavodă · rating România 2027</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:21%"></i></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:20%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="belgia" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">Belgia</span><span class="kpi-check" aria-hidden="true">✓</span></span>
             <span class="kpi-value">2</span>
             <span class="kpi-sub">percheziții la domiciliu în Belgia · atacul cibernetic la Finanțele belgiene continuă</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:14%"></i></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:13%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="tech" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">Tech &amp; AI</span><span class="kpi-check" aria-hidden="true">✓</span></span>
             <span class="kpi-value">5</span>
             <span class="kpi-sub">midterms SUA și Big Tech · Spaces în Muse · finanțare OpenAI · centre de date AI · TikTok acuzat de încălcarea DSA</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:36%"></i></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:33%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
         </div>
@@ -822,7 +822,7 @@
       </section>
 
       <div class="filter-status" aria-live="polite">
-        <span class="filter-label">Se afișează: <strong>Toate categoriile — 14 din 14 știri</strong></span>
+        <span class="filter-label">Se afișează: <strong>Toate categoriile — 15 din 15 știri</strong></span>
         <button class="filter-reset" type="button" hidden>Resetează filtrul</button>
       </div>
 
@@ -852,14 +852,49 @@
       <p class="empty">Nicio știre în această categorie azi.</p>
 
       <main>
-        <!-- 1 · 7 nov · 18:00 -->
+        <!-- 1 · 7 nov · 20:00 -->
+        <article id="stire-104" data-cats="securitate" data-sev="red" data-subiect="atac armat în Cracovia">
+  <div class="a-meta">
+    <span class="a-time">7 nov · 20:00</span>
+    <span class="a-cat">Securitate &amp; NATO</span>
+    <span class="sev-pill is-red"><i aria-hidden="true"></i>Roșu · grav</span>
+    <span class="spot-tag">Știrea zilei</span>
+    <span class="subj-pill">atac armat în Cracovia</span>
+    <span class="a-num">#1 / 15</span>
+  </div>
+  <h2>Atac armat în Piața Centrală din Cracovia: șase morți și 15 răniți — atacatorul a tras la întâmplare dintr-o mașină, a fost împușcat și reținut</h2>
+  <div class="sec">
+    <p class="sec-label">Ce s-a întâmplat</p>
+    <p>Sâmbătă, 7 noiembrie, în jurul orei 15:00, un bărbat a intrat cu mașina în Piața Centrală din Cracovia (Rynek Główny) și a deschis focul la întâmplare asupra trecătorilor, dintr-o armă lungă de tip militar, potrivit poliției. Bilanțul actualizat al Poliției Małopolska: șase morți — patru femei și doi bărbați — și 15 răniți, între care doi polițiști, unul în stare foarte gravă, operat de urgență. Atacatorul, cetățean polonez, a fost împușcat de polițiști în timpul intervenției, reținut și dus la spital. Poliția spune că a acționat singur și a dezmințit informațiile despre un al doilea atacator; motivul rămâne necunoscut, iar premierul Donald Tusk a anunțat că poliția investighează „contextul și toate circumstanțele atacului”.</p>
+  </div>
+  <div class="sec">
+    <p class="sec-label">De ce contează</p>
+    <p>Atacul vine într-o săptămână în care Europa e deja în alertă pe securitate publică: valul de amenințări cu bombă la zeci de zboruri europene (5–6 noiembrie, semnalat în pagină), alerta Bundeswehr la sabotaj „semnificativ” și campania de vigilență „See Something, Do Something” lansată de Comandamentul SUA în Europa. Cracovia e unul dintre cele mai vizitate orașe din Europa Centrală, iar un atac cu armă de tip militar, la întâmplare, într-o piață plină într-o sâmbătă după-amiază, într-o țară aliată NATO și UE, ridică întrebări directe despre securitatea spațiilor publice aglomerate — exact tema amenințărilor hibride și de securitate publică urmărită în pagină. Pentru un IT incident Manager în mediul NATO, e context operațional direct, chiar dacă atacul în sine nu are, deocamdată, nicio legătură stabilită cu terorismul sau cu un actor statal.</p>
+  </div>
+  <div class="verify">
+    <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
+    <p>Verdict: confirmat. G4Media (sursă din lista monitorizată) a semnalat atacul în regim BREAKING sâmbătă după-amiază; Poliția Małopolska a confirmat bilanțul actualizat — șase morți și 15 răniți — iar AP, CNN și The Times relatează aceleași cifre, cu atacatorul reținut și motivul necunoscut. Bilanțul inițial (doi morți, cel puțin 10 răniți) a fost actualizat de autorități pe parcursul serii.</p>
+    <ul class="sources">
+      <li><a href="https://www.cnn.com/2026/11/07/europe/krakow-shooting-poland-killed-intl?cid=external-feeds_iluminar_meta" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>CNN — „At least 6 dead in shooting in the main market square of Krakow, Poland, police say" (7 nov 2026)<span class="host">cnn.com</span></a></li>
+      <li><a href="https://www.thetimes.com/world/europe/article/krakow-shooting-main-square-city-centre-poland-rn2xgdxbd" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>The Times — „Krakow shooting: six killed and 15 injured near main square" (7 nov 2026)<span class="host">thetimes.com</span></a></li>
+      <li><a href="https://usanews24.live/shooting-in-krakow-poland-leaves-6-dead-and-15-injured/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Associated Press — „Shooting in Krakow, Poland, leaves 6 dead and 15 injured" (7 nov 2026)<span class="host">usanews24.live</span></a></li>
+      <li><a href="https://www.europesays.com/poland/35697/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>PAP (agenția poloneză de presă), via Europe Says — „At least 6 dead, 15 injured after drive-by shooting in Poland's Kraków" (7 nov 2026)<span class="host">europesays.com</span></a></li>
+    </ul>
+  </div>
+  <div class="impact">
+    <span class="badge">Impact direct</span>
+    <p>Impact direct: minim — nicio călătorie în Polonia în planurile apropiate și nicio rudă acolo; relevanță de context ridicată. De urmărit: motivul atacului și eventualele măsuri de securitate anunțate de autoritățile poloneze, plus dacă apar evaluări de risc noi pentru spațiile publice aglomerate din Europa.</p>
+  </div>
+</article>
+
+        <!-- 2 · 7 nov · 18:00 -->
         <article id="stire-103" data-cats="securitate" data-sev="amber" data-subiect="campanie de vigilență EUCOM">
           <div class="a-meta">
             <span class="a-time">7 nov · 18:00</span>
             <span class="a-cat">Securitate &amp; NATO</span>
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="subj-pill">campanie de vigilență EUCOM</span>
-            <span class="a-num">#1 / 14</span>
+            <span class="a-num">#2 / 15</span>
           </div>
           <h2>Comandamentul SUA în Europa lansează campania «See Something, Do Something»: vigilență sporită pentru militari și familii, pe fondul amenințărilor hibride</h2>
 
@@ -890,7 +925,7 @@
           </div>
         </article>
 
-        <!-- 2 · 7 nov · 17:00 -->
+        <!-- 3 · 7 nov · 17:00 -->
         <article id="stire-101" data-cats="tech" data-sev="amber" data-subiect="midterms SUA și Big Tech">
           <div class="a-meta">
             <span class="a-time">7 nov · 17:00</span>
@@ -898,7 +933,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-49" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">midterms SUA și Big Tech</span>
-            <span class="a-num">#2 / 14</span>
+            <span class="a-num">#3 / 15</span>
           </div>
           <h2>După victoria democraților la alegerile de la jumătatea mandatului, Big Tech se pregătește de reglementări mai dure pe AI: moratorii pe centre de date și anchete în Congres</h2>
 
@@ -939,14 +974,14 @@
           </div>
         </article>
 
-        <!-- 3 · 7 nov · 17:00 -->
+        <!-- 4 · 7 nov · 17:00 -->
         <article id="stire-102" data-cats="belgia" data-sev="amber" data-subiect="percheziții la domiciliu în Belgia">
           <div class="a-meta">
             <span class="a-time">7 nov · 17:00</span>
             <span class="a-cat">Belgia</span>
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="subj-pill">percheziții la domiciliu în Belgia</span>
-            <span class="a-num">#3 / 14</span>
+            <span class="a-num">#4 / 15</span>
           </div>
           <h2>Parlamentul belgian a aprobat perchezițiile la domiciliu pentru migranții în situație ilegală — lege controversată, votată în plină criză de guvern</h2>
 
@@ -982,14 +1017,14 @@
           </div>
         </article>
 
-        <!-- 4 · 7 nov · 16:00 -->
+        <!-- 5 · 7 nov · 16:00 -->
         <article id="stire-100" data-cats="securitate" data-sev="green" data-subiect="mine navale în Marea Baltică">
           <div class="a-meta">
             <span class="a-time">7 nov · 16:00</span>
             <span class="a-cat">Securitate &amp; NATO</span>
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <span class="subj-pill">mine navale în Marea Baltică</span>
-            <span class="a-num">#4 / 14</span>
+            <span class="a-num">#5 / 15</span>
           </div>
           <h2>Danemarca și Lituania cumpără mine navale „Blocker" din Finlanda, prin schema comună de achiziții a NATO din Marea Baltică</h2>
 
@@ -1019,7 +1054,7 @@
           </div>
         </article>
 
-        <!-- 5 · 7 nov · 15:00 -->
+        <!-- 6 · 7 nov · 15:00 -->
         <article id="stire-99" data-cats="romania" data-sev="green" data-subiect="austeritate buget 2027 România">
           <div class="a-meta">
             <span class="a-time">7 nov · 15:00</span>
@@ -1027,7 +1062,7 @@
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <a class="cont-pill" href="#stire-91" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">austeritate buget 2027 România</span>
-            <span class="a-num">#5 / 14</span>
+            <span class="a-num">#6 / 15</span>
           </div>
           <h2>Niculescu cere tuturor ministerelor planuri de reducere a cheltuielilor până la sfârșitul săptămânii viitoare; bugetul pe 2027, gata în circa o lună</h2>
 
@@ -1063,14 +1098,14 @@
           </div>
         </article>
 
-        <!-- 6 · 7 nov · 14:00 -->
+        <!-- 7 · 7 nov · 14:00 -->
         <article id="stire-98" data-cats="tech" data-sev="green" data-subiect="Spaces în Muse">
           <div class="a-meta">
             <span class="a-time">7 nov · 14:00</span>
             <span class="a-cat">Tech &amp; AI</span>
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <span class="subj-pill">Spaces în Muse</span>
-            <span class="a-num">#6 / 14</span>
+            <span class="a-num">#7 / 15</span>
           </div>
           <h2>Meta lansează Spaces în Muse: descrii o idee în chat, iar agentul îți construiește un spațiu dedicat — tracker, planner sau tablou de proiect</h2>
 
@@ -1100,7 +1135,7 @@
           </div>
         </article>
 
-        <!-- 7 · 7 nov · 13:00 -->
+        <!-- 8 · 7 nov · 13:00 -->
         <article id="stire-97" data-cats="romania" data-sev="green" data-subiect="repornirea Unității 1 Cernavodă">
           <div class="a-meta">
             <span class="a-time">7 nov · 13:00</span>
@@ -1108,7 +1143,7 @@
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <a class="cont-pill" href="#stire-42" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">repornirea Unității 1 Cernavodă</span>
-            <span class="a-num">#7 / 14</span>
+            <span class="a-num">#8 / 15</span>
           </div>
           <h2>Unitatea 1 de la Cernavodă a fost repornită după circa 100 de zile de oprire: pierderi de aproximativ un miliard de lei; decizia pentru Unitatea 2, luni</h2>
 
@@ -1143,14 +1178,14 @@
           </div>
         </article>
 
-        <!-- 8 · 7 nov · 12:00 -->
+        <!-- 9 · 7 nov · 12:00 -->
 <article id="stire-95" data-cats="securitate belgia" data-sev="amber" data-subiect="atacul cibernetic la Finanțele belgiene continuă">
 <div class="a-meta">
 <span class="a-time">7 nov · 12:00</span>
 <span class="a-cat">Belgia · Securitate cibernetică</span>
 <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
 <span class="subj-pill">atacul cibernetic la Finanțele belgiene continuă</span>
-<span class="a-num">#8 / 14</span>
+<span class="a-num">#9 / 15</span>
 </div>
 <h2>Atacul cibernetic la Finanțele belgiene continuă să blocheze firmele noi: serviciile online sunt încă oprite, la zece zile de la incident</h2>
 <div class="sec">
@@ -1176,14 +1211,14 @@
 </div>
 </article>
 
-        <!-- 9 · 7 nov · 12:00 -->
+        <!-- 10 · 7 nov · 12:00 -->
 <article id="stire-96" data-cats="securitate" data-sev="amber" data-subiect="atac masiv al Rusiei asupra Kievului">
 <div class="a-meta">
 <span class="a-time">7 nov · 12:00</span>
 <span class="a-cat">Securitate &amp; NATO</span>
 <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
 <span class="subj-pill">atac masiv al Rusiei asupra Kievului</span>
-<span class="a-num">#9 / 14</span>
+<span class="a-num">#10 / 15</span>
 </div>
 <h2>Atac masiv al Rusiei asupra Kievului: 172 de drone și 36 de rachete au lovit podul de nord și infrastructura energetică, cu trei zile înainte de discuțiile de la Abu Dhabi</h2>
 <div class="sec">
@@ -1213,16 +1248,15 @@
 </div>
 </article>
 
-        <!-- 10 · 7 nov · 11:00 -->
+        <!-- 11 · 7 nov · 11:00 -->
         <article id="stire-94" data-cats="securitate" data-sev="amber" data-subiect="securitatea Europei negociată fără Europa">
           <div class="a-meta">
             <span class="a-time">7 nov · 11:00</span>
             <span class="a-cat">Securitate &amp; NATO</span>
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
-            <span class="spot-tag">Știrea zilei</span>
             <a class="cont-pill" href="#stire-77" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">securitatea Europei negociată fără Europa</span>
-            <span class="a-num">#10 / 14</span>
+            <span class="a-num">#11 / 15</span>
           </div>
           <h2>Europa respinge planul SUA–Rusia pentru o nouă arhitectură de securitate: aliații NATO n-au fost informați dinainte, iar Kallas spune că Putin „nu are drept de veto"</h2>
 
@@ -1263,7 +1297,7 @@
           </div>
         </article>
 
-        <!-- 11 · 7 nov · 10:00 -->
+        <!-- 12 · 7 nov · 10:00 -->
         <article id="stire-93" data-cats="tech" data-sev="amber" data-subiect="finanțare OpenAI">
           <div class="a-meta">
             <span class="a-time">7 nov · 10:00</span>
@@ -1271,7 +1305,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-73" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">finanțare OpenAI</span>
-            <span class="a-num">#11 / 14</span>
+            <span class="a-num">#12 / 15</span>
           </div>
           <h2>OpenAI a închis prima tranșă de 11 mld $ din noua rundă, la o evaluare de 1,25 trilioane $ — cu o treime mai puțin decât cerea inițial</h2>
 
@@ -1306,14 +1340,14 @@
           </div>
         </article>
 
-        <!-- 12 · 7 nov · 09:00 -->
+        <!-- 13 · 7 nov · 09:00 -->
         <article id="stire-91" data-cats="romania" data-sev="amber" data-subiect="rating România 2027">
           <div class="a-meta">
             <span class="a-time">7 nov · 09:00</span>
             <span class="a-cat">România</span>
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="subj-pill">rating România 2027</span>
-            <span class="a-num">#12 / 14</span>
+            <span class="a-num">#13 / 15</span>
           </div>
           <h2>Nazare avertizează: România riscă „cartonașul roșu" de la agențiile de rating dacă bugetul pe 2027 nu e credibil</h2>
 
@@ -1343,14 +1377,14 @@
           </div>
         </article>
 
-        <!-- 13 · 7 nov · 09:00 -->
+        <!-- 14 · 7 nov · 09:00 -->
         <article id="stire-92" data-cats="tech" data-sev="green" data-subiect="centre de date AI">
           <div class="a-meta">
             <span class="a-time">7 nov · 09:00</span>
             <span class="a-cat">Tech &amp; AI</span>
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <span class="subj-pill">centre de date AI</span>
-            <span class="a-num">#13 / 14</span>
+            <span class="a-num">#14 / 15</span>
           </div>
           <h2>Google preia de la Crusoe proiectul neterminat de centru de date din Wyoming și investește 17 mld $</h2>
 
@@ -1379,14 +1413,14 @@
           </div>
         </article>
 
-        <!-- 14 · 7 nov · 08:00 -->
+        <!-- 15 · 7 nov · 08:00 -->
         <article id="stire-90" data-cats="tech" data-sev="green" data-subiect="TikTok acuzat de încălcarea DSA">
           <div class="a-meta">
             <span class="a-time">7 nov · 08:00</span>
             <span class="a-cat">Tech &amp; AI</span>
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <span class="subj-pill">TikTok acuzat de încălcarea DSA</span>
-            <span class="a-num">#14 / 14</span>
+            <span class="a-num">#15 / 15</span>
           </div>
           <h2>Comisia Europeană acuză TikTok de încălcarea DSA: feedul „For You" ar crea „găuri de iepure" dăunătoare sănătății mintale — amendă posibilă de până la 6% din cifra de afaceri globală</h2>
 
