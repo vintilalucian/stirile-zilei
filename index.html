@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="color-scheme" content="light dark" />
-    <meta name="tirile-versiune" content="2026-11-07T13:00:00+01:00|8|amber" />
+    <meta name="tirile-versiune" content="2026-11-07T14:00:00+01:00|9|amber" />
     <link rel="icon" href="data:," />
     <title>Știrile zilei</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -699,9 +699,9 @@
     <div class="topbar">
       <div class="topbar-inner">
         <span class="dot" aria-hidden="true"></span>
-        <span><strong>Sâmbătă, 7 noiembrie 2026</strong> · actualizat la <strong>13:00</strong></span>
+        <span><strong>Sâmbătă, 7 noiembrie 2026</strong> · actualizat la <strong>14:00</strong></span>
         <span aria-hidden="true">·</span>
-        <span>8 știri azi</span>
+        <span>9 știri azi</span>
         <span class="spacer"></span>
         <button class="refresh-btn" type="button" id="refreshBtn" aria-label="Reîmprospătează pagina">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg>
@@ -771,15 +771,15 @@
       <section class="dashboard" aria-label="Panou de ansamblu">
         <div class="dash-head">
           <span class="dash-title">Dashboard · Azi</span>
-          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 13:00</span>
+          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 14:00</span>
           <span class="dash-meta">Fereastră monitorizare <strong>L–V 06:00–22:00 · S–D 07:30–22:00</strong> · pas ~3 ore</span>
         </div>
 
         <div class="kpi-grid five" role="group" aria-label="Filtrează după categorie — apasă pe un tile">
           <button class="kpi" type="button" data-filter="toate" aria-pressed="true">
             <span class="kpi-top"><span class="kpi-label">Toate știrile</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">8</span>
-            <span class="kpi-sub">știri verificate azi, în 6 rulări</span>
+            <span class="kpi-value">9</span>
+            <span class="kpi-sub">știri verificate azi, în 7 rulări</span>
             <span class="kpi-bar" aria-hidden="true"><i style="width:100%"></i></span>
             <span class="kpi-hint">Apasă pentru toate</span>
           </button>
@@ -787,28 +787,28 @@
             <span class="kpi-top"><span class="kpi-label">Securitate &amp; NATO</span><span class="kpi-check" aria-hidden="true">✓</span></span>
             <span class="kpi-value">3</span>
             <span class="kpi-sub">atac masiv al Rusiei asupra Kievului · atac cibernetic la Finanțele belgiene · securitatea Europei negociată fără Europa</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:38%"></i></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:33%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="romania" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">România</span><span class="kpi-check" aria-hidden="true">✓</span></span>
             <span class="kpi-value">2</span>
             <span class="kpi-sub">repornirea Unității 1 Cernavodă · rating România 2027</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:25%"></i></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:22%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="belgia" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">Belgia</span><span class="kpi-check" aria-hidden="true">✓</span></span>
             <span class="kpi-value">1</span>
             <span class="kpi-sub">atacul cibernetic la Finanțele belgiene continuă</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:13%"></i></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:11%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="tech" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">Tech &amp; AI</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">3</span>
-            <span class="kpi-sub">finanțare OpenAI · centre de date AI · TikTok acuzat de încălcarea DSA</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:38%"></i></span>
+            <span class="kpi-value">4</span>
+            <span class="kpi-sub">Spaces în Muse · finanțare OpenAI · centre de date AI · TikTok acuzat de încălcarea DSA</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:44%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
         </div>
@@ -822,7 +822,7 @@
       </section>
 
       <div class="filter-status" aria-live="polite">
-        <span class="filter-label">Se afișează: <strong>Toate categoriile — 8 din 8 știri</strong></span>
+        <span class="filter-label">Se afișează: <strong>Toate categoriile — 9 din 9 știri</strong></span>
         <button class="filter-reset" type="button" hidden>Resetează filtrul</button>
       </div>
 
@@ -852,7 +852,44 @@
       <p class="empty">Nicio știre în această categorie azi.</p>
 
       <main>
-                <!-- 1 · 7 nov · 13:00 -->
+        <!-- 1 · 7 nov · 14:00 -->
+        <article id="stire-98" data-cats="tech" data-sev="green" data-subiect="Spaces în Muse">
+          <div class="a-meta">
+            <span class="a-time">7 nov · 14:00</span>
+            <span class="a-cat">Tech &amp; AI</span>
+            <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
+            <span class="subj-pill">Spaces în Muse</span>
+            <span class="a-num">#1 / 9</span>
+          </div>
+          <h2>Meta lansează Spaces în Muse: descrii o idee în chat, iar agentul îți construiește un spațiu dedicat — tracker, planner sau tablou de proiect</h2>
+
+          <div class="sec">
+            <p class="sec-label">Ce s-a întâmplat</p>
+            <p>Meta a lansat vineri, 6 noiembrie, Spaces în aplicația Muse: conversații dedicate, pe câte un singur subiect, care stau în bara laterală și pe care Meta le numește „custom experiences". Descrii o idee în chat, iar Muse construiește spațiul — un tracker, un planner sau un tablou de proiect — pe care îl poți rafina după aceea, fixa în sidebar sau în taburi, ascunde sau programa când apare. Spațiile se pot conecta la aplicații terțe și se actualizează singure în fundal — date noi de evenimente, schimbări de preț, progres la economii — fără să mai întrebi. Mark Zuckerberg a anunțat funcția pe X, spunând că și-a făcut deja un joc BBQ, un tracker de evenimente și un dashboard de control al casei.</p>
+          </div>
+
+          <div class="sec">
+            <p class="sec-label">De ce contează</p>
+            <p>Își organizează deja munca cu Muse prin spații dedicate pe subiect — Vinted, cheltuieli, dashboarduri — iar Spaces e exact mecanismul oficial pentru asta: un spațiu persistent pe subiect, nu un chat care se pierde în istoric. E a doua funcție Muse lansată într-o săptămână, după Muse Voice (apeluri video cu avatarul, joi, 5 noiembrie), iar agenții Muse ajunseseră la 10 milioane de utilizatori în SUA și Canada la mai puțin de două luni de la lansare. De reținut din relatări: Meta n-a publicat lista aplicațiilor care se pot conecta și nici detalii despre fiabilitatea, limitele sau costurile spațiilor, iar partajarea unui spațiu cu alți utilizatori e doar în studiu, fără dată.</p>
+          </div>
+
+          <div class="verify">
+            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
+            <p>Verdict: confirmat. TechCrunch (6 nov 2026) — Meta introduce Spaces, un nou mod de a colabora cu agentul Muse; Digital Trends (6 nov 2026) — Muse permite acum construirea de mini-aplicații personalizate în aplicație; FourWeekMBA (7 nov 2026) — citează anunțul oficial Meta „Design the Muse App, Just for You" (6 nov); The Verge — relatare despre lansare, citată de MeteoraWeb. Sursă primară: anunțul Meta din 6 noiembrie și postarea lui Mark Zuckerberg pe X, în aceeași zi.</p>
+            <ul class="sources">
+              <li><a href="https://techcrunch.com/2026/11/06/meta-introduces-spaces-a-new-way-to-collaborate-with-your-muse-agent/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>TechCrunch — „Meta introduces Spaces, a new way to collaborate with your Muse agent" (6 nov 2026)<span class="host">techcrunch.com</span></a></li>
+              <li><a href="https://www.digitaltrends.com/phones/metas-now-lets-you-build-custom-mini-app-experiences-in-the-muse-app/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Digital Trends — „Meta now lets you build custom mini-app experiences in the Muse app" (6 nov 2026)<span class="host">digitaltrends.com</span></a></li>
+              <li><a href="https://fourweekmba.com/ai-metas-muse-now-builds-custom-mini-apps-called-spaces/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>FourWeekMBA — „Meta's Muse now builds custom mini-apps called Spaces" (7 nov 2026)<span class="host">fourweekmba.com</span></a></li>
+            </ul>
+          </div>
+
+          <div class="impact">
+            <span class="badge">Impact direct</span>
+            <p>Impact direct practic, fără urgență: spațiile lui existente (Vinted, Cheltuieli) sunt exact tipul de utilizare pe care Meta îl oficializează acum; merită testat un Space nou la următorul tracker, ca să vadă dacă actualizarea automată din aplicații conectate chiar funcționează. Nicio acțiune imediată și niciun termen.</p>
+          </div>
+        </article>
+
+        <!-- 2 · 7 nov · 13:00 -->
         <article id="stire-97" data-cats="romania" data-sev="green" data-subiect="repornirea Unității 1 Cernavodă">
           <div class="a-meta">
             <span class="a-time">7 nov · 13:00</span>
@@ -860,7 +897,7 @@
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <a class="cont-pill" href="#stire-42" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">repornirea Unității 1 Cernavodă</span>
-            <span class="a-num">#1 / 8</span>
+            <span class="a-num">#2 / 9</span>
           </div>
           <h2>Unitatea 1 de la Cernavodă a fost repornită după circa 100 de zile de oprire: pierderi de aproximativ un miliard de lei; decizia pentru Unitatea 2, luni</h2>
 
@@ -895,14 +932,14 @@
           </div>
         </article>
 
-<!-- 2 · 7 nov · 12:00 -->
+        <!-- 3 · 7 nov · 12:00 -->
 <article id="stire-95" data-cats="securitate belgia" data-sev="amber" data-subiect="atacul cibernetic la Finanțele belgiene continuă">
 <div class="a-meta">
 <span class="a-time">7 nov · 12:00</span>
 <span class="a-cat">Belgia · Securitate cibernetică</span>
 <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
 <span class="subj-pill">atacul cibernetic la Finanțele belgiene continuă</span>
-<span class="a-num">#2 / 8</span>
+<span class="a-num">#3 / 9</span>
 </div>
 <h2>Atacul cibernetic la Finanțele belgiene continuă să blocheze firmele noi: serviciile online sunt încă oprite, la zece zile de la incident</h2>
 <div class="sec">
@@ -928,14 +965,14 @@
 </div>
 </article>
 
-        <!-- 3 · 7 nov · 12:00 -->
+        <!-- 4 · 7 nov · 12:00 -->
 <article id="stire-96" data-cats="securitate" data-sev="amber" data-subiect="atac masiv al Rusiei asupra Kievului">
 <div class="a-meta">
 <span class="a-time">7 nov · 12:00</span>
 <span class="a-cat">Securitate &amp; NATO</span>
 <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
 <span class="subj-pill">atac masiv al Rusiei asupra Kievului</span>
-<span class="a-num">#3 / 8</span>
+<span class="a-num">#4 / 9</span>
 </div>
 <h2>Atac masiv al Rusiei asupra Kievului: 172 de drone și 36 de rachete au lovit podul de nord și infrastructura energetică, cu trei zile înainte de discuțiile de la Abu Dhabi</h2>
 <div class="sec">
@@ -965,7 +1002,7 @@
 </div>
 </article>
 
-        <!-- 4 · 7 nov · 11:00 -->
+        <!-- 5 · 7 nov · 11:00 -->
         <article id="stire-94" data-cats="securitate" data-sev="amber" data-subiect="securitatea Europei negociată fără Europa">
           <div class="a-meta">
             <span class="a-time">7 nov · 11:00</span>
@@ -974,7 +1011,7 @@
             <span class="spot-tag">Știrea zilei</span>
             <a class="cont-pill" href="#stire-77" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">securitatea Europei negociată fără Europa</span>
-            <span class="a-num">#4 / 8</span>
+            <span class="a-num">#5 / 9</span>
           </div>
           <h2>Europa respinge planul SUA–Rusia pentru o nouă arhitectură de securitate: aliații NATO n-au fost informați dinainte, iar Kallas spune că Putin „nu are drept de veto"</h2>
 
@@ -1015,7 +1052,7 @@
           </div>
         </article>
 
-        <!-- 5 · 7 nov · 10:00 -->
+        <!-- 6 · 7 nov · 10:00 -->
         <article id="stire-93" data-cats="tech" data-sev="amber" data-subiect="finanțare OpenAI">
           <div class="a-meta">
             <span class="a-time">7 nov · 10:00</span>
@@ -1023,7 +1060,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-73" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">finanțare OpenAI</span>
-            <span class="a-num">#5 / 8</span>
+            <span class="a-num">#6 / 9</span>
           </div>
           <h2>OpenAI a închis prima tranșă de 11 mld $ din noua rundă, la o evaluare de 1,25 trilioane $ — cu o treime mai puțin decât cerea inițial</h2>
 
@@ -1058,14 +1095,14 @@
           </div>
         </article>
 
-        <!-- 6 · 7 nov · 09:00 -->
+        <!-- 7 · 7 nov · 09:00 -->
         <article id="stire-91" data-cats="romania" data-sev="amber" data-subiect="rating România 2027">
           <div class="a-meta">
             <span class="a-time">7 nov · 09:00</span>
             <span class="a-cat">România</span>
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="subj-pill">rating România 2027</span>
-            <span class="a-num">#6 / 8</span>
+            <span class="a-num">#7 / 9</span>
           </div>
           <h2>Nazare avertizează: România riscă „cartonașul roșu" de la agențiile de rating dacă bugetul pe 2027 nu e credibil</h2>
 
@@ -1095,14 +1132,14 @@
           </div>
         </article>
 
-        <!-- 7 · 7 nov · 09:00 -->
+        <!-- 8 · 7 nov · 09:00 -->
         <article id="stire-92" data-cats="tech" data-sev="green" data-subiect="centre de date AI">
           <div class="a-meta">
             <span class="a-time">7 nov · 09:00</span>
             <span class="a-cat">Tech &amp; AI</span>
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <span class="subj-pill">centre de date AI</span>
-            <span class="a-num">#7 / 8</span>
+            <span class="a-num">#8 / 9</span>
           </div>
           <h2>Google preia de la Crusoe proiectul neterminat de centru de date din Wyoming și investește 17 mld $</h2>
 
@@ -1131,14 +1168,14 @@
           </div>
         </article>
 
-        <!-- 8 · 7 nov · 08:00 -->
+        <!-- 9 · 7 nov · 08:00 -->
         <article id="stire-90" data-cats="tech" data-sev="green" data-subiect="TikTok acuzat de încălcarea DSA">
           <div class="a-meta">
             <span class="a-time">7 nov · 08:00</span>
             <span class="a-cat">Tech &amp; AI</span>
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <span class="subj-pill">TikTok acuzat de încălcarea DSA</span>
-            <span class="a-num">#8 / 8</span>
+            <span class="a-num">#9 / 9</span>
           </div>
           <h2>Comisia Europeană acuză TikTok de încălcarea DSA: feedul „For You" ar crea „găuri de iepure" dăunătoare sănătății mintale — amendă posibilă de până la 6% din cifra de afaceri globală</h2>
 
