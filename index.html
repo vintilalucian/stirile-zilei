@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="color-scheme" content="light dark" />
-    <meta name="tirile-versiune" content="2026-11-07T08:00:00+01:00|1|green" />
+    <meta name="tirile-versiune" content="2026-11-07T09:00:00+01:00|3|amber" />
     <link rel="icon" href="data:," />
     <title>Știrile zilei</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -699,9 +699,9 @@
     <div class="topbar">
       <div class="topbar-inner">
         <span class="dot" aria-hidden="true"></span>
-        <span><strong>Sâmbătă, 7 noiembrie 2026</strong> · actualizat la <strong>08:00</strong></span>
+        <span><strong>Sâmbătă, 7 noiembrie 2026</strong> · actualizat la <strong>09:00</strong></span>
         <span aria-hidden="true">·</span>
-        <span>1 știre azi</span>
+        <span>3 știri azi</span>
         <span class="spacer"></span>
         <button class="refresh-btn" type="button" id="refreshBtn" aria-label="Reîmprospătează pagina">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg>
@@ -739,28 +739,29 @@
 
       <!-- Chenar permanent: știrea cea mai importantă a zilei — sub fereastra
            „Ultimele știri", ÎNAINTEA dashboardului, vizibilă din prima, fără scroll.
-           Nivelul de azi: VERDE (sev-green) — normal: Comisia Europeană acuză
-           TikTok de încălcarea DSA — prima decizie DSA care vizează direct
-           designul unui sistem de recomandare; e singura știre a zilei până acum.
+           Nivelul de azi: GALBEN (sev-amber) — de urmărit: avertismentul
+           ministrului Finanțelor, Alexandru Nazare, că România riscă
+           „cartonașul roșu" de la agențiile de rating dacă bugetul pe 2027
+           nu e credibil — severitatea maximă a zilei, peste știrile verzi.
            Chenarul rămâne în afara logicii de filtrare: vizibil indiferent de filtrul de categorie. -->
-      <section class="spot sev-green" aria-label="Știrea cea mai importantă a zilei">
+      <section class="spot sev-amber" aria-label="Știrea cea mai importantă a zilei">
         <div class="spot-head">
           <span class="spot-kicker">
             <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13 2 4.5 13.5H11L9.5 22 19 10h-6.5L13 2z"/></svg>
             Știrea zilei · Atenție rapidă
           </span>
-          <span class="spot-time">7 nov · 08:00</span>
-          <span class="spot-pill">Nivel verde — normal</span>
+          <span class="spot-time">7 nov · 09:00</span>
+          <span class="spot-pill">Nivel galben — de urmărit</span>
         </div>
-        <h2 class="spot-title">Comisia Europeană acuză TikTok de încălcarea DSA: feedul „For You" ar crea „găuri de iepure" dăunătoare sănătății mintale — amendă posibilă de până la 6% din cifra de afaceri globală</h2>
-        <p class="spot-why"><strong>De ce e în față:</strong> Este prima decizie DSA care atacă direct algoritmul de recomandare, nu conținutul — un precedent pentru toate platformele mari (Meta e deja investigată similar pentru Facebook și Instagram).</p>
-        <p class="spot-lead">Comisia Europeană a constatat preliminar, pe 6 noiembrie 2026, că feedul „For You" al TikTok încalcă Digital Services Act: algoritmul de recomandare creează efectul de „găuri de iepure" — cu cât un utilizator interacționează mai mult cu un tip de conținut, cu atât primește mai mult conținut similar, fără să poată ieși ușor din buclă — iar măsurile luate până acum, de exemplu butonul „nu mă interesează", sunt ineficiente.</p>
+        <h2 class="spot-title">Nazare avertizează: România riscă „cartonașul roșu" de la agențiile de rating dacă bugetul pe 2027 nu e credibil</h2>
+        <p class="spot-why"><strong>De ce e în față:</strong> România are unul dintre cele mai mari deficite din UE, iar o retrogradare ar scumpi finanțarea statului și ar putea apăsa pe piața românească și pe dobânzi — relevant direct pentru investiția recurentă în TVBETETF și pentru contextul proprietății din București. Anul 2027 e prezentat de ministru ca anul deciziei pentru revenirea la o perspectivă stabilă de rating.</p>
+        <p class="spot-lead">Ministrul Finanțelor, Alexandru Nazare, a avertizat vineri, 6 noiembrie, la Concordia Summit 2026, că România riscă o retrogradare directă a ratingului de țară — „cartonașul roșu" — dacă bugetul pe 2027 nu va fi credibil și realist. Scenariul de lucru al bugetului pornește de la un deficit de 5% din PIB în 2027, cu ținta reducerii deficitului cu câte 1 punct procentual pe an, timp de trei ani; ministrul a reconfirmat eliminarea impozitului minim pe cifra de afaceri (IMCA) din 2027 și a exclus taxe noi.</p>
         <p class="spot-more" hidden><span class="spot-more-text"></span> <button class="spot-more-btn" type="button">apasă aici</button></p>
         <div class="spot-foot">
-          <a class="spot-link" href="#stire-90">Citește știrea completă ↓</a>
-          <div class="sev-scale" role="img" aria-label="Scară de gravitate: verde — normal, galben — de urmărit, roșu — grav. Nivelul de azi: verde.">
-            <span class="sev-item on"><i class="sev-dot g" aria-hidden="true"></i>Verde · normal</span>
-            <span class="sev-item"><i class="sev-dot y" aria-hidden="true"></i>Galben · de urmărit</span>
+          <a class="spot-link" href="#stire-91">Citește știrea completă ↓</a>
+          <div class="sev-scale" role="img" aria-label="Scară de gravitate: verde — normal, galben — de urmărit, roșu — grav. Nivelul de azi: galben.">
+            <span class="sev-item"><i class="sev-dot g" aria-hidden="true"></i>Verde · normal</span>
+            <span class="sev-item on"><i class="sev-dot y" aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="sev-item"><i class="sev-dot r" aria-hidden="true"></i>Roșu · grav</span>
           </div>
         </div>
@@ -770,15 +771,15 @@
       <section class="dashboard" aria-label="Panou de ansamblu">
         <div class="dash-head">
           <span class="dash-title">Dashboard · Azi</span>
-          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 08:00</span>
+          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 09:00</span>
           <span class="dash-meta">Fereastră monitorizare <strong>L–V 06:00–22:00 · S–D 07:30–22:00</strong> · pas ~3 ore</span>
         </div>
 
         <div class="kpi-grid five" role="group" aria-label="Filtrează după categorie — apasă pe un tile">
           <button class="kpi" type="button" data-filter="toate" aria-pressed="true">
             <span class="kpi-top"><span class="kpi-label">Toate știrile</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">1</span>
-            <span class="kpi-sub">știri verificate azi, în 1 rulare</span>
+            <span class="kpi-value">3</span>
+            <span class="kpi-sub">știri verificate azi, în 2 rulări</span>
             <span class="kpi-bar" aria-hidden="true"><i style="width:100%"></i></span>
             <span class="kpi-hint">Apasă pentru toate</span>
           </button>
@@ -791,9 +792,9 @@
           </button>
           <button class="kpi" type="button" data-filter="romania" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">România</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">0</span>
-            <span class="kpi-sub"></span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:0%"></i></span>
+            <span class="kpi-value">1</span>
+            <span class="kpi-sub">rating România 2027</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:33%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="belgia" aria-pressed="false">
@@ -805,9 +806,9 @@
           </button>
           <button class="kpi" type="button" data-filter="tech" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">Tech &amp; AI</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">1</span>
-            <span class="kpi-sub">TikTok acuzat de încălcarea DSA</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:100%"></i></span>
+            <span class="kpi-value">2</span>
+            <span class="kpi-sub">centre de date AI · TikTok acuzat de încălcarea DSA</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:67%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
         </div>
@@ -821,7 +822,7 @@
       </section>
 
       <div class="filter-status" aria-live="polite">
-        <span class="filter-label">Se afișează: <strong>Toate categoriile — 1 din 1 știri</strong></span>
+        <span class="filter-label">Se afișează: <strong>Toate categoriile — 3 din 3 știri</strong></span>
         <button class="filter-reset" type="button" hidden>Resetează filtrul</button>
       </div>
 
@@ -851,15 +852,88 @@
       <p class="empty">Nicio știre în această categorie azi.</p>
 
       <main>
-        <!-- 1 · 7 nov · 08:00 -->
+        <!-- 1 · 7 nov · 09:00 -->
+        <article id="stire-91" data-cats="romania" data-sev="amber" data-subiect="rating România 2027">
+          <div class="a-meta">
+            <span class="a-time">7 nov · 09:00</span>
+            <span class="a-cat">România</span>
+            <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
+            <span class="spot-tag">Știrea zilei</span>
+            <span class="subj-pill">rating România 2027</span>
+            <span class="a-num">#1 / 3</span>
+          </div>
+          <h2>Nazare avertizează: România riscă „cartonașul roșu" de la agențiile de rating dacă bugetul pe 2027 nu e credibil</h2>
+
+          <div class="sec">
+            <p class="sec-label">Ce s-a întâmplat</p>
+            <p>Ministrul Finanțelor, Alexandru Nazare, a avertizat vineri, 6 noiembrie, la Concordia Summit 2026, că România riscă o retrogradare directă a ratingului de țară — „cartonașul roșu" — dacă bugetul pe 2027 nu va fi credibil și realist. După „cartonașele galbene" primite de la agențiile de rating în vară, a spus el, următorul semnal ar putea veni direct sub forma unei retrogradări, fără un nou avertisment: „Nu mai are nimeni răbdare cu noi". Scenariul de lucru al bugetului pornește de la un deficit de 5% din PIB în 2027, cu ținta reducerii deficitului cu câte 1 punct procentual pe an, timp de trei ani; ministrul a reconfirmat eliminarea impozitului minim pe cifra de afaceri (IMCA) din 2027 și a exclus taxe noi.</p>
+          </div>
+
+          <div class="sec">
+            <p class="sec-label">De ce contează</p>
+            <p>România are unul dintre cele mai mari deficite din UE, iar o retrogradare ar scumpi finanțarea statului și ar putea apăsa pe piața românească și pe dobânzi — relevant direct pentru investiția recurentă în TVBETETF și pentru contextul proprietății din București. Anul 2027 e prezentat de ministru ca anul deciziei pentru revenirea la o perspectivă stabilă de rating.</p>
+          </div>
+
+          <div class="verify">
+            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
+            <p>Verdict: confirmat. G4Media (6 noiembrie 2026); ZF — „Agențiile de rating nu ne vor mai da încă o dată cartonaș galben. Vom primi direct cartonaș roșu"; Economedia; Mediafax; Antena 3 CNN — toate relatează aceeași avertizare a ministrului, rostită la Concordia Summit 2026.</p>
+            <ul class="sources">
+              <li><a href="https://www.analisteconomic.ro/economie/avertisment-de-la-nazare-romania-risca-scaderea-ratingului-daca-bugetul-pentru-2027-nu-este-credibil" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Analist Economic — „Avertisment de la Nazare: România riscă scăderea ratingului dacă bugetul pentru 2027 nu este credibil"<span class="host">analisteconomic.ro</span></a></li>
+              <li><a href="https://roadevar.ro/ro/noutati-roadevar/nazare-romania-risca-cartonas-rosu-agentii-rating-2026" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Roadevar — „Nazare: România riscă cartonaș roșu de la agențiile de rating"<span class="host">roadevar.ro</span></a></li>
+              <li><a href="https://condica.ro/stire/nazare-avertizeaza-ca-un-buget-necredibil-pentru-2027-poate-afecta-rat" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Condica — agregator cu cele 18 surse originale<span class="host">condica.ro</span></a></li>
+            </ul>
+          </div>
+
+          <div class="impact">
+            <span class="badge">Impact direct</span>
+            <p>Impact direct azi: minim — avertisment, nu decizie a agențiilor. De urmărit: a doua rectificare bugetară și construcția bugetului pe 2027, în săptămânile următoare; o retrogradare ar lovi direct economiile populației, dobânzile și capacitatea companiilor de a investi.</p>
+          </div>
+        </article>
+
+        <!-- 2 · 7 nov · 09:00 -->
+        <article id="stire-92" data-cats="tech" data-sev="green" data-subiect="centre de date AI">
+          <div class="a-meta">
+            <span class="a-time">7 nov · 09:00</span>
+            <span class="a-cat">Tech &amp; AI</span>
+            <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
+            <span class="subj-pill">centre de date AI</span>
+            <span class="a-num">#2 / 3</span>
+          </div>
+          <h2>Google preia de la Crusoe proiectul neterminat de centru de date din Wyoming și investește 17 mld $</h2>
+
+          <div class="sec">
+            <p class="sec-label">Ce s-a întâmplat</p>
+            <p>Crusoe, dezvoltator american de centre de date evaluat recent la 30,9 mld $, a confirmat vineri, 6 noiembrie, că a vândut către Google proiectul neterminat de centru de date din sud-estul Wyoming. Google — pe care Crusoe încercase fără succes să-l atragă drept client al proiectului — preia dezvoltarea după ce și-a exprimat îngrijorări privind costurile și calendarul construcției sub managementul Crusoe. Google nu a dezvăluit prețul plătit pentru șantier, dar a anunțat o investiție de 17 mld $ pentru dezvoltarea campusului, gândit inițial să ajungă la 10 GW capacitate. Crusoe continuă separat un alt centru de date pentru Google, lângă Amarillo, Texas. Atenție la cifre: cei 17 mld $ sunt investiția anunțată de Google în proiect, NU prețul de cumpărare al șantierului.</p>
+          </div>
+
+          <div class="sec">
+            <p class="sec-label">De ce contează</p>
+            <p>Semnal despre economia infrastructurii AI — giganții își asumă direct construcția centrelor de date, în loc să lase dezvoltatorii independenți, chiar în săptămâna în care datele Ramp arătau o temperare a cheltuielilor cu AI. Pentru cine își construiește automatizări pe ecosistemul Google/Gemini, direcția e clară: capacitatea de calcul rămâne prioritatea de investiții a hyperscalerilor.</p>
+          </div>
+
+          <div class="verify">
+            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
+            <p>Verdict: confirmat. TechCrunch (7 noiembrie 2026); Reuters — „Google acquires Wyoming data center site from AI infrastructure firm Crusoe" (6 noiembrie 2026); Bloomberg (a relatat primul posibila vânzare, în iunie 2026).</p>
+            <ul class="sources">
+              <li><a href="https://techcrunch.com/2026/11/06/crusoe-sells-troubled-wyoming-data-center-project-to-google/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>TechCrunch — „Crusoe sells troubled Wyoming data center project to Google" (7 noiembrie 2026)<span class="host">techcrunch.com</span></a></li>
+              <li><a href="https://www.reuters.com/business/google-acquires-wyoming-data-center-site-ai-infrastructure-firm-crusoe-2026-11-06/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Reuters — „Google acquires Wyoming data center site from AI infrastructure firm Crusoe" (6 noiembrie 2026)<span class="host">reuters.com</span></a></li>
+            </ul>
+          </div>
+
+          <div class="impact">
+            <span class="badge">Impact direct</span>
+            <p>Impact direct: minim — relevanță de context. Nicio acțiune imediată; de urmărit dacă modelul „hyperscalerul preia șantierul" se repetă și la alți dezvoltatori.</p>
+          </div>
+        </article>
+
+        <!-- 3 · 7 nov · 08:00 -->
         <article id="stire-90" data-cats="tech" data-sev="green" data-subiect="TikTok acuzat de încălcarea DSA">
           <div class="a-meta">
             <span class="a-time">7 nov · 08:00</span>
             <span class="a-cat">Tech &amp; AI</span>
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
-            <span class="spot-tag">Știrea zilei</span>
             <span class="subj-pill">TikTok acuzat de încălcarea DSA</span>
-            <span class="a-num">#1 / 1</span>
+            <span class="a-num">#3 / 3</span>
           </div>
           <h2>Comisia Europeană acuză TikTok de încălcarea DSA: feedul „For You" ar crea „găuri de iepure" dăunătoare sănătății mintale — amendă posibilă de până la 6% din cifra de afaceri globală</h2>
 
@@ -4527,7 +4601,7 @@
       <footer>
         <div class="rule" aria-hidden="true"></div>
         <p>Sfârșitul ediției de azi · Ultima actualizare: sâmbătă, 7 noiembrie 2026, 08:00<br />Monitorizarea rulează la circa 3 ore, în fereastra L–V 06:00–22:00 · S–D 07:30–22:00 — dă refresh pentru noutăți.</p>
-        <a class="to-top" href="#stire-90">↑ Înapoi la cea mai nouă știre</a>
+        <a class="to-top" href="#stire-91">↑ Înapoi la cea mai nouă știre</a>
       </footer>
     </div>
 
