@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="color-scheme" content="light dark" />
-    <meta name="tirile-versiune" content="2026-11-07T09:00:00+01:00|3|amber" />
+    <meta name="tirile-versiune" content="2026-11-07T10:00:00+01:00|4|amber" />
     <link rel="icon" href="data:," />
     <title>Știrile zilei</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -699,9 +699,9 @@
     <div class="topbar">
       <div class="topbar-inner">
         <span class="dot" aria-hidden="true"></span>
-        <span><strong>Sâmbătă, 7 noiembrie 2026</strong> · actualizat la <strong>09:00</strong></span>
+        <span><strong>Sâmbătă, 7 noiembrie 2026</strong> · actualizat la <strong>10:00</strong></span>
         <span aria-hidden="true">·</span>
-        <span>3 știri azi</span>
+        <span>4 știri azi</span>
         <span class="spacer"></span>
         <button class="refresh-btn" type="button" id="refreshBtn" aria-label="Reîmprospătează pagina">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg>
@@ -771,15 +771,15 @@
       <section class="dashboard" aria-label="Panou de ansamblu">
         <div class="dash-head">
           <span class="dash-title">Dashboard · Azi</span>
-          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 09:00</span>
+          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 10:00</span>
           <span class="dash-meta">Fereastră monitorizare <strong>L–V 06:00–22:00 · S–D 07:30–22:00</strong> · pas ~3 ore</span>
         </div>
 
         <div class="kpi-grid five" role="group" aria-label="Filtrează după categorie — apasă pe un tile">
           <button class="kpi" type="button" data-filter="toate" aria-pressed="true">
             <span class="kpi-top"><span class="kpi-label">Toate știrile</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">3</span>
-            <span class="kpi-sub">știri verificate azi, în 2 rulări</span>
+            <span class="kpi-value">4</span>
+            <span class="kpi-sub">știri verificate azi, în 3 rulări</span>
             <span class="kpi-bar" aria-hidden="true"><i style="width:100%"></i></span>
             <span class="kpi-hint">Apasă pentru toate</span>
           </button>
@@ -794,7 +794,7 @@
             <span class="kpi-top"><span class="kpi-label">România</span><span class="kpi-check" aria-hidden="true">✓</span></span>
             <span class="kpi-value">1</span>
             <span class="kpi-sub">rating România 2027</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:33%"></i></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:25%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="belgia" aria-pressed="false">
@@ -806,9 +806,9 @@
           </button>
           <button class="kpi" type="button" data-filter="tech" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">Tech &amp; AI</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">2</span>
-            <span class="kpi-sub">centre de date AI · TikTok acuzat de încălcarea DSA</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:67%"></i></span>
+            <span class="kpi-value">3</span>
+            <span class="kpi-sub">finanțare OpenAI · centre de date AI · TikTok acuzat de încălcarea DSA</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:75%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
         </div>
@@ -822,7 +822,7 @@
       </section>
 
       <div class="filter-status" aria-live="polite">
-        <span class="filter-label">Se afișează: <strong>Toate categoriile — 3 din 3 știri</strong></span>
+        <span class="filter-label">Se afișează: <strong>Toate categoriile — 4 din 4 știri</strong></span>
         <button class="filter-reset" type="button" hidden>Resetează filtrul</button>
       </div>
 
@@ -852,7 +852,50 @@
       <p class="empty">Nicio știre în această categorie azi.</p>
 
       <main>
-        <!-- 1 · 7 nov · 09:00 -->
+        <!-- 1 · 7 nov · 10:00 -->
+        <article id="stire-93" data-cats="tech" data-sev="amber" data-subiect="finanțare OpenAI">
+          <div class="a-meta">
+            <span class="a-time">7 nov · 10:00</span>
+            <span class="a-cat">Tech &amp; AI</span>
+            <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
+            <a class="cont-pill" href="#stire-73" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
+            <span class="subj-pill">finanțare OpenAI</span>
+            <span class="a-num">#1 / 4</span>
+          </div>
+          <h2>OpenAI a închis prima tranșă de 11 mld $ din noua rundă, la o evaluare de 1,25 trilioane $ — cu o treime mai puțin decât cerea inițial</h2>
+
+          <div class="followup">
+            <span class="tag">Urmare la</span>
+            <p><a href="#stire-73">„OpenAI ar putea fi gata de IPO în 2027: veniturile din enterprise au devenit majoritare"</a> — vineri, 6 noiembrie 2026, ora 06:00.</p>
+          </div>
+
+          <div class="sec">
+            <p class="sec-label">Ce s-a întâmplat</p>
+            <p>OpenAI a încasat circa 11 mld $ ca primă parte a noii runde de finanțare, la o evaluare de 1,25 trilioane $, potrivit Bloomberg, citat de TechCrunch pe 6 noiembrie 2026. Banii au fost deja virați companiei, iar runda rămâne deschisă și ar putea ajunge la circa 20 mld $ în total în săptămânile următoare. La sfârșitul lui septembrie OpenAI cerea 30 mld $ la o evaluare de 1,4 trilioane $, deci runda care se închide acum e mai mică și mai ieftină decât cea pusă inițial pe masă; compania amânase deja planurile de listare la bursă din acest an.</p>
+          </div>
+
+          <div class="sec">
+            <p class="sec-label">De ce contează</p>
+            <p>Continuă direct arcul economiei AI urmărit toată săptămâna în pagină — după datele Ramp de ieri (cheltuielile cu AI stagnează, creșterea a fost de doar 1,5% în august–septembrie față de 42% în iulie) și după coborârea evaluării discutate pentru Anthropic la 1,2–1,3 trilioane $, de la 2 trilioane $ estimate la începutul lui octombrie. Pentru cine construiește automatizări pe API-uri AI, semnalul e că boomul de infrastructură AI se răcește și că furnizorii lui de modele își strâng cureaua; pentru investiții, contextul e vânzarea de miercuri de pe bursele americane, când acțiunile AI au căzut pe fondul temerilor de reglementare după alegerile de la jumătatea mandatului.</p>
+          </div>
+
+          <div class="verify">
+            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
+            <p>Verdict: confirmat. TechCrunch — „OpenAI reportedly raises an additional $11 billion at a $1.25 trillion valuation" (6 nov 2026); Bloomberg — raportarea inițială a noii finanțări, pe surse familiare cu subiectul (prin TechCrunch); Reuters — confirmare prin sursă proprie, cu SoftBank și MGX printre participanții la prima închidere (relatat de AI Frontier Post, 6 nov 2026); SiliconANGLE — „OpenAI reportedly raises $11B in new funding at $1.25T valuation" (6 nov 2026). OpenAI nu a publicat un comunicat propriu despre termenii rundei și nu a comentat.</p>
+            <ul class="sources">
+              <li><a href="https://techcrunch.com/2026/11/06/openai-reportedly-raises-an-additional-11-billion-at-a-1-25-trillion-valuation/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>TechCrunch — „OpenAI reportedly raises an additional $11 billion at a $1.25 trillion valuation" (6 nov 2026)<span class="host">techcrunch.com</span></a></li>
+              <li><a href="https://aifrontierpost.com/articles/openai-11b-first-close-1-25t-valuation/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Reuters — confirmare prin sursă proprie, cu SoftBank și MGX printre participanții la prima închidere (relatat de AI Frontier Post, 6 nov 2026)<span class="host">aifrontierpost.com</span></a></li>
+              <li><a href="https://siliconangle.com/2026/11/06/openai-reportedly-raises-11b-in-new-funding-at-1-25t-valuation/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>SiliconANGLE — „OpenAI reportedly raises $11B in new funding at $1.25T valuation" (6 nov 2026)<span class="host">siliconangle.com</span></a></li>
+            </ul>
+          </div>
+
+          <div class="impact">
+            <span class="badge">Impact direct</span>
+            <p>Impact direct: minim azi — nicio acțiune imediată. Relevanță de context: evaluarea OpenAI rămâne cu circa 47% peste cea din martie (852 mld $), dar runda tăiată de la 30 la 20 mld $ și evaluarea coborâtă de la 1,4 la 1,25 trilioane $ arată că investitorii nu mai plătesc orice preț pentru AI; de urmărit dacă răcirea se transmite în prețurile API-urilor și în ritmul lansărilor de modele pe care le folosește zilnic.</p>
+          </div>
+        </article>
+
+        <!-- 2 · 7 nov · 09:00 -->
         <article id="stire-91" data-cats="romania" data-sev="amber" data-subiect="rating România 2027">
           <div class="a-meta">
             <span class="a-time">7 nov · 09:00</span>
@@ -860,7 +903,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="spot-tag">Știrea zilei</span>
             <span class="subj-pill">rating România 2027</span>
-            <span class="a-num">#1 / 3</span>
+            <span class="a-num">#2 / 4</span>
           </div>
           <h2>Nazare avertizează: România riscă „cartonașul roșu" de la agențiile de rating dacă bugetul pe 2027 nu e credibil</h2>
 
@@ -890,14 +933,14 @@
           </div>
         </article>
 
-        <!-- 2 · 7 nov · 09:00 -->
+        <!-- 3 · 7 nov · 09:00 -->
         <article id="stire-92" data-cats="tech" data-sev="green" data-subiect="centre de date AI">
           <div class="a-meta">
             <span class="a-time">7 nov · 09:00</span>
             <span class="a-cat">Tech &amp; AI</span>
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <span class="subj-pill">centre de date AI</span>
-            <span class="a-num">#2 / 3</span>
+            <span class="a-num">#3 / 4</span>
           </div>
           <h2>Google preia de la Crusoe proiectul neterminat de centru de date din Wyoming și investește 17 mld $</h2>
 
@@ -926,14 +969,14 @@
           </div>
         </article>
 
-        <!-- 3 · 7 nov · 08:00 -->
+        <!-- 4 · 7 nov · 08:00 -->
         <article id="stire-90" data-cats="tech" data-sev="green" data-subiect="TikTok acuzat de încălcarea DSA">
           <div class="a-meta">
             <span class="a-time">7 nov · 08:00</span>
             <span class="a-cat">Tech &amp; AI</span>
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <span class="subj-pill">TikTok acuzat de încălcarea DSA</span>
-            <span class="a-num">#3 / 3</span>
+            <span class="a-num">#4 / 4</span>
           </div>
           <h2>Comisia Europeană acuză TikTok de încălcarea DSA: feedul „For You" ar crea „găuri de iepure" dăunătoare sănătății mintale — amendă posibilă de până la 6% din cifra de afaceri globală</h2>
 
@@ -4600,8 +4643,8 @@
 
       <footer>
         <div class="rule" aria-hidden="true"></div>
-        <p>Sfârșitul ediției de azi · Ultima actualizare: sâmbătă, 7 noiembrie 2026, 08:00<br />Monitorizarea rulează la circa 3 ore, în fereastra L–V 06:00–22:00 · S–D 07:30–22:00 — dă refresh pentru noutăți.</p>
-        <a class="to-top" href="#stire-91">↑ Înapoi la cea mai nouă știre</a>
+        <p>Sfârșitul ediției de azi · Ultima actualizare: sâmbătă, 7 noiembrie 2026, 10:00<br />Monitorizarea rulează la circa 3 ore, în fereastra L–V 06:00–22:00 · S–D 07:30–22:00 — dă refresh pentru noutăți.</p>
+        <a class="to-top" href="#stire-93">↑ Înapoi la cea mai nouă știre</a>
       </footer>
     </div>
 
