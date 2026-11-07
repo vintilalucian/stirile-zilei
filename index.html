@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="color-scheme" content="light dark" />
-    <meta name="tirile-versiune" content="2026-11-06T21:00:00+01:00|17|red" />
+    <meta name="tirile-versiune" content="2026-11-07T08:00:00+01:00|1|green" />
     <link rel="icon" href="data:," />
     <title>Știrile zilei</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -699,9 +699,9 @@
     <div class="topbar">
       <div class="topbar-inner">
         <span class="dot" aria-hidden="true"></span>
-        <span><strong>Vineri, 6 noiembrie 2026</strong> · actualizat la <strong>21:00</strong></span>
+        <span><strong>Sâmbătă, 7 noiembrie 2026</strong> · actualizat la <strong>08:00</strong></span>
         <span aria-hidden="true">·</span>
-        <span>17 știri azi</span>
+        <span>1 știre azi</span>
         <span class="spacer"></span>
         <button class="refresh-btn" type="button" id="refreshBtn" aria-label="Reîmprospătează pagina">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg>
@@ -716,12 +716,12 @@
         <h1>Știrile zilei</h1>
         <div class="date-line">
           <span class="day">Ediția de azi</span>
-          <span>Vineri, 6 noiembrie 2026 · Europe/Brussels</span>
+          <span>Sâmbătă, 7 noiembrie 2026 · Europe/Brussels</span>
         </div>
         <p class="lede"><strong>Apasă pe un tile</strong> ca să filtrezi pagina — articole complete jos, cele mai noi primele.</p>
       </header>
 
-                  <section class="day" id="zi-2026-11-06">
+      <section class="day" id="zi-2026-11-07">
       <!-- Fereastra „Ultimele știri" — sus, imediat deasupra chenarului
            „Știrea zilei", între masthead și chenar. Arată DOAR titlurile din
            cea mai recentă rulare (1–2), fiecare link la cardul ei (#stire-N).
@@ -736,6 +736,173 @@
         </div>
         <ul class="latest-list"></ul>
       </section>
+
+      <!-- Chenar permanent: știrea cea mai importantă a zilei — sub fereastra
+           „Ultimele știri", ÎNAINTEA dashboardului, vizibilă din prima, fără scroll.
+           Nivelul de azi: VERDE (sev-green) — normal: Comisia Europeană acuză
+           TikTok de încălcarea DSA — prima decizie DSA care vizează direct
+           designul unui sistem de recomandare; e singura știre a zilei până acum.
+           Chenarul rămâne în afara logicii de filtrare: vizibil indiferent de filtrul de categorie. -->
+      <section class="spot sev-green" aria-label="Știrea cea mai importantă a zilei">
+        <div class="spot-head">
+          <span class="spot-kicker">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13 2 4.5 13.5H11L9.5 22 19 10h-6.5L13 2z"/></svg>
+            Știrea zilei · Atenție rapidă
+          </span>
+          <span class="spot-time">7 nov · 08:00</span>
+          <span class="spot-pill">Nivel verde — normal</span>
+        </div>
+        <h2 class="spot-title">Comisia Europeană acuză TikTok de încălcarea DSA: feedul „For You" ar crea „găuri de iepure" dăunătoare sănătății mintale — amendă posibilă de până la 6% din cifra de afaceri globală</h2>
+        <p class="spot-why"><strong>De ce e în față:</strong> Este prima decizie DSA care atacă direct algoritmul de recomandare, nu conținutul — un precedent pentru toate platformele mari (Meta e deja investigată similar pentru Facebook și Instagram).</p>
+        <p class="spot-lead">Comisia Europeană a constatat preliminar, pe 6 noiembrie 2026, că feedul „For You" al TikTok încalcă Digital Services Act: algoritmul de recomandare creează efectul de „găuri de iepure" — cu cât un utilizator interacționează mai mult cu un tip de conținut, cu atât primește mai mult conținut similar, fără să poată ieși ușor din buclă — iar măsurile luate până acum, de exemplu butonul „nu mă interesează", sunt ineficiente.</p>
+        <p class="spot-more" hidden><span class="spot-more-text"></span> <button class="spot-more-btn" type="button">apasă aici</button></p>
+        <div class="spot-foot">
+          <a class="spot-link" href="#stire-90">Citește știrea completă ↓</a>
+          <div class="sev-scale" role="img" aria-label="Scară de gravitate: verde — normal, galben — de urmărit, roșu — grav. Nivelul de azi: verde.">
+            <span class="sev-item on"><i class="sev-dot g" aria-hidden="true"></i>Verde · normal</span>
+            <span class="sev-item"><i class="sev-dot y" aria-hidden="true"></i>Galben · de urmărit</span>
+            <span class="sev-item"><i class="sev-dot r" aria-hidden="true"></i>Roșu · grav</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Dashboard -->
+      <section class="dashboard" aria-label="Panou de ansamblu">
+        <div class="dash-head">
+          <span class="dash-title">Dashboard · Azi</span>
+          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 08:00</span>
+          <span class="dash-meta">Fereastră monitorizare <strong>L–V 06:00–22:00 · S–D 07:30–22:00</strong> · pas ~3 ore</span>
+        </div>
+
+        <div class="kpi-grid five" role="group" aria-label="Filtrează după categorie — apasă pe un tile">
+          <button class="kpi" type="button" data-filter="toate" aria-pressed="true">
+            <span class="kpi-top"><span class="kpi-label">Toate știrile</span><span class="kpi-check" aria-hidden="true">✓</span></span>
+            <span class="kpi-value">1</span>
+            <span class="kpi-sub">știri verificate azi, în 1 rulare</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:100%"></i></span>
+            <span class="kpi-hint">Apasă pentru toate</span>
+          </button>
+          <button class="kpi" type="button" data-filter="securitate" aria-pressed="false">
+            <span class="kpi-top"><span class="kpi-label">Securitate &amp; NATO</span><span class="kpi-check" aria-hidden="true">✓</span></span>
+            <span class="kpi-value">0</span>
+            <span class="kpi-sub"></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:0%"></i></span>
+            <span class="kpi-hint">Apasă pentru a filtra →</span>
+          </button>
+          <button class="kpi" type="button" data-filter="romania" aria-pressed="false">
+            <span class="kpi-top"><span class="kpi-label">România</span><span class="kpi-check" aria-hidden="true">✓</span></span>
+            <span class="kpi-value">0</span>
+            <span class="kpi-sub"></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:0%"></i></span>
+            <span class="kpi-hint">Apasă pentru a filtra →</span>
+          </button>
+          <button class="kpi" type="button" data-filter="belgia" aria-pressed="false">
+            <span class="kpi-top"><span class="kpi-label">Belgia</span><span class="kpi-check" aria-hidden="true">✓</span></span>
+            <span class="kpi-value">0</span>
+            <span class="kpi-sub"></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:0%"></i></span>
+            <span class="kpi-hint">Apasă pentru a filtra →</span>
+          </button>
+          <button class="kpi" type="button" data-filter="tech" aria-pressed="false">
+            <span class="kpi-top"><span class="kpi-label">Tech &amp; AI</span><span class="kpi-check" aria-hidden="true">✓</span></span>
+            <span class="kpi-value">1</span>
+            <span class="kpi-sub">TikTok acuzat de încălcarea DSA</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:100%"></i></span>
+            <span class="kpi-hint">Apasă pentru a filtra →</span>
+          </button>
+        </div>
+
+        <div class="dash-foot solo">
+          <div class="dash-panel">
+            <h3>Severitate — apasă un pătrat ca să vezi doar știrile de nivelul acela</h3>
+            <div class="sev-squares" role="group" aria-label="Filtrează după severitate — roșu, galben, verde"></div>
+          </div>
+        </div>
+      </section>
+
+      <div class="filter-status" aria-live="polite">
+        <span class="filter-label">Se afișează: <strong>Toate categoriile — 1 din 1 știri</strong></span>
+        <button class="filter-reset" type="button" hidden>Resetează filtrul</button>
+      </div>
+
+      <!-- Cuprinsul zilei — sub banda dashboard, înaintea cardurilor.
+           Generat de script din cardurile zilei curente: lista completă a
+           zilei, grupată pe ora publicării, cele mai noi primele; fiecare
+           titlu e link la cardul lui (#stire-N), iar antetul de oră al
+           fiecărui grup e buton de filtru pe rulare — aceeași logică pe care
+           o aveau barele „Ritmul zilei" (selecție unică; al doilea click pe
+           aceeași oră sau butonul de reset revine la toate; o selecție de oră
+           anulează filtrul de categorie și invers). Nu e pliabil: toate
+           grupurile de oră sunt extinse permanent, cu toate titlurile
+           vizibile — fără săgeți de pliere și fără buton de extindere.
+           Cuprinsul urmează filtrul activ, la fel ca și cardurile: la un
+           filtru de categorie, severitate sau oră arată doar rândurile
+           știrilor din selecția aceea, iar grupurile de oră rămase fără
+           nicio știre vizibilă se ascund; butonul „Toate" îl readuce la
+           toate titlurile zilei. Chenarul rămâne în afara filtrării. -->
+      <nav class="day-toc" aria-label="Cuprinsul zilei">
+        <div class="toc-head">
+          <h2>Cuprins</h2>
+          <span class="toc-count">cele mai noi primele · apasă pe o oră ca să filtrezi rularea, pe un titlu ca să sari la știre</span>
+        </div>
+        <div class="toc-groups"></div>
+      </nav>
+
+      <p class="empty">Nicio știre în această categorie azi.</p>
+
+      <main>
+        <!-- 1 · 7 nov · 08:00 -->
+        <article id="stire-90" data-cats="tech" data-sev="green" data-subiect="TikTok acuzat de încălcarea DSA">
+          <div class="a-meta">
+            <span class="a-time">7 nov · 08:00</span>
+            <span class="a-cat">Tech &amp; AI</span>
+            <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
+            <span class="spot-tag">Știrea zilei</span>
+            <span class="subj-pill">TikTok acuzat de încălcarea DSA</span>
+            <span class="a-num">#1 / 1</span>
+          </div>
+          <h2>Comisia Europeană acuză TikTok de încălcarea DSA: feedul „For You" ar crea „găuri de iepure" dăunătoare sănătății mintale — amendă posibilă de până la 6% din cifra de afaceri globală</h2>
+
+          <div class="sec">
+            <p class="sec-label">Ce s-a întâmplat</p>
+            <p>Pe 6 noiembrie 2026, Comisia Europeană a constatat preliminar că feedul „For You" al TikTok încalcă Digital Services Act (DSA), pentru că algoritmul de recomandare creează efectul de „găuri de iepure": cu cât un utilizator interacționează mai mult cu un tip de conținut — tristețe, izolare, imagine corporală — cu atât primește mai mult conținut similar, fără să poată ieși ușor din buclă. Comisia consideră că TikTok nu a evaluat adecvat acest risc și că măsurile luate până acum, de exemplu butonul „nu mă interesează", sunt ineficiente. Comisia cere reproiectarea feedului: mai multă greutate preferințelor explicite ale utilizatorului și renunțarea la timpul de vizionare ca semnal de recomandare. Este prima oară când Comisia vizează direct designul unui sistem de recomandare într-un caz DSA.</p>
+          </div>
+
+          <div class="sec">
+            <p class="sec-label">De ce contează</p>
+            <p>Este prima decizie DSA care atacă direct algoritmul de recomandare, nu conținutul — un precedent pentru toate platformele mari (Meta e deja investigată similar pentru Facebook și Instagram). Pentru familie, vizează exact mecanismul care ține copiii și adolescenții lipiți de ecran și care modelează cum vor arăta platformele când cresc copiii. Profesional, reglementarea algoritmilor de recomandare atinge direct terenul gestionării incidentelor și al sistemelor AI.</p>
+          </div>
+
+          <div class="verify">
+            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
+            <p>Verdict: sursă primară + confirmat. Comisia Europeană — constatări preliminare, referința IP/26/2361, 6 noiembrie 2026 (emitentul își anunță propria decizie, sursă primară); EFE — relatare proprie, 6 noiembrie 2026; BBC — relatare, 6 noiembrie 2026; Securities.io — relatare, 6 noiembrie 2026. Constatările sunt preliminare și nu prejudecă rezultatul final; TikTok poate consulta dosarul și răspunde în scris, iar nicio amendă nu a fost aplicată încă.</p>
+            <ul class="sources">
+              <li><a href="https://www.americanonewspaper.com/tik-tok-breaches-dsa/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>EFE — relatare proprie (6 noiembrie 2026)<span class="host">americanonewspaper.com</span></a></li>
+              <li><a href="https://bbc.bm/eu-charges-tiktok-over-harmful-algorithmic-rabbit-hole-effects" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>BBC — relatare (6 noiembrie 2026)<span class="host">bbc.bm</span></a></li>
+              <li><a href="https://www.securities.io/tiktok-recommendation-design-draws-preliminary-dsa-breach-findings/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Securities.io — relatare (6 noiembrie 2026)<span class="host">securities.io</span></a></li>
+            </ul>
+          </div>
+
+          <div class="opposing">
+            <p class="sec-label">Tabăra adversă</p>
+            <p>Un purtător de cuvânt TikTok susține că „Comisia a făcut o serie de afirmații fundamental inexacte, care distorsionează arhitectura platformei noastre și angajamentul nostru față de siguranța utilizatorilor" și că platforma „are un istoric solid în protejarea comunității, oferind utilizatorilor control direct și intuitiv asupra experienței de conținut" (<a href="https://www.execreview.com/2026/11/eu-charges-tiktok-with-failing-to-protect-users-mental-health/" target="_blank" rel="noopener">execreview.com</a>)</p>
+          </div>
+
+          <div class="impact">
+            <span class="badge">Impact direct</span>
+            <p>Impact direct: minim — relevanță de context. Nu cere nicio acțiune concretă de la cititor.</p>
+          </div>
+        </article>
+      </main>
+      </section>
+
+
+      <section class="day day-archive" id="zi-2026-11-06">
+        <div class="day-head">
+          <h2>Vineri, 6 noiembrie 2026</h2>
+          <span>Ediția de ieri · 17 știri · arhivă (ultimele 7 zile)</span>
+        </div>
+
 
       <!-- Chenar permanent: știrea cea mai importantă a zilei — sub fereastra
            „Ultimele știri", ÎNAINTEA dashboardului, vizibilă din prima, fără scroll.
@@ -777,7 +944,7 @@
           <span class="dash-meta">Fereastră monitorizare <strong>L–V 06:00–22:00 · S–D 07:30–22:00</strong> · pas ~3 ore</span>
         </div>
 
-        <div class="kpi-grid five" role="group" aria-label="Filtrează după categorie — apasă pe un tile">
+        <div class="kpi-grid" role="group" aria-label="Filtrează după categorie — apasă pe un tile">
           <button class="kpi" type="button" data-filter="toate" aria-pressed="true">
             <span class="kpi-top"><span class="kpi-label">Toate știrile</span><span class="kpi-check" aria-hidden="true">✓</span></span>
             <span class="kpi-value">17</span>
@@ -799,13 +966,6 @@
             <span class="kpi-bar" aria-hidden="true"><i style="width:18%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
-          <button class="kpi" type="button" data-filter="belgia" aria-pressed="false">
-            <span class="kpi-top"><span class="kpi-label">Belgia</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">2</span>
-            <span class="kpi-sub">amenințări cu bombă, ziua a 3-a · criza bugetară belgiană</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:12%"></i></span>
-            <span class="kpi-hint">Apasă pentru a filtra →</span>
-          </button>
           <button class="kpi" type="button" data-filter="tech" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">Tech &amp; AI</span><span class="kpi-check" aria-hidden="true">✓</span></span>
             <span class="kpi-value">6</span>
@@ -815,10 +975,34 @@
           </button>
         </div>
 
-        <div class="dash-foot solo">
+        <div class="dash-foot">
           <div class="dash-panel">
-            <h3>Severitate — apasă un pătrat ca să vezi doar știrile de nivelul acela</h3>
-            <div class="sev-squares" role="group" aria-label="Filtrează după severitate — roșu, galben, verde"></div>
+            <h3>Ritmul zilei — știri pe rulare</h3>
+            <div class="rhythm" role="group" aria-label="Filtru după ora publicării — apasă pe o rulare ca să vezi doar știrile ei">
+              <button class="col" type="button" data-hour="06:00" aria-pressed="false" aria-label="Filtrează știrile de la ora 06:00 — 1 știre"><span class="n">1</span><span class="bar" style="height:22px"></span><span class="t">06:00</span></button>
+              <button class="col" type="button" data-hour="07:00" aria-pressed="false" aria-label="Filtrează știrile de la ora 07:00 — 1 știre"><span class="n">1</span><span class="bar" style="height:22px"></span><span class="t">07:00</span></button>
+              <button class="col" type="button" data-hour="08:00" aria-pressed="false" aria-label="Filtrează știrile de la ora 08:00 — 1 știre"><span class="n">1</span><span class="bar" style="height:22px"></span><span class="t">08:00</span></button>
+              <button class="col" type="button" data-hour="09:00" aria-pressed="false" aria-label="Filtrează știrile de la ora 09:00 — 1 știre"><span class="n">1</span><span class="bar" style="height:22px"></span><span class="t">09:00</span></button>
+              <button class="col" type="button" data-hour="11:00" aria-pressed="false" aria-label="Filtrează știrile de la ora 11:00 — 1 știre"><span class="n">1</span><span class="bar" style="height:22px"></span><span class="t">11:00</span></button>
+              <button class="col" type="button" data-hour="12:00" aria-pressed="false" aria-label="Filtrează știrile de la ora 12:00 — 1 știre"><span class="n">1</span><span class="bar" style="height:22px"></span><span class="t">12:00</span></button>
+              <button class="col" type="button" data-hour="13:00" aria-pressed="false" aria-label="Filtrează știrile de la ora 13:00 — 2 știri"><span class="n">2</span><span class="bar" style="height:40px"></span><span class="t">13:00</span></button>
+              <button class="col" type="button" data-hour="14:00" aria-pressed="false" aria-label="Filtrează știrile de la ora 14:00 — 1 știre"><span class="n">1</span><span class="bar" style="height:22px"></span><span class="t">14:00</span></button>
+              <button class="col" type="button" data-hour="15:00" aria-pressed="false" aria-label="Filtrează știrile de la ora 15:00 — 1 știre"><span class="n">1</span><span class="bar" style="height:22px"></span><span class="t">15:00</span></button>
+              <button class="col" type="button" data-hour="16:00" aria-pressed="false" aria-label="Filtrează știrile de la ora 16:00 — 2 știri"><span class="n">2</span><span class="bar" style="height:40px"></span><span class="t">16:00</span></button>
+              <button class="col" type="button" data-hour="17:00" aria-pressed="false" aria-label="Filtrează știrile de la ora 17:00 — 2 știri"><span class="n">2</span><span class="bar" style="height:40px"></span><span class="t">17:00</span></button>
+              <button class="col" type="button" data-hour="18:00" aria-pressed="false" aria-label="Filtrează știrile de la ora 18:00 — 1 știre"><span class="n">1</span><span class="bar" style="height:22px"></span><span class="t">18:00</span></button>
+              <button class="col" type="button" data-hour="20:00" aria-pressed="false" aria-label="Filtrează știrile de la ora 20:00 — 1 știre"><span class="n">1</span><span class="bar" style="height:22px"></span><span class="t">20:00</span></button>
+              <button class="col" type="button" data-hour="21:00" aria-pressed="false" aria-label="Filtrează știrile de la ora 21:00 — 1 știre"><span class="n">1</span><span class="bar" style="height:22px"></span><span class="t">21:00</span></button>
+            </div>
+            <p class="rhythm-hint">Apasă pe o bară ca să vezi doar știrile din rularea aceea; apasă din nou pe ea pentru toate.</p>
+          </div>
+          <div class="dash-panel">
+            <h3>Stare ediție</h3>
+            <ul class="status-list">
+              <li><span class="k">Ultima actualizare</span><span class="v">Azi, 21:00</span></li>
+              <li><span class="k">Cea mai nouă</span><span class="v">Franța apără hub-ul Rzeszów · 21:00</span></li>
+              <li><span class="k">Acoperire</span><span class="v">Ultimele 7 zile în arhivă</span></li>
+            </ul>
           </div>
         </div>
       </section>
@@ -828,39 +1012,40 @@
         <button class="filter-reset" type="button" hidden>Resetează filtrul</button>
       </div>
 
-      <!-- Cuprinsul zilei — sub banda dashboard, înaintea cardurilor.
-           Generat de script din cardurile zilei curente: lista completă a
-           zilei, grupată pe ora publicării, cele mai noi primele; fiecare
-           titlu e link la cardul lui (#stire-N), iar antetul de oră al
-           fiecărui grup e buton de filtru pe rulare — aceeași logică pe care
-           o aveau barele „Ritmul zilei" (selecție unică; al doilea click pe
-           aceeași oră sau butonul de reset revine la toate; o selecție de oră
-           anulează filtrul de categorie și invers). Nu e pliabil: toate
-           grupurile de oră sunt extinse permanent, cu toate titlurile
-           vizibile — fără săgeți de pliere și fără buton de extindere.
-           Cuprinsul urmează filtrul activ, la fel ca și cardurile: la un
-           filtru de categorie, severitate sau oră arată doar rândurile
-           știrilor din selecția aceea, iar grupurile de oră rămase fără
-           nicio știre vizibilă se ascund; butonul „Toate" îl readuce la
-           toate titlurile zilei. Chenarul rămâne în afara filtrării. -->
-      <nav class="day-toc" aria-label="Cuprinsul zilei">
-        <div class="toc-head">
+      <nav class="index" aria-label="Cuprinsul zilei">
+        <div class="index-head">
           <h2>Cuprins</h2>
-          <span class="toc-count">cele mai noi primele · apasă pe o oră ca să filtrezi rularea, pe un titlu ca să sari la știre</span>
+          <span>apasă pe un titlu ca să sari direct la știre · se sincronizează cu filtrul</span>
         </div>
-        <div class="toc-groups"></div>
+        <ol class="index-list">
+          <li data-cats="securitate"><a href="#stire-89"><time>21:00</time><span class="cat-dot sec" aria-hidden="true"></span><span class="t">Franța preia de la 1 ianuarie 2027 apărarea aeriană a hub-ului Rzeszów-Jasionka, principala poartă a ajutorului occidental pentru Ucraina</span><span class="n">#1</span></a></li>
+          <li data-cats="tech securitate"><a href="#stire-88"><time>20:00</time><span class="cat-dot tech" aria-hidden="true"></span><span class="t">Sute de copii ale instrumentului de hacking cu AI Artex, expuse public pe internet — oricine le poate folosi pentru atacuri cibernetice</span><span class="n">#2</span></a></li>
+          <li data-cats="securitate"><a href="#stire-87"><time>18:00</time><span class="cat-dot sec" aria-hidden="true"></span><span class="t">Comandamentul SUA în Europa lansează campania de vigilență „See Something, Do Something”: rute de navetă variate și geotagging oprit la aplicațiile de fitness</span><span class="n">#3</span></a></li>
+          <li data-cats="tech"><a href="#stire-85"><time>17:00</time><span class="cat-dot tech" aria-hidden="true"></span><span class="t">Cheltuielile cu AI stagnează chiar când Anthropic se apropie de IPO: evaluarea discutată a coborât la 1,2–1,3 trilioane $</span><span class="n">#4</span></a></li>
+          <li data-cats="securitate"><a href="#stire-86"><time>17:00</time><span class="cat-dot sec" aria-hidden="true"></span><span class="t">Shield AI cumpără producătorul de radare anti-dronă Echodyne cu 5,3 mld $ și se evaluează la 28,8 mld $</span><span class="n">#5</span></a></li>
+          <li data-cats="securitate"><a href="#stire-83"><time>16:00</time><span class="cat-dot sec" aria-hidden="true"></span><span class="t">Consiliul NATO–Ucraina, sesiune extraordinară la Bruxelles; Trump spune că acordul cu Rusia e «foarte aproape», după întâlnirea cu emisarul lui Putin</span><span class="n">#6</span></a></li>
+          <li data-cats="tech"><a href="#stire-84"><time>16:00</time><span class="cat-dot tech" aria-hidden="true"></span><span class="t">Amazon lasă clienții să-i trimită SMS agentului Alexa ca să cumpere — după ce în septembrie a blocat agentul Muse al Meta</span><span class="n">#7</span></a></li>
+          <li data-cats="securitate belgia"><a href="#stire-82"><time>15:00</time><span class="cat-dot sec" aria-hidden="true"></span><span class="t">Amenințări cu bombă la zborurile europene, ziua a treia: cel puțin 35 de zboruri afectate; curse TAROM și Wizz Air spre București, amenințări trimise și redacțiilor de știri</span><span class="n">#8</span></a></li>
+          <li data-cats="securitate romania"><a href="#stire-81"><time>14:00</time><span class="cat-dot sec" aria-hidden="true"></span><span class="t">Ursula von der Leyen vine luni la București, în turneu în regiunea Mării Negre: întâlniri cu Nicușor Dan și Luca Niculescu</span><span class="n">#9</span></a></li>
+          <li data-cats="belgia"><a href="#stire-79"><time>13:00</time><span class="cat-dot" style="background:var(--muted)" aria-hidden="true"></span><span class="t">Regele Philippe nu a acceptat demisia lui De Wever: negocierile pentru bugetul 2027 se reiau imediat, cu raport la palat pe 16 noiembrie</span><span class="n">#10</span></a></li>
+          <li data-cats="securitate romania"><a href="#stire-80"><time>13:00</time><span class="cat-dot sec" aria-hidden="true"></span><span class="t">Niculescu anunță un proiect româno-ucrainean de drone de circa 200 mil. €: «Destul de des primesc mesaje noaptea privind dronele care vin în România»</span><span class="n">#11</span></a></li>
+          <li data-cats="tech"><a href="#stire-78"><time>12:00</time><span class="cat-dot tech" aria-hidden="true"></span><span class="t">Cel puțin 10 administrații locale din SUA au renunțat la camerele de supraveghere Flock din vară, pe fondul temerilor de supraveghere în masă</span><span class="n">#12</span></a></li>
+          <li data-cats="securitate"><a href="#stire-77"><time>11:00</time><span class="cat-dot sec" aria-hidden="true"></span><span class="t">Kushner propune cinci obiective pentru o «arhitectură de securitate europeană» mai amplă, înaintea discuțiilor trilaterale de la Abu Dhabi</span><span class="n">#13</span></a></li>
+          <li data-cats="tech"><a href="#stire-76"><time>09:00</time><span class="cat-dot tech" aria-hidden="true"></span><span class="t">Palo Alto Networks negociază cumpărarea Clutch Security, startup de securitate pentru agenți AI, pentru ~500 mil. $</span><span class="n">#14</span></a></li>
+          <li data-cats="securitate romania"><a href="#stire-75"><time>08:00</time><span class="cat-dot sec" aria-hidden="true"></span><span class="t">România, dispusă să plătească o parte din costurile trupelor SUA — mesajul transmis lui Colby de Niculescu și Nicușor Dan</span><span class="n">#15</span></a></li>
+          <li data-cats="securitate"><a href="#stire-74"><time>07:00</time><span class="cat-dot sec" aria-hidden="true"></span><span class="t">Atac rusesc „double-tap” asupra unui punct de ajutor umanitar în Komyshuvakha: cel puțin 42 de morți, zeci încă sub dărâmături</span><span class="n">#16</span></a></li>
+          <li data-cats="tech"><a href="#stire-73"><time>06:00</time><span class="cat-dot tech" aria-hidden="true"></span><span class="t">OpenAI ar putea fi gata de IPO în 2027: veniturile din enterprise au devenit majoritare</span><span class="n">#17</span></a></li>
+        </ol>
       </nav>
 
       <p class="empty">Nicio știre în această categorie azi.</p>
 
       <main>
         <!-- 1 · 6 nov · 21:00 -->
-        <article id="stire-89" data-cats="securitate" data-sev="amber" data-subiect="Franța apără hub-ul Rzeszów">
+        <article id="stire-89" data-cats="securitate">
           <div class="a-meta">
             <span class="a-time">6 nov · 21:00</span>
             <span class="a-cat">Securitate &amp; NATO</span>
-            <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
-            <span class="subj-pill">Franța apără hub-ul Rzeszów</span>
             <span class="a-num">#1 / 17</span>
           </div>
           <h2>Franța preia de la 1 ianuarie 2027 apărarea aeriană a hub-ului Rzeszów-Jasionka, principala poartă a ajutorului occidental pentru Ucraina</h2>
@@ -891,12 +1076,10 @@
         </article>
 
         <!-- 2 · 6 nov · 20:00 -->
-        <article id="stire-88" data-cats="tech securitate" data-sev="amber" data-subiect="instrument AI de hacking expus">
+        <article id="stire-88" data-cats="tech securitate">
           <div class="a-meta">
             <span class="a-time">6 nov · 20:00</span>
             <span class="a-cat">Tech &amp; AI</span>
-            <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
-            <span class="subj-pill">instrument AI de hacking expus</span>
             <span class="a-num">#2 / 17</span>
           </div>
           <h2>Sute de copii ale instrumentului de hacking cu AI Artex, expuse public pe internet — oricine le poate folosi pentru atacuri cibernetice</h2>
@@ -927,12 +1110,10 @@
           </div>
         </article>
         <!-- 3 · 6 nov · 18:00 -->
-        <article id="stire-87" data-cats="securitate" data-sev="amber" data-subiect="vigilență EUCOM amenințări hibride">
+        <article id="stire-87" data-cats="securitate">
           <div class="a-meta">
             <span class="a-time">6 nov · 18:00</span>
             <span class="a-cat">Securitate &amp; NATO</span>
-            <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
-            <span class="subj-pill">vigilență EUCOM amenințări hibride</span>
             <span class="a-num">#3 / 17</span>
           </div>
           <h2>Comandamentul SUA în Europa lansează campania de vigilență „See Something, Do Something”: rute de navetă variate și geotagging oprit la aplicațiile de fitness</h2>
@@ -964,13 +1145,10 @@
         </article>
 
         <!-- 4 · 6 nov · 17:00 -->
-        <article id="stire-85" data-cats="tech" data-sev="amber" data-subiect="cheltuieli AI stagnează, IPO Anthropic">
+        <article id="stire-85" data-cats="tech">
           <div class="a-meta">
             <span class="a-time">6 nov · 17:00</span>
             <span class="a-cat">Tech &amp; AI</span>
-            <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
-            <a class="cont-pill" href="#stire-41" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
-            <span class="subj-pill">cheltuieli AI stagnează, IPO Anthropic</span>
             <span class="a-num">#4 / 17</span>
           </div>
           <h2>Cheltuielile cu AI stagnează chiar când Anthropic se apropie de IPO: evaluarea discutată a coborât la 1,2–1,3 trilioane $</h2>
@@ -1008,12 +1186,10 @@
         </article>
 
         <!-- 5 · 6 nov · 17:00 -->
-        <article id="stire-86" data-cats="securitate" data-sev="green" data-subiect="Shield AI cumpără Echodyne, radar anti-dronă">
+        <article id="stire-86" data-cats="securitate">
           <div class="a-meta">
             <span class="a-time">6 nov · 17:00</span>
             <span class="a-cat">Securitate &amp; NATO</span>
-            <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
-            <span class="subj-pill">Shield AI cumpără Echodyne, radar anti-dronă</span>
             <span class="a-num">#5 / 17</span>
           </div>
           <h2>Shield AI cumpără producătorul de radare anti-dronă Echodyne cu 5,3 mld $ și se evaluează la 28,8 mld $</h2>
@@ -1046,13 +1222,10 @@
         </article>
 
         <!-- 6 · 6 nov · 16:00 -->
-        <article id="stire-83" data-cats="securitate" data-sev="amber" data-subiect="negocieri de pace Ucraina">
+        <article id="stire-83" data-cats="securitate">
           <div class="a-meta">
             <span class="a-time">6 nov · 16:00</span>
             <span class="a-cat">Securitate &amp; NATO</span>
-            <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
-            <a class="cont-pill" href="#stire-77" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
-            <span class="subj-pill">negocieri de pace Ucraina</span>
             <span class="a-num">#6 / 17</span>
           </div>
           <h2>Consiliul NATO–Ucraina, sesiune extraordinară la Bruxelles; Trump spune că acordul cu Rusia e «foarte aproape», după întâlnirea cu emisarul lui Putin</h2>
@@ -1089,12 +1262,10 @@
         </article>
 
         <!-- 7 · 6 nov · 16:00 -->
-        <article id="stire-84" data-cats="tech" data-sev="green" data-subiect="cumpărături Alexa prin SMS">
+        <article id="stire-84" data-cats="tech">
           <div class="a-meta">
             <span class="a-time">6 nov · 16:00</span>
             <span class="a-cat">Tech &amp; AI</span>
-            <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
-            <span class="subj-pill">cumpărături Alexa prin SMS</span>
             <span class="a-num">#7 / 17</span>
           </div>
           <h2>Amazon lasă clienții să-i trimită SMS agentului Alexa ca să cumpere — după ce în septembrie a blocat agentul Muse al Meta</h2>
@@ -1127,13 +1298,10 @@
         </article>
 
         <!-- 8 · 6 nov · 15:00 -->
-        <article id="stire-82" data-cats="securitate belgia" data-sev="amber" data-subiect="amenințări cu bombă, ziua a 3-a">
+        <article id="stire-82" data-cats="securitate belgia">
           <div class="a-meta">
             <span class="a-time">6 nov · 15:00</span>
             <span class="a-cat">Securitate &amp; NATO · Belgia</span>
-            <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
-            <a class="cont-pill" href="#stire-64" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
-            <span class="subj-pill">amenințări cu bombă, ziua a 3-a</span>
             <span class="a-num">#8 / 17</span>
           </div>
           <h2>Amenințări cu bombă la zborurile europene, ziua a treia: cel puțin 35 de zboruri afectate; curse TAROM și Wizz Air spre București, amenințări trimise și redacțiilor de știri</h2>
@@ -1175,13 +1343,10 @@
         </article>
 
         <!-- 9 · 6 nov · 14:00 -->
-        <article id="stire-81" data-cats="securitate romania" data-sev="green" data-subiect="vizita von der Leyen în România">
+        <article id="stire-81" data-cats="securitate romania">
           <div class="a-meta">
             <span class="a-time">6 nov · 14:00</span>
             <span class="a-cat">Securitate &amp; NATO · România</span>
-            <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
-            <a class="cont-pill" href="#stire-80" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
-            <span class="subj-pill">vizita von der Leyen în România</span>
             <span class="a-num">#9 / 17</span>
           </div>
           <h2>Ursula von der Leyen vine luni la București, în turneu în regiunea Mării Negre: întâlniri cu Nicușor Dan și Luca Niculescu</h2>
@@ -1218,13 +1383,10 @@
         </article>
 
         <!-- 10 · 6 nov · 13:00 -->
-        <article id="stire-79" data-cats="belgia" data-sev="amber" data-subiect="criza bugetară belgiană">
+        <article id="stire-79" data-cats="belgia">
           <div class="a-meta">
             <span class="a-time">6 nov · 13:00</span>
             <span class="a-cat">Belgia</span>
-            <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
-            <a class="cont-pill" href="#stire-68" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
-            <span class="subj-pill">criza bugetară belgiană</span>
             <span class="a-num">#10 / 17</span>
           </div>
           <h2>Regele Philippe nu a acceptat demisia lui De Wever: negocierile pentru bugetul 2027 se reiau imediat, cu raport la palat pe 16 noiembrie</h2>
@@ -1260,13 +1422,10 @@
         </article>
 
         <!-- 11 · 6 nov · 13:00 -->
-        <article id="stire-80" data-cats="securitate romania" data-sev="amber" data-subiect="proiect de drone cu Ucraina">
+        <article id="stire-80" data-cats="securitate romania">
           <div class="a-meta">
             <span class="a-time">6 nov · 13:00</span>
             <span class="a-cat">Securitate &amp; NATO · România</span>
-            <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
-            <a class="cont-pill" href="#stire-55" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
-            <span class="subj-pill">proiect de drone cu Ucraina</span>
             <span class="a-num">#11 / 17</span>
           </div>
           <h2>Niculescu anunță un proiect româno-ucrainean de drone de circa 200 mil. €: «Destul de des primesc mesaje noaptea privind dronele care vin în România»</h2>
@@ -1303,12 +1462,10 @@
         </article>
 
         <!-- 12 · 6 nov · 12:00 -->
-        <article id="stire-78" data-cats="tech" data-sev="green" data-subiect="supraveghere AI respinsă">
+        <article id="stire-78" data-cats="tech">
           <div class="a-meta">
             <span class="a-time">6 nov · 12:00</span>
             <span class="a-cat">Tech &amp; AI</span>
-            <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
-            <span class="subj-pill">supraveghere AI respinsă</span>
             <span class="a-num">#12 / 17</span>
           </div>
           <h2>Cel puțin 10 administrații locale din SUA au renunțat la camerele de supraveghere Flock din vară, pe fondul temerilor de supraveghere în masă</h2>
@@ -1345,12 +1502,10 @@
         </article>
 
         <!-- 13 · 6 nov · 11:00 -->
-        <article id="stire-77" data-cats="securitate" data-sev="amber" data-subiect="arhitectură de securitate europeană">
+        <article id="stire-77" data-cats="securitate">
           <div class="a-meta">
             <span class="a-time">6 nov · 11:00</span>
             <span class="a-cat">Securitate &amp; NATO</span>
-            <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
-            <span class="subj-pill">arhitectură de securitate europeană</span>
             <span class="a-num">#13 / 17</span>
           </div>
           <h2>Kushner propune cinci obiective pentru o «arhitectură de securitate europeană» mai amplă, înaintea discuțiilor trilaterale de la Abu Dhabi</h2>
@@ -1386,13 +1541,10 @@
         </article>
 
         <!-- 14 · 6 nov · 09:00 -->
-        <article id="stire-76" data-cats="tech" data-sev="amber" data-subiect="achiziție securitate agenți AI">
+        <article id="stire-76" data-cats="tech">
           <div class="a-meta">
             <span class="a-time">6 nov · 09:00</span>
             <span class="a-cat">Tech &amp; AI</span>
-            <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
-            <a class="cont-pill" href="#stire-34" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
-            <span class="subj-pill">achiziție securitate agenți AI</span>
             <span class="a-num">#14 / 17</span>
           </div>
           <h2>Palo Alto Networks negociază cumpărarea Clutch Security, startup de securitate pentru agenți AI, pentru ~500 mil. $</h2>
@@ -1430,13 +1582,10 @@
         </article>
 
         <!-- 15 · 6 nov · 08:00 -->
-        <article id="stire-75" data-cats="securitate romania" data-sev="amber" data-subiect="plata trupelor SUA în România">
+        <article id="stire-75" data-cats="securitate romania">
           <div class="a-meta">
             <span class="a-time">6 nov · 08:00</span>
             <span class="a-cat">Securitate &amp; NATO · România</span>
-            <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
-            <a class="cont-pill" href="#stire-55" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
-            <span class="subj-pill">plata trupelor SUA în România</span>
             <span class="a-num">#15 / 17</span>
           </div>
           <h2>România, dispusă să plătească o parte din costurile trupelor SUA — mesajul transmis lui Colby de Niculescu și Nicușor Dan</h2>
@@ -1479,13 +1628,11 @@
         </article>
 
         <!-- 16 · 6 nov · 07:00 -->
-        <article id="stire-74" data-cats="securitate" data-sev="red" data-subiect="atac double-tap în Ucraina">
+        <article id="stire-74" data-cats="securitate">
           <div class="a-meta">
             <span class="a-time">6 nov · 07:00</span>
             <span class="a-cat">Securitate &amp; NATO</span>
-            <span class="sev-pill is-red"><i aria-hidden="true"></i>Roșu · grav</span>
             <span class="spot-tag">Știrea zilei</span>
-            <span class="subj-pill">atac double-tap în Ucraina</span>
             <span class="a-num">#16 / 17</span>
           </div>
           <h2>Atac rusesc „double-tap” asupra unui punct de ajutor umanitar în Komyshuvakha: cel puțin 42 de morți, zeci încă sub dărâmături</h2>
@@ -1522,13 +1669,10 @@
         </article>
 
         <!-- 17 · 6 nov · 06:00 -->
-        <article id="stire-73" data-cats="tech" data-sev="green" data-subiect="IPO OpenAI în 2027">
+        <article id="stire-73" data-cats="tech">
           <div class="a-meta">
             <span class="a-time">6 nov · 06:00</span>
             <span class="a-cat">Tech &amp; AI</span>
-            <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
-            <a class="cont-pill" href="#stire-16" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
-            <span class="subj-pill">IPO OpenAI în 2027</span>
             <span class="a-num">#17 / 17</span>
           </div>
           <h2>OpenAI ar putea fi gata de IPO în 2027: veniturile din enterprise au devenit majoritare</h2>
@@ -4380,363 +4524,10 @@
       </main>
       </section>
 
-      <section class="day day-archive" id="zi-2026-10-31">
-        <div class="day-head">
-          <h2>Sâmbătă, 31 octombrie 2026</h2>
-          <span>Ediția de ieri · 6 știri · arhivă (ultimele 7 zile)</span>
-        </div>
-
-      <!-- Chenar permanent: știrea cea mai importantă a zilei — chiar sub masthead,
-           ÎNAINTEA dashboardului, vizibilă din prima, fără scroll.
-           Nivelul de azi: GALBEN (sev-amber) — finanțarea AI se tensionează, de urmărit.
-           La altă ediție, clasa se schimbă: sev-green (normal) / sev-amber (de urmărit) / sev-red (grav).
-           Chenarul rămâne în afara logicii de filtrare: vizibil indiferent de filtrul de categorie. -->
-      <section class="spot sev-amber" aria-label="Știrea cea mai importantă a zilei">
-        <div class="spot-head">
-          <span class="spot-kicker">
-            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13 2 4.5 13.5H11L9.5 22 19 10h-6.5L13 2z"/></svg>
-            Știrea zilei · Atenție rapidă
-          </span>
-          <span class="spot-time">31 oct · 11:00</span>
-          <span class="spot-pill">Nivel galben — de urmărit</span>
-        </div>
-        <h2 class="spot-title">Fisurile din boom-ul AI se văd la bursă: Big Tech anunță peste 740 mld $ cheltuieli pe an, iar Nasdaq cade</h2>
-        <p class="spot-why"><strong>De ce e în față:</strong> prima corecție vizibilă a pieței față de cheltuielile AI — nu mai e doar un semnal de finanțare, ci o scădere de bursă care atinge direct contextul investițiilor.</p>
-        <p class="spot-lead">Alphabet, Amazon, Meta și Microsoft au anunțat planuri de cheltuieli de capital de peste 740 de miliarde de dolari pe anul acesta, citite drept infrastructură AI — iar piața a reacționat: vineri, Nasdaq a scăzut cu 2,9%, iar Alphabet a pierdut joi 12% (500 de miliarde de dolari din valoarea de piață), cea mai proastă zi din istoria sa.</p>
-        <div class="spot-foot">
-          <a class="spot-link" href="#stire-13">Citește știrea completă ↓</a>
-          <div class="sev-scale" role="img" aria-label="Scară de gravitate: verde — normal, galben — de urmărit, roșu — grav. Nivelul de azi: galben.">
-            <span class="sev-item"><i class="sev-dot g" aria-hidden="true"></i>Verde · normal</span>
-            <span class="sev-item on"><i class="sev-dot y" aria-hidden="true"></i>Galben · de urmărit</span>
-            <span class="sev-item"><i class="sev-dot r" aria-hidden="true"></i>Roșu · grav</span>
-          </div>
-        </div>
-      </section>
-
-      <!-- Dashboard -->
-      <section class="dashboard" aria-label="Panou de ansamblu">
-        <div class="dash-head">
-          <span class="dash-title">Dashboard · Azi</span>
-          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 20:06</span>
-          <span class="dash-meta">Fereastră monitorizare <strong>L–V 06:00–22:00 · S–D 07:30–22:00</strong> · pas ~3 ore</span>
-        </div>
-
-        <div class="kpi-grid" role="group" aria-label="Filtrează după categorie — apasă pe un tile">
-          <button class="kpi" type="button" data-filter="toate" aria-pressed="true">
-            <span class="kpi-top"><span class="kpi-label">Toate știrile</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">6</span>
-            <span class="kpi-sub">știri verificate azi, în 4 rulări</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:100%"></i></span>
-            <span class="kpi-hint">Apasă pentru toate</span>
-          </button>
-          <button class="kpi" type="button" data-filter="securitate" aria-pressed="false">
-            <span class="kpi-top"><span class="kpi-label">Securitate &amp; NATO</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">2</span>
-            <span class="kpi-sub">NATO, apărare anti-dronă, flanc estic</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:33%"></i></span>
-            <span class="kpi-hint">Apasă pentru a filtra →</span>
-          </button>
-          <button class="kpi" type="button" data-filter="romania" aria-pressed="false">
-            <span class="kpi-top"><span class="kpi-label">România</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">0</span>
-            <span class="kpi-sub">nicio știre azi</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:0%"></i></span>
-            <span class="kpi-hint">Apasă pentru a filtra →</span>
-          </button>
-          <button class="kpi" type="button" data-filter="tech" aria-pressed="false">
-            <span class="kpi-top"><span class="kpi-label">Tech &amp; AI</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">5</span>
-            <span class="kpi-sub">AI, finanțarea infrastructurii</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:83%"></i></span>
-            <span class="kpi-hint">Apasă pentru a filtra →</span>
-          </button>
-        </div>
-
-        <div class="dash-foot">
-          <div class="dash-panel">
-            <h3>Ritmul zilei — știri pe rulare</h3>
-            <div class="rhythm" role="group" aria-label="Filtru după ora publicării — apasă pe o rulare ca să vezi doar știrile ei">
-              <button class="col" type="button" data-hour="08:00" aria-pressed="false" aria-label="Filtrează știrile de la ora 08:00 — 2 știri"><span class="n">2</span><span class="bar" style="height:40px"></span><span class="t">08:00</span></button>
-              <button class="col" type="button" data-hour="11:00" aria-pressed="false" aria-label="Filtrează știrile de la ora 11:00 — 1 știre"><span class="n">1</span><span class="bar" style="height:22px"></span><span class="t">11:00</span></button>
-              <button class="col" type="button" data-hour="17:00" aria-pressed="false" aria-label="Filtrează știrile de la ora 17:00 — 2 știri"><span class="n">2</span><span class="bar" style="height:40px"></span><span class="t">17:00</span></button>
-              <button class="col" type="button" data-hour="20:00" aria-pressed="false" aria-label="Filtrează știrile de la ora 20:00 — 1 știre"><span class="n">1</span><span class="bar" style="height:22px"></span><span class="t">20:00</span></button>
-            </div>
-            <p class="rhythm-hint">Apasă pe o bară ca să vezi doar știrile din rularea aceea; apasă din nou pe ea pentru toate.</p>
-          </div>
-          <div class="dash-panel">
-            <h3>Stare ediție</h3>
-            <ul class="status-list">
-              <li><span class="k">Ultima actualizare</span><span class="v">Azi, 20:06</span></li>
-              <li><span class="k">Cea mai nouă</span><span class="v">OpenAI își taie ținta de finanțare · 20:00</span></li>
-              <li><span class="k">Acoperire</span><span class="v">Ultimele 7 zile în arhivă</span></li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <div class="filter-status" aria-live="polite">
-        <span class="filter-label">Se afișează: <strong>Toate categoriile — 6 din 6 știri</strong></span>
-        <button class="filter-reset" type="button" hidden>Resetează filtrul</button>
-      </div>
-
-      <nav class="index" aria-label="Cuprinsul zilei">
-        <div class="index-head">
-          <h2>Cuprins</h2>
-          <span>apasă pe un titlu ca să sari direct la știre · se sincronizează cu filtrul</span>
-        </div>
-        <ol class="index-list">
-          <li data-cats="tech"><a href="#stire-16"><time>20:00</time><span class="cat-dot tech" aria-hidden="true"></span><span class="t">OpenAI își taie ținta de finanțare la 20 mld $ și are abia ~11 mld $ angajate — investitorii mari răspund „călduț”</span><span class="n">#1</span></a></li>
-          <li data-cats="securitate tech"><a href="#stire-14"><time>17:00</time><span class="cat-dot sec" aria-hidden="true"></span><span class="t">Salesforce cumpără startupul de apărare Rune cu 375 mil. $ — logistica AI ajunge la linia frontului</span><span class="n">#2</span></a></li>
-          <li data-cats="tech"><a href="#stire-15"><time>17:00</time><span class="cat-dot tech" aria-hidden="true"></span><span class="t">Anthropic ar putea primi rating „junk” după IPO, avertizează Blackstone — inversare față de așteptările inițiale</span><span class="n">#3</span></a></li>
-          <li data-cats="tech"><a href="#stire-13"><time>11:00</time><span class="cat-dot tech" aria-hidden="true"></span><span class="t">Fisurile din boom-ul AI se văd la bursă: Big Tech anunță peste 740 mld $ cheltuieli pe an, iar Nasdaq cade</span><span class="n">#4</span></a></li>
-          <li data-cats="tech"><a href="#stire-11"><time>08:00</time><span class="cat-dot tech" aria-hidden="true"></span><span class="t">Nvidia ar putea garanta miliarde din datoria Nscale pentru centrul de date Anthropic din Virginia de Vest</span><span class="n">#5</span></a></li>
-          <li data-cats="securitate"><a href="#stire-12"><time>08:00</time><span class="cat-dot sec" aria-hidden="true"></span><span class="t">NATO testează în Letonia un lanț senzor–trăgător anti-dronă care să funcționeze între națiuni</span><span class="n">#6</span></a></li>
-        </ol>
-      </nav>
-
-      <p class="empty">Nicio știre în această categorie azi.</p>
-
-      <main>
-        <!-- 1 · 31 oct -->
-        <article id="stire-16" data-cats="tech">
-          <div class="a-meta">
-            <span class="a-time">31 oct · 20:00</span>
-            <span class="a-cat">Tech &amp; AI · Finanțarea infrastructurii AI</span>
-            <span class="a-num">#1 / 6</span>
-          </div>
-          <h2>OpenAI își taie ținta de finanțare la 20 mld $ și are abia ~11 mld $ angajate — investitorii mari răspund „călduț”</h2>
-
-          <div class="followup">
-            <span class="tag">Urmare la</span>
-            <p><a href="#stire-13">„Fisurile din boom-ul AI se văd la bursă: Big Tech anunță peste 740 mld $ cheltuieli pe an, iar Nasdaq cade”</a> — azi, 11:00 (#4). Același arc — fisurile din boom-ul AI, acum la nivelul finanțării celui mai mare laborator.</p>
-          </div>
-
-          <div class="sec">
-            <p class="sec-label">Ce s-a întâmplat</p>
-            <p>Financial Times a relatat vineri că OpenAI și-a redus ținta rundei de finanțare de la 30 mld $ la circa 20 mld $, la o evaluare de 1,25 trilioane de dolari (față de 1,4 trilioane inițial). The Wall Street Journal a relatat separat că până acum sunt angajate circa 11 mld $, iar unii mari investitori au răspuns „călduț” (tepid); vineri a fost termenul-limită pentru angajamente, iar primul close e așteptat sub 20 mld $.</p>
-            <p>Runda ar urma să fie condusă de investitori din Emiratele Arabe Unite, inclusiv fondul de stat MGX, iar o ofertă ulterioară pentru persoane înstărite ar putea completa suma spre 20 mld $; OpenAI n-a comentat, potrivit TechCrunch.</p>
-          </div>
-
-          <div class="sec">
-            <p class="sec-label">De ce contează</p>
-            <p>Este prima dovadă concretă că vânzarea de acțiuni tech de săptămâna aceasta lovește direct finanțarea privată a AI-ului, nu doar cotațiile la bursă — laboratorul-fanion, care plănuiește listarea în 2027, nu mai obține banii la prețul cerut inițial.</p>
-          </div>
-
-          <div class="verify">
-            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
-            <p>Verdict: confirmat — Financial Times (ținta tăiată la ~20 mld $) și The Wall Street Journal (circa 11 mld $ angajate, răspuns tepid) sunt două redacții independente, ambele preluate de TechCrunch (sursă din lista monitorizată).</p>
-            <ul class="sources">
-              <li><a href="https://techcrunch.com/2026/10/31/openai-reportedly-lowers-funding-target-for-new-round/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>TechCrunch — OpenAI își reduce ținta de finanțare<span class="host">techcrunch.com</span></a></li>
-            </ul>
-          </div>
-
-          <div class="impact">
-            <span class="badge">Impact direct</span>
-            <p>Impact direct azi: minim — niciun efect imediat asupra uneltelor AI folosite zilnic; relevanță de context mare pentru același arc urmărit azi (căderea Nasdaq și ratingul „junk” anticipat pentru Anthropic): dacă finanțarea laboratoarelor-fanion se scumpește și se restrânge, presiunea se poate transmite în prețurile API și în ritmul de dezvoltare al infrastructurii AI.</p>
-          </div>
-        </article>
-
-        <!-- 2 · 31 oct -->
-        <article id="stire-14" data-cats="securitate tech">
-          <div class="a-meta">
-            <span class="a-time">31 oct · 17:00</span>
-            <span class="a-cat">Tech &amp; AI · Securitate &amp; NATO · Logistică militară</span>
-            <span class="a-num">#2 / 6</span>
-          </div>
-          <h2>Salesforce cumpără startupul de apărare Rune cu 375 mil. $ — logistica AI ajunge la linia frontului</h2>
-
-          <div class="sec">
-            <p class="sec-label">Ce s-a întâmplat</p>
-            <p>Salesforce a convenit achiziția Rune Technologies, startup fondat în 2024 la Washington, pentru 375 de milioane de dolari în numerar și acțiuni, potrivit relatării Resilience Media preluate de TechCrunch. Rune construiește TyrOS, un software AI care prognozează necesarul de aprovizionare al unităților din teren și optimizează logistica, inclusiv în medii cu conectivitate limitată; tehnologia e folosită deja de armata SUA și de pușcașii marini.</p>
-            <p>Achiziția extinde Missionforce, divizia Salesforce pentru apărare și securitate națională — în creștere cu 80% față de anul trecut, cu un contract de 10 ani și 5,6 miliarde de dolari cu armata SUA — de la planificarea administrativă la sprijin operațional în timp real; închiderea e așteptată în trimestrul patru fiscal 2027 (până la 31 ianuarie 2027).</p>
-          </div>
-
-          <div class="sec">
-            <p class="sec-label">De ce contează</p>
-            <p>Agenții AI trec de la birou la decizii operaționale în teren, în condiții degradate — exact intersecția dintre cele două teme urmărite aici: agenți autonomi și mediul de apărare.</p>
-          </div>
-
-          <div class="verify">
-            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
-            <p>Verdict: tranzacția confirmată — anunțul Salesforce confirmă achiziția (parte implicată — nu confirmă prețul); prețul de 375 mil. $ vine din relatarea Resilience Media, cu două surse apropiate de tranzacție, preluată de TechCrunch; Salesforce nu a dezvăluit oficial termenii financiari. Surse de verificare: Resilience Media (scoop original), TechCrunch.</p>
-            <ul class="sources">
-              <li><a href="https://techcrunch.com/2026/10/30/salesforces-ma-spree-continues-with-a-reported-375m-deal-for-defense-tech-startup-rune/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>TechCrunch — achiziția Rune de către Salesforce<span class="host">techcrunch.com</span></a></li>
-            </ul>
-          </div>
-
-          <div class="impact">
-            <span class="badge">Impact direct</span>
-            <p>Profesional — agenți AI cu autoritate operațională în logistica militară înseamnă o suprafață nouă de incidente (decizii automate sub presiune de timp și conectivitate, date de pe linia frontului), direct pe terenul de IT incident management; personal — confirmă direcția arhitecturală discutată în acest watch (separarea inteligenței de autoritatea de a acționa), acum cu miză operațională, nu doar comercială.</p>
-          </div>
-        </article>
-
-        <!-- 3 · 31 oct -->
-        <article id="stire-15" data-cats="tech">
-          <div class="a-meta">
-            <span class="a-time">31 oct · 17:00</span>
-            <span class="a-cat">Tech &amp; AI · Finanțarea infrastructurii AI</span>
-            <span class="a-num">#3 / 6</span>
-          </div>
-          <h2>Anthropic ar putea primi rating „junk” după IPO, avertizează Blackstone — inversare față de așteptările inițiale</h2>
-
-          <div class="followup">
-            <span class="tag">Urmare la</span>
-            <p><a href="#stire-13">„Fisurile din boom-ul AI se văd la bursă: Big Tech anunță peste 740 mld $ cheltuieli pe an, iar Nasdaq cade”</a> — azi, 11:00 (#4). Același arc: costul finanțării expansiunii AI.</p>
-          </div>
-
-          <div class="sec">
-            <p class="sec-label">Ce s-a întâmplat</p>
-            <p>Blackstone le-a spus investitorilor că Anthropic ar putea primi după IPO un rating speculativ („junk”, în intervalul BB), nu investment-grade cum anticipase anterior (înainte de finalul anului), potrivit Financial Times (30 octombrie), preluat de TechCrunch. Blackstone e investitor-ancoră în finanțarea de 63 de miliarde de dolari pentru cipuri (Project North Star); peste 42 de miliarde din împrumuturile senior sunt garantate de Broadcom, iar tranșa junior de circa 18 miliarde a primit deja BB+ cu perspectivă pozitivă de la KBRA și BB de la Morningstar DBRS. Fitch, Moody's și S&amp;P nu s-au pronunțat încă oficial.</p>
-            <p>Anthropic a depus actele de IPO la începutul săptămânii, cu o listare posibilă luna viitoare; relatările vorbesc despre un plan de cheltuieli de infrastructură de peste 800 de miliarde de dolari.</p>
-          </div>
-
-          <div class="sec">
-            <p class="sec-label">De ce contează</p>
-            <p>Ratingul decide cât de scump se împrumută laboratorul care face Claude — modelul folosit zilnic și pe ale cărui API-uri se construiesc automatizări; un rating junk restrânge accesul la capital instituțional și scumpește finanțarea infrastructurii.</p>
-          </div>
-
-          <div class="verify">
-            <p class="sec-label">Verificare <span class="status">Sursă unică</span></p>
-            <p>Verdict: sursă unică — relatarea Financial Times (30 octombrie), cu ecouri care preiau același fir (Invezz, OnInvest, BeInCrypto), deci o singură confirmare de origine, nu verificări independente; Anthropic și Blackstone au refuzat comentariul, potrivit TechCrunch. Surse de verificare: Financial Times (relatare originală), TechCrunch.</p>
-            <ul class="sources">
-              <li><a href="https://techcrunch.com/2026/10/30/anthropic-expected-to-receive-high-junk-rating-from-credit-agencies-following-ipo-report-says/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>TechCrunch — posibilul rating „junk” al Anthropic<span class="host">techcrunch.com</span></a></li>
-            </ul>
-          </div>
-
-          <div class="impact">
-            <span class="badge">Impact direct</span>
-            <p>Impact direct azi: minim; relevant pentru costul și ritmul infrastructurii AI folosite — dacă finanțarea se scumpește, presiunea se transmite în prețurile API și în ritmul de dezvoltare.</p>
-          </div>
-        </article>
-
-        <!-- 4 · 31 oct -->
-        <article id="stire-13" data-cats="tech">
-          <div class="a-meta">
-            <span class="a-time">31 oct · 11:00</span>
-            <span class="a-cat">Tech &amp; AI · Bursă · Cheltuieli AI</span>
-            <span class="spot-tag">Știrea zilei</span>
-            <span class="a-num">#4 / 6</span>
-          </div>
-          <h2>Fisurile din boom-ul AI se văd la bursă: Big Tech anunță peste 740 mld $ cheltuieli pe an, iar Nasdaq cade</h2>
-
-          <div class="followup">
-            <span class="tag">Urmare la</span>
-            <p><a href="#stire-11">„Nvidia ar putea garanta miliarde din datoria Nscale pentru centrul de date Anthropic din Virginia de Vest”</a> — azi, 08:00 (#5). Același arc: finanțarea expansiunii AI se tensionează.</p>
-          </div>
-
-          <div class="sec">
-            <p class="sec-label">Ce s-a întâmplat</p>
-            <p>În ultimele două săptămâni, Alphabet, Amazon, Meta și Microsoft au anunțat planuri de cheltuieli de capital de peste 740 de miliarde de dolari pe anul acesta, citite de Wall Street drept cheltuieli pentru infrastructură AI, iar entuziasmul investitorilor a lăsat loc îngrijorărilor legate de flux de numerar negativ, datorie în creștere și randamentul acestor investiții.</p>
-            <p>Vineri, Nasdaq a scăzut cu 2,9%, iar Alphabet a scăzut joi cu 12%, cea mai proastă zi din istoria sa, ștergând 500 de miliarde de dolari din valoarea de piață; Alphabet a raportat flux de numerar liber negativ de 9,1 miliarde de dolari în trimestrul al treilea (al doilea trimestru consecutiv pe minus), cu cheltuieli de capital de 51,4 miliarde de dolari, și se așteaptă să cheltuiască până la 205 miliarde de dolari anul acesta, iar Meta a raportat flux negativ de 2,1 miliarde de dolari, cu cheltuieli de capital de până la 145 de miliarde de dolari; Microsoft a fost excepția, cu flux pozitiv de 18,6 miliarde de dolari.</p>
-            <p>Potrivit S&amp;P Global Market Intelligence, Microsoft, Alphabet, Amazon, Meta și Oracle au atras împreună 326 de miliarde de dolari din datorii în 2026, de trei ori mai mult decât anul trecut.</p>
-          </div>
-
-          <div class="sec">
-            <p class="sec-label">De ce contează</p>
-            <p>Prima corecție vizibilă a pieței față de cheltuielile AI: nu mai e doar un semnal de finanțare (cum era garanția Nvidia pentru Nscale), ci o scădere de bursă care pune sub semnul întrebării cât de repede se vor întoarce sutele de miliarde investite în centre de date și cipuri — context direct pentru oricine urmărește investițiile în tehnologie.</p>
-          </div>
-
-          <div class="verify">
-            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
-            <p>Verdict: confirmat — TechCrunch, „Cracks are emerging in the AI spending boom”, 30 octombrie 2026 (sursa curatoriată), confirmat în afara listei de Reuters (30 octombrie 2026: ștergere de peste 2.000 de miliarde de dolari din Nasdaq 100 în octombrie, indicele în scădere cu peste 5,8% în octombrie) și CNN (30 octombrie 2026: Nasdaq Composite −2,86% vineri, cea mai proastă zi din iunie, cea mai proastă lună din martie 2025, indicele cu 7,8% sub maximul record).</p>
-            <ul class="sources">
-              <li><a href="https://techcrunch.com/2026/10/30/cracks-are-emerging-in-the-ai-spending-boom/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>TechCrunch — „Cracks are emerging in the AI spending boom”<span class="host">techcrunch.com</span></a></li>
-            </ul>
-          </div>
-
-          <div class="opposing">
-            <p class="sec-label">Tabăra adversă</p>
-            <p>Microsoft — rezultatele sale arată că cheltuielile AI încep să dea roade, spre deosebire de tonul general de îngrijorare (relatat de Reuters).</p>
-          </div>
-
-          <div class="impact">
-            <span class="badge">Impact direct</span>
-            <p>Impact direct azi: minim, nicio acțiune imediată; relevanță de context ridicată pentru investițiile în tehnologie și pentru decizia de reconstrucție a planurilor de investiții după salariu — volatilitatea din sectorul AI e exact cadrul în care se va lua acea decizie.</p>
-          </div>
-        </article>
-
-        <!-- 5 · 31 oct -->
-        <article id="stire-11" data-cats="tech">
-          <div class="a-meta">
-            <span class="a-time">31 oct · 08:00</span>
-            <span class="a-cat">Tech &amp; AI · Finanțarea infrastructurii AI</span>
-            <span class="a-num">#5 / 6</span>
-          </div>
-          <h2>Nvidia ar putea garanta miliarde din datoria Nscale pentru centrul de date Anthropic din Virginia de Vest</h2>
-
-          <div class="followup">
-            <span class="tag">Urmare la</span>
-            <p><a href="#zi-2026-10-30">știrea din 30 octombrie despre posibilul rating „junk” al Anthropic după IPO</a> — același fir: finanțarea Anthropic și presiunea pe costul expansiunii AI.</p>
-          </div>
-
-          <div class="sec">
-            <p class="sec-label">Ce s-a întâmplat</p>
-            <p>Nvidia discută să garanteze miliarde de dolari din finanțarea prin datorie a furnizorului de cloud Nscale pentru campusul din Virginia de Vest destinat Anthropic, printr-o garanție de valoare reziduală: dacă Nscale nu achită plățile de construcție, Nvidia ar prelua temporar facilitatea și ar căuta un cumpărător sau un chiriaș nou. Anthropic are un contract de 44,6 miliarde de dolari doar pentru prima clădire de 460 MW, care ar urma să folosească cipurile Vera Rubin de nouă generație ale Nvidia, iar o a doua clădire, de circa 45 de miliarde de dolari, este în discuție. Nscale vizează o listare la bursă la o evaluare de până la 35 de miliarde de dolari, deși în august avea în funcțiune doar circa 25.000 de cipuri avansate, dintr-un plan de aproape 500.000.</p>
-          </div>
-
-          <div class="sec">
-            <p class="sec-label">De ce contează</p>
-            <p>Semnal concret că finanțarea expansiunii AI se tensionează: pe măsură ce investitorii devin mai prudenți față de sumele implicate, furnizorul de cipuri ar deveni și garant al datoriei clientului său — o expunere cumulată pe care The Information o estimează la circa 170 de miliarde de dolari în investiții și sprijin de credit către neoclouduri și mari clienți. Relevant pentru urmărirea sustenabilității evaluărilor din sectorul AI și a contextului de piață al investițiilor.</p>
-          </div>
-
-          <div class="verify">
-            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
-            <p>Verdict: confirmat — The Information (relatarea inițială) și Bloomberg (coroborare, citată de TechCrunch, 31 octombrie 2026).</p>
-            <ul class="sources">
-              <li><a href="https://techcrunch.com/2026/10/30/nvidia-weighs-playing-the-cosigner-for-nscales-ai-data-center-in-west-virginia/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>TechCrunch — relatarea coroborată<span class="host">techcrunch.com</span></a></li>
-            </ul>
-          </div>
-
-          <div class="impact">
-            <span class="badge">Impact direct</span>
-            <p>Impact direct azi: minim, fără acțiune; relevanță de context pentru investiții și pentru tema finanțării infrastructurii AI.</p>
-          </div>
-        </article>
-
-        <!-- 6 · 31 oct -->
-        <article id="stire-12" data-cats="securitate">
-          <div class="a-meta">
-            <span class="a-time">31 oct · 08:00</span>
-            <span class="a-cat">NATO · Apărare anti-dronă</span>
-            <span class="a-num">#6 / 6</span>
-          </div>
-          <h2>NATO testează în Letonia un lanț senzor–trăgător anti-dronă care să funcționeze între națiuni</h2>
-
-          <div class="followup">
-            <span class="tag">Urmare la</span>
-            <p><a href="#stire-2">„Bulgaria intră azi în inițiativa NATO împotriva amenințărilor aeriene de joasă altitudine (anti-dronă)”</a> — 30 octombrie, 20:05 (#2). Același arc: apărarea anti-dronă și amenințările de joasă altitudine pe flancul estic.</p>
-          </div>
-
-          <div class="sec">
-            <p class="sec-label">Ce s-a întâmplat</p>
-            <p>La Riga, pe 30 octombrie 2026, președintele Comitetului Militar al NATO, amiralul Giuseppe Cavo Dragone, a asistat la evenimentul de experimentare FUSE (Federated Unified Sensing and Effects), după aproape două săptămâni în care aliați, operatori militari și industrie au testat în Letonia cum pot lucra împreună tehnologii din mai multe națiuni împotriva amenințărilor în evoluție rapidă: conectivitate digitală, apărare anti-dronă și țintire de nouă generație, sub conducerea Comandamentului Aliat pentru Transformare. Cavo Dragone a spus că «Ucraina ne-a învățat că ciclurile de adaptare se măsoară acum în săptămâni, nu în ani» și că anul viitor se așteaptă un lanț senzor–trăgător împotriva roiurilor de drone, funcțional între sistemele mai multor națiuni și desfășurat cu unități de pe flancul estic.</p>
-          </div>
-
-          <div class="sec">
-            <p class="sec-label">De ce contează</p>
-            <p>Reper profesional direct: apărarea anti-dronă și interoperabilitatea între națiuni sunt exact arcul urmărit constant (atacuri cu drone în Marea Neagră, inițiativa NATO împotriva amenințărilor de joasă altitudine la care Bulgaria a aderat tot pe 30 octombrie).</p>
-          </div>
-
-          <div class="verify">
-            <p class="sec-label">Verificare <span class="status">Sursă primară</span></p>
-            <p>Verdict: sursă primară — chiar NATO anunță propria activitate (comunicat NATO, 30 octombrie 2026).</p>
-            <ul class="sources">
-              <li><a href="https://www.nato.int/en/news-and-events/articles/news/2026/10/30/chair-of-the-nato-military-committee-visits-nato-fuse-in-riga" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>NATO — comunicatul oficial<span class="host">www.nato.int</span></a></li>
-            </ul>
-          </div>
-
-          <div class="impact">
-            <span class="badge">Impact direct</span>
-            <p>Impact direct azi: minim, fără acțiune imediată; reper profesional de urmărit.</p>
-          </div>
-        </article>
-      </main>
-      </section>
-
       <footer>
         <div class="rule" aria-hidden="true"></div>
-        <p>Sfârșitul ediției de azi · Ultima actualizare: vineri, 6 noiembrie 2026, 21:00<br />Monitorizarea rulează la circa 3 ore, în fereastra L–V 06:00–22:00 · S–D 07:30–22:00 — dă refresh pentru noutăți.</p>
-        <a class="to-top" href="#stire-89">↑ Înapoi la cea mai nouă știre</a>
+        <p>Sfârșitul ediției de azi · Ultima actualizare: sâmbătă, 7 noiembrie 2026, 08:00<br />Monitorizarea rulează la circa 3 ore, în fereastra L–V 06:00–22:00 · S–D 07:30–22:00 — dă refresh pentru noutăți.</p>
+        <a class="to-top" href="#stire-90">↑ Înapoi la cea mai nouă știre</a>
       </footer>
     </div>
 
