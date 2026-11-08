@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="color-scheme" content="light dark" />
-    <meta name="tirile-versiune" content="2026-11-08T16:00:00+01:00|10|red" />
+    <meta name="tirile-versiune" content="2026-11-08T18:00:00+01:00|11|red" />
     <link rel="icon" href="data:," />
     <title>Știrile zilei</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -699,9 +699,9 @@
     <div class="topbar">
       <div class="topbar-inner">
         <span class="dot" aria-hidden="true"></span>
-        <span><strong>Duminică, 8 noiembrie 2026</strong> · actualizat la <strong>16:00</strong></span>
+        <span><strong>Duminică, 8 noiembrie 2026</strong> · actualizat la <strong>18:00</strong></span>
         <span aria-hidden="true">·</span>
-        <span>10 știri azi</span>
+        <span>11 știri azi</span>
         <span class="spacer"></span>
         <button class="refresh-btn" type="button" id="refreshBtn" aria-label="Reîmprospătează pagina">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg>
@@ -771,30 +771,30 @@
       <section class="dashboard" aria-label="Panou de ansamblu">
         <div class="dash-head">
           <span class="dash-title">Dashboard · Azi</span>
-          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 16:00</span>
+          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 18:00</span>
           <span class="dash-meta">Fereastră monitorizare <strong>L–V 06:00–22:00 · S–D 07:30–22:00</strong> · pas ~3 ore</span>
         </div>
 
         <div class="kpi-grid five" role="group" aria-label="Filtrează după categorie — apasă pe un tile">
           <button class="kpi" type="button" data-filter="toate" aria-pressed="true">
             <span class="kpi-top"><span class="kpi-label">Toate știrile</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">10</span>
-            <span class="kpi-sub">știri verificate azi, în 7 rulări</span>
+            <span class="kpi-value">11</span>
+            <span class="kpi-sub">știri verificate azi, în 8 rulări</span>
             <span class="kpi-bar" aria-hidden="true"><i style="width:100%"></i></span>
             <span class="kpi-hint">Apasă pentru toate</span>
           </button>
           <button class="kpi" type="button" data-filter="securitate" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">Securitate &amp; NATO</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">5</span>
-            <span class="kpi-sub">alertă aeriană Insula Șerpilor · negocieri Ucraina Abu Dhabi · exercițiu Coaliția Voinței în Polonia · familia atacatorului ucisă · trei cadavre la locuința atacatorului</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:50%"></i></span>
+            <span class="kpi-value">6</span>
+            <span class="kpi-sub">țintă aeriană Chilia Veche · alertă aeriană Insula Șerpilor · negocieri Ucraina Abu Dhabi · exercițiu Coaliția Voinței în Polonia · familia atacatorului ucisă · trei cadavre la locuința atacatorului</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:55%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="romania" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">România</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">2</span>
-            <span class="kpi-sub">alertă aeriană Insula Șerpilor · exercițiu Coaliția Voinței în Polonia</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:20%"></i></span>
+            <span class="kpi-value">3</span>
+            <span class="kpi-sub">țintă aeriană Chilia Veche · alertă aeriană Insula Șerpilor · exercițiu Coaliția Voinței în Polonia</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:27%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="belgia" aria-pressed="false">
@@ -808,7 +808,7 @@
             <span class="kpi-top"><span class="kpi-label">Tech &amp; AI</span><span class="kpi-check" aria-hidden="true">✓</span></span>
             <span class="kpi-value">5</span>
             <span class="kpi-sub">OpenAI strânge 11 mld $ · memo spionaj Nvidia Megaspeed · breșă Chainalysis · prăbușirea acțiunilor AI · accelerarea AI la Anthropic</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:50%"></i></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:45%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
         </div>
@@ -822,7 +822,7 @@
       </section>
 
       <div class="filter-status" aria-live="polite">
-        <span class="filter-label">Se afișează: <strong>Toate categoriile — 10 din 10 știri</strong></span>
+        <span class="filter-label">Se afișează: <strong>Toate categoriile — 11 din 11 știri</strong></span>
         <button class="filter-reset" type="button" hidden>Resetează filtrul</button>
       </div>
 
@@ -852,6 +852,45 @@
       <p class="empty">Nicio știre în această categorie azi.</p>
 
       <main>
+        <!-- 1 · 8 nov · 18:00 -->
+        <article id="stire-116" data-cats="securitate romania" data-sev="amber" data-subiect="țintă aeriană Chilia Veche">
+          <div class="a-meta">
+            <span class="a-time">8 nov · 18:00</span>
+            <span class="a-cat">Securitate &amp; NATO</span>
+            <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
+            <a class="cont-pill" href="#stire-115" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
+            <span class="subj-pill">țintă aeriană Chilia Veche</span>
+            <span class="a-num">#1 / 11</span>
+          </div>
+          <h2>A treia țintă aeriană a zilei la granița României: F-16 românești ridicate de la Fetești după o detectare lângă Chilia Veche; al doilea RO-Alert în Tulcea, la 16:51</h2>
+          <div class="followup">
+            <span class="tag">Urmare la</span>
+            <p><a href="#stire-115">„Alertă aeriană la Insula Șerpilor: două ținte detectate de radarul MApN; F-18 și elicoptere spaniole ridicate de la Mihail Kogălniceanu, RO-Alert în estul Tulcei" — duminică, 8 noiembrie 2026, ora 16:00.</a></p>
+          </div>
+          <div class="sec">
+            <p class="sec-label">Ce s-a întâmplat</p>
+            <p>Duminică după-amiază, la circa o oră și jumătate după ce alerta de la Insula Șerpilor încetase (15:26), sistemul de supraveghere radar al Ministerului Apărării Naționale a detectat o nouă țintă aeriană în spațiul aerian al Ucrainei, la aproximativ 4 kilometri nord de localitatea Chilia Veche, în proximitatea frontierei cu România. Două avioane F-16 ale Forțelor Aeriene Române, aflate în serviciul de luptă Poliție Aeriană, au decolat de la Baza 86 Aeriană Fetești pentru monitorizarea situației. Centrul Național Militar de Comandă a notificat Inspectoratul General pentru Situații de Urgență, iar la ora 16:51 a fost transmis un mesaj RO-Alert pentru populația din nordul județului Tulcea. E a treia țintă aeriană detectată duminică în zonă, după cele două de lângă Insula Șerpilor. MApN nu a precizat natura țintei și nu a confirmat o pătrundere în spațiul aerian românesc.</p>
+          </div>
+          <div class="sec">
+            <p class="sec-label">De ce contează</p>
+            <p>Trei ținte într-o singură zi, două mesaje RO-Alert și două baze aeriene activate (Mihail Kogălniceanu și Fetești) — presiunea pe flancul estic și pe Delta Dunării nu slăbește, ci se repetă la interval de ore. Pentru munca lui de IT incident Manager în mediul NATO, e un nou incident operațional pe același arc al Mării Negre urmărit în ultimele săptămâni, cu alertare a populației civile. Context: luni, 9 noiembrie, președinta Comisiei Europene vine la București într-un turneu dedicat tocmai securității Mării Negre — vizita se va desfășura pe fondul acestor alerte repetate. Pentru familie: ținta a rămas în spațiul aerian ucrainean, fără pătrundere confirmată în spațiul românesc — niciun impact direct.</p>
+          </div>
+          <div class="verify">
+            <p class="sec-label">Verificare <span class="status">Sursă primară</span></p>
+            <p>Verdict: sursa_primara + confirmat. MApN — informarea postată pe Facebook (sursă primară, 8 nov 2026): ținta la circa 4 kilometri nord de Chilia Veche, decolarea celor două F-16 de la Fetești, RO-Alert la 16:51. Relatări concordante: Știri de azi (după MApN), Presa România (după News.ro, 17:47), Dobrogea Online (18:13), Știri Complete (17:00). Notă de integritate: natura țintei nu a fost precizată de MApN — nu o numim dronă; unele relatări amestecă această țintă cu cea de-a doua de la Insula Șerpilor (55 de kilometri vest) — MApN le tratează ca detectări distincte („Alte două ținte aeriene au fost depistate duminică, în apropierea Insulei Șerpilor").</p>
+            <ul class="sources">
+              <li><a href="https://stirideazi.ro/mapn-o-noua-tinta-aeriana-a-fost-detectata-in-proximitatea-frontierei-cu-romania/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Știri de azi — „MApN: O nouă țintă aeriană a fost detectată în proximitatea frontierei cu România" (8 nov 2026, după informarea MApN de pe Facebook)<span class="host">stirideazi.ro</span></a></li>
+              <li><a href="https://presaromania.ro/nou-mesaj-ro-alert-pentru-nordul-judetului-tulcea-dupa-observarea-unei-tinte-aeriene/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Presa România — „Nou mesaj RO-Alert pentru nordul județului Tulcea, după observarea unei ținte aeriene" (8 nov 2026, 17:47, după News.ro)<span class="host">presaromania.ro</span></a></li>
+              <li><a href="https://www.dobrogeaonline.ro/ro-alert-in-nordul-judetului-tulcea-a-fost-detectata-o-tinta-aeriana-care-se-apropie-de-nordul-romaniei/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Dobrogea Online — „RO-ALERT în nordul județului Tulcea: a fost detectată o țintă aeriană care se apropie de nordul României" (8 nov 2026, 18:13)<span class="host">dobrogeaonline.ro</span></a></li>
+              <li><a href="https://stiricomplete.ro/social/alerta-ro-alert-in-nordul-judetului-tulcea-o-tinta-aeriana-se-indreapta-spre-romania-4817e49ca0/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Știri Complete — „Alertă RO-Alert în nordul județului Tulcea: o țintă aeriană se îndreaptă spre România" (8 nov 2026, 17:00)<span class="host">stiricomplete.ro</span></a></li>
+            </ul>
+          </div>
+          <div class="impact">
+            <span class="badge">Impact direct</span>
+            <p>Impact direct: minim — ținta a rămas în spațiul aerian ucrainean, fără pătrundere confirmată în spațiul românesc; nu s-au raportat apeluri la 112 legate de incident. Relevanță profesională ridicată: a treia activare de poliție aeriană într-o singură zi, pe arcul Mării Negre urmărit în watch — de urmărit dacă MApN precizează natura țintelor sau apar noi detectări în cursul nopții.</p>
+          </div>
+        </article>
+
         <!-- 1 · 8 nov · 16:00 -->
         <article id="stire-115" data-cats="securitate romania" data-sev="amber" data-subiect="alertă aeriană Insula Șerpilor">
           <div class="a-meta">
@@ -859,7 +898,7 @@
             <span class="a-cat">Securitate &amp; NATO</span>
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="subj-pill">alertă aeriană Insula Șerpilor</span>
-            <span class="a-num">#1 / 10</span>
+            <span class="a-num">#2 / 11</span>
           </div>
           <h2>Alertă aeriană la Insula Șerpilor: două ținte detectate de radarul MApN; F-18 și elicoptere spaniole ridicate de la Mihail Kogălniceanu, RO-Alert în estul Tulcei</h2>
 
@@ -897,7 +936,7 @@
             <span class="a-cat">Securitate &amp; NATO</span>
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="subj-pill">negocieri Ucraina Abu Dhabi</span>
-            <span class="a-num">#2 / 10</span>
+            <span class="a-num">#3 / 11</span>
           </div>
           <h2>Europa va fi la masa negocierilor pentru Ucraina de la Abu Dhabi (10–11 nov), anunță Parisul — Moscova spune că formatul trilateral nu prevede europeni</h2>
 
@@ -939,7 +978,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-107" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">OpenAI strânge 11 mld $</span>
-            <span class="a-num">#3 / 10</span>
+            <span class="a-num">#4 / 11</span>
           </div>
           <h2>OpenAI a strâns 11 mld $ la o evaluare de 1,25 trilioane $ — mult sub ținta inițială de 30 mld $; și Anthropic își vede evaluarea de IPO tăiată</h2>
 
@@ -980,7 +1019,7 @@
             <span class="a-cat">Securitate &amp; NATO</span>
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="subj-pill">exercițiu Coaliția Voinței în Polonia</span>
-            <span class="a-num">#4 / 10</span>
+            <span class="a-num">#5 / 11</span>
           </div>
           <h2>Exercițiul Koalicja începe luni în Polonia: 2.800 de militari din 11 țări, între care Belgia, repetă desfășurarea forței multinaționale pentru Ucraina de după război</h2>
 
@@ -1026,7 +1065,7 @@
             <span class="spot-tag">Știrea zilei</span>
             <a class="cont-pill" href="#stire-106" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">familia atacatorului ucisă</span>
-            <span class="a-num">#5 / 10</span>
+            <span class="a-num">#6 / 11</span>
           </div>
           <h2>Atacul din Cracovia: poliția confirmă că cele trei cadavre de la locuința atacatorului sunt părinții și sora lui — nouă morți în total</h2>
 
@@ -1070,7 +1109,7 @@
             <span class="a-cat">Tech &amp; AI</span>
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="subj-pill">memo spionaj Nvidia Megaspeed</span>
-            <span class="a-num">#6 / 10</span>
+            <span class="a-num">#7 / 11</span>
           </div>
           <h2>Memo al serviciilor americane: o directoare Megaspeed ar fi fost recrutată de spionajul chinez ca să-l supravegheze pe șeful Nvidia, Jensen Huang</h2>
 
@@ -1112,7 +1151,7 @@
             <span class="a-cat">Tech &amp; AI</span>
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="subj-pill">breșă Chainalysis</span>
-            <span class="a-num">#7 / 10</span>
+            <span class="a-num">#8 / 11</span>
           </div>
           <h2>Breșă la Chainalysis: parolele și tokenurile live ale tuturor utilizatorilor, expuse după un atac cu agenți AI</h2>
 
@@ -1149,7 +1188,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-85" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">prăbușirea acțiunilor AI</span>
-            <span class="a-num">#8 / 10</span>
+            <span class="a-num">#9 / 11</span>
           </div>
           <h2>Acțiunile AI s-au prăbușit joi: circa 2,5 trilioane $ șterse de pe bursă într-o zi, apoi o revenire parțială vineri — Nasdaq −5,5%, Nvidia −9%</h2>
 
@@ -1197,7 +1236,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-29" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">accelerarea AI la Anthropic</span>
-            <span class="a-num">#9 / 10</span>
+            <span class="a-num">#10 / 11</span>
           </div>
           <h2>METR: modelele Anthropic se îmbunătățesc de două ori mai repede decât acum un an — iar AI-ul însuși ar face ~80% din accelerare</h2>
 
@@ -1245,7 +1284,7 @@
             <span class="sev-pill is-red"><i aria-hidden="true"></i>Roșu · grav</span>
             <a class="cont-pill" href="#stire-105" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">trei cadavre la locuința atacatorului</span>
-            <span class="a-num">#10 / 10</span>
+            <span class="a-num">#11 / 11</span>
           </div>
           <h2>Atacul din Cracovia: alte trei cadavre găsite la locuința atacatorului — victimele ar fi membri ai familiei sale; printre cei șase uciși în piață, un cetățean britanic</h2>
 
@@ -5341,8 +5380,8 @@
 
       <footer>
         <div class="rule" aria-hidden="true"></div>
-        <p>Sfârșitul ediției de azi · Ultima actualizare: duminică, 8 noiembrie 2026, 16:00<br />Monitorizarea rulează la circa 3 ore, în fereastra L–V 06:00–22:00 · S–D 07:30–22:00 — dă refresh pentru noutăți.</p>
-        <a class="to-top" href="#stire-115">↑ Înapoi la cea mai nouă știre</a>
+        <p>Sfârșitul ediției de azi · Ultima actualizare: duminică, 8 noiembrie 2026, 18:00<br />Monitorizarea rulează la circa 3 ore, în fereastra L–V 06:00–22:00 · S–D 07:30–22:00 — dă refresh pentru noutăți.</p>
+        <a class="to-top" href="#stire-116">↑ Înapoi la cea mai nouă știre</a>
       </footer>
     </div>
 
