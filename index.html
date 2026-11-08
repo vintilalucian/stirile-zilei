@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="color-scheme" content="light dark" />
-    <meta name="tirile-versiune" content="2026-11-08T08:00:00+01:00|1|red" />
+    <meta name="tirile-versiune" content="2026-11-08T09:00:00+01:00|3|red" />
     <link rel="icon" href="data:," />
     <title>Știrile zilei</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -699,9 +699,9 @@
     <div class="topbar">
       <div class="topbar-inner">
         <span class="dot" aria-hidden="true"></span>
-        <span><strong>Duminică, 8 noiembrie 2026</strong> · actualizat la <strong>08:00</strong></span>
+        <span><strong>Duminică, 8 noiembrie 2026</strong> · actualizat la <strong>09:00</strong></span>
         <span aria-hidden="true">·</span>
-        <span>1 știre azi</span>
+        <span>3 știri azi</span>
         <span class="spacer"></span>
         <button class="refresh-btn" type="button" id="refreshBtn" aria-label="Reîmprospătează pagina">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg>
@@ -739,10 +739,10 @@
 
       <!-- Chenar permanent: știrea cea mai importantă a zilei — sub fereastra
            „Ultimele știri", ÎNAINTEA dashboardului, vizibilă din prima, fără scroll.
-           Nivelul de azi: ROȘU (sev-red) — grav: bilanțul tragediei din
-           Cracovia crește — alte trei cadavre găsite la locuința atacatorului,
-           posibil membri ai familiei sale; ancheta indică o posibilă
-           influență de extremă dreaptă.
+           Nivelul de azi: ROȘU (sev-red) — grav: alte trei cadavre găsite la
+           locuința atacatorului din Cracovia, victimele ar fi membri ai familiei
+           sale; posibilă influență de extremă dreaptă — continuare a știrii cu
+           severitate roșie de sâmbătă, prima știre a zilei.
            Chenarul rămâne în afara logicii de filtrare: vizibil indiferent de filtrul de categorie. -->
       <section class="spot sev-red" aria-label="Știrea cea mai importantă a zilei">
         <div class="spot-head">
@@ -771,15 +771,15 @@
       <section class="dashboard" aria-label="Panou de ansamblu">
         <div class="dash-head">
           <span class="dash-title">Dashboard · Azi</span>
-          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 08:00</span>
+          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 09:00</span>
           <span class="dash-meta">Fereastră monitorizare <strong>L–V 06:00–22:00 · S–D 07:30–22:00</strong> · pas ~3 ore</span>
         </div>
 
         <div class="kpi-grid five" role="group" aria-label="Filtrează după categorie — apasă pe un tile">
           <button class="kpi" type="button" data-filter="toate" aria-pressed="true">
             <span class="kpi-top"><span class="kpi-label">Toate știrile</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">1</span>
-            <span class="kpi-sub">știri verificate azi, în 1 rulare</span>
+            <span class="kpi-value">3</span>
+            <span class="kpi-sub">știri verificate azi, în 2 rulări</span>
             <span class="kpi-bar" aria-hidden="true"><i style="width:100%"></i></span>
             <span class="kpi-hint">Apasă pentru toate</span>
           </button>
@@ -787,7 +787,7 @@
             <span class="kpi-top"><span class="kpi-label">Securitate &amp; NATO</span><span class="kpi-check" aria-hidden="true">✓</span></span>
             <span class="kpi-value">1</span>
             <span class="kpi-sub">trei cadavre la locuința atacatorului</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:100%"></i></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:33%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="romania" aria-pressed="false">
@@ -806,9 +806,9 @@
           </button>
           <button class="kpi" type="button" data-filter="tech" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">Tech &amp; AI</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">0</span>
-            <span class="kpi-sub"></span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:0%"></i></span>
+            <span class="kpi-value">2</span>
+            <span class="kpi-sub">prăbușirea acțiunilor AI · accelerarea AI la Anthropic</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:67%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
         </div>
@@ -822,7 +822,7 @@
       </section>
 
       <div class="filter-status" aria-live="polite">
-        <span class="filter-label">Se afișează: <strong>Toate categoriile — 1 din 1 știri</strong></span>
+        <span class="filter-label">Se afișează: <strong>Toate categoriile — 3 din 3 știri</strong></span>
         <button class="filter-reset" type="button" hidden>Resetează filtrul</button>
       </div>
 
@@ -852,6 +852,102 @@
       <p class="empty">Nicio știre în această categorie azi.</p>
 
       <main>
+        <!-- 1 · 8 nov · 09:00 -->
+        <article id="stire-107" data-cats="tech" data-sev="amber" data-subiect="prăbușirea acțiunilor AI">
+          <div class="a-meta">
+            <span class="a-time">8 nov · 09:00</span>
+            <span class="a-cat">Tech &amp; AI</span>
+            <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
+            <a class="cont-pill" href="#stire-85" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
+            <span class="subj-pill">prăbușirea acțiunilor AI</span>
+            <span class="a-num">#1 / 3</span>
+          </div>
+          <h2>Acțiunile AI s-au prăbușit joi: circa 2,5 trilioane $ șterse de pe bursă într-o zi, apoi o revenire parțială vineri — Nasdaq −5,5%, Nvidia −9%</h2>
+
+          <div class="followup">
+            <span class="tag">Urmare la</span>
+            <p><a href="#stire-85">„Cheltuielile cu AI stagnează chiar când Anthropic se apropie de IPO: evaluarea discutată a coborât la 1,2–1,3 trilioane $"</a> — vineri, 6 noiembrie 2026, ora 17:00.</p>
+          </div>
+
+          <div class="sec">
+            <p class="sec-label">Ce s-a întâmplat</p>
+            <p>Joi, acțiunile companiilor legate de inteligența artificială au fost lovite de o vânzare masivă: indicele Nasdaq a căzut cu 5,5% — cea mai proastă zi din aprilie 2025 — iar valoarea de piață ștearsă de pe Wall Street într-o singură ședință e estimată la circa 2,5 trilioane de dolari. Nvidia a pierdut peste 9% (circa 447 de miliarde de dolari din capitalizare, una dintre cele mai mari pierderi într-o zi înregistrate vreodată de o companie), AMD și Micron au căzut cu peste 17%, iar cele mai mari șapte companii tech au pierdut împreună circa 1 trilion de dolari într-o zi. Vânzarea s-a extins vineri în Asia și Europa (indicii Kospi din Coreea de Sud și Nikkei din Japonia au închis cu −6%, Taiex din Taiwan cu −4,5%). Vineri, piața americană a recuperat parțial: Nasdaq a închis cu +1,1%, S&amp;P 500 cu +0,3%, Nvidia cu +2,8% și SpaceX cu +8,6%; Dow Jones a închis ușor pe minus (−0,5%).</p>
+          </div>
+
+          <div class="sec">
+            <p class="sec-label">De ce contează</p>
+            <p>Declanșatorul, potrivit BBC și CNN, e victoria democraților la alegerile de la jumătatea mandatului: investitorii se tem că noul Congres va încetini dezvoltarea AI prin reglementări mai dure — exact tema cardului de vineri despre cheltuielile cu AI care stagnează și despre evaluările în scădere ale Anthropic și OpenAI. Un studiu al Columbia Business School, citat de CNN, estimează că investițiile în infrastructura AI au generat aproape toată creșterea observată a PIB-ului american până la finalul anului trecut — de aici miza: dacă politica frânează AI, frânează și motorul creșterii. De urmărit săptămâna viitoare dacă revenirea de vineri se menține sau vânzarea continuă.</p>
+          </div>
+
+          <div class="verify">
+            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
+            <p>Verdict: confirmat. BBC (6 nov 2026): Nasdaq −5,5% joi, revenire +1,1% vineri la închidere; motivul invocat — teama că victoria democraților va încetini dezvoltarea AI. CNN (6 nov 2026): circa 2,5 trilioane de dolari șterși într-o zi, Nasdaq +1,1% și S&amp;P 500 +0,3% vineri, Nvidia +2,8% și SpaceX +8,6%; Kospi și Nikkei −6% vineri. BBN Times (6 nov 2026): Nasdaq 100 −6,4%, indicele semiconductorilor din Philadelphia −12% (cea mai proastă performanță din martie 2020), Nvidia −447 de miliarde de dolari din capitalizare.</p>
+            <ul class="sources">
+              <li><a href="https://occasionaldigest.com/ai-stocks-bounce-back-after-trillions-wiped-from-market-values/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>BBC, via Occasional Digest — „AI stocks bounce back after trillions wiped from market values" (6 nov 2026, 17:37)<span class="host">occasionaldigest.com</span></a></li>
+              <li><a href="https://www.cnn.com/2026/11/05/markets/asian-markets-us-rout-ai-investment-intl-hnk?cid=external-feeds_iluminar_meta" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>CNN — „AI stocks bounce back after $2.5 trillion wipeout, but questions remain" (6 nov 2026)<span class="host">cnn.com</span></a></li>
+              <li><a href="https://www.bbntimes.com/global-economy/ai-stocks-climb-after-2-5-trillion-wipeout-inside-the-violent-rebound-that-followed-a-historic-sell-off" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>BBN Times — „AI Stocks Climb After $2.5 Trillion Wipeout" (6 nov 2026)<span class="host">bbntimes.com</span></a></li>
+            </ul>
+          </div>
+
+          <div class="opposing">
+            <p class="sec-label">Tabăra adversă</p>
+            <p>Pierre Baqué, directorul general al platformei AI Neural Concept, a numit mișcările bruște de preț „o corecție necesară a pieței", nu începutul sfârșitului boom-ului AI (<a href="https://www.professorstrust.com/article/ai-and-tech-stocks-edge-up-following-global-sell-off-56b4542fb3" target="_blank" rel="noopener">Professor's Trust</a>). Dan Coatsworth, șeful piețelor la AJ Bell, a avertizat însă că întrebarea-cheie e dacă saltul de vineri se va menține, după „o săptămână brutală" pentru piețe (BBC).</p>
+          </div>
+
+          <div class="impact">
+            <span class="badge">Impact direct</span>
+            <p>Impact direct: minim — fără dețineri directe la Nvidia și celelalte companii lovite în portofoliul cunoscut (investițiile recurente sunt TVBETETF, pe piața românească, iar planurile XTB sunt în reconstrucție); semnal de context puternic pentru deciziile lui de investiții: volatilitatea vine exact din îndoiala asupra cheltuielilor AI — tema urmărită în watch din 31 octombrie.</p>
+          </div>
+        </article>
+
+        <!-- 2 · 8 nov · 09:00 -->
+        <article id="stire-108" data-cats="tech" data-sev="amber" data-subiect="accelerarea AI la Anthropic">
+          <div class="a-meta">
+            <span class="a-time">8 nov · 09:00</span>
+            <span class="a-cat">Tech &amp; AI</span>
+            <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
+            <a class="cont-pill" href="#stire-29" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
+            <span class="subj-pill">accelerarea AI la Anthropic</span>
+            <span class="a-num">#2 / 3</span>
+          </div>
+          <h2>METR: modelele Anthropic se îmbunătățesc de două ori mai repede decât acum un an — iar AI-ul însuși ar face ~80% din accelerare</h2>
+
+          <div class="followup">
+            <span class="tag">Urmare la</span>
+            <p><a href="#stire-29">„Anthropic avertizează că e «foarte aproape» de RSI — AI care se construiește singur"</a> — marți, 3 noiembrie 2026, ora 08:00.</p>
+          </div>
+
+          <div class="sec">
+            <p class="sec-label">Ce s-a întâmplat</p>
+            <p>METR, organizația nonprofit independentă care evaluează modelele AI de frontieră, a petrecut 11 săptămâni în interiorul Anthropic (12 august – 29 octombrie 2026), cu acces la date interne și circa 15 interviuri cu angajați, fără plată, ca să măsoare dacă AI-ul accelerează cercetarea AI. Verdictul, publicat pe 5 noiembrie: pe sarcini bine definite, modelele Anthropic se îmbunătățesc acum de circa două ori mai repede decât între martie 2024 și octombrie 2025. Indicele intern AECI (versiunea Anthropic a Epoch Capabilities Index, un compozit de 15 benchmark-uri) a crescut cu ~15 puncte pe an înainte de octombrie 2025 și cu ~29 de puncte pe an după aceea — raport 1,9x, cu interval de încredere 95% de 1,5–2,8x — adică, în cuvintele METR, „aproximativ doi ani de progres istoric într-un singur an". METR estimează că circa 80% din accelerare vine din faptul că AI-ul însuși ajută la cercetare, dar subliniază că e o judecată, nu o măsurătoare. Anthropic a redactat „majoritatea dovezilor pe care le-am considerat cele mai informative", potrivit METR, și a anulat o verificare planificată a modului în care împarte puterea de calcul între capabilități și siguranță.</p>
+          </div>
+
+          <div class="sec">
+            <p class="sec-label">De ce contează</p>
+            <p>E auditul independent al avertismentului Anthropic din 3 noiembrie (cardul anterior): laboratorul însuși spunea că e „foarte aproape" de RSI — AI care se construiește singur. METR mai spune că raportul public de risc al Anthropic din august 2026 „subestimează, în ansamblu, nivelul de accelerare care avea loc" și că e „plauzibil" ca pragul de avertizare timpurie de 2x accelerare să fi fost deja depășit. Pentru el, relevanța e dublă: profesional, e exact clasa de risc pe care o urmărește (agenți autonomi ca sursă de incidente), iar personal, tooling-ul AI pe care își construiește automatizările (Claude, Gemini) se mișcă mai repede decât se aștepta — cu lansări și schimbări de capabilități mai dese.</p>
+          </div>
+
+          <div class="verify">
+            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
+            <p>Verdict: confirmat. Fast Company (5 nov 2026, 20:00 UTC): METR a constatat că Anthropic își dezvoltă sistemele de circa două ori mai repede decât acum un an, în mare parte cu ajutorul AI-ului însuși; Anthropic a redactat majoritatea dovezilor pe care METR le-a considerat cele mai informative. The Verge (7 nov 2026): raportul METR spune că modelele se îmbunătățesc de circa două ori mai repede decât acum un an. technology.org (7 nov 2026): AECI +15 puncte/an înainte de octombrie 2025, +29 după; ~80% din accelerare atribuită AI-ului; Anthropic a anulat verificarea planificată a împărțirii compute-ului între capabilități și siguranță.</p>
+            <ul class="sources">
+              <li><a href="https://www.fastcompany.com/91636791/anthropic-metr-ai-claude-acceleration?partner=rss&utm_source=rss&utm_medium=feed&utm_campaign=rss+fastcompany&utm_content=rss" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Fast Company — „Anthropic doubles AI development amid slowdown calls" (5 nov 2026)<span class="host">fastcompany.com</span></a></li>
+              <li><a href="https://www.technology.org/2026/11/07/metr-anthropic-ai-progress-twice-as-fast-assessment/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>technology.org — „METR: Anthropic AI Progress Now Twice as Fast" (7 nov 2026)<span class="host">technology.org</span></a></li>
+              <li><a href="https://ai-news-online.com/explained/metr-anthropic-ai-rd-acceleration-explained/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>AI News Online — „METR Anthropic AI R&D acceleration explained" (7 nov 2026, cu link la raportul METR)<span class="host">ai-news-online.com</span></a></li>
+            </ul>
+          </div>
+
+          <div class="opposing">
+            <p class="sec-label">Tabăra adversă</p>
+            <p>Anthropic spune că redactările au vizat eliminarea informațiilor confidențiale „care ar putea accelera alți dezvoltatori AI" — adică protecția secretului comercial, nu ascunderea accelerării (<a href="https://www.technology.org/2026/11/07/metr-anthropic-ai-progress-twice-as-fast-assessment/" target="_blank" rel="noopener">technology.org</a>). METR însăși avertizează că accelerarea s-ar putea limita la sarcini bine definite, ușor de notat automat, și că cifra de 2x ar putea supraestima realitatea pe sarcini „murdare", greu de definit.</p>
+          </div>
+
+          <div class="impact">
+            <span class="badge">Impact direct</span>
+            <p>Impact direct: minim azi — nicio schimbare imediată în tooling-ul pe care îl folosește; relevanță profesională ridicată: dacă pragul de accelerare 2x e deja depășit, ritmul în care apar capabilități noi (și incidente noi pe agenți autonomi) crește — exact terenul lui de incident management; de urmărit reacția altor laboratoare și eventualele măsuri de transparență cerute de evaluatori.</p>
+          </div>
+        </article>
+
         <!-- 1 · 8 nov · 08:00 -->
         <article id="stire-106" data-cats="securitate" data-sev="red" data-subiect="trei cadavre la locuința atacatorului">
           <div class="a-meta">
@@ -861,7 +957,7 @@
             <span class="spot-tag">Știrea zilei</span>
             <a class="cont-pill" href="#stire-105" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">trei cadavre la locuința atacatorului</span>
-            <span class="a-num">#1 / 1</span>
+            <span class="a-num">#3 / 3</span>
           </div>
           <h2>Atacul din Cracovia: alte trei cadavre găsite la locuința atacatorului — victimele ar fi membri ai familiei sale; printre cei șase uciși în piață, un cetățean britanic</h2>
 
@@ -899,11 +995,14 @@
       </main>
       </section>
 
+
       <section class="day day-archive" id="zi-2026-11-07">
         <div class="day-head">
           <h2>Sâmbătă, 7 noiembrie 2026</h2>
           <span>Ediția de ieri · 16 știri · arhivă (ultimele 7 zile)</span>
         </div>
+
+
       <!-- Chenar permanent: știrea cea mai importantă a zilei — sub fereastra
            „Ultimele știri", ÎNAINTEA dashboardului, vizibilă din prima, fără scroll.
            Nivelul de azi: ROȘU (sev-red) — grav: atac armat în Piața Centrală
@@ -1015,29 +1114,29 @@
           <span>apasă pe un titlu ca să sari direct la știre · se sincronizează cu filtrul</span>
         </div>
         <ol class="index-list">
-          <li data-cats="securitate"><a href="#stire-105"><time>21:00</time><span class="cat-dot sec" aria-hidden="true"></span><span class="t">Atacul din Cracovia: ministrul de interne spune că autorul a acționat singur și avea „păreri foarte radicale" — doliu național duminică și luni în Polonia</span><span class="n">#1</span></a></li>
+          <li data-cats="securitate"><a href="#stire-105"><time>21:00</time><span class="cat-dot sec" aria-hidden="true"></span><span class="t">Atacul din Cracovia: ministrul de interne spune că autorul a acționat singur și avea „păreri foarte radicale&quot; — doliu național duminică și luni în Polonia</span><span class="n">#1</span></a></li>
           <li data-cats="securitate"><a href="#stire-104"><time>20:00</time><span class="cat-dot sec" aria-hidden="true"></span><span class="t">Atac armat în Piața Centrală din Cracovia: șase morți și 15 răniți — atacatorul a tras la întâmplare dintr-o mașină, a fost împușcat și reținut</span><span class="n">#2</span></a></li>
           <li data-cats="securitate"><a href="#stire-103"><time>18:00</time><span class="cat-dot sec" aria-hidden="true"></span><span class="t">Comandamentul SUA în Europa lansează campania «See Something, Do Something»: vigilență sporită pentru militari și familii, pe fondul amenințărilor hibride</span><span class="n">#3</span></a></li>
           <li data-cats="tech"><a href="#stire-101"><time>17:00</time><span class="cat-dot tech" aria-hidden="true"></span><span class="t">După victoria democraților la alegerile de la jumătatea mandatului, Big Tech se pregătește de reglementări mai dure pe AI: moratorii pe centre de date și anchete în Congres</span><span class="n">#4</span></a></li>
           <li data-cats="belgia"><a href="#stire-102"><time>17:00</time><span class="cat-dot" style="background:var(--muted)" aria-hidden="true"></span><span class="t">Parlamentul belgian a aprobat perchezițiile la domiciliu pentru migranții în situație ilegală — lege controversată, votată în plină criză de guvern</span><span class="n">#5</span></a></li>
-          <li data-cats="securitate"><a href="#stire-100"><time>16:00</time><span class="cat-dot sec" aria-hidden="true"></span><span class="t">Danemarca și Lituania cumpără mine navale „Blocker" din Finlanda, prin schema comună de achiziții a NATO din Marea Baltică</span><span class="n">#6</span></a></li>
-          <li data-cats="romania"><a href="#stire-99"><time>15:00</time><span class="cat-dot ro" aria-hidden="true"></span><span class="t">Niculescu cere tuturor ministerelor planuri de reducere a cheltuielilor până la sfârșitul săptămânii viitoare; bugetul pe 2027, gata în circa o lună</span><span class="n">#7</span></a></li>
+          <li data-cats="securitate"><a href="#stire-100"><time>16:00</time><span class="cat-dot sec" aria-hidden="true"></span><span class="t">Danemarca și Lituania cumpără mine navale „Blocker&quot; din Finlanda, prin schema comună de achiziții a NATO din Marea Baltică</span><span class="n">#6</span></a></li>
+          <li data-cats="romania"><a href="#stire-99"><time>15:00</time><span class="cat-dot" style="background:var(--muted)" aria-hidden="true"></span><span class="t">Niculescu cere tuturor ministerelor planuri de reducere a cheltuielilor până la sfârșitul săptămânii viitoare; bugetul pe 2027, gata în circa o lună</span><span class="n">#7</span></a></li>
           <li data-cats="tech"><a href="#stire-98"><time>14:00</time><span class="cat-dot tech" aria-hidden="true"></span><span class="t">Meta lansează Spaces în Muse: descrii o idee în chat, iar agentul îți construiește un spațiu dedicat — tracker, planner sau tablou de proiect</span><span class="n">#8</span></a></li>
-          <li data-cats="romania"><a href="#stire-97"><time>13:00</time><span class="cat-dot ro" aria-hidden="true"></span><span class="t">Unitatea 1 de la Cernavodă a fost repornită după circa 100 de zile de oprire: pierderi de aproximativ un miliard de lei; decizia pentru Unitatea 2, luni</span><span class="n">#9</span></a></li>
+          <li data-cats="romania"><a href="#stire-97"><time>13:00</time><span class="cat-dot" style="background:var(--muted)" aria-hidden="true"></span><span class="t">Unitatea 1 de la Cernavodă a fost repornită după circa 100 de zile de oprire: pierderi de aproximativ un miliard de lei; decizia pentru Unitatea 2, luni</span><span class="n">#9</span></a></li>
           <li data-cats="securitate belgia"><a href="#stire-95"><time>12:00</time><span class="cat-dot sec" aria-hidden="true"></span><span class="t">Atacul cibernetic la Finanțele belgiene continuă să blocheze firmele noi: serviciile online sunt încă oprite, la zece zile de la incident</span><span class="n">#10</span></a></li>
           <li data-cats="securitate"><a href="#stire-96"><time>12:00</time><span class="cat-dot sec" aria-hidden="true"></span><span class="t">Atac masiv al Rusiei asupra Kievului: 172 de drone și 36 de rachete au lovit podul de nord și infrastructura energetică, cu trei zile înainte de discuțiile de la Abu Dhabi</span><span class="n">#11</span></a></li>
-          <li data-cats="securitate"><a href="#stire-94"><time>11:00</time><span class="cat-dot sec" aria-hidden="true"></span><span class="t">Europa respinge planul SUA–Rusia pentru o nouă arhitectură de securitate: aliații NATO n-au fost informați dinainte, iar Kallas spune că Putin „nu are drept de veto"</span><span class="n">#12</span></a></li>
+          <li data-cats="securitate"><a href="#stire-94"><time>11:00</time><span class="cat-dot sec" aria-hidden="true"></span><span class="t">Europa respinge planul SUA–Rusia pentru o nouă arhitectură de securitate: aliații NATO n-au fost informați dinainte, iar Kallas spune că Putin „nu are drept de veto&quot;</span><span class="n">#12</span></a></li>
           <li data-cats="tech"><a href="#stire-93"><time>10:00</time><span class="cat-dot tech" aria-hidden="true"></span><span class="t">OpenAI a închis prima tranșă de 11 mld $ din noua rundă, la o evaluare de 1,25 trilioane $ — cu o treime mai puțin decât cerea inițial</span><span class="n">#13</span></a></li>
-          <li data-cats="romania"><a href="#stire-91"><time>09:00</time><span class="cat-dot ro" aria-hidden="true"></span><span class="t">Nazare avertizează: România riscă „cartonașul roșu" de la agențiile de rating dacă bugetul pe 2027 nu e credibil</span><span class="n">#14</span></a></li>
+          <li data-cats="romania"><a href="#stire-91"><time>09:00</time><span class="cat-dot" style="background:var(--muted)" aria-hidden="true"></span><span class="t">Nazare avertizează: România riscă „cartonașul roșu&quot; de la agențiile de rating dacă bugetul pe 2027 nu e credibil</span><span class="n">#14</span></a></li>
           <li data-cats="tech"><a href="#stire-92"><time>09:00</time><span class="cat-dot tech" aria-hidden="true"></span><span class="t">Google preia de la Crusoe proiectul neterminat de centru de date din Wyoming și investește 17 mld $</span><span class="n">#15</span></a></li>
-          <li data-cats="tech"><a href="#stire-90"><time>08:00</time><span class="cat-dot tech" aria-hidden="true"></span><span class="t">Comisia Europeană acuză TikTok de încălcarea DSA: feedul „For You" ar crea „găuri de iepure" dăunătoare sănătății mintale — amendă posibilă de până la 6% din cifra de afaceri globală</span><span class="n">#16</span></a></li>
+          <li data-cats="tech"><a href="#stire-90"><time>08:00</time><span class="cat-dot tech" aria-hidden="true"></span><span class="t">Comisia Europeană acuză TikTok de încălcarea DSA: feedul „For You&quot; ar crea „găuri de iepure&quot; dăunătoare sănătății mintale — amendă posibilă de până la 6% din cifra de afaceri globală</span><span class="n">#16</span></a></li>
         </ol>
       </nav>
 
       <p class="empty">Nicio știre în această categorie azi.</p>
 
       <main>
-        <!-- 1 · 7 nov · 21:00 -->
+                <!-- 1 · 7 nov · 21:00 -->
         <article id="stire-105" data-cats="securitate" data-sev="red" data-subiect="urmărirea atacului din Cracovia">
           <div class="a-meta">
             <span class="a-time">7 nov · 21:00</span>
@@ -1080,7 +1179,7 @@
           </div>
         </article>
 
-        <!-- 2 · 7 nov · 20:00 -->
+<!-- 2 · 7 nov · 20:00 -->
         <article id="stire-104" data-cats="securitate" data-sev="red" data-subiect="atac armat în Cracovia">
   <div class="a-meta">
     <span class="a-time">7 nov · 20:00</span>
@@ -4950,12 +5049,12 @@
       </main>
       </section>
 
-
+      
 
       <footer>
         <div class="rule" aria-hidden="true"></div>
-        <p>Sfârșitul ediției de azi · Ultima actualizare: duminică, 8 noiembrie 2026, 08:00<br />Monitorizarea rulează la circa 3 ore, în fereastra L–V 06:00–22:00 · S–D 07:30–22:00 — dă refresh pentru noutăți.</p>
-        <a class="to-top" href="#stire-106">↑ Înapoi la cea mai nouă știre</a>
+        <p>Sfârșitul ediției de azi · Ultima actualizare: duminică, 8 noiembrie 2026, 09:00<br />Monitorizarea rulează la circa 3 ore, în fereastra L–V 06:00–22:00 · S–D 07:30–22:00 — dă refresh pentru noutăți.</p>
+        <a class="to-top" href="#stire-107">↑ Înapoi la cea mai nouă știre</a>
       </footer>
     </div>
 
