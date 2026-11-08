@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="color-scheme" content="light dark" />
-    <meta name="tirile-versiune" content="2026-11-08T11:00:00+01:00|6|red" />
+    <meta name="tirile-versiune" content="2026-11-08T14:00:00+01:00|7|red" />
     <link rel="icon" href="data:," />
     <title>Știrile zilei</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -699,9 +699,9 @@
     <div class="topbar">
       <div class="topbar-inner">
         <span class="dot" aria-hidden="true"></span>
-        <span><strong>Duminică, 8 noiembrie 2026</strong> · actualizat la <strong>11:00</strong></span>
+        <span><strong>Duminică, 8 noiembrie 2026</strong> · actualizat la <strong>14:00</strong></span>
         <span aria-hidden="true">·</span>
-        <span>6 știri azi</span>
+        <span>7 știri azi</span>
         <span class="spacer"></span>
         <button class="refresh-btn" type="button" id="refreshBtn" aria-label="Reîmprospătează pagina">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg>
@@ -771,30 +771,30 @@
       <section class="dashboard" aria-label="Panou de ansamblu">
         <div class="dash-head">
           <span class="dash-title">Dashboard · Azi</span>
-          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 11:00</span>
+          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 14:00</span>
           <span class="dash-meta">Fereastră monitorizare <strong>L–V 06:00–22:00 · S–D 07:30–22:00</strong> · pas ~3 ore</span>
         </div>
 
         <div class="kpi-grid five" role="group" aria-label="Filtrează după categorie — apasă pe un tile">
           <button class="kpi" type="button" data-filter="toate" aria-pressed="true">
             <span class="kpi-top"><span class="kpi-label">Toate știrile</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">6</span>
-            <span class="kpi-sub">știri verificate azi, în 4 rulări</span>
+            <span class="kpi-value">7</span>
+            <span class="kpi-sub">știri verificate azi, în 5 rulări</span>
             <span class="kpi-bar" aria-hidden="true"><i style="width:100%"></i></span>
             <span class="kpi-hint">Apasă pentru toate</span>
           </button>
           <button class="kpi" type="button" data-filter="securitate" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">Securitate &amp; NATO</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">2</span>
-            <span class="kpi-sub">familia atacatorului ucisă · trei cadavre la locuința atacatorului</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:33%"></i></span>
+            <span class="kpi-value">3</span>
+            <span class="kpi-sub">exercițiu Coaliția Voinței în Polonia · familia atacatorului ucisă · trei cadavre la locuința atacatorului</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:43%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="romania" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">România</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">0</span>
-            <span class="kpi-sub"></span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:0%"></i></span>
+            <span class="kpi-value">1</span>
+            <span class="kpi-sub">exercițiu Coaliția Voinței în Polonia</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:14%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="belgia" aria-pressed="false">
@@ -808,7 +808,7 @@
             <span class="kpi-top"><span class="kpi-label">Tech &amp; AI</span><span class="kpi-check" aria-hidden="true">✓</span></span>
             <span class="kpi-value">4</span>
             <span class="kpi-sub">memo spionaj Nvidia Megaspeed · breșă Chainalysis · prăbușirea acțiunilor AI · accelerarea AI la Anthropic</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:67%"></i></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:57%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
         </div>
@@ -822,7 +822,7 @@
       </section>
 
       <div class="filter-status" aria-live="polite">
-        <span class="filter-label">Se afișează: <strong>Toate categoriile — 6 din 6 știri</strong></span>
+        <span class="filter-label">Se afișează: <strong>Toate categoriile — 7 din 7 știri</strong></span>
         <button class="filter-reset" type="button" hidden>Resetează filtrul</button>
       </div>
 
@@ -852,6 +852,50 @@
       <p class="empty">Nicio știre în această categorie azi.</p>
 
       <main>
+        <!-- 1 · 8 nov · 14:00 -->
+        <article id="stire-112" data-cats="securitate romania" data-sev="amber" data-subiect="exercițiu Coaliția Voinței în Polonia">
+          <div class="a-meta">
+            <span class="a-time">8 nov · 14:00</span>
+            <span class="a-cat">Securitate &amp; NATO</span>
+            <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
+            <span class="subj-pill">exercițiu Coaliția Voinței în Polonia</span>
+            <span class="a-num">#1 / 7</span>
+          </div>
+          <h2>Exercițiul Koalicja începe luni în Polonia: 2.800 de militari din 11 țări, între care Belgia, repetă desfășurarea forței multinaționale pentru Ucraina de după război</h2>
+
+          <div class="sec">
+            <p class="sec-label">Ce s-a întâmplat</p>
+            <p>De luni, 9 noiembrie, până pe 22 noiembrie, circa 2.800 de militari din 11 țări se adună în Polonia pentru Koalicja 26.2 — primul exercițiu major al Forței Multinaționale Ucraina (MNF-U), brațul militar al „Coaliției Voinței", condus de Marea Britanie și Franța. Exercițiul, centrat la Nowa Dęba, la circa 100 de kilometri de granița cu Ucraina, testează cum se mișcă, se protejează și se aprovizionează o forță care ar urma să ajute la reconstrucția forțelor armate ucrainene după încheierea luptelor; componenta aeriană se coordonează din România, iar Turcia conduce de la Istanbul elementul maritim, care testează deminarea Mării Negre pentru reluarea transportului comercial spre porturile ucrainene. Participă Belgia, Estonia, Franța, Germania, Lituania, Olanda, Polonia, Spania, Suedia, Turcia și Marea Britanie; SUA nu participă. Forța ar intra în Ucraina doar după o încetare a focului și doar la cererea Kievului, în afara structurilor NATO, fără rol de menținere a păcii sau de monitorizare a armistițiului.</p>
+          </div>
+
+          <div class="sec">
+            <p class="sec-label">De ce contează</p>
+            <p>E primul pas de la declarații politice la pregătire practică a garanțiilor europene de securitate pentru Ucraina — și vine exact în zilele în care negociatorii SUA, Rusiei și Ucrainei se întâlnesc la Abu Dhabi (10–11 noiembrie), potrivit Defense News. Pentru el: Belgia e printre cele 11 țări participante, iar componenta aeriană se coordonează din România — ambele țări ale lui sunt implicate direct, iar deminarea Mării Negre privește securitatea regiunii de unde vine familia lui. De urmărit concluziile exercițiului (22 noiembrie) și dacă Londra și Parisul anunță o dimensiune finală a forței — deocamdată neagreată, deși cele două țări au spus la începutul anului că ar contribui cu circa 5.000 de militari fiecare.</p>
+          </div>
+
+          <div class="verify">
+            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
+            <p>Verdict: confirmat. Defense News (7 nov, 15:05 UTC) — 2.800 de militari din 11 țări, conduși de Marea Britanie și Franța, 9–22 noiembrie, fără participarea SUA; Military Times (7 nov, 15:05 UTC) — același fapt, cu detalii despre deminarea Mării Negre și avertismentul lui Putin; Le Monde (3 nov) — primul exercițiu la scară mare al „coaliției voinței", cu operațiuni de contra-drone; guvernul britanic (gov.uk, 3 nov, sursă primară) — anunțul oficial al exercițiului și lista celor 11 țări. Diferența de numărare (10 țări la Le Monde, 11 la celelalte) vine din Turcia, care participă doar la elementul maritim, de la Istanbul, nu cu trupe în Polonia.</p>
+            <ul class="sources">
+              <li><a href="https://www.defensenews.com/news/2026/11/07/european-troops-set-to-train-in-poland-for-postwar-ukraine-deployment/" target="_blank" rel="noopener">Defense News — „European troops set to train in Poland for postwar Ukraine deployment" (7 nov 2026, 15:05 UTC)<span class="host">defensenews.com</span></a></li>
+              <li><a href="https://www.militarytimes.com/news/2026/11/07/european-troops-set-to-train-in-poland-for-postwar-ukraine-deployment/" target="_blank" rel="noopener">Military Times — „European troops set to train in Poland for postwar Ukraine deployment" (7 nov 2026, 15:05 UTC)<span class="host">militarytimes.com</span></a></li>
+              <li><a href="https://www.lemonde.fr/en/international/article/2026/11/03/in-poland-coalition-of-the-willing-holds-first-large-scale-military-exercise_6769567_4.html" target="_blank" rel="noopener">Le Monde — „In Poland, 'coalition of the willing' holds first large-scale military exercise" (3 nov 2026)<span class="host">lemonde.fr</span></a></li>
+              <li><a href="https://www.gov.uk/government/news/uk-to-lead-multinational-military-training-exercise-to-prepare-for-peace-in-ukraine--2" target="_blank" rel="noopener">Guvernul britanic (gov.uk) — „UK to lead multinational military training exercise to prepare for peace in Ukraine" (3 nov 2026, sursă primară)<span class="host">gov.uk</span></a></li>
+              <li><a href="https://www.rapporteur.com/news/uk-france-to-lead-first-ever-coalition-of-the-willing-exercise-in-poland/" target="_blank" rel="noopener">Rapporteur — „UK, France to lead first-ever Coalition of the Willing exercise in Poland" (3 nov 2026)<span class="host">rapporteur.com</span></a></li>
+            </ul>
+          </div>
+
+          <div class="opposing">
+            <p class="sec-label">Tabăra adversă</p>
+            <p>Președintele rus Vladimir Putin a respins prezența unor trupe străine în Ucraina și a avertizat în septembrie 2025 că forțele occidentale desfășurate acolo ar fi ținte legitime (<a href="https://www.defensenews.com/news/2026/11/07/european-troops-set-to-train-in-poland-for-postwar-ukraine-deployment/" target="_blank" rel="noopener">Defense News</a>).</p>
+          </div>
+
+          <div class="impact">
+            <span class="badge">Impact direct</span>
+            <p>Impact direct: minim — nu cere nicio acțiune de la el; relevanță profesională ridicată: primul exercițiu practic al forței multinaționale pentru Ucraina, cu Belgia participantă și componenta aeriană coordonată din România — de urmărit concluziile din 22 noiembrie și eventualele decizii despre dimensiunea finală a forței.</p>
+          </div>
+        </article>
+
         <!-- 1 · 8 nov · 11:00 -->
         <article id="stire-110" data-cats="securitate" data-sev="red" data-subiect="familia atacatorului ucisă">
           <div class="a-meta">
@@ -861,7 +905,7 @@
             <span class="spot-tag">Știrea zilei</span>
             <a class="cont-pill" href="#stire-106" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">familia atacatorului ucisă</span>
-            <span class="a-num">#1 / 6</span>
+            <span class="a-num">#2 / 7</span>
           </div>
           <h2>Atacul din Cracovia: poliția confirmă că cele trei cadavre de la locuința atacatorului sunt părinții și sora lui — nouă morți în total</h2>
 
@@ -905,7 +949,7 @@
             <span class="a-cat">Tech &amp; AI</span>
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="subj-pill">memo spionaj Nvidia Megaspeed</span>
-            <span class="a-num">#2 / 6</span>
+            <span class="a-num">#3 / 7</span>
           </div>
           <h2>Memo al serviciilor americane: o directoare Megaspeed ar fi fost recrutată de spionajul chinez ca să-l supravegheze pe șeful Nvidia, Jensen Huang</h2>
 
@@ -947,7 +991,7 @@
             <span class="a-cat">Tech &amp; AI</span>
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="subj-pill">breșă Chainalysis</span>
-            <span class="a-num">#3 / 6</span>
+            <span class="a-num">#4 / 7</span>
           </div>
           <h2>Breșă la Chainalysis: parolele și tokenurile live ale tuturor utilizatorilor, expuse după un atac cu agenți AI</h2>
 
@@ -984,7 +1028,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-85" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">prăbușirea acțiunilor AI</span>
-            <span class="a-num">#4 / 6</span>
+            <span class="a-num">#5 / 7</span>
           </div>
           <h2>Acțiunile AI s-au prăbușit joi: circa 2,5 trilioane $ șterse de pe bursă într-o zi, apoi o revenire parțială vineri — Nasdaq −5,5%, Nvidia −9%</h2>
 
@@ -1032,7 +1076,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-29" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">accelerarea AI la Anthropic</span>
-            <span class="a-num">#5 / 6</span>
+            <span class="a-num">#6 / 7</span>
           </div>
           <h2>METR: modelele Anthropic se îmbunătățesc de două ori mai repede decât acum un an — iar AI-ul însuși ar face ~80% din accelerare</h2>
 
@@ -1080,7 +1124,7 @@
             <span class="sev-pill is-red"><i aria-hidden="true"></i>Roșu · grav</span>
             <a class="cont-pill" href="#stire-105" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">trei cadavre la locuința atacatorului</span>
-            <span class="a-num">#6 / 6</span>
+            <span class="a-num">#7 / 7</span>
           </div>
           <h2>Atacul din Cracovia: alte trei cadavre găsite la locuința atacatorului — victimele ar fi membri ai familiei sale; printre cei șase uciși în piață, un cetățean britanic</h2>
 
@@ -5176,8 +5220,8 @@
 
       <footer>
         <div class="rule" aria-hidden="true"></div>
-        <p>Sfârșitul ediției de azi · Ultima actualizare: duminică, 8 noiembrie 2026, 11:00<br />Monitorizarea rulează la circa 3 ore, în fereastra L–V 06:00–22:00 · S–D 07:30–22:00 — dă refresh pentru noutăți.</p>
-        <a class="to-top" href="#stire-110">↑ Înapoi la cea mai nouă știre</a>
+        <p>Sfârșitul ediției de azi · Ultima actualizare: duminică, 8 noiembrie 2026, 14:00<br />Monitorizarea rulează la circa 3 ore, în fereastra L–V 06:00–22:00 · S–D 07:30–22:00 — dă refresh pentru noutăți.</p>
+        <a class="to-top" href="#stire-112">↑ Înapoi la cea mai nouă știre</a>
       </footer>
     </div>
 
