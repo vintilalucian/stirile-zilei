@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="color-scheme" content="light dark" />
-    <meta name="tirile-versiune" content="2026-11-07T21:00:00+01:00|16|red" />
+    <meta name="tirile-versiune" content="2026-11-08T08:00:00+01:00|1|red" />
     <link rel="icon" href="data:," />
     <title>Știrile zilei</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -699,9 +699,9 @@
     <div class="topbar">
       <div class="topbar-inner">
         <span class="dot" aria-hidden="true"></span>
-        <span><strong>Sâmbătă, 7 noiembrie 2026</strong> · actualizat la <strong>21:00</strong></span>
+        <span><strong>Duminică, 8 noiembrie 2026</strong> · actualizat la <strong>08:00</strong></span>
         <span aria-hidden="true">·</span>
-        <span>16 știri azi</span>
+        <span>1 știre azi</span>
         <span class="spacer"></span>
         <button class="refresh-btn" type="button" id="refreshBtn" aria-label="Reîmprospătează pagina">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg>
@@ -716,12 +716,12 @@
         <h1>Știrile zilei</h1>
         <div class="date-line">
           <span class="day">Ediția de azi</span>
-          <span>Sâmbătă, 7 noiembrie 2026 · Europe/Brussels</span>
+          <span>Duminică, 8 noiembrie 2026 · Europe/Brussels</span>
         </div>
         <p class="lede"><strong>Apasă pe un tile</strong> ca să filtrezi pagina — articole complete jos, cele mai noi primele.</p>
       </header>
 
-      <section class="day" id="zi-2026-11-07">
+      <section class="day" id="zi-2026-11-08">
       <!-- Fereastra „Ultimele știri" — sus, imediat deasupra chenarului
            „Știrea zilei", între masthead și chenar. Arată DOAR titlurile din
            cea mai recentă rulare (1–2), fiecare link la cardul ei (#stire-N).
@@ -737,6 +737,173 @@
         <ul class="latest-list"></ul>
       </section>
 
+      <!-- Chenar permanent: știrea cea mai importantă a zilei — sub fereastra
+           „Ultimele știri", ÎNAINTEA dashboardului, vizibilă din prima, fără scroll.
+           Nivelul de azi: ROȘU (sev-red) — grav: bilanțul tragediei din
+           Cracovia crește — alte trei cadavre găsite la locuința atacatorului,
+           posibil membri ai familiei sale; ancheta indică o posibilă
+           influență de extremă dreaptă.
+           Chenarul rămâne în afara logicii de filtrare: vizibil indiferent de filtrul de categorie. -->
+      <section class="spot sev-red" aria-label="Știrea cea mai importantă a zilei">
+        <div class="spot-head">
+          <span class="spot-kicker">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13 2 4.5 13.5H11L9.5 22 19 10h-6.5L13 2z"/></svg>
+            Știrea zilei · Atenție rapidă
+          </span>
+          <span class="spot-time">8 nov · 08:00</span>
+          <span class="spot-pill">Nivel roșu — grav</span>
+        </div>
+        <h2 class="spot-title">Atacul din Cracovia: alte trei cadavre găsite la locuința atacatorului — victimele ar fi membri ai familiei sale; printre cei șase uciși în piață, un cetățean britanic</h2>
+        <p class="spot-why"><strong>De ce e în față:</strong> Bilanțul tragediei din Cracovia crește: alte trei cadavre au fost găsite la locuința atacatorului, iar ancheta indică o posibilă influență de extremă dreaptă — cel mai grav fapt al zilei, continuare a știrii cu severitate roșie de sâmbătă.</p>
+        <p class="spot-lead">Poliția a găsit alte trei cadavre — se crede că membri ai familiei atacatorului — la locuința acestuia din Ostrowiec Świętokrzyski, la circa 200 de kilometri de Cracovia; în piață au murit șase oameni, între care un cetățean britanic, și 16 au fost răniți. Polonia e în doliu național duminică și luni.</p>
+        <p class="spot-more" hidden><span class="spot-more-text"></span> <button class="spot-more-btn" type="button">apasă aici</button></p>
+        <div class="spot-foot">
+          <a class="spot-link" href="#stire-106">Citește știrea completă ↓</a>
+          <div class="sev-scale" role="img" aria-label="Scară de gravitate: verde — normal, galben — de urmărit, roșu — grav. Nivelul de azi: roșu.">
+            <span class="sev-item"><i class="sev-dot g" aria-hidden="true"></i>Verde · normal</span>
+            <span class="sev-item"><i class="sev-dot y" aria-hidden="true"></i>Galben · de urmărit</span>
+            <span class="sev-item on"><i class="sev-dot r" aria-hidden="true"></i>Roșu · grav</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Dashboard -->
+      <section class="dashboard" aria-label="Panou de ansamblu">
+        <div class="dash-head">
+          <span class="dash-title">Dashboard · Azi</span>
+          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 08:00</span>
+          <span class="dash-meta">Fereastră monitorizare <strong>L–V 06:00–22:00 · S–D 07:30–22:00</strong> · pas ~3 ore</span>
+        </div>
+
+        <div class="kpi-grid five" role="group" aria-label="Filtrează după categorie — apasă pe un tile">
+          <button class="kpi" type="button" data-filter="toate" aria-pressed="true">
+            <span class="kpi-top"><span class="kpi-label">Toate știrile</span><span class="kpi-check" aria-hidden="true">✓</span></span>
+            <span class="kpi-value">1</span>
+            <span class="kpi-sub">știri verificate azi, în 1 rulare</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:100%"></i></span>
+            <span class="kpi-hint">Apasă pentru toate</span>
+          </button>
+          <button class="kpi" type="button" data-filter="securitate" aria-pressed="false">
+            <span class="kpi-top"><span class="kpi-label">Securitate &amp; NATO</span><span class="kpi-check" aria-hidden="true">✓</span></span>
+            <span class="kpi-value">1</span>
+            <span class="kpi-sub">trei cadavre la locuința atacatorului</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:100%"></i></span>
+            <span class="kpi-hint">Apasă pentru a filtra →</span>
+          </button>
+          <button class="kpi" type="button" data-filter="romania" aria-pressed="false">
+            <span class="kpi-top"><span class="kpi-label">România</span><span class="kpi-check" aria-hidden="true">✓</span></span>
+            <span class="kpi-value">0</span>
+            <span class="kpi-sub"></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:0%"></i></span>
+            <span class="kpi-hint">Apasă pentru a filtra →</span>
+          </button>
+          <button class="kpi" type="button" data-filter="belgia" aria-pressed="false">
+            <span class="kpi-top"><span class="kpi-label">Belgia</span><span class="kpi-check" aria-hidden="true">✓</span></span>
+            <span class="kpi-value">0</span>
+            <span class="kpi-sub"></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:0%"></i></span>
+            <span class="kpi-hint">Apasă pentru a filtra →</span>
+          </button>
+          <button class="kpi" type="button" data-filter="tech" aria-pressed="false">
+            <span class="kpi-top"><span class="kpi-label">Tech &amp; AI</span><span class="kpi-check" aria-hidden="true">✓</span></span>
+            <span class="kpi-value">0</span>
+            <span class="kpi-sub"></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:0%"></i></span>
+            <span class="kpi-hint">Apasă pentru a filtra →</span>
+          </button>
+        </div>
+
+        <div class="dash-foot solo">
+          <div class="dash-panel">
+            <h3>Severitate — apasă un pătrat ca să vezi doar știrile de nivelul acela</h3>
+            <div class="sev-squares" role="group" aria-label="Filtrează după severitate — roșu, galben, verde"></div>
+          </div>
+        </div>
+      </section>
+
+      <div class="filter-status" aria-live="polite">
+        <span class="filter-label">Se afișează: <strong>Toate categoriile — 1 din 1 știri</strong></span>
+        <button class="filter-reset" type="button" hidden>Resetează filtrul</button>
+      </div>
+
+      <!-- Cuprinsul zilei — sub banda dashboard, înaintea cardurilor.
+           Generat de script din cardurile zilei curente: lista completă a
+           zilei, grupată pe ora publicării, cele mai noi primele; fiecare
+           titlu e link la cardul lui (#stire-N), iar antetul de oră al
+           fiecărui grup e buton de filtru pe rulare — aceeași logică pe care
+           o aveau barele „Ritmul zilei" (selecție unică; al doilea click pe
+           aceeași oră sau butonul de reset revine la toate; o selecție de oră
+           anulează filtrul de categorie și invers). Nu e pliabil: toate
+           grupurile de oră sunt extinse permanent, cu toate titlurile
+           vizibile — fără săgeți de pliere și fără buton de extindere.
+           Cuprinsul urmează filtrul activ, la fel ca și cardurile: la un
+           filtru de categorie, severitate sau oră arată doar rândurile
+           știrilor din selecția aceea, iar grupurile de oră rămase fără
+           nicio știre vizibilă se ascund; butonul „Toate" îl readuce la
+           toate titlurile zilei. Chenarul rămâne în afara filtrării. -->
+      <nav class="day-toc" aria-label="Cuprinsul zilei">
+        <div class="toc-head">
+          <h2>Cuprins</h2>
+          <span class="toc-count">cele mai noi primele · apasă pe o oră ca să filtrezi rularea, pe un titlu ca să sari la știre</span>
+        </div>
+        <div class="toc-groups"></div>
+      </nav>
+
+      <p class="empty">Nicio știre în această categorie azi.</p>
+
+      <main>
+        <!-- 1 · 8 nov · 08:00 -->
+        <article id="stire-106" data-cats="securitate" data-sev="red" data-subiect="trei cadavre la locuința atacatorului">
+          <div class="a-meta">
+            <span class="a-time">8 nov · 08:00</span>
+            <span class="a-cat">Securitate &amp; NATO</span>
+            <span class="sev-pill is-red"><i aria-hidden="true"></i>Roșu · grav</span>
+            <span class="spot-tag">Știrea zilei</span>
+            <a class="cont-pill" href="#stire-105" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
+            <span class="subj-pill">trei cadavre la locuința atacatorului</span>
+            <span class="a-num">#1 / 1</span>
+          </div>
+          <h2>Atacul din Cracovia: alte trei cadavre găsite la locuința atacatorului — victimele ar fi membri ai familiei sale; printre cei șase uciși în piață, un cetățean britanic</h2>
+
+          <div class="followup">
+            <span class="tag">Urmare la</span>
+            <p><a href="#stire-105">„Atacul din Cracovia: ministrul de interne spune că autorul a acționat singur și avea „păreri foarte radicale" — doliu național duminică și luni în Polonia"</a> — sâmbătă, 7 noiembrie 2026, ora 21:00.</p>
+          </div>
+
+          <div class="sec">
+            <p class="sec-label">Ce s-a întâmplat</p>
+            <p>În noaptea de sâmbătă spre duminică, ancheta atacului din Piața Centrală din Cracovia a luat o nouă turnură: poliția a găsit alte trei cadavre la locuința atacatorului din Ostrowiec Świętokrzyski, la circa 200 de kilometri de Cracovia — premierul Donald Tusk a spus că victimele ar fi membri ai familiei imediate a atacatorului (două femei și un bărbat). Bilanțul din piață rămâne șase morți — patru femei și doi bărbați — și 16 răniți (față de 15, cât se știa sâmbătă seară); printre cei șase morți se numără un cetățean britanic și trei femei poloneze, identitatea altor două victime nefiind stabilită la momentul publicării. Purtătorul de cuvânt al poliției a declarat postului TVN24 că atacatorul a folosit o pușcă de tip AR-15 și deținea permis de port-armă; primul apel la poliție a venit sâmbătă la 15:00:15, iar centrul de urgență a primit circa 40 de apeluri. Duminică și luni, 8–9 noiembrie, Polonia e în doliu național, iar în Cracovia doliul în oraș ține până pe 11 noiembrie.</p>
+          </div>
+
+          <div class="sec">
+            <p class="sec-label">De ce contează</p>
+            <p>Cardul de sâmbătă seară se încheia cu „De urmărit: motivul atacului" — acum apar două elemente noi: ministrul de interne Marcin Kierwiński a spus că atacatorul „ar fi putut fi influențat de ideologia de extremă dreaptă", deși anchetatorii nu au stabilit încă un motiv definitiv, iar cele trei cadavre găsite acasă ridică bilanțul total al tragediei la nouă morți și sugerează că violența a început înainte de atacul din piață. Rămâne cel mai grav incident de securitate publică al săptămânii în Europa, într-o țară aliată NATO și UE; de urmărit confirmarea identității celor trei victime de acasă și stabilirea motivului de către anchetă.</p>
+          </div>
+
+          <div class="verify">
+            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
+            <p>Verdict: confirmat. Reuters (8 nov 2026, 00:24 UTC): atacatorul, „probabil influențat de ideologia de extremă dreaptă", a ucis șase oameni în piață, iar alte trei cadavre au fost găsite la locuința sa; premierul Tusk spune că victimele de acasă ar fi membri ai familiei imediate. AAP (8 nov 2026, 05:13 UTC) confirmă cele trei cadavre găsite acasă și cele două zile de doliu național. Anadolu (8 nov 2026) confirmă doliul național din 8–9 noiembrie și faptul că printre victime se numără un cetățean britanic. AnewZ (8 nov 2026) confirmă 16 răniți și declarația ministrului Kierwiński despre posibila influență de extremă dreaptă, fără motiv definitiv stabilit.</p>
+            <ul class="sources">
+              <li><a href="https://www.europesays.com/poland/35961/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Reuters, via ThePrint — „Poland in shock as six dead after mass shooting in Krakow" (8 nov 2026, 00:24 UTC)<span class="host">europesays.com</span></a></li>
+              <li><a href="https://aapnews.aap.com.au/news/shooting-in-square-of-polish-city-krakow-kills-five" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>AAP — „Poland in shock after six killed in mass shooting" (8 nov 2026)<span class="host">aapnews.aap.com.au</span></a></li>
+              <li><a href="https://qazinform.com/news/poland-declares-2-days-of-national-mourning-after-deadly-shooting-in-krakow-5f7a4c" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Anadolu, via Qazinform — „Poland declares 2 days of national mourning after deadly shooting in Krakow" (8 nov 2026)<span class="host">qazinform.com</span></a></li>
+              <li><a href="https://anewz.tv/world/world-news/26424/krakow-shooting-at-least-five-killed-as-gunman-opens-fire/news" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>AnewZ — „Krakow shooting: At least five killed as gunman opens fire" (8 nov 2026)<span class="host">anewz.tv</span></a></li>
+            </ul>
+          </div>
+
+          <div class="impact">
+            <span class="badge">Impact direct</span>
+            <p>Impact direct: minim — nicio călătorie în Polonia în planurile apropiate și nicio rudă acolo; relevanță de context ridicată. De urmărit: confirmarea identității celor trei victime găsite acasă, stabilirea motivului de către anchetă și eventualele măsuri de securitate anunțate de autoritățile poloneze.</p>
+          </div>
+        </article>
+      </main>
+      </section>
+
+      <section class="day day-archive" id="zi-2026-11-07">
+        <div class="day-head">
+          <h2>Sâmbătă, 7 noiembrie 2026</h2>
+          <span>Ediția de ieri · 16 știri · arhivă (ultimele 7 zile)</span>
+        </div>
       <!-- Chenar permanent: știrea cea mai importantă a zilei — sub fereastra
            „Ultimele știri", ÎNAINTEA dashboardului, vizibilă din prima, fără scroll.
            Nivelul de azi: ROȘU (sev-red) — grav: atac armat în Piața Centrală
@@ -775,7 +942,7 @@
           <span class="dash-meta">Fereastră monitorizare <strong>L–V 06:00–22:00 · S–D 07:30–22:00</strong> · pas ~3 ore</span>
         </div>
 
-        <div class="kpi-grid five" role="group" aria-label="Filtrează după categorie — apasă pe un tile">
+        <div class="kpi-grid" role="group" aria-label="Filtrează după categorie — apasă pe un tile">
           <button class="kpi" type="button" data-filter="toate" aria-pressed="true">
             <span class="kpi-top"><span class="kpi-label">Toate știrile</span><span class="kpi-check" aria-hidden="true">✓</span></span>
             <span class="kpi-value">16</span>
@@ -794,29 +961,45 @@
             <span class="kpi-top"><span class="kpi-label">România</span><span class="kpi-check" aria-hidden="true">✓</span></span>
             <span class="kpi-value">3</span>
             <span class="kpi-sub">austeritate buget 2027 România · repornirea Unității 1 Cernavodă · rating România 2027</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:20%"></i></span>
-            <span class="kpi-hint">Apasă pentru a filtra →</span>
-          </button>
-          <button class="kpi" type="button" data-filter="belgia" aria-pressed="false">
-            <span class="kpi-top"><span class="kpi-label">Belgia</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">2</span>
-            <span class="kpi-sub">percheziții la domiciliu în Belgia · atacul cibernetic la Finanțele belgiene continuă</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:13%"></i></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:19%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="tech" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">Tech &amp; AI</span><span class="kpi-check" aria-hidden="true">✓</span></span>
             <span class="kpi-value">5</span>
             <span class="kpi-sub">midterms SUA și Big Tech · Spaces în Muse · finanțare OpenAI · centre de date AI · TikTok acuzat de încălcarea DSA</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:33%"></i></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:31%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
         </div>
 
-        <div class="dash-foot solo">
+        <div class="dash-foot">
           <div class="dash-panel">
-            <h3>Severitate — apasă un pătrat ca să vezi doar știrile de nivelul acela</h3>
-            <div class="sev-squares" role="group" aria-label="Filtrează după severitate — roșu, galben, verde"></div>
+            <h3>Ritmul zilei — știri pe rulare</h3>
+            <div class="rhythm" role="group" aria-label="Filtru după ora publicării — apasă pe o rulare ca să vezi doar știrile ei">
+              <button class="col" type="button" data-hour="08:00" aria-pressed="false" aria-label="Filtrează știrile de la ora 08:00 — 1 știre"><span class="n">1</span><span class="bar" style="height:22px"></span><span class="t">08:00</span></button>
+              <button class="col" type="button" data-hour="09:00" aria-pressed="false" aria-label="Filtrează știrile de la ora 09:00 — 2 știri"><span class="n">2</span><span class="bar" style="height:40px"></span><span class="t">09:00</span></button>
+              <button class="col" type="button" data-hour="10:00" aria-pressed="false" aria-label="Filtrează știrile de la ora 10:00 — 1 știre"><span class="n">1</span><span class="bar" style="height:22px"></span><span class="t">10:00</span></button>
+              <button class="col" type="button" data-hour="11:00" aria-pressed="false" aria-label="Filtrează știrile de la ora 11:00 — 1 știre"><span class="n">1</span><span class="bar" style="height:22px"></span><span class="t">11:00</span></button>
+              <button class="col" type="button" data-hour="12:00" aria-pressed="false" aria-label="Filtrează știrile de la ora 12:00 — 2 știri"><span class="n">2</span><span class="bar" style="height:40px"></span><span class="t">12:00</span></button>
+              <button class="col" type="button" data-hour="13:00" aria-pressed="false" aria-label="Filtrează știrile de la ora 13:00 — 1 știre"><span class="n">1</span><span class="bar" style="height:22px"></span><span class="t">13:00</span></button>
+              <button class="col" type="button" data-hour="14:00" aria-pressed="false" aria-label="Filtrează știrile de la ora 14:00 — 1 știre"><span class="n">1</span><span class="bar" style="height:22px"></span><span class="t">14:00</span></button>
+              <button class="col" type="button" data-hour="15:00" aria-pressed="false" aria-label="Filtrează știrile de la ora 15:00 — 1 știre"><span class="n">1</span><span class="bar" style="height:22px"></span><span class="t">15:00</span></button>
+              <button class="col" type="button" data-hour="16:00" aria-pressed="false" aria-label="Filtrează știrile de la ora 16:00 — 1 știre"><span class="n">1</span><span class="bar" style="height:22px"></span><span class="t">16:00</span></button>
+              <button class="col" type="button" data-hour="17:00" aria-pressed="false" aria-label="Filtrează știrile de la ora 17:00 — 2 știri"><span class="n">2</span><span class="bar" style="height:40px"></span><span class="t">17:00</span></button>
+              <button class="col" type="button" data-hour="18:00" aria-pressed="false" aria-label="Filtrează știrile de la ora 18:00 — 1 știre"><span class="n">1</span><span class="bar" style="height:22px"></span><span class="t">18:00</span></button>
+              <button class="col" type="button" data-hour="20:00" aria-pressed="false" aria-label="Filtrează știrile de la ora 20:00 — 1 știre"><span class="n">1</span><span class="bar" style="height:22px"></span><span class="t">20:00</span></button>
+              <button class="col" type="button" data-hour="21:00" aria-pressed="false" aria-label="Filtrează știrile de la ora 21:00 — 1 știre"><span class="n">1</span><span class="bar" style="height:22px"></span><span class="t">21:00</span></button>
+            </div>
+            <p class="rhythm-hint">Apasă pe o bară ca să vezi doar știrile din rularea aceea; apasă din nou pe ea pentru toate.</p>
+          </div>
+          <div class="dash-panel">
+            <h3>Stare ediție</h3>
+            <ul class="status-list">
+              <li><span class="k">Ultima actualizare</span><span class="v">Azi, 21:00</span></li>
+              <li><span class="k">Cea mai nouă</span><span class="v">urmărirea atacului din Cracovia · 21:00</span></li>
+              <li><span class="k">Acoperire</span><span class="v">Ultimele 7 zile în arhivă</span></li>
+            </ul>
           </div>
         </div>
       </section>
@@ -826,33 +1009,35 @@
         <button class="filter-reset" type="button" hidden>Resetează filtrul</button>
       </div>
 
-      <!-- Cuprinsul zilei — sub banda dashboard, înaintea cardurilor.
-           Generat de script din cardurile zilei curente: lista completă a
-           zilei, grupată pe ora publicării, cele mai noi primele; fiecare
-           titlu e link la cardul lui (#stire-N), iar antetul de oră al
-           fiecărui grup e buton de filtru pe rulare — aceeași logică pe care
-           o aveau barele „Ritmul zilei" (selecție unică; al doilea click pe
-           aceeași oră sau butonul de reset revine la toate; o selecție de oră
-           anulează filtrul de categorie și invers). Nu e pliabil: toate
-           grupurile de oră sunt extinse permanent, cu toate titlurile
-           vizibile — fără săgeți de pliere și fără buton de extindere.
-           Cuprinsul urmează filtrul activ, la fel ca și cardurile: la un
-           filtru de categorie, severitate sau oră arată doar rândurile
-           știrilor din selecția aceea, iar grupurile de oră rămase fără
-           nicio știre vizibilă se ascund; butonul „Toate" îl readuce la
-           toate titlurile zilei. Chenarul rămâne în afara filtrării. -->
-      <nav class="day-toc" aria-label="Cuprinsul zilei">
-        <div class="toc-head">
+      <nav class="index" aria-label="Cuprinsul zilei">
+        <div class="index-head">
           <h2>Cuprins</h2>
-          <span class="toc-count">cele mai noi primele · apasă pe o oră ca să filtrezi rularea, pe un titlu ca să sari la știre</span>
+          <span>apasă pe un titlu ca să sari direct la știre · se sincronizează cu filtrul</span>
         </div>
-        <div class="toc-groups"></div>
+        <ol class="index-list">
+          <li data-cats="securitate"><a href="#stire-105"><time>21:00</time><span class="cat-dot sec" aria-hidden="true"></span><span class="t">Atacul din Cracovia: ministrul de interne spune că autorul a acționat singur și avea „păreri foarte radicale" — doliu național duminică și luni în Polonia</span><span class="n">#1</span></a></li>
+          <li data-cats="securitate"><a href="#stire-104"><time>20:00</time><span class="cat-dot sec" aria-hidden="true"></span><span class="t">Atac armat în Piața Centrală din Cracovia: șase morți și 15 răniți — atacatorul a tras la întâmplare dintr-o mașină, a fost împușcat și reținut</span><span class="n">#2</span></a></li>
+          <li data-cats="securitate"><a href="#stire-103"><time>18:00</time><span class="cat-dot sec" aria-hidden="true"></span><span class="t">Comandamentul SUA în Europa lansează campania «See Something, Do Something»: vigilență sporită pentru militari și familii, pe fondul amenințărilor hibride</span><span class="n">#3</span></a></li>
+          <li data-cats="tech"><a href="#stire-101"><time>17:00</time><span class="cat-dot tech" aria-hidden="true"></span><span class="t">După victoria democraților la alegerile de la jumătatea mandatului, Big Tech se pregătește de reglementări mai dure pe AI: moratorii pe centre de date și anchete în Congres</span><span class="n">#4</span></a></li>
+          <li data-cats="belgia"><a href="#stire-102"><time>17:00</time><span class="cat-dot" style="background:var(--muted)" aria-hidden="true"></span><span class="t">Parlamentul belgian a aprobat perchezițiile la domiciliu pentru migranții în situație ilegală — lege controversată, votată în plină criză de guvern</span><span class="n">#5</span></a></li>
+          <li data-cats="securitate"><a href="#stire-100"><time>16:00</time><span class="cat-dot sec" aria-hidden="true"></span><span class="t">Danemarca și Lituania cumpără mine navale „Blocker" din Finlanda, prin schema comună de achiziții a NATO din Marea Baltică</span><span class="n">#6</span></a></li>
+          <li data-cats="romania"><a href="#stire-99"><time>15:00</time><span class="cat-dot ro" aria-hidden="true"></span><span class="t">Niculescu cere tuturor ministerelor planuri de reducere a cheltuielilor până la sfârșitul săptămânii viitoare; bugetul pe 2027, gata în circa o lună</span><span class="n">#7</span></a></li>
+          <li data-cats="tech"><a href="#stire-98"><time>14:00</time><span class="cat-dot tech" aria-hidden="true"></span><span class="t">Meta lansează Spaces în Muse: descrii o idee în chat, iar agentul îți construiește un spațiu dedicat — tracker, planner sau tablou de proiect</span><span class="n">#8</span></a></li>
+          <li data-cats="romania"><a href="#stire-97"><time>13:00</time><span class="cat-dot ro" aria-hidden="true"></span><span class="t">Unitatea 1 de la Cernavodă a fost repornită după circa 100 de zile de oprire: pierderi de aproximativ un miliard de lei; decizia pentru Unitatea 2, luni</span><span class="n">#9</span></a></li>
+          <li data-cats="securitate belgia"><a href="#stire-95"><time>12:00</time><span class="cat-dot sec" aria-hidden="true"></span><span class="t">Atacul cibernetic la Finanțele belgiene continuă să blocheze firmele noi: serviciile online sunt încă oprite, la zece zile de la incident</span><span class="n">#10</span></a></li>
+          <li data-cats="securitate"><a href="#stire-96"><time>12:00</time><span class="cat-dot sec" aria-hidden="true"></span><span class="t">Atac masiv al Rusiei asupra Kievului: 172 de drone și 36 de rachete au lovit podul de nord și infrastructura energetică, cu trei zile înainte de discuțiile de la Abu Dhabi</span><span class="n">#11</span></a></li>
+          <li data-cats="securitate"><a href="#stire-94"><time>11:00</time><span class="cat-dot sec" aria-hidden="true"></span><span class="t">Europa respinge planul SUA–Rusia pentru o nouă arhitectură de securitate: aliații NATO n-au fost informați dinainte, iar Kallas spune că Putin „nu are drept de veto"</span><span class="n">#12</span></a></li>
+          <li data-cats="tech"><a href="#stire-93"><time>10:00</time><span class="cat-dot tech" aria-hidden="true"></span><span class="t">OpenAI a închis prima tranșă de 11 mld $ din noua rundă, la o evaluare de 1,25 trilioane $ — cu o treime mai puțin decât cerea inițial</span><span class="n">#13</span></a></li>
+          <li data-cats="romania"><a href="#stire-91"><time>09:00</time><span class="cat-dot ro" aria-hidden="true"></span><span class="t">Nazare avertizează: România riscă „cartonașul roșu" de la agențiile de rating dacă bugetul pe 2027 nu e credibil</span><span class="n">#14</span></a></li>
+          <li data-cats="tech"><a href="#stire-92"><time>09:00</time><span class="cat-dot tech" aria-hidden="true"></span><span class="t">Google preia de la Crusoe proiectul neterminat de centru de date din Wyoming și investește 17 mld $</span><span class="n">#15</span></a></li>
+          <li data-cats="tech"><a href="#stire-90"><time>08:00</time><span class="cat-dot tech" aria-hidden="true"></span><span class="t">Comisia Europeană acuză TikTok de încălcarea DSA: feedul „For You" ar crea „găuri de iepure" dăunătoare sănătății mintale — amendă posibilă de până la 6% din cifra de afaceri globală</span><span class="n">#16</span></a></li>
+        </ol>
       </nav>
 
       <p class="empty">Nicio știre în această categorie azi.</p>
 
       <main>
-                <!-- 1 · 7 nov · 21:00 -->
+        <!-- 1 · 7 nov · 21:00 -->
         <article id="stire-105" data-cats="securitate" data-sev="red" data-subiect="urmărirea atacului din Cracovia">
           <div class="a-meta">
             <span class="a-time">7 nov · 21:00</span>
@@ -895,7 +1080,7 @@
           </div>
         </article>
 
-<!-- 2 · 7 nov · 20:00 -->
+        <!-- 2 · 7 nov · 20:00 -->
         <article id="stire-104" data-cats="securitate" data-sev="red" data-subiect="atac armat în Cracovia">
   <div class="a-meta">
     <span class="a-time">7 nov · 20:00</span>
@@ -4765,373 +4950,12 @@
       </main>
       </section>
 
-      <section class="day day-archive" id="zi-2026-11-01">
-        <div class="day-head">
-          <h2>Duminică, 1 noiembrie 2026</h2>
-          <span>Ediția de ieri · 6 știri · arhivă (ultimele 7 zile)</span>
-        </div>
 
-      <!-- Chenar permanent: știrea cea mai importantă a zilei — chiar sub masthead,
-           ÎNAINTEA dashboardului, vizibilă din prima, fără scroll.
-           Nivelul de azi: GALBEN (sev-amber) — de urmărit, cu termen concret:
-           portalurile fiscale belgiene sunt din nou online, termen de depunere 16 noiembrie.
-           Chenarul rămâne în afara logicii de filtrare: vizibil indiferent de filtrul de categorie. -->
-      <section class="spot sev-amber" aria-label="Știrea cea mai importantă a zilei">
-        <div class="spot-head">
-          <span class="spot-kicker">
-            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13 2 4.5 13.5H11L9.5 22 19 10h-6.5L13 2z"/></svg>
-            Știrea zilei · Atenție rapidă
-          </span>
-          <span class="spot-time">1 nov · 11:06</span>
-          <span class="spot-pill">Nivel galben — de urmărit</span>
-        </div>
-        <h2 class="spot-title">Portalurile fiscale belgiene MyMinfin, Tax-on-Web și Biztax sunt din nou online după atacul cibernetic din 28 octombrie; termenul de depunere prelungit până la 16 noiembrie</h2>
-        <p class="spot-why"><strong>De ce e în față:</strong> termen fiscal concret — 16 noiembrie 2026 — după revenirea portalurilor MyMinfin, Tax-on-Web și Biztax, închise din 28 octombrie în urma atacului cibernetic; dacă ai declarații scadente la 31 octombrie, nu mai ești blocat, dar ai un termen clar de respectat.</p>
-        <p class="spot-lead">Ministerul federal belgian al Finanțelor (FOD Financiën / SPF Finances) a repus online sâmbătă seară, 31 octombrie 2026, portalurile MyMinfin, Tax-on-Web și Biztax, închise temporar din 28 octombrie după un atac cibernetic. Potrivit FOD, atacul a fost oprit în câteva ore, fără preluarea controlului aplicațiilor și fără acces la datele contribuabililor, iar termenul pentru declarațiile scadente în jurul datei de 31 octombrie a fost prelungit până la 16 noiembrie 2026.</p>
-        <div class="spot-foot">
-          <a class="spot-link" href="#stire-18">Citește știrea completă ↓</a>
-          <div class="sev-scale" role="img" aria-label="Scară de gravitate: verde — normal, galben — de urmărit, roșu — grav. Nivelul de azi: galben.">
-            <span class="sev-item"><i class="sev-dot g" aria-hidden="true"></i>Verde · normal</span>
-            <span class="sev-item on"><i class="sev-dot y" aria-hidden="true"></i>Galben · de urmărit</span>
-            <span class="sev-item"><i class="sev-dot r" aria-hidden="true"></i>Roșu · grav</span>
-          </div>
-        </div>
-      </section>
-
-      <!-- Dashboard -->
-      <section class="dashboard" aria-label="Panou de ansamblu">
-        <div class="dash-head">
-          <span class="dash-title">Dashboard · Azi</span>
-          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 20:07</span>
-          <span class="dash-meta">Fereastră monitorizare <strong>L–V 06:00–22:00 · S–D 07:30–22:00</strong> · pas ~3 ore</span>
-        </div>
-
-        <div class="kpi-grid" role="group" aria-label="Filtrează după categorie — apasă pe un tile">
-          <button class="kpi" type="button" data-filter="toate" aria-pressed="true">
-            <span class="kpi-top"><span class="kpi-label">Toate știrile</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">6</span>
-            <span class="kpi-sub">știri verificate azi, în 5 rulări</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:100%"></i></span>
-            <span class="kpi-hint">Apasă pentru toate</span>
-          </button>
-          <button class="kpi" type="button" data-filter="securitate" aria-pressed="false">
-            <span class="kpi-top"><span class="kpi-label">Securitate &amp; NATO</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">4</span>
-            <span class="kpi-sub">Portaluri fiscale online · dragor pentru Bulgaria · pactul Hansa · Binance reia retragerile</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:67%"></i></span>
-            <span class="kpi-hint">Apasă pentru a filtra →</span>
-          </button>
-          <button class="kpi" type="button" data-filter="romania" aria-pressed="false">
-            <span class="kpi-top"><span class="kpi-label">România</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">0</span>
-            <span class="kpi-sub">nicio știre azi</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:0%"></i></span>
-            <span class="kpi-hint">Apasă pentru a filtra →</span>
-          </button>
-          <button class="kpi" type="button" data-filter="tech" aria-pressed="false">
-            <span class="kpi-top"><span class="kpi-label">Tech &amp; AI</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">2</span>
-            <span class="kpi-sub">Procesul NAACP vs xAI — turbine fără autorizație la Colossus · Binance reia retragerile</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:33%"></i></span>
-            <span class="kpi-hint">Apasă pentru a filtra →</span>
-          </button>
-        </div>
-
-        <div class="dash-foot">
-          <div class="dash-panel">
-            <h3>Ritmul zilei — știri pe rulare</h3>
-            <div class="rhythm" role="group" aria-label="Filtru după ora publicării — apasă pe o rulare ca să vezi doar știrile ei">
-              <button class="col" type="button" data-hour="08:00" aria-pressed="false" aria-label="Filtrează știrile de la ora 08:00 — 1 știre"><span class="n">1</span><span class="bar" style="height:22px"></span><span class="t">08:00</span></button>
-              <button class="col" type="button" data-hour="11:06" aria-pressed="false" aria-label="Filtrează știrile de la ora 11:06 — 2 știri"><span class="n">2</span><span class="bar" style="height:40px"></span><span class="t">11:06</span></button>
-              <button class="col" type="button" data-hour="14:01" aria-pressed="false" aria-label="Filtrează știrile de la ora 14:01 — 1 știre"><span class="n">1</span><span class="bar" style="height:22px"></span><span class="t">14:01</span></button>
-              <button class="col" type="button" data-hour="17:00" aria-pressed="false" aria-label="Filtrează știrile de la ora 17:00 — 1 știre"><span class="n">1</span><span class="bar" style="height:22px"></span><span class="t">17:00</span></button>
-              <button class="col" type="button" data-hour="20:07" aria-pressed="false" aria-label="Filtrează știrile de la ora 20:07 — 1 știre"><span class="n">1</span><span class="bar" style="height:22px"></span><span class="t">20:07</span></button>
-            </div>
-            <p class="rhythm-hint">Apasă pe o bară ca să vezi doar știrile din rularea aceea; apasă din nou pe ea pentru toate.</p>
-          </div>
-          <div class="dash-panel">
-            <h3>Stare ediție</h3>
-            <ul class="status-list">
-              <li><span class="k">Ultima actualizare</span><span class="v">Azi, 20:07</span></li>
-              <li><span class="k">Cea mai nouă</span><span class="v">Binance reia retragerile după cel mai mare furt cibernetic din istorie: 95% din cele 6,3 mld $ furate, acoperite; FBI îl acuză pe grupul nord-coreean TraderTraitor · 20:07</span></li>
-              <li><span class="k">Acoperire</span><span class="v">Ultimele 7 zile în arhivă</span></li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <div class="filter-status" aria-live="polite">
-        <span class="filter-label">Se afișează: <strong>Toate categoriile — 6 din 6 știri</strong></span>
-        <button class="filter-reset" type="button" hidden>Resetează filtrul</button>
-      </div>
-
-      <nav class="index" aria-label="Cuprinsul zilei">
-        <div class="index-head">
-          <h2>Cuprins</h2>
-          <span>apasă pe un titlu ca să sari direct la știre · se sincronizează cu filtrul</span>
-        </div>
-        <ol class="index-list">
-          <li data-cats="securitate tech"><a href="#stire-22"><time>20:07</time><span class="cat-dot sec" aria-hidden="true"></span><span class="t">Binance reia retragerile după cel mai mare furt cibernetic din istorie: 95% din cele 6,3 mld $ furate, acoperite; FBI îl acuză pe grupul nord-coreean TraderTraitor</span><span class="n">#1</span></a></li>
-          <li data-cats="tech"><a href="#stire-21"><time>17:00</time><span class="cat-dot tech" aria-hidden="true"></span><span class="t">Procesul NAACP împotriva xAI pentru turbinele fără autorizație de la Colossus merge mai departe — judecătorul respinge cererea de clasare</span><span class="n">#2</span></a></li>
-          <li data-cats="securitate"><a href="#stire-20"><time>14:01</time><span class="cat-dot sec" aria-hidden="true"></span><span class="t">Norvegia și Germania încep producția de tancuri Leopard 2A8 în Norvegia, în cadrul pactului de apărare „Hansa” — de la tancuri la spațiu</span><span class="n">#3</span></a></li>
-          <li data-cats="securitate"><a href="#stire-18"><time>11:06</time><span class="cat-dot sec" aria-hidden="true"></span><span class="t">Portalurile fiscale belgiene MyMinfin, Tax-on-Web și Biztax sunt din nou online după atacul cibernetic din 28 octombrie; termenul de depunere prelungit până la 16 noiembrie</span><span class="n">#4</span></a></li>
-          <li data-cats="securitate"><a href="#stire-19"><time>11:06</time><span class="cat-dot sec" aria-hidden="true"></span><span class="t">Belgia a predat Bulgariei primul dragor de mine Tripartite, Bellis (redenumit Briz) — primul pas din transferul a șapte nave pentru securitatea Mării Negre</span><span class="n">#5</span></a></li>
-          <li data-cats="belgia"><a href="#stire-17"><time>08:00</time><span class="cat-dot" style="background:var(--muted)" aria-hidden="true"></span><span class="t">Ce se schimbă în Belgia de la 1 noiembrie: salariu net, taxă pe coletele din afara UE, vaccinuri</span><span class="n">#6</span></a></li>
-        </ol>
-      </nav>
-
-      <p class="empty">Nicio știre în această categorie azi.</p>
-
-      <main>
-        <!-- 1 · 1 nov · 20:07 -->
-        <article id="stire-22" data-cats="securitate tech">
-          <div class="a-meta">
-            <span class="a-time">1 nov · 20:07</span>
-            <span class="a-cat">Securitate cibernetică · Crypto · Incident la scară</span>
-            <span class="a-num">#1 / 6</span>
-          </div>
-          <h2>Binance reia retragerile după cel mai mare furt cibernetic din istorie: 95% din cele 6,3 mld $ furate, acoperite; FBI îl acuză pe grupul nord-coreean TraderTraitor</h2>
-
-          <div class="followup">
-            <span class="tag">Urmare la</span>
-            <p><a href="#stire-4">„Binance, lovită de cel mai mare furt cibernetic din istorie: cel puțin 6,3 mld $ furați, atribuiți hackerilor nord-coreeni”</a> — vineri, 30 octombrie 2026.</p>
-          </div>
-
-          <div class="sec">
-            <p class="sec-label">Ce s-a întâmplat</p>
-            <p>Duminică, 1 noiembrie 2026, Binance, cea mai mare bursă de criptomonede din lume, a început reluarea în faze a retragerilor, suspendate vineri după furtul de 6,3 miliarde de dolari din portofelele sale digitale. Prima fază acoperă 15 criptoactive, între care bitcoin, ether, BNB, Solana, XRP, dogecoin și stablecoinuri USDT/USDC. Compania spune că a acoperit aproximativ 95% din suma furată, cumpărând tokenuri de înlocuire din fonduri proprii — fondul de rezervă SAFU (circa 1 miliard de dolari în bitcoin, din care co-CEO Yi He a spus că se folosesc 50%), fondul de asigurare Futures și trezoreria corporativă; restul de 5% sunt active mai puțin lichide, mai greu de procurat la scara necesară. Până duminică la 10:30 ET, Binance procesase circa 4,65 miliarde de dolari în retrageri și 1,1 miliarde în depuneri (ieșiri nete de circa 3,64 miliarde, 2,1% din activele administrate, potrivit Wall Street Journal); după vârful inițial, compania spune că retragerile se stabilizează. Sâmbătă, FBI a anunțat că grupul TraderTraitor, sponsorizat de statul nord-coreean, este responsabil de furt, iar atacatorii convertesc fondurile furate mai ales în ether.</p>
-          </div>
-
-          <div class="sec">
-            <p class="sec-label">De ce contează</p>
-            <p>Continuare directă a furtului semnalat pe 30 octombrie — acum cu restaurarea în faze a serviciului, cu atribuire oficială din partea FBI și cu un fond de rezervă care a absorbit șocul. Pentru incident management, cazul este un reper de continuitate și comunicare de criză: cel mai mare furt cibernetic din istorie ca valoare, cu serviciu restabilit treptat sub presiunea retragerilor masive, nu dintr-odată.</p>
-          </div>
-
-          <div class="verify">
-            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
-            <p>Verdict: confirmat — TechCrunch (sursă curatoriată, 1 noiembrie 2026) relatează reluarea retragerilor, iar Reuters (1 noiembrie 2026), CNN (1 noiembrie 2026) și Wall Street Journal (1 noiembrie 2026) confirmă independent, în afara listei curatoriate: reluarea în faze, acoperirea de circa 95% și atribuirea FBI către TraderTraitor.</p>
-            <ul class="sources">
-              <li><a href="https://techcrunch.com/2026/11/01/binance-resumes-withdrawals-following-6-3-billion-breach/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>TechCrunch — „Binance resumes withdrawals following $6.3 billion breach” (1 noiembrie 2026)<span class="host">techcrunch.com</span></a></li>
-              <li><a href="https://www.reuters.com/legal/government/binance-resumes-bitcoin-withdrawals-after-covering-bulk-stolen-63-billion-2026-11-01/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Reuters — „Binance resumes bitcoin withdrawals after covering bulk of stolen $6.3 billion” (1 noiembrie 2026)<span class="host">reuters.com</span></a></li>
-              <li><a href="https://www.cnn.com/2026/11/01/business/binance-withdrawals-crypto-heist?cid=external-feeds_iluminar_meta" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>CNN — „Binance withdrawals resume following $6 billion hack” (1 noiembrie 2026)<span class="host">cnn.com</span></a></li>
-              <li><a href="https://www.wsj.com/finance/currencies/binance-resumes-withdrawals-after-suffering-biggest-ever-crypto-hack-11d1900f" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Wall Street Journal — „Binance Resumes Withdrawals After Suffering Biggest-Ever Crypto Hack” (1 noiembrie 2026)<span class="host">wsj.com</span></a></li>
-            </ul>
-          </div>
-
-          <div class="opposing">
-            <p class="sec-label">Tabăra adversă</p>
-            <p>Președintele american Donald Trump a spus sâmbătă că Statele Unite încă nu sunt sigure că Coreea de Nord este implicată (sursa: Reuters). Phenianul neagă de ani de zile că ar folosi unități cibernetice legate de stat pentru spionaj, furturi financiare și venituri (sursa: Reuters).</p>
-          </div>
-
-          <div class="impact">
-            <span class="badge">Impact direct</span>
-            <p>Impact direct minim, fără acțiune imediată; relevanță profesională ridicată — incident cibernetic la scară istorică, cu atribuire statală și restaurare în faze a serviciului, exact pe terenul de incident management.</p>
-          </div>
-        </article>
-
-        <!-- 2 · 1 nov · 17:00 -->
-        <article id="stire-21" data-cats="tech">
-          <div class="a-meta">
-            <span class="a-time">1 nov · 17:00</span>
-            <span class="a-cat">Tech &amp; AI · Centre de date · Litigii de mediu</span>
-            <span class="a-num">#2 / 6</span>
-          </div>
-          <h2>Procesul NAACP împotriva xAI pentru turbinele fără autorizație de la Colossus merge mai departe — judecătorul respinge cererea de clasare</h2>
-
-          <div class="sec">
-            <p class="sec-label">Ce s-a întâmplat</p>
-            <p>Judecătoarea federală Debra M. Brown a respins, printr-o decizie din 30 octombrie 2026 relatată pe 31 octombrie, cererea xAI de clasare a procesului intentat de NAACP în temeiul Clean Air Act privind turbinele pe gaz care alimentează centrul de date Colossus de lângă Memphis. Potrivit plângerii, relatate de TechCrunch, Southern Environmental Law Center, în numele NAACP, susține că xAI „a instalat și a operat cel puțin 35 de turbine cu combustie și alte surse de poluare a aerului la amplasamentul Colossus fără să obțină vreodată autorizațiile prealabile de construcție sau de funcționare necesare”.</p>
-            <p>Judecătoarea a respins argumentele xAI — că turbinele montate pe remorci ar fi „surse mobile” scutite de autorizații și că procesele cetățenești ar fi neconstituționale — și a decis că pretențiile „vor merge mai departe”.</p>
-            <p>Precizare de integritate: decizia nu stabilește încă o încălcare; procesul continuă, iar o cerere de injuncție provizorie a NAACP rămâne nesoluționată.</p>
-          </div>
-
-          <div class="sec">
-            <p class="sec-label">De ce contează</p>
-            <p>Este un precedent de autorizare pentru infrastructura AI: extinderea centrelor de date nu mai e frânată doar de costuri și de energie, ci și de litigii de mediu care pot întârzia alimentarea cu energie a noilor capacități de calcul. Continuă arcul de la 31 octombrie despre reacția publică și politică împotriva centrelor de date AI (moratorii locale, subiect electoral în SUA) și despre încetinirea finanțărilor AI.</p>
-          </div>
-
-          <div class="verify">
-            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
-            <p>Verdict: sursă primară + confirmat — ordinul judecătoresc din 30 octombrie 2026 (sursă primară, citat în comunicatul Southern Environmental Law Center), TechCrunch (sursă curatoriată, 31 octombrie 2026) și Technopolis News (31 octombrie 2026) relatează aceeași decizie: respingerea cererii de clasare și continuarea procesului.</p>
-            <ul class="sources">
-              <li><a href="https://techcrunch.com/2026/10/31/judge-allows-naacp-lawsuit-over-xai-data-center-pollution-to-move-forward/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>TechCrunch — „Judge allows NAACP lawsuit over xAI data center pollution to move forward” (31 octombrie 2026)<span class="host">techcrunch.com</span></a></li>
-              <li><a href="https://technopolis.news/en/xai-pollution-lawsuit-survives-dismissal/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Technopolis News — „xAI pollution lawsuit survives dismissal” (31 octombrie 2026)<span class="host">technopolis.news</span></a></li>
-            </ul>
-          </div>
-
-          <div class="opposing">
-            <p class="sec-label">Tabăra adversă</p>
-            <p>xAI susține că turbinele sunt surse mobile scutite de autorizațiile pentru centrale fixe — argumentul respins de judecătoare (sursa: <a href="https://techcrunch.com/2026/10/31/judge-allows-naacp-lawsuit-over-xai-data-center-pollution-to-move-forward/" target="_blank" rel="noopener">TechCrunch</a>).</p>
-          </div>
-
-          <div class="impact">
-            <span class="badge">Impact direct</span>
-            <p>Impact direct minim pentru el azi — nu operează centre de date și nu e parte în litigiu. Relevanță de context: automatizările lui rulează pe infrastructură AI cloud, iar blocajele de autorizare și litigii ca acesta se adaugă presiunii asupra costurilor și ritmului de extindere a capacității AI, deja vizibilă în vânzările de acțiuni tech de la 31 octombrie.</p>
-          </div>
-        </article>
-
-        <!-- 3 · 1 nov · 14:01 -->
-        <article id="stire-20" data-cats="securitate">
-          <div class="a-meta">
-            <span class="a-time">1 nov · 14:01</span>
-            <span class="a-cat">Securitate &amp; NATO</span>
-            <span class="a-num">#3 / 6</span>
-          </div>
-          <h2>Norvegia și Germania încep producția de tancuri Leopard 2A8 în Norvegia, în cadrul pactului de apărare „Hansa” — de la tancuri la spațiu</h2>
-
-          <div class="sec">
-            <p class="sec-label">Ce s-a întâmplat</p>
-            <p>Producătorul german de tancuri KNDS și firma norvegiană Ritek au început producția de tancuri Leopard 2A8 la Levanger, în Norvegia, pe 15 octombrie 2026; 37 din cele 54 de tancuri noi ale Armatei norvegiene vor fi construite acolo, într-o facilitate amenajată în 18 luni, cu o capacitate de până la 36 de tancuri pe an. Nu este o comandă nouă: momentul încununează un aranjament de achiziție deja existent, nu o achiziție suplimentară.</p>
-            <p>Producția face parte din „Hansa Arrangement”, cadrul bilateral de apărare formalizat de cele două guverne în februarie 2026, ale cărui priorități, potrivit Ministerului norvegian al Apărării, sunt operațiunile maritime, războiul terestru cu arme combinate, întărirea rapidă, industria de apărare și supravegherea, țintirea și comunicațiile din spațiu; același parteneriat include șase submarine identice Type 212CD operate de fiecare țară, cu mentenanță la Haakonsvern, lângă Bergen, racheta maritimă de nouă generație 3SM, avioane germane P-8A care operează din baze norvegiene și islandeze peste breșa GIUK și un grup de lucru spațial bilateral creat în aprilie, cu portul spațial Andøya pentru lansări pe orbite polare.</p>
-          </div>
-
-          <div class="sec">
-            <p class="sec-label">De ce contează</p>
-            <p>Este modelul concret prin care Europa își leagă industria de apărare între aliați fără să aștepte Washingtonul — Germania, cea mai mare armată europeană din NATO, își ancorează producția de tancuri, submarine și supraveghere spațială în Norvegia, pe flancul nordic; pentru un IT incident Manager, integrarea industrială și supravegherea spațială pe flancul nordic continuă arcul amenințărilor hibride și al protecției infrastructurii submarine urmărit în pagină.</p>
-          </div>
-
-          <div class="verify">
-            <p class="sec-label">Verificare <span class="status">Sursă unică</span></p>
-            <p>Verdict: sursă unică — relatarea Defense News din 30 octombrie 2026 este singura relatare editorială originală a momentului producției de la Levanger; ecourile apărute ulterior (The American Vanguard, AxyNews, SSBCrack) preiau același fir Defense News, fără verificare independentă a faptelor, deci nu se numără ca confirmări; faptele noi provin din e-mailul KNDS și din readout-ul Ministerului norvegian al Apărării citate de Defense News, iar contextul acordului din februarie 2026 este documentat de comunicatul Ministerului norvegian al Apărării și de analiza CIGI.</p>
-            <ul class="sources">
-              <li><a href="https://www.defensenews.com/global/europe/2026/10/30/from-tanks-to-space-norway-and-germany-forge-ahead-with-hansa-defense-pact/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Defense News — „From tanks to space, Norway and Germany forge ahead with ‘Hansa’ defense pact” (30 octombrie 2026)<span class="host">defensenews.com</span></a></li>
-              <li><a href="https://theamericanvanguard.com/military-news/germany-and-norway-begin-leopard-2a8-tank-production-in-levanger/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>The American Vanguard — „Germany and Norway Begin Leopard 2A8 Tank Production in Levanger” (ecou al relatării Defense News)<span class="host">theamericanvanguard.com</span></a></li>
-              <li><a href="https://axynewsglobal.com/article/norway-and-germany-start-building-leopard-2a8-tanks-under-hansa-pact" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>AxyNews — „Norway and Germany Start Building Leopard 2A8 Tanks Under Hansa Pact” (ecou al relatării Defense News)<span class="host">axynewsglobal.com</span></a></li>
-              <li><a href="https://www.globalsecurity.org/military/library/news/2026/02/mil-260214-govno01.htm" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>GlobalSecurity — comunicatul Ministerului norvegian al Apărării la semnarea „Hansa Arrangement” (14 februarie 2026)<span class="host">globalsecurity.org</span></a></li>
-            </ul>
-          </div>
-
-          <div class="impact">
-            <span class="badge">Impact direct</span>
-            <p>Impact direct: minim — relevanță de context profesional înaltă; nicio acțiune imediată pentru familie sau rutina zilnică. De urmărit: trecerea uzinei de la primele tancuri la cele 37 programate, livrările de submarine 212CD și transformarea grupului de lucru spațial în proiecte concrete.</p>
-          </div>
-        </article>
-
-        <!-- 4 · 1 nov · 11:06 -->
-        <article id="stire-18" data-cats="securitate">
-          <div class="a-meta">
-            <span class="a-time">1 nov · 11:06</span>
-            <span class="a-cat">Securitate &amp; NATO · Incident cibernetic — infrastructură publică</span>
-            <span class="spot-tag">Știrea zilei</span>
-            <span class="a-num">#4 / 6</span>
-          </div>
-          <h2>Portalurile fiscale belgiene MyMinfin, Tax-on-Web și Biztax sunt din nou online după atacul cibernetic din 28 octombrie; termenul de depunere prelungit până la 16 noiembrie</h2>
-
-          <div class="sec">
-            <p class="sec-label">Ce s-a întâmplat</p>
-            <p>Ministerul federal belgian al Finanțelor (FOD Financiën / SPF Finances) a repus online sâmbătă seară, 31 octombrie 2026, portalurile MyMinfin, Tax-on-Web și Biztax, închise temporar din 28 octombrie după un atac cibernetic detectat în noaptea de 27 spre 28 octombrie. Atacatorii au pătruns în mediul IT al agenției, însă, potrivit FOD, atacul a fost oprit în câteva ore, înainte să preia controlul aplicațiilor sau să acceseze date ale contribuabililor, iar sistemele potențial afectate au fost izolate.</p>
-            <p>Pentru că întreruperea a lovit chiar termenul de 31 octombrie, termenul pentru declarațiile scadente în jurul acestei date a fost prelungit până la 16 noiembrie 2026.</p>
-          </div>
-
-          <div class="sec">
-            <p class="sec-label">De ce contează</p>
-            <p>Este follow-up-ul direct al cardului din 29 octombrie despre atacul la agenția fiscală belgiană — acum cu rezolvare, nu doar cu incidentul. Pentru un rezident în Belgia aflat în închiderea activității independente (PFI), cu declarații și dosare fiscale în derulare, revenirea portalurilor și noul termen sunt informații practice, nu doar context.</p>
-          </div>
-
-          <div class="verify">
-            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
-            <p>Verdict: sursă primară + confirmat — comunicatul propriu al FOD Financiën / SPF Finances (relatat de The Register, 29 octombrie 2026) descrie atacul și măsurile luate, iar BelgiumNow (1 noiembrie 2026), RegFollower (30 octombrie 2026) și Cybernews (30 octombrie 2026) confirmă revenirea portalurilor și prelungirea termenului de depunere până la 16 noiembrie 2026.</p>
-            <ul class="sources">
-              <li><a href="https://www.theregister.com/security/2026/10/29/belgiums-tax-agency-confirms-cyberattack-pulls-services-offline/5306409" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>FOD Financiën — comunicatul propriu, prin The Register (29 octombrie 2026)<span class="host">theregister.com</span></a></li>
-              <li><a href="https://belgium-now.com/2026/11/01/belgian-tax-websites-restored-after-cyberattack/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>BelgiumNow — „Belgian tax websites back online after cyberattack, filing deadline extended to 16 November” (1 noiembrie 2026)<span class="host">belgium-now.com</span></a></li>
-              <li><a href="https://regfollower.com/belgium-extends-tax-filing-deadline-following-cyberattack/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>RegFollower — „Belgium extends tax filing deadline following cyberattack” (30 octombrie 2026)<span class="host">regfollower.com</span></a></li>
-              <li><a href="https://cybernews.com/security/belgium-tax-portal-offline-before-filing-deadline/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Cybernews — „Belgium tax portal cyberattack shuts MyMinfin before deadline” (30 octombrie 2026)<span class="host">cybernews.com</span></a></li>
-            </ul>
-          </div>
-
-          <div class="impact">
-            <span class="badge">Impact direct</span>
-            <p>Impact direct concret, dar gestionabil: dacă ai declarații fiscale scadente la 31 octombrie, nu mai ești blocat de portalurile închise; ai timp până la 16 noiembrie. Atenție practică: FOD spune că nu există indicii de scurgere de date, dar verificarea autenticității mesajelor primite „din partea” fiscului rămâne necesară în perioada de revenire.</p>
-          </div>
-
-          <div class="action-line">
-            <span class="tag">Acțiune</span>
-            <p>Dacă ai declarații fiscale scadente la 31 octombrie, depune-le până la 16 noiembrie 2026, acum că MyMinfin, Tax-on-Web și Biztax sunt din nou online.</p>
-          </div>
-        </article>
-
-        <!-- 5 · 1 nov · 11:06 -->
-        <article id="stire-19" data-cats="securitate">
-          <div class="a-meta">
-            <span class="a-time">1 nov · 11:06</span>
-            <span class="a-cat">Securitate &amp; NATO · Marea Neagră — contramăsuri miniere</span>
-            <span class="a-num">#5 / 6</span>
-          </div>
-          <h2>Belgia a predat Bulgariei primul dragor de mine Tripartite, Bellis (redenumit Briz) — primul pas din transferul a șapte nave pentru securitatea Mării Negre</h2>
-
-          <div class="sec">
-            <p class="sec-label">Ce s-a întâmplat</p>
-            <p>La 30 octombrie 2026, Apărarea belgiană a predat oficial Marinei bulgare dragorul de mine Tripartite BNS Bellis (M916), în cadrul unei ceremonii la baza navală din Zeebrugge, nava primind pavilionul bulgar și numele Briz. Este prima dintre cele patru nave belgiene Tripartite destinate Bulgariei, dintr-un memorandum trilateral Belgia–Olanda–Bulgaria (semnat la 8 iulie 2026) care prevede transferul a șapte nave de contramăsuri miniere în total (patru belgiene, trei olandeze).</p>
-            <p>Bulgaria finanțează repunerea în serviciu, mentenanța și desfășurarea operațională a navelor, cu expertiză tehnică belgiană, iar nava urmează să ajungă în portul Burgas și să se integreze operațiunilor grupului de contramăsuri miniere din Marea Neagră (MCM Black Sea), alături de România și Turcia.</p>
-          </div>
-
-          <div class="sec">
-            <p class="sec-label">De ce contează</p>
-            <p>Belgia (țara de rezidență) transferă capacitate navală reală, nu doar declarații, către flancul Mării Negre — exact arcul urmărit în pagină (atacurile asupra navelor comerciale, condamnarea trilaterală din 29 octombrie, inițiativa NATO anti-dronă din 30 octombrie). Pentru un IT incident Manager, este un semnal concret despre cum se materializează postura aliată în Marea Neagră: prin nave, nu doar prin patrule aeriene.</p>
-          </div>
-
-          <div class="verify">
-            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
-            <p>Verdict: confirmat — Naval News (31 octombrie 2026) și Brussels Morning (31 octombrie 2026) relatează independent ceremonia de predare de la Zeebrugge, iar relatarea agenției bulgare de presă, dinspre cartierul general al Marinei bulgare de la Varna, confirmă primirea navei; contextul acordului din iulie 2026 este documentat de Maritime Executive.</p>
-            <p>Atenție de integritate: unele relatări traduc numele nou „Briz” prin „Breeze”; forma folosită aici, Briz, este cea din Naval News și din registrul navei.</p>
-            <ul class="sources">
-              <li><a href="https://www.navalnews.com/naval-news/2026/10/belgium-transfers-first-tripartite-minehunter-bns-bellis-to-bulgarian-navy/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Naval News — „Belgium Transfers First Tripartite Minehunter BNS Bellis to Bulgarian Navy” (31 octombrie 2026)<span class="host">navalnews.com</span></a></li>
-              <li><a href="https://brusselsmorning.com/belgium-hands-bns-bellis-to-1-bulgarian-navy-fleet-in-brussels-2026/106340/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Brussels Morning — „Belgium Hands BNS Bellis to Bulgarian Navy in Brussels 2026” (31 octombrie 2026)<span class="host">brusselsmorning.com</span></a></li>
-              <li><a href="https://world.einnews.com/country/bulgaria?page=2" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Cartierul general al Marinei bulgare de la Varna, prin relatarea agenției bulgare de presă (31 octombrie 2026, citată în sinteza EIN Presswire)<span class="host">world.einnews.com</span></a></li>
-              <li><a href="https://maritime-executive.com/article/belgium-and-the-netherlands-give-seven-minehunting-vessels-to-bulgaria" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Maritime Executive — contextul acordului din iulie 2026<span class="host">maritime-executive.com</span></a></li>
-            </ul>
-          </div>
-
-          <div class="impact">
-            <span class="badge">Impact direct</span>
-            <p>Impact direct: minim — relevanță de context profesional înaltă; nicio acțiune imediată pentru familie sau rutină zilnică. Semnal de urmărit: următoarele trei nave belgiene (Crocus, Lobelia, Primula) și cele trei olandeze, plus tranzitul spre Burgas sub regimul Convenției de la Montreux.</p>
-          </div>
-        </article>
-
-        <!-- 6 · 1 nov -->
-        <article id="stire-17" data-cats="belgia">
-          <div class="a-meta">
-            <span class="a-time">1 nov · 08:00</span>
-            <span class="a-cat">Belgia · Schimbări de la 1 noiembrie</span>
-            <span class="a-num">#6 / 6</span>
-          </div>
-          <h2>Ce se schimbă în Belgia de la 1 noiembrie: salariu net, taxă pe coletele din afara UE, vaccinuri</h2>
-
-          <div class="sec">
-            <p class="sec-label">Ce s-a întâmplat</p>
-            <p>De astăzi, 1 noiembrie 2026, intră în vigoare în Belgia mai multe schimbări. Reținerea la sursă pe salarii (précompte professionnel) se recalculează după reforma fiscală din legea din 15 iulie 2026, astfel încât salariul net se modifică automat începând cu plata din noiembrie, fără ca angajatul să facă nimic — angajatorul sau secretariatul social aplică noul calcul.</p>
-            <p>Coletele din magazine online din afara UE primesc o taxă suplimentară de manipulare de 2 euro pe categorie de produs, peste taxa de colet de 3 euro deja existentă. În Valonia și Bruxelles se schimbă și calendarul vaccinării sugarilor (hexavalent la 2, 4 și 12 luni; ultima doză PCV13 mutată de la 12 la 15 luni), iar Valonia reformează regulile de înmormântare.</p>
-          </div>
-
-          <div class="sec">
-            <p class="sec-label">De ce contează</p>
-            <p>Lucian este angajat permanent în Belgia, deci recalcularea reținerii la sursă îi afectează direct fluturașul de salariu din noiembrie. Taxa de 2 euro pe coletele din afara UE îl privește la comenzile online din afara Uniunii.</p>
-          </div>
-
-          <div class="verify">
-            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
-            <p>Verdict: confirmat — The Brussels Times (1 noiembrie 2026), BelgiumNow (29 și 28 octombrie 2026) și PwC Belgia descriu aceleași schimbări intrate în vigoare azi.</p>
-            <p>Efectul exact pe fluturaș depinde de componența gospodăriei: potrivit BelgiumNow (care citează La DH), persoanele singure fără copii câștigă fix 8,47 euro/lună, în cuplurile cu două venituri câștigul de 8,47 euro se aplică fiecărui partener, familiile cu doi copii aflați în întreținere câștigă 9,47 euro/lună, iar gospodăriile cu un singur venit pot pierde până la 30 de euro/lună.</p>
-            <ul class="sources">
-              <li><a href="https://www.brusselstimes.com/belgium/2384984/body-bag-burial-changed-wages-package-tax-what-changes-in-belgium-on-1-november" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>The Brussels Times — „Body bag burial, changed wages, package tax: What changes in Belgium on 1 November?” (1 noiembrie 2026, 05:41)<span class="host">brusselstimes.com</span></a></li>
-              <li><a href="https://belgium-now.com/2026/10/29/new-withholding-tax-rules-change-belgian-net-pay/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>BelgiumNow — „New withholding tax rules change Belgian take-home pay from November” (29 octombrie 2026)<span class="host">belgium-now.com</span></a></li>
-              <li><a href="https://belgium-now.com/2026/10/28/what-changes-in-belgium-1-november-2026/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>BelgiumNow — „What changes in Belgium on 1 November 2026: pay, vaccines, burials, parcels” (28 octombrie 2026)<span class="host">belgium-now.com</span></a></li>
-              <li><a href="https://www.pwc.be/en/news-publications/news/individuals.html" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>PwC Belgia — pagina „Individuals” despre legea din 15 iulie 2026<span class="host">pwc.be</span></a></li>
-            </ul>
-          </div>
-
-          <div class="impact">
-            <span class="badge">Impact direct</span>
-            <p>Impact direct mic, fără acțiune urgentă: merită verificat fluturașul de salariu din noiembrie, ca să vadă în ce direcție s-a mișcat netul; la comenzile online din afara UE, taxa suplimentară de 2 euro pe categorie se adaugă la costul coletului.</p>
-          </div>
-        </article>
-      </main>
-      </section>
 
       <footer>
         <div class="rule" aria-hidden="true"></div>
-        <p>Sfârșitul ediției de azi · Ultima actualizare: sâmbătă, 7 noiembrie 2026, 21:00<br />Monitorizarea rulează la circa 3 ore, în fereastra L–V 06:00–22:00 · S–D 07:30–22:00 — dă refresh pentru noutăți.</p>
-        <a class="to-top" href="#stire-105">↑ Înapoi la cea mai nouă știre</a>
+        <p>Sfârșitul ediției de azi · Ultima actualizare: duminică, 8 noiembrie 2026, 08:00<br />Monitorizarea rulează la circa 3 ore, în fereastra L–V 06:00–22:00 · S–D 07:30–22:00 — dă refresh pentru noutăți.</p>
+        <a class="to-top" href="#stire-106">↑ Înapoi la cea mai nouă știre</a>
       </footer>
     </div>
 
