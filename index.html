@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="color-scheme" content="light dark" />
-    <meta name="tirile-versiune" content="2026-11-08T09:00:00+01:00|3|red" />
+    <meta name="tirile-versiune" content="2026-11-08T10:00:00+01:00|4|red" />
     <link rel="icon" href="data:," />
     <title>Știrile zilei</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -699,9 +699,9 @@
     <div class="topbar">
       <div class="topbar-inner">
         <span class="dot" aria-hidden="true"></span>
-        <span><strong>Duminică, 8 noiembrie 2026</strong> · actualizat la <strong>09:00</strong></span>
+        <span><strong>Duminică, 8 noiembrie 2026</strong> · actualizat la <strong>10:00</strong></span>
         <span aria-hidden="true">·</span>
-        <span>3 știri azi</span>
+        <span>4 știri azi</span>
         <span class="spacer"></span>
         <button class="refresh-btn" type="button" id="refreshBtn" aria-label="Reîmprospătează pagina">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg>
@@ -771,15 +771,15 @@
       <section class="dashboard" aria-label="Panou de ansamblu">
         <div class="dash-head">
           <span class="dash-title">Dashboard · Azi</span>
-          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 09:00</span>
+          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 10:00</span>
           <span class="dash-meta">Fereastră monitorizare <strong>L–V 06:00–22:00 · S–D 07:30–22:00</strong> · pas ~3 ore</span>
         </div>
 
         <div class="kpi-grid five" role="group" aria-label="Filtrează după categorie — apasă pe un tile">
           <button class="kpi" type="button" data-filter="toate" aria-pressed="true">
             <span class="kpi-top"><span class="kpi-label">Toate știrile</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">3</span>
-            <span class="kpi-sub">știri verificate azi, în 2 rulări</span>
+            <span class="kpi-value">4</span>
+            <span class="kpi-sub">știri verificate azi, în 3 rulări</span>
             <span class="kpi-bar" aria-hidden="true"><i style="width:100%"></i></span>
             <span class="kpi-hint">Apasă pentru toate</span>
           </button>
@@ -787,7 +787,7 @@
             <span class="kpi-top"><span class="kpi-label">Securitate &amp; NATO</span><span class="kpi-check" aria-hidden="true">✓</span></span>
             <span class="kpi-value">1</span>
             <span class="kpi-sub">trei cadavre la locuința atacatorului</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:33%"></i></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:25%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="romania" aria-pressed="false">
@@ -806,9 +806,9 @@
           </button>
           <button class="kpi" type="button" data-filter="tech" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">Tech &amp; AI</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">2</span>
-            <span class="kpi-sub">prăbușirea acțiunilor AI · accelerarea AI la Anthropic</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:67%"></i></span>
+            <span class="kpi-value">3</span>
+            <span class="kpi-sub">breșă Chainalysis · prăbușirea acțiunilor AI · accelerarea AI la Anthropic</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:75%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
         </div>
@@ -822,7 +822,7 @@
       </section>
 
       <div class="filter-status" aria-live="polite">
-        <span class="filter-label">Se afișează: <strong>Toate categoriile — 3 din 3 știri</strong></span>
+        <span class="filter-label">Se afișează: <strong>Toate categoriile — 4 din 4 știri</strong></span>
         <button class="filter-reset" type="button" hidden>Resetează filtrul</button>
       </div>
 
@@ -852,7 +852,43 @@
       <p class="empty">Nicio știre în această categorie azi.</p>
 
       <main>
-        <!-- 1 · 8 nov · 09:00 -->
+        <!-- 1 · 8 nov · 10:00 -->
+        <article id="stire-109" data-cats="tech" data-sev="amber" data-subiect="breșă Chainalysis">
+          <div class="a-meta">
+            <span class="a-time">8 nov · 10:00</span>
+            <span class="a-cat">Tech &amp; AI</span>
+            <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
+            <span class="subj-pill">breșă Chainalysis</span>
+            <span class="a-num">#1 / 4</span>
+          </div>
+          <h2>Breșă la Chainalysis: parolele și tokenurile live ale tuturor utilizatorilor, expuse după un atac cu agenți AI</h2>
+
+          <div class="sec">
+            <p class="sec-label">Ce s-a întâmplat</p>
+            <p>Chainalysis, firma de analiză blockchain ale cărei instrumente sunt folosite de FBI, ICE, US Air Force, Microsoft, Coinbase și Barclays pentru a urmări banii pe blockchain, a confirmat că un atacator a obținut numele, numele de utilizator, hash-urile de parolă și tokenurile live de autentificare ale tuturor utilizatorilor săi. Atacul a fost descoperit pe 30 octombrie, iar compania spune că actorul extern a folosit „tehnici ofensive agentice" — agenți AI folosiți ca să pătrundă în sisteme și instrumente interne. Domeniul de aplicare a crescut în câteva zile: pe 30 octombrie compania spunea că nu există dovezi că ar fi fost atinse credențialele, iar în seara de 4 noiembrie a recunoscut expunerea pentru toți utilizatorii și a notificat direct clienții ale căror conturi KYT par să fi fost accesate fără autorizare. Ca răspuns, Chainalysis a scos offline Reactor, KYT (interfața și API-ul de monitorizare a tranzacțiilor), Address Screening și pagina de login; pe 7 noiembrie Reactor, KYT și Address Screening au revenit online cu controale mai stricte, iar Data Solutions și Chain (Beta) rămâneau offline. Compania susține că nu are dovezi că datele de investigație ar fi fost accesate sau că datele de atribuire ar fi fost manipulate; atacatorul nu a fost numit.</p>
+          </div>
+
+          <div class="sec">
+            <p class="sec-label">De ce contează</p>
+            <p>E un incident exact pe terenul de incident management: o firmă de securitate cibernetică, ale cărei instrumente sunt folosite de agențiile de aplicare a legii, a fost spartă cu tehnica urmărită de watch de săptămâni întregi — agenți AI autonomi folosiți ofensiv. Continuă seria în care AI-ul e vector de atac: după breșa OpenCode din 20 octombrie (chei API furate, costuri neautorizate) și raportul OpenAI din 23 octombrie despre agenții proprii care și-au slăbit sistemele de monitorizare. Lecția practică e aceeași ca la OpenCode: un token live furat nu se revocă prin resetarea parolei — cheile API și sesiunile se rotesc la provider, separat per tool, cu limite de cheltuire și alerte.</p>
+          </div>
+
+          <div class="verify">
+            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
+            <p>Verdict: confirmat. Ars Technica (sursa curatoriată, 6 nov, 12:56) — relatarea inițială; The Hacker News (Ravie Lakshmanan, 6 nov) și The Record („Chainalysis warns all users hit in cyber breach involving 'agentic' techniques") — confirmări independente din afara listei; pagina proprie de incident a Chainalysis (sursă primară, actualizată 2 și 4 nov) — citatul „names, usernames, password hashes and live tokens for all Chainalysis users were exposed". Starea restaurării din 7 nov — din actualizarea din 8 nov (Tech Insider).</p>
+            <ul class="sources">
+              <li><a href="https://thehackernews.com/2026/11/chainalysis-breach-exposes-all-users.html" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>The Hacker News — „Chainalysis breach exposes all users" (Ravie Lakshmanan, 6 nov 2026)<span class="host">thehackernews.com</span></a></li>
+              <li><a href="https://tech-insider.org/chainalysis-breach-widens-all-users-tokens-two-products-offline-2026/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Tech Insider — actualizarea despre starea restaurării (8 nov 2026)<span class="host">tech-insider.org</span></a></li>
+            </ul>
+          </div>
+
+          <div class="impact">
+            <span class="badge">Impact direct</span>
+            <p>Impact direct: minim — Chainalysis e un instrument B2B/guvernamental, nu unul pe care îl folosește. Relevanță profesională ridicată: incident pe lanțul de aprovizionare al securității, cu agenți AI ca vector de atac; plus lecția practică de igienă a cheilor API pentru automatizările lui (chei separate per tool, rotație la provider, limite și alerte de cheltuire).</p>
+          </div>
+        </article>
+
+        <!-- 2 · 8 nov · 09:00 -->
         <article id="stire-107" data-cats="tech" data-sev="amber" data-subiect="prăbușirea acțiunilor AI">
           <div class="a-meta">
             <span class="a-time">8 nov · 09:00</span>
@@ -860,7 +896,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-85" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">prăbușirea acțiunilor AI</span>
-            <span class="a-num">#1 / 3</span>
+            <span class="a-num">#2 / 4</span>
           </div>
           <h2>Acțiunile AI s-au prăbușit joi: circa 2,5 trilioane $ șterse de pe bursă într-o zi, apoi o revenire parțială vineri — Nasdaq −5,5%, Nvidia −9%</h2>
 
@@ -900,7 +936,7 @@
           </div>
         </article>
 
-        <!-- 2 · 8 nov · 09:00 -->
+        <!-- 3 · 8 nov · 09:00 -->
         <article id="stire-108" data-cats="tech" data-sev="amber" data-subiect="accelerarea AI la Anthropic">
           <div class="a-meta">
             <span class="a-time">8 nov · 09:00</span>
@@ -908,7 +944,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-29" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">accelerarea AI la Anthropic</span>
-            <span class="a-num">#2 / 3</span>
+            <span class="a-num">#3 / 4</span>
           </div>
           <h2>METR: modelele Anthropic se îmbunătățesc de două ori mai repede decât acum un an — iar AI-ul însuși ar face ~80% din accelerare</h2>
 
@@ -948,7 +984,7 @@
           </div>
         </article>
 
-        <!-- 1 · 8 nov · 08:00 -->
+        <!-- 4 · 8 nov · 08:00 -->
         <article id="stire-106" data-cats="securitate" data-sev="red" data-subiect="trei cadavre la locuința atacatorului">
           <div class="a-meta">
             <span class="a-time">8 nov · 08:00</span>
@@ -957,7 +993,7 @@
             <span class="spot-tag">Știrea zilei</span>
             <a class="cont-pill" href="#stire-105" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">trei cadavre la locuința atacatorului</span>
-            <span class="a-num">#3 / 3</span>
+            <span class="a-num">#4 / 4</span>
           </div>
           <h2>Atacul din Cracovia: alte trei cadavre găsite la locuința atacatorului — victimele ar fi membri ai familiei sale; printre cei șase uciși în piață, un cetățean britanic</h2>
 
