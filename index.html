@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="color-scheme" content="light dark" />
-    <meta name="tirile-versiune" content="2026-11-08T18:00:00+01:00|11|red" />
+    <meta name="tirile-versiune" content="2026-11-08T22:00:00+01:00|12|red" />
     <link rel="icon" href="data:," />
     <title>Știrile zilei</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -699,9 +699,9 @@
     <div class="topbar">
       <div class="topbar-inner">
         <span class="dot" aria-hidden="true"></span>
-        <span><strong>Duminică, 8 noiembrie 2026</strong> · actualizat la <strong>18:00</strong></span>
+        <span><strong>Duminică, 8 noiembrie 2026</strong> · actualizat la <strong>22:00</strong></span>
         <span aria-hidden="true">·</span>
-        <span>11 știri azi</span>
+        <span>12 știri azi</span>
         <span class="spacer"></span>
         <button class="refresh-btn" type="button" id="refreshBtn" aria-label="Reîmprospătează pagina">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg>
@@ -771,30 +771,30 @@
       <section class="dashboard" aria-label="Panou de ansamblu">
         <div class="dash-head">
           <span class="dash-title">Dashboard · Azi</span>
-          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 18:00</span>
+          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 22:00</span>
           <span class="dash-meta">Fereastră monitorizare <strong>L–V 06:00–22:00 · S–D 07:30–22:00</strong> · pas ~3 ore</span>
         </div>
 
         <div class="kpi-grid five" role="group" aria-label="Filtrează după categorie — apasă pe un tile">
           <button class="kpi" type="button" data-filter="toate" aria-pressed="true">
             <span class="kpi-top"><span class="kpi-label">Toate știrile</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">11</span>
-            <span class="kpi-sub">știri verificate azi, în 8 rulări</span>
+            <span class="kpi-value">12</span>
+            <span class="kpi-sub">știri verificate azi, în 9 rulări</span>
             <span class="kpi-bar" aria-hidden="true"><i style="width:100%"></i></span>
             <span class="kpi-hint">Apasă pentru toate</span>
           </button>
           <button class="kpi" type="button" data-filter="securitate" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">Securitate &amp; NATO</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">6</span>
-            <span class="kpi-sub">țintă aeriană Chilia Veche · alertă aeriană Insula Șerpilor · negocieri Ucraina Abu Dhabi · exercițiu Coaliția Voinței în Polonia · familia atacatorului ucisă · trei cadavre la locuința atacatorului</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:55%"></i></span>
+            <span class="kpi-value">7</span>
+            <span class="kpi-sub">avertismentul șefului armatei britanice · țintă aeriană Chilia Veche · alertă aeriană Insula Șerpilor · negocieri Ucraina Abu Dhabi · exercițiu Coaliția Voinței în Polonia · familia atacatorului ucisă · trei cadavre la locuința atacatorului</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:58%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="romania" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">România</span><span class="kpi-check" aria-hidden="true">✓</span></span>
             <span class="kpi-value">3</span>
             <span class="kpi-sub">țintă aeriană Chilia Veche · alertă aeriană Insula Șerpilor · exercițiu Coaliția Voinței în Polonia</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:27%"></i></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:25%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="belgia" aria-pressed="false">
@@ -808,7 +808,7 @@
             <span class="kpi-top"><span class="kpi-label">Tech &amp; AI</span><span class="kpi-check" aria-hidden="true">✓</span></span>
             <span class="kpi-value">5</span>
             <span class="kpi-sub">OpenAI strânge 11 mld $ · memo spionaj Nvidia Megaspeed · breșă Chainalysis · prăbușirea acțiunilor AI · accelerarea AI la Anthropic</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:45%"></i></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:42%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
         </div>
@@ -822,7 +822,7 @@
       </section>
 
       <div class="filter-status" aria-live="polite">
-        <span class="filter-label">Se afișează: <strong>Toate categoriile — 11 din 11 știri</strong></span>
+        <span class="filter-label">Se afișează: <strong>Toate categoriile — 12 din 12 știri</strong></span>
         <button class="filter-reset" type="button" hidden>Resetează filtrul</button>
       </div>
 
@@ -852,6 +852,56 @@
       <p class="empty">Nicio știre în această categorie azi.</p>
 
       <main>
+        <!-- 1 · 8 nov · 22:00 -->
+        <article id="stire-117" data-cats="securitate" data-sev="amber" data-subiect="avertismentul șefului armatei britanice">
+          <div class="a-meta">
+            <span class="a-time">8 nov · 22:00</span>
+            <span class="a-cat">Securitate &amp; NATO</span>
+            <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
+            <a class="cont-pill" href="#stire-82" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
+            <span class="subj-pill">avertismentul șefului armatei britanice</span>
+            <span class="a-num">#1 / 12</span>
+          </div>
+          <h2>Șeful armatei britanice avertizează: „cea mai periculoasă perioadă din viața mea de adult” — apetitul Rusiei pentru risc crește, iar Londra rămâne în urma aliaților europeni</h2>
+
+          <div class="followup">
+            <span class="tag">Urmare la</span>
+            <p><a href="#stire-82">„Amenințări cu bombă la zborurile europene, ziua a treia: cel puțin 35 de zboruri afectate; curse TAROM și Wizz Air spre București, amenințări trimise și redacțiilor de știri" — vineri, 6 noiembrie 2026, ora 15:00.</a></p>
+          </div>
+
+          <div class="sec">
+            <p class="sec-label">Ce s-a întâmplat</p>
+            <p>Mareșalul-șef al aviației Sir Richard Knighton, șeful Statului Major al Apărării din Marea Britanie, a declarat într-un interviu pentru Financial Times, publicat duminică, 8 noiembrie, că trăim „cea mai periculoasă perioadă din viața mea de adult” și că amenințarea — „în principal din partea Rusiei, dar mai larg, la nivel global” — este în creștere. Knighton spune că termenul „activitate hibridă” nu mai cuprinde amploarea acțiunilor rusești: „Vorbim de asasinate țintite, vorbim de sabotaj, vorbim de atacuri cibernetice” — fapte reale, cu dovezi, în Europa și într-o oarecare măsură în Regatul Unit — și că Regatul Unit trebuie „să ajungă din urmă aliații europeni”, mai conștienți de apetitul tot mai mare al Kremlinului pentru risc. Totodată, potrivit FT (relatat de UNITED24 Media, 8 nov), Londra și aliații nord-europeni pregătesc întărirea operațiunilor comune împotriva submarinelor rusești în Atlanticul de Nord, Arctica și Marea Baltică, prin Forța Expediționară Comună (JEF) condusă de Regatul Unit. Duminică, Knighton a vorbit și la BBC despre apelul guvernului ca gospodăriile să-și facă stocuri de apă și alimente pentru eventuale perturbări provocate de state ostile — el însuși a spus că și-a făcut provizii pentru familie.</p>
+          </div>
+
+          <div class="sec">
+            <p class="sec-label">De ce contează</p>
+            <p>Șeful armatei unui aliat-cheie spune oficial că „activitatea hibridă” a devenit o descriere depășită — asasinate, sabotaj și atacuri cibernetice sunt acum fapte curente, cu dovezi, în Europa. Pentru munca lui de IT incident Manager în mediul NATO, e continuarea directă a arcului urmărit în ultimele săptămâni: alerta Bundeswehr din 21 octombrie, simpozionul NATO de la București despre amenințări hibride și valul de amenințări cu bombă la zboruri (5–6 noiembrie), a cărui anchetă e citată chiar în interviu. Săptămâna care începe e încărcată pe același arc: exercițiul Koalicja începe luni în Polonia, iar negocierile pentru Ucraina de la Abu Dhabi au loc marți și miercuri. Pentru familie: niciun impact direct azi.</p>
+          </div>
+
+          <div class="verify">
+            <p class="sec-label">Verificare <span class="status">Sursă primară</span></p>
+            <p>Verdict: sursa_primara + confirmat. Knighton însuși, în interviul FT (8 nov 2026) — sursă primară pentru declarații. Relatări concordante ale aceluiași interviu: The British Eye (14:00), EuropeSays (12:58), BritBrief (12:29), LADbible (16:22). BBC confirmă separat declarațiile lui de duminică despre stocurile gospodăriilor. Inițiativa JEF anti-submarin: UNITED24 Media / Newsy Today (20:36), din FT. Notă de integritate: atribuirea amenințărilor cu bombă la adresa avioanelor către Rusia NU e stabilită — FT precizează că ancheta transfrontalieră e în curs și „mai e mult până la atribuire”; cardul nu atribuie amenințările Rusiei.</p>
+            <ul class="sources">
+              <li><a href="https://thebritisheye.com/2026/11/08/uk-military-russian-threat/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>The British Eye — „UK military chief warns of growing Russian threat“ (8 nov 2026, 14:00)<span class="host">thebritisheye.com</span></a></li>
+              <li><a href="https://www.europesays.com/britain/161862/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>EuropeSays — „'Assassinations, sabotage and cyber-attacks': Military chief warns Britain of Putin's escalating shadow war“ (8 nov 2026, 12:58)<span class="host">europesays.com</span></a></li>
+              <li><a href="https://britbrief.co.uk/politics/defence/uk-military-chief-russia-threat-most-dangerous-period.html" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>BritBrief — „UK military chief warns Russia threat is at most dangerous level“ (8 nov 2026, 12:29)<span class="host">britbrief.co.uk</span></a></li>
+              <li><a href="https://www.ladbible.com/news/uk-news/head-british-military-warning-most-dangerous-759901-20261108" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>LADbible — „Head of British military issues stark warning as he says we are in 'most dangerous period he's known'“ (8 nov 2026, 16:22)<span class="host">ladbible.com</span></a></li>
+              <li><a href="https://www.newsy-today.com/uk-and-northern-european-allies-to-strengthen-operations-against-russian-submarines/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Newsy Today — „UK and Northern European Allies to Strengthen Operations Against Russian Submarines“ (8 nov 2026, 20:36; relatează din FT inițiativa anti-submarin prin JEF)<span class="host">newsy-today.com</span></a></li>
+            </ul>
+          </div>
+
+          <div class="opposing">
+            <p class="sec-label">Tabăra adversă</p>
+            <p>Moscova neagă sistematic că ar fi în spatele atacurilor hibride din Europa și respinge acuzațiile de sabotaj și asasinate — poziția constantă a Rusiei, reiterată și după arestarea pentru spionaj din Germania (22 octombrie), când ambasada rusă de la Berlin nu a răspuns solicitării de comentarii.</p>
+          </div>
+
+          <div class="impact">
+            <span class="badge">Impact direct</span>
+            <p>Impact direct: minim — niciun efect imediat asupra rutinei zilnice sau a familiei. Relevanță profesională ridicată: avertismentul celui mai înalt militar britanic ridică miza arcului hibrid urmărit în watch și precede o săptămână încărcată (exercițiul Koalicja de luni, negocierile de la Abu Dhabi marți–miercuri). De urmărit: reacții oficiale NATO și detaliile acordului JEF anti-submarin.</p>
+          </div>
+        </article>
+
         <!-- 1 · 8 nov · 18:00 -->
         <article id="stire-116" data-cats="securitate romania" data-sev="amber" data-subiect="țintă aeriană Chilia Veche">
           <div class="a-meta">
@@ -860,7 +910,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-115" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">țintă aeriană Chilia Veche</span>
-            <span class="a-num">#1 / 11</span>
+            <span class="a-num">#2 / 12</span>
           </div>
           <h2>A treia țintă aeriană a zilei la granița României: F-16 românești ridicate de la Fetești după o detectare lângă Chilia Veche; al doilea RO-Alert în Tulcea, la 16:51</h2>
           <div class="followup">
@@ -898,7 +948,7 @@
             <span class="a-cat">Securitate &amp; NATO</span>
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="subj-pill">alertă aeriană Insula Șerpilor</span>
-            <span class="a-num">#2 / 11</span>
+            <span class="a-num">#3 / 12</span>
           </div>
           <h2>Alertă aeriană la Insula Șerpilor: două ținte detectate de radarul MApN; F-18 și elicoptere spaniole ridicate de la Mihail Kogălniceanu, RO-Alert în estul Tulcei</h2>
 
@@ -936,7 +986,7 @@
             <span class="a-cat">Securitate &amp; NATO</span>
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="subj-pill">negocieri Ucraina Abu Dhabi</span>
-            <span class="a-num">#3 / 11</span>
+            <span class="a-num">#4 / 12</span>
           </div>
           <h2>Europa va fi la masa negocierilor pentru Ucraina de la Abu Dhabi (10–11 nov), anunță Parisul — Moscova spune că formatul trilateral nu prevede europeni</h2>
 
@@ -978,7 +1028,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-107" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">OpenAI strânge 11 mld $</span>
-            <span class="a-num">#4 / 11</span>
+            <span class="a-num">#5 / 12</span>
           </div>
           <h2>OpenAI a strâns 11 mld $ la o evaluare de 1,25 trilioane $ — mult sub ținta inițială de 30 mld $; și Anthropic își vede evaluarea de IPO tăiată</h2>
 
@@ -1019,7 +1069,7 @@
             <span class="a-cat">Securitate &amp; NATO</span>
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="subj-pill">exercițiu Coaliția Voinței în Polonia</span>
-            <span class="a-num">#5 / 11</span>
+            <span class="a-num">#6 / 12</span>
           </div>
           <h2>Exercițiul Koalicja începe luni în Polonia: 2.800 de militari din 11 țări, între care Belgia, repetă desfășurarea forței multinaționale pentru Ucraina de după război</h2>
 
@@ -1065,7 +1115,7 @@
             <span class="spot-tag">Știrea zilei</span>
             <a class="cont-pill" href="#stire-106" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">familia atacatorului ucisă</span>
-            <span class="a-num">#6 / 11</span>
+            <span class="a-num">#7 / 12</span>
           </div>
           <h2>Atacul din Cracovia: poliția confirmă că cele trei cadavre de la locuința atacatorului sunt părinții și sora lui — nouă morți în total</h2>
 
@@ -1109,7 +1159,7 @@
             <span class="a-cat">Tech &amp; AI</span>
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="subj-pill">memo spionaj Nvidia Megaspeed</span>
-            <span class="a-num">#7 / 11</span>
+            <span class="a-num">#8 / 12</span>
           </div>
           <h2>Memo al serviciilor americane: o directoare Megaspeed ar fi fost recrutată de spionajul chinez ca să-l supravegheze pe șeful Nvidia, Jensen Huang</h2>
 
@@ -1151,7 +1201,7 @@
             <span class="a-cat">Tech &amp; AI</span>
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="subj-pill">breșă Chainalysis</span>
-            <span class="a-num">#8 / 11</span>
+            <span class="a-num">#9 / 12</span>
           </div>
           <h2>Breșă la Chainalysis: parolele și tokenurile live ale tuturor utilizatorilor, expuse după un atac cu agenți AI</h2>
 
@@ -1188,7 +1238,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-85" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">prăbușirea acțiunilor AI</span>
-            <span class="a-num">#9 / 11</span>
+            <span class="a-num">#10 / 12</span>
           </div>
           <h2>Acțiunile AI s-au prăbușit joi: circa 2,5 trilioane $ șterse de pe bursă într-o zi, apoi o revenire parțială vineri — Nasdaq −5,5%, Nvidia −9%</h2>
 
@@ -1236,7 +1286,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-29" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">accelerarea AI la Anthropic</span>
-            <span class="a-num">#10 / 11</span>
+            <span class="a-num">#11 / 12</span>
           </div>
           <h2>METR: modelele Anthropic se îmbunătățesc de două ori mai repede decât acum un an — iar AI-ul însuși ar face ~80% din accelerare</h2>
 
@@ -1284,7 +1334,7 @@
             <span class="sev-pill is-red"><i aria-hidden="true"></i>Roșu · grav</span>
             <a class="cont-pill" href="#stire-105" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">trei cadavre la locuința atacatorului</span>
-            <span class="a-num">#11 / 11</span>
+            <span class="a-num">#12 / 12</span>
           </div>
           <h2>Atacul din Cracovia: alte trei cadavre găsite la locuința atacatorului — victimele ar fi membri ai familiei sale; printre cei șase uciși în piață, un cetățean britanic</h2>
 
@@ -5380,8 +5430,8 @@
 
       <footer>
         <div class="rule" aria-hidden="true"></div>
-        <p>Sfârșitul ediției de azi · Ultima actualizare: duminică, 8 noiembrie 2026, 18:00<br />Monitorizarea rulează la circa 3 ore, în fereastra L–V 06:00–22:00 · S–D 07:30–22:00 — dă refresh pentru noutăți.</p>
-        <a class="to-top" href="#stire-116">↑ Înapoi la cea mai nouă știre</a>
+        <p>Sfârșitul ediției de azi · Ultima actualizare: duminică, 8 noiembrie 2026, 22:00<br />Monitorizarea rulează la circa 3 ore, în fereastra L–V 06:00–22:00 · S–D 07:30–22:00 — dă refresh pentru noutăți.</p>
+        <a class="to-top" href="#stire-117">↑ Înapoi la cea mai nouă știre</a>
       </footer>
     </div>
 
