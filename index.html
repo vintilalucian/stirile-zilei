@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="color-scheme" content="light dark" />
-    <meta name="tirile-versiune" content="2026-11-08T14:00:00+01:00|7|red" />
+    <meta name="tirile-versiune" content="2026-11-08T15:00:00+01:00|9|red" />
     <link rel="icon" href="data:," />
     <title>Știrile zilei</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -699,9 +699,9 @@
     <div class="topbar">
       <div class="topbar-inner">
         <span class="dot" aria-hidden="true"></span>
-        <span><strong>Duminică, 8 noiembrie 2026</strong> · actualizat la <strong>14:00</strong></span>
+        <span><strong>Duminică, 8 noiembrie 2026</strong> · actualizat la <strong>15:00</strong></span>
         <span aria-hidden="true">·</span>
-        <span>7 știri azi</span>
+        <span>9 știri azi</span>
         <span class="spacer"></span>
         <button class="refresh-btn" type="button" id="refreshBtn" aria-label="Reîmprospătează pagina">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg>
@@ -771,30 +771,30 @@
       <section class="dashboard" aria-label="Panou de ansamblu">
         <div class="dash-head">
           <span class="dash-title">Dashboard · Azi</span>
-          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 14:00</span>
+          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 15:00</span>
           <span class="dash-meta">Fereastră monitorizare <strong>L–V 06:00–22:00 · S–D 07:30–22:00</strong> · pas ~3 ore</span>
         </div>
 
         <div class="kpi-grid five" role="group" aria-label="Filtrează după categorie — apasă pe un tile">
           <button class="kpi" type="button" data-filter="toate" aria-pressed="true">
             <span class="kpi-top"><span class="kpi-label">Toate știrile</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">7</span>
-            <span class="kpi-sub">știri verificate azi, în 5 rulări</span>
+            <span class="kpi-value">9</span>
+            <span class="kpi-sub">știri verificate azi, în 6 rulări</span>
             <span class="kpi-bar" aria-hidden="true"><i style="width:100%"></i></span>
             <span class="kpi-hint">Apasă pentru toate</span>
           </button>
           <button class="kpi" type="button" data-filter="securitate" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">Securitate &amp; NATO</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">3</span>
-            <span class="kpi-sub">exercițiu Coaliția Voinței în Polonia · familia atacatorului ucisă · trei cadavre la locuința atacatorului</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:43%"></i></span>
+            <span class="kpi-value">4</span>
+            <span class="kpi-sub">negocieri Ucraina Abu Dhabi · exercițiu Coaliția Voinței în Polonia · familia atacatorului ucisă · trei cadavre la locuința atacatorului</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:44%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="romania" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">România</span><span class="kpi-check" aria-hidden="true">✓</span></span>
             <span class="kpi-value">1</span>
             <span class="kpi-sub">exercițiu Coaliția Voinței în Polonia</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:14%"></i></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:11%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="belgia" aria-pressed="false">
@@ -806,9 +806,9 @@
           </button>
           <button class="kpi" type="button" data-filter="tech" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">Tech &amp; AI</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">4</span>
-            <span class="kpi-sub">memo spionaj Nvidia Megaspeed · breșă Chainalysis · prăbușirea acțiunilor AI · accelerarea AI la Anthropic</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:57%"></i></span>
+            <span class="kpi-value">5</span>
+            <span class="kpi-sub">OpenAI strânge 11 mld $ · memo spionaj Nvidia Megaspeed · breșă Chainalysis · prăbușirea acțiunilor AI · accelerarea AI la Anthropic</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:56%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
         </div>
@@ -822,7 +822,7 @@
       </section>
 
       <div class="filter-status" aria-live="polite">
-        <span class="filter-label">Se afișează: <strong>Toate categoriile — 7 din 7 știri</strong></span>
+        <span class="filter-label">Se afișează: <strong>Toate categoriile — 9 din 9 știri</strong></span>
         <button class="filter-reset" type="button" hidden>Resetează filtrul</button>
       </div>
 
@@ -852,6 +852,89 @@
       <p class="empty">Nicio știre în această categorie azi.</p>
 
       <main>
+        <!-- 1 · 8 nov · 15:00 -->
+        <article id="stire-113" data-cats="securitate" data-sev="amber" data-subiect="negocieri Ucraina Abu Dhabi">
+          <div class="a-meta">
+            <span class="a-time">8 nov · 15:00</span>
+            <span class="a-cat">Securitate &amp; NATO</span>
+            <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
+            <span class="subj-pill">negocieri Ucraina Abu Dhabi</span>
+            <span class="a-num">#1 / 9</span>
+          </div>
+          <h2>Europa va fi la masa negocierilor pentru Ucraina de la Abu Dhabi (10–11 nov), anunță Parisul — Moscova spune că formatul trilateral nu prevede europeni</h2>
+
+          <div class="sec">
+            <p class="sec-label">Ce s-a întâmplat</p>
+            <p>Ministrul francez de externe Jean-Noël Barrot a declarat duminică, la postul RTL, că europenii vor participa la negocierile pentru Ucraina de la Abu Dhabi, programate marți și miercuri, 10–11 noiembrie: „Europenii vor fi bine reprezentați; Franța va fi la Abu Dhabi ca să ia parte la aceste discuții". Trimisul american Steve Witkoff a anunțat că Washingtonul aduce la aceeași masă delegațiile Ucrainei și Rusiei, pentru a discuta încheierea războiului, acorduri de securitate postbelice și dezescaladarea. Delegația rusă va fi condusă de consilierul prezidențial Vladimir Medinski.</p>
+          </div>
+
+          <div class="sec">
+            <p class="sec-label">De ce contează</p>
+            <p>Formatul negocierilor decide cine stabilește arhitectura de securitate a Europei — sancțiuni, garanții de securitate, reconstrucție — iar Europa a cerut insistent un loc la masă după ce Moscova a insistat ca discuțiile să rămână trilaterale (SUA–Ucraina–Rusia). Pentru munca lui de IT incident Manager în mediul NATO, e exact dosarul Ucraina/securitate europeană pe care îl urmărește; în paralel, miniștrii de externe din G7 se întâlnesc la Paris pe 9–10 noiembrie, iar oficiali americani se întâlnesc separat cu europeni și cu NATO la Bruxelles pe tema garanțiilor de securitate.</p>
+          </div>
+
+          <div class="verify">
+            <p class="sec-label">Verificare <span class="status">Sursă primară</span></p>
+            <p>Verdict: sursa_primara. Anunțul îi aparține ministrului francez de externe Jean-Noël Barrot, făcut duminică la RTL — sursă primară; relatat de Reuters (8 nov 2026). Agenda curatoriată: The Brussels Times (8 nov, 14:28). Notă de integritate: The Hindu BusinessLine preia aceeași știre Reuters — o singură confirmare de agenție, nu două.</p>
+            <ul class="sources">
+              <li><a href="https://www.reuters.com/world/europe/europeans-will-join-ukraine-talks-abu-dhabi-french-foreign-minister-says-2026-11-08/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Reuters — „Europeans will join Ukraine talks in Abu Dhabi, French foreign minister says" (8 nov 2026)<span class="host">reuters.com</span></a></li>
+              <li><a href="https://www.brusselstimes.com/news/2398457/europe-to-be-represented-at-ukraine-war-peace-talks-in-abu-dhabi" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>The Brussels Times — „Europe to be represented at Ukraine war peace talks in Abu Dhabi" (8 nov 2026, 14:28)<span class="host">brusselstimes.com</span></a></li>
+            </ul>
+          </div>
+
+          <div class="opposing">
+            <p class="sec-label">Tabăra adversă</p>
+            <p>Kremlinul — purtătorul de cuvânt Dmitri Peskov a spus că participarea europeană e imposibilă, pentru că formatul convenit e trilateral, Rusia și Ucraina cu SUA mediator (<a href="https://www.europesays.com/ukraine/65501/" target="_blank" rel="noopener">Europe Says</a>). Germania se așteaptă ca reprezentanți europeni să fie prezenți la Abu Dhabi, dar fără loc la masa negocierilor.</p>
+          </div>
+
+          <div class="impact">
+            <span class="badge">Impact direct</span>
+            <p>Impact direct: minim — relevanță de context. Nicio acțiune cerută; de urmărit marți–miercuri ce iese din rundele de la Abu Dhabi și din reuniunea G7 de la Paris (9–10 nov).</p>
+          </div>
+        </article>
+
+        <!-- 2 · 8 nov · 15:00 -->
+        <article id="stire-114" data-cats="tech" data-sev="amber" data-subiect="OpenAI strânge 11 mld $">
+          <div class="a-meta">
+            <span class="a-time">8 nov · 15:00</span>
+            <span class="a-cat">Tech &amp; AI</span>
+            <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
+            <a class="cont-pill" href="#stire-107" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
+            <span class="subj-pill">OpenAI strânge 11 mld $</span>
+            <span class="a-num">#2 / 9</span>
+          </div>
+          <h2>OpenAI a strâns 11 mld $ la o evaluare de 1,25 trilioane $ — mult sub ținta inițială de 30 mld $; și Anthropic își vede evaluarea de IPO tăiată</h2>
+
+          <div class="followup">
+            <span class="tag">Urmare la</span>
+            <p><a href="#stire-107">„Acțiunile AI s-au prăbușit joi: circa 2,5 trilioane $ șterse de pe bursă într-o zi, apoi o revenire parțială vineri — Nasdaq −5,5%, Nvidia −9%"</a> — duminică, 8 noiembrie 2026, ora 09:00.</p>
+          </div>
+
+          <div class="sec">
+            <p class="sec-label">Ce s-a întâmplat</p>
+            <p>OpenAI a închis vineri, 6 noiembrie, prima tranșă de circa 11 mld $ dintr-o rundă nouă de finanțare care evaluează compania la 1,25 trilioane $, potrivit Bloomberg, citând surse apropiate dosarului. În septembrie compania căuta 30 mld $ la 1,4 trilioane $; runda ar putea ajunge la circa 20 mld $ în săptămânile următoare. Reuters a confirmat separat aceleași cifre din propria sursă, iar directoarea financiară Sarah Friar a confirmat la TV cifra de 1,25 trilioane $. În paralel, Bloomberg a relatat că evaluarea potențială a Anthropic la IPO a coborât de la circa 2 trilioane $ (estimat la începutul lui octombrie) la 1,2–1,3 trilioane $.</p>
+          </div>
+
+          <div class="sec">
+            <p class="sec-label">De ce contează</p>
+            <p>E continuarea directă a prăbușirii de joi de pe bursă — banii încă vin spre laboratoarele de frontieră, dar investitorii negociază acum prețul și ritmul, nu mai plătesc orice evaluare. Pentru el: urmărește îndeaproape economia AI (folosește zilnic modelele acestor companii și își construiește automatizări pe API-urile lor); o piață a finanțării AI mai rece înseamnă prețuri și strategii de produs în schimbare la furnizorii pe care se bazează.</p>
+          </div>
+
+          <div class="verify">
+            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
+            <p>Verdict: confirmat. Bloomberg (relatat de TechCrunch, 6 nov) — OpenAI a strâns circa 11 mld $ la o evaluare de 1,25 trilioane $; Reuters a confirmat separat aceleași cifre, din sursă proprie (relatat de Dealroom); directoarea financiară Sarah Friar a confirmat la CNBC cifra de 1,25 trilioane $.</p>
+            <ul class="sources">
+              <li><a href="https://techcrunch.com/2026/11/06/openai-reportedly-raises-an-additional-11-billion-at-a-1-25-trillion-valuation/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>TechCrunch — „OpenAI reportedly raises an additional $11 billion at a $1.25 trillion valuation" (6 nov 2026)<span class="host">techcrunch.com</span></a></li>
+              <li><a href="https://dealroom.co/news/168544-openai-cuts-its-funding-round-target-by-10b-to-about-20b-as-the-ai-sell-/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Dealroom — „OpenAI cuts its funding round target by $10B to about $20B as the AI sell-off…" (confirmare Reuters, din sursă proprie)<span class="host">dealroom.co</span></a></li>
+            </ul>
+          </div>
+
+          <div class="impact">
+            <span class="badge">Impact direct</span>
+            <p>Impact direct: minim — relevanță de context. Fără acțiune; de urmărit dacă runda se închide la 20 mld $ și ce anunță Anthropic la IPO.</p>
+          </div>
+        </article>
+
         <!-- 1 · 8 nov · 14:00 -->
         <article id="stire-112" data-cats="securitate romania" data-sev="amber" data-subiect="exercițiu Coaliția Voinței în Polonia">
           <div class="a-meta">
@@ -859,7 +942,7 @@
             <span class="a-cat">Securitate &amp; NATO</span>
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="subj-pill">exercițiu Coaliția Voinței în Polonia</span>
-            <span class="a-num">#1 / 7</span>
+            <span class="a-num">#3 / 9</span>
           </div>
           <h2>Exercițiul Koalicja începe luni în Polonia: 2.800 de militari din 11 țări, între care Belgia, repetă desfășurarea forței multinaționale pentru Ucraina de după război</h2>
 
@@ -905,7 +988,7 @@
             <span class="spot-tag">Știrea zilei</span>
             <a class="cont-pill" href="#stire-106" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">familia atacatorului ucisă</span>
-            <span class="a-num">#2 / 7</span>
+            <span class="a-num">#4 / 9</span>
           </div>
           <h2>Atacul din Cracovia: poliția confirmă că cele trei cadavre de la locuința atacatorului sunt părinții și sora lui — nouă morți în total</h2>
 
@@ -949,7 +1032,7 @@
             <span class="a-cat">Tech &amp; AI</span>
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="subj-pill">memo spionaj Nvidia Megaspeed</span>
-            <span class="a-num">#3 / 7</span>
+            <span class="a-num">#5 / 9</span>
           </div>
           <h2>Memo al serviciilor americane: o directoare Megaspeed ar fi fost recrutată de spionajul chinez ca să-l supravegheze pe șeful Nvidia, Jensen Huang</h2>
 
@@ -991,7 +1074,7 @@
             <span class="a-cat">Tech &amp; AI</span>
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="subj-pill">breșă Chainalysis</span>
-            <span class="a-num">#4 / 7</span>
+            <span class="a-num">#6 / 9</span>
           </div>
           <h2>Breșă la Chainalysis: parolele și tokenurile live ale tuturor utilizatorilor, expuse după un atac cu agenți AI</h2>
 
@@ -1028,7 +1111,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-85" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">prăbușirea acțiunilor AI</span>
-            <span class="a-num">#5 / 7</span>
+            <span class="a-num">#7 / 9</span>
           </div>
           <h2>Acțiunile AI s-au prăbușit joi: circa 2,5 trilioane $ șterse de pe bursă într-o zi, apoi o revenire parțială vineri — Nasdaq −5,5%, Nvidia −9%</h2>
 
@@ -1076,7 +1159,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-29" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">accelerarea AI la Anthropic</span>
-            <span class="a-num">#6 / 7</span>
+            <span class="a-num">#8 / 9</span>
           </div>
           <h2>METR: modelele Anthropic se îmbunătățesc de două ori mai repede decât acum un an — iar AI-ul însuși ar face ~80% din accelerare</h2>
 
@@ -1124,7 +1207,7 @@
             <span class="sev-pill is-red"><i aria-hidden="true"></i>Roșu · grav</span>
             <a class="cont-pill" href="#stire-105" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">trei cadavre la locuința atacatorului</span>
-            <span class="a-num">#7 / 7</span>
+            <span class="a-num">#9 / 9</span>
           </div>
           <h2>Atacul din Cracovia: alte trei cadavre găsite la locuința atacatorului — victimele ar fi membri ai familiei sale; printre cei șase uciși în piață, un cetățean britanic</h2>
 
