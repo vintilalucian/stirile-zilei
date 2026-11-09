@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="color-scheme" content="light dark" />
-    <meta name="tirile-versiune" content="2026-11-08T22:00:00+01:00|12|red" />
+    <meta name="tirile-versiune" content="2026-11-09T07:00:00+01:00|1|green" />
     <link rel="icon" href="data:," />
     <title>Știrile zilei</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -699,9 +699,9 @@
     <div class="topbar">
       <div class="topbar-inner">
         <span class="dot" aria-hidden="true"></span>
-        <span><strong>Duminică, 8 noiembrie 2026</strong> · actualizat la <strong>22:00</strong></span>
+        <span><strong>Luni, 9 noiembrie 2026</strong> · actualizat la <strong>07:00</strong></span>
         <span aria-hidden="true">·</span>
-        <span>12 știri azi</span>
+        <span>1 știre azi</span>
         <span class="spacer"></span>
         <button class="refresh-btn" type="button" id="refreshBtn" aria-label="Reîmprospătează pagina">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg>
@@ -716,12 +716,12 @@
         <h1>Știrile zilei</h1>
         <div class="date-line">
           <span class="day">Ediția de azi</span>
-          <span>Duminică, 8 noiembrie 2026 · Europe/Brussels</span>
+          <span>Luni, 9 noiembrie 2026 · Europe/Brussels</span>
         </div>
         <p class="lede"><strong>Apasă pe un tile</strong> ca să filtrezi pagina — articole complete jos, cele mai noi primele.</p>
       </header>
 
-      <section class="day" id="zi-2026-11-08">
+      <section class="day" id="zi-2026-11-09">
       <!-- Fereastra „Ultimele știri" — sus, imediat deasupra chenarului
            „Știrea zilei", între masthead și chenar. Arată DOAR titlurile din
            cea mai recentă rulare (1–2), fiecare link la cardul ei (#stire-N).
@@ -736,6 +736,169 @@
         </div>
         <ul class="latest-list"></ul>
       </section>
+
+      <!-- Chenar permanent: știrea cea mai importantă a zilei — sub fereastra
+           „Ultimele știri", ÎNAINTEA dashboardului, vizibilă din prima, fără scroll.
+           Nivelul de azi: VERDE (sev-green) — normal: AUR a invitat reprezentanți
+           ai AfD la protestul din 14 noiembrie pentru eliberarea lui Călin
+           Georgescu — singura știre a zilei, cu severitate verde.
+           Chenarul rămâne în afara logicii de filtrare: vizibil indiferent de filtrul de categorie. -->
+      <section class="spot sev-green" aria-label="Știrea cea mai importantă a zilei">
+        <div class="spot-head">
+          <span class="spot-kicker">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13 2 4.5 13.5H11L9.5 22 19 10h-6.5L13 2z"/></svg>
+            Știrea zilei · Atenție rapidă
+          </span>
+          <span class="spot-time">9 nov · 07:00</span>
+          <span class="spot-pill">Nivel verde — normal</span>
+        </div>
+        <h2 class="spot-title">Reprezentanți ai AfD, invitați la protestul AUR din 14 noiembrie — deși lidera AfD, Alice Weidel, i-a acuzat pe românii din Germania că „jefuiesc sistemul social”</h2>
+        <p class="spot-why"><strong>De ce e în față:</strong> E prima confirmare că un partid german de extremă dreapta — a cărui lideră a atacat public românii din diaspora — e invitat oficial la o manifestație în București; episodul arată tensiunea dintre discursul „patriotic” al AUR și asocierea cu o formațiune care îi atacă tocmai pe românii din diaspora.</p>
+        <p class="spot-lead">AUR a invitat reprezentanți ai formațiunii germane de extremă dreapta AfD la protestul de sâmbătă, 14 noiembrie, organizat la București pentru eliberarea lui Călin Georgescu, aflat în arest preventiv. Deputatul AUR Mihail Neamțu a confirmat invitațiile pentru G4Media și susține că au fost trimise înaintea declarațiilor liderei AfD, Alice Weidel, din 28 octombrie.</p>
+        <p class="spot-more" hidden><span class="spot-more-text"></span> <button class="spot-more-btn" type="button">apasă aici</button></p>
+        <div class="spot-foot">
+          <a class="spot-link" href="#stire-118">Citește știrea completă ↓</a>
+          <div class="sev-scale" role="img" aria-label="Scară de gravitate: verde — normal, galben — de urmărit, roșu — grav. Nivelul de azi: verde.">
+            <span class="sev-item on"><i class="sev-dot g" aria-hidden="true"></i>Verde · normal</span>
+            <span class="sev-item"><i class="sev-dot y" aria-hidden="true"></i>Galben · de urmărit</span>
+            <span class="sev-item"><i class="sev-dot r" aria-hidden="true"></i>Roșu · grav</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Dashboard -->
+      <section class="dashboard" aria-label="Panou de ansamblu">
+        <div class="dash-head">
+          <span class="dash-title">Dashboard · Azi</span>
+          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 07:00</span>
+          <span class="dash-meta">Fereastră monitorizare <strong>L–V 06:00–22:00 · S–D 07:30–22:00</strong> · pas ~3 ore</span>
+        </div>
+
+        <div class="kpi-grid five" role="group" aria-label="Filtrează după categorie — apasă pe un tile">
+          <button class="kpi" type="button" data-filter="toate" aria-pressed="true">
+            <span class="kpi-top"><span class="kpi-label">Toate știrile</span><span class="kpi-check" aria-hidden="true">✓</span></span>
+            <span class="kpi-value">1</span>
+            <span class="kpi-sub">știri verificate azi, în 1 rulare</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:100%"></i></span>
+            <span class="kpi-hint">Apasă pentru toate</span>
+          </button>
+          <button class="kpi" type="button" data-filter="securitate" aria-pressed="false">
+            <span class="kpi-top"><span class="kpi-label">Securitate &amp; NATO</span><span class="kpi-check" aria-hidden="true">✓</span></span>
+            <span class="kpi-value">0</span>
+            <span class="kpi-sub"></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:0%"></i></span>
+            <span class="kpi-hint">Apasă pentru a filtra →</span>
+          </button>
+          <button class="kpi" type="button" data-filter="romania" aria-pressed="false">
+            <span class="kpi-top"><span class="kpi-label">România</span><span class="kpi-check" aria-hidden="true">✓</span></span>
+            <span class="kpi-value">1</span>
+            <span class="kpi-sub">AfD invitată la protestul AUR</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:100%"></i></span>
+            <span class="kpi-hint">Apasă pentru a filtra →</span>
+          </button>
+          <button class="kpi" type="button" data-filter="belgia" aria-pressed="false">
+            <span class="kpi-top"><span class="kpi-label">Belgia</span><span class="kpi-check" aria-hidden="true">✓</span></span>
+            <span class="kpi-value">0</span>
+            <span class="kpi-sub"></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:0%"></i></span>
+            <span class="kpi-hint">Apasă pentru a filtra →</span>
+          </button>
+          <button class="kpi" type="button" data-filter="tech" aria-pressed="false">
+            <span class="kpi-top"><span class="kpi-label">Tech &amp; AI</span><span class="kpi-check" aria-hidden="true">✓</span></span>
+            <span class="kpi-value">0</span>
+            <span class="kpi-sub"></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:0%"></i></span>
+            <span class="kpi-hint">Apasă pentru a filtra →</span>
+          </button>
+        </div>
+
+        <div class="dash-foot solo">
+          <div class="dash-panel">
+            <h3>Severitate — apasă un pătrat ca să vezi doar știrile de nivelul acela</h3>
+            <div class="sev-squares" role="group" aria-label="Filtrează după severitate — roșu, galben, verde"></div>
+          </div>
+        </div>
+      </section>
+
+      <div class="filter-status" aria-live="polite">
+        <span class="filter-label">Se afișează: <strong>Toate categoriile — 1 din 1 știri</strong></span>
+        <button class="filter-reset" type="button" hidden>Resetează filtrul</button>
+      </div>
+
+      <!-- Cuprinsul zilei — sub banda dashboard, înaintea cardurilor.
+           Generat de script din cardurile zilei curente: lista completă a
+           zilei, grupată pe ora publicării, cele mai noi primele; fiecare
+           titlu e link la cardul lui (#stire-N), iar antetul de oră al
+           fiecărui grup e buton de filtru pe rulare — aceeași logică pe care
+           o aveau barele „Ritmul zilei" (selecție unică; al doilea click pe
+           aceeași oră sau butonul de reset revine la toate; o selecție de oră
+           anulează filtrul de categorie și invers). Nu e pliabil: toate
+           grupurile de oră sunt extinse permanent, cu toate titlurile
+           vizibile — fără săgeți de pliere și fără buton de extindere.
+           Cuprinsul urmează filtrul activ, la fel ca și cardurile: la un
+           filtru de categorie, severitate sau oră arată doar rândurile
+           știrilor din selecția aceea, iar grupurile de oră rămase fără
+           nicio știre vizibilă se ascund; butonul „Toate" îl readuce la
+           toate titlurile zilei. Chenarul rămâne în afara filtrării. -->
+      <nav class="day-toc" aria-label="Cuprinsul zilei">
+        <div class="toc-head">
+          <h2>Cuprins</h2>
+          <span class="toc-count">cele mai noi primele · apasă pe o oră ca să filtrezi rularea, pe un titlu ca să sari la știre</span>
+        </div>
+        <div class="toc-groups"></div>
+      </nav>
+
+      <p class="empty">Nicio știre în această categorie azi.</p>
+
+      <main>
+        <!-- 1 · 9 nov · 07:00 -->
+        <article id="stire-118" data-cats="romania" data-sev="green" data-subiect="AfD invitată la protestul AUR">
+          <div class="a-meta">
+            <span class="a-time">9 nov · 07:00</span>
+            <span class="a-cat">România</span>
+            <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
+            <span class="spot-tag">Știrea zilei</span>
+            <span class="subj-pill">AfD invitată la protestul AUR</span>
+            <span class="a-num">#1 / 1</span>
+          </div>
+          <h2>Reprezentanți ai AfD, invitați la protestul AUR din 14 noiembrie — deși lidera AfD, Alice Weidel, i-a acuzat pe românii din Germania că „jefuiesc sistemul social”</h2>
+
+          <div class="sec">
+            <p class="sec-label">Ce s-a întâmplat</p>
+            <p>AUR a invitat reprezentanți ai formațiunii germane de extremă dreapta AfD la protestul de sâmbătă, 14 noiembrie, organizat la București pentru eliberarea lui Călin Georgescu, aflat în arest preventiv. Deputatul AUR Mihail Neamțu a confirmat invitațiile pentru G4Media și susține că au fost trimise înaintea declarațiilor liderei AfD, Alice Weidel, din 28 octombrie, în care aceasta i-a acuzat pe migranții români că „jefuiesc sistemul de asistență socială” din Germania. Neamțu nu a răspuns direct dacă invitația rămâne valabilă sau dacă AUR i-a cerut lui Weidel să-și retragă afirmațiile.</p>
+          </div>
+
+          <div class="sec">
+            <p class="sec-label">De ce contează</p>
+            <p>E prima confirmare că un partid german de extremă dreapta — a cărui lideră a atacat public românii din diaspora — e invitat oficial la o manifestație în București. Pentru un român care trăiește în străinătate, episodul arată tensiunea dintre discursul „patriotic” al AUR și asocierea cu o formațiune care îi atacă tocmai pe românii din diaspora. Protestul (14–15 noiembrie) e anunțat cu participanți internaționali din „zeci de țări”, potrivit lui Neamțu.</p>
+          </div>
+
+          <div class="verify">
+            <p class="sec-label">Verificare <span class="status">Sursă unică</span></p>
+            <p>Verdict: sursa_unica — relatarea originală este G4Media (8–9 noiembrie 2026); invitația este confirmată de deputatul AUR Mihail Neamțu însuși — deci de partea implicată, nu de o redacție independentă; relatări concordante care preiau același fir G4Media: Clasic Radio (8 nov 2026), Monitorul Zilei (8 nov 2026), Newscom (8 nov 2026). Declarațiile lui Weidel din 28 octombrie sunt documentate separat: postarea ei de pe X, investigația MDR și FAZ (prin reacția lui Dominic Fritz, 3 nov 2026). Nu există o a doua redacție independentă care să confirme separat invitația — de aceea verdictul este sursa_unica, nu confirmat.</p>
+            <ul class="sources">
+              <li><a href="https://www.clasicradio.ro/aur-a-invitat-afd-la-protestul-pentru-eliberarea-lui-calin-georgescu/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Clasic Radio — relatarea despre invitația adresată AfD la protestul AUR pentru eliberarea lui Călin Georgescu (8 nov 2026)<span class="host">clasicradio.ro</span></a></li>
+            </ul>
+          </div>
+
+          <div class="opposing">
+            <p class="sec-label">Tabăra adversă</p>
+            <p>Mihail Neamțu (AUR) susține că „Invitațiile către reprezentanții AfD au fost trimise înaintea declarațiilor controversate ale doamnei Alice Weidel” și că „Am comunicat viziunea noastră celor de la AfD” (<a href="https://www.clasicradio.ro/aur-a-invitat-afd-la-protestul-pentru-eliberarea-lui-calin-georgescu/" target="_blank" rel="noopener">Clasic Radio</a>).</p>
+          </div>
+
+          <div class="impact">
+            <span class="badge">Impact direct</span>
+            <p>Impact direct: minim — relevanță de context. Nicio acțiune cerută; protestul e la București pe 14 noiembrie. De urmărit doar dacă participarea AfD se confirmă sau se retrage până sâmbătă.</p>
+          </div>
+        </article>
+      </main>
+      </section>
+
+      <section class="day day-archive" id="zi-2026-11-08">
+        <div class="day-head">
+          <h2>Duminică, 8 noiembrie 2026</h2>
+          <span>Ediția de ieri · 12 știri · arhivă (ultimele 7 zile)</span>
+        </div>
 
       <!-- Chenar permanent: știrea cea mai importantă a zilei — sub fereastra
            „Ultimele știri", ÎNAINTEA dashboardului, vizibilă din prima, fără scroll.
@@ -775,7 +938,7 @@
           <span class="dash-meta">Fereastră monitorizare <strong>L–V 06:00–22:00 · S–D 07:30–22:00</strong> · pas ~3 ore</span>
         </div>
 
-        <div class="kpi-grid five" role="group" aria-label="Filtrează după categorie — apasă pe un tile">
+        <div class="kpi-grid" role="group" aria-label="Filtrează după categorie — apasă pe un tile">
           <button class="kpi" type="button" data-filter="toate" aria-pressed="true">
             <span class="kpi-top"><span class="kpi-label">Toate știrile</span><span class="kpi-check" aria-hidden="true">✓</span></span>
             <span class="kpi-value">12</span>
@@ -797,13 +960,6 @@
             <span class="kpi-bar" aria-hidden="true"><i style="width:25%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
-          <button class="kpi" type="button" data-filter="belgia" aria-pressed="false">
-            <span class="kpi-top"><span class="kpi-label">Belgia</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">0</span>
-            <span class="kpi-sub"></span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:0%"></i></span>
-            <span class="kpi-hint">Apasă pentru a filtra →</span>
-          </button>
           <button class="kpi" type="button" data-filter="tech" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">Tech &amp; AI</span><span class="kpi-check" aria-hidden="true">✓</span></span>
             <span class="kpi-value">5</span>
@@ -813,10 +969,29 @@
           </button>
         </div>
 
-        <div class="dash-foot solo">
+        <div class="dash-foot">
           <div class="dash-panel">
-            <h3>Severitate — apasă un pătrat ca să vezi doar știrile de nivelul acela</h3>
-            <div class="sev-squares" role="group" aria-label="Filtrează după severitate — roșu, galben, verde"></div>
+            <h3>Ritmul zilei — știri pe rulare</h3>
+            <div class="rhythm" role="group" aria-label="Filtru după ora publicării — apasă pe o rulare ca să vezi doar știrile ei">
+              <button class="col" type="button" data-hour="08:00" aria-pressed="false" aria-label="Filtrează știrile de la ora 08:00 — 1 știre"><span class="n">1</span><span class="bar" style="height:22px"></span><span class="t">08:00</span></button>
+              <button class="col" type="button" data-hour="09:00" aria-pressed="false" aria-label="Filtrează știrile de la ora 09:00 — 2 știri"><span class="n">2</span><span class="bar" style="height:40px"></span><span class="t">09:00</span></button>
+              <button class="col" type="button" data-hour="10:00" aria-pressed="false" aria-label="Filtrează știrile de la ora 10:00 — 1 știre"><span class="n">1</span><span class="bar" style="height:22px"></span><span class="t">10:00</span></button>
+              <button class="col" type="button" data-hour="11:00" aria-pressed="false" aria-label="Filtrează știrile de la ora 11:00 — 2 știri"><span class="n">2</span><span class="bar" style="height:40px"></span><span class="t">11:00</span></button>
+              <button class="col" type="button" data-hour="14:00" aria-pressed="false" aria-label="Filtrează știrile de la ora 14:00 — 1 știre"><span class="n">1</span><span class="bar" style="height:22px"></span><span class="t">14:00</span></button>
+              <button class="col" type="button" data-hour="15:00" aria-pressed="false" aria-label="Filtrează știrile de la ora 15:00 — 2 știri"><span class="n">2</span><span class="bar" style="height:40px"></span><span class="t">15:00</span></button>
+              <button class="col" type="button" data-hour="16:00" aria-pressed="false" aria-label="Filtrează știrile de la ora 16:00 — 1 știre"><span class="n">1</span><span class="bar" style="height:22px"></span><span class="t">16:00</span></button>
+              <button class="col" type="button" data-hour="18:00" aria-pressed="false" aria-label="Filtrează știrile de la ora 18:00 — 1 știre"><span class="n">1</span><span class="bar" style="height:22px"></span><span class="t">18:00</span></button>
+              <button class="col" type="button" data-hour="22:00" aria-pressed="false" aria-label="Filtrează știrile de la ora 22:00 — 1 știre"><span class="n">1</span><span class="bar" style="height:22px"></span><span class="t">22:00</span></button>
+            </div>
+            <p class="rhythm-hint">Apasă pe o bară ca să vezi doar știrile din rularea aceea; apasă din nou pe ea pentru toate.</p>
+          </div>
+          <div class="dash-panel">
+            <h3>Stare ediție</h3>
+            <ul class="status-list">
+              <li><span class="k">Ultima actualizare</span><span class="v">Azi, 22:00</span></li>
+              <li><span class="k">Cea mai nouă</span><span class="v">avertismentul șefului armatei britanice · 22:00</span></li>
+              <li><span class="k">Acoperire</span><span class="v">Ultimele 7 zile în arhivă</span></li>
+            </ul>
           </div>
         </div>
       </section>
@@ -826,27 +1001,25 @@
         <button class="filter-reset" type="button" hidden>Resetează filtrul</button>
       </div>
 
-      <!-- Cuprinsul zilei — sub banda dashboard, înaintea cardurilor.
-           Generat de script din cardurile zilei curente: lista completă a
-           zilei, grupată pe ora publicării, cele mai noi primele; fiecare
-           titlu e link la cardul lui (#stire-N), iar antetul de oră al
-           fiecărui grup e buton de filtru pe rulare — aceeași logică pe care
-           o aveau barele „Ritmul zilei" (selecție unică; al doilea click pe
-           aceeași oră sau butonul de reset revine la toate; o selecție de oră
-           anulează filtrul de categorie și invers). Nu e pliabil: toate
-           grupurile de oră sunt extinse permanent, cu toate titlurile
-           vizibile — fără săgeți de pliere și fără buton de extindere.
-           Cuprinsul urmează filtrul activ, la fel ca și cardurile: la un
-           filtru de categorie, severitate sau oră arată doar rândurile
-           știrilor din selecția aceea, iar grupurile de oră rămase fără
-           nicio știre vizibilă se ascund; butonul „Toate" îl readuce la
-           toate titlurile zilei. Chenarul rămâne în afara filtrării. -->
-      <nav class="day-toc" aria-label="Cuprinsul zilei">
-        <div class="toc-head">
+      <nav class="index" aria-label="Cuprinsul zilei">
+        <div class="index-head">
           <h2>Cuprins</h2>
-          <span class="toc-count">cele mai noi primele · apasă pe o oră ca să filtrezi rularea, pe un titlu ca să sari la știre</span>
+          <span>apasă pe un titlu ca să sari direct la știre · se sincronizează cu filtrul</span>
         </div>
-        <div class="toc-groups"></div>
+        <ol class="index-list">
+          <li data-cats="securitate"><a href="#stire-117"><time>22:00</time><span class="cat-dot sec" aria-hidden="true"></span><span class="t">Șeful armatei britanice avertizează: „cea mai periculoasă perioadă din viața mea de adult” — apetitul Rusiei pentru risc crește, iar Londra rămâne în urma aliaților europeni</span><span class="n">#1</span></a></li>
+          <li data-cats="securitate romania"><a href="#stire-116"><time>18:00</time><span class="cat-dot sec" aria-hidden="true"></span><span class="t">A treia țintă aeriană a zilei la granița României: F-16 românești ridicate de la Fetești după o detectare lângă Chilia Veche; al doilea RO-Alert în Tulcea, la 16:51</span><span class="n">#2</span></a></li>
+          <li data-cats="securitate romania"><a href="#stire-115"><time>16:00</time><span class="cat-dot sec" aria-hidden="true"></span><span class="t">Alertă aeriană la Insula Șerpilor: două ținte detectate de radarul MApN; F-18 și elicoptere spaniole ridicate de la Mihail Kogălniceanu, RO-Alert în estul Tulcei</span><span class="n">#3</span></a></li>
+          <li data-cats="securitate"><a href="#stire-113"><time>15:00</time><span class="cat-dot sec" aria-hidden="true"></span><span class="t">Europa va fi la masa negocierilor pentru Ucraina de la Abu Dhabi (10–11 nov), anunță Parisul — Moscova spune că formatul trilateral nu prevede europeni</span><span class="n">#4</span></a></li>
+          <li data-cats="tech"><a href="#stire-114"><time>15:00</time><span class="cat-dot tech" aria-hidden="true"></span><span class="t">OpenAI a strâns 11 mld $ la o evaluare de 1,25 trilioane $ — mult sub ținta inițială de 30 mld $; și Anthropic își vede evaluarea de IPO tăiată</span><span class="n">#5</span></a></li>
+          <li data-cats="securitate romania"><a href="#stire-112"><time>14:00</time><span class="cat-dot sec" aria-hidden="true"></span><span class="t">Exercițiul Koalicja începe luni în Polonia: 2.800 de militari din 11 țări, între care Belgia, repetă desfășurarea forței multinaționale pentru Ucraina de după război</span><span class="n">#6</span></a></li>
+          <li data-cats="securitate"><a href="#stire-110"><time>11:00</time><span class="cat-dot sec" aria-hidden="true"></span><span class="t">Atacul din Cracovia: poliția confirmă că cele trei cadavre de la locuința atacatorului sunt părinții și sora lui — nouă morți în total</span><span class="n">#7</span></a></li>
+          <li data-cats="tech"><a href="#stire-111"><time>11:00</time><span class="cat-dot tech" aria-hidden="true"></span><span class="t">Memo al serviciilor americane: o directoare Megaspeed ar fi fost recrutată de spionajul chinez ca să-l supravegheze pe șeful Nvidia, Jensen Huang</span><span class="n">#8</span></a></li>
+          <li data-cats="tech"><a href="#stire-109"><time>10:00</time><span class="cat-dot tech" aria-hidden="true"></span><span class="t">Breșă la Chainalysis: parolele și tokenurile live ale tuturor utilizatorilor, expuse după un atac cu agenți AI</span><span class="n">#9</span></a></li>
+          <li data-cats="tech"><a href="#stire-107"><time>09:00</time><span class="cat-dot tech" aria-hidden="true"></span><span class="t">Acțiunile AI s-au prăbușit joi: circa 2,5 trilioane $ șterse de pe bursă într-o zi, apoi o revenire parțială vineri — Nasdaq −5,5%, Nvidia −9%</span><span class="n">#10</span></a></li>
+          <li data-cats="tech"><a href="#stire-108"><time>09:00</time><span class="cat-dot tech" aria-hidden="true"></span><span class="t">METR: modelele Anthropic se îmbunătățesc de două ori mai repede decât acum un an — iar AI-ul însuși ar face ~80% din accelerare</span><span class="n">#11</span></a></li>
+          <li data-cats="securitate"><a href="#stire-106"><time>08:00</time><span class="cat-dot sec" aria-hidden="true"></span><span class="t">Atacul din Cracovia: alte trei cadavre găsite la locuința atacatorului — victimele ar fi membri ai familiei sale; printre cei șase uciși în piață, un cetățean britanic</span><span class="n">#12</span></a></li>
+        </ol>
       </nav>
 
       <p class="empty">Nicio știre în această categorie azi.</p>
@@ -5115,323 +5288,10 @@
       </main>
       </section>
 
-      <section class="day day-archive" id="zi-2026-11-02">
-        <div class="day-head">
-          <h2>Luni, 2 noiembrie 2026</h2>
-          <span>Ediția de ieri · 5 știri · arhivă (ultimele 7 zile)</span>
-        </div>
-
-      <!-- Chenar permanent: știrea cea mai importantă a zilei — chiar sub masthead,
-           ÎNAINTEA dashboardului, vizibilă din prima, fără scroll.
-           Nivelul de azi: GALBEN (sev-amber) — evoluție importantă, fără acțiune imediată:
-           premierul De Wever și-a prezentat demisia regelui, care își rezervă decizia.
-           Chenarul rămâne în afara logicii de filtrare: vizibil indiferent de filtrul de categorie. -->
-      <section class="spot sev-amber" aria-label="Știrea cea mai importantă a zilei">
-        <div class="spot-head">
-          <span class="spot-kicker">
-            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13 2 4.5 13.5H11L9.5 22 19 10h-6.5L13 2z"/></svg>
-            Știrea zilei · Atenție rapidă
-          </span>
-          <span class="spot-time">2 nov · 14:03</span>
-          <span class="spot-pill">Nivel galben — de urmărit</span>
-        </div>
-        <h2 class="spot-title">De Wever și-a prezentat demisia regelui, după ce negocierile pentru buget au picat peste noapte — regele își rezervă decizia</h2>
-        <p class="spot-why"><strong>De ce e în față:</strong> Belgia, țara în care locuiește și unde lucrează la NATO, a intrat oficial în criză guvernamentală: premierul și-a prezentat demisia, iar regele amână decizia — de urmărit marți (consultările regelui) și vineri (noua audiență a lui De Wever), fără nicio schimbare imediată în taxe sau servicii.</p>
-        <p class="spot-lead">Premierul belgian Bart De Wever (N-VA) i-a prezentat luni dimineață, 2 noiembrie, regelui Philippe demisia guvernului său, după ce negocierile nocturne din nucleul de cabinet au eșuat în privința pachetului de circa 10 miliarde de euro pentru bugetul 2027. Palatul Regal a confirmat demisia, iar regele și-a amânat decizia: consultă liderii grupurilor parlamentare începând de marți și îl primește din nou pe De Wever vineri. Guvernul rămâne în funcție până la decizia regelui.</p>
-        <div class="spot-foot">
-          <a class="spot-link" href="#stire-25">Citește știrea completă ↓</a>
-          <div class="sev-scale" role="img" aria-label="Scară de gravitate: verde — normal, galben — de urmărit, roșu — grav. Nivelul de azi: galben.">
-            <span class="sev-item"><i class="sev-dot g" aria-hidden="true"></i>Verde · normal</span>
-            <span class="sev-item on"><i class="sev-dot y" aria-hidden="true"></i>Galben · de urmărit</span>
-            <span class="sev-item"><i class="sev-dot r" aria-hidden="true"></i>Roșu · grav</span>
-          </div>
-        </div>
-      </section>
-
-      <!-- Dashboard -->
-      <section class="dashboard" aria-label="Panou de ansamblu">
-        <div class="dash-head">
-          <span class="dash-title">Dashboard · Azi</span>
-          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 20:06</span>
-          <span class="dash-meta">Fereastră monitorizare <strong>L–V 06:00–22:00 · S–D 07:30–22:00</strong> · pas ~3 ore</span>
-        </div>
-
-        <div class="kpi-grid" role="group" aria-label="Filtrează după categorie — apasă pe un tile">
-          <button class="kpi" type="button" data-filter="toate" aria-pressed="true">
-            <span class="kpi-top"><span class="kpi-label">Toate știrile</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">5</span>
-            <span class="kpi-sub">știri verificate azi, în 5 rulări</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:100%"></i></span>
-            <span class="kpi-hint">Apasă pentru toate</span>
-          </button>
-          <button class="kpi" type="button" data-filter="securitate" aria-pressed="false">
-            <span class="kpi-top"><span class="kpi-label">Securitate &amp; NATO</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">1</span>
-            <span class="kpi-sub">Atac cibernetic suspect la frigiderele Delhaize și Carrefour</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:20%"></i></span>
-            <span class="kpi-hint">Apasă pentru a filtra →</span>
-          </button>
-          <button class="kpi" type="button" data-filter="romania" aria-pressed="false">
-            <span class="kpi-top"><span class="kpi-label">România</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">0</span>
-            <span class="kpi-sub">nicio știre azi</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:0%"></i></span>
-            <span class="kpi-hint">Apasă pentru a filtra →</span>
-          </button>
-          <button class="kpi" type="button" data-filter="tech" aria-pressed="false">
-            <span class="kpi-top"><span class="kpi-label">Tech &amp; AI</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">2</span>
-            <span class="kpi-sub">Musk strânge limitele Grok Bot · OpenAI unește taburile Chat și Work în ChatGPT</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:40%"></i></span>
-            <span class="kpi-hint">Apasă pentru a filtra →</span>
-          </button>
-        </div>
-
-        <div class="dash-foot">
-          <div class="dash-panel">
-            <h3>Ritmul zilei — știri pe rulare</h3>
-            <div class="rhythm" role="group" aria-label="Filtru după ora publicării — apasă pe o rulare ca să vezi doar știrile ei">
-              <button class="col" type="button" data-hour="08:07" aria-pressed="false" aria-label="Filtrează știrile de la ora 08:07 — 1 știre"><span class="n">1</span><span class="bar" style="height:22px"></span><span class="t">08:07</span></button>
-              <button class="col" type="button" data-hour="11:00" aria-pressed="false" aria-label="Filtrează știrile de la ora 11:00 — 1 știre"><span class="n">1</span><span class="bar" style="height:22px"></span><span class="t">11:00</span></button>
-              <button class="col" type="button" data-hour="14:03" aria-pressed="false" aria-label="Filtrează știrile de la ora 14:03 — 1 știre"><span class="n">1</span><span class="bar" style="height:22px"></span><span class="t">14:03</span></button>
-              <button class="col" type="button" data-hour="17:04" aria-pressed="false" aria-label="Filtrează știrile de la ora 17:04 — 1 știre"><span class="n">1</span><span class="bar" style="height:22px"></span><span class="t">17:04</span></button>
-              <button class="col" type="button" data-hour="20:00" aria-pressed="false" aria-label="Filtrează știrile de la ora 20:00 — 1 știre"><span class="n">1</span><span class="bar" style="height:22px"></span><span class="t">20:00</span></button>
-            </div>
-            <p class="rhythm-hint">Apasă pe o bară ca să vezi doar știrile din rularea aceea; apasă din nou pe ea pentru toate.</p>
-          </div>
-          <div class="dash-panel">
-            <h3>Stare ediție</h3>
-            <ul class="status-list">
-              <li><span class="k">Ultima actualizare</span><span class="v">Azi, 20:06</span></li>
-              <li><span class="k">Cea mai nouă</span><span class="v">Musk strânge limitele Grok Bot: costurile de servire, «nesustenabil de mari» față de venituri · 20:00</span></li>
-              <li><span class="k">Acoperire</span><span class="v">Ultimele 7 zile în arhivă</span></li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <div class="filter-status" aria-live="polite">
-        <span class="filter-label">Se afișează: <strong>Toate categoriile — 5 din 5 știri</strong></span>
-        <button class="filter-reset" type="button" hidden>Resetează filtrul</button>
-      </div>
-
-      <nav class="index" aria-label="Cuprinsul zilei">
-        <div class="index-head">
-          <h2>Cuprins</h2>
-          <span>apasă pe un titlu ca să sari direct la știre · se sincronizează cu filtrul</span>
-        </div>
-        <ol class="index-list">
-          <li data-cats="tech"><a href="#stire-27"><time>20:00</time><span class="cat-dot tech" aria-hidden="true"></span><span class="t">Musk strânge limitele Grok Bot: costurile de servire, «nesustenabil de mari» față de venituri</span><span class="n">#1</span></a></li>
-          <li data-cats="tech"><a href="#stire-26"><time>17:04</time><span class="cat-dot tech" aria-hidden="true"></span><span class="t">OpenAI unește taburile Chat și Work în ChatGPT — iar ChatGPT și Codex vor împărți aceeași limită de utilizare</span><span class="n">#2</span></a></li>
-          <li data-cats="belgia"><a href="#stire-25"><time>14:03</time><span class="cat-dot" style="background:var(--muted)" aria-hidden="true"></span><span class="t">De Wever și-a prezentat demisia regelui, după ce negocierile pentru buget au picat peste noapte — regele își rezervă decizia</span><span class="n">#3</span></a></li>
-          <li data-cats="securitate belgia"><a href="#stire-24"><time>11:00</time><span class="cat-dot sec" aria-hidden="true"></span><span class="t">Atac cibernetic suspect la frigiderele Delhaize și Carrefour din Belgia: cel puțin 40 de magazine Delhaize și 15 Carrefour afectate peste noapte</span><span class="n">#4</span></a></li>
-          <li data-cats="belgia"><a href="#stire-23"><time>08:07</time><span class="cat-dot" style="background:var(--muted)" aria-hidden="true"></span><span class="t">Criza bugetară belgiană: negocierile au picat peste noapte, iar De Wever ar putea să-și prezinte demisia regelui</span><span class="n">#5</span></a></li>
-        </ol>
-      </nav>
-
-      <p class="empty">Nicio știre în această categorie azi.</p>
-
-      <main>
-        <!-- 1 · 2 nov · 20:00 -->
-        <article id="stire-27" data-cats="tech">
-          <div class="a-meta">
-            <span class="a-time">2 nov · 20:00</span>
-            <span class="a-cat">Tech &amp; AI · Agenți AI · Costuri de servire</span>
-            <span class="a-num">#1 / 5</span>
-          </div>
-          <h2>Musk strânge limitele Grok Bot: costurile de servire, «nesustenabil de mari» față de venituri</h2>
-
-          <div class="sec">
-            <p class="sec-label">Ce s-a întâmplat</p>
-            <p>În weekendul Halloween, utilizatori ai Grok Bot au constatat că limitele săptămânale de utilizare s-au epuizat brusc, unii de la circa 50% la 100% peste noapte, fără utilizare suplimentară. Elon Musk a confirmat duminică, 1 noiembrie, pe X că „costul servirii Grok Bot a fost nesustenabil de mare față de venituri”, fără să dea cifre, fără să anunțe noi limite și fără să promită un reset al contoarelor. xAI a invocat parțial și o eroare de afișare în panoul de facturare, alături de ajustări deliberate ale alocării de utilizare.</p>
-          </div>
-
-          <div class="sec">
-            <p class="sec-label">De ce contează</p>
-            <p>Este un semnal concret că agenții AI „always-on” costă mai mult decât aduc din abonamente — aceeași presiune de cost care a mișcat bursele Big Tech săptămâna trecută. Pentru cine construiește automatizări pe agenți, limitele și prețurile se pot schimba fără preaviz.</p>
-          </div>
-
-          <div class="verify">
-            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
-            <p>Verdict: confirmat — TechCrunch (sursă curatoriată, 2 noiembrie 2026) relatează confirmarea lui Musk de pe X, iar TechSpot, Gizmodo și CryptoBriefing confirmă independent epuizarea bruscă a limitelor și reacția utilizatorilor.</p>
-            <ul class="sources">
-              <li><a href="https://techcrunch.com/2026/11/02/elon-musk-throttles-grok-bot-limits-due-to-unsustainably-high-costs/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>TechCrunch — „Elon Musk throttles Grok Bot limits due to unsustainably high costs” (2 noiembrie 2026, sursă curatoriată)<span class="host">techcrunch.com</span></a></li>
-              <li><a href="https://www.techspot.com/news/114413-grok-bot-users-accuse-xai-indirect-rug-pull.html" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>TechSpot — „Grok Bot users accuse xAI of indirect rug pull”<span class="host">techspot.com</span></a></li>
-              <li><a href="https://gizmodo.com/elon-musk-needs-to-save-money-on-grok-days-after-saying-ai-makes-saving-money-pointless-2000833812" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Gizmodo — „Elon Musk needs to save money on Grok, days after saying AI makes saving money pointless”<span class="host">gizmodo.com</span></a></li>
-              <li><a href="https://cryptobriefing.com/musk-grok-bot-usage-limits-high-costs/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>CryptoBriefing — relatarea despre limitele Grok Bot și costurile ridicate<span class="host">cryptobriefing.com</span></a></li>
-            </ul>
-          </div>
-
-          <div class="opposing">
-            <p class="sec-label">Tabăra adversă</p>
-            <p>Utilizatorii afectați, relatați de TechSpot, acuză o „tăiere indirectă” (indirect rug pull) fără anunț prealabil; unii spun că, după consumul observat, Grok Bot ar fi de circa 3 ori mai scump.</p>
-          </div>
-
-          <div class="impact">
-            <span class="badge">Impact direct</span>
-            <p>Impact direct minim — nu este vorba de un serviciu plătit folosit aici; relevanță de context pentru costurile agenților AI folosiți zilnic.</p>
-          </div>
-        </article>
-
-        <!-- 2 · 2 nov · 17:04 -->
-        <article id="stire-26" data-cats="tech">
-          <div class="a-meta">
-            <span class="a-time">2 nov · 17:04</span>
-            <span class="a-cat">Tech &amp; AI · Aplicații AI</span>
-            <span class="a-num">#2 / 5</span>
-          </div>
-          <h2>OpenAI unește taburile Chat și Work în ChatGPT — iar ChatGPT și Codex vor împărți aceeași limită de utilizare</h2>
-
-          <div class="sec">
-            <p class="sec-label">Ce s-a întâmplat</p>
-            <p>OpenAI testează, la un grup restrâns de utilizatori, o experiență unică în aplicația desktop ChatGPT, în care taburile Chat și Work se contopesc: poți porni de la o idee și îi poți cere lui ChatGPT să o ducă la capăt în același loc, aducând fișiere și pluginuri, pentru sarcini ca un site, o prezentare sau acțiuni pe web, pe care le revezi și le ghidezi. În paralel, ChatGPT și Codex vor trage din același fond de utilizare: potrivit paginii de ajutor a OpenAI, din decembrie, planurile Plus, Pro și Business vor avea o limită comună, măsurată în tokeni, iar conversațiile simple „Instant" nu vor consuma din ea. Codex rămâne o experiență separată în aplicația desktop, iar OpenAI a dublat deja, de pe 29 octombrie, limitele Work și Codex pentru abonamentele Pro 100, Pro 200 și Pro 500.</p>
-          </div>
-
-          <div class="sec">
-            <p class="sec-label">De ce contează</p>
-            <p>folosește zilnic tooling AI (ChatGPT/Claude, automatizări cu API-uri) — contopirea aduce direct în conversația obișnuită capabilitățile agentice care azi cer un mod separat, iar fondul comun de utilizare înseamnă că o sesiune grea de Codex poate lăsa mai puțină marjă pentru chat. De urmărit în decembrie, când se aplică fondul comun, cu consumul vizibil în Settings → Usage.</p>
-          </div>
-
-          <div class="verify">
-            <p class="sec-label">Verificare <span class="status">Sursă primară + confirmat</span></p>
-            <p>Verdict: sursă primară + confirmat — pagina de ajutor a OpenAI privind limitele ChatGPT și Codex (sursă primară — anunțul propriu al companiei, tranziție din decembrie); BleepingComputer, 1 noiembrie 2026, care a văzut emailul trimis de OpenAI abonaților; TechCrunch, 2 noiembrie 2026, relatarea de pe lista monitorizată.</p>
-            <ul class="sources">
-              <li><a href="https://techcrunch.com/2026/11/02/openai-is-finally-merging-chatgpts-chat-and-work-tabs/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>TechCrunch — „OpenAI is finally merging ChatGPT's Chat and Work tabs” (2 noiembrie 2026)<span class="host">techcrunch.com</span></a></li>
-              <li><a href="https://www.bleepingcomputer.com/news/artificial-intelligence/openai-says-its-doubling-pro-usage-limits-and-bringing-work-features-to-chat/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>BleepingComputer — „OpenAI says it's doubling Pro usage limits and bringing Work features to Chat” (1 noiembrie 2026)<span class="host">bleepingcomputer.com</span></a></li>
-            </ul>
-          </div>
-
-          <div class="impact">
-            <span class="badge">Impact direct</span>
-            <p>Impact direct: minim azi — test restrâns, fără dată generală de lansare anunțată; de urmărit în decembrie, la intrarea în vigoare a fondului comun de utilizare.</p>
-          </div>
-        </article>
-
-        <!-- 3 · 2 nov · 14:03 -->
-        <article id="stire-25" data-cats="belgia">
-          <div class="a-meta">
-            <span class="a-time">2 nov · 14:03</span>
-            <span class="a-cat">Belgia · Criză guvernamentală · Politică federală</span>
-            <span class="spot-tag">Știrea zilei</span>
-            <span class="a-num">#3 / 5</span>
-          </div>
-          <h2>De Wever și-a prezentat demisia regelui, după ce negocierile pentru buget au picat peste noapte — regele își rezervă decizia</h2>
-
-          <div class="followup">
-            <span class="tag">Urmare la</span>
-            <p><a href="#stire-23">„Criza bugetară belgiană: negocierile au picat peste noapte, iar De Wever ar putea să-și prezinte demisia regelui”</a> — azi-dimineață, 2 noiembrie 2026.</p>
-          </div>
-
-          <div class="sec">
-            <p class="sec-label">Ce s-a întâmplat</p>
-            <p>Premierul belgian Bart De Wever (N-VA) i-a prezentat luni dimineață, 2 noiembrie, regelui Philippe demisia guvernului său, după ce negocierile nocturne din nucleul de cabinet au eșuat în privința pachetului de circa 10 miliarde de euro în economii și venituri suplimentare pentru bugetul 2027. Palatul Regal a confirmat demisia „în urma eșecului negocierilor bugetare din cadrul guvernului”, iar regele și-a amânat decizia: intenționează să consulte liderii grupurilor parlamentare începând de marți și să-l primească din nou pe De Wever la palat vineri. Miza imediată este termenul de marți la prânz pentru un acord care să mai poată trece prin parlament până la finalul anului; în lipsa lui, Belgia ar intra pe „douăsprezecimi provizorii”, cu cheltuieli lunare plafonate la o doisprezecime din bugetul anului trecut — variantă pe care De Wever a exclus-o.</p>
-          </div>
-
-          <div class="sec">
-            <p class="sec-label">De ce contează</p>
-            <p>Belgia, țara în care locuiește și unde lucrează la NATO, intră într-o criză guvernamentală în plină procedură europeană de deficit excesiv (deficit 5,2% din PIB în 2025, datorie de circa 108–110% din PIB, mult peste plafonul UE de 60%), iar randamentele obligațiunilor belgiene au crescut deja luni. Pe termen scurt, guvernul rămâne în funcție până la decizia regelui, deci nu se schimbă nimic imediat în taxe sau servicii; zilele de urmărit sunt marți (consultările regelui) și vineri (noua audiență).</p>
-          </div>
-
-          <div class="verify">
-            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
-            <p>Verdict: confirmat — toate trei sursele descriu același fapt central (demisia prezentată luni dimineață, decizia regelui amânată); cifrele despre deficit și datorie vin din relatările Reuters/AP.</p>
-            <ul class="sources">
-              <li><a href="https://www.brusselstimes.com/belgium/2387762/belgian-pm-de-wever-to-offer-resignation-to-king-after-failed-budget-talks-tbtb" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>The Brussels Times — „Belgian PM De Wever to offer resignation to king after failed budget talks” (2 noiembrie 2026, 08:58)<span class="host">brusselstimes.com</span></a></li>
-              <li><a href="https://www.reflector.com/news/national/belgian-prime-minister-quits-after-budget-talks-fail-as-king-mulls-whether-to-accept-his-resignation/article_6e8cc929-ebd5-579b-876a-8420c9f54574.html" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Associated Press, prin Reflector — „Belgian prime minister quits after budget talks fail as king mulls whether to accept his resignation” (2 noiembrie 2026)<span class="host">reflector.com</span></a></li>
-              <li><a href="https://wtbx.com/2026/11/02/belgian-government-crisis-looms-as-budget-talks-collapse/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Reuters, prin WTBX — „Belgian government crisis looms as budget talks collapse” (2 noiembrie 2026, 09:17 UTC)<span class="host">wtbx.com</span></a></li>
-            </ul>
-          </div>
-
-          <div class="impact">
-            <span class="badge">Impact direct</span>
-            <p>Impact direct: minim pe termen scurt — guvernul rămâne în funcție până la decizia regelui; relevanță de context ridicată, de urmărit marți și vineri.</p>
-          </div>
-        </article>
-
-        <!-- 4 · 2 nov · 11:00 -->
-        <article id="stire-24" data-cats="securitate belgia">
-          <div class="a-meta">
-            <span class="a-time">2 nov · 11:00</span>
-            <span class="a-cat">Belgia · Securitate cibernetică</span>
-            <span class="a-num">#4 / 5</span>
-          </div>
-          <h2>Atac cibernetic suspect la frigiderele Delhaize și Carrefour din Belgia: cel puțin 40 de magazine Delhaize și 15 Carrefour afectate peste noapte</h2>
-
-          <div class="sec">
-            <p class="sec-label">Ce s-a întâmplat</p>
-            <p>În noaptea de duminică spre luni, sistemele de refrigerare și congelare din cel puțin 40 de magazine Delhaize din Flandra și Valonia au fost afectate, iar Carrefour Belgia a raportat 15 magazine afectate; Delhaize a confirmat un „incident IT” la instalațiile de refrigerare, cu creșteri bruște de temperatură semnalate managerilor de magazine în cursul nopții. Ahold Delhaize a confirmat incidentul și pentru Luxemburg și a anunțat că investighează; în aceeași noapte au fost raportate probleme similare și la magazine ICA din Suedia.</p>
-          </div>
-
-          <div class="sec">
-            <p class="sec-label">De ce contează</p>
-            <p>Locuiește în Belgia și face cumpărături la supermarketuri din țară, deci stocul proaspăt/congelat din magazinele afectate poate fi compromis azi; profesional, ca IT incident Manager, este un incident de securitate cibernetică pe sisteme OT/IoT (controlere de refrigerare conectate), în aceeași tipologie cu atacul din octombrie asupra a sute de supermarketuri din Franța și cu incidentul cibernetic din octombrie de la compania-mamă Ahold Delhaize.</p>
-          </div>
-
-          <div class="verify">
-            <p class="sec-label">Verificare <span class="status">Confirmat, cu rezervă pe atribuire</span></p>
-            <p>Verdict: sursă primară + confirmat pentru incident, cu rezervă explicită pe atribuire — Delhaize însăși vorbește de „incident IT”, nu de atac confirmat de companie; calificarea de „hack” vine din presa belgiană. Reuters, prin DevDiscourse (2 noiembrie 2026), citează declarația purtătoarei de cuvânt Sarah De Meester; RetailDetail consemnează confirmarea Delhaize către HLN și VTM Nieuws. Notă de integritate: cifra de 70 de grade vehiculată de HLN NU este confirmată de purtătoarea de cuvânt și nu trebuie prezentată ca fapt; cifra raportată cu sursă este de circa 15 grade (RTL Info, prin RetailDetail).</p>
-            <ul class="sources">
-              <li><a href="https://www.devdiscourse.com/article/international/4000604-ahold-delhaize-says-it-incident-hit-store-fridges-in-belgium-luxembourg" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Reuters, prin DevDiscourse — „Ahold Delhaize says 'IT incident' hit store fridges in Belgium, Luxembourg” (declarația purtătoarei de cuvânt Sarah De Meester, 2 noiembrie 2026)<span class="host">devdiscourse.com</span></a></li>
-              <li><a href="https://www.brusselstimes.com/belgium/suspected-cyberattack-hits-fridges-and-freezers-at-dozens-of-belgian-supermarkets" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>The Brussels Times — „Suspected cyberattack hits fridges and freezers at dozens of Belgian supermarkets” (2 noiembrie 2026, 10:15)<span class="host">brusselstimes.com</span></a></li>
-              <li><a href="https://www.retaildetail.eu/news/food/refrigerated-display-cases-at-delhaize-supermarkets-hacked/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>RetailDetail — „Refrigerators at Delhaize and Carrefour supermarkets hacked” (2 noiembrie 2026; confirmarea Delhaize către HLN și VTM Nieuws, temperatura de circa 15 grade raportată de RTL Info)<span class="host">retaildetail.eu</span></a></li>
-              <li><a href="https://belgium-now.com/2026/11/02/delhaize-fridges-freezers-hacked-belgian-stores/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Belgium-Now — „Delhaize confirms fridges and freezers hacked in dozens of Belgian stores” (2 noiembrie 2026; confirmarea purtătoarei de cuvânt către VTM Nieuws și HLN)<span class="host">belgium-now.com</span></a></li>
-            </ul>
-          </div>
-
-          <div class="impact">
-            <span class="badge">Impact direct</span>
-            <p>Impact practic azi: la cumpărături în magazinele Delhaize/Carrefour afectate, produsele proaspete și congelate din vitrinele cu temperatură crescută pot fi compromise — merită verificat dacă magazinul a retras stocul înainte de a cumpăra. Impact profesional: incident OT la scară, cu același tipar ca în Franța în octombrie, pe infrastructura de retail alimentar — exact terenul de incident management. Nu există, în sursele de azi, vreo informație că ar fi fost furate date ale clienților în acest incident.</p>
-          </div>
-        </article>
-
-        <!-- 5 · 2 nov · 08:07 -->
-        <article id="stire-23" data-cats="belgia">
-          <div class="a-meta">
-            <span class="a-time">2 nov · 08:07</span>
-            <span class="a-cat">Belgia · Criză bugetară · Politică federală</span>
-            <span class="a-num">#5 / 5</span>
-          </div>
-          <h2>Criza bugetară belgiană: negocierile au picat peste noapte, iar De Wever ar putea să-și prezinte demisia regelui</h2>
-
-          <div class="sec">
-            <p class="sec-label">Ce s-a întâmplat</p>
-            <p>Cabinetul restrâns („kern”) s-a despărțit în jurul orei 01:00 luni, 2 noiembrie, fără un acord asupra bugetului federal, după un weekend de discuții bilaterale între premierul Bart De Wever și vicepremierii săi; miza este un efort bugetar de 10 miliarde de euro până în 2029. Potrivit ziarului De Tijd, citat de Reuters, De Wever urma să se întâlnească luni cu regele Philippe pentru a-i prezenta demisia guvernului, iar regele probabil nu ar accepta-o imediat; agenția Belga confirmă deplasarea premierului la rege, în timp ce HLN nu confirmase încă motivul. Termenul-limită este marți, 3 noiembrie: fără acord până atunci, Belgia riscă să intre în buget provizoriu („noodbegroting”), sistemul folosit și anul trecut.</p>
-          </div>
-
-          <div class="sec">
-            <p class="sec-label">De ce contează</p>
-            <p>Locuiește în Belgia și lucrează la Bruxelles, iar deznodământul de marți decide dacă Belgia are un buget complet pe 2027 de la 1 ianuarie sau funcționează provizoriu, plus ce măsuri fiscale ajung în pachet — în continuarea schimbărilor fiscale belgiene de la 1 noiembrie deja semnalate în pagină.</p>
-          </div>
-
-          <div class="verify">
-            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
-            <p>Verdict: confirmat — Reuters (2 noiembrie 2026) relatează prăbușirea negocierilor bugetare și demisia așteptată, citând De Tijd; Belga și HLN, prin BelgiumNow (2 noiembrie 2026, 02:08 CET), confirmă încheierea fără acord a ședinței cabinetului restrâns și termenul-limită de marți; agenda din The Brussels Times (domeniu monitorizat) confirma azi, pe homepage, continuarea discuțiilor bugetare ale lui De Wever.</p>
-            <ul class="sources">
-              <li><a href="https://www.reuters.com/business/belgian-government-crisis-looms-budget-talks-collapse-de-tijd-reports-2026-11-02/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Reuters — „Belgian government crisis looms as budget talks collapse, De Tijd reports” (2 noiembrie 2026)<span class="host">reuters.com</span></a></li>
-              <li><a href="https://belgium-now.com/2026/11/02/belgian-core-cabinet-budget-talks-no-deal/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Belga și HLN, prin BelgiumNow — „Belgian core cabinet ends night of budget talks without a deal as Tuesday deadline looms” (2 noiembrie 2026, 02:08 CET)<span class="host">belgium-now.com</span></a></li>
-              <li><a href="https://www.brusselstimes.com/belgium/2386980/bart-de-wever-continues-budget-talks" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>The Brussels Times — „Bart De Wever continues budget talks” (agenda de pe homepage, verificat azi)<span class="host">brusselstimes.com</span></a></li>
-            </ul>
-          </div>
-
-          <div class="opposing">
-            <p class="sec-label">Tabăra adversă</p>
-            <p>Vicepremierul David Clarinval (MR) a spus că situația rămâne „blocată”; Vooruit vrea venituri suplimentare de 1,5 miliarde de euro de la „cei cu umerii mai puternici”, iar Les Engagés a propus ridicarea impozitului pe câștiguri de capital la 15%; N-VA și MR caută tăieri la cheltuielile cu sănătatea, în timp ce partenerii socialiști și centriști cer impozite mai mari pe avere.</p>
-          </div>
-
-          <div class="impact">
-            <span class="badge">Impact direct</span>
-            <p>Impact direct minim azi — nicio schimbare imediată de salariu sau taxe; relevanță de context înaltă, de urmărit marți, când se decide bugetul și pachetul fiscal.</p>
-          </div>
-        </article>
-      </main>
-      </section>
-
-      
-
       <footer>
         <div class="rule" aria-hidden="true"></div>
-        <p>Sfârșitul ediției de azi · Ultima actualizare: duminică, 8 noiembrie 2026, 22:00<br />Monitorizarea rulează la circa 3 ore, în fereastra L–V 06:00–22:00 · S–D 07:30–22:00 — dă refresh pentru noutăți.</p>
-        <a class="to-top" href="#stire-117">↑ Înapoi la cea mai nouă știre</a>
+        <p>Sfârșitul ediției de azi · Ultima actualizare: luni, 9 noiembrie 2026, 07:00<br />Monitorizarea rulează la circa 3 ore, în fereastra L–V 06:00–22:00 · S–D 07:30–22:00 — dă refresh pentru noutăți.</p>
+        <a class="to-top" href="#stire-118">↑ Înapoi la cea mai nouă știre</a>
       </footer>
     </div>
 
