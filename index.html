@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="color-scheme" content="light dark" />
-    <meta name="tirile-versiune" content="2026-11-09T08:00:00+01:00|3|amber" />
+    <meta name="tirile-versiune" content="2026-11-09T10:00:00+01:00|4|amber" />
     <link rel="icon" href="data:," />
     <title>Știrile zilei</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -699,9 +699,9 @@
     <div class="topbar">
       <div class="topbar-inner">
         <span class="dot" aria-hidden="true"></span>
-        <span><strong>Luni, 9 noiembrie 2026</strong> · actualizat la <strong>08:00</strong></span>
+        <span><strong>Luni, 9 noiembrie 2026</strong> · actualizat la <strong>10:00</strong></span>
         <span aria-hidden="true">·</span>
-        <span>3 știri azi</span>
+        <span>4 știri azi</span>
         <span class="spacer"></span>
         <button class="refresh-btn" type="button" id="refreshBtn" aria-label="Reîmprospătează pagina">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg>
@@ -739,7 +739,7 @@
 
       <!-- Chenar permanent: știrea cea mai importantă a zilei — sub fereastra
            „Ultimele știri", ÎNAINTEA dashboardului, vizibilă din prima, fără scroll.
-           Nivelul de azi: GALBEN (sev-amber) — de urmărit: boardul Nvidia a deschis o anchetă independentă pe acuzații de spionaj chinez care l-ar fi vizat pe CEO-ul Jensen Huang — singura știre galbenă a zilei (celelalte două sunt verzi).
+           Nivelul de azi: GALBEN (sev-amber) — de urmărit: boardul Nvidia a deschis o anchetă independentă pe acuzații de spionaj chinez care l-ar fi vizat pe CEO-ul Jensen Huang — cea mai importantă dintre cele două știri galbene ale zilei (cealaltă: deficitul de ajutor militar NATO pentru Ucraina; celelalte două sunt verzi).
            Chenarul rămâne în afara logicii de filtrare: vizibil indiferent de filtrul de categorie. -->
       <section class="spot sev-amber" aria-label="Știrea cea mai importantă a zilei">
         <div class="spot-head">
@@ -768,30 +768,30 @@
       <section class="dashboard" aria-label="Panou de ansamblu">
         <div class="dash-head">
           <span class="dash-title">Dashboard · Azi</span>
-          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 08:00</span>
+          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 10:00</span>
           <span class="dash-meta">Fereastră monitorizare <strong>L–V 06:00–22:00 · S–D 07:30–22:00</strong> · pas ~3 ore</span>
         </div>
 
         <div class="kpi-grid five" role="group" aria-label="Filtrează după categorie — apasă pe un tile">
           <button class="kpi" type="button" data-filter="toate" aria-pressed="true">
             <span class="kpi-top"><span class="kpi-label">Toate știrile</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">3</span>
-            <span class="kpi-sub">știri verificate azi, în 2 rulări</span>
+            <span class="kpi-value">4</span>
+            <span class="kpi-sub">știri verificate azi, în 3 rulări</span>
             <span class="kpi-bar" aria-hidden="true"><i style="width:100%"></i></span>
             <span class="kpi-hint">Apasă pentru toate</span>
           </button>
           <button class="kpi" type="button" data-filter="securitate" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">Securitate &amp; NATO</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">0</span>
-            <span class="kpi-sub"></span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:0%"></i></span>
+            <span class="kpi-value">1</span>
+            <span class="kpi-sub">deficit ajutor militar Ucraina</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:25%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="romania" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">România</span><span class="kpi-check" aria-hidden="true">✓</span></span>
             <span class="kpi-value">2</span>
             <span class="kpi-sub">repornirea Unității 2 Cernavodă · AfD invitată la protestul AUR</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:67%"></i></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:50%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="belgia" aria-pressed="false">
@@ -805,7 +805,7 @@
             <span class="kpi-top"><span class="kpi-label">Tech &amp; AI</span><span class="kpi-check" aria-hidden="true">✓</span></span>
             <span class="kpi-value">1</span>
             <span class="kpi-sub">anchetă board Nvidia Jensen Huang</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:33%"></i></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:25%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
         </div>
@@ -819,7 +819,7 @@
       </section>
 
       <div class="filter-status" aria-live="polite">
-        <span class="filter-label">Se afișează: <strong>Toate categoriile — 3 din 3 știri</strong></span>
+        <span class="filter-label">Se afișează: <strong>Toate categoriile — 4 din 4 știri</strong></span>
         <button class="filter-reset" type="button" hidden>Resetează filtrul</button>
       </div>
 
@@ -849,7 +849,39 @@
       <p class="empty">Nicio știre în această categorie azi.</p>
 
       <main>
-        <!-- 1 · 9 nov · 08:00 -->
+        <!-- 1 · 9 nov · 10:00 -->
+        <article id="stire-121" data-cats="securitate" data-sev="amber" data-subiect="deficit ajutor militar Ucraina">
+          <div class="a-meta">
+            <span class="a-time">9 nov · 10:00</span>
+            <span class="a-cat">Securitate &amp; NATO</span>
+            <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
+            <span class="subj-pill">deficit ajutor militar Ucraina</span>
+            <span class="a-num">#1 / 4</span>
+          </div>
+          <h2>NATO riscă să rateze ținta de ajutor militar pentru Ucraina: deficit de circa 7 mld € din 70 mld € promiși pentru 2026, înaintea reuniunii din 17 noiembrie</h2>
+          <div class="sec">
+            <p class="sec-label">Ce s-a întâmplat</p>
+            <p>Trei diplomați ai alianței au declarat pentru POLITICO că aliații NATO riscă să nu atingă ținta de 70 de miliarde de euro ajutor militar pentru Ucraina în 2026, cu un deficit de circa 7 miliarde de euro. Ținta include contribuții bilaterale și 30 de miliarde de euro din împrumutul UE de 90 de miliarde de euro pentru Ucraina, iar deficitul include și un gol de 1,9 miliarde de dolari pentru livrări de arme americane prin lista PURL — inclusiv interceptoare Patriot. Aliații urmează să discute finanțarea și livrările de arme la reuniunea de la Bruxelles din 17 noiembrie, iar secretarul general Mark Rutte a cerut aliaților să facă mai mult, mai ales pentru apărarea aeriană, înainte de iarnă.</p>
+          </div>
+          <div class="sec">
+            <p class="sec-label">De ce contează</p>
+            <p>NATO e mediul profesional direct al cititorului (IT incident Manager); un deficit de finanțare chiar înainte de iarnă înseamnă presiune pe livrările de apărare aeriană și pe mecanismele de achiziție comună (PURL) pe care le urmărește, iar reuniunea din 17 noiembrie — Grupul de contact pentru Ucraina, la sediul NATO — e data la care se decide dacă ținta se atinge. Germania, unul dintre cei mai mari donatori, a anunțat deja prin ministrul apărării Boris Pistorius că nu poate trimite mai multe sisteme Patriot Ucrainei deocamdată, fără a-și crea goluri în propria apărare.</p>
+          </div>
+          <div class="verify">
+            <p class="sec-label">Verificare <span class="status">Sursă unică</span></p>
+            <p>Verdict: sursă unică. Relatarea originală e POLITICO (8 noiembrie 2026), pe baza a trei diplomați ai alianței care au vorbit anonim; cifra deficitului n-a fost confirmată oficial de NATO — un oficial al alianței, citat tot de POLITICO, spune doar că „aliații continuă să ofere sprijin militar esențial Ucrainei", fără a confirma că ținta va fi ratată. Aceeași relatare POLITICO e preluată identic de Clash Report, Statement și EIN Presswire — preluările aceleiași relatări contează ca o singură confirmare, nu ca surse independente. Articolul POLITICO original nu a fost accesibil direct la link în această rulare, așa că linkul principal al cardului duce la Clash Report, care redă integral relatarea POLITICO.</p>
+            <ul class="sources">
+              <li><a href="https://clashreport.com/world/articles/europe-ukraine-aid-funding-fatigue-d3nz4nkk5e7" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Clash Report — redarea integrală a relatării POLITICO despre deficitul de ajutor militar NATO pentru Ucraina (sursa originală: POLITICO, 8 nov 2026)<span class="host">clashreport.com</span></a></li>
+              <li><a href="https://statement.com/1363849/nato-is-short-seven-billion-euros-for-its-promised-aid-to-ukraine" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Statement — „NATO is short seven billion euros for its promised aid to Ukraine" (preluare a relatării POLITICO)<span class="host">statement.com</span></a></li>
+            </ul>
+          </div>
+          <div class="impact">
+            <span class="badge">Impact direct</span>
+            <p>Impact direct: minim azi — nicio acțiune imediată; relevanță profesională de context înaltă, de urmărit reuniunea din 17 noiembrie și eventualele decizii de finanțare. România e parte a angajamentului, prin contribuții bilaterale și prin împrumutul UE inclus în țintă.</p>
+          </div>
+        </article>
+
+        <!-- 2 · 9 nov · 08:00 -->
         <article id="stire-120" data-cats="tech" data-sev="amber" data-subiect="anchetă board Nvidia Jensen Huang">
           <div class="a-meta">
             <span class="a-time">9 nov · 08:00</span>
@@ -858,7 +890,7 @@
             <a class="cont-pill" href="#stire-111" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="spot-tag">Știrea zilei</span>
             <span class="subj-pill">anchetă board Nvidia Jensen Huang</span>
-            <span class="a-num">#1 / 3</span>
+            <span class="a-num">#2 / 4</span>
           </div>
           <h2>Consiliul Nvidia deschide o anchetă independentă după acuzațiile că șeful Jensen Huang ar fi fost ținta unei operațiuni de spionaj chinez; Huang recunoaște o relație extraconjugală</h2>
           <div class="followup">
@@ -894,7 +926,7 @@
           </div>
         </article>
 
-        <!-- 2 · 9 nov · 08:00 -->
+        <!-- 3 · 9 nov · 08:00 -->
         <article id="stire-119" data-cats="romania" data-sev="green" data-subiect="repornirea Unității 2 Cernavodă">
           <div class="a-meta">
             <span class="a-time">9 nov · 08:00</span>
@@ -902,7 +934,7 @@
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <a class="cont-pill" href="#stire-97" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">repornirea Unității 2 Cernavodă</span>
-            <span class="a-num">#2 / 3</span>
+            <span class="a-num">#3 / 4</span>
           </div>
           <h2>Unitatea 2 de la Cernavodă a început repornirea: secvența de pornire a fost inițiată azi-noapte la 00:42, revenirea completă e estimată marți</h2>
           <div class="followup">
@@ -932,14 +964,14 @@
           </div>
         </article>
 
-        <!-- 3 · 9 nov · 07:00 -->
+        <!-- 4 · 9 nov · 07:00 -->
         <article id="stire-118" data-cats="romania" data-sev="green" data-subiect="AfD invitată la protestul AUR">
           <div class="a-meta">
             <span class="a-time">9 nov · 07:00</span>
             <span class="a-cat">România</span>
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <span class="subj-pill">AfD invitată la protestul AUR</span>
-            <span class="a-num">#3 / 3</span>
+            <span class="a-num">#4 / 4</span>
           </div>
           <h2>Reprezentanți ai AfD, invitați la protestul AUR din 14 noiembrie — deși lidera AfD, Alice Weidel, i-a acuzat pe românii din Germania că „jefuiesc sistemul social”</h2>
 
