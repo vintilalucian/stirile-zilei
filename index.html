@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="color-scheme" content="light dark" />
-    <meta name="tirile-versiune" content="2026-11-09T15:00:00+01:00|7|amber" />
+    <meta name="tirile-versiune" content="2026-11-09T16:00:00+01:00|8|amber" />
     <link rel="icon" href="data:," />
     <title>Știrile zilei</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -699,9 +699,9 @@
     <div class="topbar">
       <div class="topbar-inner">
         <span class="dot" aria-hidden="true"></span>
-        <span><strong>Luni, 9 noiembrie 2026</strong> · actualizat la <strong>15:00</strong></span>
+        <span><strong>Luni, 9 noiembrie 2026</strong> · actualizat la <strong>16:00</strong></span>
         <span aria-hidden="true">·</span>
-        <span>7 știri azi</span>
+        <span>8 știri azi</span>
         <span class="spacer"></span>
         <button class="refresh-btn" type="button" id="refreshBtn" aria-label="Reîmprospătează pagina">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg>
@@ -739,7 +739,7 @@
 
       <!-- Chenar permanent: știrea cea mai importantă a zilei — sub fereastra
            „Ultimele știri", ÎNAINTEA dashboardului, vizibilă din prima, fără scroll.
-           Nivelul de azi: GALBEN (sev-amber) — de urmărit: Ursula von der Leyen e azi la București, în turneul Mării Negre, cu sprijin nou promis pentru România și Bulgaria — știrea cu severitatea cea mai mare a zilei și cea mai importantă dintre cele cinci știri galbene ale zilei (celelalte: procesul UE contra IBM, Atos și Leonardo pentru EES, exercițiul naval Poseidon în Marea Neagră, deficitul de ajutor militar NATO pentru Ucraina și ancheta boardului Nvidia despre Jensen Huang; celelalte două sunt verzi).
+           Nivelul de azi: GALBEN (sev-amber) — de urmărit: Ursula von der Leyen e azi la București, în turneul Mării Negre, cu sprijin nou promis pentru România și Bulgaria — știrea cu severitatea cea mai mare a zilei și cea mai importantă dintre cele cinci știri galbene ale zilei (celelalte: procesul UE contra IBM, Atos și Leonardo pentru EES, exercițiul naval Poseidon în Marea Neagră, deficitul de ajutor militar NATO pentru Ucraina și ancheta boardului Nvidia despre Jensen Huang; celelalte trei sunt verzi, inclusiv lansarea Spacefast de la 16:00).
            Chenarul rămâne în afara logicii de filtrare: vizibil indiferent de filtrul de categorie. -->
       <section class="spot sev-amber" aria-label="Știrea cea mai importantă a zilei">
         <div class="spot-head">
@@ -768,15 +768,15 @@
       <section class="dashboard" aria-label="Panou de ansamblu">
         <div class="dash-head">
           <span class="dash-title">Dashboard · Azi</span>
-          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 15:00</span>
+          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 16:00</span>
           <span class="dash-meta">Fereastră monitorizare <strong>L–V 06:00–22:00 · S–D 07:30–22:00</strong> · pas ~3 ore</span>
         </div>
 
         <div class="kpi-grid five" role="group" aria-label="Filtrează după categorie — apasă pe un tile">
           <button class="kpi" type="button" data-filter="toate" aria-pressed="true">
             <span class="kpi-top"><span class="kpi-label">Toate știrile</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">7</span>
-            <span class="kpi-sub">știri verificate azi, în 6 rulări</span>
+            <span class="kpi-value">8</span>
+            <span class="kpi-sub">știri verificate azi, în 7 rulări</span>
             <span class="kpi-bar" aria-hidden="true"><i style="width:100%"></i></span>
             <span class="kpi-hint">Apasă pentru toate</span>
           </button>
@@ -784,28 +784,28 @@
             <span class="kpi-top"><span class="kpi-label">Securitate &amp; NATO</span><span class="kpi-check" aria-hidden="true">✓</span></span>
             <span class="kpi-value">3</span>
             <span class="kpi-sub">vizita von der Leyen la București · exercițiul Poseidon în Marea Neagră · deficit ajutor militar Ucraina</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:43%"></i></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:38%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="romania" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">România</span><span class="kpi-check" aria-hidden="true">✓</span></span>
             <span class="kpi-value">3</span>
             <span class="kpi-sub">vizita von der Leyen la București · repornirea Unității 2 Cernavodă · AfD invitată la protestul AUR</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:43%"></i></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:38%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="belgia" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">Belgia</span><span class="kpi-check" aria-hidden="true">✓</span></span>
             <span class="kpi-value">1</span>
             <span class="kpi-sub">Proces UE contra IBM pentru EES</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:14%"></i></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:13%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="tech" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">Tech &amp; AI</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">2</span>
-            <span class="kpi-sub">Proces UE contra IBM pentru EES · anchetă board Nvidia Jensen Huang</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:29%"></i></span>
+            <span class="kpi-value">3</span>
+            <span class="kpi-sub">deploy aplicații vibe-coding · Proces UE contra IBM pentru EES · anchetă board Nvidia Jensen Huang</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:38%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
         </div>
@@ -819,7 +819,7 @@
       </section>
 
       <div class="filter-status" aria-live="polite">
-        <span class="filter-label">Se afișează: <strong>Toate categoriile — 7 din 7 știri</strong></span>
+        <span class="filter-label">Se afișează: <strong>Toate categoriile — 8 din 8 știri</strong></span>
         <button class="filter-reset" type="button" hidden>Resetează filtrul</button>
       </div>
 
@@ -849,7 +849,41 @@
       <p class="empty">Nicio știre în această categorie azi.</p>
 
       <main>
-        <!-- 1 · 9 nov · 15:00 -->
+        <!-- 1 · 9 nov · 16:00 -->
+        <article id="stire-125" data-cats="tech" data-sev="green" data-subiect="deploy aplicații vibe-coding">
+          <div class="a-meta">
+            <span class="a-time">9 nov · 16:00</span>
+            <span class="a-cat">Tech &amp; AI</span>
+            <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
+            <span class="subj-pill">deploy aplicații vibe-coding</span>
+            <span class="a-num">#1 / 8</span>
+          </div>
+          <h2>Automattic lansează Spacefast: platformă care pune online aplicațiile construite cu AI (vibe-coding)</h2>
+          <div class="sec">
+            <p class="sec-label">Ce s-a întâmplat</p>
+            <p>Automattic, compania din spatele WordPress.com, a lansat azi Spacefast, un serviciu nou care ia site-urile și aplicațiile construite prin vibe-coding și le pune online, cu infrastructura necesară: baze de date, autentificare, upload de fișiere, e-mail și analytics. Se conectează direct cu agenții și chatboturile deja folosite — ChatGPT, Claude, Cursor, Muse, OpenClaw — prin plugin oficial, API, CLI și server MCP, iar proiectele rulează pe infrastructura WordPress.com (wp.cloud). E gratuit la început (plan personal cu 1 $ pe lună utilizare inclusă), fiecare proiect („Space”) are versionare Git și domeniu propriu; autentificarea integrată în aplicație urmează în săptămânile următoare, iar platforma e încă în faza de research preview.</p>
+          </div>
+          <div class="sec">
+            <p class="sec-label">De ce contează</p>
+            <p>Pentru un IT incident Manager care construiește automatizări cu AI și folosește Claude, Spacefast închide bucla dintre „agentul scrie codul” și „aplicația e online cu bază de date” — agentul poate publica direct, fără ca el să mai configureze hosting, domeniu și bază de date separat. E infrastructura practică a direcției urmărite în pagină (agenți autonomi cu autoritate de a acționa, Guardian Agents, Flint, Walmart Agent Gateway): de data asta nu un agent nou, ci rampa de lansare pentru ce construiesc agenții. Concurența directă: Lovable și Emergent.</p>
+          </div>
+          <div class="verify">
+            <p class="sec-label">Verificare <span class="status">Sursă primară</span></p>
+            <p>Verdict: sursa_primara. TechCrunch (sursă curatoriată) — relatarea lansării, 9 nov 2026, 14:00 UTC. Automattic (anunț propriu, sursă primară) — „Meet Spacefast, Everything Your Agents Need to Bring Your Ideas to Life”, 9 nov 2026. PR Newswire (comunicatul companiei, 9 nov 2026, 14:00 UTC) — lansarea Spacefast, „o companie nouă care pune aplicațiile și site-urile online în câteva secunde”. CryptoBriefing (relatare independentă, 9 nov 2026) — confirmă lansarea și poziționarea pe aplicațiile de vibe-coding.</p>
+            <ul class="sources">
+              <li><a href="https://techcrunch.com/2026/11/09/automattic-debuts-a-platform-to-deploy-vibe-coding-apps-amid-a-changing-internet/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>TechCrunch — „Automattic debuts a platform to deploy vibe coding apps amid a changing internet” (9 nov 2026, 14:00 UTC)<span class="host">techcrunch.com</span></a></li>
+              <li><a href="https://automattic.com/2026/11/09/meet-spacefast/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Automattic — „Meet Spacefast, Everything Your Agents Need to Bring Your Ideas to Life” (anunț propriu, sursă primară, 9 nov 2026)<span class="host">automattic.com</span></a></li>
+              <li><a href="https://www.prnewswire.com/news-releases/automattic-launches-spacefast-a-new-company-that-gets-apps-and-websites-live-in-seconds-302933038.html" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>PR Newswire — „Automattic Launches Spacefast, a New Company That Gets Apps and Websites Live in Seconds” (comunicatul companiei, 9 nov 2026, 14:00 UTC)<span class="host">prnewswire.com</span></a></li>
+              <li><a href="https://cryptobriefing.com/automattic-spacefast-vibe-coding-apps/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>CryptoBriefing — relatare independentă despre lansarea Spacefast de către Automattic (9 nov 2026)<span class="host">cryptobriefing.com</span></a></li>
+            </ul>
+          </div>
+          <div class="impact">
+            <span class="badge">Impact direct</span>
+            <p>Impact direct minim azi — știrea nu cere nimic concret; e o unealtă nouă de testat când apare un proiect de publicat, cu plan gratuit la început. Relevanță de context: direct pe stack-ul lui de automatizări AI. Atenție de integritate: platforma e în research preview, deci funcțiile, limitele și prețurile se pot schimba; Automattic trece printr-o perioadă turbulentă (schimbări de conducere, concedieri), menționată de TechCrunch.</p>
+          </div>
+        </article>
+
+        <!-- 2 · 9 nov · 15:00 -->
         <article id="stire-124" data-cats="securitate romania" data-sev="amber" data-subiect="vizita von der Leyen la București">
           <div class="a-meta">
             <span class="a-time">9 nov · 15:00</span>
@@ -858,7 +892,7 @@
             <a class="cont-pill" href="#stire-81" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="spot-tag">Știrea zilei</span>
             <span class="subj-pill">vizita von der Leyen la București</span>
-            <span class="a-num">#1 / 7</span>
+            <span class="a-num">#2 / 8</span>
           </div>
           <h2>Von der Leyen e azi la București: Marea Neagră, hub maritim și sprijin nou promis — întâlnire la Cotroceni la 15:30, declarații la 17:00</h2>
           <div class="followup">
@@ -892,14 +926,14 @@
           </div>
         </article>
 
-        <!-- 2 · 9 nov · 13:00 -->
+        <!-- 3 · 9 nov · 13:00 -->
         <article id="stire-123" data-cats="tech belgia" data-sev="amber" data-subiect="Proces UE contra IBM pentru EES">
           <div class="a-meta">
             <span class="a-time">9 nov · 13:00</span>
             <span class="a-cat">Tech &amp; AI · Belgia</span>
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="subj-pill">Proces UE contra IBM pentru EES</span>
-            <span class="a-num">#2 / 7</span>
+            <span class="a-num">#3 / 8</span>
           </div>
           <h2>UE dă în judecată IBM, Atos și Leonardo pentru întârzierile sistemului de frontieră EES</h2>
           <div class="sec">
@@ -928,14 +962,14 @@
           </div>
         </article>
 
-        <!-- 3 · 9 nov · 11:00 -->
+        <!-- 4 · 9 nov · 11:00 -->
         <article id="stire-122" data-cats="securitate" data-sev="amber" data-subiect="exercițiul Poseidon în Marea Neagră">
           <div class="a-meta">
             <span class="a-time">9 nov · 11:00</span>
             <span class="a-cat">Securitate &amp; NATO</span>
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="subj-pill">exercițiul Poseidon în Marea Neagră</span>
-            <span class="a-num">#3 / 7</span>
+            <span class="a-num">#4 / 8</span>
           </div>
           <h2>Exercițiul naval Poseidon 26 a început în Marea Neagră: Bulgaria găzduiește, România și Turcia participă — focus pe contramăsuri împotriva minelor</h2>
           <div class="sec">
@@ -961,14 +995,14 @@
           </div>
         </article>
 
-        <!-- 4 · 9 nov · 10:00 -->
+        <!-- 5 · 9 nov · 10:00 -->
         <article id="stire-121" data-cats="securitate" data-sev="amber" data-subiect="deficit ajutor militar Ucraina">
           <div class="a-meta">
             <span class="a-time">9 nov · 10:00</span>
             <span class="a-cat">Securitate &amp; NATO</span>
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="subj-pill">deficit ajutor militar Ucraina</span>
-            <span class="a-num">#4 / 7</span>
+            <span class="a-num">#5 / 8</span>
           </div>
           <h2>NATO riscă să rateze ținta de ajutor militar pentru Ucraina: deficit de circa 7 mld € din 70 mld € promiși pentru 2026, înaintea reuniunii din 17 noiembrie</h2>
           <div class="sec">
@@ -993,7 +1027,7 @@
           </div>
         </article>
 
-        <!-- 5 · 9 nov · 08:00 -->
+        <!-- 6 · 9 nov · 08:00 -->
         <article id="stire-120" data-cats="tech" data-sev="amber" data-subiect="anchetă board Nvidia Jensen Huang">
           <div class="a-meta">
             <span class="a-time">9 nov · 08:00</span>
@@ -1001,7 +1035,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-111" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">anchetă board Nvidia Jensen Huang</span>
-            <span class="a-num">#5 / 7</span>
+            <span class="a-num">#6 / 8</span>
           </div>
           <h2>Consiliul Nvidia deschide o anchetă independentă după acuzațiile că șeful Jensen Huang ar fi fost ținta unei operațiuni de spionaj chinez; Huang recunoaște o relație extraconjugală</h2>
           <div class="followup">
@@ -1037,7 +1071,7 @@
           </div>
         </article>
 
-        <!-- 6 · 9 nov · 08:00 -->
+        <!-- 7 · 9 nov · 08:00 -->
         <article id="stire-119" data-cats="romania" data-sev="green" data-subiect="repornirea Unității 2 Cernavodă">
           <div class="a-meta">
             <span class="a-time">9 nov · 08:00</span>
@@ -1045,7 +1079,7 @@
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <a class="cont-pill" href="#stire-97" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">repornirea Unității 2 Cernavodă</span>
-            <span class="a-num">#6 / 7</span>
+            <span class="a-num">#7 / 8</span>
           </div>
           <h2>Unitatea 2 de la Cernavodă a început repornirea: secvența de pornire a fost inițiată azi-noapte la 00:42, revenirea completă e estimată marți</h2>
           <div class="followup">
@@ -1075,14 +1109,14 @@
           </div>
         </article>
 
-        <!-- 7 · 9 nov · 07:00 -->
+        <!-- 8 · 9 nov · 07:00 -->
         <article id="stire-118" data-cats="romania" data-sev="green" data-subiect="AfD invitată la protestul AUR">
           <div class="a-meta">
             <span class="a-time">9 nov · 07:00</span>
             <span class="a-cat">România</span>
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <span class="subj-pill">AfD invitată la protestul AUR</span>
-            <span class="a-num">#7 / 7</span>
+            <span class="a-num">#8 / 8</span>
           </div>
           <h2>Reprezentanți ai AfD, invitați la protestul AUR din 14 noiembrie — deși lidera AfD, Alice Weidel, i-a acuzat pe românii din Germania că „jefuiesc sistemul social”</h2>
 
