@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="color-scheme" content="light dark" />
-    <meta name="tirile-versiune" content="2026-11-09T19:00:00+01:00|10|amber" />
+    <meta name="tirile-versiune" content="2026-11-09T20:00:00+01:00|12|amber" />
     <link rel="icon" href="data:," />
     <title>Știrile zilei</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -699,9 +699,9 @@
     <div class="topbar">
       <div class="topbar-inner">
         <span class="dot" aria-hidden="true"></span>
-        <span><strong>Luni, 9 noiembrie 2026</strong> · actualizat la <strong>19:00</strong></span>
+        <span><strong>Luni, 9 noiembrie 2026</strong> · actualizat la <strong>20:00</strong></span>
         <span aria-hidden="true">·</span>
-        <span>10 știri azi</span>
+        <span>12 știri azi</span>
         <span class="spacer"></span>
         <button class="refresh-btn" type="button" id="refreshBtn" aria-label="Reîmprospătează pagina">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg>
@@ -739,7 +739,7 @@
 
       <!-- Chenar permanent: știrea cea mai importantă a zilei — sub fereastra
            „Ultimele știri", ÎNAINTEA dashboardului, vizibilă din prima, fără scroll.
-           Nivelul de azi: GALBEN (sev-amber) — de urmărit: UE alocă 60 mil. € pentru securitatea Mării Negre (50 mil. € hub maritim + 10 mil. € căutare-salvare) — rezultatul vizitei von der Leyen la București — știrea cu severitatea cea mai mare a zilei și cea mai importantă dintre cele șapte știri galbene ale zilei (celelalte: alerta aeriană lângă Sulina, vizita von der Leyen la București, procesul UE contra IBM, Atos și Leonardo pentru EES, exercițiul naval Poseidon în Marea Neagră, deficitul de ajutor militar NATO pentru Ucraina și ancheta boardului Nvidia despre Jensen Huang; celelalte trei sunt verzi, inclusiv lansarea Spacefast de la 16:00).
+           Nivelul de azi: GALBEN (sev-amber) — de urmărit: UE alocă 60 mil. € pentru securitatea Mării Negre (50 mil. € hub maritim + 10 mil. € căutare-salvare) — rezultatul vizitei von der Leyen la București — știrea cu severitatea cea mai mare a zilei și cea mai importantă dintre cele opt știri galbene ale zilei (celelalte: loviturile SUA asupra insulei Qeshm din Strâmtoarea Hormuz, alerta aeriană lângă Sulina, vizita von der Leyen la București, procesul UE contra IBM, Atos și Leonardo pentru EES, exercițiul naval Poseidon în Marea Neagră, deficitul de ajutor militar NATO pentru Ucraina și ancheta boardului Nvidia despre Jensen Huang; celelalte patru sunt verzi, inclusiv lansarea Spacefast de la 16:00 și lansarea Muse Ember de la 20:00).
            Chenarul rămâne în afara logicii de filtrare: vizibil indiferent de filtrul de categorie. -->
       <section class="spot sev-amber" aria-label="Știrea cea mai importantă a zilei">
         <div class="spot-head">
@@ -751,7 +751,7 @@
           <span class="spot-pill">Nivel galben — de urmărit</span>
         </div>
         <h2 class="spot-title">UE alocă 60 mil. € pentru securitatea Mării Negre: 50 mil. € pentru hub-ul maritim și 10 mil. € pentru căutare-salvare</h2>
-        <p class="spot-why"><strong>De ce e în față:</strong> E știrea cu severitatea cea mai mare a zilei și cea mai importantă dintre cele șapte știri galbene — rezultatul concret al vizitei de la București: UE alocă 50 de milioane de euro pentru hub-ul de securitate maritimă al Mării Negre și 10 milioane pentru căutare-salvare, iar România e încurajată să aplice la al doilea apel SAFE, cu peste 21 de miliarde de euro disponibile; dosarul Mării Negre e cel mai urmărit fir al toamnei pe zona lui profesională (IT incident Manager, Flancul estic).</p>
+        <p class="spot-why"><strong>De ce e în față:</strong> E știrea cu severitatea cea mai mare a zilei și cea mai importantă dintre cele opt știri galbene — rezultatul concret al vizitei de la București: UE alocă 50 de milioane de euro pentru hub-ul de securitate maritimă al Mării Negre și 10 milioane pentru căutare-salvare, iar România e încurajată să aplice la al doilea apel SAFE, cu peste 21 de miliarde de euro disponibile; dosarul Mării Negre e cel mai urmărit fir al toamnei pe zona lui profesională (IT incident Manager, Flancul estic).</p>
         <p class="spot-lead">La conferința de presă de la Palatul Cotroceni, după întâlnirea cu președintele Nicușor Dan, președinta Comisiei Europene, Ursula von der Leyen, a anunțat că UE va accelera operaționalizarea hub-ului de securitate maritimă de la Marea Neagră, cu un calendar de finalizare și 50 de milioane de euro alocați, plus 10 milioane de euro pentru operațiuni de căutare și salvare pe mare.</p>
         <p class="spot-more" hidden><span class="spot-more-text"></span> <button class="spot-more-btn" type="button">apasă aici</button></p>
         <div class="spot-foot">
@@ -768,22 +768,22 @@
       <section class="dashboard" aria-label="Panou de ansamblu">
         <div class="dash-head">
           <span class="dash-title">Dashboard · Azi</span>
-          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 19:00</span>
+          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 20:00</span>
           <span class="dash-meta">Fereastră monitorizare <strong>L–V 06:00–22:00 · S–D 07:30–22:00</strong> · pas ~3 ore</span>
         </div>
 
         <div class="kpi-grid five" role="group" aria-label="Filtrează după categorie — apasă pe un tile">
           <button class="kpi" type="button" data-filter="toate" aria-pressed="true">
             <span class="kpi-top"><span class="kpi-label">Toate știrile</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">10</span>
-            <span class="kpi-sub">știri verificate azi, în 8 rulări</span>
+            <span class="kpi-value">12</span>
+            <span class="kpi-sub">știri verificate azi, în 9 rulări</span>
             <span class="kpi-bar" aria-hidden="true"><i style="width:100%"></i></span>
             <span class="kpi-hint">Apasă pentru toate</span>
           </button>
           <button class="kpi" type="button" data-filter="securitate" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">Securitate &amp; NATO</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">5</span>
-            <span class="kpi-sub">60 mil. € UE pentru Marea Neagră · alertă aeriană lângă Sulina · vizita von der Leyen la București · exercițiul Poseidon în Marea Neagră · deficit ajutor militar Ucraina</span>
+            <span class="kpi-value">6</span>
+            <span class="kpi-sub">lovituri SUA asupra Iranului · 60 mil. € UE pentru Marea Neagră · alertă aeriană lângă Sulina · vizita von der Leyen la București · exercițiul Poseidon în Marea Neagră · deficit ajutor militar Ucraina</span>
             <span class="kpi-bar" aria-hidden="true"><i style="width:50%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
@@ -791,21 +791,21 @@
             <span class="kpi-top"><span class="kpi-label">România</span><span class="kpi-check" aria-hidden="true">✓</span></span>
             <span class="kpi-value">5</span>
             <span class="kpi-sub">60 mil. € UE pentru Marea Neagră · alertă aeriană lângă Sulina · vizita von der Leyen la București · repornirea Unității 2 Cernavodă · AfD invitată la protestul AUR</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:50%"></i></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:42%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="belgia" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">Belgia</span><span class="kpi-check" aria-hidden="true">✓</span></span>
             <span class="kpi-value">1</span>
             <span class="kpi-sub">Proces UE contra IBM pentru EES</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:10%"></i></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:8%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="tech" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">Tech &amp; AI</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">3</span>
-            <span class="kpi-sub">deploy aplicații vibe-coding · Proces UE contra IBM pentru EES · anchetă board Nvidia Jensen Huang</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:30%"></i></span>
+            <span class="kpi-value">4</span>
+            <span class="kpi-sub">model Muse Ember pentru agenți · deploy aplicații vibe-coding · Proces UE contra IBM pentru EES · anchetă board Nvidia Jensen Huang</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:33%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
         </div>
@@ -819,7 +819,7 @@
       </section>
 
       <div class="filter-status" aria-live="polite">
-        <span class="filter-label">Se afișează: <strong>Toate categoriile — 10 din 10 știri</strong></span>
+        <span class="filter-label">Se afișează: <strong>Toate categoriile — 12 din 12 știri</strong></span>
         <button class="filter-reset" type="button" hidden>Resetează filtrul</button>
       </div>
 
@@ -849,6 +849,75 @@
       <p class="empty">Nicio știre în această categorie azi.</p>
 
       <main>
+        <!-- 1 · 9 nov · 20:00 -->
+        <article id="stire-128" data-cats="securitate" data-sev="amber" data-subiect="lovituri SUA asupra Iranului">
+          <div class="a-meta">
+            <span class="a-time">9 nov · 20:00</span>
+            <span class="a-cat">Securitate &amp; NATO</span>
+            <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
+            <span class="subj-pill">lovituri SUA asupra Iranului</span>
+            <span class="a-num">#1 / 12</span>
+          </div>
+          <h2>SUA au lovit din nou insula Qeshm din Strâmtoarea Hormuz; Rubio spune că cererile Iranului sunt „scandaloase” și nu se întrevede un acord</h2>
+          <div class="sec">
+            <p class="sec-label">Ce s-a întâmplat</p>
+            <p>În noaptea de duminică spre luni, SUA au lovit din nou insula Qeshm din Strâmtoarea Hormuz — al treilea atac asupra insulei într-o săptămână, potrivit relatărilor. Media de stat iraniană a raportat explozii pe Qeshm, iar un oficial provincial a spus că nu au fost afectate infrastructura vitală, zonele rezidențiale sau cele comerciale. Oficialii americani au confirmat loviturile pentru CBS, iar SUA nu au comentat oficial; președintele Trump confirmase vineri un atac anterior „minor” asupra unui sistem de apărare antiaeriană. În paralel, Gărzile Revoluționare au susținut că două petroliere au lovit mine în strâmtoare, iar Comandamentul Central american a anunțat sâmbătă Task Force Iron Gate, o unitate de 20 de oameni pentru întărirea blocadei navale a Iranului.</p>
+          </div>
+          <div class="sec">
+            <p class="sec-label">De ce contează</p>
+            <p>Războiul SUA–Iran, început pe 28 februarie, intră în a 256-a zi, fără o victorie la orizont; atacurile asupra navelor comerciale din Golf și din Strâmtoare au ajuns în octombrie la cel mai ridicat ritm de la începutul războiului, potrivit agențiilor maritime internaționale. Trump se întâlnește azi cu premierul Qatarului, mediatorul-cheie între Washington și Teheran, dar secretarul de stat Marco Rubio a spus duminică că nu vede un acord curând.</p>
+          </div>
+          <div class="verify">
+            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
+            <p>Verdict: confirmat. Reuters — „Trump to meet Iran war mediator Qatar, no imminent deal seen to end the war” (9 nov 2026). CBS (prin BBC) — oficiali americani au confirmat pentru CBS loviturile de pe Qeshm. EA WorldView — tracker „US War on Iran, Day 256”. Tasnim (media iraniană) — „US Attack on Iran's Qeshm Island Causes No Damage: Official”.</p>
+            <ul class="sources">
+              <li><a href="https://www.reuters.com/world/middle-east/trump-meet-iran-war-mediator-qatar-no-imminent-deal-seen-end-war-2026-11-09/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Reuters — „Trump to meet Iran war mediator Qatar, no imminent deal seen to end the war” (9 nov 2026)<span class="host">reuters.com</span></a></li>
+              <li><a href="https://eaworldview.com/2026/11/us-war-on-iran-strikes-qeshm-island-in-strait-of-hormuz/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>EA WorldView — tracker „US War on Iran, Day 256” (9 nov 2026)<span class="host">eaworldview.com</span></a></li>
+              <li><a href="https://tasnimnews.ir/en/news/2026/11/09/3744006/us-attack-on-iran-s-qeshm-island-causes-no-damage-official" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Tasnim (media iraniană) — „US Attack on Iran's Qeshm Island Causes No Damage: Official” (9 nov 2026)<span class="host">tasnimnews.ir</span></a></li>
+            </ul>
+          </div>
+          <div class="opposing">
+            <p class="sec-label">Tabăra adversă</p>
+            <p>Marco Rubio, secretarul de stat al SUA, a numit cererile Iranului „scandaloase și ridicole” și a pus sub semnul întrebării șansele unei înțelegeri (<a href="https://nypost.com/2026/11/09/us-news/rubio-blasts-irans-outrageous-and-ridiculous-demands/" target="_blank" rel="noopener">New York Post</a>). Gărzile Revoluționare ale Iranului susțin că două petroliere au lovit mine în strâmtoare și că sistemele de ajutor pentru navigație din sudul Strâmtorii au fost distruse — afirmații rămase necoroborate. Iranul a oferit redeschiderea Strâmtorii dacă SUA încetează blocada porturilor, ridică unele sancțiuni și opresc bombardamentele (Reuters).</p>
+          </div>
+          <div class="impact">
+            <span class="badge">Impact direct</span>
+            <p>Impact direct: minim — relevanță de context. Fără implicare directă a NATO; de urmărit pentru prețul energiei și siguranța rutelor maritime — Strâmtoarea Hormuz e artera petrolieră cheie — și pentru postura SUA, aliatul-cheie al NATO, într-un război aflat în luna a noua.</p>
+          </div>
+        </article>
+
+        <!-- 2 · 9 nov · 20:00 -->
+        <article id="stire-129" data-cats="tech" data-sev="green" data-subiect="model Muse Ember pentru agenți">
+          <div class="a-meta">
+            <span class="a-time">9 nov · 20:00</span>
+            <span class="a-cat">Tech &amp; AI</span>
+            <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
+            <span class="subj-pill">model Muse Ember pentru agenți</span>
+            <span class="a-num">#2 / 12</span>
+          </div>
+          <h2>Meta lansează Muse Ember, cel mai mic și mai ieftin model Muse — pentru munca repetitivă a agenților AI</h2>
+          <div class="sec">
+            <p class="sec-label">Ce s-a întâmplat</p>
+            <p>Meta Superintelligence Lab a lansat luni Muse Ember, al patrulea model din familia Muse, după Spark, Glimmer și Wonder. E gândit pentru „complex reasoning execution” și pentru munca pe care agenții o repetă toată ziua: apeluri de tool-uri, subtaskuri de coding, rutare, extracție și parsarea documentelor lungi. Costă 0,10 $ per milion de tokeni de intrare și 0,50 $ per milion de tokeni de ieșire, are o fereastră de context de 1 milion de tokeni și până la 512K tokeni de ieșire, și e disponibil de azi în Muse Code și în Meta Model API ca muse-ember-1.0. Meta îl poziționează ca partener al modelului mare Wonder: „Muse Wonder plans, Muse Ember handles the volume.”</p>
+          </div>
+          <div class="sec">
+            <p class="sec-label">De ce contează</p>
+            <p>Pentru oricine construiește agenți AI, costul per task devine criteriul principal — Meta susține că Ember egalează scorul Claude Haiku 5.5 pe Artificial Analysis Intelligence Index (circa 36) la aproximativ o treime din costul per task (circa 0,14 $ față de circa 0,41 $). E primul model Muse antrenat cu Muse Wonder Full ca profesor.</p>
+          </div>
+          <div class="verify">
+            <p class="sec-label">Verificare <span class="status">Sursă primară</span></p>
+            <p>Verdict: sursa_primara. Meta — anunțul propriu pe research.meta.ai. TechCrunch — relatarea lansării (9 nov 2026).</p>
+            <ul class="sources">
+              <li><a href="https://research.meta.ai/blog/muse-ember" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Meta — anunțul propriu al lansării Muse Ember (research.meta.ai, 9 nov 2026)<span class="host">research.meta.ai</span></a></li>
+              <li><a href="https://techcrunch.com/2026/11/09/meta-releases-muse-ember-a-new-lightweight-model-for-agent-execution/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>TechCrunch — relatarea lansării Muse Ember (9 nov 2026)<span class="host">techcrunch.com</span></a></li>
+            </ul>
+          </div>
+          <div class="impact">
+            <span class="badge">Impact direct</span>
+            <p>Impact direct practic pentru hobby-ul de automatizări cu agenți AI: un model ieftin pentru subtaskuri repetitive (apeluri de tool-uri, extracție) scade costul rulărilor de volum. Notă de integritate: cifrele de cost și de benchmark sunt ale Meta / Artificial Analysis, iar pe FrontierCode 2.0 Ember rămâne sub Haiku (27,2% față de 34,9%).</p>
+          </div>
+        </article>
+
         <!-- 1 · 9 nov · 19:00 -->
         <article id="stire-126" data-cats="securitate romania" data-sev="amber" data-subiect="60 mil. € UE pentru Marea Neagră">
           <div class="a-meta">
@@ -858,7 +927,7 @@
             <a class="cont-pill" href="#stire-124" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="spot-tag">Știrea zilei</span>
             <span class="subj-pill">60 mil. € UE pentru Marea Neagră</span>
-            <span class="a-num">#1 / 10</span>
+            <span class="a-num">#3 / 12</span>
           </div>
           <h2>UE alocă 60 mil. € pentru securitatea Mării Negre: 50 mil. € pentru hub-ul maritim și 10 mil. € pentru căutare-salvare</h2>
           <div class="followup">
@@ -896,7 +965,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-116" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">alertă aeriană lângă Sulina</span>
-            <span class="a-num">#2 / 10</span>
+            <span class="a-num">#4 / 12</span>
           </div>
           <h2>Alertă aeriană lângă Sulina, în timpul vizitei von der Leyen: țintă detectată la ~30 km NE, două F-16 ridicate, RO-Alert în estul Tulcei</h2>
           <div class="followup">
@@ -933,7 +1002,7 @@
             <span class="a-cat">Tech &amp; AI</span>
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <span class="subj-pill">deploy aplicații vibe-coding</span>
-            <span class="a-num">#3 / 10</span>
+            <span class="a-num">#5 / 12</span>
           </div>
           <h2>Automattic lansează Spacefast: platformă care pune online aplicațiile construite cu AI (vibe-coding)</h2>
           <div class="sec">
@@ -968,7 +1037,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-81" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">vizita von der Leyen la București</span>
-            <span class="a-num">#4 / 10</span>
+            <span class="a-num">#6 / 12</span>
           </div>
           <h2>Von der Leyen e azi la București: Marea Neagră, hub maritim și sprijin nou promis — întâlnire la Cotroceni la 15:30, declarații la 17:00</h2>
           <div class="followup">
@@ -1009,7 +1078,7 @@
             <span class="a-cat">Tech &amp; AI · Belgia</span>
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="subj-pill">Proces UE contra IBM pentru EES</span>
-            <span class="a-num">#5 / 10</span>
+            <span class="a-num">#7 / 12</span>
           </div>
           <h2>UE dă în judecată IBM, Atos și Leonardo pentru întârzierile sistemului de frontieră EES</h2>
           <div class="sec">
@@ -1045,7 +1114,7 @@
             <span class="a-cat">Securitate &amp; NATO</span>
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="subj-pill">exercițiul Poseidon în Marea Neagră</span>
-            <span class="a-num">#6 / 10</span>
+            <span class="a-num">#8 / 12</span>
           </div>
           <h2>Exercițiul naval Poseidon 26 a început în Marea Neagră: Bulgaria găzduiește, România și Turcia participă — focus pe contramăsuri împotriva minelor</h2>
           <div class="sec">
@@ -1078,7 +1147,7 @@
             <span class="a-cat">Securitate &amp; NATO</span>
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="subj-pill">deficit ajutor militar Ucraina</span>
-            <span class="a-num">#7 / 10</span>
+            <span class="a-num">#9 / 12</span>
           </div>
           <h2>NATO riscă să rateze ținta de ajutor militar pentru Ucraina: deficit de circa 7 mld € din 70 mld € promiși pentru 2026, înaintea reuniunii din 17 noiembrie</h2>
           <div class="sec">
@@ -1111,7 +1180,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-111" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">anchetă board Nvidia Jensen Huang</span>
-            <span class="a-num">#8 / 10</span>
+            <span class="a-num">#10 / 12</span>
           </div>
           <h2>Consiliul Nvidia deschide o anchetă independentă după acuzațiile că șeful Jensen Huang ar fi fost ținta unei operațiuni de spionaj chinez; Huang recunoaște o relație extraconjugală</h2>
           <div class="followup">
@@ -1155,7 +1224,7 @@
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <a class="cont-pill" href="#stire-97" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">repornirea Unității 2 Cernavodă</span>
-            <span class="a-num">#9 / 10</span>
+            <span class="a-num">#11 / 12</span>
           </div>
           <h2>Unitatea 2 de la Cernavodă a început repornirea: secvența de pornire a fost inițiată azi-noapte la 00:42, revenirea completă e estimată marți</h2>
           <div class="followup">
@@ -1192,7 +1261,7 @@
             <span class="a-cat">România</span>
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <span class="subj-pill">AfD invitată la protestul AUR</span>
-            <span class="a-num">#10 / 10</span>
+            <span class="a-num">#12 / 12</span>
           </div>
           <h2>Reprezentanți ai AfD, invitați la protestul AUR din 14 noiembrie — deși lidera AfD, Alice Weidel, i-a acuzat pe românii din Germania că „jefuiesc sistemul social”</h2>
 
@@ -5623,7 +5692,7 @@
 
       <footer>
         <div class="rule" aria-hidden="true"></div>
-        <p>Sfârșitul ediției de azi · Ultima actualizare: luni, 9 noiembrie 2026, 19:00<br />Monitorizarea rulează la circa 3 ore, în fereastra L–V 06:00–22:00 · S–D 07:30–22:00 — dă refresh pentru noutăți.</p>
+        <p>Sfârșitul ediției de azi · Ultima actualizare: luni, 9 noiembrie 2026, 20:00<br />Monitorizarea rulează la circa 3 ore, în fereastra L–V 06:00–22:00 · S–D 07:30–22:00 — dă refresh pentru noutăți.</p>
         <a class="to-top" href="#stire-126">↑ Înapoi la cea mai nouă știre</a>
       </footer>
     </div>
