@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="color-scheme" content="light dark" />
-    <meta name="tirile-versiune" content="2026-11-09T10:00:00+01:00|4|amber" />
+    <meta name="tirile-versiune" content="2026-11-09T11:00:00+01:00|5|amber" />
     <link rel="icon" href="data:," />
     <title>Știrile zilei</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -699,9 +699,9 @@
     <div class="topbar">
       <div class="topbar-inner">
         <span class="dot" aria-hidden="true"></span>
-        <span><strong>Luni, 9 noiembrie 2026</strong> · actualizat la <strong>10:00</strong></span>
+        <span><strong>Luni, 9 noiembrie 2026</strong> · actualizat la <strong>11:00</strong></span>
         <span aria-hidden="true">·</span>
-        <span>4 știri azi</span>
+        <span>5 știri azi</span>
         <span class="spacer"></span>
         <button class="refresh-btn" type="button" id="refreshBtn" aria-label="Reîmprospătează pagina">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg>
@@ -739,7 +739,7 @@
 
       <!-- Chenar permanent: știrea cea mai importantă a zilei — sub fereastra
            „Ultimele știri", ÎNAINTEA dashboardului, vizibilă din prima, fără scroll.
-           Nivelul de azi: GALBEN (sev-amber) — de urmărit: boardul Nvidia a deschis o anchetă independentă pe acuzații de spionaj chinez care l-ar fi vizat pe CEO-ul Jensen Huang — cea mai importantă dintre cele două știri galbene ale zilei (cealaltă: deficitul de ajutor militar NATO pentru Ucraina; celelalte două sunt verzi).
+           Nivelul de azi: GALBEN (sev-amber) — de urmărit: boardul Nvidia a deschis o anchetă independentă pe acuzații de spionaj chinez care l-ar fi vizat pe CEO-ul Jensen Huang — cea mai importantă dintre cele trei știri galbene ale zilei (celelalte: deficitul de ajutor militar NATO pentru Ucraina și exercițiul naval Poseidon în Marea Neagră; celelalte două sunt verzi).
            Chenarul rămâne în afara logicii de filtrare: vizibil indiferent de filtrul de categorie. -->
       <section class="spot sev-amber" aria-label="Știrea cea mai importantă a zilei">
         <div class="spot-head">
@@ -768,23 +768,23 @@
       <section class="dashboard" aria-label="Panou de ansamblu">
         <div class="dash-head">
           <span class="dash-title">Dashboard · Azi</span>
-          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 10:00</span>
+          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 11:00</span>
           <span class="dash-meta">Fereastră monitorizare <strong>L–V 06:00–22:00 · S–D 07:30–22:00</strong> · pas ~3 ore</span>
         </div>
 
         <div class="kpi-grid five" role="group" aria-label="Filtrează după categorie — apasă pe un tile">
           <button class="kpi" type="button" data-filter="toate" aria-pressed="true">
             <span class="kpi-top"><span class="kpi-label">Toate știrile</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">4</span>
-            <span class="kpi-sub">știri verificate azi, în 3 rulări</span>
+            <span class="kpi-value">5</span>
+            <span class="kpi-sub">știri verificate azi, în 4 rulări</span>
             <span class="kpi-bar" aria-hidden="true"><i style="width:100%"></i></span>
             <span class="kpi-hint">Apasă pentru toate</span>
           </button>
           <button class="kpi" type="button" data-filter="securitate" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">Securitate &amp; NATO</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">1</span>
-            <span class="kpi-sub">deficit ajutor militar Ucraina</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:25%"></i></span>
+            <span class="kpi-value">2</span>
+            <span class="kpi-sub">exercițiul Poseidon în Marea Neagră · deficit ajutor militar Ucraina</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:40%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="romania" aria-pressed="false">
@@ -819,7 +819,7 @@
       </section>
 
       <div class="filter-status" aria-live="polite">
-        <span class="filter-label">Se afișează: <strong>Toate categoriile — 4 din 4 știri</strong></span>
+        <span class="filter-label">Se afișează: <strong>Toate categoriile — 5 din 5 știri</strong></span>
         <button class="filter-reset" type="button" hidden>Resetează filtrul</button>
       </div>
 
@@ -849,14 +849,47 @@
       <p class="empty">Nicio știre în această categorie azi.</p>
 
       <main>
-        <!-- 1 · 9 nov · 10:00 -->
+        <!-- 1 · 9 nov · 11:00 -->
+        <article id="stire-122" data-cats="securitate" data-sev="amber" data-subiect="exercițiul Poseidon în Marea Neagră">
+          <div class="a-meta">
+            <span class="a-time">9 nov · 11:00</span>
+            <span class="a-cat">Securitate &amp; NATO</span>
+            <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
+            <span class="subj-pill">exercițiul Poseidon în Marea Neagră</span>
+            <span class="a-num">#1 / 5</span>
+          </div>
+          <h2>Exercițiul naval Poseidon 26 a început în Marea Neagră: Bulgaria găzduiește, România și Turcia participă — focus pe contramăsuri împotriva minelor</h2>
+          <div class="sec">
+            <p class="sec-label">Ce s-a întâmplat</p>
+            <p>Exercițiul naval anual Poseidon se desfășoară în Marea Neagră între 7 și 14 noiembrie 2026, găzduit anul acesta de Bulgaria, cu participarea forțelor navale din Bulgaria, România și Turcia. Accentul cade pe contramăsuri împotriva minelor subacvatice și pe cooperarea între marinele aliate, pentru îmbunătățirea interoperabilității. România a confirmat desfășurarea unui dragor de mine, care operează alături de nave bulgare și turcești; G4Media titrează că exercițiul implică șase nave. Poseidon se ține anual în Marea Neagră din 2002, cu organizarea alternând între România și Bulgaria.</p>
+          </div>
+          <div class="sec">
+            <p class="sec-label">De ce contează</p>
+            <p>Continuă direct arcul Mării Negre urmărit în watch: exercițiul are loc în aceleași săptămâni în care nave comerciale au fost lovite de drone în apropierea coastelor României și Bulgariei și în care grupul trilateral de deminare (MCM Black Sea) și-a extins mandatul la protecția infrastructurii critice submarine. Pentru munca lui de IT incident Manager în mediul NATO, e un semnal de postură aliată pe Flancul estic — activitate navală live în zona pe care o urmărește profesional — nu o acțiune cerută de la el.</p>
+          </div>
+          <div class="verify">
+            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
+            <p>Verdict: confirmat. Bytes Europe (9 nov 2026, 08:21 UTC) — relatarea exercițiului: 7–14 noiembrie, Bulgaria gazdă, participă Bulgaria, România și Turcia, focus pe contramăsuri împotriva minelor; România desfășoară un dragor de mine. Grosswald — calendarul exercițiilor NATO 2026 (actualizat 5 nov 2026) listează independent Poseidon 26, 7–14 nov, Bulgaria, contramăsuri împotriva minelor. G4Media (9 nov 2026) — relatarea începerii exercițiului, cu șase nave. Notă de integritate: cifra de șase nave vine din titlul G4Media; celelalte două surse nu precizează numărul de nave.</p>
+            <ul class="sources">
+              <li><a href="https://www.byteseu.com/2508600/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Bytes Europe — „NATO Launches Poseidon Naval Exercises in the Black Sea" (9 nov 2026, 08:21 UTC)<span class="host">byteseu.com</span></a></li>
+              <li><a href="https://www.grosswald.org/nato-exercises-2026/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Grosswald — „NATO Exercises 2026: The Complete Guide to Allied Readiness" (actualizat 5 nov 2026)<span class="host">grosswald.org</span></a></li>
+              <li><a href="https://www.g4media.ro/bulgaria-romania-si-turcia-au-inceput-un-exercitiul-militar-cu-sase-nave-in-marea-neagra.html" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>G4Media — „Bulgaria, România și Turcia au început un exercițiul militar cu șase nave în Marea Neagră" (9 nov 2026)<span class="host">g4media.ro</span></a></li>
+            </ul>
+          </div>
+          <div class="impact">
+            <span class="badge">Impact direct</span>
+            <p>Impact direct: minim azi — nicio acțiune cerută. Relevanță profesională de context ridicată: un exercițiu aliat de deminare în desfășurare în Marea Neagră, în perioada în care minele în derivă și dronele navale au lovit navigația comercială din zonă; de urmărit încheierea exercițiului pe 14 noiembrie și eventualele constatări despre minele descoperite.</p>
+          </div>
+        </article>
+
+        <!-- 2 · 9 nov · 10:00 -->
         <article id="stire-121" data-cats="securitate" data-sev="amber" data-subiect="deficit ajutor militar Ucraina">
           <div class="a-meta">
             <span class="a-time">9 nov · 10:00</span>
             <span class="a-cat">Securitate &amp; NATO</span>
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="subj-pill">deficit ajutor militar Ucraina</span>
-            <span class="a-num">#1 / 4</span>
+            <span class="a-num">#2 / 5</span>
           </div>
           <h2>NATO riscă să rateze ținta de ajutor militar pentru Ucraina: deficit de circa 7 mld € din 70 mld € promiși pentru 2026, înaintea reuniunii din 17 noiembrie</h2>
           <div class="sec">
@@ -881,7 +914,7 @@
           </div>
         </article>
 
-        <!-- 2 · 9 nov · 08:00 -->
+        <!-- 3 · 9 nov · 08:00 -->
         <article id="stire-120" data-cats="tech" data-sev="amber" data-subiect="anchetă board Nvidia Jensen Huang">
           <div class="a-meta">
             <span class="a-time">9 nov · 08:00</span>
@@ -890,7 +923,7 @@
             <a class="cont-pill" href="#stire-111" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="spot-tag">Știrea zilei</span>
             <span class="subj-pill">anchetă board Nvidia Jensen Huang</span>
-            <span class="a-num">#2 / 4</span>
+            <span class="a-num">#3 / 5</span>
           </div>
           <h2>Consiliul Nvidia deschide o anchetă independentă după acuzațiile că șeful Jensen Huang ar fi fost ținta unei operațiuni de spionaj chinez; Huang recunoaște o relație extraconjugală</h2>
           <div class="followup">
@@ -926,7 +959,7 @@
           </div>
         </article>
 
-        <!-- 3 · 9 nov · 08:00 -->
+        <!-- 4 · 9 nov · 08:00 -->
         <article id="stire-119" data-cats="romania" data-sev="green" data-subiect="repornirea Unității 2 Cernavodă">
           <div class="a-meta">
             <span class="a-time">9 nov · 08:00</span>
@@ -934,7 +967,7 @@
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <a class="cont-pill" href="#stire-97" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">repornirea Unității 2 Cernavodă</span>
-            <span class="a-num">#3 / 4</span>
+            <span class="a-num">#4 / 5</span>
           </div>
           <h2>Unitatea 2 de la Cernavodă a început repornirea: secvența de pornire a fost inițiată azi-noapte la 00:42, revenirea completă e estimată marți</h2>
           <div class="followup">
@@ -964,14 +997,14 @@
           </div>
         </article>
 
-        <!-- 4 · 9 nov · 07:00 -->
+        <!-- 5 · 9 nov · 07:00 -->
         <article id="stire-118" data-cats="romania" data-sev="green" data-subiect="AfD invitată la protestul AUR">
           <div class="a-meta">
             <span class="a-time">9 nov · 07:00</span>
             <span class="a-cat">România</span>
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <span class="subj-pill">AfD invitată la protestul AUR</span>
-            <span class="a-num">#4 / 4</span>
+            <span class="a-num">#5 / 5</span>
           </div>
           <h2>Reprezentanți ai AfD, invitați la protestul AUR din 14 noiembrie — deși lidera AfD, Alice Weidel, i-a acuzat pe românii din Germania că „jefuiesc sistemul social”</h2>
 
@@ -5402,8 +5435,8 @@
 
       <footer>
         <div class="rule" aria-hidden="true"></div>
-        <p>Sfârșitul ediției de azi · Ultima actualizare: luni, 9 noiembrie 2026, 08:00<br />Monitorizarea rulează la circa 3 ore, în fereastra L–V 06:00–22:00 · S–D 07:30–22:00 — dă refresh pentru noutăți.</p>
-        <a class="to-top" href="#stire-120">↑ Înapoi la cea mai nouă știre</a>
+        <p>Sfârșitul ediției de azi · Ultima actualizare: luni, 9 noiembrie 2026, 11:00<br />Monitorizarea rulează la circa 3 ore, în fereastra L–V 06:00–22:00 · S–D 07:30–22:00 — dă refresh pentru noutăți.</p>
+        <a class="to-top" href="#stire-122">↑ Înapoi la cea mai nouă știre</a>
       </footer>
     </div>
 
