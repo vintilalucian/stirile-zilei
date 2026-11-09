@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="color-scheme" content="light dark" />
-    <meta name="tirile-versiune" content="2026-11-09T11:00:00+01:00|5|amber" />
+    <meta name="tirile-versiune" content="2026-11-09T13:00:00+01:00|6|amber" />
     <link rel="icon" href="data:," />
     <title>Știrile zilei</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -699,9 +699,9 @@
     <div class="topbar">
       <div class="topbar-inner">
         <span class="dot" aria-hidden="true"></span>
-        <span><strong>Luni, 9 noiembrie 2026</strong> · actualizat la <strong>11:00</strong></span>
+        <span><strong>Luni, 9 noiembrie 2026</strong> · actualizat la <strong>13:00</strong></span>
         <span aria-hidden="true">·</span>
-        <span>5 știri azi</span>
+        <span>6 știri azi</span>
         <span class="spacer"></span>
         <button class="refresh-btn" type="button" id="refreshBtn" aria-label="Reîmprospătează pagina">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg>
@@ -739,7 +739,7 @@
 
       <!-- Chenar permanent: știrea cea mai importantă a zilei — sub fereastra
            „Ultimele știri", ÎNAINTEA dashboardului, vizibilă din prima, fără scroll.
-           Nivelul de azi: GALBEN (sev-amber) — de urmărit: boardul Nvidia a deschis o anchetă independentă pe acuzații de spionaj chinez care l-ar fi vizat pe CEO-ul Jensen Huang — cea mai importantă dintre cele trei știri galbene ale zilei (celelalte: deficitul de ajutor militar NATO pentru Ucraina și exercițiul naval Poseidon în Marea Neagră; celelalte două sunt verzi).
+           Nivelul de azi: GALBEN (sev-amber) — de urmărit: boardul Nvidia a deschis o anchetă independentă pe acuzații de spionaj chinez care l-ar fi vizat pe CEO-ul Jensen Huang — cea mai importantă dintre cele patru știri galbene ale zilei (celelalte: deficitul de ajutor militar NATO pentru Ucraina, exercițiul naval Poseidon în Marea Neagră și procesul UE contra IBM, Atos și Leonardo pentru EES; celelalte două sunt verzi).
            Chenarul rămâne în afara logicii de filtrare: vizibil indiferent de filtrul de categorie. -->
       <section class="spot sev-amber" aria-label="Știrea cea mai importantă a zilei">
         <div class="spot-head">
@@ -768,15 +768,15 @@
       <section class="dashboard" aria-label="Panou de ansamblu">
         <div class="dash-head">
           <span class="dash-title">Dashboard · Azi</span>
-          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 11:00</span>
+          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 13:00</span>
           <span class="dash-meta">Fereastră monitorizare <strong>L–V 06:00–22:00 · S–D 07:30–22:00</strong> · pas ~3 ore</span>
         </div>
 
         <div class="kpi-grid five" role="group" aria-label="Filtrează după categorie — apasă pe un tile">
           <button class="kpi" type="button" data-filter="toate" aria-pressed="true">
             <span class="kpi-top"><span class="kpi-label">Toate știrile</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">5</span>
-            <span class="kpi-sub">știri verificate azi, în 4 rulări</span>
+            <span class="kpi-value">6</span>
+            <span class="kpi-sub">știri verificate azi, în 5 rulări</span>
             <span class="kpi-bar" aria-hidden="true"><i style="width:100%"></i></span>
             <span class="kpi-hint">Apasă pentru toate</span>
           </button>
@@ -784,28 +784,28 @@
             <span class="kpi-top"><span class="kpi-label">Securitate &amp; NATO</span><span class="kpi-check" aria-hidden="true">✓</span></span>
             <span class="kpi-value">2</span>
             <span class="kpi-sub">exercițiul Poseidon în Marea Neagră · deficit ajutor militar Ucraina</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:40%"></i></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:33%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="romania" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">România</span><span class="kpi-check" aria-hidden="true">✓</span></span>
             <span class="kpi-value">2</span>
             <span class="kpi-sub">repornirea Unității 2 Cernavodă · AfD invitată la protestul AUR</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:50%"></i></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:33%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="belgia" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">Belgia</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">0</span>
-            <span class="kpi-sub"></span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:0%"></i></span>
+            <span class="kpi-value">1</span>
+            <span class="kpi-sub">Proces UE contra IBM pentru EES</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:17%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="tech" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">Tech &amp; AI</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">1</span>
-            <span class="kpi-sub">anchetă board Nvidia Jensen Huang</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:25%"></i></span>
+            <span class="kpi-value">2</span>
+            <span class="kpi-sub">Proces UE contra IBM pentru EES · anchetă board Nvidia Jensen Huang</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:33%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
         </div>
@@ -819,7 +819,7 @@
       </section>
 
       <div class="filter-status" aria-live="polite">
-        <span class="filter-label">Se afișează: <strong>Toate categoriile — 5 din 5 știri</strong></span>
+        <span class="filter-label">Se afișează: <strong>Toate categoriile — 6 din 6 știri</strong></span>
         <button class="filter-reset" type="button" hidden>Resetează filtrul</button>
       </div>
 
@@ -849,14 +849,50 @@
       <p class="empty">Nicio știre în această categorie azi.</p>
 
       <main>
-        <!-- 1 · 9 nov · 11:00 -->
+        <!-- 1 · 9 nov · 13:00 -->
+        <article id="stire-123" data-cats="tech belgia" data-sev="amber" data-subiect="Proces UE contra IBM pentru EES">
+          <div class="a-meta">
+            <span class="a-time">9 nov · 13:00</span>
+            <span class="a-cat">Tech &amp; AI · Belgia</span>
+            <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
+            <span class="subj-pill">Proces UE contra IBM pentru EES</span>
+            <span class="a-num">#1 / 6</span>
+          </div>
+          <h2>UE dă în judecată IBM, Atos și Leonardo pentru întârzierile sistemului de frontieră EES</h2>
+          <div class="sec">
+            <p class="sec-label">Ce s-a întâmplat</p>
+            <p>Agenția UE eu-LISA a dat în judecată IBM, grupul francez Atos și contractorul italian de apărare Leonardo pentru întârzierile repetate în livrarea sistemului electronic de frontieră Entry/Exit System (EES), potrivit Financial Times, care citează comunicări interne. Cererea a fost depusă la 22 decembrie 2025 la un tribunal din Estonia, unde își are sediul agenția, iar purtătorul de cuvânt al tribunalului districtual Harju a confirmat că dosarul civil a fost acceptat, fără audieri programate încă. Contractul central EES, atribuit în 2019 consorțiului format din IBM Belgium, Atos Belgium și Leonardo, a crescut de la 142 la 212 milioane de euro, iar sistemul — care trebuia să intre în funcțiune în 2022 — a ajuns la funcționare completă abia în 2026.</p>
+          </div>
+          <div class="sec">
+            <p class="sec-label">De ce contează</p>
+            <p>Pentru un IT incident Manager care lucrează cu sisteme IT instituționale de scară mare, cazul e direct pe terenul lui profesional: un sistem european de frontieră cu defecțiuni operaționale repetate la lansare — chioșcuri defecte, cozi de până la 3 ore la vârfurile de trafic, suspendări temporare ale sistemului — ajunge în instanță pentru eșecul livrării, cu lecții despre responsabilitatea furnizorului și penalități contractuale.</p>
+          </div>
+          <div class="verify">
+            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
+            <p>Verdict: confirmat. Financial Times — relatarea originală din 9 nov 2026 (sursa primară a dezvăluirii), care citează comunicări interne. Raportul anual al eu-LISA (iulie 2026) confirmă că agenția a activat remediile juridice și contractuale după întârzierile repetate ale consorțiului. Tribunalul districtual Harju (Estonia) — purtătorul de cuvânt a confirmat că dosarul civil a fost acceptat. Reuters relatează știrea FT din 9 nov 2026, menționând că nu a putut verifica independent imediat relatarea.</p>
+            <ul class="sources">
+              <li><a href="https://www.reuters.com/legal/litigation/eu-sues-ibm-two-european-companies-over-troubled-border-system-ft-reports-2026-11-09/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Reuters — „EU sues IBM, two European companies over troubled border system, FT reports" (9 nov 2026; relatează relatarea Financial Times)<span class="host">reuters.com</span></a></li>
+              <li><a href="https://www.europesays.com/europe/177129/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Europe Says — detalii despre procesul UE contra IBM, Atos și Leonardo pentru sistemul EES<span class="host">europesays.com</span></a></li>
+            </ul>
+          </div>
+          <div class="opposing">
+            <p class="sec-label">Tabăra adversă</p>
+            <p>Atos Belgium și IBM Belgium — într-o scrisoare din octombrie 2021 văzută de Financial Times, au contestat atât principiul, cât și calculul penalității impuse de agenție, susținând că întârzierile au venit din factori externi, inclusiv pandemia COVID-19 (<a href="https://www.reuters.com/legal/litigation/eu-sues-ibm-two-european-companies-over-troubled-border-system-ft-reports-2026-11-09/" target="_blank" rel="noopener">Reuters</a>).</p>
+          </div>
+          <div class="impact">
+            <span class="badge">Impact direct</span>
+            <p>Impact direct minim azi: litigiul privește întârzieri din faza de dezvoltare, nu funcționarea curentă — eu-LISA și Comisia Europeană spun că EES funcționează complet în toată Europa și că procesul nu afectează operarea sistemului. Pentru călătorii: la zborurile din spațiul Schengen, cozile la controlul de frontieră pot rămâne lungi la vârf, mai ales pentru pasagerii non-UE la prima înregistrare biometrică.</p>
+          </div>
+        </article>
+
+        <!-- 2 · 9 nov · 11:00 -->
         <article id="stire-122" data-cats="securitate" data-sev="amber" data-subiect="exercițiul Poseidon în Marea Neagră">
           <div class="a-meta">
             <span class="a-time">9 nov · 11:00</span>
             <span class="a-cat">Securitate &amp; NATO</span>
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="subj-pill">exercițiul Poseidon în Marea Neagră</span>
-            <span class="a-num">#1 / 5</span>
+            <span class="a-num">#2 / 6</span>
           </div>
           <h2>Exercițiul naval Poseidon 26 a început în Marea Neagră: Bulgaria găzduiește, România și Turcia participă — focus pe contramăsuri împotriva minelor</h2>
           <div class="sec">
@@ -882,14 +918,14 @@
           </div>
         </article>
 
-        <!-- 2 · 9 nov · 10:00 -->
+        <!-- 3 · 9 nov · 10:00 -->
         <article id="stire-121" data-cats="securitate" data-sev="amber" data-subiect="deficit ajutor militar Ucraina">
           <div class="a-meta">
             <span class="a-time">9 nov · 10:00</span>
             <span class="a-cat">Securitate &amp; NATO</span>
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="subj-pill">deficit ajutor militar Ucraina</span>
-            <span class="a-num">#2 / 5</span>
+            <span class="a-num">#3 / 6</span>
           </div>
           <h2>NATO riscă să rateze ținta de ajutor militar pentru Ucraina: deficit de circa 7 mld € din 70 mld € promiși pentru 2026, înaintea reuniunii din 17 noiembrie</h2>
           <div class="sec">
@@ -914,7 +950,7 @@
           </div>
         </article>
 
-        <!-- 3 · 9 nov · 08:00 -->
+        <!-- 4 · 9 nov · 08:00 -->
         <article id="stire-120" data-cats="tech" data-sev="amber" data-subiect="anchetă board Nvidia Jensen Huang">
           <div class="a-meta">
             <span class="a-time">9 nov · 08:00</span>
@@ -923,7 +959,7 @@
             <a class="cont-pill" href="#stire-111" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="spot-tag">Știrea zilei</span>
             <span class="subj-pill">anchetă board Nvidia Jensen Huang</span>
-            <span class="a-num">#3 / 5</span>
+            <span class="a-num">#4 / 6</span>
           </div>
           <h2>Consiliul Nvidia deschide o anchetă independentă după acuzațiile că șeful Jensen Huang ar fi fost ținta unei operațiuni de spionaj chinez; Huang recunoaște o relație extraconjugală</h2>
           <div class="followup">
@@ -959,7 +995,7 @@
           </div>
         </article>
 
-        <!-- 4 · 9 nov · 08:00 -->
+        <!-- 5 · 9 nov · 08:00 -->
         <article id="stire-119" data-cats="romania" data-sev="green" data-subiect="repornirea Unității 2 Cernavodă">
           <div class="a-meta">
             <span class="a-time">9 nov · 08:00</span>
@@ -967,7 +1003,7 @@
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <a class="cont-pill" href="#stire-97" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">repornirea Unității 2 Cernavodă</span>
-            <span class="a-num">#4 / 5</span>
+            <span class="a-num">#5 / 6</span>
           </div>
           <h2>Unitatea 2 de la Cernavodă a început repornirea: secvența de pornire a fost inițiată azi-noapte la 00:42, revenirea completă e estimată marți</h2>
           <div class="followup">
@@ -997,14 +1033,14 @@
           </div>
         </article>
 
-        <!-- 5 · 9 nov · 07:00 -->
+        <!-- 6 · 9 nov · 07:00 -->
         <article id="stire-118" data-cats="romania" data-sev="green" data-subiect="AfD invitată la protestul AUR">
           <div class="a-meta">
             <span class="a-time">9 nov · 07:00</span>
             <span class="a-cat">România</span>
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <span class="subj-pill">AfD invitată la protestul AUR</span>
-            <span class="a-num">#5 / 5</span>
+            <span class="a-num">#6 / 6</span>
           </div>
           <h2>Reprezentanți ai AfD, invitați la protestul AUR din 14 noiembrie — deși lidera AfD, Alice Weidel, i-a acuzat pe românii din Germania că „jefuiesc sistemul social”</h2>
 
