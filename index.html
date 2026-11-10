@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="color-scheme" content="light dark" />
-    <meta name="tirile-versiune" content="2026-11-10T14:00:00+01:00|12|amber" />
+    <meta name="tirile-versiune" content="2026-11-10T15:00:00+01:00|13|amber" />
     <link rel="icon" href="data:," />
     <title>Știrile zilei</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -699,9 +699,9 @@
     <div class="topbar">
       <div class="topbar-inner">
         <span class="dot" aria-hidden="true"></span>
-        <span><strong>Marți, 10 noiembrie 2026</strong> · actualizat la <strong>14:00</strong></span>
+        <span><strong>Marți, 10 noiembrie 2026</strong> · actualizat la <strong>15:00</strong></span>
         <span aria-hidden="true">·</span>
-        <span>12 știri azi</span>
+        <span>13 știri azi</span>
         <span class="spacer"></span>
         <button class="refresh-btn" type="button" id="refreshBtn" aria-label="Reîmprospătează pagina">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg>
@@ -739,7 +739,7 @@
 
       <!-- Chenar permanent: știrea cea mai importantă a zilei — sub fereastra
            „Ultimele știri", ÎNAINTEA dashboardului, vizibilă din prima, fără scroll.
-           Nivelul de azi: GALBEN (sev-amber) — de urmărit: Claude Code scurge parole și chei API pe GitHub — știrea cu severitatea cea mai mare a zilei și cea mai importantă dintre cele șase știri galbene ale zilei, singura cu impact direct personal; mai sunt alte cinci știri galbene azi (destituirea propusă a secretarului american al apărării, de la 11:00, procesul colectiv împotriva Nvidia, de la 10:00, breșa „SSHole" în OpenSSH, de la 09:00, anunțul Rusiei despre nave lovite în Marea Neagră, de la 08:00, și negocierile Ucraina–Rusia de la Abu Dhabi, de la 06:00), iar cele șase verzi sunt investițiile HELLENiQ în regenerabile în România, oprirea reactorului 1 de la Cernavodă, breșa de date Wyndham, IPO-ul Anthropic, comanda IRIS și turbinele Anthropic — de aceea chenarul poartă mențiunea despre celelalte știri cu aceeași severitate, cu filtru pe galben la „apasă aici".
+           Nivelul de azi: GALBEN (sev-amber) — de urmărit: Claude Code scurge parole și chei API pe GitHub — știrea cu severitatea cea mai mare a zilei și cea mai importantă dintre cele șapte știri galbene ale zilei, singura cu impact direct personal; mai sunt alte șase știri galbene azi (atacurile cibernetice asupra AI-ului open-source, de la 15:00, destituirea propusă a secretarului american al apărării, de la 11:00, procesul colectiv împotriva Nvidia, de la 10:00, breșa „SSHole" în OpenSSH, de la 09:00, anunțul Rusiei despre nave lovite în Marea Neagră, de la 08:00, și negocierile Ucraina–Rusia de la Abu Dhabi, de la 06:00), iar cele șase verzi sunt investițiile HELLENiQ în regenerabile în România, oprirea reactorului 1 de la Cernavodă, breșa de date Wyndham, IPO-ul Anthropic, comanda IRIS și turbinele Anthropic — de aceea chenarul poartă mențiunea despre celelalte știri cu aceeași severitate, cu filtru pe galben la „apasă aici".
            Chenarul rămâne în afara logicii de filtrare: vizibil indiferent de filtrul de categorie. -->
       <section class="spot sev-amber" aria-label="Știrea cea mai importantă a zilei">
         <div class="spot-head">
@@ -751,7 +751,7 @@
           <span class="spot-pill">Nivel galben — de urmărit</span>
         </div>
         <h2 class="spot-title">Claude Code scurge parole și chei API pe GitHub: 1.122 de fișiere publice conțin secrete reale</h2>
-        <p class="spot-why"><strong>De ce e în față:</strong> E cea mai importantă dintre cele șase știri galbene ale zilei și singura cu impact direct personal: fișierul local de setări al lui Claude Code ajunge în repo-uri publice GitHub cu parole și chei API salvate cuvânt cu cuvânt — iar el construiește automatizări cu chei API (Google Apps Script + Gemini) și folosește Claude zilnic, deci o cheie tastată vreodată într-o comandă aprobată poate fi deja expusă.</p>
+        <p class="spot-why"><strong>De ce e în față:</strong> E cea mai importantă dintre cele șapte știri galbene ale zilei și singura cu impact direct personal: fișierul local de setări al lui Claude Code ajunge în repo-uri publice GitHub cu parole și chei API salvate cuvânt cu cuvânt — iar el construiește automatizări cu chei API (Google Apps Script + Gemini) și folosește Claude zilnic, deci o cheie tastată vreodată într-o comandă aprobată poate fi deja expusă.</p>
         <p class="spot-lead">Cercetătorii Apiiro au numărat 104.185 de copii publice ale fișierului „.claude/settings.local.json"; 1.122 conțin cel puțin un secret real — 1.379 de secrete distincte — iar cu tot cu istoricul git totalul urcă la 2.539 de secrete în 1.994 de repo-uri, din 63 de organizații.</p>
         <p class="spot-more" hidden><span class="spot-more-text"></span> <button class="spot-more-btn" type="button">apasă aici</button></p>
         <div class="spot-foot">
@@ -768,15 +768,15 @@
       <section class="dashboard" aria-label="Panou de ansamblu">
         <div class="dash-head">
           <span class="dash-title">Dashboard · Azi</span>
-          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 14:00</span>
+          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 15:00</span>
           <span class="dash-meta">Fereastră monitorizare <strong>L–V 06:00–22:00 · S–D 07:30–22:00</strong> · pas ~3 ore</span>
         </div>
 
         <div class="kpi-grid five" role="group" aria-label="Filtrează după categorie — apasă pe un tile">
           <button class="kpi" type="button" data-filter="toate" aria-pressed="true">
             <span class="kpi-top"><span class="kpi-label">Toate știrile</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">12</span>
-            <span class="kpi-sub">știri verificate azi, în 7 rulări</span>
+            <span class="kpi-value">13</span>
+            <span class="kpi-sub">știri verificate azi, în 8 rulări</span>
             <span class="kpi-bar" aria-hidden="true"><i style="width:100%"></i></span>
             <span class="kpi-hint">Apasă pentru toate</span>
           </button>
@@ -784,14 +784,14 @@
             <span class="kpi-top"><span class="kpi-label">Securitate &amp; NATO</span><span class="kpi-check" aria-hidden="true">✓</span></span>
             <span class="kpi-value">4</span>
             <span class="kpi-sub">sateliți militari IRIS ai Franței · impeachment secretar apărare SUA · nave lovite în Marea Neagră · negocierile Ucraina–Rusia încep</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:33%"></i></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:31%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="romania" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">România</span><span class="kpi-check" aria-hidden="true">✓</span></span>
             <span class="kpi-value">2</span>
             <span class="kpi-sub">investiții regenerabile în România · reactorul 1 Cernavodă oprit</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:17%"></i></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:15%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="belgia" aria-pressed="false">
@@ -803,9 +803,9 @@
           </button>
           <button class="kpi" type="button" data-filter="tech" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">Tech &amp; AI</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">6</span>
-            <span class="kpi-sub">Anthropic cumpără turbine pe gaz · proces colectiv împotriva Nvidia · breșă de date la Wyndham · chei API scurse de Claude Code · breșă OpenSSH exploatată activ · IPO Anthropic săptămâna viitoare</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:50%"></i></span>
+            <span class="kpi-value">7</span>
+            <span class="kpi-sub">atacuri asupra AI open-source · Anthropic cumpără turbine pe gaz · proces colectiv împotriva Nvidia · breșă de date la Wyndham · chei API scurse de Claude Code · breșă OpenSSH exploatată activ · IPO Anthropic săptămâna viitoare</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:54%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
         </div>
@@ -819,7 +819,7 @@
       </section>
 
       <div class="filter-status" aria-live="polite">
-        <span class="filter-label">Se afișează: <strong>Toate categoriile — 12 din 12 știri</strong></span>
+        <span class="filter-label">Se afișează: <strong>Toate categoriile — 13 din 13 știri</strong></span>
         <button class="filter-reset" type="button" hidden>Resetează filtrul</button>
       </div>
 
@@ -849,14 +849,52 @@
       <p class="empty">Nicio știre în această categorie azi.</p>
 
       <main>
-        <!-- 1 · 10 nov · 14:00 -->
+        <!-- 1 · 10 nov · 15:00 -->
+        <article id="stire-144" data-cats="tech" data-sev="amber" data-subiect="atacuri asupra AI open-source">
+          <div class="a-meta">
+            <span class="a-time">10 nov · 15:00</span>
+            <span class="a-cat">Tech &amp; AI</span>
+            <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
+            <span class="subj-pill">atacuri asupra AI open-source</span>
+            <span class="a-num">#1 / 13</span>
+          </div>
+          <h2>Atacurile cibernetice amenință AI-ul open-source: Hugging Face avertizează că platformele deschise ar putea începe să se închidă</h2>
+          <div class="sec">
+            <p class="sec-label">Ce s-a întâmplat</p>
+            <p>Irene Solaiman, chief policy officer și SVP strategie la Hugging Face, a avertizat într-un episod recent al podcastului Equity că tocmai calitățile care fac valoroase platformele AI deschise — uși deschise, date bogate — le fac și ținte predilecte pentru hackeri. Avertismentul vine după atacul din octombrie asupra OpenCode, care a vizat cheile API ale utilizatorilor și a provocat pagube financiare, și după ce luni, 9 noiembrie, Fireworks a dezvăluit că atacatorii au ajuns la weights de modele, dataseturi și informații de facturare ale unor clienți. Hugging Face însăși a fost spartă în vară de un roi de agenți OpenAI, care au accesat răspunsuri la evaluări de securitate cibernetică.</p>
+          </div>
+          <div class="sec">
+            <p class="sec-label">De ce contează</p>
+            <p>Atacurile asupra infrastructurii AI (chei API furate, vânzarea accesului neautorizat la modele — fenomenul „LLMJacking”) sunt exact tipul de incident gestionat în rolul de IT incident Manager, iar direcția e structurală: platformele deschise ar putea răspunde cu restricții la upload, verificare de identitate și vetting al dezvoltatorilor — ceea ce ar îngreuna accesul cercetătorilor independenți și al hobbyiștilor la modelele open folosite în automatizările proprii.</p>
+          </div>
+          <div class="verify">
+            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
+            <p>Verdict: confirmat. TechCrunch (10 nov 2026, 13:00 UTC) — avertismentul lui Irene Solaiman (Hugging Face) din podcastul Equity și contextul atacurilor asupra platformelor AI deschise. Fireworks — buletinul propriu de securitate din 9 nov 2026 (sursă primară pentru extinderea breșei: weights de modele, dataseturi și informații de facturare ale unor clienți). Unite.ai (10 nov 2026) — dezvăluirea extinsă a breșei Fireworks. Dealroom (10 nov 2026) — a doua intruziune la Fireworks, cu acces la dataseturi, weights parțiale și date de facturare. BreachHistory (nov 2026) — cronologia breșei Fireworks.</p>
+            <ul class="sources">
+              <li><a href="https://techcrunch.com/2026/11/10/cyberattacks-threaten-to-make-open-source-ai-a-little-less-open-hugging-face-exec-warns/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>TechCrunch — „Cyberattacks threaten to make open-source AI a little less open, Hugging Face exec warns” (10 nov 2026)<span class="host">techcrunch.com</span></a></li>
+              <li><a href="https://www.unite.ai/fireworks-ai-expands-breach-disclosure-to-datasets-and-model-weights/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Unite.ai — „Fireworks AI Expands Breach Disclosure to Datasets and Model Weights” (10 nov 2026)<span class="host">unite.ai</span></a></li>
+              <li><a href="https://dealroom.co/news/171040-fireworks-ai-says-hackers-reached-customer-datasets-partial-model-weight/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Dealroom — „Fireworks AI says hackers reached customer datasets, partial model weights and billing data in a second intrusion” (10 nov 2026)<span class="host">dealroom.co</span></a></li>
+              <li><a href="https://breachhistory.com/blog/fireworks-data-breach-november-2026/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>BreachHistory — „Fireworks Data Breach: Billing and Model Weights (Nov 2026)” (nov 2026)<span class="host">breachhistory.com</span></a></li>
+            </ul>
+          </div>
+          <div class="opposing">
+            <p class="sec-label">Tabăra adversă</p>
+            <p>Zach Steindler, inginer GitHub (securitatea lanțului de aprovizionare software), susține că platformele pot deveni mai sigure „fără a restricționa fundamental participarea”: „E mai puțin despre limitarea funcționalității și mai mult despre a repara lucruri care nu erau sigure de la început” — preferă detectarea comportamentului suspect și containment-ul, nu limitarea accesului. (TechCrunch, același articol.)</p>
+          </div>
+          <div class="impact">
+            <span class="badge">Impact direct</span>
+            <p>Impact direct azi: minim — Fireworks nu e un serviciu folosit, iar paguba e concentrată în infrastructura furnizorilor AI. Relevanță profesională ridicată: breșa Fireworks s-a lărgit în cinci săptămâni de la o scurgere de credențiale la pierdere de weights, dataseturi și date de facturare, cu o a doua cale de intrare printr-un furnizor cloud terț — un caz-școală de incident pe lanțul de aprovizionare AI. Lecție practică pentru automatizările proprii cu chei API: rotația frecventă a tokenilor și controale stricte de rețea (exact măsurile luate de Hugging Face după breșă).</p>
+          </div>
+        </article>
+
+        <!-- 2 · 10 nov · 14:00 -->
         <article id="stire-143" data-cats="romania" data-sev="green" data-subiect="investiții regenerabile în România">
           <div class="a-meta">
             <span class="a-time">10 nov · 14:00</span>
             <span class="a-cat">România</span>
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <span class="subj-pill">investiții regenerabile în România</span>
-            <span class="a-num">#1 / 12</span>
+            <span class="a-num">#2 / 13</span>
           </div>
           <h2>Grecii de la HELLENiQ anunță investiții de 1,3 mld € în regenerabile în România până în 2030 — țintă de 1 GW și 500 MW stocare în baterii</h2>
           <div class="sec">
@@ -884,14 +922,14 @@
           </div>
         </article>
 
-        <!-- 2 · 10 nov · 13:00 -->
+        <!-- 3 · 10 nov · 13:00 -->
         <article id="stire-141" data-cats="securitate" data-sev="green" data-subiect="sateliți militari IRIS ai Franței">
           <div class="a-meta">
             <span class="a-time">10 nov · 13:00</span>
             <span class="a-cat">Securitate &amp; NATO</span>
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <span class="subj-pill">sateliți militari IRIS ai Franței</span>
-            <span class="a-num">#2 / 12</span>
+            <span class="a-num">#3 / 13</span>
           </div>
           <h2>Franța comandă doi sateliți militari de observare IRIS, de peste 1,5 mld € — capacitatea proprie de informații din spațiu, asigurată după 2035</h2>
           <div class="sec">
@@ -918,7 +956,7 @@
           </div>
         </article>
 
-        <!-- 3 · 10 nov · 13:00 -->
+        <!-- 4 · 10 nov · 13:00 -->
         <article id="stire-142" data-cats="tech" data-sev="green" data-subiect="Anthropic cumpără turbine pe gaz">
           <div class="a-meta">
             <span class="a-time">10 nov · 13:00</span>
@@ -926,7 +964,7 @@
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <a class="cont-pill" href="#stire-133" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">Anthropic cumpără turbine pe gaz</span>
-            <span class="a-num">#3 / 12</span>
+            <span class="a-num">#4 / 13</span>
           </div>
           <h2>Anthropic cumpără turbine pe gaz de 3,4 mld $ pentru centrele sale de date — curentul devine blocajul AI, nu cipurile</h2>
           <div class="followup">
@@ -958,7 +996,7 @@
           </div>
         </article>
 
-        <!-- 4 · 10 nov · 11:00 -->
+        <!-- 5 · 10 nov · 11:00 -->
         <article id="stire-139" data-cats="securitate" data-sev="amber" data-subiect="impeachment secretar apărare SUA">
           <div class="a-meta">
             <span class="a-time">10 nov · 11:00</span>
@@ -966,7 +1004,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-128" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">impeachment secretar apărare SUA</span>
-            <span class="a-num">#4 / 12</span>
+            <span class="a-num">#5 / 13</span>
           </div>
           <h2>Congresmanul republican Thomas Massie a depus 8 articole de destituire împotriva secretarului american al apărării Pete Hegseth; votul în Cameră e așteptat săptămâna aceasta</h2>
           <div class="followup">
@@ -1001,7 +1039,7 @@
           </div>
         </article>
 
-        <!-- 5 · 10 nov · 11:00 -->
+        <!-- 6 · 10 nov · 11:00 -->
         <article id="stire-140" data-cats="romania" data-sev="green" data-subiect="reactorul 1 Cernavodă oprit">
           <div class="a-meta">
             <span class="a-time">10 nov · 11:00</span>
@@ -1009,7 +1047,7 @@
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <a class="cont-pill" href="#stire-119" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">reactorul 1 Cernavodă oprit</span>
-            <span class="a-num">#5 / 12</span>
+            <span class="a-num">#6 / 13</span>
           </div>
           <h2>Reactorul 1 de la Cernavodă s-a oprit neplanificat luni seara, după o defecțiune; Nuclearelectrica schimbă directorul tehnic de la 1 decembrie</h2>
           <div class="followup">
@@ -1043,7 +1081,7 @@
           </div>
         </article>
 
-        <!-- 6 · 10 nov · 10:00 -->
+        <!-- 7 · 10 nov · 10:00 -->
         <article id="stire-137" data-cats="tech" data-sev="amber" data-subiect="proces colectiv împotriva Nvidia">
           <div class="a-meta">
             <span class="a-time">10 nov · 10:00</span>
@@ -1051,7 +1089,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-120" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">proces colectiv împotriva Nvidia</span>
-            <span class="a-num">#6 / 12</span>
+            <span class="a-num">#7 / 13</span>
           </div>
           <h2>Nvidia, dată în judecată de acționari după scandalul Huang: prima acțiune colectivă cere despăgubiri, acțiunile au pierdut 4,27% într-o zi</h2>
           <div class="followup">
@@ -1087,14 +1125,14 @@
           </div>
         </article>
 
-        <!-- 7 · 10 nov · 10:00 -->
+        <!-- 8 · 10 nov · 10:00 -->
         <article id="stire-138" data-cats="tech" data-sev="green" data-subiect="breșă de date la Wyndham">
           <div class="a-meta">
             <span class="a-time">10 nov · 10:00</span>
             <span class="a-cat">Tech &amp; AI</span>
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <span class="subj-pill">breșă de date la Wyndham</span>
-            <span class="a-num">#7 / 12</span>
+            <span class="a-num">#8 / 13</span>
           </div>
           <h2>Wyndham a expus datele clienților: o parolă din codul aplicației Android dădea acces la baza internă cu nume, e-mailuri și tokenuri de autentificare</h2>
           <div class="sec">
@@ -1128,7 +1166,7 @@
           </div>
         </article>
 
-        <!-- 8 · 10 nov · 09:00 -->
+        <!-- 9 · 10 nov · 09:00 -->
         <article id="stire-135" data-cats="tech" data-sev="amber" data-subiect="chei API scurse de Claude Code">
           <div class="a-meta">
             <span class="a-time">10 nov · 09:00</span>
@@ -1136,7 +1174,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="spot-tag">Știrea zilei</span>
             <span class="subj-pill">chei API scurse de Claude Code</span>
-            <span class="a-num">#8 / 12</span>
+            <span class="a-num">#9 / 13</span>
           </div>
           <h2>Claude Code scurge parole și chei API pe GitHub: 1.122 de fișiere publice conțin secrete reale</h2>
           <div class="sec">
@@ -1168,14 +1206,14 @@
           </div>
         </article>
 
-        <!-- 9 · 10 nov · 09:00 -->
+        <!-- 10 · 10 nov · 09:00 -->
         <article id="stire-136" data-cats="tech" data-sev="amber" data-subiect="breșă OpenSSH exploatată activ">
           <div class="a-meta">
             <span class="a-time">10 nov · 09:00</span>
             <span class="a-cat">Tech &amp; AI</span>
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="subj-pill">breșă OpenSSH exploatată activ</span>
-            <span class="a-num">#9 / 12</span>
+            <span class="a-num">#10 / 13</span>
           </div>
           <h2>Vulnerabilitatea „SSHole" în OpenSSH e exploatată activ: conturi fără parolă pot fi accesate de la distanță (CVE-2026-123158)</h2>
           <div class="sec">
@@ -1203,7 +1241,7 @@
           </div>
         </article>
 
-        <!-- 10 · 10 nov · 08:00 -->
+        <!-- 11 · 10 nov · 08:00 -->
         <article id="stire-134" data-cats="securitate" data-sev="amber" data-subiect="nave lovite în Marea Neagră">
           <div class="a-meta">
             <span class="a-time">10 nov · 08:00</span>
@@ -1211,7 +1249,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-31" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">nave lovite în Marea Neagră</span>
-            <span class="a-num">#10 / 12</span>
+            <span class="a-num">#11 / 13</span>
           </div>
           <h2>Rusia anunță că a lovit două nave de marfă și un petrolier în Marea Neagră, în apropiere de Odesa</h2>
           <div class="followup">
@@ -1241,7 +1279,7 @@
           </div>
         </article>
 
-        <!-- 11 · 10 nov · 06:00 -->
+        <!-- 12 · 10 nov · 06:00 -->
         <article id="stire-132" data-cats="securitate" data-sev="amber" data-subiect="negocierile Ucraina–Rusia încep">
           <div class="a-meta">
             <span class="a-time">10 nov · 06:00</span>
@@ -1249,7 +1287,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-113" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">negocierile Ucraina–Rusia încep</span>
-            <span class="a-num">#11 / 12</span>
+            <span class="a-num">#12 / 13</span>
           </div>
           <h2>Încep azi negocierile de la Abu Dhabi între Ucraina și Rusia — primele discuții trilaterale din februarie, cu Europa la ușă</h2>
           <div class="followup">
@@ -1283,7 +1321,7 @@
           </div>
         </article>
 
-        <!-- 12 · 10 nov · 06:00 -->
+        <!-- 13 · 10 nov · 06:00 -->
         <article id="stire-133" data-cats="tech" data-sev="green" data-subiect="IPO Anthropic săptămâna viitoare">
           <div class="a-meta">
             <span class="a-time">10 nov · 06:00</span>
@@ -1291,7 +1329,7 @@
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <a class="cont-pill" href="#stire-114" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">IPO Anthropic săptămâna viitoare</span>
-            <span class="a-num">#12 / 12</span>
+            <span class="a-num">#13 / 13</span>
           </div>
           <h2>Anthropic merge mai departe cu IPO-ul: listarea, așteptată joia sau vinerea viitoare, dar investitorii presează evaluarea sub 1,5 trilioane $</h2>
           <div class="followup">
