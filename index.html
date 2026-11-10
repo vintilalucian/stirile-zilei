@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="color-scheme" content="light dark" />
-    <meta name="tirile-versiune" content="2026-11-10T11:00:00+01:00|9|amber" />
+    <meta name="tirile-versiune" content="2026-11-10T13:00:00+01:00|11|amber" />
     <link rel="icon" href="data:," />
     <title>Știrile zilei</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -699,9 +699,9 @@
     <div class="topbar">
       <div class="topbar-inner">
         <span class="dot" aria-hidden="true"></span>
-        <span><strong>Marți, 10 noiembrie 2026</strong> · actualizat la <strong>11:00</strong></span>
+        <span><strong>Marți, 10 noiembrie 2026</strong> · actualizat la <strong>13:00</strong></span>
         <span aria-hidden="true">·</span>
-        <span>9 știri azi</span>
+        <span>11 știri azi</span>
         <span class="spacer"></span>
         <button class="refresh-btn" type="button" id="refreshBtn" aria-label="Reîmprospătează pagina">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg>
@@ -739,7 +739,7 @@
 
       <!-- Chenar permanent: știrea cea mai importantă a zilei — sub fereastra
            „Ultimele știri", ÎNAINTEA dashboardului, vizibilă din prima, fără scroll.
-           Nivelul de azi: GALBEN (sev-amber) — de urmărit: Claude Code scurge parole și chei API pe GitHub — știrea cu severitatea cea mai mare a zilei și cea mai importantă dintre cele șase știri galbene ale zilei, singura cu impact direct personal; mai sunt alte cinci știri galbene azi (destituirea propusă a secretarului american al apărării, de la 11:00, procesul colectiv împotriva Nvidia, de la 10:00, breșa „SSHole" în OpenSSH, de la 09:00, anunțul Rusiei despre nave lovite în Marea Neagră, de la 08:00, și negocierile Ucraina–Rusia de la Abu Dhabi, de la 06:00), iar cele trei verzi sunt oprirea reactorului 1 de la Cernavodă, breșa de date Wyndham și IPO-ul Anthropic — de aceea chenarul poartă mențiunea despre celelalte știri cu aceeași severitate, cu filtru pe galben la „apasă aici".
+           Nivelul de azi: GALBEN (sev-amber) — de urmărit: Claude Code scurge parole și chei API pe GitHub — știrea cu severitatea cea mai mare a zilei și cea mai importantă dintre cele șase știri galbene ale zilei, singura cu impact direct personal; mai sunt alte cinci știri galbene azi (destituirea propusă a secretarului american al apărării, de la 11:00, procesul colectiv împotriva Nvidia, de la 10:00, breșa „SSHole" în OpenSSH, de la 09:00, anunțul Rusiei despre nave lovite în Marea Neagră, de la 08:00, și negocierile Ucraina–Rusia de la Abu Dhabi, de la 06:00), iar cele cinci verzi sunt oprirea reactorului 1 de la Cernavodă, breșa de date Wyndham, IPO-ul Anthropic, comanda IRIS și turbinele Anthropic — de aceea chenarul poartă mențiunea despre celelalte știri cu aceeași severitate, cu filtru pe galben la „apasă aici".
            Chenarul rămâne în afara logicii de filtrare: vizibil indiferent de filtrul de categorie. -->
       <section class="spot sev-amber" aria-label="Știrea cea mai importantă a zilei">
         <div class="spot-head">
@@ -768,30 +768,30 @@
       <section class="dashboard" aria-label="Panou de ansamblu">
         <div class="dash-head">
           <span class="dash-title">Dashboard · Azi</span>
-          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 11:00</span>
+          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 13:00</span>
           <span class="dash-meta">Fereastră monitorizare <strong>L–V 06:00–22:00 · S–D 07:30–22:00</strong> · pas ~3 ore</span>
         </div>
 
         <div class="kpi-grid five" role="group" aria-label="Filtrează după categorie — apasă pe un tile">
           <button class="kpi" type="button" data-filter="toate" aria-pressed="true">
             <span class="kpi-top"><span class="kpi-label">Toate știrile</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">9</span>
-            <span class="kpi-sub">știri verificate azi, în 5 rulări</span>
+            <span class="kpi-value">11</span>
+            <span class="kpi-sub">știri verificate azi, în 6 rulări</span>
             <span class="kpi-bar" aria-hidden="true"><i style="width:100%"></i></span>
             <span class="kpi-hint">Apasă pentru toate</span>
           </button>
           <button class="kpi" type="button" data-filter="securitate" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">Securitate &amp; NATO</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">3</span>
-            <span class="kpi-sub">impeachment secretar apărare SUA · nave lovite în Marea Neagră · negocierile Ucraina–Rusia încep</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:33%"></i></span>
+            <span class="kpi-value">4</span>
+            <span class="kpi-sub">sateliți militari IRIS ai Franței · impeachment secretar apărare SUA · nave lovite în Marea Neagră · negocierile Ucraina–Rusia încep</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:36%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="romania" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">România</span><span class="kpi-check" aria-hidden="true">✓</span></span>
             <span class="kpi-value">1</span>
             <span class="kpi-sub">reactorul 1 Cernavodă oprit</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:11%"></i></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:9%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="belgia" aria-pressed="false">
@@ -803,9 +803,9 @@
           </button>
           <button class="kpi" type="button" data-filter="tech" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">Tech &amp; AI</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">5</span>
-            <span class="kpi-sub">proces colectiv împotriva Nvidia · breșă de date la Wyndham · chei API scurse de Claude Code · breșă OpenSSH exploatată activ · IPO Anthropic săptămâna viitoare</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:56%"></i></span>
+            <span class="kpi-value">6</span>
+            <span class="kpi-sub">Anthropic cumpără turbine pe gaz · proces colectiv împotriva Nvidia · breșă de date la Wyndham · chei API scurse de Claude Code · breșă OpenSSH exploatată activ · IPO Anthropic săptămâna viitoare</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:55%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
         </div>
@@ -819,7 +819,7 @@
       </section>
 
       <div class="filter-status" aria-live="polite">
-        <span class="filter-label">Se afișează: <strong>Toate categoriile — 9 din 9 știri</strong></span>
+        <span class="filter-label">Se afișează: <strong>Toate categoriile — 11 din 11 știri</strong></span>
         <button class="filter-reset" type="button" hidden>Resetează filtrul</button>
       </div>
 
@@ -849,7 +849,81 @@
       <p class="empty">Nicio știre în această categorie azi.</p>
 
       <main>
-        <!-- 1 · 10 nov · 11:00 -->
+        <!-- 1 · 10 nov · 13:00 -->
+        <article id="stire-141" data-cats="securitate" data-sev="green" data-subiect="sateliți militari IRIS ai Franței">
+          <div class="a-meta">
+            <span class="a-time">10 nov · 13:00</span>
+            <span class="a-cat">Securitate &amp; NATO</span>
+            <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
+            <span class="subj-pill">sateliți militari IRIS ai Franței</span>
+            <span class="a-num">#1 / 11</span>
+          </div>
+          <h2>Franța comandă doi sateliți militari de observare IRIS, de peste 1,5 mld € — capacitatea proprie de informații din spațiu, asigurată după 2035</h2>
+          <div class="sec">
+            <p class="sec-label">Ce s-a întâmplat</p>
+            <p>Agenția franceză de achiziții pentru apărare (DGA) a atribuit consorțiului condus de Airbus Defence and Space, cu Thales Alenia Space co-contractor, contractul pentru sistemul IRIS — doi sateliți militari de observare a Pământului de foarte înaltă rezoluție, în valoare de peste 1,5 mld € (1,7 mld $) pentru tot consorțiul. Sateliții vor înlocui cei trei orbitatori CSO actuali și vor menține capacitatea Franței de informații din imagini spațiale după 2035: primul devine operațional în 2033, iar al doilea în jurul anului 2035, sistemul urmând să fie operat de Comandamentul Spațial din cadrul Forțelor Aeriene și Spațiale franceze. DGA a notificat comanda pe 5 noiembrie, iar programul e „resolut deschis cooperării”, pentru ca țările partenere să poată accesa sistemul.</p>
+          </div>
+          <div class="sec">
+            <p class="sec-label">De ce contează</p>
+            <p>Franța e unul dintre puținii membri europeni ai NATO cu o constelație suverană de sateliți spion de înaltă rezoluție — majoritatea aliaților se bazează pe mijloace de rezoluție mai mică și pe informații furnizate de SUA; președintele Macron spunea în ianuarie că Franța furnizează două treimi din capabilitățile de informații oferite Ucrainei. Pentru el: context direct pe postura de descurajare a NATO și pe autonomia strategică europeană în spațiu — zona lui operațională — cu orizont lung (2033/2035) și fără efect imediat asupra activității de azi.</p>
+          </div>
+          <div class="verify">
+            <p class="sec-label">Verificare <span class="status">Sursă primară + confirmat</span></p>
+            <p>Verdict: sursă primară + confirmat. DGA — agenția franceză de achiziții pentru apărare (sursă primară, comunicat 9 nov 2026) — atribuirea contractului IRIS către Airbus Defence and Space și Thales Alenia Space, notificare pe 5 noiembrie, valoare de peste 1,5 mld € pentru tot consorțiul, primul satelit operațional în 2033. Defense News (10 nov 2026, 11:13 UTC) — înlocuirea celor trei sateliți CSO și deschiderea programului spre cooperarea cu partenerii. Airbus (comunicat propriu, 9 nov 2026) — detaliile consorțiului și ale segmentului terestru. Seeking Alpha (9 nov 2026) — contractul de 1,7 mld $ pentru Airbus și Thales.</p>
+            <ul class="sources">
+              <li><a href="https://www.defensenews.com/global/europe/2026/11/10/france-orders-military-earth-observation-satellites-for-more-than-e1-5-billion/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Defense News — „France orders military Earth-observation satellites for more than €1.5 billion” (10 nov 2026)<span class="host">defensenews.com</span></a></li>
+              <li><a href="https://www.airbus.com/en/newsroom/press-releases/2026-11-airbus-to-deliver-iris-frances-next-generation-military-earth-observation-satellites" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Airbus — „Airbus to deliver IRIS, France's next generation military Earth observation satellites” (9 nov 2026)<span class="host">airbus.com</span></a></li>
+              <li><a href="https://seekingalpha.com/news/4669148-airbus-thales-win-1_7b-french-military-satellite-contract" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Seeking Alpha — „Airbus, Thales win $1.7B French military satellite contract” (9 nov 2026)<span class="host">seekingalpha.com</span></a></li>
+              <li><a href="https://defensehere.com/en/airbus-to-deliver-iris-high-resolution-earth-observation-satellites-for-french-military/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Defense Here — „Airbus to deliver IRIS, high-resolution Earth observation satellites for French military” (10 nov 2026)<span class="host">defensehere.com</span></a></li>
+            </ul>
+          </div>
+          <div class="impact">
+            <span class="badge">Impact direct</span>
+            <p>Impact direct: minim azi — orizont 2033/2035, nicio schimbare imediată în activitatea lui; relevanță de context: Franța își asigură pe termen lung ochii din spațiu ai NATO în Europa, iar programul e deschis cooperării cu partenerii — semnal de urmărit pentru autonomia strategică europeană și pentru capabilitățile de informații oferite Ucrainei.</p>
+          </div>
+        </article>
+
+        <!-- 2 · 10 nov · 13:00 -->
+        <article id="stire-142" data-cats="tech" data-sev="green" data-subiect="Anthropic cumpără turbine pe gaz">
+          <div class="a-meta">
+            <span class="a-time">10 nov · 13:00</span>
+            <span class="a-cat">Tech &amp; AI</span>
+            <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
+            <a class="cont-pill" href="#stire-133" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
+            <span class="subj-pill">Anthropic cumpără turbine pe gaz</span>
+            <span class="a-num">#2 / 11</span>
+          </div>
+          <h2>Anthropic cumpără turbine pe gaz de 3,4 mld $ pentru centrele sale de date — curentul devine blocajul AI, nu cipurile</h2>
+          <div class="followup">
+            <span class="tag">Urmare la</span>
+            <p><a href="#stire-133">„Anthropic merge mai departe cu IPO-ul: listarea, așteptată joia sau vinerea viitoare, dar investitorii presează evaluarea sub 1,5 trilioane $” — marți, 10 noiembrie 2026, ora 06:00.</a></p>
+          </div>
+          <div class="sec">
+            <p class="sec-label">Ce s-a întâmplat</p>
+            <p>Anthropic a preluat de la furnizorul texan OnePWR o comandă de generatoare pe gaz natural Caterpillar, în valoare de circa 3,4 mld $, cu o capacitate de până la 1,7 GW — cea mai mare achiziție unică de echipamente de generare a energiei făcută vreodată de un laborator AI, potrivit Financial Times. OnePWR comandase turbinele cu circa doi ani în urmă, dar nu a reușit să obțină finanțarea pentru a finaliza achiziția; Anthropic, care inițial voia doar să cumpere electricitatea de la OnePWR, a preluat direct comenzile și serviciile de instalare, fără să cumpere compania și fără ca angajații acesteia să treacă la Anthropic. Livrările se întind pe 2027–2028, iar mișcarea vine în săptămâna în care Anthropic își pregătește listarea la bursă, după lansarea de luni a modelelor Mythos 5.2 și Fable 5.2.</p>
+          </div>
+          <div class="sec">
+            <p class="sec-label">De ce contează</p>
+            <p>Compania din spatele lui Claude — modelul pe care îl folosește zilnic — trece de la închirierea de capacitate de calcul la cumpărarea propriei centrale electrice: în dosarul S-1 din mai, Anthropic declara că plătește 1,25 mld $ pe lună către xAI pentru calcul, până în mai 2029, iar compute-ul ajunsese la 58% din venituri (cardul din 4 nov). Pentru el: semnal că infrastructura AI pe care își construiește automatizările (Google Apps Script + Gemini, API-uri cloud) are ca blocaj real energia, nu cipurile — cozile pentru turbine se întind până la începutul anilor 2030, iar cozile de conectare la rețea sunt la fel de lungi; o infrastructură tot mai scumpă și mai concentrată.</p>
+          </div>
+          <div class="verify">
+            <p class="sec-label">Verificare <span class="status">Sursă unică</span></p>
+            <p>Verdict: sursă unică. Financial Times (8 nov 2026, relatarea originală, via TechCrunch, 9 nov 2026) — detaliile tranzacției: 3,4 mld $, 1,7 GW, preluarea comenzilor OnePWR către Caterpillar. Atenție de integritate: nici Anthropic, nici OnePWR nu au comentat, iar Reuters a spus că nu a putut verifica independent relatarea FT (notat de dev.to, 10 nov 2026). Celelalte relatări — Bisnow (via Business News, 10 nov 2026), Seeking Alpha, Digital Today (10 nov 2026), The AI Insider (10 nov 2026) — sunt ecouri ale aceleiași relatări FT, nu verificări independente. Piper Sandler, banca ce a consiliat OnePWR, listează tranzacția pe site-ul propriu ca vânzare de 3,4 mld $ — parte implicată, nu confirmare independentă.</p>
+            <ul class="sources">
+              <li><a href="https://techcrunch.com/2026/11/09/anthropic-joins-ais-natural-gas-frenzy-buys-3-4b-worth-of-turbines/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>TechCrunch — „Anthropic joins AI's natural gas frenzy, buys $3.4B worth of turbines” (9 nov 2026)<span class="host">techcrunch.com</span></a></li>
+              <li><a href="https://businessnews.com.my/anthropic-gas-generators-data-centres/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Business News — „Anthropic Buys US$3.4 Billion of Gas Generators for AI Power” (10 nov 2026, citează FT via Bisnow)<span class="host">businessnews.com.my</span></a></li>
+              <li><a href="https://www.digitaltoday.co.kr/en/view/123453/anthropic-joins-ai-driven-natural-gas-rush-buys-34-billion-turbines" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Digital Today — „Anthropic joins AI-driven natural gas rush with $3.4 billion turbine purchase” (10 nov 2026)<span class="host">digitaltoday.co.kr</span></a></li>
+              <li><a href="https://theaiinsider.tech/2026/11/10/anthropic-pushes-ahead-with-ipo-as-it-releases-mythos-5-2-and-fable-5-2-and-spends-3-4b-on-gas-turbines-to-power-ai/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>The AI Insider — „Anthropic Pushes Ahead With IPO as It Releases Mythos 5.2 and Fable 5.2 and Spends $3.4B on Gas Turbines to Power AI” (10 nov 2026)<span class="host">theaiinsider.tech</span></a></li>
+              <li><a href="https://dev.to/frankchu/34b-bought-anthropic-17-gw-of-gas-turbines-2ce2" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>dev.to — „$3.4B bought Anthropic 1.7 GW of gas turbines” (10 nov 2026; notează că Reuters n-a putut verifica independent relatarea FT)<span class="host">dev.to</span></a></li>
+            </ul>
+          </div>
+          <div class="impact">
+            <span class="badge">Impact direct</span>
+            <p>Impact direct: minim azi — nicio schimbare imediată pentru automatizările lui; relevanță de context ridicată: laboratorul din spatele lui Claude își cumpără propria centrală electrică, iar dosarul S-1 al Anthropic avertizează că partenerii de infrastructură depind de finanțare externă — dacă nu o obțin, capacitatea poate întârzia sau nu mai vine deloc. De urmărit: listarea Anthropic, așteptată joia sau vinerea viitoare.</p>
+          </div>
+        </article>
+
+        <!-- 3 · 10 nov · 11:00 -->
         <article id="stire-139" data-cats="securitate" data-sev="amber" data-subiect="impeachment secretar apărare SUA">
           <div class="a-meta">
             <span class="a-time">10 nov · 11:00</span>
@@ -857,7 +931,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-128" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">impeachment secretar apărare SUA</span>
-            <span class="a-num">#1 / 9</span>
+            <span class="a-num">#3 / 11</span>
           </div>
           <h2>Congresmanul republican Thomas Massie a depus 8 articole de destituire împotriva secretarului american al apărării Pete Hegseth; votul în Cameră e așteptat săptămâna aceasta</h2>
           <div class="followup">
@@ -892,7 +966,7 @@
           </div>
         </article>
 
-        <!-- 2 · 10 nov · 11:00 -->
+        <!-- 4 · 10 nov · 11:00 -->
         <article id="stire-140" data-cats="romania" data-sev="green" data-subiect="reactorul 1 Cernavodă oprit">
           <div class="a-meta">
             <span class="a-time">10 nov · 11:00</span>
@@ -900,7 +974,7 @@
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <a class="cont-pill" href="#stire-119" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">reactorul 1 Cernavodă oprit</span>
-            <span class="a-num">#2 / 9</span>
+            <span class="a-num">#4 / 11</span>
           </div>
           <h2>Reactorul 1 de la Cernavodă s-a oprit neplanificat luni seara, după o defecțiune; Nuclearelectrica schimbă directorul tehnic de la 1 decembrie</h2>
           <div class="followup">
@@ -934,7 +1008,7 @@
           </div>
         </article>
 
-        <!-- 3 · 10 nov · 10:00 -->
+        <!-- 5 · 10 nov · 10:00 -->
         <article id="stire-137" data-cats="tech" data-sev="amber" data-subiect="proces colectiv împotriva Nvidia">
           <div class="a-meta">
             <span class="a-time">10 nov · 10:00</span>
@@ -942,7 +1016,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-120" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">proces colectiv împotriva Nvidia</span>
-            <span class="a-num">#3 / 9</span>
+            <span class="a-num">#5 / 11</span>
           </div>
           <h2>Nvidia, dată în judecată de acționari după scandalul Huang: prima acțiune colectivă cere despăgubiri, acțiunile au pierdut 4,27% într-o zi</h2>
           <div class="followup">
@@ -978,14 +1052,14 @@
           </div>
         </article>
 
-        <!-- 4 · 10 nov · 10:00 -->
+        <!-- 6 · 10 nov · 10:00 -->
         <article id="stire-138" data-cats="tech" data-sev="green" data-subiect="breșă de date la Wyndham">
           <div class="a-meta">
             <span class="a-time">10 nov · 10:00</span>
             <span class="a-cat">Tech &amp; AI</span>
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <span class="subj-pill">breșă de date la Wyndham</span>
-            <span class="a-num">#4 / 9</span>
+            <span class="a-num">#6 / 11</span>
           </div>
           <h2>Wyndham a expus datele clienților: o parolă din codul aplicației Android dădea acces la baza internă cu nume, e-mailuri și tokenuri de autentificare</h2>
           <div class="sec">
@@ -1019,7 +1093,7 @@
           </div>
         </article>
 
-        <!-- 5 · 10 nov · 09:00 -->
+        <!-- 7 · 10 nov · 09:00 -->
         <article id="stire-135" data-cats="tech" data-sev="amber" data-subiect="chei API scurse de Claude Code">
           <div class="a-meta">
             <span class="a-time">10 nov · 09:00</span>
@@ -1027,7 +1101,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="spot-tag">Știrea zilei</span>
             <span class="subj-pill">chei API scurse de Claude Code</span>
-            <span class="a-num">#5 / 9</span>
+            <span class="a-num">#7 / 11</span>
           </div>
           <h2>Claude Code scurge parole și chei API pe GitHub: 1.122 de fișiere publice conțin secrete reale</h2>
           <div class="sec">
@@ -1059,14 +1133,14 @@
           </div>
         </article>
 
-        <!-- 6 · 10 nov · 09:00 -->
+        <!-- 8 · 10 nov · 09:00 -->
         <article id="stire-136" data-cats="tech" data-sev="amber" data-subiect="breșă OpenSSH exploatată activ">
           <div class="a-meta">
             <span class="a-time">10 nov · 09:00</span>
             <span class="a-cat">Tech &amp; AI</span>
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="subj-pill">breșă OpenSSH exploatată activ</span>
-            <span class="a-num">#6 / 9</span>
+            <span class="a-num">#8 / 11</span>
           </div>
           <h2>Vulnerabilitatea „SSHole" în OpenSSH e exploatată activ: conturi fără parolă pot fi accesate de la distanță (CVE-2026-123158)</h2>
           <div class="sec">
@@ -1094,7 +1168,7 @@
           </div>
         </article>
 
-        <!-- 7 · 10 nov · 08:00 -->
+        <!-- 9 · 10 nov · 08:00 -->
         <article id="stire-134" data-cats="securitate" data-sev="amber" data-subiect="nave lovite în Marea Neagră">
           <div class="a-meta">
             <span class="a-time">10 nov · 08:00</span>
@@ -1102,7 +1176,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-31" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">nave lovite în Marea Neagră</span>
-            <span class="a-num">#7 / 9</span>
+            <span class="a-num">#9 / 11</span>
           </div>
           <h2>Rusia anunță că a lovit două nave de marfă și un petrolier în Marea Neagră, în apropiere de Odesa</h2>
           <div class="followup">
@@ -1132,7 +1206,7 @@
           </div>
         </article>
 
-        <!-- 8 · 10 nov · 06:00 -->
+        <!-- 10 · 10 nov · 06:00 -->
         <article id="stire-132" data-cats="securitate" data-sev="amber" data-subiect="negocierile Ucraina–Rusia încep">
           <div class="a-meta">
             <span class="a-time">10 nov · 06:00</span>
@@ -1140,7 +1214,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-113" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">negocierile Ucraina–Rusia încep</span>
-            <span class="a-num">#8 / 9</span>
+            <span class="a-num">#10 / 11</span>
           </div>
           <h2>Încep azi negocierile de la Abu Dhabi între Ucraina și Rusia — primele discuții trilaterale din februarie, cu Europa la ușă</h2>
           <div class="followup">
@@ -1174,7 +1248,7 @@
           </div>
         </article>
 
-        <!-- 9 · 10 nov · 06:00 -->
+        <!-- 11 · 10 nov · 06:00 -->
         <article id="stire-133" data-cats="tech" data-sev="green" data-subiect="IPO Anthropic săptămâna viitoare">
           <div class="a-meta">
             <span class="a-time">10 nov · 06:00</span>
@@ -1182,7 +1256,7 @@
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <a class="cont-pill" href="#stire-114" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">IPO Anthropic săptămâna viitoare</span>
-            <span class="a-num">#9 / 9</span>
+            <span class="a-num">#11 / 11</span>
           </div>
           <h2>Anthropic merge mai departe cu IPO-ul: listarea, așteptată joia sau vinerea viitoare, dar investitorii presează evaluarea sub 1,5 trilioane $</h2>
           <div class="followup">
@@ -5868,7 +5942,7 @@
 
       <footer>
         <div class="rule" aria-hidden="true"></div>
-        <p>Sfârșitul ediției de azi · Ultima actualizare: marți, 10 noiembrie 2026, 11:00<br />Monitorizarea rulează la circa 3 ore, în fereastra L–V 06:00–22:00 · S–D 07:30–22:00 — dă refresh pentru noutăți.</p>
+        <p>Sfârșitul ediției de azi · Ultima actualizare: marți, 10 noiembrie 2026, 13:00<br />Monitorizarea rulează la circa 3 ore, în fereastra L–V 06:00–22:00 · S–D 07:30–22:00 — dă refresh pentru noutăți.</p>
         <a class="to-top" href="#stire-139">↑ Înapoi la cea mai nouă știre</a>
       </footer>
     </div>
