@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="color-scheme" content="light dark" />
-    <meta name="tirile-versiune" content="2026-11-10T10:00:00+01:00|7|amber" />
+    <meta name="tirile-versiune" content="2026-11-10T11:00:00+01:00|9|amber" />
     <link rel="icon" href="data:," />
     <title>Știrile zilei</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -699,9 +699,9 @@
     <div class="topbar">
       <div class="topbar-inner">
         <span class="dot" aria-hidden="true"></span>
-        <span><strong>Marți, 10 noiembrie 2026</strong> · actualizat la <strong>10:00</strong></span>
+        <span><strong>Marți, 10 noiembrie 2026</strong> · actualizat la <strong>11:00</strong></span>
         <span aria-hidden="true">·</span>
-        <span>7 știri azi</span>
+        <span>9 știri azi</span>
         <span class="spacer"></span>
         <button class="refresh-btn" type="button" id="refreshBtn" aria-label="Reîmprospătează pagina">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg>
@@ -739,7 +739,7 @@
 
       <!-- Chenar permanent: știrea cea mai importantă a zilei — sub fereastra
            „Ultimele știri", ÎNAINTEA dashboardului, vizibilă din prima, fără scroll.
-           Nivelul de azi: GALBEN (sev-amber) — de urmărit: Claude Code scurge parole și chei API pe GitHub — știrea cu severitatea cea mai mare a zilei și cea mai importantă dintre cele patru știri galbene ale zilei, singura cu impact direct personal; mai sunt alte patru știri galbene azi (procesul colectiv împotriva Nvidia, de la 10:00, breșa „SSHole" în OpenSSH, de la 09:00, anunțul Rusiei despre nave lovite în Marea Neagră, de la 08:00, și negocierile Ucraina–Rusia de la Abu Dhabi, de la 06:00), iar cele două verzi sunt breșa de date Wyndham și IPO-ul Anthropic — de aceea chenarul poartă mențiunea despre celelalte știri cu aceeași severitate, cu filtru pe galben la „apasă aici".
+           Nivelul de azi: GALBEN (sev-amber) — de urmărit: Claude Code scurge parole și chei API pe GitHub — știrea cu severitatea cea mai mare a zilei și cea mai importantă dintre cele șase știri galbene ale zilei, singura cu impact direct personal; mai sunt alte cinci știri galbene azi (destituirea propusă a secretarului american al apărării, de la 11:00, procesul colectiv împotriva Nvidia, de la 10:00, breșa „SSHole" în OpenSSH, de la 09:00, anunțul Rusiei despre nave lovite în Marea Neagră, de la 08:00, și negocierile Ucraina–Rusia de la Abu Dhabi, de la 06:00), iar cele trei verzi sunt oprirea reactorului 1 de la Cernavodă, breșa de date Wyndham și IPO-ul Anthropic — de aceea chenarul poartă mențiunea despre celelalte știri cu aceeași severitate, cu filtru pe galben la „apasă aici".
            Chenarul rămâne în afara logicii de filtrare: vizibil indiferent de filtrul de categorie. -->
       <section class="spot sev-amber" aria-label="Știrea cea mai importantă a zilei">
         <div class="spot-head">
@@ -751,7 +751,7 @@
           <span class="spot-pill">Nivel galben — de urmărit</span>
         </div>
         <h2 class="spot-title">Claude Code scurge parole și chei API pe GitHub: 1.122 de fișiere publice conțin secrete reale</h2>
-        <p class="spot-why"><strong>De ce e în față:</strong> E cea mai importantă dintre cele cinci știri galbene ale zilei și singura cu impact direct personal: fișierul local de setări al lui Claude Code ajunge în repo-uri publice GitHub cu parole și chei API salvate cuvânt cu cuvânt — iar el construiește automatizări cu chei API (Google Apps Script + Gemini) și folosește Claude zilnic, deci o cheie tastată vreodată într-o comandă aprobată poate fi deja expusă.</p>
+        <p class="spot-why"><strong>De ce e în față:</strong> E cea mai importantă dintre cele șase știri galbene ale zilei și singura cu impact direct personal: fișierul local de setări al lui Claude Code ajunge în repo-uri publice GitHub cu parole și chei API salvate cuvânt cu cuvânt — iar el construiește automatizări cu chei API (Google Apps Script + Gemini) și folosește Claude zilnic, deci o cheie tastată vreodată într-o comandă aprobată poate fi deja expusă.</p>
         <p class="spot-lead">Cercetătorii Apiiro au numărat 104.185 de copii publice ale fișierului „.claude/settings.local.json"; 1.122 conțin cel puțin un secret real — 1.379 de secrete distincte — iar cu tot cu istoricul git totalul urcă la 2.539 de secrete în 1.994 de repo-uri, din 63 de organizații.</p>
         <p class="spot-more" hidden><span class="spot-more-text"></span> <button class="spot-more-btn" type="button">apasă aici</button></p>
         <div class="spot-foot">
@@ -768,30 +768,30 @@
       <section class="dashboard" aria-label="Panou de ansamblu">
         <div class="dash-head">
           <span class="dash-title">Dashboard · Azi</span>
-          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 10:00</span>
+          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 11:00</span>
           <span class="dash-meta">Fereastră monitorizare <strong>L–V 06:00–22:00 · S–D 07:30–22:00</strong> · pas ~3 ore</span>
         </div>
 
         <div class="kpi-grid five" role="group" aria-label="Filtrează după categorie — apasă pe un tile">
           <button class="kpi" type="button" data-filter="toate" aria-pressed="true">
             <span class="kpi-top"><span class="kpi-label">Toate știrile</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">7</span>
-            <span class="kpi-sub">știri verificate azi, în 4 rulări</span>
+            <span class="kpi-value">9</span>
+            <span class="kpi-sub">știri verificate azi, în 5 rulări</span>
             <span class="kpi-bar" aria-hidden="true"><i style="width:100%"></i></span>
             <span class="kpi-hint">Apasă pentru toate</span>
           </button>
           <button class="kpi" type="button" data-filter="securitate" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">Securitate &amp; NATO</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">2</span>
-            <span class="kpi-sub">nave lovite în Marea Neagră · negocierile Ucraina–Rusia încep</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:29%"></i></span>
+            <span class="kpi-value">3</span>
+            <span class="kpi-sub">impeachment secretar apărare SUA · nave lovite în Marea Neagră · negocierile Ucraina–Rusia încep</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:33%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="romania" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">România</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">0</span>
-            <span class="kpi-sub"></span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:0%"></i></span>
+            <span class="kpi-value">1</span>
+            <span class="kpi-sub">reactorul 1 Cernavodă oprit</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:11%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="belgia" aria-pressed="false">
@@ -805,7 +805,7 @@
             <span class="kpi-top"><span class="kpi-label">Tech &amp; AI</span><span class="kpi-check" aria-hidden="true">✓</span></span>
             <span class="kpi-value">5</span>
             <span class="kpi-sub">proces colectiv împotriva Nvidia · breșă de date la Wyndham · chei API scurse de Claude Code · breșă OpenSSH exploatată activ · IPO Anthropic săptămâna viitoare</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:71%"></i></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:56%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
         </div>
@@ -819,7 +819,7 @@
       </section>
 
       <div class="filter-status" aria-live="polite">
-        <span class="filter-label">Se afișează: <strong>Toate categoriile — 7 din 7 știri</strong></span>
+        <span class="filter-label">Se afișează: <strong>Toate categoriile — 9 din 9 știri</strong></span>
         <button class="filter-reset" type="button" hidden>Resetează filtrul</button>
       </div>
 
@@ -849,7 +849,92 @@
       <p class="empty">Nicio știre în această categorie azi.</p>
 
       <main>
-        <!-- 1 · 10 nov · 10:00 -->
+        <!-- 1 · 10 nov · 11:00 -->
+        <article id="stire-139" data-cats="securitate" data-sev="amber" data-subiect="impeachment secretar apărare SUA">
+          <div class="a-meta">
+            <span class="a-time">10 nov · 11:00</span>
+            <span class="a-cat">Securitate &amp; NATO</span>
+            <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
+            <a class="cont-pill" href="#stire-128" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
+            <span class="subj-pill">impeachment secretar apărare SUA</span>
+            <span class="a-num">#1 / 9</span>
+          </div>
+          <h2>Congresmanul republican Thomas Massie a depus 8 articole de destituire împotriva secretarului american al apărării Pete Hegseth; votul în Cameră e așteptat săptămâna aceasta</h2>
+          <div class="followup">
+            <span class="tag">Urmare la</span>
+            <p><a href="#stire-128">„SUA au lovit din nou insula Qeshm din Strâmtoarea Hormuz; Rubio spune că cererile Iranului sunt „scandaloase” și nu se întrevede un acord” — luni, 9 noiembrie 2026, ora 20:00.</a></p>
+          </div>
+          <div class="sec">
+            <p class="sec-label">Ce s-a întâmplat</p>
+            <p>Luni, 9 noiembrie, congresmanul republican Thomas Massie (Kentucky) a depus din nou 8 articole de destituire împotriva secretarului apărării Pete Hegseth, declanșând termenul de două zile legislative pentru votul în Cameră, așteptat până miercuri. Articolele îl acuză pe Hegseth de „infracțiuni și delicte grave”: trei capete vizează războiul împotriva Iranului dus fără aprobarea Congresului, cu încălcarea War Powers Resolution, la care se adaugă operațiunile din Yemen și Venezuela, loviturile letale asupra unor presupuse ambarcațiuni de trafic de droguri și ignorarea legilor privind minimizarea victimelor civile. Massie mai încercase înainte de alegerile intermediare, dar președintele Camerei, Mike Johnson, convocase atunci o pauză anticipată ca să evite votul, iar rezoluția a expirat — de aici reintroducerea de luni; Hegseth a anunțat o conferință de presă marți, prima la Pentagon din mai.</p>
+          </div>
+          <div class="sec">
+            <p class="sec-label">De ce contează</p>
+            <p>Destituirea secretarului apărării al SUA — șeful civil al celei mai mari armate din NATO — în timpul unui război în desfășurare ar fi un șoc instituțional: ar fi pentru prima dată de la 1876 când un secretar de cabinet e destituit de Cameră, iar votul vine la o săptămână după pierderile republicane la alegerile intermediare, pe fondul criticilor la adresa războiului din Iran. Pentru NATO, miza e stabilitatea conducerii Pentagonului, partenerul central al alianței. Probabilitatea reală de înlăturare e însă mică: condamnarea cere două treimi în Senat, unde republicanii au 53 din 100 de locuri.</p>
+          </div>
+          <div class="verify">
+            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
+            <p>Verdict: confirmat. Reuters (9 nov 2026) — Massie a depus luni cele 8 articole, cu vot așteptat săptămâna aceasta; surse din Congres spun că rezoluția ar putea avea majoritatea simplă în Cameră; condamnarea în Senat e improbabilă (două treimi necesare, republicanii au 53 din 100 de locuri). CNN (9 nov 2026) — Hegseth ar fi al treilea secretar de cabinet destituit de Cameră; acuzațiile includ războiul din Iran fără aprobare și execuții extrajudiciare. WHRO / NPR (9 nov 2026) — votul poate veni în următoarele două zile legislative; Johnson a evitat votul înainte de alegeri prin pauză anticipată.</p>
+            <ul class="sources">
+              <li><a href="https://www.reuters.com/world/us/hegseth-faces-expected-us-house-impeachment-vote-this-week-2026-11-09/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Reuters — „Hegseth faces expected US House impeachment vote this week” (9 nov 2026)<span class="host">reuters.com</span></a></li>
+              <li><a href="https://www.cnn.com/2026/11/09/politics/pete-hegseth-impeachment-congress?cid=external-feeds_iluminar_meta" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>CNN — „How impeachment of a cabinet secretary like Hegseth works” (9 nov 2026)<span class="host">cnn.com</span></a></li>
+              <li><a href="https://www.whro.org/2026-11-09/thomas-massie-files-articles-of-impeachment-against-defense-secretary-pete-hegseth" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>WHRO / NPR — „Thomas Massie files articles of impeachment against Defense Secretary Pete Hegseth” (9 nov 2026)<span class="host">whro.org</span></a></li>
+              <li><a href="https://www.brusselstimes.com/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>The Brussels Times — „Impeachment bid launched against U.S. Defence Secretary” (9 nov 2026, 23:24, homepage)<span class="host">brusselstimes.com</span></a></li>
+            </ul>
+          </div>
+          <div class="opposing">
+            <p class="sec-label">Tabăra adversă</p>
+            <p>Președintele Trump l-a apărat pe Hegseth și a numit demersul motivat politic, iar Hegseth a spus luni că nu e îngrijorat și că ar relansa războiul cu Iranul dacă ar avea ocazia. Președintele Camerei, Mike Johnson, s-a opus și el, spunând că destituirea „în mijlocul ostilităților din străinătate" ar fi „un lucru teribil de văzut pentru aliații și dușmanii noștri" (<a href="https://www.reuters.com/world/us/hegseth-faces-expected-us-house-impeachment-vote-this-week-2026-11-09/" target="_blank" rel="noopener">Reuters</a>). Acuzațiile rămân acuzații — depunerea articolelor nu stabilește vinovăția.</p>
+          </div>
+          <div class="impact">
+            <span class="badge">Impact direct</span>
+            <p>Impact direct: minim azi — votul din Cameră nu schimbă nimic în activitatea lui de azi; relevanță de context ridicată: șeful civil al armatei SUA, cel mai mare aliat al NATO, e vizat de destituire în plin război cu Iranul; o eventuală înlăturare ar zgudui conducerea Pentagonului. De urmărit: votul din Cameră, așteptat până miercuri; condamnarea în Senat rămâne improbabilă.</p>
+          </div>
+        </article>
+
+        <!-- 2 · 10 nov · 11:00 -->
+        <article id="stire-140" data-cats="romania" data-sev="green" data-subiect="reactorul 1 Cernavodă oprit">
+          <div class="a-meta">
+            <span class="a-time">10 nov · 11:00</span>
+            <span class="a-cat">România</span>
+            <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
+            <a class="cont-pill" href="#stire-119" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
+            <span class="subj-pill">reactorul 1 Cernavodă oprit</span>
+            <span class="a-num">#2 / 9</span>
+          </div>
+          <h2>Reactorul 1 de la Cernavodă s-a oprit neplanificat luni seara, după o defecțiune; Nuclearelectrica schimbă directorul tehnic de la 1 decembrie</h2>
+          <div class="followup">
+            <span class="tag">Urmare la</span>
+            <p><a href="#stire-119">„Unitatea 2 de la Cernavodă a început repornirea: secvența de pornire a fost inițiată azi-noapte la 00:42, revenirea completă e estimată marți” — luni, 9 noiembrie 2026, ora 08:00.</a></p>
+          </div>
+          <div class="sec">
+            <p class="sec-label">Ce s-a întâmplat</p>
+            <p>Luni seara, Nuclearelectrica a deconectat Unitatea 1 de la Cernavodă de la rețea, după o defecțiune la sistemele convenționale ale reactorului, fără impact asupra securității nucleare, potrivit companiei; specialiștii lucrează la remediere, iar repornirea Unității 1 e prioritate. Compania a anunțat totodată că directorul tehnic al centralei va fi înlocuit de la 1 decembrie, invocând responsabilitatea conducerii tehnice pentru disponibilitatea echipamentelor. Sâmbătă, în vizită la centrală, premierul Luca Niculescu estimase la circa 200 de milioane € pierderile din oprirea de trei luni; Unitatea 2, repornită luni, e așteptată la capacitate maximă azi, 10 noiembrie.</p>
+          </div>
+          <div class="sec">
+            <p class="sec-label">De ce contează</p>
+            <p>Cernavodă produce circa 20% din electricitatea României, iar oprirea neplanificată a Unității 1, la o zi după ce Unitatea 2 a fost repornită, arată că centrala trece printr-o perioadă fragilă: trei luni de oprire cu pierderi de circa 200 de milioane € și o schimbare de conducere tehnică de la 1 decembrie. Pentru el: context energetic pentru România — familie la Giurgiu și București, expunere la piața RO prin TVBETETF — fără risc nuclear raportat.</p>
+          </div>
+          <div class="verify">
+            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
+            <p>Verdict: confirmat. SeeNews (10 nov 2026, 10:37) — Unitatea 1 deconectată luni seara după o defecțiune la sistemele convenționale, fără impact asupra securității nucleare; directorul tehnic înlocuit de la 1 decembrie; pierderi estimate la circa 200 de milioane € din oprirea de trei luni (premierul Niculescu, sâmbătă); centrala acoperă circa 20% din electricitatea României. Reuters (9 nov 2026, via TradingView) — Nuclearelectrica a început reconectarea Unității 2, funcționare completă pe 10 noiembrie. G4Media (10 nov 2026, homepage) — oprirea neplanificată a Reactorului 1 și schimbarea conducerii, titlu principal al zilei.</p>
+            <ul class="sources">
+              <li><a href="https://www.g4media.ro/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>G4Media — „BREAKING | Reactorul 1 de la Cernavodă s-a oprit neplanificat” (9 nov 2026, titlu principal pe homepage, 10 nov)<span class="host">g4media.ro</span></a></li>
+              <li><a href="https://seenews.com/news/romanias-cernavoda-npp-disconnects-unit-1-after-malfunction-1304638" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>SeeNews — „Romania's Cernavoda NPP disconnects Unit 1 after malfunction” (10 nov 2026, 10:37)<span class="host">seenews.com</span></a></li>
+              <li><a href="https://www.tradingview.com/news/reuters.com,2026:newsml_L5N46Q0ED:0-romania-s-second-nuclear-power-reactor-seen-at-full-capacity-on-nov-10/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Reuters (via TradingView) — „Romania's second nuclear power reactor seen at full capacity on Nov 10” (9 nov 2026)<span class="host">tradingview.com</span></a></li>
+            </ul>
+          </div>
+          <div class="opposing">
+            <p class="sec-label">Tabăra adversă</p>
+            <p>Nuclearelectrica, citată de SeeNews: oprirea e la sistemele convenționale ale reactorului, fără impact asupra securității nucleare, iar repornirea Unității 1 e tratată ca prioritate — compania prezintă incidentul ca o defecțiune tehnică gestionabilă, nu ca un risc nuclear (<a href="https://seenews.com/news/romanias-cernavoda-npp-disconnects-unit-1-after-malfunction-1304638" target="_blank" rel="noopener">SeeNews</a>).</p>
+          </div>
+          <div class="impact">
+            <span class="badge">Impact direct</span>
+            <p>Impact direct: minim azi — nicio întrerupere de curent raportată; relevanță de context: Cernavodă dă circa 20% din electricitatea României, iar oprirea neplanificată vine după o oprire de trei luni cu pierderi de circa 200 de milioane €; de urmărit repornirea Unității 1 și efectul asupra prețurilor la energie și asupra pieței RO.</p>
+          </div>
+        </article>
+
+        <!-- 3 · 10 nov · 10:00 -->
         <article id="stire-137" data-cats="tech" data-sev="amber" data-subiect="proces colectiv împotriva Nvidia">
           <div class="a-meta">
             <span class="a-time">10 nov · 10:00</span>
@@ -857,7 +942,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-120" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">proces colectiv împotriva Nvidia</span>
-            <span class="a-num">#1 / 7</span>
+            <span class="a-num">#3 / 9</span>
           </div>
           <h2>Nvidia, dată în judecată de acționari după scandalul Huang: prima acțiune colectivă cere despăgubiri, acțiunile au pierdut 4,27% într-o zi</h2>
           <div class="followup">
@@ -893,14 +978,14 @@
           </div>
         </article>
 
-        <!-- 2 · 10 nov · 10:00 -->
+        <!-- 4 · 10 nov · 10:00 -->
         <article id="stire-138" data-cats="tech" data-sev="green" data-subiect="breșă de date la Wyndham">
           <div class="a-meta">
             <span class="a-time">10 nov · 10:00</span>
             <span class="a-cat">Tech &amp; AI</span>
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <span class="subj-pill">breșă de date la Wyndham</span>
-            <span class="a-num">#2 / 7</span>
+            <span class="a-num">#4 / 9</span>
           </div>
           <h2>Wyndham a expus datele clienților: o parolă din codul aplicației Android dădea acces la baza internă cu nume, e-mailuri și tokenuri de autentificare</h2>
           <div class="sec">
@@ -934,7 +1019,7 @@
           </div>
         </article>
 
-        <!-- 3 · 10 nov · 09:00 -->
+        <!-- 5 · 10 nov · 09:00 -->
         <article id="stire-135" data-cats="tech" data-sev="amber" data-subiect="chei API scurse de Claude Code">
           <div class="a-meta">
             <span class="a-time">10 nov · 09:00</span>
@@ -942,7 +1027,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="spot-tag">Știrea zilei</span>
             <span class="subj-pill">chei API scurse de Claude Code</span>
-            <span class="a-num">#3 / 7</span>
+            <span class="a-num">#5 / 9</span>
           </div>
           <h2>Claude Code scurge parole și chei API pe GitHub: 1.122 de fișiere publice conțin secrete reale</h2>
           <div class="sec">
@@ -974,14 +1059,14 @@
           </div>
         </article>
 
-        <!-- 4 · 10 nov · 09:00 -->
+        <!-- 6 · 10 nov · 09:00 -->
         <article id="stire-136" data-cats="tech" data-sev="amber" data-subiect="breșă OpenSSH exploatată activ">
           <div class="a-meta">
             <span class="a-time">10 nov · 09:00</span>
             <span class="a-cat">Tech &amp; AI</span>
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="subj-pill">breșă OpenSSH exploatată activ</span>
-            <span class="a-num">#4 / 7</span>
+            <span class="a-num">#6 / 9</span>
           </div>
           <h2>Vulnerabilitatea „SSHole" în OpenSSH e exploatată activ: conturi fără parolă pot fi accesate de la distanță (CVE-2026-123158)</h2>
           <div class="sec">
@@ -1009,7 +1094,7 @@
           </div>
         </article>
 
-        <!-- 5 · 10 nov · 08:00 -->
+        <!-- 7 · 10 nov · 08:00 -->
         <article id="stire-134" data-cats="securitate" data-sev="amber" data-subiect="nave lovite în Marea Neagră">
           <div class="a-meta">
             <span class="a-time">10 nov · 08:00</span>
@@ -1017,7 +1102,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-31" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">nave lovite în Marea Neagră</span>
-            <span class="a-num">#5 / 7</span>
+            <span class="a-num">#7 / 9</span>
           </div>
           <h2>Rusia anunță că a lovit două nave de marfă și un petrolier în Marea Neagră, în apropiere de Odesa</h2>
           <div class="followup">
@@ -1047,7 +1132,7 @@
           </div>
         </article>
 
-        <!-- 6 · 10 nov · 06:00 -->
+        <!-- 8 · 10 nov · 06:00 -->
         <article id="stire-132" data-cats="securitate" data-sev="amber" data-subiect="negocierile Ucraina–Rusia încep">
           <div class="a-meta">
             <span class="a-time">10 nov · 06:00</span>
@@ -1055,7 +1140,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-113" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">negocierile Ucraina–Rusia încep</span>
-            <span class="a-num">#6 / 7</span>
+            <span class="a-num">#8 / 9</span>
           </div>
           <h2>Încep azi negocierile de la Abu Dhabi între Ucraina și Rusia — primele discuții trilaterale din februarie, cu Europa la ușă</h2>
           <div class="followup">
@@ -1089,7 +1174,7 @@
           </div>
         </article>
 
-        <!-- 7 · 10 nov · 06:00 -->
+        <!-- 9 · 10 nov · 06:00 -->
         <article id="stire-133" data-cats="tech" data-sev="green" data-subiect="IPO Anthropic săptămâna viitoare">
           <div class="a-meta">
             <span class="a-time">10 nov · 06:00</span>
@@ -1097,7 +1182,7 @@
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <a class="cont-pill" href="#stire-114" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">IPO Anthropic săptămâna viitoare</span>
-            <span class="a-num">#7 / 7</span>
+            <span class="a-num">#9 / 9</span>
           </div>
           <h2>Anthropic merge mai departe cu IPO-ul: listarea, așteptată joia sau vinerea viitoare, dar investitorii presează evaluarea sub 1,5 trilioane $</h2>
           <div class="followup">
@@ -5783,8 +5868,8 @@
 
       <footer>
         <div class="rule" aria-hidden="true"></div>
-        <p>Sfârșitul ediției de azi · Ultima actualizare: marți, 10 noiembrie 2026, 10:00<br />Monitorizarea rulează la circa 3 ore, în fereastra L–V 06:00–22:00 · S–D 07:30–22:00 — dă refresh pentru noutăți.</p>
-        <a class="to-top" href="#stire-137">↑ Înapoi la cea mai nouă știre</a>
+        <p>Sfârșitul ediției de azi · Ultima actualizare: marți, 10 noiembrie 2026, 11:00<br />Monitorizarea rulează la circa 3 ore, în fereastra L–V 06:00–22:00 · S–D 07:30–22:00 — dă refresh pentru noutăți.</p>
+        <a class="to-top" href="#stire-139">↑ Înapoi la cea mai nouă știre</a>
       </footer>
     </div>
 
