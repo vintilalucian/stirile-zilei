@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="color-scheme" content="light dark" />
-    <meta name="tirile-versiune" content="2026-11-10T08:10:00+01:00|3|amber" />
+    <meta name="tirile-versiune" content="2026-11-10T09:03:00+01:00|5|amber" />
     <link rel="icon" href="data:," />
     <title>Știrile zilei</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -699,9 +699,9 @@
     <div class="topbar">
       <div class="topbar-inner">
         <span class="dot" aria-hidden="true"></span>
-        <span><strong>Marți, 10 noiembrie 2026</strong> · actualizat la <strong>08:10</strong></span>
+        <span><strong>Marți, 10 noiembrie 2026</strong> · actualizat la <strong>09:03</strong></span>
         <span aria-hidden="true">·</span>
-        <span>3 știri azi</span>
+        <span>5 știri azi</span>
         <span class="spacer"></span>
         <button class="refresh-btn" type="button" id="refreshBtn" aria-label="Reîmprospătează pagina">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg>
@@ -739,7 +739,7 @@
 
       <!-- Chenar permanent: știrea cea mai importantă a zilei — sub fereastra
            „Ultimele știri", ÎNAINTEA dashboardului, vizibilă din prima, fără scroll.
-           Nivelul de azi: GALBEN (sev-amber) — de urmărit: încep azi negocierile de la Abu Dhabi între Ucraina și Rusia — primele discuții trilaterale din februarie, cu Europa la ușă — știrea cu severitatea cea mai mare a zilei și cea mai importantă dintre cele trei știri ale zilei; mai e o a doua știre galbenă azi (anunțul Rusiei despre nave lovite în Marea Neagră, de la 08:00), iar a treia, verde, e IPO-ul Anthropic, așteptat săptămâna viitoare — de aceea chenarul poartă mențiunea despre cealaltă știre cu aceeași severitate, cu filtru pe galben la „apasă aici".
+           Nivelul de azi: GALBEN (sev-amber) — de urmărit: Claude Code scurge parole și chei API pe GitHub — știrea cu severitatea cea mai mare a zilei și cea mai importantă dintre cele patru știri galbene ale zilei, singura cu impact direct personal; mai sunt alte trei știri galbene azi (breșa „SSHole" în OpenSSH, de la 09:00, anunțul Rusiei despre nave lovite în Marea Neagră, de la 08:00, și negocierile Ucraina–Rusia de la Abu Dhabi, de la 06:00), iar a cincea, verde, e IPO-ul Anthropic — de aceea chenarul poartă mențiunea despre celelalte știri cu aceeași severitate, cu filtru pe galben la „apasă aici".
            Chenarul rămâne în afara logicii de filtrare: vizibil indiferent de filtrul de categorie. -->
       <section class="spot sev-amber" aria-label="Știrea cea mai importantă a zilei">
         <div class="spot-head">
@@ -747,15 +747,15 @@
             <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13 2 4.5 13.5H11L9.5 22 19 10h-6.5L13 2z"/></svg>
             Știrea zilei · Atenție rapidă
           </span>
-          <span class="spot-time">10 nov · 06:00</span>
+          <span class="spot-time">10 nov · 09:00</span>
           <span class="spot-pill">Nivel galben — de urmărit</span>
         </div>
-        <h2 class="spot-title">Încep azi negocierile de la Abu Dhabi între Ucraina și Rusia — primele discuții trilaterale din februarie, cu Europa la ușă</h2>
-        <p class="spot-why"><strong>De ce e în față:</strong> E știrea cu severitatea cea mai mare a zilei și cea mai importantă dintre cele trei știri ale zilei — prima rundă trilaterală din februarie pune pe masă încetarea focului, garanțiile de securitate și teritoriile, cu Europa în rol disputat: Franța, Germania și Comisia Europeană trimit oficiali, dar Rusia nu-i vrea la negocieri; dosarul securității europene e cel mai urmărit fir al toamnei pe zona lui profesională (IT incident Manager, Flancul estic).</p>
-        <p class="spot-lead">Oficiali ruși și ucraineni se întâlnesc azi și mâine la Abu Dhabi, în discuții intermediate de SUA — primele de acest fel din februarie. Pe agendă: încetarea focului, garanții de securitate și problemele teritoriale nerezolvate; prima sesiune era programată în jurul orei 06:30 GMT.</p>
+        <h2 class="spot-title">Claude Code scurge parole și chei API pe GitHub: 1.122 de fișiere publice conțin secrete reale</h2>
+        <p class="spot-why"><strong>De ce e în față:</strong> E cea mai importantă dintre cele patru știri galbene ale zilei și singura cu impact direct personal: fișierul local de setări al lui Claude Code ajunge în repo-uri publice GitHub cu parole și chei API salvate cuvânt cu cuvânt — iar el construiește automatizări cu chei API (Google Apps Script + Gemini) și folosește Claude zilnic, deci o cheie tastată vreodată într-o comandă aprobată poate fi deja expusă.</p>
+        <p class="spot-lead">Cercetătorii Apiiro au numărat 104.185 de copii publice ale fișierului „.claude/settings.local.json"; 1.122 conțin cel puțin un secret real — 1.379 de secrete distincte — iar cu tot cu istoricul git totalul urcă la 2.539 de secrete în 1.994 de repo-uri, din 63 de organizații.</p>
         <p class="spot-more" hidden><span class="spot-more-text"></span> <button class="spot-more-btn" type="button">apasă aici</button></p>
         <div class="spot-foot">
-          <a class="spot-link" href="#stire-132">Citește știrea completă ↓</a>
+          <a class="spot-link" href="#stire-135">Citește știrea completă ↓</a>
           <div class="sev-scale" role="img" aria-label="Scară de gravitate: verde — normal, galben — de urmărit, roșu — grav. Nivelul de azi: galben.">
             <span class="sev-item"><i class="sev-dot g" aria-hidden="true"></i>Verde · normal</span>
             <span class="sev-item on"><i class="sev-dot y" aria-hidden="true"></i>Galben · de urmărit</span>
@@ -768,15 +768,15 @@
       <section class="dashboard" aria-label="Panou de ansamblu">
         <div class="dash-head">
           <span class="dash-title">Dashboard · Azi</span>
-          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 08:10</span>
+          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 09:03</span>
           <span class="dash-meta">Fereastră monitorizare <strong>L–V 06:00–22:00 · S–D 07:30–22:00</strong> · pas ~3 ore</span>
         </div>
 
         <div class="kpi-grid five" role="group" aria-label="Filtrează după categorie — apasă pe un tile">
           <button class="kpi" type="button" data-filter="toate" aria-pressed="true">
             <span class="kpi-top"><span class="kpi-label">Toate știrile</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">3</span>
-            <span class="kpi-sub">știri verificate azi, în 2 rulări</span>
+            <span class="kpi-value">5</span>
+            <span class="kpi-sub">știri verificate azi, în 3 rulări</span>
             <span class="kpi-bar" aria-hidden="true"><i style="width:100%"></i></span>
             <span class="kpi-hint">Apasă pentru toate</span>
           </button>
@@ -784,7 +784,7 @@
             <span class="kpi-top"><span class="kpi-label">Securitate &amp; NATO</span><span class="kpi-check" aria-hidden="true">✓</span></span>
             <span class="kpi-value">2</span>
             <span class="kpi-sub">nave lovite în Marea Neagră · negocierile Ucraina–Rusia încep</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:67%"></i></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:40%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="romania" aria-pressed="false">
@@ -803,9 +803,9 @@
           </button>
           <button class="kpi" type="button" data-filter="tech" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">Tech &amp; AI</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">1</span>
-            <span class="kpi-sub">IPO Anthropic săptămâna viitoare</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:33%"></i></span>
+            <span class="kpi-value">3</span>
+            <span class="kpi-sub">chei API scurse de Claude Code · breșă OpenSSH exploatată activ · IPO Anthropic săptămâna viitoare</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:60%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
         </div>
@@ -819,7 +819,7 @@
       </section>
 
       <div class="filter-status" aria-live="polite">
-        <span class="filter-label">Se afișează: <strong>Toate categoriile — 3 din 3 știri</strong></span>
+        <span class="filter-label">Se afișează: <strong>Toate categoriile — 5 din 5 știri</strong></span>
         <button class="filter-reset" type="button" hidden>Resetează filtrul</button>
       </div>
 
@@ -849,7 +849,82 @@
       <p class="empty">Nicio știre în această categorie azi.</p>
 
       <main>
-        <!-- 1 · 10 nov · 08:00 -->
+        <!-- 1 · 10 nov · 09:00 -->
+        <article id="stire-135" data-cats="tech" data-sev="amber" data-subiect="chei API scurse de Claude Code">
+          <div class="a-meta">
+            <span class="a-time">10 nov · 09:00</span>
+            <span class="a-cat">Tech &amp; AI</span>
+            <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
+            <span class="spot-tag">Știrea zilei</span>
+            <span class="subj-pill">chei API scurse de Claude Code</span>
+            <span class="a-num">#1 / 5</span>
+          </div>
+          <h2>Claude Code scurge parole și chei API pe GitHub: 1.122 de fișiere publice conțin secrete reale</h2>
+          <div class="sec">
+            <p class="sec-label">Ce s-a întâmplat</p>
+            <p>Cercetătorii firmei de securitate Apiiro au descoperit că fișierul local „.claude/settings.local.json" al asistentului de coding Claude Code ajunge în repo-uri publice GitHub cu parole și chei API în el. Când utilizatorul apasă „Yes, and don't ask again" la o comandă shell, Claude Code salvează comanda cuvânt cu cuvânt — inclusiv orice parolă sau token tastat în ea — ca regulă de aprobare în fișier. Apiiro a numărat 104.185 de copii publice ale fișierului; 1.122 conțin cel puțin un secret real (1.379 de secrete distincte), iar cu tot cu istoricul git totalul urcă la 2.539 de secrete în 1.994 de repo-uri, din 63 de organizații. Cercetarea a fost publicată pe 5 noiembrie 2026; Ars Technica a relatat-o pe 9 noiembrie 2026.</p>
+          </div>
+          <div class="sec">
+            <p class="sec-label">De ce contează</p>
+            <p>Direct și personal: construiește automatizări cu chei API (Google Apps Script + Gemini) și folosește Claude zilnic. O cheie API e un bearer token — resetarea parolei nu o revocă (aceeași lecție ca la breșa OpenCode, semnalată pe 20 octombrie). Dacă a aprobat vreodată în Claude Code o comandă cu o cheie tastată în ea și repo-ul e public, cheia poate fi deja expusă.</p>
+          </div>
+          <div class="verify">
+            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
+            <p>Verdict: confirmat. Ars Technica (9 nov 2026) — relatarea cercetării. The Hacker News (6 nov 2026) — relatarea cercetării Apiiro. Apiiro — cercetarea primară „Coding Agents Are Leaking Your Secrets to GitHub" (5 nov 2026). iTWire (7 nov 2026) — rezumat al cercetării.</p>
+            <ul class="sources">
+              <li><a href="http://thehackernews.com/2026/11/claude-codes-dont-ask-again-file.html" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>The Hacker News — relatarea cercetării Apiiro despre fișierul „don't ask again" al Claude Code (6 nov 2026)<span class="host">thehackernews.com</span></a></li>
+            </ul>
+          </div>
+          <div class="opposing">
+            <p class="sec-label">Tabăra adversă</p>
+            <p>Boris Cherny, șeful Claude Code la Anthropic, a recunoscut problema pe Hacker News pe 7 noiembrie și a spus că echipa „analizează ce se poate face pentru a preveni asta". Documentația Anthropic precizează că fișierul e adăugat automat la gitignore-ul global al dezvoltatorului — scurgerea apare când fișierul ajunge totuși comis (excludere lipsă, clonare, commit automat de către Claude Code). De reținut: scanerele clasice de secrete (gitleaks, TruffleHog) au ratat 215 dintre cele ~1.100 de secrete publice, deci verificarea automată nu e suficientă.</p>
+          </div>
+          <div class="impact">
+            <span class="badge">Impact direct</span>
+            <p>Direct personal — vezi „Acțiune" mai jos.</p>
+          </div>
+          <div class="action">
+            <span class="badge">Acțiune</span>
+            <p>Verifică-ți repo-urile GitHub după fișierul .claude/settings.local.json (inclusiv în istoricul git); dacă găsești o cheie în el, rotește cheia MAI ÎNTÂI, apoi șterge fișierul și curăță istoricul; nu mai tasta niciodată parole sau tokenuri direct în comenzi aprobate în Claude Code.</p>
+          </div>
+        </article>
+
+        <!-- 2 · 10 nov · 09:00 -->
+        <article id="stire-136" data-cats="tech" data-sev="amber" data-subiect="breșă OpenSSH exploatată activ">
+          <div class="a-meta">
+            <span class="a-time">10 nov · 09:00</span>
+            <span class="a-cat">Tech &amp; AI</span>
+            <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
+            <span class="subj-pill">breșă OpenSSH exploatată activ</span>
+            <span class="a-num">#2 / 5</span>
+          </div>
+          <h2>Vulnerabilitatea „SSHole" în OpenSSH e exploatată activ: conturi fără parolă pot fi accesate de la distanță (CVE-2026-123158)</h2>
+          <div class="sec">
+            <p class="sec-label">Ce s-a întâmplat</p>
+            <p>O vulnerabilitate de ocolire a autentificării în OpenSSH (CVE-2026-123158, poreclită „SSHole") e exploatată activ de hackeri, relatează Ars Technica pe 9 noiembrie. Afectează servere OpenSSH sub versiunea 10.6p2 pe sisteme Linux cu biblioteca musl și fără PAM — în special Alpine Linux, în configurația implicită. Trimițând o parolă mai lungă de 256 de caractere către un cont cu câmpul de parolă „*" (cont blocat / fără parolă), atacatorul păcălește verificarea și intră fără credențiale. GreyNoise a înregistrat prima exploatare reușită pe 7 noiembrie, la ~40 de ore după publicarea remedierii; atacurile au fost legate de botneturi și minare de criptomonede. Remedierea (OpenSSH 10.6p2) există din 5 noiembrie, iar CISA a adăugat vulnerabilitatea în catalogul Known Exploited Vulnerabilities pe 9/10 noiembrie, cu termen de remediere de 3 zile (12 noiembrie) pentru agențiile federale americane.</p>
+          </div>
+          <div class="sec">
+            <p class="sec-label">De ce contează</p>
+            <p>Context profesional direct — ca IT incident Manager, o breșă de autentificare exploatată la mai puțin de 9 ore de la dezvăluire (primul atac confirmat de Previdian) arată cum fereastra de patch s-a prăbușit la ore, nu zile. Alpine e imaginea de bază a unei părți uriașe din containerele cloud, deci suprafața afectată e largă.</p>
+          </div>
+          <div class="verify">
+            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
+            <p>Verdict: confirmat. Ars Technica (9 nov 2026) — relatarea exploatării active. BleepingComputer (9 nov 2026) — relatarea breșei „SSHole". Help Net Security (6 nov 2026). GreyNoise — tracker de activitate (prima exploatare reușită 7 nov 2026). CISA KEV — CVE-2026-123158 adăugată în catalog (9/10 nov 2026).</p>
+            <ul class="sources">
+              <li><a href="https://www.bleepingcomputer.com/news/security/hackers-exploit-sshole-openssh-flaw-to-breach-linux-systems/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>BleepingComputer — „Hackers exploit 'SSHole' OpenSSH flaw to breach Linux systems" (9 nov 2026)<span class="host">bleepingcomputer.com</span></a></li>
+            </ul>
+          </div>
+          <div class="opposing">
+            <p class="sec-label">Tabăra adversă</p>
+            <p>Întreținătorul musl susține că nu e un bug în musl, ci o utilizare greșită din partea OpenSSH — dar recunoaște că funcția crypt() își va schimba probabil comportamentul la următoarea versiune musl.</p>
+          </div>
+          <div class="impact">
+            <span class="badge">Impact direct</span>
+            <p>Impact direct: minim — nu administrează servere Alpine/musl. Relevanță de context profesional: incident de securitate activ, cu exploatare în desfășurare, pe infrastructură Linux/container larg folosită.</p>
+          </div>
+        </article>
+
+        <!-- 3 · 10 nov · 08:00 -->
         <article id="stire-134" data-cats="securitate" data-sev="amber" data-subiect="nave lovite în Marea Neagră">
           <div class="a-meta">
             <span class="a-time">10 nov · 08:00</span>
@@ -857,7 +932,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-31" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">nave lovite în Marea Neagră</span>
-            <span class="a-num">#1 / 3</span>
+            <span class="a-num">#3 / 5</span>
           </div>
           <h2>Rusia anunță că a lovit două nave de marfă și un petrolier în Marea Neagră, în apropiere de Odesa</h2>
           <div class="followup">
@@ -887,16 +962,15 @@
           </div>
         </article>
 
-        <!-- 2 · 10 nov · 06:00 -->
+        <!-- 4 · 10 nov · 06:00 -->
         <article id="stire-132" data-cats="securitate" data-sev="amber" data-subiect="negocierile Ucraina–Rusia încep">
           <div class="a-meta">
             <span class="a-time">10 nov · 06:00</span>
             <span class="a-cat">Securitate &amp; NATO</span>
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-113" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
-            <span class="spot-tag">Știrea zilei</span>
             <span class="subj-pill">negocierile Ucraina–Rusia încep</span>
-            <span class="a-num">#2 / 3</span>
+            <span class="a-num">#4 / 5</span>
           </div>
           <h2>Încep azi negocierile de la Abu Dhabi între Ucraina și Rusia — primele discuții trilaterale din februarie, cu Europa la ușă</h2>
           <div class="followup">
@@ -930,7 +1004,7 @@
           </div>
         </article>
 
-        <!-- 3 · 10 nov · 06:00 -->
+        <!-- 5 · 10 nov · 06:00 -->
         <article id="stire-133" data-cats="tech" data-sev="green" data-subiect="IPO Anthropic săptămâna viitoare">
           <div class="a-meta">
             <span class="a-time">10 nov · 06:00</span>
@@ -938,7 +1012,7 @@
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <a class="cont-pill" href="#stire-114" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">IPO Anthropic săptămâna viitoare</span>
-            <span class="a-num">#3 / 3</span>
+            <span class="a-num">#5 / 5</span>
           </div>
           <h2>Anthropic merge mai departe cu IPO-ul: listarea, așteptată joia sau vinerea viitoare, dar investitorii presează evaluarea sub 1,5 trilioane $</h2>
           <div class="followup">
@@ -5624,8 +5698,8 @@
 
       <footer>
         <div class="rule" aria-hidden="true"></div>
-        <p>Sfârșitul ediției de azi · Ultima actualizare: marți, 10 noiembrie 2026, 06:00<br />Monitorizarea rulează la circa 3 ore, în fereastra L–V 06:00–22:00 · S–D 07:30–22:00 — dă refresh pentru noutăți.</p>
-        <a class="to-top" href="#stire-132">↑ Înapoi la cea mai nouă știre</a>
+        <p>Sfârșitul ediției de azi · Ultima actualizare: marți, 10 noiembrie 2026, 09:03<br />Monitorizarea rulează la circa 3 ore, în fereastra L–V 06:00–22:00 · S–D 07:30–22:00 — dă refresh pentru noutăți.</p>
+        <a class="to-top" href="#stire-135">↑ Înapoi la cea mai nouă știre</a>
       </footer>
     </div>
 
