@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="color-scheme" content="light dark" />
-    <meta name="tirile-versiune" content="2026-11-10T13:00:00+01:00|11|amber" />
+    <meta name="tirile-versiune" content="2026-11-10T14:00:00+01:00|12|amber" />
     <link rel="icon" href="data:," />
     <title>Știrile zilei</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -699,9 +699,9 @@
     <div class="topbar">
       <div class="topbar-inner">
         <span class="dot" aria-hidden="true"></span>
-        <span><strong>Marți, 10 noiembrie 2026</strong> · actualizat la <strong>13:00</strong></span>
+        <span><strong>Marți, 10 noiembrie 2026</strong> · actualizat la <strong>14:00</strong></span>
         <span aria-hidden="true">·</span>
-        <span>11 știri azi</span>
+        <span>12 știri azi</span>
         <span class="spacer"></span>
         <button class="refresh-btn" type="button" id="refreshBtn" aria-label="Reîmprospătează pagina">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg>
@@ -739,7 +739,7 @@
 
       <!-- Chenar permanent: știrea cea mai importantă a zilei — sub fereastra
            „Ultimele știri", ÎNAINTEA dashboardului, vizibilă din prima, fără scroll.
-           Nivelul de azi: GALBEN (sev-amber) — de urmărit: Claude Code scurge parole și chei API pe GitHub — știrea cu severitatea cea mai mare a zilei și cea mai importantă dintre cele șase știri galbene ale zilei, singura cu impact direct personal; mai sunt alte cinci știri galbene azi (destituirea propusă a secretarului american al apărării, de la 11:00, procesul colectiv împotriva Nvidia, de la 10:00, breșa „SSHole" în OpenSSH, de la 09:00, anunțul Rusiei despre nave lovite în Marea Neagră, de la 08:00, și negocierile Ucraina–Rusia de la Abu Dhabi, de la 06:00), iar cele cinci verzi sunt oprirea reactorului 1 de la Cernavodă, breșa de date Wyndham, IPO-ul Anthropic, comanda IRIS și turbinele Anthropic — de aceea chenarul poartă mențiunea despre celelalte știri cu aceeași severitate, cu filtru pe galben la „apasă aici".
+           Nivelul de azi: GALBEN (sev-amber) — de urmărit: Claude Code scurge parole și chei API pe GitHub — știrea cu severitatea cea mai mare a zilei și cea mai importantă dintre cele șase știri galbene ale zilei, singura cu impact direct personal; mai sunt alte cinci știri galbene azi (destituirea propusă a secretarului american al apărării, de la 11:00, procesul colectiv împotriva Nvidia, de la 10:00, breșa „SSHole" în OpenSSH, de la 09:00, anunțul Rusiei despre nave lovite în Marea Neagră, de la 08:00, și negocierile Ucraina–Rusia de la Abu Dhabi, de la 06:00), iar cele șase verzi sunt investițiile HELLENiQ în regenerabile în România, oprirea reactorului 1 de la Cernavodă, breșa de date Wyndham, IPO-ul Anthropic, comanda IRIS și turbinele Anthropic — de aceea chenarul poartă mențiunea despre celelalte știri cu aceeași severitate, cu filtru pe galben la „apasă aici".
            Chenarul rămâne în afara logicii de filtrare: vizibil indiferent de filtrul de categorie. -->
       <section class="spot sev-amber" aria-label="Știrea cea mai importantă a zilei">
         <div class="spot-head">
@@ -768,15 +768,15 @@
       <section class="dashboard" aria-label="Panou de ansamblu">
         <div class="dash-head">
           <span class="dash-title">Dashboard · Azi</span>
-          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 13:00</span>
+          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 14:00</span>
           <span class="dash-meta">Fereastră monitorizare <strong>L–V 06:00–22:00 · S–D 07:30–22:00</strong> · pas ~3 ore</span>
         </div>
 
         <div class="kpi-grid five" role="group" aria-label="Filtrează după categorie — apasă pe un tile">
           <button class="kpi" type="button" data-filter="toate" aria-pressed="true">
             <span class="kpi-top"><span class="kpi-label">Toate știrile</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">11</span>
-            <span class="kpi-sub">știri verificate azi, în 6 rulări</span>
+            <span class="kpi-value">12</span>
+            <span class="kpi-sub">știri verificate azi, în 7 rulări</span>
             <span class="kpi-bar" aria-hidden="true"><i style="width:100%"></i></span>
             <span class="kpi-hint">Apasă pentru toate</span>
           </button>
@@ -784,14 +784,14 @@
             <span class="kpi-top"><span class="kpi-label">Securitate &amp; NATO</span><span class="kpi-check" aria-hidden="true">✓</span></span>
             <span class="kpi-value">4</span>
             <span class="kpi-sub">sateliți militari IRIS ai Franței · impeachment secretar apărare SUA · nave lovite în Marea Neagră · negocierile Ucraina–Rusia încep</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:36%"></i></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:33%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="romania" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">România</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">1</span>
-            <span class="kpi-sub">reactorul 1 Cernavodă oprit</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:9%"></i></span>
+            <span class="kpi-value">2</span>
+            <span class="kpi-sub">investiții regenerabile în România · reactorul 1 Cernavodă oprit</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:17%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="belgia" aria-pressed="false">
@@ -805,7 +805,7 @@
             <span class="kpi-top"><span class="kpi-label">Tech &amp; AI</span><span class="kpi-check" aria-hidden="true">✓</span></span>
             <span class="kpi-value">6</span>
             <span class="kpi-sub">Anthropic cumpără turbine pe gaz · proces colectiv împotriva Nvidia · breșă de date la Wyndham · chei API scurse de Claude Code · breșă OpenSSH exploatată activ · IPO Anthropic săptămâna viitoare</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:55%"></i></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:50%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
         </div>
@@ -819,7 +819,7 @@
       </section>
 
       <div class="filter-status" aria-live="polite">
-        <span class="filter-label">Se afișează: <strong>Toate categoriile — 11 din 11 știri</strong></span>
+        <span class="filter-label">Se afișează: <strong>Toate categoriile — 12 din 12 știri</strong></span>
         <button class="filter-reset" type="button" hidden>Resetează filtrul</button>
       </div>
 
@@ -849,14 +849,49 @@
       <p class="empty">Nicio știre în această categorie azi.</p>
 
       <main>
-        <!-- 1 · 10 nov · 13:00 -->
+        <!-- 1 · 10 nov · 14:00 -->
+        <article id="stire-143" data-cats="romania" data-sev="green" data-subiect="investiții regenerabile în România">
+          <div class="a-meta">
+            <span class="a-time">10 nov · 14:00</span>
+            <span class="a-cat">România</span>
+            <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
+            <span class="subj-pill">investiții regenerabile în România</span>
+            <span class="a-num">#1 / 12</span>
+          </div>
+          <h2>Grecii de la HELLENiQ anunță investiții de 1,3 mld € în regenerabile în România până în 2030 — țintă de 1 GW și 500 MW stocare în baterii</h2>
+          <div class="sec">
+            <p class="sec-label">Ce s-a întâmplat</p>
+            <p>Luni, 9 noiembrie, la București, grupul energetic grec HELLENiQ ENERGY a lansat oficial HELLENiQ Renewables Romania și a anunțat investiții de până la 1,3 mld € în energie regenerabilă în România până în 2030, din care circa 400 mil. € au fost deja cheltuite. Planul vizează circa 1 GW de capacități regenerabile și cel puțin 500 MW de stocare în baterii (1.500 MWh), cu primul reper la mijlocul lui 2027 — circa 300 MW în funcțiune. România ar urma să atragă circa 60% din investițiile regionale ale grupului în electricitate în 2027–2030 și circa 40% din puterea instalată a grupului până în 2030; compania operează deja patru parcuri fotovoltaice, cu 211 MW. La lansare au participat ministrul Mediului, Natalia Intotero, și conducerea grupului, directorul general Andreas Shiamishis și directorul general adjunct George Alexopoulos.</p>
+          </div>
+          <div class="sec">
+            <p class="sec-label">De ce contează</p>
+            <p>România devine a doua cea mai mare piață a grupului grec din Europa de Sud-Est și cea mai importantă piață de creștere în regenerabile în afara Greciei — un semnal că investițiile mari în energie verde se mută spre România, în ciuda blocajelor de racordare la rețea și de autorizare pe care chiar compania le numește. Pentru el: context direct pentru piața energetică din România — familie la Giurgiu și București, apartament cu credit ipotecar și expunere la piața RO prin TVBETETF — și un reper pentru felul în care se mișcă capitalul străin în energie în RO, pe fondul fragilității Cernavodă din ultimele zile.</p>
+          </div>
+          <div class="verify">
+            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
+            <p>Verdict: confirmat. Economedia (10 nov 2026, via roenergy.info și xchg.ro) — 1,3 mld € până în 2030, 60% din bugetul regional în România, 400 mil. € deja investite, portofoliu de circa 1 GW. Energynomics (10 nov 2026, via roenergy.info) — 211 MW solari în funcțiune în patru parcuri, țintă de cel puțin 500 MW și 1.500 MWh stocare. Mediafax (9 nov 2026, via G4Media) — anunțul de la lansarea de la București, în prezența ministrului Mediului Natalia Intotero. EnergyMag (Grecia, 10 nov 2026) — primul reper, circa 300 MW în funcțiune până la mijlocul lui 2027. Notă de integritate: cifrele variază ușor între surse — Energynomics vorbește despre „peste 1 miliard”, iar într-un interviu din vară Alexopoulos indica circa 1 miliard € până în 2030, față de 1,3 mld € în anunțul de azi; diferențele țin de momentul și formularea anunțurilor.</p>
+            <ul class="sources">
+              <li><a href="https://www.g4media.ro/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>G4Media — „Grecii de la HELLENiQ Renewables anunță investiții în România de 1,3 miliarde de euro până în 2030” (9 nov 2026, relatare Mediafax)<span class="host">g4media.ro</span></a></li>
+              <li><a href="https://roenergy.info/helleniq-renewables-romania-investitii-1-3-miliarde-2030/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>roEnergy — „HELLENiQ Renewables România: 1,3 mld. euro până în 2030” (10 nov 2026, citează Economedia și Energynomics)<span class="host">roenergy.info</span></a></li>
+              <li><a href="https://xchg.ro/stiri/energie-verde/helleniq-renewables-1-3-miliarde-euro-energie" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>xchg.ro — „HELLENiQ Renewables alocă 1,3 miliarde de euro pentru proiecte de energie regenerabilă în România până în 2030” (10 nov 2026, citează Economedia)<span class="host">xchg.ro</span></a></li>
+              <li><a href="https://www.energymag.gr/epikairotita/epiheiriseis/128920_helleniq-energy-poy-kateythynontai-oi-ependyseis-eos-13-dis-eyro" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>EnergyMag (Grecia) — „HELLENiQ ENERGY: investiții de până la 1,3 mld. € în România” (10 nov 2026)<span class="host">energymag.gr</span></a></li>
+              <li><a href="https://ekonews.ro/economic/helleniq-investitii-de-1-3-miliarde-de-euro-in-romania-pana-in-2030/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Eko News — „HELLENiQ: investiții de 1,3 miliarde de euro în România până în 2030” (10 nov 2026)<span class="host">ekonews.ro</span></a></li>
+            </ul>
+          </div>
+          <div class="impact">
+            <span class="badge">Impact direct</span>
+            <p>Impact direct: minim azi — anunțul nu schimbă nimic în activitatea lui de azi și nu cere nicio acțiune; relevanță de context: cea mai mare investiție anunțată în regenerabile în România, cu 400 mil. € deja cheltuite și un plan de 1 GW plus stocare — de urmărit dacă autorizările și racordarea la rețea țin pasul, pentru că de asta depinde dacă planul se face sau rămâne pe hârtie.</p>
+          </div>
+        </article>
+
+        <!-- 2 · 10 nov · 13:00 -->
         <article id="stire-141" data-cats="securitate" data-sev="green" data-subiect="sateliți militari IRIS ai Franței">
           <div class="a-meta">
             <span class="a-time">10 nov · 13:00</span>
             <span class="a-cat">Securitate &amp; NATO</span>
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <span class="subj-pill">sateliți militari IRIS ai Franței</span>
-            <span class="a-num">#1 / 11</span>
+            <span class="a-num">#2 / 12</span>
           </div>
           <h2>Franța comandă doi sateliți militari de observare IRIS, de peste 1,5 mld € — capacitatea proprie de informații din spațiu, asigurată după 2035</h2>
           <div class="sec">
@@ -883,7 +918,7 @@
           </div>
         </article>
 
-        <!-- 2 · 10 nov · 13:00 -->
+        <!-- 3 · 10 nov · 13:00 -->
         <article id="stire-142" data-cats="tech" data-sev="green" data-subiect="Anthropic cumpără turbine pe gaz">
           <div class="a-meta">
             <span class="a-time">10 nov · 13:00</span>
@@ -891,7 +926,7 @@
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <a class="cont-pill" href="#stire-133" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">Anthropic cumpără turbine pe gaz</span>
-            <span class="a-num">#2 / 11</span>
+            <span class="a-num">#3 / 12</span>
           </div>
           <h2>Anthropic cumpără turbine pe gaz de 3,4 mld $ pentru centrele sale de date — curentul devine blocajul AI, nu cipurile</h2>
           <div class="followup">
@@ -923,7 +958,7 @@
           </div>
         </article>
 
-        <!-- 3 · 10 nov · 11:00 -->
+        <!-- 4 · 10 nov · 11:00 -->
         <article id="stire-139" data-cats="securitate" data-sev="amber" data-subiect="impeachment secretar apărare SUA">
           <div class="a-meta">
             <span class="a-time">10 nov · 11:00</span>
@@ -931,7 +966,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-128" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">impeachment secretar apărare SUA</span>
-            <span class="a-num">#3 / 11</span>
+            <span class="a-num">#4 / 12</span>
           </div>
           <h2>Congresmanul republican Thomas Massie a depus 8 articole de destituire împotriva secretarului american al apărării Pete Hegseth; votul în Cameră e așteptat săptămâna aceasta</h2>
           <div class="followup">
@@ -966,7 +1001,7 @@
           </div>
         </article>
 
-        <!-- 4 · 10 nov · 11:00 -->
+        <!-- 5 · 10 nov · 11:00 -->
         <article id="stire-140" data-cats="romania" data-sev="green" data-subiect="reactorul 1 Cernavodă oprit">
           <div class="a-meta">
             <span class="a-time">10 nov · 11:00</span>
@@ -974,7 +1009,7 @@
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <a class="cont-pill" href="#stire-119" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">reactorul 1 Cernavodă oprit</span>
-            <span class="a-num">#4 / 11</span>
+            <span class="a-num">#5 / 12</span>
           </div>
           <h2>Reactorul 1 de la Cernavodă s-a oprit neplanificat luni seara, după o defecțiune; Nuclearelectrica schimbă directorul tehnic de la 1 decembrie</h2>
           <div class="followup">
@@ -1008,7 +1043,7 @@
           </div>
         </article>
 
-        <!-- 5 · 10 nov · 10:00 -->
+        <!-- 6 · 10 nov · 10:00 -->
         <article id="stire-137" data-cats="tech" data-sev="amber" data-subiect="proces colectiv împotriva Nvidia">
           <div class="a-meta">
             <span class="a-time">10 nov · 10:00</span>
@@ -1016,7 +1051,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-120" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">proces colectiv împotriva Nvidia</span>
-            <span class="a-num">#5 / 11</span>
+            <span class="a-num">#6 / 12</span>
           </div>
           <h2>Nvidia, dată în judecată de acționari după scandalul Huang: prima acțiune colectivă cere despăgubiri, acțiunile au pierdut 4,27% într-o zi</h2>
           <div class="followup">
@@ -1052,14 +1087,14 @@
           </div>
         </article>
 
-        <!-- 6 · 10 nov · 10:00 -->
+        <!-- 7 · 10 nov · 10:00 -->
         <article id="stire-138" data-cats="tech" data-sev="green" data-subiect="breșă de date la Wyndham">
           <div class="a-meta">
             <span class="a-time">10 nov · 10:00</span>
             <span class="a-cat">Tech &amp; AI</span>
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <span class="subj-pill">breșă de date la Wyndham</span>
-            <span class="a-num">#6 / 11</span>
+            <span class="a-num">#7 / 12</span>
           </div>
           <h2>Wyndham a expus datele clienților: o parolă din codul aplicației Android dădea acces la baza internă cu nume, e-mailuri și tokenuri de autentificare</h2>
           <div class="sec">
@@ -1093,7 +1128,7 @@
           </div>
         </article>
 
-        <!-- 7 · 10 nov · 09:00 -->
+        <!-- 8 · 10 nov · 09:00 -->
         <article id="stire-135" data-cats="tech" data-sev="amber" data-subiect="chei API scurse de Claude Code">
           <div class="a-meta">
             <span class="a-time">10 nov · 09:00</span>
@@ -1101,7 +1136,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="spot-tag">Știrea zilei</span>
             <span class="subj-pill">chei API scurse de Claude Code</span>
-            <span class="a-num">#7 / 11</span>
+            <span class="a-num">#8 / 12</span>
           </div>
           <h2>Claude Code scurge parole și chei API pe GitHub: 1.122 de fișiere publice conțin secrete reale</h2>
           <div class="sec">
@@ -1133,14 +1168,14 @@
           </div>
         </article>
 
-        <!-- 8 · 10 nov · 09:00 -->
+        <!-- 9 · 10 nov · 09:00 -->
         <article id="stire-136" data-cats="tech" data-sev="amber" data-subiect="breșă OpenSSH exploatată activ">
           <div class="a-meta">
             <span class="a-time">10 nov · 09:00</span>
             <span class="a-cat">Tech &amp; AI</span>
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="subj-pill">breșă OpenSSH exploatată activ</span>
-            <span class="a-num">#8 / 11</span>
+            <span class="a-num">#9 / 12</span>
           </div>
           <h2>Vulnerabilitatea „SSHole" în OpenSSH e exploatată activ: conturi fără parolă pot fi accesate de la distanță (CVE-2026-123158)</h2>
           <div class="sec">
@@ -1168,7 +1203,7 @@
           </div>
         </article>
 
-        <!-- 9 · 10 nov · 08:00 -->
+        <!-- 10 · 10 nov · 08:00 -->
         <article id="stire-134" data-cats="securitate" data-sev="amber" data-subiect="nave lovite în Marea Neagră">
           <div class="a-meta">
             <span class="a-time">10 nov · 08:00</span>
@@ -1176,7 +1211,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-31" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">nave lovite în Marea Neagră</span>
-            <span class="a-num">#9 / 11</span>
+            <span class="a-num">#10 / 12</span>
           </div>
           <h2>Rusia anunță că a lovit două nave de marfă și un petrolier în Marea Neagră, în apropiere de Odesa</h2>
           <div class="followup">
@@ -1206,7 +1241,7 @@
           </div>
         </article>
 
-        <!-- 10 · 10 nov · 06:00 -->
+        <!-- 11 · 10 nov · 06:00 -->
         <article id="stire-132" data-cats="securitate" data-sev="amber" data-subiect="negocierile Ucraina–Rusia încep">
           <div class="a-meta">
             <span class="a-time">10 nov · 06:00</span>
@@ -1214,7 +1249,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-113" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">negocierile Ucraina–Rusia încep</span>
-            <span class="a-num">#10 / 11</span>
+            <span class="a-num">#11 / 12</span>
           </div>
           <h2>Încep azi negocierile de la Abu Dhabi între Ucraina și Rusia — primele discuții trilaterale din februarie, cu Europa la ușă</h2>
           <div class="followup">
@@ -1248,7 +1283,7 @@
           </div>
         </article>
 
-        <!-- 11 · 10 nov · 06:00 -->
+        <!-- 12 · 10 nov · 06:00 -->
         <article id="stire-133" data-cats="tech" data-sev="green" data-subiect="IPO Anthropic săptămâna viitoare">
           <div class="a-meta">
             <span class="a-time">10 nov · 06:00</span>
@@ -1256,7 +1291,7 @@
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <a class="cont-pill" href="#stire-114" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">IPO Anthropic săptămâna viitoare</span>
-            <span class="a-num">#11 / 11</span>
+            <span class="a-num">#12 / 12</span>
           </div>
           <h2>Anthropic merge mai departe cu IPO-ul: listarea, așteptată joia sau vinerea viitoare, dar investitorii presează evaluarea sub 1,5 trilioane $</h2>
           <div class="followup">
@@ -5942,8 +5977,8 @@
 
       <footer>
         <div class="rule" aria-hidden="true"></div>
-        <p>Sfârșitul ediției de azi · Ultima actualizare: marți, 10 noiembrie 2026, 13:00<br />Monitorizarea rulează la circa 3 ore, în fereastra L–V 06:00–22:00 · S–D 07:30–22:00 — dă refresh pentru noutăți.</p>
-        <a class="to-top" href="#stire-139">↑ Înapoi la cea mai nouă știre</a>
+        <p>Sfârșitul ediției de azi · Ultima actualizare: marți, 10 noiembrie 2026, 14:00<br />Monitorizarea rulează la circa 3 ore, în fereastra L–V 06:00–22:00 · S–D 07:30–22:00 — dă refresh pentru noutăți.</p>
+        <a class="to-top" href="#stire-143">↑ Înapoi la cea mai nouă știre</a>
       </footer>
     </div>
 
