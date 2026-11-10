@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="color-scheme" content="light dark" />
-    <meta name="tirile-versiune" content="2026-11-10T06:00:00+01:00|2|amber" />
+    <meta name="tirile-versiune" content="2026-11-10T08:10:00+01:00|3|amber" />
     <link rel="icon" href="data:," />
     <title>Știrile zilei</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -699,9 +699,9 @@
     <div class="topbar">
       <div class="topbar-inner">
         <span class="dot" aria-hidden="true"></span>
-        <span><strong>Marți, 10 noiembrie 2026</strong> · actualizat la <strong>06:00</strong></span>
+        <span><strong>Marți, 10 noiembrie 2026</strong> · actualizat la <strong>08:10</strong></span>
         <span aria-hidden="true">·</span>
-        <span>2 știri azi</span>
+        <span>3 știri azi</span>
         <span class="spacer"></span>
         <button class="refresh-btn" type="button" id="refreshBtn" aria-label="Reîmprospătează pagina">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg>
@@ -739,7 +739,7 @@
 
       <!-- Chenar permanent: știrea cea mai importantă a zilei — sub fereastra
            „Ultimele știri", ÎNAINTEA dashboardului, vizibilă din prima, fără scroll.
-           Nivelul de azi: GALBEN (sev-amber) — de urmărit: încep azi negocierile de la Abu Dhabi între Ucraina și Rusia — primele discuții trilaterale din februarie, cu Europa la ușă — știrea cu severitatea cea mai mare a zilei și cea mai importantă dintre cele două știri ale zilei (cealaltă, verde, e IPO-ul Anthropic, așteptat săptămâna viitoare).
+           Nivelul de azi: GALBEN (sev-amber) — de urmărit: încep azi negocierile de la Abu Dhabi între Ucraina și Rusia — primele discuții trilaterale din februarie, cu Europa la ușă — știrea cu severitatea cea mai mare a zilei și cea mai importantă dintre cele trei știri ale zilei; mai e o a doua știre galbenă azi (anunțul Rusiei despre nave lovite în Marea Neagră, de la 08:00), iar a treia, verde, e IPO-ul Anthropic, așteptat săptămâna viitoare — de aceea chenarul poartă mențiunea despre cealaltă știre cu aceeași severitate, cu filtru pe galben la „apasă aici".
            Chenarul rămâne în afara logicii de filtrare: vizibil indiferent de filtrul de categorie. -->
       <section class="spot sev-amber" aria-label="Știrea cea mai importantă a zilei">
         <div class="spot-head">
@@ -751,7 +751,7 @@
           <span class="spot-pill">Nivel galben — de urmărit</span>
         </div>
         <h2 class="spot-title">Încep azi negocierile de la Abu Dhabi între Ucraina și Rusia — primele discuții trilaterale din februarie, cu Europa la ușă</h2>
-        <p class="spot-why"><strong>De ce e în față:</strong> E știrea cu severitatea cea mai mare a zilei și cea mai importantă dintre cele două — prima rundă trilaterală din februarie pune pe masă încetarea focului, garanțiile de securitate și teritoriile, cu Europa în rol disputat: Franța, Germania și Comisia Europeană trimit oficiali, dar Rusia nu-i vrea la negocieri; dosarul securității europene e cel mai urmărit fir al toamnei pe zona lui profesională (IT incident Manager, Flancul estic).</p>
+        <p class="spot-why"><strong>De ce e în față:</strong> E știrea cu severitatea cea mai mare a zilei și cea mai importantă dintre cele trei știri ale zilei — prima rundă trilaterală din februarie pune pe masă încetarea focului, garanțiile de securitate și teritoriile, cu Europa în rol disputat: Franța, Germania și Comisia Europeană trimit oficiali, dar Rusia nu-i vrea la negocieri; dosarul securității europene e cel mai urmărit fir al toamnei pe zona lui profesională (IT incident Manager, Flancul estic).</p>
         <p class="spot-lead">Oficiali ruși și ucraineni se întâlnesc azi și mâine la Abu Dhabi, în discuții intermediate de SUA — primele de acest fel din februarie. Pe agendă: încetarea focului, garanții de securitate și problemele teritoriale nerezolvate; prima sesiune era programată în jurul orei 06:30 GMT.</p>
         <p class="spot-more" hidden><span class="spot-more-text"></span> <button class="spot-more-btn" type="button">apasă aici</button></p>
         <div class="spot-foot">
@@ -768,23 +768,23 @@
       <section class="dashboard" aria-label="Panou de ansamblu">
         <div class="dash-head">
           <span class="dash-title">Dashboard · Azi</span>
-          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 06:00</span>
+          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 08:10</span>
           <span class="dash-meta">Fereastră monitorizare <strong>L–V 06:00–22:00 · S–D 07:30–22:00</strong> · pas ~3 ore</span>
         </div>
 
         <div class="kpi-grid five" role="group" aria-label="Filtrează după categorie — apasă pe un tile">
           <button class="kpi" type="button" data-filter="toate" aria-pressed="true">
             <span class="kpi-top"><span class="kpi-label">Toate știrile</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">2</span>
-            <span class="kpi-sub">știri verificate azi, în 1 rulare</span>
+            <span class="kpi-value">3</span>
+            <span class="kpi-sub">știri verificate azi, în 2 rulări</span>
             <span class="kpi-bar" aria-hidden="true"><i style="width:100%"></i></span>
             <span class="kpi-hint">Apasă pentru toate</span>
           </button>
           <button class="kpi" type="button" data-filter="securitate" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">Securitate &amp; NATO</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">1</span>
-            <span class="kpi-sub">negocierile Ucraina–Rusia încep</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:50%"></i></span>
+            <span class="kpi-value">2</span>
+            <span class="kpi-sub">nave lovite în Marea Neagră · negocierile Ucraina–Rusia încep</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:67%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="romania" aria-pressed="false">
@@ -805,7 +805,7 @@
             <span class="kpi-top"><span class="kpi-label">Tech &amp; AI</span><span class="kpi-check" aria-hidden="true">✓</span></span>
             <span class="kpi-value">1</span>
             <span class="kpi-sub">IPO Anthropic săptămâna viitoare</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:50%"></i></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:33%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
         </div>
@@ -819,7 +819,7 @@
       </section>
 
       <div class="filter-status" aria-live="polite">
-        <span class="filter-label">Se afișează: <strong>Toate categoriile — 2 din 2 știri</strong></span>
+        <span class="filter-label">Se afișează: <strong>Toate categoriile — 3 din 3 știri</strong></span>
         <button class="filter-reset" type="button" hidden>Resetează filtrul</button>
       </div>
 
@@ -849,7 +849,45 @@
       <p class="empty">Nicio știre în această categorie azi.</p>
 
       <main>
-        <!-- 1 · 10 nov · 06:00 -->
+        <!-- 1 · 10 nov · 08:00 -->
+        <article id="stire-134" data-cats="securitate" data-sev="amber" data-subiect="nave lovite în Marea Neagră">
+          <div class="a-meta">
+            <span class="a-time">10 nov · 08:00</span>
+            <span class="a-cat">Securitate &amp; NATO</span>
+            <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
+            <a class="cont-pill" href="#stire-31" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
+            <span class="subj-pill">nave lovite în Marea Neagră</span>
+            <span class="a-num">#1 / 3</span>
+          </div>
+          <h2>Rusia anunță că a lovit două nave de marfă și un petrolier în Marea Neagră, în apropiere de Odesa</h2>
+          <div class="followup">
+            <span class="tag">Urmare la</span>
+            <p><a href="#stire-31">„Războiul se extinde în Marea Neagră și testează liniile roșii ale NATO: 7 nave lovite în octombrie, iar o navă-container grecească a fost scufundată de drone navale în zona economică a Bulgariei” — marți, 3 noiembrie 2026, ora 11:10.</a></p>
+          </div>
+          <div class="sec">
+            <p class="sec-label">Ce s-a întâmplat</p>
+            <p>Ministerul rus al Apărării a anunțat marți, 10 noiembrie, că forțele sale au lovit în Marea Neagră o navă de marfă și un petrolier, iar o altă navă de marfă a fost lovită la est de portul Odesa, potrivit agenției Interfax, citată de Reuters. Potrivit ministerului, navele transportau armament, echipamente militare și carburanți destinați armatei ucrainene. Navele nu au fost identificate public, nu au fost raportate victime, iar Ucraina nu a comentat deocamdată aceste afirmații.</p>
+          </div>
+          <div class="sec">
+            <p class="sec-label">De ce contează</p>
+            <p>Continuă campania de lovituri asupra navelor comerciale din Marea Neagră, începută în octombrie, care a dus primele de asigurare pentru navele din zonă la niveluri record (circa 20% din valoarea corpului navei, potrivit publicației de specialitate Splash247) și a determinat NATO să suplimenteze patrulele maritime. Pentru rolul de IT incident Manager, cu responsabilități pe zona Flancului estic, e un nou episod al aceluiași arc urmărit: amenințări hibride și presiune asupra libertății de navigație în Marea Neagră, în chiar ziua în care încep negocierile de la Abu Dhabi.</p>
+          </div>
+          <div class="verify">
+            <p class="sec-label">Verificare <span class="status">Sursă primară</span></p>
+            <p>Verdict: sursa_primara. Anunțul vine chiar de la Ministerul rus al Apărării (parte implicată), relatat de Interfax și preluat de Reuters la 10 noiembrie. Atenție: Reuters precizează că nu a putut verifica independent afirmațiile; publicația Splash247 (10 noiembrie) notează la fel — navele nu sunt identificate și nu e clar dacă anunțurile succesive ale Moscovei din weekend și de azi se referă la nave distincte. Loviturile în sine rămân neverificate independent.</p>
+            <ul class="sources">
+              <li><a href="https://www.g4media.ro/rusia-anunta-ca-a-lovit-doua-nave-de-marfuri-si-un-petrolier-in-marea-neagra.html" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>G4Media — relatarea anunțului Ministerului rus al Apărării (10 nov 2026)<span class="host">g4media.ro</span></a></li>
+              <li><a href="https://www.devdiscourse.com/article/international/4004288-russia-hits-two-cargo-vessels-tanker-in-black-sea-ifx-cites-defence-ministry" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Devdiscourse — „Russia hits two cargo vessels, tanker in Black Sea — Ifx cites defence ministry” (10 nov 2026; relatează Reuters, după Interfax)<span class="host">devdiscourse.com</span></a></li>
+              <li><a href="https://splash247.com/black-sea-shipping-reels-from-fresh-attacks-and-record-insurance-costs/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Splash247 — „Black Sea shipping reels from fresh attacks and record insurance costs” (10 nov 2026)<span class="host">splash247.com</span></a></li>
+            </ul>
+          </div>
+          <div class="impact">
+            <span class="badge">Impact direct</span>
+            <p>Impact direct azi: minim — nicio navă românească sau din apele teritoriale ale României nu e menționată în anunț; de urmărit, pentru că atacurile se apropie de coridorul Odesa–Sulina și pot genera noi cerințe de vigilență pe zona Mării Negre. Fără acțiune imediată.</p>
+          </div>
+        </article>
+
+        <!-- 2 · 10 nov · 06:00 -->
         <article id="stire-132" data-cats="securitate" data-sev="amber" data-subiect="negocierile Ucraina–Rusia încep">
           <div class="a-meta">
             <span class="a-time">10 nov · 06:00</span>
@@ -858,7 +896,7 @@
             <a class="cont-pill" href="#stire-113" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="spot-tag">Știrea zilei</span>
             <span class="subj-pill">negocierile Ucraina–Rusia încep</span>
-            <span class="a-num">#1 / 2</span>
+            <span class="a-num">#2 / 3</span>
           </div>
           <h2>Încep azi negocierile de la Abu Dhabi între Ucraina și Rusia — primele discuții trilaterale din februarie, cu Europa la ușă</h2>
           <div class="followup">
@@ -892,7 +930,7 @@
           </div>
         </article>
 
-        <!-- 2 · 10 nov · 06:00 -->
+        <!-- 3 · 10 nov · 06:00 -->
         <article id="stire-133" data-cats="tech" data-sev="green" data-subiect="IPO Anthropic săptămâna viitoare">
           <div class="a-meta">
             <span class="a-time">10 nov · 06:00</span>
@@ -900,7 +938,7 @@
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <a class="cont-pill" href="#stire-114" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">IPO Anthropic săptămâna viitoare</span>
-            <span class="a-num">#2 / 2</span>
+            <span class="a-num">#3 / 3</span>
           </div>
           <h2>Anthropic merge mai departe cu IPO-ul: listarea, așteptată joia sau vinerea viitoare, dar investitorii presează evaluarea sub 1,5 trilioane $</h2>
           <div class="followup">
