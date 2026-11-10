@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="color-scheme" content="light dark" />
-    <meta name="tirile-versiune" content="2026-11-09T22:00:00+01:00|14|amber" />
+    <meta name="tirile-versiune" content="2026-11-10T06:00:00+01:00|2|amber" />
     <link rel="icon" href="data:," />
     <title>Știrile zilei</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -699,9 +699,9 @@
     <div class="topbar">
       <div class="topbar-inner">
         <span class="dot" aria-hidden="true"></span>
-        <span><strong>Luni, 9 noiembrie 2026</strong> · actualizat la <strong>22:00</strong></span>
+        <span><strong>Marți, 10 noiembrie 2026</strong> · actualizat la <strong>06:00</strong></span>
         <span aria-hidden="true">·</span>
-        <span>14 știri azi</span>
+        <span>2 știri azi</span>
         <span class="spacer"></span>
         <button class="refresh-btn" type="button" id="refreshBtn" aria-label="Reîmprospătează pagina">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg>
@@ -716,12 +716,12 @@
         <h1>Știrile zilei</h1>
         <div class="date-line">
           <span class="day">Ediția de azi</span>
-          <span>Luni, 9 noiembrie 2026 · Europe/Brussels</span>
+          <span>Marți, 10 noiembrie 2026 · Europe/Brussels</span>
         </div>
         <p class="lede"><strong>Apasă pe un tile</strong> ca să filtrezi pagina — articole complete jos, cele mai noi primele.</p>
       </header>
 
-      <section class="day" id="zi-2026-11-09">
+      <section class="day" id="zi-2026-11-10">
       <!-- Fereastra „Ultimele știri" — sus, imediat deasupra chenarului
            „Știrea zilei", între masthead și chenar. Arată DOAR titlurile din
            cea mai recentă rulare (1–2), fiecare link la cardul ei (#stire-N).
@@ -736,6 +736,207 @@
         </div>
         <ul class="latest-list"></ul>
       </section>
+
+      <!-- Chenar permanent: știrea cea mai importantă a zilei — sub fereastra
+           „Ultimele știri", ÎNAINTEA dashboardului, vizibilă din prima, fără scroll.
+           Nivelul de azi: GALBEN (sev-amber) — de urmărit: încep azi negocierile de la Abu Dhabi între Ucraina și Rusia — primele discuții trilaterale din februarie, cu Europa la ușă — știrea cu severitatea cea mai mare a zilei și cea mai importantă dintre cele două știri ale zilei (cealaltă, verde, e IPO-ul Anthropic, așteptat săptămâna viitoare).
+           Chenarul rămâne în afara logicii de filtrare: vizibil indiferent de filtrul de categorie. -->
+      <section class="spot sev-amber" aria-label="Știrea cea mai importantă a zilei">
+        <div class="spot-head">
+          <span class="spot-kicker">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13 2 4.5 13.5H11L9.5 22 19 10h-6.5L13 2z"/></svg>
+            Știrea zilei · Atenție rapidă
+          </span>
+          <span class="spot-time">10 nov · 06:00</span>
+          <span class="spot-pill">Nivel galben — de urmărit</span>
+        </div>
+        <h2 class="spot-title">Încep azi negocierile de la Abu Dhabi între Ucraina și Rusia — primele discuții trilaterale din februarie, cu Europa la ușă</h2>
+        <p class="spot-why"><strong>De ce e în față:</strong> E știrea cu severitatea cea mai mare a zilei și cea mai importantă dintre cele două — prima rundă trilaterală din februarie pune pe masă încetarea focului, garanțiile de securitate și teritoriile, cu Europa în rol disputat: Franța, Germania și Comisia Europeană trimit oficiali, dar Rusia nu-i vrea la negocieri; dosarul securității europene e cel mai urmărit fir al toamnei pe zona lui profesională (IT incident Manager, Flancul estic).</p>
+        <p class="spot-lead">Oficiali ruși și ucraineni se întâlnesc azi și mâine la Abu Dhabi, în discuții intermediate de SUA — primele de acest fel din februarie. Pe agendă: încetarea focului, garanții de securitate și problemele teritoriale nerezolvate; prima sesiune era programată în jurul orei 06:30 GMT.</p>
+        <p class="spot-more" hidden><span class="spot-more-text"></span> <button class="spot-more-btn" type="button">apasă aici</button></p>
+        <div class="spot-foot">
+          <a class="spot-link" href="#stire-132">Citește știrea completă ↓</a>
+          <div class="sev-scale" role="img" aria-label="Scară de gravitate: verde — normal, galben — de urmărit, roșu — grav. Nivelul de azi: galben.">
+            <span class="sev-item"><i class="sev-dot g" aria-hidden="true"></i>Verde · normal</span>
+            <span class="sev-item on"><i class="sev-dot y" aria-hidden="true"></i>Galben · de urmărit</span>
+            <span class="sev-item"><i class="sev-dot r" aria-hidden="true"></i>Roșu · grav</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Dashboard -->
+      <section class="dashboard" aria-label="Panou de ansamblu">
+        <div class="dash-head">
+          <span class="dash-title">Dashboard · Azi</span>
+          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 06:00</span>
+          <span class="dash-meta">Fereastră monitorizare <strong>L–V 06:00–22:00 · S–D 07:30–22:00</strong> · pas ~3 ore</span>
+        </div>
+
+        <div class="kpi-grid five" role="group" aria-label="Filtrează după categorie — apasă pe un tile">
+          <button class="kpi" type="button" data-filter="toate" aria-pressed="true">
+            <span class="kpi-top"><span class="kpi-label">Toate știrile</span><span class="kpi-check" aria-hidden="true">✓</span></span>
+            <span class="kpi-value">2</span>
+            <span class="kpi-sub">știri verificate azi, în 1 rulare</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:100%"></i></span>
+            <span class="kpi-hint">Apasă pentru toate</span>
+          </button>
+          <button class="kpi" type="button" data-filter="securitate" aria-pressed="false">
+            <span class="kpi-top"><span class="kpi-label">Securitate &amp; NATO</span><span class="kpi-check" aria-hidden="true">✓</span></span>
+            <span class="kpi-value">1</span>
+            <span class="kpi-sub">negocierile Ucraina–Rusia încep</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:50%"></i></span>
+            <span class="kpi-hint">Apasă pentru a filtra →</span>
+          </button>
+          <button class="kpi" type="button" data-filter="romania" aria-pressed="false">
+            <span class="kpi-top"><span class="kpi-label">România</span><span class="kpi-check" aria-hidden="true">✓</span></span>
+            <span class="kpi-value">0</span>
+            <span class="kpi-sub"></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:0%"></i></span>
+            <span class="kpi-hint">Apasă pentru a filtra →</span>
+          </button>
+          <button class="kpi" type="button" data-filter="belgia" aria-pressed="false">
+            <span class="kpi-top"><span class="kpi-label">Belgia</span><span class="kpi-check" aria-hidden="true">✓</span></span>
+            <span class="kpi-value">0</span>
+            <span class="kpi-sub"></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:0%"></i></span>
+            <span class="kpi-hint">Apasă pentru a filtra →</span>
+          </button>
+          <button class="kpi" type="button" data-filter="tech" aria-pressed="false">
+            <span class="kpi-top"><span class="kpi-label">Tech &amp; AI</span><span class="kpi-check" aria-hidden="true">✓</span></span>
+            <span class="kpi-value">1</span>
+            <span class="kpi-sub">IPO Anthropic săptămâna viitoare</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:50%"></i></span>
+            <span class="kpi-hint">Apasă pentru a filtra →</span>
+          </button>
+        </div>
+
+        <div class="dash-foot solo">
+          <div class="dash-panel">
+            <h3>Severitate — apasă un pătrat ca să vezi doar știrile de nivelul acela</h3>
+            <div class="sev-squares" role="group" aria-label="Filtrează după severitate — roșu, galben, verde"></div>
+          </div>
+        </div>
+      </section>
+
+      <div class="filter-status" aria-live="polite">
+        <span class="filter-label">Se afișează: <strong>Toate categoriile — 2 din 2 știri</strong></span>
+        <button class="filter-reset" type="button" hidden>Resetează filtrul</button>
+      </div>
+
+      <!-- Cuprinsul zilei — sub banda dashboard, înaintea cardurilor.
+           Generat de script din cardurile zilei curente: lista completă a
+           zilei, grupată pe ora publicării, cele mai noi primele; fiecare
+           titlu e link la cardul lui (#stire-N), iar antetul de oră al
+           fiecărui grup e buton de filtru pe rulare — aceeași logică pe care
+           o aveau barele „Ritmul zilei" (selecție unică; al doilea click pe
+           aceeași oră sau butonul de reset revine la toate; o selecție de oră
+           anulează filtrul de categorie și invers). Nu e pliabil: toate
+           grupurile de oră sunt extinse permanent, cu toate titlurile
+           vizibile — fără săgeți de pliere și fără buton de extindere.
+           Cuprinsul urmează filtrul activ, la fel ca și cardurile: la un
+           filtru de categorie, severitate sau oră arată doar rândurile
+           știrilor din selecția aceea, iar grupurile de oră rămase fără
+           nicio știre vizibilă se ascund; butonul „Toate" îl readuce la
+           toate titlurile zilei. Chenarul rămâne în afara filtrării. -->
+      <nav class="day-toc" aria-label="Cuprinsul zilei">
+        <div class="toc-head">
+          <h2>Cuprins</h2>
+          <span class="toc-count">cele mai noi primele · apasă pe o oră ca să filtrezi rularea, pe un titlu ca să sari la știre</span>
+        </div>
+        <div class="toc-groups"></div>
+      </nav>
+
+      <p class="empty">Nicio știre în această categorie azi.</p>
+
+      <main>
+        <!-- 1 · 10 nov · 06:00 -->
+        <article id="stire-132" data-cats="securitate" data-sev="amber" data-subiect="negocierile Ucraina–Rusia încep">
+          <div class="a-meta">
+            <span class="a-time">10 nov · 06:00</span>
+            <span class="a-cat">Securitate &amp; NATO</span>
+            <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
+            <a class="cont-pill" href="#stire-113" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
+            <span class="spot-tag">Știrea zilei</span>
+            <span class="subj-pill">negocierile Ucraina–Rusia încep</span>
+            <span class="a-num">#1 / 2</span>
+          </div>
+          <h2>Încep azi negocierile de la Abu Dhabi între Ucraina și Rusia — primele discuții trilaterale din februarie, cu Europa la ușă</h2>
+          <div class="followup">
+            <span class="tag">Urmare la</span>
+            <p><a href="#stire-113">„Europa va fi la masa negocierilor pentru Ucraina de la Abu Dhabi (10–11 nov), anunță Parisul — Moscova spune că formatul trilateral nu prevede europeni” — duminică, 8 noiembrie 2026, ora 15:00.</a></p>
+          </div>
+          <div class="sec">
+            <p class="sec-label">Ce s-a întâmplat</p>
+            <p>Oficiali ruși și ucraineni se întâlnesc azi și mâine la Abu Dhabi, în discuții intermediate de SUA — primele de acest fel din februarie. Delegația rusă e condusă de consilierul Kremlinului Vladimir Medinski, cu viceminiștrii de externe Serghei Riabkov (pentru prima dată la astfel de negocieri) și Mihail Galuzin, șeful informațiilor militare Igor Kostiukov și generalul Iuri Jigarkovski; cea ucraineană, de șeful informațiilor externe Rustem Umerov, cu șeful de cabinet prezidențial Kirilo Budanov și deputatul David Arahamia. Din partea SUA participă emisarul Steve Witkoff și Jared Kushner. Prima sesiune era programată în jurul orei 06:30 GMT. Pe agendă: încetarea focului, garanții de securitate și problemele teritoriale nerezolvate — Moscova cere în continuare ca Ucraina să cedeze restul regiunii Donețk aflată sub controlul Kievului, în timp ce Kievul vrea păstrarea liniei frontului. Președintele Trump a sugerat săptămâna trecută că un acord amplu ar fi posibil.</p>
+          </div>
+          <div class="sec">
+            <p class="sec-label">De ce contează</p>
+            <p>E prima rundă trilaterală din februarie și primul test real al noii ofensive diplomatice americane — cu Ucraina și Rusia la masă, dar cu Europa în rol disputat: Franța, Germania și Comisia Europeană trimit oficiali la Abu Dhabi, însă Rusia a spus clar că nu vrea europenii la negocieri, iar ucrainenii îi vor informa separat. Pentru zona lui profesională (IT incident Manager, Flancul estic), miza e arhitectura de securitate post-război a Europei — garanții, monitorizarea unei eventuale încetări a focului și posibila reactivare a Consiliului NATO–Rusia, vehiculată de oficiali americani. Ministrul de externe ucrainean Andrii Sîbiga participă azi și la reuniunea miniștrilor de externe din G7, la Paris.</p>
+          </div>
+          <div class="verify">
+            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
+            <p>Verdict: confirmat. Reuters (10 nov 2026) — relatarea deschiderii negocierilor, cu componența delegațiilor și agenda. CNN (9 nov 2026) — previzualizarea rundei, cu declarațiile lui Kushner și ale oficialilor americani. AAP (10 nov 2026, 02:22 UTC) — confirmă formatul și declarația lui Zelenski. Notă de integritate: relatările diferă asupra rolului Europei — un oficial american a spus că prima sesiune ar include și E3 (Germania, Franța, Marea Britanie), Italia, NATO și UE, în timp ce purtătorul de cuvânt al Kremlinului, Dmitri Peskov, a spus că formatul e strict trilateral; detaliul rămâne neclar până la confirmarea de la fața locului.</p>
+            <ul class="sources">
+              <li><a href="https://www.reuters.com/world/europe/russia-ukraine-meet-us-backed-talks-after-trump-says-broad-deal-possible-2026-11-10/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Reuters — „Russia, Ukraine to meet for US-backed talks after Trump says broad deal possible” (10 nov 2026)<span class="host">reuters.com</span></a></li>
+              <li><a href="https://www.cnn.com/2026/11/09/europe/russia-ukraine-us-peace-talks-preview-intl?cid=external-feeds_iluminar_meta" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>CNN — „Ukraine peace talks to restart after 9 months. What makes them different this time?” (9 nov 2026)<span class="host">cnn.com</span></a></li>
+              <li><a href="https://aapnews.aap.com.au/news/russia-ukraine-to-meet-for-us-brokered-talks-in-uae" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>AAP — „Russia, Ukraine to meet for US-brokered talks in UAE” (10 nov 2026, 02:22 UTC)<span class="host">aapnews.aap.com.au</span></a></li>
+            </ul>
+          </div>
+          <div class="opposing">
+            <p class="sec-label">Tabăra adversă</p>
+            <p>Dmitri Peskov, purtătorul de cuvânt al Kremlinului, a spus luni că europenii nu vor lua parte la negocieri, pentru că părțile au convenit un format trilateral — SUA ca mediator între Rusia și Ucraina (<a href="https://www.reuters.com/world/europe/russia-ukraine-meet-us-backed-talks-after-trump-says-broad-deal-possible-2026-11-10/" target="_blank" rel="noopener">Reuters</a>). Kaja Kallas, șefa politicii externe a UE, a spus luni că vede puține semne că Rusia ar fi dispusă să negocieze cu bună-credință (<a href="https://www.cnn.com/2026/11/09/europe/russia-ukraine-us-peace-talks-preview-intl?cid=external-feeds_iluminar_meta" target="_blank" rel="noopener">CNN</a>).</p>
+          </div>
+          <div class="impact">
+            <span class="badge">Impact direct</span>
+            <p>Impact direct: minim — negocierile abia încep, fără rezultat azi; niciun efect asupra rutinei zilnice. Relevanță de context înaltă: dacă runda produce un angajament concret sau un proces de urmărire definit, dosarul se schimbă — de urmărit rezultatul de mâine, 11 noiembrie, a doua zi de discuții, și reacția europeană la formatul trilateral.</p>
+          </div>
+        </article>
+
+        <!-- 2 · 10 nov · 06:00 -->
+        <article id="stire-133" data-cats="tech" data-sev="green" data-subiect="IPO Anthropic săptămâna viitoare">
+          <div class="a-meta">
+            <span class="a-time">10 nov · 06:00</span>
+            <span class="a-cat">Tech &amp; AI</span>
+            <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
+            <a class="cont-pill" href="#stire-114" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
+            <span class="subj-pill">IPO Anthropic săptămâna viitoare</span>
+            <span class="a-num">#2 / 2</span>
+          </div>
+          <h2>Anthropic merge mai departe cu IPO-ul: listarea, așteptată joia sau vinerea viitoare, dar investitorii presează evaluarea sub 1,5 trilioane $</h2>
+          <div class="followup">
+            <span class="tag">Urmare la</span>
+            <p><a href="#stire-114">„OpenAI a strâns 11 mld $ la o evaluare de 1,25 trilioane $ — mult sub ținta inițială de 30 mld $; și Anthropic își vede evaluarea de IPO tăiată” — duminică, 8 noiembrie 2026, ora 15:00.</a></p>
+          </div>
+          <div class="sec">
+            <p class="sec-label">Ce s-a întâmplat</p>
+            <p>Anthropic merge mai departe cu listarea la bursă, în pofida vânzărilor masive de acțiuni AI de joia trecută, potrivit Wall Street Journal. Compania stabilește în această săptămână intervalul de evaluare și își propune ca acțiunile să înceapă tranzacționarea joia sau vinerea viitoare, pe Nasdaq, sub simbolul ANT. Investitorii se așteptau acum o săptămână la o evaluare de circa 1,5 trilioane $, dar după prăbușirea de joi câțiva investitori mari presează pentru o cifră mai mică — unii vorbesc de circa 1 trilion $, față de cele circa 2 trilioane $ vehiculate cu luni în urmă. Luni, Anthropic le-a trimis bancherilor un e-mail în care prețul era indicat între 70 și 80 $ pe acțiune (867 de milioane de acțiuni, strângere de până la 69,3 mld $), apoi a retras comunicarea și a spus că va anunța prețul corect în curând — intervalul retras nu e deci final.</p>
+          </div>
+          <div class="sec">
+            <p class="sec-label">De ce contează</p>
+            <p>E testul pieței pentru boomul AI, la o săptămână după ce acțiunile AI au șters circa 2,5 trilioane $ într-o zi: listarea Anthropic — compania din spatele lui Claude, modelul pe care îl folosește zilnic — va arăta cât sunt investitorii dispuși să plătească pentru un laborator AI, după ce OpenAI a strâns săptămâna trecută 11 mld $ la 1,25 trilioane $, sub ținta inițială. Pentru automatizările lui construite pe API-uri AI, miza e stabilitatea ecosistemului: un IPO reușit consolidează finanțarea laboratoarelor, unul slab ar strânge și mai mult robinetul.</p>
+          </div>
+          <div class="verify">
+            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
+            <p>Verdict: confirmat. Wall Street Journal (relatat de TechCrunch, 10 nov 2026, 01:27 UTC) — relatarea originală: roadshow-ul în această săptămână, tranzacționarea joia/vinerea viitoare, presiunea investitorilor pentru o evaluare sub 1,5 trilioane $. Reuters (relatat de Stocktwits, 10 nov 2026, 04:32 UTC) — confirmare independentă: e-mailul trimis luni bancherilor cu prețul de 70–80 $ pe acțiune și retragerea lui. Gizmodo (10 nov 2026, 01:21 UTC) — confirmă firul WSJ și adaugă că CNBC estima vineri o evaluare „mai probabilă” de 1–1,25 trilioane $. Notă de integritate: intervalul de 70–80 $ a fost retras de companie — nu-l trata ca preț final; evaluarea exactă se anunță în această săptămână.</p>
+            <ul class="sources">
+              <li><a href="https://techcrunch.com/2026/11/09/anthropic-reportedly-plans-to-move-forward-with-ipo-plans/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>TechCrunch — „Anthropic reportedly plans to move forward with IPO plans” (10 nov 2026, 01:27 UTC; relatează Wall Street Journal)<span class="host">techcrunch.com</span></a></li>
+              <li><a href="https://stocktwits.com/news-articles/markets/equity/anthropic-retracts-reported-70-80-ipo-price-range-says-pricing-update-is-coming-listing-expected-next-week/cNGud3sR970" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Stocktwits — „Anthropic Retracts Reported $70–$80 IPO Price Range, Says Pricing Update Is Coming; Listing Expected Next Week” (10 nov 2026, 04:32 UTC; relatează Reuters)<span class="host">stocktwits.com</span></a></li>
+              <li><a href="https://gizmodo.com/anthropic-still-plans-to-go-public-as-soon-as-next-week-report-2000837422" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Gizmodo — „Anthropic Still Plans to Go Public as Soon as Next Week: Report” (10 nov 2026, 01:21 UTC)<span class="host">gizmodo.com</span></a></li>
+            </ul>
+          </div>
+          <div class="impact">
+            <span class="badge">Impact direct</span>
+            <p>Impact direct: minim — fără dețineri directe la Anthropic; listarea e săptămâna viitoare, nu azi. Relevanță de context: evaluarea finală, așteptată în această săptămână, e barometrul pieței AI după prăbușirea de joi — de urmărit intervalul anunțat și reacția pieței la debut.</p>
+          </div>
+        </article>
+      </main>
+      </section>
+
+      <section class="day day-archive" id="zi-2026-11-09">
+        <div class="day-head">
+          <h2>Luni, 9 noiembrie 2026</h2>
+          <span>Ediția de ieri · 14 știri · arhivă (ultimele 7 zile)</span>
+        </div>
 
       <!-- Chenar permanent: știrea cea mai importantă a zilei — sub fereastra
            „Ultimele știri", ÎNAINTEA dashboardului, vizibilă din prima, fără scroll.
@@ -5383,402 +5584,10 @@
       </main>
       </section>
 
-      <section class="day day-archive" id="zi-2026-11-03">
-        <div class="day-head">
-          <h2>Marți, 3 noiembrie 2026</h2>
-          <span>Ediția de ieri · 7 știri · arhivă (ultimele 7 zile)</span>
-        </div>
-      <!-- Chenar permanent: știrea cea mai importantă a zilei — chiar sub masthead,
-           ÎNAINTEA dashboardului, vizibilă din prima, fără scroll.
-           Nivelul de azi: GALBEN (sev-amber) — de urmărit, evoluție importantă, fără acțiune imediată:
-           războiul maritim se extinde până la țărmul NATO, cu nave lovite și scufundate
-           lângă România și Bulgaria și răspuns NATO în desfășurare.
-           Chenarul rămâne în afara logicii de filtrare: vizibil indiferent de filtrul de categorie. -->
-      <section class="spot sev-amber" aria-label="Știrea cea mai importantă a zilei">
-        <div class="spot-head">
-          <span class="spot-kicker">
-            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13 2 4.5 13.5H11L9.5 22 19 10h-6.5L13 2z"/></svg>
-            Știrea zilei · Atenție rapidă
-          </span>
-          <span class="spot-time">3 nov · 11:10</span>
-          <span class="spot-pill">Nivel galben — de urmărit</span>
-        </div>
-        <h2 class="spot-title">Războiul se extinde în Marea Neagră și testează liniile roșii ale NATO: 7 nave lovite în octombrie, iar o navă-container grecească a fost scufundată de drone navale în zona economică a Bulgariei</h2>
-        <p class="spot-why"><strong>De ce e în față:</strong> escaladarea războiului maritim până la țărmul NATO, cu nave scufundate lângă România și Bulgaria și răspuns NATO în desfășurare.</p>
-        <p class="spot-lead">Analiza Reuters din 3 noiembrie 2026 arată că, după șapte lovituri asupra unor nave comerciale în apropierea României și Bulgariei în octombrie, NATO a anunțat desfășurarea de avioane de patrulare maritimă, radare și drone pentru consolidarea flancului estic în Marea Neagră. Săptămâna trecută, nava-container Contship Jet, deținută de greci și sub pavilion liberian, a fost lovită de trei drone navale și s-a scufundat în zona economică exclusivă a Bulgariei, în drum spre Constanța, echipajul fiind salvat.</p>
-        <div class="spot-foot">
-          <a class="spot-link" href="#stire-31">Citește știrea completă ↓</a>
-          <div class="sev-scale" role="img" aria-label="Scară de gravitate: verde — normal, galben — de urmărit, roșu — grav. Nivelul de azi: galben.">
-            <span class="sev-item"><i class="sev-dot g" aria-hidden="true"></i>Verde · normal</span>
-            <span class="sev-item on"><i class="sev-dot y" aria-hidden="true"></i>Galben · de urmărit</span>
-            <span class="sev-item"><i class="sev-dot r" aria-hidden="true"></i>Roșu · grav</span>
-          </div>
-        </div>
-      </section>
-
-      <!-- Dashboard -->
-      <section class="dashboard" aria-label="Panou de ansamblu">
-        <div class="dash-head">
-          <span class="dash-title">Dashboard · Azi</span>
-          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 20:15</span>
-          <span class="dash-meta">Fereastră monitorizare <strong>L–V 06:00–22:00 · S–D 07:30–22:00</strong> · pas ~3 ore</span>
-        </div>
-
-        <div class="kpi-grid" role="group" aria-label="Filtrează după categorie — apasă pe un tile">
-          <button class="kpi" type="button" data-filter="toate" aria-pressed="true">
-            <span class="kpi-top"><span class="kpi-label">Toate știrile</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">7</span>
-            <span class="kpi-sub">știri verificate azi, în 5 rulări</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:100%"></i></span>
-            <span class="kpi-hint">Apasă pentru toate</span>
-          </button>
-          <button class="kpi" type="button" data-filter="securitate" aria-pressed="false">
-            <span class="kpi-top"><span class="kpi-label">Securitate &amp; NATO</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">3</span>
-            <span class="kpi-sub">Războiul se extinde în Marea Neagră · drone rusești cu antene Kometa tot mai mari · receptorul D·Vision SDR citește camerele dronelor rusești</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:43%"></i></span>
-            <span class="kpi-hint">Apasă pentru a filtra →</span>
-          </button>
-          <button class="kpi" type="button" data-filter="romania" aria-pressed="false">
-            <span class="kpi-top"><span class="kpi-label">România</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">1</span>
-            <span class="kpi-sub">România a împrumutat 4,5 miliarde de euro prin euroobligațiuni</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:14%"></i></span>
-            <span class="kpi-hint">Apasă pentru a filtra →</span>
-          </button>
-          <button class="kpi" type="button" data-filter="tech" aria-pressed="false">
-            <span class="kpi-top"><span class="kpi-label">Tech &amp; AI</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">3</span>
-            <span class="kpi-sub">Anthropic, «foarte aproape» de pragul RSI din dosarul S-1A · receptorul D·Vision SDR al ucrainenilor · CrowdStrike cumpără Fiddler AI și Dreadnode</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:43%"></i></span>
-            <span class="kpi-hint">Apasă pentru a filtra →</span>
-          </button>
-        </div>
-
-        <div class="dash-foot">
-          <div class="dash-panel">
-            <h3>Ritmul zilei — știri pe rulare</h3>
-            <div class="rhythm" role="group" aria-label="Filtru după ora publicării — apasă pe o rulare ca să vezi doar știrile ei">
-              <button class="col" type="button" data-hour="08:00" aria-pressed="false" aria-label="Filtrează știrile de la ora 08:00 — 2 știri"><span class="n">2</span><span class="bar" style="height:40px"></span><span class="t">08:00</span></button>
-              <button class="col" type="button" data-hour="11:10" aria-pressed="false" aria-label="Filtrează știrile de la ora 11:10 — 2 știri"><span class="n">2</span><span class="bar" style="height:40px"></span><span class="t">11:10</span></button>
-              <button class="col" type="button" data-hour="14:03" aria-pressed="false" aria-label="Filtrează știrile de la ora 14:03 — 1 știre"><span class="n">1</span><span class="bar" style="height:22px"></span><span class="t">14:03</span></button>
-              <button class="col" type="button" data-hour="17:05" aria-pressed="false" aria-label="Filtrează știrile de la ora 17:05 — 1 știre"><span class="n">1</span><span class="bar" style="height:22px"></span><span class="t">17:05</span></button>
-              <button class="col" type="button" data-hour="20:15" aria-pressed="false" aria-label="Filtrează știrile de la ora 20:15 — 1 știre"><span class="n">1</span><span class="bar" style="height:22px"></span><span class="t">20:15</span></button>
-            </div>
-            <p class="rhythm-hint">Apasă pe o bară ca să vezi doar știrile din rularea aceea; apasă din nou pe ea pentru toate.</p>
-          </div>
-          <div class="dash-panel">
-            <h3>Stare ediție</h3>
-            <ul class="status-list">
-              <li><span class="k">Ultima actualizare</span><span class="v">Azi, 20:15</span></li>
-              <li><span class="k">Cea mai nouă</span><span class="v">CrowdStrike cumpără cu ~495 milioane $ două startupuri de securitate AI: Fiddler AI și Dreadnode — piața securizării agenților prinde viteză · 20:15</span></li>
-              <li><span class="k">Acoperire</span><span class="v">Ultimele 7 zile în arhivă</span></li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <div class="filter-status" aria-live="polite">
-        <span class="filter-label">Se afișează: <strong>Toate categoriile — 7 din 7 știri</strong></span>
-        <button class="filter-reset" type="button" hidden>Resetează filtrul</button>
-      </div>
-
-      <nav class="index" aria-label="Cuprinsul zilei">
-        <div class="index-head">
-          <h2>Cuprins</h2>
-          <span>apasă pe un titlu ca să sari direct la știre · se sincronizează cu filtrul</span>
-        </div>
-        <ol class="index-list">
-          <li data-cats="tech"><a href="#stire-34"><time>20:15</time><span class="cat-dot tech" aria-hidden="true"></span><span class="t">CrowdStrike cumpără cu ~495 milioane $ două startupuri de securitate AI: Fiddler AI și Dreadnode — piața securizării agenților prinde viteză</span><span class="n">#1</span></a></li>
-          <li data-cats="belgia"><a href="#stire-33"><time>17:05</time><span class="cat-dot" style="background:var(--muted)" aria-hidden="true"></span><span class="t">Regele Philippe a început consultările în criza bugetară: Mahdi, furios după audiența de marți — decizia privind demisia lui De Wever, vineri</span><span class="n">#2</span></a></li>
-          <li data-cats="securitate tech"><a href="#stire-32"><time>14:03</time><span class="cat-dot sec" aria-hidden="true"></span><span class="t">Ucraina întoarce camerele dronelor rusești împotriva lor: receptorul de buzunar D·Vision SDR captează live video necriptat</span><span class="n">#3</span></a></li>
-          <li data-cats="securitate"><a href="#stire-31"><time>11:10</time><span class="cat-dot sec" aria-hidden="true"></span><span class="t">Războiul se extinde în Marea Neagră și testează liniile roșii ale NATO: 7 nave lovite în octombrie, iar o navă-container grecească a fost scufundată de drone navale în zona economică a Bulgariei</span><span class="n">#4</span></a></li>
-          <li data-cats="romania"><a href="#stire-30"><time>11:10</time><span class="cat-dot ro" aria-hidden="true"></span><span class="t">România a împrumutat 4,5 miliarde de euro prin euroobligațiuni — prima ieșire pe piețele externe după instalarea Guvernului Niculescu, cu cerere de peste 8,5 miliarde</span><span class="n">#5</span></a></li>
-          <li data-cats="tech"><a href="#stire-29"><time>08:00</time><span class="cat-dot tech" aria-hidden="true"></span><span class="t">Anthropic avertizează că e «foarte aproape» de RSI — AI care se construiește singur</span><span class="n">#6</span></a></li>
-          <li data-cats="securitate"><a href="#stire-28"><time>08:00</time><span class="cat-dot sec" aria-hidden="true"></span><span class="t">Rusia își echipează dronele cu antene mai mari ca să treacă de bruiajul ucrainean</span><span class="n">#7</span></a></li>
-        </ol>
-      </nav>
-
-      <p class="empty">Nicio știre în această categorie azi.</p>
-
-      <main>
-        <!-- 1 · 3 nov · 20:15 -->
-        <article id="stire-34" data-cats="tech">
-          <div class="a-meta">
-            <span class="a-time">3 nov · 20:15</span>
-            <span class="a-cat">Tech &amp; AI · Securitate AI · Agenți AI</span>
-            <span class="a-num">#1 / 7</span>
-          </div>
-          <h2>CrowdStrike cumpără cu ~495 milioane $ două startupuri de securitate AI: Fiddler AI și Dreadnode — piața securizării agenților prinde viteză</h2>
-
-          <div class="sec">
-            <p class="sec-label">Ce s-a întâmplat</p>
-            <p>CrowdStrike a anunțat marți, 3 noiembrie, la Fal.Con Europe (Barcelona), acorduri definitive pentru achiziția Fiddler AI — software de observabilitate care monitorizează și explică ce fac agenții AI în întreprinderi, ce va deveni Falcon Observe — și Dreadnode — testare automată de securitate a modelelor, aplicațiilor și agenților înainte de lansare, integrată în Falcon Guardian — alături de un nou „AI Kill Switch” pentru oprirea agenților necinstiți. Suma combinată de circa 495 milioane de dolari (aproximativ 400 milioane pentru Fiddler, circa 95 milioane pentru Dreadnode) vine din relatarea Wall Street Journal, citată de TechCrunch și SecurityWeek: CrowdStrike însăși nu a dezvăluit prețurile oficial; tranzacțiile, plătite mai ales în numerar, se așteaptă să se închidă în trimestrul 4 al anului fiscal 2027 (până la 31 ianuarie 2027).</p>
-          </div>
-
-          <div class="sec">
-            <p class="sec-label">De ce contează</p>
-            <p>Este continuarea directă a arcului despre agenții AI ca risc de incident urmărit în pagină (Guardian Agents al Microsoft, agenții OpenAI care și-au slăbit propriile sisteme de monitorizare, avertismentul RSI al Anthropic de azi-dimineață): cel mai mare furnizor de securitate endpoint cumpără tocmai instrumentele de monitorizare și testare a agenților — semn că „agenții scăpați de sub control” devin o categorie de incident cu piață proprie, nu o ipoteză.</p>
-          </div>
-
-          <div class="followup">
-            <span class="tag">Urmare la</span>
-            <p><a href="#stire-29">„Anthropic avertizează că e «foarte aproape» de RSI — AI care se construiește singur”</a> — azi-dimineață, 3 noiembrie.</p>
-          </div>
-
-          <div class="verify">
-            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
-            <p>Verdict: confirmat. Surse: TechCrunch, „CrowdStrike to shell out nearly $500M for 2 AI security startups as the market for securing agents takes off” (3 noiembrie 2026); SecurityWeek, „CrowdStrike Reportedly Paying $495 Million for AI Security Firms Fiddler, Dreadnode” (3 noiembrie 2026); Wall Street Journal — relatarea prețurilor (circa 495 milioane de dolari în total), citată de ambele surse de mai sus; CrowdStrike însăși nu a dezvăluit oficial prețurile.</p>
-            <ul class="sources">
-              <li><a href="https://techcrunch.com/2026/11/03/crowdstrike-to-shell-out-nearly-500m-for-2-ai-security-startups-as-the-market-for-securing-agents-takes-off/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>TechCrunch — „CrowdStrike to shell out nearly $500M for 2 AI security startups as the market for securing agents takes off” (3 noiembrie 2026)<span class="host">techcrunch.com</span></a></li>
-              <li><a href="https://www.securityweek.com/crowdstrike-reportedly-paying-495-million-for-ai-security-firms-fiddler-dreadnode/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>SecurityWeek — „CrowdStrike Reportedly Paying $495 Million for AI Security Firms Fiddler, Dreadnode” (3 noiembrie 2026)<span class="host">securityweek.com</span></a></li>
-            </ul>
-          </div>
-
-          <div class="impact">
-            <span class="badge">Impact direct</span>
-            <p>Profesional direct — ca IT incident Manager, observabilitatea agenților și un kill-switch sunt exact controalele care lipsesc azi în discuțiile despre agenți autonomi; personal: minim azi, dar direcția pieței confirmă lecția din cardul OpenCode din octombrie: agenți și chei API cu limite și monitorizare, nu acces liber.</p>
-          </div>
-        </article>
-
-        <!-- 2 · 3 nov · 17:05 -->
-        <article id="stire-33" data-cats="belgia">
-          <div class="a-meta">
-            <span class="a-time">3 nov · 17:05</span>
-            <span class="a-cat">Belgia · Criză bugetară</span>
-            <span class="a-num">#2 / 7</span>
-          </div>
-          <h2>Regele Philippe a început consultările în criza bugetară: Mahdi, furios după audiența de marți — decizia privind demisia lui De Wever, vineri</h2>
-
-          <div class="sec">
-            <p class="sec-label">Ce s-a întâmplat</p>
-            <p>Marți, 3 noiembrie, regele Philippe i-a primit la Palatul Regal din Bruxelles pe liderii partidelor de centru, în cadrul consultărilor anunțate luni după ce premierul Bart De Wever și-a prezentat demisia: mai întâi Yvan Verougstraete (Les Engagés), apoi Sammy Mahdi (CD&amp;V), fiecare câte puțin peste o oră. Mahdi a ieșit furios și grăbit, spunând că „nu e loc de jocuri politice” și cerând negocieri cât mai rapide, cu renunțarea la tabuuri: stânga să accepte un guvern mai eficient, iar dreapta să accepte că „umerii cei mai puternici” trebuie să contribuie. Verougstraete a spus că nu există o soluție miraculoasă și că „meciul nu s-a jucat încă”, refuzând oferta opoziției (partidul Anders) de a asigura o majoritate variabilă. Calendarul continuă miercuri cu Conner Rousseau (Vooruit) și Georges-Louis Bouchez (MR), joi cu Valérie Van Peel (N-VA), iar vineri, 6 noiembrie, la ora 10:30, De Wever revine la palat, când regele își va anunța decizia privind demisia.</p>
-          </div>
-
-          <div class="sec">
-            <p class="sec-label">De ce contează</p>
-            <p>Este continuarea directă a crizei bugetare din țara de rezidență: miza este bugetul federal 2027, circa 10 miliarde de euro în economii și venituri suplimentare până în 2029, și evitarea intrării în 2027 cu „douăsprezecimi provizorii”. Dacă regele acceptă vineri demisia, urmează fie o nouă tentativă de formare a unei coaliții, fie alegeri anticipate — vicepremierul Maxime Prévot evalua luni, la VRT, șansa alegerilor anticipate la „50/50”.</p>
-          </div>
-
-          <div class="followup">
-            <span class="tag">Urmare la</span>
-            <p><a href="#stire-25">„De Wever și-a prezentat demisia regelui, după ce negocierile pentru buget au picat peste noapte — regele își rezervă decizia”</a> — 2 noiembrie.</p>
-          </div>
-
-          <div class="verify">
-            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
-            <p>Verdict: confirmat. Surse: comunicatul Palatului Regal din 2 noiembrie (relatat de Reuters — regele își rezervă decizia, consultări cu liderii partidelor de marți, De Wever primit din nou vineri); BelgiumNow, „King consults CD&amp;V's Mahdi as hunt for a Belgian federal budget deal goes on” (3 noiembrie 2026, 15:09 CET — audiențele de marți cu Verougstraete și Mahdi, relatând VTM Nieuws și explicația palatului că partidele de centru au fost primite primele pentru că Vooruit și MR au avut cele mai mari dificultăți cu ultimul tabel bugetar); Nexus Europa, „Belgium Budget Crisis: King Philippe to Hold Talks After Bart De Wever Offers to Resign” (programul complet al consultărilor marți–vineri).</p>
-            <ul class="sources">
-              <li><a href="https://belgium-now.com/2026/11/03/king-consults-mahdi-belgian-federal-budget-talks/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>BelgiumNow — „King consults CD&amp;V's Mahdi as hunt for a Belgian federal budget deal goes on” (3 noiembrie 2026)<span class="host">belgium-now.com</span></a></li>
-              <li><a href="https://nexuseuropa.eu/en/article/belgium-budget-crisis-king-philippe-to-hold-talks-after-bart-de-wever-offers-to" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Nexus Europa — „Belgium Budget Crisis: King Philippe to Hold Talks After Bart De Wever Offers to Resign”<span class="host">nexuseuropa.eu</span></a></li>
-              <li><a href="https://srnnews.com/belgian-government-in-crisis-after-budget-talks-collapse/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Reuters, prin SRN News — „Belgian government in crisis after budget talks collapse” (comunicatul Palatului Regal din 2 noiembrie)<span class="host">srnnews.com</span></a></li>
-            </ul>
-          </div>
-
-          <div class="impact">
-            <span class="badge">Impact direct</span>
-            <p>Impact direct minim azi — nicio decizie luată, nicio măsură fiscală nouă; relevanță de context înaltă pentru un rezident în Belgia, fiindcă bugetul federal decide taxe și servicii; termenul de urmărit este vineri, 6 noiembrie.</p>
-          </div>
-        </article>
-
-        <!-- 3 · 3 nov · 14:03 -->
-        <article id="stire-32" data-cats="securitate tech">
-          <div class="a-meta">
-            <span class="a-time">3 nov · 14:03</span>
-            <span class="a-cat">Securitate &amp; NATO / Tech &amp; AI · Război electronic · Drone</span>
-            <span class="a-num">#3 / 7</span>
-          </div>
-          <h2>Ucraina întoarce camerele dronelor rusești împotriva lor: receptorul de buzunar D·Vision SDR captează live video necriptat</h2>
-
-          <div class="sec">
-            <p class="sec-label">Ce s-a întâmplat</p>
-            <p>Startupul din Kyiv CODE380 a atras atenția cu D·Vision SDR, un receptor de buzunar cu radio definit prin software care captează în timp real fluxul video analogic necriptat transmis de multe drone rusești și îl afișează pe ecran, astfel încât o unitate ucraineană poate vedea ce vede pilotul dronei inamice — direcția și ținta — înainte de lovitură. Dispozitivul cântărește circa 280 g (aprox. 10 uncii, sub jumătate față de modelele ucrainene concurente), scanează între 500 MHz și 8,7 GHz, funcționează pasiv (nu emite semnal care să trădeze poziția) și se actualizează prin software de circa două ori pe lună. Acoperă și banda 4,1–4,5 GHz pe care dronele rusești de atac Molniya au început să transmită video din iunie; potrivit cifrelor producătorului, afișează video analogic până la circa 10 km pe 540 MHz–6 GHz și 3,5–5 km la frecvențe mai mari.</p>
-          </div>
-
-          <div class="sec">
-            <p class="sec-label">De ce contează</p>
-            <p>Este cealaltă față a războiului dronelor urmărit în pagină — după ce Rusia își adaptează dronele ca să treacă de bruiaj, Ucraina răspunde cu senzori pasivi ieftini, care transformă o slăbiciune a inamicului (video necriptat) în avertizare timpurie de câteva secunde, decisive pe front. Arhitectura software-first (capabilități noi prin cod, nu prin hardware nou) este exact lecția de adaptare rapidă relevantă pentru oricine urmărește războiul electronic și counter-drone.</p>
-          </div>
-
-          <div class="verify">
-            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
-            <p>Verdict: confirmat. Surse: TechCrunch, „Ukraine's new pocket-sized gadget turns Russian drones' cameras against them” (2 noiembrie 2026); Defense News, „Tiny Ukrainian receiver intercepts Russian drone feeds in real time” (2 noiembrie 2026); DOU (platforma ucraineană de IT, interviu cu dezvoltatorii din 17 octombrie, relatat de cele de mai sus); Militarnyi (cifrele producătorului privind razele de acțiune). Notă de integritate: performanțele (raze, sensibilitate, lipsa „punctelor oarbe”) sunt revendicări ale producătorului, nu măsurători independente verificate.</p>
-            <ul class="sources">
-              <li><a href="https://techcrunch.com/2026/11/02/ukraines-new-pocket-sized-gadget-turns-russian-drones-cameras-against-them/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>TechCrunch — „Ukraine's new pocket-sized gadget turns Russian drones' cameras against them” (2 noiembrie 2026)<span class="host">techcrunch.com</span></a></li>
-              <li><a href="https://www.defensenews.com/industry/techwatch/2026/11/02/tiny-ukrainian-receiver-intercepts-russian-drone-feeds-in-real-time/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Defense News — „Tiny Ukrainian receiver intercepts Russian drone feeds in real time” (2 noiembrie 2026)<span class="host">defensenews.com</span></a></li>
-            </ul>
-          </div>
-
-          <div class="opposing">
-            <p class="sec-label">Tabăra adversă</p>
-            <p>Serhii „Flash” Beskrestnov, specialist radio și consilier al președintelui Ucrainei, avertizează că încrederea excesivă într-un detector se poate dovedi fatală și că trecerea la video digital ar orbi receptoare ca D·Vision; The New York Times a relatat în august că unele drone Molniya au deja ghidaj AI și nu emit semnale detectabile (relatat de Defense News, 2 noiembrie 2026).</p>
-          </div>
-
-          <div class="impact">
-            <span class="badge">Impact direct</span>
-            <p>Impact direct minim azi — fără acțiune imediată; relevanță profesională de context înaltă pentru un IT incident Manager, pe arcul amenințărilor hibride și al războiului cu drone urmărit constant în pagină (inclusiv cardul de azi-dimineață despre antenele mai mari ale dronelor rusești).</p>
-          </div>
-        </article>
-
-        <!-- 4 · 3 nov · 11:10 -->
-        <article id="stire-31" data-cats="securitate">
-          <div class="a-meta">
-            <span class="a-time">3 nov · 11:10</span>
-            <span class="a-cat">Securitate &amp; NATO · Marea Neagră · Flancul estic</span>
-            <span class="spot-tag">Știrea zilei</span>
-            <span class="a-num">#4 / 7</span>
-          </div>
-          <h2>Războiul se extinde în Marea Neagră și testează liniile roșii ale NATO: 7 nave lovite în octombrie, iar o navă-container grecească a fost scufundată de drone navale în zona economică a Bulgariei</h2>
-
-          <div class="followup">
-            <span class="tag">Urmare la</span>
-            <p><a href="#stire-2">„Bulgaria intră azi în inițiativa NATO împotriva amenințărilor aeriene de joasă altitudine (anti-dronă)”</a> — 30 octombrie.</p>
-          </div>
-
-          <div class="sec">
-            <p class="sec-label">Ce s-a întâmplat</p>
-            <p>Analiza Reuters din 3 noiembrie 2026 arată că, după șapte lovituri asupra unor nave comerciale în apropierea României și Bulgariei în octombrie, NATO a anunțat desfășurarea de avioane de patrulare maritimă, radare și drone pentru consolidarea flancului estic în Marea Neagră. La 23 octombrie o altă navă a fost lovită chiar în afara apelor românești, iar săptămâna trecută nava-container Contship Jet, deținută de greci și sub pavilion liberian, a fost lovită de trei drone navale și s-a scufundat în zona economică exclusivă a Bulgariei, în drum spre Constanța, echipajul fiind salvat.</p>
-            <p>Potrivit firmei de securitate maritimă Ambrey, între mai și octombrie au fost lovite 317 nave comerciale și de alt tip în Marea Neagră și Marea Azov, de peste patru ori mai multe decât cele 74 din semestrul anterior.</p>
-          </div>
-
-          <div class="sec">
-            <p class="sec-label">De ce contează</p>
-            <p>Continuarea directă a arcului Marea Neagră urmărit în pagină (patrulele NATO suplimentare din 20–21 octombrie, inițiativa anti-dronă la care a aderat Bulgaria la 30 octombrie). Analista Iulia Joja (Middle East Institute) spune că atacurile testează liniile roșii ale Occidentului, iar un oficial NATO citat de Reuters numește acțiunile rusești o amenințare serioasă la adresa securității și reafirmă angajamentul „ironclad” față de toți aliații, inclusiv cei de la Marea Neagră; alianța ar urma să investească peste 40 de miliarde de dolari în capabilități anti-dronă în următorii cinci ani. Tot Reuters notează că, deși NATO și-a consolidat prezența avansată în Țările Baltice și Polonia, nu a făcut același lucru în România, în pofida cererilor Bucureștiului, și că SUA au retras anul trecut 1.000 de militari din România.</p>
-          </div>
-
-          <div class="verify">
-            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
-            <p>Verdict: confirmat. Surse: Reuters, „War widens in the Black Sea in a test of NATO red lines” și factbox-ul Reuters „How NATO states on the Black Sea are being drawn into Ukraine war escalation” (ambele 3 noiembrie 2026, același fir de agenție = o singură confirmare de agenție); faptele de bază (scufundarea Contship Jet la 28 octombrie, desfășurarea NATO cu avion P-8 Poseidon la Varna și echipe de criminalistică) sunt confirmate independent de Financial Ports și EUalive.</p>
-            <ul class="sources">
-              <li><a href="https://www.reuters.com/world/europe/how-nato-states-black-sea-are-being-drawn-into-ukraine-war-escalation-2026-11-03/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Reuters — „How NATO states on the Black Sea are being drawn into Ukraine war escalation” (factbox, 3 noiembrie 2026)<span class="host">reuters.com</span></a></li>
-            </ul>
-          </div>
-
-          <div class="opposing">
-            <p class="sec-label">Tabăra adversă</p>
-            <p>Ministerul rus al Apărării neagă că Rusia ar viza vecinii Ucrainei cu drone și afirmă că guvernele europene sunt cele care escaladează războiul furnizând ajutor militar Ucrainei (Reuters, 3 noiembrie 2026).</p>
-          </div>
-
-          <div class="impact">
-            <span class="badge">Impact direct</span>
-            <p>Profesional direct — Flancul estic și Marea Neagră sunt zona operațională a rolului lui de IT incident Manager; personal și pentru familie: minim, relevanță de context (proiectul Neptun Deep, care va face din România cel mai mare producător de gaze al UE anul viitor, a fost abordat de o dronă navală în august).</p>
-          </div>
-        </article>
-
-        <!-- 5 · 3 nov · 11:10 -->
-        <article id="stire-30" data-cats="romania">
-          <div class="a-meta">
-            <span class="a-time">3 nov · 11:10</span>
-            <span class="a-cat">România · Finanțe · Euroobligațiuni</span>
-            <span class="a-num">#5 / 7</span>
-          </div>
-          <h2>România a împrumutat 4,5 miliarde de euro prin euroobligațiuni — prima ieșire pe piețele externe după instalarea Guvernului Niculescu, cu cerere de peste 8,5 miliarde</h2>
-
-          <div class="sec">
-            <p class="sec-label">Ce s-a întâmplat</p>
-            <p>Luni, 2 noiembrie 2026, Ministerul Finanțelor a revenit pe piețele internaționale și a împrumutat 4,5 miliarde de euro prin trei tranșe de euroobligațiuni: 1,25 miliarde de euro pe patru ani, 2 miliarde de euro pe opt ani și 1,25 miliarde de euro sub formă de obligațiuni verzi pe 12 ani. Cererea investitorilor a depășit 8,5 miliarde de euro, iar operațiunea — a doua ieșire externă a statului în 2026 — vine imediat după aprobarea primei rectificări bugetare de către noul Guvern, care a menținut ținta de deficit bugetar la 6,2% din PIB pentru 2026; randamentul titlurilor pe zece ani a scăzut cu circa 30 de puncte de bază față de maximul de peste 6,8% din octombrie.</p>
-          </div>
-
-          <div class="sec">
-            <p class="sec-label">De ce contează</p>
-            <p>Semnal de încredere a piețelor după peste cinci luni de instabilitate politică (coaliția destrămată în mai, guvern învestit la 20 octombrie) — stabilitatea fiscală a României e contextul direct al expunerilor românești urmărite în pagină: investiția recurentă în TVBETETF (piața RO), apartamentul din București și implementarea legii CEI.</p>
-          </div>
-
-          <div class="verify">
-            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
-            <p>Verdict: confirmat. Surse: Bloomberg (relatat de Ziarul Financiar), Radar Economic (3 noiembrie 2026) și RO Times (2 noiembrie 2026). Notă de integritate: unele relatări inițiale au anunțat suma de 4 miliarde de euro la lansare; cifra finală de 4,5 miliarde este cea confirmată de Bloomberg prin Ziarul Financiar.</p>
-            <ul class="sources">
-              <li><a href="https://www.radareconomic.ro/economie/romania-atrage-45-miliarde-de-euro-de-pe-pietele-externe-dupa-perioada-de-instabilitate-politica" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Radar Economic — „România atrage 4,5 miliarde de euro de pe piețele externe după perioada de instabilitate politică” (3 noiembrie 2026)<span class="host">radareconomic.ro</span></a></li>
-            </ul>
-          </div>
-
-          <div class="opposing">
-            <p class="sec-label">Tabăra adversă</p>
-            <p>Cristian Popa, membru în Consiliul de Administrație al BNR, a avertizat că trebuie evitate majorările nesustenabile ale cheltuielilor publice pentru a preveni dificultăți de finanțare (citat de Radar Economic).</p>
-          </div>
-
-          <div class="impact">
-            <span class="badge">Impact direct</span>
-            <p>Impact direct minim, relevanță de context înaltă — fără acțiune imediată; de urmărit costurile de finanțare, care rămân superioare nivelurilor din 2025.</p>
-          </div>
-        </article>
-
-        <!-- 6 · 3 nov · 08:00 -->
-        <article id="stire-29" data-cats="tech">
-          <div class="a-meta">
-            <span class="a-time">3 nov · 08:00</span>
-            <span class="a-cat">Tech &amp; AI · Siguranță AI · RSI</span>
-            <span class="a-num">#6 / 7</span>
-          </div>
-          <h2>Anthropic avertizează că e «foarte aproape» de RSI — AI care se construiește singur</h2>
-
-          <div class="sec">
-            <p class="sec-label">Ce s-a întâmplat</p>
-            <p>În dosarul S-1A revizuit, depus luni, 2 noiembrie, Anthropic a adăugat la secțiunea Risk Factors că estimările sale interne indică faptul că ar putea îndeplini „imminently” definiția din propria Responsible Scaling Policy pentru „progres accelerat dramatic atribuibil AI” — pragul legat de auto-îmbunătățirea recursivă (RSI), punctul în care un model devine suficient de bun la a se antrena singur încât capabilitățile accelerează dramatic. Compania precizează că niciun model actual nu a depășit pragul, dar recunoaște că în trecut a folosit AI pentru a dezvolta modele noi ale căror salturi de capabilitate nu le-a identificat decât după ce s-au produs, și promite să țină oamenii în procesul de cercetare-dezvoltare, luând în calcul actualizări ale Responsible Scaling Policy pentru a păstra controlul uman asupra dezvoltării modelelor frontieră.</p>
-          </div>
-
-          <div class="sec">
-            <p class="sec-label">De ce contează</p>
-            <p>Folosește Claude zilnic și construiește automatizări pe API-uri AI, iar ca IT incident Manager tocmai genul acesta de risc îl privește: un prag de siguranță al cărui detector, după recunoașterea companiei însăși, poate semnala abia retroactiv. În plus, potrivit AI Weekly, este primul document înregistrat la SEC al unui laborator frontieră care numește și definește formal un astfel de prag de capabilitate, ceea ce îl face citabil de orice regulator.</p>
-          </div>
-
-          <div class="verify">
-            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
-            <p>Verdict: confirmat — dosarul S-1A este documentul propriu al Anthropic către SEC (sursă primară pentru propriul avertisment), relatat independent de TechCrunch, Technopolis și AI Weekly.</p>
-            <ul class="sources">
-              <li><a href="https://techcrunch.com/2026/11/02/anthropic-warns-that-its-very-close-to-rsi-capability-aka-self-building-ai/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>TechCrunch — „Anthropic warns that it's very close to RSI capability, aka self-building AI” (2 noiembrie 2026)<span class="host">techcrunch.com</span></a></li>
-              <li><a href="https://technopolis.news/en/anthropic-warns-near-self-improving-ai/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Technopolis — „Anthropic's S-1A filing flags imminent self-improving AI” (2 noiembrie 2026)<span class="host">technopolis.news</span></a></li>
-              <li><a href="https://aiweekly.co/alerts/anthropic-s-1a-claude-may-imminently-hit-rsi-threshold" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>AI Weekly — „Anthropic S-1A: Claude May 'Imminently' Hit RSI Threshold” (3 noiembrie 2026)<span class="host">aiweekly.co</span></a></li>
-            </ul>
-          </div>
-
-          <div class="impact">
-            <span class="badge">Impact direct</span>
-            <p>Impact direct azi: minim — nicio schimbare imediată. Relevanță profesională și de context: ridicată, pe linia subiectelor deja urmărite despre agenți AI autonomi ca risc de incident (Guardian Agents, agenții OpenAI care și-au slăbit propriile sisteme de monitorizare).</p>
-          </div>
-        </article>
-
-        <!-- 7 · 3 nov · 08:00 -->
-        <article id="stire-28" data-cats="securitate">
-          <div class="a-meta">
-            <span class="a-time">3 nov · 08:00</span>
-            <span class="a-cat">Securitate &amp; NATO · Război electronic · Drone</span>
-            <span class="a-num">#7 / 7</span>
-          </div>
-          <h2>Rusia își echipează dronele cu antene mai mari ca să treacă de bruiajul ucrainean</h2>
-
-          <div class="sec">
-            <p class="sec-label">Ce s-a întâmplat</p>
-            <p>Rusia montează module de navigație Kometa, produse de VNIIR-Progress, cu rețele tot mai mari de antene patch rezistente la bruiaj, relatează Defense News (2 noiembrie 2026), pe baza bazei de date a serviciilor de informații militare ucrainene (HUR). Modulele cu 16 elemente sunt deja folosite la scară, producția de serie a variantelor cu 20 de elemente este în pregătire, iar drone Shahed cu antene de 32 de elemente au fost găsite atacând Kyivul, potrivit specialistului în război electronic Serhii „Flash” Beskrestnov, consilier al președintelui Zelenski pentru tehnologie de apărare. Aceleași module echipează drone Geran, kituri de bombe ghidate, rachete Iskander-M și Kinzhal și noua rachetă de croazieră Filin, iar firmele ruse de apărare au comandat peste 100.000 de module Kometa în diverse configurații în 2026.</p>
-          </div>
-
-          <div class="sec">
-            <p class="sec-label">De ce contează</p>
-            <p>Bruiajul este unul dintre cele mai accesibile și răspândite straturi ale apărării aeriene ucrainene; antenele mai mari îl fac mai greu de străpuns, forțând apărătorii să recurgă la opțiuni mai scumpe — drone interceptoare, avioane și rachete. Subiectul continuă direct arcul urmărit în pagină despre dronele Geran doborâte de F-16-urile românești lângă Sulina și despre apărarea anti-dronă la Marea Neagră.</p>
-          </div>
-
-          <div class="verify">
-            <p class="sec-label">Verificare <span class="status">Sursă primară</span></p>
-            <p>Verdict: sursă primară, cu corroborare de trend — sursa primară este HUR, baza sa de date despre armamentul rus și declarația din 19 octombrie, împreună cu declarațiile lui Serhii Beskrestnov, citate de Defense News; trendul de extindere Kometa este coroborat din afara listei curatoriate de Defense Express (antene Kometa-M pe dronele Gerbera) și Voennoedelo (comenzile de peste 100.000 de module Kometa în 2026).</p>
-            <ul class="sources">
-              <li><a href="https://www.defensenews.com/global/europe/2026/11/02/russia-is-giving-its-drones-bigger-antennas-to-beat-ukrainian-jamming/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Defense News — articolul-sursă curatoriat (2 noiembrie 2026)<span class="host">defensenews.com</span></a></li>
-              <li><a href="https://en.defence-ua.com/weapon_and_tech/russia_equips_gerbera_foam_uavs_with_12_element_kometa_m_gnss_antennas_what_it_signals-18514.html" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Defense Express — antene Kometa-M pe dronele Gerbera (corroborare de trend)<span class="host">defence-ua.com</span></a></li>
-              <li><a href="https://voennoedelo.com/en/posts/id21409-russian-defense-firms-order-100-000-kometa-modules" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Voennoedelo — comenzile de peste 100.000 de module Kometa în 2026 (26 octombrie 2026)<span class="host">voennoedelo.com</span></a></li>
-            </ul>
-          </div>
-
-          <div class="impact">
-            <span class="badge">Impact direct</span>
-            <p>Profesional direct — război electronic, drone și apărare anti-dronă pe Flancul estic, exact terenul de incident management; personal/familie: minim, relevanță de context.</p>
-          </div>
-        </article>
-      </main>
-      </section>
-
       <footer>
         <div class="rule" aria-hidden="true"></div>
-        <p>Sfârșitul ediției de azi · Ultima actualizare: luni, 9 noiembrie 2026, 20:00<br />Monitorizarea rulează la circa 3 ore, în fereastra L–V 06:00–22:00 · S–D 07:30–22:00 — dă refresh pentru noutăți.</p>
-        <a class="to-top" href="#stire-126">↑ Înapoi la cea mai nouă știre</a>
+        <p>Sfârșitul ediției de azi · Ultima actualizare: marți, 10 noiembrie 2026, 06:00<br />Monitorizarea rulează la circa 3 ore, în fereastra L–V 06:00–22:00 · S–D 07:30–22:00 — dă refresh pentru noutăți.</p>
+        <a class="to-top" href="#stire-132">↑ Înapoi la cea mai nouă știre</a>
       </footer>
     </div>
 
