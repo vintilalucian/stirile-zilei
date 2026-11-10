@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="color-scheme" content="light dark" />
-    <meta name="tirile-versiune" content="2026-11-10T09:03:00+01:00|5|amber" />
+    <meta name="tirile-versiune" content="2026-11-10T10:00:00+01:00|7|amber" />
     <link rel="icon" href="data:," />
     <title>Știrile zilei</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -699,9 +699,9 @@
     <div class="topbar">
       <div class="topbar-inner">
         <span class="dot" aria-hidden="true"></span>
-        <span><strong>Marți, 10 noiembrie 2026</strong> · actualizat la <strong>09:03</strong></span>
+        <span><strong>Marți, 10 noiembrie 2026</strong> · actualizat la <strong>10:00</strong></span>
         <span aria-hidden="true">·</span>
-        <span>5 știri azi</span>
+        <span>7 știri azi</span>
         <span class="spacer"></span>
         <button class="refresh-btn" type="button" id="refreshBtn" aria-label="Reîmprospătează pagina">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg>
@@ -739,7 +739,7 @@
 
       <!-- Chenar permanent: știrea cea mai importantă a zilei — sub fereastra
            „Ultimele știri", ÎNAINTEA dashboardului, vizibilă din prima, fără scroll.
-           Nivelul de azi: GALBEN (sev-amber) — de urmărit: Claude Code scurge parole și chei API pe GitHub — știrea cu severitatea cea mai mare a zilei și cea mai importantă dintre cele patru știri galbene ale zilei, singura cu impact direct personal; mai sunt alte trei știri galbene azi (breșa „SSHole" în OpenSSH, de la 09:00, anunțul Rusiei despre nave lovite în Marea Neagră, de la 08:00, și negocierile Ucraina–Rusia de la Abu Dhabi, de la 06:00), iar a cincea, verde, e IPO-ul Anthropic — de aceea chenarul poartă mențiunea despre celelalte știri cu aceeași severitate, cu filtru pe galben la „apasă aici".
+           Nivelul de azi: GALBEN (sev-amber) — de urmărit: Claude Code scurge parole și chei API pe GitHub — știrea cu severitatea cea mai mare a zilei și cea mai importantă dintre cele patru știri galbene ale zilei, singura cu impact direct personal; mai sunt alte patru știri galbene azi (procesul colectiv împotriva Nvidia, de la 10:00, breșa „SSHole" în OpenSSH, de la 09:00, anunțul Rusiei despre nave lovite în Marea Neagră, de la 08:00, și negocierile Ucraina–Rusia de la Abu Dhabi, de la 06:00), iar cele două verzi sunt breșa de date Wyndham și IPO-ul Anthropic — de aceea chenarul poartă mențiunea despre celelalte știri cu aceeași severitate, cu filtru pe galben la „apasă aici".
            Chenarul rămâne în afara logicii de filtrare: vizibil indiferent de filtrul de categorie. -->
       <section class="spot sev-amber" aria-label="Știrea cea mai importantă a zilei">
         <div class="spot-head">
@@ -751,7 +751,7 @@
           <span class="spot-pill">Nivel galben — de urmărit</span>
         </div>
         <h2 class="spot-title">Claude Code scurge parole și chei API pe GitHub: 1.122 de fișiere publice conțin secrete reale</h2>
-        <p class="spot-why"><strong>De ce e în față:</strong> E cea mai importantă dintre cele patru știri galbene ale zilei și singura cu impact direct personal: fișierul local de setări al lui Claude Code ajunge în repo-uri publice GitHub cu parole și chei API salvate cuvânt cu cuvânt — iar el construiește automatizări cu chei API (Google Apps Script + Gemini) și folosește Claude zilnic, deci o cheie tastată vreodată într-o comandă aprobată poate fi deja expusă.</p>
+        <p class="spot-why"><strong>De ce e în față:</strong> E cea mai importantă dintre cele cinci știri galbene ale zilei și singura cu impact direct personal: fișierul local de setări al lui Claude Code ajunge în repo-uri publice GitHub cu parole și chei API salvate cuvânt cu cuvânt — iar el construiește automatizări cu chei API (Google Apps Script + Gemini) și folosește Claude zilnic, deci o cheie tastată vreodată într-o comandă aprobată poate fi deja expusă.</p>
         <p class="spot-lead">Cercetătorii Apiiro au numărat 104.185 de copii publice ale fișierului „.claude/settings.local.json"; 1.122 conțin cel puțin un secret real — 1.379 de secrete distincte — iar cu tot cu istoricul git totalul urcă la 2.539 de secrete în 1.994 de repo-uri, din 63 de organizații.</p>
         <p class="spot-more" hidden><span class="spot-more-text"></span> <button class="spot-more-btn" type="button">apasă aici</button></p>
         <div class="spot-foot">
@@ -768,15 +768,15 @@
       <section class="dashboard" aria-label="Panou de ansamblu">
         <div class="dash-head">
           <span class="dash-title">Dashboard · Azi</span>
-          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 09:03</span>
+          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 10:00</span>
           <span class="dash-meta">Fereastră monitorizare <strong>L–V 06:00–22:00 · S–D 07:30–22:00</strong> · pas ~3 ore</span>
         </div>
 
         <div class="kpi-grid five" role="group" aria-label="Filtrează după categorie — apasă pe un tile">
           <button class="kpi" type="button" data-filter="toate" aria-pressed="true">
             <span class="kpi-top"><span class="kpi-label">Toate știrile</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">5</span>
-            <span class="kpi-sub">știri verificate azi, în 3 rulări</span>
+            <span class="kpi-value">7</span>
+            <span class="kpi-sub">știri verificate azi, în 4 rulări</span>
             <span class="kpi-bar" aria-hidden="true"><i style="width:100%"></i></span>
             <span class="kpi-hint">Apasă pentru toate</span>
           </button>
@@ -784,7 +784,7 @@
             <span class="kpi-top"><span class="kpi-label">Securitate &amp; NATO</span><span class="kpi-check" aria-hidden="true">✓</span></span>
             <span class="kpi-value">2</span>
             <span class="kpi-sub">nave lovite în Marea Neagră · negocierile Ucraina–Rusia încep</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:40%"></i></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:29%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="romania" aria-pressed="false">
@@ -803,9 +803,9 @@
           </button>
           <button class="kpi" type="button" data-filter="tech" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">Tech &amp; AI</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">3</span>
-            <span class="kpi-sub">chei API scurse de Claude Code · breșă OpenSSH exploatată activ · IPO Anthropic săptămâna viitoare</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:60%"></i></span>
+            <span class="kpi-value">5</span>
+            <span class="kpi-sub">proces colectiv împotriva Nvidia · breșă de date la Wyndham · chei API scurse de Claude Code · breșă OpenSSH exploatată activ · IPO Anthropic săptămâna viitoare</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:71%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
         </div>
@@ -819,7 +819,7 @@
       </section>
 
       <div class="filter-status" aria-live="polite">
-        <span class="filter-label">Se afișează: <strong>Toate categoriile — 5 din 5 știri</strong></span>
+        <span class="filter-label">Se afișează: <strong>Toate categoriile — 7 din 7 știri</strong></span>
         <button class="filter-reset" type="button" hidden>Resetează filtrul</button>
       </div>
 
@@ -849,7 +849,92 @@
       <p class="empty">Nicio știre în această categorie azi.</p>
 
       <main>
-        <!-- 1 · 10 nov · 09:00 -->
+        <!-- 1 · 10 nov · 10:00 -->
+        <article id="stire-137" data-cats="tech" data-sev="amber" data-subiect="proces colectiv împotriva Nvidia">
+          <div class="a-meta">
+            <span class="a-time">10 nov · 10:00</span>
+            <span class="a-cat">Tech &amp; AI</span>
+            <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
+            <a class="cont-pill" href="#stire-120" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
+            <span class="subj-pill">proces colectiv împotriva Nvidia</span>
+            <span class="a-num">#1 / 7</span>
+          </div>
+          <h2>Nvidia, dată în judecată de acționari după scandalul Huang: prima acțiune colectivă cere despăgubiri, acțiunile au pierdut 4,27% într-o zi</h2>
+          <div class="followup">
+            <span class="tag">Urmare la</span>
+            <p><a href="#stire-120">„Consiliul Nvidia deschide o anchetă independentă după acuzațiile că șeful Jensen Huang ar fi fost ținta unei operațiuni de spionaj chinez; Huang recunoaște o relație extraconjugală” — duminică, 9 noiembrie 2026, ora 08:00.</a></p>
+          </div>
+          <div class="sec">
+            <p class="sec-label">Ce s-a întâmplat</p>
+            <p>Luni, 9 noiembrie, la câteva minute după închiderea bursei, acționarul Mark Kistenmacher a dat în judecată Nvidia și pe directorul general Jensen Huang la Tribunalul Districtual al Californiei de Nord (cazul Kistenmacher v. NVIDIA Corporation, nr. 5:26-cv-13448), prin firma de avocatură Rosen Law Firm. Plângerea — o acțiune colectivă propusă pentru investitorii care au cumpărat titluri Nvidia între 9 octombrie 2025 și 8 noiembrie 2026 — susține că Nvidia și Huang au indus în eroare investitorii prezentând drept „normale" relațiile cu Megaspeed, firma din Singapore, și nedezvăluind relația lui Huang cu Alice Huang, directoare a firmei, despre care serviciile americane cred că spiona pentru China — relație care, spune plângerea, ridica riscuri de securitate națională pentru tranzacțiile cu Megaspeed. Acțiunile au închis luni la 178,67 $, în scădere cu 4,27% (−7,97 $), ștergând circa 190 de miliarde $ din capitalizarea companiei — prima zi de tranzacționare după anunțul de duminică al consiliului că deschide o anchetă independentă. Alte firme de avocatură, între care Schall, Brown &amp; Schwartz, au anunțat la rândul lor investigații; investitorii care vor să devină reclamanți principali au termen până pe 8 ianuarie 2027.</p>
+          </div>
+          <div class="sec">
+            <p class="sec-label">De ce contează</p>
+            <p>Scandalul trece de la anchetă internă la proces în instanță: miza nu mai e doar reputația, ci răspunderea juridică și banii, iar Nvidia e compania din centrul ecosistemului AI pe care își construiește automatizările. Volatilitatea ei se propagă în tot sectorul: joia trecută acțiunile AI au șters circa 2,5 trilioane $ într-o zi, iar Nvidia a căzut atunci cu 9%. De urmărit săptămâna viitoare: rezultatele Nvidia, pe 17 noiembrie, și briefingul cerut de Congres, pe 18 noiembrie — următorul capitol al dosarului.</p>
+          </div>
+          <div class="verify">
+            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
+            <p>Verdict: confirmat. Reuters (9 nov 2026, relatat de MLQ) — plângerea depusă la circa cinci minute după închiderea bursei; acțiunile −4,3% luni; circa 190 mld $ șterși din capitalizare. Seoul Economic Daily (10 nov 2026) — Rosen Law Firm a depus acțiunea colectivă pe 9 nov, în numele acționarului Mark Kistenmacher; acțiunile au închis la 178,67 $, −4,27%. PPC Land (9 nov 2026) — numărul cazului, 5:26-cv-13448, la Tribunalul Districtual al Californiei de Nord; perioada clasei, 9 oct 2025–8 nov 2026; „niciuna dintre acuzații nu a fost testată în instanță". Unite.ai (9 nov 2026) — anunțul Rosen din 9 nov; termenul de 8 ianuarie 2027 pentru reclamanții principali; Schall, Brown &amp; Schwartz investighează separat.</p>
+            <ul class="sources">
+              <li><a href="https://techcrunch.com/2026/11/09/the-race-is-on-to-sue-nvidia/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>TechCrunch — „The race is on to sue Nvidia” (9 nov 2026, 22:23 UTC; actualizat 10 nov 02:55 UTC)<span class="host">techcrunch.com</span></a></li>
+              <li><a href="https://ppc.land/investor-sues-nvidia-over-huangs-ties-to-suspected-spy-after-4-27-drop/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>PPC Land — „Investor sues Nvidia over Huang's ties to suspected spy after 4.27% drop” (9 nov 2026)<span class="host">ppc.land</span></a></li>
+              <li><a href="https://en.sedaily.com/world/2026/11/10/nvidia-ceo-jensen-huang-sued-by-shareholder-over-affair" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Seoul Economic Daily — „Nvidia CEO Jensen Huang Sued by Shareholder Over Affair Cover-Up” (10 nov 2026)<span class="host">en.sedaily.com</span></a></li>
+              <li><a href="https://www.unite.ai/rosens-proposed-nvidia-suit-centers-on-megaspeed-disclosures/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Unite.ai — „Rosen's Proposed NVIDIA Suit Centers on Megaspeed Disclosures” (9 nov 2026)<span class="host">unite.ai</span></a></li>
+              <li><a href="https://mlq.ai/news/nvidia-and-jensen-huang-sued-by-shareholders-over-statements-about-his-ties-to-a-megaspeed-executive/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>MLQ — „Nvidia and Jensen Huang sued by shareholders over statements about his ties to a Megaspeed executive” (9 nov 2026, citează Reuters)<span class="host">mlq.ai</span></a></li>
+            </ul>
+          </div>
+          <div class="opposing">
+            <p class="sec-label">Tabăra adversă</p>
+            <p>Consiliul Nvidia, în declarația de duminică 8 noiembrie, a spus că nu are motive să creadă că securitatea națională sau secretele companiei au fost compromise și că Huang rămâne la conducere pe durata anchetei independente (<a href="https://techcrunch.com/2026/11/09/the-race-is-on-to-sue-nvidia/" target="_blank" rel="noopener">TechCrunch</a>). Niciuna dintre acuzațiile din plângere nu a fost testată în instanță.</p>
+          </div>
+          <div class="impact">
+            <span class="badge">Impact direct</span>
+            <p>Impact direct: minim azi — fără dețineri directe la Nvidia în portofoliul cunoscut (notat la cardul din 9 nov, ora 08:00); procesul e la început, iar acuzațiile nu sunt testate în instanță. Relevanță de context ridicată: Nvidia e barometrul sectorului AI — o nouă lovitură de imagine sau juridică mișcă tot sectorul, inclusiv evaluările IPO-urilor AI urmărite (Anthropic, săptămâna viitoare). De urmărit: rezultatele din 17 nov și briefingul din Congres din 18 nov.</p>
+          </div>
+        </article>
+
+        <!-- 2 · 10 nov · 10:00 -->
+        <article id="stire-138" data-cats="tech" data-sev="green" data-subiect="breșă de date la Wyndham">
+          <div class="a-meta">
+            <span class="a-time">10 nov · 10:00</span>
+            <span class="a-cat">Tech &amp; AI</span>
+            <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
+            <span class="subj-pill">breșă de date la Wyndham</span>
+            <span class="a-num">#2 / 7</span>
+          </div>
+          <h2>Wyndham a expus datele clienților: o parolă din codul aplicației Android dădea acces la baza internă cu nume, e-mailuri și tokenuri de autentificare</h2>
+          <div class="sec">
+            <p class="sec-label">Ce s-a întâmplat</p>
+            <p>Cercetătorul în securitate Robert Wiggins (What Security) a găsit o parolă în codul-sursă al aplicației Android a gigantului hotelier Wyndham, parolă care dădea acces la o bază de date internă găzduită de Salesforce. Baza conținea nume, adrese de e-mail și numere de membru Wyndham ale clienților, tokenuri de autentificare (JWT) care țin utilizatorii logați în aplicații fără să-și reintroducă parola, plus fișiere și documente interne Wyndham. Baza avea milioane de înregistrări — numărul exact al clienților expuși n-a putut fi stabilit; Wyndham are circa 129 de milioane de membri în programul de loialitate. Wiggins a spus că Wyndham nu avea nicio cale de raportare a vulnerabilităților și a cerut ajutorul TechCrunch pentru alertare; la scurt timp după ce TechCrunch a contactat echipa de securitate, parola expusă a fost revocată.</p>
+          </div>
+          <div class="sec">
+            <p class="sec-label">De ce contează</p>
+            <p>Direct și concret: mâine, 11 noiembrie, pleacă la Haga și se cazează la Ramada Haga, iar Ramada e marcă a grupului Wyndham Hotels &amp; Resorts — datele expuse sunt exact cele ale clienților grupului. Dacă are cont Wyndham Rewards sau a folosit aplicația Wyndham, numele și e-mailul lui erau în baza accesibilă cu parola hardcodată. Profesional, e un caz manual de incident: o credențială îngropată în codul unei aplicații publice, fără canal de raportare a vulnerabilităților — aceeași lecție ca la breșa OpenCode, din octombrie.</p>
+          </div>
+          <div class="verify">
+            <p class="sec-label">Verificare <span class="status">Sursă unică</span></p>
+            <p>Verdict: sursă_unică. Doar TechCrunch (9 nov 2026, 23:03 UTC) a relatat incidentul, în exclusivitate, cu cercetătorul numit și declarația companiei. Alte site-uri (Tech Weekly, Zot.news, AmeriLedger) doar republică aceeași relatare TechCrunch — nu sunt confirmări independente. Legătura Ramada–Wyndham e confirmată separat: Ramada e marcă deținută de Wyndham Hotels &amp; Resorts (Wikipedia).</p>
+            <ul class="sources">
+              <li><a href="https://techcrunch.com/2026/11/09/hotel-giant-wyndham-exposed-customer-data-after-app-security-lapse/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>TechCrunch — „Hotel giant Wyndham exposed customer data after app security lapse” (9 nov 2026, 23:03 UTC)<span class="host">techcrunch.com</span></a></li>
+              <li><a href="https://techweekly.co.za/2026/11/10/wyndham-hotel-group-breached-customer-data-due-to-app-security-flaw/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Tech Weekly — „Wyndham Hotel Group Breached Customer Data Due to App Security Flaw” (10 nov 2026, republicare a relatării TechCrunch)<span class="host">techweekly.co.za</span></a></li>
+              <li><a href="https://en.wikipedia.org/wiki/Ramada" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Wikipedia — „Ramada” (Ramada e o marcă deținută de Wyndham Hotels & Resorts)<span class="host">en.wikipedia.org</span></a></li>
+            </ul>
+          </div>
+          <div class="opposing">
+            <p class="sec-label">Tabăra adversă</p>
+            <p>Purtătorul de cuvânt al Wyndham, citat de TechCrunch: „echipele noastre de securitate nu au dovezi ale vreunui acces neautorizat". Compania n-a spus însă dacă are mijloace tehnice (jurnale de acces) prin care să verifice accesul anterior descoperirii, nici de cât timp era parola în aplicație (<a href="https://techcrunch.com/2026/11/09/hotel-giant-wyndham-exposed-customer-data-after-app-security-lapse/" target="_blank" rel="noopener">TechCrunch</a>).</p>
+          </div>
+          <div class="impact">
+            <span class="badge">Impact direct</span>
+            <p>Impact direct: minim azi — parola a fost revocată, iar compania spune că n-are dovezi de acces neautorizat; nu sunt raportate parole sau date de plată expuse. Relevanță practică: dacă are cont Wyndham Rewards, parola contului merită schimbată — vezi „Acțiune" mai jos.</p>
+          </div>
+          <div class="action">
+            <span class="badge">Acțiune</span>
+            <p>Dacă ai cont Wyndham Rewards sau ai folosit aplicația Wyndham, schimbă parola contului și verifică sesiunile active; la check-inul de mâine de la Ramada Haga nu e nevoie de nimic special — parola expusă a fost deja revocată.</p>
+          </div>
+        </article>
+
+        <!-- 3 · 10 nov · 09:00 -->
         <article id="stire-135" data-cats="tech" data-sev="amber" data-subiect="chei API scurse de Claude Code">
           <div class="a-meta">
             <span class="a-time">10 nov · 09:00</span>
@@ -857,7 +942,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="spot-tag">Știrea zilei</span>
             <span class="subj-pill">chei API scurse de Claude Code</span>
-            <span class="a-num">#1 / 5</span>
+            <span class="a-num">#3 / 7</span>
           </div>
           <h2>Claude Code scurge parole și chei API pe GitHub: 1.122 de fișiere publice conțin secrete reale</h2>
           <div class="sec">
@@ -889,14 +974,14 @@
           </div>
         </article>
 
-        <!-- 2 · 10 nov · 09:00 -->
+        <!-- 4 · 10 nov · 09:00 -->
         <article id="stire-136" data-cats="tech" data-sev="amber" data-subiect="breșă OpenSSH exploatată activ">
           <div class="a-meta">
             <span class="a-time">10 nov · 09:00</span>
             <span class="a-cat">Tech &amp; AI</span>
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="subj-pill">breșă OpenSSH exploatată activ</span>
-            <span class="a-num">#2 / 5</span>
+            <span class="a-num">#4 / 7</span>
           </div>
           <h2>Vulnerabilitatea „SSHole" în OpenSSH e exploatată activ: conturi fără parolă pot fi accesate de la distanță (CVE-2026-123158)</h2>
           <div class="sec">
@@ -924,7 +1009,7 @@
           </div>
         </article>
 
-        <!-- 3 · 10 nov · 08:00 -->
+        <!-- 5 · 10 nov · 08:00 -->
         <article id="stire-134" data-cats="securitate" data-sev="amber" data-subiect="nave lovite în Marea Neagră">
           <div class="a-meta">
             <span class="a-time">10 nov · 08:00</span>
@@ -932,7 +1017,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-31" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">nave lovite în Marea Neagră</span>
-            <span class="a-num">#3 / 5</span>
+            <span class="a-num">#5 / 7</span>
           </div>
           <h2>Rusia anunță că a lovit două nave de marfă și un petrolier în Marea Neagră, în apropiere de Odesa</h2>
           <div class="followup">
@@ -962,7 +1047,7 @@
           </div>
         </article>
 
-        <!-- 4 · 10 nov · 06:00 -->
+        <!-- 6 · 10 nov · 06:00 -->
         <article id="stire-132" data-cats="securitate" data-sev="amber" data-subiect="negocierile Ucraina–Rusia încep">
           <div class="a-meta">
             <span class="a-time">10 nov · 06:00</span>
@@ -970,7 +1055,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-113" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">negocierile Ucraina–Rusia încep</span>
-            <span class="a-num">#4 / 5</span>
+            <span class="a-num">#6 / 7</span>
           </div>
           <h2>Încep azi negocierile de la Abu Dhabi între Ucraina și Rusia — primele discuții trilaterale din februarie, cu Europa la ușă</h2>
           <div class="followup">
@@ -1004,7 +1089,7 @@
           </div>
         </article>
 
-        <!-- 5 · 10 nov · 06:00 -->
+        <!-- 7 · 10 nov · 06:00 -->
         <article id="stire-133" data-cats="tech" data-sev="green" data-subiect="IPO Anthropic săptămâna viitoare">
           <div class="a-meta">
             <span class="a-time">10 nov · 06:00</span>
@@ -1012,7 +1097,7 @@
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <a class="cont-pill" href="#stire-114" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">IPO Anthropic săptămâna viitoare</span>
-            <span class="a-num">#5 / 5</span>
+            <span class="a-num">#7 / 7</span>
           </div>
           <h2>Anthropic merge mai departe cu IPO-ul: listarea, așteptată joia sau vinerea viitoare, dar investitorii presează evaluarea sub 1,5 trilioane $</h2>
           <div class="followup">
@@ -5698,8 +5783,8 @@
 
       <footer>
         <div class="rule" aria-hidden="true"></div>
-        <p>Sfârșitul ediției de azi · Ultima actualizare: marți, 10 noiembrie 2026, 09:03<br />Monitorizarea rulează la circa 3 ore, în fereastra L–V 06:00–22:00 · S–D 07:30–22:00 — dă refresh pentru noutăți.</p>
-        <a class="to-top" href="#stire-135">↑ Înapoi la cea mai nouă știre</a>
+        <p>Sfârșitul ediției de azi · Ultima actualizare: marți, 10 noiembrie 2026, 10:00<br />Monitorizarea rulează la circa 3 ore, în fereastra L–V 06:00–22:00 · S–D 07:30–22:00 — dă refresh pentru noutăți.</p>
+        <a class="to-top" href="#stire-137">↑ Înapoi la cea mai nouă știre</a>
       </footer>
     </div>
 
