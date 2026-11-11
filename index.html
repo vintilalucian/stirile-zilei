@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="color-scheme" content="light dark" />
-    <meta name="tirile-versiune" content="2026-11-11T18:00:00+01:00|16|amber" />
+    <meta name="tirile-versiune" content="2026-11-11T19:00:00+01:00|17|amber" />
     <link rel="icon" href="data:," />
     <title>Știrile zilei</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -699,9 +699,9 @@
     <div class="topbar">
       <div class="topbar-inner">
         <span class="dot" aria-hidden="true"></span>
-        <span><strong>Miercuri, 11 noiembrie 2026</strong> · actualizat la <strong>18:00</strong></span>
+        <span><strong>Miercuri, 11 noiembrie 2026</strong> · actualizat la <strong>19:00</strong></span>
         <span aria-hidden="true">·</span>
-        <span>16 știri azi</span>
+        <span>17 știri azi</span>
         <span class="spacer"></span>
         <button class="refresh-btn" type="button" id="refreshBtn" aria-label="Reîmprospătează pagina">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg>
@@ -768,15 +768,15 @@
       <section class="dashboard" aria-label="Panou de ansamblu">
         <div class="dash-head">
           <span class="dash-title">Dashboard · Azi</span>
-          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 18:00</span>
+          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 19:00</span>
           <span class="dash-meta">Fereastră monitorizare <strong>L–V 06:00–22:00 · S–D 07:30–22:00</strong> · pas ~3 ore</span>
         </div>
 
         <div class="kpi-grid five" role="group" aria-label="Filtrează după categorie — apasă pe un tile">
           <button class="kpi" type="button" data-filter="toate" aria-pressed="true">
             <span class="kpi-top"><span class="kpi-label">Toate știrile</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">16</span>
-            <span class="kpi-sub">știri verificate azi, în 12 rulări</span>
+            <span class="kpi-value">17</span>
+            <span class="kpi-sub">știri verificate azi, în 13 rulări</span>
             <span class="kpi-bar" aria-hidden="true"><i style="width:100%"></i></span>
             <span class="kpi-hint">Apasă pentru toate</span>
           </button>
@@ -784,14 +784,14 @@
             <span class="kpi-top"><span class="kpi-label">Securitate &amp; NATO</span><span class="kpi-check" aria-hidden="true">✓</span></span>
             <span class="kpi-value">8</span>
             <span class="kpi-sub">complotul de la RAF Fairford · schimb de prizonieri Abu Dhabi · spionaj cibernetic Turla în România · NATO prioritizează lupta cu Rusia · lovire de precizie NATO · soldat american arestat pentru spionaj · negocieri de pace Abu Dhabi · șantier naval Mangalia</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:50%"></i></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:47%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="romania" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">România</span><span class="kpi-check" aria-hidden="true">✓</span></span>
             <span class="kpi-value">3</span>
             <span class="kpi-sub">spionaj cibernetic Turla în România · PSD–AUR își împart instituțiile statului · șantier naval Mangalia</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:19%"></i></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:18%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="belgia" aria-pressed="false">
@@ -803,9 +803,9 @@
           </button>
           <button class="kpi" type="button" data-filter="tech" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">Tech &amp; AI</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">7</span>
-            <span class="kpi-sub">venituri trimestriale OpenAI 10 mld $ · Huang renunță la summituri · simulare pentru agenți AI · ancheta Nvidia, acțiuni −9,5% · Gemini 4 Carbon, acces public · scurgeri de date Grok Build · legea RAISE, New York</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:44%"></i></span>
+            <span class="kpi-value">8</span>
+            <span class="kpi-sub">agentul Genie, mereu activ · venituri trimestriale OpenAI 10 mld $ · Huang renunță la summituri · simulare pentru agenți AI · ancheta Nvidia, acțiuni −9,5% · Gemini 4 Carbon, acces public · scurgeri de date Grok Build · legea RAISE, New York</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:47%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
         </div>
@@ -819,7 +819,7 @@
       </section>
 
       <div class="filter-status" aria-live="polite">
-        <span class="filter-label">Se afișează: <strong>Toate categoriile — 16 din 16 știri</strong></span>
+        <span class="filter-label">Se afișează: <strong>Toate categoriile — 17 din 17 știri</strong></span>
         <button class="filter-reset" type="button" hidden>Resetează filtrul</button>
       </div>
 
@@ -849,7 +849,41 @@
       <p class="empty">Nicio știre în această categorie azi.</p>
 
       <main>
-        <!-- 1 · 11 nov · 18:00 -->
+        <!-- 1 · 11 nov · 19:00 -->
+        <article id="stire-169" data-cats="tech" data-sev="green" data-subiect="agentul Genie, mereu activ">
+          <div class="a-meta">
+            <span class="a-time">11 nov · 19:00</span>
+            <span class="a-cat">Tech &amp; AI</span>
+            <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
+            <span class="subj-pill">agentul Genie, mereu activ</span>
+            <span class="a-num">#1 / 17</span>
+          </div>
+          <h2>Databricks lansează Genie mereu activ: agentul AI preia sarcini lungi, în mai mulți pași, și lucrează nesupravegheat pentru liderii de business</h2>
+          <div class="sec">
+            <p class="sec-label">Ce s-a întâmplat</p>
+            <p>Databricks a prezentat miercuri, 11 noiembrie, o versiune nouă a agentului său AI Genie, care poate prelua acum sarcini în mai mulți pași, de durată lungă, și le duce la capăt fără supraveghere, potrivit TechCrunch. Agentul se sprijină pe o ontologie construită de Databricks din datele pe care clienții le stochează pe platformă — definiții, metrici și context de business —, iar liderii de companie îi pot atribui o gamă largă de sarcini pe care le execută singur; CEO-ul Ali Ghodsi și-a arătat propriile conversații cu agentul în loc de o demonstrație standard. Noua variantă, numită de companie „always-on Genie", transformă agenții din asistenți apelați la nevoie în „lucrători autonomi" cărora li se dă un obiectiv și care își asumă munca — inclusiv prin delegarea de sarcini către subagenți, potrivit TechTarget. Odată cu lansarea, ontologia Genie devine disponibilă general, la fel și Genie Search — căutare guvernată în datele companiei din Google Drive, Jira, Confluence și Workday —, iar conectorii nativi MCP permit agenților să creeze tichete, să actualizeze înregistrări și să posteze mesaje. General Motors a implementat deja peste 1.000 de agenți Genie în vânzări, inginerie, lanț de aprovizionare și HR, potrivit Unite.ai. Genie One e gratuit pentru utilizatori până la 31 ianuarie 2027.</p>
+          </div>
+          <div class="sec">
+            <p class="sec-label">De ce contează</p>
+            <p>E șablonul enterprise al exact tipului de agent pe care îl construiește el însuși în automatizări: un agent mereu activ, care preia o sarcină, o duce la capăt singur și decide ce face mai departe — cu porți de aprobare alese de utilizator („tu alegi ce acțiuni cer aprobare"), același principiu din cardurile Guardian Agents (Microsoft) și Agent Gateway (Walmart). Căutarea guvernată peste Google Drive, Jira și Confluence atinge direct stiva lui de lucru, iar faptul că Genie acționează sub identitatea utilizatorului și poate delega subagenți arată cum arată în producție arhitectura „agenți care dau sarcini altor agenți" — exact suprafața de incidente urmărită în pagină (agenți autonomi ca amenințare internă).</p>
+          </div>
+          <div class="verify">
+            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
+            <p>Verdict: confirmat. TechCrunch (11 noiembrie, 15:00 UTC) — relatarea originală: Genie actualizat pentru sarcini în mai mulți pași, nesupravegheate, prin ontologia Databricks; CEO-ul Ali Ghodsi și-a arătat propriile conversații cu agentul. TechTarget (11 noiembrie, 10:00) — agentul „always-on" ca lucrător autonom, cu delegare către subagenți; ontologia Genie disponibilă general; Genie Search guvernată. Unite.ai (11 noiembrie) — detalii despre Genie One, cei peste 1.000 de agenți Genie la General Motors și căutarea în Google Drive, Jira, Confluence și Workday. TradersUnion (11 noiembrie) preia relatarea TechCrunch — aceeași sursă, nu o confirmare independentă. Nuanță de integritate: cifrele de performanță vin de la Databricks — într-un benchmark propriu, dezvoltat cu Turing, Genie a trecut 91% din rulările de sarcini, față de 58% pentru cel mai puternic dintre doi agenți frontieră anonimizați, cu o medie de 431.829 de tokeni și 100,3 secunde per rulare; compania însăși avertizează că testul reflectă o implementare cu cunoștințe de business acumulate, iar diferențele pot fi mai mici în implementări noi.</p>
+            <ul class="sources">
+              <li><a href="https://techcrunch.com/2026/11/11/databricks-new-ai-agent-tells-ceo-ali-ghodsi-the-unvarnished-truth/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>TechCrunch — „Databricks' new AI agent tells CEO Ali Ghodsi the unvarnished truth" (11 nov 2026, 15:00 UTC; relatarea originală — Genie actualizat pentru sarcini în mai mulți pași, nesupravegheate, prin ontologia Databricks; CEO-ul Ali Ghodsi și-a arătat propriile conversații cu agentul)<span class="host">techcrunch.com</span></a></li>
+              <li><a href="https://www.techtarget.com/news/databricks-turns-genie-into-always-on-agent-for-complex-work/874354/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>TechTarget — „Databricks turns Genie into always-on agent for complex work" (11 nov 2026, 10:00; agentul „always-on" ca lucrător autonom, cu delegare către subagenți; ontologia Genie disponibilă general; Genie Search guvernată)<span class="host">techtarget.com</span></a></li>
+              <li><a href="https://www.unite.ai/databricks-turns-genie-into-an-autonomous-enterprise-ai-coworker/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Unite.ai — „Databricks Turns Genie Into an Autonomous Enterprise AI Coworker" (11 nov 2026; Genie One, peste 1.000 de agenți la General Motors, Genie Search pentru Google Drive/Jira/Confluence/Workday, benchmarkul cu Turing)<span class="host">unite.ai</span></a></li>
+              <li><a href="https://www.databricks.com/blog/genie-one-ai-cowork-home-everyone" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Databricks (blogul companiei) — „Genie One: The AI cowork home for everyone" (11 nov 2026; comunicatul companiei — parte implicată, nu confirmare independentă; Genie One gratuit până la 31 ianuarie 2027)<span class="host">databricks.com</span></a></li>
+            </ul>
+          </div>
+          <div class="impact">
+            <span class="badge">Impact direct</span>
+            <p>Impact direct: minim azi — Genie e un produs enterprise Databricks, nu ceva ce folosește azi; nicio acțiune cerută. Relevanță de context: arată cum arată în producție agentul mereu activ cu porți de aprobare și delegare către subagenți — arhitectura pe care o urmărește pentru propriile automatizări și pentru suprafața de incidente a agenților autonomi.</p>
+          </div>
+        </article>
+
+<!-- 2 · 11 nov · 18:00 -->
         <article id="stire-167" data-cats="securitate" data-sev="amber" data-subiect="complotul de la RAF Fairford">
           <div class="a-meta">
             <span class="a-time">11 nov · 18:00</span>
@@ -857,7 +891,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-147" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">complotul de la RAF Fairford</span>
-            <span class="a-num">#1 / 16</span>
+            <span class="a-num">#2 / 17</span>
           </div>
           <h2>Trei operatori susținuți de Iran, acuzați de SUA pentru complotul de la baza RAF Fairford: rechizitoriu pentru aproape 20 de atacuri și tentative în Europa și SUA</h2>
           <div class="followup">
@@ -892,14 +926,14 @@
           </div>
         </article>
 
-        <!-- 2 · 11 nov · 18:00 -->
+        <!-- 3 · 11 nov · 18:00 -->
         <article id="stire-168" data-cats="tech" data-sev="green" data-subiect="venituri OpenAI 10 mld $">
           <div class="a-meta">
             <span class="a-time">11 nov · 18:00</span>
             <span class="a-cat">Tech &amp; AI</span>
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <span class="subj-pill">venituri OpenAI 10 mld $</span>
-            <span class="a-num">#2 / 16</span>
+            <span class="a-num">#3 / 17</span>
           </div>
           <h2>OpenAI trece pragul de 10 miliarde $ venituri trimestriale pentru prima dată — +50% față de trimestrul anterior, dar cu o pierdere operațională de 10,9 mld $</h2>
           <div class="sec">
@@ -926,7 +960,7 @@
           </div>
         </article>
 
-        <!-- 3 · 11 nov · 17:00 -->
+        <!-- 4 · 11 nov · 17:00 -->
         <article id="stire-166" data-cats="securitate" data-sev="amber" data-subiect="schimb de prizonieri Abu Dhabi">
           <div class="a-meta">
             <span class="a-time">11 nov · 17:00</span>
@@ -934,7 +968,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-156" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">schimb de prizonieri Abu Dhabi</span>
-            <span class="a-num">#3 / 16</span>
+            <span class="a-num">#4 / 17</span>
           </div>
           <h2>Abu Dhabi: Rusia și Ucraina au convenit un schimb amplu de prizonieri — cel mai mare de până acum, potrivit lui Kushner; fără armistițiu</h2>
           <div class="followup">
@@ -969,7 +1003,7 @@
             <p>Impact direct: minim azi — cursul de la Haga (11–13 noiembrie) continuă; nicio acțiune cerută. Relevanță de context ridicată: primul rezultat concret al procesului de pace urmărit în pagină (cardurile Abu Dhabi din 8, 10 și 11 noiembrie, ora 10:00); de urmărit cifrele finale ale schimbului (joi) și întâlnirea Kushner–Witkoff cu Putin, plus summitul de la Dublin.</p>
           </div>
         </article>
-        <!-- 4 · 11 nov · 16:00 -->
+        <!-- 5 · 11 nov · 16:00 -->
         <article id="stire-164" data-cats="tech" data-sev="amber" data-subiect="Huang renunță la summituri">
           <div class="a-meta">
             <span class="a-time">11 nov · 16:00</span>
@@ -977,7 +1011,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-163" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">Huang renunță la summituri</span>
-            <span class="a-num">#4 / 16</span>
+            <span class="a-num">#5 / 17</span>
           </div>
           <h2>Jensen Huang renunță la summitul ElevenLabs și la forumul CEO al Anthropic, pe fondul anchetei boardului Nvidia — prima retragere publică din scandal</h2>
           <div class="followup">
@@ -1012,14 +1046,14 @@
           </div>
         </article>
 
-<!-- 5 · 11 nov · 16:00 -->
+<!-- 6 · 11 nov · 16:00 -->
         <article id="stire-165" data-cats="tech" data-sev="green" data-subiect="simulare pentru agenți AI">
           <div class="a-meta">
             <span class="a-time">11 nov · 16:00</span>
             <span class="a-cat">Tech &amp; AI</span>
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <span class="subj-pill">simulare pentru agenți AI</span>
-            <span class="a-num">#5 / 16</span>
+            <span class="a-num">#6 / 17</span>
           </div>
           <h2>Plurai vrea agenți AI mai fiabili cu metoda mașinilor autonome: simulare și date sintetice înainte de lansare, 13 milioane $ finanțare inițială</h2>
           <div class="sec">
@@ -1045,7 +1079,7 @@
           </div>
         </article>
 
-        <!-- 6 · 11 nov · 15:00 -->
+        <!-- 7 · 11 nov · 15:00 -->
         <article id="stire-163" data-cats="tech" data-sev="amber" data-subiect="ancheta Nvidia, acțiuni −9,5%">
           <div class="a-meta">
             <span class="a-time">11 nov · 15:00</span>
@@ -1053,7 +1087,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-137" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">ancheta Nvidia, acțiuni −9,5%</span>
-            <span class="a-num">#6 / 16</span>
+            <span class="a-num">#7 / 17</span>
           </div>
           <h2>Ancheta Nvidia se formalizează: boardul a angajat firma Wachtell Lipton, acțiunile au pierdut 9,5% în două zile, iar un senator cere demisia lui Huang</h2>
           <div class="followup">
@@ -1089,7 +1123,7 @@
           </div>
         </article>
 
-<!-- 7 · 11 nov · 14:00 -->
+<!-- 8 · 11 nov · 14:00 -->
         <article id="stire-162" data-cats="securitate romania" data-sev="amber" data-subiect="spionaj cibernetic Turla în România">
           <div class="a-meta">
             <span class="a-time">11 nov · 14:00</span>
@@ -1097,7 +1131,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="spot-tag">Știrea zilei</span>
             <span class="subj-pill">spionaj cibernetic Turla în România</span>
-            <span class="a-num">#7 / 16</span>
+            <span class="a-num">#8 / 17</span>
           </div>
           <h2>Hackeri ruși (Turla, legată de FSB) au spionat emailuri despre NATO și UE de pe serverele unei instituții guvernamentale din România</h2>
           <div class="sec">
@@ -1129,14 +1163,14 @@
           </div>
         </article>
 
-        <!-- 8 · 11 nov · 13:00 -->
+        <!-- 9 · 11 nov · 13:00 -->
         <article id="stire-161" data-cats="securitate" data-sev="amber" data-subiect="NATO prioritizează lupta cu Rusia">
           <div class="a-meta">
             <span class="a-time">11 nov · 13:00</span>
             <span class="a-cat">Securitate &amp; NATO</span>
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="subj-pill">NATO prioritizează lupta cu Rusia</span>
-            <span class="a-num">#8 / 16</span>
+            <span class="a-num">#9 / 17</span>
           </div>
           <h2>NATO vrea să prioritizeze lupta cu Rusia și să reducă forțele pentru misiuni în străinătate</h2>
           <div class="sec">
@@ -1167,14 +1201,14 @@
           </div>
         </article>
 
-<!-- 9 · 11 nov · 12:00 -->
+<!-- 10 · 11 nov · 12:00 -->
         <article id="stire-159" data-cats="romania" data-sev="amber" data-subiect="PSD–AUR își împart instituțiile statului">
           <div class="a-meta">
             <span class="a-time">11 nov · 12:00</span>
             <span class="a-cat">România</span>
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="subj-pill">PSD–AUR își împart instituțiile statului</span>
-            <span class="a-num">#9 / 16</span>
+            <span class="a-num">#10 / 17</span>
           </div>
           <h2>PSD și AUR și-au împărțit conducerile TVR, Radio România și șefia interimară a Curții de Conturi — voturi în Parlament, marți 10 noiembrie</h2>
           <div class="sec">
@@ -1204,14 +1238,14 @@
           </div>
         </article>
 
-        <!-- 10 · 11 nov · 12:00 -->
+        <!-- 11 · 11 nov · 12:00 -->
         <article id="stire-160" data-cats="securitate" data-sev="green" data-subiect="lovire de precizie NATO">
           <div class="a-meta">
             <span class="a-time">11 nov · 12:00</span>
             <span class="a-cat">Securitate &amp; NATO</span>
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <span class="subj-pill">lovire de precizie NATO</span>
-            <span class="a-num">#10 / 16</span>
+            <span class="a-num">#11 / 17</span>
           </div>
           <h2>NATO discută capabilitățile de lovire de precizie la mare adâncime: de la rachete de croazieră la drone și sisteme maritime</h2>
           <div class="sec">
@@ -1237,14 +1271,14 @@
           </div>
         </article>
 
-        <!-- 11 · 11 nov · 11:00 -->
+        <!-- 12 · 11 nov · 11:00 -->
         <article id="stire-157" data-cats="securitate" data-sev="amber" data-subiect="soldat american arestat pentru spionaj">
           <div class="a-meta">
             <span class="a-time">11 nov · 11:00</span>
             <span class="a-cat">Securitate &amp; NATO</span>
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="subj-pill">soldat american arestat pentru spionaj</span>
-            <span class="a-num">#11 / 16</span>
+            <span class="a-num">#12 / 17</span>
           </div>
           <h2>Soldat american din corpul NATO ARRC, arestat în Marea Britanie sub suspiciunea de spionaj pentru Rusia</h2>
           <div class="sec">
@@ -1274,14 +1308,14 @@
           </div>
         </article>
 
-        <!-- 12 · 11 nov · 11:00 -->
+        <!-- 13 · 11 nov · 11:00 -->
         <article id="stire-158" data-cats="tech" data-sev="green" data-subiect="Gemini 4 Carbon, acces public">
           <div class="a-meta">
             <span class="a-time">11 nov · 11:00</span>
             <span class="a-cat">Tech &amp; AI</span>
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <span class="subj-pill">Gemini 4 Carbon, acces public</span>
-            <span class="a-num">#12 / 16</span>
+            <span class="a-num">#13 / 17</span>
           </div>
           <h2>Gemini 4 Carbon, cel mai puternic model Google, e acum disponibil pentru dezvoltatori — cu funcția de echipă de agenți „swarm"</h2>
           <div class="sec">
@@ -1312,7 +1346,7 @@
           </div>
         </article>
 
-        <!-- 13 · 11 nov · 10:00 -->
+        <!-- 14 · 11 nov · 10:00 -->
         <article id="stire-156" data-cats="securitate" data-sev="amber" data-subiect="negocieri de pace Abu Dhabi">
           <div class="a-meta">
             <span class="a-time">11 nov · 10:00</span>
@@ -1320,7 +1354,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-132" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">negocieri de pace Abu Dhabi</span>
-            <span class="a-num">#13 / 16</span>
+            <span class="a-num">#14 / 17</span>
           </div>
           <h2>Prima zi a negocierilor de pace de la Abu Dhabi s-a încheiat fără acord; Zelenski cere Europei un reprezentant unic până la sfârșitul lui noiembrie</h2>
           <div class="followup">
@@ -1356,7 +1390,7 @@
           </div>
         </article>
 
-<!-- 14 · 11 nov · 09:00 -->
+<!-- 15 · 11 nov · 09:00 -->
         <article id="stire-155" data-cats="tech" data-sev="amber" data-subiect="scurgeri de date Grok Build">
           <div class="a-meta">
             <span class="a-time">11 nov · 09:00</span>
@@ -1364,7 +1398,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-135" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">scurgeri de date Grok Build</span>
-            <span class="a-num">#14 / 16</span>
+            <span class="a-num">#15 / 17</span>
           </div>
           <h2>Grok Build expune public 35.578 de aplicații construite cu AI: linkurile „secrete" erau găsibile de oricine, inclusiv 24 de aplicații interne ale SpaceXSI</h2>
           <div class="followup">
@@ -1399,14 +1433,14 @@
           </div>
         </article>
 
-        <!-- 15 · 11 nov · 07:00 -->
+        <!-- 16 · 11 nov · 07:00 -->
         <article id="stire-154" data-cats="securitate romania" data-sev="amber" data-subiect="șantier naval Mangalia">
           <div class="a-meta">
             <span class="a-time">11 nov · 07:00</span>
             <span class="a-cat">Securitate &amp; NATO · România</span>
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="subj-pill">șantier naval Mangalia</span>
-            <span class="a-num">#15 / 16</span>
+            <span class="a-num">#16 / 17</span>
           </div>
           <h2>Rheinmetall a plătit integral cele 138 de milioane de euro pentru Șantierul Naval Mangalia și a semnat contractul de vânzare-cumpărare</h2>
           <div class="sec">
@@ -1438,14 +1472,14 @@
           </div>
         </article>
 
-        <!-- 16 · 11 nov · 06:00 -->
+        <!-- 17 · 11 nov · 06:00 -->
         <article id="stire-153" data-cats="tech" data-sev="amber" data-subiect="legea RAISE, New York">
           <div class="a-meta">
             <span class="a-time">11 nov · 06:00</span>
             <span class="a-cat">Tech &amp; AI</span>
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="subj-pill">legea RAISE, New York</span>
-            <span class="a-num">#16 / 16</span>
+            <span class="a-num">#17 / 17</span>
           </div>
           <h2>Legea RAISE din New York intră în aplicare: OpenAI și Anthropic trebuie să se înregistreze și să raporteze incidentele critice de siguranță în 72 de ore</h2>
           <div class="sec">
@@ -6390,8 +6424,8 @@
 
       <footer>
         <div class="rule" aria-hidden="true"></div>
-        <p>Sfârșitul ediției de azi · Ultima actualizare: miercuri, 11 noiembrie 2026, 18:00<br />Monitorizarea rulează la circa 3 ore, în fereastra L–V 06:00–22:00 · S–D 07:30–22:00 — dă refresh pentru noutăți.</p>
-        <a class="to-top" href="#stire-167">↑ Înapoi la cea mai nouă știre</a>
+        <p>Sfârșitul ediției de azi · Ultima actualizare: miercuri, 11 noiembrie 2026, 19:00<br />Monitorizarea rulează la circa 3 ore, în fereastra L–V 06:00–22:00 · S–D 07:30–22:00 — dă refresh pentru noutăți.</p>
+        <a class="to-top" href="#stire-169">↑ Înapoi la cea mai nouă știre</a>
       </footer>
     </div>
 
