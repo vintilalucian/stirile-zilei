@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="color-scheme" content="light dark" />
-    <meta name="tirile-versiune" content="2026-11-11T09:00:00+01:00|3|amber" />
+    <meta name="tirile-versiune" content="2026-11-11T10:00:00+01:00|4|amber" />
     <link rel="icon" href="data:," />
     <title>Știrile zilei</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -699,9 +699,9 @@
     <div class="topbar">
       <div class="topbar-inner">
         <span class="dot" aria-hidden="true"></span>
-        <span><strong>Miercuri, 11 noiembrie 2026</strong> · actualizat la <strong>09:00</strong></span>
+        <span><strong>Miercuri, 11 noiembrie 2026</strong> · actualizat la <strong>10:00</strong></span>
         <span aria-hidden="true">·</span>
-        <span>3 știri azi</span>
+        <span>4 știri azi</span>
         <span class="spacer"></span>
         <button class="refresh-btn" type="button" id="refreshBtn" aria-label="Reîmprospătează pagina">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg>
@@ -739,7 +739,7 @@
 
       <!-- Chenar permanent: știrea cea mai importantă a zilei — sub fereastra
            „Ultimele știri", ÎNAINTEA dashboardului, vizibilă din prima, fără scroll.
-           Nivelul de azi: GALBEN (sev-amber) — de urmărit: legea RAISE din New York intră în aplicare — știrea marcată „Știrea zilei" (singura cu relevanță directă pe terenul lui profesional de incident management), deci chenarul zilei la egalitate de severitate; mai există alte două știri galbene azi (plata integrală a Șantierului Naval Mangalia de către Rheinmetall, de la 07:00, și scurgerile de date Grok Build, de la 09:00), de aceea apare mențiunea despre celelalte știri cu aceeași severitate, cu filtru pe galben la „apasă aici".
+           Nivelul de azi: GALBEN (sev-amber) — de urmărit: legea RAISE din New York intră în aplicare — știrea marcată „Știrea zilei" (singura cu relevanță directă pe terenul lui profesional de incident management), deci chenarul zilei la egalitate de severitate; mai există alte trei știri galbene azi (plata integrală a Șantierului Naval Mangalia de către Rheinmetall, de la 07:00, scurgerile de date Grok Build, de la 09:00, și prima zi a negocierilor de pace de la Abu Dhabi, de la 10:00), de aceea apare mențiunea despre celelalte știri cu aceeași severitate, cu filtru pe galben la „apasă aici".
            Chenarul rămâne în afara logicii de filtrare: vizibil indiferent de filtrul de categorie. -->
       <section class="spot sev-amber" aria-label="Știrea cea mai importantă a zilei">
         <div class="spot-head">
@@ -768,7 +768,7 @@
       <section class="dashboard" aria-label="Panou de ansamblu">
         <div class="dash-head">
           <span class="dash-title">Dashboard · Azi</span>
-          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 09:00</span>
+          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 10:00</span>
           <span class="dash-meta">Fereastră monitorizare <strong>L–V 06:00–22:00 · S–D 07:30–22:00</strong> · pas ~3 ore</span>
         </div>
 
@@ -819,7 +819,7 @@
       </section>
 
       <div class="filter-status" aria-live="polite">
-        <span class="filter-label">Se afișează: <strong>Toate categoriile — 3 din 3 știri</strong></span>
+        <span class="filter-label">Se afișează: <strong>Toate categoriile — 4 din 4 știri</strong></span>
         <button class="filter-reset" type="button" hidden>Resetează filtrul</button>
       </div>
 
@@ -849,7 +849,51 @@
       <p class="empty">Nicio știre în această categorie azi.</p>
 
       <main>
-        <!-- 1 · 11 nov · 09:00 -->
+        <!-- 1 · 11 nov · 10:00 -->
+        <article id="stire-156" data-cats="securitate" data-sev="amber" data-subiect="negocieri de pace Abu Dhabi">
+          <div class="a-meta">
+            <span class="a-time">11 nov · 10:00</span>
+            <span class="a-cat">Securitate &amp; NATO</span>
+            <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
+            <a class="cont-pill" href="#stire-132" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
+            <span class="subj-pill">negocieri de pace Abu Dhabi</span>
+            <span class="a-num">#1 / 4</span>
+          </div>
+          <h2>Prima zi a negocierilor de pace de la Abu Dhabi s-a încheiat fără acord; Zelenski cere Europei un reprezentant unic până la sfârșitul lui noiembrie</h2>
+          <div class="followup">
+            <span class="tag">Urmare la</span>
+            <p><a href="#stire-132">„Încep azi negocierile de la Abu Dhabi între Ucraina și Rusia — primele discuții trilaterale din februarie, cu Europa la ușă" — marți, 10 noiembrie 2026, ora 06:00.</a></p>
+          </div>
+          <div class="sec">
+            <p class="sec-label">Ce s-a întâmplat</p>
+            <p>Marți, 10 noiembrie, la Abu Dhabi a avut loc prima zi a negocierilor trilaterale SUA–Rusia–Ucraina, primele discuții directe de acest fel din februarie, mediate de emiarii americani Steve Witkoff și Jared Kushner. Delegațiile, conduse de Rustem Umerov (Ucraina) și Vladimir Medinski (Rusia), au discutat aproximativ patru ore, cu accent pe pași umanitari și garanții de securitate, fără să anunțe vreun acord oficial. Discuțiile continuă miercuri, 11 noiembrie. În paralel, președintele Volodimir Zelenski, aflat marți în vizită în Danemarca, a cerut țărilor europene să decidă până la sfârșitul lui noiembrie cine le va reprezenta la negocierile de pace — de preferință până la reuniunea Coaliției de Voință din 19 noiembrie, în Germania.</p>
+          </div>
+          <div class="sec">
+            <p class="sec-label">De ce contează</p>
+            <p>Reluarea negocierilor directe după nouă luni e primul canal diplomatic funcțional SUA–Rusia–Ucraina din februarie, iar garanțiile de securitate post-război — subiectul central al discuțiilor — sunt exact cele care vor modela postura NATO pe flancul estic și în Marea Neagră. Faptul că Europa stă deocamdată doar în consultări separate, nu la masa trilaterală, iar Zelenski cere acum un reprezentant european unic, arată că arhitectura de securitate europeană se negociază în paralel cu soarta Ucrainei. Prima zi fără rezultat oficial înseamnă proces reluat, nu progres — de urmărit ce iese din ziua a doua și din summitul Comunității Politice Europene de mâine, 12 noiembrie, de la Dublin.</p>
+          </div>
+          <div class="verify">
+            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
+            <p>Verdict: confirmat. AP (11 nov 2026) — deschiderea discuțiilor, prima sesiune de circa patru ore, reluarea miercuri și faptul că e prima întâlnire de acest fel din februarie. NY Post (10 nov 2026) — Zelenski numește discuțiile „constructive și destul de substanțiale", iar secretarul de stat Marco Rubio prima zi „foarte productivă". France 24 și NPR (10 nov 2026, via Khabr) — prima întâlnire mediată de SUA din februarie, cu garanțiile de securitate în centru. Politico Europe (11 nov 2026, via Zot.news) și Newsmax (11 nov 2026) — Zelenski cere Europei un reprezentant până la sfârșitul lui noiembrie, ideal până la 19 noiembrie. Nuanță: un posibil schimb amplu de prizonieri, relatat de Ukrainska Pravda, rămâne neconfirmat oficial — niciuna dintre părți nu a anunțat un acord.</p>
+            <ul class="sources">
+              <li><a href="https://nypost.com/2026/11/10/us-news/ukraine-russia-peace-talks-were-constructive-and-quite-substantive-zelensky-says/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>NY Post — „Ukraine-Russia peace talks were ‘constructive and quite substantive,’ Zelensky says" (10 nov 2026)<span class="host">nypost.com</span></a></li>
+              <li><a href="https://nagalandpost.com/talks-on-russia-ukraine-war-begin-in-abu-dhabi/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>AP — „Talks on Russia-Ukraine war begin in Abu Dhabi" (11 nov 2026, via Nagaland Post)<span class="host">nagalandpost.com</span></a></li>
+              <li><a href="https://khabr.pk/en/news/us-russia-ukraine-trilateral-talks-abu-dhabi" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Khabr — „US, Russia and Ukraine open trilateral peace talks in Abu Dhabi" (10 nov 2026; citează France 24 și NPR)<span class="host">khabr.pk</span></a></li>
+              <li><a href="https://zot.news/article/zelenskyy-urges-europe-pick-peace-talk-representative-30g6r" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Zot.news — „Zelenskyy urges Europe to pick a peace-talk representative in November" (11 nov 2026; sursa: Politico Europe)<span class="host">zot.news</span></a></li>
+              <li><a href="https://www.europesays.com/europe/178940/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Europe Says / Newsmax — „Zelenskyy Urges Europe to Name Peace Envoy" (11 nov 2026)<span class="host">europesays.com</span></a></li>
+            </ul>
+          </div>
+          <div class="opposing">
+            <p class="sec-label">Tabăra adversă</p>
+            <p>Rusia, prin delegația condusă de Vladimir Medinski (poziția relatată de AP) — se opune participării europene la negocierile trilaterale, considerând că reprezentanții UE s-ar putea alătura abia într-o etapă ulterioară. (<a href="https://nagalandpost.com/talks-on-russia-ukraine-war-begin-in-abu-dhabi/" target="_blank" rel="noopener">nagalandpost.com</a>)</p>
+          </div>
+          <div class="impact">
+            <span class="badge">Impact direct</span>
+            <p>Impact direct minim azi — negocierile nu schimbă nimic concret pentru familie sau pentru programul lui (cursul de la Haga, 11–13 noiembrie, continuă). Relevanță de context ridicată: dacă procesul de la Abu Dhabi prinde contur, garanțiile de securitate și locul Europei la masă vor defini mediul operațional NATO din lunile următoare. De urmărit: ziua a doua a discuțiilor, azi, și reuniunea Coaliției de Voință din 19 noiembrie.</p>
+          </div>
+        </article>
+
+<!-- 2 · 11 nov · 09:00 -->
         <article id="stire-155" data-cats="tech" data-sev="amber" data-subiect="scurgeri de date Grok Build">
           <div class="a-meta">
             <span class="a-time">11 nov · 09:00</span>
@@ -857,7 +901,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-135" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">scurgeri de date Grok Build</span>
-            <span class="a-num">#1 / 3</span>
+            <span class="a-num">#2 / 4</span>
           </div>
           <h2>Grok Build expune public 35.578 de aplicații construite cu AI: linkurile „secrete" erau găsibile de oricine, inclusiv 24 de aplicații interne ale SpaceXSI</h2>
           <div class="followup">
@@ -892,14 +936,14 @@
           </div>
         </article>
 
-        <!-- 2 · 11 nov · 07:00 -->
+        <!-- 3 · 11 nov · 07:00 -->
         <article id="stire-154" data-cats="securitate romania" data-sev="amber" data-subiect="șantier naval Mangalia">
           <div class="a-meta">
             <span class="a-time">11 nov · 07:00</span>
             <span class="a-cat">Securitate &amp; NATO · România</span>
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="subj-pill">șantier naval Mangalia</span>
-            <span class="a-num">#2 / 3</span>
+            <span class="a-num">#3 / 4</span>
           </div>
           <h2>Rheinmetall a plătit integral cele 138 de milioane de euro pentru Șantierul Naval Mangalia și a semnat contractul de vânzare-cumpărare</h2>
           <div class="sec">
@@ -931,7 +975,7 @@
           </div>
         </article>
 
-        <!-- 3 · 11 nov · 06:00 -->
+        <!-- 4 · 11 nov · 06:00 -->
         <article id="stire-153" data-cats="tech" data-sev="amber" data-subiect="legea RAISE, New York">
           <div class="a-meta">
             <span class="a-time">11 nov · 06:00</span>
@@ -939,7 +983,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="spot-tag">Știrea zilei</span>
             <span class="subj-pill">legea RAISE, New York</span>
-            <span class="a-num">#3 / 3</span>
+            <span class="a-num">#4 / 4</span>
           </div>
           <h2>Legea RAISE din New York intră în aplicare: OpenAI și Anthropic trebuie să se înregistreze și să raporteze incidentele critice de siguranță în 72 de ore</h2>
           <div class="sec">
@@ -5884,8 +5928,8 @@
 
       <footer>
         <div class="rule" aria-hidden="true"></div>
-        <p>Sfârșitul ediției de azi · Ultima actualizare: miercuri, 11 noiembrie 2026, 09:00<br />Monitorizarea rulează la circa 3 ore, în fereastra L–V 06:00–22:00 · S–D 07:30–22:00 — dă refresh pentru noutăți.</p>
-        <a class="to-top" href="#stire-155">↑ Înapoi la cea mai nouă știre</a>
+        <p>Sfârșitul ediției de azi · Ultima actualizare: miercuri, 11 noiembrie 2026, 10:00<br />Monitorizarea rulează la circa 3 ore, în fereastra L–V 06:00–22:00 · S–D 07:30–22:00 — dă refresh pentru noutăți.</p>
+        <a class="to-top" href="#stire-156">↑ Înapoi la cea mai nouă știre</a>
       </footer>
     </div>
 
