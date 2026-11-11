@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="color-scheme" content="light dark" />
-    <meta name="tirile-versiune" content="2026-11-11T11:00:00+01:00|6|amber" />
+    <meta name="tirile-versiune" content="2026-11-11T12:00:00+01:00|8|amber" />
     <link rel="icon" href="data:," />
     <title>Știrile zilei</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -699,9 +699,9 @@
     <div class="topbar">
       <div class="topbar-inner">
         <span class="dot" aria-hidden="true"></span>
-        <span><strong>Miercuri, 11 noiembrie 2026</strong> · actualizat la <strong>11:00</strong></span>
+        <span><strong>Miercuri, 11 noiembrie 2026</strong> · actualizat la <strong>12:00</strong></span>
         <span aria-hidden="true">·</span>
-        <span>6 știri azi</span>
+        <span>8 știri azi</span>
         <span class="spacer"></span>
         <button class="refresh-btn" type="button" id="refreshBtn" aria-label="Reîmprospătează pagina">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg>
@@ -739,7 +739,7 @@
 
       <!-- Chenar permanent: știrea cea mai importantă a zilei — sub fereastra
            „Ultimele știri", ÎNAINTEA dashboardului, vizibilă din prima, fără scroll.
-           Nivelul de azi: GALBEN (sev-amber) — de urmărit: legea RAISE din New York intră în aplicare — știrea marcată „Știrea zilei" (singura cu relevanță directă pe terenul lui profesional de incident management), deci chenarul zilei la egalitate de severitate; mai există alte patru știri galbene azi (plata integrală a Șantierului Naval Mangalia de către Rheinmetall, de la 07:00, scurgerile de date Grok Build, de la 09:00, prima zi a negocierilor de pace de la Abu Dhabi, de la 10:00, și arestarea pentru spionaj a unui soldat american din corpul NATO ARRC, de la 11:00), de aceea apare mențiunea despre celelalte știri cu aceeași severitate, cu filtru pe galben la „apasă aici".
+           Nivelul de azi: GALBEN (sev-amber) — de urmărit: legea RAISE din New York intră în aplicare — știrea marcată „Știrea zilei" (singura cu relevanță directă pe terenul lui profesional de incident management), deci chenarul zilei la egalitate de severitate; mai există alte cinci știri galbene azi (plata integrală a Șantierului Naval Mangalia de către Rheinmetall, de la 07:00, scurgerile de date Grok Build, de la 09:00, prima zi a negocierilor de pace de la Abu Dhabi, de la 10:00, arestarea pentru spionaj a unui soldat american din corpul NATO ARRC, de la 11:00, și împărțirea conducerilor TVR, Radio România și a șefiei interimare a Curții de Conturi între PSD și AUR, de la 12:00), de aceea apare mențiunea despre celelalte știri cu aceeași severitate, cu filtru pe galben la „apasă aici".
            Chenarul rămâne în afara logicii de filtrare: vizibil indiferent de filtrul de categorie. -->
       <section class="spot sev-amber" aria-label="Știrea cea mai importantă a zilei">
         <div class="spot-head">
@@ -768,30 +768,30 @@
       <section class="dashboard" aria-label="Panou de ansamblu">
         <div class="dash-head">
           <span class="dash-title">Dashboard · Azi</span>
-          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 11:00</span>
+          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 12:00</span>
           <span class="dash-meta">Fereastră monitorizare <strong>L–V 06:00–22:00 · S–D 07:30–22:00</strong> · pas ~3 ore</span>
         </div>
 
         <div class="kpi-grid five" role="group" aria-label="Filtrează după categorie — apasă pe un tile">
           <button class="kpi" type="button" data-filter="toate" aria-pressed="true">
             <span class="kpi-top"><span class="kpi-label">Toate știrile</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">3</span>
-            <span class="kpi-sub">știri verificate azi, în 3 rulări</span>
+            <span class="kpi-value">8</span>
+            <span class="kpi-sub">știri verificate azi, în 6 rulări</span>
             <span class="kpi-bar" aria-hidden="true"><i style="width:100%"></i></span>
             <span class="kpi-hint">Apasă pentru toate</span>
           </button>
           <button class="kpi" type="button" data-filter="securitate" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">Securitate &amp; NATO</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">1</span>
-            <span class="kpi-sub">șantier naval Mangalia</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:33%"></i></span>
+            <span class="kpi-value">4</span>
+            <span class="kpi-sub">lovire de precizie NATO · soldat american arestat pentru spionaj · negocieri de pace Abu Dhabi · șantier naval Mangalia</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:50%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="romania" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">România</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">1</span>
-            <span class="kpi-sub">șantier naval Mangalia</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:33%"></i></span>
+            <span class="kpi-value">2</span>
+            <span class="kpi-sub">PSD–AUR își împart instituțiile statului · șantier naval Mangalia</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:25%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="belgia" aria-pressed="false">
@@ -803,9 +803,9 @@
           </button>
           <button class="kpi" type="button" data-filter="tech" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">Tech &amp; AI</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">2</span>
-            <span class="kpi-sub">scurgeri de date Grok Build · legea RAISE, New York</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:67%"></i></span>
+            <span class="kpi-value">3</span>
+            <span class="kpi-sub">Gemini 4 Carbon, acces public · scurgeri de date Grok Build · legea RAISE, New York</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:38%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
         </div>
@@ -819,7 +819,7 @@
       </section>
 
       <div class="filter-status" aria-live="polite">
-        <span class="filter-label">Se afișează: <strong>Toate categoriile — 6 din 6 știri</strong></span>
+        <span class="filter-label">Se afișează: <strong>Toate categoriile — 8 din 8 știri</strong></span>
         <button class="filter-reset" type="button" hidden>Resetează filtrul</button>
       </div>
 
@@ -849,14 +849,84 @@
       <p class="empty">Nicio știre în această categorie azi.</p>
 
       <main>
-        <!-- 1 · 11 nov · 11:00 -->
+        <!-- 1 · 11 nov · 12:00 -->
+        <article id="stire-159" data-cats="romania" data-sev="amber" data-subiect="PSD–AUR își împart instituțiile statului">
+          <div class="a-meta">
+            <span class="a-time">11 nov · 12:00</span>
+            <span class="a-cat">România</span>
+            <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
+            <span class="subj-pill">PSD–AUR își împart instituțiile statului</span>
+            <span class="a-num">#1 / 8</span>
+          </div>
+          <h2>PSD și AUR și-au împărțit conducerile TVR, Radio România și șefia interimară a Curții de Conturi — voturi în Parlament, marți 10 noiembrie</h2>
+          <div class="sec">
+            <p class="sec-label">Ce s-a întâmplat</p>
+            <p>Marți, 10 noiembrie, plenul reunit al Camerei Deputaților și Senatului a validat noile Consilii de Administrație ale TVR și Radio România și a desemnat conducerile instituțiilor: Sorina Matei, susținută de AUR, rămâne la conducerea Televiziunii Române cu mandat plin (239 de voturi pentru, 78 împotrivă), iar Răzvan Dincă, propus de PSD, conduce Radioul Public (252 de voturi pentru, 65 împotrivă). În aceeași ședință, Parlamentul l-a desemnat pe Sorin Lazăr, fost deputat PSD, să exercite atribuțiile de președinte interimar al Curții de Conturi (248 de voturi pentru, 54 împotrivă, 48 de abțineri). Tot marți, cele două partide au respins propunerea PNL de a-l înlocui pe Răzvan Prișcă cu Florin Roman în comisia parlamentară de control a activității SRI, iar în Camera Deputaților Ioana Bran-Voinea a fost desemnată secretar general și Oana-Elena Pintilei secretar general adjunct.</p>
+          </div>
+          <div class="sec">
+            <p class="sec-label">De ce contează</p>
+            <p>PSD și AUR votează împreună controlul instituțiilor statului — televiziunea publică, radioul public și Curtea de Conturi, instituția care verifică cheltuirea banilor publici — deși ambele partide neagă public existența unei alianțe. Pentru contextul lui din România (investiții pe piața românească, apartament în București, familie în Giurgiu, vacanța de Crăciun 22–31 decembrie), aritmetica parlamentară decide stabilitatea guvernului și direcția fiscală: de urmărit dacă voturile comune PSD–AUR continuă la rectificarea bugetară și la bugetul pe 2027.</p>
+          </div>
+          <div class="verify">
+            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
+            <p>Verdict: confirmat. G4Media (originea relatării, 10–11 nov 2026) — numirile și voturile. Mediafax (10 nov 2026) — 248/54/48 pentru Sorin Lazăr. Digi24 (10 nov 2026) — susținerile Sorina Matei / Răzvan Dincă. Știrile ProTV (10 nov 2026) și Gândul (10 nov 2026) relatează aceleași numiri. Libertatea (10 nov 2026, via Știri Clare) — „AUR a primit posturi mai bine cotate decât PSD”.</p>
+            <ul class="sources">
+              <li><a href="https://rotimes.ro/article/2026-11-11-psd-and-aur-coordinate-key-state-appointments" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>RO Times — „PSD și AUR au coordonat numiri cheie în stat” (11 nov 2026)<span class="host">rotimes.ro</span></a></li>
+              <li><a href="https://stiripefoc.ro/stiri/mircea-abrudean-pnl-diferentele-dintre-psd-si-aur-par-sa-dispara-cand-e-vorba-de-controlul-institutiilor-statului" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Știri pe Foc — „Mircea Abrudean: PSD și AUR cooperează pentru controlul instituțiilor statului” (10 nov 2026)<span class="host">stiripefoc.ro</span></a></li>
+              <li><a href="https://semnal.eu/ro/politica/2026/11/10/parlamentul-a-votat-noile-ca-de-la-tvr-si-radio-romania/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Semnal — „Parlamentul a votat noile CA de la TVR și Radio România” (10 nov 2026)<span class="host">semnal.eu</span></a></li>
+            </ul>
+          </div>
+          <div class="opposing">
+            <p class="sec-label">Tabăra adversă</p>
+            <p>Mircea Abrudean, președintele Senatului (PNL) — „PSD și AUR se ceartă în public, dar se înțeleg foarte bine când trebuie să decidă cine ocupă funcții importante în instituțiile statului” (Facebook, 10 nov 2026, citat de <a href="https://stiripefoc.ro/stiri/mircea-abrudean-pnl-diferentele-dintre-psd-si-aur-par-sa-dispara-cand-e-vorba-de-controlul-institutiilor-statului" target="_blank" rel="noopener">Știri pe Foc</a>). Raluca Turcan, deputat PNL — susține că există un protocol scris, secret, între PSD și AUR și cere prezentarea lui (<a href="https://realitateapress.ro/blaturi-psd-aur-in-serie-sorina-matei-ia-tvr-ul-clientul-lui-ciolacu-sefia-curtii-de-conturi-o-traseista-psd-aur-secretar-general-adjunct-al-parlamentului/" target="_blank" rel="noopener">Realitatea Press, 11 nov 2026</a>).</p>
+          </div>
+          <div class="impact">
+            <span class="badge">Impact direct</span>
+            <p>Impact direct: minim azi — nicio acțiune imediată; relevanță de context ridicată pentru România. De urmărit: dacă alianța de vot PSD–AUR se extinde la voturile legislative (buget, rectificare) și reacția guvernului.</p>
+          </div>
+        </article>
+
+        <!-- 2 · 11 nov · 12:00 -->
+        <article id="stire-160" data-cats="securitate" data-sev="green" data-subiect="lovire de precizie NATO">
+          <div class="a-meta">
+            <span class="a-time">11 nov · 12:00</span>
+            <span class="a-cat">Securitate &amp; NATO</span>
+            <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
+            <span class="subj-pill">lovire de precizie NATO</span>
+            <span class="a-num">#2 / 8</span>
+          </div>
+          <h2>NATO discută capabilitățile de lovire de precizie la mare adâncime: de la rachete de croazieră la drone și sisteme maritime</h2>
+          <div class="sec">
+            <p class="sec-label">Ce s-a întâmplat</p>
+            <p>Marți, 10 noiembrie, NATO, aliați, companii de apărare și start-up-uri s-au întâlnit la Bruxelles pentru a discuta cum se livrează cel mai bine capabilitățile de lovire de precizie la mare adâncime necesare descurajării și apărării. Evenimentul continuă semnalele de cerere agregată publicate la Forumul Industriei de Apărare al Summitului NATO de la Ankara, pe 7 iulie; livrarea acestor capabilități e unul dintre cele cinci semnale prioritare agregate ale NATO. Pentru o descurajare credibilă, aliații au nevoie de un mix adecvat de capabilități — de la rachete de croazieră de vârf la drone și sisteme maritime de lovire. Inițiativele multinaționale citate sunt proiectele Deep Strike Drone și Ground-Based Precision Strike Capabilities.</p>
+          </div>
+          <div class="sec">
+            <p class="sec-label">De ce contează</p>
+            <p>Descurajarea NATO trece de la declarații la cerere industrială concretă — exact pe terenul lui profesional de incident management într-un mediu NATO, unde capabilitățile noi înseamnă procese, fluxuri de date și cerințe de raportare noi. Context: The Wall Street Journal (3 nov 2026) a relatat că NATO elaborează planuri de răspuns la un atac cu lovituri convenționale adânc în teritoriul Rusiei, iar IISS (5 nov 2026) a notat că inițiativa europeană ELSA a șase state a trecut din planificare în implementare. Nuanță importantă din relatarea WSJ: planificarea militară nu înseamnă aprobare politică automată — orice lovitură reală ar cere autorizare politică separată din partea guvernelor aliate.</p>
+          </div>
+          <div class="verify">
+            <p class="sec-label">Verificare <span class="status">Sursă primară</span></p>
+            <p>Verdict: sursă primară. NATO (10 nov 2026) — anunțul propriu, sursă primară a evenimentului. Bytes Europe (11 nov 2026) republică comunicatul NATO — republicarea aceleiași surse nu e confirmare independentă. Context separat, nu confirmare a evenimentului: The Wall Street Journal (3 nov 2026) — planurile de lovire adâncă; IISS (5 nov 2026) — ELSA în implementare.</p>
+            <ul class="sources">
+              <li><a href="https://www.nato.int/en/news-and-events/articles/news/2026/11/10/nato-discusses-deep-precision-strike-capabilities-for-deterrence-and-defence" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>NATO — „NATO discusses deep precision strike capabilities for deterrence and defence” (10 nov 2026)<span class="host">nato.int</span></a></li>
+              <li><a href="https://www.byteseu.com/2513232/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Bytes Europe — republicarea comunicatului NATO (11 nov 2026)<span class="host">byteseu.com</span></a></li>
+              <li><a href="https://www.europesays.com/russia/85075/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Europe Says — „NATO Drafts Deep-Strike Plan to Hit Russian Bases and Supply Lines if Moscow Attacks” (context WSJ, 3 nov 2026)<span class="host">europesays.com</span></a></li>
+            </ul>
+          </div>
+          <div class="impact">
+            <span class="badge">Impact direct</span>
+            <p>Impact direct: minim azi — nicio acțiune imediată; relevanță profesională de context. De urmărit: cerințele noi de capabilități și procese în agențiile NATO și eventuale ajustări de fluxuri operaționale.</p>
+          </div>
+        </article>
+
+        <!-- 3 · 11 nov · 11:00 -->
         <article id="stire-157" data-cats="securitate" data-sev="amber" data-subiect="soldat american arestat pentru spionaj">
           <div class="a-meta">
             <span class="a-time">11 nov · 11:00</span>
             <span class="a-cat">Securitate &amp; NATO</span>
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="subj-pill">soldat american arestat pentru spionaj</span>
-            <span class="a-num">#1 / 6</span>
+            <span class="a-num">#3 / 8</span>
           </div>
           <h2>Soldat american din corpul NATO ARRC, arestat în Marea Britanie sub suspiciunea de spionaj pentru Rusia</h2>
           <div class="sec">
@@ -886,14 +956,14 @@
           </div>
         </article>
 
-        <!-- 2 · 11 nov · 11:00 -->
+        <!-- 4 · 11 nov · 11:00 -->
         <article id="stire-158" data-cats="tech" data-sev="green" data-subiect="Gemini 4 Carbon, acces public">
           <div class="a-meta">
             <span class="a-time">11 nov · 11:00</span>
             <span class="a-cat">Tech &amp; AI</span>
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <span class="subj-pill">Gemini 4 Carbon, acces public</span>
-            <span class="a-num">#2 / 6</span>
+            <span class="a-num">#4 / 8</span>
           </div>
           <h2>Gemini 4 Carbon, cel mai puternic model Google, e acum disponibil pentru dezvoltatori — cu funcția de echipă de agenți „swarm"</h2>
           <div class="sec">
@@ -924,7 +994,7 @@
           </div>
         </article>
 
-        <!-- 3 · 11 nov · 10:00 -->
+        <!-- 5 · 11 nov · 10:00 -->
         <article id="stire-156" data-cats="securitate" data-sev="amber" data-subiect="negocieri de pace Abu Dhabi">
           <div class="a-meta">
             <span class="a-time">11 nov · 10:00</span>
@@ -932,7 +1002,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-132" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">negocieri de pace Abu Dhabi</span>
-            <span class="a-num">#3 / 6</span>
+            <span class="a-num">#5 / 8</span>
           </div>
           <h2>Prima zi a negocierilor de pace de la Abu Dhabi s-a încheiat fără acord; Zelenski cere Europei un reprezentant unic până la sfârșitul lui noiembrie</h2>
           <div class="followup">
@@ -968,7 +1038,7 @@
           </div>
         </article>
 
-<!-- 4 · 11 nov · 09:00 -->
+<!-- 6 · 11 nov · 09:00 -->
         <article id="stire-155" data-cats="tech" data-sev="amber" data-subiect="scurgeri de date Grok Build">
           <div class="a-meta">
             <span class="a-time">11 nov · 09:00</span>
@@ -976,7 +1046,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-135" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">scurgeri de date Grok Build</span>
-            <span class="a-num">#4 / 6</span>
+            <span class="a-num">#6 / 8</span>
           </div>
           <h2>Grok Build expune public 35.578 de aplicații construite cu AI: linkurile „secrete" erau găsibile de oricine, inclusiv 24 de aplicații interne ale SpaceXSI</h2>
           <div class="followup">
@@ -1011,14 +1081,14 @@
           </div>
         </article>
 
-        <!-- 5 · 11 nov · 07:00 -->
+        <!-- 7 · 11 nov · 07:00 -->
         <article id="stire-154" data-cats="securitate romania" data-sev="amber" data-subiect="șantier naval Mangalia">
           <div class="a-meta">
             <span class="a-time">11 nov · 07:00</span>
             <span class="a-cat">Securitate &amp; NATO · România</span>
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="subj-pill">șantier naval Mangalia</span>
-            <span class="a-num">#5 / 6</span>
+            <span class="a-num">#7 / 8</span>
           </div>
           <h2>Rheinmetall a plătit integral cele 138 de milioane de euro pentru Șantierul Naval Mangalia și a semnat contractul de vânzare-cumpărare</h2>
           <div class="sec">
@@ -1050,7 +1120,7 @@
           </div>
         </article>
 
-        <!-- 6 · 11 nov · 06:00 -->
+        <!-- 8 · 11 nov · 06:00 -->
         <article id="stire-153" data-cats="tech" data-sev="amber" data-subiect="legea RAISE, New York">
           <div class="a-meta">
             <span class="a-time">11 nov · 06:00</span>
@@ -1058,7 +1128,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="spot-tag">Știrea zilei</span>
             <span class="subj-pill">legea RAISE, New York</span>
-            <span class="a-num">#6 / 6</span>
+            <span class="a-num">#8 / 8</span>
           </div>
           <h2>Legea RAISE din New York intră în aplicare: OpenAI și Anthropic trebuie să se înregistreze și să raporteze incidentele critice de siguranță în 72 de ore</h2>
           <div class="sec">
@@ -6003,8 +6073,8 @@
 
       <footer>
         <div class="rule" aria-hidden="true"></div>
-        <p>Sfârșitul ediției de azi · Ultima actualizare: miercuri, 11 noiembrie 2026, 11:00<br />Monitorizarea rulează la circa 3 ore, în fereastra L–V 06:00–22:00 · S–D 07:30–22:00 — dă refresh pentru noutăți.</p>
-        <a class="to-top" href="#stire-156">↑ Înapoi la cea mai nouă știre</a>
+        <p>Sfârșitul ediției de azi · Ultima actualizare: miercuri, 11 noiembrie 2026, 12:00<br />Monitorizarea rulează la circa 3 ore, în fereastra L–V 06:00–22:00 · S–D 07:30–22:00 — dă refresh pentru noutăți.</p>
+        <a class="to-top" href="#stire-159">↑ Înapoi la cea mai nouă știre</a>
       </footer>
     </div>
 
