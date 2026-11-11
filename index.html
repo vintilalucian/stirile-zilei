@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="color-scheme" content="light dark" />
-    <meta name="tirile-versiune" content="2026-11-11T13:00:00+01:00|9|amber" />
+    <meta name="tirile-versiune" content="2026-11-11T14:00:00+01:00|10|amber" />
     <link rel="icon" href="data:," />
     <title>Știrile zilei</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -699,9 +699,9 @@
     <div class="topbar">
       <div class="topbar-inner">
         <span class="dot" aria-hidden="true"></span>
-        <span><strong>Miercuri, 11 noiembrie 2026</strong> · actualizat la <strong>13:00</strong></span>
+        <span><strong>Miercuri, 11 noiembrie 2026</strong> · actualizat la <strong>14:00</strong></span>
         <span aria-hidden="true">·</span>
-        <span>9 știri azi</span>
+        <span>10 știri azi</span>
         <span class="spacer"></span>
         <button class="refresh-btn" type="button" id="refreshBtn" aria-label="Reîmprospătează pagina">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg>
@@ -739,7 +739,7 @@
 
       <!-- Chenar permanent: știrea cea mai importantă a zilei — sub fereastra
            „Ultimele știri", ÎNAINTEA dashboardului, vizibilă din prima, fără scroll.
-           Nivelul de azi: GALBEN (sev-amber) — de urmărit: legea RAISE din New York intră în aplicare — știrea marcată „Știrea zilei" (singura cu relevanță directă pe terenul lui profesional de incident management), deci chenarul zilei la egalitate de severitate; mai există alte șase știri galbene azi (plata integrală a Șantierului Naval Mangalia de către Rheinmetall, de la 07:00, scurgerile de date Grok Build, de la 09:00, prima zi a negocierilor de pace de la Abu Dhabi, de la 10:00, arestarea pentru spionaj a unui soldat american din corpul NATO ARRC, de la 11:00, împărțirea conducerilor TVR, Radio România și a șefiei interimare a Curții de Conturi între PSD și AUR, de la 12:00, și propunerea ca NATO să renunțe la forțele de rezervă pentru misiuni externe, de la 13:00), de aceea apare mențiunea despre celelalte știri cu aceeași severitate, cu filtru pe galben la „apasă aici".
+           Nivelul de azi: GALBEN (sev-amber) — de urmărit: spionajul cibernetic Turla (FSB) asupra emailurilor despre NATO și UE ale unei instituții guvernamentale din România — știrea cu severitatea maximă a zilei (galben, niciun roșu azi), marcată „Știrea zilei" și direct pe terenul profesional al cititorului, ca IT incident Manager, deci chenarul zilei; mai există alte șapte știri galbene azi (legea RAISE din New York, de la 06:00, plata integrală a Șantierului Naval Mangalia de către Rheinmetall, de la 07:00, scurgerile de date Grok Build, de la 09:00, prima zi a negocierilor de pace de la Abu Dhabi, de la 10:00, arestarea pentru spionaj a unui soldat american din corpul NATO ARRC, de la 11:00, împărțirea conducerilor TVR, Radio România și a șefiei interimare a Curții de Conturi între PSD și AUR, de la 12:00, și propunerea ca NATO să renunțe la forțele de rezervă pentru misiuni externe, de la 13:00), de aceea apare mențiunea despre celelalte știri cu aceeași severitate, cu filtru pe galben la „apasă aici".
            Chenarul rămâne în afara logicii de filtrare: vizibil indiferent de filtrul de categorie. -->
       <section class="spot sev-amber" aria-label="Știrea cea mai importantă a zilei">
         <div class="spot-head">
@@ -747,15 +747,15 @@
             <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13 2 4.5 13.5H11L9.5 22 19 10h-6.5L13 2z"/></svg>
             Știrea zilei · Atenție rapidă
           </span>
-          <span class="spot-time">11 nov · 06:00</span>
+          <span class="spot-time">11 nov · 14:00</span>
           <span class="spot-pill">Nivel galben — de urmărit</span>
         </div>
-        <h2 class="spot-title">Legea RAISE din New York intră în aplicare: OpenAI și Anthropic trebuie să se înregistreze și să raporteze incidentele critice de siguranță în 72 de ore</h2>
-        <p class="spot-why"><strong>De ce e în față:</strong> prima reglementare care impune raportarea incidentelor AI în 72 de ore — direct pe terenul lui profesional de incident management.</p>
-        <p class="spot-lead">Marți, 10 noiembrie, statul New York a deschis portalul de înregistrare RAISE, prin care marii dezvoltatori de modele AI de frontieră — între care OpenAI și Anthropic — trebuie să se înregistreze până la 1 ianuarie 2027, când legea intră în vigoare. De atunci, dezvoltatorii vizați trebuie să publice cadre de siguranță și rapoarte de transparență a modelelor și să raporteze incidentele critice de siguranță în 72 de ore.</p>
+        <h2 class="spot-title">Hackeri ruși (Turla, legată de FSB) au spionat emailuri despre NATO și UE de pe serverele unei instituții guvernamentale din România</h2>
+        <p class="spot-why"><strong>De ce e în față:</strong> spionaj cibernetic rusesc vizând exact corespondența cu NATO și UE a unei instituții guvernamentale din România — direct pe terenul profesional al cititorului, ca IT incident Manager: un backdoor pasiv, fără server extern de comandă și control, ascuns în traficul legitim Exchange al victimei.</p>
+        <p class="spot-lead">ESET a dezvăluit pe 10 noiembrie că gruparea Turla, atribuită cu încredere ridicată serviciului rus FSB, a compromis pe 23 decembrie 2025 serverele Microsoft Exchange ale unei instituții guvernamentale din România, cu un set de instrumente nou, numit „Cereal". Modulul CerealBox copia selectiv emailuri cu atașamente .doc/.docx/.pdf către sau de la adrese NATO și UE, fără să întrerupă livrarea mesajelor.</p>
         <p class="spot-more" hidden><span class="spot-more-text"></span> <button class="spot-more-btn" type="button">apasă aici</button></p>
         <div class="spot-foot">
-          <a class="spot-link" href="#stire-153">Citește știrea completă ↓</a>
+          <a class="spot-link" href="#stire-162">Citește știrea completă ↓</a>
           <div class="sev-scale" role="img" aria-label="Scară de gravitate: verde — normal, galben — de urmărit, roșu — grav. Nivelul de azi: galben.">
             <span class="sev-item"><i class="sev-dot g" aria-hidden="true"></i>Verde · normal</span>
             <span class="sev-item on"><i class="sev-dot y" aria-hidden="true"></i>Galben · de urmărit</span>
@@ -768,30 +768,30 @@
       <section class="dashboard" aria-label="Panou de ansamblu">
         <div class="dash-head">
           <span class="dash-title">Dashboard · Azi</span>
-          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 13:00</span>
+          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 14:00</span>
           <span class="dash-meta">Fereastră monitorizare <strong>L–V 06:00–22:00 · S–D 07:30–22:00</strong> · pas ~3 ore</span>
         </div>
 
         <div class="kpi-grid five" role="group" aria-label="Filtrează după categorie — apasă pe un tile">
           <button class="kpi" type="button" data-filter="toate" aria-pressed="true">
             <span class="kpi-top"><span class="kpi-label">Toate știrile</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">9</span>
-            <span class="kpi-sub">știri verificate azi, în 7 rulări</span>
+            <span class="kpi-value">10</span>
+            <span class="kpi-sub">știri verificate azi, în 8 rulări</span>
             <span class="kpi-bar" aria-hidden="true"><i style="width:100%"></i></span>
             <span class="kpi-hint">Apasă pentru toate</span>
           </button>
           <button class="kpi" type="button" data-filter="securitate" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">Securitate &amp; NATO</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">5</span>
-            <span class="kpi-sub">NATO prioritizează lupta cu Rusia · lovire de precizie NATO · soldat american arestat pentru spionaj · negocieri de pace Abu Dhabi · șantier naval Mangalia</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:56%"></i></span>
+            <span class="kpi-value">6</span>
+            <span class="kpi-sub">spionaj cibernetic Turla în România · NATO prioritizează lupta cu Rusia · lovire de precizie NATO · soldat american arestat pentru spionaj · negocieri de pace Abu Dhabi · șantier naval Mangalia</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:60%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="romania" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">România</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">2</span>
-            <span class="kpi-sub">PSD–AUR își împart instituțiile statului · șantier naval Mangalia</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:22%"></i></span>
+            <span class="kpi-value">3</span>
+            <span class="kpi-sub">spionaj cibernetic Turla în România · PSD–AUR își împart instituțiile statului · șantier naval Mangalia</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:30%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="belgia" aria-pressed="false">
@@ -805,7 +805,7 @@
             <span class="kpi-top"><span class="kpi-label">Tech &amp; AI</span><span class="kpi-check" aria-hidden="true">✓</span></span>
             <span class="kpi-value">3</span>
             <span class="kpi-sub">Gemini 4 Carbon, acces public · scurgeri de date Grok Build · legea RAISE, New York</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:33%"></i></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:30%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
         </div>
@@ -819,7 +819,7 @@
       </section>
 
       <div class="filter-status" aria-live="polite">
-        <span class="filter-label">Se afișează: <strong>Toate categoriile — 9 din 9 știri</strong></span>
+        <span class="filter-label">Se afișează: <strong>Toate categoriile — 10 din 10 știri</strong></span>
         <button class="filter-reset" type="button" hidden>Resetează filtrul</button>
       </div>
 
@@ -849,14 +849,54 @@
       <p class="empty">Nicio știre în această categorie azi.</p>
 
       <main>
-        <!-- 1 · 11 nov · 13:00 -->
+        <!-- 1 · 11 nov · 14:00 -->
+        <article id="stire-162" data-cats="securitate romania" data-sev="amber" data-subiect="spionaj cibernetic Turla în România">
+          <div class="a-meta">
+            <span class="a-time">11 nov · 14:00</span>
+            <span class="a-cat">Securitate &amp; NATO · România</span>
+            <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
+            <span class="spot-tag">Știrea zilei</span>
+            <span class="subj-pill">spionaj cibernetic Turla în România</span>
+            <span class="a-num">#1 / 10</span>
+          </div>
+          <h2>Hackeri ruși (Turla, legată de FSB) au spionat emailuri despre NATO și UE de pe serverele unei instituții guvernamentale din România</h2>
+          <div class="sec">
+            <p class="sec-label">Ce s-a întâmplat</p>
+            <p>ESET a dezvăluit pe 10 noiembrie că gruparea Turla, atribuită cu încredere ridicată serviciului rus FSB, a compromis pe 23 decembrie 2025 serverele Microsoft Exchange ale unei instituții guvernamentale din România, cu un set de instrumente nou, numit „Cereal". Modulul CerealBox copia selectiv emailuri cu atașamente .doc/.docx/.pdf către sau de la adrese NATO și UE, fără să întrerupă livrarea mesajelor. Instrumentul fusese detectat prima dată pe 28 noiembrie 2025 la o instituție guvernamentală din Kazahstan.</p>
+          </div>
+          <div class="sec">
+            <p class="sec-label">De ce contează</p>
+            <p>Spionaj cibernetic rusesc vizând exact corespondența cu NATO și UE a unei instituții din România — direct pe terenul profesional al cititorului (IT incident Manager: gestionarea incidentelor, infrastructură guvernamentală de comunicații, amenințări hibride). Metoda e notabilă: fără server extern de comandă și control, backdoor pasiv ascuns în traficul legitim Exchange — colectarea de informații se ascunde în infrastructura victimei.</p>
+          </div>
+          <div class="verify">
+            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
+            <p>Verdict: confirmat. ESET — raportul din 10 noiembrie 2026, sursa primară a dezvăluirii. Defense News (sursa curatoriată), BleepingComputer, SecurityAffairs și The Arabian Post relatează independent aceeași compromitere a serverelor Exchange. SRI a confirmat pe 11 noiembrie că o instituție guvernamentală a fost vizată și că incidentul a fost remediat (relatarea Digitalio).</p>
+            <ul class="sources">
+              <li><a href="https://www.defensenews.com/global/europe/2026/11/11/romanian-servers-targeted-by-russian-hackers-to-scoop-up-emails-about-nato-eu/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Defense News (sursa curatoriată) — „Romanian servers targeted by Russian hackers to scoop up emails about NATO, EU" (11 nov 2026)<span class="host">defensenews.com</span></a></li>
+              <li><a href="https://www.bleepingcomputer.com/news/security/turla-hackers-use-new-ceral-malware-to-spy-on-govt-exchange-servers/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>BleepingComputer — „Turla hackers use new Ceral malware to spy on govt Exchange servers" (nov 2026)<span class="host">bleepingcomputer.com</span></a></li>
+              <li><a href="https://securityaffairs.com/202800/apt/russia-linked-apt-turla-turned-exchange-servers-into-their-own-control-room.html" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>SecurityAffairs — „Russia-linked APT Turla turned Exchange servers into their own control room" (nov 2026)<span class="host">securityaffairs.com</span></a></li>
+              <li><a href="https://thearabianpost.com/turla-malware-intercepts-nato-and-eu-government-correspondence/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>The Arabian Post — „Turla malware intercepts NATO and EU government correspondence" (nov 2026)<span class="host">thearabianpost.com</span></a></li>
+              <li><a href="https://digitalio.ro/2026/11/11/sri-confirma-un-atac-atribuit-gruparii-ruse-turla-asupra-unei-institutii-guvernamentale-nu-au-fost-identificate-date-sensibile-extrase/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Digitalio — „SRI confirmă un atac atribuit grupării ruse Turla asupra unei instituții guvernamentale" (11 nov 2026)<span class="host">digitalio.ro</span></a></li>
+            </ul>
+          </div>
+          <div class="opposing">
+            <p class="sec-label">Tabăra adversă</p>
+            <p>SRI (11 noiembrie): „nu au fost identificate exfiltrări de date sensibile" — ESET nu a stabilit câtă corespondență a fost efectiv obținută, iar instituția vizată nu a fost numită public. G4Media și EvZ scriu că instituția colabora cu NATO și Uniunea Europeană (informația apare în raportul ESET, nu într-un comunicat oficial al SRI). (<a href="https://digitalio.ro/2026/11/11/sri-confirma-un-atac-atribuit-gruparii-ruse-turla-asupra-unei-institutii-guvernamentale-nu-au-fost-identificate-date-sensibile-extrase/" target="_blank" rel="noopener">digitalio.ro</a>)</p>
+          </div>
+          <div class="impact">
+            <span class="badge">Impact direct</span>
+            <p>Impact direct minim azi — nicio acțiune imediată necesară. Relevanță profesională ridicată: incident de spionaj cibernetic pe infrastructură guvernamentală de comunicații, pe arcul amenințărilor hibride urmărit în pagină (simpozionul NATO de la București, alerta Bundeswehr, ransomware-ul Radiocom). Context util: suportul Microsoft pentru Exchange Server 2016 și 2019 s-a încheiat pe 14 octombrie 2025.</p>
+          </div>
+        </article>
+
+        <!-- 2 · 11 nov · 13:00 -->
         <article id="stire-161" data-cats="securitate" data-sev="amber" data-subiect="NATO prioritizează lupta cu Rusia">
           <div class="a-meta">
             <span class="a-time">11 nov · 13:00</span>
             <span class="a-cat">Securitate &amp; NATO</span>
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="subj-pill">NATO prioritizează lupta cu Rusia</span>
-            <span class="a-num">#1 / 9</span>
+            <span class="a-num">#2 / 10</span>
           </div>
           <h2>NATO vrea să prioritizeze lupta cu Rusia și să reducă forțele pentru misiuni în străinătate</h2>
           <div class="sec">
@@ -887,14 +927,14 @@
           </div>
         </article>
 
-<!-- 2 · 11 nov · 12:00 -->
+<!-- 3 · 11 nov · 12:00 -->
         <article id="stire-159" data-cats="romania" data-sev="amber" data-subiect="PSD–AUR își împart instituțiile statului">
           <div class="a-meta">
             <span class="a-time">11 nov · 12:00</span>
             <span class="a-cat">România</span>
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="subj-pill">PSD–AUR își împart instituțiile statului</span>
-            <span class="a-num">#2 / 9</span>
+            <span class="a-num">#3 / 10</span>
           </div>
           <h2>PSD și AUR și-au împărțit conducerile TVR, Radio România și șefia interimară a Curții de Conturi — voturi în Parlament, marți 10 noiembrie</h2>
           <div class="sec">
@@ -924,14 +964,14 @@
           </div>
         </article>
 
-        <!-- 3 · 11 nov · 12:00 -->
+        <!-- 4 · 11 nov · 12:00 -->
         <article id="stire-160" data-cats="securitate" data-sev="green" data-subiect="lovire de precizie NATO">
           <div class="a-meta">
             <span class="a-time">11 nov · 12:00</span>
             <span class="a-cat">Securitate &amp; NATO</span>
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <span class="subj-pill">lovire de precizie NATO</span>
-            <span class="a-num">#3 / 9</span>
+            <span class="a-num">#4 / 10</span>
           </div>
           <h2>NATO discută capabilitățile de lovire de precizie la mare adâncime: de la rachete de croazieră la drone și sisteme maritime</h2>
           <div class="sec">
@@ -957,14 +997,14 @@
           </div>
         </article>
 
-        <!-- 4 · 11 nov · 11:00 -->
+        <!-- 5 · 11 nov · 11:00 -->
         <article id="stire-157" data-cats="securitate" data-sev="amber" data-subiect="soldat american arestat pentru spionaj">
           <div class="a-meta">
             <span class="a-time">11 nov · 11:00</span>
             <span class="a-cat">Securitate &amp; NATO</span>
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="subj-pill">soldat american arestat pentru spionaj</span>
-            <span class="a-num">#4 / 9</span>
+            <span class="a-num">#5 / 10</span>
           </div>
           <h2>Soldat american din corpul NATO ARRC, arestat în Marea Britanie sub suspiciunea de spionaj pentru Rusia</h2>
           <div class="sec">
@@ -994,14 +1034,14 @@
           </div>
         </article>
 
-        <!-- 5 · 11 nov · 11:00 -->
+        <!-- 6 · 11 nov · 11:00 -->
         <article id="stire-158" data-cats="tech" data-sev="green" data-subiect="Gemini 4 Carbon, acces public">
           <div class="a-meta">
             <span class="a-time">11 nov · 11:00</span>
             <span class="a-cat">Tech &amp; AI</span>
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <span class="subj-pill">Gemini 4 Carbon, acces public</span>
-            <span class="a-num">#5 / 9</span>
+            <span class="a-num">#6 / 10</span>
           </div>
           <h2>Gemini 4 Carbon, cel mai puternic model Google, e acum disponibil pentru dezvoltatori — cu funcția de echipă de agenți „swarm"</h2>
           <div class="sec">
@@ -1032,7 +1072,7 @@
           </div>
         </article>
 
-        <!-- 6 · 11 nov · 10:00 -->
+        <!-- 7 · 11 nov · 10:00 -->
         <article id="stire-156" data-cats="securitate" data-sev="amber" data-subiect="negocieri de pace Abu Dhabi">
           <div class="a-meta">
             <span class="a-time">11 nov · 10:00</span>
@@ -1040,7 +1080,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-132" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">negocieri de pace Abu Dhabi</span>
-            <span class="a-num">#6 / 9</span>
+            <span class="a-num">#7 / 10</span>
           </div>
           <h2>Prima zi a negocierilor de pace de la Abu Dhabi s-a încheiat fără acord; Zelenski cere Europei un reprezentant unic până la sfârșitul lui noiembrie</h2>
           <div class="followup">
@@ -1076,7 +1116,7 @@
           </div>
         </article>
 
-<!-- 7 · 11 nov · 09:00 -->
+<!-- 8 · 11 nov · 09:00 -->
         <article id="stire-155" data-cats="tech" data-sev="amber" data-subiect="scurgeri de date Grok Build">
           <div class="a-meta">
             <span class="a-time">11 nov · 09:00</span>
@@ -1084,7 +1124,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-135" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">scurgeri de date Grok Build</span>
-            <span class="a-num">#7 / 9</span>
+            <span class="a-num">#8 / 10</span>
           </div>
           <h2>Grok Build expune public 35.578 de aplicații construite cu AI: linkurile „secrete" erau găsibile de oricine, inclusiv 24 de aplicații interne ale SpaceXSI</h2>
           <div class="followup">
@@ -1119,14 +1159,14 @@
           </div>
         </article>
 
-        <!-- 8 · 11 nov · 07:00 -->
+        <!-- 9 · 11 nov · 07:00 -->
         <article id="stire-154" data-cats="securitate romania" data-sev="amber" data-subiect="șantier naval Mangalia">
           <div class="a-meta">
             <span class="a-time">11 nov · 07:00</span>
             <span class="a-cat">Securitate &amp; NATO · România</span>
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="subj-pill">șantier naval Mangalia</span>
-            <span class="a-num">#8 / 9</span>
+            <span class="a-num">#9 / 10</span>
           </div>
           <h2>Rheinmetall a plătit integral cele 138 de milioane de euro pentru Șantierul Naval Mangalia și a semnat contractul de vânzare-cumpărare</h2>
           <div class="sec">
@@ -1158,15 +1198,14 @@
           </div>
         </article>
 
-        <!-- 9 · 11 nov · 06:00 -->
+        <!-- 10 · 11 nov · 06:00 -->
         <article id="stire-153" data-cats="tech" data-sev="amber" data-subiect="legea RAISE, New York">
           <div class="a-meta">
             <span class="a-time">11 nov · 06:00</span>
             <span class="a-cat">Tech &amp; AI</span>
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
-            <span class="spot-tag">Știrea zilei</span>
             <span class="subj-pill">legea RAISE, New York</span>
-            <span class="a-num">#9 / 9</span>
+            <span class="a-num">#10 / 10</span>
           </div>
           <h2>Legea RAISE din New York intră în aplicare: OpenAI și Anthropic trebuie să se înregistreze și să raporteze incidentele critice de siguranță în 72 de ore</h2>
           <div class="sec">
@@ -6111,8 +6150,8 @@
 
       <footer>
         <div class="rule" aria-hidden="true"></div>
-        <p>Sfârșitul ediției de azi · Ultima actualizare: miercuri, 11 noiembrie 2026, 13:00<br />Monitorizarea rulează la circa 3 ore, în fereastra L–V 06:00–22:00 · S–D 07:30–22:00 — dă refresh pentru noutăți.</p>
-        <a class="to-top" href="#stire-161">↑ Înapoi la cea mai nouă știre</a>
+        <p>Sfârșitul ediției de azi · Ultima actualizare: miercuri, 11 noiembrie 2026, 14:00<br />Monitorizarea rulează la circa 3 ore, în fereastra L–V 06:00–22:00 · S–D 07:30–22:00 — dă refresh pentru noutăți.</p>
+        <a class="to-top" href="#stire-162">↑ Înapoi la cea mai nouă știre</a>
       </footer>
     </div>
 
