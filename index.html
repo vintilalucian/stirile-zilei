@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="color-scheme" content="light dark" />
-    <meta name="tirile-versiune" content="2026-11-11T12:00:00+01:00|8|amber" />
+    <meta name="tirile-versiune" content="2026-11-11T13:00:00+01:00|9|amber" />
     <link rel="icon" href="data:," />
     <title>Știrile zilei</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -699,9 +699,9 @@
     <div class="topbar">
       <div class="topbar-inner">
         <span class="dot" aria-hidden="true"></span>
-        <span><strong>Miercuri, 11 noiembrie 2026</strong> · actualizat la <strong>12:00</strong></span>
+        <span><strong>Miercuri, 11 noiembrie 2026</strong> · actualizat la <strong>13:00</strong></span>
         <span aria-hidden="true">·</span>
-        <span>8 știri azi</span>
+        <span>9 știri azi</span>
         <span class="spacer"></span>
         <button class="refresh-btn" type="button" id="refreshBtn" aria-label="Reîmprospătează pagina">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg>
@@ -739,7 +739,7 @@
 
       <!-- Chenar permanent: știrea cea mai importantă a zilei — sub fereastra
            „Ultimele știri", ÎNAINTEA dashboardului, vizibilă din prima, fără scroll.
-           Nivelul de azi: GALBEN (sev-amber) — de urmărit: legea RAISE din New York intră în aplicare — știrea marcată „Știrea zilei" (singura cu relevanță directă pe terenul lui profesional de incident management), deci chenarul zilei la egalitate de severitate; mai există alte cinci știri galbene azi (plata integrală a Șantierului Naval Mangalia de către Rheinmetall, de la 07:00, scurgerile de date Grok Build, de la 09:00, prima zi a negocierilor de pace de la Abu Dhabi, de la 10:00, arestarea pentru spionaj a unui soldat american din corpul NATO ARRC, de la 11:00, și împărțirea conducerilor TVR, Radio România și a șefiei interimare a Curții de Conturi între PSD și AUR, de la 12:00), de aceea apare mențiunea despre celelalte știri cu aceeași severitate, cu filtru pe galben la „apasă aici".
+           Nivelul de azi: GALBEN (sev-amber) — de urmărit: legea RAISE din New York intră în aplicare — știrea marcată „Știrea zilei" (singura cu relevanță directă pe terenul lui profesional de incident management), deci chenarul zilei la egalitate de severitate; mai există alte șase știri galbene azi (plata integrală a Șantierului Naval Mangalia de către Rheinmetall, de la 07:00, scurgerile de date Grok Build, de la 09:00, prima zi a negocierilor de pace de la Abu Dhabi, de la 10:00, arestarea pentru spionaj a unui soldat american din corpul NATO ARRC, de la 11:00, împărțirea conducerilor TVR, Radio România și a șefiei interimare a Curții de Conturi între PSD și AUR, de la 12:00, și propunerea ca NATO să renunțe la forțele de rezervă pentru misiuni externe, de la 13:00), de aceea apare mențiunea despre celelalte știri cu aceeași severitate, cu filtru pe galben la „apasă aici".
            Chenarul rămâne în afara logicii de filtrare: vizibil indiferent de filtrul de categorie. -->
       <section class="spot sev-amber" aria-label="Știrea cea mai importantă a zilei">
         <div class="spot-head">
@@ -768,30 +768,30 @@
       <section class="dashboard" aria-label="Panou de ansamblu">
         <div class="dash-head">
           <span class="dash-title">Dashboard · Azi</span>
-          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 12:00</span>
+          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 13:00</span>
           <span class="dash-meta">Fereastră monitorizare <strong>L–V 06:00–22:00 · S–D 07:30–22:00</strong> · pas ~3 ore</span>
         </div>
 
         <div class="kpi-grid five" role="group" aria-label="Filtrează după categorie — apasă pe un tile">
           <button class="kpi" type="button" data-filter="toate" aria-pressed="true">
             <span class="kpi-top"><span class="kpi-label">Toate știrile</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">8</span>
-            <span class="kpi-sub">știri verificate azi, în 6 rulări</span>
+            <span class="kpi-value">9</span>
+            <span class="kpi-sub">știri verificate azi, în 7 rulări</span>
             <span class="kpi-bar" aria-hidden="true"><i style="width:100%"></i></span>
             <span class="kpi-hint">Apasă pentru toate</span>
           </button>
           <button class="kpi" type="button" data-filter="securitate" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">Securitate &amp; NATO</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">4</span>
-            <span class="kpi-sub">lovire de precizie NATO · soldat american arestat pentru spionaj · negocieri de pace Abu Dhabi · șantier naval Mangalia</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:50%"></i></span>
+            <span class="kpi-value">5</span>
+            <span class="kpi-sub">NATO prioritizează lupta cu Rusia · lovire de precizie NATO · soldat american arestat pentru spionaj · negocieri de pace Abu Dhabi · șantier naval Mangalia</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:56%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="romania" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">România</span><span class="kpi-check" aria-hidden="true">✓</span></span>
             <span class="kpi-value">2</span>
             <span class="kpi-sub">PSD–AUR își împart instituțiile statului · șantier naval Mangalia</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:25%"></i></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:22%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="belgia" aria-pressed="false">
@@ -805,7 +805,7 @@
             <span class="kpi-top"><span class="kpi-label">Tech &amp; AI</span><span class="kpi-check" aria-hidden="true">✓</span></span>
             <span class="kpi-value">3</span>
             <span class="kpi-sub">Gemini 4 Carbon, acces public · scurgeri de date Grok Build · legea RAISE, New York</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:38%"></i></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:33%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
         </div>
@@ -819,7 +819,7 @@
       </section>
 
       <div class="filter-status" aria-live="polite">
-        <span class="filter-label">Se afișează: <strong>Toate categoriile — 8 din 8 știri</strong></span>
+        <span class="filter-label">Se afișează: <strong>Toate categoriile — 9 din 9 știri</strong></span>
         <button class="filter-reset" type="button" hidden>Resetează filtrul</button>
       </div>
 
@@ -849,14 +849,52 @@
       <p class="empty">Nicio știre în această categorie azi.</p>
 
       <main>
-        <!-- 1 · 11 nov · 12:00 -->
+        <!-- 1 · 11 nov · 13:00 -->
+        <article id="stire-161" data-cats="securitate" data-sev="amber" data-subiect="NATO prioritizează lupta cu Rusia">
+          <div class="a-meta">
+            <span class="a-time">11 nov · 13:00</span>
+            <span class="a-cat">Securitate &amp; NATO</span>
+            <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
+            <span class="subj-pill">NATO prioritizează lupta cu Rusia</span>
+            <span class="a-num">#1 / 9</span>
+          </div>
+          <h2>NATO vrea să prioritizeze lupta cu Rusia și să reducă forțele pentru misiuni în străinătate</h2>
+          <div class="sec">
+            <p class="sec-label">Ce s-a întâmplat</p>
+            <p>Cei 32 de aliați au început negocierea următoarelor ținte de capabilități ale NATO și iau în calcul eliminarea cerinței ca fiecare aliat să mențină forțe suplimentare pentru operațiuni de gestionare a crizelor, astfel încât resursele să se concentreze pe Rusia și pe apărarea colectivă, potrivit Politico Europe (10 noiembrie), care citează patru diplomați NATO. În varianta de lucru, aliații ar trebui să aibă forțe fie pentru apărare colectivă, fie pentru gestionarea crizelor, nu pentru ambele în același timp: ar continua să se antreneze pentru operațiuni de criză, dar fără obligația de a ține forțe suplimentare în așteptare, iar misiunile curente, precum cele din Kosovo sau Irak, nu ar fi afectate automat. Aliații vor să ajungă la un acord asupra ghidării politice până în februarie 2027, înaintea noilor ținte de capabilități din 2029; deocamdată, propunerea e blocată de opoziția Franței și Italiei.</p>
+          </div>
+          <div class="sec">
+            <p class="sec-label">De ce contează</p>
+            <p>Procesul de planificare a apărării NATO stabilește ce forțe și capabilități trebuie să furnizeze fiecare aliat, iar trecerea de la „și" la „sau" redefinește nivelul de ambiție al alianței: mai puține resurse blocate în standby pentru crize externe, mai multe concentrate pe descurajarea Rusiei. E concretizarea, într-o decizie de planificare, a presiunii americane ca europenii să preia responsabilitatea propriei apărări — aceeași direcție urmărită în watch prin revizuirea Pentagonului asupra trupelor SUA în Europa, așteptată în decembrie. Pentru el, ca IT incident Manager, direcția contează direct: o alianță care își concentrează planificarea pe apărarea colectivă împotriva Rusiei își reașază prioritățile operaționale, exercițiile și cerințele de raportare pe flancul estic. În fundal, oficiali europeni au avertizat că Rusia ar putea fi gata să atace o țară NATO până în 2029, orizontul noilor ținte de capabilități.</p>
+          </div>
+          <div class="verify">
+            <p class="sec-label">Verificare <span class="status">Sursă unică</span></p>
+            <p>Verdict: sursă unică. Relatarea originală e Politico Europe (10 noiembrie 2026, 06:00 CET, Victor Jack), pe baza a patru diplomați NATO. BytesEurope (11 noiembrie) și Topwar (11 noiembrie) republică același fir Politico — nu sunt confirmări independente. Contextul procesului — ghidarea politică, țintele de capabilități din 2029 și cele 18 brigăzi de rezervă pentru misiuni de criză — e confirmat de relatarea Politico din octombrie despre aceleași negocieri. Notă de integritate: pagina Politico datează articolul 10 noiembrie, nu 11 noiembrie, cum indica relatarea secundară; iar numele comandantului suprem aliat în Europa nu apare în articol.</p>
+            <ul class="sources">
+              <li><a href="https://www.politico.eu/article/nato-shrink-forces-missions-abroad-focus-fight-russia/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Politico Europe — „NATO seeks to prioritize fighting Russia and shrink forces for missions abroad" (10 nov 2026, Victor Jack; 4 diplomați NATO)<span class="host">politico.eu</span></a></li>
+              <li><a href="https://www.byteseu.com/2513828/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>BytesEurope — „NATO Weighs Overseas Force Cuts to Focus on Russia" (11 nov 2026; republică relatarea Politico)<span class="host">byteseu.com</span></a></li>
+              <li><a href="https://en.topwar.ru/293337-nato-planiruet-smenit-strategiju-sosredotochivshis-na-protivostojanii-rossii.html" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Topwar — „NATO plans to shift strategy, focusing on countering Russia" (11 nov 2026; citează Politico)<span class="host">en.topwar.ru</span></a></li>
+              <li><a href="https://mingooland.com/2026/10/5-fights-that-will-shape-natos-next-russia-war-plans/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Mingooland — „5 fights that will shape NATO's next Russia war plans" (oct 2026; relatarea Politico despre aceleași negocieri — context: 18 brigăzi de rezervă, ținte 2029)<span class="host">mingooland.com</span></a></li>
+            </ul>
+          </div>
+          <div class="opposing">
+            <p class="sec-label">Tabăra adversă</p>
+            <p>Franța și Italia — potrivit Politico, cele două guverne se opun deocamdată propunerii de a renunța la cerința forțelor suplimentare pentru misiuni externe, ceea ce a blocat înaintarea ei. (<a href="https://www.politico.eu/article/nato-shrink-forces-missions-abroad-focus-fight-russia/" target="_blank" rel="noopener">politico.eu</a>)</p>
+          </div>
+          <div class="impact">
+            <span class="badge">Impact direct</span>
+            <p>Impact direct minim azi — e o negociere în curs, fără decizie luată; nu schimbă nimic concret pentru programul lui (cursul de la Haga, 11–13 noiembrie, continuă) sau pentru familie. Relevanță profesională ridicată: ghidarea politică din februarie 2027 și țintele de capabilități din 2029 vor defini cum își planifică alianța apărarea colectivă și ce li se cere aliaților — exact mediul operațional în care lucrează. De urmărit: acordul pe ghidarea politică și revizuirea Pentagonului privind trupele SUA în Europa, așteptată în decembrie.</p>
+          </div>
+        </article>
+
+<!-- 2 · 11 nov · 12:00 -->
         <article id="stire-159" data-cats="romania" data-sev="amber" data-subiect="PSD–AUR își împart instituțiile statului">
           <div class="a-meta">
             <span class="a-time">11 nov · 12:00</span>
             <span class="a-cat">România</span>
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="subj-pill">PSD–AUR își împart instituțiile statului</span>
-            <span class="a-num">#1 / 8</span>
+            <span class="a-num">#2 / 9</span>
           </div>
           <h2>PSD și AUR și-au împărțit conducerile TVR, Radio România și șefia interimară a Curții de Conturi — voturi în Parlament, marți 10 noiembrie</h2>
           <div class="sec">
@@ -886,14 +924,14 @@
           </div>
         </article>
 
-        <!-- 2 · 11 nov · 12:00 -->
+        <!-- 3 · 11 nov · 12:00 -->
         <article id="stire-160" data-cats="securitate" data-sev="green" data-subiect="lovire de precizie NATO">
           <div class="a-meta">
             <span class="a-time">11 nov · 12:00</span>
             <span class="a-cat">Securitate &amp; NATO</span>
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <span class="subj-pill">lovire de precizie NATO</span>
-            <span class="a-num">#2 / 8</span>
+            <span class="a-num">#3 / 9</span>
           </div>
           <h2>NATO discută capabilitățile de lovire de precizie la mare adâncime: de la rachete de croazieră la drone și sisteme maritime</h2>
           <div class="sec">
@@ -919,14 +957,14 @@
           </div>
         </article>
 
-        <!-- 3 · 11 nov · 11:00 -->
+        <!-- 4 · 11 nov · 11:00 -->
         <article id="stire-157" data-cats="securitate" data-sev="amber" data-subiect="soldat american arestat pentru spionaj">
           <div class="a-meta">
             <span class="a-time">11 nov · 11:00</span>
             <span class="a-cat">Securitate &amp; NATO</span>
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="subj-pill">soldat american arestat pentru spionaj</span>
-            <span class="a-num">#3 / 8</span>
+            <span class="a-num">#4 / 9</span>
           </div>
           <h2>Soldat american din corpul NATO ARRC, arestat în Marea Britanie sub suspiciunea de spionaj pentru Rusia</h2>
           <div class="sec">
@@ -956,14 +994,14 @@
           </div>
         </article>
 
-        <!-- 4 · 11 nov · 11:00 -->
+        <!-- 5 · 11 nov · 11:00 -->
         <article id="stire-158" data-cats="tech" data-sev="green" data-subiect="Gemini 4 Carbon, acces public">
           <div class="a-meta">
             <span class="a-time">11 nov · 11:00</span>
             <span class="a-cat">Tech &amp; AI</span>
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <span class="subj-pill">Gemini 4 Carbon, acces public</span>
-            <span class="a-num">#4 / 8</span>
+            <span class="a-num">#5 / 9</span>
           </div>
           <h2>Gemini 4 Carbon, cel mai puternic model Google, e acum disponibil pentru dezvoltatori — cu funcția de echipă de agenți „swarm"</h2>
           <div class="sec">
@@ -994,7 +1032,7 @@
           </div>
         </article>
 
-        <!-- 5 · 11 nov · 10:00 -->
+        <!-- 6 · 11 nov · 10:00 -->
         <article id="stire-156" data-cats="securitate" data-sev="amber" data-subiect="negocieri de pace Abu Dhabi">
           <div class="a-meta">
             <span class="a-time">11 nov · 10:00</span>
@@ -1002,7 +1040,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-132" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">negocieri de pace Abu Dhabi</span>
-            <span class="a-num">#5 / 8</span>
+            <span class="a-num">#6 / 9</span>
           </div>
           <h2>Prima zi a negocierilor de pace de la Abu Dhabi s-a încheiat fără acord; Zelenski cere Europei un reprezentant unic până la sfârșitul lui noiembrie</h2>
           <div class="followup">
@@ -1038,7 +1076,7 @@
           </div>
         </article>
 
-<!-- 6 · 11 nov · 09:00 -->
+<!-- 7 · 11 nov · 09:00 -->
         <article id="stire-155" data-cats="tech" data-sev="amber" data-subiect="scurgeri de date Grok Build">
           <div class="a-meta">
             <span class="a-time">11 nov · 09:00</span>
@@ -1046,7 +1084,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-135" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">scurgeri de date Grok Build</span>
-            <span class="a-num">#6 / 8</span>
+            <span class="a-num">#7 / 9</span>
           </div>
           <h2>Grok Build expune public 35.578 de aplicații construite cu AI: linkurile „secrete" erau găsibile de oricine, inclusiv 24 de aplicații interne ale SpaceXSI</h2>
           <div class="followup">
@@ -1081,14 +1119,14 @@
           </div>
         </article>
 
-        <!-- 7 · 11 nov · 07:00 -->
+        <!-- 8 · 11 nov · 07:00 -->
         <article id="stire-154" data-cats="securitate romania" data-sev="amber" data-subiect="șantier naval Mangalia">
           <div class="a-meta">
             <span class="a-time">11 nov · 07:00</span>
             <span class="a-cat">Securitate &amp; NATO · România</span>
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="subj-pill">șantier naval Mangalia</span>
-            <span class="a-num">#7 / 8</span>
+            <span class="a-num">#8 / 9</span>
           </div>
           <h2>Rheinmetall a plătit integral cele 138 de milioane de euro pentru Șantierul Naval Mangalia și a semnat contractul de vânzare-cumpărare</h2>
           <div class="sec">
@@ -1120,7 +1158,7 @@
           </div>
         </article>
 
-        <!-- 8 · 11 nov · 06:00 -->
+        <!-- 9 · 11 nov · 06:00 -->
         <article id="stire-153" data-cats="tech" data-sev="amber" data-subiect="legea RAISE, New York">
           <div class="a-meta">
             <span class="a-time">11 nov · 06:00</span>
@@ -1128,7 +1166,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="spot-tag">Știrea zilei</span>
             <span class="subj-pill">legea RAISE, New York</span>
-            <span class="a-num">#8 / 8</span>
+            <span class="a-num">#9 / 9</span>
           </div>
           <h2>Legea RAISE din New York intră în aplicare: OpenAI și Anthropic trebuie să se înregistreze și să raporteze incidentele critice de siguranță în 72 de ore</h2>
           <div class="sec">
@@ -6073,8 +6111,8 @@
 
       <footer>
         <div class="rule" aria-hidden="true"></div>
-        <p>Sfârșitul ediției de azi · Ultima actualizare: miercuri, 11 noiembrie 2026, 12:00<br />Monitorizarea rulează la circa 3 ore, în fereastra L–V 06:00–22:00 · S–D 07:30–22:00 — dă refresh pentru noutăți.</p>
-        <a class="to-top" href="#stire-159">↑ Înapoi la cea mai nouă știre</a>
+        <p>Sfârșitul ediției de azi · Ultima actualizare: miercuri, 11 noiembrie 2026, 13:00<br />Monitorizarea rulează la circa 3 ore, în fereastra L–V 06:00–22:00 · S–D 07:30–22:00 — dă refresh pentru noutăți.</p>
+        <a class="to-top" href="#stire-161">↑ Înapoi la cea mai nouă știre</a>
       </footer>
     </div>
 
