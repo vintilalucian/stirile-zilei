@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="color-scheme" content="light dark" />
-    <meta name="tirile-versiune" content="2026-11-11T06:00:00+01:00|1|amber" />
+    <meta name="tirile-versiune" content="2026-11-11T07:00:00+01:00|2|amber" />
     <link rel="icon" href="data:," />
     <title>Știrile zilei</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -699,9 +699,9 @@
     <div class="topbar">
       <div class="topbar-inner">
         <span class="dot" aria-hidden="true"></span>
-        <span><strong>Miercuri, 11 noiembrie 2026</strong> · actualizat la <strong>06:00</strong></span>
+        <span><strong>Miercuri, 11 noiembrie 2026</strong> · actualizat la <strong>07:00</strong></span>
         <span aria-hidden="true">·</span>
-        <span>1 știre azi</span>
+        <span>2 știri azi</span>
         <span class="spacer"></span>
         <button class="refresh-btn" type="button" id="refreshBtn" aria-label="Reîmprospătează pagina">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg>
@@ -739,7 +739,7 @@
 
       <!-- Chenar permanent: știrea cea mai importantă a zilei — sub fereastra
            „Ultimele știri", ÎNAINTEA dashboardului, vizibilă din prima, fără scroll.
-           Nivelul de azi: GALBEN (sev-amber) — de urmărit: legea RAISE din New York intră în aplicare — prima și singura știre a zilei și singura galbenă, deci chenarul zilei; nu există alte știri cu aceeași severitate azi, de aceea mențiunea despre celelalte știri lipsește.
+           Nivelul de azi: GALBEN (sev-amber) — de urmărit: legea RAISE din New York intră în aplicare — știrea marcată „Știrea zilei" (singura cu relevanță directă pe terenul lui profesional de incident management), deci chenarul zilei la egalitate de severitate; mai există o altă știre galbenă azi (plata integrală a Șantierului Naval Mangalia de către Rheinmetall, de la 07:00), de aceea apare mențiunea despre celelalte știri cu aceeași severitate, cu filtru pe galben la „apasă aici".
            Chenarul rămâne în afara logicii de filtrare: vizibil indiferent de filtrul de categorie. -->
       <section class="spot sev-amber" aria-label="Știrea cea mai importantă a zilei">
         <div class="spot-head">
@@ -768,30 +768,30 @@
       <section class="dashboard" aria-label="Panou de ansamblu">
         <div class="dash-head">
           <span class="dash-title">Dashboard · Azi</span>
-          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 06:00</span>
+          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 07:00</span>
           <span class="dash-meta">Fereastră monitorizare <strong>L–V 06:00–22:00 · S–D 07:30–22:00</strong> · pas ~3 ore</span>
         </div>
 
         <div class="kpi-grid five" role="group" aria-label="Filtrează după categorie — apasă pe un tile">
           <button class="kpi" type="button" data-filter="toate" aria-pressed="true">
             <span class="kpi-top"><span class="kpi-label">Toate știrile</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">1</span>
-            <span class="kpi-sub">știri verificate azi, în 1 rulare</span>
+            <span class="kpi-value">2</span>
+            <span class="kpi-sub">știri verificate azi, în 2 rulări</span>
             <span class="kpi-bar" aria-hidden="true"><i style="width:100%"></i></span>
             <span class="kpi-hint">Apasă pentru toate</span>
           </button>
           <button class="kpi" type="button" data-filter="securitate" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">Securitate &amp; NATO</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">0</span>
-            <span class="kpi-sub"></span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:0%"></i></span>
+            <span class="kpi-value">1</span>
+            <span class="kpi-sub">șantier naval Mangalia</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:50%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="romania" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">România</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">0</span>
-            <span class="kpi-sub"></span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:0%"></i></span>
+            <span class="kpi-value">1</span>
+            <span class="kpi-sub">șantier naval Mangalia</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:50%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="belgia" aria-pressed="false">
@@ -805,7 +805,7 @@
             <span class="kpi-top"><span class="kpi-label">Tech &amp; AI</span><span class="kpi-check" aria-hidden="true">✓</span></span>
             <span class="kpi-value">1</span>
             <span class="kpi-sub">legea RAISE, New York</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:100%"></i></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:50%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
         </div>
@@ -819,7 +819,7 @@
       </section>
 
       <div class="filter-status" aria-live="polite">
-        <span class="filter-label">Se afișează: <strong>Toate categoriile — 1 din 1 știri</strong></span>
+        <span class="filter-label">Se afișează: <strong>Toate categoriile — 2 din 2 știri</strong></span>
         <button class="filter-reset" type="button" hidden>Resetează filtrul</button>
       </div>
 
@@ -849,7 +849,46 @@
       <p class="empty">Nicio știre în această categorie azi.</p>
 
       <main>
-        <!-- 1 · 11 nov · 06:00 -->
+        <!-- 1 · 11 nov · 07:00 -->
+        <article id="stire-154" data-cats="securitate romania" data-sev="amber" data-subiect="șantier naval Mangalia">
+          <div class="a-meta">
+            <span class="a-time">11 nov · 07:00</span>
+            <span class="a-cat">Securitate &amp; NATO · România</span>
+            <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
+            <span class="subj-pill">șantier naval Mangalia</span>
+            <span class="a-num">#1 / 2</span>
+          </div>
+          <h2>Rheinmetall a plătit integral cele 138 de milioane de euro pentru Șantierul Naval Mangalia și a semnat contractul de vânzare-cumpărare</h2>
+          <div class="sec">
+            <p class="sec-label">Ce s-a întâmplat</p>
+            <p>Marți, 10 noiembrie, lichidatorul judiciar CITR a anunțat că Rheinmetall Real Estate România a achitat integral prețul de 138.034.320,47 euro (fără TVA) stabilit la licitația publică din 9 octombrie și că părțile au semnat contractul de vânzare-cumpărare. Transferul proprietății nu e încă efectiv: el depinde de avizele cerute de lege pentru tranzacțiile de importanță strategică — examinarea de către Comisia pentru examinarea investițiilor străine directe (CEISD) și avizul Consiliului Concurenței — și de contestația în instanță a fostului operator Damen, pe care Curtea de Apel Constanța ar urma s-o judece pe 11 decembrie. Rheinmetall preia șantierul împreună cu grupul elvețian de transport maritim MSC și vrea să-l transforme într-un centru cu dublă utilizare, civil și militar; la Mangalia ar urma să se construiască cele patru nave militare comandate de Guvernul României, într-un contract de 920 de milioane de euro, cu finanțare SAFE, până în 2030.</p>
+          </div>
+          <div class="sec">
+            <p class="sec-label">De ce contează</p>
+            <p>Cel mai mare șantier naval de la Marea Neagră al României trece sub controlul celui mai mare producător german de armament — o piesă structurală a reindustrializării de apărare pe Flancul estic, exact pe arcul Marea Neagră urmărit în pagină (patrule NATO suplimentare, decizia CSAT din 22 octombrie, hub-ul maritim de la Varna operațional din 2027). Potrivit CITR, e cea mai mare tranzacție realizată vreodată în România pentru o companie aflată în insolvență sau faliment.</p>
+          </div>
+          <div class="verify">
+            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
+            <p>Verdict: confirmat. SeeNews (10 nov 2026) — „Rheinmetall pays in full for Romania's Mangalia shipyard, insolvency administrator says". Forbes.ro (10 nov 2026) — „Șantierul Naval Mangalia a fost vândut: cumpărătorul a achitat integral prețul și a semnat contractul". semnal.eu (10 nov 2026) și constanta.info (10 nov 2026) relatează aceeași plată integrală și semnarea contractului, pe baza anunțului lichidatorului CITR. Contextul licitației câștigate pe 9 octombrie și al anunțului comun Rheinmetall–MSC din 19 octombrie: comunicatul Rheinmetall și netprofit.ro (20 oct 2026).</p>
+            <ul class="sources">
+              <li><a href="https://seenews.com/news/rheinmetall-pays-in-full-for-romanias-mangalia-shipyard-insolvency-administrator-says-1304656" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>SeeNews — „Rheinmetall pays in full for Romania's Mangalia shipyard, insolvency administrator says" (10 nov 2026)<span class="host">seenews.com</span></a></li>
+              <li><a href="https://www.forbes.ro/santierul-naval-mangalia-a-fost-vandut-cumparatorul-a-achitat-integral-pretul-si-a-semnat-contractul-530858" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Forbes.ro — „Șantierul Naval Mangalia a fost vândut: cumpărătorul a achitat integral prețul și a semnat contractul" (10 nov 2026)<span class="host">forbes.ro</span></a></li>
+              <li><a href="https://semnal.eu/ro/economie/2026/11/10/rheinmetall-a-platit-integral-pretul-santierului-mangalia/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>semnal.eu — relatarea plății integrale a prețului Șantierului Naval Mangalia de către Rheinmetall (10 nov 2026)<span class="host">semnal.eu</span></a></li>
+              <li><a href="https://constanta.info/santierul-naval-mangalia-rheinmetall-a-platit-integral-cele-138-de-milioane-de-euro-si-a-semnat-contractul-de-cumparare/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>constanta.info — „Șantierul Naval Mangalia: Rheinmetall a plătit integral cele 138 de milioane de euro și a semnat contractul de cumpărare" (10 nov 2026)<span class="host">constanta.info</span></a></li>
+              <li><a href="https://netprofit.ro/business/rheinmetall-despre-mangalia-planificam-o-extindere-ampla-a-santierului-naval/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>netprofit.ro — „Rheinmetall despre Mangalia: planificăm o extindere amplă a șantierului naval" (20 oct 2026, contextul licitației și al anunțului comun Rheinmetall–MSC)<span class="host">netprofit.ro</span></a></li>
+            </ul>
+          </div>
+          <div class="opposing">
+            <p class="sec-label">Tabăra adversă</p>
+            <p>Damen Holding BV (fostul operator al șantierului, principalul creditor) — a contestat în instanță decizia care a permis reducerea prețului de pornire la licitație; contestația se judecă pe 11 decembrie la Curtea de Apel Constanța. (<a href="https://dredgewire.com/rheinmetall-and-msc-win-mangalia-shipyard-auction-damen-has-challenged-the-process-and-outcome/" target="_blank" rel="noopener">dredgewire.com</a>)</p>
+          </div>
+          <div class="impact">
+            <span class="badge">Impact direct</span>
+            <p>Impact direct minim azi — nicio acțiune imediată. Relevanță de context înaltă: infrastructură navală militară românească la Marea Neagră, cu un contract de 920 de milioane de euro pentru Forțele Navale Române. De urmărit: avizele CEISD și ale Consiliului Concurenței și decizia din 11 decembrie privind contestația Damen.</p>
+          </div>
+        </article>
+
+        <!-- 2 · 11 nov · 06:00 -->
         <article id="stire-153" data-cats="tech" data-sev="amber" data-subiect="legea RAISE, New York">
           <div class="a-meta">
             <span class="a-time">11 nov · 06:00</span>
@@ -857,7 +896,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="spot-tag">Știrea zilei</span>
             <span class="subj-pill">legea RAISE, New York</span>
-            <span class="a-num">#1 / 1</span>
+            <span class="a-num">#2 / 2</span>
           </div>
           <h2>Legea RAISE din New York intră în aplicare: OpenAI și Anthropic trebuie să se înregistreze și să raporteze incidentele critice de siguranță în 72 de ore</h2>
           <div class="sec">
@@ -5802,8 +5841,8 @@
 
       <footer>
         <div class="rule" aria-hidden="true"></div>
-        <p>Sfârșitul ediției de azi · Ultima actualizare: miercuri, 11 noiembrie 2026, 06:00<br />Monitorizarea rulează la circa 3 ore, în fereastra L–V 06:00–22:00 · S–D 07:30–22:00 — dă refresh pentru noutăți.</p>
-        <a class="to-top" href="#stire-153">↑ Înapoi la cea mai nouă știre</a>
+        <p>Sfârșitul ediției de azi · Ultima actualizare: miercuri, 11 noiembrie 2026, 07:00<br />Monitorizarea rulează la circa 3 ore, în fereastra L–V 06:00–22:00 · S–D 07:30–22:00 — dă refresh pentru noutăți.</p>
+        <a class="to-top" href="#stire-154">↑ Înapoi la cea mai nouă știre</a>
       </footer>
     </div>
 
