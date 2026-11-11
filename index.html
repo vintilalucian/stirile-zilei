@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="color-scheme" content="light dark" />
-    <meta name="tirile-versiune" content="2026-11-11T10:00:00+01:00|4|amber" />
+    <meta name="tirile-versiune" content="2026-11-11T11:00:00+01:00|6|amber" />
     <link rel="icon" href="data:," />
     <title>Știrile zilei</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -699,9 +699,9 @@
     <div class="topbar">
       <div class="topbar-inner">
         <span class="dot" aria-hidden="true"></span>
-        <span><strong>Miercuri, 11 noiembrie 2026</strong> · actualizat la <strong>10:00</strong></span>
+        <span><strong>Miercuri, 11 noiembrie 2026</strong> · actualizat la <strong>11:00</strong></span>
         <span aria-hidden="true">·</span>
-        <span>4 știri azi</span>
+        <span>6 știri azi</span>
         <span class="spacer"></span>
         <button class="refresh-btn" type="button" id="refreshBtn" aria-label="Reîmprospătează pagina">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg>
@@ -739,7 +739,7 @@
 
       <!-- Chenar permanent: știrea cea mai importantă a zilei — sub fereastra
            „Ultimele știri", ÎNAINTEA dashboardului, vizibilă din prima, fără scroll.
-           Nivelul de azi: GALBEN (sev-amber) — de urmărit: legea RAISE din New York intră în aplicare — știrea marcată „Știrea zilei" (singura cu relevanță directă pe terenul lui profesional de incident management), deci chenarul zilei la egalitate de severitate; mai există alte trei știri galbene azi (plata integrală a Șantierului Naval Mangalia de către Rheinmetall, de la 07:00, scurgerile de date Grok Build, de la 09:00, și prima zi a negocierilor de pace de la Abu Dhabi, de la 10:00), de aceea apare mențiunea despre celelalte știri cu aceeași severitate, cu filtru pe galben la „apasă aici".
+           Nivelul de azi: GALBEN (sev-amber) — de urmărit: legea RAISE din New York intră în aplicare — știrea marcată „Știrea zilei" (singura cu relevanță directă pe terenul lui profesional de incident management), deci chenarul zilei la egalitate de severitate; mai există alte patru știri galbene azi (plata integrală a Șantierului Naval Mangalia de către Rheinmetall, de la 07:00, scurgerile de date Grok Build, de la 09:00, prima zi a negocierilor de pace de la Abu Dhabi, de la 10:00, și arestarea pentru spionaj a unui soldat american din corpul NATO ARRC, de la 11:00), de aceea apare mențiunea despre celelalte știri cu aceeași severitate, cu filtru pe galben la „apasă aici".
            Chenarul rămâne în afara logicii de filtrare: vizibil indiferent de filtrul de categorie. -->
       <section class="spot sev-amber" aria-label="Știrea cea mai importantă a zilei">
         <div class="spot-head">
@@ -768,7 +768,7 @@
       <section class="dashboard" aria-label="Panou de ansamblu">
         <div class="dash-head">
           <span class="dash-title">Dashboard · Azi</span>
-          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 10:00</span>
+          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 11:00</span>
           <span class="dash-meta">Fereastră monitorizare <strong>L–V 06:00–22:00 · S–D 07:30–22:00</strong> · pas ~3 ore</span>
         </div>
 
@@ -819,7 +819,7 @@
       </section>
 
       <div class="filter-status" aria-live="polite">
-        <span class="filter-label">Se afișează: <strong>Toate categoriile — 4 din 4 știri</strong></span>
+        <span class="filter-label">Se afișează: <strong>Toate categoriile — 6 din 6 știri</strong></span>
         <button class="filter-reset" type="button" hidden>Resetează filtrul</button>
       </div>
 
@@ -849,7 +849,82 @@
       <p class="empty">Nicio știre în această categorie azi.</p>
 
       <main>
-        <!-- 1 · 11 nov · 10:00 -->
+        <!-- 1 · 11 nov · 11:00 -->
+        <article id="stire-157" data-cats="securitate" data-sev="amber" data-subiect="soldat american arestat pentru spionaj">
+          <div class="a-meta">
+            <span class="a-time">11 nov · 11:00</span>
+            <span class="a-cat">Securitate &amp; NATO</span>
+            <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
+            <span class="subj-pill">soldat american arestat pentru spionaj</span>
+            <span class="a-num">#1 / 6</span>
+          </div>
+          <h2>Soldat american din corpul NATO ARRC, arestat în Marea Britanie sub suspiciunea de spionaj pentru Rusia</h2>
+          <div class="sec">
+            <p class="sec-label">Ce s-a întâmplat</p>
+            <p>Marți, 10 noiembrie, poliția britanică a arestat lângă Gloucester un soldat american de 41 de ani, sub suspiciunea că a ajutat serviciile ruse de informații. Soldatul, descris de autoritățile americane drept un militar de rang înalt căruia i se încredințaseră informații sensibile, a fost reținut sub suspiciunea de infracțiuni prevăzute de secțiunile 1 și 3 din Legea securității naționale din 2023 — obținerea sau divulgarea de informații protejate și sprijinirea unui serviciu străin de informații; țara vizată de acuzații e Rusia, potrivit poliției. Soldatul rămâne în arest la o secție de poliție din Londra, iar poliția face percheziții în două locații din Gloucestershire. Directorul FBI, Kash Patel, a spus că arestarea ține de „acuzații de spionaj, de cea mai mare îngrijorare pentru Statele Unite și aliații noștri". Potrivit CNN, care citează un oficial NATO de rang înalt, soldatul era detașat la Corpul de Reacție Rapidă al Aliaților (ARRC), corp NATO condus de britanici, cu sediul la Gloucester. Arestarea vine la o zi după ce SUA și-au retras avioanele-cisternă de la baza RAF Mildenhall, pe fondul unei amenințări separate atribuite Iranului (cardul de marți, 17:00).</p>
+          </div>
+          <div class="sec">
+            <p class="sec-label">De ce contează</p>
+            <p>Un presupus spion într-un corp NATO, cu acces la informații sensibile — exact tipul de incident de securitate internă care privește direct un IT incident Manager într-un mediu NATO: nu o breșă tehnică, ci una umană, în lanțul de încredere al Alianței. Arestarea se adaugă unui șir recent de cazuri de spionaj și sabotaj rusesc în Europa — alerta anti-sabotaj a Bundeswehr (21 octombrie) și arestarea din Germania a unui presupus spion rus (22 octombrie) — iar contextul britanic, cu evacuarea avioanelor-cisternă de la Mildenhall, arată o presiune simultană pe mai multe fronturi.</p>
+          </div>
+          <div class="verify">
+            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
+            <p>Verdict: confirmat. Defense News (10 nov 2026, 21:24 UTC) — „US soldier arrested in UK for suspected 'espionage' for Russia". CNN (10 nov 2026) — confirmă arestarea, detaliile din Legea securității naționale, detașarea soldatului la ARRC (oficial NATO de rang înalt) și replica Kremlinului. Reuters (10 nov 2026) — același fir de agenție, cu arestarea lângă Gloucester, secțiunile 1 și 3 și țara vizată, Rusia. Sursă primară: comunicatul Poliției Metropolitane din Londra (10 nov 2026), citat de CNN și Defense News.</p>
+            <ul class="sources">
+              <li><a href="https://www.defensenews.com/global/europe/2026/11/10/us-soldier-arrested-in-uk-for-suspected-espionage-for-russia/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Defense News — „US soldier arrested in UK for suspected 'espionage' for Russia" (10 nov 2026)<span class="host">defensenews.com</span></a></li>
+              <li><a href="https://www.cnn.com/2026/11/10/uk/us-army-soldier-arrested-uk-alleged-espionage-russia?cid=external-feeds_iluminar_meta" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>CNN — „US Army soldier arrested in UK on suspicion of espionage related to Russia" (10 nov 2026)<span class="host">cnn.com</span></a></li>
+              <li><a href="https://www.lse.co.uk/news/us-army-member-arrested-in-uk-for-suspected-espionage-for-russia-3nz81fc4knauyc0.html" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Reuters (prin LSE) — „US Army member arrested in UK for suspected 'espionage' for Russia" (10 nov 2026)<span class="host">lse.co.uk</span></a></li>
+            </ul>
+          </div>
+          <div class="opposing">
+            <p class="sec-label">Tabăra adversă</p>
+            <p>Dmitri Peskov, purtătorul de cuvânt al Kremlinului — a declarat miercuri că Rusia „nu are nicio legătură cu asta" și că arestarea „nu are nicio legătură cu noi". (<a href="https://www.cnn.com/2026/11/10/uk/us-army-soldier-arrested-uk-alleged-espionage-russia?cid=external-feeds_iluminar_meta" target="_blank" rel="noopener">CNN, 11 nov 2026</a>)</p>
+          </div>
+          <div class="impact">
+            <span class="badge">Impact direct</span>
+            <p>Impact direct: minim azi — nicio acțiune imediată; nu lucrează cu ARRC și nu are acces la dosar. Relevanță profesională ridicată: un incident de securitate internă într-un corp NATO, cu un militar căruia i se încredințaseră informații sensibile — de urmărit ce informații ar fi fost compromise și dacă apar măsuri noi de control al accesului sau de verificare a personalului în structurile aliate. Poliția britanică spune că arestarea nu e legată de alte investigații de combatere a terorismului în curs; de urmărit și dacă apare vreo legătură cu evacuarea de la Mildenhall.</p>
+          </div>
+        </article>
+
+        <!-- 2 · 11 nov · 11:00 -->
+        <article id="stire-158" data-cats="tech" data-sev="green" data-subiect="Gemini 4 Carbon, acces public">
+          <div class="a-meta">
+            <span class="a-time">11 nov · 11:00</span>
+            <span class="a-cat">Tech &amp; AI</span>
+            <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
+            <span class="subj-pill">Gemini 4 Carbon, acces public</span>
+            <span class="a-num">#2 / 6</span>
+          </div>
+          <h2>Gemini 4 Carbon, cel mai puternic model Google, e acum disponibil pentru dezvoltatori — cu funcția de echipă de agenți „swarm"</h2>
+          <div class="sec">
+            <p class="sec-label">Ce s-a întâmplat</p>
+            <p>Marți, 10 noiembrie, Google DeepMind a deschis Gemini 4 Carbon — prezentat drept cel mai puternic model al său — pentru toți dezvoltatorii și companiile plătitoare, prin API-ul Gemini în AI Studio și Android Studio și prin Gemini for business; abonații Google AI Ultra îl primesc în Antigravity, aplicația Gemini și AI Mode în Search. Carbon fusese anunțat pe 28 octombrie doar pentru un grup restrâns de firme de apărare cibernetică, prin programul Fairwind. Google îl descrie ca model de frontieră pentru sarcini lungi, în mai mulți pași — programare complexă, cercetare științifică, securitate cibernetică — și spune că Argon, lansat la sfârșitul lui septembrie, rămâne recomandarea pentru majoritatea sarcinilor de inginerie și lucru cu cunoștințe. Odată cu lansarea publică, Google previzualizează în Antigravity funcția „swarm": un singur prompt devine o echipă coordonată de agenți. Prețul introductiv e 2 dolari la un milion de tokeni de intrare și 10 dolari la un milion de tokeni de ieșire, până pe 30 noiembrie; de la 1 decembrie se dublează, la 4 dolari și 20 de dolari. Modelul nu e pe nivelul gratuit al API-ului.</p>
+          </div>
+          <div class="sec">
+            <p class="sec-label">De ce contează</p>
+            <p>Își construiește automatizările pe API-ul Gemini (Google Apps Script + Gemini) — Carbon e noul vârf de gamă al exact acestui stack, pentru sarcinile lungi și în mai mulți pași pe care le urmărește în pagină: agenți autonomi, programare, securitate. Prețul introductiv până pe 30 noiembrie e fereastra ieftină de testat; după aceea, costul pe token se dublează. Funcția „swarm" din Antigravity e prima formă comercială a ideii de echipă de agenți coordonați — direcția pe care o experimentează deja cu automatizările lui. Prudență la cifrele de performanță: sunt revendicări ale Google — locul 1 pe CursorBench 4.0, WANDR (Perplexity) și AutomationBench (Zapier), la un cost pe sarcină de peste două ori mai mic decât al următorului model — iar The Verge notează că, pe unele repere citate de Google la prima lansare, Carbon stă în urma Fable 5.2 și că firmele își aleg reperele care le favorizează.</p>
+          </div>
+          <div class="verify">
+            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
+            <p>Verdict: confirmat. The Verge (11 nov 2026, 2:19 AM ET) — „Google releases Gemini 4 Carbon with agent 'swarm' feature": lansarea publică, funcția „swarm", disponibilitatea prin API și pentru abonații Ultra. Sursă primară: Google DeepMind, „Gemini 4 Carbon is now available" (10 nov 2026) — anunțul propriu, cu prețurile și suprafețele de acces. Unite.ai (10 nov 2026) — confirmă disponibilitatea din 10 noiembrie, prețurile și dublarea lor de la 1 decembrie, plus detaliile din model card. The Outpost (10 nov 2026, pe baza VentureBeat) — confirmă accesul prin API și pentru Ultra.</p>
+            <ul class="sources">
+              <li><a href="https://www.theverge.com/ai-artificial-intelligence/1030787/google-gemini-4-carbon-public-rollout" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>The Verge — „Google releases Gemini 4 Carbon with agent 'swarm' feature" (11 nov 2026)<span class="host">theverge.com</span></a></li>
+              <li><a href="https://deepmind.google/blog/gemini-4-carbon-is-now-available/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Google DeepMind — „Gemini 4 Carbon is now available" (10 nov 2026, sursă primară)<span class="host">deepmind.google</span></a></li>
+              <li><a href="https://www.unite.ai/google-expands-gemini-4-carbon-access-beyond-cybersecurity-defenders/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Unite.ai — „Google Expands Gemini 4 Carbon Access Beyond Cybersecurity Defenders" (10 nov 2026)<span class="host">unite.ai</span></a></li>
+              <li><a href="https://theoutpost.ai/news-story/google-releases-gemini-4-carbon-ai-model-to-developers-and-ultra-subscribers-at-competitive-pricing-33317/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>The Outpost — „Google Expands Gemini 4 Carbon AI Model to Developers" (10 nov 2026)<span class="host">theoutpost.ai</span></a></li>
+            </ul>
+          </div>
+          <div class="opposing">
+            <p class="sec-label">Tabăra adversă</p>
+            <p>The Verge — notează că, pe unele repere citate de Google la anunțul inițial, Carbon stă în urma Fable 5.2 și că firmele își aleg reperele care le favorizează; cifrele de performanță sunt revendicări ale producătorului, nu măsurători independente. (<a href="https://www.theverge.com/ai-artificial-intelligence/1030787/google-gemini-4-carbon-public-rollout" target="_blank" rel="noopener">The Verge, 11 nov 2026</a>)</p>
+          </div>
+          <div class="impact">
+            <span class="badge">Impact direct</span>
+            <p>Impact direct: minim azi — nicio acțiune imediată; nu e pe nivelul gratuit al API-ului, iar în aplicația Gemini consumatorii îl primesc implicit deocamdată doar în SUA și Marea Britanie, nu și în Belgia. De urmărit practic: merită testat pe o sarcină grea din automatizările lui cât timp prețul introductiv (2 $ / 10 $ la un milion de tokeni) ține, până pe 30 noiembrie; după 1 decembrie costul se dublează. Argon rămâne recomandarea Google pentru majoritatea sarcinilor — Carbon e pentru cele mai grele.</p>
+          </div>
+        </article>
+
+        <!-- 3 · 11 nov · 10:00 -->
         <article id="stire-156" data-cats="securitate" data-sev="amber" data-subiect="negocieri de pace Abu Dhabi">
           <div class="a-meta">
             <span class="a-time">11 nov · 10:00</span>
@@ -857,7 +932,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-132" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">negocieri de pace Abu Dhabi</span>
-            <span class="a-num">#1 / 4</span>
+            <span class="a-num">#3 / 6</span>
           </div>
           <h2>Prima zi a negocierilor de pace de la Abu Dhabi s-a încheiat fără acord; Zelenski cere Europei un reprezentant unic până la sfârșitul lui noiembrie</h2>
           <div class="followup">
@@ -893,7 +968,7 @@
           </div>
         </article>
 
-<!-- 2 · 11 nov · 09:00 -->
+<!-- 4 · 11 nov · 09:00 -->
         <article id="stire-155" data-cats="tech" data-sev="amber" data-subiect="scurgeri de date Grok Build">
           <div class="a-meta">
             <span class="a-time">11 nov · 09:00</span>
@@ -901,7 +976,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-135" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">scurgeri de date Grok Build</span>
-            <span class="a-num">#2 / 4</span>
+            <span class="a-num">#4 / 6</span>
           </div>
           <h2>Grok Build expune public 35.578 de aplicații construite cu AI: linkurile „secrete" erau găsibile de oricine, inclusiv 24 de aplicații interne ale SpaceXSI</h2>
           <div class="followup">
@@ -936,14 +1011,14 @@
           </div>
         </article>
 
-        <!-- 3 · 11 nov · 07:00 -->
+        <!-- 5 · 11 nov · 07:00 -->
         <article id="stire-154" data-cats="securitate romania" data-sev="amber" data-subiect="șantier naval Mangalia">
           <div class="a-meta">
             <span class="a-time">11 nov · 07:00</span>
             <span class="a-cat">Securitate &amp; NATO · România</span>
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="subj-pill">șantier naval Mangalia</span>
-            <span class="a-num">#3 / 4</span>
+            <span class="a-num">#5 / 6</span>
           </div>
           <h2>Rheinmetall a plătit integral cele 138 de milioane de euro pentru Șantierul Naval Mangalia și a semnat contractul de vânzare-cumpărare</h2>
           <div class="sec">
@@ -975,7 +1050,7 @@
           </div>
         </article>
 
-        <!-- 4 · 11 nov · 06:00 -->
+        <!-- 6 · 11 nov · 06:00 -->
         <article id="stire-153" data-cats="tech" data-sev="amber" data-subiect="legea RAISE, New York">
           <div class="a-meta">
             <span class="a-time">11 nov · 06:00</span>
@@ -983,7 +1058,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="spot-tag">Știrea zilei</span>
             <span class="subj-pill">legea RAISE, New York</span>
-            <span class="a-num">#4 / 4</span>
+            <span class="a-num">#6 / 6</span>
           </div>
           <h2>Legea RAISE din New York intră în aplicare: OpenAI și Anthropic trebuie să se înregistreze și să raporteze incidentele critice de siguranță în 72 de ore</h2>
           <div class="sec">
@@ -5928,7 +6003,7 @@
 
       <footer>
         <div class="rule" aria-hidden="true"></div>
-        <p>Sfârșitul ediției de azi · Ultima actualizare: miercuri, 11 noiembrie 2026, 10:00<br />Monitorizarea rulează la circa 3 ore, în fereastra L–V 06:00–22:00 · S–D 07:30–22:00 — dă refresh pentru noutăți.</p>
+        <p>Sfârșitul ediției de azi · Ultima actualizare: miercuri, 11 noiembrie 2026, 11:00<br />Monitorizarea rulează la circa 3 ore, în fereastra L–V 06:00–22:00 · S–D 07:30–22:00 — dă refresh pentru noutăți.</p>
         <a class="to-top" href="#stire-156">↑ Înapoi la cea mai nouă știre</a>
       </footer>
     </div>
