@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="color-scheme" content="light dark" />
-    <meta name="tirile-versiune" content="2026-11-11T07:00:00+01:00|2|amber" />
+    <meta name="tirile-versiune" content="2026-11-11T09:00:00+01:00|3|amber" />
     <link rel="icon" href="data:," />
     <title>Știrile zilei</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -699,9 +699,9 @@
     <div class="topbar">
       <div class="topbar-inner">
         <span class="dot" aria-hidden="true"></span>
-        <span><strong>Miercuri, 11 noiembrie 2026</strong> · actualizat la <strong>07:00</strong></span>
+        <span><strong>Miercuri, 11 noiembrie 2026</strong> · actualizat la <strong>09:00</strong></span>
         <span aria-hidden="true">·</span>
-        <span>2 știri azi</span>
+        <span>3 știri azi</span>
         <span class="spacer"></span>
         <button class="refresh-btn" type="button" id="refreshBtn" aria-label="Reîmprospătează pagina">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg>
@@ -739,7 +739,7 @@
 
       <!-- Chenar permanent: știrea cea mai importantă a zilei — sub fereastra
            „Ultimele știri", ÎNAINTEA dashboardului, vizibilă din prima, fără scroll.
-           Nivelul de azi: GALBEN (sev-amber) — de urmărit: legea RAISE din New York intră în aplicare — știrea marcată „Știrea zilei" (singura cu relevanță directă pe terenul lui profesional de incident management), deci chenarul zilei la egalitate de severitate; mai există o altă știre galbenă azi (plata integrală a Șantierului Naval Mangalia de către Rheinmetall, de la 07:00), de aceea apare mențiunea despre celelalte știri cu aceeași severitate, cu filtru pe galben la „apasă aici".
+           Nivelul de azi: GALBEN (sev-amber) — de urmărit: legea RAISE din New York intră în aplicare — știrea marcată „Știrea zilei" (singura cu relevanță directă pe terenul lui profesional de incident management), deci chenarul zilei la egalitate de severitate; mai există alte două știri galbene azi (plata integrală a Șantierului Naval Mangalia de către Rheinmetall, de la 07:00, și scurgerile de date Grok Build, de la 09:00), de aceea apare mențiunea despre celelalte știri cu aceeași severitate, cu filtru pe galben la „apasă aici".
            Chenarul rămâne în afara logicii de filtrare: vizibil indiferent de filtrul de categorie. -->
       <section class="spot sev-amber" aria-label="Știrea cea mai importantă a zilei">
         <div class="spot-head">
@@ -768,15 +768,15 @@
       <section class="dashboard" aria-label="Panou de ansamblu">
         <div class="dash-head">
           <span class="dash-title">Dashboard · Azi</span>
-          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 07:00</span>
+          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 09:00</span>
           <span class="dash-meta">Fereastră monitorizare <strong>L–V 06:00–22:00 · S–D 07:30–22:00</strong> · pas ~3 ore</span>
         </div>
 
         <div class="kpi-grid five" role="group" aria-label="Filtrează după categorie — apasă pe un tile">
           <button class="kpi" type="button" data-filter="toate" aria-pressed="true">
             <span class="kpi-top"><span class="kpi-label">Toate știrile</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">2</span>
-            <span class="kpi-sub">știri verificate azi, în 2 rulări</span>
+            <span class="kpi-value">3</span>
+            <span class="kpi-sub">știri verificate azi, în 3 rulări</span>
             <span class="kpi-bar" aria-hidden="true"><i style="width:100%"></i></span>
             <span class="kpi-hint">Apasă pentru toate</span>
           </button>
@@ -784,14 +784,14 @@
             <span class="kpi-top"><span class="kpi-label">Securitate &amp; NATO</span><span class="kpi-check" aria-hidden="true">✓</span></span>
             <span class="kpi-value">1</span>
             <span class="kpi-sub">șantier naval Mangalia</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:50%"></i></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:33%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="romania" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">România</span><span class="kpi-check" aria-hidden="true">✓</span></span>
             <span class="kpi-value">1</span>
             <span class="kpi-sub">șantier naval Mangalia</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:50%"></i></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:33%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="belgia" aria-pressed="false">
@@ -803,9 +803,9 @@
           </button>
           <button class="kpi" type="button" data-filter="tech" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">Tech &amp; AI</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">1</span>
-            <span class="kpi-sub">legea RAISE, New York</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:50%"></i></span>
+            <span class="kpi-value">2</span>
+            <span class="kpi-sub">scurgeri de date Grok Build · legea RAISE, New York</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:67%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
         </div>
@@ -819,7 +819,7 @@
       </section>
 
       <div class="filter-status" aria-live="polite">
-        <span class="filter-label">Se afișează: <strong>Toate categoriile — 2 din 2 știri</strong></span>
+        <span class="filter-label">Se afișează: <strong>Toate categoriile — 3 din 3 știri</strong></span>
         <button class="filter-reset" type="button" hidden>Resetează filtrul</button>
       </div>
 
@@ -849,14 +849,57 @@
       <p class="empty">Nicio știre în această categorie azi.</p>
 
       <main>
-        <!-- 1 · 11 nov · 07:00 -->
+        <!-- 1 · 11 nov · 09:00 -->
+        <article id="stire-155" data-cats="tech" data-sev="amber" data-subiect="scurgeri de date Grok Build">
+          <div class="a-meta">
+            <span class="a-time">11 nov · 09:00</span>
+            <span class="a-cat">Tech &amp; AI</span>
+            <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
+            <a class="cont-pill" href="#stire-135" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
+            <span class="subj-pill">scurgeri de date Grok Build</span>
+            <span class="a-num">#1 / 3</span>
+          </div>
+          <h2>Grok Build expune public 35.578 de aplicații construite cu AI: linkurile „secrete" erau găsibile de oricine, inclusiv 24 de aplicații interne ale SpaceXSI</h2>
+          <div class="followup">
+            <span class="tag">Urmare la</span>
+            <p><a href="#stire-135">„Claude Code scurge parole și chei API pe GitHub: 1.122 de fișiere publice conțin secrete reale" — marți, 10 noiembrie 2026, ora 09:00.</a></p>
+          </div>
+          <div class="sec">
+            <p class="sec-label">Ce s-a întâmplat</p>
+            <p>Marți, 10 noiembrie, firma de securitate Claroc a publicat raportul „GhostShares 2": din 43.551 de adrese de aplicații Grok Build verificate sub domeniul grok.me, 37.571 erau încă online, iar 35.578 dintre ele (94,7%) se deschideau oricui, fără autentificare. Linkurile de partajare sunt formate din cuvinte aleatorii puse în numele de gazdă (de tipul cinder-crane-sand-frost.grok.me), iar numele de gazdă ajung în bazele publice de DNS pasiv — deci oricine putea găsi aplicațiile fără să primească vreun link. Printre ele, Claroc a găsit 24 de aplicații construite de angajați ai SpaceXSI și X — un plan de onboarding marcat confidențial, o hartă a teritoriului de vânzări cu 594 de conturi, propuneri de publicitate — și date interne de la alte 30 de organizații identificate, între care companii din Fortune 500. Claroc a anunțat SpaceXSI pe 8 noiembrie; compania și-a retras propriile 24 de aplicații abia după întrebările Ars Technica, din 10 noiembrie, iar celelalte aplicații expuse au rămas deschise.</p>
+          </div>
+          <div class="sec">
+            <p class="sec-label">De ce contează</p>
+            <p>Al treilea incident în trei săptămâni în care un instrument AI de coding scurge datele utilizatorilor — după breșa OpenCode (20 octombrie) și fișierele de setări Claude Code (9–10 noiembrie) — și cel mai amplu ca număr de aplicații expuse. Lecția mecanismului: un link „secret" pus în numele de gazdă nu e secret, pentru că DNS-ul pasiv îl înregistrează; doar secretul din calea URL-ului rămâne invizibil pentru DNS. Profesional, cazul arată cum toolurile AI de tip vibe-coding ocolesc controalele clasice de securitate: angajați care publică dashboarduri cu date interne fără avizul securității — exact tipul de incident de tip „shadow AI" care ajunge la un IT incident Manager.</p>
+          </div>
+          <div class="verify">
+            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
+            <p>Verdict: confirmat. Claroc Research (10 nov 2026) — raportul primar „GhostShares 2: Grok Apps Exposed xAI's Business Secrets and People's Private Data", cu cifrele testării proprii. Ars Technica (Dan Goodin, 10 nov 2026) — relatarea cercetării, cu verificare proprie: SpaceXSI și-a retras cele 24 de aplicații la câteva ore după întrebările redacției. Pivot News (11 nov 2026), Silicon Report (10 nov 2026) și iFynx (11 nov 2026) relatează independent aceleași constatări ale Claroc.</p>
+            <ul class="sources">
+              <li><a href="https://blog.claroc.io/ghostshares-grok-build-apps/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Claroc Research — „GhostShares 2: Grok Apps Exposed xAI's Business Secrets and People's Private Data" (10 nov 2026)<span class="host">blog.claroc.io</span></a></li>
+              <li><a href="https://pivotnews.ai/five/grok-build-share-links-left-35-000-apps-public-security" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Pivot News — „Grok Build share links left 35,000 apps public, security…" (11 nov 2026)<span class="host">pivotnews.ai</span></a></li>
+              <li><a href="https://www.siliconreport.com/grok-build-leaks-data-from-thousands-of-users-including-spacexsi" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Silicon Report — „Grok Build leaks data from thousands of users, including SpaceXSI" (10 nov 2026)<span class="host">siliconreport.com</span></a></li>
+              <li><a href="https://ifynx.com/blog/grok-build-apps-exposed-ghostshares-claroc-ai-app-builder-security-checklist-gulf-egypt/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>iFynx — „Grok Build Security: Why 35,000 Grok Apps Were Exposed" (11 nov 2026)<span class="host">ifynx.com</span></a></li>
+            </ul>
+          </div>
+          <div class="opposing">
+            <p class="sec-label">Tabăra adversă</p>
+            <p>SpaceXSI (poziția comunicată către Ars Technica, raportată de Claroc) — aplicațiile Grok sunt private până când creatorul alege să le partajeze, iar conturile angajaților pornesc cu setarea „Only you"; publicarea cere mai mulți pași, inclusiv acceptarea unei declinări legale. Claroc răspunde că pașii în plus nu protejează datele: cele 35.578 de aplicații deschise au trecut prin exact aceiași pași, iar cele 24 de aplicații ale angajaților erau deschise în ciuda setării implicite. (<a href="https://blog.claroc.io/ghostshares-grok-build-apps/" target="_blank" rel="noopener">blog.claroc.io</a>)</p>
+          </div>
+          <div class="impact">
+            <span class="badge">Impact direct</span>
+            <p>Impact direct minim azi — Grok Build nu face parte din toolurile lui curente (Claude, Gemini, Google Apps Script), deci nu are aplicații publicate acolo. Relevanță practică ridicată: același mecanism de partajare prin link există și în toolurile pe care le folosește — artefacte Claude, conversații ChatGPT partajate, partajări Gemini — cu diferența că acelea țin secretul în calea URL-ului, unde DNS-ul nu ajunge, în timp ce Grok îl pune în numele de gazdă. Regula de reținut: niciodată date interne, chei API sau liste de persoane într-o aplicație construită cu AI și partajată prin link, fără verificarea setării de acces.</p>
+          </div>
+        </article>
+
+        <!-- 2 · 11 nov · 07:00 -->
         <article id="stire-154" data-cats="securitate romania" data-sev="amber" data-subiect="șantier naval Mangalia">
           <div class="a-meta">
             <span class="a-time">11 nov · 07:00</span>
             <span class="a-cat">Securitate &amp; NATO · România</span>
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="subj-pill">șantier naval Mangalia</span>
-            <span class="a-num">#1 / 2</span>
+            <span class="a-num">#2 / 3</span>
           </div>
           <h2>Rheinmetall a plătit integral cele 138 de milioane de euro pentru Șantierul Naval Mangalia și a semnat contractul de vânzare-cumpărare</h2>
           <div class="sec">
@@ -888,7 +931,7 @@
           </div>
         </article>
 
-        <!-- 2 · 11 nov · 06:00 -->
+        <!-- 3 · 11 nov · 06:00 -->
         <article id="stire-153" data-cats="tech" data-sev="amber" data-subiect="legea RAISE, New York">
           <div class="a-meta">
             <span class="a-time">11 nov · 06:00</span>
@@ -896,7 +939,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="spot-tag">Știrea zilei</span>
             <span class="subj-pill">legea RAISE, New York</span>
-            <span class="a-num">#2 / 2</span>
+            <span class="a-num">#3 / 3</span>
           </div>
           <h2>Legea RAISE din New York intră în aplicare: OpenAI și Anthropic trebuie să se înregistreze și să raporteze incidentele critice de siguranță în 72 de ore</h2>
           <div class="sec">
@@ -5841,8 +5884,8 @@
 
       <footer>
         <div class="rule" aria-hidden="true"></div>
-        <p>Sfârșitul ediției de azi · Ultima actualizare: miercuri, 11 noiembrie 2026, 07:00<br />Monitorizarea rulează la circa 3 ore, în fereastra L–V 06:00–22:00 · S–D 07:30–22:00 — dă refresh pentru noutăți.</p>
-        <a class="to-top" href="#stire-154">↑ Înapoi la cea mai nouă știre</a>
+        <p>Sfârșitul ediției de azi · Ultima actualizare: miercuri, 11 noiembrie 2026, 09:00<br />Monitorizarea rulează la circa 3 ore, în fereastra L–V 06:00–22:00 · S–D 07:30–22:00 — dă refresh pentru noutăți.</p>
+        <a class="to-top" href="#stire-155">↑ Înapoi la cea mai nouă știre</a>
       </footer>
     </div>
 
