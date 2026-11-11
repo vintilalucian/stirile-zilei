@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="color-scheme" content="light dark" />
-    <meta name="tirile-versiune" content="2026-11-10T21:00:00+01:00|21|amber" />
+    <meta name="tirile-versiune" content="2026-11-11T06:00:00+01:00|1|amber" />
     <link rel="icon" href="data:," />
     <title>Știrile zilei</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -699,9 +699,9 @@
     <div class="topbar">
       <div class="topbar-inner">
         <span class="dot" aria-hidden="true"></span>
-        <span><strong>Marți, 10 noiembrie 2026</strong> · actualizat la <strong>21:00</strong></span>
+        <span><strong>Miercuri, 11 noiembrie 2026</strong> · actualizat la <strong>06:00</strong></span>
         <span aria-hidden="true">·</span>
-        <span>21 știri azi</span>
+        <span>1 știre azi</span>
         <span class="spacer"></span>
         <button class="refresh-btn" type="button" id="refreshBtn" aria-label="Reîmprospătează pagina">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg>
@@ -716,12 +716,12 @@
         <h1>Știrile zilei</h1>
         <div class="date-line">
           <span class="day">Ediția de azi</span>
-          <span>Marți, 10 noiembrie 2026 · Europe/Brussels</span>
+          <span>Miercuri, 11 noiembrie 2026 · Europe/Brussels</span>
         </div>
         <p class="lede"><strong>Apasă pe un tile</strong> ca să filtrezi pagina — articole complete jos, cele mai noi primele.</p>
       </header>
 
-      <section class="day" id="zi-2026-11-10">
+      <section class="day" id="zi-2026-11-11">
       <!-- Fereastra „Ultimele știri" — sus, imediat deasupra chenarului
            „Știrea zilei", între masthead și chenar. Arată DOAR titlurile din
            cea mai recentă rulare (1–2), fiecare link la cardul ei (#stire-N).
@@ -736,6 +736,164 @@
         </div>
         <ul class="latest-list"></ul>
       </section>
+
+      <!-- Chenar permanent: știrea cea mai importantă a zilei — sub fereastra
+           „Ultimele știri", ÎNAINTEA dashboardului, vizibilă din prima, fără scroll.
+           Nivelul de azi: GALBEN (sev-amber) — de urmărit: legea RAISE din New York intră în aplicare — prima și singura știre a zilei și singura galbenă, deci chenarul zilei; nu există alte știri cu aceeași severitate azi, de aceea mențiunea despre celelalte știri lipsește.
+           Chenarul rămâne în afara logicii de filtrare: vizibil indiferent de filtrul de categorie. -->
+      <section class="spot sev-amber" aria-label="Știrea cea mai importantă a zilei">
+        <div class="spot-head">
+          <span class="spot-kicker">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13 2 4.5 13.5H11L9.5 22 19 10h-6.5L13 2z"/></svg>
+            Știrea zilei · Atenție rapidă
+          </span>
+          <span class="spot-time">11 nov · 06:00</span>
+          <span class="spot-pill">Nivel galben — de urmărit</span>
+        </div>
+        <h2 class="spot-title">Legea RAISE din New York intră în aplicare: OpenAI și Anthropic trebuie să se înregistreze și să raporteze incidentele critice de siguranță în 72 de ore</h2>
+        <p class="spot-why"><strong>De ce e în față:</strong> prima reglementare care impune raportarea incidentelor AI în 72 de ore — direct pe terenul lui profesional de incident management.</p>
+        <p class="spot-lead">Marți, 10 noiembrie, statul New York a deschis portalul de înregistrare RAISE, prin care marii dezvoltatori de modele AI de frontieră — între care OpenAI și Anthropic — trebuie să se înregistreze până la 1 ianuarie 2027, când legea intră în vigoare. De atunci, dezvoltatorii vizați trebuie să publice cadre de siguranță și rapoarte de transparență a modelelor și să raporteze incidentele critice de siguranță în 72 de ore.</p>
+        <p class="spot-more" hidden><span class="spot-more-text"></span> <button class="spot-more-btn" type="button">apasă aici</button></p>
+        <div class="spot-foot">
+          <a class="spot-link" href="#stire-153">Citește știrea completă ↓</a>
+          <div class="sev-scale" role="img" aria-label="Scară de gravitate: verde — normal, galben — de urmărit, roșu — grav. Nivelul de azi: galben.">
+            <span class="sev-item"><i class="sev-dot g" aria-hidden="true"></i>Verde · normal</span>
+            <span class="sev-item on"><i class="sev-dot y" aria-hidden="true"></i>Galben · de urmărit</span>
+            <span class="sev-item"><i class="sev-dot r" aria-hidden="true"></i>Roșu · grav</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Dashboard -->
+      <section class="dashboard" aria-label="Panou de ansamblu">
+        <div class="dash-head">
+          <span class="dash-title">Dashboard · Azi</span>
+          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 06:00</span>
+          <span class="dash-meta">Fereastră monitorizare <strong>L–V 06:00–22:00 · S–D 07:30–22:00</strong> · pas ~3 ore</span>
+        </div>
+
+        <div class="kpi-grid five" role="group" aria-label="Filtrează după categorie — apasă pe un tile">
+          <button class="kpi" type="button" data-filter="toate" aria-pressed="true">
+            <span class="kpi-top"><span class="kpi-label">Toate știrile</span><span class="kpi-check" aria-hidden="true">✓</span></span>
+            <span class="kpi-value">1</span>
+            <span class="kpi-sub">știri verificate azi, în 1 rulare</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:100%"></i></span>
+            <span class="kpi-hint">Apasă pentru toate</span>
+          </button>
+          <button class="kpi" type="button" data-filter="securitate" aria-pressed="false">
+            <span class="kpi-top"><span class="kpi-label">Securitate &amp; NATO</span><span class="kpi-check" aria-hidden="true">✓</span></span>
+            <span class="kpi-value">0</span>
+            <span class="kpi-sub"></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:0%"></i></span>
+            <span class="kpi-hint">Apasă pentru a filtra →</span>
+          </button>
+          <button class="kpi" type="button" data-filter="romania" aria-pressed="false">
+            <span class="kpi-top"><span class="kpi-label">România</span><span class="kpi-check" aria-hidden="true">✓</span></span>
+            <span class="kpi-value">0</span>
+            <span class="kpi-sub"></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:0%"></i></span>
+            <span class="kpi-hint">Apasă pentru a filtra →</span>
+          </button>
+          <button class="kpi" type="button" data-filter="belgia" aria-pressed="false">
+            <span class="kpi-top"><span class="kpi-label">Belgia</span><span class="kpi-check" aria-hidden="true">✓</span></span>
+            <span class="kpi-value">0</span>
+            <span class="kpi-sub"></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:0%"></i></span>
+            <span class="kpi-hint">Apasă pentru a filtra →</span>
+          </button>
+          <button class="kpi" type="button" data-filter="tech" aria-pressed="false">
+            <span class="kpi-top"><span class="kpi-label">Tech &amp; AI</span><span class="kpi-check" aria-hidden="true">✓</span></span>
+            <span class="kpi-value">1</span>
+            <span class="kpi-sub">legea RAISE, New York</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:100%"></i></span>
+            <span class="kpi-hint">Apasă pentru a filtra →</span>
+          </button>
+        </div>
+
+        <div class="dash-foot solo">
+          <div class="dash-panel">
+            <h3>Severitate — apasă un pătrat ca să vezi doar știrile de nivelul acela</h3>
+            <div class="sev-squares" role="group" aria-label="Filtrează după severitate — roșu, galben, verde"></div>
+          </div>
+        </div>
+      </section>
+
+      <div class="filter-status" aria-live="polite">
+        <span class="filter-label">Se afișează: <strong>Toate categoriile — 1 din 1 știri</strong></span>
+        <button class="filter-reset" type="button" hidden>Resetează filtrul</button>
+      </div>
+
+      <!-- Cuprinsul zilei — sub banda dashboard, înaintea cardurilor.
+           Generat de script din cardurile zilei curente: lista completă a
+           zilei, grupată pe ora publicării, cele mai noi primele; fiecare
+           titlu e link la cardul lui (#stire-N), iar antetul de oră al
+           fiecărui grup e buton de filtru pe rulare — aceeași logică pe care
+           o aveau barele „Ritmul zilei" (selecție unică; al doilea click pe
+           aceeași oră sau butonul de reset revine la toate; o selecție de oră
+           anulează filtrul de categorie și invers). Nu e pliabil: toate
+           grupurile de oră sunt extinse permanent, cu toate titlurile
+           vizibile — fără săgeți de pliere și fără buton de extindere.
+           Cuprinsul urmează filtrul activ, la fel ca și cardurile: la un
+           filtru de categorie, severitate sau oră arată doar rândurile
+           știrilor din selecția aceea, iar grupurile de oră rămase fără
+           nicio știre vizibilă se ascund; butonul „Toate" îl readuce la
+           toate titlurile zilei. Chenarul rămâne în afara filtrării. -->
+      <nav class="day-toc" aria-label="Cuprinsul zilei">
+        <div class="toc-head">
+          <h2>Cuprins</h2>
+          <span class="toc-count">cele mai noi primele · apasă pe o oră ca să filtrezi rularea, pe un titlu ca să sari la știre</span>
+        </div>
+        <div class="toc-groups"></div>
+      </nav>
+
+      <p class="empty">Nicio știre în această categorie azi.</p>
+
+      <main>
+        <!-- 1 · 11 nov · 06:00 -->
+        <article id="stire-153" data-cats="tech" data-sev="amber" data-subiect="legea RAISE, New York">
+          <div class="a-meta">
+            <span class="a-time">11 nov · 06:00</span>
+            <span class="a-cat">Tech &amp; AI</span>
+            <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
+            <span class="spot-tag">Știrea zilei</span>
+            <span class="subj-pill">legea RAISE, New York</span>
+            <span class="a-num">#1 / 1</span>
+          </div>
+          <h2>Legea RAISE din New York intră în aplicare: OpenAI și Anthropic trebuie să se înregistreze și să raporteze incidentele critice de siguranță în 72 de ore</h2>
+          <div class="sec">
+            <p class="sec-label">Ce s-a întâmplat</p>
+            <p>Marți, 10 noiembrie, statul New York a deschis portalul de înregistrare RAISE, prin care marii dezvoltatori de modele AI de frontieră — între care OpenAI și Anthropic — trebuie să se înregistreze până la 1 ianuarie 2027, când legea intră în vigoare. De atunci, dezvoltatorii vizați trebuie să publice cadre de siguranță și rapoarte de transparență a modelelor și să raporteze incidentele critice de siguranță în 72 de ore. Legea e aplicată de noul birou DIGIT, din cadrul Departamentului de Servicii Financiare al statului. În aceeași zi, guvernatoarea Kathy Hochul a lansat și o rețea statală de testare independentă a modelelor de frontieră, coordonată de Binghamton University, cu peste 80 de cercetători.</p>
+          </div>
+          <div class="sec">
+            <p class="sec-label">De ce contează</p>
+            <p>Pentru un IT incident Manager, asta e prima reglementare majoră care transformă raportarea incidentelor AI într-o obligație legală cu termen fix — 72 de ore — exact mecanismul pe care îl gestionează profesional. E un precedent cu ecou: California cere deja raportarea incidentelor critice în 15 zile (legea SB 53, în vigoare din ianuarie 2026), Illinois urmează din 2027, iar în aceeași zi Australia a anunțat un regim similar — regulator AI și raportare obligatorie a incidentelor, după breșa agentului OpenAI la portalul Medicare (Reuters, 10 nov). Direcția e clară: raportarea incidentelor AI devine infrastructură reglementată, nu practică voluntară, iar modelul (registru + raportare + evaluări independente) va ajunge probabil și în cadrele europene.</p>
+          </div>
+          <div class="verify">
+            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
+            <p>Verdict: confirmat. TechCrunch (10 nov 2026), „OpenAI, Anthropic face new oversight as New York's AI safety law takes effect". Unite.ai (10 nov 2026), lansarea rețelei de testare + portalul RAISE. Sursă primară: NY State Department of Financial Services / Guvernatoarea Kathy Hochul, comunicatul din 21 sept 2026 privind implementarea RAISE. Context SUA (California SB 53, Illinois SB 315) — din articolul TechCrunch.</p>
+            <ul class="sources">
+              <li><a href="https://techcrunch.com/2026/11/10/openai-anthropic-face-new-oversight-as-new-yorks-ai-safety-law-takes-effect/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>TechCrunch — „OpenAI, Anthropic face new oversight as New York's AI safety law takes effect" (10 nov 2026)<span class="host">techcrunch.com</span></a></li>
+              <li><a href="https://www.unite.ai/hochul-launches-statewide-ai-safety-testing-network-in-new-york/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Unite.ai — lansarea rețelei statale de testare AI + portalul RAISE (10 nov 2026)<span class="host">unite.ai</span></a></li>
+              <li><a href="https://www.dfs.ny.gov/reports_and_publications/press_releases/pr20260921" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>NY State Department of Financial Services / Guvernatoarea Kathy Hochul — comunicat privind implementarea RAISE (21 sept 2026, sursă primară)<span class="host">dfs.ny.gov</span></a></li>
+            </ul>
+          </div>
+          <div class="opposing">
+            <p class="sec-label">Tabăra adversă</p>
+            <p>OpenAI, Anthropic, Google și Meta — audiate sub jurământ la Consiliul orașului New York pe 5 octombrie 2026 — au spus că preferă un standard federal și au făcut lobby împotriva RAISE Act. (<a href="https://ppc.land/openai-anthropic-google-and-meta-face-10-proposed-nyc-ai-bills/" target="_blank" rel="noopener">ppc.land</a>)</p>
+          </div>
+          <div class="impact">
+            <span class="badge">Impact direct</span>
+            <p>Impact direct: minim azi — nu construiește modele de frontieră și nu e supus legii din New York. Relevanță profesională ridicată: raportarea incidentelor AI în 72 de ore devine obligație legală într-un stat american major, iar modelul va fi probabil preluat și în Europa; pentru automatizările lui cu API-uri AI, direcția e spre mai multă transparență obligatorie din partea furnizorilor de modele.</p>
+          </div>
+        </article>
+      </main>
+      </section>
+
+      <section class="day day-archive" id="zi-2026-11-10">
+        <div class="day-head">
+          <h2>Marți, 10 noiembrie 2026</h2>
+          <span>Ediția de ieri · 21 știri · arhivă (ultimele 7 zile)</span>
+        </div>
 
       <!-- Chenar permanent: știrea cea mai importantă a zilei — sub fereastra
            „Ultimele știri", ÎNAINTEA dashboardului, vizibilă din prima, fără scroll.
@@ -5642,679 +5800,10 @@
       </main>
       </section>
 
-      <section class="day day-archive" id="zi-2026-11-04">
-        <div class="day-head">
-          <h2>Miercuri, 4 noiembrie 2026</h2>
-          <span>Ediția de ieri · 14 știri · arhivă (ultimele 7 zile)</span>
-        </div>
-      <!-- Chenar permanent: știrea cea mai importantă a zilei — sub fereastra
-           „Ultimele știri", ÎNAINTEA dashboardului, vizibilă din prima, fără scroll.
-           Nivelul de azi: GALBEN (sev-amber) — de urmărit, evoluție importantă, fără acțiune imediată:
-           NATO a testat în Letonia apărarea anti-dronă pe rețele 5G comerciale
-           (exercițiul FUSE/DiBaX, cu aproape 400 de drone).
-           Chenarul rămâne în afara logicii de filtrare: vizibil indiferent de filtrul de categorie. -->
-      <section class="spot sev-amber" aria-label="Știrea cea mai importantă a zilei">
-        <div class="spot-head">
-          <span class="spot-kicker">
-            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13 2 4.5 13.5H11L9.5 22 19 10h-6.5L13 2z"/></svg>
-            Știrea zilei · Atenție rapidă
-          </span>
-          <span class="spot-time">4 nov · 08:00</span>
-          <span class="spot-pill">Nivel galben — de urmărit</span>
-        </div>
-        <h2 class="spot-title">NATO a testat în Letonia apărarea anti-dronă pe rețele 5G comerciale: exercițiul FUSE/DiBaX, cu aproape 400 de drone</h2>
-        <p class="spot-why"><strong>De ce e în față:</strong> NATO trece de la declarații la testare pe teren a apărării anti-dronă și a rețelelor reziliente — cu rezultate concrete de interoperabilitate, pe arcul amenințărilor cu drone urmărit din octombrie.</p>
-        <p class="spot-lead">În 19–30 octombrie, în Letonia (bazele Ādaži și Sēlija), Comandamentul Aliat pentru Transformare al NATO (ACT) a încheiat experimentarea DiBaX 2026 și evenimentul FUSE (29–30 octombrie): comunicații militare pe o felie privată și securizată din rețeaua 5G comercială a țării-gazdă, detecție pasivă a dronelor folosind infrastructura 5G și un test transfrontalier anti-dronă în care o dronă pornită din Lituania a fost angajată în Letonia. Demonstrația finală a implicat aproape 400 de drone și plutoni din Brigada Multinațională NATO din Letonia.</p>
-        <p class="spot-more" hidden><span class="spot-more-text"></span> <button class="spot-more-btn" type="button">apasă aici</button></p>
-        <div class="spot-foot">
-          <a class="spot-link" href="#stire-36">Citește știrea completă ↓</a>
-          <div class="sev-scale" role="img" aria-label="Scară de gravitate: verde — normal, galben — de urmărit, roșu — grav. Nivelul de azi: galben.">
-            <span class="sev-item"><i class="sev-dot g" aria-hidden="true"></i>Verde · normal</span>
-            <span class="sev-item on"><i class="sev-dot y" aria-hidden="true"></i>Galben · de urmărit</span>
-            <span class="sev-item"><i class="sev-dot r" aria-hidden="true"></i>Roșu · grav</span>
-          </div>
-        </div>
-      </section>
-
-      <!-- Dashboard -->
-      <section class="dashboard" aria-label="Panou de ansamblu">
-        <div class="dash-head">
-          <span class="dash-title">Dashboard · Azi</span>
-          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 22:00</span>
-          <span class="dash-meta">Fereastră monitorizare <strong>L–V 06:00–22:00 · S–D 07:30–22:00</strong> · pas ~3 ore</span>
-        </div>
-
-        <div class="kpi-grid" role="group" aria-label="Filtrează după categorie — apasă pe un tile">
-          <button class="kpi" type="button" data-filter="toate" aria-pressed="true">
-            <span class="kpi-top"><span class="kpi-label">Toate știrile</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">14</span>
-            <span class="kpi-sub">știri verificate azi, în 11 rulări</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:100%"></i></span>
-            <span class="kpi-hint">Apasă pentru toate</span>
-          </button>
-          <button class="kpi" type="button" data-filter="securitate" aria-pressed="false">
-            <span class="kpi-top"><span class="kpi-label">Securitate &amp; NATO</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">6</span>
-            <span class="kpi-sub">exercițiu Koalicja pentru Ucraina · Franța comandă submarin-robot UCUV · spyware pe iPhone-urile Bundestagului · pact pentru drone navale · furt Binance, interviu fals · NATO, apărare anti-dronă în Letonia</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:43%"></i></span>
-            <span class="kpi-hint">Apasă pentru a filtra →</span>
-          </button>
-          <button class="kpi" type="button" data-filter="romania" aria-pressed="false">
-            <span class="kpi-top"><span class="kpi-label">România</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">2</span>
-            <span class="kpi-sub">taxe locale București înghețate · Cernavodă repornește Unitatea 1</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:14%"></i></span>
-            <span class="kpi-hint">Apasă pentru a filtra →</span>
-          </button>
-          <button class="kpi" type="button" data-filter="tech" aria-pressed="false">
-            <span class="kpi-top"><span class="kpi-label">Tech &amp; AI</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">6</span>
-            <span class="kpi-sub">breșă DreamHost, parole furate · Revolut, evaluare 115 mld $ · Canva taie 22% din posturi · Anthropic, compute 58% din venituri · furt Binance, interviu fals · FlashProve, dovadă criptografică Anthropic</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:43%"></i></span>
-            <span class="kpi-hint">Apasă pentru a filtra →</span>
-          </button>
-        </div>
-
-        <div class="dash-foot">
-          <div class="dash-panel">
-            <h3>Ritmul zilei — știri pe rulare</h3>
-            <div class="rhythm" role="group" aria-label="Filtru după ora publicării — apasă pe o rulare ca să vezi doar știrile ei">
-              <button class="col" type="button" data-hour="08:00" aria-pressed="false" aria-label="Filtrează știrile de la ora 08:00 — 2 știri"><span class="n">2</span><span class="bar" style="height:40px"></span><span class="t">08:00</span></button>
-              <button class="col" type="button" data-hour="11:05" aria-pressed="false" aria-label="Filtrează știrile de la ora 11:05 — 2 știri"><span class="n">2</span><span class="bar" style="height:40px"></span><span class="t">11:05</span></button>
-              <button class="col" type="button" data-hour="13:00" aria-pressed="false" aria-label="Filtrează știrile de la ora 13:00 — 1 știre"><span class="n">1</span><span class="bar" style="height:22px"></span><span class="t">13:00</span></button>
-              <button class="col" type="button" data-hour="14:00" aria-pressed="false" aria-label="Filtrează știrile de la ora 14:00 — 1 știre"><span class="n">1</span><span class="bar" style="height:22px"></span><span class="t">14:00</span></button>
-              <button class="col" type="button" data-hour="15:00" aria-pressed="false" aria-label="Filtrează știrile de la ora 15:00 — 1 știre"><span class="n">1</span><span class="bar" style="height:22px"></span><span class="t">15:00</span></button>
-              <button class="col" type="button" data-hour="16:00" aria-pressed="false" aria-label="Filtrează știrile de la ora 16:00 — 1 știre"><span class="n">1</span><span class="bar" style="height:22px"></span><span class="t">16:00</span></button>
-              <button class="col" type="button" data-hour="17:00" aria-pressed="false" aria-label="Filtrează știrile de la ora 17:00 — 2 știri"><span class="n">2</span><span class="bar" style="height:40px"></span><span class="t">17:00</span></button>
-              <button class="col" type="button" data-hour="18:00" aria-pressed="false" aria-label="Filtrează știrile de la ora 18:00 — 1 știre"><span class="n">1</span><span class="bar" style="height:22px"></span><span class="t">18:00</span></button>
-              <button class="col" type="button" data-hour="19:00" aria-pressed="false" aria-label="Filtrează știrile de la ora 19:00 — 1 știre"><span class="n">1</span><span class="bar" style="height:22px"></span><span class="t">19:00</span></button>
-              <button class="col" type="button" data-hour="20:00" aria-pressed="false" aria-label="Filtrează știrile de la ora 20:00 — 1 știre"><span class="n">1</span><span class="bar" style="height:22px"></span><span class="t">20:00</span></button>
-              <button class="col" type="button" data-hour="22:00" aria-pressed="false" aria-label="Filtrează știrile de la ora 22:00 — 1 știre"><span class="n">1</span><span class="bar" style="height:22px"></span><span class="t">22:00</span></button>
-            </div>
-            <p class="rhythm-hint">Apasă pe o bară ca să vezi doar știrile din rularea aceea; apasă din nou pe ea pentru toate.</p>
-          </div>
-          <div class="dash-panel">
-            <h3>Stare ediție</h3>
-            <ul class="status-list">
-              <li><span class="k">Ultima actualizare</span><span class="v">Azi, 22:00</span></li>
-              <li><span class="k">Cea mai nouă</span><span class="v">DreamHost confirmă o breșă de două luni: parole FTP/SFTP și sesiuni webmail furate, atac nedetectat din august până pe 23 octombrie · 22:00</span></li>
-              <li><span class="k">Acoperire</span><span class="v">Ultimele 7 zile în arhivă</span></li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <div class="filter-status" aria-live="polite">
-        <span class="filter-label">Se afișează: <strong>Toate categoriile — 14 din 14 știri</strong></span>
-        <button class="filter-reset" type="button" hidden>Resetează filtrul</button>
-      </div>
-
-      <nav class="index" aria-label="Cuprinsul zilei">
-        <div class="index-head">
-          <h2>Cuprins</h2>
-          <span>apasă pe un titlu ca să sari direct la știre · se sincronizează cu filtrul</span>
-        </div>
-        <ol class="index-list">
-          <li data-cats="tech"><a href="#stire-48"><time>22:00</time><span class="cat-dot tech" aria-hidden="true"></span><span class="t">DreamHost confirmă o breșă de două luni: parole FTP/SFTP și sesiuni webmail furate, atac nedetectat din august până pe 23 octombrie</span><span class="n">#1</span></a></li>
-          <li data-cats="romania"><a href="#stire-47"><time>20:00</time><span class="cat-dot ro" aria-hidden="true"></span><span class="t">Taxele și impozitele locale din București rămân la nivelul din 2026 și în 2027 — proiectul Primăriei Capitalei, la vot în Consiliul General pe 12 noiembrie</span><span class="n">#2</span></a></li>
-          <li data-cats="securitate"><a href="#stire-46"><time>19:00</time><span class="cat-dot sec" aria-hidden="true"></span><span class="t">Exercițiul Koalicja (9–22 noiembrie, Polonia): primul exercițiu major al Forței Multinaționale pentru Ucraina — 2.800 de militari din 11 țări, cu componenta aeriană coordonată din România</span><span class="n">#3</span></a></li>
-          <li data-cats="tech"><a href="#stire-45"><time>18:00</time><span class="cat-dot tech" aria-hidden="true"></span><span class="t">Revolut valorează acum 115 miliarde $: cea mai valoroasă companie privată de tehnologie din Europa</span><span class="n">#4</span></a></li>
-          <li data-cats="tech"><a href="#stire-44"><time>17:00</time><span class="cat-dot tech" aria-hidden="true"></span><span class="t">Canva taie 22% din posturi (1.271 de roluri) pe fondul costurilor AI: factura de servire AI ajunge să restructureze un SaaS mare</span><span class="n">#5</span></a></li>
-          <li data-cats="securitate"><a href="#stire-43"><time>17:00</time><span class="cat-dot sec" aria-hidden="true"></span><span class="t">Franța comandă submarinul-robot de luptă UCUV: Naval Group trece la producția demonstratorului, cu teste pe mare din 2028</span><span class="n">#6</span></a></li>
-          <li data-cats="romania"><a href="#stire-42"><time>16:00</time><span class="cat-dot ro" aria-hidden="true"></span><span class="t">Nuclearelectrica a început repornirea Unității 1 de la Cernavodă: reconectarea la rețea, estimată vineri, 6 noiembrie; Unitatea 2 rămâne dependentă de Dunăre</span><span class="n">#7</span></a></li>
-          <li data-cats="tech"><a href="#stire-41"><time>15:00</time><span class="cat-dot tech" aria-hidden="true"></span><span class="t">Anthropic: compute-ul a ajuns la 58% din venituri — factura de 10 mld $ pe trimestru, jumătate pe contracte scurte scumpe</span><span class="n">#8</span></a></li>
-          <li data-cats="securitate"><a href="#stire-40"><time>14:00</time><span class="cat-dot sec" aria-hidden="true"></span><span class="t">BSI avertizează membrii Bundestagului: iPhone-urile lor ar putea fi vizate de spyware mercenar — alerte Apple din 29 octombrie, în 99 de țări</span><span class="n">#9</span></a></li>
-          <li data-cats="belgia"><a href="#stire-39"><time>13:00</time><span class="cat-dot" style="background:var(--muted)" aria-hidden="true"></span><span class="t">Criza bugetară belgiană: regele îi primește azi pe Rousseau și Bouchez; patronatele cer reluarea negocierilor, decizia privind demisia lui De Wever vine vineri</span><span class="n">#10</span></a></li>
-          <li data-cats="securitate"><a href="#stire-38"><time>11:05</time><span class="cat-dot sec" aria-hidden="true"></span><span class="t">Franța lansează un «pact» pentru drone navale: industria și startupurile, chemate să livreze rapid sisteme pentru marină</span><span class="n">#11</span></a></li>
-          <li data-cats="securitate tech"><a href="#stire-37"><time>11:05</time><span class="cat-dot sec" aria-hidden="true"></span><span class="t">Furtul Binance de 6,3 mld $ a început cu un interviu de angajare fals: campanie nord-coreeană de cinci luni, 57 de atacuri blocate înainte</span><span class="n">#12</span></a></li>
-          <li data-cats="securitate"><a href="#stire-36"><time>08:00</time><span class="cat-dot sec" aria-hidden="true"></span><span class="t">NATO a testat în Letonia apărarea anti-dronă pe rețele 5G comerciale: exercițiul FUSE/DiBaX, cu aproape 400 de drone</span><span class="n">#13</span></a></li>
-          <li data-cats="tech"><a href="#stire-35"><time>08:00</time><span class="cat-dot tech" aria-hidden="true"></span><span class="t">Anthropic lansează FlashProve: dovadă criptografică că un răspuns chiar vine de la modelul promis</span><span class="n">#14</span></a></li>
-        </ol>
-      </nav>
-
-      <p class="empty">Nicio știre în această categorie azi.</p>
-
-      <main>
-        <!-- 1 · 4 nov · 22:00 -->
-        <article id="stire-48" data-cats="tech">
-          <div class="a-meta">
-            <span class="a-time">4 nov · 22:00</span>
-            <span class="a-cat">Tech &amp; AI · Securitate cibernetică</span>
-            <span class="a-num">#1 / 14</span>
-          </div>
-          <h2>DreamHost confirmă o breșă de două luni: parole FTP/SFTP și sesiuni webmail furate, atac nedetectat din august până pe 23 octombrie</h2>
-
-          <div class="sec">
-            <p class="sec-label">Ce s-a întâmplat</p>
-            <p>Furnizorul american de hosting DreamHost a confirmat că atacatori au exploatat o vulnerabilitate a platformei sale web File Manager (files.dreamhost.com) și, între aproximativ august 2026 și 23 octombrie 2026 (ziua descoperirii), au putut accesa numele de utilizator și parolele FTP/SFTP ale clienților care s-au logat în File Manager în acea perioadă; atacatorul ar fi putut accesa și anumite sisteme webmail, expunând informații de sesiune, inclusiv credențiale, ale unui număr limitat de utilizatori.</p>
-            <p>Compania spune că a blocat accesul atacatorilor, a remediat vulnerabilitatea, a încheiat sesiunile active ale utilizatorilor posibil afectați și le-a invalidat parolele; numărul exact al clienților afectați nu a fost dezvăluit, purtătorul de cuvânt spunând doar că e „mult sub 10%” din cei circa 400.000 de clienți plătitori. DreamHost afirmă că nu are dovezi că ar fi fost accesate datele de logare în panoul de control sau detaliile de facturare/plată, și oferă persoanelor afectate un an de monitorizare a creditului și protecție împotriva furtului de identitate prin Equifax.</p>
-          </div>
-
-          <div class="sec">
-            <p class="sec-label">De ce contează</p>
-            <p>Pentru un IT incident Manager, cazul e manual de lecții: un atac deliberat a stat nedetectat circa două luni într-un serviciu de hosting, iar vectorul furat nu e parola principală, ci credențiale FTP și tokenuri de sesiune — exact tipul de credențial care supraviețuiește unei schimbări de parolă dacă sesiunea nu e revocată. E continuarea directă a firului de incidente pe tooling/hosting urmărit în pagină (breșa OpenCode din 20 oct, PHP armageddon din 21 oct).</p>
-          </div>
-
-          <div class="verify">
-            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
-            <p>Verdict: confirmat. Surse: TechCrunch (sursă curatoriată, 4 noiembrie 2026, 20:36 UTC) relatează breșa; BleepingComputer (în afara listei, 4 noiembrie 2026) confirmă independent accesul la logări FTP și sesiuni webmail; notificarea de breșă depusă la Procurorul General al Californiei (sursă primară, depunere 2 noiembrie 2026, relatată de Dapeer) confirmă cazul.</p>
-            <ul class="sources">
-              <li><a href="https://techcrunch.com/2026/11/04/hackers-stole-dreamhost-customer-files-and-inboxes-during-months-long-attack/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>TechCrunch — relatarea breșei DreamHost (4 noiembrie 2026, 20:36 UTC)<span class="host">techcrunch.com</span></a></li>
-              <li><a href="https://www.bleepingcomputer.com/news/security/dreamhost-confirms-data-breach-exposed-ftp-logins-and-webmail-sessions/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>BleepingComputer — „DreamHost confirms data breach exposed FTP logins and webmail sessions” (4 noiembrie 2026)<span class="host">bleepingcomputer.com</span></a></li>
-              <li><a href="https://www.dapeer.com/databreaches/dreamhost-data-breach-investigation" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Dapeer — notificarea de breșă depusă la Procurorul General al Californiei (sursă primară, depunere 2 noiembrie 2026)<span class="host">dapeer.com</span></a></li>
-            </ul>
-          </div>
-
-          <div class="impact">
-            <span class="badge">Impact direct</span>
-            <p>Impact direct minim — nu există indicii că Lucian ar fi client DreamHost; relevanță profesională de context: dacă folosește servicii de hosting cu acces FTP/SFTP, parolele reutilizate pe FTP și sesiunile vechi sunt vectorul de verificat, iar revocarea sesiunilor contează la fel de mult ca resetarea parolei.</p>
-          </div>
-        </article>
-
-        <!-- 2 · 4 nov · 20:00 -->
-        <article id="stire-47" data-cats="romania">
-          <div class="a-meta">
-            <span class="a-time">4 nov · 20:00</span>
-            <span class="a-cat">România · București · Taxe locale</span>
-            <span class="a-num">#2 / 14</span>
-          </div>
-          <h2>Taxele și impozitele locale din București rămân la nivelul din 2026 și în 2027 — proiectul Primăriei Capitalei, la vot în Consiliul General pe 12 noiembrie</h2>
-
-          <div class="sec">
-            <p class="sec-label">Ce s-a întâmplat</p>
-            <p>Primăria Municipiului București a anunțat miercuri, 4 noiembrie, că taxele și impozitele locale, precum și tarifele pentru parcările de reședință, rămân neschimbate în 2027, plafonate la nivelul din 2026; nici taxa de promovare turistică nu crește, rămânând la 10 lei pe noapte. Măsura este propusă prin proiectul de hotărâre nr. 504 din 3 noiembrie, aflat în dezbatere publică, care intră la vot în ședința Consiliului General din 12 noiembrie — până la vot, este o propunere, nu o hotărâre adoptată. Pentru locuințele persoanelor fizice, cota rămâne 0,1%, iar valoarea impozabilă este tot 2.677 de lei/mp pentru clădirile din beton sau cărămidă, cu toate utilitățile; cine plătește impozitul pe tot anul până pe 31 martie 2027 primește o bonificație de 10%.</p>
-          </div>
-
-          <div class="sec">
-            <p class="sec-label">De ce contează</p>
-            <p>Lucian deține un apartament în București, cu credit ipotecar din 2016 — dacă proiectul trece de votul din 12 noiembrie, factura lui de impozit local pe 2027 rămâne la nivelul din 2026, iar plata integrală până la 31 martie 2027 îi aduce reducerea de 10%.</p>
-          </div>
-
-          <div class="verify">
-            <p class="sec-label">Verificare <span class="status">Sursă primară</span></p>
-            <p>Verdict: sursă primară — anunțul Primăriei Municipiului București (postare pe Facebook, 4 noiembrie 2026), reluat de Digi24, G4Media (prin Agerpres) și alte redacții; toate repetă același anunț al Primăriei, deci nu sunt confirmări independente.</p>
-            <ul class="sources">
-              <li><a href="https://flashromania.ro/impozite-locale-2027-bucuresti-cat-platesti-apartament-masina/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>FlashRomania — „Impozite locale 2027 București: cât plătești pentru apartament și mașină”<span class="host">flashromania.ro</span></a></li>
-              <li><a href="https://farabaliverne.ro/a/bucuresti-taxe-locale-2027-neschimbate-proiect-pmb-4-noiembrie.html" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>FărăBaliVerne — „București: taxe locale 2027 neschimbate — proiect PMB (4 noiembrie)”<span class="host">farabaliverne.ro</span></a></li>
-            </ul>
-          </div>
-
-          <div class="impact">
-            <span class="badge">Impact direct</span>
-            <p>Minim ca efort imediat — nicio acțiune nu e cerută acum; impact financiar potențial pozitiv din 2027 dacă proiectul este adoptat (impozit local neschimbat + bonificație 10% la plata anticipată).</p>
-          </div>
-        </article>
-
-        <!-- 3 · 4 nov · 19:00 -->
-        <article id="stire-46" data-cats="securitate">
-          <div class="a-meta">
-            <span class="a-time">4 nov · 19:00</span>
-            <span class="a-cat">Securitate &amp; NATO · Coaliția doritorilor · Ucraina</span>
-            <span class="a-num">#3 / 14</span>
-          </div>
-          <h2>Exercițiul Koalicja (9–22 noiembrie, Polonia): primul exercițiu major al Forței Multinaționale pentru Ucraina — 2.800 de militari din 11 țări, cu componenta aeriană coordonată din România</h2>
-
-          <div class="sec">
-            <p class="sec-label">Ce s-a întâmplat</p>
-            <p>Franța și Marea Britanie conduc, între 9 și 22 noiembrie, la Nowa Dęba (sud-estul Poloniei, la circa 100 km de granița cu Ucraina), primul exercițiu major al Forței Multinaționale pentru Ucraina (MNF-U), brațul militar al „Coaliției doritorilor”. Participă aproximativ 2.800 de militari din 11 țări — Belgia, Estonia, Franța, Germania, Lituania, Olanda, Polonia, Spania, Suedia, Turcia și Marea Britanie — iar componenta aeriană va fi coordonată din România, iar cea maritimă va fi simulată din Turcia, cu accent pe securitatea în Marea Neagră. Exercițiul testează comanda, logistica și interoperabilitatea (inclusiv sisteme de comunicații și operațiuni anti-dronă) pentru o eventuală desfășurare după un acord de încetare a focului, la invitația guvernului ucrainean; nu este o operațiune NATO și nu implică trupe americane.</p>
-          </div>
-
-          <div class="sec">
-            <p class="sec-label">De ce contează</p>
-            <p>Continuarea directă a arcului urmărit despre garanțiile de securitate post-conflict pentru Ucraina și forța multinațională europeană. Belgia — țara de rezidență — participă cu trupe; România coordonează componenta aeriană; simularea maritimă din Turcia vizează redeschiderea traficului comercial în Marea Neagră, zona operațională urmărită. Forța nu se desfășoară în timpul războiului, ci doar după încetarea focului.</p>
-          </div>
-
-          <div class="verify">
-            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
-            <p>Verdict: confirmat. Surse: Le Monde (3 noiembrie 2026, relatare proprie) prezintă exercițiul Koalicja ca primul exercițiu de amploare al coaliției; Reuters (relatare din 3 noiembrie 2026, republicare) confirmă independent exercițiul; anunțul Ministerului Apărării britanic din 3 noiembrie 2026 și G4Media (3 noiembrie 2026, citează Le Monde) confirmă detaliile.</p>
-            <ul class="sources">
-              <li><a href="https://www.lemonde.fr/en/international/article/2026/11/03/in-poland-coalition-of-the-willing-holds-first-large-scale-military-exercise_6769567_4.html" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Le Monde — „In Poland, coalition of the willing holds first large-scale military exercise” (3 noiembrie 2026, relatare proprie)<span class="host">lemonde.fr</span></a></li>
-              <li><a href="https://www.europesays.com/poland/34829/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Reuters — relatare din 3 noiembrie 2026 (republicare)<span class="host">europesays.com</span></a></li>
-            </ul>
-          </div>
-
-          <div class="impact">
-            <span class="badge">Impact direct</span>
-            <p>Impact direct minim azi — niciun efect asupra rutinei zilnice; relevanță profesională și de context înaltă: exercițiul testează exact interoperabilitatea și comunicațiile multinaționale din zona NATO/Ucraina urmărită, cu participare belgiană și coordonare aeriană din România.</p>
-          </div>
-        </article>
-
-        <!-- 4 · 4 nov · 18:00 -->
-        <article id="stire-45" data-cats="tech">
-          <div class="a-meta">
-            <span class="a-time">4 nov · 18:00</span>
-            <span class="a-cat">Tech &amp; AI · Fintech · Evaluare</span>
-            <span class="a-num">#4 / 14</span>
-          </div>
-          <h2>Revolut valorează acum 115 miliarde $: cea mai valoroasă companie privată de tehnologie din Europa</h2>
-
-          <div class="sec">
-            <p class="sec-label">Ce s-a întâmplat</p>
-            <p>Investitorii Revolut au finalizat o vânzare secundară de acțiuni care evaluează fintechul britanic la 115 miliarde de dolari, cu 53% mai mult decât la tranzacția similară de acum un an, de 75 de miliarde. Vânzarea a fost condusă de Glade Brook Capital Partners, Coatue, Durable Capital Partners, T. Rowe Price Associates și Baillie Gifford; fiind o vânzare secundară, banii au mers către angajații și investitorii timpurii care și-au vândut acțiunile, nu în companie, iar Revolut nu a dezvăluit volumul tranzacționat. Compania, fondată în 2015 de Nik Storonsky și Vlad Yatsenko, are peste 80 de milioane de clienți retail în peste 40 de țări și pregătește lansarea unei bănci proprii în SUA în prima jumătate a lui 2027, după aprobarea condiționată primită de la autoritatea americană OCC.</p>
-          </div>
-
-          <div class="sec">
-            <p class="sec-label">De ce contează</p>
-            <p>Revolut este aplicația principală de bani a cititorului — transferurile recurente, alimentarea XTB și transferul către TradeVille trec prin ea. O evaluare care o plasează peste bănci europene consacrate (de exemplu Barclays, circa 95 de miliarde de dolari) și drumul spre o bancă americană proprie și o posibilă listare din 2028 arată că platforma pe care își ține banii de zi cu zi rămâne solidă și în expansiune, nu un startup fragil.</p>
-          </div>
-
-          <div class="verify">
-            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
-            <p>Verdict: confirmat. Surse: TechCrunch (4 noiembrie 2026) relatează vânzarea secundară care evaluează Revolut la 115 miliarde de dolari; Tech.eu (4 noiembrie 2026) confirmă independent evaluarea de 115 miliarde de dolari, după finalizarea vânzării secundare; FinanceX Magazine (4 noiembrie 2026, pe baza relatărilor Bloomberg/Financial Times) confirmă că evaluarea depășește Barclays. Nuanță de integritate: prețul dintr-o vânzare secundară e stabilit de un cerc restrâns de investitori instituționali, nu de piața publică — testul real al evaluării vine la o eventuală listare, după cum notează FinanceX Magazine. Cifra de 115 miliarde este evaluarea din tranzacție, nu bani noi intrați în companie.</p>
-            <ul class="sources">
-              <li><a href="https://techcrunch.com/2026/11/04/revoluts-valuation-jumps-53-to-115b-in-new-share-sale-as-it-prepares-to-launch-us-bank/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>TechCrunch — „Revolut's valuation jumps 53% to $115B in new share sale as it prepares to launch US bank” (4 noiembrie 2026)<span class="host">techcrunch.com</span></a></li>
-              <li><a href="https://tech.eu/2026/11/04/revolut-confirms-115bn-valuation-after-completing-secondary-sale/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Tech.eu — „Revolut confirms $115BN valuation, after completing secondary sale” (4 noiembrie 2026)<span class="host">tech.eu</span></a></li>
-              <li><a href="https://www.financexmagazine.com/post/revolut-valuation-hits-115bn-topping-barclays" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>FinanceX Magazine — „Revolut Valuation Hits $115bn, Topping Barclays” (4 noiembrie 2026, pe baza relatărilor Bloomberg/Financial Times)<span class="host">financexmagazine.com</span></a></li>
-            </ul>
-          </div>
-
-          <div class="impact">
-            <span class="badge">Impact direct</span>
-            <p>Impact direct minim azi — nu schimbă nimic în contul cititorului; relevanță de context puternică: sănătatea platformei lui financiare principale.</p>
-          </div>
-        </article>
-
-        <!-- 5 · 4 nov · 17:00 -->
-        <article id="stire-44" data-cats="tech">
-          <div class="a-meta">
-            <span class="a-time">4 nov · 17:00</span>
-            <span class="a-cat">Tech &amp; AI · Restructurare · Costuri AI</span>
-            <span class="a-num">#5 / 14</span>
-          </div>
-          <h2>Canva taie 22% din posturi (1.271 de roluri) pe fondul costurilor AI: factura de servire AI ajunge să restructureze un SaaS mare</h2>
-
-          <div class="sec">
-            <p class="sec-label">Ce s-a întâmplat</p>
-            <p>Canva a anunțat miercuri, 4 noiembrie 2026, că 1.271 de roluri — 22% din personal — sunt afectate de o restructurare: o parte concedieri, o parte schimbări de rol, o parte relocări către huburi centrale. CEO-ul Melanie Perkins a numit-o „refondarea Canva” și „cel mai greu moment din istoria de 13 ani” a companiei.</p>
-            <p>În august, Canva își tăiase prognoza de creștere a veniturilor pe 2026 de la 30% la 20%, din cauza costului servirii funcțiilor AI pe modele frontieră, iar investitorii timpurii i-au redus evaluarea la circa 35 de miliarde de dolari; compania își dezvoltă propriile modele (Canva Craft) ca să reducă dependența de furnizori terți, iar costul per sarcină AI ar fi scăzut cu circa 90% de la lansarea Canva AI 2.0 din aprilie. O întâlnire generală cu tot personalul este programată pe 10 noiembrie.</p>
-          </div>
-
-          <div class="sec">
-            <p class="sec-label">De ce contează</p>
-            <p>Continuă direct arcul costurilor AI urmărit azi în pagină (Anthropic: compute-ul a ajuns la 58% din venituri; Grok Bot: limite strânse pe 2 noiembrie din cauza costurilor „nesustenabile”): pentru prima dată, factura de servire AI se traduce într-o restructurare de amploare la un SaaS mare, nu doar în marje mai subțiri. Nuanță importantă: nota lui Perkins nu folosește cuvântul „AI” și nu pune tăierile pe seama înlocuirii oamenilor de către AI — cauzele invocate sunt încetinirea creșterii și costurile, iar presiunea competitivă vine și din generatoarele de imagini integrate în ChatGPT și Gemini.</p>
-          </div>
-
-          <div class="verify">
-            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
-            <p>Verdict: confirmat. Surse: TechCrunch (4 noiembrie 2026) relatează anunțul restructurării; The Tech Portal (4 noiembrie 2026) și Brit Brief (4 noiembrie 2026) confirmă independent cifra de 22% și contextul încetinirii creșterii. Notă de integritate: 1.271 este numărul total de roluri afectate (concedieri + schimbări de rol + relocări), nu doar concedieri — numărul exact al plecărilor nu a fost dezvăluit.</p>
-            <ul class="sources">
-              <li><a href="https://techcrunch.com/2026/11/04/canva-lays-off-over-1200-people-amid-slowing-growth/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>TechCrunch — „Canva lays off over 1,200 people amid slowing growth” (4 noiembrie 2026)<span class="host">techcrunch.com</span></a></li>
-              <li><a href="https://thetechportal.com/2026/11/04/canva-lays-off-22-of-its-workforce-as-growth-slows-for-the-first-time-in-a-decade/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>The Tech Portal — „Canva lays off 22% of its workforce as growth slows for the first time in a decade” (4 noiembrie 2026)<span class="host">thetechportal.com</span></a></li>
-              <li><a href="https://britbrief.co.uk/business/tech/canva-cuts-over-1200-jobs-as-ai-disrupts-growth.html" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Brit Brief — „Canva cuts over 1,200 jobs as AI disrupts design firm's growth” (4 noiembrie 2026)<span class="host">britbrief.co.uk</span></a></li>
-            </ul>
-          </div>
-
-          <div class="impact">
-            <span class="badge">Impact direct</span>
-            <p>Impact direct minim — Canva nu este un instrument principal al lui; relevanță de context puternică pentru arhitectura automatizărilor lui: costul per sarcină AI decide dacă un produs cu mulți utilizatori gratuiți este sustenabil.</p>
-          </div>
-        </article>
-
-        <!-- 6 · 4 nov · 17:00 -->
-        <article id="stire-43" data-cats="securitate">
-          <div class="a-meta">
-            <span class="a-time">4 nov · 17:00</span>
-            <span class="a-cat">Securitate &amp; NATO · Drone subacvatice · Franța</span>
-            <span class="a-num">#6 / 14</span>
-          </div>
-          <h2>Franța comandă submarinul-robot de luptă UCUV: Naval Group trece la producția demonstratorului, cu teste pe mare din 2028</h2>
-
-          <div class="sec">
-            <p class="sec-label">Ce s-a întâmplat</p>
-            <p>Direcția Generală pentru Armament (DGA) și Agenția pentru Inovare în Apărare din Franța au semnat pe 3 noiembrie 2026 cu Naval Group contractul de producție a demonstratorului UCUV (Unmanned Combat Underwater Vehicle) — primul vehicul subacvatic fără echipaj de clasă extra-large (XL-UUV) al Marinei franceze. Primele teste pe mare sunt programate în 2028.</p>
-            <p>Demonstratorul va folosi sistemul de decizie autonomă Steeris OB al Naval Group, descris ca un „creier de bord” care funcționează sub supravegherea unui operator uman, și va putea transporta și recupera drone subacvatice mai mici. Bugetul Franței pe 2026 alocase 30 de milioane de euro în angajamente și 17 milioane în plăți pentru demonstratorul de dronă subacvatică oceanică. Proiectul a pornit în 2023, cu un acord-cadru semnat în decembrie 2023.</p>
-          </div>
-
-          <div class="sec">
-            <p class="sec-label">De ce contează</p>
-            <p>Continuă arcul dronelor navale urmărit în pagină (pactul francez pentru drone navale, semnalat ieri; războiul dronelor din Marea Neagră): autonomia decizională trece din aer în adâncime — un sistem care decide singur navigația și misiunea, sub supraveghere umană, nu autonomie deplină de tragere. Pentru incident management, asta înseamnă o suprafață nouă de incidente: decizii autonome sub apă, acolo unde comunicațiile sunt limitate.</p>
-          </div>
-
-          <div class="verify">
-            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
-            <p>Verdict: confirmat. Surse: Defense News (4 noiembrie 2026) relatează contractul DGA cu Naval Group; comunicatul propriu al Naval Group (sursă primară, relatat de Aviation Defence Universe) confirmă intrarea în producție a demonstratorului; Defence Blog (4 noiembrie 2026) confirmă independent comanda. Notă de integritate: valoarea contractului, numărul de vehicule și sarcina utilă finală nu au fost dezvăluite.</p>
-            <ul class="sources">
-              <li><a href="https://www.defensenews.com/global/europe/2026/11/04/france-tasks-naval-group-to-develop-large-oceangoing-underwater-drone/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Defense News — „France tasks Naval Group to develop large oceangoing underwater drone” (4 noiembrie 2026)<span class="host">defensenews.com</span></a></li>
-              <li><a href="https://www.aviation-defence-universe.com/entry-into-production-of-the-ucuv-unmanned-combat-underwater-vehicle-demonstrator/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Naval Group, comunicat propriu (sursă primară, relatat de Aviation Defence Universe) — „Entry into production of the UCUV demonstrator”<span class="host">aviation-defence-universe.com</span></a></li>
-              <li><a href="https://defence-blog.com/france-orders-ucuv-uncrewed-combat-submarine/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Defence Blog — „France orders UCUV uncrewed combat submarine” (4 noiembrie 2026)<span class="host">defence-blog.com</span></a></li>
-            </ul>
-          </div>
-
-          <div class="impact">
-            <span class="badge">Impact direct</span>
-            <p>Impact direct minim azi; relevanță profesională de context — Franța, aliat NATO, iar dronele autonome sunt terenul lui de incident management pe sisteme autonome.</p>
-          </div>
-        </article>
-
-        <!-- 7 · 4 nov · 16:00 -->
-        <article id="stire-42" data-cats="romania">
-          <div class="a-meta">
-            <span class="a-time">4 nov · 16:00</span>
-            <span class="a-cat">România · Energie · Cernavodă</span>
-            <span class="a-num">#7 / 14</span>
-          </div>
-          <h2>Nuclearelectrica a început repornirea Unității 1 de la Cernavodă: reconectarea la rețea, estimată vineri, 6 noiembrie; Unitatea 2 rămâne dependentă de Dunăre</h2>
-
-          <div class="sec">
-            <p class="sec-label">Ce s-a întâmplat</p>
-            <p>Nuclearelectrica a anunțat miercuri, 4 noiembrie 2026, că a început manevrele de pornire a Unității 1 de la Cernavodă, după îndeplinirea condițiilor minime pentru repornirea în siguranță; resincronizarea la Sistemul Energetic Național (SEN) este estimată pentru vineri, 6 noiembrie. Centrala este oprită total de la jumătatea lunii august din cauza debitului scăzut al Dunării, care nu mai asigură suficientă apă pentru răcirea reactoarelor.</p>
-            <p>Graficul Transelectrica citat în presă prevede o creștere treptată a puterii până la regimul normal sâmbătă, 7 noiembrie, în jurul orei 19:00; ora exactă a sincronizării diferă între relatări (11:00 vs 13:00), iar programul este estimativ și poate suferi modificări. Repornirea Unității 2 depinde în continuare de o creștere susținută a nivelului Dunării și nu are o dată anunțată.</p>
-          </div>
-
-          <div class="sec">
-            <p class="sec-label">De ce contează</p>
-            <p>Unitatea 1 are 700 MW, iar Cernavodă asigură în mod normal circa 20% din producția de electricitate a României; revenirea ei chiar înainte de sezonul rece reduce presiunea pe sistem într-o iarnă în care consumul a trecut deja de 8.000 MW într-o seară, potrivit datelor Transelectrica. Context din aceeași seară de marți, la TVR: premierul Luca Niculescu a spus că rezervele de gaze ale României sunt aproape de pragul european de 90% și că nu are „emoții prea mari” pentru aprovizionarea din iarnă.</p>
-          </div>
-
-          <div class="verify">
-            <p class="sec-label">Verificare <span class="status">Sursă primară + confirmat</span></p>
-            <p>Verdict: sursă primară + confirmat. Sursa primară este Nuclearelectrica — anunțul propriu transmis Bursei de Valori București — relatat de Universul și de The Diplomat Bucharest; graficul Transelectrica vine de la Economica/Economedia, citată de Din Popor.</p>
-            <ul class="sources">
-              <li><a href="https://universul.com.ro/2026/11/04/nuclearelectrica-incepe-repornirea-unitatii-1-de-la-cernavoda-reconectarea-la-sistemul-energetic-national-este-estimata-pentru-6-noiembrie/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Universul — „Nuclearelectrica începe repornirea Unității 1 de la Cernavodă: reconectarea la Sistemul Energetic Național, estimată pentru 6 noiembrie” (4 noiembrie 2026)<span class="host">universul.com.ro</span></a></li>
-              <li><a href="https://www.thediplomat.ro/2026/11/04/nuclearelectrica-starts-procedures-to-reconnect-the-unit-1-at-the-cernavoda-nuclear-power-plant-to-the-power-grid/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>The Diplomat Bucharest — „Nuclearelectrica starts procedures to reconnect Unit 1 at the Cernavodă nuclear power plant to the power grid” (4 noiembrie 2026)<span class="host">thediplomat.ro</span></a></li>
-              <li><a href="https://dinpopor.ro/cernavoda-nuclearelectrica-a-inceput-pornirea-unitatii-1-reconectarea-la-retea-estimata-vineri/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Din Popor — „Cernavodă: Nuclearelectrica a început pornirea Unității 1, reconectarea la rețea estimată vineri” (citând Economica/Economedia, pentru graficul Transelectrica)<span class="host">dinpopor.ro</span></a></li>
-            </ul>
-          </div>
-
-          <div class="opposing">
-            <p class="sec-label">Tabăra adversă</p>
-            <p>Cristian Bușoi avertizează că reluarea funcționării nu poate fi estimată ferm dacă Dunărea rămâne scăzută și că înlocuirea pompelor ar putea dura luni sau chiar un an, iar repornirea se decide numai după confirmarea condițiilor de siguranță (<a href="https://newmoney.ro/luca-niculescu-centrala-cernavoda-repornire/" target="_blank" rel="noopener">New Money</a>).</p>
-          </div>
-
-          <div class="impact">
-            <span class="badge">Impact direct</span>
-            <p>Impact direct minim azi — nicio acțiune cerută; relevanță de context pentru iarnă și pentru vacanța de Crăciun în România (22–31 decembrie), cu familia în Giurgiu și apartamentul din București: stabilitatea aprovizionării cu energie în sezonul rece.</p>
-          </div>
-        </article>
-
-        <!-- 8 · 4 nov · 15:00 -->
-        <article id="stire-41" data-cats="tech">
-          <div class="a-meta">
-            <span class="a-time">4 nov · 15:00</span>
-            <span class="a-cat">Tech &amp; AI · Economie AI · Dosar S-1</span>
-            <span class="a-num">#8 / 14</span>
-          </div>
-          <h2>Anthropic: compute-ul a ajuns la 58% din venituri — factura de 10 mld $ pe trimestru, jumătate pe contracte scurte scumpe</h2>
-
-          <div class="followup">
-            <span class="tag">Urmare la</span>
-            <p><a href="#stire-29">„Anthropic avertizează că e «foarte aproape» de RSI — AI care se construiește singur”</a> — marți, 3 noiembrie 2026.</p>
-          </div>
-
-          <div class="sec">
-            <p class="sec-label">Ce s-a întâmplat</p>
-            <p>Din amendamentul S-1 depus luni, 2 noiembrie, Anthropic raportează venituri de 17 mld $ în trimestrul al treilea (față de 11,5 mld $ în trimestrul anterior), dar factura de compute și infrastructură a urcat la circa 10 mld $ (9,86 mld $), adică 58% din venituri, față de 48% în trimestrul anterior. Jumătate din factură — 5 mld $ — vine din angajamente pe termen scurt, pe care compania însăși le recunoaște ca semnificativ mai scumpe decât capacitatea contractată multianual. Venitul generat per dolar cheltuit pe compute a scăzut de la puțin peste 2x la 1,72x, iar pierderea operațională a trimestrului a fost de 567 mil. $.</p>
-          </div>
-
-          <div class="sec">
-            <p class="sec-label">De ce contează</p>
-            <p>Este a treia piesă din același dosar S-1 urmărit în pagină (după avertismentul RSI și FlashProve) și arată prețul infrastructurii din spatele modelelor pe care cititorul le folosește zilnic (Claude): creșterea veniturilor cu circa 47% trimestrial nu mai ține pasul cu factura de compute, care a crescut cu 77%. Angajamentele totale de achiziții și leasing pentru compute și infrastructură ajung la circa 895 mld $, din care circa 70 mld $ scadente în următorul an — miza de capital a cursei AI, cu efecte posibile asupra prețurilor și limitelor API pe termen mediu.</p>
-          </div>
-
-          <div class="verify">
-            <p class="sec-label">Verificare <span class="status">Sursă primară + confirmat</span></p>
-            <p>Verdict: sursă primară + confirmat. Sursa primară este chiar Anthropic — Amendment No. 1 la Form S-1, depus la 2 noiembrie 2026. Relatarea TechCrunch (sursă monitorizată) este confirmată independent de SiliconANGLE (prin The Outpost), DatacenterDynamics (prin The Five Nines) și The AI Insider.</p>
-            <ul class="sources">
-              <li><a href="https://techcrunch.com/2026/11/03/anthropic-is-still-grappling-with-the-economics-of-compute/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>TechCrunch — „Anthropic is still grappling with the economics of compute” (3 noiembrie 2026)<span class="host">techcrunch.com</span></a></li>
-              <li><a href="https://theoutpost.ai/news-story/anthropic-ipo-filing-reveals-17b-revenue-against-900b-ai-infrastructure-commitments-33011/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>SiliconANGLE, prin The Outpost — „Anthropic IPO filing reveals $17B revenue against $900B AI infrastructure commitments”<span class="host">theoutpost.ai</span></a></li>
-              <li><a href="https://www.thefivenines.com/data-ai/anthropic-reports-17-billion-third-quarter-revenue-and-895-billion-in" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>DatacenterDynamics, prin The Five Nines — „Anthropic reports $17 billion third-quarter revenue and $895 billion in…”<span class="host">thefivenines.com</span></a></li>
-              <li><a href="https://theaiinsider.tech/2026/11/04/anthropics-compute-costs-climb-to-58-of-revenue-as-it-develops-flashprove-to-verify-ai-model-outputs/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>The AI Insider — „Anthropic's compute costs climb to 58% of revenue as it develops FlashProve to verify AI model outputs” (4 noiembrie 2026)<span class="host">theaiinsider.tech</span></a></li>
-            </ul>
-          </div>
-
-          <div class="impact">
-            <span class="badge">Impact direct</span>
-            <p>Impact direct minim azi; relevanță de context puternică pentru stack-ul propriu de automatizări (Claude/Gemini API) și pentru lectura boom-ului AI: marja laboratoarelor se subțiază chiar când veniturile cresc accelerat.</p>
-          </div>
-        </article>
-
-        <!-- 9 · 4 nov · 14:00 -->
-        <article id="stire-40" data-cats="securitate">
-          <div class="a-meta">
-            <span class="a-time">4 nov · 14:00</span>
-            <span class="a-cat">Securitate &amp; NATO · Spyware mercenar · Germania</span>
-            <span class="a-num">#9 / 14</span>
-          </div>
-          <h2>BSI avertizează membrii Bundestagului: iPhone-urile lor ar putea fi vizate de spyware mercenar — alerte Apple din 29 octombrie, în 99 de țări</h2>
-
-          <div class="sec">
-            <p class="sec-label">Ce s-a întâmplat</p>
-            <p>Biroul federal german pentru securitatea informațiilor (BSI) a avertizat membrii Bundestagului, membri ai guvernului federal și alte persoane publice că iPhone-urile lor ar putea fi vizate de spyware mercenar, după ce Apple a început din 29 octombrie să trimită notificări de amenințare către utilizatori vizați individual din 99 de țări. Într-o scrisoare din 30 octombrie, BSI le-a recomandat destinatarilor să presupună, ca măsură de precauție, că dispozitivul ar putea fi compromis, pentru că notificarea Apple nu arată dacă atacul a reușit.</p>
-            <p>Ministrul digital Karsten Wildberger a confirmat avertismentele duminică, 1 noiembrie, la ARD („Bericht aus Berlin”), iar purtătorul de cuvânt al guvernului, Stefan Kornelius, a spus că Berlinul ia incidentul „foarte în serios”, fără să precizeze dacă cancelarul Friedrich Merz a primit o alertă.</p>
-          </div>
-
-          <div class="sec">
-            <p class="sec-label">De ce contează</p>
-            <p>Oficiali guvernamentali ai celei mai mari armate europene din NATO, vizați cu instrumente de supraveghere vândute mai ales guvernelor — la două săptămâni după ce Bundeswehr a ridicat nivelul de alertă la sabotaj la „semnificativ”. Pentru un IT incident Manager, modelul de decizie de aici este instructiv: la o alertă fără confirmare de infecție, autoritatea germană a ales ipoteza „presupune compromiterea”, nu așteptarea dovezii.</p>
-          </div>
-
-          <div class="verify">
-            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
-            <p>Verdict: confirmat. Surse: TechCrunch (sursa curatoriată, 2 noiembrie 2026) relatează avertismentul BSI; Financial Times a relatat declarația lui Kornelius (citată de TechCrunch); ARD, „Bericht aus Berlin” — confirmarea ministrului Wildberger, 1 noiembrie (citată de SOFX); Deutsche Presse-Agentur, prin Yahoo (citată de SOFX); CyberScoop (30 octombrie) — despre valul de notificări Apple în 99 de țări; Gadgets360 (3 noiembrie 2026). Precizare importantă: nimeni nu a atribuit atacurile unui stat anume, niciun atacator și niciun produs spyware nu au fost numite public, iar BSI spune că nu știe dacă alertele înseamnă infecții reușite sau doar tentative.</p>
-            <ul class="sources">
-              <li><a href="https://techcrunch.com/2026/11/02/germany-says-lawmakers-iphones-may-have-been-hacked-with-spyware/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>TechCrunch — „Germany says lawmakers' iPhones may have been hacked with spyware” (2 noiembrie 2026)<span class="host">techcrunch.com</span></a></li>
-              <li><a href="https://www.sofx.com/germany-warns-officials-of-mercenary-spyware-following-apple-alerts-in-99-countries/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>SOFX — „Germany warns officials of mercenary spyware following Apple alerts in 99 countries”<span class="host">sofx.com</span></a></li>
-              <li><a href="https://www.gadgets360.com/mobiles/news/apple-sends-spyware-attack-alerts-iphone-users-99-countries-german-lawmakers-12276217/amp" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Gadgets360 — „Apple sends spyware attack alerts to iPhone users in 99 countries, German lawmakers” (3 noiembrie 2026)<span class="host">gadgets360.com</span></a></li>
-            </ul>
-          </div>
-
-          <div class="impact">
-            <span class="badge">Impact direct</span>
-            <p>Impact direct minim pentru el personal — telefonul lui actual este Pixel, nu iPhone, deci alertele Apple nu îl privesc direct. Relevanță profesională directă: incident de securitate asupra oficialilor guvernamentali dintr-un stat aliat cheie, cu instrumente zero-click (nu e nevoie ca victima să apese pe nimic), exact pe terenul lui de IT incident management; de urmărit dacă apar atribuiri, confirmări de infecție sau ghidaj NATO/național similar.</p>
-          </div>
-        </article>
-
-        <!-- 10 · 4 nov · 13:00 -->
-        <article id="stire-39" data-cats="belgia">
-          <div class="a-meta">
-            <span class="a-time">4 nov · 13:00</span>
-            <span class="a-cat">Belgia · Politică-fiscal</span>
-            <span class="a-num">#10 / 14</span>
-          </div>
-          <h2>Criza bugetară belgiană: regele îi primește azi pe Rousseau și Bouchez; patronatele cer reluarea negocierilor, decizia privind demisia lui De Wever vine vineri</h2>
-
-          <div class="followup">
-            <span class="tag">Urmare la</span>
-            <p><a href="#stire-33">„Regele Philippe a început consultările în criza bugetară: Mahdi, furios după audiența de marți — decizia privind demisia lui De Wever, vineri”</a> — marți, 3 noiembrie 2026.</p>
-          </div>
-
-          <div class="sec">
-            <p class="sec-label">Ce s-a întâmplat</p>
-            <p>Regele Philippe îi primește miercuri, 4 noiembrie, la Palatul Regal din Bruxelles, pe Conner Rousseau (Vooruit) și Georges-Louis Bouchez (MR), cei doi lideri de partid aflați în centrul blocajului bugetar, în cadrul rundei de consultări începute după ce premierul Bart De Wever și-a prezentat demisia luni, 2 noiembrie. Rousseau vine primul, Bouchez după-amiaza. Marți, opt federații patronale (FEB, Voka, Unizo, BECI, UCM, Boerenbond, AKT și AVEC-IHK Ostbelgien) au cerut celor cinci partide ale coaliției Arizona să reia negocierile blocate, invocând inflația de 5,26% din octombrie, falimente în creștere și fabrici sub capacitate.</p>
-            <p>Calendarul rămâne: joi, 5 noiembrie, e primită Valérie Van Peel (N-VA), iar vineri, 6 noiembrie, la ora 10:30, De Wever revine la palat, când e așteptată decizia regelui privind demisia; fără buget aprobat la timp, guvernul va funcționa din nou pe doisprezecimi provizorii.</p>
-          </div>
-
-          <div class="sec">
-            <p class="sec-label">De ce contează</p>
-            <p>Belgia e țara de reședință și locul de muncă; bugetul federal pe 2027 decide taxe și servicii, iar criza se joacă pe circa 10 miliarde de euro în măsuri până în 2029, cu un deficit de 5,2% din PIB și procedură UE de deficit excesiv. Vineri se decide dacă guvernul rămâne sau cade.</p>
-          </div>
-
-          <div class="verify">
-            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
-            <p>Verdict: confirmat. Surse: BelgiumNow (4 noiembrie 2026) relatează audiențele de azi cu Rousseau și Bouchez și, relatând L'Avenir, apelul federațiilor patronale către partidele Arizona; Nexus Europa (3 noiembrie 2026) publică programul consultărilor regelui, din presa belgiană; Reuters/AP confirmă demisia din 2 noiembrie și consultările anunțate de Palatul Regal.</p>
-            <ul class="sources">
-              <li><a href="https://belgium-now.com/2026/11/04/king-receives-rousseau-bouchez-budget-deadlock/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>BelgiumNow — „King receives Rousseau and Bouchez as Belgium's budget deadlock drags on” (4 noiembrie 2026)<span class="host">belgium-now.com</span></a></li>
-              <li><a href="https://belgium-now.com/2026/11/04/belgian-employers-urge-arizona-parties-resume-talks/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>BelgiumNow — „Belgian employers tell Arizona parties to stop squabbling and draw up an economic plan” (4 noiembrie 2026, relatând L'Avenir)<span class="host">belgium-now.com</span></a></li>
-              <li><a href="https://nexuseuropa.eu/en/article/belgium-budget-crisis-king-philippe-to-hold-talks-after-bart-de-wever-offers-to" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Nexus Europa — programul consultărilor regelui, din presa belgiană (3 noiembrie 2026)<span class="host">nexuseuropa.eu</span></a></li>
-            </ul>
-          </div>
-
-          <div class="opposing">
-            <p class="sec-label">Tabăra adversă</p>
-            <p>Conner Rousseau (Vooruit) susține că bugetul trebuie să fie mai echitabil — milionarii să contribuie mai mult, fără noi economii la pensii și sănătate (interviu TV din 28 octombrie, relatat de Nexus Europa, linkul de mai sus). De cealaltă parte, MR și N-VA caută tăieri de cheltuieli, inclusiv la sănătate (poziție relatată în cardul din 2 noiembrie).</p>
-          </div>
-
-          <div class="impact">
-            <span class="badge">Impact direct</span>
-            <p>Impact direct minim azi — nicio decizie luată, nicio măsură fiscală nouă; relevanță de context înaltă pentru un rezident în Belgia, fiindcă bugetul federal îi afectează taxele și serviciile; termenul de urmărit este vineri, 6 noiembrie, decizia regelui.</p>
-          </div>
-        </article>
-
-        <!-- 11 · 4 nov · 11:05 -->
-        <article id="stire-38" data-cats="securitate">
-          <div class="a-meta">
-            <span class="a-time">4 nov · 11:05</span>
-            <span class="a-cat">Securitate &amp; NATO · Drone navale · Franța</span>
-            <span class="a-num">#11 / 14</span>
-          </div>
-          <h2>Franța lansează un «pact» pentru drone navale: industria și startupurile, chemate să livreze rapid sisteme pentru marină</h2>
-
-          <div class="sec">
-            <p class="sec-label">Ce s-a întâmplat</p>
-            <p>Ministrul francez al forțelor armate, Catherine Vautrin, a anunțat marți, 3 noiembrie, la deschiderea salonului Euronaval de lângă Paris, un „pact” guvern–industrie pentru drone navale, după modelul pactului pentru drone aeriene din 2024: marii producători și startupurile sunt chemate să livreze rapid sisteme adaptate nevoilor marinei. Direcțiile anunțate: deminarea marină, colectarea de date hidro- și oceanografice și explorarea fundului mării la mare adâncime.</p>
-            <p>Anunțul a venit cu comenzi concrete: achiziția unui al doilea ROV Deep Sea de la LD Travocean (3.600 kg, capabil să coboare la 6.000 m), opt roboți countermine A18 de la Exail și un al doilea vehicul subacvatic de luptă fără echipaj de la Naval Group (peste 10 m lungime, peste 10.000 kg); oficialii au semnat și un acord Naval Group–MBDA pentru mai multe interceptoare Aster pe fregatele FDI. Vautrin a prezentat și bugetul apărării propus pentru 2027: 63,4 miliarde de euro, cu 6,5 miliarde mai mult decât în 2026, cu vot programat luna aceasta în parlament.</p>
-          </div>
-
-          <div class="sec">
-            <p class="sec-label">De ce contează</p>
-            <p>Dronele navale sunt vectorul loviturilor din Marea Neagră urmărite din octombrie — iar Franța răspunde cu același instrument ca la dronele aeriene: un cadru guvern–industrie care scurtează drumul de la prototip la dotare, cu comenzi reale deja semnate, nu doar intenții.</p>
-          </div>
-
-          <div class="verify">
-            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
-            <p>Verdict: confirmat. Surse: Defense News (3 noiembrie 2026) relatează anunțul pactului și comenzile anunțate la Euronaval; Reuters, prin SRN News și MarineLink (3 noiembrie 2026), confirmă salonul și angajamentul lui Vautrin pentru colaborarea industrie–startupuri pe drone navale; Breaking Defense (3 noiembrie 2026) confirmă discursul de deschidere și bugetul propus de 63,4 miliarde de euro pentru 2027.</p>
-            <ul class="sources">
-              <li><a href="https://www.defensenews.com/global/europe/2026/11/03/french-defense-minister-kicks-off-pact-with-industry-in-rush-to-field-naval-drones/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Defense News — „French defense minister kicks off ‘pact’ with industry in rush to field naval drones” (3 noiembrie 2026)<span class="host">defensenews.com</span></a></li>
-              <li><a href="https://srnnews.com/european-naval-defence-industry-meets-as-threats-drive-fleet-upgrades/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Reuters via SRN News — „European naval defence industry meets as threats drive fleet upgrades” (3 noiembrie 2026)<span class="host">srnnews.com</span></a></li>
-              <li><a href="https://www.marinelink.com/news/euronaval-meets-amidst-global-maritime-544123" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Reuters via MarineLink — „Euronaval 2026 Meets Amidst Global Maritime Defense” (3 noiembrie 2026)<span class="host">marinelink.com</span></a></li>
-              <li><a href="https://breakingdefense.com/2026/11/france-investing-in-naval-power-as-military-ambition-is-to-be-feared-armed-forces-minister/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Breaking Defense — „France investing in naval power as military ambition is ‘to be feared’: Armed forces minister” (3 noiembrie 2026)<span class="host">breakingdefense.com</span></a></li>
-            </ul>
-          </div>
-
-          <div class="impact">
-            <span class="badge">Impact direct</span>
-            <p>Impact profesional direct, fără acțiune imediată: counter-drone naval, deminare și achiziție rapidă de sisteme fără echipaj sunt exact direcțiile în care se mișcă cerințele de capabilități pe flancul maritim urmărit la muncă. Personal/familie: minim, relevanță de context.</p>
-          </div>
-        </article>
-
-        <!-- 12 · 4 nov · 11:05 -->
-        <article id="stire-37" data-cats="securitate tech">
-          <div class="a-meta">
-            <span class="a-time">4 nov · 11:05</span>
-            <span class="a-cat">Securitate &amp; NATO / Tech &amp; AI · Incident cibernetic · Inginerie socială</span>
-            <span class="a-num">#12 / 14</span>
-          </div>
-          <h2>Furtul Binance de 6,3 mld $ a început cu un interviu de angajare fals: campanie nord-coreeană de cinci luni, 57 de atacuri blocate înainte</h2>
-
-          <div class="followup">
-            <span class="tag">Urmare la</span>
-            <p><a href="#stire-22">„Binance reia retragerile după cel mai mare furt cibernetic din istorie: 95% din cele 6,3 mld $ furate, acoperite; FBI îl acuză pe grupul nord-coreean TraderTraitor”</a> — duminică, 1 noiembrie 2026.</p>
-          </div>
-
-          <div class="sec">
-            <p class="sec-label">Ce s-a întâmplat</p>
-            <p>Raportul de incident publicat de Binance pe 3 noiembrie reconstruiește o campanie de cinci luni. În iunie, un inginer a descărcat un instrument software compromis. În septembrie, un al doilea inginer a fost abordat pe o platformă legitimă de recrutare de persoane care se dădeau drept reprezentanți ai unei companii inexistente: interviuri video false, inclusiv cu un „CEO” fictiv, iar „tema” de cod descărcată pe calculatorul de serviciu conținea cod malițios. Pe 20 octombrie, atacatorii au folosit calculatorul compromis și un instrument AI intern al Binance ca să preia calculatoarele a doi ingineri din echipa de portofele.</p>
-            <p>Pe 29 octombrie, din cinci portofele „hot” au fost scoși 233,46 milioane XRP în patru minute, parte dintr-un total de circa 6,3 miliarde de dolari; circa 2,85 miliarde de dolari au fost înghețați sau interceptați. Binance nu avea asigurare cibernetică pentru pierdere. FBI atribuie atacul grupului nord-coreean TraderTraitor, iar compania spune că în 2026 blocase deja 57 de atacuri suspecte similare.</p>
-          </div>
-
-          <div class="sec">
-            <p class="sec-label">De ce contează</p>
-            <p>Nu a fost o vulnerabilitate zero-day, ci răbdare: luni de inginerie socială, un instrument de dezvoltare compromis și un instrument AI intern folosit ca punte — lanțul complet al celui mai mare furt cibernetic din istorie a trecut prin oameni și prin uneltele lor obișnuite, nu prin codul bursei.</p>
-          </div>
-
-          <div class="verify">
-            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
-            <p>Verdict: confirmat. Surse: raportul propriu de incident al Binance (3 noiembrie 2026) prezintă cronologia campaniei; TechCrunch (3 noiembrie 2026) și Nextgov (3 noiembrie 2026) relatează independent interviul fals și rolul instrumentului AI intern; Reuters (3 noiembrie 2026) confirmă atribuirea FBI și reacția Phenianului.</p>
-            <ul class="sources">
-              <li><a href="https://www.binance.com/en/square/post/11-03-2026-binance-initial-report-fbi-attributes-6-34-billion-attack-to-north-korea-which-used-fake-job-interviews-and-an-ai-tool-to-reach-hot-wallets-users-fully-covered-384321660235967" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Binance — raportul propriu de incident (3 noiembrie 2026)<span class="host">binance.com</span></a></li>
-              <li><a href="https://techcrunch.com/2026/11/03/researchers-warned-of-north-korean-hacking-tactics-years-before-record-6-3b-binance-heist/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>TechCrunch — „Researchers warned of North Korean hacking tactics years before record $6.3B Binance heist” (3 noiembrie 2026)<span class="host">techcrunch.com</span></a></li>
-              <li><a href="https://www.reuters.com/world/asia-pacific/north-korea-denies-binance-accusation-refuses-dialogue-with-washington-2026-11-03/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Reuters — „North Korea denies Binance accusation, refuses dialogue with Washington” (3 noiembrie 2026)<span class="host">reuters.com</span></a></li>
-              <li><a href="https://www.nextgov.com/cybersecurity/2026/11/binance-says-fake-job-interview-helped-north-korean-hackers-steal-63-billion-crypto/417004/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Nextgov — „Binance says fake job interview helped North Korean hackers steal $6.3 billion in crypto” (3 noiembrie 2026)<span class="host">nextgov.com</span></a></li>
-            </ul>
-          </div>
-
-          <div class="opposing">
-            <p class="sec-label">Tabăra adversă</p>
-            <p>Coreea de Nord neagă implicarea: Kim Yo-jong a numit acuzația SUA „retorică absurdă”, într-o declarație preluată de agenția de stat KCNA (relatarea The Guardian, via KCNA).</p>
-          </div>
-
-          <div class="impact">
-            <span class="badge">Impact direct</span>
-            <p>Impact profesional direct, fără acțiune imediată: lanțul de incident — inginerie socială, instrumente de dezvoltare compromise, AI intern ca vector de propagare — e un studiu de caz complet de incident management și de igienă a accesului la unelte interne. Personal/familie: minim.</p>
-          </div>
-        </article>
-
-        <!-- 13 · 4 nov · 08:00 -->
-        <article id="stire-36" data-cats="securitate">
-          <div class="a-meta">
-            <span class="a-time">4 nov · 08:00</span>
-            <span class="a-cat">Securitate &amp; NATO · Apărare anti-dronă · Rețele 5G</span>
-            <span class="spot-tag">Știrea zilei</span>
-            <span class="a-num">#13 / 14</span>
-          </div>
-          <h2>NATO a testat în Letonia apărarea anti-dronă pe rețele 5G comerciale: exercițiul FUSE/DiBaX, cu aproape 400 de drone</h2>
-
-          <div class="sec">
-            <p class="sec-label">Ce s-a întâmplat</p>
-            <p>În 19–30 octombrie, în Letonia (bazele Ādaži și Sēlija), Comandamentul Aliat pentru Transformare al NATO (ACT) a încheiat experimentarea DiBaX 2026 și evenimentul FUSE (29–30 octombrie): comunicații militare pe o felie privată și securizată din rețeaua 5G comercială a țării-gazdă, detecție pasivă a dronelor folosind infrastructura 5G și un test transfrontalier anti-dronă în care o dronă pornită din Lituania a fost angajată în Letonia. Un sistem de țintire Maven a fost legat de un sistem militar național în câteva ore, cu ajutorul AI agentic, iar demonstrația finală a implicat aproape 400 de drone și plutoni din Brigada Multinațională NATO din Letonia.</p>
-            <p>Comisarul european Valdis Dombrovskis a anunțat la eveniment două huburi-pilot europene de tehnologie a dronelor, în Letonia și Olanda, care se deschid în 2027.</p>
-          </div>
-
-          <div class="sec">
-            <p class="sec-label">De ce contează</p>
-            <p>NATO trece de la postură declarativă la testare pe teren a apărării stratificate anti-dronă și a rețelelor reziliente — exact arcul amenințărilor cu drone urmărit din octombrie (Marea Neagră, alerta Bundeswehr, simpozionul de la București), mutat acum în zona baltică, cu lecții de interoperabilitate între senzori, arme și rețele din țări și firme diferite.</p>
-          </div>
-
-          <div class="verify">
-            <p class="sec-label">Verificare <span class="status">Sursă primară + confirmat</span></p>
-            <p>Verdict: sursă primară + confirmat. Surse: NATO ACT, comunicat propriu din 2 noiembrie 2026; Shephard Media, 3 noiembrie 2026; SOFX, 2 noiembrie 2026; Defence Blog, 1 noiembrie 2026.</p>
-            <ul class="sources">
-              <li><a href="https://www.act.nato.int/article/nato-fuses-emergent-technologies-battlefield-advantage/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>NATO ACT — comunicat propriu (2 noiembrie 2026)<span class="host">act.nato.int</span></a></li>
-              <li><a href="https://www.shephardmedia.com/news/landwarfareintl/nato-fuse-exercise-plays-real-world-scenario-in-the-face-of-eastern-border-risks/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Shephard Media (3 noiembrie 2026)<span class="host">shephardmedia.com</span></a></li>
-              <li><a href="https://www.sofx.com/nato-taps-commercial-5g-networks-for-secure-troop-communications-in-latvia-drills/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>SOFX (2 noiembrie 2026)<span class="host">sofx.com</span></a></li>
-              <li><a href="https://defence-blog.com/nato-turns-5g-towers-into-sensors-in-baltic-battlefield-experiment/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Defence Blog (1 noiembrie 2026)<span class="host">defence-blog.com</span></a></li>
-            </ul>
-          </div>
-
-          <div class="impact">
-            <span class="badge">Impact direct</span>
-            <p>Impact profesional direct, fără acțiune imediată: rețele reziliente, detecție 5G și AI agentic în lanțul senzor–decizie sunt exact terenul lui de IT incident management; de urmărit posibile cerințe noi de interoperabilitate și raportare pe măsură ce capabilitățile testate ajung în dotare. Personal/familie: minim, relevanță de context.</p>
-          </div>
-        </article>
-
-        <!-- 14 · 4 nov · 08:00 -->
-        <article id="stire-35" data-cats="tech">
-          <div class="a-meta">
-            <span class="a-time">4 nov · 08:00</span>
-            <span class="a-cat">Tech &amp; AI · Siguranță AI · Inferență demonstrabilă</span>
-            <span class="a-num">#14 / 14</span>
-          </div>
-          <h2>Anthropic lansează FlashProve: dovadă criptografică că un răspuns chiar vine de la modelul promis</h2>
-
-          <div class="sec">
-            <p class="sec-label">Ce s-a întâmplat</p>
-            <p>Anthropic a publicat marți, 3 noiembrie 2026, FlashProve, un prototip open-source (licență Apache 2.0) de „inferență demonstrabilă”: furnizorul publică o amprentă criptografică a ponderilor modelului, iar pentru fiecare răspuns generează o dovadă zkSNARK că exact acel model a produs tokenii respectivi, fără a dezvălui ponderile. Demonstrat pe Llama 4 Maverick (400 de miliarde de parametri, cuantizare 4-bit) pe un singur GPU H100: aproximativ 110 tokeni pe secundă, dovadă de circa 19 MB la 1.024 tokeni, verificare în circa 17 secunde pe un CPU cu 24 de nuclee.</p>
-            <p>Costul rămâne mare — de 70–95 de ori timpul GPU al inferenței normale — iar sistemul acoperă deocamdată contexte de până la 1.024 tokeni cu decodare greedy; Anthropic spune că nu există planuri de implementare la vreun laborator deocamdată.</p>
-          </div>
-
-          <div class="sec">
-            <p class="sec-label">De ce contează</p>
-            <p>Rezolvă o problemă de încredere invizibilă pentru utilizatorul obișnuit: azi nimeni nu poate verifica dacă răspunsul primit chiar vine de la modelul promis sau de la unul mai ieftin strecurat pe traseu de un intermediar — iar dovada criptografică face substituția de model detectabilă.</p>
-          </div>
-
-          <div class="verify">
-            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
-            <p>Verdict: confirmat. Surse: Anthropic, postarea primară de cercetare; TechCrunch, 3 noiembrie 2026; Interesting Engineering; Crypto Briefing.</p>
-            <ul class="sources">
-              <li><a href="https://www.anthropic.com/research/provable-inference" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Anthropic — postarea primară de cercetare<span class="host">anthropic.com</span></a></li>
-              <li><a href="https://techcrunch.com/2026/11/03/anthropic-is-working-on-a-system-to-prove-ai-models-identity/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>TechCrunch (3 noiembrie 2026)<span class="host">techcrunch.com</span></a></li>
-              <li><a href="https://interestingengineering.com/ai-robotics/anthropic-flashprove-cryptographic-model-verification" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Interesting Engineering<span class="host">interestingengineering.com</span></a></li>
-              <li><a href="https://cryptobriefing.com/anthropic-flashprove-zksnark-ai-inference/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Crypto Briefing<span class="host">cryptobriefing.com</span></a></li>
-            </ul>
-          </div>
-
-          <div class="impact">
-            <span class="badge">Impact direct</span>
-            <p>Practic pentru automatizările lui cu API-uri AI (GAS + Gemini): atribuirea verificabilă a ieșirilor AI devine infrastructură reală, iar lecția OpenCode (chei și costuri neautorizate) capătă un răspuns tehnic; profesional, trasabilitatea ieșirilor AI e teren de incident management. Impact direct azi minim — e un prototip de cercetare, nu un produs disponibil.</p>
-          </div>
-        </article>
-      </main>
-      </section>
-
       <footer>
         <div class="rule" aria-hidden="true"></div>
-        <p>Sfârșitul ediției de azi · Ultima actualizare: marți, 10 noiembrie 2026, 21:00<br />Monitorizarea rulează la circa 3 ore, în fereastra L–V 06:00–22:00 · S–D 07:30–22:00 — dă refresh pentru noutăți.</p>
-        <a class="to-top" href="#stire-151">↑ Înapoi la cea mai nouă știre</a>
+        <p>Sfârșitul ediției de azi · Ultima actualizare: miercuri, 11 noiembrie 2026, 06:00<br />Monitorizarea rulează la circa 3 ore, în fereastra L–V 06:00–22:00 · S–D 07:30–22:00 — dă refresh pentru noutăți.</p>
+        <a class="to-top" href="#stire-153">↑ Înapoi la cea mai nouă știre</a>
       </footer>
     </div>
 
