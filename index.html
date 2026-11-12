@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="color-scheme" content="light dark" />
-    <meta name="tirile-versiune" content="2026-11-12T16:03:00+01:00|10|amber" />
+    <meta name="tirile-versiune" content="2026-11-12T17:05:00+01:00|11|amber" />
     <link rel="icon" href="data:," />
     <title>Știrile zilei</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -699,9 +699,9 @@
     <div class="topbar">
       <div class="topbar-inner">
         <span class="dot" aria-hidden="true"></span>
-        <span><strong>Joi, 12 noiembrie 2026</strong> · actualizat la <strong>16:03</strong></span>
+        <span><strong>Joi, 12 noiembrie 2026</strong> · actualizat la <strong>17:05</strong></span>
         <span aria-hidden="true">·</span>
-        <span>10 știri azi</span>
+        <span>11 știri azi</span>
         <span class="spacer"></span>
         <button class="refresh-btn" type="button" id="refreshBtn" aria-label="Reîmprospătează pagina">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg>
@@ -739,7 +739,7 @@
 
       <!-- Chenar permanent: știrea cea mai importantă a zilei — sub fereastra
            „Ultimele știri”, ÎNAINTEA dashboardului, vizibilă din prima, fără scroll.
-           Nivelul de azi: GALBEN (sev-amber) — de urmărit: demisia lui Jensen Huang de la Nvidia — știrea cu severitatea cea mai mare a zilei și cea mai importantă dintre cele opt știri galbene ale zilei, marcată „Știrea zilei”; mai există alte șapte știri galbene azi (știrea DFA de la 14:00 e verde; galbenele sunt: campania „wfx-loot”, furt de secrete din GitHub Actions, de la 15:00, Ucraina cere SUA să accelereze livrările de interceptori, de la 13:00, emisarii SUA Witkoff și Kushner la Moscova, de la 10:00, discursul lui Rutte la Oslo despre cheltuielile de apărare NATO, de la 08:00, boardul Nvidia se pregătește să-l demită pe Jensen Huang, de la 07:00, startupul britanic Fractile ridică 720 mil. $ pentru cipuri AI, de la 06:00, și CoreWeave își schimbă finanțarea boom-ului AI, de la 06:00), de aceea apare mențiunea despre celelalte știri cu aceeași severitate, cu filtru pe galben la „apasă aici”.
+           Nivelul de azi: GALBEN (sev-amber) — de urmărit: demisia lui Jensen Huang de la Nvidia — știrea cu severitatea cea mai mare a zilei și cea mai importantă dintre cele nouă știri galbene ale zilei, marcată „Știrea zilei”; mai există alte opt știri galbene azi (știrea DFA de la 14:00 e verde; galbenele sunt: nava rusă lovită în Baltica, de la 17:00, campania „wfx-loot”, furt de secrete din GitHub Actions, de la 15:00, Ucraina cere SUA să accelereze livrările de interceptori, de la 13:00, emisarii SUA Witkoff și Kushner la Moscova, de la 10:00, discursul lui Rutte la Oslo despre cheltuielile de apărare NATO, de la 08:00, boardul Nvidia se pregătește să-l demită pe Jensen Huang, de la 07:00, startupul britanic Fractile ridică 720 mil. $ pentru cipuri AI, de la 06:00, și CoreWeave își schimbă finanțarea boom-ului AI, de la 06:00), de aceea apare mențiunea despre celelalte știri cu aceeași severitate, cu filtru pe galben la „apasă aici”.
            Chenarul rămâne în afara logicii de filtrare: vizibil indiferent de filtrul de categorie. -->
       <section class="spot sev-amber" aria-label="Știrea cea mai importantă a zilei">
         <div class="spot-head">
@@ -768,23 +768,23 @@
       <section class="dashboard" aria-label="Panou de ansamblu">
         <div class="dash-head">
           <span class="dash-title">Dashboard · Azi</span>
-          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 16:03</span>
+          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 17:05</span>
           <span class="dash-meta">Fereastră monitorizare <strong>L–V 06:00–22:00 · S–D 07:30–22:00</strong> · pas ~3 ore</span>
         </div>
 
         <div class="kpi-grid five" role="group" aria-label="Filtrează după categorie — apasă pe un tile">
           <button class="kpi" type="button" data-filter="toate" aria-pressed="true">
             <span class="kpi-top"><span class="kpi-label">Toate știrile</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">10</span>
-            <span class="kpi-sub">știri verificate azi, în 8 rulări</span>
+            <span class="kpi-value">11</span>
+            <span class="kpi-sub">știri verificate azi, în 9 rulări</span>
             <span class="kpi-bar" aria-hidden="true"><i style="width:100%"></i></span>
             <span class="kpi-hint">Apasă pentru toate</span>
           </button>
           <button class="kpi" type="button" data-filter="securitate" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">Securitate &amp; NATO</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">3</span>
-            <span class="kpi-sub">Ucraina cere interceptori mai repede · emisarii SUA la Moscova · cheltuieli de apărare NATO</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:33%"></i></span>
+            <span class="kpi-value">4</span>
+            <span class="kpi-sub">navă rusă lovită în Baltica · Ucraina cere interceptori mai repede · emisarii SUA la Moscova · cheltuieli de apărare NATO</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:36%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="romania" aria-pressed="false">
@@ -798,14 +798,14 @@
             <span class="kpi-top"><span class="kpi-label">Belgia</span><span class="kpi-check" aria-hidden="true">✓</span></span>
             <span class="kpi-value">1</span>
             <span class="kpi-sub">Digital Fairness Act UE</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:11%"></i></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:9%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="tech" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">Tech &amp; AI</span><span class="kpi-check" aria-hidden="true">✓</span></span>
             <span class="kpi-value">7</span>
             <span class="kpi-sub">demisia lui Jensen Huang · furt de secrete din GitHub Actions · Digital Fairness Act UE · agenții AI blocați la zboruri · demiterea lui Jensen Huang · cipuri AI britanice Fractile · CoreWeave cere plăți în avans</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:70%"></i></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:64%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
         </div>
@@ -819,7 +819,7 @@
       </section>
 
       <div class="filter-status" aria-live="polite">
-        <span class="filter-label">Se afișează: <strong>Toate categoriile — 10 din 10 știri</strong></span>
+        <span class="filter-label">Se afișează: <strong>Toate categoriile — 11 din 11 știri</strong></span>
         <button class="filter-reset" type="button" hidden>Resetează filtrul</button>
       </div>
 
@@ -842,7 +842,44 @@
       <p class="empty">Nicio știre în această categorie azi.</p>
 
       <main>
-        <!-- 1 · 12 nov · 16:00 -->
+        <!-- 1 · 12 nov · 17:00 -->
+        <article id="stire-183" data-cats="securitate" data-sev="amber" data-subiect="navă rusă lovită în Baltica">
+          <div class="a-meta">
+            <span class="a-time">12 nov · 17:00</span>
+            <span class="a-cat">Securitate &amp; NATO</span>
+            <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
+            <a class="cont-pill" href="#stire-170" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
+            <span class="subj-pill">navă rusă lovită în Baltica</span>
+            <span class="a-num">#1 / 11</span>
+          </div>
+          <h2>Finlanda a detectat o lovitură asupra unei nave de război rusești în Marea Baltică; nava s-a întors la Sankt Petersburg</h2>
+          <div class="followup">
+            <span class="tag">Urmare la</span>
+            <p><a href="#stire-170">„Drone neidentificate au declanșat alerte aeriene în statele baltice; avioane NATO au decolat de două ori, fără să doboare vreo dronă” — miercuri, 11 noiembrie 2026, ora 20:00.</a> (Subiectul continuă firul baltic de ieri: aceeași zonă, aceleași alerte cu drone, același tipar de spillover.)</p>
+          </div>
+          <div class="sec">
+            <p class="sec-label">Ce s-a întâmplat</p>
+            <p>Armata finlandeză a anunțat joi, 12 noiembrie, că forțele sale au detectat miercuri o lovitură asupra unei nave de război rusești în zona Golfului Finlandei și că monitorizează evoluția situației. Nu se știe deocamdată dacă au fost victime și nici ce a provocat lovitura; presa estonă relatează că nava era o navă mică a marinei ruse și că s-a întors ulterior la Sankt Petersburg. Armata finlandeză a precizat că situația de securitate în zonă rămâne stabilă și că Finlanda nu se află sub o amenințare militară imediată, dar a refuzat să dea detalii despre locul, momentul sau modul în care a fost detectat incidentul. Contextul, relatat de Defense News: Ucraina trimite valuri de drone spre regiunea Leningrad — Sankt Petersburg și portul Ust-Luga — iar unele drone au intrat în spațiul aerian al Finlandei și al statelor baltice; miercuri dimineață, Estonia, Letonia și Lituania au emis avertismente pentru populație să se adăpostească din cauza dronelor, iar NATO a trimis avioane de luptă.</p>
+          </div>
+          <div class="sec">
+            <p class="sec-label">De ce contează</p>
+            <p>Războiul ajunge tot mai aproape de teritoriul NATO: după alertele aeriene de miercuri din statele baltice, joi apare o navă de război rusă lovită în Golful Finlandei — Marea Baltică devine un al doilea teatru de fricțiune, după Marea Neagră. Pentru un IT incident Manager, relevanța e profesională directă: același tipar de incident — detecție, atribuire neclară, lanț de decizie sub presiune de timp — într-o zonă unde alianța tocmai și-a ridicat nivelul de alertă. De urmărit: cine a lovit nava și dacă NATO anunță măsuri suplimentare în Baltica.</p>
+          </div>
+          <div class="verify">
+            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
+            <p>Verdict: sursa_primara + confirmat. Forțele de Apărare ale Finlandei (12 noiembrie 2026) — declarația proprie către Reuters: lovitură detectată asupra unei nave de război rusești în Golful Finlandei, situație stabilă, fără amenințare militară imediată; sursă primară. Reuters (12 noiembrie 2026) — relatarea proprie de la Helsinki, pe baza declarației armatei finlandeze. Defense News (12 noiembrie 2026, 15:06 UTC) — relatarea curatoriată: nava mică a marinei ruse, întoarsă la Sankt Petersburg (presa estonă); contextul cu dronele ucrainene spre Leningrad și alertele baltice de miercuri. Notă de integritate: nu se știe cine a lovit nava și nici dacă au fost victime; armata finlandeză nu a dat detalii despre locul, momentul sau modul detectării; NATO nu a atribuit incidentul nimănui.</p>
+            <ul class="sources">
+              <li><a href="https://www.defensenews.com/global/europe/2026/11/12/finland-says-it-detects-strike-on-russian-warship-in-baltic-sea/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Defense News — „Finland says it detects strike on Russian warship in Baltic Sea” (12 nov 2026, 15:06 UTC)<span class="host">defensenews.com</span></a></li>
+              <li><a href="https://srnnews.com/finland-says-it-detects-strike-on-russian-warship-in-baltic-sea/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Reuters, via SRN News — „Finland says it detects strike on Russian warship in Baltic Sea” (12 nov 2026; republicare a firului Reuters)<span class="host">srnnews.com</span></a></li>
+            </ul>
+          </div>
+          <div class="impact">
+            <span class="badge">Impact direct</span>
+            <p>Impact direct: minim azi — cursul de la Haga (11–13 noiembrie) continuă; nicio acțiune cerută. Relevanță profesională ridicată: lovitură asupra unei nave rusești în apele dintre doi aliați NATO, la o zi după alertele aeriene baltice — exact tipul de incident de pe flancul estic urmărit în pagină. De urmărit: atribuirea oficială a loviturii și eventualele măsuri suplimentare ale NATO în Marea Baltică.</p>
+          </div>
+        </article>
+
+        <!-- 2 · 12 nov · 16:00 -->
         <article id="stire-182" data-cats="tech" data-sev="amber" data-subiect="demisia lui Jensen Huang">
           <div class="a-meta">
             <span class="a-time">12 nov · 16:00</span>
@@ -851,7 +888,7 @@
             <span class="spot-tag">Știrea zilei</span>
             <a class="cont-pill" href="#stire-175" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">demisia lui Jensen Huang</span>
-            <span class="a-num">#1 / 10</span>
+            <span class="a-num">#2 / 11</span>
           </div>
           <h2>Jensen Huang demisionează de la Nvidia: Colette Kress preia interimatul, acțiunile scad cu peste 10%</h2>
           <div class="followup">
@@ -883,14 +920,14 @@
           </div>
         </article>
 
-        <!-- 2 · 12 nov · 15:00 -->
+        <!-- 3 · 12 nov · 15:00 -->
         <article id="stire-181" data-cats="tech" data-sev="amber" data-subiect="furt de secrete din GitHub Actions">
           <div class="a-meta">
             <span class="a-time">12 nov · 15:00</span>
             <span class="a-cat">Tech &amp; AI</span>
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="subj-pill">furt de secrete din GitHub Actions</span>
-            <span class="a-num">#2 / 10</span>
+            <span class="a-num">#3 / 11</span>
           </div>
           <h2>Campanie „wfx-loot”: 4.837 de conturi GitHub deturnate fură secrete din CI în peste 61.000 de repo-uri</h2>
           <div class="sec">
@@ -919,14 +956,14 @@
           </div>
         </article>
 
-        <!-- 3 · 12 nov · 14:00 -->
+        <!-- 4 · 12 nov · 14:00 -->
         <article id="stire-180" data-cats="tech belgia" data-sev="green" data-subiect="Digital Fairness Act UE">
           <div class="a-meta">
             <span class="a-time">12 nov · 14:00</span>
             <span class="a-cat">Tech &amp; AI · Belgia</span>
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <span class="subj-pill">Digital Fairness Act UE</span>
-            <span class="a-num">#3 / 10</span>
+            <span class="a-num">#4 / 11</span>
           </div>
           <h2>Comisia Europeană propune Digital Fairness Act: interzice dark patterns și pune primele reguli UE pentru agenții AI de cumpărături</h2>
           <div class="sec">
@@ -957,7 +994,7 @@
           </div>
         </article>
 
-        <!-- 4 · 12 nov · 13:00 -->
+        <!-- 5 · 12 nov · 13:00 -->
         <article id="stire-179" data-cats="securitate" data-sev="amber" data-subiect="Ucraina cere interceptori mai repede">
           <div class="a-meta">
             <span class="a-time">12 nov · 13:00</span>
@@ -965,7 +1002,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-166" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">Ucraina cere interceptori mai repede</span>
-            <span class="a-num">#4 / 10</span>
+            <span class="a-num">#5 / 11</span>
           </div>
           <h2>Ucraina cere SUA să accelereze livrările de interceptori, pe fondul atacurilor Rusiei asupra rețelei electrice; Kievul, pesimist privind armistițiul în Marea Neagră</h2>
           <div class="followup">
@@ -1000,7 +1037,7 @@
           </div>
         </article>
 
-        <!-- 5 · 12 nov · 10:00 -->
+        <!-- 6 · 12 nov · 10:00 -->
         <article id="stire-177" data-cats="securitate" data-sev="amber" data-subiect="emisarii SUA la Moscova">
           <div class="a-meta">
             <span class="a-time">12 nov · 10:00</span>
@@ -1008,7 +1045,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-166" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">emisarii SUA la Moscova</span>
-            <span class="a-num">#5 / 10</span>
+            <span class="a-num">#6 / 11</span>
           </div>
           <h2>Emisarii SUA Witkoff și Kushner s-au întâlnit azi cu Putin la Moscova, după discuțiile de la Abu Dhabi; urmează Dublinul și Zelenski</h2>
           <div class="followup">
@@ -1042,14 +1079,14 @@
           </div>
         </article>
 
-        <!-- 6 · 12 nov · 10:00 -->
+        <!-- 7 · 12 nov · 10:00 -->
         <article id="stire-178" data-cats="tech" data-sev="green" data-subiect="agenții AI blocați la zboruri">
           <div class="a-meta">
             <span class="a-time">12 nov · 10:00</span>
             <span class="a-cat">Tech &amp; AI</span>
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <span class="subj-pill">agenții AI blocați la zboruri</span>
-            <span class="a-num">#6 / 10</span>
+            <span class="a-num">#7 / 11</span>
           </div>
           <h2>United Airlines interzice agenților AI personali să rezerve zboruri — prima companie aeriană americană care o face</h2>
           <div class="sec">
@@ -1079,7 +1116,7 @@
           </div>
         </article>
 
-        <!-- 7 · 12 nov · 08:00 -->
+        <!-- 8 · 12 nov · 08:00 -->
         <article id="stire-176" data-cats="securitate" data-sev="amber" data-subiect="cheltuieli de apărare NATO">
           <div class="a-meta">
             <span class="a-time">12 nov · 08:00</span>
@@ -1087,7 +1124,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-161" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">cheltuieli de apărare NATO</span>
-            <span class="a-num">#7 / 10</span>
+            <span class="a-num">#8 / 11</span>
           </div>
           <h2>Rutte la Oslo: Marea Britanie își dublează cheltuielile de apărare în 10 ani; cinci aliați ating ținta NATO de 5% din PIB în 2026</h2>
           <div class="followup">
@@ -1118,7 +1155,7 @@
           </div>
         </article>
 
-        <!-- 8 · 12 nov · 07:00 -->
+        <!-- 9 · 12 nov · 07:00 -->
         <article id="stire-175" data-cats="tech" data-sev="amber" data-subiect="demiterea lui Jensen Huang">
           <div class="a-meta">
             <span class="a-time">12 nov · 07:00</span>
@@ -1126,7 +1163,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-172" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">demiterea lui Jensen Huang</span>
-            <span class="a-num">#8 / 10</span>
+            <span class="a-num">#9 / 11</span>
           </div>
           <h2>Boardul Nvidia se pregătește să-l demită pe Jensen Huang: ședința decisivă a avut loc miercuri seară, acțiunile au căzut cu 8%</h2>
           <div class="followup">
@@ -1162,14 +1199,14 @@
           </div>
         </article>
 
-        <!-- 9 · 12 nov · 06:00 -->
+        <!-- 10 · 12 nov · 06:00 -->
         <article id="stire-173" data-cats="tech" data-sev="amber" data-subiect="cipuri AI britanice Fractile">
           <div class="a-meta">
             <span class="a-time">12 nov · 06:00</span>
             <span class="a-cat">Tech &amp; AI</span>
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="subj-pill">cipuri AI britanice Fractile</span>
-            <span class="a-num">#9 / 10</span>
+            <span class="a-num">#10 / 11</span>
           </div>
           <h2>Startupul britanic Fractile ridică 720 mil. $ pentru cipuri AI de inferență și ajunge la o evaluare de 7 mld. $, cu sprijinul fondului suveran AI al Marii Britanii</h2>
           <div class="sec">
@@ -1196,14 +1233,14 @@
           </div>
         </article>
 
-        <!-- 10 · 12 nov · 06:00 -->
+        <!-- 11 · 12 nov · 06:00 -->
         <article id="stire-174" data-cats="tech" data-sev="amber" data-subiect="CoreWeave cere plăți în avans">
           <div class="a-meta">
             <span class="a-time">12 nov · 06:00</span>
             <span class="a-cat">Tech &amp; AI</span>
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="subj-pill">CoreWeave cere plăți în avans</span>
-            <span class="a-num">#10 / 10</span>
+            <span class="a-num">#11 / 11</span>
           </div>
           <h2>CoreWeave își schimbă finanțarea boom-ului AI: cere clienților plăți în avans de ~9 mld. $ în 3 luni, ca să nu se mai împrumute scump</h2>
           <div class="sec">
@@ -5964,7 +6001,7 @@
       <footer>
         <div class="rule" aria-hidden="true"></div>
         <p>Sfârșitul ediției de azi · Ultima actualizare: joi, 12 noiembrie 2026, 16:03<br />Monitorizarea rulează la circa 3 ore, în fereastra L–V 06:00–22:00 · S–D 07:30–22:00 — dă refresh pentru noutăți.</p>
-        <a class="to-top" href="#stire-182">↑ Înapoi la cea mai nouă știre</a>
+        <a class="to-top" href="#stire-183">↑ Înapoi la cea mai nouă știre</a>
       </footer>
     </div>
 
