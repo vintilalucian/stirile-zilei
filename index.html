@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="color-scheme" content="light dark" />
-    <meta name="tirile-versiune" content="2026-11-12T13:00:00+01:00|7|amber" />
+    <meta name="tirile-versiune" content="2026-11-12T14:00:00+01:00|8|amber" />
     <link rel="icon" href="data:," />
     <title>Știrile zilei</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -699,9 +699,9 @@
     <div class="topbar">
       <div class="topbar-inner">
         <span class="dot" aria-hidden="true"></span>
-        <span><strong>Joi, 12 noiembrie 2026</strong> · actualizat la <strong>13:00</strong></span>
+        <span><strong>Joi, 12 noiembrie 2026</strong> · actualizat la <strong>14:00</strong></span>
         <span aria-hidden="true">·</span>
-        <span>7 știri azi</span>
+        <span>8 știri azi</span>
         <span class="spacer"></span>
         <button class="refresh-btn" type="button" id="refreshBtn" aria-label="Reîmprospătează pagina">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg>
@@ -768,15 +768,15 @@
       <section class="dashboard" aria-label="Panou de ansamblu">
         <div class="dash-head">
           <span class="dash-title">Dashboard · Azi</span>
-          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 13:00</span>
+          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 14:00</span>
           <span class="dash-meta">Fereastră monitorizare <strong>L–V 06:00–22:00 · S–D 07:30–22:00</strong> · pas ~3 ore</span>
         </div>
 
         <div class="kpi-grid five" role="group" aria-label="Filtrează după categorie — apasă pe un tile">
           <button class="kpi" type="button" data-filter="toate" aria-pressed="true">
             <span class="kpi-top"><span class="kpi-label">Toate știrile</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">7</span>
-            <span class="kpi-sub">știri verificate azi, în 5 rulări</span>
+            <span class="kpi-value">8</span>
+            <span class="kpi-sub">știri verificate azi, în 6 rulări</span>
             <span class="kpi-bar" aria-hidden="true"><i style="width:100%"></i></span>
             <span class="kpi-hint">Apasă pentru toate</span>
           </button>
@@ -784,7 +784,7 @@
             <span class="kpi-top"><span class="kpi-label">Securitate &amp; NATO</span><span class="kpi-check" aria-hidden="true">✓</span></span>
             <span class="kpi-value">3</span>
             <span class="kpi-sub">Ucraina cere interceptori mai repede · emisarii SUA la Moscova · cheltuieli de apărare NATO</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:43%"></i></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:38%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="romania" aria-pressed="false">
@@ -796,16 +796,16 @@
           </button>
           <button class="kpi" type="button" data-filter="belgia" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">Belgia</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">0</span>
-            <span class="kpi-sub"></span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:0%"></i></span>
+            <span class="kpi-value">1</span>
+            <span class="kpi-sub">Digital Fairness Act UE</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:12%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="tech" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">Tech &amp; AI</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">4</span>
-            <span class="kpi-sub">agenții AI blocați la zboruri · demiterea lui Jensen Huang · cipuri AI britanice Fractile · CoreWeave cere plăți în avans</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:57%"></i></span>
+            <span class="kpi-value">5</span>
+            <span class="kpi-sub">Digital Fairness Act UE · agenții AI blocați la zboruri · demiterea lui Jensen Huang · cipuri AI britanice Fractile · CoreWeave cere plăți în avans</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:62%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
         </div>
@@ -819,7 +819,7 @@
       </section>
 
       <div class="filter-status" aria-live="polite">
-        <span class="filter-label">Se afișează: <strong>Toate categoriile — 7 din 7 știri</strong></span>
+        <span class="filter-label">Se afișează: <strong>Toate categoriile — 8 din 8 știri</strong></span>
         <button class="filter-reset" type="button" hidden>Resetează filtrul</button>
       </div>
 
@@ -842,7 +842,45 @@
       <p class="empty">Nicio știre în această categorie azi.</p>
 
       <main>
-        <!-- 1 · 12 nov · 13:00 -->
+        <!-- 1 · 12 nov · 14:00 -->
+        <article id="stire-180" data-cats="tech belgia" data-sev="green" data-subiect="Digital Fairness Act UE">
+          <div class="a-meta">
+            <span class="a-time">12 nov · 14:00</span>
+            <span class="a-cat">Tech &amp; AI · Belgia</span>
+            <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
+            <span class="subj-pill">Digital Fairness Act UE</span>
+            <span class="a-num">#1 / 8</span>
+          </div>
+          <h2>Comisia Europeană propune Digital Fairness Act: interzice dark patterns și pune primele reguli UE pentru agenții AI de cumpărături</h2>
+          <div class="sec">
+            <p class="sec-label">Ce s-a întâmplat</p>
+            <p>Comisia Europeană a prezentat miercuri, 11 noiembrie, propunerea de Digital Fairness Act (DFA), cea mai amplă reformă a regulilor UE de protecție a consumatorilor online din ultimii 20 de ani: un regulament care ar înlocui directiva din 2005 și s-ar aplica direct în toate statele membre, fără transpunere națională. Propunerea interzice o listă de zece „dark patterns" — trucuri de design care împing consumatorul spre decizii contra interesului lui: mesaje false că un produs e pe terminate, cronometre de presiune, căsuțe pre-bifate, butonul de refuz ascuns sau formulat ca o alegere greșită. Pentru prima oară, actul reglementează „agentic commerce": magazinele care oferă sisteme AI ce încheie contracte în numele clientului trebuie să-l lase pe acesta să aleagă ce achiziții cer confirmare înainte, iar niciun magazin nu poate obliga clienții să folosească un astfel de sistem. Pachetul mai prevede anularea online cu un click, memento înainte de expirarea perioadelor gratuite și a reînnoirilor automate, prețul afișat cu toate taxele inevitabile incluse de la început, un om real la asistența post-vânzare și reguli pentru loot box-uri și design adictiv. În paralel, Comisia a propus o revizuire a cooperării în protecția consumatorilor, prin care ar putea investiga direct cazuri transfrontaliere mari și amenda cu până la 6% din cifra de afaceri globală. Propunerea merge acum la Parlamentul European și la Consiliu — nu e lege încă.</p>
+          </div>
+          <div class="sec">
+            <p class="sec-label">De ce contează</p>
+            <p>Pentru un IT incident Manager care construiește automatizări cu agenți AI, DFA e primul cadru european care reglementează agenții de cumpărături — cu confirmare explicită per achiziție și fără obligativitatea de a-i folosi — pe firul direct al cardului de azi, de la 10:00, despre United Airlines, care a interzis agenților AI personali să rezerve zboruri: în timp ce companiile americane închid ușa agenților, UE scrie regulile după care vor funcționa aici. Ca utilizator de servicii online în UE, schimbările îl privesc direct: anularea abonamentelor cu un click, memento înainte de reînnoiri și prețul complet afișat de la început.</p>
+          </div>
+          <div class="verify">
+            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
+            <p>Verdict: sursa_primara + confirmat. Comisia Europeană (11 noiembrie 2026) — comunicatul propriu de prezentare a pachetului (IP/26/2407) și textul propunerii, COM(2026) 1100 final. POLITICO Europe (11 noiembrie 2026, 21:16 UTC) — „Brussels takes on the evils of online commerce" (relatarea curatoriată: dark patterns, prețuri dinamice, agentic commerce, asistență umană). Reuters (12 noiembrie 2026) — comentariul Breakingviews despre propunere. Euronews (9 noiembrie 2026) — relatarea pe baza proiectului de text, înainte de prezentare. Notă de integritate: amenda de până la 6% din cifra de afaceri globală ține de revizuirea paralelă a regulamentului de cooperare în protecția consumatorilor, nu de DFA în sine; DFA rămâne o propunere — Parlamentul și Consiliul o negociază, iar textul se poate schimba; cifra Comisiei privind economii de până la 13,7 mld. € pe an pentru consumatori e o modelare a Comisiei, nu un audit independent.</p>
+            <ul class="sources">
+              <li><a href="https://cyprus.representation.ec.europa.eu/news/commission-strengthens-consumer-protection-laws-making-them-fit-digital-age-2026-11-11_en" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Comisia Europeană — „Commission strengthens consumer protection laws, making them fit for the digital age” (11 nov 2026; comunicatul propriu de prezentare a pachetului, IP/26/2407 — sursă primară)<span class="host">cyprus.representation.ec.europa.eu</span></a></li>
+              <li><a href="https://www.europesays.com/be/47216/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>POLITICO Europe (reluat de EuropeSays) — „Brussels takes on the evils of online commerce” (11 nov 2026, 21:16 UTC; relatarea curatoriată — dark patterns, prețuri dinamice, agentic commerce, asistență umană)<span class="host">europesays.com</span></a></li>
+              <li><a href="https://www.reuters.com/commentary/breakingviews/brussels-puts-price-big-tech-digital-trickery-2026-11-12/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Reuters — „Brussels puts a price on Big Tech digital trickery” (12 nov 2026, Breakingviews — comentariu despre propunere)<span class="host">reuters.com</span></a></li>
+              <li><a href="https://commission.europa.eu/document/download/0575d59f-554f-4a9e-b54b-e6b717175809_en?filename=Proposal%20for%20a%20Digital%20Fairness%20Act_0.pdf" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Comisia Europeană — textul propunerii, COM(2026) 1100 final (11 nov 2026; sursă primară)<span class="host">commission.europa.eu</span></a></li>
+            </ul>
+          </div>
+          <div class="opposing">
+            <p class="sec-label">Tabăra adversă</p>
+            <p>Laura Ballarín Cereza, eurodeputată spaniolă, citată de POLITICO, spune că propunerea nu merge destul de departe la designul adictiv: utilizatorii ar trebui scoși implicit din funcții ca autoplay, nu doar să aibă opțiunea de a le dezactiva; patru eurodeputați din grupurile conservator, socialist și liberal cer interzicerea completă a prețurilor dinamice la evenimente culturale și sportive. European Lotteries cere Parlamentului și Consiliului excluderea loteriilor și jocurilor de noroc din sfera actului. (<a href="https://www.europesays.com/be/47216/" target="_blank" rel="noopener">europesays.com</a> · <a href="https://igaming-times.com/news/regulatory/digital-fairness-act-covers-gambling-european-lotteries" target="_blank" rel="noopener">igaming-times.com</a>)</p>
+          </div>
+          <div class="impact">
+            <span class="badge">Impact direct</span>
+            <p>Impact direct: minim — propunerea nu e lege încă și nu cere nicio acțiune azi; relevanță de context înaltă: primul cadru UE pentru agenții AI de cumpărături, pe firul urmărit azi (United Airlines) — de urmărit negocierile din Parlament și Consiliu și forma finală a regulilor pentru agenți.</p>
+          </div>
+        </article>
+
+        <!-- 2 · 12 nov · 13:00 -->
         <article id="stire-179" data-cats="securitate" data-sev="amber" data-subiect="Ucraina cere interceptori mai repede">
           <div class="a-meta">
             <span class="a-time">12 nov · 13:00</span>
@@ -850,7 +888,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-166" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">Ucraina cere interceptori mai repede</span>
-            <span class="a-num">#1 / 7</span>
+            <span class="a-num">#2 / 8</span>
           </div>
           <h2>Ucraina cere SUA să accelereze livrările de interceptori, pe fondul atacurilor Rusiei asupra rețelei electrice; Kievul, pesimist privind armistițiul în Marea Neagră</h2>
           <div class="followup">
@@ -885,7 +923,7 @@
           </div>
         </article>
 
-        <!-- 2 · 12 nov · 10:00 -->
+        <!-- 3 · 12 nov · 10:00 -->
         <article id="stire-177" data-cats="securitate" data-sev="amber" data-subiect="emisarii SUA la Moscova">
           <div class="a-meta">
             <span class="a-time">12 nov · 10:00</span>
@@ -894,7 +932,7 @@
             <span class="spot-tag">Știrea zilei</span>
             <a class="cont-pill" href="#stire-166" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">emisarii SUA la Moscova</span>
-            <span class="a-num">#2 / 7</span>
+            <span class="a-num">#3 / 8</span>
           </div>
           <h2>Emisarii SUA Witkoff și Kushner s-au întâlnit azi cu Putin la Moscova, după discuțiile de la Abu Dhabi; urmează Dublinul și Zelenski</h2>
           <div class="followup">
@@ -928,14 +966,14 @@
           </div>
         </article>
 
-        <!-- 3 · 12 nov · 10:00 -->
+        <!-- 4 · 12 nov · 10:00 -->
         <article id="stire-178" data-cats="tech" data-sev="green" data-subiect="agenții AI blocați la zboruri">
           <div class="a-meta">
             <span class="a-time">12 nov · 10:00</span>
             <span class="a-cat">Tech &amp; AI</span>
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <span class="subj-pill">agenții AI blocați la zboruri</span>
-            <span class="a-num">#3 / 7</span>
+            <span class="a-num">#4 / 8</span>
           </div>
           <h2>United Airlines interzice agenților AI personali să rezerve zboruri — prima companie aeriană americană care o face</h2>
           <div class="sec">
@@ -965,7 +1003,7 @@
           </div>
         </article>
 
-        <!-- 4 · 12 nov · 08:00 -->
+        <!-- 5 · 12 nov · 08:00 -->
         <article id="stire-176" data-cats="securitate" data-sev="amber" data-subiect="cheltuieli de apărare NATO">
           <div class="a-meta">
             <span class="a-time">12 nov · 08:00</span>
@@ -973,7 +1011,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-161" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">cheltuieli de apărare NATO</span>
-            <span class="a-num">#4 / 7</span>
+            <span class="a-num">#5 / 8</span>
           </div>
           <h2>Rutte la Oslo: Marea Britanie își dublează cheltuielile de apărare în 10 ani; cinci aliați ating ținta NATO de 5% din PIB în 2026</h2>
           <div class="followup">
@@ -1004,7 +1042,7 @@
           </div>
         </article>
 
-        <!-- 5 · 12 nov · 07:00 -->
+        <!-- 6 · 12 nov · 07:00 -->
         <article id="stire-175" data-cats="tech" data-sev="amber" data-subiect="demiterea lui Jensen Huang">
           <div class="a-meta">
             <span class="a-time">12 nov · 07:00</span>
@@ -1012,7 +1050,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-172" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">demiterea lui Jensen Huang</span>
-            <span class="a-num">#5 / 7</span>
+            <span class="a-num">#6 / 8</span>
           </div>
           <h2>Boardul Nvidia se pregătește să-l demită pe Jensen Huang: ședința decisivă a avut loc miercuri seară, acțiunile au căzut cu 8%</h2>
           <div class="followup">
@@ -1048,14 +1086,14 @@
           </div>
         </article>
 
-        <!-- 6 · 12 nov · 06:00 -->
+        <!-- 7 · 12 nov · 06:00 -->
         <article id="stire-173" data-cats="tech" data-sev="amber" data-subiect="cipuri AI britanice Fractile">
           <div class="a-meta">
             <span class="a-time">12 nov · 06:00</span>
             <span class="a-cat">Tech &amp; AI</span>
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="subj-pill">cipuri AI britanice Fractile</span>
-            <span class="a-num">#6 / 7</span>
+            <span class="a-num">#7 / 8</span>
           </div>
           <h2>Startupul britanic Fractile ridică 720 mil. $ pentru cipuri AI de inferență și ajunge la o evaluare de 7 mld. $, cu sprijinul fondului suveran AI al Marii Britanii</h2>
           <div class="sec">
@@ -1082,14 +1120,14 @@
           </div>
         </article>
 
-        <!-- 7 · 12 nov · 06:00 -->
+        <!-- 8 · 12 nov · 06:00 -->
         <article id="stire-174" data-cats="tech" data-sev="amber" data-subiect="CoreWeave cere plăți în avans">
           <div class="a-meta">
             <span class="a-time">12 nov · 06:00</span>
             <span class="a-cat">Tech &amp; AI</span>
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="subj-pill">CoreWeave cere plăți în avans</span>
-            <span class="a-num">#7 / 7</span>
+            <span class="a-num">#8 / 8</span>
           </div>
           <h2>CoreWeave își schimbă finanțarea boom-ului AI: cere clienților plăți în avans de ~9 mld. $ în 3 luni, ca să nu se mai împrumute scump</h2>
           <div class="sec">
@@ -5849,8 +5887,8 @@
 
       <footer>
         <div class="rule" aria-hidden="true"></div>
-        <p>Sfârșitul ediției de azi · Ultima actualizare: joi, 12 noiembrie 2026, 13:00<br />Monitorizarea rulează la circa 3 ore, în fereastra L–V 06:00–22:00 · S–D 07:30–22:00 — dă refresh pentru noutăți.</p>
-        <a class="to-top" href="#stire-179">↑ Înapoi la cea mai nouă știre</a>
+        <p>Sfârșitul ediției de azi · Ultima actualizare: joi, 12 noiembrie 2026, 14:00<br />Monitorizarea rulează la circa 3 ore, în fereastra L–V 06:00–22:00 · S–D 07:30–22:00 — dă refresh pentru noutăți.</p>
+        <a class="to-top" href="#stire-180">↑ Înapoi la cea mai nouă știre</a>
       </footer>
     </div>
 
