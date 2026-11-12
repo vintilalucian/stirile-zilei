@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="color-scheme" content="light dark" />
-    <meta name="tirile-versiune" content="2026-11-12T21:00:00+01:00|16|amber" />
+    <meta name="tirile-versiune" content="2026-11-12T22:00:00+01:00|18|amber" />
     <link rel="icon" href="data:," />
     <title>Știrile zilei</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -699,9 +699,9 @@
     <div class="topbar">
       <div class="topbar-inner">
         <span class="dot" aria-hidden="true"></span>
-        <span><strong>Joi, 12 noiembrie 2026</strong> · actualizat la <strong>21:00</strong></span>
+        <span><strong>Joi, 12 noiembrie 2026</strong> · actualizat la <strong>22:00</strong></span>
         <span aria-hidden="true">·</span>
-        <span>16 știri azi</span>
+        <span>18 știri azi</span>
         <span class="spacer"></span>
         <button class="refresh-btn" type="button" id="refreshBtn" aria-label="Reîmprospătează pagina">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg>
@@ -739,7 +739,7 @@
 
       <!-- Chenar permanent: știrea cea mai importantă a zilei — sub fereastra
            „Ultimele știri”, ÎNAINTEA dashboardului, vizibilă din prima, fără scroll.
-           Nivelul de azi: GALBEN (sev-amber) — de urmărit: demisia lui Jensen Huang de la Nvidia — știrea cu severitatea cea mai mare a zilei și cea mai importantă dintre cele douăsprezece știri galbene ale zilei, marcată „Știrea zilei”; mai există alte unsprezece știri galbene azi (patru știri sunt verzi azi: Gemini 4 Hydrogen în Search, de la 21:00, contractul SATIM, de la 19:00, știrea DFA de la 14:00 și United Airlines, de la 10:00; galbenele sunt: plecarea lui Jensen Huang și viitorul AI open source la Nvidia, de la 20:00, moțiunea AUR împotriva lui Nazare respinsă în Senat, de la 19:00, breach-ul Fireworks AI / Notion, de la 18:00, nava rusă lovită în Baltica, de la 17:00, campania „wfx-loot”, furt de secrete din GitHub Actions, de la 15:00, Ucraina cere SUA să accelereze livrările de interceptori, de la 13:00, emisarii SUA Witkoff și Kushner la Moscova, de la 10:00, discursul lui Rutte la Oslo despre cheltuielile de apărare NATO, de la 08:00, boardul Nvidia se pregătește să-l demită pe Jensen Huang, de la 07:00, startupul britanic Fractile ridică 720 mil. $ pentru cipuri AI, de la 06:00, și CoreWeave își schimbă finanțarea boom-ului AI, de la 06:00), de aceea apare mențiunea despre celelalte știri cu aceeași severitate, cu filtru pe galben la „apasă aici”.
+           Nivelul de azi: GALBEN (sev-amber) — de urmărit: demisia lui Jensen Huang de la Nvidia — știrea cu severitatea cea mai mare a zilei și cea mai importantă dintre cele paisprezece știri galbene ale zilei, marcată „Știrea zilei”; mai există alte treisprezece știri galbene azi (patru știri sunt verzi azi: Gemini 4 Hydrogen în Search, de la 21:00, contractul SATIM, de la 19:00, știrea DFA de la 14:00 și United Airlines, de la 10:00; galbenele sunt: Europa la masa negocierilor Ucraina, de la 22:00, pană Microsoft 365 Outlook, de la 22:00, plecarea lui Jensen Huang și viitorul AI open source la Nvidia, de la 20:00, moțiunea AUR împotriva lui Nazare respinsă în Senat, de la 19:00, breach-ul Fireworks AI / Notion, de la 18:00, nava rusă lovită în Baltica, de la 17:00, campania „wfx-loot”, furt de secrete din GitHub Actions, de la 15:00, Ucraina cere SUA să accelereze livrările de interceptori, de la 13:00, emisarii SUA Witkoff și Kushner la Moscova, de la 10:00, discursul lui Rutte la Oslo despre cheltuielile de apărare NATO, de la 08:00, boardul Nvidia se pregătește să-l demită pe Jensen Huang, de la 07:00, startupul britanic Fractile ridică 720 mil. $ pentru cipuri AI, de la 06:00, și CoreWeave își schimbă finanțarea boom-ului AI, de la 06:00), de aceea apare mențiunea despre celelalte știri cu aceeași severitate, cu filtru pe galben la „apasă aici”.
            Chenarul rămâne în afara logicii de filtrare: vizibil indiferent de filtrul de categorie. -->
       <section class="spot sev-amber" aria-label="Știrea cea mai importantă a zilei">
         <div class="spot-head">
@@ -768,22 +768,22 @@
       <section class="dashboard" aria-label="Panou de ansamblu">
         <div class="dash-head">
           <span class="dash-title">Dashboard · Azi</span>
-          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 21:00</span>
+          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 22:00</span>
           <span class="dash-meta">Fereastră monitorizare <strong>L–V 06:00–22:00 · S–D 07:30–22:00</strong> · pas ~3 ore</span>
         </div>
 
         <div class="kpi-grid five" role="group" aria-label="Filtrează după categorie — apasă pe un tile">
           <button class="kpi" type="button" data-filter="toate" aria-pressed="true">
             <span class="kpi-top"><span class="kpi-label">Toate știrile</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">16</span>
-            <span class="kpi-sub">știri verificate azi, în 13 rulări</span>
+            <span class="kpi-value">18</span>
+            <span class="kpi-sub">știri verificate azi, în 14 rulări</span>
             <span class="kpi-bar" aria-hidden="true"><i style="width:100%"></i></span>
             <span class="kpi-hint">Apasă pentru toate</span>
           </button>
           <button class="kpi" type="button" data-filter="securitate" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">Securitate &amp; NATO</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">5</span>
-            <span class="kpi-sub">analiză AI imagini satelit militare · navă rusă lovită în Baltica · Ucraina cere interceptori mai repede · emisarii SUA la Moscova · cheltuieli de apărare NATO</span>
+            <span class="kpi-value">6</span>
+            <span class="kpi-sub">Europa la masa negocierilor Ucraina · analiză AI imagini satelit militare · navă rusă lovită în Baltica · Ucraina cere interceptori mai repede · emisarii SUA la Moscova · cheltuieli de apărare NATO</span>
             <span class="kpi-bar" aria-hidden="true"><i style="width:33%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
@@ -803,9 +803,9 @@
           </button>
           <button class="kpi" type="button" data-filter="tech" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">Tech &amp; AI</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">11</span>
-            <span class="kpi-sub">Gemini 4 Hydrogen în Search · Nvidia și viitorul open source · analiză AI imagini satelit militare · breach Fireworks AI / Notion · demisia lui Jensen Huang · furt de secrete din GitHub Actions · Digital Fairness Act UE · agenții AI blocați la zboruri · demiterea lui Jensen Huang · cipuri AI britanice Fractile · CoreWeave cere plăți în avans</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:69%"></i></span>
+            <span class="kpi-value">12</span>
+            <span class="kpi-sub">pană Microsoft 365 Outlook · Gemini 4 Hydrogen în Search · Nvidia și viitorul open source · analiză AI imagini satelit militare · breach Fireworks AI / Notion · demisia lui Jensen Huang · furt de secrete din GitHub Actions · Digital Fairness Act UE · agenții AI blocați la zboruri · demiterea lui Jensen Huang · cipuri AI britanice Fractile · CoreWeave cere plăți în avans</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:67%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
         </div>
@@ -819,7 +819,7 @@
       </section>
 
       <div class="filter-status" aria-live="polite">
-        <span class="filter-label">Se afișează: <strong>Toate categoriile — 16 din 16 știri</strong></span>
+        <span class="filter-label">Se afișează: <strong>Toate categoriile — 18 din 18 știri</strong></span>
         <button class="filter-reset" type="button" hidden>Resetează filtrul</button>
       </div>
 
@@ -842,7 +842,80 @@
       <p class="empty">Nicio știre în această categorie azi.</p>
 
       <main>
-        <!-- 1 · 12 nov · 21:00 -->
+        <!-- 1 · 12 nov · 22:00 -->
+        <article id="stire-189" data-cats="securitate" data-sev="amber" data-subiect="Europa la masa negocierilor Ucraina">
+          <div class="a-meta">
+            <span class="a-time">12 nov · 22:00</span>
+            <span class="a-cat">Securitate &amp; NATO</span>
+            <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
+            <a class="cont-pill" href="#stire-177" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
+            <span class="subj-pill">Europa la masa negocierilor Ucraina</span>
+            <span class="a-num">#1 / 18</span>
+          </div>
+          <h2>Putin acceptă europenii la masa negocierilor pentru Ucraina; Kievul spune că Starshield e perturbat din nou</h2>
+          <div class="followup">
+            <span class="tag">Urmare la</span>
+            <p><a href="#stire-177">„Emisarii SUA Witkoff și Kushner s-au întâlnit azi cu Putin la Moscova, după discuțiile de la Abu Dhabi; urmează Dublinul și Zelenski” — joi, 12 noiembrie 2026, ora 10:00.</a> (Rezultatul întâlnirii de la Kremlin anunțate azi-dimineață.)</p>
+          </div>
+          <div class="sec">
+            <p class="sec-label">Ce s-a întâmplat</p>
+            <p>Președintele rus Vladimir Putin a acceptat joi ca reprezentanți europeni să participe la următoarea rundă de negocieri pentru Ucraina, a anunțat emisarul american Steve Witkoff după întâlnirea de la Kremlin cu Putin — a zecea întrevedere directă dintre cei doi. „Europenii se vor alătura la următoarea întâlnire, ceea ce considerăm un moment foarte important, pentru că sunt partenerii noștri”, a spus Witkoff reporterilor, potrivit Reuters. Până acum procesul s-a desfășurat trilateral (SUA–Rusia–Ucraina, cu mediere americană), iar la Abu Dhabi delegația Moscovei refuzase să stea la masă cu echipa europeană. În paralel, președintele ucrainean Volodimir Zelenski a spus că noi restricții afectează comunicațiile prin satelit Starshield folosite de Kiev pe front — perturbări „semnificative”, pe toată linia frontului și în teritoriile controlate de Rusia. Putin a avertizat că desfășurarea de trupe occidentale în Ucraina după un acord de pace ar însemna reluarea războiului și i-a cerut Washingtonului să lucreze cu aliații europeni ca aceștia să decidă „dacă vor pace sau război”. Discuțiile de la Abu Dhabi (10–11 noiembrie) au produs un acord pentru un schimb amplu de prizonieri de război, așteptat în săptămânile următoare.</p>
+          </div>
+          <div class="sec">
+            <p class="sec-label">De ce contează</p>
+            <p>Pentru un IT incident Manager, intrarea Europei la masa negocierilor e schimbarea de format diplomatic a săptămânii: după luni în care procesul a fost trilateral, cu europenii ținuți pe margine, formatul s-ar putea lărgi — dar deocamdată acceptul vine din declarația emisarului american, nu dintr-un comunicat al Kremlinului. Perturbarea Starshield atinge direct comunicațiile de pe front: infrastructura de comunicații prin satelit e exact terenul lui profesional. De urmărit: confirmarea Kremlinului, data următoarei runde și discuția de vineri a liderilor UE despre numirea unui emisar special pentru proces.</p>
+          </div>
+          <div class="verify">
+            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
+            <p>Verdict: confirmat. Defense News (12 noiembrie 2026, 19:56 UTC) — relatarea curatoriată: acceptul lui Putin anunțat de Witkoff, avertismentul privind trupele occidentale, perturbarea Starshield și schimbul de prizonieri convenit la Abu Dhabi. Reuters (12 noiembrie 2026, relatare proprie, Andrew Osborn și Maxim Rodionov) — confirmare independentă: „The Europeans will join at the next meeting”, citatul lui Witkoff, neconfirmarea lui Ușakov. Euronews (12 noiembrie 2026, 18:39 UTC) — Rusia temperează entuziasmul: Moscova cere Europei să înceteze ajutorul militar pentru Ucraina ca o condiție; liderii UE discută vineri numirea unui emisar special, iar Zelenski a cerut un reprezentant comun european până la sfârșitul lunii. Notă de integritate: acceptul e anunțat de partea americană; consilierul lui Putin, Iuri Ușakov, nu l-a confirmat și a numit poziția europeană „o rețetă pentru război fără sfârșit”.</p>
+            <ul class="sources">
+              <li><a href="https://www.defensenews.com/global/2026/11/12/putin-lets-europe-join-ukraine-peace-talks-as-kyiv-says-starshield-disrupted-again/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Defense News — „Putin lets Europe join Ukraine peace talks, as Kyiv says Starshield disrupted again” (12 nov 2026, 19:56 UTC; relatarea curatoriată: acceptul lui Putin anunțat de Witkoff, avertismentul privind trupele occidentale, perturbarea Starshield, schimbul de prizonieri convenit la Abu Dhabi)<span class="host">defensenews.com</span></a></li>
+              <li><a href="https://srnnews.com/putin-lets-europe-join-ukraine-peace-talks-as-kyiv-says-starshield-disrupted-again/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Reuters — „Putin lets Europe join Ukraine peace talks, as Kyiv says Starshield disrupted again” (12 nov 2026, 17:08 UTC; relatare proprie, Andrew Osborn și Maxim Rodionov — confirmare independentă: „The Europeans will join at the next meeting”, citatul lui Witkoff, neconfirmarea lui Ușakov)<span class="host">srnnews.com</span></a></li>
+              <li><a href="https://app.ekkow.com/1493687902411604989" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Euronews — „Russia plays down peace talks with Europe after Witkoff raises hopes of breakthrough” (12 nov 2026, 18:39 UTC; Rusia temperează entuziasmul: Moscova cere Europei să înceteze ajutorul militar pentru Ucraina ca o condiție; liderii UE discută vineri numirea unui emisar special, iar Zelenski a cerut un reprezentant comun european până la sfârșitul lunii)<span class="host">euronews.com</span></a></li>
+            </ul>
+          </div>
+          <div class="adverse">
+            <p class="sec-label">Tabăra adversă</p>
+            <p><strong>Iuri Ușakov, consilierul președintelui Putin</strong>, nu a confirmat că europenii vor participa la următoarea rundă și a spus că europenii trebuie mai întâi să decidă între „pace” și „război”, iar „toate acțiunile lor practice indică tocmai pe cea din urmă”; poziția europeană actuală e „o rețetă pentru război fără sfârșit”. Purtătorul de cuvânt al Kremlinului, Dmitri Peskov, a adăugat că desemnarea unui reprezentant comun european e o condiție prealabilă pentru participarea la negocieri. (<a href="https://app.ekkow.com/1493687902411604989" target="_blank" rel="noopener">Euronews, 12 nov 2026</a>)</p>
+          </div>
+          <div class="impact">
+            <span class="badge">Impact direct</span>
+            <p>Impact direct: minim azi — știrea nu cere nicio acțiune de la el; relevanță profesională înaltă: formatul negocierilor și comunicațiile Starshield sunt pe terenul lui de incident management și infrastructură de comunicații; de urmărit: confirmarea Kremlinului, data următoarei runde, emisarul special al UE (discutat vineri) și evoluția perturbărilor Starshield.</p>
+          </div>
+        </article>
+        <!-- 2 · 12 nov · 22:00 -->
+        <article id="stire-190" data-cats="tech" data-sev="amber" data-subiect="pană Microsoft 365 Outlook">
+          <div class="a-meta">
+            <span class="a-time">12 nov · 22:00</span>
+            <span class="a-cat">Tech &amp; AI</span>
+            <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
+            <span class="subj-pill">pană Microsoft 365 Outlook</span>
+            <span class="a-num">#2 / 18</span>
+          </div>
+          <h2>Pană majoră Microsoft 365: Outlook, Teams și SharePoint au căzut azi pentru zeci de mii de utilizatori; cauza, încă neclară</h2>
+          <div class="sec">
+            <p class="sec-label">Ce s-a întâmplat</p>
+            <p>Microsoft a confirmat joi, 12 noiembrie, o pană majoră a serviciului de email Outlook / Exchange Online: utilizatorii business și personali nu și-au putut accesa căsuțele poștale. Problema, semnalată inițial pentru SUA și Americi, s-a extins ulterior la utilizatori „din orice regiune”. Downdetector a înregistrat un vârf de aproape 130.000 de raportări pentru Outlook (13:27 ora New York-ului, 19:27 CET) și peste 46.000 pentru Microsoft 365. Au fost afectate și Teams, SharePoint, Copilot, OneDrive și Office pentru web. Microsoft a atribuit incidentul (EX1550543) faptului că „un număr mare de servere au devenit indisponibile pe neașteptate”, a oprit toate implementările și redistribuie traficul de conexiune pe infrastructura globală; până seara, raportările scădeau, iar serviciile reveneau treptat, fără o cauză-rădăcină publicată și fără un termen de restabilire completă.</p>
+          </div>
+          <div class="sec">
+            <p class="sec-label">De ce contează</p>
+            <p>Pentru un IT incident Manager, o pană globală la cea mai folosită suită de productivitate enterprise — email, calendare, Teams, SharePoint — e un incident de referință: exact tipul de eveniment pe care îl gestionează profesional (comunicare de incident, impact pe mai multe servicii, cauză neclară la ore după declanșare). E la un curs la Haga azi, iar Teams și Outlook sunt canale de lucru curente — dacă ceva nu merge diseară, cauza e la Microsoft, nu la rețeaua locală. Lecția de proces: centrul de administrare Microsoft, unde se publică detaliile, a fost la rândul lui inaccesibil la începutul incidentului.</p>
+          </div>
+          <div class="verify">
+            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
+            <p>Verdict: confirmat. TechCrunch (12 noiembrie 2026, 11:03 PST / 20:03 CET) — relatarea curatoriată: pană Outlook / Exchange Online, extindere la „orice regiune”, Teams, SharePoint și Copilot indisponibile; cauza: „un număr mare de servere au devenit indisponibile pe neașteptate”. Reuters (12 noiembrie 2026, 18:32 UTC) — confirmare independentă: peste 130.000 de raportări Outlook la 13:27 ET, peste 46.000 pentru Microsoft 365. USA Today (12 noiembrie 2026, actualizări live) — vârf de 128.874 de raportări la 13:09 ET, în scădere spre 92.914 la 13:50 ET; Microsoft „lucrează agresiv” la reducerea impactului. Notă de integritate: nimic din raportări nu indică un incident de securitate — e o defecțiune de infrastructură, cu cauza-rădăcină încă nepublicată; Downdetector a semnalat vârfuri și la alte servicii, neconfirmate însă de acestea.</p>
+            <ul class="sources">
+              <li><a href="https://techcrunch.com/2026/11/12/microsofts-outlook-email-hit-by-new-outage/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>TechCrunch — „Microsoft's Outlook email hit by new outage” (12 nov 2026, 11:03 PST / 20:03 CET; relatarea curatoriată: pană Outlook / Exchange Online, extindere la „orice regiune”, Teams, SharePoint și Copilot indisponibile; cauza: „un număr mare de servere au devenit indisponibile pe neașteptate”)<span class="host">techcrunch.com</span></a></li>
+              <li><a href="https://www.reuters.com/technology/microsoft-365-outlook-down-thousands-us-users-downdetector-shows-2026-11-12/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Reuters — „Microsoft 365, Outlook down for thousands of US users, Downdetector shows” (12 nov 2026, 18:32 UTC; confirmare independentă: peste 130.000 de raportări Outlook la 13:27 ET, peste 46.000 pentru Microsoft 365)<span class="host">reuters.com</span></a></li>
+              <li><a href="https://www.usatoday.com/story/tech/2026/11/12/microsoft-down-outlook-365-outage-reports/92744582007/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>USA Today — „Microsoft outage: Live updates as mass issues reported with Outlook, 365” (12 nov 2026, actualizări live; vârf de 128.874 de raportări la 13:09 ET, în scădere spre 92.914 la 13:50 ET; Microsoft „lucrează agresiv” la reducerea impactului)<span class="host">usatoday.com</span></a></li>
+            </ul>
+          </div>
+          <div class="impact">
+            <span class="badge">Impact direct</span>
+            <p>Impact direct: minim azi — poșta lui personală e pe Gmail, nu pe Outlook; dar Teams și Outlook fac parte din mediul de lucru, iar pana explică eventualele probleme de azi de la curs; de urmărit raportul post-incident Microsoft (cauza-rădăcină) și confirmarea restabilirii complete.</p>
+          </div>
+        </article>
+        <!-- 3 · 12 nov · 21:00 -->
         <article id="stire-188" data-cats="tech" data-sev="green" data-subiect="Gemini 4 Hydrogen în Search">
           <div class="a-meta">
             <span class="a-time">12 nov · 21:00</span>
@@ -850,7 +923,7 @@
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <a class="cont-pill" href="#stire-158" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">Gemini 4 Hydrogen în Search</span>
-            <span class="a-num">#1 / 16</span>
+            <span class="a-num">#3 / 18</span>
           </div>
           <h2>Google lansează Gemini 4 Hydrogen: cel mai rapid model Gemini 4 ajunge în Search, în aplicația Gemini și în API</h2>
           <div class="followup">
@@ -882,7 +955,7 @@
           </div>
         </article>
 
-        <!-- 2 · 12 nov · 20:00 -->
+        <!-- 4 · 12 nov · 20:00 -->
         <article id="stire-187" data-cats="tech" data-sev="amber" data-subiect="Nvidia și viitorul open source">
           <div class="a-meta">
             <span class="a-time">12 nov · 20:00</span>
@@ -890,7 +963,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-182" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">Nvidia și viitorul open source</span>
-            <span class="a-num">#2 / 16</span>
+            <span class="a-num">#4 / 18</span>
           </div>
           <h2>Plecarea lui Jensen Huang pune sub semnul întrebării sprijinul Nvidia pentru AI open source</h2>
           <div class="followup">
@@ -925,14 +998,14 @@
           </div>
         </article>
 
-        <!-- 3 · 12 nov · 19:00 -->
+        <!-- 5 · 12 nov · 19:00 -->
         <article id="stire-185" data-cats="romania" data-sev="amber" data-subiect="deficit România, replica lui Nazare">
           <div class="a-meta">
             <span class="a-time">12 nov · 19:00</span>
             <span class="a-cat">România</span>
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="subj-pill">deficit România, replica lui Nazare</span>
-            <span class="a-num">#3 / 16</span>
+            <span class="a-num">#5 / 18</span>
           </div>
           <h2>Senatul a respins moțiunea AUR împotriva ministrului Finanțelor: Nazare susține că deficitul scade pe ambele metodologii</h2>
           <div class="sec">
@@ -960,14 +1033,14 @@
           </div>
         </article>
 
-        <!-- 4 · 12 nov · 19:00 -->
+        <!-- 6 · 12 nov · 19:00 -->
         <article id="stire-186" data-cats="securitate tech" data-sev="green" data-subiect="analiză AI imagini satelit militare">
           <div class="a-meta">
             <span class="a-time">12 nov · 19:00</span>
             <span class="a-cat">Securitate &amp; NATO · Tech &amp; AI</span>
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <span class="subj-pill">analiză AI imagini satelit militare</span>
-            <span class="a-num">#4 / 16</span>
+            <span class="a-num">#6 / 18</span>
           </div>
           <h2>Germania și Polonia apelează la firma poloneză SATIM pentru analiza AI a imaginilor satelitare militare</h2>
           <div class="sec">
@@ -991,14 +1064,14 @@
           </div>
         </article>
 
-        <!-- 5 · 12 nov · 18:00 -->
+        <!-- 7 · 12 nov · 18:00 -->
         <article id="stire-184" data-cats="tech" data-sev="amber" data-subiect="breach Fireworks AI / Notion">
           <div class="a-meta">
             <span class="a-time">12 nov · 18:00</span>
             <span class="a-cat">Tech &amp; AI</span>
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="subj-pill">breach Fireworks AI / Notion</span>
-            <span class="a-num">#5 / 16</span>
+            <span class="a-num">#7 / 18</span>
           </div>
           <h2>Atac cibernetic la Fireworks AI: transcrieri ale conversațiilor Notion AI, expuse — sub 1% din spațiile de lucru afectate</h2>
           <div class="sec">
@@ -1027,7 +1100,7 @@
           </div>
         </article>
 
-        <!-- 6 · 12 nov · 17:00 -->
+        <!-- 8 · 12 nov · 17:00 -->
         <article id="stire-183" data-cats="securitate" data-sev="amber" data-subiect="navă rusă lovită în Baltica">
           <div class="a-meta">
             <span class="a-time">12 nov · 17:00</span>
@@ -1035,7 +1108,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-170" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">navă rusă lovită în Baltica</span>
-            <span class="a-num">#6 / 16</span>
+            <span class="a-num">#8 / 18</span>
           </div>
           <h2>Finlanda a detectat o lovitură asupra unei nave de război rusești în Marea Baltică; nava s-a întors la Sankt Petersburg</h2>
           <div class="followup">
@@ -1064,7 +1137,7 @@
           </div>
         </article>
 
-        <!-- 7 · 12 nov · 16:00 -->
+        <!-- 9 · 12 nov · 16:00 -->
         <article id="stire-182" data-cats="tech" data-sev="amber" data-subiect="demisia lui Jensen Huang">
           <div class="a-meta">
             <span class="a-time">12 nov · 16:00</span>
@@ -1073,7 +1146,7 @@
             <span class="spot-tag">Știrea zilei</span>
             <a class="cont-pill" href="#stire-175" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">demisia lui Jensen Huang</span>
-            <span class="a-num">#7 / 16</span>
+            <span class="a-num">#9 / 18</span>
           </div>
           <h2>Jensen Huang demisionează de la Nvidia: Colette Kress preia interimatul, acțiunile scad cu peste 10%</h2>
           <div class="followup">
@@ -1105,14 +1178,14 @@
           </div>
         </article>
 
-        <!-- 8 · 12 nov · 15:00 -->
+        <!-- 10 · 12 nov · 15:00 -->
         <article id="stire-181" data-cats="tech" data-sev="amber" data-subiect="furt de secrete din GitHub Actions">
           <div class="a-meta">
             <span class="a-time">12 nov · 15:00</span>
             <span class="a-cat">Tech &amp; AI</span>
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="subj-pill">furt de secrete din GitHub Actions</span>
-            <span class="a-num">#8 / 16</span>
+            <span class="a-num">#10 / 18</span>
           </div>
           <h2>Campanie „wfx-loot”: 4.837 de conturi GitHub deturnate fură secrete din CI în peste 61.000 de repo-uri</h2>
           <div class="sec">
@@ -1141,14 +1214,14 @@
           </div>
         </article>
 
-        <!-- 9 · 12 nov · 14:00 -->
+        <!-- 11 · 12 nov · 14:00 -->
         <article id="stire-180" data-cats="tech belgia" data-sev="green" data-subiect="Digital Fairness Act UE">
           <div class="a-meta">
             <span class="a-time">12 nov · 14:00</span>
             <span class="a-cat">Tech &amp; AI · Belgia</span>
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <span class="subj-pill">Digital Fairness Act UE</span>
-            <span class="a-num">#9 / 16</span>
+            <span class="a-num">#11 / 18</span>
           </div>
           <h2>Comisia Europeană propune Digital Fairness Act: interzice dark patterns și pune primele reguli UE pentru agenții AI de cumpărături</h2>
           <div class="sec">
@@ -1179,7 +1252,7 @@
           </div>
         </article>
 
-        <!-- 10 · 12 nov · 13:00 -->
+        <!-- 12 · 12 nov · 13:00 -->
         <article id="stire-179" data-cats="securitate" data-sev="amber" data-subiect="Ucraina cere interceptori mai repede">
           <div class="a-meta">
             <span class="a-time">12 nov · 13:00</span>
@@ -1187,7 +1260,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-166" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">Ucraina cere interceptori mai repede</span>
-            <span class="a-num">#10 / 16</span>
+            <span class="a-num">#12 / 18</span>
           </div>
           <h2>Ucraina cere SUA să accelereze livrările de interceptori, pe fondul atacurilor Rusiei asupra rețelei electrice; Kievul, pesimist privind armistițiul în Marea Neagră</h2>
           <div class="followup">
@@ -1222,7 +1295,7 @@
           </div>
         </article>
 
-        <!-- 11 · 12 nov · 10:00 -->
+        <!-- 13 · 12 nov · 10:00 -->
         <article id="stire-177" data-cats="securitate" data-sev="amber" data-subiect="emisarii SUA la Moscova">
           <div class="a-meta">
             <span class="a-time">12 nov · 10:00</span>
@@ -1230,7 +1303,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-166" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">emisarii SUA la Moscova</span>
-            <span class="a-num">#11 / 16</span>
+            <span class="a-num">#13 / 18</span>
           </div>
           <h2>Emisarii SUA Witkoff și Kushner s-au întâlnit azi cu Putin la Moscova, după discuțiile de la Abu Dhabi; urmează Dublinul și Zelenski</h2>
           <div class="followup">
@@ -1264,14 +1337,14 @@
           </div>
         </article>
 
-        <!-- 12 · 12 nov · 10:00 -->
+        <!-- 14 · 12 nov · 10:00 -->
         <article id="stire-178" data-cats="tech" data-sev="green" data-subiect="agenții AI blocați la zboruri">
           <div class="a-meta">
             <span class="a-time">12 nov · 10:00</span>
             <span class="a-cat">Tech &amp; AI</span>
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <span class="subj-pill">agenții AI blocați la zboruri</span>
-            <span class="a-num">#12 / 16</span>
+            <span class="a-num">#14 / 18</span>
           </div>
           <h2>United Airlines interzice agenților AI personali să rezerve zboruri — prima companie aeriană americană care o face</h2>
           <div class="sec">
@@ -1301,7 +1374,7 @@
           </div>
         </article>
 
-        <!-- 13 · 12 nov · 08:00 -->
+        <!-- 15 · 12 nov · 08:00 -->
         <article id="stire-176" data-cats="securitate" data-sev="amber" data-subiect="cheltuieli de apărare NATO">
           <div class="a-meta">
             <span class="a-time">12 nov · 08:00</span>
@@ -1309,7 +1382,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-161" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">cheltuieli de apărare NATO</span>
-            <span class="a-num">#13 / 16</span>
+            <span class="a-num">#15 / 18</span>
           </div>
           <h2>Rutte la Oslo: Marea Britanie își dublează cheltuielile de apărare în 10 ani; cinci aliați ating ținta NATO de 5% din PIB în 2026</h2>
           <div class="followup">
@@ -1340,7 +1413,7 @@
           </div>
         </article>
 
-        <!-- 14 · 12 nov · 07:00 -->
+        <!-- 16 · 12 nov · 07:00 -->
         <article id="stire-175" data-cats="tech" data-sev="amber" data-subiect="demiterea lui Jensen Huang">
           <div class="a-meta">
             <span class="a-time">12 nov · 07:00</span>
@@ -1348,7 +1421,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-172" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">demiterea lui Jensen Huang</span>
-            <span class="a-num">#14 / 16</span>
+            <span class="a-num">#16 / 18</span>
           </div>
           <h2>Boardul Nvidia se pregătește să-l demită pe Jensen Huang: ședința decisivă a avut loc miercuri seară, acțiunile au căzut cu 8%</h2>
           <div class="followup">
@@ -1384,14 +1457,14 @@
           </div>
         </article>
 
-        <!-- 15 · 12 nov · 06:00 -->
+        <!-- 17 · 12 nov · 06:00 -->
         <article id="stire-173" data-cats="tech" data-sev="amber" data-subiect="cipuri AI britanice Fractile">
           <div class="a-meta">
             <span class="a-time">12 nov · 06:00</span>
             <span class="a-cat">Tech &amp; AI</span>
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="subj-pill">cipuri AI britanice Fractile</span>
-            <span class="a-num">#15 / 16</span>
+            <span class="a-num">#17 / 18</span>
           </div>
           <h2>Startupul britanic Fractile ridică 720 mil. $ pentru cipuri AI de inferență și ajunge la o evaluare de 7 mld. $, cu sprijinul fondului suveran AI al Marii Britanii</h2>
           <div class="sec">
@@ -1418,14 +1491,14 @@
           </div>
         </article>
 
-        <!-- 16 · 12 nov · 06:00 -->
+        <!-- 18 · 12 nov · 06:00 -->
         <article id="stire-174" data-cats="tech" data-sev="amber" data-subiect="CoreWeave cere plăți în avans">
           <div class="a-meta">
             <span class="a-time">12 nov · 06:00</span>
             <span class="a-cat">Tech &amp; AI</span>
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="subj-pill">CoreWeave cere plăți în avans</span>
-            <span class="a-num">#16 / 16</span>
+            <span class="a-num">#18 / 18</span>
           </div>
           <h2>CoreWeave își schimbă finanțarea boom-ului AI: cere clienților plăți în avans de ~9 mld. $ în 3 luni, ca să nu se mai împrumute scump</h2>
           <div class="sec">
@@ -6185,8 +6258,8 @@
 
       <footer>
         <div class="rule" aria-hidden="true"></div>
-        <p>Sfârșitul ediției de azi · Ultima actualizare: joi, 12 noiembrie 2026, 21:00<br />Monitorizarea rulează la circa 3 ore, în fereastra L–V 06:00–22:00 · S–D 07:30–22:00 — dă refresh pentru noutăți.</p>
-        <a class="to-top" href="#stire-188">↑ Înapoi la cea mai nouă știre</a>
+        <p>Sfârșitul ediției de azi · Ultima actualizare: joi, 12 noiembrie 2026, 22:00<br />Monitorizarea rulează la circa 3 ore, în fereastra L–V 06:00–22:00 · S–D 07:30–22:00 — dă refresh pentru noutăți.</p>
+        <a class="to-top" href="#stire-190">↑ Înapoi la cea mai nouă știre</a>
       </footer>
     </div>
 
