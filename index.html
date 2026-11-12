@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="color-scheme" content="light dark" />
-    <meta name="tirile-versiune" content="2026-11-12T18:05:00+01:00|12|amber" />
+    <meta name="tirile-versiune" content="2026-11-12T19:00:00+01:00|14|amber" />
     <link rel="icon" href="data:," />
     <title>Știrile zilei</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -699,9 +699,9 @@
     <div class="topbar">
       <div class="topbar-inner">
         <span class="dot" aria-hidden="true"></span>
-        <span><strong>Joi, 12 noiembrie 2026</strong> · actualizat la <strong>18:05</strong></span>
+        <span><strong>Joi, 12 noiembrie 2026</strong> · actualizat la <strong>19:00</strong></span>
         <span aria-hidden="true">·</span>
-        <span>12 știri azi</span>
+        <span>14 știri azi</span>
         <span class="spacer"></span>
         <button class="refresh-btn" type="button" id="refreshBtn" aria-label="Reîmprospătează pagina">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg>
@@ -739,7 +739,7 @@
 
       <!-- Chenar permanent: știrea cea mai importantă a zilei — sub fereastra
            „Ultimele știri”, ÎNAINTEA dashboardului, vizibilă din prima, fără scroll.
-           Nivelul de azi: GALBEN (sev-amber) — de urmărit: demisia lui Jensen Huang de la Nvidia — știrea cu severitatea cea mai mare a zilei și cea mai importantă dintre cele zece știri galbene ale zilei, marcată „Știrea zilei”; mai există alte nouă știri galbene azi (știrea DFA de la 14:00 e verde; galbenele sunt: breach-ul Fireworks AI / Notion, de la 18:00, nava rusă lovită în Baltica, de la 17:00, campania „wfx-loot”, furt de secrete din GitHub Actions, de la 15:00, Ucraina cere SUA să accelereze livrările de interceptori, de la 13:00, emisarii SUA Witkoff și Kushner la Moscova, de la 10:00, discursul lui Rutte la Oslo despre cheltuielile de apărare NATO, de la 08:00, boardul Nvidia se pregătește să-l demită pe Jensen Huang, de la 07:00, startupul britanic Fractile ridică 720 mil. $ pentru cipuri AI, de la 06:00, și CoreWeave își schimbă finanțarea boom-ului AI, de la 06:00), de aceea apare mențiunea despre celelalte știri cu aceeași severitate, cu filtru pe galben la „apasă aici”.
+           Nivelul de azi: GALBEN (sev-amber) — de urmărit: demisia lui Jensen Huang de la Nvidia — știrea cu severitatea cea mai mare a zilei și cea mai importantă dintre cele unsprezece știri galbene ale zilei, marcată „Știrea zilei”; mai există alte zece știri galbene azi (știrile DFA de la 14:00 și SATIM de la 19:00 sunt verzi; galbenele sunt: replica lui Nazare la avertismentul despre deficit, de la 19:00, breach-ul Fireworks AI / Notion, de la 18:00, nava rusă lovită în Baltica, de la 17:00, campania „wfx-loot”, furt de secrete din GitHub Actions, de la 15:00, Ucraina cere SUA să accelereze livrările de interceptori, de la 13:00, emisarii SUA Witkoff și Kushner la Moscova, de la 10:00, discursul lui Rutte la Oslo despre cheltuielile de apărare NATO, de la 08:00, boardul Nvidia se pregătește să-l demită pe Jensen Huang, de la 07:00, startupul britanic Fractile ridică 720 mil. $ pentru cipuri AI, de la 06:00, și CoreWeave își schimbă finanțarea boom-ului AI, de la 06:00), de aceea apare mențiunea despre celelalte știri cu aceeași severitate, cu filtru pe galben la „apasă aici”.
            Chenarul rămâne în afara logicii de filtrare: vizibil indiferent de filtrul de categorie. -->
       <section class="spot sev-amber" aria-label="Știrea cea mai importantă a zilei">
         <div class="spot-head">
@@ -768,44 +768,44 @@
       <section class="dashboard" aria-label="Panou de ansamblu">
         <div class="dash-head">
           <span class="dash-title">Dashboard · Azi</span>
-          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 18:05</span>
+          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 19:00</span>
           <span class="dash-meta">Fereastră monitorizare <strong>L–V 06:00–22:00 · S–D 07:30–22:00</strong> · pas ~3 ore</span>
         </div>
 
         <div class="kpi-grid five" role="group" aria-label="Filtrează după categorie — apasă pe un tile">
           <button class="kpi" type="button" data-filter="toate" aria-pressed="true">
             <span class="kpi-top"><span class="kpi-label">Toate știrile</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">12</span>
-            <span class="kpi-sub">știri verificate azi, în 10 rulări</span>
+            <span class="kpi-value">14</span>
+            <span class="kpi-sub">știri verificate azi, în 11 rulări</span>
             <span class="kpi-bar" aria-hidden="true"><i style="width:100%"></i></span>
             <span class="kpi-hint">Apasă pentru toate</span>
           </button>
           <button class="kpi" type="button" data-filter="securitate" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">Securitate &amp; NATO</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">4</span>
-            <span class="kpi-sub">navă rusă lovită în Baltica · Ucraina cere interceptori mai repede · emisarii SUA la Moscova · cheltuieli de apărare NATO</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:33%"></i></span>
+            <span class="kpi-value">5</span>
+            <span class="kpi-sub">analiză AI imagini satelit militare · navă rusă lovită în Baltica · Ucraina cere interceptori mai repede · emisarii SUA la Moscova · cheltuieli de apărare NATO</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:36%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="romania" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">România</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">0</span>
-            <span class="kpi-sub"></span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:0%"></i></span>
+            <span class="kpi-value">1</span>
+            <span class="kpi-sub">deficit România, replica lui Nazare</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:7%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="belgia" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">Belgia</span><span class="kpi-check" aria-hidden="true">✓</span></span>
             <span class="kpi-value">1</span>
             <span class="kpi-sub">Digital Fairness Act UE</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:8%"></i></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:7%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="tech" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">Tech &amp; AI</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">8</span>
-            <span class="kpi-sub">breach Fireworks AI / Notion · demisia lui Jensen Huang · furt de secrete din GitHub Actions · Digital Fairness Act UE · agenții AI blocați la zboruri · demiterea lui Jensen Huang · cipuri AI britanice Fractile · CoreWeave cere plăți în avans</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:67%"></i></span>
+            <span class="kpi-value">9</span>
+            <span class="kpi-sub">analiză AI imagini satelit militare · breach Fireworks AI / Notion · demisia lui Jensen Huang · furt de secrete din GitHub Actions · Digital Fairness Act UE · agenții AI blocați la zboruri · demiterea lui Jensen Huang · cipuri AI britanice Fractile · CoreWeave cere plăți în avans</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:64%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
         </div>
@@ -819,7 +819,7 @@
       </section>
 
       <div class="filter-status" aria-live="polite">
-        <span class="filter-label">Se afișează: <strong>Toate categoriile — 12 din 12 știri</strong></span>
+        <span class="filter-label">Se afișează: <strong>Toate categoriile — 14 din 14 știri</strong></span>
         <button class="filter-reset" type="button" hidden>Resetează filtrul</button>
       </div>
 
@@ -842,14 +842,91 @@
       <p class="empty">Nicio știre în această categorie azi.</p>
 
       <main>
-        <!-- 1 · 12 nov · 18:00 -->
+        <!-- 1 · 12 nov · 19:00 -->
+        <article id="stire-185" data-cats="romania" data-sev="amber" data-subiect="deficit România, replica lui Nazare">
+          <div class="a-meta">
+            <span class="a-time">12 nov · 19:00</span>
+            <span class="a-cat">România</span>
+            <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
+            <a class="cont-pill" href="#stire-150" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
+            <span class="subj-pill">deficit România, replica lui Nazare</span>
+            <span class="a-num">#1 / 14</span>
+          </div>
+          <h2>Senatul a respins moțiunea AUR împotriva ministrului Finanțelor: Nazare susține că deficitul scade pe ambele metodologii</h2>
+          <div class="followup">
+            <span class="tag">Urmare la</span>
+            <p><a href="#stire-150">„Nicușor Dan avertizează că România riscă să ajungă din nou la FMI dacă nu-și respectă traiectoria de deficit; ratingul de țară e la limită” — marți, 10 noiembrie 2026, ora 20:00.</a> (Replica ministrului Finanțelor la avertismentul președintelui: cele două lecturi ale deficitului — cash și ESA — arată aceeași direcție descendentă, spune Nazare.)</p>
+          </div>
+          <div class="sec">
+            <p class="sec-label">Ce s-a întâmplat</p>
+            <p>Senatul a respins miercuri, 11 noiembrie, moțiunea simplă a AUR împotriva ministrului Finanțelor, Alexandru Nazare, cu 46 de voturi împotrivă, 21 pentru și 13 abțineri. Moțiunea, intitulată „Bugetul statului la ora adevărului. Același ministru, două contabilități: una pentru români, alta pentru Bruxelles”, îi reproșa lui Nazare că prezintă selectiv finanțele publice și că promovează deficitul calculat pe baza fluxurilor de numerar (cash), fără a comunica suficient indicatorii calculați după metodologia europeană ESA. În dezbatere, ministrul a respins acuzația: „Statul român n-are două contabilități, are o singură execuție bugetară și două moduri de a o citi. Amândouă sunt publice, amândouă sunt cerute de lege, amândouă sunt europene.” Nazare a susținut că deficitul scade pe ambele metodologii, în fiecare trimestru față de perioada corespunzătoare a anului trecut și în fiecare an încheiat, și a dat cifre: deficitul cash după primele nouă luni e de 3,81% din PIB, față de 5,31% în aceeași perioadă a anului trecut (circa 24 de miliarde de lei mai puțin); pe metodologia europeană, deficitul primului semestru e de 3,4% din PIB, față de 3,6% în 2025, iar deficitul anual a coborât de la peste 9% din PIB în 2024 la 7,8% în 2025.</p>
+          </div>
+          <div class="sec">
+            <p class="sec-label">De ce contează</p>
+            <p>Pentru un IT incident Manager cu investiții și un apartament cu credit în România, disputa cash–ESA nu e un detaliu contabil: cifra pe care o vede Bruxelles-ul decide procedura de deficit excesiv și, în ultimă instanță, cât costă finanțarea statului — iar avertismentul președintelui de marți, că deficitul ar putea ajunge la 150 de miliarde de lei și că România riscă să ajungă din nou la FMI, rămâne pe masă chiar dacă ministrul spune că traiectoria e descendentă. Cele două lecturi ale aceleiași execuții bugetare vor continua să se ciocnească în dezbaterea publică, iar diferența de percepție contează pentru încrederea investitorilor.</p>
+          </div>
+          <div class="verify">
+            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
+            <p>Verdict: confirmat. Digi24 (reluat de Revista Focus, 12 noiembrie 2026) — Senatul a respins moțiunea cu 46 de voturi împotrivă; Nazare afirmă că deficitul scade pe ambele metodologii. Agerpres (reluat de Curs de Guvernare, 11 noiembrie 2026, 14:00) — respingerea moțiunii și citatul ministrului despre „o singură execuție bugetară și două moduri de a o citi”. Mediafax / News.ro (reluat de Din Popor, 11 noiembrie 2026) — 21 de voturi pentru, 46 contra, 13 abțineri și cifrele prezentate de ministru. Informat.ro (11 noiembrie 2026, 12:32) — aceeași relatare a votului și a argumentelor. Notă de integritate: cifrele de 3,81% și 3,4% din PIB sunt cele invocate de ministru în dezbatere, nu un audit independent; cifra de 69 de miliarde de lei (ESA, semestrul I) e cea invocată în moțiunea AUR, pe baza datelor Eurostat.</p>
+            <ul class="sources">
+              <li><a href="https://revistafocus.ro/motiunea-aur-impotriva-lui-alexandru-nazare-respinsa-in-senat-cu-46-de-voturi-contra/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Digi24, reluat de Revista Focus — „Moțiunea AUR împotriva lui Alexandru Nazare, respinsă în Senat cu 46 de voturi contra” (12 nov 2026; votul și declarațiile lui Nazare)<span class="host">revistafocus.ro</span></a></li>
+              <li><a href="https://cursdeguvernare.ro/motiunea-simpla-aur-impotriva-ministrului-finantelor-respinsa.html" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Agerpres, reluat de Curs de Guvernare — „Moțiunea simplă a AUR împotriva ministrului Finanțelor, respinsă” (11 nov 2026, 14:00; citat Nazare: „o singură execuție bugetară și două moduri de a o citi”)<span class="host">cursdeguvernare.ro</span></a></li>
+              <li><a href="https://dinpopor.ro/senatul-a-respins-motiunea-aur-impotriva-lui-nazare-pornita-de-la-disputa-deficit-cash-esa/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Mediafax / News.ro, reluat de Din Popor — „Senatul a respins moțiunea AUR împotriva lui Nazare, pornită de la disputa deficit cash–ESA” (11 nov 2026; 21 pentru, 46 contra, 13 abțineri; cifrele ministrului)<span class="host">dinpopor.ro</span></a></li>
+              <li><a href="https://informat.ro/actualitate/senatul-respins-motiune-aur-alexandru-nazare-deficit-bugetar-147896" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Informat.ro — „Senatul a respins moțiunea simplă AUR împotriva ministrului Finanțelor, Alexandru Nazare, cu 46 de voturi împotrivă” (11 nov 2026, 12:32)<span class="host">informat.ro</span></a></li>
+            </ul>
+          </div>
+          <div class="opposing">
+            <p class="sec-label">Tabăra adversă</p>
+            <p>AUR, prin liderul senatorilor Petrișor Peiu, susține că diferența dintre deficitul cash și cel calculat după metodologia europeană ESA e de peste 28 de miliarde de lei în primul semestru — circa 41 de miliarde de lei cash față de peste 69 de miliarde de lei ESA, pe baza datelor Eurostat — și cere ca Ministerul Finanțelor să publice, cel puțin trimestrial, ambele cifre. (<a href="https://revistafocus.ro/motiunea-aur-impotriva-lui-alexandru-nazare-respinsa-in-senat-cu-46-de-voturi-contra/" target="_blank" rel="noopener">revistafocus.ro</a> · <a href="https://dinpopor.ro/senatul-a-respins-motiunea-aur-impotriva-lui-nazare-pornita-de-la-disputa-deficit-cash-esa/" target="_blank" rel="noopener">dinpopor.ro</a>)</p>
+          </div>
+          <div class="impact">
+            <span class="badge">Impact direct</span>
+            <p>Impact direct: minim azi — votul nu schimbă nicio taxă și nu cere nicio acțiune; relevanță de context: traiectoria deficitului României rămâne firul fiscal urmărit (cardul din 10 noiembrie), iar diferența dintre cele două metodologii de raportare decide cum e evaluată România la Bruxelles și cât costă finanțarea statului — cu efect indirect asupra investițiilor și creditului în lei.</p>
+          </div>
+        </article>
+
+        <!-- 2 · 12 nov · 19:00 -->
+        <article id="stire-186" data-cats="securitate tech" data-sev="green" data-subiect="analiză AI imagini satelit militare">
+          <div class="a-meta">
+            <span class="a-time">12 nov · 19:00</span>
+            <span class="a-cat">Securitate &amp; NATO · Tech &amp; AI</span>
+            <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
+            <span class="subj-pill">analiză AI imagini satelit militare</span>
+            <span class="a-num">#2 / 14</span>
+          </div>
+          <h2>Germania și Polonia apelează la firma poloneză SATIM pentru analiza AI a imaginilor satelitare militare</h2>
+          <div class="sec">
+            <p class="sec-label">Ce s-a întâmplat</p>
+            <p>Compania poloneză SATIM a semnat un contract cu Ministerul Apărării Naționale din Polonia pentru software de analiză automată a imaginilor radar (SAR) din programul național de recunoaștere prin satelit MikroSAR. Sistemul detectează și clasifică automat sute de obiecte — nave, avioane și vehicule — din imaginile radar, cu o acuratețe de 90–95% pentru majoritatea claselor, potrivit companiei. Achiziția a fost făcută prin Baza 2 Regională de Logistică, pentru agenția poloneză de servicii geospațiale și satelitare ARGUS. În paralel, SATIM lucrează cu Rheinmetall la programul german de recunoaștere prin satelit SPOCK-1: pipeline-ul de analiză automată furnizat către Rheinmetall a intrat pe 2 noiembrie în faza de teste operaționale, sprijinind analiza imaginilor radar de către forțele armate germane. Programul german, în valoare de circa 1,7 miliarde de euro (potrivit TechTimes), e operat de Rheinmetall ICEYE Space Solutions și a atins capacitatea operațională inițială la 1 octombrie.</p>
+          </div>
+          <div class="sec">
+            <p class="sec-label">De ce contează</p>
+            <p>Pentru un IT incident Manager care urmărește apărarea și AI-ul, știrea leagă cele două fire: aliații NATO de pe flancul estic își construiesc capacități proprii de recunoaștere spațială — Polonia cu MikroSAR, Germania cu SPOCK-1 — iar analiza imaginilor radar, altădată muncă manuală de analist, e încredințată unui AI european (o firmă poloneză de sub 50 de angajați, după TechTimes). E un semn al felului în care alianța își reduce dependența de datele americane de informații — același fir ca sateliții militari francezi IRIS, comandați pe 10 noiembrie.</p>
+          </div>
+          <div class="verify">
+            <p class="sec-label">Verificare <span class="status">Sursă unică</span></p>
+            <p>Verdict: sursa_unica. Defense News (12 noiembrie 2026, 16:58 UTC) — relatarea curatoriată: contractul cu Ministerul polonez al Apărării, programul MikroSAR, cooperarea cu Rheinmetall pentru SPOCK-1 și intrarea pipeline-ului în teste operaționale. Comunicatul companiei (PR Newswire, 12 noiembrie 2026, 16:31 UTC) confirmă aceleași fapte, dar e emis de partea implicată și nu contează ca verificare independentă. Reuters a preluat anunțul (reluat de TradingView, 12 noiembrie), însă fără textul articolului verificabil din sursă directă, așa că verdictul rămâne sursa_unica până la o a doua relatare editorială independentă. Notă de integritate: acuratețea de 90–95% și dimensiunea firmei sunt cifrele companiei / ale relatărilor despre ea, nu măsurători independente.</p>
+            <ul class="sources">
+              <li><a href="https://www.defensenews.com/global/europe/2026/11/12/germany-poland-tap-satim-to-analyze-military-satellite-imagery/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Defense News — „Germany, Poland tap SATIM to analyze military satellite imagery” (12 nov 2026, 16:58 UTC; relatarea curatoriată: contractul cu Ministerul polonez al Apărării, programul MikroSAR, cooperarea cu Rheinmetall pentru SPOCK-1)<span class="host">defensenews.com</span></a></li>
+              <li><a href="https://www.prnewswire.com/news-releases/satim-signs-contract-with-polish-ministry-of-national-defence-for-sar-analytics-software-302938144.html" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>PR Newswire — „SATIM signs contract with Polish Ministry of National Defence for SAR analytics software” (12 nov 2026, 16:31 UTC; comunicatul companiei — partea implicată, nu verificare independentă)<span class="host">prnewswire.com</span></a></li>
+              <li><a href="https://www.satim.co/news/satim-powers-rheinmetall-spock-1-with-ai-analysis/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>SATIM — „SATIM Powers Rheinmetall's SPOCK-1 with AI analysis” (2 nov 2026; comunicatul companiei despre intrarea pipeline-ului de analiză în teste operaționale)<span class="host">satim.co</span></a></li>
+              <li><a href="https://www.techtimes.com/articles/329957/20261102/polands-45-person-radar-startup-enters-germanys-eur17-billion-spy-satellite-system-live-ai.htm" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>TechTimes — „Poland's 45-Person Radar Startup Enters Germany's €1.7 Billion Spy Satellite System with Live AI” (2 nov 2026; context SPOCK-1: valoarea programului și capacitatea operațională inițială de la 1 octombrie)<span class="host">techtimes.com</span></a></li>
+            </ul>
+          </div>
+          <div class="impact">
+            <span class="badge">Impact direct</span>
+            <p>Impact direct: minim — un contract de software între o firmă poloneză și două ministere ale apărării; relevanță de context: consolidarea capacităților spațiale proprii ale aliaților de pe flancul estic și încredințarea analizei de imagini unui AI european — de urmărit cum se extind programele MikroSAR și SPOCK-1.</p>
+          </div>
+        </article>
+
+        <!-- 3 · 12 nov · 18:00 -->
         <article id="stire-184" data-cats="tech" data-sev="amber" data-subiect="breach Fireworks AI / Notion">
           <div class="a-meta">
             <span class="a-time">12 nov · 18:00</span>
             <span class="a-cat">Tech &amp; AI</span>
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="subj-pill">breach Fireworks AI / Notion</span>
-            <span class="a-num">#1 / 12</span>
+            <span class="a-num">#3 / 14</span>
           </div>
           <h2>Atac cibernetic la Fireworks AI: transcrieri ale conversațiilor Notion AI, expuse — sub 1% din spațiile de lucru afectate</h2>
           <div class="sec">
@@ -878,7 +955,7 @@
           </div>
         </article>
 
-        <!-- 2 · 12 nov · 17:00 -->
+        <!-- 4 · 12 nov · 17:00 -->
         <article id="stire-183" data-cats="securitate" data-sev="amber" data-subiect="navă rusă lovită în Baltica">
           <div class="a-meta">
             <span class="a-time">12 nov · 17:00</span>
@@ -886,7 +963,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-170" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">navă rusă lovită în Baltica</span>
-            <span class="a-num">#2 / 12</span>
+            <span class="a-num">#4 / 14</span>
           </div>
           <h2>Finlanda a detectat o lovitură asupra unei nave de război rusești în Marea Baltică; nava s-a întors la Sankt Petersburg</h2>
           <div class="followup">
@@ -915,7 +992,7 @@
           </div>
         </article>
 
-        <!-- 3 · 12 nov · 16:00 -->
+        <!-- 5 · 12 nov · 16:00 -->
         <article id="stire-182" data-cats="tech" data-sev="amber" data-subiect="demisia lui Jensen Huang">
           <div class="a-meta">
             <span class="a-time">12 nov · 16:00</span>
@@ -924,7 +1001,7 @@
             <span class="spot-tag">Știrea zilei</span>
             <a class="cont-pill" href="#stire-175" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">demisia lui Jensen Huang</span>
-            <span class="a-num">#3 / 12</span>
+            <span class="a-num">#5 / 14</span>
           </div>
           <h2>Jensen Huang demisionează de la Nvidia: Colette Kress preia interimatul, acțiunile scad cu peste 10%</h2>
           <div class="followup">
@@ -956,14 +1033,14 @@
           </div>
         </article>
 
-        <!-- 4 · 12 nov · 15:00 -->
+        <!-- 6 · 12 nov · 15:00 -->
         <article id="stire-181" data-cats="tech" data-sev="amber" data-subiect="furt de secrete din GitHub Actions">
           <div class="a-meta">
             <span class="a-time">12 nov · 15:00</span>
             <span class="a-cat">Tech &amp; AI</span>
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="subj-pill">furt de secrete din GitHub Actions</span>
-            <span class="a-num">#4 / 12</span>
+            <span class="a-num">#6 / 14</span>
           </div>
           <h2>Campanie „wfx-loot”: 4.837 de conturi GitHub deturnate fură secrete din CI în peste 61.000 de repo-uri</h2>
           <div class="sec">
@@ -992,14 +1069,14 @@
           </div>
         </article>
 
-        <!-- 5 · 12 nov · 14:00 -->
+        <!-- 7 · 12 nov · 14:00 -->
         <article id="stire-180" data-cats="tech belgia" data-sev="green" data-subiect="Digital Fairness Act UE">
           <div class="a-meta">
             <span class="a-time">12 nov · 14:00</span>
             <span class="a-cat">Tech &amp; AI · Belgia</span>
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <span class="subj-pill">Digital Fairness Act UE</span>
-            <span class="a-num">#5 / 12</span>
+            <span class="a-num">#7 / 14</span>
           </div>
           <h2>Comisia Europeană propune Digital Fairness Act: interzice dark patterns și pune primele reguli UE pentru agenții AI de cumpărături</h2>
           <div class="sec">
@@ -1030,7 +1107,7 @@
           </div>
         </article>
 
-        <!-- 6 · 12 nov · 13:00 -->
+        <!-- 8 · 12 nov · 13:00 -->
         <article id="stire-179" data-cats="securitate" data-sev="amber" data-subiect="Ucraina cere interceptori mai repede">
           <div class="a-meta">
             <span class="a-time">12 nov · 13:00</span>
@@ -1038,7 +1115,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-166" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">Ucraina cere interceptori mai repede</span>
-            <span class="a-num">#6 / 12</span>
+            <span class="a-num">#8 / 14</span>
           </div>
           <h2>Ucraina cere SUA să accelereze livrările de interceptori, pe fondul atacurilor Rusiei asupra rețelei electrice; Kievul, pesimist privind armistițiul în Marea Neagră</h2>
           <div class="followup">
@@ -1073,7 +1150,7 @@
           </div>
         </article>
 
-        <!-- 7 · 12 nov · 10:00 -->
+        <!-- 9 · 12 nov · 10:00 -->
         <article id="stire-177" data-cats="securitate" data-sev="amber" data-subiect="emisarii SUA la Moscova">
           <div class="a-meta">
             <span class="a-time">12 nov · 10:00</span>
@@ -1081,7 +1158,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-166" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">emisarii SUA la Moscova</span>
-            <span class="a-num">#7 / 12</span>
+            <span class="a-num">#9 / 14</span>
           </div>
           <h2>Emisarii SUA Witkoff și Kushner s-au întâlnit azi cu Putin la Moscova, după discuțiile de la Abu Dhabi; urmează Dublinul și Zelenski</h2>
           <div class="followup">
@@ -1115,14 +1192,14 @@
           </div>
         </article>
 
-        <!-- 8 · 12 nov · 10:00 -->
+        <!-- 10 · 12 nov · 10:00 -->
         <article id="stire-178" data-cats="tech" data-sev="green" data-subiect="agenții AI blocați la zboruri">
           <div class="a-meta">
             <span class="a-time">12 nov · 10:00</span>
             <span class="a-cat">Tech &amp; AI</span>
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <span class="subj-pill">agenții AI blocați la zboruri</span>
-            <span class="a-num">#8 / 12</span>
+            <span class="a-num">#10 / 14</span>
           </div>
           <h2>United Airlines interzice agenților AI personali să rezerve zboruri — prima companie aeriană americană care o face</h2>
           <div class="sec">
@@ -1152,7 +1229,7 @@
           </div>
         </article>
 
-        <!-- 9 · 12 nov · 08:00 -->
+        <!-- 11 · 12 nov · 08:00 -->
         <article id="stire-176" data-cats="securitate" data-sev="amber" data-subiect="cheltuieli de apărare NATO">
           <div class="a-meta">
             <span class="a-time">12 nov · 08:00</span>
@@ -1160,7 +1237,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-161" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">cheltuieli de apărare NATO</span>
-            <span class="a-num">#9 / 12</span>
+            <span class="a-num">#11 / 14</span>
           </div>
           <h2>Rutte la Oslo: Marea Britanie își dublează cheltuielile de apărare în 10 ani; cinci aliați ating ținta NATO de 5% din PIB în 2026</h2>
           <div class="followup">
@@ -1191,7 +1268,7 @@
           </div>
         </article>
 
-        <!-- 10 · 12 nov · 07:00 -->
+        <!-- 12 · 12 nov · 07:00 -->
         <article id="stire-175" data-cats="tech" data-sev="amber" data-subiect="demiterea lui Jensen Huang">
           <div class="a-meta">
             <span class="a-time">12 nov · 07:00</span>
@@ -1199,7 +1276,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-172" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">demiterea lui Jensen Huang</span>
-            <span class="a-num">#10 / 12</span>
+            <span class="a-num">#12 / 14</span>
           </div>
           <h2>Boardul Nvidia se pregătește să-l demită pe Jensen Huang: ședința decisivă a avut loc miercuri seară, acțiunile au căzut cu 8%</h2>
           <div class="followup">
@@ -1235,14 +1312,14 @@
           </div>
         </article>
 
-        <!-- 11 · 12 nov · 06:00 -->
+        <!-- 13 · 12 nov · 06:00 -->
         <article id="stire-173" data-cats="tech" data-sev="amber" data-subiect="cipuri AI britanice Fractile">
           <div class="a-meta">
             <span class="a-time">12 nov · 06:00</span>
             <span class="a-cat">Tech &amp; AI</span>
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="subj-pill">cipuri AI britanice Fractile</span>
-            <span class="a-num">#11 / 12</span>
+            <span class="a-num">#13 / 14</span>
           </div>
           <h2>Startupul britanic Fractile ridică 720 mil. $ pentru cipuri AI de inferență și ajunge la o evaluare de 7 mld. $, cu sprijinul fondului suveran AI al Marii Britanii</h2>
           <div class="sec">
@@ -1269,14 +1346,14 @@
           </div>
         </article>
 
-        <!-- 12 · 12 nov · 06:00 -->
+        <!-- 14 · 12 nov · 06:00 -->
         <article id="stire-174" data-cats="tech" data-sev="amber" data-subiect="CoreWeave cere plăți în avans">
           <div class="a-meta">
             <span class="a-time">12 nov · 06:00</span>
             <span class="a-cat">Tech &amp; AI</span>
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="subj-pill">CoreWeave cere plăți în avans</span>
-            <span class="a-num">#12 / 12</span>
+            <span class="a-num">#14 / 14</span>
           </div>
           <h2>CoreWeave își schimbă finanțarea boom-ului AI: cere clienților plăți în avans de ~9 mld. $ în 3 luni, ca să nu se mai împrumute scump</h2>
           <div class="sec">
@@ -6036,8 +6113,8 @@
 
       <footer>
         <div class="rule" aria-hidden="true"></div>
-        <p>Sfârșitul ediției de azi · Ultima actualizare: joi, 12 noiembrie 2026, 18:05<br />Monitorizarea rulează la circa 3 ore, în fereastra L–V 06:00–22:00 · S–D 07:30–22:00 — dă refresh pentru noutăți.</p>
-        <a class="to-top" href="#stire-184">↑ Înapoi la cea mai nouă știre</a>
+        <p>Sfârșitul ediției de azi · Ultima actualizare: joi, 12 noiembrie 2026, 19:00<br />Monitorizarea rulează la circa 3 ore, în fereastra L–V 06:00–22:00 · S–D 07:30–22:00 — dă refresh pentru noutăți.</p>
+        <a class="to-top" href="#stire-185">↑ Înapoi la cea mai nouă știre</a>
       </footer>
     </div>
 
