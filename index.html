@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="color-scheme" content="light dark" />
-    <meta name="tirile-versiune" content="2026-11-12T20:00:00+01:00|15|amber" />
+    <meta name="tirile-versiune" content="2026-11-12T21:00:00+01:00|16|amber" />
     <link rel="icon" href="data:," />
     <title>Știrile zilei</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -699,9 +699,9 @@
     <div class="topbar">
       <div class="topbar-inner">
         <span class="dot" aria-hidden="true"></span>
-        <span><strong>Joi, 12 noiembrie 2026</strong> · actualizat la <strong>20:00</strong></span>
+        <span><strong>Joi, 12 noiembrie 2026</strong> · actualizat la <strong>21:00</strong></span>
         <span aria-hidden="true">·</span>
-        <span>15 știri azi</span>
+        <span>16 știri azi</span>
         <span class="spacer"></span>
         <button class="refresh-btn" type="button" id="refreshBtn" aria-label="Reîmprospătează pagina">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg>
@@ -739,7 +739,7 @@
 
       <!-- Chenar permanent: știrea cea mai importantă a zilei — sub fereastra
            „Ultimele știri”, ÎNAINTEA dashboardului, vizibilă din prima, fără scroll.
-           Nivelul de azi: GALBEN (sev-amber) — de urmărit: demisia lui Jensen Huang de la Nvidia — știrea cu severitatea cea mai mare a zilei și cea mai importantă dintre cele douăsprezece știri galbene ale zilei, marcată „Știrea zilei”; mai există alte unsprezece știri galbene azi (trei știri sunt verzi azi: contractul SATIM, de la 19:00, știrea DFA de la 14:00 și United Airlines, de la 10:00; galbenele sunt: plecarea lui Jensen Huang și viitorul AI open source la Nvidia, de la 20:00, moțiunea AUR împotriva lui Nazare respinsă în Senat, de la 19:00, breach-ul Fireworks AI / Notion, de la 18:00, nava rusă lovită în Baltica, de la 17:00, campania „wfx-loot”, furt de secrete din GitHub Actions, de la 15:00, Ucraina cere SUA să accelereze livrările de interceptori, de la 13:00, emisarii SUA Witkoff și Kushner la Moscova, de la 10:00, discursul lui Rutte la Oslo despre cheltuielile de apărare NATO, de la 08:00, boardul Nvidia se pregătește să-l demită pe Jensen Huang, de la 07:00, startupul britanic Fractile ridică 720 mil. $ pentru cipuri AI, de la 06:00, și CoreWeave își schimbă finanțarea boom-ului AI, de la 06:00), de aceea apare mențiunea despre celelalte știri cu aceeași severitate, cu filtru pe galben la „apasă aici”.
+           Nivelul de azi: GALBEN (sev-amber) — de urmărit: demisia lui Jensen Huang de la Nvidia — știrea cu severitatea cea mai mare a zilei și cea mai importantă dintre cele douăsprezece știri galbene ale zilei, marcată „Știrea zilei”; mai există alte unsprezece știri galbene azi (patru știri sunt verzi azi: Gemini 4 Hydrogen în Search, de la 21:00, contractul SATIM, de la 19:00, știrea DFA de la 14:00 și United Airlines, de la 10:00; galbenele sunt: plecarea lui Jensen Huang și viitorul AI open source la Nvidia, de la 20:00, moțiunea AUR împotriva lui Nazare respinsă în Senat, de la 19:00, breach-ul Fireworks AI / Notion, de la 18:00, nava rusă lovită în Baltica, de la 17:00, campania „wfx-loot”, furt de secrete din GitHub Actions, de la 15:00, Ucraina cere SUA să accelereze livrările de interceptori, de la 13:00, emisarii SUA Witkoff și Kushner la Moscova, de la 10:00, discursul lui Rutte la Oslo despre cheltuielile de apărare NATO, de la 08:00, boardul Nvidia se pregătește să-l demită pe Jensen Huang, de la 07:00, startupul britanic Fractile ridică 720 mil. $ pentru cipuri AI, de la 06:00, și CoreWeave își schimbă finanțarea boom-ului AI, de la 06:00), de aceea apare mențiunea despre celelalte știri cu aceeași severitate, cu filtru pe galben la „apasă aici”.
            Chenarul rămâne în afara logicii de filtrare: vizibil indiferent de filtrul de categorie. -->
       <section class="spot sev-amber" aria-label="Știrea cea mai importantă a zilei">
         <div class="spot-head">
@@ -768,15 +768,15 @@
       <section class="dashboard" aria-label="Panou de ansamblu">
         <div class="dash-head">
           <span class="dash-title">Dashboard · Azi</span>
-          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 20:00</span>
+          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 21:00</span>
           <span class="dash-meta">Fereastră monitorizare <strong>L–V 06:00–22:00 · S–D 07:30–22:00</strong> · pas ~3 ore</span>
         </div>
 
         <div class="kpi-grid five" role="group" aria-label="Filtrează după categorie — apasă pe un tile">
           <button class="kpi" type="button" data-filter="toate" aria-pressed="true">
             <span class="kpi-top"><span class="kpi-label">Toate știrile</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">15</span>
-            <span class="kpi-sub">știri verificate azi, în 12 rulări</span>
+            <span class="kpi-value">16</span>
+            <span class="kpi-sub">știri verificate azi, în 13 rulări</span>
             <span class="kpi-bar" aria-hidden="true"><i style="width:100%"></i></span>
             <span class="kpi-hint">Apasă pentru toate</span>
           </button>
@@ -803,9 +803,9 @@
           </button>
           <button class="kpi" type="button" data-filter="tech" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">Tech &amp; AI</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">10</span>
-            <span class="kpi-sub">Nvidia și viitorul open source · analiză AI imagini satelit militare · breach Fireworks AI / Notion · demisia lui Jensen Huang · furt de secrete din GitHub Actions · Digital Fairness Act UE · agenții AI blocați la zboruri · demiterea lui Jensen Huang · cipuri AI britanice Fractile · CoreWeave cere plăți în avans</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:67%"></i></span>
+            <span class="kpi-value">11</span>
+            <span class="kpi-sub">Gemini 4 Hydrogen în Search · Nvidia și viitorul open source · analiză AI imagini satelit militare · breach Fireworks AI / Notion · demisia lui Jensen Huang · furt de secrete din GitHub Actions · Digital Fairness Act UE · agenții AI blocați la zboruri · demiterea lui Jensen Huang · cipuri AI britanice Fractile · CoreWeave cere plăți în avans</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:69%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
         </div>
@@ -819,7 +819,7 @@
       </section>
 
       <div class="filter-status" aria-live="polite">
-        <span class="filter-label">Se afișează: <strong>Toate categoriile — 15 din 15 știri</strong></span>
+        <span class="filter-label">Se afișează: <strong>Toate categoriile — 16 din 16 știri</strong></span>
         <button class="filter-reset" type="button" hidden>Resetează filtrul</button>
       </div>
 
@@ -842,7 +842,47 @@
       <p class="empty">Nicio știre în această categorie azi.</p>
 
       <main>
-        <!-- 1 · 12 nov · 20:00 -->
+        <!-- 1 · 12 nov · 21:00 -->
+        <article id="stire-188" data-cats="tech" data-sev="green" data-subiect="Gemini 4 Hydrogen în Search">
+          <div class="a-meta">
+            <span class="a-time">12 nov · 21:00</span>
+            <span class="a-cat">Tech &amp; AI</span>
+            <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
+            <a class="cont-pill" href="#stire-158" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
+            <span class="subj-pill">Gemini 4 Hydrogen în Search</span>
+            <span class="a-num">#1 / 16</span>
+          </div>
+          <h2>Google lansează Gemini 4 Hydrogen: cel mai rapid model Gemini 4 ajunge în Search, în aplicația Gemini și în API</h2>
+          <div class="followup">
+            <span class="tag">Urmare la</span>
+            <p><a href="#stire-158">„Gemini 4 Carbon, cel mai puternic model Google, e acum disponibil pentru dezvoltatori — cu funcția de echipă de agenți „swarm”” — miercuri, 11 noiembrie 2026, ora 11:00.</a> (Al doilea model din familia Gemini 4 lansat în trei zile: Carbon, modelul de frontieră, a fost deschis marți, 10 noiembrie; Hydrogen e varianta rapidă, pentru execuție zilnică.)</p>
+          </div>
+          <div class="sec">
+            <p class="sec-label">Ce s-a întâmplat</p>
+            <p>Google a anunțat joi, 12 noiembrie, Gemini 4 Hydrogen — noul model rapid al familiei Gemini 4, construit pentru execuție rapidă în fluxuri de lucru agentice, adică sarcini în care AI-ul face singur mai mulți pași. Modelul ajunge de azi în Google Search (pentru toți utilizatorii, la nivel global), în aplicația Gemini (prin selectorul de model), în API-ul Gemini prin AI Studio, în Gemini for business și în platforma Antigravity pentru abonații Google AI Pro și Ultra. În Search, Google îl numește „cea mai mare îmbunătățire a modelului de Search de până acum": înțelege mai bine intenția din întrebări cu mai multe părți, greșeli de scriere sau cerințe foarte specifice, dă răspunsuri mai vizuale și mai multe linkuri relevante prin tehnica „query fan-out" (o întrebare e descompusă în mai multe căutări paralele) și devine modelul implicit în AI Mode, folosit și pentru cele mai grele întrebări din AI Overviews. Cifrele anunțate de Google: finalizează sarcini de 2,5 ori mai rapid decât Gemini 3.8 Flash, obține 51 de puncte pe Artificial Analysis Intelligence Index la nivelul implicit de gândire „high" (54 la noul nivel „xhigh"), față de 50 pentru modelul mai puternic Argon, are o fereastră de context de 1 milion de tokeni și costă 1,50 dolari la un milion de tokeni de intrare și 7,50 dolari la un milion de tokeni de ieșire. Modelul are patru niveluri de gândire (low, medium, high, xhigh).</p>
+          </div>
+          <div class="sec">
+            <p class="sec-label">De ce contează</p>
+            <p>Pentru un IT incident Manager care își construiește automatizările pe API-ul Gemini și trăiește zilnic în ecosistemul Google, Hydrogen e piesa practică a familiei Gemini 4: varianta rapidă și ieftină pe care o poate apela direct din API-ul pe care îl folosește deja, în locul lui Carbon (modelul de frontieră, mai scump) sau Argon, pentru sarcinile zilnice de execuție. În același timp, upgrade-ul din Search schimbă direct instrumentul de căutare pe care îl folosește în fiecare zi — răspunsuri mai nuanțate la întrebări complicate și mai multe surse relevante. Faptul că Google lansează al doilea model Gemini 4 în trei zile arată ritmul în care se mișcă acum cursa modelelor — Carbon marți, Hydrogen joi — și că „Flash" dispare ca brand, înlocuit de Hydrogen.</p>
+          </div>
+          <div class="verify">
+            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
+            <p>Verdict: confirmat. Google (blog oficial, 12 noiembrie 2026) — anunțul primar: Hydrogen pentru fluxuri agentice, disponibil în API, aplicația Gemini și Search; 2,5x mai rapid decât Gemini 3.8 Flash; scor 51 pe Artificial Analysis Intelligence Index (54 la xhigh); preț 1,50 $ / 7,50 $ per 1M tokeni. Google Search (blog oficial, 12 noiembrie 2026) — „cea mai mare îmbunătățire a modelului de Search de până acum", disponibil global pentru toți utilizatorii, model implicit în AI Mode. TechCrunch (12 noiembrie 2026, 19:27 UTC) — relatarea: îmbunătățirile din Search, cele patru niveluri de gândire, disponibilitatea în API și Antigravity. 9to5Google (12 noiembrie 2026, 18:01 UTC) — context: înlocuiește brandingul Flash, „major standalone upgrade". Search Engine Land (12 noiembrie 2026, 18:31 UTC) — confirmarea lansării și a disponibilității globale în Search. Notă de integritate: cifrele de viteză și scorurile pe benchmark sunt cele anunțate de Google, nu măsurători independente; Carbon rămâne modelul de frontieră pentru sarcini lungi și complexe.</p>
+            <ul class="sources">
+              <li><a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Google (blog oficial) — „Introducing Gemini 4 Hydrogen” (12 nov 2026; anunțul primar: modelul rapid pentru fluxuri agentice, disponibil în API, aplicația Gemini și Search; 2,5x mai rapid decât Gemini 3.8 Flash; scor 51 pe Artificial Analysis Intelligence Index, 54 la nivelul xhigh; preț 1,50 $ / 7,50 $ per 1M tokeni)<span class="host">blog.google</span></a></li>
+              <li><a href="https://blog.google/products-and-platforms/products/search/gemini-4-hydrogen-search-upgrade/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Google Search (blog oficial) — „Google Search gets a major upgrade with Gemini 4 Hydrogen” (12 nov 2026; „cea mai mare îmbunătățire a modelului de Search de până acum”, disponibil global pentru toți utilizatorii; model implicit în AI Mode și pentru cele mai grele întrebări din AI Overviews)<span class="host">blog.google</span></a></li>
+              <li><a href="https://techcrunch.com/2026/11/12/googles-latest-search-upgrade-promises-better-answers-to-your-most-complicated-questions/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>TechCrunch — „Google's latest Search upgrade promises better answers to your most complicated questions” (12 nov 2026, 19:27 UTC; relatarea curatoriată: îmbunătățirile din Search, patru niveluri de gândire, disponibilitatea în API și Antigravity)<span class="host">techcrunch.com</span></a></li>
+              <li><a href="https://9to5google.com/2026/11/12/gemini-4-hydrogen-launch/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>9to5Google — „Google announces Gemini 4 Hydrogen with ‘significant leaps’” (12 nov 2026, 18:01 UTC; context: înlocuiește brandingul Flash, „major standalone upgrade”, model implicit în AI Mode)<span class="host">9to5google.com</span></a></li>
+              <li><a href="https://searchengineland.com/google-search-gets-major-upgrade-with-gemini-4-hydrogen-501867" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Search Engine Land — „Google Search gets major upgrade with Gemini 4 Hydrogen” (12 nov 2026, 18:31 UTC; confirmarea lansării și a disponibilității globale în Search)<span class="host">searchengineland.com</span></a></li>
+            </ul>
+          </div>
+          <div class="impact">
+            <span class="badge">Impact direct</span>
+            <p>Impact direct: minim azi — nu cere nicio acțiune: Hydrogen e disponibil automat în Search și poate fi selectat în aplicația Gemini și în API; relevanță practică: merită testat în automatizările pe API-ul Gemini ca variantă rapidă și ieftină față de Carbon/Argon, mai ales pentru sarcinile repetitive în mai mulți pași.</p>
+          </div>
+        </article>
+
+        <!-- 2 · 12 nov · 20:00 -->
         <article id="stire-187" data-cats="tech" data-sev="amber" data-subiect="Nvidia și viitorul open source">
           <div class="a-meta">
             <span class="a-time">12 nov · 20:00</span>
@@ -850,7 +890,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-182" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">Nvidia și viitorul open source</span>
-            <span class="a-num">#1 / 15</span>
+            <span class="a-num">#2 / 16</span>
           </div>
           <h2>Plecarea lui Jensen Huang pune sub semnul întrebării sprijinul Nvidia pentru AI open source</h2>
           <div class="followup">
@@ -885,14 +925,14 @@
           </div>
         </article>
 
-        <!-- 2 · 12 nov · 19:00 -->
+        <!-- 3 · 12 nov · 19:00 -->
         <article id="stire-185" data-cats="romania" data-sev="amber" data-subiect="deficit România, replica lui Nazare">
           <div class="a-meta">
             <span class="a-time">12 nov · 19:00</span>
             <span class="a-cat">România</span>
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="subj-pill">deficit România, replica lui Nazare</span>
-            <span class="a-num">#2 / 15</span>
+            <span class="a-num">#3 / 16</span>
           </div>
           <h2>Senatul a respins moțiunea AUR împotriva ministrului Finanțelor: Nazare susține că deficitul scade pe ambele metodologii</h2>
           <div class="sec">
@@ -920,14 +960,14 @@
           </div>
         </article>
 
-        <!-- 3 · 12 nov · 19:00 -->
+        <!-- 4 · 12 nov · 19:00 -->
         <article id="stire-186" data-cats="securitate tech" data-sev="green" data-subiect="analiză AI imagini satelit militare">
           <div class="a-meta">
             <span class="a-time">12 nov · 19:00</span>
             <span class="a-cat">Securitate &amp; NATO · Tech &amp; AI</span>
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <span class="subj-pill">analiză AI imagini satelit militare</span>
-            <span class="a-num">#3 / 15</span>
+            <span class="a-num">#4 / 16</span>
           </div>
           <h2>Germania și Polonia apelează la firma poloneză SATIM pentru analiza AI a imaginilor satelitare militare</h2>
           <div class="sec">
@@ -951,14 +991,14 @@
           </div>
         </article>
 
-        <!-- 4 · 12 nov · 18:00 -->
+        <!-- 5 · 12 nov · 18:00 -->
         <article id="stire-184" data-cats="tech" data-sev="amber" data-subiect="breach Fireworks AI / Notion">
           <div class="a-meta">
             <span class="a-time">12 nov · 18:00</span>
             <span class="a-cat">Tech &amp; AI</span>
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="subj-pill">breach Fireworks AI / Notion</span>
-            <span class="a-num">#4 / 15</span>
+            <span class="a-num">#5 / 16</span>
           </div>
           <h2>Atac cibernetic la Fireworks AI: transcrieri ale conversațiilor Notion AI, expuse — sub 1% din spațiile de lucru afectate</h2>
           <div class="sec">
@@ -987,7 +1027,7 @@
           </div>
         </article>
 
-        <!-- 5 · 12 nov · 17:00 -->
+        <!-- 6 · 12 nov · 17:00 -->
         <article id="stire-183" data-cats="securitate" data-sev="amber" data-subiect="navă rusă lovită în Baltica">
           <div class="a-meta">
             <span class="a-time">12 nov · 17:00</span>
@@ -995,7 +1035,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-170" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">navă rusă lovită în Baltica</span>
-            <span class="a-num">#5 / 15</span>
+            <span class="a-num">#6 / 16</span>
           </div>
           <h2>Finlanda a detectat o lovitură asupra unei nave de război rusești în Marea Baltică; nava s-a întors la Sankt Petersburg</h2>
           <div class="followup">
@@ -1024,7 +1064,7 @@
           </div>
         </article>
 
-        <!-- 6 · 12 nov · 16:00 -->
+        <!-- 7 · 12 nov · 16:00 -->
         <article id="stire-182" data-cats="tech" data-sev="amber" data-subiect="demisia lui Jensen Huang">
           <div class="a-meta">
             <span class="a-time">12 nov · 16:00</span>
@@ -1033,7 +1073,7 @@
             <span class="spot-tag">Știrea zilei</span>
             <a class="cont-pill" href="#stire-175" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">demisia lui Jensen Huang</span>
-            <span class="a-num">#6 / 15</span>
+            <span class="a-num">#7 / 16</span>
           </div>
           <h2>Jensen Huang demisionează de la Nvidia: Colette Kress preia interimatul, acțiunile scad cu peste 10%</h2>
           <div class="followup">
@@ -1065,14 +1105,14 @@
           </div>
         </article>
 
-        <!-- 7 · 12 nov · 15:00 -->
+        <!-- 8 · 12 nov · 15:00 -->
         <article id="stire-181" data-cats="tech" data-sev="amber" data-subiect="furt de secrete din GitHub Actions">
           <div class="a-meta">
             <span class="a-time">12 nov · 15:00</span>
             <span class="a-cat">Tech &amp; AI</span>
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="subj-pill">furt de secrete din GitHub Actions</span>
-            <span class="a-num">#7 / 15</span>
+            <span class="a-num">#8 / 16</span>
           </div>
           <h2>Campanie „wfx-loot”: 4.837 de conturi GitHub deturnate fură secrete din CI în peste 61.000 de repo-uri</h2>
           <div class="sec">
@@ -1101,14 +1141,14 @@
           </div>
         </article>
 
-        <!-- 8 · 12 nov · 14:00 -->
+        <!-- 9 · 12 nov · 14:00 -->
         <article id="stire-180" data-cats="tech belgia" data-sev="green" data-subiect="Digital Fairness Act UE">
           <div class="a-meta">
             <span class="a-time">12 nov · 14:00</span>
             <span class="a-cat">Tech &amp; AI · Belgia</span>
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <span class="subj-pill">Digital Fairness Act UE</span>
-            <span class="a-num">#8 / 15</span>
+            <span class="a-num">#9 / 16</span>
           </div>
           <h2>Comisia Europeană propune Digital Fairness Act: interzice dark patterns și pune primele reguli UE pentru agenții AI de cumpărături</h2>
           <div class="sec">
@@ -1139,7 +1179,7 @@
           </div>
         </article>
 
-        <!-- 9 · 12 nov · 13:00 -->
+        <!-- 10 · 12 nov · 13:00 -->
         <article id="stire-179" data-cats="securitate" data-sev="amber" data-subiect="Ucraina cere interceptori mai repede">
           <div class="a-meta">
             <span class="a-time">12 nov · 13:00</span>
@@ -1147,7 +1187,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-166" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">Ucraina cere interceptori mai repede</span>
-            <span class="a-num">#9 / 15</span>
+            <span class="a-num">#10 / 16</span>
           </div>
           <h2>Ucraina cere SUA să accelereze livrările de interceptori, pe fondul atacurilor Rusiei asupra rețelei electrice; Kievul, pesimist privind armistițiul în Marea Neagră</h2>
           <div class="followup">
@@ -1182,7 +1222,7 @@
           </div>
         </article>
 
-        <!-- 10 · 12 nov · 10:00 -->
+        <!-- 11 · 12 nov · 10:00 -->
         <article id="stire-177" data-cats="securitate" data-sev="amber" data-subiect="emisarii SUA la Moscova">
           <div class="a-meta">
             <span class="a-time">12 nov · 10:00</span>
@@ -1190,7 +1230,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-166" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">emisarii SUA la Moscova</span>
-            <span class="a-num">#10 / 15</span>
+            <span class="a-num">#11 / 16</span>
           </div>
           <h2>Emisarii SUA Witkoff și Kushner s-au întâlnit azi cu Putin la Moscova, după discuțiile de la Abu Dhabi; urmează Dublinul și Zelenski</h2>
           <div class="followup">
@@ -1224,14 +1264,14 @@
           </div>
         </article>
 
-        <!-- 11 · 12 nov · 10:00 -->
+        <!-- 12 · 12 nov · 10:00 -->
         <article id="stire-178" data-cats="tech" data-sev="green" data-subiect="agenții AI blocați la zboruri">
           <div class="a-meta">
             <span class="a-time">12 nov · 10:00</span>
             <span class="a-cat">Tech &amp; AI</span>
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <span class="subj-pill">agenții AI blocați la zboruri</span>
-            <span class="a-num">#11 / 15</span>
+            <span class="a-num">#12 / 16</span>
           </div>
           <h2>United Airlines interzice agenților AI personali să rezerve zboruri — prima companie aeriană americană care o face</h2>
           <div class="sec">
@@ -1261,7 +1301,7 @@
           </div>
         </article>
 
-        <!-- 12 · 12 nov · 08:00 -->
+        <!-- 13 · 12 nov · 08:00 -->
         <article id="stire-176" data-cats="securitate" data-sev="amber" data-subiect="cheltuieli de apărare NATO">
           <div class="a-meta">
             <span class="a-time">12 nov · 08:00</span>
@@ -1269,7 +1309,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-161" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">cheltuieli de apărare NATO</span>
-            <span class="a-num">#12 / 15</span>
+            <span class="a-num">#13 / 16</span>
           </div>
           <h2>Rutte la Oslo: Marea Britanie își dublează cheltuielile de apărare în 10 ani; cinci aliați ating ținta NATO de 5% din PIB în 2026</h2>
           <div class="followup">
@@ -1300,7 +1340,7 @@
           </div>
         </article>
 
-        <!-- 13 · 12 nov · 07:00 -->
+        <!-- 14 · 12 nov · 07:00 -->
         <article id="stire-175" data-cats="tech" data-sev="amber" data-subiect="demiterea lui Jensen Huang">
           <div class="a-meta">
             <span class="a-time">12 nov · 07:00</span>
@@ -1308,7 +1348,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-172" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">demiterea lui Jensen Huang</span>
-            <span class="a-num">#13 / 15</span>
+            <span class="a-num">#14 / 16</span>
           </div>
           <h2>Boardul Nvidia se pregătește să-l demită pe Jensen Huang: ședința decisivă a avut loc miercuri seară, acțiunile au căzut cu 8%</h2>
           <div class="followup">
@@ -1344,14 +1384,14 @@
           </div>
         </article>
 
-        <!-- 14 · 12 nov · 06:00 -->
+        <!-- 15 · 12 nov · 06:00 -->
         <article id="stire-173" data-cats="tech" data-sev="amber" data-subiect="cipuri AI britanice Fractile">
           <div class="a-meta">
             <span class="a-time">12 nov · 06:00</span>
             <span class="a-cat">Tech &amp; AI</span>
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="subj-pill">cipuri AI britanice Fractile</span>
-            <span class="a-num">#14 / 15</span>
+            <span class="a-num">#15 / 16</span>
           </div>
           <h2>Startupul britanic Fractile ridică 720 mil. $ pentru cipuri AI de inferență și ajunge la o evaluare de 7 mld. $, cu sprijinul fondului suveran AI al Marii Britanii</h2>
           <div class="sec">
@@ -1378,14 +1418,14 @@
           </div>
         </article>
 
-        <!-- 15 · 12 nov · 06:00 -->
+        <!-- 16 · 12 nov · 06:00 -->
         <article id="stire-174" data-cats="tech" data-sev="amber" data-subiect="CoreWeave cere plăți în avans">
           <div class="a-meta">
             <span class="a-time">12 nov · 06:00</span>
             <span class="a-cat">Tech &amp; AI</span>
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="subj-pill">CoreWeave cere plăți în avans</span>
-            <span class="a-num">#15 / 15</span>
+            <span class="a-num">#16 / 16</span>
           </div>
           <h2>CoreWeave își schimbă finanțarea boom-ului AI: cere clienților plăți în avans de ~9 mld. $ în 3 luni, ca să nu se mai împrumute scump</h2>
           <div class="sec">
@@ -6145,8 +6185,8 @@
 
       <footer>
         <div class="rule" aria-hidden="true"></div>
-        <p>Sfârșitul ediției de azi · Ultima actualizare: joi, 12 noiembrie 2026, 18:05<br />Monitorizarea rulează la circa 3 ore, în fereastra L–V 06:00–22:00 · S–D 07:30–22:00 — dă refresh pentru noutăți.</p>
-        <a class="to-top" href="#stire-184">↑ Înapoi la cea mai nouă știre</a>
+        <p>Sfârșitul ediției de azi · Ultima actualizare: joi, 12 noiembrie 2026, 21:00<br />Monitorizarea rulează la circa 3 ore, în fereastra L–V 06:00–22:00 · S–D 07:30–22:00 — dă refresh pentru noutăți.</p>
+        <a class="to-top" href="#stire-188">↑ Înapoi la cea mai nouă știre</a>
       </footer>
     </div>
 
