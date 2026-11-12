@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="color-scheme" content="light dark" />
-    <meta name="tirile-versiune" content="2026-11-11T21:00:00+01:00|20|amber" />
+    <meta name="tirile-versiune" content="2026-11-12T06:00:00+01:00|2|amber" />
     <link rel="icon" href="data:," />
     <title>Știrile zilei</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -699,9 +699,9 @@
     <div class="topbar">
       <div class="topbar-inner">
         <span class="dot" aria-hidden="true"></span>
-        <span><strong>Miercuri, 11 noiembrie 2026</strong> · actualizat la <strong>21:00</strong></span>
+        <span><strong>Joi, 12 noiembrie 2026</strong> · actualizat la <strong>06:00</strong></span>
         <span aria-hidden="true">·</span>
-        <span>20 știri azi</span>
+        <span>2 știri azi</span>
         <span class="spacer"></span>
         <button class="refresh-btn" type="button" id="refreshBtn" aria-label="Reîmprospătează pagina">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg>
@@ -716,12 +716,12 @@
         <h1>Știrile zilei</h1>
         <div class="date-line">
           <span class="day">Ediția de azi</span>
-          <span>Miercuri, 11 noiembrie 2026 · Europe/Brussels</span>
+          <span>Joi, 12 noiembrie 2026 · Europe/Brussels</span>
         </div>
         <p class="lede"><strong>Apasă pe un tile</strong> ca să filtrezi pagina — articole complete jos, cele mai noi primele.</p>
       </header>
 
-      <section class="day" id="zi-2026-11-11">
+      <section class="day" id="zi-2026-11-12">
       <!-- Fereastra „Ultimele știri" — sus, imediat deasupra chenarului
            „Știrea zilei", între masthead și chenar. Arată DOAR titlurile din
            cea mai recentă rulare (1–2), fiecare link la cardul ei (#stire-N).
@@ -736,6 +736,191 @@
         </div>
         <ul class="latest-list"></ul>
       </section>
+
+      <!-- Chenar permanent: știrea cea mai importantă a zilei — sub fereastra
+           „Ultimele știri", ÎNAINTEA dashboardului, vizibilă din prima, fără scroll.
+           Nivelul de azi: GALBEN (sev-amber) — de urmărit: startupul britanic Fractile ridică 720 mil. $ pentru cipuri AI și ajunge la o evaluare de 7 mld. $ — știrea cu severitatea cea mai mare a zilei și cea mai importantă dintre cele două știri ale zilei; mai există o altă știre galbenă azi (CoreWeave își schimbă finanțarea boom-ului AI, cerând clienților plăți în avans de ~9 mld. $), de aceea apare mențiunea despre celelalte știri cu aceeași severitate, cu filtru pe galben la „apasă aici".
+           Chenarul rămâne în afara logicii de filtrare: vizibil indiferent de filtrul de categorie. -->
+      <section class="spot sev-amber" aria-label="Știrea cea mai importantă a zilei">
+        <div class="spot-head">
+          <span class="spot-kicker">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13 2 4.5 13.5H11L9.5 22 19 10h-6.5L13 2z"/></svg>
+            Știrea zilei · Atenție rapidă
+          </span>
+          <span class="spot-time">12 nov · 06:00</span>
+          <span class="spot-pill">Nivel galben — de urmărit</span>
+        </div>
+        <h2 class="spot-title">Startupul britanic Fractile ridică 720 mil. $ pentru cipuri AI de inferență și ajunge la o evaluare de 7 mld. $, cu sprijinul fondului suveran AI al Marii Britanii</h2>
+        <p class="spot-why"><strong>De ce e în față:</strong> E știrea cu severitatea cea mai mare a zilei și cea mai importantă dintre cele două — un startup britanic de cipuri AI ajunge la 7 mld. $ înainte să livreze primul cip, cu statul britanic investitor direct: hardware-ul AI a devenit politică industrială europeană, iar evaluarea pune presiune pe dominația Nvidia, în chiar arcul urmărit aici (ancheta Nvidia, retragerea lui Huang de la summiturile AI). Cealaltă știre galbenă a zilei, finanțarea CoreWeave din plăți în avans, e tot pe economia AI.</p>
+        <p class="spot-lead">Fractile, startup britanic din Londra și Bristol, a strâns 720 de milioane de dolari la o evaluare de 7 miliarde — de circa șase ori mai mult decât în mai — pentru cipuri de inferență cu memorie stivuită pe cip; primul cip comercial e așteptat în 2027, iar fondul suveran AI al Marii Britanii e printre investitori.</p>
+        <p class="spot-more" hidden><span class="spot-more-text"></span> <button class="spot-more-btn" type="button">apasă aici</button></p>
+        <div class="spot-foot">
+          <a class="spot-link" href="#stire-173">Citește știrea completă ↓</a>
+          <div class="sev-scale" role="img" aria-label="Scară de gravitate: verde — normal, galben — de urmărit, roșu — grav. Nivelul de azi: galben.">
+            <span class="sev-item"><i class="sev-dot g" aria-hidden="true"></i>Verde · normal</span>
+            <span class="sev-item on"><i class="sev-dot y" aria-hidden="true"></i>Galben · de urmărit</span>
+            <span class="sev-item"><i class="sev-dot r" aria-hidden="true"></i>Roșu · grav</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Dashboard -->
+      <section class="dashboard" aria-label="Panou de ansamblu">
+        <div class="dash-head">
+          <span class="dash-title">Dashboard · Azi</span>
+          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 06:00</span>
+          <span class="dash-meta">Fereastră monitorizare <strong>L–V 06:00–22:00 · S–D 07:30–22:00</strong> · pas ~3 ore</span>
+        </div>
+
+        <div class="kpi-grid five" role="group" aria-label="Filtrează după categorie — apasă pe un tile">
+          <button class="kpi" type="button" data-filter="toate" aria-pressed="true">
+            <span class="kpi-top"><span class="kpi-label">Toate știrile</span><span class="kpi-check" aria-hidden="true">✓</span></span>
+            <span class="kpi-value">2</span>
+            <span class="kpi-sub">știri verificate azi, în 1 rulare</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:100%"></i></span>
+            <span class="kpi-hint">Apasă pentru toate</span>
+          </button>
+          <button class="kpi" type="button" data-filter="securitate" aria-pressed="false">
+            <span class="kpi-top"><span class="kpi-label">Securitate &amp; NATO</span><span class="kpi-check" aria-hidden="true">✓</span></span>
+            <span class="kpi-value">0</span>
+            <span class="kpi-sub"></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:0%"></i></span>
+            <span class="kpi-hint">Apasă pentru a filtra →</span>
+          </button>
+          <button class="kpi" type="button" data-filter="romania" aria-pressed="false">
+            <span class="kpi-top"><span class="kpi-label">România</span><span class="kpi-check" aria-hidden="true">✓</span></span>
+            <span class="kpi-value">0</span>
+            <span class="kpi-sub"></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:0%"></i></span>
+            <span class="kpi-hint">Apasă pentru a filtra →</span>
+          </button>
+          <button class="kpi" type="button" data-filter="belgia" aria-pressed="false">
+            <span class="kpi-top"><span class="kpi-label">Belgia</span><span class="kpi-check" aria-hidden="true">✓</span></span>
+            <span class="kpi-value">0</span>
+            <span class="kpi-sub"></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:0%"></i></span>
+            <span class="kpi-hint">Apasă pentru a filtra →</span>
+          </button>
+          <button class="kpi" type="button" data-filter="tech" aria-pressed="false">
+            <span class="kpi-top"><span class="kpi-label">Tech &amp; AI</span><span class="kpi-check" aria-hidden="true">✓</span></span>
+            <span class="kpi-value">2</span>
+            <span class="kpi-sub">cipuri AI britanice Fractile · CoreWeave cere plăți în avans</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:100%"></i></span>
+            <span class="kpi-hint">Apasă pentru a filtra →</span>
+          </button>
+        </div>
+
+        <div class="dash-foot solo">
+          <div class="dash-panel">
+            <h3>Severitate — apasă un pătrat ca să vezi doar știrile de nivelul acela</h3>
+            <div class="sev-squares" role="group" aria-label="Filtrează după severitate — roșu, galben, verde"></div>
+          </div>
+        </div>
+      </section>
+
+      <div class="filter-status" aria-live="polite">
+        <span class="filter-label">Se afișează: <strong>Toate categoriile — 2 din 2 știri</strong></span>
+        <button class="filter-reset" type="button" hidden>Resetează filtrul</button>
+      </div>
+
+      <!-- Cuprinsul zilei — sub banda dashboard, înaintea cardurilor.
+           Generat de script din cardurile zilei curente: lista completă a
+           zilei, grupată pe ora publicării, cele mai noi primele; fiecare
+           titlu e link la cardul lui (#stire-N), iar antetul de oră al
+           fiecărui grup e buton de filtru pe rulare. Nu e pliabil: toate
+           grupurile de oră sunt extinse permanent, cu toate titlurile
+           vizibile. Cuprinsul urmează filtrul activ, la fel ca și cardurile.
+           Chenarul rămâne în afara filtrării. -->
+      <nav class="day-toc" aria-label="Cuprinsul zilei">
+        <div class="toc-head">
+          <h2>Cuprins</h2>
+          <span class="toc-count">cele mai noi primele · apasă pe o oră ca să filtrezi rularea, pe un titlu ca să sari la știre</span>
+        </div>
+        <div class="toc-groups"></div>
+      </nav>
+
+      <p class="empty">Nicio știre în această categorie azi.</p>
+
+      <main>
+        <!-- 1 · 12 nov · 06:00 -->
+        <article id="stire-173" data-cats="tech" data-sev="amber" data-subiect="cipuri AI britanice Fractile">
+          <div class="a-meta">
+            <span class="a-time">12 nov · 06:00</span>
+            <span class="a-cat">Tech &amp; AI</span>
+            <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
+            <span class="spot-tag">Știrea zilei</span>
+            <span class="subj-pill">cipuri AI britanice Fractile</span>
+            <span class="a-num">#1 / 2</span>
+          </div>
+          <h2>Startupul britanic Fractile ridică 720 mil. $ pentru cipuri AI de inferență și ajunge la o evaluare de 7 mld. $, cu sprijinul fondului suveran AI al Marii Britanii</h2>
+          <div class="sec">
+            <p class="sec-label">Ce s-a întâmplat</p>
+            <p>Fractile, startup britanic din Londra și Bristol, fondat în 2022, a strâns 720 de milioane de dolari într-o rundă Serie C condusă de Thrive Capital, Founders Fund, Lightspeed Venture Partners și Redpoint, la o evaluare de 7 miliarde de dolari — de circa șase ori mai mult decât evaluarea de aproximativ 1,1 miliarde de dolari din runda din mai 2026. Printre investitori se numără și CapitalG, brațul de venture al Alphabet, BlackRock, DST Global, fondul suveran AI al Marii Britanii și British Business Bank. Compania dezvoltă cipuri specializate pentru inferență — procesul prin care modelele AI generează răspunsuri — cu memorie stivuită direct pe cip, ca să rezolve blocajul lățimii de bandă a memoriei, și promite modele rulate de până la 25 de ori mai rapid, la o zecime din cost. Primul cip comercial e așteptat anul viitor, în 2027. Guvernul britanic prezintă investiția ca politică industrială: Marea Britanie să păstreze în țară o parte mai mare din tehnologia care alimentează economia viitorului și să reducă dependența de furnizori din SUA și Asia.</p>
+          </div>
+          <div class="sec">
+            <p class="sec-label">De ce contează</p>
+            <p>Cursa pentru cipuri AI de inferență e piesa de infrastructură a momentului: modelele tot mai mari costă tot mai mult la rulare, iar cine ieftinește inferența schimbă economia întregului stack AI — inclusiv a automatizărilor construite pe API-uri. Fractile e unul dintre puținii jucători europeni cu finanțare la acest nivel, iar statul britanic intră direct ca investitor, nu doar ca reglementator — semn că hardware-ul AI a devenit politică industrială, nu doar afacere privată. Firul se leagă de saga Nvidia urmărită aici (ancheta independentă a boardului, retragerea lui Huang de la summiturile AI): piața caută alternative la dominația Nvidia, iar o evaluare de 7 mld. $ înainte de primul cip livrat arată cât de mult capital se pariază pe această alternativă.</p>
+          </div>
+          <div class="verify">
+            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
+            <p>Verdict: confirmat. Reuters (11 nov 2026, relatat de LSE) — runda de 720 mil. $, evaluarea de 7 mld. $, conducerea rundei și lista investitorilor. Financial Times (11 nov 2026) — evaluarea de 7 mld. $, în creștere de la circa 1,1 mld. $ în mai, și detaliul că Fractile n-a lansat încă un cip de producție. The Guardian (11 nov 2026, relatat de AveNews) — cancelarul britanic John Healey a spus în Parlament că runda a fost de 500 mil. £ și a numit-o cea mai mare rundă europeană de semiconductori de până acum. Notă de integritate: cifra de 7 mld. $ vine din surse apropiate tranzacției (FT, Reuters) — guvernul britanic a confirmat public doar „peste 5 mld. £”; promisiunile de performanță (de 25 de ori mai rapid, la o zecime din cost) sunt cifre ale companiei, neverificate independent, iar presupusul acord de furnizare de circa 250 mil. $ cu Anthropic n-a fost confirmat oficial de nicio parte.</p>
+            <ul class="sources">
+              <li><a href="https://techcrunch.com/2026/11/11/with-720m-round-britains-fractile-gets-a-leg-up-in-the-race-for-ai-chips/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>TechCrunch — „With $720M round, Britain's Fractile gets a leg up in the race for AI chips” (11 nov 2026, 19:34 UTC; relatarea curatoriată — runda Serie C, fondul suveran AI britanic, evaluarea „peste 5 mld. £” potrivit guvernului)<span class="host">techcrunch.com</span></a></li>
+              <li><a href="https://www.lse.co.uk/news/uk-backed-ai-chip-startup-fractile-hits-7-billion-valuation-in-funding-round-osp4ohh8nq8eeea.html" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Reuters (relatat de LSE, 11 nov 2026, 14:47 UTC) — „UK-backed AI chip startup Fractile hits $7 billion valuation in funding round” (runda de 720 mil. $, evaluarea de 7 mld. $, conducerea rundei și lista investitorilor)<span class="host">lse.co.uk</span></a></li>
+              <li><a href="https://alpha-maven.com/story/venture-capital/uk-chip-start-up-fractile-hits-7bn-valuation-financial-times" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Financial Times (11 nov 2026, relatat de AlphaMaven) — „UK chip start-up Fractile hits $7bn valuation” (evaluarea de 7 mld. $, în creștere de la circa 1,1 mld. $ în mai; compania n-a lansat încă un cip de producție)<span class="host">alpha-maven.com</span></a></li>
+              <li><a href="https://www.avenews.am/en/posts/fractile-500-million-pound-funding" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>The Guardian (11 nov 2026, relatat de AveNews) — „Fractile raises £500 million, UK chancellor says” (cancelarul John Healey, în Parlament: runda de 500 mil. £, evaluare de 7 mld. $, cea mai mare rundă europeană de semiconductori de până acum)<span class="host">avenews.am</span></a></li>
+            </ul>
+          </div>
+          <div class="impact">
+            <span class="badge">Impact direct</span>
+            <p>Impact direct: minim azi — fără dețineri la Fractile și fără un cip pe piață de cumpărat. Relevanță de context înaltă: dacă Fractile livrează în 2027 ce promite, costul inferenței — deci și al rulării agenților AI — poate scădea semnificativ, iar Europa capătă un furnizor propriu de hardware AI; de urmărit livrarea primului cip și confirmarea acordului cu Anthropic.</p>
+          </div>
+        </article>
+
+        <!-- 2 · 12 nov · 06:00 -->
+        <article id="stire-174" data-cats="tech" data-sev="amber" data-subiect="CoreWeave cere plăți în avans">
+          <div class="a-meta">
+            <span class="a-time">12 nov · 06:00</span>
+            <span class="a-cat">Tech &amp; AI</span>
+            <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
+            <span class="subj-pill">CoreWeave cere plăți în avans</span>
+            <span class="a-num">#2 / 2</span>
+          </div>
+          <h2>CoreWeave își schimbă finanțarea boom-ului AI: cere clienților plăți în avans de ~9 mld. $ în 3 luni, ca să nu se mai împrumute scump</h2>
+          <div class="sec">
+            <p class="sec-label">Ce s-a întâmplat</p>
+            <p>CoreWeave, compania americană de cloud specializat pe AI, a raportat pentru trimestrul 3 din 2026 venituri de 3,66 miliarde de dolari, în creștere cu 168% față de anul trecut, peste așteptările analiștilor — dar și o pierdere netă de 709 milioane de dolari (față de 110 milioane în aceeași perioadă a anului trecut) și cheltuieli cu dobânzile de 846 de milioane de dolari pe trimestru. Compania spune că cererea depășește de 10 ori capacitatea disponibilă pentru 2027, iar comenzile contractate (backlog) au ajuns la 132,5 miliarde de dolari. Pentru a finanța extinderea fără să se împrumute pe piața obligațiunilor negarantate la randamentele actuale — „Nu vom folosi piața datoriilor negarantate ca să ne finanțăm afacerea la randamentele curente și nici nu avem nevoie”, a spus CEO-ul Michael Intrator — CoreWeave se bazează tot mai mult pe împrumuturi garantate cu contracte de client și pe plăți în avans: așteaptă circa 9 miliarde de dolari sub formă de plăți anticipate și depozite în următoarele trei luni, din care peste 3 miliarde din contracte noi pentru capacitate deja construită. Compania și-a ridicat și prognoza de venituri pentru 2026, la 13–13,3 miliarde de dolari.</p>
+          </div>
+          <div class="sec">
+            <p class="sec-label">De ce contează</p>
+            <p>CoreWeave e conducta de finanțare a boom-ului AI: închiriază puterea de calcul din spatele modelelor, iar modelul lui de business arată cum se plătește, de fapt, extinderea — nu din profituri, ci din plăți anticipate ale clienților și datorie garantată cu contracte. Când CoreWeave spune că nu se mai împrumută negarantat la prețurile pieței, e un semnal despre costul capitalului pentru toată infrastructura AI — inclusiv pentru laboratoarele ale căror API-uri le folosește zilnic (Anthropic, OpenAI). Firul continuă arcul economiei AI urmărit aici: veniturile OpenAI au trecut de 10 mld. $ pe trimestru, Anthropic se listează la o evaluare uriașă, iar în spate, infrastructura se finanțează tot mai mult din banii clienților, plătiți înainte.</p>
+          </div>
+          <div class="verify">
+            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
+            <p>Verdict: confirmat. TechCrunch (11 nov 2026, 19:54 UTC) — relatarea originală: schimbarea modelului de finanțare, cifrele trimestrului și declarația CEO-ului. EBC Financial Group (11 nov 2026) — confirmare independentă: venituri 3,66 mld. $, pierdere 709 mil. $, plăți anticipate de ~9 mld. $. Motley Fool (11 nov 2026, transcrierea apelului cu investitorii) — confirmă backlogul de 132,5 mld. $, preplățile de 9 mld. $ și prognoza ridicată. Reuters (relatat de HeadlinesXtra, 11 nov 2026) — datoria totală de circa 46,9 mld. $ la finalul lui septembrie. Notă de integritate: backlogul de 132,5 mld. $ e valoare contractată viitoare, nu bani încasați — depinde de livrarea capacității și de îndeplinirea cerințelor de disponibilitate; iar cele 9 mld. $ sunt o așteptare, nu numerar primit; în acest an, preplățile au acoperit deja 70% din contracte, cu finanțare de până la 100% din valoarea contractului în avans (transcrierea apelului cu investitorii).</p>
+            <ul class="sources">
+              <li><a href="https://techcrunch.com/2026/11/11/coreweave-turns-to-customer-prepayments-shorter-contracts-to-fund-ai-growth/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>TechCrunch — „CoreWeave turns to customer prepayments, shorter contracts to fund AI growth” (11 nov 2026, 19:54 UTC; relatarea curatoriată — preplățile clienților, împrumuturile garantate cu contracte, declarația CEO-ului)<span class="host">techcrunch.com</span></a></li>
+              <li><a href="https://www.ebc.com/forex/coreweave-q3-2026-earnings-preview-crwv-stock" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>EBC Financial Group — „CoreWeave Q3 Revenue Jumps 168% to $3.66 Billion, but Loss Widens to $709 Million” (11 nov 2026; venituri 3,66 mld. $, pierdere 709 mil. $, preplăți de ~9 mld. $)<span class="host">ebc.com</span></a></li>
+              <li><a href="https://www.fool.com/earnings/call-transcripts/2026/11/10/coreweave-crwv-q3-2026-earnings-call-transcript/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Motley Fool — „CoreWeave (CRWV) Q3 2026 Earnings Call Transcript” (11 nov 2026; backlog 132,5 mld. $, preplăți 9 mld. $, prognoza ridicată la 13–13,3 mld. $)<span class="host">fool.com</span></a></li>
+              <li><a href="https://investors.coreweave.com/files/content_files/CoreWeave-3Q26-Transcript-_1_.pdf" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>CoreWeave — transcrierea apelului cu investitorii (10 nov 2026; sursă primară a companiei, parte implicată, nu confirmare independentă)<span class="host">investors.coreweave.com</span></a></li>
+              <li><a href="https://headlinesxtra.com/2026/11/11/coreweave-q3-2026-ai-revenue-outlook-debt-capex-november-2026/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>HeadlinesXtra (relatează Reuters, 11 nov 2026) — „CoreWeave Raises 2026 Outlook As AI Revenue Surges” (datoria totală de circa 46,9 mld. $ la finalul lui septembrie)<span class="host">headlinesxtra.com</span></a></li>
+            </ul>
+          </div>
+          <div class="impact">
+            <span class="badge">Impact direct</span>
+            <p>Impact direct: minim azi — fără dețineri la CoreWeave. Relevanță de context: modelul cu plăți în avans mută riscul finanțării infrastructurii AI către clienți — dacă cererea încetinește, presiunea pe prețurile serviciilor AI crește; de urmărit livrarea backlogului de 132,5 mld. $ și evoluția datoriei de 46,9 mld. $.</p>
+          </div>
+        </article>
+
+      </main>
+      </section>
+
+
+      <section class="day day-archive" id="zi-2026-11-11">
+        <div class="day-head">
+          <h2>Miercuri, 11 noiembrie 2026</h2>
+          <span>Ediția de ieri · 20 știri · arhivă (ultimele 7 zile)</span>
+        </div>
 
       <!-- Chenar permanent: știrea cea mai importantă a zilei — sub fereastra
            „Ultimele știri", ÎNAINTEA dashboardului, vizibilă din prima, fără scroll.
@@ -5456,1089 +5641,11 @@
       </main>
       </section>
 
-      <section class="day day-archive" id="zi-2026-11-05">
-        <div class="day-head">
-          <h2>Joi, 5 noiembrie 2026</h2>
-          <span>Ediția de ieri · 24 știri · arhivă (ultimele 7 zile)</span>
-        </div>
-
-      <!-- Chenar permanent: știrea cea mai importantă a zilei — sub fereastra
-           „Ultimele știri", ÎNAINTEA dashboardului, vizibilă din prima, fără scroll.
-           Nivelul de azi: GALBEN (sev-amber) — de urmărit, evoluție importantă, fără acțiune imediată:
-           bugetul de urgență belgian confirmat de De Wever — premierul recunoaște
-           «un eșec oribil», regele decide vineri soarta demisiei (cea mai importantă
-           dintre cele treisprezece știri galbene ale zilei, țara în care locuiește).
-           Chenarul rămâne în afara logicii de filtrare: vizibil indiferent de filtrul de categorie. -->
-      <section class="spot sev-amber" aria-label="Știrea cea mai importantă a zilei">
-        <div class="spot-head">
-          <span class="spot-kicker">
-            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13 2 4.5 13.5H11L9.5 22 19 10h-6.5L13 2z"/></svg>
-            Știrea zilei · Atenție rapidă
-          </span>
-          <span class="spot-time">5 nov · 19:00</span>
-          <span class="spot-pill">Nivel galben — de urmărit</span>
-        </div>
-        <h2 class="spot-title">De Wever confirmă bugetul de urgență pentru 2027 — «un eșec oribil»; regele decide vineri soarta demisiei</h2>
-        <p class="spot-why"><strong>De ce e în față:</strong> E țara în care locuiește: un buget de urgență înseamnă că statul poate cheltui lunar cel mult o doisprezecime din cheltuielile anului precedent și îngheață investițiile publice noi — pentru al doilea an consecutiv (și la începutul lui 2026 a fost buget de urgență, trei luni). Regele Philippe a încheiat joi la prânz consultările cu liderii coaliției și îl primește vineri pe De Wever, când trebuie să decidă: acceptă demisia depusă luni sau mai dă guvernului timp pentru un acord.</p>
-        <p class="spot-lead">Premierul Bart De Wever a confirmat joi, în Parlament, că Belgia va începe 2027 cu un buget de urgență, în sistem de douăsprezeceimi provizorii — deși cu mai puțin de o lună în urmă spunea că un astfel de scenariu „nu este o opțiune”. Coaliția federală a negociat circa două luni un acord pentru reducerea deficitului cu 10 miliarde € până în 2029, fără succes. „Pentru guvern, acesta este un eșec oribil”, a spus De Wever.</p>
-        <p class="spot-more" hidden><span class="spot-more-text"></span> <button class="spot-more-btn" type="button">apasă aici</button></p>
-        <div class="spot-foot">
-          <a class="spot-link" href="#stire-68">Citește știrea completă ↓</a>
-          <div class="sev-scale" role="img" aria-label="Scară de gravitate: verde — normal, galben — de urmărit, roșu — grav. Nivelul de azi: galben.">
-            <span class="sev-item"><i class="sev-dot g" aria-hidden="true"></i>Verde · normal</span>
-            <span class="sev-item on"><i class="sev-dot y" aria-hidden="true"></i>Galben · de urmărit</span>
-            <span class="sev-item"><i class="sev-dot r" aria-hidden="true"></i>Roșu · grav</span>
-          </div>
-        </div>
-      </section>
-
-      <!-- Dashboard -->
-      <section class="dashboard" aria-label="Panou de ansamblu">
-        <div class="dash-head">
-          <span class="dash-title">Dashboard · Azi</span>
-          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 22:00</span>
-          <span class="dash-meta">Fereastră monitorizare <strong>L–V 06:00–22:00 · S–D 07:30–22:00</strong> · pas ~3 ore</span>
-        </div>
-
-        <div class="kpi-grid" role="group" aria-label="Filtrează după categorie — apasă pe un tile">
-          <button class="kpi" type="button" data-filter="toate" aria-pressed="true">
-            <span class="kpi-top"><span class="kpi-label">Toate știrile</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">24</span>
-            <span class="kpi-sub">știri verificate azi, în 16 rulări</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:100%"></i></span>
-            <span class="kpi-hint">Apasă pentru toate</span>
-          </button>
-          <button class="kpi" type="button" data-filter="securitate" aria-pressed="false">
-            <span class="kpi-top"><span class="kpi-label">Securitate &amp; NATO</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">11</span>
-            <span class="kpi-sub">avertisment SUA: atacuri asupra frigiderelor · GPT-6 Cyber, rating „Critical” · nou șef al apărării germane · NATO accelerează anti-dronă · amenințări cu bombă: «Male State» · conferința de securitate Berlin · amenințări cu bombă la avioane · AI găsește 948 exploituri root Linux · Colby la București · atacuri cibernetice asupra frigiderelor · rachetă europeană de atac rapid</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:46%"></i></span>
-            <span class="kpi-hint">Apasă pentru a filtra →</span>
-          </button>
-          <button class="kpi" type="button" data-filter="romania" aria-pressed="false">
-            <span class="kpi-top"><span class="kpi-label">România</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">2</span>
-            <span class="kpi-sub">Colby la București · PNRR: 3,4 mld € în suspensie</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:8%"></i></span>
-            <span class="kpi-hint">Apasă pentru a filtra →</span>
-          </button>
-          <button class="kpi" type="button" data-filter="tech" aria-pressed="false">
-            <span class="kpi-top"><span class="kpi-label">Tech &amp; AI</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">11</span>
-            <span class="kpi-sub">GPT-6 Cyber, rating „Critical” · Claude citește conturi bancare · livrare cu drone la scară · Dropbox cumpără Tigris (350 mil. $) · agenți AI caută în fișiere · AI găsește 948 exploituri root Linux · agenții AI nu comandă curse · PAC-urile AI au pierdut în SUA · Meta cumpără Conductor · Apple taie bugetele AI · respingerea centrelor de date AI</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:46%"></i></span>
-            <span class="kpi-hint">Apasă pentru a filtra →</span>
-          </button>
-        </div>
-
-        <div class="dash-foot">
-          <div class="dash-panel">
-            <h3>Ritmul zilei — știri pe rulare</h3>
-            <div class="rhythm" role="group" aria-label="Filtru după ora publicării — apasă pe o rulare ca să vezi doar știrile ei">
-              <button class="col" type="button" data-hour="06:00" aria-pressed="false" aria-label="Filtrează știrile de la ora 06:00 — 2 știri"><span class="n">2</span><span class="bar" style="height:40px"></span><span class="t">06:00</span></button>
-              <button class="col" type="button" data-hour="08:00" aria-pressed="false" aria-label="Filtrează știrile de la ora 08:00 — 2 știri"><span class="n">2</span><span class="bar" style="height:40px"></span><span class="t">08:00</span></button>
-              <button class="col" type="button" data-hour="09:00" aria-pressed="false" aria-label="Filtrează știrile de la ora 09:00 — 2 știri"><span class="n">2</span><span class="bar" style="height:40px"></span><span class="t">09:00</span></button>
-              <button class="col" type="button" data-hour="10:00" aria-pressed="false" aria-label="Filtrează știrile de la ora 10:00 — 2 știri"><span class="n">2</span><span class="bar" style="height:40px"></span><span class="t">10:00</span></button>
-              <button class="col" type="button" data-hour="11:00" aria-pressed="false" aria-label="Filtrează știrile de la ora 11:00 — 2 știri"><span class="n">2</span><span class="bar" style="height:40px"></span><span class="t">11:00</span></button>
-              <button class="col" type="button" data-hour="12:00" aria-pressed="false" aria-label="Filtrează știrile de la ora 12:00 — 1 știre"><span class="n">1</span><span class="bar" style="height:22px"></span><span class="t">12:00</span></button>
-              <button class="col" type="button" data-hour="13:00" aria-pressed="false" aria-label="Filtrează știrile de la ora 13:00 — 1 știre"><span class="n">1</span><span class="bar" style="height:22px"></span><span class="t">13:00</span></button>
-              <button class="col" type="button" data-hour="14:00" aria-pressed="false" aria-label="Filtrează știrile de la ora 14:00 — 1 știre"><span class="n">1</span><span class="bar" style="height:22px"></span><span class="t">14:00</span></button>
-              <button class="col" type="button" data-hour="15:00" aria-pressed="false" aria-label="Filtrează știrile de la ora 15:00 — 1 știre"><span class="n">1</span><span class="bar" style="height:22px"></span><span class="t">15:00</span></button>
-              <button class="col" type="button" data-hour="16:00" aria-pressed="false" aria-label="Filtrează știrile de la ora 16:00 — 1 știre"><span class="n">1</span><span class="bar" style="height:22px"></span><span class="t">16:00</span></button>
-              <button class="col" type="button" data-hour="17:00" aria-pressed="false" aria-label="Filtrează știrile de la ora 17:00 — 2 știri"><span class="n">2</span><span class="bar" style="height:40px"></span><span class="t">17:00</span></button>
-              <button class="col" type="button" data-hour="18:00" aria-pressed="false" aria-label="Filtrează știrile de la ora 18:00 — 2 știri"><span class="n">2</span><span class="bar" style="height:40px"></span><span class="t">18:00</span></button>
-              <button class="col" type="button" data-hour="19:00" aria-pressed="false" aria-label="Filtrează știrile de la ora 19:00 — 1 știre"><span class="n">1</span><span class="bar" style="height:22px"></span><span class="t">19:00</span></button>
-              <button class="col" type="button" data-hour="20:00" aria-pressed="false" aria-label="Filtrează știrile de la ora 20:00 — 2 știri"><span class="n">2</span><span class="bar" style="height:40px"></span><span class="t">20:00</span></button>
-              <button class="col" type="button" data-hour="21:00" aria-pressed="false" aria-label="Filtrează știrile de la ora 21:00 — 1 știre"><span class="n">1</span><span class="bar" style="height:22px"></span><span class="t">21:00</span></button>
-              <button class="col" type="button" data-hour="22:00" aria-pressed="false" aria-label="Filtrează știrile de la ora 22:00 — 1 știre"><span class="n">1</span><span class="bar" style="height:22px"></span><span class="t">22:00</span></button>
-            </div>
-            <p class="rhythm-hint">Apasă pe o bară ca să vezi doar știrile din rularea aceea; apasă din nou pe ea pentru toate.</p>
-          </div>
-          <div class="dash-panel">
-            <h3>Stare ediție</h3>
-            <ul class="status-list">
-              <li><span class="k">Ultima actualizare</span><span class="v">Azi, 22:00</span></li>
-              <li><span class="k">Cea mai nouă</span><span class="v">avertisment SUA: atacuri asupra frigiderelor · 22:00</span></li>
-              <li><span class="k">Acoperire</span><span class="v">Ultimele 7 zile în arhivă</span></li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <div class="filter-status" aria-live="polite">
-        <span class="filter-label">Se afișează: <strong>Toate categoriile — 24 din 24 știri</strong></span>
-        <button class="filter-reset" type="button" hidden>Resetează filtrul</button>
-      </div>
-
-      <nav class="index" aria-label="Cuprinsul zilei">
-        <div class="index-head">
-          <h2>Cuprins</h2>
-          <span>apasă pe un titlu ca să sari direct la știre · se sincronizează cu filtrul</span>
-        </div>
-        <ol class="index-list">
-          <li data-cats="securitate"><a href="#stire-72"><time>22:00</time><span class="cat-dot sec" aria-hidden="true"></span><span class="t">SUA avertizează asupra unei „amenințări cibernetice continue": atacuri asupra frigiderelor industriale, inclusiv ale bazelor militare</span><span class="n">#1</span></a></li>
-          <li data-cats="securitate tech"><a href="#stire-71"><time>21:00</time><span class="cat-dot sec" aria-hidden="true"></span><span class="t">OpenAI lansează GPT-6 Cyber, model de securitate cibernetică cu rating intern „Critical” — poate găsi și exploata zero-day-uri</span><span class="n">#2</span></a></li>
-          <li data-cats="tech"><a href="#stire-69"><time>20:00</time><span class="cat-dot tech" aria-hidden="true"></span><span class="t">Claude poate citi acum conturile bancare: Anthropic lansează Personal Finance, doar citire, prin Plaid — deocamdată doar în SUA</span><span class="n">#3</span></a></li>
-          <li data-cats="securitate"><a href="#stire-70"><time>20:00</time><span class="cat-dot sec" aria-hidden="true"></span><span class="t">Germania își schimbă șeful apărării: generalul Freuding preia Bundeswehr în februarie 2027, iar Breuer merge la conducerea Comitetului Militar NATO</span><span class="n">#4</span></a></li>
-          <li data-cats="belgia"><a href="#stire-68"><time>19:00</time><span class="cat-dot" style="background:var(--muted)" aria-hidden="true"></span><span class="t">De Wever confirmă bugetul de urgență pentru 2027 — «un eșec oribil»; regele decide vineri soarta demisiei</span><span class="n">#5</span></a></li>
-          <li data-cats="securitate"><a href="#stire-66"><time>18:00</time><span class="cat-dot sec" aria-hidden="true"></span><span class="t">NATO lansează piața de tehnologii anti-dronă: 16 soluții selectate de la cinci companii, cu 3,1 mil. € pentru testare</span><span class="n">#6</span></a></li>
-          <li data-cats="tech"><a href="#stire-67"><time>18:00</time><span class="cat-dot tech" aria-hidden="true"></span><span class="t">Zipline ajunge la 21,5 mld. $: Walmart adaugă 300 de site-uri de livrare cu drone în SUA</span><span class="n">#7</span></a></li>
-          <li data-cats="securitate belgia"><a href="#stire-64"><time>17:00</time><span class="cat-dot sec" aria-hidden="true"></span><span class="t">Amenințările cu bombă la avioanele europene: un e-mail revendicat de gruparea rusă «Male State»; până la 25 de zboruri afectate, niciun dispozitiv găsit</span><span class="n">#8</span></a></li>
-          <li data-cats="tech"><a href="#stire-65"><time>17:00</time><span class="cat-dot tech" aria-hidden="true"></span><span class="t">Dropbox cumpără Tigris Data cu 350 mil. $ și lansează DBX Agent Cloud — stocare gândită pentru agenți AI</span><span class="n">#9</span></a></li>
-          <li data-cats="tech"><a href="#stire-63"><time>16:00</time><span class="cat-dot tech" aria-hidden="true"></span><span class="t">Box și Nvidia lansează un motor de căutare gândit pentru agenți AI: răspunsuri de 4 ori mai rapide în fișierele companiei</span><span class="n">#10</span></a></li>
-          <li data-cats="securitate"><a href="#stire-62"><time>15:00</time><span class="cat-dot sec" aria-hidden="true"></span><span class="t">Șeful Comitetului Militar al NATO, la Conferința de Securitate de la Berlin: «Nu suntem în război, dar cu siguranță nu suntem în pace»</span><span class="n">#11</span></a></li>
-          <li data-cats="securitate belgia"><a href="#stire-61"><time>14:00</time><span class="cat-dot sec" aria-hidden="true"></span><span class="t">Val de amenințări cu bombă la zboruri europene: curse deviate în Franța, Belgia, Bulgaria și Italia — niciun dispozitiv găsit</span><span class="n">#12</span></a></li>
-          <li data-cats="securitate tech"><a href="#stire-60"><time>13:00</time><span class="cat-dot sec" aria-hidden="true"></span><span class="t">OpenAI: un pipeline AI a găsit 948 de exploituri root în kernelul Linux într-o singură rulare de ~30 de ore, cu 1,2 milioane $ costuri API</span><span class="n">#13</span></a></li>
-          <li data-cats="tech"><a href="#stire-59"><time>12:00</time><span class="cat-dot tech" aria-hidden="true"></span><span class="t">Aproape nimeni nu folosește agenți AI ca să-și comande Uber: doar 4 curse într-o săptămână-record</span><span class="n">#14</span></a></li>
-          <li data-cats="tech"><a href="#stire-57"><time>11:00</time><span class="cat-dot tech" aria-hidden="true"></span><span class="t">PAC-urile AI au cheltuit milioane ca să-și aleagă Congresul — și au pierdut în mare parte</span><span class="n">#15</span></a></li>
-          <li data-cats="belgia"><a href="#stire-58"><time>11:00</time><span class="cat-dot" style="background:var(--muted)" aria-hidden="true"></span><span class="t">Ahold Delhaize pune preț pe atacul cibernetic din octombrie: până la 250 de milioane € din vânzări pierdute</span><span class="n">#16</span></a></li>
-          <li data-cats="securitate romania"><a href="#stire-55"><time>10:00</time><span class="cat-dot sec" aria-hidden="true"></span><span class="t">Colby la București: România își mărește contribuția la NATO, în timp ce Pentagonul decide soarta trupelor SUA în Europa</span><span class="n">#17</span></a></li>
-          <li data-cats="tech"><a href="#stire-56"><time>10:00</time><span class="cat-dot tech" aria-hidden="true"></span><span class="t">Meta cumpără Conductor, startupul care rulează mai mulți agenți de coding AI în paralel</span><span class="n">#18</span></a></li>
-          <li data-cats="romania"><a href="#stire-53"><time>09:00</time><span class="cat-dot ro" aria-hidden="true"></span><span class="t">România riscă să piardă 3,4 miliarde de euro din PNRR: ministrul Fondurilor Europene anunță că banii intră în suspendare</span><span class="n">#19</span></a></li>
-          <li data-cats="tech"><a href="#stire-54"><time>09:00</time><span class="cat-dot tech" aria-hidden="true"></span><span class="t">Apple taie bugetele interne de AI ale angajaților: plafonul zilnic scade de la 300 la 200 de dolari</span><span class="n">#20</span></a></li>
-          <li data-cats="securitate"><a href="#stire-51"><time>08:00</time><span class="cat-dot sec" aria-hidden="true"></span><span class="t">Atacurile cibernetice asupra frigiderelor din Europa escaladează: trei bănci de sânge franceze lovite; România, printre țările vizate</span><span class="n">#21</span></a></li>
-          <li data-cats="belgia"><a href="#stire-52"><time>08:00</time><span class="cat-dot" style="background:var(--muted)" aria-hidden="true"></span><span class="t">Criza bugetară belgiană: regele încheie azi consultările; trei scenarii pe masă — alegeri, coaliție nouă sau acord pe buget</span><span class="n">#22</span></a></li>
-          <li data-cats="tech"><a href="#stire-49"><time>06:00</time><span class="cat-dot tech" aria-hidden="true"></span><span class="t">Votanții americani au respins centrele de date AI la alegerile de la jumătatea mandatului: restricții în zeci de localități, Ohio în frunte</span><span class="n">#23</span></a></li>
-          <li data-cats="securitate"><a href="#stire-50"><time>06:00</time><span class="cat-dot sec" aria-hidden="true"></span><span class="t">MBDA pregătește racheta supersonică Stratus RS: rază «mult, mult» peste Exocet, pentru Franța și Marea Britanie</span><span class="n">#24</span></a></li>
-        </ol>
-      </nav>
-
-      <p class="empty">Nicio știre în această categorie azi.</p>
-
-      <main>
-        <!-- 1 · 5 nov · 22:00 -->
-        <article id="stire-72" data-cats="securitate">
-          <div class="a-meta">
-            <span class="a-time">5 nov · 22:00</span>
-            <span class="a-cat">Securitate &amp; NATO · Securitate cibernetică</span>
-            <span class="a-num">#1 / 24</span>
-          </div>
-          <h2>SUA avertizează asupra unei „amenințări cibernetice continue": atacuri asupra frigiderelor industriale, inclusiv ale bazelor militare</h2>
-
-          <div class="followup">
-            <span class="tag">Urmare la</span>
-            <p><a href="#stire-51">„Atacurile cibernetice asupra frigiderelor din Europa escaladează: trei bănci de sânge franceze lovite; România, printre țările vizate”</a> — joi, 5 noiembrie 2026, ora 08:00.</p>
-          </div>
-
-          <div class="sec">
-            <p class="sec-label">Ce s-a întâmplat</p>
-            <p>CISA, FBI și departamentele americane ale Sănătății, Agriculturii și Transporturilor au emis joi, 5 noiembrie, o avertizare comună: actori cibernetici vizează controlere electronice de temperatură și de refrigerare comercială accesibile de pe internet, în supermarketuri și depozite frigorifice. Atacatorii pot schimba de la distanță setările de temperatură și pot forța cicluri continue de încălzire sau dezgheț — cu risc de pierdere a stocurilor, avarii ale echipamentelor și pericol de incendiu. Departamentul american al Apărării investighează atacuri asupra frigiderelor bazelor militare (circa șase comisariate afectate de la finalul lui august, potrivit Nextgov/FCW), iar cel puțin o bancă de sânge a fost lovită.</p>
-          </div>
-
-          <div class="sec">
-            <p class="sec-label">De ce contează</p>
-            <p>Escaladarea valului urmărit de la 2 noiembrie (Delhaize/Carrefour în Belgia) și din dimineața de 5 noiembrie (bănci de sânge franceze; România printre țările vizate): avertizarea vine acum la nivel guvernamental american și include infrastructură militară și medicală. E tiparul de incident asupra sistemelor operaționale / IoT la scară — exact terenul lui de incident management. Pentru familie: magazinele belgiene au fost deja afectate la 2 noiembrie, cu rafturi golite temporar.</p>
-          </div>
-
-          <div class="verify">
-            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
-            <p>Verdict: confirmat. Surse: TechCrunch (sursă curatoriată, 5 noiembrie 2026, 18:48 UTC) relatează avertizarea comună a agențiilor americane; Reuters (confirmare independentă, relatare de Raphael Satter, 5 noiembrie 2026) și Nextgov/FCW (confirmare independentă, cu raportare proprie, 5 noiembrie 2026) confirmă avertizarea și investigația privind frigiderele bazelor militare; comunicatul comun CISA/FBI/HHS/USDA/DoT (sursă primară, 5 noiembrie 2026) îndeamnă la întărirea sistemelor industriale de refrigerare și de monitorizare a lanțului frigorific. Precizare de atribuire: comunicatul nu numește niciun responsabil; cercetătorii în securitate atribuie în general atacurile Iranului, iar oficiali americani îl suspectează pe Iran — fără confirmare oficială.</p>
-            <ul class="sources">
-              <li><a href="https://techcrunch.com/2026/11/05/u-s-government-warns-of-ongoing-cyber-threat-amid-mass-hacks-of-industrial-retail-and-military-freezers/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>TechCrunch (sursă curatoriată) — „U.S. government warns of 'ongoing cyber threat' amid mass hacks of industrial, retail and military freezers” (5 noiembrie 2026, 18:48 UTC)<span class="host">techcrunch.com</span></a></li>
-              <li><a href="https://duke.fm/2026/11/05/us-warns-of-ongoing-cyber-threat-to-industrial-refrigeration-systems/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Reuters — „US warns of ongoing cyber threat to industrial refrigeration systems” (relatare de Raphael Satter, 5 noiembrie 2026)<span class="host">duke.fm</span></a></li>
-              <li><a href="https://www.nextgov.com/cybersecurity/2026/11/us-agencies-warn-refrigeration-hacks-amid-suspected-attacks-military-bases/417071/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Nextgov/FCW — „US agencies warn of refrigeration hacks amid suspected attacks on military bases” (5 noiembrie 2026)<span class="host">nextgov.com</span></a></li>
-              <li><a href="https://www.itsecuritynews.info/us-government-partners-urge-hardening-industrial-refrigeration-and-cold-chain-monitoring-systems/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Comunicatul comun CISA/FBI/HHS/USDA/DoT (sursă primară) — întărirea sistemelor industriale de refrigerare și de monitorizare a lanțului frigorific (5 noiembrie 2026)<span class="host">itsecuritynews.info</span></a></li>
-            </ul>
-          </div>
-
-          <div class="impact">
-            <span class="badge">Impact direct</span>
-            <p>Impact direct: minim — avertizarea e preventivă și nu raportează pagube noi în Belgia azi; relevanță profesională: campanie activă asupra infrastructurii critice (alimentație, sănătate, transport, baze militare), cu măsuri de protecție publicate de CISA — tiparul de incident urmărit în domeniul lui de incident management.</p>
-          </div>
-        </article>
-
-        <!-- 2 · 5 nov · 21:00 -->
-        <article id="stire-71" data-cats="securitate tech">
-          <div class="a-meta">
-            <span class="a-time">5 nov · 21:00</span>
-            <span class="a-cat">Tech &amp; AI / Securitate</span>
-            <span class="a-num">#2 / 24</span>
-          </div>
-          <h2>OpenAI lansează GPT-6 Cyber, model de securitate cibernetică cu rating intern „Critical” — poate găsi și exploata zero-day-uri</h2>
-
-          <div class="followup">
-            <span class="tag">Urmare la</span>
-            <p><a href="#stire-60">„OpenAI: un pipeline AI a găsit 948 de exploituri root în kernelul Linux într-o singură rulare de ~30 de ore, cu 1,2 milioane $ costuri API”</a> — joi, 5 noiembrie 2026, ora 13:00.</p>
-          </div>
-
-          <div class="sec">
-            <p class="sec-label">Ce s-a întâmplat</p>
-            <p>OpenAI a lansat joi, 5 noiembrie, GPT-6 Cyber — un model construit special pentru a găsi vulnerabilități software și a arăta cum pot fi exploatate — către un grup restrâns de clienți verificați din programul Daybreak Red, nivelul de acces controlat pentru securitate ofensivă autorizată (pen-test, exploituri proof-of-concept, red teaming). OpenAI a ridicat clasificarea internă de securitate cibernetică a modelului la „Critical”, cel mai înalt nivel din cadrul său de pregătire — de la „High”, cât avea GPT-5.6 Cyber: asta înseamnă că modelul poate identifica și dezvolta exploituri zero-day funcționale în sisteme critice reale și poate executa atacuri cibernetice end-to-end. În testele companiei, modelul a găsit 81 de vulnerabilități noi în Firefox, etichetate de Mozilla ca fiind de severitate înaltă, și a ajutat la construirea de exploituri funcționale pentru 948 de vulnerabilități din kernelul Linux, dintre care 588 necunoscute anterior; OpenAI spune că a dezvăluit 304 constatări critice Linux către mentenanți, împreună cu patchuri propuse. Accesul se va extinde la toți clienții Daybreak Red aprobați în următoarele săptămâni, iar GPT-5.6 Cyber devine disponibil pentru același grup începând de joi.</p>
-          </div>
-
-          <div class="sec">
-            <p class="sec-label">De ce contează</p>
-            <p>E continuarea directă a știrii de la 13:00 — pipeline-ul care a găsit 948 de exploituri root în kernelul Linux — doar că acum instrumentul devine produs: un model care nu doar găsește breșe, ci și le exploatează, oferit deocamdată doar apărătorilor verificați. Pentru un IT incident Manager, asta înseamnă două lucruri în același timp: apărătorii capătă un instrument nou de testare a propriilor sisteme, iar atacatorii vor avea în curând același tip de capabilitate — cursa patchuirii se scurtează din nou. OpenAI însăși spune că există o fereastră îngustă în care apărătorii trebuie să acționeze înainte ca modelele să devină și mai bune la hacking și mai ușor de accesat; compania a anunțat și o inițiativă de 1 miliard $ pentru profesioniștii din securitate care lucrează pe infrastructură critică, precum rețeaua electrică sau sistemele de apă.</p>
-          </div>
-
-          <div class="verify">
-            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
-            <p>Verdict: confirmat. Surse: Reuters — „OpenAI launches GPT-6 Cyber with 'Critical' cybersecurity rating” (5 nov 2026), https://www.reuters.com/technology/openai-launches-gpt-6-cyber-with-critical-cybersecurity-rating-2026-11-05/ ; The Register — „OpenAI releases GPT-6 Cyber, and promises this one stays within 'rules of engagement'” (5 nov 2026), https://www.theregister.com/security/2026/11/05/openai-releases-gpt-6-cyber-and-promises-this-one-stays-within-rules-of-engagement/5307855 ; TechCrunch — „OpenAI released a new cybersecurity model. Is that enough?” (5 nov 2026), https://techcrunch.com/2026/11/05/openai-released-a-new-cybersecurity-model-is-that-enough/ . Nuanță de integritate: cifrele (81 Firefox, 948 Linux, 588 necunoscute anterior) sunt ale OpenAI și n-au fost verificate independent; în evaluarea ExploitGym a companiei, GPT-6 Cyber a obținut 48,5%.</p>
-            <ul class="sources">
-              <li><a href="https://www.reuters.com/technology/openai-launches-gpt-6-cyber-with-critical-cybersecurity-rating-2026-11-05/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Reuters — „OpenAI launches GPT-6 Cyber with 'Critical' cybersecurity rating” (5 noiembrie 2026)<span class="host">reuters.com</span></a></li>
-              <li><a href="https://www.theregister.com/security/2026/11/05/openai-releases-gpt-6-cyber-and-promises-this-one-stays-within-rules-of-engagement/5307855" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>The Register — „OpenAI releases GPT-6 Cyber, and promises this one stays within 'rules of engagement'” (5 noiembrie 2026)<span class="host">theregister.com</span></a></li>
-              <li><a href="https://techcrunch.com/2026/11/05/openai-released-a-new-cybersecurity-model-is-that-enough/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>TechCrunch — „OpenAI released a new cybersecurity model. Is that enough?” (5 noiembrie 2026)<span class="host">techcrunch.com</span></a></li>
-            </ul>
-          </div>
-
-          <div class="opposing">
-            <p class="sec-label">Tabăra adversă</p>
-            <p>TechCrunch notează că programul Daybreak are doar „mii” de profesioniști în securitate participanți, față de un număr mult mai mare de potențiali atacatori — deci capabilitatea ajunge mai întâi la puțini apărători. (<a href="https://techcrunch.com/2026/11/05/openai-released-a-new-cybersecurity-model-is-that-enough/" target="_blank" rel="noopener">TechCrunch</a>)</p>
-            <p>The Register amintește că OpenAI a anulat recent lansarea planificată a GPT-6.1 Astra, pentru că modelul devenise mai bun la a-și urmări sarcinile, dar mai slab la a rămâne în limitele autorizate; GPT-6 Cyber promite o mai bună respectare a „regulilor de angajament” ale cercetătorilor. (<a href="https://www.theregister.com/security/2026/11/05/openai-releases-gpt-6-cyber-and-promises-this-one-stays-within-rules-of-engagement/5307855" target="_blank" rel="noopener">The Register</a>)</p>
-          </div>
-
-          <div class="impact">
-            <span class="badge">Impact direct</span>
-            <p>Impact direct: minim azi — modelul e disponibil doar clienților verificați din Daybreak Red, nu publicului. Relevanță profesională înaltă: un model cu rating „Critical”, care poate executa atacuri end-to-end, schimbă peisajul incidentelor cibernetice — de urmărit cum ajung astfel de capabilități în mâinile apărătorilor din organizațiile aliate și ce ghidaj nou apare pentru patchuire rapidă.</p>
-          </div>
-        </article>
-
-        <!-- 3 · 5 nov · 20:00 -->
-        <article id="stire-69" data-cats="tech">
-          <div class="a-meta">
-            <span class="a-time">5 nov · 20:00</span>
-            <span class="a-cat">Tech &amp; AI</span>
-            <span class="a-num">#3 / 24</span>
-          </div>
-          <h2>Claude poate citi acum conturile bancare: Anthropic lansează Personal Finance, doar citire, prin Plaid — deocamdată doar în SUA</h2>
-
-          <div class="sec">
-            <p class="sec-label">Ce s-a întâmplat</p>
-            <p>Anthropic a anunțat joi, 5 noiembrie, Personal Finance în Claude: abonații Pro, Max și Ultra din SUA își pot conecta conturile bancare și cardurile prin Plaid și pot întreba în limbaj natural despre solduri, cheltuieli și facturi. Accesul e doar de citire — Claude nu poate muta, gestiona sau investi bani — și vede numele băncii, tipul contului, ultimele patru cifre, solduri, limite de credit și până la doi ani de tranzacții. Datele financiare nu sunt folosite la antrenarea modelului.</p>
-          </div>
-
-          <div class="sec">
-            <p class="sec-label">De ce contează</p>
-            <p>Claude e instrumentul lui zilnic de AI și automatizări, iar cheltuielile familiei sunt urmărite atent prin Timely Bills; un asistent care citește direct conturile schimbă modul în care se verifică cheltuielile — dar deocamdată funcția e doar în SUA, deci pentru el rămâne de urmărit, nu de folosit.</p>
-          </div>
-
-          <div class="verify">
-            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
-            <p>Verdict: confirmat. Surse: Reuters (5 noiembrie 2026); Engadget; 9to5Mac; plus anunțul primar al Anthropic. Articolul curatoriat inițial: TechCrunch. Notă de context: ChatGPT are o funcție similară din mai 2026.</p>
-            <ul class="sources">
-              <li><a href="https://www.reuters.com/business/anthropic-rolls-out-personal-finance-feature-claude-2026-11-05/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Reuters — Anthropic lansează funcția Personal Finance în Claude (5 noiembrie 2026)<span class="host">reuters.com</span></a></li>
-              <li><a href="https://www.engadget.com/2307936/now-claude-can-help-with-your-finances-too/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Engadget — Claude poate ajuta acum și cu finanțele personale<span class="host">engadget.com</span></a></li>
-              <li><a href="https://9to5mac.com/2026/11/05/anthropic-upgrades-claude-with-new-personal-finance-feature/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>9to5Mac — Anthropic actualizează Claude cu noua funcție Personal Finance (5 noiembrie 2026)<span class="host">9to5mac.com</span></a></li>
-              <li><a href="https://claude.com/resources/articles/introducing-personal-finance-in-claude" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Anthropic — anunțul primar: Personal Finance în Claude<span class="host">claude.com</span></a></li>
-              <li><a href="https://techcrunch.com/2026/11/05/claude-can-now-analyze-your-spending-with-its-new-personal-finance-tool/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>TechCrunch — articolul curatoriat inițial: Claude poate analiza acum cheltuielile cu noul instrument Personal Finance (5 noiembrie 2026)<span class="host">techcrunch.com</span></a></li>
-            </ul>
-          </div>
-
-          <div class="impact">
-            <span class="badge">Impact direct</span>
-            <p>Impact direct: minim deocamdată — beta doar în SUA, pentru abonații plătiți; în Belgia nu se poate conecta niciun cont. De urmărit când se extinde în Europa, cu atenția la ce date bancare ajung la un model AI.</p>
-          </div>
-        </article>
-
-        <!-- 4 · 5 nov · 20:00 -->
-        <article id="stire-70" data-cats="securitate">
-          <div class="a-meta">
-            <span class="a-time">5 nov · 20:00</span>
-            <span class="a-cat">Securitate &amp; NATO</span>
-            <span class="a-num">#4 / 24</span>
-          </div>
-          <h2>Germania își schimbă șeful apărării: generalul Freuding preia Bundeswehr în februarie 2027, iar Breuer merge la conducerea Comitetului Militar NATO</h2>
-
-          <div class="sec">
-            <p class="sec-label">Ce s-a întâmplat</p>
-            <p>Ministerul german al apărării a anunțat joi, 5 noiembrie, că generalul-locotenent Christian Freuding, actualul șef al Armatei, devine inspector general al Bundeswehr — cel mai înalt militar german — în februarie 2027. Îl succede pe generalul Carsten Breuer, ales în septembrie să conducă Comitetul Militar al NATO, cea mai înaltă autoritate militară a alianței. Freuding a coordonat ani de zile livrările de armament ale Berlinului către Kiev și a inițiat un regiment de drone în armata germană.</p>
-          </div>
-
-          <div class="sec">
-            <p class="sec-label">De ce contează</p>
-            <p>Germania e cea mai mare armată europeană din NATO, iar schimbarea vine în plină reașezare a posturii aliate pe Flancul estic; Breuer la conducerea Comitetului Militar înseamnă continuitate germană în vârful structurii militare a NATO.</p>
-          </div>
-
-          <div class="verify">
-            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
-            <p>Verdict: confirmat. Surse: Reuters (5 noiembrie 2026), pe baza comunicatului ministerului german al apărării. Articolul curatoriat inițial: Defense News.</p>
-            <ul class="sources">
-              <li><a href="https://www.reuters.com/world/germany-names-army-chief-freuding-next-chief-defence-2026-11-05/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Reuters — Germania îl numește pe șeful Armatei, Freuding, viitor șef al apărării (5 noiembrie 2026)<span class="host">reuters.com</span></a></li>
-              <li><a href="https://www.defensenews.com/global/europe/2026/11/05/germany-names-army-chief-freuding-as-next-chief-of-defense/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Defense News — articolul curatoriat inițial: Germania îl numește pe Freuding viitor șef al apărării (5 noiembrie 2026)<span class="host">defensenews.com</span></a></li>
-            </ul>
-          </div>
-
-          <div class="impact">
-            <span class="badge">Impact direct</span>
-            <p>Impact direct: minim — numire cu efect din februarie 2027, fără schimbare operațională imediată; relevanță de context profesională, pe arcul NATO/apărare urmărit în pagină.</p>
-          </div>
-        </article>
-
-        <!-- 5 · 5 nov · 19:00 -->
-        <article id="stire-68" data-cats="belgia">
-          <div class="a-meta">
-            <span class="a-time">5 nov · 19:00</span>
-            <span class="a-cat">Belgia</span>
-            <span class="spot-tag">Știrea zilei</span>
-            <span class="a-num">#5 / 24</span>
-          </div>
-          <h2>De Wever confirmă bugetul de urgență pentru 2027 — «un eșec oribil»; regele decide vineri soarta demisiei</h2>
-
-          <div class="followup">
-            <span class="tag">Urmare la</span>
-            <p><a href="#stire-52">„Criza bugetară belgiană: regele încheie azi consultările; trei scenarii pe masă — alegeri, coaliție nouă sau acord pe buget”</a> — joi, 5 noiembrie 2026, ora 08:00.</p>
-          </div>
-
-          <div class="sec">
-            <p class="sec-label">Ce s-a întâmplat</p>
-            <p>Premierul Bart De Wever a confirmat joi, în Parlament, că Belgia va începe 2027 cu un buget de urgență, în sistem de douăsprezeceimi provizorii — deși cu mai puțin de o lună în urmă spunea că un astfel de scenariu „nu este o opțiune”. Coaliția federală a negociat circa două luni un acord pentru reducerea deficitului cu 10 miliarde € până în 2029, fără succes. „Pentru guvern, acesta este un eșec oribil”, a spus De Wever.</p>
-          </div>
-
-          <div class="sec">
-            <p class="sec-label">De ce contează</p>
-            <p>E țara în care locuiește: un buget de urgență înseamnă că statul poate cheltui lunar cel mult o doisprezecime din cheltuielile anului precedent și îngheață investițiile publice noi — pentru al doilea an consecutiv (și la începutul lui 2026 a fost buget de urgență, trei luni). Regele Philippe a încheiat joi la prânz consultările cu liderii coaliției și îl primește vineri pe De Wever, când trebuie să decidă: acceptă demisia depusă luni sau mai dă guvernului timp pentru un acord.</p>
-          </div>
-
-          <div class="verify">
-            <p class="sec-label">Verificare <span class="status">Sursă primară + confirmat</span></p>
-            <p>Verdict: sursă primară + confirmat. Surse: The Brussels Times (5 noiembrie 2026, 16:31, relatare din Parlament — declarația e chiar a premierului). Contextul (demisia de luni, consultările regelui, întâlnirea de vineri) e confirmat de Reuters (2 noiembrie), AFP via France 24 (2 noiembrie) și Belga/VRT.</p>
-            <ul class="sources">
-              <li><a href="https://www.brusselstimes.com/belgium/2393479/bitter-failure-pm-de-wever-confirms-belgian-emergency-budget-for-2027" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>The Brussels Times — „Bitter failure: PM De Wever confirms Belgian emergency budget for 2027” (5 noiembrie 2026)<span class="host">brusselstimes.com</span></a></li>
-            </ul>
-          </div>
-
-          <div class="opposing">
-            <p class="sec-label">Tabăra adversă</p>
-            <p>Georges-Louis Bouchez (MR, liderul liberalilor francofoni) respinge ideea prăbușirii guvernului: „A merge la vot ar fi cel mai rău lucru pentru țară” și insistă că toți partenerii vor să continue. (<a href="https://www.brusselstimes.com/belgium/2393479/bitter-failure-pm-de-wever-confirms-belgian-emergency-budget-for-2027" target="_blank" rel="noopener">The Brussels Times</a>)</p>
-          </div>
-
-          <div class="impact">
-            <span class="badge">Impact direct</span>
-            <p>Impact direct azi: minim — nicio măsură nu intră în vigoare imediat. De urmărit vineri decizia regelui: alegeri anticipate, o nouă formulă de coaliție sau mai mult timp de negociere. FMI avertizează deja că dobânzile riscă să crească rapid pe termen scurt, pe fondul unui deficit de 5,2% din PIB.</p>
-          </div>
-        </article>
-
-        <!-- 6 · 5 nov · 18:00 -->
-        <article id="stire-66" data-cats="securitate">
-          <div class="a-meta">
-            <span class="a-time">5 nov · 18:00</span>
-            <span class="a-cat">Securitate &amp; NATO</span>
-            <span class="a-num">#6 / 24</span>
-          </div>
-          <h2>NATO lansează piața de tehnologii anti-dronă: 16 soluții selectate de la cinci companii, cu 3,1 mil. € pentru testare</h2>
-
-          <div class="sec">
-            <p class="sec-label">Ce s-a întâmplat</p>
-            <p>Joi, 5 noiembrie 2026, NATO a lansat piața Counter-Unmanned Aircraft Systems (C-UAS), un mecanism prin care aliații pot cumpăra mai rapid tehnologii anti-dronă. Agenția NATO de comunicații și informații a selectat 16 soluții de la cinci companii — Alta Ares, Axon Enterprise, Northrop Grumman, OSL UK și Quantum Systems — și va gestiona contractele-cadru multianuale. NATO a alocat și 3,1 milioane de euro pentru testarea suplimentară a soluțiilor selectate.</p>
-          </div>
-
-          <div class="sec">
-            <p class="sec-label">De ce contează</p>
-            <p>Este primul pas concret de achiziție din inițiativa Drone Edge, lansată la summitul NATO de la Ankara în iulie, prin care aliații s-au angajat să investească peste 40 de miliarde de dolari în capabilități anti-dronă în cinci ani. După valul de incidente cu drone din ultimele luni — inclusiv amenințările cu bombă la avioanele europene de azi — Alianța trece de la declarații la un catalog comun de sisteme testate, cu standarde NATO.</p>
-          </div>
-
-          <div class="verify">
-            <p class="sec-label">Verificare <span class="status">Sursă primară</span></p>
-            <p>Verdict: sursă primară. Surse: NATO — comunicat propriu (5 noiembrie 2026); contextul Drone Edge, din discursul secretarului general Mark Rutte din 7 iulie 2026; analiză Drone Intelligence.</p>
-            <ul class="sources">
-              <li><a href="https://www.nato.int/en/news-and-events/articles/news/2026/11/05/nato-accelerates-procurement-for-counter-drone-technologies" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>NATO — comunicat propriu: accelerarea achizițiilor de tehnologii anti-dronă (5 noiembrie 2026)<span class="host">nato.int</span></a></li>
-              <li><a href="https://www.nato.int/en/news-and-events/events/transcripts/2026/07/07/remarks-by-nato-secretary-general-mark-rutte-on-nato-drone-edge-at-the-nato-summit-defence-industry-forum" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>NATO — discursul secretarului general Mark Rutte despre Drone Edge (7 iulie 2026)<span class="host">nato.int</span></a></li>
-              <li><a href="https://droneintelligence.ai/insights/nato-drone-edge-initiative" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Drone Intelligence — analiză a inițiativei Drone Edge<span class="host">droneintelligence.ai</span></a></li>
-            </ul>
-          </div>
-
-          <div class="impact">
-            <span class="badge">Impact direct</span>
-            <p>Direct profesional: achiziția de tehnologii anti-dronă devine proces NATO structurat, cu contracte-cadru și testări finanțate central — exact zona de infrastructură și gestionare a incidentelor în care lucrează ca IT incident Manager. De urmărit: primele contracte-cadru (valabile un an și jumătate) și competițiile regulate promise pentru cele mai noi tehnologii.</p>
-          </div>
-        </article>
-
-        <!-- 7 · 5 nov · 18:00 -->
-        <article id="stire-67" data-cats="tech">
-          <div class="a-meta">
-            <span class="a-time">5 nov · 18:00</span>
-            <span class="a-cat">Tech &amp; AI</span>
-            <span class="a-num">#7 / 24</span>
-          </div>
-          <h2>Zipline ajunge la 21,5 mld. $: Walmart adaugă 300 de site-uri de livrare cu drone în SUA</h2>
-
-          <div class="sec">
-            <p class="sec-label">Ce s-a întâmplat</p>
-            <p>Zipline a anunțat joi o rundă de finanțare de 1,5 miliarde de dolari la o evaluare de 21,5 miliarde de dolari — aproape triplă față de 7,6 miliarde în ianuarie — și un acord multianual cu Walmart pentru 300 de site-uri noi de livrare cu drone în SUA. Uber, investitor în rundă, vizează un milion de livrări pe zi cu Zipline până în 2029.</p>
-          </div>
-
-          <div class="sec">
-            <p class="sec-label">De ce contează</p>
-            <p>Livrarea autonomă cu drone trece de la pilot la rețea națională: Zipline raportează peste un milion de livrări doar în Dallas-Fort Worth în 2026 și 150 de milioane de mile autonome fără incident major de siguranță. Pentru Walmart, cele 300 de site-uri înseamnă de peste patru ori amprenta actuală de livrare cu drone.</p>
-          </div>
-
-          <div class="verify">
-            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
-            <p>Verdict: confirmat. Surse: TechCrunch (5 noiembrie 2026); The Wall Street Journal; DroneXL; DroneLife.</p>
-            <ul class="sources">
-              <li><a href="https://techcrunch.com/2026/11/05/zipline-hits-21-5b-valuation-as-walmart-expands-bet-on-drone-delivery/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>TechCrunch — Zipline ajunge la evaluarea de 21,5 mld. $, Walmart extinde livrarea cu drone (5 noiembrie 2026)<span class="host">techcrunch.com</span></a></li>
-              <li><a href="https://www.wsj.com/business/drone-startup-zipline-raises-1-5-billion-at-21-5-billion-valuation-1d166eec" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>The Wall Street Journal — Zipline strânge 1,5 miliarde de dolari la o evaluare de 21,5 miliarde<span class="host">wsj.com</span></a></li>
-              <li><a href="https://dronexl.co/2026/11/05/zipline-1-5-billion-raise-walmart-300-sites/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>DroneXL — finanțarea Zipline și cele 300 de site-uri Walmart (5 noiembrie 2026)<span class="host">dronexl.co</span></a></li>
-              <li><a href="https://dronelife.com/2026/11/05/zipline-1-5-billion-funding-drone-delivery/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>DroneLife — runda de finanțare Zipline de 1,5 miliarde de dolari (5 noiembrie 2026)<span class="host">dronelife.com</span></a></li>
-            </ul>
-          </div>
-
-          <div class="impact">
-            <span class="badge">Impact direct</span>
-            <p>Impact direct minim — relevanță de context: livrarea cu drone la scară mare devine realitate comercială, pe linia interesului pentru drone și automatizări; de urmărit rămâne regula FAA Part 108 pentru zboruri dincolo de linia vizuală, încă în revizuire la Casa Albă, fără de care rețeaua națională nu poate opera pe deplin.</p>
-          </div>
-        </article>
-
-        <!-- 8 · 5 nov · 17:00 -->
-        <article id="stire-64" data-cats="securitate belgia">
-          <div class="a-meta">
-            <span class="a-time">5 nov · 17:00</span>
-            <span class="a-cat">Securitate &amp; NATO · Belgia</span>
-            <span class="a-num">#8 / 24</span>
-          </div>
-          <h2>Amenințările cu bombă la avioanele europene: un e-mail revendicat de gruparea rusă «Male State»; până la 25 de zboruri afectate, niciun dispozitiv găsit</h2>
-
-          <div class="followup">
-            <span class="tag">Urmare la</span>
-            <p><a href="#stire-61">„Val de amenințări cu bombă la zboruri europene: curse deviate în Franța, Belgia, Bulgaria și Italia — niciun dispozitiv găsit”</a> — joi, 5 noiembrie 2026, ora 14:00.</p>
-          </div>
-
-          <div class="sec">
-            <p class="sec-label">Ce s-a întâmplat</p>
-            <p>Valul de amenințări cu bombă de joi, 5 noiembrie, a afectat până la 25 de zboruri europene — sute de pasageri evacuați, avioane de vânătoare trimise să escorteze curse, aeronave percheziționate și deviate, printre ele un Aer Lingus Dublin–Roma deviat la baza militară Évreux din Franța și un Finnair Helsinki–Roma. Un e-mail trimis joi aeroportului Fiumicino din Roma, semnat „Fighters of the Male State” (Luptătorii Statului Masculin), avertiza că au fost plasate bombe pe zborurile AY1761 (Helsinki–Roma) și EI402 (Dublin–Roma) și că „explozia va avea loc în 60 de minute. Azi cerul vostru va fi roșu”. Niciun dispozitiv nu a fost găsit la percheziții. „Male State” este o organizație rusă de extremă dreaptă, interzisă de un tribunal rus în 2021. Este al doilea val în două zile — marți, 3 noiembrie, șapte zboruri au fost vizate similar.</p>
-          </div>
-
-          <div class="sec">
-            <p class="sec-label">De ce contează</p>
-            <p>Atribuirea — chiar și doar revendicată prin e-mail — mută povestea din zona „amenințări copycat” în cea a amenințărilor hibride coordonate, exact arcul urmărit în ultimele săptămâni (sabotaj, drone, atacuri asupra infrastructurii). Pentru el: zboruri spre Bruxelles și București au fost direct vizate azi și în valul anterior. Notă de integritate: cine a trimis e-mailul NU este stabilit — revendicarea nu înseamnă dovadă a autorului.</p>
-          </div>
-
-          <div class="verify">
-            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
-            <p>Verdict: confirmat. Surse: The Times (5 noiembrie, relatarea e-mailului către Fiumicino și zborurile vizate); New York Post (5 noiembrie, 25 de zboruri afectate, detalii despre devieri); The Sun (5 noiembrie, textul e-mailului, zborurile AY1761 și EI402).</p>
-            <ul class="sources">
-              <li><a href="https://www.thetimes.com/world/europe/article/bomb-threats-planes-diverted-europe-today-r58s8rwjv" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>The Times — relatarea e-mailului către Fiumicino și zborurile vizate (5 noiembrie 2026)<span class="host">thetimes.com</span></a></li>
-              <li><a href="https://nypost.com/2026/11/05/world-news/bomb-hoaxes-grounding-25-planes-include-bizarre-anti-feminist-threat-to-turn-the-skies-red/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>New York Post — 25 de zboruri afectate, detalii despre devieri (5 noiembrie 2026)<span class="host">nypost.com</span></a></li>
-              <li><a href="https://www.thesun.co.uk/news/40928171/airline-bomb-threat-message-revealed/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>The Sun — textul e-mailului, zborurile AY1761 și EI402 (5 noiembrie 2026)<span class="host">thesun.co.uk</span></a></li>
-            </ul>
-          </div>
-
-          <div class="opposing">
-            <p class="sec-label">Tabăra adversă</p>
-            <p>Comisarul european pentru transporturi Apostolos Tzitzikostas susține că „e prea devreme pentru a spune dacă incidentele sunt legate; anchetele naționale continuă” (<a href="https://www.thetimes.com/world/europe/article/bomb-threats-planes-diverted-europe-today-r58s8rwjv" target="_blank" rel="noopener">The Times</a>).</p>
-          </div>
-
-          <div class="impact">
-            <span class="badge">Impact direct</span>
-            <p>Impact direct azi: minim — nu are zbor programat azi; toate aeronavele au aterizat în siguranță. De urmărit: dacă valul continuă, întârzieri și verificări suplimentare la zborurile europene, inclusiv pe rutele lui obișnuite (Bruxelles, București); verifică statusul zborului înainte de călătoria la Haga (11–13 nov).</p>
-          </div>
-        </article>
-
-        <!-- 9 · 5 nov · 17:00 -->
-        <article id="stire-65" data-cats="tech">
-          <div class="a-meta">
-            <span class="a-time">5 nov · 17:00</span>
-            <span class="a-cat">Tech &amp; AI</span>
-            <span class="a-num">#9 / 24</span>
-          </div>
-          <h2>Dropbox cumpără Tigris Data cu 350 mil. $ și lansează DBX Agent Cloud — stocare gândită pentru agenți AI</h2>
-
-          <div class="sec">
-            <p class="sec-label">Ce s-a întâmplat</p>
-            <p>Dropbox a anunțat joi, 5 noiembrie, că a convenit achiziția Tigris Data, o platformă de stocare de obiecte distribuită global, compatibilă S3, construită pentru volume de lucru AI, pentru aproximativ 350 de milioane de dolari în numerar — cea mai mare achiziție din istoria companiei, fondată în 2007. Acordul definitiv a fost semnat pe 3 noiembrie, iar închiderea este așteptată în trimestrul 4 din 2026. Odată cu achiziția, Dropbox lansează DBX Agent Cloud, o platformă de stocare și date pentru companii și dezvoltatori care construiesc aplicații și agenți AI: la început stocare de obiecte independentă, compatibilă cu uneltele Amazon S3, urmând funcții de procesare a conținutului și sistem de fișiere. În paralel, Dropbox adaugă funcții AI în produsul de bază: utilizatorii pot cere AI-ului să facă acțiuni pe fișiere, să aleagă între modele și să conecteze conținutul la ChatGPT, Claude și Muse; lansarea inițială este pentru echipe eligibile Standard și Advanced din SUA, Marea Britanie și Australia, cu extindere mai largă în 2027.</p>
-          </div>
-
-          <div class="sec">
-            <p class="sec-label">De ce contează</p>
-            <p>Dropbox, un gigant al stocării de fișiere pentru consumatori, intră oficial în infrastructura pentru agenți AI — semnal că stratul de stocare și date pentru agenți devine o piață distinctă, nu doar o funcție a aplicațiilor. Pentru el, care își construiește automatizări pe API-uri AI, este confirmarea direcției discutate în ultimele săptămâni: agenții au nevoie de memorie și stocare persistentă, nu doar de modele.</p>
-          </div>
-
-          <div class="verify">
-            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
-            <p>Verdict: confirmat. Surse: TechCrunch (5 noiembrie, relatarea anunțului); Crunchbase News (5 noiembrie); Unite.ai (5 noiembrie); dosarul SEC 8-K al Dropbox (sursă primară, acord semnat 3 noiembrie, ~350 mil. $ numerar).</p>
-            <ul class="sources">
-              <li><a href="https://techcrunch.com/2026/11/05/dropbox-acquires-tigris-data-for-350m-to-bolster-its-ai-iinfrastructure/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>TechCrunch — relatarea anunțului (5 noiembrie 2026)<span class="host">techcrunch.com</span></a></li>
-              <li><a href="https://news.crunchbase.com/ma/dbx-ai-infrastructure-deal-tigris-acquisition/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Crunchbase News — achiziția Tigris de către Dropbox (5 noiembrie 2026)<span class="host">news.crunchbase.com</span></a></li>
-              <li><a href="https://www.unite.ai/dropbox-signs-tigris-deal-to-enter-ai-infrastructure/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Unite.ai — Dropbox intră în infrastructura AI prin acordul Tigris (5 noiembrie 2026)<span class="host">unite.ai</span></a></li>
-              <li><a href="https://secwatch.observer/filing/0001467623-26-000056" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Dropbox — dosarul SEC 8-K (sursă primară, acord semnat 3 noiembrie, ~350 mil. $ numerar)<span class="host">secwatch.observer</span></a></li>
-            </ul>
-          </div>
-
-          <div class="impact">
-            <span class="badge">Impact direct</span>
-            <p>Impact direct: minim azi — lansarea DBX Agent Cloud este la început doar pentru SUA, Marea Britanie și Australia, iar el este în Belgia; achiziția se închide abia în T4 2026. Relevanță de context: infrastructura pe care își construiește automatizările AI se maturizează rapid; de urmărit când ajunge în Europa, pentru că stocarea compatibilă S3 pentru agenți ar putea simplifica arhitectura propriilor lui automatizări.</p>
-          </div>
-        </article>
-
-        <!-- 10 · 5 nov · 16:00 -->
-        <article id="stire-63" data-cats="tech">
-          <div class="a-meta">
-            <span class="a-time">5 nov · 16:00</span>
-            <span class="a-cat">Tech &amp; AI</span>
-            <span class="a-num">#10 / 24</span>
-          </div>
-          <h2>Box și Nvidia lansează un motor de căutare gândit pentru agenți AI: răspunsuri de 4 ori mai rapide în fișierele companiei</h2>
-
-          <div class="sec">
-            <p class="sec-label">Ce s-a întâmplat</p>
-            <p>La conferința BoxWorks 2026 de joi, 5 noiembrie, Box a anunțat Box Context Retrieval, un motor de căutare construit pe modelele open-weight Nemotron Retriever ale Nvidia, care transformă conținutul nestructurat al companiei — contracte, PDF-uri, prezentări, documente scanate, imagini, audio și video — într-un strat de cunoștințe pe care agenții AI îl pot interoga. În loc să citească fiecare document, agentul primește doar pasajele relevante, cu permisiunile live ale utilizatorului verificate la fiecare cerere. Box promite răspunsuri de 4 ori mai rapide, cu 20% mai puține erori și cu 90% mai puțini tokeni consumați; disponibilitatea generală e anunțată pentru începutul anului viitor, pentru clienții Enterprise Advanced. Tot la BoxWorks, Box a prezentat și Box Architect, un constructor de fluxuri AI descris în limbaj natural, plus protecții noi împotriva descărcărilor în masă și a preluărilor de cont.</p>
-          </div>
-
-          <div class="sec">
-            <p class="sec-label">De ce contează</p>
-            <p>Agenții AI devin utili în companii abia când găsesc rapid informația corectă în fișiere — exact problema pe care o rezolvă un strat de retrieval cu permisiuni verificate. Pentru cititor, ca pasionat de automatizări cu AI și ca IT incident Manager: confirmă direcția arhitecturală discutată în ultimele zile — separarea inteligenței de autoritatea de a acționa, cu control al permisiunilor la fiecare cerere (Guardian Agents de la Microsoft, Agent Gateway de la Walmart).</p>
-          </div>
-
-          <div class="verify">
-            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
-            <p>Verdict: confirmat. Surse: Reuters — relatare proprie din 5 noiembrie 2026; TechCrunch — relatare din 5 noiembrie 2026; SiliconANGLE — relatare din 5 noiembrie 2026. Comunicatul oficial Box/Nvidia (Business Wire, 5 noiembrie) e sursă a părților implicate, folosit doar pentru detalii tehnice. Nuanță de integritate: cifrele 4x / −20% / −90% sunt proiecții ale companiilor, nu rezultate de testare independentă.</p>
-            <ul class="sources">
-              <li><a href="https://www.reuters.com/business/box-expands-nvidia-partnership-unveils-ai-workflow-builder-2026-11-05/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Reuters — „Box expands Nvidia partnership, unveils AI workflow builder” (5 noiembrie 2026)<span class="host">reuters.com</span></a></li>
-              <li><a href="https://techcrunch.com/2026/11/05/box-taps-nvidias-nemotron-for-new-agent-first-content-retrieval-system/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>TechCrunch — „Box taps Nvidia's Nemotron for new agent-first content retrieval system” (5 noiembrie 2026)<span class="host">techcrunch.com</span></a></li>
-              <li><a href="https://siliconangle.com/2026/11/05/box-taps-nvidias-ai-models-to-build-a-rich-context-layer-for-autonomous-enterprise-agents/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>SiliconANGLE — „Box taps Nvidia's AI models to build a rich context layer for autonomous enterprise agents” (5 noiembrie 2026)<span class="host">siliconangle.com</span></a></li>
-              <li><a href="https://www.businesswire.com/news/home/20261105141753/en/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Business Wire — comunicatul oficial Box/Nvidia (5 noiembrie 2026)<span class="host">businesswire.com</span></a></li>
-            </ul>
-          </div>
-
-          <div class="impact">
-            <span class="badge">Impact direct</span>
-            <p>Impact direct: minim azi — funcția ajunge la clienții Enterprise Advanced abia la începutul anului viitor. Relevanță practică pentru automatizările cu agenți AI: modelul de retrieval cu permisiuni verificate la fiecare cerere e exact ce trebuie să copieze orice automatizare care atinge fișiere. Relevanță profesională: guvernanța execuției agenților — NVIDIA OpenShell, runtime securizat pentru agenți.</p>
-          </div>
-        </article>
-
-        <!-- 11 · 5 nov · 15:00 -->
-        <article id="stire-62" data-cats="securitate">
-          <div class="a-meta">
-            <span class="a-time">5 nov · 15:00</span>
-            <span class="a-cat">Securitate &amp; NATO</span>
-            <span class="a-num">#11 / 24</span>
-          </div>
-          <h2>Șeful Comitetului Militar al NATO, la Conferința de Securitate de la Berlin: «Nu suntem în război, dar cu siguranță nu suntem în pace»</h2>
-
-          <div class="sec">
-            <p class="sec-label">Ce s-a întâmplat</p>
-            <p>Pe 3–4 noiembrie a avut loc la Berlin cea de-a 25-a ediție a Conferinței de Securitate de la Berlin, cu Lituania ca țară parteneră. Au participat președintele Comitetului Militar al NATO, amiralul Giuseppe Cavo Dragone, și directorul general al Statului Major Militar Internațional, generalul-locotenent Remigijus Baltrėnas. În discursul principal, Cavo Dragone a vorbit despre amenințări multipolare — „Amenințările ne ajung din mai multe domenii și din mai multe centre de putere, în același timp și adesea coordonat. Nu suntem în război, dar cu siguranță nu suntem în pace" — și a subliniat alinierea agendelor de securitate și apărare ale NATO și UE, de la apărare cibernetică la standardizare și inovare; Baltrėnas a participat la un panel despre „Descurajare prin vigilență: cum se ține sub control amestecul Rusiei".</p>
-          </div>
-
-          <div class="sec">
-            <p class="sec-label">De ce contează</p>
-            <p>Formularea vine de la cel mai înalt oficial militar al NATO și dă tonul posturii Alianței față de amenințările hibride — exact arcul urmărit în pagină (simpozionul NATO de la București, alerta anti-sabotaj a Bundeswehr, exercițiul FUSE din Letonia). Pentru un IT incident Manager, apărarea cibernetică și interoperabilitatea sunt numite explicit printre prioritățile comune NATO–UE.</p>
-          </div>
-
-          <div class="verify">
-            <p class="sec-label">Verificare <span class="status">Sursă primară</span></p>
-            <p>Verdict: sursă primară. NATO anunță propria participare și citează discursul președintelui Comitetului Militar; textul a fost preluat și de Bytes Europe și EuropeSays (republicări ale comunicatului NATO, nu confirmări independente).</p>
-            <ul class="sources">
-              <li><a href="https://www.nato.int/en/news-and-events/articles/news/2026/11/04/the-chair-of-the-nato-military-committee-and-the-director-general-of-the-nato-international-military-staff-attend-the-berlin-security-conference" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>NATO — „The Chair of the NATO Military Committee and the Director General of the NATO International Military Staff attend the Berlin Security Conference” (4 noiembrie 2026)<span class="host">nato.int</span></a></li>
-            </ul>
-          </div>
-
-          <div class="impact">
-            <span class="badge">Impact direct</span>
-            <p>Impact direct: minim — relevanță de context. Nicio decizie sau acțiune imediată; de urmărit dacă formularea se traduce în cerințe noi de raportare sau exerciții în zona de apărare cibernetică.</p>
-          </div>
-        </article>
-
-        <!-- 12 · 5 nov · 14:00 -->
-        <article id="stire-61" data-cats="securitate belgia">
-          <div class="a-meta">
-            <span class="a-time">5 nov · 14:00</span>
-            <span class="a-cat">Securitate &amp; NATO · Belgia</span>
-            <span class="a-num">#12 / 24</span>
-          </div>
-          <h2>Val de amenințări cu bombă la zboruri europene: curse deviate în Franța, Belgia, Bulgaria și Italia — niciun dispozitiv găsit</h2>
-
-          <div class="sec">
-            <p class="sec-label">Ce s-a întâmplat</p>
-            <p>Joi dimineață, 5 noiembrie, cel puțin șapte-opt curse de pasageri din Europa au primit amenințări cu bombă — al treilea val de acest tip într-o săptămână, după cele din 2 și 3 noiembrie, cu circa 20 de zboruri afectate în total. Un Airbus A320 Aer Lingus Dublin–Roma (EI402) a fost interceptat de avioane de vânătoare franceze și deviat la baza aeriană Évreux; un zbor LOT Varșovia–Bruxelles (LO235) a aterizat la Zaventem; un Finnair Helsinki–Roma a fost escortat de avioane militare italiene. SRI a anunțat că și un zbor Wizz Air Milano–București a primit o amenințare, dar a aterizat în siguranță la destinație. Trei zboruri Ryanair spre Sofia și patru curse spre Praga au fost vizate. Nicăieri nu s-a găsit vreun dispozitiv exploziv.</p>
-          </div>
-
-          <div class="sec">
-            <p class="sec-label">De ce contează</p>
-            <p>Zboară frecvent din Belgia și are vacanța de Crăciun în România (22–31 decembrie); un zbor spre Bruxelles și unul spre București au fost direct vizate azi. E un val repetat, nu un incident izolat — a treia rundă într-o săptămână — iar autoritățile nu au stabilit încă cine transmite amenințările și dacă sunt legate între ele.</p>
-          </div>
-
-          <div class="verify">
-            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
-            <p>Verdict: confirmat. Confirmat de Reuters (relatare din 5 noiembrie, preluată de SRN News), The Guardian, Deutsche Welle, France 24 și Associated Press. Sursă curatoriată: The Brussels Times (5 noiembrie, 11:35) și G4Media (LIVE, 5 noiembrie). Atribuirea rămâne nestabilită: Matthew Borie, chief intelligence officer la Osprey Flight Solutions, a declarat pentru AP că ipotezele merg de la amenințări de tip copycat la un singur individ sau grup, iar implicarea unor actori statali sau a susținătorilor lor nu poate fi exclusă.</p>
-            <ul class="sources">
-              <li><a href="https://srnnews.com/bomb-alert-diverts-airbus-a320-plane-flying-from-dublin-to-rome-french-pm-says/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Reuters/SRN News — „Bomb alert diverts Airbus A320 plane flying from Dublin to Rome, French PM says” (5 noiembrie 2026)<span class="host">srnnews.com</span></a></li>
-              <li><a href="https://brusselssignal.eu/2026/11/hoax-bomb-threats-disrupt-european-aviation-for-third-time-in-a-week/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Brussels Signal (preia AP) — „Hoax bomb threats disrupt European aviation for third time in a week” (5 noiembrie 2026)<span class="host">brusselssignal.eu</span></a></li>
-              <li><a href="https://y.gogonow.de/sg.news.yahoo.com/factbox-europe-wide-bomb-threats-155057065.html" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Reuters factbox — „Factbox: Europe-wide bomb threats” (5 noiembrie 2026)<span class="host">y.gogonow.de</span></a></li>
-              <li><a href="https://lapresse.us/world/2026/11/05/bomb-threats-reported-on-eight-flights-across-europe-this-morning/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>LaPresse (preia The Guardian) — „Bomb threats reported on eight flights across Europe this morning” (5 noiembrie 2026)<span class="host">lapresse.us</span></a></li>
-            </ul>
-          </div>
-
-          <div class="impact">
-            <span class="badge">Impact direct</span>
-            <p>Impact direct azi: minim — nu are zbor programat azi; toate aeronavele vizate au aterizat în siguranță și nu s-a găsit niciun dispozitiv. Relevanță de context ridicată: la următoarea călătorie (Haga, 11–13 noiembrie) merită verificat statusul zborului înainte de plecare, iar valul repetat arată o campanie coordonată sau de tip copycat, nu incidente izolate.</p>
-          </div>
-        </article>
-
-        <!-- 13 · 5 nov · 13:00 -->
-        <article id="stire-60" data-cats="securitate tech">
-          <div class="a-meta">
-            <span class="a-time">5 nov · 13:00</span>
-            <span class="a-cat">Tech &amp; AI / Securitate</span>
-            <span class="a-num">#13 / 24</span>
-          </div>
-          <h2>OpenAI: un pipeline AI a găsit 948 de exploituri root în kernelul Linux într-o singură rulare de ~30 de ore, cu 1,2 milioane $ costuri API</h2>
-
-          <div class="sec">
-            <p class="sec-label">Ce s-a întâmplat</p>
-            <p>OpenAI a publicat pe 4 noiembrie raportul „A thousand fewer paths to root”: un pipeline automat, construit pe un model cyber viitor al companiei, a analizat kernelul Linux și a validat 948 de vulnerabilități distincte de escaladare locală a privilegiilor — fiecare permite unui utilizator obișnuit să obțină acces root. Rularea a durat circa 30 de ore, a pornit de la 2.308 candidați, a reprodus 1.724 de vulnerabilități reale și a generat câte un patch-candidat pentru fiecare dintre cele 948; costul total în credite API a fost de 1.213.430 $ (circa 1.279 $ per exploit). La circa 10 zile după rulare, doar 61 dintre ele fuseseră patchuite upstream, iar 43 aveau patchuri în staging.</p>
-          </div>
-
-          <div class="sec">
-            <p class="sec-label">De ce contează</p>
-            <p>E continuarea directă a arcului „AI care găsește vulnerabilități” urmărit aici (PHP armageddon, 21 octombrie): descoperirea de breșe a devenit ieftină și automată — 948 de exploituri root validate într-o singură rulare, la ~1.300 $ bucata, față de zeci de mii de dolari cât ar fi valorat fiecare pe piața de recompense (OpenAI le evaluează la 18,9–66,3 milioane $ în total). Pentru oricine administrează infrastructură Linux — inclusiv în mediul NATO — cursa patchuirii se scurtează dramatic: apărătorii trebuie să aplice fixuri mai repede decât pot atacatorii să ruleze același tip de pipeline. În paralel, centrul britanic NCSC notează că numărul de vulnerabilități dezvăluite lunar s-a dublat în 2026, de la 5.045 în ianuarie la 10.740 în august.</p>
-          </div>
-
-          <div class="verify">
-            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
-            <p>Verdict: sursă primară + confirmat. Surse: OpenAI — raportul propriu „A thousand fewer paths to root” (4 noiembrie 2026); The Hacker News — „OpenAI AI Pipeline Generates 948 Linux Root Escalation Exploits in 30-Hour Run” (5 noiembrie 2026); IEEE Spectrum — „AI is forcing us to pay off 40 years of technical debt” (2 noiembrie 2026), despre același val de descoperiri de vulnerabilități cu AI. Nuanță de integritate: toate cifrele sunt ale OpenAI și n-au fost verificate independent; într-o rulare timpurie, 20 din 200 de „succese” raportate ajunseseră la root printr-un alt 0-day decât cel atribuit — OpenAI spune că a înăsprit verificarea după aceea. Iar 948 nu înseamnă 948 de fixuri livrate: sunt exploituri validate cu patchuri-candidat, majoritatea încă neaplicate upstream.</p>
-            <ul class="sources">
-              <li><a href="https://openai.com/index/a-thousand-fewer-paths-to-root/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>OpenAI — „A thousand fewer paths to root” (4 noiembrie 2026)<span class="host">openai.com</span></a></li>
-              <li><a href="https://thehackernews.com/2026/11/openai-ai-pipeline-generates-948-linux.html" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>The Hacker News — „OpenAI AI Pipeline Generates 948 Linux Root Escalation Exploits in 30-Hour Run” (5 noiembrie 2026)<span class="host">thehackernews.com</span></a></li>
-              <li><a href="https://madrobot.blog/2026/11/05/openai-linux-kernel-948-root-exploits/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>MadRobot — „OpenAI's unreleased cyber AI built 948 working root exploits for the Linux kernel” (5 noiembrie 2026)<span class="host">madrobot.blog</span></a></li>
-              <li><a href="https://aivoa.news/en/a/20261105-2aw5/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Aivoa News — analiza critică a raportului OpenAI (5 noiembrie 2026)<span class="host">aivoa.news</span></a></li>
-            </ul>
-          </div>
-
-          <div class="opposing">
-            <p class="sec-label">Tabăra adversă</p>
-            <p>Aivoa News (analiză, 5 noiembrie 2026) avertizează că totalul 948 poate induce în eroare: cifra descrie patchuri propuse de OpenAI, nu modificări acceptate în kernel, iar episodul din rularea timpurie — 20 de „succese” ajunse la root printr-un alt 0-day decât cel atribuit — arată că totalul poate devia de la ce pretinde.</p>
-          </div>
-
-          <div class="impact">
-            <span class="badge">Impact direct</span>
-            <p>Impact direct: minim azi — nu administrează servere Linux și nu există o listă de CVE-uri de verificat (raportul nu publică versiuni de kernel afectate sau identificatori CVE). Relevanță profesională ridicată: un val de 948 de exploituri root validate de AI, cu patchuri-candidat în curs de raportare coordonată, înseamnă presiune pe ciclul de patchuire și pe monitorizarea vulnerabilităților — exact terenul de IT incident management. De urmărit: câte dintre cele 948 ajung CVE-uri publice și cât de repede le preiau distribuțiile Linux.</p>
-          </div>
-        </article>
-
-        <!-- 14 · 5 nov · 12:00 -->
-        <article id="stire-59" data-cats="tech">
-          <div class="a-meta">
-            <span class="a-time">5 nov · 12:00</span>
-            <span class="a-cat">Tech &amp; AI</span>
-            <span class="a-num">#14 / 24</span>
-          </div>
-          <h2>Aproape nimeni nu folosește agenți AI ca să-și comande Uber: doar 4 curse într-o săptămână-record</h2>
-
-          <div class="sec">
-            <p class="sec-label">Ce s-a întâmplat</p>
-            <p>La apelul cu investitorii pentru rezultatele trimestrului 3, miercuri 4 noiembrie, Uber a dezvăluit pentru prima dată cifrele comenzilor venite prin agenți AI terți: în săptămâna Halloween — cea mai aglomerată din octombrie — doar 4 curse au fost comandate printr-un agent AI, din aproximativ 320 de milioane de curse și comenzi Uber și Uber Eats în aceeași săptămână; la Uber Eats, circa 500 de comenzi au venit prin agenți. CEO-ul Dara Khosrowshahi a numit tracțiunea „foarte devreme și foarte limitată”.</p>
-          </div>
-
-          <div class="sec">
-            <p class="sec-label">De ce contează</p>
-            <p>E primul număr dur, de la o companie publică, despre cât se cumpără efectiv prin agenți AI — și e practic zero. După săptămânile cu Guardian Agents (Microsoft), Agent Gateway (Walmart) și achiziția Conductor de către Meta, cifra Uber temperează teza „webului agentic”: infrastructura de agenți există, dar utilizatorii încă nu o folosesc pentru tranzacții.</p>
-          </div>
-
-          <div class="verify">
-            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
-            <p>Verdict: confirmat. Surse: TechCrunch (4 nov 2026); BigGo Finance; Unite.ai; TradingKey (rezumatul apelului cu investitorii). Cifrele vin din declarațiile CFO-ului Uber, Balaji Krishnamurthy, la apelul public cu investitorii.</p>
-            <ul class="sources">
-              <li><a href="https://techcrunch.com/2026/11/04/almost-no-one-uses-ai-agents-to-book-their-uber-company-says/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>TechCrunch — „Almost no one uses AI agents to book their Uber, company says” (4 noiembrie 2026)<span class="host">techcrunch.com</span></a></li>
-              <li><a href="https://finance.biggo.com/news/e8f7454e-1d52-4061-9de6-e1ccd47c8bc4" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>BigGo Finance — relatarea cifrelor Uber despre comenzile prin agenți AI<span class="host">finance.biggo.com</span></a></li>
-              <li><a href="https://www.unite.ai/uber-says-ai-agents-booked-just-four-rides-during-halloween-week/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Unite.ai — „Uber says AI agents booked just four rides during Halloween week”<span class="host">unite.ai</span></a></li>
-              <li><a href="https://www.tradingkey.com/news/stocks/262274497-" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>TradingKey — rezumatul apelului cu investitorii al Uber<span class="host">tradingkey.com</span></a></li>
-            </ul>
-          </div>
-
-          <div class="opposing">
-            <p class="sec-label">Tabăra adversă</p>
-            <p>Dara Khosrowshahi, CEO Uber, susține că e doar o fază incipientă și speră ca utilizarea să crească — agenții terți pot aduce cerere nouă pe platformă, nu doar pot fura din cea existentă.</p>
-          </div>
-
-          <div class="impact">
-            <span class="badge">Impact direct</span>
-            <p>Impact direct: minim — relevanță de context. Pentru automatizările lui cu API-uri AI nu se schimbă nimic azi; agenții cu bani reali rămân încă excepția, nu regula.</p>
-          </div>
-        </article>
-
-        <!-- 15 · 5 nov · 11:00 -->
-        <article id="stire-57" data-cats="tech">
-          <div class="a-meta">
-            <span class="a-time">5 nov · 11:00</span>
-            <span class="a-cat">Tech &amp; AI</span>
-            <span class="a-num">#15 / 24</span>
-          </div>
-          <h2>PAC-urile AI au cheltuit milioane ca să-și aleagă Congresul — și au pierdut în mare parte</h2>
-
-          <div class="sec">
-            <p class="sec-label">Ce s-a întâmplat</p>
-            <p>Grupurile politice pro și contra industriei AI au cheltuit milioane de dolari ca să influențeze alegerile de la jumătatea mandatului din SUA, de marți, 3 noiembrie, iar rezultatele au fost mixte, mulți dintre candidații cel mai susținuți pierzând. Două comitete de acțiune politică din industria AI — American Mission și Building the Future — au cheltuit împreună 4,8 milioane de dolari pentru candidata republicană la Senat din Carolina de Sud, Darline Graham, care a pierdut. Leading the Future, rețeaua susținută de președintele OpenAI Greg Brockman și de fondul Andreessen Horowitz, a cheltuit 27,38 milioane de dolari în primare, inclusiv 8 milioane doar împotriva lui Alex Bores din New York, care și-a pierdut candidatura la Congres în iunie.</p>
-          </div>
-
-          <div class="sec">
-            <p class="sec-label">De ce contează</p>
-            <p>Banii industriei AI nu au reușit să-și cumpere un Congres prietenos cu reglementarea laxă, iar direcția reglementării AI în SUA rămâne deschisă — exact mediul în care operează OpenAI și Anthropic, ale căror modele stau la baza automatizărilor cu plată per token.</p>
-          </div>
-
-          <div class="verify">
-            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
-            <p>Verdict: confirmat. Surse: TechCrunch (sursa curatoriată, 4 nov); Citation Needed (Molly White, 4 nov) — bilanț independent pe date FEC: circa 250 mil. $ cheltuiți de PAC-urile crypto+AI, 79 mil. $ doar AI pe 68 de locuri, 9 din 12 curse competitive pierdute de tabăra susținută de PAC-uri; PPC Land (4 nov) — analiză pe date FEC și AdExchanger.</p>
-            <ul class="sources">
-              <li><a href="https://techcrunch.com/2026/11/04/ai-pacs-spent-millions-trying-to-shape-congress-heres-how-they-fared/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>TechCrunch (sursa curatoriată) — „AI PACs spent millions trying to shape Congress — here's how they fared” (4 noiembrie 2026)<span class="host">techcrunch.com</span></a></li>
-              <li><a href="https://www.citationneeded.news/2026-election-results/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Citation Needed (Molly White) — bilanțul alegerilor din 2026, pe date FEC (4 noiembrie 2026)<span class="host">citationneeded.news</span></a></li>
-              <li><a href="https://ppc.land/democrats-win-congress-what-changes-for-ai-rules-privacy-and-advertising/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>PPC Land — ce se schimbă pentru regulile AI, confidențialitate și publicitate după victoria democraților în Congres, analiză pe date FEC și AdExchanger (4 noiembrie 2026)<span class="host">ppc.land</span></a></li>
-            </ul>
-          </div>
-
-          <div class="opposing">
-            <p class="sec-label">Tabăra adversă</p>
-            <p>Leading the Future susține că alegerile generale n-au fost miza principală — primarele sunt folosirea mai eficientă a banilor, pentru că acolo se construiește notorietatea și agenda de politici AI — și că va continua să cheltuie și la alegerile din 2028. (<a href="https://techcrunch.com/2026/11/04/ai-pacs-spent-millions-trying-to-shape-congress-heres-how-they-fared/" target="_blank" rel="noopener">TechCrunch</a>)</p>
-          </div>
-
-          <div class="impact">
-            <span class="badge">Impact direct</span>
-            <p>Impact direct minim azi — nu schimbă nimic în contul lui; relevanță de context: eșecul banilor industriei lasă deschisă reglementarea AI în SUA, cu efecte pe termen lung asupra costurilor și regulilor pentru modelele pe care le folosește.</p>
-          </div>
-        </article>
-
-        <!-- 16 · 5 nov · 11:00 -->
-        <article id="stire-58" data-cats="belgia">
-          <div class="a-meta">
-            <span class="a-time">5 nov · 11:00</span>
-            <span class="a-cat">Belgia</span>
-            <span class="a-num">#16 / 24</span>
-          </div>
-          <h2>Ahold Delhaize pune preț pe atacul cibernetic din octombrie: până la 250 de milioane € din vânzări pierdute</h2>
-
-          <div class="sec">
-            <p class="sec-label">Ce s-a întâmplat</p>
-            <p>Ahold Delhaize, grupul care deține Delhaize, Albert Heijn, Food Lion și Hannaford, a anunțat miercuri, 4 noiembrie, odată cu rezultatele pe trimestrul 3, că incidentul cibernetic din octombrie îi va reduce vânzările din trimestrul 4 cu 200–250 de milioane de euro și profitul operațional cu 75–100 de milioane de euro. Compania și-a redus previziunile pe 2026: creșterea profitului pe acțiune coboară la o singură cifră mică (de la o cifră medie–mare), iar fluxul de numerar liber estimat scade de la cel puțin 2,3 miliarde € la circa 2,1 miliarde €. Incidentul din octombrie a afectat comenzile online în Benelux și SUA și lanțul de aprovizionare din Benelux; compania spune că își revine și că e pregătită pentru sezonul sărbătorilor. Incidentul e distinct de atacurile asupra frigiderelor din supermarketuri relatate separat: compania n-a precizat ce tip de atac a fost și nici cine e în spate, iar ancheta continuă.</p>
-          </div>
-
-          <div class="sec">
-            <p class="sec-label">De ce contează</p>
-            <p>E unul dintre cei mai mari retaileri alimentari din Belgia, cu magazine Delhaize peste tot în țară, iar un incident care oprește o săptămână sistemele IT și costă un sfert de miliard arată cât de scumpă devine o breșă în infrastructura comercială — exact genul de incident pe care îl gestionează profesional, ca IT incident Manager.</p>
-          </div>
-
-          <div class="verify">
-            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
-            <p>Verdict: confirmat. Surse: The Brussels Times (sursa curatoriată, titlul de pe homepage, 5 nov); Grocery Dive (4 nov); RetailDetail EU (4 nov); WebProNews (4 nov). Toate pornesc de la comunicatul companiei din 4 nov, ora 07:30 CET.</p>
-            <ul class="sources">
-              <li><a href="https://www.grocerydive.com/news/ahold-delhaize-united-states-third-quarter-earnings/873745/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Grocery Dive — rezultatele Ahold Delhaize pe trimestrul 3 și costul incidentului cibernetic (4 noiembrie 2026)<span class="host">grocerydive.com</span></a></li>
-              <li><a href="https://www.retaildetail.eu/news/food/cyberattack-costs-ahold-delhaize-up-to-250-million-euros-in-revenue/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>RetailDetail EU — „Cyberattack costs Ahold Delhaize up to 250 million euros in revenue” (4 noiembrie 2026)<span class="host">retaildetail.eu</span></a></li>
-              <li><a href="https://www.webpronews.com/ahold-delhaize-cyberattack-cost-q4-sales-guidance-cut/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>WebProNews — costul atacului cibernetic pentru Ahold Delhaize și reducerea previziunilor (4 noiembrie 2026)<span class="host">webpronews.com</span></a></li>
-            </ul>
-          </div>
-
-          <div class="impact">
-            <span class="badge">Impact direct</span>
-            <p>Impact direct minim azi — nu cere nicio acțiune; relevanță de context: prețul concret al unui incident cibernetic major la un mare retailer din Belgia, în domeniul lui profesional.</p>
-          </div>
-        </article>
-
-        <!-- 17 · 5 nov · 10:00 -->
-        <article id="stire-55" data-cats="securitate romania">
-          <div class="a-meta">
-            <span class="a-time">5 nov · 10:00</span>
-            <span class="a-cat">Securitate &amp; NATO · România</span>
-            <span class="a-num">#17 / 24</span>
-          </div>
-          <h2>Colby la București: România își mărește contribuția la NATO, în timp ce Pentagonul decide soarta trupelor SUA în Europa</h2>
-
-          <div class="sec">
-            <p class="sec-label">Ce s-a întâmplat</p>
-            <p>Elbridge Colby, subsecretarul american al Apărării pentru politici (numărul 2 din Pentagon), a fost miercuri la București, unde s-a întâlnit cu președintele Nicușor Dan la Cotroceni și cu ministrul de Externe Dan Neculaescu la MAE. Discuțiile au vizat securitatea Mării Negre și contribuția României la NATO, iar Neculaescu a spus că „România își mărește contribuția la o NATO 3.0", cu cheltuieli de apărare în creștere. G4Media scrie, pe surse, că președintele Dan i-ar fi transmis lui Colby că România e dispusă să plătească pentru ca SUA să-și păstreze trupele și echipamentul militar în țară, iar decizia lui Trump e așteptată în decembrie.</p>
-          </div>
-
-          <div class="sec">
-            <p class="sec-label">De ce contează</p>
-            <p>Atinge direct zona lui de lucru — Flancul estic, Marea Neagră: prezența SUA în România e în revizuire la Pentagon (revizuirea pregătește opțiuni pentru secretarul Hegseth până pe 6 noiembrie), iar baza Mihail Kogălniceanu e piesa centrală a prezenței americane la Marea Neagră. O ofertă de plată directă ar face garanția americană tranzacțională, în linie cu ce s-a raportat și în octombrie.</p>
-          </div>
-
-          <div class="verify">
-            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
-            <p>Verdict: confirmat pentru vizită și întâlniri; oferta de plată rămâne sursă unică. Surse: ByteEU (5 noiembrie 2026) relatează întâlnirile, citând MAE și postările oficialilor; G4Media (4 noiembrie 2026) consemnează întâlnirile și declarațiile ministrului de Externe după discuții. Nuanță de integritate: informația despre oferta de plată vine doar din sursele anonime ale G4Media și nu e confirmată independent de nicio altă sursă.</p>
-            <ul class="sources">
-              <li><a href="https://www.byteseu.com/2498908/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>ByteEU — relatarea întâlnirilor de la București (5 noiembrie 2026)<span class="host">byteseu.com</span></a></li>
-              <li><a href="https://www.g4media.ro/surse-presedintele-nicusor-dan-i-a-transmis-lui-elbridge-colby-numarul-2-din-pentagon-ca-romania-e-dispusa-sa-plateasca-pentru-ca-sua-sa-si-pastreze-aici-trupele-si-echipamentul-militar.html" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>G4Media — „Surse: Președintele Nicușor Dan i-a transmis lui Elbridge Colby că România e dispusă să plătească pentru ca SUA să-și păstreze aici trupele și echipamentul militar” (4 noiembrie 2026)<span class="host">g4media.ro</span></a></li>
-              <li><a href="https://www.g4media.ro/ministrul-de-externe-despre-discutiile-cu-subsecretarul-sua-al-apararii-elbridge-colby-a-apreciat-modul-eficient-si-neescalatoriu-in-care-romania-a-raspuns-pana-acum-incidentelor-de-securi.html" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>G4Media — declarațiile ministrului de Externe după discuțiile cu subsecretarul SUA al Apărării, Elbridge Colby (4 noiembrie 2026)<span class="host">g4media.ro</span></a></li>
-            </ul>
-          </div>
-
-          <div class="impact">
-            <span class="badge">Impact direct</span>
-            <p>Impact direct minim azi — nu cere nicio acțiune imediată; relevanță profesională înaltă: decizia privind trupele SUA în România (așteptată în decembrie, după revizuirea Pentagonului) atinge direct Flancul estic și Marea Neagră, zona lui de lucru.</p>
-          </div>
-        </article>
-
-        <!-- 18 · 5 nov · 10:00 -->
-        <article id="stire-56" data-cats="tech">
-          <div class="a-meta">
-            <span class="a-time">5 nov · 10:00</span>
-            <span class="a-cat">Tech &amp; AI</span>
-            <span class="a-num">#18 / 24</span>
-          </div>
-          <h2>Meta cumpără Conductor, startupul care rulează mai mulți agenți de coding AI în paralel</h2>
-
-          <div class="sec">
-            <p class="sec-label">Ce s-a întâmplat</p>
-            <p>Meta a achiziționat Conductor, startup fondat în 2024 care le permite inginerilor să ruleze mai mulți agenți de coding AI în paralel, fiecare în propriul workspace izolat. Anunțul a venit miercuri, 4 noiembrie: Axios a relatat primul, fondatorul și CEO-ul Charlie Holtz a confirmat pe blogul companiei, iar Meta a confirmat achiziția pentru TechCrunch, fără să dezvăluie suma. Echipa se alătură Meta Superintelligence Labs, unde va lucra cu Alexandr Wang și Nat Friedman. Produsul actual se închide treptat: Conductor Cloud devine read-only pe 13 noiembrie și se oprește pe 20 noiembrie, când începe ștergerea datelor din cloud; aplicația locală rămâne până la începutul lui 2027.</p>
-          </div>
-
-          <div class="sec">
-            <p class="sec-label">De ce contează</p>
-            <p>Meta își întărește cursa de recuperare în AI pentru dezvoltatori — în august a lansat propriul agent de coding, Muse Code — iar achiziția arată că orchestrarea mai multor agenți în paralel devine piesa strategică, nu doar modelul în sine. Semnal de piață relevant pentru domeniul AI și al automatizărilor; utilizatorii Conductor Cloud trebuie să-și exporte datele înainte de 20 noiembrie.</p>
-          </div>
-
-          <div class="verify">
-            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
-            <p>Verdict: confirmat. Surse: Axios a dat relatarea inițială (4 noiembrie); fondatorul și CEO-ul Charlie Holtz a confirmat achiziția în anunțul oficial de pe blogul companiei; TechCrunch (4 noiembrie 2026) a obținut confirmarea Meta, iar PYMNTS (4 noiembrie 2026) confirmă independent tranzacția și închiderea treptată a produsului.</p>
-            <ul class="sources">
-              <li><a href="https://techcrunch.com/2026/11/04/meta-acquires-ai-coding-startup-conductor/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>TechCrunch — „Meta acquires AI coding startup Conductor” (4 noiembrie 2026)<span class="host">techcrunch.com</span></a></li>
-              <li><a href="https://www.pymnts.com/news/artificial-intelligence/2026/meta-acquires-ai-coding-startup-conductor/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>PYMNTS — „Meta acquires AI coding startup Conductor” (4 noiembrie 2026)<span class="host">pymnts.com</span></a></li>
-            </ul>
-          </div>
-
-          <div class="impact">
-            <span class="badge">Impact direct</span>
-            <p>Impact direct minim — nu cere nicio acțiune; relevanță de context: consolidarea pieței de agenți AI de coding, domeniul în care își construiește automatizările.</p>
-          </div>
-        </article>
-
-        <!-- 19 · 5 nov · 09:00 -->
-        <article id="stire-53" data-cats="romania">
-          <div class="a-meta">
-            <span class="a-time">5 nov · 09:00</span>
-            <span class="a-cat">România · Fonduri europene · PNRR</span>
-            <span class="a-num">#19 / 24</span>
-          </div>
-          <h2>România riscă să piardă 3,4 miliarde de euro din PNRR: ministrul Fondurilor Europene anunță că banii intră în suspendare</h2>
-
-          <div class="sec">
-            <p class="sec-label">Ce s-a întâmplat</p>
-            <p>Ministrul Investițiilor și Proiectelor Europene, Mihai Alexandru Ghigiu, a declarat miercuri, 4 noiembrie, că din cele 6,4 miliarde de euro rămase de atras prin cererile de plată 5 (2,08 miliarde) și 6 (4,35 miliarde), România estimează că va încasa doar circa 3 miliarde până la finalul anului, iar diferența de 3,4 miliarde intră într-o zonă de suspendare. Cauza sunt jaloanele neîndeplinite sau cu risc — 6 la cererea 5 și 32 din 104 la cererea 6, printre cele ratate definitiv numărându-se legea salarizării și legea decarbonizării. Comisia Europeană decide pe 20 noiembrie ce jaloane sunt îndeplinite; România trimite documente revizuite până vineri, 6 noiembrie, și are apoi două luni pentru explicații suplimentare ca să recupereze o parte din bani în primăvara lui 2027.</p>
-          </div>
-
-          <div class="sec">
-            <p class="sec-label">De ce contează</p>
-            <p>O parte din sumele respective era inclusă în ținta de deficit bugetar a României (6,2% din PIB), deci suspendarea sau pierderea lor apasă direct pe bugetul 2027 și pe capacitatea statului de a finanța investiții — context fiscal care contează pentru oricine are expuneri în România: investiția recurentă în TVBETETF, apartamentul din București și planurile de vacanță de Crăciun în țară.</p>
-          </div>
-
-          <div class="verify">
-            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
-            <p>Verdict: confirmat. Surse: declarația ministrului Ghigiu (conferință de presă, 4 noiembrie 2026), relatată independent de Adevărul Financiar, Prime24, Xpress News și Gazetari.ro. Nuanță de integritate: suspendarea celor 3,4 miliarde este deocamdată o estimare a ministrului, nu o decizie a Comisiei Europene — decizia oficială vine pe 20 noiembrie, iar o parte din bani ar putea fi recuperați prin contestații. Agenda zilei vine din G4Media; verificarea, din sursele de mai jos.</p>
-            <ul class="sources">
-              <li><a href="https://adevarulfinanciar.ro/macroeconomie/romania-ar-putea-incasa-3-miliarde-de-euro-pana-la-2568992.html" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Adevărul Financiar — „România ar putea încasa 3 miliarde de euro din PNRR până la finalul anului”<span class="host">adevarulfinanciar.ro</span></a></li>
-              <li><a href="https://www.prime24.ro/romania-estimeaza-incasari-de-3-miliarde-de-euro-din-pnrr-pana-la-finele-anului/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Prime24 — „România estimează încasări de 3 miliarde de euro din PNRR până la finele anului”<span class="host">prime24.ro</span></a></li>
-              <li><a href="https://xpressnews.ro/romania-ar-putea-primi-trei-miliarde-de-euro-din-pnrr-pana-la-finalul-anului-alte-34-miliarde-raman-suspendate/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Xpress News — „România ar putea primi trei miliarde de euro din PNRR până la finalul anului; alte 3,4 miliarde rămân suspendate”<span class="host">xpressnews.ro</span></a></li>
-              <li><a href="https://gazetari.ro/panica-la-palatul-victoria-pentru-salvarea-deficitului-premierul-luca-niculescu-si-ministrul-finantelor-avertizati-ca-romania-risca-sa-piarda-definitiv-34-miliarde-de-euro-din-pnrr/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Gazetari.ro — „România riscă să piardă definitiv 3,4 miliarde de euro din PNRR”<span class="host">gazetari.ro</span></a></li>
-            </ul>
-          </div>
-
-          <div class="impact">
-            <span class="badge">Impact direct</span>
-            <p>Impact direct minim azi — nu cere nicio acțiune imediată; relevanță de context înaltă: presiune pe deficitul și bugetul României, cu ecou pe piața de capital românească și pe finanțele publice în anul în care noul guvern își construiește primul buget.</p>
-          </div>
-        </article>
-
-        <!-- 20 · 5 nov · 09:00 -->
-        <article id="stire-54" data-cats="tech">
-          <div class="a-meta">
-            <span class="a-time">5 nov · 09:00</span>
-            <span class="a-cat">Tech &amp; AI · Costuri AI · Apple</span>
-            <span class="a-num">#20 / 24</span>
-          </div>
-          <h2>Apple taie bugetele interne de AI ale angajaților: plafonul zilnic scade de la 300 la 200 de dolari</h2>
-
-          <div class="sec">
-            <p class="sec-label">Ce s-a întâmplat</p>
-            <p>Apple a redus în octombrie plafonul zilnic de cheltuieli cu AI pentru unii ingineri de la 300 la 200 de dolari, iar pentru unele echipe se pregătesc reduceri până la 100 de dolari, relatează Bloomberg. Pentru multe echipe din afara ingineriei, unde plafonul este deja 100 de dolari, se ia în calcul coborârea la 25 de dolari. Plafoanele acoperă costul tokenilor la modelele folosite intern — Claude (Anthropic), ChatGPT (OpenAI) și Gemini (Google) — iar angajații care au nevoie de mai mult pot cere excepții de la conducere. Măsura face parte din campania de reducere a costurilor a noului CEO John Ternus, în timp ce cheltuielile de cercetare-dezvoltare ale Apple au crescut cu 32% în anul fiscal 2026, la 45,8 miliarde de dolari, în bună parte din cauza AI.</p>
-          </div>
-
-          <div class="sec">
-            <p class="sec-label">De ce contează</p>
-            <p>Continuă arcul costurilor AI urmărit în pagină (Anthropic: compute-ul a ajuns la 58% din venituri; Canva a tăiat 22% din posturi pe fondul costurilor de servire AI): după anii de entuziasm, și cel mai mare cumpărător de AI din lume își contabilizează fiecare token. Pentru un cititor care își construiește automatizările pe API-uri AI cu plată per token, e confirmarea practică a lecției de igienă a costurilor — limite de cheltuire, modele mai ieftine acolo unde se poate, alerte de spending.</p>
-          </div>
-
-          <div class="verify">
-            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
-            <p>Verdict: confirmat. Surse: Bloomberg (relatarea originală, 4 noiembrie 2026), Reuters (4 noiembrie 2026), 9to5Mac (4 noiembrie 2026), MacRumors (4 noiembrie 2026). Nuanță de integritate: puțini angajați foloseau plafonul maxim de 300 de dolari, deci economiile reale ale Apple ar putea fi mici — Bloomberg însuși notează incertitudinea.</p>
-            <ul class="sources">
-              <li><a href="https://techcrunch.com/2026/11/04/apple-is-reportedly-cutting-budgets-for-its-internal-ai-usage/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>TechCrunch — „Apple is reportedly cutting budgets for its internal AI usage” (4 noiembrie 2026)<span class="host">techcrunch.com</span></a></li>
-              <li><a href="https://www.reuters.com/business/retail-consumer/apple-cuts-employee-ai-budgets-cost-control-push-bloomberg-news-reports-2026-11-04/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Reuters — „Apple cuts employee AI budgets in cost-control push, Bloomberg News reports” (4 noiembrie 2026)<span class="host">reuters.com</span></a></li>
-              <li><a href="https://9to5mac.com/2026/11/04/report-apple-reduces-employees-ai-token-allowances-as-ternus-moves-to-cut-costs/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>9to5Mac — „Report: Apple reduces employees' AI token allowances as Ternus moves to cut costs” (4 noiembrie 2026)<span class="host">9to5mac.com</span></a></li>
-              <li><a href="https://www.macrumors.com/2026/11/04/apple-reducing-employee-ai-spending/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>MacRumors — „Apple reducing employee AI spending” (4 noiembrie 2026)<span class="host">macrumors.com</span></a></li>
-            </ul>
-          </div>
-
-          <div class="impact">
-            <span class="badge">Impact direct</span>
-            <p>Impact direct minim azi — nu schimbă nimic în contul cititorului; relevanță practică: semnal că era „AI pe gratis" s-a terminat și la marile companii, iar disciplina de cost pe API-uri devine standard de industrie.</p>
-          </div>
-        </article>
-
-        <!-- 21 · 5 nov · 08:00 -->
-        <article id="stire-51" data-cats="securitate">
-          <div class="a-meta">
-            <span class="a-time">5 nov · 08:00</span>
-            <span class="a-cat">Securitate &amp; NATO · Securitate cibernetică · Infrastructură medicală</span>
-            <span class="a-num">#21 / 24</span>
-          </div>
-          <h2>Atacurile cibernetice asupra frigiderelor din Europa escaladează: trei bănci de sânge franceze lovite; România, printre țările vizate</h2>
-
-          <div class="followup">
-            <span class="tag">Urmare la</span>
-            <p><a href="#stire-24">„Atac cibernetic suspect la frigiderele Delhaize și Carrefour din Belgia: cel puțin 40 de magazine Delhaize și 15 Carrefour afectate peste noapte”</a> — luni, 2 noiembrie 2026.</p>
-          </div>
-
-          <div class="sec">
-            <p class="sec-label">Ce s-a întâmplat</p>
-            <p>În noaptea de 1 spre 2 noiembrie, un atac cibernetic a vizat sistemele de monitorizare și control ale frigiderelor de la trei centre ale Serviciului național francez de sânge (EFS), prin sistemul furnizorului extern de echipamente frigorifice. Setările de temperatură și dezgheț au fost modificate la valori extreme — presa franceză relatează un prag programat de 110°C, față de −30°C în mod normal — dar alarmele au detectat anomaliile, produsele au fost mutate în alte facilități, iar EFS confirmă că nu s-au pierdut produse din sânge și nu există consecințe pentru sănătate. Atacul vine în același val cu incidentele de la supermarketuri din 2 noiembrie, care au lovit magazine în mai multe țări europene — Belgia, Luxemburg, Suedia, Finlanda, Irlanda, Estonia și Țările de Jos — plus magazine vizate în Portugalia și România.</p>
-          </div>
-
-          <div class="sec">
-            <p class="sec-label">De ce contează</p>
-            <p>Ținta nu mai e un magazin, ci lanțul de sânge și medicamente: același tip de echipament (controlere frigorifice administrate de un furnizor extern) lovește acum infrastructura medicală. Pentru un IT incident Manager, e un caz manual de atac asupra unui furnizor terț care compromite sisteme operaționale, nu rețeaua IT centrală — iar ancheta agenției franceze de securitate cibernetică (ANSSI) și a Ministerului Sănătății din Franța e încă deschisă.</p>
-          </div>
-
-          <div class="verify">
-            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
-            <p>Verdict: confirmat. Surse: EFS, prin comunicatul propriu (sursă primară pentru propriul incident), confirmă atacul asupra celor trei centre, anomaliile de temperatură detectate de alarme și lipsa pierderilor de produse; Help Net Security (4 noiembrie) și Reuters (5 noiembrie) confirmă independent incidentul; The Brussels Times (4 noiembrie) consemnează că supermarketurile belgiene fuseseră avertizate de riscurile cibernetice înaintea valului de atacuri.</p>
-            <ul class="sources">
-              <li><a href="https://www.g4media.ro/trei-banci-de-sange-franceze-au-fost-atacate-cibernetic-temperatura-din-frigidere-a-crescut-brusc.html" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>EFS, comunicat (sursă primară pentru propriul incident, relatat de G4Media) — „Trei bănci de sânge franceze au fost atacate cibernetic, temperatura din frigidere a crescut brusc”<span class="host">g4media.ro</span></a></li>
-              <li><a href="https://www.helpnetsecurity.com/2026/11/04/cyberattack-hits-french-blood-banks/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Help Net Security — „Cyberattack hits French blood banks” (4 noiembrie 2026)<span class="host">helpnetsecurity.com</span></a></li>
-              <li><a href="https://www.thenews.pk/print/1446963-cyberattack-targets-french-blood-banks" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Reuters — „Cyberattack targets French blood banks” (5 noiembrie 2026, prin The News International)<span class="host">thenews.pk</span></a></li>
-              <li><a href="https://www.brusselstimes.com/belgium/2389696/belgian-supermarkets-were-warned-of-cyber-risks-could-the-attacks-have-been-prevented" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>The Brussels Times — „Belgian supermarkets were warned of cyber risks: could the attacks have been prevented?” (4 noiembrie 2026)<span class="host">brusselstimes.com</span></a></li>
-            </ul>
-          </div>
-
-          <div class="opposing">
-            <p class="sec-label">Tabăra adversă</p>
-            <p>Xavier Bellekens, directorul firmei de threat intelligence Lupovis, a declarat pentru <a href="https://www.helpnetsecurity.com/2026/11/04/cyberattack-hits-french-blood-banks/" target="_blank" rel="noopener">Help Net Security</a> că, din 20 octombrie, au fost observate încercări de autentificare asupra controlerelor frigorifice Danfoss venind din rețele folosite anterior de adversari ruși. ANSSI și EFS nu au atribuit public atacul, iar nicio dovadă publică nu leagă o vulnerabilitate Danfoss anume de incidentul EFS.</p>
-          </div>
-
-          <div class="impact">
-            <span class="badge">Impact direct</span>
-            <p>Impact direct: minim — nu s-au pierdut produse, nu există consecințe pentru sănătate; în Belgia, magazine Delhaize și Carrefour au avut rafturi golite temporar la 2 noiembrie. Relevanță profesională: modelul de atac (furnizor extern → sisteme operaționale) e exact tipul de incident urmărit în domeniul lui de incident management.</p>
-          </div>
-        </article>
-
-        <!-- 22 · 5 nov · 08:00 -->
-        <article id="stire-52" data-cats="belgia">
-          <div class="a-meta">
-            <span class="a-time">5 nov · 08:00</span>
-            <span class="a-cat">Belgia · Criză bugetară · Politică federală</span>
-            <span class="a-num">#22 / 24</span>
-          </div>
-          <h2>Criza bugetară belgiană: regele încheie azi consultările; trei scenarii pe masă — alegeri, coaliție nouă sau acord pe buget</h2>
-
-          <div class="followup">
-            <span class="tag">Urmare la</span>
-            <p><a href="#stire-39">„Criza bugetară belgiană: regele îi primește azi pe Rousseau și Bouchez; patronatele cer reluarea negocierilor, decizia privind demisia lui De Wever vine vineri”</a> — miercuri, 4 noiembrie 2026, ora 13:00.</p>
-          </div>
-
-          <div class="sec">
-            <p class="sec-label">Ce s-a întâmplat</p>
-            <p>Regele Philippe încheie azi consultările cu liderii coaliției, primind-o pe președinta N-VA, Valérie Van Peel, după ce marți și miercuri i-a primit pe liderii Les Engagés, CD&V, Vooruit și MR. Premierul Bart De Wever, care și-a prezentat demisia luni după eșecul negocierilor pentru bugetul 2027, revine vineri la Palat, la 10:30, când e așteptată decizia regelui. Brussels Times analizează azi trei scenarii: alegeri anticipate, o coaliție nouă sau un acord pe buget. Între timp, un buget de urgență (douăsprezecimi provizorii) devine tot mai probabil dacă nu se ajunge la un acord — guvernul ar funcționa din nou cu buget provizoriu, al doilea an consecutiv.</p>
-          </div>
-
-          <div class="sec">
-            <p class="sec-label">De ce contează</p>
-            <p>Miza e de 10 miliarde € în economii și venituri suplimentare până în 2029, într-o țară cu un deficit de 5,2% din PIB și o datorie publică de circa 108% din PIB, sub procedura UE de deficit excesiv. Un guvern căzut sau alegeri anticipate ar prelungi incertitudinea fiscală exact când se decid taxele și cheltuielile pentru 2027.</p>
-          </div>
-
-          <div class="verify">
-            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
-            <p>Verdict: confirmat. Surse: The Brussels Times (5 noiembrie) analizează cele trei scenarii deschise în fața regelui — alegeri anticipate, coaliție nouă sau acord pe buget — iar tot Brussels Times (4 noiembrie) consemnează că bugetul de urgență devine tot mai probabil; ING Think (3 noiembrie) confirmă gravitatea situației bugetare; Belgium Now (4 noiembrie) confirmă programul consultărilor regale.</p>
-            <ul class="sources">
-              <li><a href="https://www.brusselstimes.com/belgium/2391073/elections-new-coalition-or-budget-deal-three-scenarios-as-king-weighs-up-de-wevers-resignation" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>The Brussels Times — „Elections, new coalition or budget deal: three scenarios as king weighs up De Wever's resignation” (5 noiembrie 2026)<span class="host">brusselstimes.com</span></a></li>
-              <li><a href="https://www.brusselstimes.com/politics/2388560/emergency-budget-becoming-inevitable-for-belgium-what-does-it-mean" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>The Brussels Times — „Emergency budget becoming inevitable for Belgium: what does it mean” (4 noiembrie 2026)<span class="host">brusselstimes.com</span></a></li>
-              <li><a href="https://think.ing.com/downloads/pdf/article/belgium-the-situation-is-serious-but-not-hopeless" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>ING Think — „Belgium: the situation is serious, but not hopeless” (3 noiembrie 2026)<span class="host">think.ing.com</span></a></li>
-              <li><a href="https://belgium-now.com/2026/11/04/king-receives-rousseau-bouchez-budget-deadlock/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Belgium Now — „King receives Rousseau, Bouchez — budget deadlock” (4 noiembrie 2026)<span class="host">belgium-now.com</span></a></li>
-            </ul>
-          </div>
-
-          <div class="opposing">
-            <p class="sec-label">Tabăra adversă</p>
-            <p>OCDE, într-o analiză citată de <a href="https://www.brusselstimes.com/belgium/2390096/more-cuts-over-tax-rises-oecd-weighs-in-on-belgiums-budget-debate" target="_blank" rel="noopener">Brussels Times</a> pe 4 noiembrie, pledează pentru mai multe tăieri de cheltuieli decât majorări de taxe în dezbaterea bugetară — o poziție care tensionează tocmai linia de fractură a coaliției, între socialiștii din Vooruit și liberalii din MR.</p>
-          </div>
-
-          <div class="impact">
-            <span class="badge">Impact direct</span>
-            <p>Impact direct: concret, dar amânat până vineri — decizia regelui stabilește dacă Belgia intră în alegeri anticipate sau rămâne cu un guvern care negociază mai departe; până atunci nu e nimic concret de făcut, doar de urmărit decizia de vineri.</p>
-          </div>
-        </article>
-
-        <!-- 23 · 5 nov · 06:00 -->
-        <article id="stire-49" data-cats="tech">
-          <div class="a-meta">
-            <span class="a-time">5 nov · 06:00</span>
-            <span class="a-cat">Tech &amp; AI · Centre de date · Alegeri SUA</span>
-            <span class="a-num">#23 / 24</span>
-          </div>
-          <h2>Votanții americani au respins centrele de date AI la alegerile de la jumătatea mandatului: restricții în zeci de localități, Ohio în frunte</h2>
-
-          <div class="sec">
-            <p class="sec-label">Ce s-a întâmplat</p>
-            <p>La alegerile de marți, 3 noiembrie 2026, măsurile de restricționare a centrelor de date au trecut în aproape toate localitățile unde au fost pe buletinul de vot: 33 de măsuri au trecut sau conduceau, față de o singură victorie a industriei, în Dakota de Nord, potrivit trackerului Data Centers on the Ballot. Ohio a fost epicentrul, cu 21 de măsuri: interdicții votate cu 76% la Urbana și 77% la Hubbard, plus o interdicție vizând un campus AWS de 18 clădiri la Trenton și un sit Meta la Piqua. Un sondaj NBC la ieșirea de la urne arată că 56% dintre votanți au spus că AI și centrele de date au fost un factor „crucial sau major" în votul pentru Congres.</p>
-          </div>
-
-          <div class="sec">
-            <p class="sec-label">De ce contează</p>
-            <p>Valul de opoziție locală, combinat cu un Congres cu majoritate democrată, pune presiune pe ritmul construcției de centre de date care alimentează boomul AI: Goldman Sachs anticipează deja întârzieri în state ca Georgia și Texas, iar în Congres se discută un moratoriu național până la noi garanții (propunerea Sanders/Ocasio-Cortez). Pentru urmărirea AI și a investițiilor în tehnologie, costurile cu energia și autorizațiile devin variabila care poate încetini infrastructura AI.</p>
-          </div>
-
-          <div class="verify">
-            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
-            <p>Verdict: confirmat. Surse: TechCrunch (sursa curatoriată) relatează valul de măsuri anti-centre de date de după alegerile de la jumătatea mandatului; Engadget, Euronews, Route Fifty și Inc. confirmă independent respingerea măsurilor pro-centre de date în zeci de localități, cu Ohio în frunte. Notă de integritate: cifrele diferă ușor între surse — 33 de măsuri trecute sau conducătoare, potrivit trackerului Data Centers on the Ballot, față de cel puțin 29 de jurisdicții, potrivit Washington Post — iar rezultatele rămân neoficiale până la certificare (24 noiembrie în Ohio).</p>
-            <ul class="sources">
-              <li><a href="https://techcrunch.com/2026/11/04/after-the-midterms-a-bigger-clash-over-data-centers-could-be-coming/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>TechCrunch (sursa curatoriată) — „After the midterms, a bigger clash over data centers could be coming" (4 noiembrie 2026)<span class="host">techcrunch.com</span></a></li>
-              <li><a href="https://www.engadget.com/2306534/americans-overwhelmingly-voted-against-data-centers-in-the-midterms/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Engadget — „Americans overwhelmingly voted against data centers in the midterms"<span class="host">engadget.com</span></a></li>
-              <li><a href="https://app.ekkow.com/1490652895598231589" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Euronews — relatarea rezultatelor privind centrele de date (prin Ekkow)<span class="host">app.ekkow.com</span></a></li>
-              <li><a href="https://www.route-fifty.com/artificial-intelligence/2026/11/voters-reject-data-centers-local-ballot-initiatives/417033/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Route Fifty — „Voters reject data centers in local ballot initiatives"<span class="host">route-fifty.com</span></a></li>
-              <li><a href="https://www.inc.com/chloe-aiello/voters-rejected-data-centers-across-america-this-1-state-just-fired-the-loudest-warning-shot/91431085" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Inc. — „Voters rejected data centers across America; this 1 state just fired the loudest warning shot"<span class="host">inc.com</span></a></li>
-            </ul>
-          </div>
-
-          <div class="opposing">
-            <p class="sec-label">Tabăra adversă</p>
-            <p>Leading the Future, grup pro-industrie susținut de președintele OpenAI Greg Brockman, pledează pentru un cadru național unic care să prevaleze asupra legilor statale (<a href="https://techcrunch.com/2026/11/04/after-the-midterms-a-bigger-clash-over-data-centers-could-be-coming/" target="_blank" rel="noopener">TechCrunch</a>).</p>
-          </div>
-
-          <div class="impact">
-            <span class="badge">Impact direct</span>
-            <p>Impact direct: minim — relevanță de context pentru urmărirea AI și a investițiilor în tehnologie; nicio acțiune concretă de făcut.</p>
-          </div>
-        </article>
-
-        <!-- 24 · 5 nov · 06:00 -->
-        <article id="stire-50" data-cats="securitate">
-          <div class="a-meta">
-            <span class="a-time">5 nov · 06:00</span>
-            <span class="a-cat">Securitate &amp; NATO · Rachete · MBDA</span>
-            <span class="a-num">#24 / 24</span>
-          </div>
-          <h2>MBDA pregătește racheta supersonică Stratus RS: rază «mult, mult» peste Exocet, pentru Franța și Marea Britanie</h2>
-
-          <div class="sec">
-            <p class="sec-label">Ce s-a întâmplat</p>
-            <p>MBDA a prezentat la expoziția Euronaval de la Paris racheta Stratus RS — supersonică, cu motor ramjet cu combustibil lichid reglabil — pentru patru misiuni: atac în adâncime, anti-navă, suprimarea/distrugerea apărării antiaeriene inamice și lovirea țintelor aeriene de mare valoare (avioane de avertizare timpurie AWACS, avioane-cisternă). Raza va depăși „mult, mult" cei peste 200 km ai rachetei Exocet, a spus Olivier Gauffin, director adjunct pentru vânzări al MBDA; contractul de dezvoltare din partea Direcției Generale pentru Armament a Franței, în numele celor doi parteneri, este așteptat în timpul Euronaval. Testele de zbor ar urma să înceapă înainte de 2030, iar intrarea în serviciu la începutul anilor 2030, pe Rafale, Eurofighter Typhoon și viitorul avion din programul britanico-italiano-japonez GCAP.</p>
-          </div>
-
-          <div class="sec">
-            <p class="sec-label">De ce contează</p>
-            <p>NATO le-a cerut aliaților europeni să-și refacă capacitățile ofensive, iar armatele europene duc lipsă de arme capabile să distrugă apărarea antiaeriană inamică — Stratus RS umple exact acest gol, alături de varianta stealth Stratus LO (Franța, Marea Britanie, Italia).</p>
-          </div>
-
-          <div class="verify">
-            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
-            <p>Verdict: confirmat. Surse: Defense News (sursa curatoriată) relatează prezentarea rachetei Stratus RS la Euronaval și raza „mult, mult" peste Exocet; Armada International, EDR Magazine și Daily Caller confirmă independent programul Stratus și detaliile anunțului MBDA.</p>
-            <ul class="sources">
-              <li><a href="https://www.defensenews.com/global/europe/2026/11/04/mbda-high-speed-strike-missile-to-have-range-far-exceeding-exocet/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Defense News (sursa curatoriată) — „MBDA high-speed strike missile to have range far exceeding Exocet" (4 noiembrie 2026)<span class="host">defensenews.com</span></a></li>
-              <li><a href="https://www.armadainternational.com/2026/11/stratus-pheric-electronic-warfare/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Armada International — relatarea programului Stratus la Euronaval<span class="host">armadainternational.com</span></a></li>
-              <li><a href="https://www.edrmagazine.eu/mbda-stratus-weapon-family-nears-demonstration-and-manufacturing-phases-contract" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>EDR Magazine — „MBDA Stratus weapon family nears demonstration and manufacturing phases"<span class="host">edrmagazine.eu</span></a></li>
-              <li><a href="https://dailycaller.com/2026/11/04/new-missile-france-united-kingdom" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Daily Caller — „New missile: France, United Kingdom" (4 noiembrie 2026)<span class="host">dailycaller.com</span></a></li>
-            </ul>
-          </div>
-
-          <div class="impact">
-            <span class="badge">Impact direct</span>
-            <p>Impact direct: minim — relevanță de context pentru munca lui; nicio acțiune concretă de făcut.</p>
-          </div>
-        </article>
-      </main>
-      </section>
 
       <footer>
         <div class="rule" aria-hidden="true"></div>
-        <p>Sfârșitul ediției de azi · Ultima actualizare: miercuri, 11 noiembrie 2026, 20:00<br />Monitorizarea rulează la circa 3 ore, în fereastra L–V 06:00–22:00 · S–D 07:30–22:00 — dă refresh pentru noutăți.</p>
-        <a class="to-top" href="#stire-170">↑ Înapoi la cea mai nouă știre</a>
+        <p>Sfârșitul ediției de azi · Ultima actualizare: joi, 12 noiembrie 2026, 06:00<br />Monitorizarea rulează la circa 3 ore, în fereastra L–V 06:00–22:00 · S–D 07:30–22:00 — dă refresh pentru noutăți.</p>
+        <a class="to-top" href="#stire-173">↑ Înapoi la cea mai nouă știre</a>
       </footer>
     </div>
 
