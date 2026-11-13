@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="color-scheme" content="light dark" />
-    <meta name="tirile-versiune" content="2026-11-13T06:00:00+01:00|2|amber" />
+    <meta name="tirile-versiune" content="2026-11-13T07:00:00+01:00|4|amber" />
     <link rel="icon" href="data:," />
     <title>Știrile zilei</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -699,9 +699,9 @@
     <div class="topbar">
       <div class="topbar-inner">
         <span class="dot" aria-hidden="true"></span>
-        <span><strong>Vineri, 13 noiembrie 2026</strong> · actualizat la <strong>06:00</strong></span>
+        <span><strong>Vineri, 13 noiembrie 2026</strong> · actualizat la <strong>07:00</strong></span>
         <span aria-hidden="true">·</span>
-        <span>2 știri azi</span>
+        <span>4 știri azi</span>
         <span class="spacer"></span>
         <button class="refresh-btn" type="button" id="refreshBtn" aria-label="Reîmprospătează pagina">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg>
@@ -768,15 +768,15 @@
       <section class="dashboard" aria-label="Panou de ansamblu">
         <div class="dash-head">
           <span class="dash-title">Dashboard · Azi</span>
-          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 06:00</span>
+          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 07:00</span>
           <span class="dash-meta">Fereastră monitorizare <strong>L–V 06:00–22:00 · S–D 07:30–22:00</strong> · pas ~3 ore</span>
         </div>
 
         <div class="kpi-grid five" role="group" aria-label="Filtrează după categorie — apasă pe un tile">
           <button class="kpi" type="button" data-filter="toate" aria-pressed="true">
             <span class="kpi-top"><span class="kpi-label">Toate știrile</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">2</span>
-            <span class="kpi-sub">știri verificate azi, în 1 rulare</span>
+            <span class="kpi-value">4</span>
+            <span class="kpi-sub">știri verificate azi, în 2 rulări</span>
             <span class="kpi-bar" aria-hidden="true"><i style="width:100%"></i></span>
             <span class="kpi-hint">Apasă pentru toate</span>
           </button>
@@ -784,14 +784,14 @@
             <span class="kpi-top"><span class="kpi-label">Securitate &amp; NATO</span><span class="kpi-check" aria-hidden="true">✓</span></span>
             <span class="kpi-value">1</span>
             <span class="kpi-sub">complot la baza RAF Fairford</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:50%"></i></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:25%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="romania" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">România</span><span class="kpi-check" aria-hidden="true">✓</span></span>
             <span class="kpi-value">1</span>
             <span class="kpi-sub">România pe sârmă la rating</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:50%"></i></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:25%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="belgia" aria-pressed="false">
@@ -803,9 +803,9 @@
           </button>
           <button class="kpi" type="button" data-filter="tech" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">Tech &amp; AI</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">0</span>
-            <span class="kpi-sub"></span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:0%"></i></span>
+            <span class="kpi-value">2</span>
+            <span class="kpi-sub">Muse face apeluri telefonice · Hugging Face după plecarea lui Huang</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:50%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
         </div>
@@ -819,7 +819,7 @@
       </section>
 
       <div class="filter-status" aria-live="polite">
-        <span class="filter-label">Se afișează: <strong>Toate categoriile — 2 din 2 știri</strong></span>
+        <span class="filter-label">Se afișează: <strong>Toate categoriile — 4 din 4 știri</strong></span>
         <button class="filter-reset" type="button" hidden>Resetează filtrul</button>
       </div>
 
@@ -849,7 +849,86 @@
       <p class="empty">Nicio știre în această categorie azi.</p>
 
       <main>
-        <!-- 1 · 13 nov · 06:00 -->
+        <!-- 1 · 13 nov · 07:00 -->
+        <article id="stire-193" data-cats="tech" data-sev="green" data-subiect="Muse face apeluri telefonice">
+          <div class="a-meta">
+            <span class="a-time">13 nov · 07:00</span>
+            <span class="a-cat">Tech &amp; AI</span>
+            <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
+            <span class="subj-pill">Muse face apeluri telefonice</span>
+            <span class="a-num">#1 / 4</span>
+          </div>
+          <h2>Muse, agentul AI al Meta, sună acum la firme din SUA în locul utilizatorului — doar pentru abonații plătiți</h2>
+          <div class="sec">
+            <p class="sec-label">Ce s-a întâmplat</p>
+            <p>După un test limitat început în septembrie, Meta a deschis funcția de apeluri telefonice pentru toți abonații plătiți din SUA ai agentului său AI, Muse: agentul poate suna la firme în numele utilizatorului — rezervări la restaurant, programări, așteptat la coadă la asigurări, la compania de cablu sau la DMV (echivalentul american al înmatriculărilor). Anunțul a fost făcut pe 12 noiembrie de Alexandr Wang, chief AI officer și șeful diviziei Superintelligence Labs a Meta, pe X. Muse are peste 10 milioane de utilizatori, potrivit companiei, iar abonamentele pornesc de la 20 de dolari pe lună (500 de milioane de tokeni pe săptămână) și 100 de dolari pe lună pentru utilizatorii intensivi (3 miliarde de tokeni). Funcția rămâne deocamdată doar pentru abonații plătiți; opțiunea de adresă de email Muse, adăugată recent, va ajunge curând și la utilizatorii gratuiți. Muse nu e singurul agent care sună: startupul Instinct și Gemini de la Google oferă opțiuni similare.</p>
+          </div>
+          <div class="sec">
+            <p class="sec-label">De ce contează</p>
+            <p>Pentru un IT incident Manager care construiește automatizări cu AI, direcția e cea urmărită în watch de săptămâni: agenții autonomi primesc autoritate să acționeze în numele utilizatorului — să sune, să rezerve, să plătească. Tabloul e împărțit: <a href="#stire-178">United Airlines tocmai a interzis agenților AI să rezerve zboruri</a> (cardul de ieri, 10:00), Walmart a deschis un gateway oficial pentru agenți, iar Amazon îi blochează. Cine răspunde când un agent greșește o rezervare sau un apel — și cum se identifică apelurile AI la celălalt capăt al firului — devine o întrebare de incident management, nu doar de produs.</p>
+          </div>
+          <div class="verify">
+            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
+            <p>Verdict: confirmat. TechCrunch (12 noiembrie 2026, actualizat 13 noiembrie, 00:08 UTC) — relatarea curatoriată: extinderea funcției la toți abonații plătiți din SUA, anunțul lui Alexandr Wang, prețurile abonamentelor și comparația cu Instinct și Gemini. Engadget (12 noiembrie 2026, relatat de The Outpost) — confirmare independentă: funcția a trecut de la testul limitat din septembrie la toți abonații plătiți pe 12 noiembrie, cu rezervări, programări și așteptatul la coadă ca utilizări principale. Cryptopolitan (12 noiembrie 2026) — confirmare independentă: apelurile sunt disponibile acum pentru abonații plătiți din SUA, cu planurile de 20 și 100 de dolari pe lună. Notă de integritate: funcția e limitată la firme din SUA și la abonații plătiți; TechCrunch notează că nu e clar dacă doar planul de 20 de dolari deblochează apelurile sau funcția stă mai sus în ierarhia de planuri.</p>
+            <ul class="sources">
+              <li><a href="https://techcrunch.com/2026/11/12/muse-can-now-place-calls-to-u-s-businesses-if-you-pay/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>TechCrunch — „Muse can now place calls to US businesses — if you pay” (12 nov 2026, actualizat 13 nov 2026, 00:08 UTC; relatarea curatoriată — extinderea funcției la toți abonații plătiți din SUA, anunțul lui Alexandr Wang, prețurile abonamentelor de 20 și 100 de dolari pe lună, comparația cu Instinct și Gemini)<span class="host">techcrunch.com</span></a></li>
+              <li><a href="https://theoutpost.ai/news-story/meta-s-muse-will-call-businesses-for-you-if-you-pay-33475/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>The Outpost (după Engadget) — „Meta's Muse can now call businesses for you” (13 nov 2026; confirmare independentă: trecerea de la testul limitat din septembrie la toți abonații plătiți pe 12 noiembrie, cu rezervări, programări și așteptatul la coadă ca utilizări principale)<span class="host">theoutpost.ai</span></a></li>
+              <li><a href="https://www.cryptopolitan.com/muse-insurance-cable-dmv-calls-paid-users/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Cryptopolitan — „Muse takes over insurance, cable and DMV calls for paid US users” (12 nov 2026; confirmare independentă: apelurile sunt disponibile acum pentru abonații plătiți din SUA, cu planurile de 20 și 100 de dolari pe lună)<span class="host">cryptopolitan.com</span></a></li>
+            </ul>
+          </div>
+          <div class="adverse">
+            <p class="sec-label">Tabăra adversă</p>
+            <p><strong>Reuters</strong> (22 septembrie 2026, relatat de StartupFortune) a scris că Meta a testat apelurile cu oameni, fără dezvăluire clară, și a retras funcția — iar nici TechCrunch, nici Engadget nu spun dacă abonații plătiți pot fi rutați azi spre o persoană. În plus, TechCrunch notează, citând <strong>PYMNTS</strong>, că multe firme închid apelurile agenților AI imediat ce își dau seama că nu e un om la telefon. (<a href="https://startupfortune.com/metas-muse-ai-agent-can-now-phone-us-businesses-for-you-if-you-pay/" target="_blank" rel="noopener">StartupFortune, 13 nov 2026</a>; <a href="https://techcrunch.com/2026/11/12/muse-can-now-place-calls-to-u-s-businesses-if-you-pay/" target="_blank" rel="noopener">TechCrunch, 12 nov 2026</a>)</p>
+          </div>
+          <div class="impact">
+            <span class="badge">Impact direct</span>
+            <p>Impact direct: minim azi — funcția e doar în SUA și doar pentru abonați plătiți, deci în Belgia nu e disponibilă; relevanță profesională și de hobby: agenții autonomi cu autoritate de a acționa în numele utilizatorului (apeluri, rezervări) sunt exact suprafața de incident urmărită în watch; de urmărit: extinderea în Europa și regulile de identificare a apelurilor AI la celălalt capăt al firului.</p>
+          </div>
+        </article>
+
+        <!-- 2 · 13 nov · 07:00 -->
+        <article id="stire-194" data-cats="tech" data-sev="green" data-subiect="Hugging Face după plecarea lui Huang">
+          <div class="a-meta">
+            <span class="a-time">13 nov · 07:00</span>
+            <span class="a-cat">Tech &amp; AI</span>
+            <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
+            <a class="cont-pill" href="#stire-187" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
+            <span class="subj-pill">Hugging Face după plecarea lui Huang</span>
+            <span class="a-num">#2 / 4</span>
+          </div>
+          <h2>Șeful Hugging Face promite că platforma rămâne deschisă pentru AI open-source, după plecarea lui Jensen Huang de la Nvidia</h2>
+          <div class="followup">
+            <span class="tag">Urmare la</span>
+            <p><a href="#stire-187">„Plecarea lui Jensen Huang pune sub semnul întrebării sprijinul Nvidia pentru AI open source” — joi, 12 noiembrie 2026, ora 20:00.</a> (Reacția șefului Hugging Face la demisia anunțată ieri.)</p>
+          </div>
+          <div class="sec">
+            <p class="sec-label">Ce s-a întâmplat</p>
+            <p>Clément Delangue, cofondator și CEO al Hugging Face, a reacționat joi, 12 noiembrie, pe X, la demisia lui Jensen Huang de la Nvidia: „This whole thing sucks, and I wish none of it had happened. It's a really sad day! But I want to make one thing clear: we'll keep fighting for open-source AI, harder than ever. This is too important to slow down now.” Contextul: Nvidia a anunțat în septembrie că cumpără Hugging Face — principala platformă de distribuție a modelelor AI open-source — cu 12,9 miliarde de dolari, a doua cea mai mare achiziție din istoria companiei, după activele producătorului de cipuri Groq (20 de miliarde de dolari, decembrie 2025). Tranzacția e programată să se închidă în prima jumătate a lui 2027, iar Departamentul de Justiție al SUA a început în octombrie verificări privind impactul achiziției asupra concurenței pe piața AI (Reuters). Huang era cel mai vocal susținător al modelelor open-source din fruntea Nvidia; interimatul a fost preluat de directorul financiar Colette Kress. Hugging Face nu a răspuns la întrebări despre stadiul tranzacției sau despre eventuale discuții cu Kress.</p>
+          </div>
+          <div class="sec">
+            <p class="sec-label">De ce contează</p>
+            <p>Pentru un IT incident Manager care urmărește ecosistemul AI open-source și construiește automatizări pe modele deschise, Hugging Face e infrastructura de bază — locul unde se publică și se distribuie modelele open-weight. Achiziția de 12,9 miliarde de dolari, ancheta Departamentului de Justiție și plecarea lui Huang sunt cele trei incertitudini care decid dacă platforma rămâne deschisă, independentă și agnostică la infrastructura de calcul, cum a promis Nvidia la anunțarea tranzacției. E continuarea directă a cardului de ieri, 20:00 — acum cu prima reacție publică a conducerii Hugging Face.</p>
+          </div>
+          <div class="verify">
+            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
+            <p>Verdict: confirmat. TechCrunch (12 noiembrie 2026) — relatarea curatoriată: declarația lui Delangue pe X, valoarea tranzacției (12,9 miliarde de dolari), ancheta Departamentului de Justiție (Reuters, octombrie) și programul de închidere în prima jumătate a lui 2027. Inc.com (12 noiembrie 2026, relatare proprie) — confirmare independentă: reacțiile fondatorilor din industria AI la plecarea lui Huang și citatul lui Nathan Lambert (Trillium Labs) despre pierderea unui campion al open-source. AI Affairs (12 noiembrie 2026) — confirmare independentă: promisiunea lui Delangue, ancheta oficialilor americani privind concurența și preluarea interimatului de către Colette Kress. Notă de integritate: nimic din informațiile disponibile nu indică o modificare sau anulare a tranzacției — fereastra de închidere rămâne prima jumătate a lui 2027.</p>
+            <ul class="sources">
+              <li><a href="https://techcrunch.com/2026/11/12/hugging-face-ceo-vows-to-keep-fighting-for-open-source-ai-after-jensen-huangs-exit/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>TechCrunch — „Hugging Face CEO vows to keep fighting for open source AI after Jensen Huang's exit” (12 nov 2026; relatarea curatoriată — declarația lui Delangue pe X, valoarea tranzacției de 12,9 miliarde de dolari, ancheta Departamentului de Justiție, programul de închidere în prima jumătate a lui 2027)<span class="host">techcrunch.com</span></a></li>
+              <li><a href="https://www.inc.com/aaron-mok/with-jensen-huang-out-ai-leaders-fear-theyve-lost-a-champion-its-a-really-sad-day/91435668" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Inc.com — „With Jensen Huang Out, AI Leaders Fear They've Lost a Champion: 'It's a Really Sad Day'” (12 nov 2026, relatare proprie; confirmare independentă: reacțiile fondatorilor din industria AI la plecarea lui Huang și citatul lui Nathan Lambert despre pierderea unui campion al open-source)<span class="host">inc.com</span></a></li>
+              <li><a href="https://www.aiaffairs.com/markets/hugging-face-open-source-ai-huang-nvidia-acquisition/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>AI Affairs — „Hugging Face chief backs open AI after Huang exits Nvidia ahead of $13 billion deal” (12 nov 2026; confirmare independentă: promisiunea lui Delangue, ancheta oficialilor americani privind concurența și preluarea interimatului de către Colette Kress)<span class="host">aiaffairs.com</span></a></li>
+            </ul>
+          </div>
+          <div class="adverse">
+            <p class="sec-label">Tabăra adversă</p>
+            <p><strong>Nathan Lambert</strong>, fondator și director al Trillium Labs (companie de cercetare a modelelor deschise), citat de Inc.com: plecarea lui Huang ar fi „very very bad for the open model cause in the US” — adică pierderea celui mai puternic susținător al modelelor deschise nu se compensează cu o promisiune pe X. (<a href="https://www.inc.com/aaron-mok/with-jensen-huang-out-ai-leaders-fear-theyve-lost-a-champion-its-a-really-sad-day/91435668" target="_blank" rel="noopener">Inc.com, 12 nov 2026</a>)</p>
+          </div>
+          <div class="impact">
+            <span class="badge">Impact direct</span>
+            <p>Impact direct: minim azi — nicio decizie anunțată despre tranzacție; relevanță de context înaltă pentru ecosistemul open-source pe care se bazează automatizările lui cu AI; de urmărit: închiderea tranzacției în prima jumătate a lui 2027, ancheta Departamentului de Justiție și primele declarații ale lui Colette Kress despre open source.</p>
+          </div>
+        </article>
+
+        <!-- 3 · 13 nov · 06:00 -->
         <article id="stire-191" data-cats="securitate" data-sev="amber" data-subiect="complot la baza RAF Fairford">
           <div class="a-meta">
             <span class="a-time">13 nov · 06:00</span>
@@ -857,7 +936,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="spot-tag">Știrea zilei</span>
             <span class="subj-pill">complot la baza RAF Fairford</span>
-            <span class="a-num">#1 / 2</span>
+            <span class="a-num">#3 / 4</span>
           </div>
           <h2>Trei bărbați legați de Iran, inculpați pentru complotul terorist de la baza RAF Fairford din Marea Britanie</h2>
           <div class="sec">
@@ -887,14 +966,14 @@
           </div>
         </article>
 
-        <!-- 2 · 13 nov · 06:00 -->
+        <!-- 4 · 13 nov · 06:00 -->
         <article id="stire-192" data-cats="romania" data-sev="amber" data-subiect="România pe sârmă la rating">
           <div class="a-meta">
             <span class="a-time">13 nov · 06:00</span>
             <span class="a-cat">România</span>
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="subj-pill">România pe sârmă la rating</span>
-            <span class="a-num">#2 / 2</span>
+            <span class="a-num">#4 / 4</span>
           </div>
           <h2>Nazare: România nu e în situația unui acord cu FMI, dar rămâne „pe sârmă” la rating — examenele decisive vin în ianuarie, februarie și martie 2027</h2>
           <div class="sec">
@@ -5640,8 +5719,8 @@
 
       <footer>
         <div class="rule" aria-hidden="true"></div>
-        <p>Sfârșitul ediției de azi · Ultima actualizare: vineri, 13 noiembrie 2026, 06:00<br />Monitorizarea rulează la circa 3 ore, în fereastra L–V 06:00–22:00 · S–D 07:30–22:00 — dă refresh pentru noutăți.</p>
-        <a class="to-top" href="#stire-191">↑ Înapoi la cea mai nouă știre</a>
+        <p>Sfârșitul ediției de azi · Ultima actualizare: vineri, 13 noiembrie 2026, 07:00<br />Monitorizarea rulează la circa 3 ore, în fereastra L–V 06:00–22:00 · S–D 07:30–22:00 — dă refresh pentru noutăți.</p>
+        <a class="to-top" href="#stire-193">↑ Înapoi la cea mai nouă știre</a>
       </footer>
     </div>
 
