@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="color-scheme" content="light dark" />
-    <meta name="tirile-versiune" content="2026-11-13T09:00:00+01:00|7|amber" />
+    <meta name="tirile-versiune" content="2026-11-13T10:00:00+01:00|9|amber" />
     <link rel="icon" href="data:," />
     <title>Știrile zilei</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -699,9 +699,9 @@
     <div class="topbar">
       <div class="topbar-inner">
         <span class="dot" aria-hidden="true"></span>
-        <span><strong>Vineri, 13 noiembrie 2026</strong> · actualizat la <strong>09:00</strong></span>
+        <span><strong>Vineri, 13 noiembrie 2026</strong> · actualizat la <strong>10:00</strong></span>
         <span aria-hidden="true">·</span>
-        <span>7 știri azi</span>
+        <span>9 știri azi</span>
         <span class="spacer"></span>
         <button class="refresh-btn" type="button" id="refreshBtn" aria-label="Reîmprospătează pagina">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg>
@@ -739,7 +739,7 @@
 
       <!-- Chenar permanent: știrea cea mai importantă a zilei — sub fereastra
            „Ultimele știri", ÎNAINTEA dashboardului, vizibilă din prima, fără scroll.
-           Nivelul de azi: GALBEN (sev-amber) — de urmărit: complotul terorist de la baza RAF Fairford — știrea cu severitatea cea mai mare a zilei și cea mai importantă dintre cele patru știri galbene ale zilei; mai există alte trei știri galbene azi (Nazare: România pe sârmă la rating, de la 06:00, disputa miniștrilor belgieni pe atribuirea atacurilor la frigidere, de la 08:00, și ancheta democraților din Congres asupra vânzărilor de cipuri Nvidia în China, de la 09:00), de aceea apare mențiunea despre celelalte știri cu aceeași severitate, cu filtru pe galben la „apasă aici".
+           Nivelul de azi: GALBEN (sev-amber) — de urmărit: complotul terorist de la baza RAF Fairford — știrea cu severitatea cea mai mare a zilei și cea mai importantă dintre cele șase știri galbene ale zilei; mai există alte cinci știri galbene azi (Nazare: România pe sârmă la rating, de la 06:00, disputa miniștrilor belgieni pe atribuirea atacurilor la frigidere, de la 08:00, ancheta democraților din Congres asupra vânzărilor de cipuri Nvidia în China, de la 09:00, unda verde a Pentagonului pentru baza permanentă a SUA în Polonia, de la 10:00, și pivotul NATO spre apărarea Europei, de la 10:00), de aceea apare mențiunea despre celelalte știri cu aceeași severitate, cu filtru pe galben la „apasă aici".
            Chenarul rămâne în afara logicii de filtrare: vizibil indiferent de filtrul de categorie. -->
       <section class="spot sev-amber" aria-label="Știrea cea mai importantă a zilei">
         <div class="spot-head">
@@ -751,7 +751,7 @@
           <span class="spot-pill">Nivel galben — de urmărit</span>
         </div>
         <h2 class="spot-title">Trei bărbați legați de Iran, inculpați pentru complotul terorist de la baza RAF Fairford din Marea Britanie</h2>
-        <p class="spot-why"><strong>De ce e în față:</strong> E știrea cu severitatea cea mai mare a zilei și cea mai importantă dintre cele patru — o rețea susținută de Iran, acuzată de aproape 20 de atacuri în Europa și SUA, a vizat o bază din Marea Britanie care găzduiește avioane americane: amenințarea la adresa instalațiilor aliate din Europa, exact pe terenul lui de securitate. Celelalte trei știri galbene ale zilei sunt declarația lui Nazare despre ratingul României (finanțe românești), disputa miniștrilor belgieni pe atribuirea atacurilor cibernetice la frigiderele supermarketurilor și ancheta democraților din Congres asupra vânzărilor de cipuri Nvidia în China.</p>
+        <p class="spot-why"><strong>De ce e în față:</strong> E știrea cu severitatea cea mai mare a zilei și cea mai importantă dintre cele șase — o rețea susținută de Iran, acuzată de aproape 20 de atacuri în Europa și SUA, a vizat o bază din Marea Britanie care găzduiește avioane americane: amenințarea la adresa instalațiilor aliate din Europa, exact pe terenul lui de securitate. Celelalte cinci știri galbene ale zilei sunt declarația lui Nazare despre ratingul României (finanțe românești), disputa miniștrilor belgieni pe atribuirea atacurilor cibernetice la frigiderele supermarketurilor, ancheta democraților din Congres asupra vânzărilor de cipuri Nvidia în China, unda verde a Pentagonului pentru o bază permanentă a SUA în Polonia și pivotul NATO spre apărarea Europei.</p>
         <p class="spot-lead">Departamentul de Justiție al SUA a inculpat trei bărbați — unul coordonând din închisoare, din New York — pentru complotul eșuat din septembrie de la RAF Fairford, bază din Marea Britanie folosită de avioanele americane; procurorii îi leagă de o rețea acuzată de aproape 20 de atacuri și tentative în Europa și SUA.</p>
         <p class="spot-more" hidden><span class="spot-more-text"></span> <button class="spot-more-btn" type="button">apasă aici</button></p>
         <div class="spot-foot">
@@ -768,44 +768,44 @@
       <section class="dashboard" aria-label="Panou de ansamblu">
         <div class="dash-head">
           <span class="dash-title">Dashboard · Azi</span>
-          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 09:00</span>
+          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 10:00</span>
           <span class="dash-meta">Fereastră monitorizare <strong>L–V 06:00–22:00 · S–D 07:30–22:00</strong> · pas ~3 ore</span>
         </div>
 
         <div class="kpi-grid five" role="group" aria-label="Filtrează după categorie — apasă pe un tile">
           <button class="kpi" type="button" data-filter="toate" aria-pressed="true">
             <span class="kpi-top"><span class="kpi-label">Toate știrile</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">7</span>
-            <span class="kpi-sub">știri verificate azi, în 4 rulări</span>
+            <span class="kpi-value">9</span>
+            <span class="kpi-sub">știri verificate azi, în 5 rulări</span>
             <span class="kpi-bar" aria-hidden="true"><i style="width:100%"></i></span>
             <span class="kpi-hint">Apasă pentru toate</span>
           </button>
           <button class="kpi" type="button" data-filter="securitate" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">Securitate &amp; NATO</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">2</span>
-            <span class="kpi-sub">atribuirea atacurilor la frigidere · complot la baza RAF Fairford</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:29%"></i></span>
+            <span class="kpi-value">4</span>
+            <span class="kpi-sub">bază SUA permanentă în Polonia · NATO: pivot spre apărarea Europei · atribuirea atacurilor la frigidere · complot la baza RAF Fairford</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:44%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="romania" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">România</span><span class="kpi-check" aria-hidden="true">✓</span></span>
             <span class="kpi-value">2</span>
             <span class="kpi-sub">Nicușor Dan: el a făcut majoritatea · România pe sârmă la rating</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:29%"></i></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:22%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="belgia" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">Belgia</span><span class="kpi-check" aria-hidden="true">✓</span></span>
             <span class="kpi-value">1</span>
             <span class="kpi-sub">atribuirea atacurilor la frigidere</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:14%"></i></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:11%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="tech" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">Tech &amp; AI</span><span class="kpi-check" aria-hidden="true">✓</span></span>
             <span class="kpi-value">3</span>
             <span class="kpi-sub">anchetă Congres Nvidia · Muse face apeluri telefonice · Hugging Face după plecarea lui Huang</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:43%"></i></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:33%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
         </div>
@@ -819,7 +819,7 @@
       </section>
 
       <div class="filter-status" aria-live="polite">
-        <span class="filter-label">Se afișează: <strong>Toate categoriile — 7 din 7 știri</strong></span>
+        <span class="filter-label">Se afișează: <strong>Toate categoriile — 9 din 9 știri</strong></span>
         <button class="filter-reset" type="button" hidden>Resetează filtrul</button>
       </div>
 
@@ -849,7 +849,81 @@
       <p class="empty">Nicio știre în această categorie azi.</p>
 
       <main>
-        <!-- 1 · 13 nov · 09:00 -->
+        <!-- 1 · 13 nov · 10:00 -->
+        <article id="stire-198" data-cats="securitate" data-sev="amber" data-subiect="bază SUA permanentă în Polonia">
+          <div class="a-meta">
+            <span class="a-time">13 nov · 10:00</span>
+            <span class="a-cat">Securitate &amp; NATO</span>
+            <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
+            <span class="subj-pill">bază SUA permanentă în Polonia</span>
+            <span class="a-num">#1 / 9</span>
+          </div>
+          <h2>Pentagonul a dat „undă verde” unei baze militare permanente a SUA în Polonia — decizia finală a Casei Albe e așteptată la începutul lui decembrie</h2>
+          <div class="sec">
+            <p class="sec-label">Ce s-a întâmplat</p>
+            <p>Marți, 10 noiembrie, la Pentagon, ministrul polonez al apărării, Władysław Kosiniak-Kamysz, s-a întâlnit cu secretarul american al apărării, Pete Hegseth. După întâlnire, Kosiniak-Kamysz a anunțat că Pentagonul a dat „undă verde” prezenței permanente a trupelor americane în Polonia — Hegseth i-ar fi spus că „totul merge în direcția bună” — și că decizia finală, a Casei Albe, e așteptată la începutul lui decembrie. Varșovia a propus patru orașe — Bydgoszcz, Poznań, Szczecin și Wrocław, toate la vest de Vistula — pentru o instalație care ar găzdui circa 5.000 de militari americani permanenți, plus familiile și personalul de sprijin, în total până la 25.000 de oameni; Polonia s-a oferit să acopere costurile de construcție, estimate la 15–17 miliarde de zloți (3,8–4,4 miliarde de dolari). În prezent, Polonia găzduiește circa 10.000 de militari americani, majoritatea în rotație. Kosiniak-Kamysz a mai anunțat că Pentagonul a dat o recomandare pozitivă cererii Poloniei de rachete de croazieră Tomahawk.</p>
+          </div>
+          <div class="sec">
+            <p class="sec-label">De ce contează</p>
+            <p>Pentru un IT incident Manager, prezența americană în Europa e cadrul în care se iau deciziile de securitate pe care le urmărește zilnic: revizuirea posturii de forțe a SUA în Europa, așteptată în decembrie, va stabili nivelurile de trupe pe continent, iar o bază permanentă în Polonia — pe flancul estic, lângă Ucraina — ar însemna o ancorare pe termen lung a Washingtonului în apărarea Europei, exact când aliații europeni își asumă o parte mai mare din apărarea convențională. E și semnalul că, în pofida discuțiilor despre retrageri, SUA sunt dispuse să-și consolideze prezența acolo unde aliații plătesc și cer explicit acest lucru.</p>
+          </div>
+          <div class="verify">
+            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
+            <p>Verdict: confirmat. Defense News (12 noiembrie 2026, relatarea curatoriată) — Pentagonul ar fi dat „undă verde” prezenței permanente a trupelor SUA în Polonia, decizia finală a Casei Albe la începutul lui decembrie. Breaking Defense (11 noiembrie 2026, 19:09 UTC) — confirmare independentă: declarația lui Kosiniak-Kamysz după întâlnirea cu Hegseth, cele patru orașe, 5.000 de militari / 25.000 de oameni. Military Times (12 noiembrie 2026, 21:22 UTC) — confirmare independentă: „unda verde” din partea Pentagonului, decizia Casei Albe în decembrie. Stars and Stripes (11 noiembrie 2026, via Europe Says) — confirmare independentă: relatarea întâlnirii obținută de Stars and Stripes; comunicatul Pentagonului nu menționează baza. SOFX (12 noiembrie 2026, 04:35 UTC) — confirmare independentă: oferta de până la 4,4 miliarde de dolari, cele patru orașe, revizuirea forțelor SUA în Europa. Notă de integritate: „unda verde” e caracterizarea ministrului polonez; comunicatul oficial al Pentagonului nu menționează baza, iar decizia finală aparține Casei Albe.</p>
+            <ul class="sources">
+              <li><a href="https://breakingdefense.com/2026/11/poland-says-pentagon-supports-permanent-us-base-with-decision-expected-in-december/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Breaking Defense — „Poland says Pentagon supports permanent US base, with decision expected in December” (11 nov 2026, 19:09 UTC; confirmare independentă: declarația lui Kosiniak-Kamysz după întâlnirea cu Hegseth, cele patru orașe, 5.000 de militari / 25.000 de oameni; comunicatul Pentagonului nu menționează baza)<span class="host">breakingdefense.com</span></a></li>
+              <li><a href="https://www.militarytimes.com/news/pentagon-congress/2026/11/12/pentagon-greenlit-permanent-presence-of-us-troops-in-poland-official-says/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Military Times — „Pentagon 'greenlit' permanent presence of US troops in Poland, official says” (12 nov 2026, 21:22 UTC; confirmare independentă: „unda verde” din partea Pentagonului, decizia Casei Albe în decembrie; comunicatul Pentagonului nu menționează baza)<span class="host">militarytimes.com</span></a></li>
+              <li><a href="https://www.sofx.com/poland-says-pentagon-backs-permanent-u-s-base-offers-4-4-billion-for-5000-troops/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>SOFX — „Poland Says Pentagon Backs Permanent U.S. Base, Offers $4.4 Billion for 5,000 Troops” (12 nov 2026, 04:35 UTC; confirmare independentă: oferta de până la 4,4 miliarde $, cele patru orașe, revizuirea forțelor SUA în Europa)<span class="host">sofx.com</span></a></li>
+              <li><a href="https://www.europesays.com/poland/37165/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Stars and Stripes (via Europe Says) — „Poland says Pentagon has approved new US base” (11 nov 2026, 11:43 UTC; confirmare independentă: relatarea întâlnirii obținută de Stars and Stripes; comunicatul Pentagonului nu a inclus nicio mențiune despre bază)<span class="host">europesays.com</span></a></li>
+              <li><a href="https://www.thedefensenews.com/Pentagon-Signals-Approval-for-Permanent-US-Military-Base-in-Poland-White-House-Decision-Expected-in-December/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>The Defense News — „Pentagon Signals Approval for Permanent U.S. Military Base in Poland, White House Decision Expected in December” (12 nov 2026; recomandarea pozitivă a Pentagonului pentru cererea Poloniei de rachete Tomahawk; decizia Casei Albe la începutul lui decembrie)<span class="host">thedefensenews.com</span></a></li>
+            </ul>
+          </div>
+          <div class="adverse">
+            <p class="sec-label">Tabăra adversă</p>
+            <p><strong>Pentagonul, prin comunicatul oficial al întâlnirii din 10 noiembrie</strong>, nu menționează deloc baza propusă: comunicatul vorbește doar despre recunoașterea rolului de lider al Poloniei în NATO, despre cooperarea industrială în apărare și despre cheltuielile Poloniei pentru apărare. Departamentul Apărării nu a răspuns solicitărilor de comentariu ale Breaking Defense până la publicare. (<a href="https://breakingdefense.com/2026/11/poland-says-pentagon-supports-permanent-us-base-with-decision-expected-in-december/" target="_blank" rel="noopener">Breaking Defense, 11 nov 2026</a>)</p>
+          </div>
+          <div class="impact">
+            <span class="badge">Impact direct</span>
+            <p>Impact direct: minim azi — știrea nu cere nicio acțiune de la el; relevanță profesională ridicată: postura de forțe a SUA în Europa e contextul direct al muncii lui de incident management în securitate, iar o bază permanentă pe flancul estic schimbă pe termen lung harta prezenței americane; de urmărit: decizia Casei Albe la începutul lui decembrie și rezultatul revizuirii posturii forțelor SUA în Europa.</p>
+          </div>
+        </article>
+
+        <!-- 2 · 13 nov · 10:00 -->
+        <article id="stire-199" data-cats="securitate" data-sev="amber" data-subiect="NATO: pivot spre apărarea Europei">
+          <div class="a-meta">
+            <span class="a-time">13 nov · 10:00</span>
+            <span class="a-cat">Securitate &amp; NATO</span>
+            <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
+            <span class="subj-pill">NATO: pivot spre apărarea Europei</span>
+            <span class="a-num">#2 / 9</span>
+          </div>
+          <h2>NATO pregătește cea mai mare schimbare a planificării militare din ultimele două decenii: apărarea Europei, înaintea misiunilor din afara alianței</h2>
+          <div class="sec">
+            <p class="sec-label">Ce s-a întâmplat</p>
+            <p>Potrivit Politico, care citează patru diplomați NATO informați asupra unui proiect de document, cei 32 de aliați negociază cea mai amplă revizuire a planificării militare din cel puțin două decenii: renunțarea la cerința ca aliații să poată duce simultan un război major în Europa și mai multe operațiuni mici de gestionare a crizelor în afara teritoriului alianței. În locul lui „și” ar veni „sau”: aliații ar trebui să se pregătească fie pentru un conflict major în Europa, fie pentru operațiuni mai mici în afară. Schimbarea face parte din negocierea „Political Guidance” — documentul care stabilește prioritățile și capacitățile militare ale alianței — pe care aliații vor să-l finalizeze până în februarie 2027, cu noi ținte de capabilități până în 2029. Misiunile actuale din Kosovo și Irak nu ar fi afectate automat, iar decizia de desfășurare a trupelor ar rămâne politică. Contextul invocat: oficiali europeni din apărare avertizează repetat că Rusia ar putea fi gata să atace un membru NATO până în 2029, iar politica oficială a alianței descrie deja Rusia drept „cea mai semnificativă și directă amenințare la adresa securității aliaților”.</p>
+          </div>
+          <div class="sec">
+            <p class="sec-label">De ce contează</p>
+            <p>Pentru un IT incident Manager, asta e schimbarea de fond a alianței pe care o urmărește îndeaproape: planificarea s-ar concentra pe un singur scenariu dominant — un conflict de tip Articol 5 pe teritoriul NATO împotriva Rusiei — și ar elibera forțe ținute până acum pentru crize externe, inclusiv brigăzi de rezervă. E direct legată de revizuirea americană a prezenței în Europa, așteptată în decembrie, și de ținta de 5% din PIB pentru apărare și securitate asumată la summitul de la Haga din 2025. Dacă „Political Guidance” trece în februarie, va stabili ce forțe și echipamente trebuie să furnizeze fiecare aliat — inclusiv România — și cât de credibilă e descurajarea față de Moscova.</p>
+          </div>
+          <div class="verify">
+            <p class="sec-label">Verificare <span class="status">Sursă unică</span></p>
+            <p>Verdict: sursă unică. Politico (10–11 noiembrie 2026, relatarea curatoriată) — relatarea originară, pe baza a patru diplomați NATO informați asupra proiectului de document; toate celelalte relatări (BytesEU, Eastora News, UNITED24 Media, ECCI, The Gaze) preiau același raport Politico, deci nu sunt confirmări independente. Negocierile sunt în stadiu incipient și nicio decizie finală nu a fost aprobată — proiectul favorizează deocamdată varianta „sau”, dar textul se poate schimba până în februarie.</p>
+            <ul class="sources">
+              <li><a href="https://www.byteseu.com/2513828/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>BytesEU (relatează Politico) — „NATO Weighs Overseas Force Cuts to Focus on Russia” (11 nov 2026, 11:18 UTC; relatarea originară e Politico, citând 4 diplomați NATO: renunțarea la cerința de a pregăti simultan un război major în Europa și mai multe operațiuni mici în afară; Political Guidance până în februarie 2027, ținte de capabilități în 2029)<span class="host">byteseu.com</span></a></li>
+              <li><a href="https://live.eastoranews.com/2026/11/11/nato-weighs-major-shift-to-defending-europe-against-russia-over-overseas-152425" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Eastora News (relatează Politico) — „NATO Weighs Major Shift to Defending Europe Against Russia Over Overseas” (11 nov 2026, 15:24 +03:00; aceeași relatare Politico: cea mai mare revizuire a planificării militare din cel puțin două decenii; misiunile din Kosovo și Irak nu ar fi afectate automat)<span class="host">live.eastoranews.com</span></a></li>
+              <li><a href="https://www.byteseu.com/2514759/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>UNITED24 Media (via BytesEU, relatează Politico) — „NATO Weighs Shrinking Overseas Missions to Focus on Russia” (11 nov 2026, 19:53 UTC; aceeași relatare Politico, cu precizarea fostei purtătoare de cuvânt NATO Oana Lungescu: „are sens ca efortul principal al NATO ca alianță defensivă să fie descurajarea unei Rusii agresive”)<span class="host">byteseu.com</span></a></li>
+              <li><a href="https://en.europarabct.com/?p=83412" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>ECCI — European Centre for Counterterrorism and Intelligence Studies (relatează Politico) — „NATO Shifts Focus to Russia, Scales Back Overseas Missions” (12 nov 2026; aceeași relatare Politico, cu citatul lui Camille Grand, fost asistent al secretarului general NATO pentru investiții în apărare, și proiectul american „NATO 3.0”)<span class="host">en.europarabct.com</span></a></li>
+              <li><a href="https://thegaze.media/news/nato-could-scale-back-overseas-missions-to-focus-on-deterring-russia" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>The Gaze (relatează Politico) — „NATO Could Scale Back Overseas Missions to Focus on Deterring Russia” (12 nov 2026; aceeași relatare Politico: unii membri din sudul Europei vor ca NATO să păstreze un rol substanțial în răspunsul la crize externe)<span class="host">thegaze.media</span></a></li>
+            </ul>
+          </div>
+          <div class="impact">
+            <span class="badge">Impact direct</span>
+            <p>Impact direct: minim azi — știrea nu cere nicio acțiune de la el; relevanță profesională ridicată: planificarea militară a NATO e cadrul strategic al muncii lui de incident management în securitate, iar o schimbare a „Political Guidance” redefinește ce forțe și capabilități trebuie să aibă aliații; de urmărit: finalizarea „Political Guidance” până în februarie 2027 și noile ținte de capabilități din 2029.</p>
+          </div>
+        </article>
+
+        <!-- 3 · 13 nov · 09:00 -->
         <article id="stire-196" data-cats="tech" data-sev="amber" data-subiect="anchetă Congres Nvidia">
           <div class="a-meta">
             <span class="a-time">13 nov · 09:00</span>
@@ -857,7 +931,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-182" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">anchetă Congres Nvidia</span>
-            <span class="a-num">#1 / 7</span>
+            <span class="a-num">#3 / 9</span>
           </div>
           <h2>Democrații din Congres deschid o anchetă asupra vânzărilor de cipuri Nvidia în China — „taxa de export” de 25% și donații de 26 mil. $ către proiectele lui Trump</h2>
           <div class="followup">
@@ -893,14 +967,14 @@
           </div>
         </article>
 
-        <!-- 2 · 13 nov · 09:00 -->
+        <!-- 4 · 13 nov · 09:00 -->
         <article id="stire-197" data-cats="romania" data-sev="green" data-subiect="Nicușor Dan: el a făcut majoritatea">
           <div class="a-meta">
             <span class="a-time">13 nov · 09:00</span>
             <span class="a-cat">România</span>
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <span class="subj-pill">Nicușor Dan: el a făcut majoritatea</span>
-            <span class="a-num">#2 / 7</span>
+            <span class="a-num">#4 / 9</span>
           </div>
           <h2>Nicușor Dan spune că el a negociat majoritatea pentru învestirea Guvernului Niculescu: „Mi-a luat cinci luni și jumătate să o găsesc”</h2>
           <div class="sec">
@@ -931,7 +1005,7 @@
           </div>
         </article>
 
-        <!-- 3 · 13 nov · 08:00 -->
+        <!-- 5 · 13 nov · 08:00 -->
         <article id="stire-195" data-cats="securitate belgia" data-sev="amber" data-subiect="atribuirea atacurilor la frigidere">
           <div class="a-meta">
             <span class="a-time">13 nov · 08:00</span>
@@ -939,7 +1013,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-131" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">atribuirea atacurilor la frigidere</span>
-            <span class="a-num">#3 / 7</span>
+            <span class="a-num">#5 / 9</span>
           </div>
           <h2>Belgia, împărțită pe atribuirea atacurilor cibernetice la frigiderele supermarketurilor: Internele indică Iranul, Externele nu acuză oficial</h2>
           <div class="followup">
@@ -974,14 +1048,14 @@
           </div>
         </article>
 
-        <!-- 4 · 13 nov · 07:00 -->
+        <!-- 6 · 13 nov · 07:00 -->
         <article id="stire-193" data-cats="tech" data-sev="green" data-subiect="Muse face apeluri telefonice">
           <div class="a-meta">
             <span class="a-time">13 nov · 07:00</span>
             <span class="a-cat">Tech &amp; AI</span>
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <span class="subj-pill">Muse face apeluri telefonice</span>
-            <span class="a-num">#4 / 7</span>
+            <span class="a-num">#6 / 9</span>
           </div>
           <h2>Muse, agentul AI al Meta, sună acum la firme din SUA în locul utilizatorului — doar pentru abonații plătiți</h2>
           <div class="sec">
@@ -1011,7 +1085,7 @@
           </div>
         </article>
 
-        <!-- 5 · 13 nov · 07:00 -->
+        <!-- 7 · 13 nov · 07:00 -->
         <article id="stire-194" data-cats="tech" data-sev="green" data-subiect="Hugging Face după plecarea lui Huang">
           <div class="a-meta">
             <span class="a-time">13 nov · 07:00</span>
@@ -1019,7 +1093,7 @@
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <a class="cont-pill" href="#stire-187" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">Hugging Face după plecarea lui Huang</span>
-            <span class="a-num">#5 / 7</span>
+            <span class="a-num">#7 / 9</span>
           </div>
           <h2>Șeful Hugging Face promite că platforma rămâne deschisă pentru AI open-source, după plecarea lui Jensen Huang de la Nvidia</h2>
           <div class="followup">
@@ -1053,7 +1127,7 @@
           </div>
         </article>
 
-        <!-- 6 · 13 nov · 06:00 -->
+        <!-- 8 · 13 nov · 06:00 -->
         <article id="stire-191" data-cats="securitate" data-sev="amber" data-subiect="complot la baza RAF Fairford">
           <div class="a-meta">
             <span class="a-time">13 nov · 06:00</span>
@@ -1061,7 +1135,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="spot-tag">Știrea zilei</span>
             <span class="subj-pill">complot la baza RAF Fairford</span>
-            <span class="a-num">#6 / 7</span>
+            <span class="a-num">#8 / 9</span>
           </div>
           <h2>Trei bărbați legați de Iran, inculpați pentru complotul terorist de la baza RAF Fairford din Marea Britanie</h2>
           <div class="sec">
@@ -1091,14 +1165,14 @@
           </div>
         </article>
 
-        <!-- 7 · 13 nov · 06:00 -->
+        <!-- 9 · 13 nov · 06:00 -->
         <article id="stire-192" data-cats="romania" data-sev="amber" data-subiect="România pe sârmă la rating">
           <div class="a-meta">
             <span class="a-time">13 nov · 06:00</span>
             <span class="a-cat">România</span>
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="subj-pill">România pe sârmă la rating</span>
-            <span class="a-num">#7 / 7</span>
+            <span class="a-num">#9 / 9</span>
           </div>
           <h2>Nazare: România nu e în situația unui acord cu FMI, dar rămâne „pe sârmă” la rating — examenele decisive vin în ianuarie, februarie și martie 2027</h2>
           <div class="sec">
@@ -5844,8 +5918,8 @@
 
       <footer>
         <div class="rule" aria-hidden="true"></div>
-        <p>Sfârșitul ediției de azi · Ultima actualizare: vineri, 13 noiembrie 2026, 09:00<br />Monitorizarea rulează la circa 3 ore, în fereastra L–V 06:00–22:00 · S–D 07:30–22:00 — dă refresh pentru noutăți.</p>
-        <a class="to-top" href="#stire-196">↑ Înapoi la cea mai nouă știre</a>
+        <p>Sfârșitul ediției de azi · Ultima actualizare: vineri, 13 noiembrie 2026, 10:00<br />Monitorizarea rulează la circa 3 ore, în fereastra L–V 06:00–22:00 · S–D 07:30–22:00 — dă refresh pentru noutăți.</p>
+        <a class="to-top" href="#stire-198">↑ Înapoi la cea mai nouă știre</a>
       </footer>
     </div>
 
