@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="color-scheme" content="light dark" />
-    <meta name="tirile-versiune" content="2026-11-13T07:00:00+01:00|4|amber" />
+    <meta name="tirile-versiune" content="2026-11-13T08:00:00+01:00|5|amber" />
     <link rel="icon" href="data:," />
     <title>Știrile zilei</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -699,9 +699,9 @@
     <div class="topbar">
       <div class="topbar-inner">
         <span class="dot" aria-hidden="true"></span>
-        <span><strong>Vineri, 13 noiembrie 2026</strong> · actualizat la <strong>07:00</strong></span>
+        <span><strong>Vineri, 13 noiembrie 2026</strong> · actualizat la <strong>08:00</strong></span>
         <span aria-hidden="true">·</span>
-        <span>4 știri azi</span>
+        <span>5 știri azi</span>
         <span class="spacer"></span>
         <button class="refresh-btn" type="button" id="refreshBtn" aria-label="Reîmprospătează pagina">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg>
@@ -739,7 +739,7 @@
 
       <!-- Chenar permanent: știrea cea mai importantă a zilei — sub fereastra
            „Ultimele știri", ÎNAINTEA dashboardului, vizibilă din prima, fără scroll.
-           Nivelul de azi: GALBEN (sev-amber) — de urmărit: complotul terorist de la baza RAF Fairford — știrea cu severitatea cea mai mare a zilei și cea mai importantă dintre cele două știri galbene ale zilei; mai există o altă știre galbenă azi (Nazare: România pe sârmă la rating, de la 06:00), de aceea apare mențiunea despre celelalte știri cu aceeași severitate, cu filtru pe galben la „apasă aici".
+           Nivelul de azi: GALBEN (sev-amber) — de urmărit: complotul terorist de la baza RAF Fairford — știrea cu severitatea cea mai mare a zilei și cea mai importantă dintre cele trei știri galbene ale zilei; mai există alte două știri galbene azi (Nazare: România pe sârmă la rating, de la 06:00, și disputa miniștrilor belgieni pe atribuirea atacurilor la frigidere, de la 08:00), de aceea apare mențiunea despre celelalte știri cu aceeași severitate, cu filtru pe galben la „apasă aici".
            Chenarul rămâne în afara logicii de filtrare: vizibil indiferent de filtrul de categorie. -->
       <section class="spot sev-amber" aria-label="Știrea cea mai importantă a zilei">
         <div class="spot-head">
@@ -751,7 +751,7 @@
           <span class="spot-pill">Nivel galben — de urmărit</span>
         </div>
         <h2 class="spot-title">Trei bărbați legați de Iran, inculpați pentru complotul terorist de la baza RAF Fairford din Marea Britanie</h2>
-        <p class="spot-why"><strong>De ce e în față:</strong> E știrea cu severitatea cea mai mare a zilei și cea mai importantă dintre cele două — o rețea susținută de Iran, acuzată de aproape 20 de atacuri în Europa și SUA, a vizat o bază din Marea Britanie care găzduiește avioane americane: amenințarea la adresa instalațiilor aliate din Europa, exact pe terenul lui de securitate. Cealaltă știre galbenă a zilei, declarația lui Nazare despre ratingul României, e pe finanțe românești.</p>
+        <p class="spot-why"><strong>De ce e în față:</strong> E știrea cu severitatea cea mai mare a zilei și cea mai importantă dintre cele trei — o rețea susținută de Iran, acuzată de aproape 20 de atacuri în Europa și SUA, a vizat o bază din Marea Britanie care găzduiește avioane americane: amenințarea la adresa instalațiilor aliate din Europa, exact pe terenul lui de securitate. Celelalte două știri galbene ale zilei sunt declarația lui Nazare despre ratingul României (finanțe românești) și disputa miniștrilor belgieni pe atribuirea atacurilor cibernetice la frigiderele supermarketurilor.</p>
         <p class="spot-lead">Departamentul de Justiție al SUA a inculpat trei bărbați — unul coordonând din închisoare, din New York — pentru complotul eșuat din septembrie de la RAF Fairford, bază din Marea Britanie folosită de avioanele americane; procurorii îi leagă de o rețea acuzată de aproape 20 de atacuri și tentative în Europa și SUA.</p>
         <p class="spot-more" hidden><span class="spot-more-text"></span> <button class="spot-more-btn" type="button">apasă aici</button></p>
         <div class="spot-foot">
@@ -768,44 +768,44 @@
       <section class="dashboard" aria-label="Panou de ansamblu">
         <div class="dash-head">
           <span class="dash-title">Dashboard · Azi</span>
-          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 07:00</span>
+          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 08:00</span>
           <span class="dash-meta">Fereastră monitorizare <strong>L–V 06:00–22:00 · S–D 07:30–22:00</strong> · pas ~3 ore</span>
         </div>
 
         <div class="kpi-grid five" role="group" aria-label="Filtrează după categorie — apasă pe un tile">
           <button class="kpi" type="button" data-filter="toate" aria-pressed="true">
             <span class="kpi-top"><span class="kpi-label">Toate știrile</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">4</span>
-            <span class="kpi-sub">știri verificate azi, în 2 rulări</span>
+            <span class="kpi-value">5</span>
+            <span class="kpi-sub">știri verificate azi, în 3 rulări</span>
             <span class="kpi-bar" aria-hidden="true"><i style="width:100%"></i></span>
             <span class="kpi-hint">Apasă pentru toate</span>
           </button>
           <button class="kpi" type="button" data-filter="securitate" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">Securitate &amp; NATO</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">1</span>
-            <span class="kpi-sub">complot la baza RAF Fairford</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:25%"></i></span>
+            <span class="kpi-value">2</span>
+            <span class="kpi-sub">atribuirea atacurilor la frigidere · complot la baza RAF Fairford</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:40%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="romania" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">România</span><span class="kpi-check" aria-hidden="true">✓</span></span>
             <span class="kpi-value">1</span>
             <span class="kpi-sub">România pe sârmă la rating</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:25%"></i></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:20%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="belgia" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">Belgia</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">0</span>
-            <span class="kpi-sub"></span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:0%"></i></span>
+            <span class="kpi-value">1</span>
+            <span class="kpi-sub">atribuirea atacurilor la frigidere</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:20%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="tech" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">Tech &amp; AI</span><span class="kpi-check" aria-hidden="true">✓</span></span>
             <span class="kpi-value">2</span>
             <span class="kpi-sub">Muse face apeluri telefonice · Hugging Face după plecarea lui Huang</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:50%"></i></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:40%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
         </div>
@@ -819,7 +819,7 @@
       </section>
 
       <div class="filter-status" aria-live="polite">
-        <span class="filter-label">Se afișează: <strong>Toate categoriile — 4 din 4 știri</strong></span>
+        <span class="filter-label">Se afișează: <strong>Toate categoriile — 5 din 5 știri</strong></span>
         <button class="filter-reset" type="button" hidden>Resetează filtrul</button>
       </div>
 
@@ -849,14 +849,57 @@
       <p class="empty">Nicio știre în această categorie azi.</p>
 
       <main>
-        <!-- 1 · 13 nov · 07:00 -->
+        <!-- 1 · 13 nov · 08:00 -->
+        <article id="stire-195" data-cats="securitate belgia" data-sev="amber" data-subiect="atribuirea atacurilor la frigidere">
+          <div class="a-meta">
+            <span class="a-time">13 nov · 08:00</span>
+            <span class="a-cat">Belgia · Securitate &amp; NATO</span>
+            <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
+            <a class="cont-pill" href="#stire-131" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
+            <span class="subj-pill">atribuirea atacurilor la frigidere</span>
+            <span class="a-num">#1 / 5</span>
+          </div>
+          <h2>Belgia, împărțită pe atribuirea atacurilor cibernetice la frigiderele supermarketurilor: Internele indică Iranul, Externele nu acuză oficial</h2>
+          <div class="followup">
+            <span class="tag">Urmare la</span>
+            <p><a href="#stire-131">„Franța acuză oficial Iranul de atacurile cibernetice asupra frigiderelor din supermarketuri și băncilor de sânge” — luni, 9 noiembrie 2026, ora 22:00.</a> (Miniștrii belgieni se contrazic pe atribuirea valului belgian din 1–2 noiembrie.)</p>
+          </div>
+          <div class="sec">
+            <p class="sec-label">Ce s-a întâmplat</p>
+            <p>Joi, 12 noiembrie, ministrul belgian de Interne Bernard Quintin a declarat în Parlament că dovezile strânse de autoritățile belgiene indică și ele Teheranul ca posibil autor al atacurilor cibernetice asupra sistemelor de refrigerare ale supermarketurilor din Belgia, fără însă a formula o acuzație oficială. La scurt timp, ministrul de Externe Maxime Prévot a temperat mesajul, spunând agenției Belga că dovezile actuale nu permit identificarea oficială a autorului și că o atribuire oficială către o entitate străină ține de competența Externelor. Atacurile vizate sunt cele din noaptea de 1 spre 2 noiembrie, când frigiderele a circa 40 de magazine Delhaize, 15 Carrefour și 5 Spar din Belgia (plus un magazin IKEA) au fost comutate de la distanță în modul dezgheț, cu temperaturi urcate până la 50°C și mii de kilograme de alimente aruncate; parchetul federal belgian a deschis o anchetă. Poziția Belgiei vine la trei zile după ce Franța a atribuit formal valul francez din 11–12 octombrie (circa 700 de supermarketuri) unității Shahid Kaveh, descrisă ca unitate cibernetică ofensivă a Gărzilor Revoluționare iraniene, și a cerut mandate internaționale de arestare pentru șeful unității și doi adjuncți.</p>
+          </div>
+          <div class="sec">
+            <p class="sec-label">De ce contează</p>
+            <p>Pentru un IT incident Manager care trăiește și lucrează în Belgia, atacul a lovit infrastructură civilă din propria țară — lanțuri de supermarketuri, nu ținte militare — iar acum atribuirea e disputată chiar între două ministere ale aceluiași guvern: Internele indică Iranul, Externele refuză acuzația oficială. E exact tipul de incertitudine care se gestionează într-un incident: faptele tehnice (controlere de refrigerare comutate de la distanță, fără malware, prin interfețe web) sunt certe, autorul și răspunsul politic nu. Continuă arcul amenințărilor hibride urmărit în watch — simpozionul NATO de la București, alerta Bundeswehr, atacurile asupra navelor din Marea Neagră — și arată că el se joacă și pe infrastructura civilă belgiană, nu doar la granița de est.</p>
+          </div>
+          <div class="verify">
+            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
+            <p>Verdict: confirmat. Reuters (12 noiembrie 2026, 18:03 +02:00, actualizat 20:53; relatat de The Straits Times și Arab News) — relatarea de agenție: Quintin în Parlament, dovezile indică Teheranul, fără acuzație oficială; Prévot temperează imediat. NOS Nieuws (12 noiembrie 2026, relatat de Archynewsy și De Vector) — confirmare independentă: serviciile belgiene de securitate au identificat indicatori ai unor grupuri legate de Iran; guvernul s-a oprit înainte de o acuzație oficială. AFP (11 noiembrie 2026, relatat de IndonesiaNow) — confirmare independentă a contextului francez: atribuirea formală către Shahid Kaveh, convocarea ambasadorului iranian și negarea Teheranului. Notă de integritate: atribuirea în sine rămâne contestată — Belgia nu a formulat o acuzație oficială, iar relatările din 12 noiembrie au prezentat poziția belgiană diferit pe parcursul zilei (de la „nicio indicație” dimineața la „dovezi care indică Teheranul” seara); grupurile hacktiviste proruse NoName057(16) și Z-Pentest Alliance au revendicat și ele atacurile, pe 4 noiembrie, fără dovezi forensice independente.</p>
+            <ul class="sources">
+              <li><a href="https://etleboro.org/g/2b6096f2d05c2060711e7d929d16720een/belgium-says-evidence-points-at-iran-over-fridge-cyberattacks" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>The Straits Times / Arab News (după Reuters) — „Belgium says evidence points at Iran over fridge cyberattacks” (12 nov 2026, 18:03 +02:00, actualizat 20:53; relatarea de agenție — Quintin în Parlament: dovezile strânse de autoritățile belgiene indică Teheranul, fără acuzație oficială; Prévot: Belgia nu pune oficial Iranul sub acuzare)<span class="host">etleboro.org</span></a></li>
+              <li><a href="https://www.archynewsy.com/iran-suspected-of-cyberattacks-on-european-supermarket-cooling-systems/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Archynewsy (12 nov 2026, 14:57 UTC; după NOS Nieuws) — „Iran Suspected of Cyberattacks on European Supermarket Cooling Systems” (confirmare independentă: serviciile belgiene de securitate au identificat indicatori ai unor grupuri legate de Iran; guvernul s-a oprit înainte de o acuzație oficială; ancheta Parchetului din Paris asupra unității Shahid Kaveh)<span class="host">archynewsy.com</span></a></li>
+              <li><a href="https://dti.domaintools.com/research/european-refrigeration-systems-cyber-sabotage" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>DomainTools Investigations — „European Refrigeration Systems Cyber Sabotage” (raport de cercetare: cronologia valurilor din 11–12 octombrie (Franța) și 1–2 noiembrie (Belgia și alte șase țări), revendicarea NoName057(16) și Z-Pentest Alliance din 4 noiembrie, evaluarea directorului DNSC român — atacuri «triviale» tehnic, fără suspect statal)<span class="host">dti.domaintools.com</span></a></li>
+              <li><a href="https://www.indonesianow.co/news/8747982/iran-denies-role-in-french-fridge-cyberattack-as-paris-summons-envoy" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>IndonesiaNow (după AFP) — „Iran Denies Role in French Fridge Cyberattack as Paris Summons Envoy” (11 nov 2026; confirmare independentă a contextului francez: atribuirea formală către Shahid Kaveh, convocarea ambasadorului iranian de către Paris, negarea Teheranului)<span class="host">indonesianow.co</span></a></li>
+            </ul>
+          </div>
+          <div class="adverse">
+            <p class="sec-label">Tabăra adversă</p>
+            <p><strong>Maxime Prévot</strong>, ministrul belgian de Externe, prin agenția Belga (relatat de Reuters și Archynewsy): dovezile actuale nu permit identificarea oficială a autorului atacurilor, iar Belgia nu pune Iranul sub acuzare oficială — atribuirea formală ține de Externe, nu de Interne. <strong>Ministerul de Externe al Iranului</strong> (declarație din 10 noiembrie 2026, relatat de NPR/BBC și Faso Observateur) a respins acuzațiile Franței ca „nefondate”, iar ministrul Abbas Araghchi a ironizat pe X guvernul francez. În plus, grupurile hacktiviste proruse <strong>NoName057(16)</strong> și <strong>Z-Pentest Alliance</strong> au revendicat atacurile într-un video din 4 noiembrie (DomainTools) — revendicare fără dovezi forensice independente. (<a href="https://www.archynewsy.com/iran-suspected-of-cyberattacks-on-european-supermarket-cooling-systems/" target="_blank" rel="noopener">Archynewsy, 12 nov 2026</a>; <a href="https://fasoobservateur.com/tehran-denies-french-claims-of-cyberattack-on-supermarkets/" target="_blank" rel="noopener">Faso Observateur, 11 nov 2026</a>; <a href="https://dti.domaintools.com/research/european-refrigeration-systems-cyber-sabotage" target="_blank" rel="noopener">DomainTools, 12 nov 2026</a>)</p>
+          </div>
+          <div class="impact">
+            <span class="badge">Impact direct</span>
+            <p>Impact direct: minim azi — știrea nu cere nicio acțiune de la el; nu e un atac nou, ci disputa pe atribuirea valului din 1–2 noiembrie, deja încheiat; relevanță profesională înaltă: un incident cibernetic pe infrastructură civilă din țara de rezidență, cu atribuire disputată între ministere — exact genul de incertitudine de incident management; de urmărit: poziția oficială a Belgiei, ancheta parchetului federal, sancțiunile europene cerute de Franța și măsurile de protecție a controlerelor de refrigerare expuse pe internet.</p>
+          </div>
+        </article>
+
+        <!-- 2 · 13 nov · 07:00 -->
         <article id="stire-193" data-cats="tech" data-sev="green" data-subiect="Muse face apeluri telefonice">
           <div class="a-meta">
             <span class="a-time">13 nov · 07:00</span>
             <span class="a-cat">Tech &amp; AI</span>
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <span class="subj-pill">Muse face apeluri telefonice</span>
-            <span class="a-num">#1 / 4</span>
+            <span class="a-num">#2 / 5</span>
           </div>
           <h2>Muse, agentul AI al Meta, sună acum la firme din SUA în locul utilizatorului — doar pentru abonații plătiți</h2>
           <div class="sec">
@@ -886,7 +929,7 @@
           </div>
         </article>
 
-        <!-- 2 · 13 nov · 07:00 -->
+        <!-- 3 · 13 nov · 07:00 -->
         <article id="stire-194" data-cats="tech" data-sev="green" data-subiect="Hugging Face după plecarea lui Huang">
           <div class="a-meta">
             <span class="a-time">13 nov · 07:00</span>
@@ -894,7 +937,7 @@
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <a class="cont-pill" href="#stire-187" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">Hugging Face după plecarea lui Huang</span>
-            <span class="a-num">#2 / 4</span>
+            <span class="a-num">#3 / 5</span>
           </div>
           <h2>Șeful Hugging Face promite că platforma rămâne deschisă pentru AI open-source, după plecarea lui Jensen Huang de la Nvidia</h2>
           <div class="followup">
@@ -928,7 +971,7 @@
           </div>
         </article>
 
-        <!-- 3 · 13 nov · 06:00 -->
+        <!-- 4 · 13 nov · 06:00 -->
         <article id="stire-191" data-cats="securitate" data-sev="amber" data-subiect="complot la baza RAF Fairford">
           <div class="a-meta">
             <span class="a-time">13 nov · 06:00</span>
@@ -936,7 +979,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="spot-tag">Știrea zilei</span>
             <span class="subj-pill">complot la baza RAF Fairford</span>
-            <span class="a-num">#3 / 4</span>
+            <span class="a-num">#4 / 5</span>
           </div>
           <h2>Trei bărbați legați de Iran, inculpați pentru complotul terorist de la baza RAF Fairford din Marea Britanie</h2>
           <div class="sec">
@@ -966,14 +1009,14 @@
           </div>
         </article>
 
-        <!-- 4 · 13 nov · 06:00 -->
+        <!-- 5 · 13 nov · 06:00 -->
         <article id="stire-192" data-cats="romania" data-sev="amber" data-subiect="România pe sârmă la rating">
           <div class="a-meta">
             <span class="a-time">13 nov · 06:00</span>
             <span class="a-cat">România</span>
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="subj-pill">România pe sârmă la rating</span>
-            <span class="a-num">#4 / 4</span>
+            <span class="a-num">#5 / 5</span>
           </div>
           <h2>Nazare: România nu e în situația unui acord cu FMI, dar rămâne „pe sârmă” la rating — examenele decisive vin în ianuarie, februarie și martie 2027</h2>
           <div class="sec">
@@ -5719,8 +5762,8 @@
 
       <footer>
         <div class="rule" aria-hidden="true"></div>
-        <p>Sfârșitul ediției de azi · Ultima actualizare: vineri, 13 noiembrie 2026, 07:00<br />Monitorizarea rulează la circa 3 ore, în fereastra L–V 06:00–22:00 · S–D 07:30–22:00 — dă refresh pentru noutăți.</p>
-        <a class="to-top" href="#stire-193">↑ Înapoi la cea mai nouă știre</a>
+        <p>Sfârșitul ediției de azi · Ultima actualizare: vineri, 13 noiembrie 2026, 08:00<br />Monitorizarea rulează la circa 3 ore, în fereastra L–V 06:00–22:00 · S–D 07:30–22:00 — dă refresh pentru noutăți.</p>
+        <a class="to-top" href="#stire-195">↑ Înapoi la cea mai nouă știre</a>
       </footer>
     </div>
 
