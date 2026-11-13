@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="color-scheme" content="light dark" />
-    <meta name="tirile-versiune" content="2026-11-12T22:00:00+01:00|18|amber" />
+    <meta name="tirile-versiune" content="2026-11-13T06:00:00+01:00|2|amber" />
     <link rel="icon" href="data:," />
     <title>Știrile zilei</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -699,9 +699,9 @@
     <div class="topbar">
       <div class="topbar-inner">
         <span class="dot" aria-hidden="true"></span>
-        <span><strong>Joi, 12 noiembrie 2026</strong> · actualizat la <strong>22:00</strong></span>
+        <span><strong>Vineri, 13 noiembrie 2026</strong> · actualizat la <strong>06:00</strong></span>
         <span aria-hidden="true">·</span>
-        <span>18 știri azi</span>
+        <span>2 știri azi</span>
         <span class="spacer"></span>
         <button class="refresh-btn" type="button" id="refreshBtn" aria-label="Reîmprospătează pagina">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg>
@@ -716,12 +716,12 @@
         <h1>Știrile zilei</h1>
         <div class="date-line">
           <span class="day">Ediția de azi</span>
-          <span>Joi, 12 noiembrie 2026 · Europe/Brussels</span>
+          <span>Vineri, 13 noiembrie 2026 · Europe/Brussels</span>
         </div>
         <p class="lede"><strong>Apasă pe un tile</strong> ca să filtrezi pagina — articole complete jos, cele mai noi primele.</p>
       </header>
 
-      <section class="day" id="zi-2026-11-12">
+      <section class="day" id="zi-2026-11-13">
       <!-- Fereastra „Ultimele știri" — sus, imediat deasupra chenarului
            „Știrea zilei", între masthead și chenar. Arată DOAR titlurile din
            cea mai recentă rulare (1–2), fiecare link la cardul ei (#stire-N).
@@ -736,6 +736,199 @@
         </div>
         <ul class="latest-list"></ul>
       </section>
+
+      <!-- Chenar permanent: știrea cea mai importantă a zilei — sub fereastra
+           „Ultimele știri", ÎNAINTEA dashboardului, vizibilă din prima, fără scroll.
+           Nivelul de azi: GALBEN (sev-amber) — de urmărit: complotul terorist de la baza RAF Fairford — știrea cu severitatea cea mai mare a zilei și cea mai importantă dintre cele două știri galbene ale zilei; mai există o altă știre galbenă azi (Nazare: România pe sârmă la rating, de la 06:00), de aceea apare mențiunea despre celelalte știri cu aceeași severitate, cu filtru pe galben la „apasă aici".
+           Chenarul rămâne în afara logicii de filtrare: vizibil indiferent de filtrul de categorie. -->
+      <section class="spot sev-amber" aria-label="Știrea cea mai importantă a zilei">
+        <div class="spot-head">
+          <span class="spot-kicker">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13 2 4.5 13.5H11L9.5 22 19 10h-6.5L13 2z"/></svg>
+            Știrea zilei · Atenție rapidă
+          </span>
+          <span class="spot-time">13 nov · 06:00</span>
+          <span class="spot-pill">Nivel galben — de urmărit</span>
+        </div>
+        <h2 class="spot-title">Trei bărbați legați de Iran, inculpați pentru complotul terorist de la baza RAF Fairford din Marea Britanie</h2>
+        <p class="spot-why"><strong>De ce e în față:</strong> E știrea cu severitatea cea mai mare a zilei și cea mai importantă dintre cele două — o rețea susținută de Iran, acuzată de aproape 20 de atacuri în Europa și SUA, a vizat o bază din Marea Britanie care găzduiește avioane americane: amenințarea la adresa instalațiilor aliate din Europa, exact pe terenul lui de securitate. Cealaltă știre galbenă a zilei, declarația lui Nazare despre ratingul României, e pe finanțe românești.</p>
+        <p class="spot-lead">Departamentul de Justiție al SUA a inculpat trei bărbați — unul coordonând din închisoare, din New York — pentru complotul eșuat din septembrie de la RAF Fairford, bază din Marea Britanie folosită de avioanele americane; procurorii îi leagă de o rețea acuzată de aproape 20 de atacuri și tentative în Europa și SUA.</p>
+        <p class="spot-more" hidden><span class="spot-more-text"></span> <button class="spot-more-btn" type="button">apasă aici</button></p>
+        <div class="spot-foot">
+          <a class="spot-link" href="#stire-191">Citește știrea completă ↓</a>
+          <div class="sev-scale" role="img" aria-label="Scară de gravitate: verde — normal, galben — de urmărit, roșu — grav. Nivelul de azi: galben.">
+            <span class="sev-item"><i class="sev-dot g" aria-hidden="true"></i>Verde · normal</span>
+            <span class="sev-item on"><i class="sev-dot y" aria-hidden="true"></i>Galben · de urmărit</span>
+            <span class="sev-item"><i class="sev-dot r" aria-hidden="true"></i>Roșu · grav</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Dashboard -->
+      <section class="dashboard" aria-label="Panou de ansamblu">
+        <div class="dash-head">
+          <span class="dash-title">Dashboard · Azi</span>
+          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 06:00</span>
+          <span class="dash-meta">Fereastră monitorizare <strong>L–V 06:00–22:00 · S–D 07:30–22:00</strong> · pas ~3 ore</span>
+        </div>
+
+        <div class="kpi-grid five" role="group" aria-label="Filtrează după categorie — apasă pe un tile">
+          <button class="kpi" type="button" data-filter="toate" aria-pressed="true">
+            <span class="kpi-top"><span class="kpi-label">Toate știrile</span><span class="kpi-check" aria-hidden="true">✓</span></span>
+            <span class="kpi-value">2</span>
+            <span class="kpi-sub">știri verificate azi, în 1 rulare</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:100%"></i></span>
+            <span class="kpi-hint">Apasă pentru toate</span>
+          </button>
+          <button class="kpi" type="button" data-filter="securitate" aria-pressed="false">
+            <span class="kpi-top"><span class="kpi-label">Securitate &amp; NATO</span><span class="kpi-check" aria-hidden="true">✓</span></span>
+            <span class="kpi-value">1</span>
+            <span class="kpi-sub">complot la baza RAF Fairford</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:50%"></i></span>
+            <span class="kpi-hint">Apasă pentru a filtra →</span>
+          </button>
+          <button class="kpi" type="button" data-filter="romania" aria-pressed="false">
+            <span class="kpi-top"><span class="kpi-label">România</span><span class="kpi-check" aria-hidden="true">✓</span></span>
+            <span class="kpi-value">1</span>
+            <span class="kpi-sub">România pe sârmă la rating</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:50%"></i></span>
+            <span class="kpi-hint">Apasă pentru a filtra →</span>
+          </button>
+          <button class="kpi" type="button" data-filter="belgia" aria-pressed="false">
+            <span class="kpi-top"><span class="kpi-label">Belgia</span><span class="kpi-check" aria-hidden="true">✓</span></span>
+            <span class="kpi-value">0</span>
+            <span class="kpi-sub"></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:0%"></i></span>
+            <span class="kpi-hint">Apasă pentru a filtra →</span>
+          </button>
+          <button class="kpi" type="button" data-filter="tech" aria-pressed="false">
+            <span class="kpi-top"><span class="kpi-label">Tech &amp; AI</span><span class="kpi-check" aria-hidden="true">✓</span></span>
+            <span class="kpi-value">0</span>
+            <span class="kpi-sub"></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:0%"></i></span>
+            <span class="kpi-hint">Apasă pentru a filtra →</span>
+          </button>
+        </div>
+
+        <div class="dash-foot solo">
+          <div class="dash-panel">
+            <h3>Severitate — apasă un pătrat ca să vezi doar știrile de nivelul acela</h3>
+            <div class="sev-squares" role="group" aria-label="Filtrează după severitate — roșu, galben, verde"></div>
+          </div>
+        </div>
+      </section>
+
+      <div class="filter-status" aria-live="polite">
+        <span class="filter-label">Se afișează: <strong>Toate categoriile — 2 din 2 știri</strong></span>
+        <button class="filter-reset" type="button" hidden>Resetează filtrul</button>
+      </div>
+
+      <!-- Cuprinsul zilei — sub banda dashboard, înaintea cardurilor.
+           Generat de script din cardurile zilei curente: lista completă a
+           zilei, grupată pe ora publicării, cele mai noi primele; fiecare
+           titlu e link la cardul lui (#stire-N), iar antetul de oră al
+           fiecărui grup e buton de filtru pe rulare — aceeași logică pe care
+           o aveau barele „Ritmul zilei" (selecție unică; al doilea click pe
+           aceeași oră sau butonul de reset revine la toate; o selecție de oră
+           anulează filtrul de categorie și invers). Nu e pliabil: toate
+           grupurile de oră sunt extinse permanent, cu toate titlurile
+           vizibile — fără săgeți de pliere și fără buton de extindere.
+           Cuprinsul urmează filtrul activ, la fel ca și cardurile: la un
+           filtru de categorie, severitate sau oră arată doar rândurile
+           știrilor din selecția aceea, iar grupurile de oră rămase fără
+           nicio știre vizibilă se ascund; butonul „Toate" îl readuce la
+           toate titlurile zilei. Chenarul rămâne în afara filtrării. -->
+      <nav class="day-toc" aria-label="Cuprinsul zilei">
+        <div class="toc-head">
+          <h2>Cuprins</h2>
+          <span class="toc-count">cele mai noi primele · apasă pe o oră ca să filtrezi rularea, pe un titlu ca să sari la știre</span>
+        </div>
+        <div class="toc-groups"></div>
+      </nav>
+
+      <p class="empty">Nicio știre în această categorie azi.</p>
+
+      <main>
+        <!-- 1 · 13 nov · 06:00 -->
+        <article id="stire-191" data-cats="securitate" data-sev="amber" data-subiect="complot la baza RAF Fairford">
+          <div class="a-meta">
+            <span class="a-time">13 nov · 06:00</span>
+            <span class="a-cat">Securitate &amp; NATO</span>
+            <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
+            <span class="spot-tag">Știrea zilei</span>
+            <span class="subj-pill">complot la baza RAF Fairford</span>
+            <span class="a-num">#1 / 2</span>
+          </div>
+          <h2>Trei bărbați legați de Iran, inculpați pentru complotul terorist de la baza RAF Fairford din Marea Britanie</h2>
+          <div class="sec">
+            <p class="sec-label">Ce s-a întâmplat</p>
+            <p>Departamentul de Justiție al SUA a anunțat marți, 10 noiembrie, un rechizitoriu cu opt capete de acuzare împotriva a trei bărbați acuzați că au coordonat complotul din septembrie 2026 împotriva bazei RAF Fairford din Gloucestershire, Marea Britanie — bază a Royal Air Force care găzduiește avioane și personal american și a fost folosită de SUA în operațiunile împotriva Iranului. Cei trei sunt Mohammad Baqer Saad Dawood al-Saadi (32 de ani, dublă cetățenie iraniană și irakiană, deja închis la New York), Mohsen Mohajeri (48 de ani, cetățean iranian) și Mohammad Ali al-Hassani (35 de ani, cetățean irakian). Potrivit procurorilor, al-Hassani ar fi dirijat persoane neidentificate să conducă dube spre bază — unele cu butoaie de combustibil — și obiecte metalice care puteau servi drept șrapnel; complotul a eșuat, iar SUA și-au retras bombardierele B-1 de la Fairford după incidentul din septembrie. Al-Saadi ar fi coordonat pregătirile din celula lui din închisoarea din New York, prin mesaje codate. Procurorii îi leagă pe cei trei de o rețea mai largă, acuzată de aproape 20 de atacuri teroriste și tentative în Europa și SUA, acționând în sprijinul Kataib Hezbollah și al Gărzilor Revoluționare iraniene (IRGC) — ambele desemnate organizații teroriste străine de SUA. Șase dintre cele opt capete de acuzare au o pedeapsă maximă de 90 de ani de închisoare sau închisoare pe viață.</p>
+          </div>
+          <div class="sec">
+            <p class="sec-label">De ce contează</p>
+            <p>Pentru un IT incident Manager care lucrează în domeniul securității, o bază folosită de forțele americane în Europa, vizată de o rețea susținută de Iran care ar fi operat în mai multe țări europene, e tabloul de amenințare al instalațiilor aliate — nu un conflict îndepărtat. Cazul arată raza rețelei (Iran, Irak, Marea Britanie, SUA) și coordonarea chiar din interiorul unei închisori americane. Nicio amenințare iminentă nu e semnalată — complotul a eșuat în septembrie, iar cazul e acum în instanță — dar e genul de evoluție care modelează măsurile de protecție a forțelor și atenția la incidente în jurul bazelor aliate.</p>
+          </div>
+          <div class="verify">
+            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
+            <p>Verdict: confirmat. Defense News (12 noiembrie 2026, 16:46 UTC) — relatarea curatoriată: rechizitoriul cu opt capete, cei trei inculpați, coordonarea din închisoarea din New York și cele aproape 20 de atacuri și tentative în Europa și SUA. AFP (10 noiembrie 2026) — confirmare independentă: anunțul Departamentului de Justiție, dubele cu butoaie de combustibil, obiectele metalice ca șrapnel și retragerea bombardierelor B-1 de la Fairford după incidentul din septembrie. OpenChronicle (11 noiembrie 2026) — anchetă pe baza comunicatului DOJ: rețeaua transnațională și negarea implicării de către Iran. Notă de integritate: acuzațiile sunt acuzații — inculpații se prezumă nevinovați până la o condamnare; complotul a eșuat în septembrie, iar doi dintre inculpați nu se aflau în custodia SUA la anunțarea rechizitoriului.</p>
+            <ul class="sources">
+              <li><a href="https://www.defensenews.com/global/europe/2026/11/12/3-iranian-backed-men-indicted-in-attempted-plot-on-raf-fairford/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Defense News — „3 Iranian-backed men indicted in attempted plot on RAF Fairford” (12 nov 2026, 16:46 UTC; relatarea curatoriată — rechizitoriul cu 8 capete, cei trei inculpați, coordonarea din închisoarea din New York, cele aproape 20 de atacuri și tentative în Europa și SUA)<span class="host">defensenews.com</span></a></li>
+              <li><a href="https://app.ekkow.com/1493014527418892494" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>AFP — „US charges three 'Iranian operatives' over UK airbase plot” (10 nov 2026, 16:52 UTC; anunțul Departamentului de Justiție: dube cu butoaie de combustibil, obiecte metalice ca șrapnel, retragerea bombardierelor B-1 de la Fairford după incidentul din septembrie)<span class="host">app.ekkow.com</span></a></li>
+              <li><a href="https://openchronicle.org/2026/11/11/inside-the-alleged-iran-backed-terror-network-that-targeted-a-u-s-air-base-in-britain/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>OpenChronicle — „RAF Fairford Terror Plot: Inside the Alleged Iran-Backed Network” (11 nov 2026; anchetă pe baza comunicatului DOJ din 10 nov: cei trei inculpați, rețeaua transnațională Iran–Irak–Marea Britanie–SUA, negarea implicării de către Iran)<span class="host">openchronicle.org</span></a></li>
+            </ul>
+          </div>
+          <div class="adverse">
+            <p class="sec-label">Tabăra adversă</p>
+            <p><strong>Iranul</strong> a negat implicarea în incidentul de la RAF Fairford, potrivit OpenChronicle (11 noiembrie 2026), care notează și că acuzațiile procurorilor americani nu au fost încă testate în instanță. (<a href="https://openchronicle.org/2026/11/11/inside-the-alleged-iran-backed-terror-network-that-targeted-a-u-s-air-base-in-britain/" target="_blank" rel="noopener">OpenChronicle, 11 nov 2026</a>)</p>
+          </div>
+          <div class="impact">
+            <span class="badge">Impact direct</span>
+            <p>Impact direct: minim azi — știrea nu cere nicio acțiune de la el; relevanță profesională înaltă: amenințarea la adresa instalațiilor militare aliate din Europa și rețeaua care ar fi operat pe teritoriul european; de urmărit: extrădarea și procesul, reacția Marii Britanii și eventualele măsuri de protecție a forțelor la bazele aliate.</p>
+          </div>
+        </article>
+
+        <!-- 2 · 13 nov · 06:00 -->
+        <article id="stire-192" data-cats="romania" data-sev="amber" data-subiect="România pe sârmă la rating">
+          <div class="a-meta">
+            <span class="a-time">13 nov · 06:00</span>
+            <span class="a-cat">România</span>
+            <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
+            <span class="subj-pill">România pe sârmă la rating</span>
+            <span class="a-num">#2 / 2</span>
+          </div>
+          <h2>Nazare: România nu e în situația unui acord cu FMI, dar rămâne „pe sârmă” la rating — examenele decisive vin în ianuarie, februarie și martie 2027</h2>
+          <div class="sec">
+            <p class="sec-label">Ce s-a întâmplat</p>
+            <p>Ministrul Finanțelor, Alexandru Nazare, a declarat joi seară, la Antena 3, că România nu se află în prezent în situația de a ajunge din nou sub monitorizare internațională sau într-un acord cu Fondul Monetar Internațional: „Nu cred că suntem în poziția în care să ajungem din nou sub o monitorizare internațională sau într-un acord cu FMI, în acest moment. Avem în față foarte multe oportunități pe care le putem valorifica încât să nu ajungem acolo”. În același timp, a confirmat că riscurile semnalate de președintele Nicușor Dan privind agențiile de rating sunt corecte: „Toate riscurile prezentate de Nicușor Dan privind agențiile de rating sunt corecte, analiza e corectă… Am mers și mergem în continuare pe sârmă”. Evoluția depinde, a spus el, de felul în care sunt gestionate examenele din ianuarie, februarie și martie 2027 — Fitch în ianuarie, Moody's în februarie și S&amp;P în martie — iar perspectiva agențiilor față de România a devenit negativă, țara rămânând pe ultima clasă de rating de investiții.</p>
+          </div>
+          <div class="sec">
+            <p class="sec-label">De ce contează</p>
+            <p>Contextul fiscal al României îi atinge direct expunerea românească: investiția recurentă la TradeVille (500 RON pe lună) și proprietatea și familia din România. O retrogradare la „junk” ar scumpi împrumuturile statului și ar lovi activele în lei. Calendarul examenelor din ianuarie–martie 2027 e fereastra concretă de urmărit, iar până atunci reperele sunt a doua rectificare bugetară (până la 30 noiembrie) și bugetul pe 2027. Mesajul ministrului e dublu: fără acord cu FMI acum, dar cu marjă de eroare aproape zero la rating.</p>
+          </div>
+          <div class="verify">
+            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
+            <p>Verdict: confirmat. G4Media (12 noiembrie 2026, Laura Nițulescu) — relatarea curatoriată: declarația de joi seară, la Antena 3, că România nu e „în acest moment” în situația unui acord cu FMI, dar totul depinde de examenele din ianuarie, februarie și martie. Mediafax — originea relatării („Există riscul ca România să ajungă din nou pe mâna FMI? Ce spune ministrul Finanțelor”). Digi24 — confirmă citatul despre corectitudinea riscurilor prezentate de Nicușor Dan. Clujanul (13 noiembrie 2026, 03:00) — confirmare independentă: calendarul Fitch ianuarie / Moody's februarie / S&amp;P martie și perspectiva negativă, cu România pe ultima clasă de rating. InPrimPlan (12 noiembrie 2026, 22:00) — confirmare independentă: citatul „pe sârmă”. Notă de integritate: calendarul examenelor de rating era deja anunțat din octombrie — nou e confirmarea riscurilor de către ministru și formularea „pe sârmă”; declarația a fost făcută la Antena 3, nu într-un comunicat al ministerului.</p>
+            <ul class="sources">
+              <li><a href="https://www.g4media.ro/alexandru-nazare-nu-cred-ca-suntem-in-pozitia-in-care-sa-ajungem-din-nou-sub-o-monitorizare-internationala-sau-intr-un-acord-cu-fmi-dar-depinde-cum-tratam-examenele-din-ianuarie-februarie-si-martie.html" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>G4Media — „Alexandru Nazare: Nu cred că suntem în poziția în care să ajungem din nou sub o monitorizare internațională sau într-un acord cu FMI, dar depinde cum tratăm examenele din ianuarie, februarie și martie” (12 nov 2026, Laura Nițulescu; relatarea curatoriată — declarația de joi seară, la Antena 3: fără acord cu FMI „în acest moment”, riscurile lui Nicușor Dan sunt corecte, „mergem pe sârmă”)<span class="host">g4media.ro</span></a></li>
+              <li><a href="https://clujanul.ro/alexandru-nazare-nu-cred-ca-suntem-in-pozitia-in-care-sa-ajungem-din-nou-sub-o-monitorizare-internationala-sau-intr-un-acord-cu-fmi-dar-depinde-cum-tratam-examenele-din-ianuarie-februarie-si-martie-ht/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Clujanul — „Alexandru Nazare avertizează asupra riscurilor economice în primele luni ale anului” (13 nov 2026, 03:00; calendarul examenelor: Fitch în ianuarie, Moody's în februarie, S&P în martie 2027; perspectiva agențiilor a devenit negativă, România a rămas pe ultima clasă de rating)<span class="host">clujanul.ro</span></a></li>
+              <li><a href="https://inprimplan.ro/economie/nazare-avertizeaza-situatia-financiara-a-romaniei-merge-pe-sarma-a89e540a6c/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>InPrimPlan — „Nazare avertizează: situația financiară a României merge pe sârmă” (12 nov 2026, 22:00; citatul „Toate riscurile prezentate de Nicușor Dan privind agențiile de rating sunt corecte” și „Am mers și mergem în continuare pe sârmă”)<span class="host">inprimplan.ro</span></a></li>
+            </ul>
+          </div>
+          <div class="impact">
+            <span class="badge">Impact direct</span>
+            <p>Impact direct: minim azi — știrea nu cere nicio acțiune de la el; relevanță financiară directă pentru activele din România (investiția recurentă TradeVille, proprietate); de urmărit: a doua rectificare bugetară până la 30 noiembrie, bugetul pe 2027 și examenele Fitch (ianuarie), Moody's (februarie), S&amp;P (martie 2027).</p>
+          </div>
+        </article>
+
+
+      </main>
+      </section>
+
+      <section class="day day-archive" id="zi-2026-11-12">
+        <div class="day-head">
+          <h2>Joi, 12 noiembrie 2026</h2>
+          <span>Ediția de ieri · 18 știri · arhivă (ultimele 7 zile)</span>
+        </div>
 
       <!-- Chenar permanent: știrea cea mai importantă a zilei — sub fereastra
            „Ultimele știri”, ÎNAINTEA dashboardului, vizibilă din prima, fără scroll.
@@ -5442,824 +5635,13 @@
       </section>
 
 
-      <section class="day day-archive" id="zi-2026-11-06">
-        <div class="day-head">
-          <h2>Vineri, 6 noiembrie 2026</h2>
-          <span>Ediția de ieri · 17 știri · arhivă (ultimele 7 zile)</span>
-        </div>
-
-
-      <!-- Chenar permanent: știrea cea mai importantă a zilei — sub fereastra
-           „Ultimele știri", ÎNAINTEA dashboardului, vizibilă din prima, fără scroll.
-           Nivelul de azi: ROȘU (sev-red) — grav: atacul rusesc „double-tap”
-           asupra punctului de ajutor umanitar din Komyshuvakha (regiunea
-           Zaporojie) — cel puțin 42 de morți, zeci încă sub dărâmături —
-           documentat video de camera bodycam a unui polițist ucis în atac și
-           confirmat ca loc de BBC Verify; chenarul trece de la știrea OpenAI
-           (verde, 06:00) la această știre, singura roșie a zilei.
-           Chenarul rămâne în afara logicii de filtrare: vizibil indiferent de filtrul de categorie. -->
-      <section class="spot sev-red" aria-label="Știrea cea mai importantă a zilei">
-        <div class="spot-head">
-          <span class="spot-kicker">
-            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13 2 4.5 13.5H11L9.5 22 19 10h-6.5L13 2z"/></svg>
-            Știrea zilei · Atenție rapidă
-          </span>
-          <span class="spot-time">6 nov · 07:00</span>
-          <span class="spot-pill">Nivel roșu — grav</span>
-        </div>
-        <h2 class="spot-title">Atac rusesc „double-tap” asupra unui punct de ajutor umanitar în Komyshuvakha: cel puțin 42 de morți, zeci încă sub dărâmături</h2>
-        <p class="spot-why"><strong>De ce e în față:</strong> Cel mai grav fapt al zilei: un atac „double-tap” documentat video asupra civililor adunați pentru ajutor umanitar — 42 de morți, zeci încă sub dărâmături — în timp ce se pregătește reluarea negocierilor trilaterale la Abu Dhabi (10–11 noiembrie).</p>
-        <p class="spot-lead">Poliția ucraineană a publicat imaginile bodycam ale unui polițist ucis în atacul de luni asupra punctului de ajutor din Komyshuvakha; BBC Verify a confirmat locul filmării, iar bilanțul a ajuns la 42 de morți.</p>
-        <p class="spot-more" hidden><span class="spot-more-text"></span> <button class="spot-more-btn" type="button">apasă aici</button></p>
-        <div class="spot-foot">
-          <a class="spot-link" href="#stire-74">Citește știrea completă ↓</a>
-          <div class="sev-scale" role="img" aria-label="Scară de gravitate: verde — normal, galben — de urmărit, roșu — grav. Nivelul de azi: roșu.">
-            <span class="sev-item"><i class="sev-dot g" aria-hidden="true"></i>Verde · normal</span>
-            <span class="sev-item"><i class="sev-dot y" aria-hidden="true"></i>Galben · de urmărit</span>
-            <span class="sev-item on"><i class="sev-dot r" aria-hidden="true"></i>Roșu · grav</span>
-          </div>
-        </div>
-      </section>
-
-      <!-- Dashboard -->
-      <section class="dashboard" aria-label="Panou de ansamblu">
-        <div class="dash-head">
-          <span class="dash-title">Dashboard · Azi</span>
-          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 21:00</span>
-          <span class="dash-meta">Fereastră monitorizare <strong>L–V 06:00–22:00 · S–D 07:30–22:00</strong> · pas ~3 ore</span>
-        </div>
-
-        <div class="kpi-grid" role="group" aria-label="Filtrează după categorie — apasă pe un tile">
-          <button class="kpi" type="button" data-filter="toate" aria-pressed="true">
-            <span class="kpi-top"><span class="kpi-label">Toate știrile</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">17</span>
-            <span class="kpi-sub">știri verificate azi, în 14 rulări</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:100%"></i></span>
-            <span class="kpi-hint">Apasă pentru toate</span>
-          </button>
-          <button class="kpi" type="button" data-filter="securitate" aria-pressed="false">
-            <span class="kpi-top"><span class="kpi-label">Securitate &amp; NATO</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">11</span>
-            <span class="kpi-sub">Franța apără hub-ul Rzeszów · instrument AI de hacking expus · vigilență EUCOM amenințări hibride · Shield AI cumpără Echodyne, radar anti-dronă · negocieri de pace Ucraina · amenințări cu bombă, ziua a 3-a · vizita von der Leyen în România · proiect de drone cu Ucraina · arhitectură de securitate europeană · plata trupelor SUA în România · atac double-tap în Ucraina</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:65%"></i></span>
-            <span class="kpi-hint">Apasă pentru a filtra →</span>
-          </button>
-          <button class="kpi" type="button" data-filter="romania" aria-pressed="false">
-            <span class="kpi-top"><span class="kpi-label">România</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">3</span>
-            <span class="kpi-sub">vizita von der Leyen în România · proiect de drone cu Ucraina · plata trupelor SUA în România</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:18%"></i></span>
-            <span class="kpi-hint">Apasă pentru a filtra →</span>
-          </button>
-          <button class="kpi" type="button" data-filter="tech" aria-pressed="false">
-            <span class="kpi-top"><span class="kpi-label">Tech &amp; AI</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">6</span>
-            <span class="kpi-sub">instrument AI de hacking expus · cheltuieli AI stagnează, IPO Anthropic · cumpărături Alexa prin SMS · supraveghere AI respinsă · achiziție securitate agenți AI · IPO OpenAI în 2027</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:35%"></i></span>
-            <span class="kpi-hint">Apasă pentru a filtra →</span>
-          </button>
-        </div>
-
-        <div class="dash-foot">
-          <div class="dash-panel">
-            <h3>Ritmul zilei — știri pe rulare</h3>
-            <div class="rhythm" role="group" aria-label="Filtru după ora publicării — apasă pe o rulare ca să vezi doar știrile ei">
-              <button class="col" type="button" data-hour="06:00" aria-pressed="false" aria-label="Filtrează știrile de la ora 06:00 — 1 știre"><span class="n">1</span><span class="bar" style="height:22px"></span><span class="t">06:00</span></button>
-              <button class="col" type="button" data-hour="07:00" aria-pressed="false" aria-label="Filtrează știrile de la ora 07:00 — 1 știre"><span class="n">1</span><span class="bar" style="height:22px"></span><span class="t">07:00</span></button>
-              <button class="col" type="button" data-hour="08:00" aria-pressed="false" aria-label="Filtrează știrile de la ora 08:00 — 1 știre"><span class="n">1</span><span class="bar" style="height:22px"></span><span class="t">08:00</span></button>
-              <button class="col" type="button" data-hour="09:00" aria-pressed="false" aria-label="Filtrează știrile de la ora 09:00 — 1 știre"><span class="n">1</span><span class="bar" style="height:22px"></span><span class="t">09:00</span></button>
-              <button class="col" type="button" data-hour="11:00" aria-pressed="false" aria-label="Filtrează știrile de la ora 11:00 — 1 știre"><span class="n">1</span><span class="bar" style="height:22px"></span><span class="t">11:00</span></button>
-              <button class="col" type="button" data-hour="12:00" aria-pressed="false" aria-label="Filtrează știrile de la ora 12:00 — 1 știre"><span class="n">1</span><span class="bar" style="height:22px"></span><span class="t">12:00</span></button>
-              <button class="col" type="button" data-hour="13:00" aria-pressed="false" aria-label="Filtrează știrile de la ora 13:00 — 2 știri"><span class="n">2</span><span class="bar" style="height:40px"></span><span class="t">13:00</span></button>
-              <button class="col" type="button" data-hour="14:00" aria-pressed="false" aria-label="Filtrează știrile de la ora 14:00 — 1 știre"><span class="n">1</span><span class="bar" style="height:22px"></span><span class="t">14:00</span></button>
-              <button class="col" type="button" data-hour="15:00" aria-pressed="false" aria-label="Filtrează știrile de la ora 15:00 — 1 știre"><span class="n">1</span><span class="bar" style="height:22px"></span><span class="t">15:00</span></button>
-              <button class="col" type="button" data-hour="16:00" aria-pressed="false" aria-label="Filtrează știrile de la ora 16:00 — 2 știri"><span class="n">2</span><span class="bar" style="height:40px"></span><span class="t">16:00</span></button>
-              <button class="col" type="button" data-hour="17:00" aria-pressed="false" aria-label="Filtrează știrile de la ora 17:00 — 2 știri"><span class="n">2</span><span class="bar" style="height:40px"></span><span class="t">17:00</span></button>
-              <button class="col" type="button" data-hour="18:00" aria-pressed="false" aria-label="Filtrează știrile de la ora 18:00 — 1 știre"><span class="n">1</span><span class="bar" style="height:22px"></span><span class="t">18:00</span></button>
-              <button class="col" type="button" data-hour="20:00" aria-pressed="false" aria-label="Filtrează știrile de la ora 20:00 — 1 știre"><span class="n">1</span><span class="bar" style="height:22px"></span><span class="t">20:00</span></button>
-              <button class="col" type="button" data-hour="21:00" aria-pressed="false" aria-label="Filtrează știrile de la ora 21:00 — 1 știre"><span class="n">1</span><span class="bar" style="height:22px"></span><span class="t">21:00</span></button>
-            </div>
-            <p class="rhythm-hint">Apasă pe o bară ca să vezi doar știrile din rularea aceea; apasă din nou pe ea pentru toate.</p>
-          </div>
-          <div class="dash-panel">
-            <h3>Stare ediție</h3>
-            <ul class="status-list">
-              <li><span class="k">Ultima actualizare</span><span class="v">Azi, 21:00</span></li>
-              <li><span class="k">Cea mai nouă</span><span class="v">Franța apără hub-ul Rzeszów · 21:00</span></li>
-              <li><span class="k">Acoperire</span><span class="v">Ultimele 7 zile în arhivă</span></li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <div class="filter-status" aria-live="polite">
-        <span class="filter-label">Se afișează: <strong>Toate categoriile — 17 din 17 știri</strong></span>
-        <button class="filter-reset" type="button" hidden>Resetează filtrul</button>
-      </div>
-
-      <nav class="index" aria-label="Cuprinsul zilei">
-        <div class="index-head">
-          <h2>Cuprins</h2>
-          <span>apasă pe un titlu ca să sari direct la știre · se sincronizează cu filtrul</span>
-        </div>
-        <ol class="index-list">
-          <li data-cats="securitate"><a href="#stire-89"><time>21:00</time><span class="cat-dot sec" aria-hidden="true"></span><span class="t">Franța preia de la 1 ianuarie 2027 apărarea aeriană a hub-ului Rzeszów-Jasionka, principala poartă a ajutorului occidental pentru Ucraina</span><span class="n">#1</span></a></li>
-          <li data-cats="tech securitate"><a href="#stire-88"><time>20:00</time><span class="cat-dot tech" aria-hidden="true"></span><span class="t">Sute de copii ale instrumentului de hacking cu AI Artex, expuse public pe internet — oricine le poate folosi pentru atacuri cibernetice</span><span class="n">#2</span></a></li>
-          <li data-cats="securitate"><a href="#stire-87"><time>18:00</time><span class="cat-dot sec" aria-hidden="true"></span><span class="t">Comandamentul SUA în Europa lansează campania de vigilență „See Something, Do Something”: rute de navetă variate și geotagging oprit la aplicațiile de fitness</span><span class="n">#3</span></a></li>
-          <li data-cats="tech"><a href="#stire-85"><time>17:00</time><span class="cat-dot tech" aria-hidden="true"></span><span class="t">Cheltuielile cu AI stagnează chiar când Anthropic se apropie de IPO: evaluarea discutată a coborât la 1,2–1,3 trilioane $</span><span class="n">#4</span></a></li>
-          <li data-cats="securitate"><a href="#stire-86"><time>17:00</time><span class="cat-dot sec" aria-hidden="true"></span><span class="t">Shield AI cumpără producătorul de radare anti-dronă Echodyne cu 5,3 mld $ și se evaluează la 28,8 mld $</span><span class="n">#5</span></a></li>
-          <li data-cats="securitate"><a href="#stire-83"><time>16:00</time><span class="cat-dot sec" aria-hidden="true"></span><span class="t">Consiliul NATO–Ucraina, sesiune extraordinară la Bruxelles; Trump spune că acordul cu Rusia e «foarte aproape», după întâlnirea cu emisarul lui Putin</span><span class="n">#6</span></a></li>
-          <li data-cats="tech"><a href="#stire-84"><time>16:00</time><span class="cat-dot tech" aria-hidden="true"></span><span class="t">Amazon lasă clienții să-i trimită SMS agentului Alexa ca să cumpere — după ce în septembrie a blocat agentul Muse al Meta</span><span class="n">#7</span></a></li>
-          <li data-cats="securitate belgia"><a href="#stire-82"><time>15:00</time><span class="cat-dot sec" aria-hidden="true"></span><span class="t">Amenințări cu bombă la zborurile europene, ziua a treia: cel puțin 35 de zboruri afectate; curse TAROM și Wizz Air spre București, amenințări trimise și redacțiilor de știri</span><span class="n">#8</span></a></li>
-          <li data-cats="securitate romania"><a href="#stire-81"><time>14:00</time><span class="cat-dot sec" aria-hidden="true"></span><span class="t">Ursula von der Leyen vine luni la București, în turneu în regiunea Mării Negre: întâlniri cu Nicușor Dan și Luca Niculescu</span><span class="n">#9</span></a></li>
-          <li data-cats="belgia"><a href="#stire-79"><time>13:00</time><span class="cat-dot" style="background:var(--muted)" aria-hidden="true"></span><span class="t">Regele Philippe nu a acceptat demisia lui De Wever: negocierile pentru bugetul 2027 se reiau imediat, cu raport la palat pe 16 noiembrie</span><span class="n">#10</span></a></li>
-          <li data-cats="securitate romania"><a href="#stire-80"><time>13:00</time><span class="cat-dot sec" aria-hidden="true"></span><span class="t">Niculescu anunță un proiect româno-ucrainean de drone de circa 200 mil. €: «Destul de des primesc mesaje noaptea privind dronele care vin în România»</span><span class="n">#11</span></a></li>
-          <li data-cats="tech"><a href="#stire-78"><time>12:00</time><span class="cat-dot tech" aria-hidden="true"></span><span class="t">Cel puțin 10 administrații locale din SUA au renunțat la camerele de supraveghere Flock din vară, pe fondul temerilor de supraveghere în masă</span><span class="n">#12</span></a></li>
-          <li data-cats="securitate"><a href="#stire-77"><time>11:00</time><span class="cat-dot sec" aria-hidden="true"></span><span class="t">Kushner propune cinci obiective pentru o «arhitectură de securitate europeană» mai amplă, înaintea discuțiilor trilaterale de la Abu Dhabi</span><span class="n">#13</span></a></li>
-          <li data-cats="tech"><a href="#stire-76"><time>09:00</time><span class="cat-dot tech" aria-hidden="true"></span><span class="t">Palo Alto Networks negociază cumpărarea Clutch Security, startup de securitate pentru agenți AI, pentru ~500 mil. $</span><span class="n">#14</span></a></li>
-          <li data-cats="securitate romania"><a href="#stire-75"><time>08:00</time><span class="cat-dot sec" aria-hidden="true"></span><span class="t">România, dispusă să plătească o parte din costurile trupelor SUA — mesajul transmis lui Colby de Niculescu și Nicușor Dan</span><span class="n">#15</span></a></li>
-          <li data-cats="securitate"><a href="#stire-74"><time>07:00</time><span class="cat-dot sec" aria-hidden="true"></span><span class="t">Atac rusesc „double-tap” asupra unui punct de ajutor umanitar în Komyshuvakha: cel puțin 42 de morți, zeci încă sub dărâmături</span><span class="n">#16</span></a></li>
-          <li data-cats="tech"><a href="#stire-73"><time>06:00</time><span class="cat-dot tech" aria-hidden="true"></span><span class="t">OpenAI ar putea fi gata de IPO în 2027: veniturile din enterprise au devenit majoritare</span><span class="n">#17</span></a></li>
-        </ol>
-      </nav>
-
-      <p class="empty">Nicio știre în această categorie azi.</p>
-
-      <main>
-        <!-- 1 · 6 nov · 21:00 -->
-        <article id="stire-89" data-cats="securitate">
-          <div class="a-meta">
-            <span class="a-time">6 nov · 21:00</span>
-            <span class="a-cat">Securitate &amp; NATO</span>
-            <span class="a-num">#1 / 17</span>
-          </div>
-          <h2>Franța preia de la 1 ianuarie 2027 apărarea aeriană a hub-ului Rzeszów-Jasionka, principala poartă a ajutorului occidental pentru Ucraina</h2>
-
-          <div class="sec">
-            <p class="sec-label">Ce s-a întâmplat</p>
-            <p>Ambasadorul Franței la Varșovia, Étienne de Poncins, a anunțat vineri, 6 noiembrie, că de la 1 ianuarie 2027 Franța preia, în cadrul unei misiuni NATO, apărarea aeriană a zonei din jurul aeroportului Rzeszów-Jasionka din Polonia — principalul hub logistic prin care trece ajutorul militar occidental către Ucraina. Este prima dată când echipamente franceze sunt folosite pentru această misiune. Sistemele franceze vor opera alături de rachete Patriot americane, ca test de interoperabilitate între cele două sisteme. Ambasadorul nu a precizat cât va dura misiunea și nici ce sistem va desfășura Franța. În prezent, hub-ul este protejat de sisteme Patriot olandeze, iar Suedia își desfășoară propriile sisteme luna viitoare, în decembrie.</p>
-          </div>
-
-          <div class="sec">
-            <p class="sec-label">De ce contează</p>
-            <p>Rzeszów-Jasionka este nodul logistic central al sprijinului occidental pentru Ucraina — prin el a trecut, din 2022, cea mai mare parte a ajutorului militar. Rotația protecției lui (SUA, Germania, Olanda, Suedia, acum Franța) arată cum aliații europeni preiau treptat greul apărării Flancului estic, pe fondul discuțiilor despre un acord de pace și al exercițiului Coaliției de Voință din Polonia (9–22 noiembrie). Pentru un IT incident Manager, miza este continuitatea unui lanț logistic critic și interoperabilitatea sistemelor aliate — exact genul de dependență operațională care se vede în postura NATO pe Flancul estic.</p>
-          </div>
-
-          <div class="verify">
-            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
-            <p>Verdict: confirmat. Reuters (6 noiembrie 2026, relatare proprie din Varșovia) citează declarația ambasadorului de Poncins, cu data de 1 ianuarie 2027 și operarea alături de sistemele Patriot americane. Defence24 (Polonia) confirmă independent data predării pe 1 ianuarie 2027 (relatat de OSINT Baltic, 6 noiembrie). Atenție la limite: NATO nu a confirmat încă formal aranjamentul, iar tipul sistemului francez nu a fost anunțat — SAMP/T este doar o presupunere vehiculată în presă, nu un fapt, și nu este prezentat ca atare în acest card. Alte preluări (TBS News, DevDiscourse) republică același fir Reuters și nu sunt confirmări independente.</p>
-            <ul class="sources">
-              <li><a href="https://www.reuters.com/world/france-protect-nato-hub-poland-january-official-says-2026-11-06/" target="_blank" rel="noopener">Reuters — „France to protect NATO hub in Poland from January, official says” (6 noiembrie 2026)<span class="host">reuters.com</span></a></li>
-              <li><a href="https://osint-baltic.com/rzeszow-france-air-defence-en/" target="_blank" rel="noopener">OSINT Baltic — „France takes over the Rzeszów-Jasionka shield” (6 noiembrie 2026, citează Defence24)<span class="host">osint-baltic.com</span></a></li>
-            </ul>
-          </div>
-
-          <div class="impact">
-            <span class="badge">Impact direct</span>
-            <p>Impact direct: minim azi — nicio acțiune imediată. Relevanță de context ridicată: hub-ul Rzeszów este artera logistică a sprijinului pentru Ucraina, iar predarea către Franța, alături de exercițiul Multinational Force Ukraine din Polonia (9–22 noiembrie) și de vizita președintei Comisiei Europene în regiunea Mării Negre (luni, 9 noiembrie), marchează o săptămână în care Europa își asumă vizibil mai mult din apărarea Flancului estic. De urmărit: confirmarea formală din partea NATO și tipul sistemului francez desfășurat.</p>
-          </div>
-        </article>
-
-        <!-- 2 · 6 nov · 20:00 -->
-        <article id="stire-88" data-cats="tech securitate">
-          <div class="a-meta">
-            <span class="a-time">6 nov · 20:00</span>
-            <span class="a-cat">Tech &amp; AI</span>
-            <span class="a-num">#2 / 17</span>
-          </div>
-          <h2>Sute de copii ale instrumentului de hacking cu AI Artex, expuse public pe internet — oricine le poate folosi pentru atacuri cibernetice</h2>
-
-          <div class="sec">
-            <p class="sec-label">Ce s-a întâmplat</p>
-            <p>Firma de securitate Censys a descoperit peste 800 de instalări distincte ale Artex — un instrument open-source de testare a securității condus autonom de modele AI, lansat pe GitHub în iulie 2026 — accesibile public pe internet fără parolă. În total, Censys a numărat 1.465 de gazde cu consola Artex expusă; după eliminarea a două blocuri de hosting identic configurate rămân ~815 instalări distincte. Artex sondează automat sistemele în căutare de vulnerabilități și a fost deja legat de atacuri reale: industria financiară din Coreea de Sud în septembrie și atacul asupra gigantului de suport IT ConnectWise din octombrie, prin care hackeri legați de China au putut spiona mii de organizații ale căror date sunt găzduite în cloudul Microsoft. Pe 155 dintre gazdele expuse (10,6%), Censys a găsit și alte instrumente de atac — inclusiv 32 de directoare deschise cu kituri post-exploatare, stagers și implanturi. Nu fiecare instalare expusă e malițioasă — instrumentul e folosit și de testeri autorizați — dar oricine poate prelua acum o consolă gata făcută și o poate folosi pentru atacuri. Autorul Artex a anunțat că instrumentul devine closed-source, cu lansări viitoare doar pentru clienți plătitori.</p>
-          </div>
-
-          <div class="sec">
-            <p class="sec-label">De ce contează</p>
-            <p>Continuă direct arcul urmărit în pagină despre agenții AI ca sursă de incidente (breach-ul OpenCode din 20 octombrie, Guardian Agents ai Microsoft): de data asta nu e un agent care scapă de sub control, ci un instrument de atac cu AI, autonom, pus pe tavă — expus public, fără parolă, și deja folosit în campanii reale. Pentru un IT incident Manager, asta înseamnă că bariera de intrare pentru atacuri sofisticate coboară drastic: un atacator nu mai are nevoie să construiască infrastructura, o găsește gata expusă pe internet. Și reversul: instrumentele de testare cu AI pe care le-ar putea folosi și apărătorii devin, odată expuse, arme la îndemâna oricui.</p>
-          </div>
-
-          <div class="verify">
-            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
-            <p>Verdict: confirmat. TechCrunch (6 noiembrie 2026, 18:44 UTC) relatează raportul Censys din 5 noiembrie, semnat de cercetătorul principal Silas Cutler: peste 800 de instalări distincte ale Artex, accesibile fără parolă. InfoSecurity Magazine (6 noiembrie) confirmă independent cifrele — 1.465 de gazde cu consola expusă, ~815 instalări distincte, 155 de gazde cu alte amenințări detectate — iar CybersecurityNews (6 noiembrie) confirmă aceleași cifre și legătura cu atacurile asupra industriei financiare sud-coreene și asupra ConnectWise.</p>
-            <ul class="sources">
-              <li><a href="https://techcrunch.com/2026/11/06/hundreds-of-artex-ai-hacking-tools-found-publicly-exposed-to-the-web/" target="_blank" rel="noopener">TechCrunch — „Hundreds of Artex AI hacking tools found publicly exposed to the web” (6 noiembrie 2026)<span class="host">techcrunch.com</span></a></li>
-              <li><a href="https://www.infosecurity-magazine.com/news/artex-activity-exceeds-reported/" target="_blank" rel="noopener">InfoSecurity Magazine — „ARTEX Offensive AI Tool Activity Far Exceeds Reported Campaigns” (6 noiembrie 2026)<span class="host">infosecurity-magazine.com</span></a></li>
-              <li><a href="https://cybersecuritynews.com/artex-ai-hacking-framework/" target="_blank" rel="noopener">CybersecurityNews — „ARTEX AI Hacking Framework Found on 1,465 Public Servers, Some Hosting Cyberattack Tools” (6 noiembrie 2026)<span class="host">cybersecuritynews.com</span></a></li>
-            </ul>
-          </div>
-
-          <div class="impact">
-            <span class="badge">Impact direct</span>
-            <p>Impact direct: minim azi — nu administrează servere expuse și nu rulează Artex. Relevanță profesională ridicată: instrumentele autonome de pentest cu AI devin suprafață de incident la scară — un singur controler Artex a vizat peste 200 de organizații din cel puțin 14 țări în 11 zile, potrivit CrowdStrike. Pentru automatizările lui cu API-uri AI, lecția e aceeași ca la OpenCode: orice consolă sau cheie expusă public devine infrastructură de atac pentru altcineva.</p>
-          </div>
-        </article>
-        <!-- 3 · 6 nov · 18:00 -->
-        <article id="stire-87" data-cats="securitate">
-          <div class="a-meta">
-            <span class="a-time">6 nov · 18:00</span>
-            <span class="a-cat">Securitate &amp; NATO</span>
-            <span class="a-num">#3 / 17</span>
-          </div>
-          <h2>Comandamentul SUA în Europa lansează campania de vigilență „See Something, Do Something”: rute de navetă variate și geotagging oprit la aplicațiile de fitness</h2>
-          <div class="sec">
-            <p class="sec-label">Ce s-a întâmplat</p>
-            <p>Comandamentul SUA în Europa (EUCOM) a lansat campania de vigilență „See Something, Do Something”, prin care cere militarilor, familiilor lor și angajaților civili americani din Europa să fie atenți la comportamente suspecte în interiorul și în afara bazelor și să-și acopere urmele digitale în deplasări. Ghidul cere „disciplină digitală riguroasă”: verificarea setărilor de confidențialitate pe rețelele sociale, dezactivarea geotagging-ului la aplicațiile de fitness și pe dispozitivele mobile și evitarea postărilor despre locație și călătorii; plus varierea rutelor și orelor de navetă și a activităților din afara bazei, „pentru a reduce predictibilitatea”. EUCOM nu a indicat o amenințare concretă care să fi declanșat campania, dar contextul e cel al incursiunilor cu drone și al amenințărilor hibride: în septembrie Germania a acuzat Rusia de un atac eșuat cu drone încărcate cu explozivi la aeroportul Leipzig/Halle, iar în octombrie armata germană a ridicat evaluarea amenințării de sabotaj la „semnificativ”, al doilea cel mai înalt nivel.</p>
-          </div>
-          <div class="sec">
-            <p class="sec-label">De ce contează</p>
-            <p>Continuă direct arcul amenințărilor hibride urmărit în pagină (alerta Bundeswehr din 21 octombrie, arestarea pentru spionaj din 22 octombrie): de data asta nu e o alertă despre un incident, ci un ghid de conduită pentru personalul care lucrează în și în jurul instalațiilor aliate din Europa — exact mediul de lucru zilnic al cititorului, ca IT incident Manager. Recomandările nu sunt teoretice: naveta zilnică pe același traseu, la aceleași ore, și alergările înregistrate cu GPS și publicate online sunt exact tiparele pe care ghidul le cere variate, respectiv oprite.</p>
-          </div>
-          <div class="verify">
-            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
-            <p>Verdict: confirmat. Defense News (6 noiembrie 2026, 15:39 UTC) relatează anunțul EUCOM, cu citatul comandantului, generalul Alexus Grynkewich. Stars and Stripes a relatat prima campania (3 noiembrie), iar The Record confirmă independent conținutul ghidului (3 noiembrie), citând Stars and Stripes; SSBCrack News reia relatarea azi (6 noiembrie). Precizare de integritate: campania a fost lansată pe 3 noiembrie; articolul Defense News care o aduce în agenda de azi e din 6 noiembrie și se încadrează în fereastra de 48 de ore.</p>
-            <ul class="sources">
-              <li><a href="https://www.defensenews.com/news/2026/11/06/us-european-command-launches-vigilance-campaign-as-hybrid-threats-mount/" target="_blank" rel="noopener">Defense News — „US European Command launches vigilance campaign as hybrid threats mount” (6 noiembrie 2026)<span class="host">defensenews.com</span></a></li>
-              <li><a href="https://therecorddaily.com/eu-bases-on-edge-what-changed/" target="_blank" rel="noopener">The Record — „EU Bases On Edge – What Changed?” (3 noiembrie 2026)<span class="host">therecorddaily.com</span></a></li>
-              <li><a href="https://news.ssbcrack.com/u-s-european-command-launches-see-something-do-something-initiative-amid-security-concerns/" target="_blank" rel="noopener">SSBCrack News — „U.S. European Command Launches "See Something, Do Something" Initiative Amid Security Concerns” (6 noiembrie 2026)<span class="host">news.ssbcrack.com</span></a></li>
-            </ul>
-          </div>
-          <div class="impact">
-            <span class="badge">Impact direct</span>
-            <p>Impact direct concret: alergările cu GPS publicate online și naveta zilnică pe același traseu, la aceleași ore, sunt exact tiparele vizate de ghid — verificarea setărilor de geotagging și confidențialitate e o acțiune de câteva minute, nu o schimbare de program. Pentru familie: aceleași reguli se aplică și membrilor familiei când postează despre deplasări. Campania e un ghid de vigilență, nu o alertă despre o amenințare specifică — nu impune schimbări de rută sau de program.</p>
-          </div>
-          <div class="action">
-            <span class="badge">Acțiune</span>
-            <p>Verifică setările de geotagging și confidențialitate la aplicațiile de alergare/fitness (GPS oprit la publicare) și evită postările publice despre orele și traseul navetei.</p>
-          </div>
-        </article>
-
-        <!-- 4 · 6 nov · 17:00 -->
-        <article id="stire-85" data-cats="tech">
-          <div class="a-meta">
-            <span class="a-time">6 nov · 17:00</span>
-            <span class="a-cat">Tech &amp; AI</span>
-            <span class="a-num">#4 / 17</span>
-          </div>
-          <h2>Cheltuielile cu AI stagnează chiar când Anthropic se apropie de IPO: evaluarea discutată a coborât la 1,2–1,3 trilioane $</h2>
-
-          <div class="followup">
-            <span class="tag">Urmare la</span>
-            <p><a href="#stire-41">„Anthropic: compute-ul a ajuns la 58% din venituri — factura de 10 mld $ pe trimestru, jumătate pe contracte scurte scumpe”</a> — miercuri, 4 noiembrie 2026, ora 15:10.</p>
-          </div>
-
-          <div class="sec">
-            <p class="sec-label">Ce s-a întâmplat</p>
-            <p>Un raport Ramp arată că cheltuielile cu tokeni AI au stagnat la sfârșitul verii: +1,5% în august și septembrie la un loc, față de +42% în iulie; octombrie a reaccelerat (+8,9% între 23 septembrie și 23 octombrie). Bloomberg a relatat vineri că investitorii potențiali discută pentru IPO-ul Anthropic o evaluare de 1,2–1,3 trilioane $, față de până la 2 trilioane $ discutate la începutul lui octombrie; OpenAI și-a coborât evaluarea propusă la 1,25 trilioane $ (de la 1,4) și și-a redus obiectivele de strângere de fonduri cu circa 10 mld $. Joi, indicele Nasdaq 100 a pierdut 6,4% într-o singură zi, ștergând circa 2,3 trilioane $ din valoarea de piață — cea mai mare scădere zilnică în dolari din istorie — iar indicele de volatilitate VIX a urcat la cel mai ridicat nivel din aprilie 2025. Anthropic a tăiat prețurile la Fable 5.1 și Opus 5.5, decizie care, potrivit unui document depus de companie, a redus creșterea veniturilor cu circa 600 mil. $.</p>
-          </div>
-
-          <div class="sec">
-            <p class="sec-label">De ce contează</p>
-            <p>Continuă direct arcul economiei Anthropic urmărit în pagină (costul compute-ului, 58% din venituri): compania care face Claude — modelul folosit zilnic — vede cum creșterea veniturilor încetinește exact când se pregătește de listare. Nicio evaluare nu e stabilită încă, iar compania nu și-a schimbat calendarul (roadshow-ul rămâne programat pentru săptămâna 9 noiembrie). Pentru automatizările construite pe API-uri AI, vestea bună e presiunea pe prețuri — concurența dintre furnizori taie costurile de servire; vestea de urmărit e fragilitatea ecosistemului, cu furnizori care ard miliarde în infrastructură cu marje sub presiune.</p>
-          </div>
-
-          <div class="verify">
-            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
-            <p>Verdict: confirmat. TechCrunch — raportul Ramp (6 nov, 15:54 UTC); Bloomberg — evaluarea 1,2–1,3 trilioane $ (6 nov, relatat de Longbridge); The Wall Street Journal — un investitor vede evaluarea mai aproape de 1 trilion $ (relatat de AIStockWire); Le Private Banker — contextul vânzărilor de joi și prospectul S-1/A din 2 nov. Anthropic a refuzat să comenteze.</p>
-            <ul class="sources">
-              <li><a href="https://techcrunch.com/2026/11/06/ramp-data-shows-ai-spending-stalling-just-as-anthropic-nears-its-ipo/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>TechCrunch — raportul Ramp (6 nov, 15:54 UTC)<span class="host">techcrunch.com</span></a></li>
-              <li><a href="https://longbridge.com/en/news/304645150" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Bloomberg — evaluarea 1,2–1,3 trilioane $ (6 nov, relatat de Longbridge)<span class="host">longbridge.com</span></a></li>
-              <li><a href="https://aistockwire.com/blog/anthropic-ant-ipo-valuation-1-trillion-run-rate-blank-november-2026" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>The Wall Street Journal — un investitor vede evaluarea mai aproape de 1 trilion $ (relatat de AIStockWire)<span class="host">aistockwire.com</span></a></li>
-              <li><a href="https://leprivatebanker.com/2026/11/06/anthropic-ipo-investors-float-valuation-as-low-as-1-2-trillion-after-ai-rout-erases-early-october-talk-of-2-trillion/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Le Private Banker — contextul vânzărilor de joi și prospectul S-1/A din 2 nov<span class="host">leprivatebanker.com</span></a></li>
-            </ul>
-          </div>
-
-          <div class="impact">
-            <span class="badge">Impact direct</span>
-            <p>Impact direct: minim azi — nu deține acțiuni Anthropic sau OpenAI (ambele private, nelistate); relevanță de context ridicată: corecția de evaluare a giganților AI și stagnarea cheltuielilor cu tokeni sunt exact semnalele de urmărit pentru ecosistemul pe care își construiește automatizările.</p>
-          </div>
-        </article>
-
-        <!-- 5 · 6 nov · 17:00 -->
-        <article id="stire-86" data-cats="securitate">
-          <div class="a-meta">
-            <span class="a-time">6 nov · 17:00</span>
-            <span class="a-cat">Securitate &amp; NATO</span>
-            <span class="a-num">#5 / 17</span>
-          </div>
-          <h2>Shield AI cumpără producătorul de radare anti-dronă Echodyne cu 5,3 mld $ și se evaluează la 28,8 mld $</h2>
-
-          <div class="sec">
-            <p class="sec-label">Ce s-a întâmplat</p>
-            <p>Shield AI a convenit joi, 5 noiembrie, să cumpere Echodyne, producător de radare compacte anti-dronă, într-o tranzacție de până la 5,3 mld $: 4,8 mld $ la închidere și până la 500 mil. $ condiționați de atingerea unor ținte de performanță; închiderea e așteptată la începutul lui 2027, cu aprobare reglementară. Pentru finanțare, Shield strânge 2,5 mld $: 1 mld $ capital nou (runda Seria H, la o evaluare post-money de 28,8 mld $), 1 mld $ capital structurat din fonduri administrate de Blackstone și 500 mil. $ datorie aranjată de JPMorgan. Radarele Echodyne (tehnologia MESA) sunt integrate în sute de sisteme anti-dronă și de securitate din peste 40 de țări; în septembrie, compania a câștigat un contract de până la 250 mil. $ de la grupul operativ anti-dronă JIATF-401 al Pentagonului. Echodyne devine unitatea Mission Systems a Shield AI, iar CEO-ul Eben Frankenberg îi raportează CEO-ului Shield, Gary Steele.</p>
-          </div>
-
-          <div class="sec">
-            <p class="sec-label">De ce contează</p>
-            <p>Anti-drona e exact domeniul profesional al cititorului: ieri NATO a lansat piața de tehnologii anti-dronă (cardul din 5 noiembrie, ora 18:00), iar acum industria se consolidează — software-ul de autonomie (Hivemind, V-BAT, X-BAT) se unește cu senzorii radar într-un singur lanț. Evaluarea Shield s-a mai mult decât dublat față de 12,7 mld $ din martie. Radarele Echodyne sunt disponibile și cumpărătorilor aliați prin piața anti-dronă a grupului operativ american — deci consolidarea poate ajunge direct în ofertele din piața NATO.</p>
-          </div>
-
-          <div class="verify">
-            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
-            <p>Verdict: confirmat. Defense News (5 nov, 22:55 UTC); Breaking Defense (5 nov); Washington Technology (5 nov); Inside Unmanned Systems (5 nov); comunicatul comun al companiilor (Shield AI, 5 nov).</p>
-            <ul class="sources">
-              <li><a href="https://www.defensenews.com/industry/techwatch/2026/11/05/shield-ai-to-acquire-radar-maker-echodyne-to-bust-drones/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Defense News (5 nov, 22:55 UTC)<span class="host">defensenews.com</span></a></li>
-              <li><a href="https://breakingdefense.com/2026/11/shield-ai-acquires-radar-firm-echodyne-in-5-3b-deal/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Breaking Defense (5 nov)<span class="host">breakingdefense.com</span></a></li>
-              <li><a href="https://www.washingtontechnology.com/companies/2026/11/shield-ai-acquires-radar-maker-echodyne-53-billion-deal/417086/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Washington Technology (5 nov)<span class="host">washingtontechnology.com</span></a></li>
-              <li><a href="https://insideunmannedsystems.com/shield-to-acquire-echodyne-in-5-3-billion-deal-adding-radar-and-counter-uas-business/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Inside Unmanned Systems (5 nov)<span class="host">insideunmannedsystems.com</span></a></li>
-            </ul>
-          </div>
-
-          <div class="impact">
-            <span class="badge">Impact direct</span>
-            <p>Impact direct: minim azi — nicio decizie operațională; relevanță profesională de context: consolidarea industriei anti-dronă, cu efecte posibile asupra soluțiilor din piața NATO.</p>
-          </div>
-        </article>
-
-        <!-- 6 · 6 nov · 16:00 -->
-        <article id="stire-83" data-cats="securitate">
-          <div class="a-meta">
-            <span class="a-time">6 nov · 16:00</span>
-            <span class="a-cat">Securitate &amp; NATO</span>
-            <span class="a-num">#6 / 17</span>
-          </div>
-          <h2>Consiliul NATO–Ucraina, sesiune extraordinară la Bruxelles; Trump spune că acordul cu Rusia e «foarte aproape», după întâlnirea cu emisarul lui Putin</h2>
-
-          <div class="followup">
-            <span class="tag">Urmare la</span>
-            <p><a href="#stire-77">„Kushner propune cinci obiective pentru o «arhitectură de securitate europeană» mai amplă, înaintea discuțiilor trilaterale de la Abu Dhabi”</a> — vineri, 6 noiembrie 2026, ora 11:00.</p>
-          </div>
-
-          <div class="sec">
-            <p class="sec-label">Ce s-a întâmplat</p>
-            <p>Joi, 5 noiembrie, Consiliul NATO–Ucraina s-a întrunit în sesiune extraordinară la sediul NATO din Bruxelles, la nivel de ambasadori, prezidat de secretarul general Mark Rutte, pentru nevoile urgente de apărare ale Ucrainei înainte de iarnă. În paralel, la reședința secretarului general a avut loc a doua rundă de consultări privind garanțiile de securitate pentru Ucraina, cu SUA, Ucraina, NATO, Marea Britanie, Franța, Germania și Comisia Europeană; delegația Kievului a fost condusă de Rustem Umerov, secretarul Consiliului Național de Securitate și Apărare. În aceeași zi, la Casa Albă, președintele Donald Trump s-a întâlnit cu emisarul special al lui Putin, Kirill Dmitriev, și a declarat reporterilor că războiul e „foarte aproape” de a fi încheiat și că acordul „va implica mai mult decât Ucraina... poate chiar toată Europa”, fără să dea detalii despre discuție.</p>
-          </div>
-
-          <div class="sec">
-            <p class="sec-label">De ce contează</p>
-            <p>E ziua diplomatică cea mai densă de până acum pe pista păcii din Ucraina: NATO discută garanții de securitate la Bruxelles, iar Washingtonul vorbește de un acord mare, cu o săptămână înainte de discuțiile trilaterale SUA–Ucraina–Rusia de la Abu Dhabi (10–11 noiembrie) și de reuniunea Grupului de Contact pentru Ucraina (17 noiembrie). Pentru un IT incident Manager care lucrează în mediul NATO, garanțiile de securitate și o eventuală „arhitectură de securitate europeană” mai amplă sunt exact dosarele care pot schimba cerințele și fluxurile de lucru din perioada următoare. Prudență: Trump a mai prezis de multe ori că un acord e aproape; nu există niciun text de acord publicat, iar Trump a precizat că joi nu s-a întâlnit cu delegația ucraineană prezentă la Casa Albă.</p>
-          </div>
-
-          <div class="verify">
-            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
-            <p>Verdict: confirmat. Reuters — „Trump says he met Putin envoy Dmitriev” (5 noiembrie 2026); Associated Press — relatarea întâlnirii de la Casa Albă (5 noiembrie 2026); Anadolu Agency — sesiunea extraordinară a Consiliului NATO–Ucraina (6 noiembrie 2026); purtătoarea de cuvânt a NATO, Allison Hart, a confirmat consultările de la Bruxelles (relatată de Azernews, 6 noiembrie 2026); G4Media a relatat declarațiile lui Trump (6 noiembrie 2026).</p>
-            <ul class="sources">
-              <li><a href="https://www.reuters.com/world/trump-says-he-met-putin-envoy-dmitriev-2026-11-05/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Reuters — „Trump says he met Putin envoy Dmitriev” (5 noiembrie 2026)<span class="host">reuters.com</span></a></li>
-              <li><a href="https://www.military.com/putin-envoy-joins-melania-trump-at-white-house-event-to-discuss-ceasefire-she-brokered-in-oleshky" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Associated Press — relatarea întâlnirii de la Casa Albă (5 noiembrie 2026)<span class="host">military.com</span></a></li>
-              <li><a href="https://www.azernews.az/region/266944.html" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Azernews — purtătoarea de cuvânt a NATO, Allison Hart, confirmă consultările de la Bruxelles (6 noiembrie 2026)<span class="host">azernews.az</span></a></li>
-            </ul>
-          </div>
-
-          <div class="impact">
-            <span class="badge">Impact direct</span>
-            <p>Impact direct minim azi — nicio decizie luată, niciun acord semnat; relevanță de context înaltă pentru mediul NATO și pentru săptămâna care urmează (Abu Dhabi 10–11 nov).</p>
-          </div>
-        </article>
-
-        <!-- 7 · 6 nov · 16:00 -->
-        <article id="stire-84" data-cats="tech">
-          <div class="a-meta">
-            <span class="a-time">6 nov · 16:00</span>
-            <span class="a-cat">Tech &amp; AI</span>
-            <span class="a-num">#7 / 17</span>
-          </div>
-          <h2>Amazon lasă clienții să-i trimită SMS agentului Alexa ca să cumpere — după ce în septembrie a blocat agentul Muse al Meta</h2>
-
-          <div class="sec">
-            <p class="sec-label">Ce s-a întâmplat</p>
-            <p>Amazon a lansat vineri, 6 noiembrie, opțiunea de a discuta prin SMS cu Alexa for Shopping, agentul său AI de cumpărături: clienții îi scriu în limbaj natural, agentul caută produse, compară oferte, urmărește prețuri și poate finaliza cumpărături în numele lor. Lansarea e pe bază de invitație, pentru un grup mic de clienți din SUA, cu extindere la milioane de clienți în săptămânile următoare, înainte de sezonul cumpărăturilor de sărbători. Conversațiile prin text vor include și reclame la produse sponsorizate (deocamdată gratuite pentru agenții de publicitate).</p>
-          </div>
-
-          <div class="sec">
-            <p class="sec-label">De ce contează</p>
-            <p>Amazon e compania care în septembrie a blocat agentul Muse al Meta să cumpere în numele utilizatorilor și a dat în judecată browserul Comet al Perplexity; acum își lansează propriul canal de agent — poarta cumpărăturilor prin agenți se deschide, dar deocamdată doar pentru agentul casei. Continuă arcul cumpărăturilor prin agenți AI urmărit în pagină (Walmart Agent Gateway, 22 octombrie). Cifre Amazon: peste 400 de milioane de clienți au folosit Alexa for Shopping în ultimele 12 luni, iar folosirea funcțiilor agentice a crescut de peste 8 ori din ianuarie.</p>
-          </div>
-
-          <div class="verify">
-            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
-            <p>Verdict: confirmat. Reuters — „Amazon rolls out text-based shopping through Alexa” (6 noiembrie 2026); TechCrunch — „After blocking Muse, Amazon now lets users text Alexa to help them shop” (6 noiembrie 2026); anunțul Amazon (6 noiembrie 2026); Digiday (6 noiembrie 2026) — detaliul cu reclamele sponsorizate din răspunsuri.</p>
-            <ul class="sources">
-              <li><a href="https://www.reuters.com/business/retail-consumer/amazon-rolls-out-text-based-shopping-through-alexa-2026-11-06/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Reuters — „Amazon rolls out text-based shopping through Alexa” (6 noiembrie 2026)<span class="host">reuters.com</span></a></li>
-              <li><a href="https://techcrunch.com/2026/11/06/after-blocking-muse-amazon-now-lets-users-text-alexa-to-help-them-shop/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>TechCrunch — „After blocking Muse, Amazon now lets users text Alexa to help them shop” (6 noiembrie 2026)<span class="host">techcrunch.com</span></a></li>
-              <li><a href="https://www.aboutamazon.com/news/retail/alexa-for-shopping-text-to-shop" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Amazon — anunțul „Alexa for Shopping: text to shop” (6 noiembrie 2026)<span class="host">aboutamazon.com</span></a></li>
-              <li><a href="https://digiday.com/media-buying/amazons-shopping-agent-now-takes-orders-by-text-with-sponsored-product-ads-in-the-replies/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Digiday — agentul de cumpărături Amazon primește comenzi prin text, cu reclame sponsorizate în răspunsuri (6 noiembrie 2026)<span class="host">digiday.com</span></a></li>
-            </ul>
-          </div>
-
-          <div class="impact">
-            <span class="badge">Impact direct</span>
-            <p>Impact direct minim — doar SUA, pe bază de invitație, deocamdată; relevanță de context pentru automatizările cu agenți AI și pentru infrastructura de cumpărături prin agenți.</p>
-          </div>
-        </article>
-
-        <!-- 8 · 6 nov · 15:00 -->
-        <article id="stire-82" data-cats="securitate belgia">
-          <div class="a-meta">
-            <span class="a-time">6 nov · 15:00</span>
-            <span class="a-cat">Securitate &amp; NATO · Belgia</span>
-            <span class="a-num">#8 / 17</span>
-          </div>
-          <h2>Amenințări cu bombă la zborurile europene, ziua a treia: cel puțin 35 de zboruri afectate; curse TAROM și Wizz Air spre București, amenințări trimise și redacțiilor de știri</h2>
-
-          <div class="followup">
-            <span class="tag">Urmare la</span>
-            <p><a href="#stire-64">„Amenințările cu bombă la avioanele europene: un e-mail revendicat de gruparea rusă «Male State»; până la 25 de zboruri afectate, niciun dispozitiv găsit”</a> — joi, 5 noiembrie 2026, ora 17:00.</p>
-          </div>
-
-          <div class="sec">
-            <p class="sec-label">Ce s-a întâmplat</p>
-            <p>Vineri, valul de amenințări false cu bombă la adresa zborurilor europene a continuat pentru a treia zi consecutiv: cel puțin 35 de zboruri au fost percheziționate sau deviate în această săptămână, potrivit Reuters și The Guardian. Astăzi au fost vizate nouă zboruri la Praga (patru sosiri, cinci plecări), un zbor Ryanair Roma–Lisabona (FR8196, control de securitate la Lisabona) și curse spre București — TAROM ROT226M Praga–București, care a transmis codul de urgență 7700 și a aterizat în siguranță, și un Wizz Air Milano–București — iar amenințările s-au extins și la redacții: RTÉ (Irlanda) și-a evacuat sediul, iar Nova TV (Bulgaria) a primit amenințări similare. Niciun dispozitiv exploziv nu a fost găsit în nicio alertă din această săptămână, iar SRI a anunțat vineri că alertele de la Otopeni s-au dovedit false și că autorii sunt în curs de investigare.</p>
-          </div>
-
-          <div class="sec">
-            <p class="sec-label">De ce contează</p>
-            <p>Campania lovește direct rutele spre și din România (TAROM și Wizz Air spre București) și zboruri din Belgia — o cursă Bruxelles–Sofia a fost escortată azi de avioane de luptă maghiare prin spațiul aerian ungar. Pentru călătoriile cu avionul înseamnă întârzieri și devieri posibile, iar repetarea zilnică, cu același modus operandi, arată o campanie coordonată, nu incidente izolate — exact tipul de amenințare hibridă urmărit în acest monitor.</p>
-          </div>
-
-          <div class="verify">
-            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
-            <p>Verdict: confirmat. Reuters — factbox actualizat 6 nov, 13:05 UTC; CNN — relatare 6 nov, inclusiv evacuarea RTÉ; AFP — avioane de luptă italiene, franceze și bulgare mobilizate, amenințări semnate „Fighters of the Male State”; The Guardian — cel puțin 35 de zboruri percheziționate sau deviate (numit, fără link direct disponibil). Semnalul de agendă a venit din G4Media (declarația SRI, 6 nov, 14:04).</p>
-            <ul class="sources">
-              <li><a href="https://srnnews.com/factbox-europe-wide-bomb-threats-disrupt-air-travel/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Reuters — factbox „Europe-wide bomb threats disrupt air travel”, actualizat 6 nov, 13:05 UTC<span class="host">srnnews.com</span></a></li>
-              <li><a href="https://www.cnn.com/2026/11/05/europe/europe-bomb-threat-intl" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>CNN — relatare 6 nov, inclusiv evacuarea RTÉ<span class="host">cnn.com</span></a></li>
-              <li><a href="https://www.bangsar.net.my/new-hoax-bomb-threats-hit-european-flightseuropean-fighter-jets-scrambled-as-hoax-bomb-threats-hit-20-commercial-flights-for-third-day/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>AFP — avioane de luptă italiene, franceze și bulgare mobilizate; amenințări semnate „Fighters of the Male State”<span class="host">bangsar.net.my</span></a></li>
-            </ul>
-          </div>
-
-          <div class="opposing">
-            <p class="sec-label">Tabăra adversă</p>
-            <p>Ministrul de externe al Spaniei, José Manuel Albares, a declarat la TVE că „cea mai rezonabilă presupunere e că ne confruntăm cu o tentativă de agresiune hibridă și o formă de război psihologic” (citat de Reuters/CNN). În sens opus: fondatorul „Male State”, Vladislav Pozdnyakov, neagă orice implicare a grupării; anchetatorii nu au stabilit până acum dovezi că un stat ostil sau un grup terorist ar orchestra alertele (The Guardian); comisarul european pentru transporturi, Apostolos Tzitzikostas, spune că e prea devreme pentru concluzii despre legătura dintre incidente; ministra britanică a transporturilor, Heidi Alexander, le numește „farsă răuvoitoare” (malicious hoax).</p>
-          </div>
-
-          <div class="impact">
-            <span class="badge">Impact direct</span>
-            <p>Impact direct: minim azi — nu călătorește cu avionul săptămâna viitoare (deplasarea la Haga, 11–13 noiembrie, e cu mașina); relevanță de context ridicată pentru zborurile spre România de Crăciun și pentru munca de IT incident Manager, unde amenințările hibride coordonate sunt exact terenul profesional.</p>
-          </div>
-        </article>
-
-        <!-- 9 · 6 nov · 14:00 -->
-        <article id="stire-81" data-cats="securitate romania">
-          <div class="a-meta">
-            <span class="a-time">6 nov · 14:00</span>
-            <span class="a-cat">Securitate &amp; NATO · România</span>
-            <span class="a-num">#9 / 17</span>
-          </div>
-          <h2>Ursula von der Leyen vine luni la București, în turneu în regiunea Mării Negre: întâlniri cu Nicușor Dan și Luca Niculescu</h2>
-
-          <div class="followup">
-            <span class="tag">Urmare la</span>
-            <p><a href="#stire-80">„Niculescu anunță un proiect româno-ucrainean de drone de circa 200 mil. €”</a> — vineri, 6 noiembrie 2026, ora 13:00.</p>
-          </div>
-
-          <div class="sec">
-            <p class="sec-label">Ce s-a întâmplat</p>
-            <p>Președinta Comisiei Europene, Ursula von der Leyen, va fi luni, 9 noiembrie, la București, unde se va întâlni cu președintele Nicușor Dan — primirea la Palatul Cotroceni e programată la ora 15:30 — și cu premierul Luca Niculescu. Vizita face parte dintr-un turneu mai amplu în regiunea Mării Negre, care include și Bulgaria (marți, întâlnire cu premierul Rumen Radev la Varna și vizită la Academia Navală „Nikola Vapsarov”) și are loc după o serie de atacuri cu drone asupra unor nave din Marea Neagră. Deplasarea vine după participarea președintei Comisiei la summitul climatic COP din Turcia.</p>
-          </div>
-
-          <div class="sec">
-            <p class="sec-label">De ce contează</p>
-            <p>Dosarul securității Mării Negre urcă la nivelul președintei Comisiei Europene; vizita vine în aceeași zi în care premierul Niculescu a anunțat proiectul româno-ucrainean de drone de circa 200 mil. € și la câteva zile după discuțiile sale cu Elbridge Colby despre prezența SUA. Temele anunțate ale discuțiilor: securitatea regională, fondurile europene și consolidarea capacităților de apărare.</p>
-          </div>
-
-          <div class="verify">
-            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
-            <p>Verdict: confirmat. Relatarea originară a turneului este Politico, citată de Curs de Guvernare; G4Media (sursă curatoriată) are articolul „Ursula von der Leyen vine luni la București. Va avea întâlniri cu președintele Nicușor Dan și premierul Luca Niculescu / Președinta Comisiei Europene face un turneu în regiunea Mării Negre”. Administrația Prezidențială confirmă oficial primirea de luni, 9 noiembrie, ora 15:30, la Cotroceni; confirmări independente suplimentare: Mediafax și RFI.</p>
-            <ul class="sources">
-              <li><a href="https://cursdeguvernare.ro/ursula-von-der-leyen-vine-in-romania-discutii-cu-presedintele-dan.html" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Curs de Guvernare — „Ursula von der Leyen vine în România: discuții cu președintele Dan” (relatarea Politico)<span class="host">cursdeguvernare.ro</span></a></li>
-              <li><a href="https://condica.ro/stire/ursula-von-der-leyen-vine-in-romania-pentru-intalniri-cu-nicusor-dan-s" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Condica — „Ursula von der Leyen vine în România pentru întâlniri cu Nicușor Dan”<span class="host">condica.ro</span></a></li>
-              <li><a href="https://stiripefoc.ro/stiri/ursula-von-der-leyen-efectueaza-o-vizita-oficiala-in-romania-pe-9-noiembrie-si-se-intalneste-cu-nicusor-dan-si-luca-niculescu" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Știri pe foc — „Ursula von der Leyen efectuează o vizită oficială în România pe 9 noiembrie și se întâlnește cu Nicușor Dan și Luca Niculescu”<span class="host">stiripefoc.ro</span></a></li>
-            </ul>
-          </div>
-
-          <div class="impact">
-            <span class="badge">Impact direct</span>
-            <p>Impact direct: minim — vizită anunțată, fără decizie imediată; de urmărit luni ce rezultă din discuțiile despre securitatea Mării Negre și capacitățile de apărare.</p>
-          </div>
-        </article>
-
-        <!-- 10 · 6 nov · 13:00 -->
-        <article id="stire-79" data-cats="belgia">
-          <div class="a-meta">
-            <span class="a-time">6 nov · 13:00</span>
-            <span class="a-cat">Belgia</span>
-            <span class="a-num">#10 / 17</span>
-          </div>
-          <h2>Regele Philippe nu a acceptat demisia lui De Wever: negocierile pentru bugetul 2027 se reiau imediat, cu raport la palat pe 16 noiembrie</h2>
-
-          <div class="followup">
-            <span class="tag">Urmare la</span>
-            <p><a href="#stire-68">„De Wever confirmă bugetul de urgență pentru 2027 — «un eșec oribil»; regele decide vineri soarta demisiei”</a> — joi, 5 noiembrie 2026, ora 19:00.</p>
-          </div>
-
-          <div class="sec">
-            <p class="sec-label">Ce s-a întâmplat</p>
-            <p>Regele Philippe l-a primit vineri dimineață, la 10:30, pe premierul Bart De Wever, iar biroul regelui a anunțat că guvernul reia imediat negocierile pentru buget, ca să rezolve criza politică ce amenința coaliția și putea declanșa alegeri anticipate. În discuțiile cu regele din această săptămână, toate partidele au arătat disponibilitate de compromis, iar premierul a fost însărcinat să înceapă o nouă rundă de negocieri și să raporteze regelui pe 16 noiembrie. De Wever își oferise demisia luni, după ce negocierile nocturne eșuaseră asupra pachetului de circa 10 miliarde € (tăieri de cheltuieli și creșteri de taxe) necesar pentru stabilizarea finanțelor Belgiei.</p>
-          </div>
-
-          <div class="sec">
-            <p class="sec-label">De ce contează</p>
-            <p>Trăiește în Belgia, iar bugetul federal 2027 stabilește taxe, indexări și cheltuieli — context fiscal direct pentru familia lui. Criza politică e amânată, nu rezolvată: dacă noua rundă eșuează, Belgia intră în 2027 cu buget provizoriu (douăsprezeceimi) și risc de alegeri anticipate; termenul de urmărit e 16 noiembrie.</p>
-          </div>
-
-          <div class="verify">
-            <p class="sec-label">Verificare <span class="status">Sursă primară</span></p>
-            <p>Verdict: sursa_primara. Comunicatul biroului regelui Philippe, relatat de Reuters azi, 6 noiembrie 2026. Reuters a relatat separat și întâlnirea de vineri dimineață. Notă de integritate: relatarea de azi a venit pe firul Reuters; nu am găsit o a doua redacție independentă care să confirme separat decizia în momentul verificării — verdictul se sprijină pe comunicatul palatului însuși, nu pe două confirmări independente.</p>
-            <ul class="sources">
-              <li><a href="https://www.reuters.com/world/belgian-government-resume-budget-negotiations-effort-resolve-crisis-2026-11-06/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Reuters — „Belgian government to resume budget negotiations in effort to resolve crisis” (6 noiembrie 2026)<span class="host">reuters.com</span></a></li>
-              <li><a href="https://www.reuters.com/world/belgian-pm-determine-government-future-meeting-with-king-2026-11-06/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Reuters — „Belgian PM to determine government future in meeting with king” (6 noiembrie 2026)<span class="host">reuters.com</span></a></li>
-            </ul>
-          </div>
-
-          <div class="impact">
-            <span class="badge">Impact direct</span>
-            <p>Impact direct minim azi — nicio decizie fiscală concretă; relevanță de context înaltă, cu termen 16 noiembrie.</p>
-          </div>
-        </article>
-
-        <!-- 11 · 6 nov · 13:00 -->
-        <article id="stire-80" data-cats="securitate romania">
-          <div class="a-meta">
-            <span class="a-time">6 nov · 13:00</span>
-            <span class="a-cat">Securitate &amp; NATO · România</span>
-            <span class="a-num">#11 / 17</span>
-          </div>
-          <h2>Niculescu anunță un proiect româno-ucrainean de drone de circa 200 mil. €: «Destul de des primesc mesaje noaptea privind dronele care vin în România»</h2>
-
-          <div class="followup">
-            <span class="tag">Urmare la</span>
-            <p><a href="#stire-55">„Colby la București: România își mărește contribuția la NATO, în timp ce Pentagonul decide soarta trupelor SUA în Europa”</a> — joi, 5 noiembrie 2026, ora 10:00.</p>
-          </div>
-
-          <div class="sec">
-            <p class="sec-label">Ce s-a întâmplat</p>
-            <p>Premierul Luca Niculescu a declarat joi seară, la Antena 3 CNN, după întâlnirea cu subsecretarul american pentru Politica de Apărare Elbridge Colby, că România va dezvolta împreună cu Ucraina un proiect de circa 200 de milioane de euro în domeniul dronelor, mizând pe experiența ucrainenilor, „cei mai buni specialiști în drone”. A spus că primește „destul de des” mesaje noaptea despre drone care ajung în România și că prezența aliată ajută la identificarea și doborârea lor mai rapidă. A reafirmat că România își dorește ca trupele americane să rămână și ca numărul lor chiar să crească și că apărarea proiectului Neptun Deep e o prioritate. Nu au fost prezentate detalii despre sursele de finanțare, calendarul de implementare, companiile implicate sau tipurile de echipamente.</p>
-          </div>
-
-          <div class="sec">
-            <p class="sec-label">De ce contează</p>
-            <p>Amenințarea cu drone la Marea Neagră și la frontieră e exact arcul urmărit în pagină (doborâri F-16 lângă Sulina, sesiunea NAC, CSAT din 22 oct) și ține de domeniul lui profesional direct — gestionarea incidentelor și infrastructura de comunicații. Proiectul vizează capacitatea României de a detecta și doborî drone, iar Neptun Deep e infrastructură energetică critică românească.</p>
-          </div>
-
-          <div class="verify">
-            <p class="sec-label">Verificare <span class="status">Sursă primară + confirmat</span></p>
-            <p>Verdict: sursa_primara + confirmat. Anunțul e al premierului însuși (Antena 3, 5 noiembrie seara), relatat de G4Media (originea, via Agerpres) și confirmat de sfin.ro (6 noiembrie, 06:05), ziarulromanesc.de (6 noiembrie, 11:48) și stirideazi.ro. Notă de integritate: cifra de 200 mil. € apăruse și în martie 2026 (Atlantic Council, după vizita lui Zelenskyy la București) pentru producție comună de drone finanțată prin programul SAFE — ideea nu e complet nouă; noutatea e anunțul public făcut acum de premier.</p>
-            <ul class="sources">
-              <li><a href="https://www.sfin.ro/proiect-drone-romania-ucraina-200-milioane-euro/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>sfin.ro — „Proiect româno-ucrainean de 200 mil. euro pentru drone” (6 noiembrie 2026)<span class="host">sfin.ro</span></a></li>
-              <li><a href="https://ziarulromanesc.de/alerte-drone-granita-romaniei-proiect-ucraina-200-milioane/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>ziarulromanesc.de — „Noi alerte cu drone la granița României. Premierul anunță un proiect de 200 de milioane de euro cu Ucraina” (6 noiembrie 2026)<span class="host">ziarulromanesc.de</span></a></li>
-              <li><a href="https://stirideazi.ro/luca-niculescu-destul-de-des-primesc-mesaje-noaptea-privind-dronele-care-vin-in-romania/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>stirideazi.ro — „Luca Niculescu: Destul de des primesc mesaje noaptea privind dronele care vin în România”<span class="host">stirideazi.ro</span></a></li>
-            </ul>
-          </div>
-
-          <div class="impact">
-            <span class="badge">Impact direct</span>
-            <p>Impact direct minim azi — proiectul e în pregătire, fără calendar sau finanțare anunțată; relevanță profesională de context înaltă.</p>
-          </div>
-        </article>
-
-        <!-- 12 · 6 nov · 12:00 -->
-        <article id="stire-78" data-cats="tech">
-          <div class="a-meta">
-            <span class="a-time">6 nov · 12:00</span>
-            <span class="a-cat">Tech &amp; AI</span>
-            <span class="a-num">#12 / 17</span>
-          </div>
-          <h2>Cel puțin 10 administrații locale din SUA au renunțat la camerele de supraveghere Flock din vară, pe fondul temerilor de supraveghere în masă</h2>
-
-          <div class="sec">
-            <p class="sec-label">Ce s-a întâmplat</p>
-            <p>Din vară, cel puțin 10 administrații locale și departamente de poliție din SUA au restrâns sau au încheiat folosirea tehnologiei Flock Safety — camere cu citire automată a plăcuțelor de înmatriculare, drone și microfoane. În ultimele trei luni au renunțat Monroe (Ohio), Newburgh (New York), Richmond (Virginia), Hopkinton, New Bedford (Massachusetts) și Lansing (Michigan), iar locuitorii din League City (Texas) au votat săptămâna aceasta împotriva continuării folosirii, camerele urmând să fie demontate. Florida a interzis cititoarele de plăcuțe pe autostrăzile de stat, iar Texas a suspendat finanțarea de stat pentru Flock; compania a anunțat că scurtează stocarea implicită a datelor pentru clienții noi de la 30 la 7 zile.</p>
-          </div>
-
-          <div class="sec">
-            <p class="sec-label">De ce contează</p>
-            <p>Reacția face parte dintr-o respingere mai largă a tehnologiei AI de supraveghere — recunoaștere facială, baze de date cu mișcările vehiculelor, partajarea datelor cu agenții federale. Pentru cine urmărește agenții AI și infrastructura de supraveghere, cazul arată cum se pierde încrederea într-un furnizor: abuzuri documentate ale sistemului de către polițiști și întrebări fără răspuns despre cine poate interoga baza de date.</p>
-          </div>
-
-          <div class="verify">
-            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
-            <p>Verdict: confirmat. TechCrunch, 6 noiembrie 2026 (sursa curatoriată, relatarea originală). Confirmări independente din afara listei: The Washington Post (investigație din august 2026 cu 46 de cazuri de presupus abuz al sistemului de către polițiști), WIRED (relatări despre programul de plecări voluntare al companiei și îndoieli privind originea americană a camerelor), Newsweek (harta orașelor care renunță la Flock) și presa locală — South Coast Today (New Bedford, 6 noiembrie) și Herald Times Reporter (Two Rivers, 3 noiembrie).</p>
-            <ul class="sources">
-              <li><a href="https://techcrunch.com/2026/11/05/at-least-10-local-governments-have-moved-to-drop-flocks-surveillance-cameras-since-summer/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>TechCrunch — „At least 10 local governments have moved to drop Flock’s surveillance cameras since summer” (6 noiembrie 2026)<span class="host">techcrunch.com</span></a></li>
-              <li><a href="https://www.southcoasttoday.com/story/news/2026/11/06/new-bedford-eyes-new-post-flock-rules-heres-what-they-could-include/92626999007/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>South Coast Today — New Bedford, reguli post-Flock (6 noiembrie 2026)<span class="host">southcoasttoday.com</span></a></li>
-              <li><a href="https://www.htrnews.com/story/news/local/2026/11/03/two-rivers-ends-flock-safety-license-plate-camera-contract-manitowoc/92584923007/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Herald Times Reporter — Two Rivers încheie contractul Flock Safety (3 noiembrie 2026)<span class="host">htrnews.com</span></a></li>
-            </ul>
-          </div>
-
-          <div class="opposing">
-            <p class="sec-label">Tabăra adversă</p>
-            <p>Flock Safety, prin CEO Garrett Langley, susține că scopul final al companiei «nu este un viitor distopic al supravegherii» (Newsweek); compania afirmă că nu vinde date și că nu are contract cu ICE (TechCrunch). (<a href="https://techcrunch.com/2026/11/05/at-least-10-local-governments-have-moved-to-drop-flocks-surveillance-cameras-since-summer/" target="_blank" rel="noopener">techcrunch.com</a>)</p>
-          </div>
-
-          <div class="impact">
-            <span class="badge">Impact direct</span>
-            <p>Impact direct: minim — fenomen american, fără efect asupra vieții de zi cu zi în Belgia. Relevanță de context: supravegherea cu AI, retenția datelor și accesul agențiilor federale la baze de date private sunt exact temele de confidențialitate și incident management pe care le urmărește.</p>
-          </div>
-        </article>
-
-        <!-- 13 · 6 nov · 11:00 -->
-        <article id="stire-77" data-cats="securitate">
-          <div class="a-meta">
-            <span class="a-time">6 nov · 11:00</span>
-            <span class="a-cat">Securitate &amp; NATO</span>
-            <span class="a-num">#13 / 17</span>
-          </div>
-          <h2>Kushner propune cinci obiective pentru o «arhitectură de securitate europeană» mai amplă, înaintea discuțiilor trilaterale de la Abu Dhabi</h2>
-
-          <div class="sec">
-            <p class="sec-label">Ce s-a întâmplat</p>
-            <p>Jared Kushner, trimisul special al președintelui american Donald Trump, a prezentat joi, 5 noiembrie, cinci obiective pentru o arhitectură de securitate europeană mai amplă, după discuții la Bruxelles cu Ucraina, NATO și parteneri europeni. Cele cinci obiective sunt: consultări permanente în materie de securitate, comunicare fiabilă în situații de criză, mai mare transparență militară, măsuri reciproce de reducere a riscurilor de escaladare și un cadru durabil pentru securitatea europeană pe termen lung. Anunțul vine înaintea discuțiilor trilaterale SUA–Ucraina–Rusia de la Abu Dhabi, programate pentru 10–11 noiembrie, primele de acest fel din februarie.</p>
-          </div>
-
-          <div class="sec">
-            <p class="sec-label">De ce contează</p>
-            <p>Kushner afirmă că NATO rămâne centrală în apărarea colectivă europeană și că inițiativa se construiește pe instituțiile și angajamentele existente, nu le înlocuiește — iar fiecare țară își păstrează dreptul suveran de a-și alege alianțele, fără drept de veto al altei țări. Pentru un IT incident Manager într-un mediu NATO, cadrul de securitate european și garanțiile pentru Ucraina sunt contextul operațional direct; discuțiile de la Abu Dhabi (10–11 noiembrie) cad chiar în săptămâna deplasării la Haga (11–13 noiembrie).</p>
-          </div>
-
-          <div class="verify">
-            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
-            <p>Verdict: confirmat. G4Media, 6 noiembrie 2026 (sursa de agendă); bne IntelliNews, 6 noiembrie 2026; Newsmax, 5 noiembrie 2026; Reuters (discuțiile de la Abu Dhabi, 10–11 noiembrie, relatate și de Newsmax). Cele cinci obiective sunt citate identic de mai multe redacții independente.</p>
-            <ul class="sources">
-              <li><a href="https://www.europesays.com/ukraine/66767/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>bne IntelliNews — relatarea celor cinci obiective propuse de Kushner (6 noiembrie 2026)<span class="host">europesays.com</span></a></li>
-              <li><a href="https://www.newsmax.com/newsfront/jared-kushner-ukraine-russia/2026/11/05/id/1275331" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Newsmax — Jared Kushner, Ucraina și Rusia; discuțiile trilaterale de la Abu Dhabi (5 noiembrie 2026)<span class="host">newsmax.com</span></a></li>
-            </ul>
-          </div>
-
-          <div class="opposing">
-            <p class="sec-label">Tabăra adversă</p>
-            <p>Volodimir Zelenski, președintele Ucrainei, a avertizat că garanțiile pentru Rusia, așa cum le înțelege Moscova, „înseamnă schimbarea arhitecturii de securitate în Europa și în lume” și vrea ca ele să fie discutate abia după încheierea războiului (<a href="https://www.europesays.com/ukraine/66767/" target="_blank" rel="noopener">europesays.com</a>). Dmitri Peskov, purtătorul de cuvânt al Kremlinului, a spus că „securitatea indivizibilă” este piatra de temelie a poziției Rusiei și că garanțiile „pot fi doar mutuale”.</p>
-          </div>
-
-          <div class="impact">
-            <span class="badge">Impact direct</span>
-            <p>Impact direct: minim — relevanță de context. Nicio decizie nu a fost luată încă; cadrul propus este în discuție și nu s-a anunțat niciun acord. De urmărit: rezultatul discuțiilor trilaterale de la Abu Dhabi din 10–11 noiembrie.</p>
-          </div>
-        </article>
-
-        <!-- 14 · 6 nov · 09:00 -->
-        <article id="stire-76" data-cats="tech">
-          <div class="a-meta">
-            <span class="a-time">6 nov · 09:00</span>
-            <span class="a-cat">Tech &amp; AI</span>
-            <span class="a-num">#14 / 17</span>
-          </div>
-          <h2>Palo Alto Networks negociază cumpărarea Clutch Security, startup de securitate pentru agenți AI, pentru ~500 mil. $</h2>
-
-          <div class="followup">
-            <span class="tag">Urmare la</span>
-            <p><a href="#stire-34">„CrowdStrike cumpără cu ~495 milioane $ două startupuri de securitate AI: Fiddler AI și Dreadnode — piața securizării agenților prinde viteză”</a> — marți, 3 noiembrie 2026, ora 20:15.</p>
-          </div>
-
-          <div class="sec">
-            <p class="sec-label">Ce s-a întâmplat</p>
-            <p>Palo Alto Networks negociază achiziția Clutch Security, startup israelian fondat la sfârșitul lui 2023, care securizează identitățile non-umane — cheile API, conturile de serviciu, tokenurile și parolele cu care agenții AI accesează sistemele companiilor. Prețul vehiculat este de circa 500 de milioane de dolari în numerar, plus plăți condiționate de atingerea unor obiective, potrivit unei persoane familiarizate cu discuțiile, citată de TechCrunch; relatarea originală aparține The Information, din 4 noiembrie. Clutch se apropie de 10 milioane de dolari venituri recurente anuale, deci prețul ar însemna circa 50 de ori veniturile anuale — față de o evaluare de 85 de milioane de dolari la runda Series A de 20 de milioane din ianuarie 2025. Potrivit The Information, ar fi a cincea achiziție anunțată de Palo Alto în 2026 (PitchBook numără șapte, cu tot cu tranzacții mai mici). Nici Palo Alto, nici Clutch nu au comentat discuțiile, iar o tranzacție nu e sigură: negocierile sunt preliminare și s-ar putea să nu se încheie cu un acord.</p>
-          </div>
-
-          <div class="sec">
-            <p class="sec-label">De ce contează</p>
-            <p>Continuă direct firul din 3 noiembrie: CrowdStrike a plătit ~495 mil. $ pentru Fiddler AI și Dreadnode, iar acum un alt gigant al securității cibernetice negociază o sumă similară pentru același tip de țintă — securitatea agenților AI. Pentru cititor, miza e dublă: profesional, agenții autonomi cu acces la sisteme devin infrastructură de securitate gestionată la nivel enterprise, exact terenul de incident management; personal, Clutch păzește tocmai cheile API, tokenurile și conturile de serviciu — aceleași credențiale pe care le folosesc automatizările proprii — iar lecția breșei OpenCode din 20 octombrie rămâne valabilă: o cheie API furată nu se revocă prin schimbarea parolei.</p>
-          </div>
-
-          <div class="verify">
-            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
-            <p>Verdict: confirmat. TechCrunch (6 noiembrie 2026) relatează discuțiile pe propria sursă — o persoană familiarizată cu negocierile — și notează că The Information a relatat prima (4 noiembrie); Calcalist/CTech (5 noiembrie) și BigGo Finance (5 noiembrie) confirmă independent termenii discutați, citând relatarea The Information. Precizare de integritate: discuțiile sunt preliminare, fără acord semnat și fără confirmare oficială a prețului; ambele companii au refuzat să comenteze.</p>
-            <ul class="sources">
-              <li><a href="https://techcrunch.com/2026/11/05/palo-alto-networks-in-talks-to-buy-ai-agent-security-startup-clutch-for-500m/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>TechCrunch — „Palo Alto Networks in talks to buy AI agent security startup Clutch for $500M” (6 noiembrie 2026)<span class="host">techcrunch.com</span></a></li>
-              <li><a href="https://www.calcalistech.com/ctechnews/article/qx69w4bra" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Calcalist / CTech — „Palo Alto Networks in talks to acquire Israeli startup Clutch Security for $500 million” (5 noiembrie 2026)<span class="host">calcalistech.com</span></a></li>
-              <li><a href="https://finance.biggo.com/news/48f4d52c-30c2-42d0-a4b6-93aae9cf7154" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>BigGo Finance — „Palo Alto Networks Weighs $500 Million Purchase of AI Credential Startup Clutch Security” (5 noiembrie 2026)<span class="host">finance.biggo.com</span></a></li>
-              <li><a href="https://www.siliconreport.com/palo-alto-networks-in-talks-to-buy-clutch-security-for-about-500m" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Silicon Report — „Palo Alto Networks in talks to buy Clutch Security for about $500M” (5 noiembrie 2026)<span class="host">siliconreport.com</span></a></li>
-            </ul>
-          </div>
-
-          <div class="impact">
-            <span class="badge">Impact direct</span>
-            <p>Impact direct: minim azi — nicio schimbare imediată pentru rutină sau familie. Relevanță practică directă: piața securizării agenților AI se consolidează cu a doua tranzacție de ~500 mil. $ în patru zile (după CrowdStrike, 3 noiembrie), ceea ce confirmă că identitățile non-umane — chei API, tokenuri, conturi de serviciu — devin infrastructură critică de securitate; pentru automatizările proprii, regula rămâne: chei separate per tool, permisiuni minime și alerte de cheltuire pe fiecare cont.</p>
-          </div>
-        </article>
-
-        <!-- 15 · 6 nov · 08:00 -->
-        <article id="stire-75" data-cats="securitate romania">
-          <div class="a-meta">
-            <span class="a-time">6 nov · 08:00</span>
-            <span class="a-cat">Securitate &amp; NATO · România</span>
-            <span class="a-num">#15 / 17</span>
-          </div>
-          <h2>România, dispusă să plătească o parte din costurile trupelor SUA — mesajul transmis lui Colby de Niculescu și Nicușor Dan</h2>
-
-          <div class="followup">
-            <span class="tag">Urmare la</span>
-            <p><a href="#stire-55">„Colby la București: România își mărește contribuția la NATO, în timp ce Pentagonul decide soarta trupelor SUA în Europa”</a> — joi, 5 noiembrie 2026, ora 10:00.</p>
-          </div>
-
-          <div class="sec">
-            <p class="sec-label">Ce s-a întâmplat</p>
-            <p>Președintele Nicușor Dan l-a primit miercuri, 4 noiembrie, la Cotroceni, pe Elbridge Colby, subsecretarul american pentru politica de apărare, iar joi, 5 noiembrie, premierul Luca Niculescu l-a primit pe Colby la Palatul Victoria. Surse guvernamentale citate de Digi24 — și surse citate de TVR — spun că principalul mesaj transmis oficialului american a fost disponibilitatea României de a suporta o parte din costurile staționării trupelor SUA, inclusiv costuri de bază și combustibil pentru avioane, fără a fi dezvăluită o sumă. Niculescu a confirmat ulterior că s-a discutat despre prezența militară americană și despre revenirea la efectivele anterioare. Colby este artizanul revizuirii prezenței SUA în Europa, ale cărei opțiuni ajung azi, 6 noiembrie, pe masa secretarului american al Apărării, Pete Hegseth, decizia finală fiind așteptată în decembrie.</p>
-          </div>
-
-          <div class="sec">
-            <p class="sec-label">De ce contează</p>
-            <p>Prezența militară americană în România și securitatea Mării Negre sunt direct pe zona profesională a cititorului, iar garanția transatlantică devine tranzacțională: Bucureștiul negociază menținerea trupelor SUA în timp ce Pentagonul decide azi ce opțiuni de retragere sau redistribuire îi prezintă lui Hegseth. În România se află în prezent circa 1.000 de militari americani, iar Polonia a anunțat deja în septembrie că e gata să plătească 15.000 de dolari pe an pentru fiecare militar SUA — Bucureștiul se alătură astfel unui model de cost-sharing promovat de Washington pentru aliații de pe Flancul estic.</p>
-          </div>
-
-          <div class="verify">
-            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
-            <p>Verdict: confirmat. Întâlnirile lui Colby cu Nicușor Dan și cu Niculescu sunt confirmate de Mediafax și Digi24; oferta de plată este relatată pe surse guvernamentale de Digi24 și de TVR — două relatări independente, nu un comunicat oficial. Precizare de integritate: nu există o sumă publică și niciun angajament bugetar oficial; informația despre plată rămâne, deocamdată, la nivel de surse.</p>
-            <ul class="sources">
-              <li><a href="https://www.digi24.ro/stiri/actualitate/politica/creierul-procesului-de-retragere-a-trupelor-americane-din-europa-ajunge-la-bucuresti-elbridge-colby-va-fi-primit-de-nicusor-dan-4021627" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Digi24 — „Creierul procesului de retragere a trupelor americane din Europa ajunge la București: Elbridge Colby va fi primit de Nicușor Dan”<span class="host">digi24.ro</span></a></li>
-              <li><a href="https://www.digi24.ro/stiri/actualitate/politica/ministrul-de-externe-a-discutat-cu-elbridge-colby-romania-isi-intensifica-contributia-pentru-nato-3-0-4022103" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Digi24 — „Ministrul de Externe a discutat cu Elbridge Colby: România își intensifică contribuția pentru NATO 3.0”<span class="host">digi24.ro</span></a></li>
-              <li><a href="https://www.mediafax.ro/politic/nicusor-dan-avertizeaza-ca-marea-neagra-a-devenit-una-dintre-cele-mai-periculoase-regiuni-ce-a-discutat-cu-oficialul-american-elbridge-colby-intalnire-si-cu-ministrul-afacerilor-externe-23837593" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Mediafax — „Nicușor Dan avertizează că Marea Neagră a devenit una dintre cele mai periculoase regiuni. Ce a discutat cu oficialul american Elbridge Colby”<span class="host">mediafax.ro</span></a></li>
-              <li><a href="https://tvuno.ro/2026/11/06/basescu-despre-plata-trupelor-americane-de-catre-romania-nu-poate-functiona/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>TV Uno — „Băsescu, despre plata trupelor americane de către România: «Nu poate funcționa»” (6 noiembrie 2026)<span class="host">tvuno.ro</span></a></li>
-            </ul>
-          </div>
-
-          <div class="opposing">
-            <p class="sec-label">Tabăra adversă</p>
-            <p>Traian Băsescu, fost președinte al României (B1 TV, 5 noiembrie, relatat de Digi24): ideea ca România să plătească pentru militarii americani staționați în țară este „proastă” — „Nu poate funcționa un asemenea sistem”. Exemplul lui: ce se întâmplă dacă România plătește pentru staționarea a 2.000 de militari la Mihail Kogălniceanu, iar în caz de luptă aceștia nu au ordin să intervină. (<a href="https://tvuno.ro/2026/11/06/basescu-despre-plata-trupelor-americane-de-catre-romania-nu-poate-functiona/" target="_blank" rel="noopener">tvuno.ro</a>)</p>
-          </div>
-
-          <div class="impact">
-            <span class="badge">Impact direct</span>
-            <p>Impact direct: minim pe termen scurt — nicio sumă publică, niciun angajament bugetar, nicio schimbare imediată pentru familie sau rutină. Relevanță profesională înaltă: semnal structural pentru Flancul estic și Marea Neagră — Bucureștiul negociază activ menținerea prezenței americane exact în ziua în care Pentagonul îi prezintă lui Hegseth opțiunile de retragere/redistribuire.</p>
-          </div>
-        </article>
-
-        <!-- 16 · 6 nov · 07:00 -->
-        <article id="stire-74" data-cats="securitate">
-          <div class="a-meta">
-            <span class="a-time">6 nov · 07:00</span>
-            <span class="a-cat">Securitate &amp; NATO</span>
-            <span class="spot-tag">Știrea zilei</span>
-            <span class="a-num">#16 / 17</span>
-          </div>
-          <h2>Atac rusesc „double-tap” asupra unui punct de ajutor umanitar în Komyshuvakha: cel puțin 42 de morți, zeci încă sub dărâmături</h2>
-
-          <div class="sec">
-            <p class="sec-label">Ce s-a întâmplat</p>
-            <p>Luni, 2 noiembrie, nouă bombe planante rusești, unele de 3.000 kg, au lovit satul Komyshuvakha din regiunea Zaporojie, în timp ce localnicii se adunaseră la o școală pentru a primi ajutor umanitar. Prima lovitură a lovit oamenii adunați, iar a doua — după modelul „double-tap” — a lovit adăpostul subteran unde se refugiaseră civilii, salvatorii și polițiștii sosiți la fața locului. Poliția ucraineană a publicat miercuri imaginile de pe camera bodycam a unui polițist ucis în atac; BBC Verify a confirmat că filmarea e din același loc cu imaginile serviciului de urgență DSNS de după atac. Bilanțul a urcat la 42 de morți, cu până la 33 de persoane încă sub dărâmături, potrivit poliției citate de Reuters.</p>
-          </div>
-
-          <div class="sec">
-            <p class="sec-label">De ce contează</p>
-            <p>Războiul din Ucraina e firul central al zonei profesionale a cititorului — Flancul estic, Marea Neagră, postura NATO. Un atac „double-tap” documentat video asupra civililor adunați pentru ajutor, în săptămâna în care Zelenski a discutat cu emisarii lui Trump (Witkoff și Kushner) despre reluarea negocierilor trilaterale SUA–Ucraina–Rusia la Abu Dhabi (10–11 noiembrie), arată că Moscova intensifică atacurile asupra țintelor civile în timp ce Kievul a rămas, potrivit BBC, practic fără interceptoare occidentale. Atacul se adaugă unui val de lovituri asupra infrastructurii civile ucrainene din ultimele zile.</p>
-          </div>
-
-          <div class="verify">
-            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
-            <p>Verdict: confirmat. BBC — „Ukraine says bodycam video shows deadly Russian double-tap bombing” (4 noiembrie 2026, actualizat 5 noiembrie) — și Reuters — „Death toll from Russian strike on Ukrainian aid centre reaches 42, police say” (5 noiembrie 2026) — sunt două surse independente din afara listei curatoriate; misiunea ONU de monitorizare a drepturilor omului în Ucraina atribuie atacul forțelor ruse. Precizare de integritate: cifrele victimelor sunt cele raportate de autoritățile ucrainene (poliție, președintele Zelenski) și rămân provizorii cât timp continuă căutările; BBC Verify a confirmat independent doar locul filmării bodycam, nu bilanțul.</p>
-            <ul class="sources">
-              <li><a href="https://www.bbc.co.uk/news/articles/c98rz6penv86o" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>BBC — „Ukraine says bodycam video shows deadly Russian double-tap bombing” (4 noiembrie 2026)<span class="host">bbc.co.uk</span></a></li>
-              <li><a href="https://www.reuters.com/world/europe/death-toll-russian-strike-ukrainian-aid-centre-reaches-42-police-say-2026-11-05" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Reuters — „Death toll from Russian strike on Ukrainian aid centre reaches 42, police say” (5 noiembrie 2026)<span class="host">reuters.com</span></a></li>
-              <li><a href="https://www.newsmadeclear.com/en/news/a2935dc0-5cae-4fcb-99a0-1fe7d55d3935" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>NewsMadeClear — „Ukrainian police release bodycam footage from deadly shelter attack” (4 noiembrie 2026)<span class="host">newsmadeclear.com</span></a></li>
-            </ul>
-          </div>
-
-          <div class="opposing">
-            <p class="sec-label">Tabăra adversă</p>
-            <p>Ministerul rus al Apărării (raport zilnic, 3 noiembrie): forțele ruse au lovit unități militare ucrainene în zona Komyshuvakha și în alte două localități, susținând că au ucis până la 25 de militari — fără să comenteze direct lovitura asupra punctului de ajutor umanitar. (<a href="https://augerton.com/news/2026/11/04/russian-bombing-ukraine-zaporizhzhia-aid-point/" target="_blank" rel="noopener">augerton.com</a>)</p>
-          </div>
-
-          <div class="impact">
-            <span class="badge">Impact direct</span>
-            <p>Impact direct: minim — relevanță de context înaltă. Niciun efect imediat asupra rutinei zilnice sau a familiei; relevanța e profesională și de context: escaladarea atacurilor asupra civililor în Ucraina, chiar în săptămâna reluării negocierilor trilaterale la Abu Dhabi (10–11 noiembrie), modelează mediul de securitate al Flancului estic și al Mării Negre.</p>
-          </div>
-        </article>
-
-        <!-- 17 · 6 nov · 06:00 -->
-        <article id="stire-73" data-cats="tech">
-          <div class="a-meta">
-            <span class="a-time">6 nov · 06:00</span>
-            <span class="a-cat">Tech &amp; AI</span>
-            <span class="a-num">#17 / 17</span>
-          </div>
-          <h2>OpenAI ar putea fi gata de IPO în 2027: veniturile din enterprise au devenit majoritare</h2>
-
-          <div class="followup">
-            <span class="tag">Urmare la</span>
-            <p><a href="#stire-16">„OpenAI își taie ținta de finanțare la 20 mld $ și are abia ~11 mld $ angajate — investitorii mari răspund „călduț"”</a> — sâmbătă, 31 octombrie 2026, ora 20:00.</p>
-          </div>
-
-          <div class="sec">
-            <p class="sec-label">Ce s-a întâmplat</p>
-            <p>Președintele OpenAI, Greg Brockman, a declarat miercuri, 4 noiembrie, la conferința WSJ Tech din Napa, California, că OpenAI ar putea fi gata de listare la bursă în 2027 — „I think so" — fără să anunțe o dată, o bursă sau un preț. Tot atunci a spus că vânzările către companii au devenit principala sursă de venit a OpenAI, după o primă jumătate de an „destul de dificilă", iar în trimestrul 3 ritmul anualizat al veniturilor a crescut cu 70%, businessul enterprise dublându-se.</p>
-          </div>
-
-          <div class="sec">
-            <p class="sec-label">De ce contează</p>
-            <p>OpenAI este compania din spatele ChatGPT și Codex, instrumentele AI folosite zilnic; trecerea de la un brand de consum la o companie cu venituri majoritar enterprise și o posibilă listare în 2027 ar fi cel mai mare IPO tech al anului și un semnal despre maturizarea economiei AI. În același timp, runda de finanțare privată a fost redusă de la 30 la 20 de miliarde de dolari, cu doar circa 11 miliarde angajate, la o evaluare de 1,25 trilioane de dolari — investitorii cer dovezi de venituri, nu doar creștere.</p>
-          </div>
-
-          <div class="verify">
-            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
-            <p>Verdict: confirmat. Surse: Reuters — „OpenAI, ready to IPO in 2027, now counts majority of sales from enterprises, Brockman says" (5 noiembrie 2026) — și The Wall Street Journal — interviul original cu Brockman la WSJ Tech — sunt două surse independente din afara listei curatoriate; TechCrunch confirmă separat declarația (5 noiembrie 2026). Precizare: Brockman nu a anunțat o dată, o bursă sau un preț al listării — doar că OpenAI ar putea fi gata de IPO în 2027.</p>
-            <ul class="sources">
-              <li><a href="https://wnflsports.com/2026/11/04/openai-ready-to-ipo-in-2027-now-counts-majority-of-sales-from-enterprises-brockman-says/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Reuters — „OpenAI, ready to IPO in 2027, now counts majority of sales from enterprises, Brockman says" (5 noiembrie 2026)<span class="host">wnflsports.com</span></a></li>
-              <li><a href="https://www.wsj.com/tech/openai-had-rough-first-half-of-year-before-coding-takeoff-brockman-says-6c97d9e5" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>The Wall Street Journal — interviul original cu Brockman la WSJ Tech<span class="host">wsj.com</span></a></li>
-              <li><a href="https://techcrunch.com/2026/11/05/openai-president-greg-brockman-says-company-could-be-ipo-ready-in-2027/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>TechCrunch — „OpenAI president Greg Brockman says company could be IPO ready in 2027" (5 noiembrie 2026)<span class="host">techcrunch.com</span></a></li>
-            </ul>
-          </div>
-
-          <div class="impact">
-            <span class="badge">Impact direct</span>
-            <p>Impact direct: minim — relevanță de context. OpenAI este companie privată, nelistată, deci fără efect direct asupra investițiilor; relevanța este de context pentru economia AI și pentru direcția instrumentelor (ChatGPT, Codex) folosite zilnic.</p>
-          </div>
-        </article>
-      </main>
-      </section>
+      
 
 
       <footer>
         <div class="rule" aria-hidden="true"></div>
-        <p>Sfârșitul ediției de azi · Ultima actualizare: joi, 12 noiembrie 2026, 22:00<br />Monitorizarea rulează la circa 3 ore, în fereastra L–V 06:00–22:00 · S–D 07:30–22:00 — dă refresh pentru noutăți.</p>
-        <a class="to-top" href="#stire-190">↑ Înapoi la cea mai nouă știre</a>
+        <p>Sfârșitul ediției de azi · Ultima actualizare: vineri, 13 noiembrie 2026, 06:00<br />Monitorizarea rulează la circa 3 ore, în fereastra L–V 06:00–22:00 · S–D 07:30–22:00 — dă refresh pentru noutăți.</p>
+        <a class="to-top" href="#stire-191">↑ Înapoi la cea mai nouă știre</a>
       </footer>
     </div>
 
