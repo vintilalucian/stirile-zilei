@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="color-scheme" content="light dark" />
-    <meta name="tirile-versiune" content="2026-11-13T08:00:00+01:00|5|amber" />
+    <meta name="tirile-versiune" content="2026-11-13T09:00:00+01:00|7|amber" />
     <link rel="icon" href="data:," />
     <title>Știrile zilei</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -699,9 +699,9 @@
     <div class="topbar">
       <div class="topbar-inner">
         <span class="dot" aria-hidden="true"></span>
-        <span><strong>Vineri, 13 noiembrie 2026</strong> · actualizat la <strong>08:00</strong></span>
+        <span><strong>Vineri, 13 noiembrie 2026</strong> · actualizat la <strong>09:00</strong></span>
         <span aria-hidden="true">·</span>
-        <span>5 știri azi</span>
+        <span>7 știri azi</span>
         <span class="spacer"></span>
         <button class="refresh-btn" type="button" id="refreshBtn" aria-label="Reîmprospătează pagina">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg>
@@ -739,7 +739,7 @@
 
       <!-- Chenar permanent: știrea cea mai importantă a zilei — sub fereastra
            „Ultimele știri", ÎNAINTEA dashboardului, vizibilă din prima, fără scroll.
-           Nivelul de azi: GALBEN (sev-amber) — de urmărit: complotul terorist de la baza RAF Fairford — știrea cu severitatea cea mai mare a zilei și cea mai importantă dintre cele trei știri galbene ale zilei; mai există alte două știri galbene azi (Nazare: România pe sârmă la rating, de la 06:00, și disputa miniștrilor belgieni pe atribuirea atacurilor la frigidere, de la 08:00), de aceea apare mențiunea despre celelalte știri cu aceeași severitate, cu filtru pe galben la „apasă aici".
+           Nivelul de azi: GALBEN (sev-amber) — de urmărit: complotul terorist de la baza RAF Fairford — știrea cu severitatea cea mai mare a zilei și cea mai importantă dintre cele patru știri galbene ale zilei; mai există alte trei știri galbene azi (Nazare: România pe sârmă la rating, de la 06:00, disputa miniștrilor belgieni pe atribuirea atacurilor la frigidere, de la 08:00, și ancheta democraților din Congres asupra vânzărilor de cipuri Nvidia în China, de la 09:00), de aceea apare mențiunea despre celelalte știri cu aceeași severitate, cu filtru pe galben la „apasă aici".
            Chenarul rămâne în afara logicii de filtrare: vizibil indiferent de filtrul de categorie. -->
       <section class="spot sev-amber" aria-label="Știrea cea mai importantă a zilei">
         <div class="spot-head">
@@ -751,7 +751,7 @@
           <span class="spot-pill">Nivel galben — de urmărit</span>
         </div>
         <h2 class="spot-title">Trei bărbați legați de Iran, inculpați pentru complotul terorist de la baza RAF Fairford din Marea Britanie</h2>
-        <p class="spot-why"><strong>De ce e în față:</strong> E știrea cu severitatea cea mai mare a zilei și cea mai importantă dintre cele trei — o rețea susținută de Iran, acuzată de aproape 20 de atacuri în Europa și SUA, a vizat o bază din Marea Britanie care găzduiește avioane americane: amenințarea la adresa instalațiilor aliate din Europa, exact pe terenul lui de securitate. Celelalte două știri galbene ale zilei sunt declarația lui Nazare despre ratingul României (finanțe românești) și disputa miniștrilor belgieni pe atribuirea atacurilor cibernetice la frigiderele supermarketurilor.</p>
+        <p class="spot-why"><strong>De ce e în față:</strong> E știrea cu severitatea cea mai mare a zilei și cea mai importantă dintre cele patru — o rețea susținută de Iran, acuzată de aproape 20 de atacuri în Europa și SUA, a vizat o bază din Marea Britanie care găzduiește avioane americane: amenințarea la adresa instalațiilor aliate din Europa, exact pe terenul lui de securitate. Celelalte trei știri galbene ale zilei sunt declarația lui Nazare despre ratingul României (finanțe românești), disputa miniștrilor belgieni pe atribuirea atacurilor cibernetice la frigiderele supermarketurilor și ancheta democraților din Congres asupra vânzărilor de cipuri Nvidia în China.</p>
         <p class="spot-lead">Departamentul de Justiție al SUA a inculpat trei bărbați — unul coordonând din închisoare, din New York — pentru complotul eșuat din septembrie de la RAF Fairford, bază din Marea Britanie folosită de avioanele americane; procurorii îi leagă de o rețea acuzată de aproape 20 de atacuri și tentative în Europa și SUA.</p>
         <p class="spot-more" hidden><span class="spot-more-text"></span> <button class="spot-more-btn" type="button">apasă aici</button></p>
         <div class="spot-foot">
@@ -768,15 +768,15 @@
       <section class="dashboard" aria-label="Panou de ansamblu">
         <div class="dash-head">
           <span class="dash-title">Dashboard · Azi</span>
-          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 08:00</span>
+          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 09:00</span>
           <span class="dash-meta">Fereastră monitorizare <strong>L–V 06:00–22:00 · S–D 07:30–22:00</strong> · pas ~3 ore</span>
         </div>
 
         <div class="kpi-grid five" role="group" aria-label="Filtrează după categorie — apasă pe un tile">
           <button class="kpi" type="button" data-filter="toate" aria-pressed="true">
             <span class="kpi-top"><span class="kpi-label">Toate știrile</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">5</span>
-            <span class="kpi-sub">știri verificate azi, în 3 rulări</span>
+            <span class="kpi-value">7</span>
+            <span class="kpi-sub">știri verificate azi, în 4 rulări</span>
             <span class="kpi-bar" aria-hidden="true"><i style="width:100%"></i></span>
             <span class="kpi-hint">Apasă pentru toate</span>
           </button>
@@ -784,28 +784,28 @@
             <span class="kpi-top"><span class="kpi-label">Securitate &amp; NATO</span><span class="kpi-check" aria-hidden="true">✓</span></span>
             <span class="kpi-value">2</span>
             <span class="kpi-sub">atribuirea atacurilor la frigidere · complot la baza RAF Fairford</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:40%"></i></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:29%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="romania" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">România</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">1</span>
-            <span class="kpi-sub">România pe sârmă la rating</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:20%"></i></span>
+            <span class="kpi-value">2</span>
+            <span class="kpi-sub">Nicușor Dan: el a făcut majoritatea · România pe sârmă la rating</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:29%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="belgia" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">Belgia</span><span class="kpi-check" aria-hidden="true">✓</span></span>
             <span class="kpi-value">1</span>
             <span class="kpi-sub">atribuirea atacurilor la frigidere</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:20%"></i></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:14%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="tech" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">Tech &amp; AI</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">2</span>
-            <span class="kpi-sub">Muse face apeluri telefonice · Hugging Face după plecarea lui Huang</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:40%"></i></span>
+            <span class="kpi-value">3</span>
+            <span class="kpi-sub">anchetă Congres Nvidia · Muse face apeluri telefonice · Hugging Face după plecarea lui Huang</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:43%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
         </div>
@@ -819,7 +819,7 @@
       </section>
 
       <div class="filter-status" aria-live="polite">
-        <span class="filter-label">Se afișează: <strong>Toate categoriile — 5 din 5 știri</strong></span>
+        <span class="filter-label">Se afișează: <strong>Toate categoriile — 7 din 7 știri</strong></span>
         <button class="filter-reset" type="button" hidden>Resetează filtrul</button>
       </div>
 
@@ -849,7 +849,89 @@
       <p class="empty">Nicio știre în această categorie azi.</p>
 
       <main>
-        <!-- 1 · 13 nov · 08:00 -->
+        <!-- 1 · 13 nov · 09:00 -->
+        <article id="stire-196" data-cats="tech" data-sev="amber" data-subiect="anchetă Congres Nvidia">
+          <div class="a-meta">
+            <span class="a-time">13 nov · 09:00</span>
+            <span class="a-cat">Tech &amp; AI</span>
+            <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
+            <a class="cont-pill" href="#stire-182" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
+            <span class="subj-pill">anchetă Congres Nvidia</span>
+            <span class="a-num">#1 / 7</span>
+          </div>
+          <h2>Democrații din Congres deschid o anchetă asupra vânzărilor de cipuri Nvidia în China — „taxa de export” de 25% și donații de 26 mil. $ către proiectele lui Trump</h2>
+          <div class="followup">
+            <span class="tag">Urmare la</span>
+            <p><a href="#stire-182">„Jensen Huang demisionează de la Nvidia: Colette Kress preia interimatul, acțiunile scad cu peste 10%” — joi, 12 noiembrie 2026, ora 16:00.</a> (A doua anchetă a Congresului de la izbucnirea scandalului: prima, a comitetelor republicane, cere audierea lui Huang înainte de Thanksgiving.)</p>
+          </div>
+          <div class="sec">
+            <p class="sec-label">Ce s-a întâmplat</p>
+            <p>Joi, 12 noiembrie, democrații Richard Neal (liderul democraților din Comisia pentru Căi și Mijloace a Camerei) și Ron Wyden (liderul democraților din Comisia de Finanțe a Senatului) au deschis o anchetă asupra modului în care administrația Trump a gestionat vânzările de cipuri Nvidia în China și i-au cerut secretarului Comerțului, Howard Lutnick, să păstreze toate documentele. Scrisoarea lor descrie astfel „schema”: Trump a acceptat vânzarea cipurilor H200 către clienți chinezi aprobați cu condiția ca cipurile, fabricate în Taiwan, să treacă mai întâi prin SUA, unde li s-a aplicat un tarif de 25% — „un sistem de taxă de export neconstituțională”, prin care administrația „ia o parte” din vânzările Nvidia către China. Democrații întreabă de ce Lutnick a continuat să permită companiei Megaspeed, client Nvidia din Singapore, să cumpere cipuri după ce ar fi fost informat de serviciile de informații americane despre suspiciunile privind directoarea Alice Huang — bănuită că ar fi spion chinez — și despre relația ei cu Jensen Huang. Scrisoarea ridică și donații de cel puțin 26 mil. $ ale Nvidia către proiectele personale ale lui Trump, inclusiv sala de bal a Casei Albe, înainte de aprobarea exporturilor. Ca partid minoritar, Neal și Wyden nu pot obliga la răspunsuri. Separat, senatorii Elizabeth Warren și Chris Coons i-au cerut și ei lui Lutnick — plus lui Marco Rubio și lui Stephen Miller — să păstreze documentele, iar Huang a acceptat să depună mărturie în fața comitetelor republicane din Cameră înainte de Thanksgiving.</p>
+          </div>
+          <div class="sec">
+            <p class="sec-label">De ce contează</p>
+            <p>Pentru un IT incident Manager care urmărește îndeaproape AI și automatizări, ancheta e escaladarea politică și juridică a celei mai mari povești AI a săptămânii: nu mai e doar demisia unui CEO, ci o anchetă asupra întregului mecanism prin care cipurile AI de vârf ajung în China — taxe de export, licențe, un client suspectat de deturnare și un regulator care ar fi aprobat vânzările după ce a primit avertismentele serviciilor de informații. E un incident de lanț de aprovizionare la nivel de stat: furnizorul (Nvidia), clientul (Megaspeed) și regulatorul (Departamentul Comerțului) sunt toți sub semnul întrebării în același timp. Pentru ecosistemul AI pe care își construiește automatizările, miza e directă: orice înăsprire a controalelor la export sau orice sancțiune lovește în aprovizionarea cu cipuri și în prețul infrastructurii AI.</p>
+          </div>
+          <div class="verify">
+            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
+            <p>Verdict: confirmat. TechCrunch (12 noiembrie 2026, 22:42 UTC, actualizat 13 noiembrie 00:21 UTC) — relatarea curatoriată: ancheta lui Neal și Wyden, scrisoarea către Lutnick, „schema” tarifului de 25%, întrebările despre Megaspeed și donații. The Wall Street Journal (12 noiembrie 2026) — confirmare independentă: scrisoarea separată a lui Warren și Coons către Lutnick, Rubio și Miller, cu termen de confirmare marți; Huang a acceptat audierea. The Washington Sun (13 noiembrie 2026, 01:07 UTC) — confirmare independentă: detaliile scrisorii, 26 mil. $ către proiectele lui Trump, tariful de 25%, audierea lui Huang înainte de Thanksgiving. Daily Inference (13 noiembrie 2026) — confirmare independentă: analiza scrisorii, cu precizarea că acuzațiile sunt ale parlamentarilor, nu constatări stabilite. AI Affairs (13 noiembrie 2026) — rezumatul anchetei. Notă de integritate: acuzațiile despre „taxa neconstituțională”, despre informarea lui Lutnick și despre suspendarea unei anchete privind contrabanda cu cipuri sunt acuzațiile parlamentarilor, nu constatări; Nvidia și Casa Albă nu au dat un răspuns direct anchetei din 12 noiembrie.</p>
+            <ul class="sources">
+              <li><a href="https://techcrunch.com/2026/11/12/democrats-launch-nvidia-investigation-write-scathing-letter-on-huangs-scheme-with-trump/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>TechCrunch — „Democrats launch Nvidia investigation, write scathing letter on Huang's 'scheme' with Trump” (12 nov 2026, 22:42 UTC, actualizat 13 nov 00:21 UTC; relatarea curatoriată: ancheta lui Neal și Wyden, scrisoarea către Lutnick, „schema” tarifului de 25%, întrebările despre Megaspeed și donații)<span class="host">techcrunch.com</span></a></li>
+              <li><a href="https://www.wsj.com/politics/policy/top-democrats-target-trump-administrations-nvidia-china-records-0c212746" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>The Wall Street Journal — „Top Democrats Target Trump Administration's Nvidia-China Records” (12 nov 2026; confirmare independentă: scrisoarea separată a lui Warren și Coons către Lutnick, Rubio și Miller, cu termen de confirmare marți; Huang a acceptat audierea)<span class="host">wsj.com</span></a></li>
+              <li><a href="https://www.washingtonsun.com/technology/trump-democrats-nvidia-chips-china" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>The Washington Sun — „Democrats Open Probe Into Trump's Deal to Export Nvidia Chips to China” (13 nov 2026, 01:07 UTC; confirmare independentă: detaliile scrisorii, 26 mil. $ către proiectele lui Trump, tariful de 25%, audierea lui Huang înainte de Thanksgiving)<span class="host">washingtonsun.com</span></a></li>
+              <li><a href="https://dailyinference.news/articles/2026-11-13-trump-taxes-china-chips-and-democrats-want-the-receipts/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Daily Inference — „Trump Taxes China Chips, and Democrats Want the Receipts” (13 nov 2026; confirmare independentă: analiza scrisorii, cu precizarea că acuzațiile sunt ale parlamentarilor, nu constatări stabilite; Nvidia a contestat anterior acuzațiile de deturnare)<span class="host">dailyinference.news</span></a></li>
+              <li><a href="https://www.aiaffairs.com/government/democrats-neal-wyden-nvidia-china-chip-sales-inquiry/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>AI Affairs — „Democrats open inquiry into Trump administration's Nvidia China chip sales” (13 nov 2026; rezumatul anchetei: tariful legat de licențe, Megaspeed, donații)<span class="host">aiaffairs.com</span></a></li>
+            </ul>
+          </div>
+          <div class="adverse">
+            <p class="sec-label">Tabăra adversă</p>
+            <p><strong>Nvidia</strong> a contestat anterior acuzațiile legate de deturnarea cipurilor către China și a susținut că clienții săi nu au primit secrete sensibile (Daily Inference, 29 octombrie 2026). Nici Nvidia, nici Casa Albă nu au dat un răspuns direct anchetei deschise pe 12 noiembrie, potrivit aceleiași surse. (<a href="https://dailyinference.news/articles/2026-11-13-trump-taxes-china-chips-and-democrats-want-the-receipts/" target="_blank" rel="noopener">Daily Inference, 13 nov 2026</a>)</p>
+          </div>
+          <div class="impact">
+            <span class="badge">Impact direct</span>
+            <p>Impact direct: minim azi — știrea nu cere nicio acțiune de la el; relevanță profesională ridicată: controalele la exportul de cipuri AI și integritatea lanțului de aprovizionare AI sunt exact terenul lui de incident management, iar ancheta lovește în mecanismul de aprobare a vânzărilor; de urmărit: răspunsul Departamentului Comerțului la cererea de păstrare a documentelor, audierea lui Huang în fața comitetelor republicane înainte de Thanksgiving și soarta acordului H200.</p>
+          </div>
+        </article>
+
+        <!-- 2 · 13 nov · 09:00 -->
+        <article id="stire-197" data-cats="romania" data-sev="green" data-subiect="Nicușor Dan: el a făcut majoritatea">
+          <div class="a-meta">
+            <span class="a-time">13 nov · 09:00</span>
+            <span class="a-cat">România</span>
+            <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
+            <span class="subj-pill">Nicușor Dan: el a făcut majoritatea</span>
+            <span class="a-num">#2 / 7</span>
+          </div>
+          <h2>Nicușor Dan spune că el a negociat majoritatea pentru învestirea Guvernului Niculescu: „Mi-a luat cinci luni și jumătate să o găsesc”</h2>
+          <div class="sec">
+            <p class="sec-label">Ce s-a întâmplat</p>
+            <p>Joi, 12 noiembrie, la Dublin, la a noua reuniune a Comunității Politice Europene, președintele Nicușor Dan a spus, într-o conferință de presă, că el a negociat personal formarea majorității parlamentare pentru învestirea Guvernului PSD condus de Luca Niculescu — deși, potrivit Constituției, această responsabilitate revine premierului desemnat. Întrebat despre raportul pe justiție, început dar neprezentat, care ar urma să includă și explicații privind anularea alegerilor prezidențiale din decembrie 2024, președintele a motivat întârzierea prin criza guvernamentală și prin efortul de a construi o majoritate: „S-a întâmplat că a căzut guvernul și eu trebuia să găsesc o majoritate. Mi-a luat cinci luni și jumătate să o găsesc. Din păcate, această criză a luat multe resurse, timp și energie de la mulți dintre noi.” În aceeași intervenție a afirmat că, odată ce există un guvern care gestionează „partea executivă”, își va relua demersurile pentru a prezenta „o sinteză despre alegeri”. G4Media notează că președintele „recunoaște” că s-a ocupat de găsirea majorității, deși atribuția ar aparține premierului desemnat: Constituția stabilește că președintele consultă partidele și desemnează candidatul la funcția de prim-ministru (art. 103 alin. 1), iar candidatul are apoi 10 zile pentru a alcătui lista guvernului și programul și a cere votul de încredere (alin. 2 și 3), interval în care el poartă negocierile politice.</p>
+          </div>
+          <div class="sec">
+            <p class="sec-label">De ce contează</p>
+            <p>Pentru un IT incident Manager cu expuneri în România — investiții pe piața românească, apartament în București, familie în Giurgiu — stabilitatea politică și fiscală a României e contextul direct al banilor lui: guvernul învestit pe 20 octombrie cu 280 de voturi pentru și 58 împotrivă s-a născut, după propria mărturisire a președintelui, dintr-o negociere dusă de Cotroceni, nu de premierul desemnat, cum prevede Constituția. Declarația ridică o problemă de delimitare instituțională a atribuțiilor, cu potențial impact asupra modului în care e interpretat rolul președintelui în formarea guvernului — și reia promisiunea raportului despre alegerile anulate din decembrie 2024, un dosar încă deschis.</p>
+          </div>
+          <div class="verify">
+            <p class="sec-label">Verificare <span class="status">Sursă primară</span></p>
+            <p>Verdict: sursă primară. Președintele Nicușor Dan însuși, pe înregistrare, la conferința de presă de la Dublin (12 noiembrie 2026) — declarația e citată cuvânt cu cuvânt. G4Media (12 noiembrie 2026, relatarea originară, citată de xchg.ro) — relatarea curatoriată. NewsCenter.ro (12 noiembrie 2026, 23:40 UTC) — confirmare independentă: președintele își asumă public negocierile pentru majoritate. JurnalExpres (13 noiembrie 2026, 02:03 UTC, sursa G4Media) și Martor Incomod (13 noiembrie 2026, 02:00 UTC) — confirmări independente ale aceleiași declarații.</p>
+            <ul class="sources">
+              <li><a href="https://xchg.ro/stiri/politica/nicusor-dan-negocieri-majoritate-guvern-psd" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>xchg.ro (după G4Media) — „Președintele Nicușor Dan spune că el a negociat majoritatea pentru învestirea Guvernului PSD condus de Luca Niculescu” (13 nov 2026; relatarea originară e G4Media, citată ca sursă; g4media.ro e blocat la fetch text în acest mediu, de aceea linkul e relatarea xchg.ro)<span class="host">xchg.ro</span></a></li>
+              <li><a href="https://newscenter.ro/politica/confirmarea-presedintelui-pentru-coalitia-neoficiala-psd-cotroceni-pentru-guvernul-lui-luca-niculescu/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>NewsCenter.ro — „Coaliția neoficială PSD-Cotroceni pentru guvernul lui Luca Niculescu, confirmată chiar de președintele Nicușor Dan” (12 nov 2026, 23:40 UTC; confirmare independentă: președintele își asumă public negocierile pentru majoritate)<span class="host">newscenter.ro</span></a></li>
+              <li><a href="https://jurnalexpres.ro/nicusor-dan-recunoaste-eu-am-votat-majoritatea-pentru-psd/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>JurnalExpres — „Nicușor Dan recunoaște: Eu am votat majoritatea pentru PSD” (13 nov 2026, 02:03 UTC; sursa G4Media; confirmare independentă a declarației și a acuzațiilor PNL)<span class="host">jurnalexpres.ro</span></a></li>
+              <li><a href="https://www.martorincomod.ro/nicusor-dan-afirma-ca-el-a-realizat-majoritatea-pentru-guvernul-psd-luca-niculescu-nu-premierul-desemnat/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Martor Incomod — „Nicușor Dan afirmă că el a realizat majoritatea pentru guvernul PSD-Luca Niculescu, nu premierul desemnat” (13 nov 2026, 02:00 UTC; confirmare independentă a declarației și a rolului prevăzut de Constituție)<span class="host">martorincomod.ro</span></a></li>
+            </ul>
+          </div>
+          <div class="adverse">
+            <p class="sec-label">Tabăra adversă</p>
+            <p><strong>PNL</strong> — „anumite voci din cadrul Partidului Național Liberal” l-au acuzat pe Nicușor Dan de responsabilitate în demiterea Guvernului Bolojan și de acțiuni menite să-l înlăture pe Ilie Bolojan de la conducerea partidului (JurnalExpres, 13 noiembrie 2026). (<a href="https://jurnalexpres.ro/nicusor-dan-recunoaste-eu-am-votat-majoritatea-pentru-psd/" target="_blank" rel="noopener">JurnalExpres, 13 nov 2026</a>)</p>
+          </div>
+          <div class="impact">
+            <span class="badge">Impact direct</span>
+            <p>Impact direct: minim azi — știrea nu cere nicio acțiune de la el; relevanță de context: delimitarea rolurilor președinte–premier în formarea guvernului și reluarea promisiunii raportului despre alegerile anulate; de urmărit: sinteza despre alegeri promisă de președinte și reacțiile partidelor parlamentare la declarație.</p>
+          </div>
+        </article>
+
+        <!-- 3 · 13 nov · 08:00 -->
         <article id="stire-195" data-cats="securitate belgia" data-sev="amber" data-subiect="atribuirea atacurilor la frigidere">
           <div class="a-meta">
             <span class="a-time">13 nov · 08:00</span>
@@ -857,7 +939,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-131" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">atribuirea atacurilor la frigidere</span>
-            <span class="a-num">#1 / 5</span>
+            <span class="a-num">#3 / 7</span>
           </div>
           <h2>Belgia, împărțită pe atribuirea atacurilor cibernetice la frigiderele supermarketurilor: Internele indică Iranul, Externele nu acuză oficial</h2>
           <div class="followup">
@@ -892,14 +974,14 @@
           </div>
         </article>
 
-        <!-- 2 · 13 nov · 07:00 -->
+        <!-- 4 · 13 nov · 07:00 -->
         <article id="stire-193" data-cats="tech" data-sev="green" data-subiect="Muse face apeluri telefonice">
           <div class="a-meta">
             <span class="a-time">13 nov · 07:00</span>
             <span class="a-cat">Tech &amp; AI</span>
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <span class="subj-pill">Muse face apeluri telefonice</span>
-            <span class="a-num">#2 / 5</span>
+            <span class="a-num">#4 / 7</span>
           </div>
           <h2>Muse, agentul AI al Meta, sună acum la firme din SUA în locul utilizatorului — doar pentru abonații plătiți</h2>
           <div class="sec">
@@ -929,7 +1011,7 @@
           </div>
         </article>
 
-        <!-- 3 · 13 nov · 07:00 -->
+        <!-- 5 · 13 nov · 07:00 -->
         <article id="stire-194" data-cats="tech" data-sev="green" data-subiect="Hugging Face după plecarea lui Huang">
           <div class="a-meta">
             <span class="a-time">13 nov · 07:00</span>
@@ -937,7 +1019,7 @@
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <a class="cont-pill" href="#stire-187" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">Hugging Face după plecarea lui Huang</span>
-            <span class="a-num">#3 / 5</span>
+            <span class="a-num">#5 / 7</span>
           </div>
           <h2>Șeful Hugging Face promite că platforma rămâne deschisă pentru AI open-source, după plecarea lui Jensen Huang de la Nvidia</h2>
           <div class="followup">
@@ -971,7 +1053,7 @@
           </div>
         </article>
 
-        <!-- 4 · 13 nov · 06:00 -->
+        <!-- 6 · 13 nov · 06:00 -->
         <article id="stire-191" data-cats="securitate" data-sev="amber" data-subiect="complot la baza RAF Fairford">
           <div class="a-meta">
             <span class="a-time">13 nov · 06:00</span>
@@ -979,7 +1061,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="spot-tag">Știrea zilei</span>
             <span class="subj-pill">complot la baza RAF Fairford</span>
-            <span class="a-num">#4 / 5</span>
+            <span class="a-num">#6 / 7</span>
           </div>
           <h2>Trei bărbați legați de Iran, inculpați pentru complotul terorist de la baza RAF Fairford din Marea Britanie</h2>
           <div class="sec">
@@ -1009,14 +1091,14 @@
           </div>
         </article>
 
-        <!-- 5 · 13 nov · 06:00 -->
+        <!-- 7 · 13 nov · 06:00 -->
         <article id="stire-192" data-cats="romania" data-sev="amber" data-subiect="România pe sârmă la rating">
           <div class="a-meta">
             <span class="a-time">13 nov · 06:00</span>
             <span class="a-cat">România</span>
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="subj-pill">România pe sârmă la rating</span>
-            <span class="a-num">#5 / 5</span>
+            <span class="a-num">#7 / 7</span>
           </div>
           <h2>Nazare: România nu e în situația unui acord cu FMI, dar rămâne „pe sârmă” la rating — examenele decisive vin în ianuarie, februarie și martie 2027</h2>
           <div class="sec">
@@ -5762,8 +5844,8 @@
 
       <footer>
         <div class="rule" aria-hidden="true"></div>
-        <p>Sfârșitul ediției de azi · Ultima actualizare: vineri, 13 noiembrie 2026, 08:00<br />Monitorizarea rulează la circa 3 ore, în fereastra L–V 06:00–22:00 · S–D 07:30–22:00 — dă refresh pentru noutăți.</p>
-        <a class="to-top" href="#stire-195">↑ Înapoi la cea mai nouă știre</a>
+        <p>Sfârșitul ediției de azi · Ultima actualizare: vineri, 13 noiembrie 2026, 09:00<br />Monitorizarea rulează la circa 3 ore, în fereastra L–V 06:00–22:00 · S–D 07:30–22:00 — dă refresh pentru noutăți.</p>
+        <a class="to-top" href="#stire-196">↑ Înapoi la cea mai nouă știre</a>
       </footer>
     </div>
 
