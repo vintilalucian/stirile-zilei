@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="color-scheme" content="light dark" />
-    <meta name="tirile-versiune" content="2026-11-13T13:00:00+01:00|12|red" />
+    <meta name="tirile-versiune" content="2026-11-13T15:00:00+01:00|13|red" />
     <link rel="icon" href="data:," />
     <title>Știrile zilei</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -699,9 +699,9 @@
     <div class="topbar">
       <div class="topbar-inner">
         <span class="dot" aria-hidden="true"></span>
-        <span><strong>Vineri, 13 noiembrie 2026</strong> · actualizat la <strong>13:00</strong></span>
+        <span><strong>Vineri, 13 noiembrie 2026</strong> · actualizat la <strong>15:00</strong></span>
         <span aria-hidden="true">·</span>
-        <span>12 știri azi</span>
+        <span>13 știri azi</span>
         <span class="spacer"></span>
         <button class="refresh-btn" type="button" id="refreshBtn" aria-label="Reîmprospătează pagina">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg>
@@ -768,15 +768,15 @@
       <section class="dashboard" aria-label="Panou de ansamblu">
         <div class="dash-head">
           <span class="dash-title">Dashboard · Azi</span>
-          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 13:00</span>
+          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 15:00</span>
           <span class="dash-meta">Fereastră monitorizare <strong>L–V 06:00–22:00 · S–D 07:30–22:00</strong> · pas ~3 ore</span>
         </div>
 
         <div class="kpi-grid five" role="group" aria-label="Filtrează după categorie — apasă pe un tile">
           <button class="kpi" type="button" data-filter="toate" aria-pressed="true">
             <span class="kpi-top"><span class="kpi-label">Toate știrile</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">12</span>
-            <span class="kpi-sub">știri verificate azi, în 8 rulări</span>
+            <span class="kpi-value">13</span>
+            <span class="kpi-sub">știri verificate azi, în 9 rulări</span>
             <span class="kpi-bar" aria-hidden="true"><i style="width:100%"></i></span>
             <span class="kpi-hint">Apasă pentru toate</span>
           </button>
@@ -784,14 +784,14 @@
             <span class="kpi-top"><span class="kpi-label">Securitate &amp; NATO</span><span class="kpi-check" aria-hidden="true">✓</span></span>
             <span class="kpi-value">5</span>
             <span class="kpi-sub">Marea Neagră, cea mai periculoasă rută · bază SUA permanentă în Polonia · NATO: pivot spre apărarea Europei · atribuirea atacurilor la frigidere · complot la baza RAF Fairford</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:42%"></i></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:38%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="romania" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">România</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">3</span>
-            <span class="kpi-sub">Marea Neagră, cea mai periculoasă rută · Nicușor Dan: el a făcut majoritatea · România pe sârmă la rating</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:25%"></i></span>
+            <span class="kpi-value">4</span>
+            <span class="kpi-sub">PIB România T3 +2,1% · Marea Neagră, cea mai periculoasă rută · Nicușor Dan: el a făcut majoritatea · România pe sârmă la rating</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:31%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="belgia" aria-pressed="false">
@@ -805,7 +805,7 @@
             <span class="kpi-top"><span class="kpi-label">Tech &amp; AI</span><span class="kpi-check" aria-hidden="true">✓</span></span>
             <span class="kpi-value">5</span>
             <span class="kpi-sub">chatboți trimit la magazine false · pană Microsoft 365, ziua 2 · anchetă Congres Nvidia · Muse face apeluri telefonice · Hugging Face după plecarea lui Huang</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:42%"></i></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:38%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
         </div>
@@ -819,7 +819,7 @@
       </section>
 
       <div class="filter-status" aria-live="polite">
-        <span class="filter-label">Se afișează: <strong>Toate categoriile — 12 din 12 știri</strong></span>
+        <span class="filter-label">Se afișează: <strong>Toate categoriile — 13 din 13 știri</strong></span>
         <button class="filter-reset" type="button" hidden>Resetează filtrul</button>
       </div>
 
@@ -849,7 +849,41 @@
       <p class="empty">Nicio știre în această categorie azi.</p>
 
       <main>
-        <!-- 1 · 13 nov · 13:00 -->
+        <!-- 1 · 13 nov · 15:00 -->
+          <article id="stire-203" data-cats="romania" data-sev="green" data-subiect="PIB România T3 +2,1%">
+            <div class="a-meta">
+              <span class="a-time">13 nov · 15:00</span>
+              <span class="a-cat">România</span>
+              <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
+              <span class="subj-pill">PIB România T3 +2,1%</span>
+              <span class="a-num">#1 / 13</span>
+            </div>
+            <h2>PIB-ul României a crescut cu 2,1% în trimestrul III — a doua cea mai mare creștere din UE, după Irlanda; pe primele nouă luni economia rămâne pe minus 1%</h2>
+            <div class="sec">
+              <p class="sec-label">Ce s-a întâmplat</p>
+              <p>Institutul Național de Statistică a publicat vineri, 13 noiembrie, estimarea-semnal pentru trimestrul III 2026: PIB-ul a crescut cu 2,1% față de trimestrul II, pe seria ajustată sezonier, după o contracție de 0,3% în primul trimestru și stagnare în al doilea. Față de același trimestru din 2025, creșterea a fost mult mai mică: 0,1% pe seria brută și 0,3% pe seria ajustată sezonier. Pe primele nouă luni ale anului, economia rămâne pe minus: −0,3% pe seria brută și −1% pe seria ajustată sezonier față de aceeași perioadă din 2025. Potrivit Eurostat, România a avut a doua cea mai mare creștere trimestrială din Uniunea Europeană, după Irlanda (+5,5%), în timp ce media UE a fost +0,5% și zona euro +0,4%. Comisia Națională de Strategie și Prognoză și-a revizuit în scădere estimarea pentru tot anul 2026, la o contracție de 0,4%, față de +0,1% prognozat anterior; ministrul Finanțelor, Alexandru Nazare, a anunțat că prognozele bugetare pentru 2027 arată o creștere de 1,7–1,8%. Datele provizorii detaliate pentru trimestrul III vor fi publicate de INS pe 7 decembrie.</p>
+            </div>
+            <div class="sec">
+              <p class="sec-label">De ce contează</p>
+              <p>Datele sunt context direct pentru expunerile lui din România — investiția recurentă în TVBETETF, expusă la piața românească, și apartamentul din București — și pentru firul fiscal urmărit azi dimineață (Nazare: România „pe sârmă" la rating). Tabloul e mixt, nu o revenire curată: saltul trimestrial de 2,1% vine după două trimestre slabe, iar bilanțul pe nouă luni rămâne negativ și prognoza oficială pentru 2026 e acum contracție. Miza rămâne credibilitatea bugetului pentru 2027.</p>
+            </div>
+            <div class="verify">
+              <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
+              <p>Verdict: confirmat. INS — estimarea-semnal publicată vineri, 13 noiembrie 2026 (sursă primară): +2,1% față de T2, +0,1% brut / +0,3% ajustat sezonier față de T3 2025, −0,3% brut / −1% ajustat sezonier pe primele nouă luni. Forbes.ro (13 noiembrie 2026, 13:30) — confirmare independentă: locul doi în UE după Irlanda (+5,5%), cifrele INS și revizuirea CNSP. Eurostat (13 noiembrie 2026, via Forbes/Agerpres) — confirmare independentă: UE +0,5%, zona euro +0,4%, Irlanda +5,5%, România +2,1%. Mediafax / ZF / Biziday (13 noiembrie 2026, via Condica, 50 de surse) — confirmare independentă a cifrelor INS. Notă de integritate: cifrele sunt o estimare-semnal, deci preliminare și revizuibile; INS a recalculat seria ajustată sezonier după includerea trimestrului III.</p>
+              <ul class="sources">
+              <li><a href="https://www.forbes.ro/romania-pe-locul-doi-in-ue-la-cresterea-economica-in-trimestrul-al-treilea-dupa-irlanda-531538" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Forbes.ro — „România, pe locul doi în UE la creșterea economică în trimestrul al treilea, după Irlanda" (13 nov 2026, 13:30; confirmare independentă: cifrele INS, locul doi în UE după Irlanda, revizuirea CNSP)<span class="host">forbes.ro</span></a></li>
+              <li><a href="https://suburbia.ro/pib-trimestrul-iii-2026-crestere-2-1-la-suta/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Suburbia.ro — „PIB trimestrul III 2026: creștere de 2,1% (INS)" (13 nov 2026; confirmare independentă: estimarea-semnal INS, cifrele pe serie brută și ajustată sezonier, datele provizorii din 7 decembrie)<span class="host">suburbia.ro</span></a></li>
+              <li><a href="https://ziarulromanul.ro/stire/pib-ul-romaniei-a-crescut-cu-2-1-in-trimestrul-iii-economia-este-insa-pe-minus-in-primele-noua-luni" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Ziarul Românul — „PIB-ul României a crescut cu 2,1% în trimestrul III. Economia este însă pe minus în primele nouă luni" (13 nov 2026, 10:00; confirmare independentă: cifrele INS, recalcularea seriei ajustate, prognoza Nazare pentru 2027)<span class="host">ziarulromanul.ro</span></a></li>
+              <li><a href="https://condica.ro/stire/eurostat-romania-si-irlanda-au-avut-cele-mai-mari-cresteri-economice-d" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Condica — „Eurostat: România și Irlanda au avut cele mai mari creșteri economice din UE în T3 2026" (13 nov 2026, 15:09; confirmare independentă: Eurostat — UE +0,5%, zona euro +0,4%, Irlanda +5,5%, România +2,1%)<span class="host">condica.ro</span></a></li>
+              </ul>
+            </div>
+            <div class="impact">
+              <span class="badge">Impact direct</span>
+              <p>Impact direct: minim azi — publicarea unor date statistice nu cere nicio acțiune de la el; relevanță de context ridicată pentru investițiile și proprietatea din România. De urmărit: datele provizorii detaliate ale INS din 7 decembrie și rectificarea bugetară anunțată pentru finalul lui noiembrie.</p>
+            </div>
+          </article>
+
+          <!-- 2 · 13 nov · 13:00 -->
         <article id="stire-202" data-cats="securitate romania" data-sev="red" data-subiect="Marea Neagră, cea mai periculoasă rută">
           <div class="a-meta">
             <span class="a-time">13 nov · 13:00</span>
@@ -858,7 +892,7 @@
             <span class="spot-tag">Știrea zilei</span>
             <a class="cont-pill" href="#stire-134" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">Marea Neagră, cea mai periculoasă rută</span>
-            <span class="a-num">#1 / 12</span>
+            <span class="a-num">#2 / 13</span>
           </div>
           <h2>WSJ: Marea Neagră a devenit cea mai periculoasă rută de navigație din lume — peste 300 de atacuri și 30+ marinari morți în 2026</h2>
           <div class="followup">
@@ -888,14 +922,14 @@
           </div>
         </article>
 
-        <!-- 2 · 13 nov · 12:00 -->
+        <!-- 3 · 13 nov · 12:00 -->
           <article id="stire-201" data-cats="tech" data-sev="green" data-subiect="chatboți trimit la magazine false">
             <div class="a-meta">
               <span class="a-time">13 nov · 12:00</span>
               <span class="a-cat">Tech &amp; AI</span>
               <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
               <span class="subj-pill">chatboți trimit la magazine false</span>
-              <span class="a-num">#2 / 12</span>
+              <span class="a-num">#3 / 13</span>
             </div>
             <h2>Chatboții AI trimit cumpărătorii la magazine false: site-uri riscante în 15% din răspunsurile Perplexity, 8% la ChatGPT și 4% la Gemini</h2>
             <div class="sec">
@@ -926,7 +960,7 @@
             </div>
           </article>
 
-        <!-- 3 · 13 nov · 11:00 -->
+        <!-- 4 · 13 nov · 11:00 -->
         <article id="stire-200" data-cats="tech" data-sev="amber" data-subiect="pană Microsoft 365, ziua 2">
           <div class="a-meta">
             <span class="a-time">13 nov · 11:00</span>
@@ -934,7 +968,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-190" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">pană Microsoft 365, ziua 2</span>
-            <span class="a-num">#3 / 12</span>
+            <span class="a-num">#4 / 13</span>
           </div>
           <h2>Pana Microsoft 365 continuă în a doua zi: ultimele remedieri n-au funcționat, Outlook, Teams și Copilot rămân afectate; fără un termen de restabilire</h2>
           <div class="followup">
@@ -965,14 +999,14 @@
           </div>
         </article>
 
-        <!-- 4 · 13 nov · 10:00 -->
+        <!-- 5 · 13 nov · 10:00 -->
         <article id="stire-198" data-cats="securitate" data-sev="amber" data-subiect="bază SUA permanentă în Polonia">
           <div class="a-meta">
             <span class="a-time">13 nov · 10:00</span>
             <span class="a-cat">Securitate &amp; NATO</span>
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="subj-pill">bază SUA permanentă în Polonia</span>
-            <span class="a-num">#4 / 12</span>
+            <span class="a-num">#5 / 13</span>
           </div>
           <h2>Pentagonul a dat „undă verde” unei baze militare permanente a SUA în Polonia — decizia finală a Casei Albe e așteptată la începutul lui decembrie</h2>
           <div class="sec">
@@ -1004,14 +1038,14 @@
           </div>
         </article>
 
-        <!-- 5 · 13 nov · 10:00 -->
+        <!-- 6 · 13 nov · 10:00 -->
         <article id="stire-199" data-cats="securitate" data-sev="amber" data-subiect="NATO: pivot spre apărarea Europei">
           <div class="a-meta">
             <span class="a-time">13 nov · 10:00</span>
             <span class="a-cat">Securitate &amp; NATO</span>
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="subj-pill">NATO: pivot spre apărarea Europei</span>
-            <span class="a-num">#5 / 12</span>
+            <span class="a-num">#6 / 13</span>
           </div>
           <h2>NATO pregătește cea mai mare schimbare a planificării militare din ultimele două decenii: apărarea Europei, înaintea misiunilor din afara alianței</h2>
           <div class="sec">
@@ -1039,7 +1073,7 @@
           </div>
         </article>
 
-        <!-- 6 · 13 nov · 09:00 -->
+        <!-- 7 · 13 nov · 09:00 -->
         <article id="stire-196" data-cats="tech" data-sev="amber" data-subiect="anchetă Congres Nvidia">
           <div class="a-meta">
             <span class="a-time">13 nov · 09:00</span>
@@ -1047,7 +1081,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-182" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">anchetă Congres Nvidia</span>
-            <span class="a-num">#6 / 12</span>
+            <span class="a-num">#7 / 13</span>
           </div>
           <h2>Democrații din Congres deschid o anchetă asupra vânzărilor de cipuri Nvidia în China — „taxa de export” de 25% și donații de 26 mil. $ către proiectele lui Trump</h2>
           <div class="followup">
@@ -1083,14 +1117,14 @@
           </div>
         </article>
 
-        <!-- 7 · 13 nov · 09:00 -->
+        <!-- 8 · 13 nov · 09:00 -->
         <article id="stire-197" data-cats="romania" data-sev="green" data-subiect="Nicușor Dan: el a făcut majoritatea">
           <div class="a-meta">
             <span class="a-time">13 nov · 09:00</span>
             <span class="a-cat">România</span>
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <span class="subj-pill">Nicușor Dan: el a făcut majoritatea</span>
-            <span class="a-num">#7 / 12</span>
+            <span class="a-num">#8 / 13</span>
           </div>
           <h2>Nicușor Dan spune că el a negociat majoritatea pentru învestirea Guvernului Niculescu: „Mi-a luat cinci luni și jumătate să o găsesc”</h2>
           <div class="sec">
@@ -1121,7 +1155,7 @@
           </div>
         </article>
 
-        <!-- 8 · 13 nov · 08:00 -->
+        <!-- 9 · 13 nov · 08:00 -->
         <article id="stire-195" data-cats="securitate belgia" data-sev="amber" data-subiect="atribuirea atacurilor la frigidere">
           <div class="a-meta">
             <span class="a-time">13 nov · 08:00</span>
@@ -1129,7 +1163,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-131" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">atribuirea atacurilor la frigidere</span>
-            <span class="a-num">#8 / 12</span>
+            <span class="a-num">#9 / 13</span>
           </div>
           <h2>Belgia, împărțită pe atribuirea atacurilor cibernetice la frigiderele supermarketurilor: Internele indică Iranul, Externele nu acuză oficial</h2>
           <div class="followup">
@@ -1164,14 +1198,14 @@
           </div>
         </article>
 
-        <!-- 9 · 13 nov · 07:00 -->
+        <!-- 10 · 13 nov · 07:00 -->
         <article id="stire-193" data-cats="tech" data-sev="green" data-subiect="Muse face apeluri telefonice">
           <div class="a-meta">
             <span class="a-time">13 nov · 07:00</span>
             <span class="a-cat">Tech &amp; AI</span>
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <span class="subj-pill">Muse face apeluri telefonice</span>
-            <span class="a-num">#9 / 12</span>
+            <span class="a-num">#10 / 13</span>
           </div>
           <h2>Muse, agentul AI al Meta, sună acum la firme din SUA în locul utilizatorului — doar pentru abonații plătiți</h2>
           <div class="sec">
@@ -1201,7 +1235,7 @@
           </div>
         </article>
 
-        <!-- 10 · 13 nov · 07:00 -->
+        <!-- 11 · 13 nov · 07:00 -->
         <article id="stire-194" data-cats="tech" data-sev="green" data-subiect="Hugging Face după plecarea lui Huang">
           <div class="a-meta">
             <span class="a-time">13 nov · 07:00</span>
@@ -1209,7 +1243,7 @@
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <a class="cont-pill" href="#stire-187" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">Hugging Face după plecarea lui Huang</span>
-            <span class="a-num">#10 / 12</span>
+            <span class="a-num">#11 / 13</span>
           </div>
           <h2>Șeful Hugging Face promite că platforma rămâne deschisă pentru AI open-source, după plecarea lui Jensen Huang de la Nvidia</h2>
           <div class="followup">
@@ -1243,14 +1277,14 @@
           </div>
         </article>
 
-        <!-- 11 · 13 nov · 06:00 -->
+        <!-- 12 · 13 nov · 06:00 -->
         <article id="stire-191" data-cats="securitate" data-sev="amber" data-subiect="complot la baza RAF Fairford">
           <div class="a-meta">
             <span class="a-time">13 nov · 06:00</span>
             <span class="a-cat">Securitate &amp; NATO</span>
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="subj-pill">complot la baza RAF Fairford</span>
-            <span class="a-num">#11 / 12</span>
+            <span class="a-num">#12 / 13</span>
           </div>
           <h2>Trei bărbați legați de Iran, inculpați pentru complotul terorist de la baza RAF Fairford din Marea Britanie</h2>
           <div class="sec">
@@ -1280,14 +1314,14 @@
           </div>
         </article>
 
-        <!-- 12 · 13 nov · 06:00 -->
+        <!-- 13 · 13 nov · 06:00 -->
         <article id="stire-192" data-cats="romania" data-sev="amber" data-subiect="România pe sârmă la rating">
           <div class="a-meta">
             <span class="a-time">13 nov · 06:00</span>
             <span class="a-cat">România</span>
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="subj-pill">România pe sârmă la rating</span>
-            <span class="a-num">#12 / 12</span>
+            <span class="a-num">#13 / 13</span>
           </div>
           <h2>Nazare: România nu e în situația unui acord cu FMI, dar rămâne „pe sârmă” la rating — examenele decisive vin în ianuarie, februarie și martie 2027</h2>
           <div class="sec">
@@ -6033,8 +6067,8 @@
 
       <footer>
         <div class="rule" aria-hidden="true"></div>
-        <p>Sfârșitul ediției de azi · Ultima actualizare: vineri, 13 noiembrie 2026, 12:00<br />Monitorizarea rulează la circa 3 ore, în fereastra L–V 06:00–22:00 · S–D 07:30–22:00 — dă refresh pentru noutăți.</p>
-        <a class="to-top" href="#stire-201">↑ Înapoi la cea mai nouă știre</a>
+        <p>Sfârșitul ediției de azi · Ultima actualizare: vineri, 13 noiembrie 2026, 15:00<br />Monitorizarea rulează la circa 3 ore, în fereastra L–V 06:00–22:00 · S–D 07:30–22:00 — dă refresh pentru noutăți.</p>
+        <a class="to-top" href="#stire-203">↑ Înapoi la cea mai nouă știre</a>
       </footer>
     </div>
 
