@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="color-scheme" content="light dark" />
-    <meta name="tirile-versiune" content="2026-11-14T13:00:00+01:00|7|amber" />
+    <meta name="tirile-versiune" content="2026-11-14T14:00:00+01:00|8|amber" />
     <link rel="icon" href="data:," />
     <title>Știrile zilei</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -699,9 +699,9 @@
     <div class="topbar">
       <div class="topbar-inner">
         <span class="dot" aria-hidden="true"></span>
-        <span><strong>Sâmbătă, 14 noiembrie 2026</strong> · actualizat la <strong>11:00</strong></span>
+        <span><strong>Sâmbătă, 14 noiembrie 2026</strong> · actualizat la <strong>14:00</strong></span>
         <span aria-hidden="true">·</span>
-        <span>5 știri azi</span>
+        <span>8 știri azi</span>
         <span class="spacer"></span>
         <button class="refresh-btn" type="button" id="refreshBtn" aria-label="Reîmprospătează pagina">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg>
@@ -768,15 +768,15 @@
       <section class="dashboard" aria-label="Panou de ansamblu">
         <div class="dash-head">
           <span class="dash-title">Dashboard · Azi</span>
-          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 13:00</span>
+          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 14:00</span>
           <span class="dash-meta">Fereastră monitorizare <strong>L–V 06:00–22:00 · S–D 07:30–22:00</strong> · pas ~3 ore</span>
         </div>
 
         <div class="kpi-grid five" role="group" aria-label="Filtrează după categorie — apasă pe un tile">
           <button class="kpi" type="button" data-filter="toate" aria-pressed="true">
             <span class="kpi-top"><span class="kpi-label">Toate știrile</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">7</span>
-            <span class="kpi-sub">știri verificate azi, în 4 rulări</span>
+            <span class="kpi-value">8</span>
+            <span class="kpi-sub">știri verificate azi, în 5 rulări</span>
             <span class="kpi-bar" aria-hidden="true"><i style="width:100%"></i></span>
             <span class="kpi-hint">Apasă pentru toate</span>
           </button>
@@ -784,14 +784,14 @@
             <span class="kpi-top"><span class="kpi-label">Securitate &amp; NATO</span><span class="kpi-check" aria-hidden="true">✓</span></span>
             <span class="kpi-value">3</span>
             <span class="kpi-sub">Donbas pentru aderarea la NATO · Germania: servicii secrete cu puteri noi · ofițer NATO arestat pentru spionaj</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:43%"></i></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:38%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="romania" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">România</span><span class="kpi-check" aria-hidden="true">✓</span></span>
             <span class="kpi-value">1</span>
             <span class="kpi-sub">România câștigă Roșia Montană</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:14%"></i></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:13%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="belgia" aria-pressed="false">
@@ -803,9 +803,9 @@
           </button>
           <button class="kpi" type="button" data-filter="tech" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">Tech &amp; AI</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">2</span>
-            <span class="kpi-sub">SignDrop: zero-day Windows · finanțare AI după plecarea lui Huang</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:29%"></i></span>
+            <span class="kpi-value">3</span>
+            <span class="kpi-sub">pana Microsoft 365 rezolvată · SignDrop: zero-day Windows · finanțare AI după plecarea lui Huang</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:38%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
         </div>
@@ -819,7 +819,7 @@
       </section>
 
       <div class="filter-status" aria-live="polite">
-        <span class="filter-label">Se afișează: <strong>Toate categoriile — 7 din 7 știri</strong></span>
+        <span class="filter-label">Se afișează: <strong>Toate categoriile — 8 din 8 știri</strong></span>
         <button class="filter-reset" type="button" hidden>Resetează filtrul</button>
       </div>
 
@@ -849,7 +849,44 @@
       <p class="empty">Nicio știre în această categorie azi.</p>
 
       <main>
-        <!-- 1 · 14 nov · 13:00 -->
+        <!-- 1 · 14 nov · 14:00 -->
+          <article id="stire-217" data-cats="tech" data-sev="green" data-subiect="pana Microsoft 365 rezolvată">
+            <div class="a-meta">
+              <span class="a-time">14 nov · 14:00</span>
+              <span class="a-cat">Tech &amp; AI</span>
+              <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
+              <a class="cont-pill" href="#stire-204" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
+              <span class="subj-pill">pana Microsoft 365 rezolvată</span>
+              <span class="a-num">#1 / 8</span>
+            </div>
+            <h2>Pana Microsoft 365 s-a încheiat: Microsoft declară serviciile complet restabilite după ~36 de ore; cauza a fost o problemă introdusă la o actualizare de capacitate a rețelei, nu un atac cibernetic și nu AI</h2>
+            <div class="followup">
+              <span class="tag">Urmare la</span>
+              <p><a href="#stire-204">„Pana Microsoft 365 intră în recuperare: Microsoft a finalizat remedieri pe o parte din infrastructură, cozile de e-mail revin spre normal; restabilirea completă, încă neconfirmată” — vineri, 13 noiembrie 2026, ora 16:00.</a> (Închiderea firului: după recuperarea parțială de ieri, Microsoft declară acum incidentul remediat și numește cauza preliminară.)</p>
+            </div>
+            <div class="sec">
+              <p class="sec-label">Ce s-a întâmplat</p>
+              <p>Microsoft a declarat sâmbătă, 14 noiembrie, la 04:17 UTC, că incidentul Microsoft 365 (MO1550821) / Exchange Online (EX1550543) este remediat: serviciile din mediile afectate anterior și-au revenit complet, iar cozile de e-mail întârziate au fost procesate. Pana a început joi, 12 noiembrie, la 16:17 UTC, și a afectat Outlook, Teams, Copilot, SharePoint, Intune și alte servicii în peste 70 de țări, timp de circa 36 de ore. Microsoft spune că problema a fost introdusă în timpul unei actualizări anterioare a capacității rețelei și a ieșit la suprafață după o schimbare ulterioară de rețea; compania a precizat explicit că a fost „o problemă tehnică, fără legătură cu activitatea cibernetică sau cu AI / agenții”.</p>
+            </div>
+            <div class="sec">
+              <p class="sec-label">De ce contează</p>
+              <p>Închide arcul celei mai mari pene enterprise urmărite în această săptămână — după cardurile din 12 noiembrie seara și 13 noiembrie (11:00 și 16:00), acum există confirmarea finală a restabilirii și cauza preliminară numită. Pentru un IT incident Manager, cauza și cronologia sunt material de referință: o schimbare de rețea aparent minoră, moștenită dintr-o actualizare de capacitate, a ținut jos suita de productivitate a sute de milioane de utilizatori timp de o zi și jumătate. Raportul post-incident preliminar e promis în două zile lucrătoare, cel final în cinci — acela va fi testul de responsabilitate al incidentului.</p>
+            </div>
+            <div class="verify">
+              <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
+              <p>Verdict: confirmat. BBC Business (14 noiembrie 2026) — „Microsoft says Outlook and Teams outage is fully resolved”: confirmă restabilirea completă și scuzele Microsoft. The Verge (14 noiembrie 2026, relatare de Tom Warren) — pana s-a încheiat după aproape două zile; cauza: problemă de rețea legată de o actualizare anterioară de capacitate; legătura cu schimbări de configurare Azure VNet nu e confirmată public de Microsoft. Microsoft 365 Status (@MSFT365Status, sursă primară, 14 nov, 04:17 UTC) — „We have completed our efforts to address the underlying issue of the incident and restored service to the remaining impacted customers and regions”, incident MO1550821. Digital Trends (14 noiembrie 2026) — confirmare independentă: servicii restabilite după peste 24 de ore de întrerupere, peste 7,4 milioane de raportări pe Downdetector; cauza: actualizare de capacitate a rețelei expusă de o schimbare ulterioară; nicio dovadă de activitate malițioasă.</p>
+              <ul class="sources">
+                <li><a href="https://www.digitaltrends.com/computing/microsoft-365-outage-resolved/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Digital Trends — „Microsoft 365 outage resolved” (14 nov 2026; confirmare independentă: servicii restabilite după peste 24 de ore de întrerupere, peste 7,4 milioane de raportări pe Downdetector; cauza: actualizare de capacitate a rețelei expusă de o schimbare ulterioară; nicio dovadă de activitate malițioasă)<span class="host">digitaltrends.com</span></a></li>
+                <li><a href="https://status.cloud.microsoft/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Microsoft 365 Status — pagina oficială de status Microsoft (incident MO1550821; sursă primară, 14 nov, 04:17 UTC: incidentul e remediat, serviciile restabilite pentru clienții și regiunile rămase afectate)<span class="host">status.cloud.microsoft</span></a></li>
+              </ul>
+            </div>
+            <div class="impact">
+              <span class="badge">Impact direct</span>
+              <p>Impact direct minim azi — e sâmbătă, zi liberă, iar poșta personală e pe Gmail, nu pe Outlook; serviciile sunt din nou funcționale, iar e-mailurile întârziate din timpul penei pot sosi în continuare cu întârziere. Relevanță profesională: închiderea incidentului, cauza preliminară numită și calendarul raportului post-incident (preliminar în două zile lucrătoare, final în cinci).</p>
+            </div>
+          </article>
+
+        <!-- 2 · 14 nov · 13:00 -->
           <article id="stire-215" data-cats="securitate" data-sev="amber" data-subiect="Donbas pentru aderarea la NATO">
             <div class="a-meta">
               <span class="a-time">14 nov · 13:00</span>
@@ -858,7 +895,7 @@
               <span class="spot-tag">Știrea zilei</span>
               <a class="cont-pill" href="#stire-206" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
               <span class="subj-pill">Donbas pentru aderarea la NATO</span>
-              <span class="a-num">#1 / 7</span>
+              <span class="a-num">#2 / 8</span>
             </div>
             <h2>SUA au pus pe masă retragerea Ucrainei din Donbas în schimbul aderării la NATO, spune Zelenski — prima dată când Washingtonul ridică ideea</h2>
             <div class="followup">
@@ -893,14 +930,14 @@
             </div>
           </article>
 
-        <!-- 2 · 14 nov · 13:00 -->
+        <!-- 3 · 14 nov · 13:00 -->
           <article id="stire-216" data-cats="tech" data-sev="amber" data-subiect="SignDrop: zero-day Windows">
             <div class="a-meta">
               <span class="a-time">14 nov · 13:00</span>
               <span class="a-cat">Tech &amp; AI</span>
               <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
               <span class="subj-pill">SignDrop: zero-day Windows</span>
-              <span class="a-num">#2 / 7</span>
+              <span class="a-num">#3 / 8</span>
             </div>
             <h2>Zero-day Windows „SignDrop": un cont obișnuit poate ajunge la drepturi SYSTEM pe Windows 11 26H2 — fără patch deocamdată</h2>
             <div class="sec">
@@ -927,14 +964,14 @@
             </div>
           </article>
 
-        <!-- 3 · 14 nov · 11:00 -->
+        <!-- 4 · 14 nov · 11:00 -->
           <article id="stire-214" data-cats="romania" data-sev="green" data-subiect="România câștigă Roșia Montană">
             <div class="a-meta">
               <span class="a-time">14 nov · 11:00</span>
               <span class="a-cat">România</span>
               <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
               <span class="subj-pill">România câștigă Roșia Montană</span>
-              <span class="a-num">#3 / 7</span>
+              <span class="a-num">#4 / 8</span>
             </div>
             <h2>România câștigă definitiv arbitrajul Roșia Montană — statul scapă de despăgubiri de 6,5 miliarde de dolari cerute de Gabriel Resources</h2>
             <div class="sec">
@@ -966,14 +1003,14 @@
             </div>
           </article>
 
-        <!-- 4 · 14 nov · 09:00 -->
+        <!-- 5 · 14 nov · 09:00 -->
           <article id="stire-212" data-cats="securitate" data-sev="amber" data-subiect="Germania: servicii secrete cu puteri noi">
             <div class="a-meta">
               <span class="a-time">14 nov · 09:00</span>
               <span class="a-cat">Securitate &amp; NATO</span>
               <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
               <span class="subj-pill">Germania: servicii secrete cu puteri noi</span>
-              <span class="a-num">#4 / 7</span>
+              <span class="a-num">#5 / 8</span>
             </div>
             <h2>Germania dă serviciilor secrete puteri de acțiune împotriva amenințărilor hibride — BND poate sabota în străinătate, BfV poate riposta cibernetic</h2>
             <div class="sec">
@@ -1003,7 +1040,7 @@
             </div>
           </article>
 
-          <!-- 5 · 14 nov · 09:00 -->
+          <!-- 6 · 14 nov · 09:00 -->
           <article id="stire-213" data-cats="tech" data-sev="amber" data-subiect="finanțare AI după plecarea lui Huang">
             <div class="a-meta">
               <span class="a-time">14 nov · 09:00</span>
@@ -1011,7 +1048,7 @@
               <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
               <a class="cont-pill" href="#stire-182" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
               <span class="subj-pill">finanțare AI după plecarea lui Huang</span>
-              <span class="a-num">#5 / 7</span>
+              <span class="a-num">#6 / 8</span>
             </div>
             <h2>Plecarea lui Jensen Huang lasă un gol în finanțarea startupurilor AI: Nvidia, cel mai mare investitor al sectorului, devine mai prudentă</h2>
             <div class="followup">
@@ -1044,14 +1081,14 @@
             </div>
           </article>
 
-          <!-- 6 · 14 nov · 08:00 -->
+          <!-- 7 · 14 nov · 08:00 -->
           <article id="stire-210" data-cats="worldwide" data-sev="amber" data-subiect="blocaj aerian în SUA">
             <div class="a-meta">
               <span class="a-time">14 nov · 08:00</span>
               <span class="a-cat">Worldwide / Transport aerian</span>
               <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
               <span class="subj-pill">blocaj aerian în SUA</span>
-              <span class="a-num">#6 / 7</span>
+              <span class="a-num">#7 / 8</span>
             </div>
             <h2>FAA a oprit toate plecările din SUA timp de ~4 ore — a doua oprire națională de la 11 septembrie 2001</h2>
             <div class="sec">
@@ -1080,14 +1117,14 @@
             </div>
           </article>
 
-        <!-- 7 · 14 nov · 08:00 -->
+        <!-- 8 · 14 nov · 08:00 -->
           <article id="stire-211" data-cats="securitate" data-sev="amber" data-subiect="ofițer NATO arestat pentru spionaj">
             <div class="a-meta">
               <span class="a-time">14 nov · 08:00</span>
               <span class="a-cat">Securitate &amp; NATO</span>
               <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
               <span class="subj-pill">ofițer NATO arestat pentru spionaj</span>
-              <span class="a-num">#7 / 7</span>
+              <span class="a-num">#8 / 8</span>
             </div>
             <h2>Ofițer american de la un comandament NATO din Marea Britanie, arestat sub acuzația că încerca să spioneze pentru Rusia</h2>
             <div class="sec">
@@ -5899,8 +5936,8 @@
 
       <footer>
         <div class="rule" aria-hidden="true"></div>
-        <p>Sfârșitul ediției de azi · Ultima actualizare: sâmbătă, 14 noiembrie 2026, 11:00<br />Monitorizarea rulează la circa 3 ore, în fereastra L–V 06:00–22:00 · S–D 07:30–22:00 — dă refresh pentru noutăți.</p>
-        <a class="to-top" href="#stire-214">↑ Înapoi la cea mai nouă știre</a>
+        <p>Sfârșitul ediției de azi · Ultima actualizare: sâmbătă, 14 noiembrie 2026, 14:00<br />Monitorizarea rulează la circa 3 ore, în fereastra L–V 06:00–22:00 · S–D 07:30–22:00 — dă refresh pentru noutăți.</p>
+        <a class="to-top" href="#stire-217">↑ Înapoi la cea mai nouă știre</a>
       </footer>
     </div>
 
