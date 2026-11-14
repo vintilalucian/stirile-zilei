@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="color-scheme" content="light dark" />
-    <meta name="tirile-versiune" content="2026-11-14T09:00:00+01:00|4|amber" />
+    <meta name="tirile-versiune" content="2026-11-14T11:00:00+01:00|5|amber" />
     <link rel="icon" href="data:," />
     <title>Știrile zilei</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -699,9 +699,9 @@
     <div class="topbar">
       <div class="topbar-inner">
         <span class="dot" aria-hidden="true"></span>
-        <span><strong>Sâmbătă, 14 noiembrie 2026</strong> · actualizat la <strong>09:00</strong></span>
+        <span><strong>Sâmbătă, 14 noiembrie 2026</strong> · actualizat la <strong>11:00</strong></span>
         <span aria-hidden="true">·</span>
-        <span>4 știri azi</span>
+        <span>5 știri azi</span>
         <span class="spacer"></span>
         <button class="refresh-btn" type="button" id="refreshBtn" aria-label="Reîmprospătează pagina">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg>
@@ -768,15 +768,15 @@
       <section class="dashboard" aria-label="Panou de ansamblu">
         <div class="dash-head">
           <span class="dash-title">Dashboard · Azi</span>
-          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 09:00</span>
+          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 11:00</span>
           <span class="dash-meta">Fereastră monitorizare <strong>L–V 06:00–22:00 · S–D 07:30–22:00</strong> · pas ~3 ore</span>
         </div>
 
         <div class="kpi-grid five" role="group" aria-label="Filtrează după categorie — apasă pe un tile">
           <button class="kpi" type="button" data-filter="toate" aria-pressed="true">
             <span class="kpi-top"><span class="kpi-label">Toate știrile</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">4</span>
-            <span class="kpi-sub">știri verificate azi, în 2 rulări</span>
+            <span class="kpi-value">5</span>
+            <span class="kpi-sub">știri verificate azi, în 3 rulări</span>
             <span class="kpi-bar" aria-hidden="true"><i style="width:100%"></i></span>
             <span class="kpi-hint">Apasă pentru toate</span>
           </button>
@@ -784,14 +784,14 @@
             <span class="kpi-top"><span class="kpi-label">Securitate &amp; NATO</span><span class="kpi-check" aria-hidden="true">✓</span></span>
             <span class="kpi-value">2</span>
             <span class="kpi-sub">Germania: servicii secrete cu puteri noi · ofițer NATO arestat pentru spionaj</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:50%"></i></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:40%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="romania" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">România</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">0</span>
-            <span class="kpi-sub"></span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:0%"></i></span>
+            <span class="kpi-value">1</span>
+            <span class="kpi-sub">România câștigă Roșia Montană</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:20%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="belgia" aria-pressed="false">
@@ -805,7 +805,7 @@
             <span class="kpi-top"><span class="kpi-label">Tech &amp; AI</span><span class="kpi-check" aria-hidden="true">✓</span></span>
             <span class="kpi-value">1</span>
             <span class="kpi-sub">finanțare AI după plecarea lui Huang</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:25%"></i></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:20%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
         </div>
@@ -819,7 +819,7 @@
       </section>
 
       <div class="filter-status" aria-live="polite">
-        <span class="filter-label">Se afișează: <strong>Toate categoriile — 4 din 4 știri</strong></span>
+        <span class="filter-label">Se afișează: <strong>Toate categoriile — 5 din 5 știri</strong></span>
         <button class="filter-reset" type="button" hidden>Resetează filtrul</button>
       </div>
 
@@ -849,7 +849,46 @@
       <p class="empty">Nicio știre în această categorie azi.</p>
 
       <main>
-        <!-- 1 · 14 nov · 09:00 -->
+        <!-- 1 · 14 nov · 11:00 -->
+          <article id="stire-214" data-cats="romania" data-sev="green" data-subiect="România câștigă Roșia Montană">
+            <div class="a-meta">
+              <span class="a-time">14 nov · 11:00</span>
+              <span class="a-cat">România</span>
+              <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
+              <span class="subj-pill">România câștigă Roșia Montană</span>
+              <span class="a-num">#1 / 5</span>
+            </div>
+            <h2>România câștigă definitiv arbitrajul Roșia Montană — statul scapă de despăgubiri de 6,5 miliarde de dolari cerute de Gabriel Resources</h2>
+            <div class="sec">
+              <p class="sec-label">Ce s-a întâmplat</p>
+              <p>Comitetul ad-hoc al ICSID a respins integral, pe 13 noiembrie 2026, cererea de anulare formulată de Gabriel Resources Ltd. și Gabriel Resources (Jersey) Ltd. împotriva hotărârii arbitrale din 8 martie 2024, prin care fuseseră respinse pretențiile de circa 6,5 miliarde de dolari (aproximativ 31,5 miliarde de lei, circa 1,5% din PIB-ul estimat al României pentru 2026). Anunțul a fost făcut sâmbătă, 14 noiembrie, de Ministerul Finanțelor. Decizia epuizează ultima cale extraordinară de atac prevăzută de Convenția ICSID, astfel încât hotărârea din 2024 rămâne definitivă și obligatorie; comitetul a dispus ca reclamanții să suporte cheltuielile procedurii de anulare, iar Ministerul Finanțelor spune că va continua demersurile pentru recuperarea cheltuielilor de judecată. Litigiul, deschis în 2015, a durat peste 11 ani, iar procedura de anulare s-a desfășurat între iulie 2024 și noiembrie 2026. Peisajul minier de la Roșia Montană, înscris în 2021 pe Lista Patrimoniului Mondial UNESCO, rămâne protejat.</p>
+            </div>
+            <div class="sec">
+              <p class="sec-label">De ce contează</p>
+              <p>Cea mai mare pretenție financiară formulată vreodată împotriva României într-un arbitraj internațional dispare definitiv din balanța riscurilor bugetare — circa 1,5% din PIB care nu mai apasă pe deficit, în anul în care guvernul nou-învestit pregătește rectificarea bugetară și bugetul pe 2027. Pentru expunerile lui în România (investiția recurentă în TVBETETF, apartamentul din București), e context fiscal favorabil: presiunea pe finanțele publice scade cu o datorie contingentă uriașă. Atenție însă: victoria nu rezolvă disputa privind licența minieră (refuzul prelungirii din iunie 2024, contestat de RMGC în instanțele naționale) și nici dificultățile economice locale din Roșia Montană.</p>
+            </div>
+            <div class="verify">
+              <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
+              <p>Verdict: sursa_primara + confirmat. Ministerul Finanțelor (comunicat, 14 nov 2026, sursa primară) — decizia din 13 nov, comitetul ad-hoc (Eduardo Zuleta, președinte; Lawrence Boo; Maxi Scherer), epuizarea căii de atac, cheltuielile în sarcina reclamanților. Forbes.ro (14 nov, 10:14) — confirmare independentă, citează comunicatul. Adevărul Financiar (14 nov, 07:23) — confirmare independentă: suma circa 31,5 mld lei, 1,5% din PIB 2026; comitetul a respins toate motivele. New Money, via News.ro (14 nov, 09:36) — confirmare independentă. Notă de integritate: Monitorul Zilei (pe baza Profit.ro) semnalează că, la momentul verificării lor, registrul public ICSID pentru dosarul ARB/15/31 afișa încă procedura de anulare ca „Pending", cu ultima evoluție publicată la 3 noiembrie 2026 — decizia din 13 noiembrie e relatată pe baza anunțului Ministerului Finanțelor și nu apărea încă în registrul ICSID.</p>
+              <ul class="sources">
+                <li><a href="https://www.forbes.ro/ministerul-finantelor-anunta-ca-romania-castiga-definitiv-arbitrajul-rosia-montana-531706" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Forbes.ro — „Ministerul Finanţelor anunţă că România câştigă definitiv arbitrajul Roşia Montană" (14 nov 2026)<span class="host">forbes.ro</span></a></li>
+                <li><a href="https://adevarulfinanciar.ro/macroeconomie/romania-scapa-definitiv-de-despagubiri-de-65-2571436.html" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Adevărul Financiar — „România scapă definitiv de despăgubiri de 6,5 miliarde de dolari în dosarul Roșia Montană" (14 nov 2026)<span class="host">adevarulfinanciar.ro</span></a></li>
+                <li><a href="https://newmoney.ro/ministerul-finantelor-romania-castiga-definitiv-arbitrajul-rosia-montana-hotararea-prin-care-au-fost-respinse-integral-pretentiile-gabriel-resources-de-circa-65-mld-dolari-ramane-definitiva-si/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>New Money, via News.ro — „Ministerul Finanţelor: România câştigã definitiv arbitrajul Roşia Montanã" (14 nov 2026)<span class="host">newmoney.ro</span></a></li>
+                <li><a href="https://ziarulpozitiv.ro/romania-castiga-definitiv-arbitrajul-rosia-montana/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Ziarul Pozitiv — „România câștigă definitiv arbitrajul Roșia Montană" (14 nov 2026)<span class="host">ziarulpozitiv.ro</span></a></li>
+                <li><a href="https://monitorulzilei.ro/2026/11/14/romania-castiga-definitiv-disputa-de-la-rosia-montana/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Monitorul Zilei, via Profit.ro — „România câștigă definitiv disputa de la Roșia Montană" (14 nov 2026; nuanța despre registrul ICSID încă „Pending")<span class="host">monitorulzilei.ro</span></a></li>
+              </ul>
+            </div>
+            <div class="adverse">
+              <p class="sec-label">Tabăra adversă</p>
+              <p><strong>Gabriel Resources Ltd. și Gabriel Resources (Jersey) Ltd.</strong> — companiile reclamante au susținut că România a încălcat tratatele bilaterale de investiții cu Canada și Regatul Unit și au cerut despăgubiri de circa 6,5 miliarde de dolari. Poziția lor a fost respinsă integral de tribunal în martie 2024, iar acum le-a fost respinsă și cererea de anulare; compania anunțase pe 5 noiembrie că dezbaterile s-au închis și decizia era așteptată până pe 13 noiembrie. (<a href="https://www.forbes.ro/ministerul-finantelor-anunta-ca-romania-castiga-definitiv-arbitrajul-rosia-montana-531706" target="_blank" rel="noopener">Forbes.ro, 14 nov 2026</a>)</p>
+            </div>
+            <div class="impact">
+              <span class="badge">Impact direct</span>
+              <p>Impact direct: minim azi — nicio acțiune cerută. Relevanță de context: dispare o datorie contingentă de circa 1,5% din PIB de pe bugetul României, în contextul rectificării bugetare și al pregătirii bugetului 2027 — semnal favorabil pentru piața românească și investiția lui recurentă în TVBETETF. De urmărit: recuperarea cheltuielilor de judecată de către stat și disputa separată privind licența minieră.</p>
+            </div>
+          </article>
+
+        <!-- 2 · 14 nov · 09:00 -->
           <article id="stire-212" data-cats="securitate" data-sev="amber" data-subiect="Germania: servicii secrete cu puteri noi">
             <div class="a-meta">
               <span class="a-time">14 nov · 09:00</span>
@@ -857,7 +896,7 @@
               <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
               <span class="spot-tag">Știrea zilei</span>
               <span class="subj-pill">Germania: servicii secrete cu puteri noi</span>
-              <span class="a-num">#1 / 4</span>
+              <span class="a-num">#2 / 5</span>
             </div>
             <h2>Germania dă serviciilor secrete puteri de acțiune împotriva amenințărilor hibride — BND poate sabota în străinătate, BfV poate riposta cibernetic</h2>
             <div class="sec">
@@ -887,7 +926,7 @@
             </div>
           </article>
 
-          <!-- 2 · 14 nov · 09:00 -->
+          <!-- 3 · 14 nov · 09:00 -->
           <article id="stire-213" data-cats="tech" data-sev="amber" data-subiect="finanțare AI după plecarea lui Huang">
             <div class="a-meta">
               <span class="a-time">14 nov · 09:00</span>
@@ -895,7 +934,7 @@
               <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
               <a class="cont-pill" href="#stire-182" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
               <span class="subj-pill">finanțare AI după plecarea lui Huang</span>
-              <span class="a-num">#2 / 4</span>
+              <span class="a-num">#3 / 5</span>
             </div>
             <h2>Plecarea lui Jensen Huang lasă un gol în finanțarea startupurilor AI: Nvidia, cel mai mare investitor al sectorului, devine mai prudentă</h2>
             <div class="followup">
@@ -928,14 +967,14 @@
             </div>
           </article>
 
-          <!-- 3 · 14 nov · 08:00 -->
+          <!-- 4 · 14 nov · 08:00 -->
           <article id="stire-210" data-cats="worldwide" data-sev="amber" data-subiect="blocaj aerian în SUA">
             <div class="a-meta">
               <span class="a-time">14 nov · 08:00</span>
               <span class="a-cat">Worldwide / Transport aerian</span>
               <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
               <span class="subj-pill">blocaj aerian în SUA</span>
-              <span class="a-num">#3 / 4</span>
+              <span class="a-num">#4 / 5</span>
             </div>
             <h2>FAA a oprit toate plecările din SUA timp de ~4 ore — a doua oprire națională de la 11 septembrie 2001</h2>
             <div class="sec">
@@ -964,14 +1003,14 @@
             </div>
           </article>
 
-        <!-- 4 · 14 nov · 08:00 -->
+        <!-- 5 · 14 nov · 08:00 -->
           <article id="stire-211" data-cats="securitate" data-sev="amber" data-subiect="ofițer NATO arestat pentru spionaj">
             <div class="a-meta">
               <span class="a-time">14 nov · 08:00</span>
               <span class="a-cat">Securitate &amp; NATO</span>
               <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
               <span class="subj-pill">ofițer NATO arestat pentru spionaj</span>
-              <span class="a-num">#4 / 4</span>
+              <span class="a-num">#5 / 5</span>
             </div>
             <h2>Ofițer american de la un comandament NATO din Marea Britanie, arestat sub acuzația că încerca să spioneze pentru Rusia</h2>
             <div class="sec">
@@ -5781,802 +5820,10 @@
       </section>
 
 
-      <section class="day day-archive" id="zi-2026-11-07">
-        <div class="day-head">
-          <h2>Sâmbătă, 7 noiembrie 2026</h2>
-          <span>Ediția de ieri · 16 știri · arhivă (ultimele 7 zile)</span>
-        </div>
-
-
-      <!-- Chenar permanent: știrea cea mai importantă a zilei — sub fereastra
-           „Ultimele știri", ÎNAINTEA dashboardului, vizibilă din prima, fără scroll.
-           Nivelul de azi: ROȘU (sev-red) — grav: atac armat în Piața Centrală
-           din Cracovia — șase morți și 15 răniți, atacatorul împușcat de
-           polițiști și reținut — prima știre cu severitate roșie a zilei,
-           severitatea maximă, peste știrile galbene și verzi.
-           Chenarul rămâne în afara logicii de filtrare: vizibil indiferent de filtrul de categorie. -->
-      <section class="spot sev-red" aria-label="Știrea cea mai importantă a zilei">
-        <div class="spot-head">
-          <span class="spot-kicker">
-            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13 2 4.5 13.5H11L9.5 22 19 10h-6.5L13 2z"/></svg>
-            Știrea zilei · Atenție rapidă
-          </span>
-          <span class="spot-time">7 nov · 20:00</span>
-          <span class="spot-pill">Nivel roșu — grav</span>
-        </div>
-        <h2 class="spot-title">Atac armat în Piața Centrală din Cracovia: șase morți și 15 răniți — atacatorul a tras la întâmplare dintr-o mașină, a fost împușcat și reținut</h2>
-        <p class="spot-why"><strong>De ce e în față:</strong> Cel mai grav fapt al zilei: un atac armat cu șase morți și 15 răniți într-o piață plină din Cracovia, într-o țară aliată NATO și UE — primul incident cu severitate roșie al zilei, pe fondul săptămânii de alertă pe securitate publică în Europa.</p>
-        <p class="spot-lead">Un bărbat a intrat cu mașina în Piața Centrală din Cracovia și a tras la întâmplare asupra trecătorilor; șase oameni au murit și 15 au fost răniți, între care doi polițiști. Atacatorul a fost împușcat de polițiști, reținut și dus la spital; poliția spune că a acționat singur, iar motivul rămâne necunoscut.</p>
-        <p class="spot-more" hidden><span class="spot-more-text"></span> <button class="spot-more-btn" type="button">apasă aici</button></p>
-        <div class="spot-foot">
-          <a class="spot-link" href="#stire-104">Citește știrea completă ↓</a>
-          <div class="sev-scale" role="img" aria-label="Scară de gravitate: verde — normal, galben — de urmărit, roșu — grav. Nivelul de azi: roșu.">
-            <span class="sev-item"><i class="sev-dot g" aria-hidden="true"></i>Verde · normal</span>
-            <span class="sev-item"><i class="sev-dot y" aria-hidden="true"></i>Galben · de urmărit</span>
-            <span class="sev-item on"><i class="sev-dot r" aria-hidden="true"></i>Roșu · grav</span>
-          </div>
-        </div>
-      </section>
-
-      <!-- Dashboard -->
-      <section class="dashboard" aria-label="Panou de ansamblu">
-        <div class="dash-head">
-          <span class="dash-title">Dashboard · Azi</span>
-          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 21:00</span>
-          <span class="dash-meta">Fereastră monitorizare <strong>L–V 06:00–22:00 · S–D 07:30–22:00</strong> · pas ~3 ore</span>
-        </div>
-
-        <div class="kpi-grid" role="group" aria-label="Filtrează după categorie — apasă pe un tile">
-          <button class="kpi" type="button" data-filter="toate" aria-pressed="true">
-            <span class="kpi-top"><span class="kpi-label">Toate știrile</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">16</span>
-            <span class="kpi-sub">știri verificate azi, în 13 rulări</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:100%"></i></span>
-            <span class="kpi-hint">Apasă pentru toate</span>
-          </button>
-          <button class="kpi" type="button" data-filter="securitate" aria-pressed="false">
-            <span class="kpi-top"><span class="kpi-label">Securitate &amp; NATO</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">7</span>
-            <span class="kpi-sub">urmărirea atacului din Cracovia · atac armat în Cracovia · campanie de vigilență EUCOM · mine navale în Marea Baltică · atacul cibernetic la Finanțele belgiene continuă · atac masiv al Rusiei asupra Kievului · securitatea Europei negociată fără Europa</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:44%"></i></span>
-            <span class="kpi-hint">Apasă pentru a filtra →</span>
-          </button>
-          <button class="kpi" type="button" data-filter="romania" aria-pressed="false">
-            <span class="kpi-top"><span class="kpi-label">România</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">3</span>
-            <span class="kpi-sub">austeritate buget 2027 România · repornirea Unității 1 Cernavodă · rating România 2027</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:19%"></i></span>
-            <span class="kpi-hint">Apasă pentru a filtra →</span>
-          </button>
-          <button class="kpi" type="button" data-filter="tech" aria-pressed="false">
-            <span class="kpi-top"><span class="kpi-label">Tech &amp; AI</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">5</span>
-            <span class="kpi-sub">midterms SUA și Big Tech · Spaces în Muse · finanțare OpenAI · centre de date AI · TikTok acuzat de încălcarea DSA</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:31%"></i></span>
-            <span class="kpi-hint">Apasă pentru a filtra →</span>
-          </button>
-        </div>
-
-        <div class="dash-foot">
-          <div class="dash-panel">
-            <h3>Ritmul zilei — știri pe rulare</h3>
-            <div class="rhythm" role="group" aria-label="Filtru după ora publicării — apasă pe o rulare ca să vezi doar știrile ei">
-              <button class="col" type="button" data-hour="08:00" aria-pressed="false" aria-label="Filtrează știrile de la ora 08:00 — 1 știre"><span class="n">1</span><span class="bar" style="height:22px"></span><span class="t">08:00</span></button>
-              <button class="col" type="button" data-hour="09:00" aria-pressed="false" aria-label="Filtrează știrile de la ora 09:00 — 2 știri"><span class="n">2</span><span class="bar" style="height:40px"></span><span class="t">09:00</span></button>
-              <button class="col" type="button" data-hour="10:00" aria-pressed="false" aria-label="Filtrează știrile de la ora 10:00 — 1 știre"><span class="n">1</span><span class="bar" style="height:22px"></span><span class="t">10:00</span></button>
-              <button class="col" type="button" data-hour="11:00" aria-pressed="false" aria-label="Filtrează știrile de la ora 11:00 — 1 știre"><span class="n">1</span><span class="bar" style="height:22px"></span><span class="t">11:00</span></button>
-              <button class="col" type="button" data-hour="12:00" aria-pressed="false" aria-label="Filtrează știrile de la ora 12:00 — 2 știri"><span class="n">2</span><span class="bar" style="height:40px"></span><span class="t">12:00</span></button>
-              <button class="col" type="button" data-hour="13:00" aria-pressed="false" aria-label="Filtrează știrile de la ora 13:00 — 1 știre"><span class="n">1</span><span class="bar" style="height:22px"></span><span class="t">13:00</span></button>
-              <button class="col" type="button" data-hour="14:00" aria-pressed="false" aria-label="Filtrează știrile de la ora 14:00 — 1 știre"><span class="n">1</span><span class="bar" style="height:22px"></span><span class="t">14:00</span></button>
-              <button class="col" type="button" data-hour="15:00" aria-pressed="false" aria-label="Filtrează știrile de la ora 15:00 — 1 știre"><span class="n">1</span><span class="bar" style="height:22px"></span><span class="t">15:00</span></button>
-              <button class="col" type="button" data-hour="16:00" aria-pressed="false" aria-label="Filtrează știrile de la ora 16:00 — 1 știre"><span class="n">1</span><span class="bar" style="height:22px"></span><span class="t">16:00</span></button>
-              <button class="col" type="button" data-hour="17:00" aria-pressed="false" aria-label="Filtrează știrile de la ora 17:00 — 2 știri"><span class="n">2</span><span class="bar" style="height:40px"></span><span class="t">17:00</span></button>
-              <button class="col" type="button" data-hour="18:00" aria-pressed="false" aria-label="Filtrează știrile de la ora 18:00 — 1 știre"><span class="n">1</span><span class="bar" style="height:22px"></span><span class="t">18:00</span></button>
-              <button class="col" type="button" data-hour="20:00" aria-pressed="false" aria-label="Filtrează știrile de la ora 20:00 — 1 știre"><span class="n">1</span><span class="bar" style="height:22px"></span><span class="t">20:00</span></button>
-              <button class="col" type="button" data-hour="21:00" aria-pressed="false" aria-label="Filtrează știrile de la ora 21:00 — 1 știre"><span class="n">1</span><span class="bar" style="height:22px"></span><span class="t">21:00</span></button>
-            </div>
-            <p class="rhythm-hint">Apasă pe o bară ca să vezi doar știrile din rularea aceea; apasă din nou pe ea pentru toate.</p>
-          </div>
-          <div class="dash-panel">
-            <h3>Stare ediție</h3>
-            <ul class="status-list">
-              <li><span class="k">Ultima actualizare</span><span class="v">Azi, 21:00</span></li>
-              <li><span class="k">Cea mai nouă</span><span class="v">urmărirea atacului din Cracovia · 21:00</span></li>
-              <li><span class="k">Acoperire</span><span class="v">Ultimele 7 zile în arhivă</span></li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <div class="filter-status" aria-live="polite">
-        <span class="filter-label">Se afișează: <strong>Toate categoriile — 16 din 16 știri</strong></span>
-        <button class="filter-reset" type="button" hidden>Resetează filtrul</button>
-      </div>
-
-      <nav class="index" aria-label="Cuprinsul zilei">
-        <div class="index-head">
-          <h2>Cuprins</h2>
-          <span>apasă pe un titlu ca să sari direct la știre · se sincronizează cu filtrul</span>
-        </div>
-        <ol class="index-list">
-          <li data-cats="securitate"><a href="#stire-105"><time>21:00</time><span class="cat-dot sec" aria-hidden="true"></span><span class="t">Atacul din Cracovia: ministrul de interne spune că autorul a acționat singur și avea „păreri foarte radicale&quot; — doliu național duminică și luni în Polonia</span><span class="n">#1</span></a></li>
-          <li data-cats="securitate"><a href="#stire-104"><time>20:00</time><span class="cat-dot sec" aria-hidden="true"></span><span class="t">Atac armat în Piața Centrală din Cracovia: șase morți și 15 răniți — atacatorul a tras la întâmplare dintr-o mașină, a fost împușcat și reținut</span><span class="n">#2</span></a></li>
-          <li data-cats="securitate"><a href="#stire-103"><time>18:00</time><span class="cat-dot sec" aria-hidden="true"></span><span class="t">Comandamentul SUA în Europa lansează campania «See Something, Do Something»: vigilență sporită pentru militari și familii, pe fondul amenințărilor hibride</span><span class="n">#3</span></a></li>
-          <li data-cats="tech"><a href="#stire-101"><time>17:00</time><span class="cat-dot tech" aria-hidden="true"></span><span class="t">După victoria democraților la alegerile de la jumătatea mandatului, Big Tech se pregătește de reglementări mai dure pe AI: moratorii pe centre de date și anchete în Congres</span><span class="n">#4</span></a></li>
-          <li data-cats="belgia"><a href="#stire-102"><time>17:00</time><span class="cat-dot" style="background:var(--muted)" aria-hidden="true"></span><span class="t">Parlamentul belgian a aprobat perchezițiile la domiciliu pentru migranții în situație ilegală — lege controversată, votată în plină criză de guvern</span><span class="n">#5</span></a></li>
-          <li data-cats="securitate"><a href="#stire-100"><time>16:00</time><span class="cat-dot sec" aria-hidden="true"></span><span class="t">Danemarca și Lituania cumpără mine navale „Blocker&quot; din Finlanda, prin schema comună de achiziții a NATO din Marea Baltică</span><span class="n">#6</span></a></li>
-          <li data-cats="romania"><a href="#stire-99"><time>15:00</time><span class="cat-dot" style="background:var(--muted)" aria-hidden="true"></span><span class="t">Niculescu cere tuturor ministerelor planuri de reducere a cheltuielilor până la sfârșitul săptămânii viitoare; bugetul pe 2027, gata în circa o lună</span><span class="n">#7</span></a></li>
-          <li data-cats="tech"><a href="#stire-98"><time>14:00</time><span class="cat-dot tech" aria-hidden="true"></span><span class="t">Meta lansează Spaces în Muse: descrii o idee în chat, iar agentul îți construiește un spațiu dedicat — tracker, planner sau tablou de proiect</span><span class="n">#8</span></a></li>
-          <li data-cats="romania"><a href="#stire-97"><time>13:00</time><span class="cat-dot" style="background:var(--muted)" aria-hidden="true"></span><span class="t">Unitatea 1 de la Cernavodă a fost repornită după circa 100 de zile de oprire: pierderi de aproximativ un miliard de lei; decizia pentru Unitatea 2, luni</span><span class="n">#9</span></a></li>
-          <li data-cats="securitate belgia"><a href="#stire-95"><time>12:00</time><span class="cat-dot sec" aria-hidden="true"></span><span class="t">Atacul cibernetic la Finanțele belgiene continuă să blocheze firmele noi: serviciile online sunt încă oprite, la zece zile de la incident</span><span class="n">#10</span></a></li>
-          <li data-cats="securitate"><a href="#stire-96"><time>12:00</time><span class="cat-dot sec" aria-hidden="true"></span><span class="t">Atac masiv al Rusiei asupra Kievului: 172 de drone și 36 de rachete au lovit podul de nord și infrastructura energetică, cu trei zile înainte de discuțiile de la Abu Dhabi</span><span class="n">#11</span></a></li>
-          <li data-cats="securitate"><a href="#stire-94"><time>11:00</time><span class="cat-dot sec" aria-hidden="true"></span><span class="t">Europa respinge planul SUA–Rusia pentru o nouă arhitectură de securitate: aliații NATO n-au fost informați dinainte, iar Kallas spune că Putin „nu are drept de veto&quot;</span><span class="n">#12</span></a></li>
-          <li data-cats="tech"><a href="#stire-93"><time>10:00</time><span class="cat-dot tech" aria-hidden="true"></span><span class="t">OpenAI a închis prima tranșă de 11 mld $ din noua rundă, la o evaluare de 1,25 trilioane $ — cu o treime mai puțin decât cerea inițial</span><span class="n">#13</span></a></li>
-          <li data-cats="romania"><a href="#stire-91"><time>09:00</time><span class="cat-dot" style="background:var(--muted)" aria-hidden="true"></span><span class="t">Nazare avertizează: România riscă „cartonașul roșu&quot; de la agențiile de rating dacă bugetul pe 2027 nu e credibil</span><span class="n">#14</span></a></li>
-          <li data-cats="tech"><a href="#stire-92"><time>09:00</time><span class="cat-dot tech" aria-hidden="true"></span><span class="t">Google preia de la Crusoe proiectul neterminat de centru de date din Wyoming și investește 17 mld $</span><span class="n">#15</span></a></li>
-          <li data-cats="tech"><a href="#stire-90"><time>08:00</time><span class="cat-dot tech" aria-hidden="true"></span><span class="t">Comisia Europeană acuză TikTok de încălcarea DSA: feedul „For You&quot; ar crea „găuri de iepure&quot; dăunătoare sănătății mintale — amendă posibilă de până la 6% din cifra de afaceri globală</span><span class="n">#16</span></a></li>
-        </ol>
-      </nav>
-
-      <p class="empty">Nicio știre în această categorie azi.</p>
-
-      <main>
-                <!-- 1 · 7 nov · 21:00 -->
-        <article id="stire-105" data-cats="securitate" data-sev="red" data-subiect="urmărirea atacului din Cracovia">
-          <div class="a-meta">
-            <span class="a-time">7 nov · 21:00</span>
-            <span class="a-cat">Securitate &amp; NATO</span>
-            <span class="sev-pill is-red"><i aria-hidden="true"></i>Roșu · grav</span>
-            <a class="cont-pill" href="#stire-104" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
-            <span class="subj-pill">urmărirea atacului din Cracovia</span>
-            <span class="a-num">#1 / 16</span>
-          </div>
-          <h2>Atacul din Cracovia: ministrul de interne spune că autorul a acționat singur și avea „păreri foarte radicale" — doliu național duminică și luni în Polonia</h2>
-
-          <div class="followup">
-            <span class="tag">Urmare la</span>
-            <p><a href="#stire-104">„Atac armat în Piața Centrală din Cracovia: șase morți și 15 răniți — atacatorul a tras la întâmplare dintr-o mașină, a fost împușcat și reținut"</a> — sâmbătă, 7 noiembrie 2026, ora 20:00.</p>
-          </div>
-
-          <div class="sec">
-            <p class="sec-label">Ce s-a întâmplat</p>
-            <p>Sâmbătă seară, la conferința de presă de la Cracovia, ministrul de interne Marcin Kierwiński a declarat că „totul indică faptul că (atacatorul) a acționat singur și avea păreri foarte radicale". Poliția a tras primele focuri la trei minute de la primul apel, iar ministrul a spus că „reacția fulgerătoare a poliției a prevenit un masacru mult mai mare". Surse din poliție îl numesc neoficial pe suspect Michał O., 24 de ani, din Ostrowiec Świętokrzyski — deținea permis de port-armă și nu avea cazier, iar ministrul apărării a precizat că nu a fost niciodată soldat în Forțele Armate poloneze, dezmințind relatări anterioare din presă. Președintele Karol Nawrocki a început procedura formală pentru doliu național duminică, 8 noiembrie, și luni, 9 noiembrie; primarul Cracoviei a declarat doliu în oraș până pe 11 noiembrie, cu evenimentele municipale din 8–11 noiembrie anulate.</p>
-          </div>
-
-          <div class="sec">
-            <p class="sec-label">De ce contează</p>
-            <p>Cardul de la 20:00 se încheia cu „De urmărit: motivul atacului" — prima indicație oficială a venit acum: nu e vorba de o rețea sau de un al doilea atacator, ci de un singur autor cu „păreri foarte radicale", potrivit ministrului de interne. Pentru el: confirmarea că nu există o rețea sau un actor statal în spate reduce incertitudinea din jurul celui mai grav incident de securitate publică al săptămânii în Europa; rămâne de urmărit ce înseamnă concret „păreri radicale" — ministrul nu a precizat nicio ideologie — și dacă ancheta stabilește vreo legătură organizată.</p>
-          </div>
-
-          <div class="verify">
-            <p class="sec-label">Verificare <span class="status">Sursă primară + confirmat</span></p>
-            <p>Verdict: sursă primară + confirmat. Sursa primară: conferința de presă a ministrului de interne Marcin Kierwiński la Cracovia (sâmbătă seară), cu declarații citate direct de Energy Radio (actualizat 19:36, 7 nov 2026) — „a acționat singur și avea păreri foarte radicale", numele neoficial Michał O., 24 de ani, și precizarea ministrului apărării că atacatorul nu a fost niciodată soldat. CNN (7 nov 2026) confirmă bilanțul — șase morți și 15 răniți —, reținerea atacatorului și doliul în oraș declarat de primar până pe 11 noiembrie; snm.rs (7 nov 2026) confirmă doliul în Cracovia până pe 11 noiembrie și apelul premierului Tusk la calm politic.</p>
-            <ul class="sources">
-              <li><a href="https://energyradio.uk/krakow-shooting-main-market-square/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Energy Radio — „Krakow shooting latest: 6 killed, gunman named as Michał O., 24" (7 nov 2026, actualizat 19:36)<span class="host">energyradio.uk</span></a></li>
-              <li><a href="https://www.cnn.com/2026/11/07/europe/krakow-shooting-poland-killed-intl?cid=external-feeds_iluminar_meta" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>CNN — „At least 6 dead in shooting in the main market square of Krakow, Poland, police say" (7 nov 2026)<span class="host">cnn.com</span></a></li>
-              <li><a href="https://snm.rs/days-of-mourning-in-krakow-after-shooting-until-november-11-for-six-killed/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>snm.rs — „Days of mourning in Krakow after shooting until November 11 for six killed" (7 nov 2026)<span class="host">snm.rs</span></a></li>
-            </ul>
-          </div>
-
-          <div class="impact">
-            <span class="badge">Impact direct</span>
-            <p>Impact direct: minim — nicio călătorie în Polonia în planurile apropiate și nicio rudă acolo; relevanță de context ridicată. De urmărit: precizarea motivului (ce înseamnă „păreri radicale") și eventualele măsuri de securitate anunțate de autoritățile poloneze.</p>
-          </div>
-        </article>
-
-<!-- 2 · 7 nov · 20:00 -->
-        <article id="stire-104" data-cats="securitate" data-sev="red" data-subiect="atac armat în Cracovia">
-  <div class="a-meta">
-    <span class="a-time">7 nov · 20:00</span>
-    <span class="a-cat">Securitate &amp; NATO</span>
-    <span class="sev-pill is-red"><i aria-hidden="true"></i>Roșu · grav</span>
-    <span class="spot-tag">Știrea zilei</span>
-    <span class="subj-pill">atac armat în Cracovia</span>
-    <span class="a-num">#2 / 16</span>
-  </div>
-  <h2>Atac armat în Piața Centrală din Cracovia: șase morți și 15 răniți — atacatorul a tras la întâmplare dintr-o mașină, a fost împușcat și reținut</h2>
-  <div class="sec">
-    <p class="sec-label">Ce s-a întâmplat</p>
-    <p>Sâmbătă, 7 noiembrie, în jurul orei 15:00, un bărbat a intrat cu mașina în Piața Centrală din Cracovia (Rynek Główny) și a deschis focul la întâmplare asupra trecătorilor, dintr-o armă lungă de tip militar, potrivit poliției. Bilanțul actualizat al Poliției Małopolska: șase morți — patru femei și doi bărbați — și 15 răniți, între care doi polițiști, unul în stare foarte gravă, operat de urgență. Atacatorul, cetățean polonez, a fost împușcat de polițiști în timpul intervenției, reținut și dus la spital. Poliția spune că a acționat singur și a dezmințit informațiile despre un al doilea atacator; motivul rămâne necunoscut, iar premierul Donald Tusk a anunțat că poliția investighează „contextul și toate circumstanțele atacului”.</p>
-  </div>
-  <div class="sec">
-    <p class="sec-label">De ce contează</p>
-    <p>Atacul vine într-o săptămână în care Europa e deja în alertă pe securitate publică: valul de amenințări cu bombă la zeci de zboruri europene (5–6 noiembrie, semnalat în pagină), alerta Bundeswehr la sabotaj „semnificativ” și campania de vigilență „See Something, Do Something” lansată de Comandamentul SUA în Europa. Cracovia e unul dintre cele mai vizitate orașe din Europa Centrală, iar un atac cu armă de tip militar, la întâmplare, într-o piață plină într-o sâmbătă după-amiază, într-o țară aliată NATO și UE, ridică întrebări directe despre securitatea spațiilor publice aglomerate — exact tema amenințărilor hibride și de securitate publică urmărită în pagină. Pentru un IT incident Manager în mediul NATO, e context operațional direct, chiar dacă atacul în sine nu are, deocamdată, nicio legătură stabilită cu terorismul sau cu un actor statal.</p>
-  </div>
-  <div class="verify">
-    <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
-    <p>Verdict: confirmat. G4Media (sursă din lista monitorizată) a semnalat atacul în regim BREAKING sâmbătă după-amiază; Poliția Małopolska a confirmat bilanțul actualizat — șase morți și 15 răniți — iar AP, CNN și The Times relatează aceleași cifre, cu atacatorul reținut și motivul necunoscut. Bilanțul inițial (doi morți, cel puțin 10 răniți) a fost actualizat de autorități pe parcursul serii.</p>
-    <ul class="sources">
-      <li><a href="https://www.cnn.com/2026/11/07/europe/krakow-shooting-poland-killed-intl?cid=external-feeds_iluminar_meta" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>CNN — „At least 6 dead in shooting in the main market square of Krakow, Poland, police say" (7 nov 2026)<span class="host">cnn.com</span></a></li>
-      <li><a href="https://www.thetimes.com/world/europe/article/krakow-shooting-main-square-city-centre-poland-rn2xgdxbd" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>The Times — „Krakow shooting: six killed and 15 injured near main square" (7 nov 2026)<span class="host">thetimes.com</span></a></li>
-      <li><a href="https://usanews24.live/shooting-in-krakow-poland-leaves-6-dead-and-15-injured/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Associated Press — „Shooting in Krakow, Poland, leaves 6 dead and 15 injured" (7 nov 2026)<span class="host">usanews24.live</span></a></li>
-      <li><a href="https://www.europesays.com/poland/35697/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>PAP (agenția poloneză de presă), via Europe Says — „At least 6 dead, 15 injured after drive-by shooting in Poland's Kraków" (7 nov 2026)<span class="host">europesays.com</span></a></li>
-    </ul>
-  </div>
-  <div class="impact">
-    <span class="badge">Impact direct</span>
-    <p>Impact direct: minim — nicio călătorie în Polonia în planurile apropiate și nicio rudă acolo; relevanță de context ridicată. De urmărit: motivul atacului și eventualele măsuri de securitate anunțate de autoritățile poloneze, plus dacă apar evaluări de risc noi pentru spațiile publice aglomerate din Europa.</p>
-  </div>
-</article>
-
-        <!-- 3 · 7 nov · 18:00 -->
-        <article id="stire-103" data-cats="securitate" data-sev="amber" data-subiect="campanie de vigilență EUCOM">
-          <div class="a-meta">
-            <span class="a-time">7 nov · 18:00</span>
-            <span class="a-cat">Securitate &amp; NATO</span>
-            <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
-            <span class="subj-pill">campanie de vigilență EUCOM</span>
-            <span class="a-num">#3 / 16</span>
-          </div>
-          <h2>Comandamentul SUA în Europa lansează campania «See Something, Do Something»: vigilență sporită pentru militari și familii, pe fondul amenințărilor hibride</h2>
-
-          <div class="sec">
-            <p class="sec-label">Ce s-a întâmplat</p>
-            <p>Comandamentul SUA în Europa (EUCOM) a lansat săptămâna aceasta campania „See Something, Do Something”, prin care le cere militarilor, familiilor și angajaților civili americani din Europa să raporteze comportamente suspecte în jurul bazelor și în afara lor și să-și limiteze amprenta digitală în deplasări — rute și ore de navetă variate, geotagging dezactivat în aplicațiile de fitness, fără postări publice despre planuri de călătorie — potrivit Defense News (6 nov 2026). Campania vine pe fondul îngrijorării crescânde privind incursiunile cu drone și alte amenințări hibride la adresa forțelor SUA și ale aliaților din Europa; comandantul EUCOM, generalul Alexus Grynkewich, a spus că siguranța personalului și a familiilor e „cea mai mare prioritate”. EUCOM nu a indicat o amenințare concretă care să fi declanșat campania.</p>
-          </div>
-
-          <div class="sec">
-            <p class="sec-label">De ce contează</p>
-            <p>Continuă direct arcul amenințărilor hibride urmărit în pagină — alerta Bundeswehr la sabotaj „semnificativ” (21 oct), drona cu explozivi de lângă baza Wunstorf, tentativa eșuată cu drone la aeroportul Leipzig/Halle (septembrie) și arestarea unui presupus spion rus în Germania (22 oct). Pentru un IT incident Manager care lucrează în mediul NATO, campania semnalează că amenințarea hibridă a trecut de la alerte punctuale la măsuri permanente de protecție a personalului — inclusiv a civililor din structurile aliate.</p>
-          </div>
-
-          <div class="verify">
-            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
-            <p>Verdict: confirmat. Defense News, 6 noiembrie 2026 (sursa din lista monitorizată) — Comandamentul SUA în Europa lansează o campanie de vigilență pe fondul amenințărilor hibride tot mai mari; Military Times, 6 noiembrie 2026 — aceeași campanie, relatată pentru personalul militar; SSBCrack News, 6 noiembrie 2026 — inițiativa „See Something, Do Something”, pe fondul îngrijorărilor de securitate; Stars and Stripes (relatat de The Record) — campania lansată pe 3 noiembrie, cu detalii despre recomandări.</p>
-            <ul class="sources">
-              <li><a href="https://www.defensenews.com/news/2026/11/06/us-european-command-launches-vigilance-campaign-as-hybrid-threats-mount/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Defense News — „US European Command launches vigilance campaign as hybrid threats mount" (6 nov 2026)<span class="host">defensenews.com</span></a></li>
-              <li><a href="https://www.militarytimes.com/news/your-military/2026/11/06/us-european-command-launches-vigilance-campaign-as-hybrid-threats-mount/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Military Times — „US European Command launches vigilance campaign as hybrid threats mount" (6 nov 2026)<span class="host">militarytimes.com</span></a></li>
-              <li><a href="https://news.ssbcrack.com/u-s-european-command-launches-see-something-do-something-initiative-amid-security-concerns/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>SSBCrack News — „U.S. European Command launches ‘See Something, Do Something’ initiative amid security concerns" (6 nov 2026)<span class="host">news.ssbcrack.com</span></a></li>
-              <li><a href="https://therecorddaily.com/eu-bases-on-edge-what-changed/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Stars and Stripes, relatat de The Record — campania lansată pe 3 noiembrie, cu detalii despre recomandări<span class="host">therecorddaily.com</span></a></li>
-            </ul>
-          </div>
-
-          <div class="impact">
-            <span class="badge">Impact direct</span>
-            <p>Impact direct: minim azi — campania se adresează personalului american, nu lui direct; nicio acțiune imediată. Relevanță profesională directă: protecția forței și amenințările hibride în Europa sunt exact mediul lui operațional; de urmărit dacă apar măsuri similare la nivelul Alianței.</p>
-          </div>
-        </article>
-
-        <!-- 4 · 7 nov · 17:00 -->
-        <article id="stire-101" data-cats="tech" data-sev="amber" data-subiect="midterms SUA și Big Tech">
-          <div class="a-meta">
-            <span class="a-time">7 nov · 17:00</span>
-            <span class="a-cat">Tech &amp; AI</span>
-            <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
-            <a class="cont-pill" href="#stire-49" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
-            <span class="subj-pill">midterms SUA și Big Tech</span>
-            <span class="a-num">#4 / 16</span>
-          </div>
-          <h2>După victoria democraților la alegerile de la jumătatea mandatului, Big Tech se pregătește de reglementări mai dure pe AI: moratorii pe centre de date și anchete în Congres</h2>
-
-          <div class="followup">
-            <span class="tag">Urmare la</span>
-            <p><a href="#stire-49">„Votanții americani au respins centrele de date AI la alegerile de la jumătatea mandatului: restricții în zeci de localități, Ohio în frunte"</a> — miercuri, 5 noiembrie 2026, ora 06:00.</p>
-          </div>
-
-          <div class="sec">
-            <p class="sec-label">Ce s-a întâmplat</p>
-            <p>După alegerile de la jumătatea mandatului din 3 noiembrie, în care democrații au câștigat controlul Congresului, marile companii de tehnologie — care în ultimii doi ani s-au apropiat de președintele Trump — încearcă acum să refacă legăturile cu democrații, care au promis o supraveghere mai strictă a AI, relatează TechCrunch (7 nov 2026). Moratoriile pe centrele de date câștigă teren, iar un val de proiecte de lege de reglementare a AI așteaptă să fie redactat. OpenAI a angajat-o chiar înainte de alegeri pe Jessica Schumer, fiica liderului democrat din Senat, Chuck Schumer. Miercuri, a doua zi după alegeri, o vânzare de un trilion de dolari pe bursă i-a speriat pe investitori, iar unii reevaluează acum IPO-ul anunțat al Anthropic.</p>
-          </div>
-
-          <div class="sec">
-            <p class="sec-label">De ce contează</p>
-            <p>E continuarea directă a cardului de miercuri (5 nov, 06:00): votanții au respins centrele de date AI în zeci de localități, iar acum presiunea se mută de la urne la Congres. Pentru el: direcția reglementării AI și a infrastructurii de centre de date privește direct ecosistemul pe care își construiește automatizările — modele și API-uri AI, costuri per token, disponibilitatea capacității de calcul; o frânare a expansiunii centrelor de date poate schimba prețurile și ritmul lansărilor. De urmărit: proiectele de lege din noul Congres (sesiunea începe în ianuarie) și moratoriile la nivel de stat (Texas, Georgia, New Mexico).</p>
-          </div>
-
-          <div class="verify">
-            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
-            <p>Verdict: confirmat. TechCrunch — „From the front row to the hot seat — what the midterms mean for Big Tech" (7 nov 2026, 04:16 UTC): victoria democraților, moratoriile pe centre de date, proiectele de lege de reglementare a AI; PYMNTS (4 nov, actualizat 6 nov) — victoria democraților ar putea încetini extinderea AI și a centrelor de date; Fast Company (5 nov) — 38 din 39 de restricții pe centre de date au trecut la vot; MLQ.ai (5 nov) — proiectul de lege Sanders–Ocasio-Cortez privind un moratoriu federal pe centrele de date; Seoul Economic Daily (7 nov) — anxietatea piețelor privind reglementarea centrelor de date persistă după alegeri.</p>
-            <ul class="sources">
-              <li><a href="https://techcrunch.com/2026/11/06/from-the-front-row-to-the-hot-seat-what-the-midterms-mean-for-big-tech/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>TechCrunch — „From the front row to the hot seat — what the midterms mean for Big Tech" (7 nov 2026)<span class="host">techcrunch.com</span></a></li>
-              <li><a href="https://www.pymnts.com/news/artificial-intelligence/2026/democratic-sweep-could-slow-ai-build-out/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>PYMNTS — victoria democraților ar putea încetini extinderea AI și a centrelor de date (4 nov 2026, actualizat 6 nov)<span class="host">pymnts.com</span></a></li>
-              <li><a href="https://www.fastcompany.com/91635809/the-midterm-elections-biggest-loser-data-centers?partner=rss&amp;utm_source=rss&amp;utm_medium=feed&amp;utm_campaign=rss+fastcompany&amp;utm_content=rss" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Fast Company — „The midterm elections' biggest loser: data centers" (5 nov 2026)<span class="host">fastcompany.com</span></a></li>
-              <li><a href="https://mlq.ai/news/democrats-data-center-moratorium-push-gains-momentum-after-midterms-but-congress-remains-a-long-shot/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>MLQ.ai — „Democrats' data center moratorium push gains momentum after midterms, but Congress remains a long shot" (5 nov 2026)<span class="host">mlq.ai</span></a></li>
-            </ul>
-          </div>
-
-          <div class="opposing">
-            <p class="sec-label">Tabăra adversă</p>
-            <p>Casa Albă susține legislația concurentă, axată pe protecția plătitorilor de energie și pe continuarea extinderii AI, nu pe moratoriu — un moratoriu federal amplu rămâne greu de adoptat chiar și cu controlul democrat al Congresului (<a href="https://mlq.ai/news/democrats-data-center-moratorium-push-gains-momentum-after-midterms-but-congress-remains-a-long-shot/" target="_blank" rel="noopener">mlq.ai</a>).</p>
-          </div>
-
-          <div class="impact">
-            <span class="badge">Impact direct</span>
-            <p>Impact direct: minim azi — nicio acțiune imediată. Relevanță de context: direcția reglementării AI în SUA și costurile infrastructurii de calcul, cu efect posibil asupra prețurilor API-urilor și a ritmului lansărilor de modele; de urmărit proiectele de lege din noul Congres (din ianuarie) și moratoriile la nivel de stat.</p>
-          </div>
-        </article>
-
-        <!-- 5 · 7 nov · 17:00 -->
-        <article id="stire-102" data-cats="belgia" data-sev="amber" data-subiect="percheziții la domiciliu în Belgia">
-          <div class="a-meta">
-            <span class="a-time">7 nov · 17:00</span>
-            <span class="a-cat">Belgia</span>
-            <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
-            <span class="subj-pill">percheziții la domiciliu în Belgia</span>
-            <span class="a-num">#5 / 16</span>
-          </div>
-          <h2>Parlamentul belgian a aprobat perchezițiile la domiciliu pentru migranții în situație ilegală — lege controversată, votată în plină criză de guvern</h2>
-
-          <div class="sec">
-            <p class="sec-label">Ce s-a întâmplat</p>
-            <p>Camera Reprezentanților a aprobat vineri dimineață, în jurul orei 05:00, după o dezbatere care a durat toată noaptea, o lege care permite poliției, însoțită de funcționari ai Oficiului pentru Străini, să intre în locuințe între 05:00 și 09:00 pentru a reține persoane cărora li s-a respins cererea de azil, care au ignorat ordinul de părăsire a țării și sunt considerate o amenințare la adresa ordinii publice sau a securității naționale. Fiecare intrare trebuie aprobată în prealabil de un judecător de instrucție, care are 7 zile să decidă; judecătorul poate impune condiții când sunt prezenți minori. Ministrul Azilului și Migrației, Anneleen Van Bossuyt, a numit legea „istorică". Miercuri seară, circa 3.000 de oameni au format un lanț uman în jurul Palatului de Justiție din Bruxelles, în semn de protest.</p>
-          </div>
-
-          <div class="sec">
-            <p class="sec-label">De ce contează</p>
-            <p>Trăiește în Belgia: legea extinde puterea statului de a intra în locuințe private — chiar și cu garanția aprobării unui judecător — și e un precedent important pentru statul de drept belgian. A fost adoptată în aceeași săptămână în care regele a respins demisia premierului De Wever și a cerut reluarea negocierilor pe buget (cardul de vineri, 13:00). De urmărit: evaluarea legii la 18 luni de la intrarea în vigoare, inclusiv impactul asupra minorilor.</p>
-          </div>
-
-          <div class="verify">
-            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
-            <p>Verdict: confirmat. Reuters (6 nov 2026) — votul din jurul orei 05:00, condițiile, intervalul 05:00–09:00, lanțul uman de circa 3.000 de oameni; InfoMigrants (6 nov 2026) — garanțiile introduse la cererea Les Engagés și relatarea The Brussels Times despre votul în plină criză de guvern; Belga (6 nov 2026, via Europe Says) — amendamentele pentru protecția minorilor și votul; Brussels Morning (6 nov 2026) — evaluarea la 18 luni de la intrarea în vigoare.</p>
-            <ul class="sources">
-              <li><a href="https://duke.fm/2026/11/06/belgium-to-allow-home-searches-for-suspected-illegal-migrants/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Reuters via Duke FM — „Belgium to allow home searches for suspected illegal migrants" (6 nov 2026)<span class="host">duke.fm</span></a></li>
-              <li><a href="https://www.infomigrants.net/en/post/74608/belgium-approves-home-raids-for-migration-enforcement" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>InfoMigrants — „Belgium approves home raids for migration enforcement" (6 nov 2026)<span class="host">infomigrants.net</span></a></li>
-              <li><a href="https://www.europesays.com/3355853/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Belga via Europe Says — amendamentele pentru protecția minorilor și votul (6 nov 2026)<span class="host">europesays.com</span></a></li>
-              <li><a href="https://brusselsmorning.com/belgium-migrant-home-searches/106463/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Brussels Morning — „Belgium migrant home searches" (6 nov 2026)<span class="host">brusselsmorning.com</span></a></li>
-            </ul>
-          </div>
-
-          <div class="opposing">
-            <p class="sec-label">Tabăra adversă</p>
-            <p>Amnesty International a îndemnat parlamentarii să respingă proiectul, avertizând asupra consecințelor pentru persoanele care îi ajută pe migranții fără acte; organizațiile pentru drepturile omului și avocații avertizează că perchezițiile la domiciliu pentru aplicarea legii migrației riscă să submineze drepturile constituționale și viața privată (<a href="https://www.byteseu.com/2502881/" target="_blank" rel="noopener">byteseu.com</a>).</p>
-          </div>
-
-          <div class="impact">
-            <span class="badge">Impact direct</span>
-            <p>Impact direct: minim azi — legea nu îl vizează personal. Relevanță de context pentru viața în Belgia și pentru climatul politic din țara de rezidență; de urmărit evaluarea la 18 luni de la intrarea în vigoare, inclusiv impactul asupra minorilor.</p>
-          </div>
-        </article>
-
-        <!-- 6 · 7 nov · 16:00 -->
-        <article id="stire-100" data-cats="securitate" data-sev="green" data-subiect="mine navale în Marea Baltică">
-          <div class="a-meta">
-            <span class="a-time">7 nov · 16:00</span>
-            <span class="a-cat">Securitate &amp; NATO</span>
-            <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
-            <span class="subj-pill">mine navale în Marea Baltică</span>
-            <span class="a-num">#6 / 16</span>
-          </div>
-          <h2>Danemarca și Lituania cumpără mine navale „Blocker" din Finlanda, prin schema comună de achiziții a NATO din Marea Baltică</h2>
-
-          <div class="sec">
-            <p class="sec-label">Ce s-a întâmplat</p>
-            <p>Danemarca a semnat pe 5 noiembrie un acord de achiziție a minelor navale finlandeze „Blocker", produse de Forcit Defence, la o zi după ce Lituania și-a confirmat propriul contract pentru același sistem. Achizițiile se fac în cadrul Naval Mines Cooperation, schema comună de achiziții condusă de Finlanda, în care Finlanda și Estonia folosesc deja mina; Germania și Norvegia participă la schemă, dar nu și-au anunțat încă public contractele. Contractul-cadru semnat în iunie de armata finlandeză, în numele celor cinci țări, valorează „sute de milioane de euro", potrivit guvernului finlandez; numărul de mine și costul pe țară nu au fost făcute publice.</p>
-          </div>
-
-          <div class="sec">
-            <p class="sec-label">De ce contează</p>
-            <p>Achizițiile comune între aliați cresc interoperabilitatea — minele au aceeași configurație, cu diferențe naționale doar în programarea operațională — și arată că apărarea maritimă revine ca prioritate de descurajare în nordul Europei. Pentru un IT incident Manager care urmărește apărarea NATO, e context direct de pe flancul nordic, în paralel cu arcul Mării Negre deja urmărit în pagină (România a accelerat în octombrie combaterea minelor marine); Belgia se numără printre cele zece țări semnatare ale declarației de intenție din 2024 care a lansat cooperarea.</p>
-          </div>
-
-          <div class="verify">
-            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
-            <p>Verdict: confirmat. Defense News, 6 noiembrie 2026 — relatare proprie; Army Recognition, 6 noiembrie — anunțul danez din 5 noiembrie și modulul containerizat Cube de minare prezentat la Euronaval 2026; Nordic Defence Sector — comunicatul agenției daneze de achiziții pentru apărare DALO din 5 noiembrie; presa lituaniană LRT/BNS — contractul Lituaniei cu Forcit, 4 noiembrie. Notă de integritate: confirmările pornesc de la anunțurile ministerelor danez și lituanian al apărării.</p>
-            <ul class="sources">
-              <li><a href="https://www.defensenews.com/global/europe/2026/11/06/denmark-lithuania-latest-baltic-navies-to-buy-blocker-mines-through-finnish-scheme/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Defense News — „Denmark, Lithuania latest Baltic navies to buy Blocker mines through Finnish scheme" (6 nov 2026)<span class="host">defensenews.com</span></a></li>
-              <li><a href="https://www.armyrecognition.com/news/navy-news/2026/denmarks-sh-group-showcases-containerized-cube-naval-mine-laying-system-to-turn-patrol-ships-into-minelayers" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Army Recognition — „Denmark's SH Group showcases containerized Cube naval mine laying system to turn patrol ships into minelayers" (6 nov 2026)<span class="host">armyrecognition.com</span></a></li>
-              <li><a href="https://nordicdefencesector.com/en/article/swedens-minister-for-defence-thanks-the-crew-of-hms-rapp-for-drone-operation" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Nordic Defence Sector — comunicatul agenției daneze de achiziții pentru apărare DALO (5 nov 2026)<span class="host">nordicdefencesector.com</span></a></li>
-            </ul>
-          </div>
-
-          <div class="impact">
-            <span class="badge">Impact direct</span>
-            <p>Impact direct: minim — relevanță de context. Nicio acțiune imediată necesară.</p>
-          </div>
-        </article>
-
-        <!-- 7 · 7 nov · 15:00 -->
-        <article id="stire-99" data-cats="romania" data-sev="green" data-subiect="austeritate buget 2027 România">
-          <div class="a-meta">
-            <span class="a-time">7 nov · 15:00</span>
-            <span class="a-cat">România</span>
-            <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
-            <a class="cont-pill" href="#stire-91" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
-            <span class="subj-pill">austeritate buget 2027 România</span>
-            <span class="a-num">#7 / 16</span>
-          </div>
-          <h2>Niculescu cere tuturor ministerelor planuri de reducere a cheltuielilor până la sfârșitul săptămânii viitoare; bugetul pe 2027, gata în circa o lună</h2>
-
-          <div class="followup">
-            <span class="tag">Urmare la</span>
-            <p><a href="#stire-91">„Nazare avertizează: România riscă „cartonașul roșu" de la agențiile de rating dacă bugetul pe 2027 nu e credibil"</a> — sâmbătă, 7 noiembrie 2026, ora 09:00.</p>
-          </div>
-
-          <div class="sec">
-            <p class="sec-label">Ce s-a întâmplat</p>
-            <p>Premierul Luca Niculescu a anunțat sâmbătă, într-o conferință de presă la Cernavodă, că a dat instrucțiuni în ședința de Guvern ca fiecare minister și fiecare instituție să prezinte planuri concrete de reducere a cheltuielilor, cu primele propuneri așteptate până la sfârșitul săptămânii viitoare. A spus că nu se va aplica o rețetă unică — „faceți toți în modul X sau în modul Y" — și că măsurile trebuie adaptate fiecărui domeniu; ministrul Energiei, Dumitru Chisăliță, prezent la conferință, a subliniat același lucru. Premierul a reiterat că Guvernul nu dorește majorarea taxelor anul viitor și că propunerile miniștrilor — inclusiv cea a ministrului Agriculturii, Florin Barbu, de plafonare a adaosului comercial la toate alimentele, nu doar la cele de bază — vor fi evaluate abia când vor fi adunate în proiectul de buget. Întrebat cu cât vor fi indexate pensiile în 2027, a răspuns că va ști exact în momentul elaborării bugetului, adică în aproximativ o lună.</p>
-          </div>
-
-          <div class="sec">
-            <p class="sec-label">De ce contează</p>
-            <p>E continuarea directă a avertismentului ministrului Finanțelor din această dimineață — risc de retrogradare a ratingului dacă bugetul pe 2027 nu e credibil: guvernul răspunde cu austeritate în aparatul propriu înainte de a cere sacrificii altora, iar bugetul trebuie aprobat până la finele anului. Pentru el: expunerile fiscale din România — investiția recurentă în TVBETETF (piața RO), apartamentul din București cu credit ipotecar, implementarea legii CEI — depind de credibilitatea bugetului și de direcția fiscală din 2027. De urmărit: primele planuri de economii ale ministerelor (sfârșitul săptămânii viitoare) și proiectul de buget (peste circa o lună).</p>
-          </div>
-
-          <div class="verify">
-            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
-            <p>Verdict: confirmat. G4Media (7 nov 2026, relatare citată de Știri Clare) — propunerile miniștrilor, evaluate la adunarea proiectului de buget; fără majorări de taxe anul viitor; indexarea pensiilor, cunoscută la elaborarea bugetului, în circa o lună. Știri pe Foc (7 nov 2026, 13:48) — instrucțiunile date în ședința de Guvern, primele propuneri până la finalul săptămânii viitoare. Jurnal Club (7 nov 2026) — conferința de presă de la Cernavodă, bugetul 2027 de aprobat până la finele lui 2026. RO24TV (7 nov 2026) — austeritatea în toate ministerele, planuri concrete până la sfârșitul săptămânii viitoare.</p>
-            <ul class="sources">
-              <li><a href="https://stiriclare.ro/ro/premierul-luca-niculescu-spune-ca-propunerile-ministrilor-pentru.html" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Știri Clare — „Premierul Luca Niculescu spune că propunerile miniștrilor pentru buget vor fi evaluate ulterior" (7 nov 2026, relatează G4Media)<span class="host">stiriclare.ro</span></a></li>
-              <li><a href="https://stiripefoc.ro/stiri/luca-niculescu-a-cerut-ministerelor-planuri-de-reducere-a-cheltuielilor" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Știri pe Foc — „Luca Niculescu a cerut ministerelor planuri de reducere a cheltuielilor" (7 nov 2026)<span class="host">stiripefoc.ro</span></a></li>
-              <li><a href="https://www.jurnal.club/articol/luca-niculescu-cere-reducerea-cheltuielilor-in-ministere" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Jurnal Club — „Luca Niculescu cere reducerea cheltuielilor în ministere" (7 nov 2026)<span class="host">jurnal.club</span></a></li>
-              <li><a href="https://ro24tv.ro/luca-niculescu-impune-austeritatea-in-toate-ministerele/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>RO24TV — „Luca Niculescu impune austeritatea în toate ministerele" (7 nov 2026)<span class="host">ro24tv.ro</span></a></li>
-            </ul>
-          </div>
-
-          <div class="impact">
-            <span class="badge">Impact direct</span>
-            <p>Impact direct: minim azi — nicio acțiune imediată. Relevanță de context: credibilitatea bugetului României pe 2027, cu efect asupra expunerilor lui fiscale din România (investiția recurentă în TVBETETF, apartamentul din București, legea CEI); de urmărit planurile ministerelor la sfârșitul săptămânii viitoare și proiectul de buget peste circa o lună.</p>
-          </div>
-        </article>
-
-        <!-- 8 · 7 nov · 14:00 -->
-        <article id="stire-98" data-cats="tech" data-sev="green" data-subiect="Spaces în Muse">
-          <div class="a-meta">
-            <span class="a-time">7 nov · 14:00</span>
-            <span class="a-cat">Tech &amp; AI</span>
-            <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
-            <span class="subj-pill">Spaces în Muse</span>
-            <span class="a-num">#8 / 16</span>
-          </div>
-          <h2>Meta lansează Spaces în Muse: descrii o idee în chat, iar agentul îți construiește un spațiu dedicat — tracker, planner sau tablou de proiect</h2>
-
-          <div class="sec">
-            <p class="sec-label">Ce s-a întâmplat</p>
-            <p>Meta a lansat vineri, 6 noiembrie, Spaces în aplicația Muse: conversații dedicate, pe câte un singur subiect, care stau în bara laterală și pe care Meta le numește „custom experiences". Descrii o idee în chat, iar Muse construiește spațiul — un tracker, un planner sau un tablou de proiect — pe care îl poți rafina după aceea, fixa în sidebar sau în taburi, ascunde sau programa când apare. Spațiile se pot conecta la aplicații terțe și se actualizează singure în fundal — date noi de evenimente, schimbări de preț, progres la economii — fără să mai întrebi. Mark Zuckerberg a anunțat funcția pe X, spunând că și-a făcut deja un joc BBQ, un tracker de evenimente și un dashboard de control al casei.</p>
-          </div>
-
-          <div class="sec">
-            <p class="sec-label">De ce contează</p>
-            <p>Își organizează deja munca cu Muse prin spații dedicate pe subiect — Vinted, cheltuieli, dashboarduri — iar Spaces e exact mecanismul oficial pentru asta: un spațiu persistent pe subiect, nu un chat care se pierde în istoric. E a doua funcție Muse lansată într-o săptămână, după Muse Voice (apeluri video cu avatarul, joi, 5 noiembrie), iar agenții Muse ajunseseră la 10 milioane de utilizatori în SUA și Canada la mai puțin de două luni de la lansare. De reținut din relatări: Meta n-a publicat lista aplicațiilor care se pot conecta și nici detalii despre fiabilitatea, limitele sau costurile spațiilor, iar partajarea unui spațiu cu alți utilizatori e doar în studiu, fără dată.</p>
-          </div>
-
-          <div class="verify">
-            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
-            <p>Verdict: confirmat. TechCrunch (6 nov 2026) — Meta introduce Spaces, un nou mod de a colabora cu agentul Muse; Digital Trends (6 nov 2026) — Muse permite acum construirea de mini-aplicații personalizate în aplicație; FourWeekMBA (7 nov 2026) — citează anunțul oficial Meta „Design the Muse App, Just for You" (6 nov); The Verge — relatare despre lansare, citată de MeteoraWeb. Sursă primară: anunțul Meta din 6 noiembrie și postarea lui Mark Zuckerberg pe X, în aceeași zi.</p>
-            <ul class="sources">
-              <li><a href="https://techcrunch.com/2026/11/06/meta-introduces-spaces-a-new-way-to-collaborate-with-your-muse-agent/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>TechCrunch — „Meta introduces Spaces, a new way to collaborate with your Muse agent" (6 nov 2026)<span class="host">techcrunch.com</span></a></li>
-              <li><a href="https://www.digitaltrends.com/phones/metas-now-lets-you-build-custom-mini-app-experiences-in-the-muse-app/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Digital Trends — „Meta now lets you build custom mini-app experiences in the Muse app" (6 nov 2026)<span class="host">digitaltrends.com</span></a></li>
-              <li><a href="https://fourweekmba.com/ai-metas-muse-now-builds-custom-mini-apps-called-spaces/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>FourWeekMBA — „Meta's Muse now builds custom mini-apps called Spaces" (7 nov 2026)<span class="host">fourweekmba.com</span></a></li>
-            </ul>
-          </div>
-
-          <div class="impact">
-            <span class="badge">Impact direct</span>
-            <p>Impact direct practic, fără urgență: spațiile lui existente (Vinted, Cheltuieli) sunt exact tipul de utilizare pe care Meta îl oficializează acum; merită testat un Space nou la următorul tracker, ca să vadă dacă actualizarea automată din aplicații conectate chiar funcționează. Nicio acțiune imediată și niciun termen.</p>
-          </div>
-        </article>
-
-        <!-- 9 · 7 nov · 13:00 -->
-        <article id="stire-97" data-cats="romania" data-sev="green" data-subiect="repornirea Unității 1 Cernavodă">
-          <div class="a-meta">
-            <span class="a-time">7 nov · 13:00</span>
-            <span class="a-cat">România</span>
-            <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
-            <a class="cont-pill" href="#stire-42" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
-            <span class="subj-pill">repornirea Unității 1 Cernavodă</span>
-            <span class="a-num">#9 / 16</span>
-          </div>
-          <h2>Unitatea 1 de la Cernavodă a fost repornită după circa 100 de zile de oprire: pierderi de aproximativ un miliard de lei; decizia pentru Unitatea 2, luni</h2>
-
-          <div class="followup">
-            <span class="tag">Urmare la</span>
-            <p><a href="#stire-42">„Nuclearelectrica a început repornirea Unității 1 de la Cernavodă: reconectarea la rețea, estimată vineri, 6 noiembrie; Unitatea 2 rămâne dependentă de Dunăre"</a> — miercuri, 4 noiembrie 2026, ora 16:00.</p>
-          </div>
-
-          <div class="sec">
-            <p class="sec-label">Ce s-a întâmplat</p>
-            <p>Unitatea 1 a Centralei de la Cernavodă a fost repornită vineri seară, după aproximativ 100 de zile în care nu a produs energie din cauza debitului scăzut al Dunării, și urmează să ajungă la capacitatea maximă de producție în următoarele 24 de ore, potrivit premierului Luca Niculescu, aflat sâmbătă la Cernavodă alături de ministrul Energiei, Dumitru Chisăliță. Reactorul, de circa 700 MW, asigură aproximativ 8% din producția energetică a țării și funcționa sâmbătă la 50% din capacitate. Premierul a estimat pierderile din ultimele trei luni la aproximativ un miliard de lei, circa 200 de milioane de euro. Pentru Unitatea 2, luni va avea loc o analiză privind stadiul reactorului și posibilitatea repornirii, fără un termen avansat.</p>
-          </div>
-
-          <div class="sec">
-            <p class="sec-label">De ce contează</p>
-            <p>Securitatea energetică a României pentru iarnă: centrala a lipsit trei luni din sistem, în stare de alertă energetică din 1 august, iar guvernul tocmai a pus pregătirea energetică pentru iarnă printre priorități. Pentru el: familie în Giurgiu și București și vacanța de Crăciun (22–31 decembrie) în România — o rețea electrică stabilă în plină iarnă contează direct pentru ei. În paralel, Nuclearelectrica pregătește retehnologizarea Unității 1, care va prelungi exploatarea reactorului cu încă 30 de ani, cu o oprire planificată în 2027–2030, când sistemul va pierde temporar circa 700 MW.</p>
-          </div>
-
-          <div class="verify">
-            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
-            <p>Verdict: confirmat. Forbes.ro (7 nov 2026, 13:14) — repornirea de vineri seară, 50% din capacitate acum și 100% în 24 de ore, pierderi de circa un miliard de lei, decizia pentru Unitatea 2 luni (relatare pe baza Agerpres); Cotidianul HD (7 nov 2026) — vizita premierului la Cernavodă și stadiul celor două unități; 7biz (4 nov 2026) — programul Transelectrica: repornire vineri 6 noiembrie, putere nominală sâmbătă seară.</p>
-            <ul class="sources">
-              <li><a href="https://www.forbes.ro/unitatea-1-a-centralei-de-la-cernavoda-a-fost-repornita-530500" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Forbes.ro — „Unitatea 1 a Centralei de la Cernavodă a fost repornită" (7 nov 2026)<span class="host">forbes.ro</span></a></li>
-              <li><a href="https://cotidianulhd.ro/repornirea-reactorului-1-de-la-cernavoda-ce-se-intampla-cu-unitatea-2/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Cotidianul HD — „Repornirea reactorului 1 de la Cernavodă. Cât am pierdut în ultimele trei luni" (7 nov 2026)<span class="host">cotidianulhd.ro</span></a></li>
-              <li><a href="https://7biz.ro/stire/unitatea-1-de-la-cernavoda-reporneste-vineri-dupa-mai-bine-de-trei-luni-de-oprire-centrala-va-ajunge-la-puterea-nominala-sambata-seara" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>7biz — „Unitatea 1 de la Cernavodă repornește vineri, după mai bine de trei luni de oprire" (4 nov 2026)<span class="host">7biz.ro</span></a></li>
-            </ul>
-          </div>
-
-          <div class="impact">
-            <span class="badge">Impact direct</span>
-            <p>Impact direct: minim azi — nicio acțiune imediată. Relevanță de context: energia României pentru iarnă, cu familia în țară și vacanța de Crăciun în România; de urmărit decizia de luni privind Unitatea 2 și evoluția debitului Dunării.</p>
-          </div>
-        </article>
-
-        <!-- 10 · 7 nov · 12:00 -->
-<article id="stire-95" data-cats="securitate belgia" data-sev="amber" data-subiect="atacul cibernetic la Finanțele belgiene continuă">
-<div class="a-meta">
-<span class="a-time">7 nov · 12:00</span>
-<span class="a-cat">Belgia · Securitate cibernetică</span>
-<span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
-<span class="subj-pill">atacul cibernetic la Finanțele belgiene continuă</span>
-<span class="a-num">#10 / 16</span>
-</div>
-<h2>Atacul cibernetic la Finanțele belgiene continuă să blocheze firmele noi: serviciile online sunt încă oprite, la zece zile de la incident</h2>
-<div class="sec">
-<p class="sec-label">Ce s-a întâmplat</p>
-<p>The Brussels Times scrie azi, 7 noiembrie (10:21), că atacul cibernetic asupra Serviciului Public Federal Finanțe (SPF Finances) continuă să blocheze înființarea de firme noi: serviciile online ale fiscului sunt încă oprite, la zece zile de la incident. Atacul a început în noaptea de 27 spre 28 octombrie, când atacatorii au pătruns în mediul IT al instituției; administrația a izolat sistemele potențial compromise și a scos offline portalul MyMinfin, Tax-on-web și Biztax. Purtătorul de cuvânt Francis Adyns a declarat atunci că atacul a fost oprit în câteva ore, fără ca atacatorii să preia controlul aplicațiilor sau să ajungă la date, și că nu există indicii de scurgere de date. Termenele de depunere a declarațiilor scadente în jurul datei de 31 octombrie au fost prelungite până pe 16 noiembrie.</p>
-</div>
-<div class="sec">
-<p class="sec-label">De ce contează</p>
-<p>Un incident de securitate cibernetică la o instituție publică belgiană, ajuns la zece zile de întrerupere a serviciilor online — direct pe terenul profesional al unui IT incident Manager, în țara în care locuiește cu familia. Faptul că înființarea de firme noi rămâne blocată arată că impactul operațional se adâncește, nu se rezolvă: serviciile trebuie reconstruite într-un mediu izolat, un proces care durează. Pentru el personal, termenele fiscale prelungite până pe 16 noiembrie rămân valabile; nicio acțiune imediată.</p>
-</div>
-<div class="verify">
-<p class="sec-label">Verificare <span class="status">Sursă unică</span></p>
-<p>Verdict: sursă unică pentru noutatea de azi — faptul că serviciile sunt încă oprite și firmele noi rămân blocate apare, deocamdată, doar la The Brussels Times. Incidentul din 28 octombrie este confirmat independent: The Register (29 oct 2026) — atacul confirmat de SPF Finances, MyMinfin și alte servicii scoase offline, termene prelungite până pe 16 noiembrie; Orbitax (2 nov 2026) — prelungirea generală a termenelor după incidentul de securitate cibernetică.</p>
-<ul class="sources">
-<li><a href="https://www.brusselstimes.com/belgium/2396404/finance-ministry-cyberattack-continues-to-halt-new-businesses" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>The Brussels Times — „Finance Ministry cyberattack continues to halt new businesses" (7 nov 2026)<span class="host">brusselstimes.com</span></a></li>
-<li><a href="https://www.theregister.com/security/2026/10/29/belgiums-tax-agency-confirms-cyberattack-pulls-services-offline/5306409" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>The Register — „Belgium's tax agency confirms cyberattack, pulls services offline" (29 oct 2026)<span class="host">theregister.com</span></a></li>
-<li><a href="https://orbitax.com/news/country/article/Update---Belgium-Provides-Gene-63426" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Orbitax — „Update - Belgium Provides General Deadline Extension Following Cybersecurity Incident" (2 nov 2026)<span class="host">orbitax.com</span></a></li>
-</ul>
-</div>
-<div class="impact">
-<span class="badge">Impact direct</span>
-<p>Impact direct: minim azi — nicio acțiune imediată. Termenele fiscale prelungite până la 16 noiembrie rămân în vigoare; de urmărit anunțul repunerii în funcțiune a MyMinfin. Relevanță profesională directă: un incident guvernamental de securitate cibernetică, cu întrerupere de servicii de zece zile, în Belgia.</p>
-</div>
-</article>
-
-        <!-- 11 · 7 nov · 12:00 -->
-<article id="stire-96" data-cats="securitate" data-sev="amber" data-subiect="atac masiv al Rusiei asupra Kievului">
-<div class="a-meta">
-<span class="a-time">7 nov · 12:00</span>
-<span class="a-cat">Securitate &amp; NATO</span>
-<span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
-<span class="subj-pill">atac masiv al Rusiei asupra Kievului</span>
-<span class="a-num">#11 / 16</span>
-</div>
-<h2>Atac masiv al Rusiei asupra Kievului: 172 de drone și 36 de rachete au lovit podul de nord și infrastructura energetică, cu trei zile înainte de discuțiile de la Abu Dhabi</h2>
-<div class="sec">
-<p class="sec-label">Ce s-a întâmplat</p>
-<p>În noaptea de 6 spre 7 noiembrie, Rusia a lansat asupra Kievului și regiunii 172 de drone de atac — dintre care 137 cu reacție — și 36 de rachete balistice și de alt tip (Iskander-M, Zircon, KN-23 și S-400), potrivit Forțelor Aeriene ucrainene. Apărarea antiaeriană a interceptat 149 de drone și 4 rachete. Au fost lovite podul de nord peste Nipru, clădiri rezidențiale, o grădiniță și infrastructura energetică; părți ale capitalei au rămas fără curent, încălzire și apă. Președintele Zelenski a anunțat un mort și opt răniți, printre care un copil; primarul Vitali Kliciko a confirmat loviturile asupra podului de nord. Ministerul rus al Apărării a confirmat atacul și susține că țintele au fost din sectorul militar-industrial și din infrastructura energetică și de transport.</p>
-</div>
-<div class="sec">
-<p class="sec-label">De ce contează</p>
-<p>Un atac amplu asupra Kievului — trei valuri de rachete balistice, inclusiv hipersonice Zircon, și lovituri asupra unui pod-cheie peste Nipru — vine cu trei zile înainte de discuțiile trilaterale SUA–Ucraina–Rusia de la Abu Dhabi (10–11 noiembrie), pe fondul respingerii europene a planului SUA–Rusia (cardul de azi, 11:00). Escaladarea chiar înaintea negocierilor arată că Moscova își întărește poziția prin forță. Pentru el: relevanță directă pe arcul securității europene urmărit în pagină; impact direct minim, fără acțiune imediată.</p>
-</div>
-<div class="verify">
-<p class="sec-label">Verificare <span class="status">Confirmat</span></p>
-<p>Verdict: confirmat. Reuters (7 nov 2026, 07:31 UTC) — Moscova spune că a lovit ținte din sectorul militar-industrial și din infrastructura energetică și de transport din Kiev și împrejurimi; Forțele Aeriene ucrainene (7 nov) — 172 de drone și 36 de rachete lansate, 149 de drone și 4 rachete interceptate; președintele Zelenski (7 nov) — bilanțul atacului și pagubele. Nuanță: G4Media titrează „peste 450 de drone”, cifră care nu apare în bilanțurile oficiale ucrainene (172 de drone) — cardul folosește cifrele oficiale, confirmate de Reuters și de Forțele Aeriene.</p>
-<ul class="sources">
-<li><a href="https://www.g4media.ro/atac-masiv-al-rusiei-asupra-kievului-cu-peste-450-de-drone-si-30-de-rachete-pagube-la-infrastructura-civila-si-la-ambasada-azerbaidjanului-seful-onu-condamna-bombardamentul.html" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>G4Media — „Atac masiv al Rusiei asupra Kievului, cu peste 450 de drone și 30 de rachete" (7 nov 2026)<span class="host">g4media.ro</span></a></li>
-<li><a href="https://985theriver.com/2026/11/07/russia-says-it-hit-targets-in-and-around-kyiv-in-massive-overnight-strike/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Reuters — „Russia says it hit targets in and around Kyiv in massive overnight strike" (7 nov 2026) [republicare Reuters]<span class="host">985theriver.com</span></a></li>
-<li><a href="https://www.europesays.com/russia/86031/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>UNITED24 Media — „Russia Launches Three Waves of Ballistic Missiles at Kyiv Ahead of Trilateral Peace Talks" (7 nov 2026)<span class="host">europesays.com</span></a></li>
-</ul>
-</div>
-<div class="opposing">
-<p class="sec-label">Tabăra adversă</p>
-<p>Ministerul rus al Apărării susține că loviturile au vizat complexul militar-industrial și infrastructura energetică și de transport: podul de nord, pe care Moscova îl descrie drept rută de transport pentru armament și echipamente militare, și uzina Meridian, despre care Rusia afirmă că produce rachete de croazieră Flamingo (<a href="https://985theriver.com/2026/11/07/russia-says-it-hit-targets-in-and-around-kyiv-in-massive-overnight-strike/" target="_blank" rel="noopener">985theriver.com — republicare Reuters</a>).</p>
-</div>
-<div class="impact">
-<span class="badge">Impact direct</span>
-<p>Impact direct: minim azi — nicio acțiune imediată. Relevanță directă pe firul negocierilor de pace urmărit în pagină: discuțiile trilaterale de la Abu Dhabi sunt programate pe 10–11 noiembrie; de urmărit dacă escaladarea schimbă pozițiile la masă.</p>
-</div>
-</article>
-
-        <!-- 12 · 7 nov · 11:00 -->
-        <article id="stire-94" data-cats="securitate" data-sev="amber" data-subiect="securitatea Europei negociată fără Europa">
-          <div class="a-meta">
-            <span class="a-time">7 nov · 11:00</span>
-            <span class="a-cat">Securitate &amp; NATO</span>
-            <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
-            <a class="cont-pill" href="#stire-77" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
-            <span class="subj-pill">securitatea Europei negociată fără Europa</span>
-            <span class="a-num">#12 / 16</span>
-          </div>
-          <h2>Europa respinge planul SUA–Rusia pentru o nouă arhitectură de securitate: aliații NATO n-au fost informați dinainte, iar Kallas spune că Putin „nu are drept de veto"</h2>
-
-          <div class="followup">
-            <span class="tag">Urmare la</span>
-            <p><a href="#stire-77">„Kushner propune cinci obiective pentru o «arhitectură de securitate europeană» mai amplă, înaintea discuțiilor trilaterale de la Abu Dhabi"</a> — vineri, 6 noiembrie 2026, ora 11:00.</p>
-          </div>
-
-          <div class="sec">
-            <p class="sec-label">Ce s-a întâmplat</p>
-            <p>POLITICO a vorbit cu 12 diplomați NATO, trimiși ai UE și oficiali guvernamentali europeni: propunerea administrației Trump pentru un nou aranjament european de securitate cu Rusia — anunțată de președintele Trump după întâlnirea de joi cu emisarul lui Putin, Kirill Dmitriev, și detaliată de Jared Kushner în cinci obiective — a fost primită cu scepticism în capitalele europene. Trei diplomați ai alianței au spus că aliații NATO nu au fost informați în prealabil despre planurile americane. Vineri, la Varșovia, șefa diplomației UE, Kaja Kallas, a respins ideea renegocierii arhitecturii de securitate cu Moscova: „Avem deja o arhitectură europeană de securitate", referindu-se la NATO și UE, și a spus că Putin „nu are drept de veto asupra securității europene".</p>
-          </div>
-
-          <div class="sec">
-            <p class="sec-label">De ce contează</p>
-            <p>Continuă direct firul urmărit ieri în pagină — cele cinci obiective ale lui Kushner (cardul de vineri, 11:00) și sesiunea extraordinară a Consiliului NATO–Ucraina (16:00). Miza depășește Ucraina: unii aliați se tem că Washingtonul ar putea lega inițiativa de revizuirea prezenței militare americane în Europa, așteptată în decembrie. Discuțiile trilaterale SUA–Ucraina–Rusia sunt programate pe 10–11 noiembrie la Abu Dhabi, iar o reuniune informală a liderilor UE la Dublin, săptămâna viitoare, va fi probabil dominată de acest subiect.</p>
-          </div>
-
-          <div class="verify">
-            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
-            <p>Verdict: confirmat. POLITICO Europe — „Jared Kushner's European security plan isn't convincing Europe" (6 nov 2026, 19:14 UTC), pe baza a 12 diplomați NATO, trimiși ai UE și oficiali guvernamentali europeni; CNN — „Trump teases 'big, beautiful' European security deal after meeting Putin envoy" (6 nov 2026), cu declarația lui Zelenski că planul „nu e simplu și poate fi periculos"; Reuters — declarațiile Kallasei de la Varșovia („Putin does not have a veto over European security"); RFE/RL — cele cinci obiective detaliate de Kushner; Financial Times (6 nov) — capitalele europene, alarmate de perspectiva renașterii cererilor rusești de limitare a prezenței NATO în Europa de Est.</p>
-            <ul class="sources">
-              <li><a href="https://www.europesays.com/europe/176072/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>POLITICO — „Jared Kushner's European security plan isn't convincing Europe" (6 nov 2026) [republicare integrală a textului POLITICO]<span class="host">europesays.com</span></a></li>
-              <li><a href="https://www.cnn.com/2026/11/06/politics/trump-ukraine-europe-deal-putin-envoy-intl" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>CNN — „Trump teases 'big, beautiful' European security deal after meeting Putin envoy" (6 nov 2026)<span class="host">cnn.com</span></a></li>
-              <li><a href="https://zot.news/article/white-house-outlines-european-security-plan-ahead-ukraine-j1itz" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Zotpaper — sinteză cu citate din POLITICO Europe și RFE/RL (6–7 nov 2026)<span class="host">zot.news</span></a></li>
-              <li><a href="https://eutoday.net/trumps-russia-security-proposal/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>EU Today — relatare cu citate din Reuters și Financial Times (7 nov 2026)<span class="host">eutoday.net</span></a></li>
-            </ul>
-          </div>
-
-          <div class="opposing">
-            <p class="sec-label">Tabăra adversă</p>
-            <p>Jared Kushner, emisarul special al lui Trump, susține că obiectivul este „să se dezvolte aranjamente practice care să răspundă preocupărilor de securitate ale tuturor părților, să reducă riscul unui conflict viitor și să creeze un mediu de securitate mai stabil și mai previzibil" — cele cinci obiective anunțate de el pe 5 noiembrie (<a href="https://www.cnn.com/2026/11/06/politics/trump-ukraine-europe-deal-putin-envoy-intl" target="_blank" rel="noopener">cnn.com</a>). Un oficial al guvernului german a spus că ideile noi ale administrației Trump se bazează pe negocierile din ultimele luni.</p>
-          </div>
-
-          <div class="impact">
-            <span class="badge">Impact direct</span>
-            <p>Impact direct: minim azi — nicio acțiune imediată. Relevanță profesională directă: arhitectura de securitate a Europei și revizuirea prezenței militare americane pe continent privesc direct domeniul securității aliate; de urmărit discuțiile trilaterale de la Abu Dhabi (10–11 noiembrie) și reuniunea informală a liderilor UE de la Dublin, săptămâna viitoare. Pentru familie și finanțe — relevanță de context, fără impact imediat.</p>
-          </div>
-        </article>
-
-        <!-- 13 · 7 nov · 10:00 -->
-        <article id="stire-93" data-cats="tech" data-sev="amber" data-subiect="finanțare OpenAI">
-          <div class="a-meta">
-            <span class="a-time">7 nov · 10:00</span>
-            <span class="a-cat">Tech &amp; AI</span>
-            <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
-            <a class="cont-pill" href="#stire-73" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
-            <span class="subj-pill">finanțare OpenAI</span>
-            <span class="a-num">#13 / 16</span>
-          </div>
-          <h2>OpenAI a închis prima tranșă de 11 mld $ din noua rundă, la o evaluare de 1,25 trilioane $ — cu o treime mai puțin decât cerea inițial</h2>
-
-          <div class="followup">
-            <span class="tag">Urmare la</span>
-            <p><a href="#stire-73">„OpenAI ar putea fi gata de IPO în 2027: veniturile din enterprise au devenit majoritare"</a> — vineri, 6 noiembrie 2026, ora 06:00.</p>
-          </div>
-
-          <div class="sec">
-            <p class="sec-label">Ce s-a întâmplat</p>
-            <p>OpenAI a încasat circa 11 mld $ ca primă parte a noii runde de finanțare, la o evaluare de 1,25 trilioane $, potrivit Bloomberg, citat de TechCrunch pe 6 noiembrie 2026. Banii au fost deja virați companiei, iar runda rămâne deschisă și ar putea ajunge la circa 20 mld $ în total în săptămânile următoare. La sfârșitul lui septembrie OpenAI cerea 30 mld $ la o evaluare de 1,4 trilioane $, deci runda care se închide acum e mai mică și mai ieftină decât cea pusă inițial pe masă; compania amânase deja planurile de listare la bursă din acest an.</p>
-          </div>
-
-          <div class="sec">
-            <p class="sec-label">De ce contează</p>
-            <p>Continuă direct arcul economiei AI urmărit toată săptămâna în pagină — după datele Ramp de ieri (cheltuielile cu AI stagnează, creșterea a fost de doar 1,5% în august–septembrie față de 42% în iulie) și după coborârea evaluării discutate pentru Anthropic la 1,2–1,3 trilioane $, de la 2 trilioane $ estimate la începutul lui octombrie. Pentru cine construiește automatizări pe API-uri AI, semnalul e că boomul de infrastructură AI se răcește și că furnizorii lui de modele își strâng cureaua; pentru investiții, contextul e vânzarea de miercuri de pe bursele americane, când acțiunile AI au căzut pe fondul temerilor de reglementare după alegerile de la jumătatea mandatului.</p>
-          </div>
-
-          <div class="verify">
-            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
-            <p>Verdict: confirmat. TechCrunch — „OpenAI reportedly raises an additional $11 billion at a $1.25 trillion valuation" (6 nov 2026); Bloomberg — raportarea inițială a noii finanțări, pe surse familiare cu subiectul (prin TechCrunch); Reuters — confirmare prin sursă proprie, cu SoftBank și MGX printre participanții la prima închidere (relatat de AI Frontier Post, 6 nov 2026); SiliconANGLE — „OpenAI reportedly raises $11B in new funding at $1.25T valuation" (6 nov 2026). OpenAI nu a publicat un comunicat propriu despre termenii rundei și nu a comentat.</p>
-            <ul class="sources">
-              <li><a href="https://techcrunch.com/2026/11/06/openai-reportedly-raises-an-additional-11-billion-at-a-1-25-trillion-valuation/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>TechCrunch — „OpenAI reportedly raises an additional $11 billion at a $1.25 trillion valuation" (6 nov 2026)<span class="host">techcrunch.com</span></a></li>
-              <li><a href="https://aifrontierpost.com/articles/openai-11b-first-close-1-25t-valuation/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Reuters — confirmare prin sursă proprie, cu SoftBank și MGX printre participanții la prima închidere (relatat de AI Frontier Post, 6 nov 2026)<span class="host">aifrontierpost.com</span></a></li>
-              <li><a href="https://siliconangle.com/2026/11/06/openai-reportedly-raises-11b-in-new-funding-at-1-25t-valuation/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>SiliconANGLE — „OpenAI reportedly raises $11B in new funding at $1.25T valuation" (6 nov 2026)<span class="host">siliconangle.com</span></a></li>
-            </ul>
-          </div>
-
-          <div class="impact">
-            <span class="badge">Impact direct</span>
-            <p>Impact direct: minim azi — nicio acțiune imediată. Relevanță de context: evaluarea OpenAI rămâne cu circa 47% peste cea din martie (852 mld $), dar runda tăiată de la 30 la 20 mld $ și evaluarea coborâtă de la 1,4 la 1,25 trilioane $ arată că investitorii nu mai plătesc orice preț pentru AI; de urmărit dacă răcirea se transmite în prețurile API-urilor și în ritmul lansărilor de modele pe care le folosește zilnic.</p>
-          </div>
-        </article>
-
-        <!-- 14 · 7 nov · 09:00 -->
-        <article id="stire-91" data-cats="romania" data-sev="amber" data-subiect="rating România 2027">
-          <div class="a-meta">
-            <span class="a-time">7 nov · 09:00</span>
-            <span class="a-cat">România</span>
-            <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
-            <span class="subj-pill">rating România 2027</span>
-            <span class="a-num">#14 / 16</span>
-          </div>
-          <h2>Nazare avertizează: România riscă „cartonașul roșu" de la agențiile de rating dacă bugetul pe 2027 nu e credibil</h2>
-
-          <div class="sec">
-            <p class="sec-label">Ce s-a întâmplat</p>
-            <p>Ministrul Finanțelor, Alexandru Nazare, a avertizat vineri, 6 noiembrie, la Concordia Summit 2026, că România riscă o retrogradare directă a ratingului de țară — „cartonașul roșu" — dacă bugetul pe 2027 nu va fi credibil și realist. După „cartonașele galbene" primite de la agențiile de rating în vară, a spus el, următorul semnal ar putea veni direct sub forma unei retrogradări, fără un nou avertisment: „Nu mai are nimeni răbdare cu noi". Scenariul de lucru al bugetului pornește de la un deficit de 5% din PIB în 2027, cu ținta reducerii deficitului cu câte 1 punct procentual pe an, timp de trei ani; ministrul a reconfirmat eliminarea impozitului minim pe cifra de afaceri (IMCA) din 2027 și a exclus taxe noi.</p>
-          </div>
-
-          <div class="sec">
-            <p class="sec-label">De ce contează</p>
-            <p>România are unul dintre cele mai mari deficite din UE, iar o retrogradare ar scumpi finanțarea statului și ar putea apăsa pe piața românească și pe dobânzi — relevant direct pentru investiția recurentă în TVBETETF și pentru contextul proprietății din București. Anul 2027 e prezentat de ministru ca anul deciziei pentru revenirea la o perspectivă stabilă de rating.</p>
-          </div>
-
-          <div class="verify">
-            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
-            <p>Verdict: confirmat. G4Media (6 noiembrie 2026); ZF — „Agențiile de rating nu ne vor mai da încă o dată cartonaș galben. Vom primi direct cartonaș roșu"; Economedia; Mediafax; Antena 3 CNN — toate relatează aceeași avertizare a ministrului, rostită la Concordia Summit 2026.</p>
-            <ul class="sources">
-              <li><a href="https://www.analisteconomic.ro/economie/avertisment-de-la-nazare-romania-risca-scaderea-ratingului-daca-bugetul-pentru-2027-nu-este-credibil" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Analist Economic — „Avertisment de la Nazare: România riscă scăderea ratingului dacă bugetul pentru 2027 nu este credibil"<span class="host">analisteconomic.ro</span></a></li>
-              <li><a href="https://roadevar.ro/ro/noutati-roadevar/nazare-romania-risca-cartonas-rosu-agentii-rating-2026" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Roadevar — „Nazare: România riscă cartonaș roșu de la agențiile de rating"<span class="host">roadevar.ro</span></a></li>
-              <li><a href="https://condica.ro/stire/nazare-avertizeaza-ca-un-buget-necredibil-pentru-2027-poate-afecta-rat" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Condica — agregator cu cele 18 surse originale<span class="host">condica.ro</span></a></li>
-            </ul>
-          </div>
-
-          <div class="impact">
-            <span class="badge">Impact direct</span>
-            <p>Impact direct azi: minim — avertisment, nu decizie a agențiilor. De urmărit: a doua rectificare bugetară și construcția bugetului pe 2027, în săptămânile următoare; o retrogradare ar lovi direct economiile populației, dobânzile și capacitatea companiilor de a investi.</p>
-          </div>
-        </article>
-
-        <!-- 15 · 7 nov · 09:00 -->
-        <article id="stire-92" data-cats="tech" data-sev="green" data-subiect="centre de date AI">
-          <div class="a-meta">
-            <span class="a-time">7 nov · 09:00</span>
-            <span class="a-cat">Tech &amp; AI</span>
-            <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
-            <span class="subj-pill">centre de date AI</span>
-            <span class="a-num">#15 / 16</span>
-          </div>
-          <h2>Google preia de la Crusoe proiectul neterminat de centru de date din Wyoming și investește 17 mld $</h2>
-
-          <div class="sec">
-            <p class="sec-label">Ce s-a întâmplat</p>
-            <p>Crusoe, dezvoltator american de centre de date evaluat recent la 30,9 mld $, a confirmat vineri, 6 noiembrie, că a vândut către Google proiectul neterminat de centru de date din sud-estul Wyoming. Google — pe care Crusoe încercase fără succes să-l atragă drept client al proiectului — preia dezvoltarea după ce și-a exprimat îngrijorări privind costurile și calendarul construcției sub managementul Crusoe. Google nu a dezvăluit prețul plătit pentru șantier, dar a anunțat o investiție de 17 mld $ pentru dezvoltarea campusului, gândit inițial să ajungă la 10 GW capacitate. Crusoe continuă separat un alt centru de date pentru Google, lângă Amarillo, Texas. Atenție la cifre: cei 17 mld $ sunt investiția anunțată de Google în proiect, NU prețul de cumpărare al șantierului.</p>
-          </div>
-
-          <div class="sec">
-            <p class="sec-label">De ce contează</p>
-            <p>Semnal despre economia infrastructurii AI — giganții își asumă direct construcția centrelor de date, în loc să lase dezvoltatorii independenți, chiar în săptămâna în care datele Ramp arătau o temperare a cheltuielilor cu AI. Pentru cine își construiește automatizări pe ecosistemul Google/Gemini, direcția e clară: capacitatea de calcul rămâne prioritatea de investiții a hyperscalerilor.</p>
-          </div>
-
-          <div class="verify">
-            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
-            <p>Verdict: confirmat. TechCrunch (7 noiembrie 2026); Reuters — „Google acquires Wyoming data center site from AI infrastructure firm Crusoe" (6 noiembrie 2026); Bloomberg (a relatat primul posibila vânzare, în iunie 2026).</p>
-            <ul class="sources">
-              <li><a href="https://techcrunch.com/2026/11/06/crusoe-sells-troubled-wyoming-data-center-project-to-google/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>TechCrunch — „Crusoe sells troubled Wyoming data center project to Google" (7 noiembrie 2026)<span class="host">techcrunch.com</span></a></li>
-              <li><a href="https://www.reuters.com/business/google-acquires-wyoming-data-center-site-ai-infrastructure-firm-crusoe-2026-11-06/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Reuters — „Google acquires Wyoming data center site from AI infrastructure firm Crusoe" (6 noiembrie 2026)<span class="host">reuters.com</span></a></li>
-            </ul>
-          </div>
-
-          <div class="impact">
-            <span class="badge">Impact direct</span>
-            <p>Impact direct: minim — relevanță de context. Nicio acțiune imediată; de urmărit dacă modelul „hyperscalerul preia șantierul" se repetă și la alți dezvoltatori.</p>
-          </div>
-        </article>
-
-        <!-- 16 · 7 nov · 08:00 -->
-        <article id="stire-90" data-cats="tech" data-sev="green" data-subiect="TikTok acuzat de încălcarea DSA">
-          <div class="a-meta">
-            <span class="a-time">7 nov · 08:00</span>
-            <span class="a-cat">Tech &amp; AI</span>
-            <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
-            <span class="subj-pill">TikTok acuzat de încălcarea DSA</span>
-            <span class="a-num">#16 / 16</span>
-          </div>
-          <h2>Comisia Europeană acuză TikTok de încălcarea DSA: feedul „For You" ar crea „găuri de iepure" dăunătoare sănătății mintale — amendă posibilă de până la 6% din cifra de afaceri globală</h2>
-
-          <div class="sec">
-            <p class="sec-label">Ce s-a întâmplat</p>
-            <p>Pe 6 noiembrie 2026, Comisia Europeană a constatat preliminar că feedul „For You" al TikTok încalcă Digital Services Act (DSA), pentru că algoritmul de recomandare creează efectul de „găuri de iepure": cu cât un utilizator interacționează mai mult cu un tip de conținut — tristețe, izolare, imagine corporală — cu atât primește mai mult conținut similar, fără să poată ieși ușor din buclă. Comisia consideră că TikTok nu a evaluat adecvat acest risc și că măsurile luate până acum, de exemplu butonul „nu mă interesează", sunt ineficiente. Comisia cere reproiectarea feedului: mai multă greutate preferințelor explicite ale utilizatorului și renunțarea la timpul de vizionare ca semnal de recomandare. Este prima oară când Comisia vizează direct designul unui sistem de recomandare într-un caz DSA.</p>
-          </div>
-
-          <div class="sec">
-            <p class="sec-label">De ce contează</p>
-            <p>Este prima decizie DSA care atacă direct algoritmul de recomandare, nu conținutul — un precedent pentru toate platformele mari (Meta e deja investigată similar pentru Facebook și Instagram). Pentru familie, vizează exact mecanismul care ține copiii și adolescenții lipiți de ecran și care modelează cum vor arăta platformele când cresc copiii. Profesional, reglementarea algoritmilor de recomandare atinge direct terenul gestionării incidentelor și al sistemelor AI.</p>
-          </div>
-
-          <div class="verify">
-            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
-            <p>Verdict: sursă primară + confirmat. Comisia Europeană — constatări preliminare, referința IP/26/2361, 6 noiembrie 2026 (emitentul își anunță propria decizie, sursă primară); EFE — relatare proprie, 6 noiembrie 2026; BBC — relatare, 6 noiembrie 2026; Securities.io — relatare, 6 noiembrie 2026. Constatările sunt preliminare și nu prejudecă rezultatul final; TikTok poate consulta dosarul și răspunde în scris, iar nicio amendă nu a fost aplicată încă.</p>
-            <ul class="sources">
-              <li><a href="https://www.americanonewspaper.com/tik-tok-breaches-dsa/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>EFE — relatare proprie (6 noiembrie 2026)<span class="host">americanonewspaper.com</span></a></li>
-              <li><a href="https://bbc.bm/eu-charges-tiktok-over-harmful-algorithmic-rabbit-hole-effects" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>BBC — relatare (6 noiembrie 2026)<span class="host">bbc.bm</span></a></li>
-              <li><a href="https://www.securities.io/tiktok-recommendation-design-draws-preliminary-dsa-breach-findings/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Securities.io — relatare (6 noiembrie 2026)<span class="host">securities.io</span></a></li>
-            </ul>
-          </div>
-
-          <div class="opposing">
-            <p class="sec-label">Tabăra adversă</p>
-            <p>Un purtător de cuvânt TikTok susține că „Comisia a făcut o serie de afirmații fundamental inexacte, care distorsionează arhitectura platformei noastre și angajamentul nostru față de siguranța utilizatorilor" și că platforma „are un istoric solid în protejarea comunității, oferind utilizatorilor control direct și intuitiv asupra experienței de conținut" (<a href="https://www.execreview.com/2026/11/eu-charges-tiktok-with-failing-to-protect-users-mental-health/" target="_blank" rel="noopener">execreview.com</a>)</p>
-          </div>
-
-          <div class="impact">
-            <span class="badge">Impact direct</span>
-            <p>Impact direct: minim — relevanță de context. Nu cere nicio acțiune concretă de la cititor.</p>
-          </div>
-        </article>
-      </main>
-      </section>
-
-
-      
-
-
       <footer>
         <div class="rule" aria-hidden="true"></div>
-        <p>Sfârșitul ediției de azi · Ultima actualizare: sâmbătă, 14 noiembrie 2026, 09:00<br />Monitorizarea rulează la circa 3 ore, în fereastra L–V 06:00–22:00 · S–D 07:30–22:00 — dă refresh pentru noutăți.</p>
-        <a class="to-top" href="#stire-212">↑ Înapoi la cea mai nouă știre</a>
+        <p>Sfârșitul ediției de azi · Ultima actualizare: sâmbătă, 14 noiembrie 2026, 11:00<br />Monitorizarea rulează la circa 3 ore, în fereastra L–V 06:00–22:00 · S–D 07:30–22:00 — dă refresh pentru noutăți.</p>
+        <a class="to-top" href="#stire-214">↑ Înapoi la cea mai nouă știre</a>
       </footer>
     </div>
 
