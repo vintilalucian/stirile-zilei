@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="color-scheme" content="light dark" />
-    <meta name="tirile-versiune" content="2026-11-13T20:00:00+01:00|19|red" />
+    <meta name="tirile-versiune" content="2026-11-14T08:05:00+01:00|2|amber" />
     <link rel="icon" href="data:," />
     <title>Știrile zilei</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -699,9 +699,9 @@
     <div class="topbar">
       <div class="topbar-inner">
         <span class="dot" aria-hidden="true"></span>
-        <span><strong>Vineri, 13 noiembrie 2026</strong> · actualizat la <strong>20:00</strong></span>
+        <span><strong>Sâmbătă, 14 noiembrie 2026</strong> · actualizat la <strong>08:05</strong></span>
         <span aria-hidden="true">·</span>
-        <span>19 știri azi</span>
+        <span>2 știri azi</span>
         <span class="spacer"></span>
         <button class="refresh-btn" type="button" id="refreshBtn" aria-label="Reîmprospătează pagina">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg>
@@ -716,12 +716,12 @@
         <h1>Știrile zilei</h1>
         <div class="date-line">
           <span class="day">Ediția de azi</span>
-          <span>Vineri, 13 noiembrie 2026 · Europe/Brussels</span>
+          <span>Sâmbătă, 14 noiembrie 2026 · Europe/Brussels</span>
         </div>
         <p class="lede"><strong>Apasă pe un tile</strong> ca să filtrezi pagina — articole complete jos, cele mai noi primele.</p>
       </header>
 
-      <section class="day" id="zi-2026-11-13">
+      <section class="day" id="zi-2026-11-14">
       <!-- Fereastra „Ultimele știri" — sus, imediat deasupra chenarului
            „Știrea zilei", între masthead și chenar. Arată DOAR titlurile din
            cea mai recentă rulare (1–2), fiecare link la cardul ei (#stire-N).
@@ -736,6 +736,202 @@
         </div>
         <ul class="latest-list"></ul>
       </section>
+
+      <!-- Chenar permanent: știrea cea mai importantă a zilei — sub fereastra
+           „Ultimele știri", ÎNAINTEA dashboardului, vizibilă din prima, fără scroll.
+           Nivelul de azi: GALBEN (sev-amber) — de urmărit: FAA a oprit toate plecările din SUA timp de ~4 ore — a doua oprire națională de la 11 septembrie 2001 — știrea cu severitatea cea mai mare a zilei, marcată „Știrea zilei"; mai există o altă știre galbenă azi (ofițerul NATO arestat pentru spionaj, de la 08:00), de aceea apare mențiunea despre celelalte știri cu aceeași severitate, cu filtru pe galben la „apasă aici".
+           Chenarul rămâne în afara logicii de filtrare: vizibil indiferent de filtrul de categorie. -->
+      <section class="spot sev-amber" aria-label="Știrea cea mai importantă a zilei">
+        <div class="spot-head">
+          <span class="spot-kicker">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13 2 4.5 13.5H11L9.5 22 19 10h-6.5L13 2z"/></svg>
+            Știrea zilei · Atenție rapidă
+          </span>
+          <span class="spot-time">14 nov · 08:00</span>
+          <span class="spot-pill">Nivel galben — de urmărit</span>
+        </div>
+        <h2 class="spot-title">FAA a oprit toate plecările din SUA timp de ~4 ore — a doua oprire națională de la 11 septembrie 2001</h2>
+        <p class="spot-why"><strong>De ce e în față:</strong> incidentul aerian național din SUA — a doua oprire totală de la 11 septembrie 2001 — cu impact direct asupra călătoriilor și lecții de infrastructură critică.</p>
+        <p class="spot-lead">Vineri după-amiază, 13 noiembrie 2026, Administrația Federală a Aviației din SUA (FAA) a ordonat oprirea la sol a tuturor zborurilor cu plecare din Statele Unite, invocând „circumstanțe extraordinare" și motive de siguranță, din cauza unei pene de telecomunicații care a afectat centrele regionale de control al traficului aerian. Oprirea a durat circa patru ore și a fost ridicată în jurul orei 20:15 (ora Coastei de Est); peste 1.000 de zboruri au fost anulate și aproape 10.000 întârziate, potrivit FlightAware, citat de Reuters. Este doar a doua oprire națională de acest fel de la 11 septembrie 2001 (precedenta: 11 ianuarie 2023).</p>
+        <p class="spot-more"><span class="spot-more-text">Mai sunt și alte 1 știri cu aceeași severitate —</span> <button class="spot-more-btn" type="button" data-sev-value="amber">apasă aici</button></p>
+        <div class="spot-foot">
+          <a class="spot-link" href="#stire-210">Citește știrea completă ↓</a>
+          <div class="sev-scale" role="img" aria-label="Scară de gravitate: verde — normal, galben — de urmărit, roșu — grav. Nivelul de azi: galben.">
+            <span class="sev-item"><i class="sev-dot g" aria-hidden="true"></i>Verde · normal</span>
+            <span class="sev-item on"><i class="sev-dot y" aria-hidden="true"></i>Galben · de urmărit</span>
+            <span class="sev-item"><i class="sev-dot r" aria-hidden="true"></i>Roșu · grav</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Dashboard -->
+      <section class="dashboard" aria-label="Panou de ansamblu">
+        <div class="dash-head">
+          <span class="dash-title">Dashboard · Azi</span>
+          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 08:05</span>
+          <span class="dash-meta">Fereastră monitorizare <strong>L–V 06:00–22:00 · S–D 07:30–22:00</strong> · pas ~3 ore</span>
+        </div>
+
+        <div class="kpi-grid five" role="group" aria-label="Filtrează după categorie — apasă pe un tile">
+          <button class="kpi" type="button" data-filter="toate" aria-pressed="true">
+            <span class="kpi-top"><span class="kpi-label">Toate știrile</span><span class="kpi-check" aria-hidden="true">✓</span></span>
+            <span class="kpi-value">2</span>
+            <span class="kpi-sub">știri verificate azi, în 1 rulare</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:100%"></i></span>
+            <span class="kpi-hint">Apasă pentru toate</span>
+          </button>
+          <button class="kpi" type="button" data-filter="securitate" aria-pressed="false">
+            <span class="kpi-top"><span class="kpi-label">Securitate &amp; NATO</span><span class="kpi-check" aria-hidden="true">✓</span></span>
+            <span class="kpi-value">1</span>
+            <span class="kpi-sub">ofițer NATO arestat pentru spionaj</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:50%"></i></span>
+            <span class="kpi-hint">Apasă pentru a filtra →</span>
+          </button>
+          <button class="kpi" type="button" data-filter="romania" aria-pressed="false">
+            <span class="kpi-top"><span class="kpi-label">România</span><span class="kpi-check" aria-hidden="true">✓</span></span>
+            <span class="kpi-value">0</span>
+            <span class="kpi-sub"></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:0%"></i></span>
+            <span class="kpi-hint">Apasă pentru a filtra →</span>
+          </button>
+          <button class="kpi" type="button" data-filter="belgia" aria-pressed="false">
+            <span class="kpi-top"><span class="kpi-label">Belgia</span><span class="kpi-check" aria-hidden="true">✓</span></span>
+            <span class="kpi-value">0</span>
+            <span class="kpi-sub"></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:0%"></i></span>
+            <span class="kpi-hint">Apasă pentru a filtra →</span>
+          </button>
+          <button class="kpi" type="button" data-filter="tech" aria-pressed="false">
+            <span class="kpi-top"><span class="kpi-label">Tech &amp; AI</span><span class="kpi-check" aria-hidden="true">✓</span></span>
+            <span class="kpi-value">0</span>
+            <span class="kpi-sub"></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:0%"></i></span>
+            <span class="kpi-hint">Apasă pentru a filtra →</span>
+          </button>
+        </div>
+
+        <div class="dash-foot solo">
+          <div class="dash-panel">
+            <h3>Severitate — apasă un pătrat ca să vezi doar știrile de nivelul acela</h3>
+            <div class="sev-squares" role="group" aria-label="Filtrează după severitate — roșu, galben, verde"></div>
+          </div>
+        </div>
+      </section>
+
+      <div class="filter-status" aria-live="polite">
+        <span class="filter-label">Se afișează: <strong>Toate categoriile — 2 din 2 știri</strong></span>
+        <button class="filter-reset" type="button" hidden>Resetează filtrul</button>
+      </div>
+
+      <!-- Cuprinsul zilei — sub banda dashboard, înaintea cardurilor.
+           Generat de script din cardurile zilei curente: lista completă a
+           zilei, grupată pe ora publicării, cele mai noi primele; fiecare
+           titlu e link la cardul lui (#stire-N), iar antetul de oră al
+           fiecărui grup e buton de filtru pe rulare — aceeași logică pe care
+           o aveau barele „Ritmul zilei" (selecție unică; al doilea click pe
+           aceeași oră sau butonul de reset revine la toate; o selecție de oră
+           anulează filtrul de categorie și invers). Nu e pliabil: toate
+           grupurile de oră sunt extinse permanent, cu toate titlurile
+           vizibile — fără săgeți de pliere și fără buton de extindere.
+           Cuprinsul urmează filtrul activ, la fel ca și cardurile: la un
+           filtru de categorie, severitate sau oră arată doar rândurile
+           știrilor din selecția aceea, iar grupurile de oră rămase fără
+           nicio știre vizibilă se ascund; butonul „Toate" îl readuce la
+           toate titlurile zilei. Chenarul rămâne în afara filtrării. -->
+      <nav class="day-toc" aria-label="Cuprinsul zilei">
+        <div class="toc-head">
+          <h2>Cuprins</h2>
+          <span class="toc-count">cele mai noi primele · apasă pe o oră ca să filtrezi rularea, pe un titlu ca să sari la știre</span>
+        </div>
+        <div class="toc-groups"></div>
+      </nav>
+
+      <p class="empty">Nicio știre în această categorie azi.</p>
+
+      <main>
+        <!-- 1 · 14 nov · 08:00 -->
+          <article id="stire-210" data-cats="worldwide" data-sev="amber" data-subiect="blocaj aerian în SUA">
+            <div class="a-meta">
+              <span class="a-time">14 nov · 08:00</span>
+              <span class="a-cat">Worldwide / Transport aerian</span>
+              <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
+              <span class="spot-tag">Știrea zilei</span>
+              <span class="subj-pill">blocaj aerian în SUA</span>
+              <span class="a-num">#1 / 2</span>
+            </div>
+            <h2>FAA a oprit toate plecările din SUA timp de ~4 ore — a doua oprire națională de la 11 septembrie 2001</h2>
+            <div class="sec">
+              <p class="sec-label">Ce s-a întâmplat</p>
+              <p>Vineri după-amiază, 13 noiembrie 2026, Administrația Federală a Aviației din SUA (FAA) a ordonat oprirea la sol a tuturor zborurilor cu plecare din Statele Unite, invocând „circumstanțe extraordinare" și motive de siguranță. Cauza a fost o pană de telecomunicații care a afectat centrele regionale de control al traficului aerian (Air Route Traffic Control Centers). Oprirea a durat circa patru ore și a fost ridicată în jurul orei 20:15 (ora Coastei de Est); peste 1.000 de zboruri au fost anulate și aproape 10.000 întârziate, potrivit FlightAware, citat de Reuters. Este doar a doua oprire națională de acest fel de la 11 septembrie 2001 (precedenta: 11 ianuarie 2023).</p>
+              <p>Secretarul pentru Securitate Internă, Markwayne Mullin, a spus că nu există indicii că ar fi fost un act ostil, iar FBI nu crede că e vorba de un atac cibernetic; secretarul Transporturilor, Sean Duffy, a pus cauza pe seama echipamentelor vechi — comutatoare și routere suprasolicitate, linii de cupru din anii '80.</p>
+            </div>
+            <div class="sec">
+              <p class="sec-label">De ce contează</p>
+              <p>Incident major de infrastructură critică, cu lanț de eșec în cascadă pe un sistem vechi — exact tipul de incident pe care îl gestionează un IT incident Manager; plus relevanță de călătorie: zboară frecvent, iar FAA a cerut și Europei, prin Eurocontrol, să nu mai trimită zboruri spre SUA pe durata opririi.</p>
+            </div>
+            <div class="verify">
+              <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
+              <p>Verdict: confirmat. Reuters — „Old air traffic control equipment regularly disrupts US flights" (14 noiembrie 2026): echipamentele vechi de control al traficului aerian perturbă regulat zborurile din SUA, iar FlightAware numără peste 1.000 de zboruri anulate și aproape 10.000 întârziate. USA Today — „FAA's nationwide ground stop not 'another 9/11,' federal officials say": oficialii federali spun că oprirea națională nu a fost „un alt 11 septembrie" și că nu există indicii de atac cibernetic. Palm Beach Post — oprirea a lovit și aeroporturile din Florida. The Hindu Business Line — oprirea națională a urmat unei pene de comunicații în controlul traficului aerian. Sursa curatoriată (agenda): TechCrunch.</p>
+              <ul class="sources">
+                <li><a href="https://www.reuters.com/business/aerospace-defense/old-air-traffic-control-equipment-regularly-disrupts-us-flights-2026-11-14/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Reuters — „Old air traffic control equipment regularly disrupts US flights" (14 nov 2026)<span class="host">reuters.com</span></a></li>
+                <li><a href="https://www.usatoday.com/story/news/politics/2026/11/13/faa-ground-stop-no-threat-cyberattack/92767434007/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>USA Today — „FAA's nationwide ground stop not 'another 9/11,' federal officials say" (13 nov 2026)<span class="host">usatoday.com</span></a></li>
+                <li><a href="https://www.palmbeachpost.com/story/business/transportation/2026/11/13/flights-departing-us-airports-including-florida-grounded-faa/92765733007/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Palm Beach Post — zborurile cu plecare din aeroporturile SUA, inclusiv Florida, oprite la sol de FAA (13 nov 2026)<span class="host">palmbeachpost.com</span></a></li>
+                <li><a href="https://www.thehindubusinessline.com/economy/logistics/us-grounds-all-flights-nationwide-after-air-traffic-control-communication-outage/article71700537.ece" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>The Hindu Business Line — „US grounds all flights nationwide after air traffic control communication outage"<span class="host">thehindubusinessline.com</span></a></li>
+                <li><a href="https://techcrunch.com/2026/11/13/u-s-government-grounds-all-flights-across-the-united-states-due-to-extraordinary-cirumstances/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>TechCrunch — sursa curatoriată (agenda): guvernul SUA oprește la sol toate zborurile din Statele Unite din „circumstanțe extraordinare" (13 nov 2026)<span class="host">techcrunch.com</span></a></li>
+              </ul>
+            </div>
+            <div class="impact">
+              <span class="badge">Impact direct</span>
+              <p>Impact direct: minim — relevanță de context. Nicio călătorie în SUA planificată azi; efectele se resimt însă în programul zborurilor transatlantice din weekend. Lecția de incident management: un sistem vechi, cu echipamente suprasolicitate, poate cădea simultan peste tot — iar cauza exactă a suprasolicitării încă nu a fost stabilită de autorități.</p>
+            </div>
+          </article>
+
+        <!-- 2 · 14 nov · 08:00 -->
+          <article id="stire-211" data-cats="securitate" data-sev="amber" data-subiect="ofițer NATO arestat pentru spionaj">
+            <div class="a-meta">
+              <span class="a-time">14 nov · 08:00</span>
+              <span class="a-cat">Securitate &amp; NATO</span>
+              <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
+              <span class="subj-pill">ofițer NATO arestat pentru spionaj</span>
+              <span class="a-num">#2 / 2</span>
+            </div>
+            <h2>Ofițer american de la un comandament NATO din Marea Britanie, arestat sub acuzația că încerca să spioneze pentru Rusia</h2>
+            <div class="sec">
+              <p class="sec-label">Ce s-a întâmplat</p>
+              <p>Locotenent-colonelul Brandon Carroll Tyner, 41 de ani, ofițer de resurse umane în Armata SUA, repartizat la Imjin Barracks (Gloucestershire), sediul Corpului Aliat de Reacție Rapidă al NATO, a fost arestat marți, 10 noiembrie, lângă Gloucester, într-o operațiune sub acoperire a poliției britanice de combatere a terorismului, împreună cu FBI și armata americană. Este suspectat de infracțiuni în baza secțiunilor 1 și 3 din Legea britanică a Securității Naționale din 2023 (obținerea/divulgarea de informații protejate și sprijinirea unui serviciu străin de informații), iar acuzațiile vizează Rusia. Armata SUA l-a identificat oficial vineri, 13 noiembrie; autoritățile britanice urmează să-l pună sub acuzare duminică sau luni, după care SUA intenționează să-l judece după Codul Uniform de Justiție Militară.</p>
+            </div>
+            <div class="sec">
+              <p class="sec-label">De ce contează</p>
+              <p>Amenințare internă (insider threat) chiar într-un comandament NATO — exact terenul profesional al unui IT incident Manager; cazul vine la o săptămână după alerta Bundeswehr privind sabotajul și pe fondul campaniei hibride rusești în Europa.</p>
+            </div>
+            <div class="verify">
+              <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
+              <p>Verdict: confirmat. Defense News (sursa curatoriată) — „US Army names officer held on 'allegations of espionage'" (13 noiembrie 2026): armata americană îl numește oficial pe ofițerul reținut sub acuzații de spionaj. USA Today — arestarea militarului american suspectat că spiona pentru Rusia. AP, via KXL — ofițerul urmează să fie pus sub acuzare în Marea Britanie, potrivit unui oficial. Glasgow Times / PA — militarul american staționat în Marea Britanie, suspectat de spionaj pentru Rusia, numit oficial de armata SUA.</p>
+              <ul class="sources">
+                <li><a href="https://www.defensenews.com/global/europe/2026/11/13/us-army-names-officer-held-on-allegations-of-espionage/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Defense News — „US Army names officer held on 'allegations of espionage'" (13 nov 2026; sursa curatoriată)<span class="host">defensenews.com</span></a></li>
+                <li><a href="https://www.usatoday.com/story/news/world/2026/11/12/us-soldier-arrest-spying-russia/92749374007/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>USA Today — militar american arestat sub acuzația de spionaj pentru Rusia (12 nov 2026)<span class="host">usatoday.com</span></a></li>
+                <li><a href="https://www.kxl.com/us-officer-accused-of-russian-spying-is-set-to-be-charged-in-uk-official-says/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>AP, via KXL — „US officer accused of Russian spying is set to be charged in UK, official says"<span class="host">kxl.com</span></a></li>
+                <li><a href="https://www.glasgowtimes.co.uk/news/national/26729048.uk-based-american-soldier-suspected-spying-russia-named-us-military/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Glasgow Times / PA — militarul american din Marea Britanie, suspectat de spionaj pentru Rusia, numit de armata SUA<span class="host">glasgowtimes.co.uk</span></a></li>
+              </ul>
+            </div>
+            <div class="opposing">
+              <p class="sec-label">Tabăra adversă</p>
+              <p><strong>Kremlinul</strong> — prin purtătorul de cuvânt Dmitri Peskov, a negat orice legătură cu ofițerul și a spus că Rusia nu are nimic de-a face cu arestarea. (<a href="https://www.kxl.com/us-officer-accused-of-russian-spying-is-set-to-be-charged-in-uk-official-says/" target="_blank" rel="noopener">AP, via KXL</a>)</p>
+            </div>
+            <div class="impact">
+              <span class="badge">Impact direct</span>
+              <p>Impact direct: minim — relevanță profesională de context înaltă. Un oficial american a precizat că nu se crede că vreo informație ar fi ajuns la autoritățile ruse și că anchetatorii l-au oprit înainte de orice transfer; acuzațiile nu sunt o condamnare, iar motivul presupus nu a fost făcut public. De urmărit: punerea sub acuzare (duminică/luni) și ce informații ar fi vizat.</p>
+            </div>
+          </article>
+
+      </main>
+      </section>
+
+      <section class="day day-archive" id="zi-2026-11-13">
+        <div class="day-head">
+          <h2>Vineri, 13 noiembrie 2026</h2>
+          <span>Ediția de ieri · 19 știri · arhivă (ultimele 7 zile)</span>
+        </div>
 
       <!-- Chenar permanent: știrea cea mai importantă a zilei — sub fereastra
            „Ultimele știri", ÎNAINTEA dashboardului, vizibilă din prima, fără scroll.
@@ -6301,8 +6497,8 @@
 
       <footer>
         <div class="rule" aria-hidden="true"></div>
-        <p>Sfârșitul ediției de azi · Ultima actualizare: vineri, 13 noiembrie 2026, 19:00<br />Monitorizarea rulează la circa 3 ore, în fereastra L–V 06:00–22:00 · S–D 07:30–22:00 — dă refresh pentru noutăți.</p>
-        <a class="to-top" href="#stire-207">↑ Înapoi la cea mai nouă știre</a>
+        <p>Sfârșitul ediției de azi · Ultima actualizare: sâmbătă, 14 noiembrie 2026, 08:05<br />Monitorizarea rulează la circa 3 ore, în fereastra L–V 06:00–22:00 · S–D 07:30–22:00 — dă refresh pentru noutăți.</p>
+        <a class="to-top" href="#stire-210">↑ Înapoi la cea mai nouă știre</a>
       </footer>
     </div>
 
