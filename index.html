@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="color-scheme" content="light dark" />
-    <meta name="tirile-versiune" content="2026-11-14T20:00:00+01:00|16|amber" />
+    <meta name="tirile-versiune" content="2026-11-14T21:00:00+01:00|17|amber" />
     <link rel="icon" href="data:," />
     <title>Știrile zilei</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -699,9 +699,9 @@
     <div class="topbar">
       <div class="topbar-inner">
         <span class="dot" aria-hidden="true"></span>
-        <span><strong>Sâmbătă, 14 noiembrie 2026</strong> · actualizat la <strong>20:00</strong></span>
+        <span><strong>Sâmbătă, 14 noiembrie 2026</strong> · actualizat la <strong>21:00</strong></span>
         <span aria-hidden="true">·</span>
-        <span>10 știri azi</span>
+        <span>17 știri azi</span>
         <span class="spacer"></span>
         <button class="refresh-btn" type="button" id="refreshBtn" aria-label="Reîmprospătează pagina">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg>
@@ -739,7 +739,7 @@
 
       <!-- Chenar permanent: știrea cea mai importantă a zilei — sub fereastra
            „Ultimele știri", ÎNAINTEA dashboardului, vizibilă din prima, fără scroll.
-           Nivelul de azi: GALBEN (sev-amber) — de urmărit: SUA au pus pe masă retragerea Ucrainei din Donbas în schimbul aderării la NATO, spune Zelenski — prima dată când Washingtonul ridică ideea, marcată „Știrea zilei"; mai există alte 10 știri galbene azi, de aceea apare mențiunea despre celelalte știri cu aceeași severitate, cu filtru pe galben la „apasă aici".
+           Nivelul de azi: GALBEN (sev-amber) — de urmărit: SUA au pus pe masă retragerea Ucrainei din Donbas în schimbul aderării la NATO, spune Zelenski — prima dată când Washingtonul ridică ideea, marcată „Știrea zilei"; mai există alte 11 știri galbene azi, de aceea apare mențiunea despre celelalte știri cu aceeași severitate, cu filtru pe galben la „apasă aici".
            Chenarul rămâne în afara logicii de filtrare: vizibil indiferent de filtrul de categorie. -->
       <section class="spot sev-amber" aria-label="Știrea cea mai importantă a zilei">
         <div class="spot-head">
@@ -753,7 +753,7 @@
         <h2 class="spot-title">SUA au pus pe masă retragerea Ucrainei din Donbas în schimbul aderării la NATO, spune Zelenski — prima dată când Washingtonul ridică ideea</h2>
         <p class="spot-why"><strong>De ce e în față:</strong> pentru prima dată, Washingtonul ar fi pus pe masă aderarea Ucrainei la NATO în schimbul Donbasului — NATO revine pe agenda negocierilor de pace, iar asta poate remodela arhitectura de securitate a Flancului estic, zona lui profesională directă.</p>
         <p class="spot-lead">Președintele Volodimir Zelenski a dezvăluit sâmbătă, 14 noiembrie, că negociatorii americani Jared Kushner și Steve Witkoff au întrebat, pentru prima dată, dacă Ucraina ar fi dispusă să-și retragă trupele din Donbas în schimbul aderării la NATO: „The Americans raised a question: 'What if Ukraine joins NATO? Would Ukraine withdraw from Donbas?' This was the first time this had been raised". Întrebarea a venit după două zile de negocieri mediate de SUA la Abu Dhabi și după întâlnirile separate ale emisarilor cu Putin la Moscova și cu Zelenski la Dublin.</p>
-        <p class="spot-more"><span class="spot-more-text">Mai sunt și alte 10 știri cu aceeași severitate —</span> <button class="spot-more-btn" type="button" data-sev-value="amber">apasă aici</button></p>
+        <p class="spot-more"><span class="spot-more-text">Mai sunt și alte 11 știri cu aceeași severitate —</span> <button class="spot-more-btn" type="button" data-sev-value="amber">apasă aici</button></p>
         <div class="spot-foot">
           <a class="spot-link" href="#stire-215">Citește știrea completă ↓</a>
           <div class="sev-scale" role="img" aria-label="Scară de gravitate: verde — normal, galben — de urmărit, roșu — grav. Nivelul de azi: galben.">
@@ -768,15 +768,15 @@
       <section class="dashboard" aria-label="Panou de ansamblu">
         <div class="dash-head">
           <span class="dash-title">Dashboard · Azi</span>
-          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 20:00</span>
+          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 21:00</span>
           <span class="dash-meta">Fereastră monitorizare <strong>L–V 06:00–22:00 · S–D 07:30–22:00</strong> · pas ~3 ore</span>
         </div>
 
         <div class="kpi-grid five" role="group" aria-label="Filtrează după categorie — apasă pe un tile">
           <button class="kpi" type="button" data-filter="toate" aria-pressed="true">
             <span class="kpi-top"><span class="kpi-label">Toate știrile</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">16</span>
-            <span class="kpi-sub">știri verificate azi, în 11 rulări</span>
+            <span class="kpi-value">17</span>
+            <span class="kpi-sub">știri verificate azi, în 12 rulări</span>
             <span class="kpi-bar" aria-hidden="true"><i style="width:100%"></i></span>
             <span class="kpi-hint">Apasă pentru toate</span>
           </button>
@@ -819,7 +819,7 @@
       </section>
 
       <div class="filter-status" aria-live="polite">
-        <span class="filter-label">Se afișează: <strong>Toate categoriile — 16 din 16 știri</strong></span>
+        <span class="filter-label">Se afișează: <strong>Toate categoriile — 17 din 17 știri</strong></span>
         <button class="filter-reset" type="button" hidden>Resetează filtrul</button>
       </div>
 
@@ -849,7 +849,45 @@
       <p class="empty">Nicio știre în această categorie azi.</p>
 
       <main>
-                <!-- 1 · 14 nov · 20:00 -->
+        <!-- 1 · 14 nov · 21:00 -->
+          <article id="stire-226" data-cats="worldwide" data-sev="amber" data-subiect="cauza opririi zborurilor în SUA">
+            <div class="a-meta">
+              <span class="a-time">14 nov · 21:00</span>
+              <span class="a-cat">Worldwide / Transport aerian</span>
+              <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
+              <a class="cont-pill" href="#stire-210" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
+              <span class="subj-pill">cauza opririi zborurilor în SUA</span>
+              <span class="a-num">#1 / 17</span>
+            </div>
+            <h2>Oprirea zborurilor în SUA, explicată: un router a inundat rețeaua FAA în timpul unui upgrade de rutină; ~10.000 de zboruri anulate vineri</h2>
+            <div class="followup">
+              <span class="tag">Urmare la</span>
+              <p><a href="#stire-210">„FAA a oprit toate plecările din SUA timp de ~4 ore — a doua oprire națională de la 11 septembrie 2001” — sâmbătă, 14 noiembrie 2026, ora 08:00.</a> (Cardul de la 08:00 a relatat oprirea la sol; acesta aduce explicația oficială a cauzei, anunțată sâmbătă de secretarul Transporturilor.)</p>
+            </div>
+            <div class="sec">
+              <p class="sec-label">Ce s-a întâmplat</p>
+              <p>Secretarul american al Transporturilor, Sean Duffy, a explicat sâmbătă, 14 noiembrie, cauza opririi naționale de vineri: în timpul unei lucrări de mentenanță de rutină, contractorul L3Harris înlocuia cablul de cupru cu fibră optică la o locație îndepărtată a FAA, iar un router instalat atunci a început să inunde celelalte routere ale rețelei de control al traficului aerian cu circa 1.000 de încercări de conectare la fiecare 4–5 secunde. Instabilitatea a durat circa 45 de minute în 17 din cele 22 de centre regionale de control, iar oprirea la sol a durat circa 4–5 ore. Vineri au fost anulate circa 10.000 de zboruri și peste 7.000 au fost întârziate (Reuters); sâmbătă au mai fost anulate peste 3.700 de zboruri și 2.000 au fost întârziate, administratorul FAA Bryan Bedford estimând până la 5.000 de anulări sâmbătă, cu revenirea la programul complet până duminică seară.</p>
+            </div>
+            <div class="sec">
+              <p class="sec-label">De ce contează</p>
+              <p>Călătorește frecvent cu avionul, inclusiv transatlantic, iar vacanța de Crăciun în România (22–31 decembrie) intră în programul de iarnă — o pană de 45 de minute la un singur router a blocat plecările din toată SUA, un caz concret de incident pe infrastructură critică veche (routere fabricate în 2001, linii de cupru din anii '80), exact terenul lui profesional de incident management. Lecția de reziliență: un singur punct de eșec într-o rețea națională.</p>
+            </div>
+            <div class="verify">
+              <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
+              <p>Verdict: confirmat. TechCrunch (sursă din lista monitorizată) — relatarea conferinței de presă de sâmbătă a lui Duffy, 14 nov 2026, 17:45 UTC. Reuters — amploarea perturbărilor și cifrele, 14 nov 2026. USA Today — persistența întârzierilor sâmbătă și estimarea lui Bedford, 14 nov 2026. Nuanță: cauza exactă nu e încă stabilită — Duffy: nu se știe dacă a fost eroare de instalare a L3Harris sau un router defect; ancheta de root-cause e în curs. Oficialii au subliniat că nu există niciun indiciu de atac cibernetic și nicio legătură cu instrumentul AI lansat joi de FAA pentru controlorii de trafic. L3Harris nu a comentat încă.</p>
+              <ul class="sources">
+              <li><a href="https://techcrunch.com/2026/11/14/transportation-secretary-blames-routine-equipment-upgrade-for-grounding-flights-nationwide/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>TechCrunch — „Transportation secretary blames routine equipment upgrade for grounding flights nationwide” (14 nov 2026, 17:45 UTC; relatarea conferinței de presă a lui Duffy: routerul instalat de L3Harris a inundat rețeaua FAA în timpul upgrade-ului de rutină)<span class="host">techcrunch.com</span></a></li>
+              <li><a href="https://www.reuters.com/business/aerospace-defense/thousands-us-flights-canceled-delayed-air-travel-system-recovers-shutdown-2026-11-14/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Reuters — mii de zboruri din SUA anulate și întârziate, pe măsură ce sistemul de transport aerian își revine după oprire (14 nov 2026; amploarea perturbărilor și cifrele: ~10.000 de anulări vineri, peste 7.000 întârziate; sâmbătă peste 3.700 anulate și 2.000 întârziate)<span class="host">reuters.com</span></a></li>
+              <li><a href="https://www.usatoday.com/story/news/nation/2026/11/14/flight-airports-delays-cancellations-faa-ground-stop/92778770007/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>USA Today — întârzierile și anulările persistă sâmbătă, după oprirea la sol a FAA (14 nov 2026; persistența perturbărilor și estimarea administratorului FAA Bryan Bedford: până la 5.000 de anulări sâmbătă, revenire la programul complet până duminică seară)<span class="host">usatoday.com</span></a></li>
+              </ul>
+            </div>
+            <div class="impact">
+              <span class="badge">Impact direct</span>
+              <p>Impact direct: minim — relevanță de context și profesională; de reținut la planificarea zborurilor spre/din SUA în perioada următoare (perturbările continuă în weekend, înaintea sezonului de Thanksgiving).</p>
+            </div>
+          </article>
+
+        <!-- 2 · 14 nov · 20:00 -->
           <article id="stire-225" data-cats="tech" data-sev="amber" data-subiect="reacții asiatice la plecarea lui Huang">
             <div class="a-meta">
               <span class="a-time">14 nov · 20:00</span>
@@ -857,7 +895,7 @@
               <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
               <a class="cont-pill" href="#stire-213" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
               <span class="subj-pill">reacții asiatice la plecarea lui Huang</span>
-              <span class="a-num">#1 / 16</span>
+              <span class="a-num">#2 / 17</span>
             </div>
             <h2>Guvernele din Asia reacționează la plecarea lui Jensen Huang de la Nvidia: Coreea de Sud obține confirmarea celor 260.000 de GPU-uri, iar Beijingul respinge acuzațiile de spionaj</h2>
             <div class="followup">
@@ -892,7 +930,7 @@
             </div>
           </article>
 
-<!-- 2 · 14 nov · 19:00 -->
+        <!-- 3 · 14 nov · 19:00 -->
           <article id="stire-223" data-cats="securitate romania" data-sev="amber" data-subiect="alerte aeriene la Tulcea">
             <div class="a-meta">
               <span class="a-time">14 nov · 19:00</span>
@@ -900,7 +938,7 @@
               <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
               <a class="cont-pill" href="#stire-127" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
               <span class="subj-pill">alerte aeriene la Tulcea</span>
-              <span class="a-num">#2 / 16</span>
+              <span class="a-num">#3 / 17</span>
             </div>
             <h2>Țintă aeriană lângă Insula Șerpilor: F-16 ridicate de la Fetești și două mesaje RO-Alert în Tulcea — a treia alertă în mai puțin de opt ore</h2>
             <div class="followup">
@@ -930,7 +968,7 @@
             </div>
           </article>
 
-        <!-- 3 · 14 nov · 19:00 -->
+        <!-- 4 · 14 nov · 19:00 -->
           <article id="stire-224" data-cats="securitate" data-sev="green" data-subiect="formatul E5 pentru negocierile cu Rusia">
             <div class="a-meta">
               <span class="a-time">14 nov · 19:00</span>
@@ -938,7 +976,7 @@
               <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
               <a class="cont-pill" href="#stire-156" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
               <span class="subj-pill">formatul E5 pentru negocierile cu Rusia</span>
-              <span class="a-num">#3 / 16</span>
+              <span class="a-num">#4 / 17</span>
             </div>
             <h2>Liderii UE au decis formatul E5 pentru negocierile cu Rusia: Germania, Franța, Marea Britanie, Italia și Polonia vorbesc pentru Europa, alături de Comisie și Consiliu</h2>
             <div class="followup">
@@ -972,14 +1010,14 @@
             </div>
           </article>
 
-        <!-- 4 · 14 nov · 18:00 -->
+        <!-- 5 · 14 nov · 18:00 -->
           <article id="stire-222" data-cats="tech" data-sev="green" data-subiect="amendă Meta 805 milioane €">
             <div class="a-meta">
               <span class="a-time">14 nov · 18:00</span>
               <span class="a-cat">Tech &amp; AI</span>
               <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
               <span class="subj-pill">amendă Meta 805 milioane €</span>
-              <span class="a-num">#4 / 16</span>
+              <span class="a-num">#5 / 17</span>
             </div>
             <h2>Italia amendează Meta cu 805 milioane €: aplicația Facebook a accesat fotografiile utilizatorilor Android fără consimțământ specific</h2>
             <div class="sec">
@@ -1009,7 +1047,7 @@
             </div>
           </article>
 
-        <!-- 5 · 14 nov · 17:00 -->
+        <!-- 6 · 14 nov · 17:00 -->
           <article id="stire-221" data-cats="securitate romania" data-sev="amber" data-subiect="dronă lovește navă în apele României">
             <div class="a-meta">
               <span class="a-time">14 nov · 17:00</span>
@@ -1017,7 +1055,7 @@
               <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
               <a class="cont-pill" href="#stire-134" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
               <span class="subj-pill">dronă lovește navă în apele României</span>
-              <span class="a-num">#5 / 16</span>
+              <span class="a-num">#6 / 17</span>
             </div>
             <h2>Dronă lovește cargoul Larissa 1 în apele teritoriale ale României, lângă Sfântu Gheorghe — al doilea caz confirmat în apele românești; F-16 ridicate, RO-Alert în Tulcea</h2>
             <div class="followup">
@@ -1048,14 +1086,14 @@
             </div>
           </article>
 
-        <!-- 6 · 14 nov · 16:00 -->
+        <!-- 7 · 14 nov · 16:00 -->
           <article id="stire-220" data-cats="belgia" data-sev="amber" data-subiect="criza bugetară belgiană">
             <div class="a-meta">
               <span class="a-time">14 nov · 16:00</span>
               <span class="a-cat">Belgia</span>
               <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
               <span class="subj-pill">criza bugetară belgiană</span>
-              <span class="a-num">#6 / 16</span>
+              <span class="a-num">#7 / 17</span>
             </div>
             <h2>Criza bugetară belgiană: De Wever a discutat vineri seară cu vicepremierii; conducerea guvernului se reunește duminică, iar luni raportează regelui</h2>
             <div class="sec">
@@ -1086,14 +1124,14 @@
             </div>
           </article>
 
-        <!-- 7 · 14 nov · 15:00 -->
+        <!-- 8 · 14 nov · 15:00 -->
           <article id="stire-218" data-cats="securitate" data-sev="amber" data-subiect="atac cu drone în Marea Baltică">
             <div class="a-meta">
               <span class="a-time">14 nov · 15:00</span>
               <span class="a-cat">Securitate &amp; NATO</span>
               <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
               <span class="subj-pill">atac cu drone în Marea Baltică</span>
-              <span class="a-num">#7 / 16</span>
+              <span class="a-num">#8 / 17</span>
             </div>
             <h2>Ucraina lovește cu drone o corvetă rusă în Golful Finlandei — primul atac asupra unei nave rusești în Marea Baltică</h2>
             <div class="sec">
@@ -1119,14 +1157,14 @@
             </div>
           </article>
 
-        <!-- 8 · 14 nov · 15:00 -->
+        <!-- 9 · 14 nov · 15:00 -->
           <article id="stire-219" data-cats="tech" data-sev="green" data-subiect="LangChain, evaluare 3 mld. $">
             <div class="a-meta">
               <span class="a-time">14 nov · 15:00</span>
               <span class="a-cat">Tech &amp; AI</span>
               <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
               <span class="subj-pill">LangChain, evaluare 3 mld. $</span>
-              <span class="a-num">#8 / 16</span>
+              <span class="a-num">#9 / 17</span>
             </div>
             <h2>LangChain ridică 300 mil. $ la o evaluare de 3 mld. $ — platforma LangSmith devine «sistemul de operare» al agenților AI</h2>
             <div class="sec">
@@ -1153,7 +1191,7 @@
             </div>
           </article>
 
-        <!-- 9 · 14 nov · 14:00 -->
+        <!-- 10 · 14 nov · 14:00 -->
           <article id="stire-217" data-cats="tech" data-sev="green" data-subiect="pana Microsoft 365 rezolvată">
             <div class="a-meta">
               <span class="a-time">14 nov · 14:00</span>
@@ -1161,7 +1199,7 @@
               <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
               <a class="cont-pill" href="#stire-204" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
               <span class="subj-pill">pana Microsoft 365 rezolvată</span>
-              <span class="a-num">#9 / 16</span>
+              <span class="a-num">#10 / 17</span>
             </div>
             <h2>Pana Microsoft 365 s-a încheiat: Microsoft declară serviciile complet restabilite după ~36 de ore; cauza a fost o problemă introdusă la o actualizare de capacitate a rețelei, nu un atac cibernetic și nu AI</h2>
             <div class="followup">
@@ -1190,7 +1228,7 @@
             </div>
           </article>
 
-        <!-- 10 · 14 nov · 13:00 -->
+        <!-- 11 · 14 nov · 13:00 -->
           <article id="stire-215" data-cats="securitate" data-sev="amber" data-subiect="Donbas pentru aderarea la NATO">
             <div class="a-meta">
               <span class="a-time">14 nov · 13:00</span>
@@ -1199,7 +1237,7 @@
               <span class="spot-tag">Știrea zilei</span>
               <a class="cont-pill" href="#stire-206" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
               <span class="subj-pill">Donbas pentru aderarea la NATO</span>
-              <span class="a-num">#10 / 16</span>
+              <span class="a-num">#11 / 17</span>
             </div>
             <h2>SUA au pus pe masă retragerea Ucrainei din Donbas în schimbul aderării la NATO, spune Zelenski — prima dată când Washingtonul ridică ideea</h2>
             <div class="followup">
@@ -1234,14 +1272,14 @@
             </div>
           </article>
 
-        <!-- 11 · 14 nov · 13:00 -->
+        <!-- 12 · 14 nov · 13:00 -->
           <article id="stire-216" data-cats="tech" data-sev="amber" data-subiect="SignDrop: zero-day Windows">
             <div class="a-meta">
               <span class="a-time">14 nov · 13:00</span>
               <span class="a-cat">Tech &amp; AI</span>
               <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
               <span class="subj-pill">SignDrop: zero-day Windows</span>
-              <span class="a-num">#11 / 16</span>
+              <span class="a-num">#12 / 17</span>
             </div>
             <h2>Zero-day Windows „SignDrop": un cont obișnuit poate ajunge la drepturi SYSTEM pe Windows 11 26H2 — fără patch deocamdată</h2>
             <div class="sec">
@@ -1268,14 +1306,14 @@
             </div>
           </article>
 
-        <!-- 12 · 14 nov · 11:00 -->
+        <!-- 13 · 14 nov · 11:00 -->
           <article id="stire-214" data-cats="romania" data-sev="green" data-subiect="România câștigă Roșia Montană">
             <div class="a-meta">
               <span class="a-time">14 nov · 11:00</span>
               <span class="a-cat">România</span>
               <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
               <span class="subj-pill">România câștigă Roșia Montană</span>
-              <span class="a-num">#12 / 16</span>
+              <span class="a-num">#13 / 17</span>
             </div>
             <h2>România câștigă definitiv arbitrajul Roșia Montană — statul scapă de despăgubiri de 6,5 miliarde de dolari cerute de Gabriel Resources</h2>
             <div class="sec">
@@ -1307,14 +1345,14 @@
             </div>
           </article>
 
-        <!-- 13 · 14 nov · 09:00 -->
+        <!-- 14 · 14 nov · 09:00 -->
           <article id="stire-212" data-cats="securitate" data-sev="amber" data-subiect="Germania: servicii secrete cu puteri noi">
             <div class="a-meta">
               <span class="a-time">14 nov · 09:00</span>
               <span class="a-cat">Securitate &amp; NATO</span>
               <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
               <span class="subj-pill">Germania: servicii secrete cu puteri noi</span>
-              <span class="a-num">#13 / 16</span>
+              <span class="a-num">#14 / 17</span>
             </div>
             <h2>Germania dă serviciilor secrete puteri de acțiune împotriva amenințărilor hibride — BND poate sabota în străinătate, BfV poate riposta cibernetic</h2>
             <div class="sec">
@@ -1344,7 +1382,7 @@
             </div>
           </article>
 
-          <!-- 14 · 14 nov · 09:00 -->
+          <!-- 15 · 14 nov · 09:00 -->
           <article id="stire-213" data-cats="tech" data-sev="amber" data-subiect="finanțare AI după plecarea lui Huang">
             <div class="a-meta">
               <span class="a-time">14 nov · 09:00</span>
@@ -1352,7 +1390,7 @@
               <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
               <a class="cont-pill" href="#stire-182" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
               <span class="subj-pill">finanțare AI după plecarea lui Huang</span>
-              <span class="a-num">#14 / 16</span>
+              <span class="a-num">#15 / 17</span>
             </div>
             <h2>Plecarea lui Jensen Huang lasă un gol în finanțarea startupurilor AI: Nvidia, cel mai mare investitor al sectorului, devine mai prudentă</h2>
             <div class="followup">
@@ -1385,14 +1423,14 @@
             </div>
           </article>
 
-          <!-- 15 · 14 nov · 08:00 -->
+          <!-- 16 · 14 nov · 08:00 -->
           <article id="stire-210" data-cats="worldwide" data-sev="amber" data-subiect="blocaj aerian în SUA">
             <div class="a-meta">
               <span class="a-time">14 nov · 08:00</span>
               <span class="a-cat">Worldwide / Transport aerian</span>
               <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
               <span class="subj-pill">blocaj aerian în SUA</span>
-              <span class="a-num">#15 / 16</span>
+              <span class="a-num">#16 / 17</span>
             </div>
             <h2>FAA a oprit toate plecările din SUA timp de ~4 ore — a doua oprire națională de la 11 septembrie 2001</h2>
             <div class="sec">
@@ -1421,14 +1459,14 @@
             </div>
           </article>
 
-        <!-- 16 · 14 nov · 08:00 -->
+        <!-- 17 · 14 nov · 08:00 -->
           <article id="stire-211" data-cats="securitate" data-sev="amber" data-subiect="ofițer NATO arestat pentru spionaj">
             <div class="a-meta">
               <span class="a-time">14 nov · 08:00</span>
               <span class="a-cat">Securitate &amp; NATO</span>
               <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
               <span class="subj-pill">ofițer NATO arestat pentru spionaj</span>
-              <span class="a-num">#16 / 16</span>
+              <span class="a-num">#17 / 17</span>
             </div>
             <h2>Ofițer american de la un comandament NATO din Marea Britanie, arestat sub acuzația că încerca să spioneze pentru Rusia</h2>
             <div class="sec">
