@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="color-scheme" content="light dark" />
-    <meta name="tirile-versiune" content="2026-11-15T09:00:00+01:00|3|red" />
+    <meta name="tirile-versiune" content="2026-11-15T10:00:00+01:00|4|red" />
     <link rel="icon" href="data:," />
     <title>Știrile zilei</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -699,9 +699,9 @@
     <div class="topbar">
       <div class="topbar-inner">
         <span class="dot" aria-hidden="true"></span>
-        <span><strong>Duminică, 15 noiembrie 2026</strong> · actualizat la <strong>09:00</strong></span>
+        <span><strong>Duminică, 15 noiembrie 2026</strong> · actualizat la <strong>10:00</strong></span>
         <span aria-hidden="true">·</span>
-        <span>3 știri azi</span>
+        <span>4 știri azi</span>
         <span class="spacer"></span>
         <button class="refresh-btn" type="button" id="refreshBtn" aria-label="Reîmprospătează pagina">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg>
@@ -768,15 +768,15 @@
       <section class="dashboard" aria-label="Panou de ansamblu">
         <div class="dash-head">
           <span class="dash-title">Dashboard · Azi</span>
-          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 09:00</span>
+          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 10:00</span>
           <span class="dash-meta">Fereastră monitorizare <strong>L–V 06:00–22:00 · S–D 07:30–22:00</strong> · pas ~3 ore</span>
         </div>
 
         <div class="kpi-grid five" role="group" aria-label="Filtrează după categorie — apasă pe un tile">
           <button class="kpi" type="button" data-filter="toate" aria-pressed="true">
             <span class="kpi-top"><span class="kpi-label">Toate știrile</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">3</span>
-            <span class="kpi-sub">știri verificate azi, în 2 rulări</span>
+            <span class="kpi-value">4</span>
+            <span class="kpi-sub">știri verificate azi, în 3 rulări</span>
             <span class="kpi-bar" aria-hidden="true"><i style="width:100%"></i></span>
             <span class="kpi-hint">Apasă pentru toate</span>
           </button>
@@ -784,14 +784,14 @@
             <span class="kpi-top"><span class="kpi-label">Securitate &amp; NATO</span><span class="kpi-check" aria-hidden="true">✓</span></span>
             <span class="kpi-value">3</span>
             <span class="kpi-sub">trei nave lovite în Marea Neagră · noua doctrină USAF · avertismentul ambasadorilor SUA</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:100%"></i></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:75%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="romania" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">România</span><span class="kpi-check" aria-hidden="true">✓</span></span>
             <span class="kpi-value">2</span>
             <span class="kpi-sub">trei nave lovite în Marea Neagră · avertismentul ambasadorilor SUA</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:67%"></i></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:50%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="belgia" aria-pressed="false">
@@ -803,9 +803,9 @@
           </button>
           <button class="kpi" type="button" data-filter="tech" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">Tech &amp; AI</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">0</span>
-            <span class="kpi-sub"></span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:0%"></i></span>
+            <span class="kpi-value">1</span>
+            <span class="kpi-sub">amprenta Blackwell în modele chineze</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:25%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
         </div>
@@ -819,7 +819,7 @@
       </section>
 
       <div class="filter-status" aria-live="polite">
-        <span class="filter-label">Se afișează: <strong>Toate categoriile — 3 din 3 știri</strong></span>
+        <span class="filter-label">Se afișează: <strong>Toate categoriile — 4 din 4 știri</strong></span>
         <button class="filter-reset" type="button" hidden>Resetează filtrul</button>
       </div>
 
@@ -849,7 +849,48 @@
       <p class="empty">Nicio știre în această categorie azi.</p>
 
       <main>
-        <!-- 1 · 15 nov · 09:00 -->
+        <!-- 1 · 15 nov · 10:00 -->
+        <article id="stire-230" data-cats="tech" data-sev="amber" data-subiect="amprenta Blackwell în modele chineze">
+          <div class="a-meta">
+            <span class="a-time">15 nov · 10:00</span>
+            <span class="a-cat">Tech &amp; AI</span>
+            <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
+            <a class="cont-pill" href="#stire-225" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
+            <span class="subj-pill">amprenta Blackwell în modele chineze</span>
+            <span class="a-num">#1 / 4</span>
+          </div>
+          <h2>Cipuri Nvidia Blackwell interzise la export, în spatele celor mai puternice modele AI din China — amprenta lor, găsită în greutățile publicate</h2>
+          <div class="followup">
+            <span class="tag">Urmare la</span>
+            <p><a href="#stire-225">„Guvernele din Asia reacționează la plecarea lui Jensen Huang de la Nvidia: Coreea de Sud obține confirmarea celor 260.000 de GPU-uri, iar Beijingul respinge acuzațiile de spionaj” — sâmbătă, 14 noiembrie 2026, ora 20:00.</a> (Cardul de sâmbătă seară urmărea reacțiile guvernelor asiatice la plecarea lui Huang; acesta urmărește cipurile: dovada tehnică a accesului laboratoarelor chineze la Blackwell, în centrul dosarului Megaspeed.)</p>
+          </div>
+          <div class="sec">
+            <p class="sec-label">Ce s-a întâmplat</p>
+            <p>Will DePue, fost cercetător OpenAI (a lucrat la Sora și GPT-5), acum la nonprofit-ul Unemployment Labs, a publicat joi, 12 noiembrie, o analiză forensică a greutăților publicate ale șase modele open-weight chinezești lansate din aprilie 2026: DeepSeek-V4-Flash și V4-Pro, Kimi K3 și K3.1-Pro (Moonshot AI), MiniMax-M3 și Ling-3.1-flash (Ant Group). Urmele inițializării aleatoare păstrate în greutăți corespund configurației cipurilor Nvidia Blackwell — 148 de unități de procesare (SM) la B200/B300 și 152 la GB200/GB300 — cipuri pentru care exportul către China cere licență SUA. Modelele mai vechi ale acelorași laboratoare (de exemplu DeepSeek-V3) corespund generației anterioare Hopper. DePue a căutat în peste șase trilioane de combinații de configurație și seed; potrivirile sunt de 49–1.385 sigma, față de circa 8 așteptate la întâmplare, iar pe hardware fizic închiriat un B300 a reprodus greutățile inițiale ale DeepSeek-V4-Flash (461 din 469 de rânduri, 445 bit cu bit), iar un GB200 a reprodus valorile inițiale ale Kimi K3.</p>
+          </div>
+          <div class="sec">
+            <p class="sec-label">De ce contează</p>
+            <p>Pentru el, ca IT incident Manager care își construiește automatizările pe modele și API-uri AI: controalele de export SUA–China sunt linia de demarcație a lanțului de aprovizionare AI — dovada tehnică, reproductibilă din fișiere publice, că cele mai puternice cipuri ajung totuși la laboratoarele chineze arată că regimul de control nu ține și crește presiunea pentru înăsprirea lui, inclusiv închiderea portiței închirierii de la distanță (Cloud Security Act, în Congres). E și continuarea directă a dosarului Megaspeed/Huang: aceeași rețea suspectată că a deviat cipuri către China e în centrul anchetei. De urmărit: audierea lui Huang în Congres (convocat, alături de secretarul Comerțului, Howard Lutnick, pe tema exporturilor de cipuri) și rezultatele trimestriale Nvidia din 17 noiembrie.</p>
+          </div>
+          <div class="verify">
+            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
+            <p>Verdict: confirmat. TechCrunch (13 noiembrie 2026, 18:40 UTC, relatarea curatoriată) — analiza Unemployment Labs, cele șase modele, legătura cu Megaspeed, estimarea Epoch AI (circa 2 milioane de cipuri avansate intrate în China în 2024–2025 prin scheme de ocolire; 275.000 de acceleratoare Nvidia importate în Malaezia în aceeași perioadă). The Register (13 noiembrie 2026, 21:16 UTC, Thomas Claburn) — confirmare independentă: aceeași analiză, patru modele pe Grace Blackwell GB200/GB300, plus un raport separat despre 32 de GPU-uri B300 expuse prin endpoint-uri de monitorizare cu adrese IP din China. Tom's Hardware — relatare a acelorași constatări (cele șase modele; verificarea pe hardware fizic; cipurile AMD MI300X, singura alternativă, excluse pentru DeepSeek-V4-Flash). Notă de integritate: amprenta arată hardware-ul pe care au fost inițializate modelele; raportul însuși spune că asta „sprijină, fără a dovedi” că Blackwell a făcut și antrenamentul și că nu stabilește unde se aflau cipurile, cine le deținea sau dacă a fost încălcată vreo lege — cipurile puteau fi închiriate dintr-un centru de date din afara Chinei, portiță pe care regulile actuale nu o acoperă. Estimările autorului privind numărul de GPU-uri (500–3.000 per model) sunt aproximative, ordin de mărime, fără documente de achiziție. De notat și rezultatul nul: cel mai nou model DeepSeek, V4.1-Flash, nu arată amprenta Blackwell, iar modelele noi de la Alibaba, Zhipu, Tencent, Xiaomi și StepFun citesc tot Hopper.</p>
+            <ul class="sources">
+              <li><a href="https://techcrunch.com/2026/11/13/export-banned-nvidia-chips-are-behind-chinas-most-powerful-ai-models-uh-oh-jensen/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>TechCrunch — „Export-banned Nvidia chips are behind China's most powerful AI models — uh-oh, Jensen!” (13 nov 2026, 18:40 UTC; relatarea curatoriată: analiza Unemployment Labs; cele șase modele; legătura cu Megaspeed; estimarea Epoch AI)<span class="host">techcrunch.com</span></a></li>
+              <li><a href="https://www.theregister.com/ai-and-ml/2026/11/13/chinese-ai-labs-are-training-models-on-nvidias-blackwell-despite-export-controls-says-ex-openai-engineer/5309891" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>The Register — „Chinese AI labs are training models on Nvidia's Blackwell despite export controls, says ex-OpenAI engineer” (13 nov 2026, 21:16 UTC; confirmare independentă: patru modele pe Grace Blackwell GB200/GB300; cele 32 de GPU-uri B300 cu IP-uri din China)<span class="host">theregister.com</span></a></li>
+            </ul>
+          </div>
+          <div class="opposing">
+            <p class="sec-label">Tabăra adversă</p>
+            <p>DeepSeek neagă — susține că a folosit cipuri Nvidia H800 (legale la export înainte de înăsprirea regulilor) și cipuri Huawei Ascend 910C. (<a href="https://www.thestateofai.com/news/will-depue-blackwell-fingerprint-chinese-ai-models" target="_blank" rel="noopener">The State of AI</a>)</p>
+          </div>
+          <div class="impact">
+            <span class="badge">Impact direct</span>
+            <p>Impact direct: minim azi — greutățile modelelor sunt aceleași fișiere publice, se încarcă la fel; nicio schimbare imediată pentru automatizările lui sau pentru costurile API-urilor. Relevanță de context ridicată: dacă SUA înăspresc controalele (inclusiv pe închirierea cloud din afara Chinei), accesul la modelele chineze open-weight pe care le poate rula local și prețurile infrastructurii AI se pot schimba; dosarul Megaspeed/Huang rămâne deschis și poate aduce noi restricții.</p>
+          </div>
+        </article>
+
+        <!-- 2 · 15 nov · 09:00 -->
         <article id="stire-228" data-cats="securitate romania" data-sev="red" data-subiect="trei nave lovite în Marea Neagră">
           <div class="a-meta">
             <span class="a-time">15 nov · 09:00</span>
@@ -858,7 +899,7 @@
             <span class="spot-tag">Știrea zilei</span>
             <a class="cont-pill" href="#stire-221" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">trei nave lovite în Marea Neagră</span>
-            <span class="a-num">#1 / 3</span>
+            <span class="a-num">#2 / 4</span>
           </div>
           <h2>Trei nave comerciale lovite de drone în două zile lângă coasta României, în Marea Neagră — petrolierul Evia Petrol V și vrachierul Marsol au luat foc sâmbătă seară, după Larissa 1</h2>
           <div class="followup">
@@ -890,14 +931,14 @@
           </div>
         </article>
 
-        <!-- 2 · 15 nov · 09:00 -->
+        <!-- 3 · 15 nov · 09:00 -->
         <article id="stire-229" data-cats="securitate" data-sev="amber" data-subiect="noua doctrină USAF">
           <div class="a-meta">
             <span class="a-time">15 nov · 09:00</span>
             <span class="a-cat">Securitate &amp; NATO</span>
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="subj-pill">noua doctrină USAF</span>
-            <span class="a-num">#2 / 3</span>
+            <span class="a-num">#3 / 4</span>
           </div>
           <h2>Forțele Aeriene ale SUA își schimbă doctrina: Force Design 2026 pune senzorii, rețelele și AI-ul în centrul apărării aeriene, nu interceptarea dronelor una câte una</h2>
           <div class="sec">
@@ -923,7 +964,7 @@
           </div>
         </article>
 
-        <!-- 3 · 15 nov · 08:00 -->
+        <!-- 4 · 15 nov · 08:00 -->
         <article id="stire-227" data-cats="securitate romania" data-sev="amber" data-subiect="avertismentul ambasadorilor SUA">
           <div class="a-meta">
             <span class="a-time">15 nov · 08:00</span>
@@ -931,7 +972,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-215" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">avertismentul ambasadorilor SUA</span>
-            <span class="a-num">#3 / 3</span>
+            <span class="a-num">#4 / 4</span>
           </div>
           <h2>Opt foști ambasadori ai SUA, între care patru în România, avertizează: concesiile teritoriale pentru Putin ar submina NATO și ar crește riscul unui război mai amplu în Europa</h2>
           <div class="followup">
@@ -5867,8 +5908,8 @@
 
       <footer>
         <div class="rule" aria-hidden="true"></div>
-        <p>Sfârșitul ediției de azi · Ultima actualizare: duminică, 15 noiembrie 2026, 09:00<br />Monitorizarea rulează la circa 3 ore, în fereastra L–V 06:00–22:00 · S–D 07:30–22:00 — dă refresh pentru noutăți.</p>
-        <a class="to-top" href="#stire-228">↑ Înapoi la cea mai nouă știre</a>
+        <p>Sfârșitul ediției de azi · Ultima actualizare: duminică, 15 noiembrie 2026, 10:00<br />Monitorizarea rulează la circa 3 ore, în fereastra L–V 06:00–22:00 · S–D 07:30–22:00 — dă refresh pentru noutăți.</p>
+        <a class="to-top" href="#stire-230">↑ Înapoi la cea mai nouă știre</a>
       </footer>
     </div>
 
