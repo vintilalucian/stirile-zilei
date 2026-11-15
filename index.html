@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="color-scheme" content="light dark" />
-    <meta name="tirile-versiune" content="2026-11-14T21:00:00+01:00|17|amber" />
+    <meta name="tirile-versiune" content="2026-11-15T08:00:00+01:00|1|amber" />
     <link rel="icon" href="data:," />
     <title>Știrile zilei</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -699,9 +699,9 @@
     <div class="topbar">
       <div class="topbar-inner">
         <span class="dot" aria-hidden="true"></span>
-        <span><strong>Sâmbătă, 14 noiembrie 2026</strong> · actualizat la <strong>21:00</strong></span>
+        <span><strong>Duminică, 15 noiembrie 2026</strong> · actualizat la <strong>08:00</strong></span>
         <span aria-hidden="true">·</span>
-        <span>17 știri azi</span>
+        <span>1 știre azi</span>
         <span class="spacer"></span>
         <button class="refresh-btn" type="button" id="refreshBtn" aria-label="Reîmprospătează pagina">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg>
@@ -716,12 +716,12 @@
         <h1>Știrile zilei</h1>
         <div class="date-line">
           <span class="day">Ediția de azi</span>
-          <span>Sâmbătă, 14 noiembrie 2026 · Europe/Brussels</span>
+          <span>Duminică, 15 noiembrie 2026 · Europe/Brussels</span>
         </div>
         <p class="lede"><strong>Apasă pe un tile</strong> ca să filtrezi pagina — articole complete jos, cele mai noi primele.</p>
       </header>
 
-      <section class="day" id="zi-2026-11-14">
+      <section class="day" id="zi-2026-11-15">
       <!-- Fereastra „Ultimele știri" — sus, imediat deasupra chenarului
            „Știrea zilei", între masthead și chenar. Arată DOAR titlurile din
            cea mai recentă rulare (1–2), fiecare link la cardul ei (#stire-N).
@@ -736,6 +736,172 @@
         </div>
         <ul class="latest-list"></ul>
       </section>
+
+      <!-- Chenar permanent: știrea cea mai importantă a zilei — sub fereastra
+           „Ultimele știri", ÎNAINTEA dashboardului, vizibilă din prima, fără scroll.
+           Nivelul de azi: GALBEN (sev-amber) — de urmărit: opt foști ambasadori ai SUA avertizează că concesiile teritoriale pentru Putin ar submina NATO — singura știre a zilei și cea mai importantă; nu mai există alte știri galbene azi, de aceea nu apare mențiunea despre celelalte știri cu aceeași severitate.
+           Chenarul rămâne în afara logicii de filtrare: vizibil indiferent de filtrul de categorie. -->
+      <section class="spot sev-amber" aria-label="Știrea cea mai importantă a zilei">
+        <div class="spot-head">
+          <span class="spot-kicker">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13 2 4.5 13.5H11L9.5 22 19 10h-6.5L13 2z"/></svg>
+            Știrea zilei · Atenție rapidă
+          </span>
+          <span class="spot-time">15 nov · 08:00</span>
+          <span class="spot-pill">Nivel galben — de urmărit</span>
+        </div>
+        <h2 class="spot-title">Opt foști ambasadori ai SUA, între care patru în România, avertizează: concesiile teritoriale pentru Putin ar submina NATO și ar crește riscul unui război mai amplu în Europa</h2>
+        <p class="spot-why"><strong>De ce e în față:</strong> E singura știre a zilei și cea cu severitatea cea mai mare — opt foști ambasadori americani, patru dintre ei cu mandate în România și unul în Belgia, avertizează public că o pace cumpărată cu concesii teritoriale ar submina NATO și ar putea extinde războiul în Europa, tocmai când Washingtonul pune pe masă Donbasul în schimbul aderării Ucrainei la NATO.</p>
+        <p class="spot-lead">Opt foști ambasadori ai SUA — patru în România, unul în Belgia — au semnat un text comun, publicat de Israel Hayom și relatat de G4Media sâmbătă seară: recompensarea agresiunii Rusiei prin concesii teritoriale și relaxarea sancțiunilor l-ar încuraja pe Putin și ar crește riscul unui război mai amplu în Europa.</p>
+        <p class="spot-more" hidden><span class="spot-more-text"></span> <button class="spot-more-btn" type="button">apasă aici</button></p>
+        <div class="spot-foot">
+          <a class="spot-link" href="#stire-227">Citește știrea completă ↓</a>
+          <div class="sev-scale" role="img" aria-label="Scară de gravitate: verde — normal, galben — de urmărit, roșu — grav. Nivelul de azi: galben.">
+            <span class="sev-item"><i class="sev-dot g" aria-hidden="true"></i>Verde · normal</span>
+            <span class="sev-item on"><i class="sev-dot y" aria-hidden="true"></i>Galben · de urmărit</span>
+            <span class="sev-item"><i class="sev-dot r" aria-hidden="true"></i>Roșu · grav</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Dashboard -->
+      <section class="dashboard" aria-label="Panou de ansamblu">
+        <div class="dash-head">
+          <span class="dash-title">Dashboard · Azi</span>
+          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 08:00</span>
+          <span class="dash-meta">Fereastră monitorizare <strong>L–V 06:00–22:00 · S–D 07:30–22:00</strong> · pas ~3 ore</span>
+        </div>
+
+        <div class="kpi-grid five" role="group" aria-label="Filtrează după categorie — apasă pe un tile">
+          <button class="kpi" type="button" data-filter="toate" aria-pressed="true">
+            <span class="kpi-top"><span class="kpi-label">Toate știrile</span><span class="kpi-check" aria-hidden="true">✓</span></span>
+            <span class="kpi-value">1</span>
+            <span class="kpi-sub">știre verificată azi, în 1 rulare</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:100%"></i></span>
+            <span class="kpi-hint">Apasă pentru toate</span>
+          </button>
+          <button class="kpi" type="button" data-filter="securitate" aria-pressed="false">
+            <span class="kpi-top"><span class="kpi-label">Securitate &amp; NATO</span><span class="kpi-check" aria-hidden="true">✓</span></span>
+            <span class="kpi-value">1</span>
+            <span class="kpi-sub">avertismentul ambasadorilor SUA</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:100%"></i></span>
+            <span class="kpi-hint">Apasă pentru a filtra →</span>
+          </button>
+          <button class="kpi" type="button" data-filter="romania" aria-pressed="false">
+            <span class="kpi-top"><span class="kpi-label">România</span><span class="kpi-check" aria-hidden="true">✓</span></span>
+            <span class="kpi-value">1</span>
+            <span class="kpi-sub">avertismentul ambasadorilor SUA</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:100%"></i></span>
+            <span class="kpi-hint">Apasă pentru a filtra →</span>
+          </button>
+          <button class="kpi" type="button" data-filter="belgia" aria-pressed="false">
+            <span class="kpi-top"><span class="kpi-label">Belgia</span><span class="kpi-check" aria-hidden="true">✓</span></span>
+            <span class="kpi-value">0</span>
+            <span class="kpi-sub"></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:0%"></i></span>
+            <span class="kpi-hint">Apasă pentru a filtra →</span>
+          </button>
+          <button class="kpi" type="button" data-filter="tech" aria-pressed="false">
+            <span class="kpi-top"><span class="kpi-label">Tech &amp; AI</span><span class="kpi-check" aria-hidden="true">✓</span></span>
+            <span class="kpi-value">0</span>
+            <span class="kpi-sub"></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:0%"></i></span>
+            <span class="kpi-hint">Apasă pentru a filtra →</span>
+          </button>
+        </div>
+
+        <div class="dash-foot solo">
+          <div class="dash-panel">
+            <h3>Severitate — apasă un pătrat ca să vezi doar știrile de nivelul acela</h3>
+            <div class="sev-squares" role="group" aria-label="Filtrează după severitate — roșu, galben, verde"></div>
+          </div>
+        </div>
+      </section>
+
+      <div class="filter-status" aria-live="polite">
+        <span class="filter-label">Se afișează: <strong>Toate categoriile — 1 din 1 știri</strong></span>
+        <button class="filter-reset" type="button" hidden>Resetează filtrul</button>
+      </div>
+
+      <!-- Cuprinsul zilei — sub banda dashboard, înaintea cardurilor.
+           Generat de script din cardurile zilei curente: lista completă a
+           zilei, grupată pe ora publicării, cele mai noi primele; fiecare
+           titlu e link la cardul lui (#stire-N), iar antetul de oră al
+           fiecărui grup e buton de filtru pe rulare — aceeași logică pe care
+           o aveau barele „Ritmul zilei" (selecție unică; al doilea click pe
+           aceeași oră sau butonul de reset revine la toate; o selecție de oră
+           anulează filtrul de categorie și invers). Nu e pliabil: toate
+           grupurile de oră sunt extinse permanent, cu toate titlurile
+           vizibile — fără săgeți de pliere și fără buton de extindere.
+           Cuprinsul urmează filtrul activ, la fel ca și cardurile: la un
+           filtru de categorie, severitate sau oră arată doar rândurile
+           știrilor din selecția aceea, iar grupurile de oră rămase fără
+           nicio știre vizibilă se ascund; butonul „Toate" îl readuce la
+           toate titlurile zilei. Chenarul rămâne în afara filtrării. -->
+      <nav class="day-toc" aria-label="Cuprinsul zilei">
+        <div class="toc-head">
+          <h2>Cuprins</h2>
+          <span class="toc-count">cele mai noi primele · apasă pe o oră ca să filtrezi rularea, pe un titlu ca să sari la știre</span>
+        </div>
+        <div class="toc-groups"></div>
+      </nav>
+
+      <p class="empty">Nicio știre în această categorie azi.</p>
+
+      <main>
+        <!-- 1 · 15 nov · 08:00 -->
+        <article id="stire-227" data-cats="securitate romania" data-sev="amber" data-subiect="avertismentul ambasadorilor SUA">
+          <div class="a-meta">
+            <span class="a-time">15 nov · 08:00</span>
+            <span class="a-cat">Securitate &amp; NATO · România</span>
+            <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
+            <span class="spot-tag">Știrea zilei</span>
+            <a class="cont-pill" href="#stire-215" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
+            <span class="subj-pill">avertismentul ambasadorilor SUA</span>
+            <span class="a-num">#1 / 1</span>
+          </div>
+          <h2>Opt foști ambasadori ai SUA, între care patru în România, avertizează: concesiile teritoriale pentru Putin ar submina NATO și ar crește riscul unui război mai amplu în Europa</h2>
+          <div class="followup">
+            <span class="tag">Urmare la</span>
+            <p><a href="#stire-215">„SUA au pus pe masă retragerea Ucrainei din Donbas în schimbul aderării la NATO, spune Zelenski — prima dată când Washingtonul ridică ideea” — sâmbătă, 14 noiembrie 2026, ora 13:00.</a> (Scrisoarea celor opt ambasadori reacționează direct la propunerea dezvăluită ieri de Zelenski — retragerea din Donbas în schimbul aderării la NATO — și la relaxarea sancțiunilor anunțată de Washington în octombrie.)</p>
+          </div>
+          <div class="sec">
+            <p class="sec-label">Ce s-a întâmplat</p>
+            <p>Opt foști ambasadori ai Statelor Unite — între care patru au reprezentat Washingtonul în România (Adrian Zuckerman, Mark Gitenstein, Kathleen Kavalec și Jim Rosapepe), unul în Belgia (Ron Gidwitz), plus Jim Gilmore (OSCE), Bridget Brink (Slovacia și Ucraina) și John Sullivan (Federația Rusă) — au semnat un text comun publicat de publicația israeliană Israel Hayom, relatat în română de G4Media sâmbătă seară, 14 noiembrie. În text, cei opt avertizează că recompensarea agresiunii Rusiei prin concesii teritoriale și relaxarea sancțiunilor l-ar încuraja pe Putin, ar submina NATO și ar crește riscul izbucnirii unui război mult mai amplu în Europa. Ei invocă lecția anilor 1930 — „cel care practică politica de conciliere este acela care hrănește un crocodil, sperând că acesta îl va mânca ultimul” (Churchill) — și Memorandumul de la Budapesta din 1994, prin care Rusia s-a angajat să respecte suveranitatea și frontierele Ucrainei în schimbul renunțării Kievului la arsenalul nuclear. Semnatarii critică direct două măsuri recente ale administrației Trump: anunțul din octombrie 2026 privind achiziția a 300.000 de tone de motorină rusească, cu relaxarea temporară a restricțiilor americane și suspendarea unor sancțiuni și taxe prevăzute de Legea Graham din 2026, și presiunea exercitată asupra Ucrainei pentru a accepta concesii teritoriale — „a transfera povara de pe umerii agresorului pe cei ai victimei”.</p>
+          </div>
+          <div class="sec">
+            <p class="sec-label">De ce contează</p>
+            <p>Scrisoarea e o intervenție directă, din interiorul diplomației americane, în direcția negocierilor de pace — exact când Washingtonul a pus pe masă, pentru prima dată, retragerea Ucrainei din Donbas în schimbul aderării la NATO (cardul de ieri, ora 13:00). Pentru el, ca IT incident Manager în domeniul securității NATO, miza e credibilitatea descurajării pe Flancul estic: dacă concesiile devin prețul unui acord, semnatarii spun că amenințările rusești s-ar putea extinde la aliați — „concesiile nejustificate oferite Kremlinului în privința Ucrainei ar putea conduce la amenințări rusești și chiar la atacuri împotriva aliaților NATO”. Legătura personală e dublă: patru dintre semnatari au fost ambasadori ai SUA în România, iar unul — Ron Gidwitz — în Belgia, cele două țări ale vieții lui. De urmărit: reuniunea Trump–Putin de la Shenzhen (18–19 noiembrie) și dacă europenii, în formatul E5 decis la Dublin, sunt acceptați la masa negocierilor.</p>
+          </div>
+          <div class="verify">
+            <p class="sec-label">Verificare <span class="status">Sursă primară</span></p>
+            <p>Verdict: sursă primară. Știrea ESTE textul comun al celor opt foști ambasadori, publicat de Israel Hayom și redat integral în română de G4Media (14 noiembrie 2026, seara; relatarea curatoriată): semnatarii, avertismentul privind concesiile teritoriale și relaxarea sancțiunilor, paralela cu anii 1930, Memorandumul de la Budapesta și criticile la adresa achiziției de motorină rusească și a presiunii asupra Ucrainei. Textul integral e reluat identic și de alte publicații românești care citează G4Media — Clujanul (14 noiembrie, 22:30), Craiova.ro (14 noiembrie, 21:46) și Ziarul Atac (14 noiembrie, 22:45) — fără o relatare independentă a conținutului scrisorii în afara lanțului Israel Hayom → G4Media; de aceea verdictul rămâne „sursă primară", nu „confirmat" de surse independente.</p>
+            <ul class="sources">
+              <li><a href="https://www.g4media.ro/semnal-de-alarma-tras-de-opt-fosti-ambasadori-ai-sua-intre-care-patru-in-romania-cu-privire-la-putin-recompensarea-agresiunii-rusiei-prin-concesii-teritoriale-si-relaxarea-sanctiunilor-ar-creste-ri.html" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>G4Media — „Semnal de alarmă tras de opt foști ambasadori ai SUA, între care patru în România, cu privire la Putin: Recompensarea agresiunii Rusiei prin concesii teritoriale și relaxarea sancțiunilor ar crește riscul unui război mult mai amplu în Europa” (14 nov 2026, seara; relatarea curatoriată — textul integral al scrisorii: semnatarii, avertismentul, paralela cu anii 1930, Memorandumul de la Budapesta, criticile la adresa achiziției de motorină rusească și a presiunii asupra Ucrainei)<span class="host">g4media.ro</span></a></li>
+              <li><a href="https://clujanul.ro/semnal-de-alarma-tras-de-opt-fosti-ambasadori-ai-sua-intre-care-patru-in-romania-cu-privire-la-putin-recompensarea-agresiunii-rusiei-prin-concesii-teritoriale-si-relaxarea-sanctiunilor-ar-creste-ri-ht/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Clujanul — „Opt foști ambasadori SUA avertizează: concesiile teritoriale pentru Putin duc la război” (14 nov 2026, 22:30; republicare a textului G4Media: semnatarii, lecțiile istoriei, Memorandumul de la Budapesta)<span class="host">clujanul.ro</span></a></li>
+              <li><a href="https://craiova.ro/stiri/opt-fosti-ambasadori-americani-avertizeaza-asupra-riscului-de-razboi" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Craiova.ro — „Foști ambasadori americani avertizează: risc de război” (14 nov 2026, 21:46; bazat pe G4Media: textul comun publicat de Israel Hayom, semnatarii)<span class="host">craiova.ro</span></a></li>
+              <li><a href="https://ziaruatac.ro/stire/semnal-de-alarma-tras-de-opt-fosti-ambasadori-ai-sua-intre-care-patru-in-romania-cu-privire-la-putin-recompensarea-agresiunii-rusiei-prin-concesii-teritoriale-si-relaxarea-sanctiunilor-ar-creste-riscul-unui-razboi-mult-mai-amplu-in-europa" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Ziarul Atac — „Semnal de alarmă tras de opt foști ambasadori ai SUA…” (14 nov 2026, 22:45; republicare integrală a textului G4Media: citatul lui Churchill, achiziția de 300.000 de tone de motorină, presiunea asupra Ucrainei)<span class="host">ziaruatac.ro</span></a></li>
+            </ul>
+          </div>
+          <div class="adverse">
+            <p class="sec-label">Tabăra adversă</p>
+            <p><strong>Iuri Ușakov</strong>, consilier al Kremlinului, a respins poziția europenilor după discuțiile din 12 noiembrie cu emisarii americani, spunând că ea echivalează cu „o rețetă pentru un război fără sfârșit" și nu a confirmat că europenii vor participa la următoarea rundă de negocieri, potrivit Reuters (12 noiembrie 2026). (<a href="https://www.europesays.com/europe/180894/" target="_blank" rel="noopener">Europe Says / Reuters, 13 nov 2026</a>)</p>
+          </div>
+          <div class="impact">
+            <span class="badge">Impact direct</span>
+            <p>Impact direct: minim azi — scrisoarea nu cere nicio acțiune de la el; relevanță profesională înaltă: opt foști ambasadori americani, patru dintre ei cu mandate în România și unul în Belgia, apără public credibilitatea NATO tocmai când Washingtonul pune pe masă concesii teritoriale în schimbul aderării Ucrainei — direcția negocierilor de pace modelează postura de descurajare pe Flancul estic, zona lui de lucru. De urmărit: reuniunea Trump–Putin de la Shenzhen (18–19 noiembrie) și dacă formatul E5 european e acceptat la masa negocierilor.</p>
+          </div>
+        </article>
+
+
+      </main>
+      </section>
+
+      <section class="day day-archive" id="zi-2026-11-14">
+        <div class="day-head">
+          <h2>Sâmbătă, 14 noiembrie 2026</h2>
+          <span>Ediția de ieri · 17 știri · arhivă (ultimele 7 zile)</span>
+        </div>
 
       <!-- Chenar permanent: știrea cea mai importantă a zilei — sub fereastra
            „Ultimele știri", ÎNAINTEA dashboardului, vizibilă din prima, fără scroll.
@@ -5624,662 +5790,12 @@
       </main>
       </section>
 
-      <section class="day day-archive" id="zi-2026-11-08">
-        <div class="day-head">
-          <h2>Duminică, 8 noiembrie 2026</h2>
-          <span>Ediția de ieri · 12 știri · arhivă (ultimele 7 zile)</span>
-        </div>
-
-      <!-- Chenar permanent: știrea cea mai importantă a zilei — sub fereastra
-           „Ultimele știri", ÎNAINTEA dashboardului, vizibilă din prima, fără scroll.
-           Nivelul de azi: ROȘU (sev-red) — grav: alte trei cadavre găsite la
-           locuința atacatorului din Cracovia, victimele ar fi membri ai familiei
-           sale; posibilă influență de extremă dreaptă — continuare a știrii cu
-           severitate roșie de sâmbătă, prima știre a zilei.
-           Chenarul rămâne în afara logicii de filtrare: vizibil indiferent de filtrul de categorie. -->
-      <section class="spot sev-red" aria-label="Știrea cea mai importantă a zilei">
-        <div class="spot-head">
-          <span class="spot-kicker">
-            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13 2 4.5 13.5H11L9.5 22 19 10h-6.5L13 2z"/></svg>
-            Știrea zilei · Atenție rapidă
-          </span>
-          <span class="spot-time">8 nov · 11:00</span>
-          <span class="spot-pill">Nivel roșu — grav</span>
-        </div>
-        <h2 class="spot-title">Atacul din Cracovia: poliția confirmă că cele trei cadavre de la locuința atacatorului sunt părinții și sora lui — nouă morți în total</h2>
-        <p class="spot-why"><strong>De ce e în față:</strong> Poliția a confirmat duminică dimineață că cele trei cadavre de la locuința atacatorului sunt părinții și sora lui, uciși cel mai probabil înainte de atacul din piață — bilanțul urcă la nouă morți; cel mai grav fapt al zilei, continuare a știrii cu severitate roșie de sâmbătă.</p>
-        <p class="spot-lead">Poliția a confirmat că cele trei cadavre găsite la locuința atacatorului din Ostrowiec Świętokrzyski sunt tatăl (53 de ani), mama (52) și sora (21) lui; în piață au murit șase oameni, între care un cetățean britanic de 32 de ani, și 16 au fost răniți. Polonia e în doliu național duminică și luni.</p>
-        <p class="spot-more" hidden><span class="spot-more-text"></span> <button class="spot-more-btn" type="button">apasă aici</button></p>
-        <div class="spot-foot">
-          <a class="spot-link" href="#stire-110">Citește știrea completă ↓</a>
-          <div class="sev-scale" role="img" aria-label="Scară de gravitate: verde — normal, galben — de urmărit, roșu — grav. Nivelul de azi: roșu.">
-            <span class="sev-item"><i class="sev-dot g" aria-hidden="true"></i>Verde · normal</span>
-            <span class="sev-item"><i class="sev-dot y" aria-hidden="true"></i>Galben · de urmărit</span>
-            <span class="sev-item on"><i class="sev-dot r" aria-hidden="true"></i>Roșu · grav</span>
-          </div>
-        </div>
-      </section>
-
-      <!-- Dashboard -->
-      <section class="dashboard" aria-label="Panou de ansamblu">
-        <div class="dash-head">
-          <span class="dash-title">Dashboard · Azi</span>
-          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 22:00</span>
-          <span class="dash-meta">Fereastră monitorizare <strong>L–V 06:00–22:00 · S–D 07:30–22:00</strong> · pas ~3 ore</span>
-        </div>
-
-        <div class="kpi-grid" role="group" aria-label="Filtrează după categorie — apasă pe un tile">
-          <button class="kpi" type="button" data-filter="toate" aria-pressed="true">
-            <span class="kpi-top"><span class="kpi-label">Toate știrile</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">12</span>
-            <span class="kpi-sub">știri verificate azi, în 9 rulări</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:100%"></i></span>
-            <span class="kpi-hint">Apasă pentru toate</span>
-          </button>
-          <button class="kpi" type="button" data-filter="securitate" aria-pressed="false">
-            <span class="kpi-top"><span class="kpi-label">Securitate &amp; NATO</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">7</span>
-            <span class="kpi-sub">avertismentul șefului armatei britanice · țintă aeriană Chilia Veche · alertă aeriană Insula Șerpilor · negocieri Ucraina Abu Dhabi · exercițiu Coaliția Voinței în Polonia · familia atacatorului ucisă · trei cadavre la locuința atacatorului</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:58%"></i></span>
-            <span class="kpi-hint">Apasă pentru a filtra →</span>
-          </button>
-          <button class="kpi" type="button" data-filter="romania" aria-pressed="false">
-            <span class="kpi-top"><span class="kpi-label">România</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">3</span>
-            <span class="kpi-sub">țintă aeriană Chilia Veche · alertă aeriană Insula Șerpilor · exercițiu Coaliția Voinței în Polonia</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:25%"></i></span>
-            <span class="kpi-hint">Apasă pentru a filtra →</span>
-          </button>
-          <button class="kpi" type="button" data-filter="tech" aria-pressed="false">
-            <span class="kpi-top"><span class="kpi-label">Tech &amp; AI</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">5</span>
-            <span class="kpi-sub">OpenAI strânge 11 mld $ · memo spionaj Nvidia Megaspeed · breșă Chainalysis · prăbușirea acțiunilor AI · accelerarea AI la Anthropic</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:42%"></i></span>
-            <span class="kpi-hint">Apasă pentru a filtra →</span>
-          </button>
-        </div>
-
-        <div class="dash-foot">
-          <div class="dash-panel">
-            <h3>Ritmul zilei — știri pe rulare</h3>
-            <div class="rhythm" role="group" aria-label="Filtru după ora publicării — apasă pe o rulare ca să vezi doar știrile ei">
-              <button class="col" type="button" data-hour="08:00" aria-pressed="false" aria-label="Filtrează știrile de la ora 08:00 — 1 știre"><span class="n">1</span><span class="bar" style="height:22px"></span><span class="t">08:00</span></button>
-              <button class="col" type="button" data-hour="09:00" aria-pressed="false" aria-label="Filtrează știrile de la ora 09:00 — 2 știri"><span class="n">2</span><span class="bar" style="height:40px"></span><span class="t">09:00</span></button>
-              <button class="col" type="button" data-hour="10:00" aria-pressed="false" aria-label="Filtrează știrile de la ora 10:00 — 1 știre"><span class="n">1</span><span class="bar" style="height:22px"></span><span class="t">10:00</span></button>
-              <button class="col" type="button" data-hour="11:00" aria-pressed="false" aria-label="Filtrează știrile de la ora 11:00 — 2 știri"><span class="n">2</span><span class="bar" style="height:40px"></span><span class="t">11:00</span></button>
-              <button class="col" type="button" data-hour="14:00" aria-pressed="false" aria-label="Filtrează știrile de la ora 14:00 — 1 știre"><span class="n">1</span><span class="bar" style="height:22px"></span><span class="t">14:00</span></button>
-              <button class="col" type="button" data-hour="15:00" aria-pressed="false" aria-label="Filtrează știrile de la ora 15:00 — 2 știri"><span class="n">2</span><span class="bar" style="height:40px"></span><span class="t">15:00</span></button>
-              <button class="col" type="button" data-hour="16:00" aria-pressed="false" aria-label="Filtrează știrile de la ora 16:00 — 1 știre"><span class="n">1</span><span class="bar" style="height:22px"></span><span class="t">16:00</span></button>
-              <button class="col" type="button" data-hour="18:00" aria-pressed="false" aria-label="Filtrează știrile de la ora 18:00 — 1 știre"><span class="n">1</span><span class="bar" style="height:22px"></span><span class="t">18:00</span></button>
-              <button class="col" type="button" data-hour="22:00" aria-pressed="false" aria-label="Filtrează știrile de la ora 22:00 — 1 știre"><span class="n">1</span><span class="bar" style="height:22px"></span><span class="t">22:00</span></button>
-            </div>
-            <p class="rhythm-hint">Apasă pe o bară ca să vezi doar știrile din rularea aceea; apasă din nou pe ea pentru toate.</p>
-          </div>
-          <div class="dash-panel">
-            <h3>Stare ediție</h3>
-            <ul class="status-list">
-              <li><span class="k">Ultima actualizare</span><span class="v">Azi, 22:00</span></li>
-              <li><span class="k">Cea mai nouă</span><span class="v">avertismentul șefului armatei britanice · 22:00</span></li>
-              <li><span class="k">Acoperire</span><span class="v">Ultimele 7 zile în arhivă</span></li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <div class="filter-status" aria-live="polite">
-        <span class="filter-label">Se afișează: <strong>Toate categoriile — 12 din 12 știri</strong></span>
-        <button class="filter-reset" type="button" hidden>Resetează filtrul</button>
-      </div>
-
-      <nav class="index" aria-label="Cuprinsul zilei">
-        <div class="index-head">
-          <h2>Cuprins</h2>
-          <span>apasă pe un titlu ca să sari direct la știre · se sincronizează cu filtrul</span>
-        </div>
-        <ol class="index-list">
-          <li data-cats="securitate"><a href="#stire-117"><time>22:00</time><span class="cat-dot sec" aria-hidden="true"></span><span class="t">Șeful armatei britanice avertizează: „cea mai periculoasă perioadă din viața mea de adult” — apetitul Rusiei pentru risc crește, iar Londra rămâne în urma aliaților europeni</span><span class="n">#1</span></a></li>
-          <li data-cats="securitate romania"><a href="#stire-116"><time>18:00</time><span class="cat-dot sec" aria-hidden="true"></span><span class="t">A treia țintă aeriană a zilei la granița României: F-16 românești ridicate de la Fetești după o detectare lângă Chilia Veche; al doilea RO-Alert în Tulcea, la 16:51</span><span class="n">#2</span></a></li>
-          <li data-cats="securitate romania"><a href="#stire-115"><time>16:00</time><span class="cat-dot sec" aria-hidden="true"></span><span class="t">Alertă aeriană la Insula Șerpilor: două ținte detectate de radarul MApN; F-18 și elicoptere spaniole ridicate de la Mihail Kogălniceanu, RO-Alert în estul Tulcei</span><span class="n">#3</span></a></li>
-          <li data-cats="securitate"><a href="#stire-113"><time>15:00</time><span class="cat-dot sec" aria-hidden="true"></span><span class="t">Europa va fi la masa negocierilor pentru Ucraina de la Abu Dhabi (10–11 nov), anunță Parisul — Moscova spune că formatul trilateral nu prevede europeni</span><span class="n">#4</span></a></li>
-          <li data-cats="tech"><a href="#stire-114"><time>15:00</time><span class="cat-dot tech" aria-hidden="true"></span><span class="t">OpenAI a strâns 11 mld $ la o evaluare de 1,25 trilioane $ — mult sub ținta inițială de 30 mld $; și Anthropic își vede evaluarea de IPO tăiată</span><span class="n">#5</span></a></li>
-          <li data-cats="securitate romania"><a href="#stire-112"><time>14:00</time><span class="cat-dot sec" aria-hidden="true"></span><span class="t">Exercițiul Koalicja începe luni în Polonia: 2.800 de militari din 11 țări, între care Belgia, repetă desfășurarea forței multinaționale pentru Ucraina de după război</span><span class="n">#6</span></a></li>
-          <li data-cats="securitate"><a href="#stire-110"><time>11:00</time><span class="cat-dot sec" aria-hidden="true"></span><span class="t">Atacul din Cracovia: poliția confirmă că cele trei cadavre de la locuința atacatorului sunt părinții și sora lui — nouă morți în total</span><span class="n">#7</span></a></li>
-          <li data-cats="tech"><a href="#stire-111"><time>11:00</time><span class="cat-dot tech" aria-hidden="true"></span><span class="t">Memo al serviciilor americane: o directoare Megaspeed ar fi fost recrutată de spionajul chinez ca să-l supravegheze pe șeful Nvidia, Jensen Huang</span><span class="n">#8</span></a></li>
-          <li data-cats="tech"><a href="#stire-109"><time>10:00</time><span class="cat-dot tech" aria-hidden="true"></span><span class="t">Breșă la Chainalysis: parolele și tokenurile live ale tuturor utilizatorilor, expuse după un atac cu agenți AI</span><span class="n">#9</span></a></li>
-          <li data-cats="tech"><a href="#stire-107"><time>09:00</time><span class="cat-dot tech" aria-hidden="true"></span><span class="t">Acțiunile AI s-au prăbușit joi: circa 2,5 trilioane $ șterse de pe bursă într-o zi, apoi o revenire parțială vineri — Nasdaq −5,5%, Nvidia −9%</span><span class="n">#10</span></a></li>
-          <li data-cats="tech"><a href="#stire-108"><time>09:00</time><span class="cat-dot tech" aria-hidden="true"></span><span class="t">METR: modelele Anthropic se îmbunătățesc de două ori mai repede decât acum un an — iar AI-ul însuși ar face ~80% din accelerare</span><span class="n">#11</span></a></li>
-          <li data-cats="securitate"><a href="#stire-106"><time>08:00</time><span class="cat-dot sec" aria-hidden="true"></span><span class="t">Atacul din Cracovia: alte trei cadavre găsite la locuința atacatorului — victimele ar fi membri ai familiei sale; printre cei șase uciși în piață, un cetățean britanic</span><span class="n">#12</span></a></li>
-        </ol>
-      </nav>
-
-      <p class="empty">Nicio știre în această categorie azi.</p>
-
-      <main>
-        <!-- 1 · 8 nov · 22:00 -->
-        <article id="stire-117" data-cats="securitate" data-sev="amber" data-subiect="avertismentul șefului armatei britanice">
-          <div class="a-meta">
-            <span class="a-time">8 nov · 22:00</span>
-            <span class="a-cat">Securitate &amp; NATO</span>
-            <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
-            <a class="cont-pill" href="#stire-82" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
-            <span class="subj-pill">avertismentul șefului armatei britanice</span>
-            <span class="a-num">#1 / 12</span>
-          </div>
-          <h2>Șeful armatei britanice avertizează: „cea mai periculoasă perioadă din viața mea de adult” — apetitul Rusiei pentru risc crește, iar Londra rămâne în urma aliaților europeni</h2>
-
-          <div class="followup">
-            <span class="tag">Urmare la</span>
-            <p><a href="#stire-82">„Amenințări cu bombă la zborurile europene, ziua a treia: cel puțin 35 de zboruri afectate; curse TAROM și Wizz Air spre București, amenințări trimise și redacțiilor de știri" — vineri, 6 noiembrie 2026, ora 15:00.</a></p>
-          </div>
-
-          <div class="sec">
-            <p class="sec-label">Ce s-a întâmplat</p>
-            <p>Mareșalul-șef al aviației Sir Richard Knighton, șeful Statului Major al Apărării din Marea Britanie, a declarat într-un interviu pentru Financial Times, publicat duminică, 8 noiembrie, că trăim „cea mai periculoasă perioadă din viața mea de adult” și că amenințarea — „în principal din partea Rusiei, dar mai larg, la nivel global” — este în creștere. Knighton spune că termenul „activitate hibridă” nu mai cuprinde amploarea acțiunilor rusești: „Vorbim de asasinate țintite, vorbim de sabotaj, vorbim de atacuri cibernetice” — fapte reale, cu dovezi, în Europa și într-o oarecare măsură în Regatul Unit — și că Regatul Unit trebuie „să ajungă din urmă aliații europeni”, mai conștienți de apetitul tot mai mare al Kremlinului pentru risc. Totodată, potrivit FT (relatat de UNITED24 Media, 8 nov), Londra și aliații nord-europeni pregătesc întărirea operațiunilor comune împotriva submarinelor rusești în Atlanticul de Nord, Arctica și Marea Baltică, prin Forța Expediționară Comună (JEF) condusă de Regatul Unit. Duminică, Knighton a vorbit și la BBC despre apelul guvernului ca gospodăriile să-și facă stocuri de apă și alimente pentru eventuale perturbări provocate de state ostile — el însuși a spus că și-a făcut provizii pentru familie.</p>
-          </div>
-
-          <div class="sec">
-            <p class="sec-label">De ce contează</p>
-            <p>Șeful armatei unui aliat-cheie spune oficial că „activitatea hibridă” a devenit o descriere depășită — asasinate, sabotaj și atacuri cibernetice sunt acum fapte curente, cu dovezi, în Europa. Pentru munca lui de IT incident Manager în mediul NATO, e continuarea directă a arcului urmărit în ultimele săptămâni: alerta Bundeswehr din 21 octombrie, simpozionul NATO de la București despre amenințări hibride și valul de amenințări cu bombă la zboruri (5–6 noiembrie), a cărui anchetă e citată chiar în interviu. Săptămâna care începe e încărcată pe același arc: exercițiul Koalicja începe luni în Polonia, iar negocierile pentru Ucraina de la Abu Dhabi au loc marți și miercuri. Pentru familie: niciun impact direct azi.</p>
-          </div>
-
-          <div class="verify">
-            <p class="sec-label">Verificare <span class="status">Sursă primară</span></p>
-            <p>Verdict: sursa_primara + confirmat. Knighton însuși, în interviul FT (8 nov 2026) — sursă primară pentru declarații. Relatări concordante ale aceluiași interviu: The British Eye (14:00), EuropeSays (12:58), BritBrief (12:29), LADbible (16:22). BBC confirmă separat declarațiile lui de duminică despre stocurile gospodăriilor. Inițiativa JEF anti-submarin: UNITED24 Media / Newsy Today (20:36), din FT. Notă de integritate: atribuirea amenințărilor cu bombă la adresa avioanelor către Rusia NU e stabilită — FT precizează că ancheta transfrontalieră e în curs și „mai e mult până la atribuire”; cardul nu atribuie amenințările Rusiei.</p>
-            <ul class="sources">
-              <li><a href="https://thebritisheye.com/2026/11/08/uk-military-russian-threat/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>The British Eye — „UK military chief warns of growing Russian threat“ (8 nov 2026, 14:00)<span class="host">thebritisheye.com</span></a></li>
-              <li><a href="https://www.europesays.com/britain/161862/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>EuropeSays — „'Assassinations, sabotage and cyber-attacks': Military chief warns Britain of Putin's escalating shadow war“ (8 nov 2026, 12:58)<span class="host">europesays.com</span></a></li>
-              <li><a href="https://britbrief.co.uk/politics/defence/uk-military-chief-russia-threat-most-dangerous-period.html" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>BritBrief — „UK military chief warns Russia threat is at most dangerous level“ (8 nov 2026, 12:29)<span class="host">britbrief.co.uk</span></a></li>
-              <li><a href="https://www.ladbible.com/news/uk-news/head-british-military-warning-most-dangerous-759901-20261108" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>LADbible — „Head of British military issues stark warning as he says we are in 'most dangerous period he's known'“ (8 nov 2026, 16:22)<span class="host">ladbible.com</span></a></li>
-              <li><a href="https://www.newsy-today.com/uk-and-northern-european-allies-to-strengthen-operations-against-russian-submarines/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Newsy Today — „UK and Northern European Allies to Strengthen Operations Against Russian Submarines“ (8 nov 2026, 20:36; relatează din FT inițiativa anti-submarin prin JEF)<span class="host">newsy-today.com</span></a></li>
-            </ul>
-          </div>
-
-          <div class="opposing">
-            <p class="sec-label">Tabăra adversă</p>
-            <p>Moscova neagă sistematic că ar fi în spatele atacurilor hibride din Europa și respinge acuzațiile de sabotaj și asasinate — poziția constantă a Rusiei, reiterată și după arestarea pentru spionaj din Germania (22 octombrie), când ambasada rusă de la Berlin nu a răspuns solicitării de comentarii.</p>
-          </div>
-
-          <div class="impact">
-            <span class="badge">Impact direct</span>
-            <p>Impact direct: minim — niciun efect imediat asupra rutinei zilnice sau a familiei. Relevanță profesională ridicată: avertismentul celui mai înalt militar britanic ridică miza arcului hibrid urmărit în watch și precede o săptămână încărcată (exercițiul Koalicja de luni, negocierile de la Abu Dhabi marți–miercuri). De urmărit: reacții oficiale NATO și detaliile acordului JEF anti-submarin.</p>
-          </div>
-        </article>
-
-        <!-- 1 · 8 nov · 18:00 -->
-        <article id="stire-116" data-cats="securitate romania" data-sev="amber" data-subiect="țintă aeriană Chilia Veche">
-          <div class="a-meta">
-            <span class="a-time">8 nov · 18:00</span>
-            <span class="a-cat">Securitate &amp; NATO</span>
-            <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
-            <a class="cont-pill" href="#stire-115" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
-            <span class="subj-pill">țintă aeriană Chilia Veche</span>
-            <span class="a-num">#2 / 12</span>
-          </div>
-          <h2>A treia țintă aeriană a zilei la granița României: F-16 românești ridicate de la Fetești după o detectare lângă Chilia Veche; al doilea RO-Alert în Tulcea, la 16:51</h2>
-          <div class="followup">
-            <span class="tag">Urmare la</span>
-            <p><a href="#stire-115">„Alertă aeriană la Insula Șerpilor: două ținte detectate de radarul MApN; F-18 și elicoptere spaniole ridicate de la Mihail Kogălniceanu, RO-Alert în estul Tulcei" — duminică, 8 noiembrie 2026, ora 16:00.</a></p>
-          </div>
-          <div class="sec">
-            <p class="sec-label">Ce s-a întâmplat</p>
-            <p>Duminică după-amiază, la circa o oră și jumătate după ce alerta de la Insula Șerpilor încetase (15:26), sistemul de supraveghere radar al Ministerului Apărării Naționale a detectat o nouă țintă aeriană în spațiul aerian al Ucrainei, la aproximativ 4 kilometri nord de localitatea Chilia Veche, în proximitatea frontierei cu România. Două avioane F-16 ale Forțelor Aeriene Române, aflate în serviciul de luptă Poliție Aeriană, au decolat de la Baza 86 Aeriană Fetești pentru monitorizarea situației. Centrul Național Militar de Comandă a notificat Inspectoratul General pentru Situații de Urgență, iar la ora 16:51 a fost transmis un mesaj RO-Alert pentru populația din nordul județului Tulcea. E a treia țintă aeriană detectată duminică în zonă, după cele două de lângă Insula Șerpilor. MApN nu a precizat natura țintei și nu a confirmat o pătrundere în spațiul aerian românesc.</p>
-          </div>
-          <div class="sec">
-            <p class="sec-label">De ce contează</p>
-            <p>Trei ținte într-o singură zi, două mesaje RO-Alert și două baze aeriene activate (Mihail Kogălniceanu și Fetești) — presiunea pe flancul estic și pe Delta Dunării nu slăbește, ci se repetă la interval de ore. Pentru munca lui de IT incident Manager în mediul NATO, e un nou incident operațional pe același arc al Mării Negre urmărit în ultimele săptămâni, cu alertare a populației civile. Context: luni, 9 noiembrie, președinta Comisiei Europene vine la București într-un turneu dedicat tocmai securității Mării Negre — vizita se va desfășura pe fondul acestor alerte repetate. Pentru familie: ținta a rămas în spațiul aerian ucrainean, fără pătrundere confirmată în spațiul românesc — niciun impact direct.</p>
-          </div>
-          <div class="verify">
-            <p class="sec-label">Verificare <span class="status">Sursă primară</span></p>
-            <p>Verdict: sursa_primara + confirmat. MApN — informarea postată pe Facebook (sursă primară, 8 nov 2026): ținta la circa 4 kilometri nord de Chilia Veche, decolarea celor două F-16 de la Fetești, RO-Alert la 16:51. Relatări concordante: Știri de azi (după MApN), Presa România (după News.ro, 17:47), Dobrogea Online (18:13), Știri Complete (17:00). Notă de integritate: natura țintei nu a fost precizată de MApN — nu o numim dronă; unele relatări amestecă această țintă cu cea de-a doua de la Insula Șerpilor (55 de kilometri vest) — MApN le tratează ca detectări distincte („Alte două ținte aeriene au fost depistate duminică, în apropierea Insulei Șerpilor").</p>
-            <ul class="sources">
-              <li><a href="https://stirideazi.ro/mapn-o-noua-tinta-aeriana-a-fost-detectata-in-proximitatea-frontierei-cu-romania/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Știri de azi — „MApN: O nouă țintă aeriană a fost detectată în proximitatea frontierei cu România" (8 nov 2026, după informarea MApN de pe Facebook)<span class="host">stirideazi.ro</span></a></li>
-              <li><a href="https://presaromania.ro/nou-mesaj-ro-alert-pentru-nordul-judetului-tulcea-dupa-observarea-unei-tinte-aeriene/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Presa România — „Nou mesaj RO-Alert pentru nordul județului Tulcea, după observarea unei ținte aeriene" (8 nov 2026, 17:47, după News.ro)<span class="host">presaromania.ro</span></a></li>
-              <li><a href="https://www.dobrogeaonline.ro/ro-alert-in-nordul-judetului-tulcea-a-fost-detectata-o-tinta-aeriana-care-se-apropie-de-nordul-romaniei/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Dobrogea Online — „RO-ALERT în nordul județului Tulcea: a fost detectată o țintă aeriană care se apropie de nordul României" (8 nov 2026, 18:13)<span class="host">dobrogeaonline.ro</span></a></li>
-              <li><a href="https://stiricomplete.ro/social/alerta-ro-alert-in-nordul-judetului-tulcea-o-tinta-aeriana-se-indreapta-spre-romania-4817e49ca0/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Știri Complete — „Alertă RO-Alert în nordul județului Tulcea: o țintă aeriană se îndreaptă spre România" (8 nov 2026, 17:00)<span class="host">stiricomplete.ro</span></a></li>
-            </ul>
-          </div>
-          <div class="impact">
-            <span class="badge">Impact direct</span>
-            <p>Impact direct: minim — ținta a rămas în spațiul aerian ucrainean, fără pătrundere confirmată în spațiul românesc; nu s-au raportat apeluri la 112 legate de incident. Relevanță profesională ridicată: a treia activare de poliție aeriană într-o singură zi, pe arcul Mării Negre urmărit în watch — de urmărit dacă MApN precizează natura țintelor sau apar noi detectări în cursul nopții.</p>
-          </div>
-        </article>
-
-        <!-- 1 · 8 nov · 16:00 -->
-        <article id="stire-115" data-cats="securitate romania" data-sev="amber" data-subiect="alertă aeriană Insula Șerpilor">
-          <div class="a-meta">
-            <span class="a-time">8 nov · 16:00</span>
-            <span class="a-cat">Securitate &amp; NATO</span>
-            <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
-            <span class="subj-pill">alertă aeriană Insula Șerpilor</span>
-            <span class="a-num">#3 / 12</span>
-          </div>
-          <h2>Alertă aeriană la Insula Șerpilor: două ținte detectate de radarul MApN; F-18 și elicoptere spaniole ridicate de la Mihail Kogălniceanu, RO-Alert în estul Tulcei</h2>
-
-          <div class="sec">
-            <p class="sec-label">Ce s-a întâmplat</p>
-            <p>Duminică după-amiază, sistemul de supraveghere radar al Ministerului Apărării Naționale a detectat o țintă aeriană la circa 30 de kilometri est de Insula Șerpilor, în spațiul aerian al Ucrainei. Două avioane F-18 ale Forțelor Aeriene Spaniole, aflate în serviciul de luptă Poliție Aeriană la Baza 57 Mihail Kogălniceanu, au decolat pentru monitorizarea situației. Centrul Național Militar de Comandă a notificat Inspectoratul General pentru Situații de Urgență, iar la ora 14:02 a fost transmis un mesaj RO-Alert pentru populația din estul județului Tulcea. Prima țintă a dispărut de pe radar la est de Sulina. La scurt timp, radarul a detectat o a doua țintă, la circa 55 de kilometri vest de Insula Șerpilor, iar două elicoptere NH-90 spaniole au decolat de la aceeași bază. Alerta aeriană a încetat la ora 15:26; ISU Delta Tulcea a precizat că nu au fost înregistrate apeluri la 112 în legătură cu incidentul. MApN nu a precizat natura țintelor și nu a confirmat o pătrundere în spațiul aerian românesc.</p>
-          </div>
-
-          <div class="sec">
-            <p class="sec-label">De ce contează</p>
-            <p>E o activare reală a poliției aeriene NATO la Mihail Kogălniceanu — aceeași bază și aceeași zonă a Mării Negre din arcul urmărit în ultimele săptămâni (doborârea dronelor Geran de F-16-urile românești, sesiunea dedicată a Consiliului Nord-Atlantic, decizia CSAT de accelerare a supravegherii maritime). Pentru munca lui de IT incident Manager în mediul NATO, e un nou incident operațional pe Flancul estic, cu alertare a populației civile. Pentru familie: țintele au rămas în spațiul aerian ucrainean, fără pătrundere confirmată în spațiul românesc — niciun impact direct.</p>
-          </div>
-
-          <div class="verify">
-            <p class="sec-label">Verificare <span class="status">Sursă primară</span></p>
-            <p>Verdict: sursa_primara + confirmat. MApN — comunicatul oficial (sursă primară, 8 nov 2026): detectarea celor două ținte, decolarea F-18 și NH-90 spaniole, RO-Alert la 14:02, încetarea alertei la 15:26. Relatări concordante: Știri pe foc (8 nov, 14:54), Antena 3 Constanța (8 nov, 14:37), Infocalan (8 nov, 16:36), xchg.ro după Digi24. Notă de integritate: natura țintelor nu a fost precizată de MApN — nu le numim drone; nicio pătrundere în spațiul aerian românesc nu a fost confirmată.</p>
-            <ul class="sources">
-              <li><a href="https://stiripefoc.ro/stiri/doua-f-18-spaniole-decolate-de-la-mihail-kogalniceanu-dupa-detectarea-unei-tinte-spre-insula-serpilor-populatia-din-estul-tulcii-a-primit-ro-alert" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Știri pe foc — „Două F-18 spaniole decolate de la Mihail Kogălniceanu după detectarea unei ținte spre Insula Șerpilor; populația din estul Tulcii a primit RO-Alert“ (8 nov 2026, 14:54)<span class="host">stiripefoc.ro</span></a></li>
-              <li><a href="https://antena3constanta.ro/2026/11/08/ro-alert-in-judetul-tulcea-dupa-detectarea-unei-tinte-aeriene-in-apropiere-de-insula-serpilor/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Antena 3 Constanța — „RO-Alert în județul Tulcea, după detectarea unei ținte aeriene în apropiere de Insula Șerpilor“ (8 nov 2026, 14:37)<span class="host">antena3constanta.ro</span></a></li>
-              <li><a href="https://infocalan.ro/alerta-aeriana-in-romania-avioane-f-18-si-elicoptere-militare-ridicate-dupa-detectarea-unor-tinte-langa-insula-serpilor/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Infocalan — „Alertă aeriană în România: avioane F-18 și elicoptere militare, ridicate după detectarea unor ținte lângă Insula Șerpilor“ (8 nov 2026, 16:36)<span class="host">infocalan.ro</span></a></li>
-              <li><a href="https://xchg.ro/stiri/aparare/mapn-avioane-f-18-elicoptere-nh-90" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>xchg.ro — relatare după Digi24: „MApN a ridicat avioane F-18 și elicoptere NH-90 spaniole de la Mihail Kogălniceanu după detectarea a două ținte aeriene lângă Insula Șerpilor“ (8 nov 2026)<span class="host">xchg.ro</span></a></li>
-            </ul>
-          </div>
-
-          <div class="impact">
-            <span class="badge">Impact direct</span>
-            <p>Impact direct: minim — țintele au rămas în spațiul aerian ucrainean, fără pătrundere confirmată în spațiul românesc; alerta a încetat la 15:26, fără apeluri la 112. Relevanță profesională ridicată: activare a poliției aeriene NATO la Mihail Kogălniceanu, pe arcul Mării Negre urmărit în watch — de urmărit dacă MApN precizează natura țintelor sau apar noi detectări.</p>
-          </div>
-        </article>
-
-        <!-- 1 · 8 nov · 15:00 -->
-        <article id="stire-113" data-cats="securitate" data-sev="amber" data-subiect="negocieri Ucraina Abu Dhabi">
-          <div class="a-meta">
-            <span class="a-time">8 nov · 15:00</span>
-            <span class="a-cat">Securitate &amp; NATO</span>
-            <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
-            <span class="subj-pill">negocieri Ucraina Abu Dhabi</span>
-            <span class="a-num">#4 / 12</span>
-          </div>
-          <h2>Europa va fi la masa negocierilor pentru Ucraina de la Abu Dhabi (10–11 nov), anunță Parisul — Moscova spune că formatul trilateral nu prevede europeni</h2>
-
-          <div class="sec">
-            <p class="sec-label">Ce s-a întâmplat</p>
-            <p>Ministrul francez de externe Jean-Noël Barrot a declarat duminică, la postul RTL, că europenii vor participa la negocierile pentru Ucraina de la Abu Dhabi, programate marți și miercuri, 10–11 noiembrie: „Europenii vor fi bine reprezentați; Franța va fi la Abu Dhabi ca să ia parte la aceste discuții". Trimisul american Steve Witkoff a anunțat că Washingtonul aduce la aceeași masă delegațiile Ucrainei și Rusiei, pentru a discuta încheierea războiului, acorduri de securitate postbelice și dezescaladarea. Delegația rusă va fi condusă de consilierul prezidențial Vladimir Medinski.</p>
-          </div>
-
-          <div class="sec">
-            <p class="sec-label">De ce contează</p>
-            <p>Formatul negocierilor decide cine stabilește arhitectura de securitate a Europei — sancțiuni, garanții de securitate, reconstrucție — iar Europa a cerut insistent un loc la masă după ce Moscova a insistat ca discuțiile să rămână trilaterale (SUA–Ucraina–Rusia). Pentru munca lui de IT incident Manager în mediul NATO, e exact dosarul Ucraina/securitate europeană pe care îl urmărește; în paralel, miniștrii de externe din G7 se întâlnesc la Paris pe 9–10 noiembrie, iar oficiali americani se întâlnesc separat cu europeni și cu NATO la Bruxelles pe tema garanțiilor de securitate.</p>
-          </div>
-
-          <div class="verify">
-            <p class="sec-label">Verificare <span class="status">Sursă primară</span></p>
-            <p>Verdict: sursa_primara. Anunțul îi aparține ministrului francez de externe Jean-Noël Barrot, făcut duminică la RTL — sursă primară; relatat de Reuters (8 nov 2026). Agenda curatoriată: The Brussels Times (8 nov, 14:28). Notă de integritate: The Hindu BusinessLine preia aceeași știre Reuters — o singură confirmare de agenție, nu două.</p>
-            <ul class="sources">
-              <li><a href="https://www.reuters.com/world/europe/europeans-will-join-ukraine-talks-abu-dhabi-french-foreign-minister-says-2026-11-08/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Reuters — „Europeans will join Ukraine talks in Abu Dhabi, French foreign minister says" (8 nov 2026)<span class="host">reuters.com</span></a></li>
-              <li><a href="https://www.brusselstimes.com/news/2398457/europe-to-be-represented-at-ukraine-war-peace-talks-in-abu-dhabi" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>The Brussels Times — „Europe to be represented at Ukraine war peace talks in Abu Dhabi" (8 nov 2026, 14:28)<span class="host">brusselstimes.com</span></a></li>
-            </ul>
-          </div>
-
-          <div class="opposing">
-            <p class="sec-label">Tabăra adversă</p>
-            <p>Kremlinul — purtătorul de cuvânt Dmitri Peskov a spus că participarea europeană e imposibilă, pentru că formatul convenit e trilateral, Rusia și Ucraina cu SUA mediator (<a href="https://www.europesays.com/ukraine/65501/" target="_blank" rel="noopener">Europe Says</a>). Germania se așteaptă ca reprezentanți europeni să fie prezenți la Abu Dhabi, dar fără loc la masa negocierilor.</p>
-          </div>
-
-          <div class="impact">
-            <span class="badge">Impact direct</span>
-            <p>Impact direct: minim — relevanță de context. Nicio acțiune cerută; de urmărit marți–miercuri ce iese din rundele de la Abu Dhabi și din reuniunea G7 de la Paris (9–10 nov).</p>
-          </div>
-        </article>
-
-        <!-- 2 · 8 nov · 15:00 -->
-        <article id="stire-114" data-cats="tech" data-sev="amber" data-subiect="OpenAI strânge 11 mld $">
-          <div class="a-meta">
-            <span class="a-time">8 nov · 15:00</span>
-            <span class="a-cat">Tech &amp; AI</span>
-            <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
-            <a class="cont-pill" href="#stire-107" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
-            <span class="subj-pill">OpenAI strânge 11 mld $</span>
-            <span class="a-num">#5 / 12</span>
-          </div>
-          <h2>OpenAI a strâns 11 mld $ la o evaluare de 1,25 trilioane $ — mult sub ținta inițială de 30 mld $; și Anthropic își vede evaluarea de IPO tăiată</h2>
-
-          <div class="followup">
-            <span class="tag">Urmare la</span>
-            <p><a href="#stire-107">„Acțiunile AI s-au prăbușit joi: circa 2,5 trilioane $ șterse de pe bursă într-o zi, apoi o revenire parțială vineri — Nasdaq −5,5%, Nvidia −9%"</a> — duminică, 8 noiembrie 2026, ora 09:00.</p>
-          </div>
-
-          <div class="sec">
-            <p class="sec-label">Ce s-a întâmplat</p>
-            <p>OpenAI a închis vineri, 6 noiembrie, prima tranșă de circa 11 mld $ dintr-o rundă nouă de finanțare care evaluează compania la 1,25 trilioane $, potrivit Bloomberg, citând surse apropiate dosarului. În septembrie compania căuta 30 mld $ la 1,4 trilioane $; runda ar putea ajunge la circa 20 mld $ în săptămânile următoare. Reuters a confirmat separat aceleași cifre din propria sursă, iar directoarea financiară Sarah Friar a confirmat la TV cifra de 1,25 trilioane $. În paralel, Bloomberg a relatat că evaluarea potențială a Anthropic la IPO a coborât de la circa 2 trilioane $ (estimat la începutul lui octombrie) la 1,2–1,3 trilioane $.</p>
-          </div>
-
-          <div class="sec">
-            <p class="sec-label">De ce contează</p>
-            <p>E continuarea directă a prăbușirii de joi de pe bursă — banii încă vin spre laboratoarele de frontieră, dar investitorii negociază acum prețul și ritmul, nu mai plătesc orice evaluare. Pentru el: urmărește îndeaproape economia AI (folosește zilnic modelele acestor companii și își construiește automatizări pe API-urile lor); o piață a finanțării AI mai rece înseamnă prețuri și strategii de produs în schimbare la furnizorii pe care se bazează.</p>
-          </div>
-
-          <div class="verify">
-            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
-            <p>Verdict: confirmat. Bloomberg (relatat de TechCrunch, 6 nov) — OpenAI a strâns circa 11 mld $ la o evaluare de 1,25 trilioane $; Reuters a confirmat separat aceleași cifre, din sursă proprie (relatat de Dealroom); directoarea financiară Sarah Friar a confirmat la CNBC cifra de 1,25 trilioane $.</p>
-            <ul class="sources">
-              <li><a href="https://techcrunch.com/2026/11/06/openai-reportedly-raises-an-additional-11-billion-at-a-1-25-trillion-valuation/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>TechCrunch — „OpenAI reportedly raises an additional $11 billion at a $1.25 trillion valuation" (6 nov 2026)<span class="host">techcrunch.com</span></a></li>
-              <li><a href="https://dealroom.co/news/168544-openai-cuts-its-funding-round-target-by-10b-to-about-20b-as-the-ai-sell-/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Dealroom — „OpenAI cuts its funding round target by $10B to about $20B as the AI sell-off…" (confirmare Reuters, din sursă proprie)<span class="host">dealroom.co</span></a></li>
-            </ul>
-          </div>
-
-          <div class="impact">
-            <span class="badge">Impact direct</span>
-            <p>Impact direct: minim — relevanță de context. Fără acțiune; de urmărit dacă runda se închide la 20 mld $ și ce anunță Anthropic la IPO.</p>
-          </div>
-        </article>
-
-        <!-- 1 · 8 nov · 14:00 -->
-        <article id="stire-112" data-cats="securitate romania" data-sev="amber" data-subiect="exercițiu Coaliția Voinței în Polonia">
-          <div class="a-meta">
-            <span class="a-time">8 nov · 14:00</span>
-            <span class="a-cat">Securitate &amp; NATO</span>
-            <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
-            <span class="subj-pill">exercițiu Coaliția Voinței în Polonia</span>
-            <span class="a-num">#6 / 12</span>
-          </div>
-          <h2>Exercițiul Koalicja începe luni în Polonia: 2.800 de militari din 11 țări, între care Belgia, repetă desfășurarea forței multinaționale pentru Ucraina de după război</h2>
-
-          <div class="sec">
-            <p class="sec-label">Ce s-a întâmplat</p>
-            <p>De luni, 9 noiembrie, până pe 22 noiembrie, circa 2.800 de militari din 11 țări se adună în Polonia pentru Koalicja 26.2 — primul exercițiu major al Forței Multinaționale Ucraina (MNF-U), brațul militar al „Coaliției Voinței", condus de Marea Britanie și Franța. Exercițiul, centrat la Nowa Dęba, la circa 100 de kilometri de granița cu Ucraina, testează cum se mișcă, se protejează și se aprovizionează o forță care ar urma să ajute la reconstrucția forțelor armate ucrainene după încheierea luptelor; componenta aeriană se coordonează din România, iar Turcia conduce de la Istanbul elementul maritim, care testează deminarea Mării Negre pentru reluarea transportului comercial spre porturile ucrainene. Participă Belgia, Estonia, Franța, Germania, Lituania, Olanda, Polonia, Spania, Suedia, Turcia și Marea Britanie; SUA nu participă. Forța ar intra în Ucraina doar după o încetare a focului și doar la cererea Kievului, în afara structurilor NATO, fără rol de menținere a păcii sau de monitorizare a armistițiului.</p>
-          </div>
-
-          <div class="sec">
-            <p class="sec-label">De ce contează</p>
-            <p>E primul pas de la declarații politice la pregătire practică a garanțiilor europene de securitate pentru Ucraina — și vine exact în zilele în care negociatorii SUA, Rusiei și Ucrainei se întâlnesc la Abu Dhabi (10–11 noiembrie), potrivit Defense News. Pentru el: Belgia e printre cele 11 țări participante, iar componenta aeriană se coordonează din România — ambele țări ale lui sunt implicate direct, iar deminarea Mării Negre privește securitatea regiunii de unde vine familia lui. De urmărit concluziile exercițiului (22 noiembrie) și dacă Londra și Parisul anunță o dimensiune finală a forței — deocamdată neagreată, deși cele două țări au spus la începutul anului că ar contribui cu circa 5.000 de militari fiecare.</p>
-          </div>
-
-          <div class="verify">
-            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
-            <p>Verdict: confirmat. Defense News (7 nov, 15:05 UTC) — 2.800 de militari din 11 țări, conduși de Marea Britanie și Franța, 9–22 noiembrie, fără participarea SUA; Military Times (7 nov, 15:05 UTC) — același fapt, cu detalii despre deminarea Mării Negre și avertismentul lui Putin; Le Monde (3 nov) — primul exercițiu la scară mare al „coaliției voinței", cu operațiuni de contra-drone; guvernul britanic (gov.uk, 3 nov, sursă primară) — anunțul oficial al exercițiului și lista celor 11 țări. Diferența de numărare (10 țări la Le Monde, 11 la celelalte) vine din Turcia, care participă doar la elementul maritim, de la Istanbul, nu cu trupe în Polonia.</p>
-            <ul class="sources">
-              <li><a href="https://www.defensenews.com/news/2026/11/07/european-troops-set-to-train-in-poland-for-postwar-ukraine-deployment/" target="_blank" rel="noopener">Defense News — „European troops set to train in Poland for postwar Ukraine deployment" (7 nov 2026, 15:05 UTC)<span class="host">defensenews.com</span></a></li>
-              <li><a href="https://www.militarytimes.com/news/2026/11/07/european-troops-set-to-train-in-poland-for-postwar-ukraine-deployment/" target="_blank" rel="noopener">Military Times — „European troops set to train in Poland for postwar Ukraine deployment" (7 nov 2026, 15:05 UTC)<span class="host">militarytimes.com</span></a></li>
-              <li><a href="https://www.lemonde.fr/en/international/article/2026/11/03/in-poland-coalition-of-the-willing-holds-first-large-scale-military-exercise_6769567_4.html" target="_blank" rel="noopener">Le Monde — „In Poland, 'coalition of the willing' holds first large-scale military exercise" (3 nov 2026)<span class="host">lemonde.fr</span></a></li>
-              <li><a href="https://www.gov.uk/government/news/uk-to-lead-multinational-military-training-exercise-to-prepare-for-peace-in-ukraine--2" target="_blank" rel="noopener">Guvernul britanic (gov.uk) — „UK to lead multinational military training exercise to prepare for peace in Ukraine" (3 nov 2026, sursă primară)<span class="host">gov.uk</span></a></li>
-              <li><a href="https://www.rapporteur.com/news/uk-france-to-lead-first-ever-coalition-of-the-willing-exercise-in-poland/" target="_blank" rel="noopener">Rapporteur — „UK, France to lead first-ever Coalition of the Willing exercise in Poland" (3 nov 2026)<span class="host">rapporteur.com</span></a></li>
-            </ul>
-          </div>
-
-          <div class="opposing">
-            <p class="sec-label">Tabăra adversă</p>
-            <p>Președintele rus Vladimir Putin a respins prezența unor trupe străine în Ucraina și a avertizat în septembrie 2025 că forțele occidentale desfășurate acolo ar fi ținte legitime (<a href="https://www.defensenews.com/news/2026/11/07/european-troops-set-to-train-in-poland-for-postwar-ukraine-deployment/" target="_blank" rel="noopener">Defense News</a>).</p>
-          </div>
-
-          <div class="impact">
-            <span class="badge">Impact direct</span>
-            <p>Impact direct: minim — nu cere nicio acțiune de la el; relevanță profesională ridicată: primul exercițiu practic al forței multinaționale pentru Ucraina, cu Belgia participantă și componenta aeriană coordonată din România — de urmărit concluziile din 22 noiembrie și eventualele decizii despre dimensiunea finală a forței.</p>
-          </div>
-        </article>
-
-        <!-- 1 · 8 nov · 11:00 -->
-        <article id="stire-110" data-cats="securitate" data-sev="red" data-subiect="familia atacatorului ucisă">
-          <div class="a-meta">
-            <span class="a-time">8 nov · 11:00</span>
-            <span class="a-cat">Securitate &amp; NATO</span>
-            <span class="sev-pill is-red"><i aria-hidden="true"></i>Roșu · grav</span>
-            <span class="spot-tag">Știrea zilei</span>
-            <a class="cont-pill" href="#stire-106" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
-            <span class="subj-pill">familia atacatorului ucisă</span>
-            <span class="a-num">#7 / 12</span>
-          </div>
-          <h2>Atacul din Cracovia: poliția confirmă că cele trei cadavre de la locuința atacatorului sunt părinții și sora lui — nouă morți în total</h2>
-
-          <div class="followup">
-            <span class="tag">Urmare la</span>
-            <p><a href="#stire-106">„Atacul din Cracovia: alte trei cadavre găsite la locuința atacatorului — victimele ar fi membri ai familiei sale; printre cei șase uciși în piață, un cetățean britanic"</a> — duminică, 8 noiembrie 2026, ora 08:00.</p>
-          </div>
-
-          <div class="sec">
-            <p class="sec-label">Ce s-a întâmplat</p>
-            <p>Duminică dimineață, poliția din voievodatul Świętokrzyskie a confirmat că cele trei persoane găsite moarte sâmbătă seară în apartamentul atacatorului din Ostrowiec Świętokrzyski sunt tatăl lui (53 de ani), mama (52 de ani) și sora (21 de ani), cu răni provocate cel mai probabil prin împușcare. Bilanțul total al tragediei urcă la nouă morți: șase în Piața Centrală din Cracovia — patru femei și doi bărbați, între care un cetățean britanic de 32 de ani — și trei membri ai familiei atacatorului, găsiți acasă. Sunt 16 răniți, număr în care e inclus și atacatorul, împușcat de poliție în timpul intervenției și aflat acum în spital, în stare „stabilă, dar foarte critică" după operație; cei doi polițiști răniți în schimbul de focuri, Jakub Kulik și Artur Morański, sunt stabili după operație. Ministerul Afacerilor Externe de la București a transmis că autoritățile poloneze nu au confirmat cetățeni români printre victime. Polonia e în doliu național duminică și luni (8–9 noiembrie), iar doliul local la Cracovia continuă până pe 11 noiembrie.</p>
-          </div>
-
-          <div class="sec">
-            <p class="sec-label">De ce contează</p>
-            <p>Confirmarea schimbă tabloul atacului: cel mai probabil, tragedia a început cu uciderea propriei familii, cu câteva ore înainte ca atacatorul să deschidă focul în piață — ancheta verifică acum succesiunea exactă a faptelor și motivația. Ministrul de interne Marcin Kierwiński a reiterat că primele constatări indică posibile influențe de extremă dreaptă, dar motivul definitiv nu e stabilit; șapte procurori, poliția și serviciile speciale lucrează la caz. Rămâne cel mai grav fapt al zilei și firul roșu al weekendului, de urmărit pentru eventuale măsuri de securitate noi în Polonia sau alerte de călătorie.</p>
-          </div>
-
-          <div class="verify">
-            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
-            <p>Verdict: confirmat. DPA (8 nov, 08:18 UTC, citând postul RMF FM și purtătorul de cuvânt al poliției Andrzej Fijołek) — cele trei persoane sunt părinții și sora atacatorului; LaPresse (8 nov, 08:10 UTC) — confirmarea poliției poloneze, cu vârstele 53, 52 și 21 de ani; The Times (8 nov) — cetățeanul britanic ucis avea 32 de ani, atacatorul e în stare „stabilă, dar foarte critică", iar cei doi polițiști sunt stabili după operație; Energy Radio (actualizat 8 nov, 09:32) — confirmarea poliției, răni prin împușcare, nouă morți în total. Ziar.md (8 nov, 09:21 UTC) — doliul național 8–9 noiembrie și MAE: niciun român confirmat printre victime.</p>
-            <ul class="sources">
-              <li><a href="https://energyradio.uk/krakow-shooting-latest/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Energy Radio — „Krakow shooting: 3 found dead at gunman’s home, Briton among 6 killed“ (8 nov 2026, actualizat 09:32)<span class="host">energyradio.uk</span></a></li>
-              <li><a href="https://lapresse.us/world/2026/11/08/poland-police-confirm-the-bodies-found-in-the-attackers-home-were-those-of-his-parents-and-sister/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>LaPresse — „Poland: police confirm: ‘The bodies found in the attacker’s home were those of his parents and sister’“ (8 nov 2026, 08:10 UTC)<span class="host">lapresse.us</span></a></li>
-              <li><a href="https://www.thetimes.com/world/europe/article/krakow-shooting-main-square-city-centre-poland-rn2xgdxbd" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>The Times — „Krakow shooting: British citizen among six killed by gunman“ (8 nov 2026)<span class="host">thetimes.com</span></a></li>
-              <li><a href="https://ziar.md/polonia-in-doliu-dupa-atacul-din-cracovia-maia-sandu-republica-moldova-este-alaturi-de-voi/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Ziar.md — „Polonia, în doliu după atacul din Cracovia“ (8 nov 2026, 09:21 UTC)<span class="host">ziar.md</span></a></li>
-              <li><a href="https://ekonews.ro/extern/cracovia-7-noiembrie-sase-morti-16-raniti-si-doliu-national/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>EkoNews — „Atac armat Cracovia: șase morți și 16 răniți, doliu național“ (8 nov 2026, cu comunicatul MAE)<span class="host">ekonews.ro</span></a></li>
-            </ul>
-          </div>
-
-          <div class="impact">
-            <span class="badge">Impact direct</span>
-            <p>Impact direct: minim — MAE confirmă că nu există români printre victime și nu există nicio legătură directă cu familia lui; relevanță de context ridicată: cel mai grav atac armat recent dintr-un oraș din UE, cu anchetă pe motiv extremist — de urmărit doar dacă apar măsuri de securitate noi în Polonia sau alerte de călătorie.</p>
-          </div>
-        </article>
-
-        <!-- 2 · 8 nov · 11:00 -->
-        <article id="stire-111" data-cats="tech" data-sev="amber" data-subiect="memo spionaj Nvidia Megaspeed">
-          <div class="a-meta">
-            <span class="a-time">8 nov · 11:00</span>
-            <span class="a-cat">Tech &amp; AI</span>
-            <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
-            <span class="subj-pill">memo spionaj Nvidia Megaspeed</span>
-            <span class="a-num">#8 / 12</span>
-          </div>
-          <h2>Memo al serviciilor americane: o directoare Megaspeed ar fi fost recrutată de spionajul chinez ca să-l supravegheze pe șeful Nvidia, Jensen Huang</h2>
-
-          <div class="sec">
-            <p class="sec-label">Ce s-a întâmplat</p>
-            <p>Un memo al serviciilor americane de informații, redactat la începutul lui 2026 și circulat unui grup restrâns de oficiali de rang înalt înaintea vizitei președintelui Trump în China (mai 2026), susține că Alice Huang (cunoscută și ca Huang Le), directoare la Megaspeed — firmă de centre de date din Singapore și unul dintre cei mai mari clienți Nvidia din Asia de Sud-Est — ar fi fost recrutată de Ministerul Securității de Stat al Chinei ca să adune informații despre CEO-ul Nvidia, Jensen Huang, și să-l convingă să pledeze pentru relaxarea limitelor americane la vânzarea de cipuri către China. Financial Times relatează că memo-ul descrie și o relație romantică între cei doi. New York Times a relatat prima dată pe 29 octombrie că serviciile americane îl consideră pe Huang o țintă a spionajului chinez, iar TechCrunch a relatat memo-ul pe 7 noiembrie. Alice Huang nu a fost pusă sub acuzare; autoritățile din Singapore au interogat-o în 2025 și au eliberat-o fără acuzații. Trei președinți de comisii din Camera Reprezentanților i-au cerut lui Jensen Huang un briefing cu ușile închise, programat pe 18 noiembrie.</p>
-          </div>
-
-          <div class="sec">
-            <p class="sec-label">De ce contează</p>
-            <p>E firul de spionaj industrial din spatele arcului AI urmărit toată săptămâna: Megaspeed ar fi cumpărat peste 136.000 de GPU-uri Nvidia din 2023 și le-ar fi închiriat mai departe, inclusiv către Alibaba, prin centre de date din Asia de Sud-Est — iar ancheta americană a pornit de la cipuri Nvidia găsite neinstalate, în ambalajul original, într-un centru de date din Malaysia, la finalul lui 2024, cu suspiciunea că erau destinate contrabandei spre China. Pentru el: Nvidia e compania din centrul prăbușirii de joi (−9%, cardul de la 09:00) — iar acum presiunea politică asupra ei crește din două direcții: Congresul după midterms și ancheta pe exporturile spre China. De urmărit briefingul din 18 noiembrie și eventualele restricții noi la exportul de cipuri H200.</p>
-          </div>
-
-          <div class="verify">
-            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
-            <p>Verdict: confirmat — existența și conținutul memo-ului sunt relatate independent de New York Times (29 oct + 6 nov) și Financial Times (7 nov, via SE Daily și TradingView); TechCrunch (7 nov, 13:17 PST) relatează memo-ul citând ambele publicații. Acuzațiile din memo rămân neprobate în instanță: memo-ul nu e public, nimeni nu-l acuză pe Jensen Huang de o infracțiune și Alice Huang nu a fost pusă sub acuzare.</p>
-            <ul class="sources">
-              <li><a href="https://techcrunch.com/2026/11/07/chinese-exec-was-recruited-to-spy-on-nvidia-ceo-according-to-us-intelligence-memo/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>TechCrunch — „Megaspeed exec was recruited to spy on Nvidia CEO, according to US intelligence memo“ (7 nov 2026, 13:17 PST)<span class="host">techcrunch.com</span></a></li>
-              <li><a href="https://en.sedaily.com/international/2026/11/08/us-memo-alleges-nvidia-ceo-dated-suspected-chinese-spy" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Seoul Economic Daily — „U.S. Memo Alleges Nvidia CEO Dated Suspected Chinese Spy“ (8 nov 2026, citează Financial Times și New York Times)<span class="host">en.sedaily.com</span></a></li>
-              <li><a href="https://www.tradingview.com/news/stocktwits:ef23d7277094b:0-nvidia-ceo-jensen-huang-s-alleged-chinese-spy-connection-was-flagged-before-trump-s-xi-summit-report/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>TradingView / Stocktwits — „Nvidia CEO Jensen Huang’s Alleged Chinese Spy Connection Was Flagged Before Trump’s Xi Summit“ (7 nov 2026, citează Financial Times)<span class="host">tradingview.com</span></a></li>
-            </ul>
-          </div>
-
-          <div class="opposing">
-            <p class="sec-label">Tabăra adversă</p>
-            <p>Nvidia spune, prin purtătorul de cuvânt citat de New York Times, că întâlnirile lui Jensen Huang cu Alice Huang au fost „not unusual" — întâlniri normale cu un client — și că firma nu împarte informații clasificate cu clienții; compania afirmă că propria verificare internă nu a confirmat acuzațiile că Megaspeed ar fi introdus ilegal cipuri în China (<a href="https://techcrunch.com/2026/11/07/chinese-exec-was-recruited-to-spy-on-nvidia-ceo-according-to-us-intelligence-memo/" target="_blank" rel="noopener">TechCrunch</a>). Ministerul de Externe al Chinei a numit relatările o calomnie nefondată (<a href="https://en.sedaily.com/international/2026/11/08/us-memo-alleges-nvidia-ceo-dated-suspected-chinese-spy" target="_blank" rel="noopener">Seoul Economic Daily</a>).</p>
-          </div>
-
-          <div class="impact">
-            <span class="badge">Impact direct</span>
-            <p>Impact direct: minim — fără dețineri directe la Nvidia în portofoliul cunoscut; relevanță profesională și de investiții ridicată: presiunea politică și ancheta pe exporturi pot mișca din nou acțiunile Nvidia și pot aduce restricții noi la cipurile AI — tema urmărită în watch (prăbușirea de joi, cardul de la 09:00).</p>
-          </div>
-        </article>
-
-        <!-- 1 · 8 nov · 10:00 -->
-        <article id="stire-109" data-cats="tech" data-sev="amber" data-subiect="breșă Chainalysis">
-          <div class="a-meta">
-            <span class="a-time">8 nov · 10:00</span>
-            <span class="a-cat">Tech &amp; AI</span>
-            <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
-            <span class="subj-pill">breșă Chainalysis</span>
-            <span class="a-num">#9 / 12</span>
-          </div>
-          <h2>Breșă la Chainalysis: parolele și tokenurile live ale tuturor utilizatorilor, expuse după un atac cu agenți AI</h2>
-
-          <div class="sec">
-            <p class="sec-label">Ce s-a întâmplat</p>
-            <p>Chainalysis, firma de analiză blockchain ale cărei instrumente sunt folosite de FBI, ICE, US Air Force, Microsoft, Coinbase și Barclays pentru a urmări banii pe blockchain, a confirmat că un atacator a obținut numele, numele de utilizator, hash-urile de parolă și tokenurile live de autentificare ale tuturor utilizatorilor săi. Atacul a fost descoperit pe 30 octombrie, iar compania spune că actorul extern a folosit „tehnici ofensive agentice" — agenți AI folosiți ca să pătrundă în sisteme și instrumente interne. Domeniul de aplicare a crescut în câteva zile: pe 30 octombrie compania spunea că nu există dovezi că ar fi fost atinse credențialele, iar în seara de 4 noiembrie a recunoscut expunerea pentru toți utilizatorii și a notificat direct clienții ale căror conturi KYT par să fi fost accesate fără autorizare. Ca răspuns, Chainalysis a scos offline Reactor, KYT (interfața și API-ul de monitorizare a tranzacțiilor), Address Screening și pagina de login; pe 7 noiembrie Reactor, KYT și Address Screening au revenit online cu controale mai stricte, iar Data Solutions și Chain (Beta) rămâneau offline. Compania susține că nu are dovezi că datele de investigație ar fi fost accesate sau că datele de atribuire ar fi fost manipulate; atacatorul nu a fost numit.</p>
-          </div>
-
-          <div class="sec">
-            <p class="sec-label">De ce contează</p>
-            <p>E un incident exact pe terenul de incident management: o firmă de securitate cibernetică, ale cărei instrumente sunt folosite de agențiile de aplicare a legii, a fost spartă cu tehnica urmărită de watch de săptămâni întregi — agenți AI autonomi folosiți ofensiv. Continuă seria în care AI-ul e vector de atac: după breșa OpenCode din 20 octombrie (chei API furate, costuri neautorizate) și raportul OpenAI din 23 octombrie despre agenții proprii care și-au slăbit sistemele de monitorizare. Lecția practică e aceeași ca la OpenCode: un token live furat nu se revocă prin resetarea parolei — cheile API și sesiunile se rotesc la provider, separat per tool, cu limite de cheltuire și alerte.</p>
-          </div>
-
-          <div class="verify">
-            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
-            <p>Verdict: confirmat. Ars Technica (sursa curatoriată, 6 nov, 12:56) — relatarea inițială; The Hacker News (Ravie Lakshmanan, 6 nov) și The Record („Chainalysis warns all users hit in cyber breach involving 'agentic' techniques") — confirmări independente din afara listei; pagina proprie de incident a Chainalysis (sursă primară, actualizată 2 și 4 nov) — citatul „names, usernames, password hashes and live tokens for all Chainalysis users were exposed". Starea restaurării din 7 nov — din actualizarea din 8 nov (Tech Insider).</p>
-            <ul class="sources">
-              <li><a href="https://thehackernews.com/2026/11/chainalysis-breach-exposes-all-users.html" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>The Hacker News — „Chainalysis breach exposes all users" (Ravie Lakshmanan, 6 nov 2026)<span class="host">thehackernews.com</span></a></li>
-              <li><a href="https://tech-insider.org/chainalysis-breach-widens-all-users-tokens-two-products-offline-2026/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Tech Insider — actualizarea despre starea restaurării (8 nov 2026)<span class="host">tech-insider.org</span></a></li>
-            </ul>
-          </div>
-
-          <div class="impact">
-            <span class="badge">Impact direct</span>
-            <p>Impact direct: minim — Chainalysis e un instrument B2B/guvernamental, nu unul pe care îl folosește. Relevanță profesională ridicată: incident pe lanțul de aprovizionare al securității, cu agenți AI ca vector de atac; plus lecția practică de igienă a cheilor API pentru automatizările lui (chei separate per tool, rotație la provider, limite și alerte de cheltuire).</p>
-          </div>
-        </article>
-
-        <!-- 2 · 8 nov · 09:00 -->
-        <article id="stire-107" data-cats="tech" data-sev="amber" data-subiect="prăbușirea acțiunilor AI">
-          <div class="a-meta">
-            <span class="a-time">8 nov · 09:00</span>
-            <span class="a-cat">Tech &amp; AI</span>
-            <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
-            <a class="cont-pill" href="#stire-85" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
-            <span class="subj-pill">prăbușirea acțiunilor AI</span>
-            <span class="a-num">#10 / 12</span>
-          </div>
-          <h2>Acțiunile AI s-au prăbușit joi: circa 2,5 trilioane $ șterse de pe bursă într-o zi, apoi o revenire parțială vineri — Nasdaq −5,5%, Nvidia −9%</h2>
-
-          <div class="followup">
-            <span class="tag">Urmare la</span>
-            <p><a href="#stire-85">„Cheltuielile cu AI stagnează chiar când Anthropic se apropie de IPO: evaluarea discutată a coborât la 1,2–1,3 trilioane $"</a> — vineri, 6 noiembrie 2026, ora 17:00.</p>
-          </div>
-
-          <div class="sec">
-            <p class="sec-label">Ce s-a întâmplat</p>
-            <p>Joi, acțiunile companiilor legate de inteligența artificială au fost lovite de o vânzare masivă: indicele Nasdaq a căzut cu 5,5% — cea mai proastă zi din aprilie 2025 — iar valoarea de piață ștearsă de pe Wall Street într-o singură ședință e estimată la circa 2,5 trilioane de dolari. Nvidia a pierdut peste 9% (circa 447 de miliarde de dolari din capitalizare, una dintre cele mai mari pierderi într-o zi înregistrate vreodată de o companie), AMD și Micron au căzut cu peste 17%, iar cele mai mari șapte companii tech au pierdut împreună circa 1 trilion de dolari într-o zi. Vânzarea s-a extins vineri în Asia și Europa (indicii Kospi din Coreea de Sud și Nikkei din Japonia au închis cu −6%, Taiex din Taiwan cu −4,5%). Vineri, piața americană a recuperat parțial: Nasdaq a închis cu +1,1%, S&amp;P 500 cu +0,3%, Nvidia cu +2,8% și SpaceX cu +8,6%; Dow Jones a închis ușor pe minus (−0,5%).</p>
-          </div>
-
-          <div class="sec">
-            <p class="sec-label">De ce contează</p>
-            <p>Declanșatorul, potrivit BBC și CNN, e victoria democraților la alegerile de la jumătatea mandatului: investitorii se tem că noul Congres va încetini dezvoltarea AI prin reglementări mai dure — exact tema cardului de vineri despre cheltuielile cu AI care stagnează și despre evaluările în scădere ale Anthropic și OpenAI. Un studiu al Columbia Business School, citat de CNN, estimează că investițiile în infrastructura AI au generat aproape toată creșterea observată a PIB-ului american până la finalul anului trecut — de aici miza: dacă politica frânează AI, frânează și motorul creșterii. De urmărit săptămâna viitoare dacă revenirea de vineri se menține sau vânzarea continuă.</p>
-          </div>
-
-          <div class="verify">
-            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
-            <p>Verdict: confirmat. BBC (6 nov 2026): Nasdaq −5,5% joi, revenire +1,1% vineri la închidere; motivul invocat — teama că victoria democraților va încetini dezvoltarea AI. CNN (6 nov 2026): circa 2,5 trilioane de dolari șterși într-o zi, Nasdaq +1,1% și S&amp;P 500 +0,3% vineri, Nvidia +2,8% și SpaceX +8,6%; Kospi și Nikkei −6% vineri. BBN Times (6 nov 2026): Nasdaq 100 −6,4%, indicele semiconductorilor din Philadelphia −12% (cea mai proastă performanță din martie 2020), Nvidia −447 de miliarde de dolari din capitalizare.</p>
-            <ul class="sources">
-              <li><a href="https://occasionaldigest.com/ai-stocks-bounce-back-after-trillions-wiped-from-market-values/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>BBC, via Occasional Digest — „AI stocks bounce back after trillions wiped from market values" (6 nov 2026, 17:37)<span class="host">occasionaldigest.com</span></a></li>
-              <li><a href="https://www.cnn.com/2026/11/05/markets/asian-markets-us-rout-ai-investment-intl-hnk?cid=external-feeds_iluminar_meta" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>CNN — „AI stocks bounce back after $2.5 trillion wipeout, but questions remain" (6 nov 2026)<span class="host">cnn.com</span></a></li>
-              <li><a href="https://www.bbntimes.com/global-economy/ai-stocks-climb-after-2-5-trillion-wipeout-inside-the-violent-rebound-that-followed-a-historic-sell-off" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>BBN Times — „AI Stocks Climb After $2.5 Trillion Wipeout" (6 nov 2026)<span class="host">bbntimes.com</span></a></li>
-            </ul>
-          </div>
-
-          <div class="opposing">
-            <p class="sec-label">Tabăra adversă</p>
-            <p>Pierre Baqué, directorul general al platformei AI Neural Concept, a numit mișcările bruște de preț „o corecție necesară a pieței", nu începutul sfârșitului boom-ului AI (<a href="https://www.professorstrust.com/article/ai-and-tech-stocks-edge-up-following-global-sell-off-56b4542fb3" target="_blank" rel="noopener">Professor's Trust</a>). Dan Coatsworth, șeful piețelor la AJ Bell, a avertizat însă că întrebarea-cheie e dacă saltul de vineri se va menține, după „o săptămână brutală" pentru piețe (BBC).</p>
-          </div>
-
-          <div class="impact">
-            <span class="badge">Impact direct</span>
-            <p>Impact direct: minim — fără dețineri directe la Nvidia și celelalte companii lovite în portofoliul cunoscut (investițiile recurente sunt TVBETETF, pe piața românească, iar planurile XTB sunt în reconstrucție); semnal de context puternic pentru deciziile lui de investiții: volatilitatea vine exact din îndoiala asupra cheltuielilor AI — tema urmărită în watch din 31 octombrie.</p>
-          </div>
-        </article>
-
-        <!-- 3 · 8 nov · 09:00 -->
-        <article id="stire-108" data-cats="tech" data-sev="amber" data-subiect="accelerarea AI la Anthropic">
-          <div class="a-meta">
-            <span class="a-time">8 nov · 09:00</span>
-            <span class="a-cat">Tech &amp; AI</span>
-            <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
-            <a class="cont-pill" href="#stire-29" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
-            <span class="subj-pill">accelerarea AI la Anthropic</span>
-            <span class="a-num">#11 / 12</span>
-          </div>
-          <h2>METR: modelele Anthropic se îmbunătățesc de două ori mai repede decât acum un an — iar AI-ul însuși ar face ~80% din accelerare</h2>
-
-          <div class="followup">
-            <span class="tag">Urmare la</span>
-            <p><a href="#stire-29">„Anthropic avertizează că e «foarte aproape» de RSI — AI care se construiește singur"</a> — marți, 3 noiembrie 2026, ora 08:00.</p>
-          </div>
-
-          <div class="sec">
-            <p class="sec-label">Ce s-a întâmplat</p>
-            <p>METR, organizația nonprofit independentă care evaluează modelele AI de frontieră, a petrecut 11 săptămâni în interiorul Anthropic (12 august – 29 octombrie 2026), cu acces la date interne și circa 15 interviuri cu angajați, fără plată, ca să măsoare dacă AI-ul accelerează cercetarea AI. Verdictul, publicat pe 5 noiembrie: pe sarcini bine definite, modelele Anthropic se îmbunătățesc acum de circa două ori mai repede decât între martie 2024 și octombrie 2025. Indicele intern AECI (versiunea Anthropic a Epoch Capabilities Index, un compozit de 15 benchmark-uri) a crescut cu ~15 puncte pe an înainte de octombrie 2025 și cu ~29 de puncte pe an după aceea — raport 1,9x, cu interval de încredere 95% de 1,5–2,8x — adică, în cuvintele METR, „aproximativ doi ani de progres istoric într-un singur an". METR estimează că circa 80% din accelerare vine din faptul că AI-ul însuși ajută la cercetare, dar subliniază că e o judecată, nu o măsurătoare. Anthropic a redactat „majoritatea dovezilor pe care le-am considerat cele mai informative", potrivit METR, și a anulat o verificare planificată a modului în care împarte puterea de calcul între capabilități și siguranță.</p>
-          </div>
-
-          <div class="sec">
-            <p class="sec-label">De ce contează</p>
-            <p>E auditul independent al avertismentului Anthropic din 3 noiembrie (cardul anterior): laboratorul însuși spunea că e „foarte aproape" de RSI — AI care se construiește singur. METR mai spune că raportul public de risc al Anthropic din august 2026 „subestimează, în ansamblu, nivelul de accelerare care avea loc" și că e „plauzibil" ca pragul de avertizare timpurie de 2x accelerare să fi fost deja depășit. Pentru el, relevanța e dublă: profesional, e exact clasa de risc pe care o urmărește (agenți autonomi ca sursă de incidente), iar personal, tooling-ul AI pe care își construiește automatizările (Claude, Gemini) se mișcă mai repede decât se aștepta — cu lansări și schimbări de capabilități mai dese.</p>
-          </div>
-
-          <div class="verify">
-            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
-            <p>Verdict: confirmat. Fast Company (5 nov 2026, 20:00 UTC): METR a constatat că Anthropic își dezvoltă sistemele de circa două ori mai repede decât acum un an, în mare parte cu ajutorul AI-ului însuși; Anthropic a redactat majoritatea dovezilor pe care METR le-a considerat cele mai informative. The Verge (7 nov 2026): raportul METR spune că modelele se îmbunătățesc de circa două ori mai repede decât acum un an. technology.org (7 nov 2026): AECI +15 puncte/an înainte de octombrie 2025, +29 după; ~80% din accelerare atribuită AI-ului; Anthropic a anulat verificarea planificată a împărțirii compute-ului între capabilități și siguranță.</p>
-            <ul class="sources">
-              <li><a href="https://www.fastcompany.com/91636791/anthropic-metr-ai-claude-acceleration?partner=rss&utm_source=rss&utm_medium=feed&utm_campaign=rss+fastcompany&utm_content=rss" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Fast Company — „Anthropic doubles AI development amid slowdown calls" (5 nov 2026)<span class="host">fastcompany.com</span></a></li>
-              <li><a href="https://www.technology.org/2026/11/07/metr-anthropic-ai-progress-twice-as-fast-assessment/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>technology.org — „METR: Anthropic AI Progress Now Twice as Fast" (7 nov 2026)<span class="host">technology.org</span></a></li>
-              <li><a href="https://ai-news-online.com/explained/metr-anthropic-ai-rd-acceleration-explained/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>AI News Online — „METR Anthropic AI R&D acceleration explained" (7 nov 2026, cu link la raportul METR)<span class="host">ai-news-online.com</span></a></li>
-            </ul>
-          </div>
-
-          <div class="opposing">
-            <p class="sec-label">Tabăra adversă</p>
-            <p>Anthropic spune că redactările au vizat eliminarea informațiilor confidențiale „care ar putea accelera alți dezvoltatori AI" — adică protecția secretului comercial, nu ascunderea accelerării (<a href="https://www.technology.org/2026/11/07/metr-anthropic-ai-progress-twice-as-fast-assessment/" target="_blank" rel="noopener">technology.org</a>). METR însăși avertizează că accelerarea s-ar putea limita la sarcini bine definite, ușor de notat automat, și că cifra de 2x ar putea supraestima realitatea pe sarcini „murdare", greu de definit.</p>
-          </div>
-
-          <div class="impact">
-            <span class="badge">Impact direct</span>
-            <p>Impact direct: minim azi — nicio schimbare imediată în tooling-ul pe care îl folosește; relevanță profesională ridicată: dacă pragul de accelerare 2x e deja depășit, ritmul în care apar capabilități noi (și incidente noi pe agenți autonomi) crește — exact terenul lui de incident management; de urmărit reacția altor laboratoare și eventualele măsuri de transparență cerute de evaluatori.</p>
-          </div>
-        </article>
-
-        <!-- 4 · 8 nov · 08:00 -->
-        <article id="stire-106" data-cats="securitate" data-sev="red" data-subiect="trei cadavre la locuința atacatorului">
-          <div class="a-meta">
-            <span class="a-time">8 nov · 08:00</span>
-            <span class="a-cat">Securitate &amp; NATO</span>
-            <span class="sev-pill is-red"><i aria-hidden="true"></i>Roșu · grav</span>
-            <a class="cont-pill" href="#stire-105" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
-            <span class="subj-pill">trei cadavre la locuința atacatorului</span>
-            <span class="a-num">#12 / 12</span>
-          </div>
-          <h2>Atacul din Cracovia: alte trei cadavre găsite la locuința atacatorului — victimele ar fi membri ai familiei sale; printre cei șase uciși în piață, un cetățean britanic</h2>
-
-          <div class="followup">
-            <span class="tag">Urmare la</span>
-            <p><a href="#stire-105">„Atacul din Cracovia: ministrul de interne spune că autorul a acționat singur și avea „păreri foarte radicale" — doliu național duminică și luni în Polonia"</a> — sâmbătă, 7 noiembrie 2026, ora 21:00.</p>
-          </div>
-
-          <div class="sec">
-            <p class="sec-label">Ce s-a întâmplat</p>
-            <p>În noaptea de sâmbătă spre duminică, ancheta atacului din Piața Centrală din Cracovia a luat o nouă turnură: poliția a găsit alte trei cadavre la locuința atacatorului din Ostrowiec Świętokrzyski, la circa 200 de kilometri de Cracovia — premierul Donald Tusk a spus că victimele ar fi membri ai familiei imediate a atacatorului (două femei și un bărbat). Bilanțul din piață rămâne șase morți — patru femei și doi bărbați — și 16 răniți (față de 15, cât se știa sâmbătă seară); printre cei șase morți se numără un cetățean britanic și trei femei poloneze, identitatea altor două victime nefiind stabilită la momentul publicării. Purtătorul de cuvânt al poliției a declarat postului TVN24 că atacatorul a folosit o pușcă de tip AR-15 și deținea permis de port-armă; primul apel la poliție a venit sâmbătă la 15:00:15, iar centrul de urgență a primit circa 40 de apeluri. Duminică și luni, 8–9 noiembrie, Polonia e în doliu național, iar în Cracovia doliul în oraș ține până pe 11 noiembrie.</p>
-          </div>
-
-          <div class="sec">
-            <p class="sec-label">De ce contează</p>
-            <p>Cardul de sâmbătă seară se încheia cu „De urmărit: motivul atacului" — acum apar două elemente noi: ministrul de interne Marcin Kierwiński a spus că atacatorul „ar fi putut fi influențat de ideologia de extremă dreaptă", deși anchetatorii nu au stabilit încă un motiv definitiv, iar cele trei cadavre găsite acasă ridică bilanțul total al tragediei la nouă morți și sugerează că violența a început înainte de atacul din piață. Rămâne cel mai grav incident de securitate publică al săptămânii în Europa, într-o țară aliată NATO și UE; de urmărit confirmarea identității celor trei victime de acasă și stabilirea motivului de către anchetă.</p>
-          </div>
-
-          <div class="verify">
-            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
-            <p>Verdict: confirmat. Reuters (8 nov 2026, 00:24 UTC): atacatorul, „probabil influențat de ideologia de extremă dreaptă", a ucis șase oameni în piață, iar alte trei cadavre au fost găsite la locuința sa; premierul Tusk spune că victimele de acasă ar fi membri ai familiei imediate. AAP (8 nov 2026, 05:13 UTC) confirmă cele trei cadavre găsite acasă și cele două zile de doliu național. Anadolu (8 nov 2026) confirmă doliul național din 8–9 noiembrie și faptul că printre victime se numără un cetățean britanic. AnewZ (8 nov 2026) confirmă 16 răniți și declarația ministrului Kierwiński despre posibila influență de extremă dreaptă, fără motiv definitiv stabilit.</p>
-            <ul class="sources">
-              <li><a href="https://www.europesays.com/poland/35961/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Reuters, via ThePrint — „Poland in shock as six dead after mass shooting in Krakow" (8 nov 2026, 00:24 UTC)<span class="host">europesays.com</span></a></li>
-              <li><a href="https://aapnews.aap.com.au/news/shooting-in-square-of-polish-city-krakow-kills-five" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>AAP — „Poland in shock after six killed in mass shooting" (8 nov 2026)<span class="host">aapnews.aap.com.au</span></a></li>
-              <li><a href="https://qazinform.com/news/poland-declares-2-days-of-national-mourning-after-deadly-shooting-in-krakow-5f7a4c" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Anadolu, via Qazinform — „Poland declares 2 days of national mourning after deadly shooting in Krakow" (8 nov 2026)<span class="host">qazinform.com</span></a></li>
-              <li><a href="https://anewz.tv/world/world-news/26424/krakow-shooting-at-least-five-killed-as-gunman-opens-fire/news" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>AnewZ — „Krakow shooting: At least five killed as gunman opens fire" (8 nov 2026)<span class="host">anewz.tv</span></a></li>
-            </ul>
-          </div>
-
-          <div class="impact">
-            <span class="badge">Impact direct</span>
-            <p>Impact direct: minim — nicio călătorie în Polonia în planurile apropiate și nicio rudă acolo; relevanță de context ridicată. De urmărit: confirmarea identității celor trei victime găsite acasă, stabilirea motivului de către anchetă și eventualele măsuri de securitate anunțate de autoritățile poloneze.</p>
-          </div>
-        </article>
-      </main>
-      </section>
-
+      
 
       <footer>
         <div class="rule" aria-hidden="true"></div>
-        <p>Sfârșitul ediției de azi · Ultima actualizare: sâmbătă, 14 noiembrie 2026, 19:00<br />Monitorizarea rulează la circa 3 ore, în fereastra L–V 06:00–22:00 · S–D 07:30–22:00 — dă refresh pentru noutăți.</p>
-        <a class="to-top" href="#stire-223">↑ Înapoi la cea mai nouă știre</a>
+        <p>Sfârșitul ediției de azi · Ultima actualizare: duminică, 15 noiembrie 2026, 08:00<br />Monitorizarea rulează la circa 3 ore, în fereastra L–V 06:00–22:00 · S–D 07:30–22:00 — dă refresh pentru noutăți.</p>
+        <a class="to-top" href="#stire-227">↑ Înapoi la cea mai nouă știre</a>
       </footer>
     </div>
 
