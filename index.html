@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="color-scheme" content="light dark" />
-    <meta name="tirile-versiune" content="2026-11-15T18:00:00+01:00|9|red" />
+    <meta name="tirile-versiune" content="2026-11-15T20:00:00+01:00|10|red" />
     <link rel="icon" href="data:," />
     <title>Știrile zilei</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -699,9 +699,9 @@
     <div class="topbar">
       <div class="topbar-inner">
         <span class="dot" aria-hidden="true"></span>
-        <span><strong>Duminică, 15 noiembrie 2026</strong> · actualizat la <strong>18:00</strong></span>
+        <span><strong>Duminică, 15 noiembrie 2026</strong> · actualizat la <strong>20:00</strong></span>
         <span aria-hidden="true">·</span>
-        <span>9 știri azi</span>
+        <span>10 știri azi</span>
         <span class="spacer"></span>
         <button class="refresh-btn" type="button" id="refreshBtn" aria-label="Reîmprospătează pagina">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg>
@@ -768,30 +768,30 @@
       <section class="dashboard" aria-label="Panou de ansamblu">
         <div class="dash-head">
           <span class="dash-title">Dashboard · Azi</span>
-          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 18:00</span>
+          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 20:00</span>
           <span class="dash-meta">Fereastră monitorizare <strong>L–V 06:00–22:00 · S–D 07:30–22:00</strong> · pas ~3 ore</span>
         </div>
 
         <div class="kpi-grid five" role="group" aria-label="Filtrează după categorie — apasă pe un tile">
           <button class="kpi" type="button" data-filter="toate" aria-pressed="true">
             <span class="kpi-top"><span class="kpi-label">Toate știrile</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">9</span>
-            <span class="kpi-sub">știri verificate azi, în 8 rulări</span>
+            <span class="kpi-value">10</span>
+            <span class="kpi-sub">știri verificate azi, în 9 rulări</span>
             <span class="kpi-bar" aria-hidden="true"><i style="width:100%"></i></span>
             <span class="kpi-hint">Apasă pentru toate</span>
           </button>
           <button class="kpi" type="button" data-filter="securitate" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">Securitate &amp; NATO</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">6</span>
-            <span class="kpi-sub">Moscova cere NATO la 1997 · Oprea duce Marea Neagră la Bruxelles · a patra navă lovită · trei nave lovite în Marea Neagră · noua doctrină USAF · avertismentul ambasadorilor SUA</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:67%"></i></span>
+            <span class="kpi-value">7</span>
+            <span class="kpi-sub">summit Trump–Putin–Xi · Moscova cere NATO la 1997 · Oprea duce Marea Neagră la Bruxelles · a patra navă lovită · trei nave lovite în Marea Neagră · noua doctrină USAF · avertismentul ambasadorilor SUA</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:70%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="romania" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">România</span><span class="kpi-check" aria-hidden="true">✓</span></span>
             <span class="kpi-value">5</span>
             <span class="kpi-sub">Moscova cere NATO la 1997 · Oprea duce Marea Neagră la Bruxelles · a patra navă lovită · trei nave lovite în Marea Neagră · avertismentul ambasadorilor SUA</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:56%"></i></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:50%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="belgia" aria-pressed="false">
@@ -805,7 +805,7 @@
             <span class="kpi-top"><span class="kpi-label">Tech &amp; AI</span><span class="kpi-check" aria-hidden="true">✓</span></span>
             <span class="kpi-value">3</span>
             <span class="kpi-sub">petiție pentru revenirea lui Huang · plecarea șefului de securitate Nvidia · amprenta Blackwell în modele chineze</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:33%"></i></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:30%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
         </div>
@@ -819,7 +819,7 @@
       </section>
 
       <div class="filter-status" aria-live="polite">
-        <span class="filter-label">Se afișează: <strong>Toate categoriile — 9 din 9 știri</strong></span>
+        <span class="filter-label">Se afișează: <strong>Toate categoriile — 10 din 10 știri</strong></span>
         <button class="filter-reset" type="button" hidden>Resetează filtrul</button>
       </div>
 
@@ -849,7 +849,43 @@
       <p class="empty">Nicio știre în această categorie azi.</p>
 
       <main>
-        <!-- 1 · 15 nov · 18:00 -->
+        <!-- 1 · 15 nov · 20:00 -->
+        <article id="stire-236" data-cats="securitate" data-sev="amber" data-subiect="summit Trump–Putin–Xi">
+          <div class="a-meta">
+            <span class="a-time">15 nov · 20:00</span>
+            <span class="a-cat">Securitate &amp; NATO</span>
+            <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
+            <span class="subj-pill">summit Trump–Putin–Xi</span>
+            <span class="a-num">#1 / 10</span>
+          </div>
+          <h2>Trump, Putin și Xi se întâlnesc joi la Shenzhen — prima întâlnire trilaterală SUA–Rusia–China, pe tema reducerii arsenalelor nucleare</h2>
+          <div class="sec">
+            <p class="sec-label">Ce s-a întâmplat</p>
+            <p>Casa Albă a anunțat vineri, 14 noiembrie, că președinții Donald Trump, Vladimir Putin și Xi Jinping se vor întâlni joi, 19 noiembrie, la Shenzhen, pe marginea summitului APEC — prima întâlnire trilaterală a liderilor celor mai mari trei puteri nucleare. Purtătoarea de cuvânt a Casei Albe, Olivia Wales, a spus că Trump va ridica reducerea arsenalelor nucleare, considerată de el o amenințare majoră. Potrivit unui oficial american de rang înalt, citat sub anonimat, Iranul ar putea fi discutat, însă Ucraina nu este pe agendă. Același oficial a precizat că nu se așteaptă niciun acord și a descris întâlnirea drept „începutul, sperăm, al unei conversații" productive. Context: ultimul tratat de control al armelor nucleare dintre SUA și Rusia a expirat în februarie 2026, lăsând cele două mari arsenale fără plafoane pentru prima dată în peste 50 de ani. Rusia a confirmat întâlnirea; China nu a confirmat public componenta trilaterală — presa de stat chineză a menționat doar discuții bilaterale. Trump pleacă luni într-o vizită de patru zile în Asia, cu oprire la summitul ASEAN de la Manila, înainte de Shenzhen.</p>
+          </div>
+          <div class="sec">
+            <p class="sec-label">De ce contează</p>
+            <p>Pentru el, ca IT incident Manager în mediul NATO, descurajarea nucleară este miezul alianței: prima întâlnire trilaterală a celor trei puteri nucleare, chiar fără un acord așteptat, este un semnal de reașezare a dialogului strategic după expirarea tratatului SUA–Rusia. Faptul că Ucraina este explicit exclusă de pe agendă — la o zi după ce liderii UE au decis formatul E5 pentru negocierile cu Rusia — arată că dosarul ucrainean merge pe o pistă separată de cea a controlului armelor. De urmărit joi: dacă apar declarații sau documente după întâlnire și dacă Beijingul confirmă public formatul trilateral.</p>
+          </div>
+          <div class="verify">
+            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
+            <p>Verdict: confirmat — anunțul Casei Albe, data (joi, 19 noiembrie), locul (Shenzhen, pe marginea APEC) și tema (reducerea arsenalelor nucleare) sunt relatate independent de trei redacții/agenții din afara listei curatoriate. Notă de integritate: întâlnirea este anunțată, nu ținută — confirmarea Chinei pentru formatul trilateral lipsește deocamdată, iar niciun acord nu este așteptat, potrivit oficialului american citat.</p>
+            <ul class="sources">
+              <li><a href="https://www.bbc.com/news/articles/ckz74jzpy18do" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>BBC — „Trump, Putin and Xi plan historic joint meeting in China next week, White House says” (14 nov 2026)<span class="host">bbc.com</span></a></li>
+              <li><a href="https://www.military.com/trump-xi-and-putin-plan-an-unprecedented-joint-meeting-on-the-sidelines-of-apec-white-house-says" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Associated Press (relatat de Military.com) — „Trump, Xi and Putin Plan an Unprecedented Joint Meeting on the Sidelines of APEC, White House Says” (14 nov 2026, 11:19 EST)<span class="host">military.com</span></a></li>
+              <li><a href="https://www.reuters.com/5f374b32b07b/world/china/new-yalta-trump-putin-push-meeting-that-xi-is-wary-hosting-2026-11-14/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Reuters — analiză despre negocierile din jurul întâlnirii trilaterale (14 nov 2026; lectura „nouă Ialtă” — Trump și Putin împing spre o întâlnire pe care Xi ezită să o găzduiască)<span class="host">reuters.com</span></a></li>
+            </ul>
+          </div>
+          <div class="opposing">
+            <p class="sec-label">Tabăra adversă</p>
+            <p>Reuters, în analiza din 14 noiembrie, prezintă lectura sceptică: Xi Jinping este reticent să găzduiască întâlnirea, perspectivele unui acord amplu sunt limitate, iar demersul este descris ca o posibilă „nouă Ialtă” — o reașezare a sferelor de influență între marile puteri, nu un pas spre dezarmare. (<a href="https://www.reuters.com/5f374b32b07b/world/china/new-yalta-trump-putin-push-meeting-that-xi-is-wary-hosting-2026-11-14/" target="_blank" rel="noopener">Reuters, 14 nov 2026 — analiza negocierilor din jurul întâlnirii</a>)</p>
+          </div>
+          <div class="impact">
+            <span class="badge">Impact direct</span>
+            <p>Impact direct: minim — nicio decizie cu efect imediat asupra lui, familiei sau rutinei zilnice. Relevanță de context înaltă: întâlnirea de joi este punctul de urmărit al săptămânii pe dosarul strategic SUA–Rusia–China, iar orice declarație ulterioară poate schimba cadrul negocierilor urmărite în pagină (formatul E5, Donbas, Marea Neagră).</p>
+          </div>
+        </article>
+        <!-- 2 · 15 nov · 18:00 -->
         <article id="stire-235" data-cats="tech" data-sev="amber" data-subiect="petiție pentru revenirea lui Huang">
           <div class="a-meta">
             <span class="a-time">15 nov · 18:00</span>
@@ -857,7 +893,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-234" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">petiție pentru revenirea lui Huang</span>
-            <span class="a-num">#1 / 9</span>
+            <span class="a-num">#2 / 10</span>
           </div>
           <h2>Musk și alți șefi din tech semnează petiția pentru revenirea lui Jensen Huang la Nvidia — peste 140.000 de semnături, inclusiv ~7.000 de angajați</h2>
           <div class="followup">
@@ -892,7 +928,7 @@
             <p>Impact direct: minim azi — o petiție nu e o decizie și nu cere nimic concret de la el; nu se schimbă nimic în ziua lui și nu apare niciun termen sau vreo acțiune de făcut. Relevanță de context înaltă: dacă presiunea angajaților, acționarilor și clienților mari ar duce la revenirea lui Huang, s-ar schimba conducerea și, posibil, direcția companiei care alimentează cu hardware și software aproape tot ecosistemul AI pe care îl folosește — de la modelele din cloud până la uneltele de coding. De urmărit: răspunsul boardului și ancheta independentă.</p>
           </div>
         </article>
-        <!-- 2 · 15 nov · 16:00 -->
+        <!-- 3 · 15 nov · 16:00 -->
         <article id="stire-234" data-cats="tech" data-sev="green" data-subiect="plecarea șefului de securitate Nvidia">
           <div class="a-meta">
             <span class="a-time">15 nov · 16:00</span>
@@ -900,7 +936,7 @@
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <a class="cont-pill" href="#stire-182" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">plecarea șefului de securitate Nvidia</span>
-            <span class="a-num">#2 / 9</span>
+            <span class="a-num">#3 / 10</span>
           </div>
           <h2>Șeful de securitate al Nvidia a plecat discret în august — cu două luni și jumătate înainte ca Huang să demisioneze</h2>
           <div class="followup">
@@ -932,7 +968,7 @@
           </div>
         </article>
 
-        <!-- 3 · 15 nov · 14:00 -->
+        <!-- 4 · 15 nov · 14:00 -->
         <article id="stire-233" data-cats="securitate romania" data-sev="amber" data-subiect="Moscova cere NATO la 1997">
           <div class="a-meta">
             <span class="a-time">15 nov · 14:00</span>
@@ -940,7 +976,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-227" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">Moscova cere NATO la 1997</span>
-            <span class="a-num">#3 / 9</span>
+            <span class="a-num">#4 / 10</span>
           </div>
           <h2>Rusia cere NATO să-și retragă trupele și bazele la configurația din 1997 — inclusiv din România, Polonia și țările baltice</h2>
           <div class="followup">
@@ -976,7 +1012,7 @@
           </div>
         </article>
 
-        <!-- 4 · 15 nov · 13:00 -->
+        <!-- 5 · 15 nov · 13:00 -->
         <article id="stire-232" data-cats="securitate romania" data-sev="amber" data-subiect="Oprea duce Marea Neagră la Bruxelles">
           <div class="a-meta">
             <span class="a-time">15 nov · 13:00</span>
@@ -984,7 +1020,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-228" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">Oprea duce Marea Neagră la Bruxelles</span>
-            <span class="a-num">#4 / 9</span>
+            <span class="a-num">#5 / 10</span>
           </div>
           <h2>MApN confirmă cele trei nave lovite de drone lângă Sulina, fără victime; Oprea duce dosarul Mării Negre la Bruxelles, marți–miercuri</h2>
           <div class="followup">
@@ -1014,7 +1050,7 @@
           </div>
         </article>
 
-        <!-- 5 · 15 nov · 12:00 -->
+        <!-- 6 · 15 nov · 12:00 -->
         <article id="stire-231" data-cats="securitate romania" data-sev="amber" data-subiect="a patra navă lovită">
           <div class="a-meta">
             <span class="a-time">15 nov · 12:00</span>
@@ -1022,7 +1058,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-228" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">a patra navă lovită</span>
-            <span class="a-num">#5 / 9</span>
+            <span class="a-num">#6 / 10</span>
           </div>
           <h2>A patra navă comercială lovită de dronă lângă coasta României în două zile — petrolierul Ali Najafov, cu 14 oameni la bord, așteaptă evacuarea lângă Sulina</h2>
           <div class="followup">
@@ -1051,7 +1087,7 @@
           </div>
         </article>
 
-        <!-- 6 · 15 nov · 10:00 -->
+        <!-- 7 · 15 nov · 10:00 -->
         <article id="stire-230" data-cats="tech" data-sev="amber" data-subiect="amprenta Blackwell în modele chineze">
           <div class="a-meta">
             <span class="a-time">15 nov · 10:00</span>
@@ -1059,7 +1095,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-225" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">amprenta Blackwell în modele chineze</span>
-            <span class="a-num">#6 / 9</span>
+            <span class="a-num">#7 / 10</span>
           </div>
           <h2>Cipuri Nvidia Blackwell interzise la export, în spatele celor mai puternice modele AI din China — amprenta lor, găsită în greutățile publicate</h2>
           <div class="followup">
@@ -1092,7 +1128,7 @@
           </div>
         </article>
 
-        <!-- 7 · 15 nov · 09:00 -->
+        <!-- 8 · 15 nov · 09:00 -->
         <article id="stire-228" data-cats="securitate romania" data-sev="red" data-subiect="trei nave lovite în Marea Neagră">
           <div class="a-meta">
             <span class="a-time">15 nov · 09:00</span>
@@ -1101,7 +1137,7 @@
             <span class="spot-tag">Știrea zilei</span>
             <a class="cont-pill" href="#stire-221" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">trei nave lovite în Marea Neagră</span>
-            <span class="a-num">#7 / 9</span>
+            <span class="a-num">#8 / 10</span>
           </div>
           <h2>Trei nave comerciale lovite de drone în două zile lângă coasta României, în Marea Neagră — petrolierul Evia Petrol V și vrachierul Marsol au luat foc sâmbătă seară, după Larissa 1</h2>
           <div class="followup">
@@ -1133,14 +1169,14 @@
           </div>
         </article>
 
-        <!-- 8 · 15 nov · 09:00 -->
+        <!-- 9 · 15 nov · 09:00 -->
         <article id="stire-229" data-cats="securitate" data-sev="amber" data-subiect="noua doctrină USAF">
           <div class="a-meta">
             <span class="a-time">15 nov · 09:00</span>
             <span class="a-cat">Securitate &amp; NATO</span>
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="subj-pill">noua doctrină USAF</span>
-            <span class="a-num">#8 / 9</span>
+            <span class="a-num">#9 / 10</span>
           </div>
           <h2>Forțele Aeriene ale SUA își schimbă doctrina: Force Design 2026 pune senzorii, rețelele și AI-ul în centrul apărării aeriene, nu interceptarea dronelor una câte una</h2>
           <div class="sec">
@@ -1166,7 +1202,7 @@
           </div>
         </article>
 
-        <!-- 9 · 15 nov · 08:00 -->
+        <!-- 10 · 15 nov · 08:00 -->
         <article id="stire-227" data-cats="securitate romania" data-sev="amber" data-subiect="avertismentul ambasadorilor SUA">
           <div class="a-meta">
             <span class="a-time">15 nov · 08:00</span>
@@ -1174,7 +1210,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-215" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">avertismentul ambasadorilor SUA</span>
-            <span class="a-num">#9 / 9</span>
+            <span class="a-num">#10 / 10</span>
           </div>
           <h2>Opt foști ambasadori ai SUA, între care patru în România, avertizează: concesiile teritoriale pentru Putin ar submina NATO și ar crește riscul unui război mai amplu în Europa</h2>
           <div class="followup">
@@ -6110,8 +6146,8 @@
 
       <footer>
         <div class="rule" aria-hidden="true"></div>
-        <p>Sfârșitul ediției de azi · Ultima actualizare: duminică, 15 noiembrie 2026, 18:00<br />Monitorizarea rulează la circa 3 ore, în fereastra L–V 06:00–22:00 · S–D 07:30–22:00 — dă refresh pentru noutăți.</p>
-        <a class="to-top" href="#stire-235">↑ Înapoi la cea mai nouă știre</a>
+        <p>Sfârșitul ediției de azi · Ultima actualizare: duminică, 15 noiembrie 2026, 20:00<br />Monitorizarea rulează la circa 3 ore, în fereastra L–V 06:00–22:00 · S–D 07:30–22:00 — dă refresh pentru noutăți.</p>
+        <a class="to-top" href="#stire-236">↑ Înapoi la cea mai nouă știre</a>
       </footer>
     </div>
 
