@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="color-scheme" content="light dark" />
-    <meta name="tirile-versiune" content="2026-11-15T16:00:00+01:00|8|red" />
+    <meta name="tirile-versiune" content="2026-11-15T18:00:00+01:00|9|red" />
     <link rel="icon" href="data:," />
     <title>Știrile zilei</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -699,9 +699,9 @@
     <div class="topbar">
       <div class="topbar-inner">
         <span class="dot" aria-hidden="true"></span>
-        <span><strong>Duminică, 15 noiembrie 2026</strong> · actualizat la <strong>16:00</strong></span>
+        <span><strong>Duminică, 15 noiembrie 2026</strong> · actualizat la <strong>18:00</strong></span>
         <span aria-hidden="true">·</span>
-        <span>8 știri azi</span>
+        <span>9 știri azi</span>
         <span class="spacer"></span>
         <button class="refresh-btn" type="button" id="refreshBtn" aria-label="Reîmprospătează pagina">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg>
@@ -768,15 +768,15 @@
       <section class="dashboard" aria-label="Panou de ansamblu">
         <div class="dash-head">
           <span class="dash-title">Dashboard · Azi</span>
-          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 16:00</span>
+          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 18:00</span>
           <span class="dash-meta">Fereastră monitorizare <strong>L–V 06:00–22:00 · S–D 07:30–22:00</strong> · pas ~3 ore</span>
         </div>
 
         <div class="kpi-grid five" role="group" aria-label="Filtrează după categorie — apasă pe un tile">
           <button class="kpi" type="button" data-filter="toate" aria-pressed="true">
             <span class="kpi-top"><span class="kpi-label">Toate știrile</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">8</span>
-            <span class="kpi-sub">știri verificate azi, în 7 rulări</span>
+            <span class="kpi-value">9</span>
+            <span class="kpi-sub">știri verificate azi, în 8 rulări</span>
             <span class="kpi-bar" aria-hidden="true"><i style="width:100%"></i></span>
             <span class="kpi-hint">Apasă pentru toate</span>
           </button>
@@ -784,14 +784,14 @@
             <span class="kpi-top"><span class="kpi-label">Securitate &amp; NATO</span><span class="kpi-check" aria-hidden="true">✓</span></span>
             <span class="kpi-value">6</span>
             <span class="kpi-sub">Moscova cere NATO la 1997 · Oprea duce Marea Neagră la Bruxelles · a patra navă lovită · trei nave lovite în Marea Neagră · noua doctrină USAF · avertismentul ambasadorilor SUA</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:75%"></i></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:67%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="romania" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">România</span><span class="kpi-check" aria-hidden="true">✓</span></span>
             <span class="kpi-value">5</span>
             <span class="kpi-sub">Moscova cere NATO la 1997 · Oprea duce Marea Neagră la Bruxelles · a patra navă lovită · trei nave lovite în Marea Neagră · avertismentul ambasadorilor SUA</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:63%"></i></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:56%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="belgia" aria-pressed="false">
@@ -803,9 +803,9 @@
           </button>
           <button class="kpi" type="button" data-filter="tech" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">Tech &amp; AI</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">2</span>
-            <span class="kpi-sub">plecarea șefului de securitate Nvidia · amprenta Blackwell în modele chineze</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:25%"></i></span>
+            <span class="kpi-value">3</span>
+            <span class="kpi-sub">petiție pentru revenirea lui Huang · plecarea șefului de securitate Nvidia · amprenta Blackwell în modele chineze</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:33%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
         </div>
@@ -819,7 +819,7 @@
       </section>
 
       <div class="filter-status" aria-live="polite">
-        <span class="filter-label">Se afișează: <strong>Toate categoriile — 8 din 8 știri</strong></span>
+        <span class="filter-label">Se afișează: <strong>Toate categoriile — 9 din 9 știri</strong></span>
         <button class="filter-reset" type="button" hidden>Resetează filtrul</button>
       </div>
 
@@ -849,7 +849,50 @@
       <p class="empty">Nicio știre în această categorie azi.</p>
 
       <main>
-        <!-- 1 · 15 nov · 16:00 -->
+        <!-- 1 · 15 nov · 18:00 -->
+        <article id="stire-235" data-cats="tech" data-sev="amber" data-subiect="petiție pentru revenirea lui Huang">
+          <div class="a-meta">
+            <span class="a-time">15 nov · 18:00</span>
+            <span class="a-cat">Tech &amp; AI</span>
+            <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
+            <a class="cont-pill" href="#stire-234" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
+            <span class="subj-pill">petiție pentru revenirea lui Huang</span>
+            <span class="a-num">#1 / 9</span>
+          </div>
+          <h2>Musk și alți șefi din tech semnează petiția pentru revenirea lui Jensen Huang la Nvidia — peste 140.000 de semnături, inclusiv ~7.000 de angajați</h2>
+          <div class="followup">
+            <span class="tag">Urmare la</span>
+            <p><a href="#stire-234">„Șeful de securitate al Nvidia a plecat discret în august — cu două luni și jumătate înainte ca Huang să demisioneze" — duminică, 15 noiembrie 2026, ora 16:00.</a> (Petiția reacționează la demisia lui Huang din 12 noiembrie și la instalarea conducerii interimare — firul Nvidia/Huang e urmărit în pagină de la cardul demisiei, stire-182.)</p>
+          </div>
+          <div class="sec">
+            <p class="sec-label">Ce s-a întâmplat</p>
+            <p>Petiția online „Stand with Jensen" cere consiliului de administrație al Nvidia să-l readucă pe Jensen Huang în funcția de CEO cât timp ancheta independentă stabilește faptele — sau, dacă nu, să publice dovezile care arată că îndepărtarea lui e în interesul companiei. Sâmbătă după-amiază petiția trecuse de 115.000 de semnături, iar duminică presa relata peste 140.000; printre semnatari, potrivit site-ului campaniei, se numără aproape 7.000 de angajați actuali Nvidia, circa 1.300 de foști angajați și peste 76.000 de acționari. Elon Musk a anunțat vineri, pe X, că semnează și el („A petition is underway to reinstate Jensen and I'm signing it too"), alături de șeful Epic Games, Tim Sweeney, CEO-ul Y Combinator, Garry Tan, și CEO-ul Replit, Amjad Masad. Doi mari investitori — Brad Gerstner (Altimeter Capital) și Gavin Baker (Atreides Management) — au trimis vineri o scrisoare boardului în același sens. Context: Huang a demisionat joi, 12 noiembrie, la patru zile după ce a recunoscut o relație extraconjugală cu Alice Huang, fostă directoare la Megaspeed, compania din Singapore pe care serviciile americane o suspectează că a deturnat cipuri Nvidia către China; boardul a numit-o pe directoarea financiară Colette Kress CEO interimar, iar potrivit Financial Times l-a contactat pe CEO-ul Arm, Rene Haas, în căutarea unui succesor permanent. Musk a avertizat sâmbătă, tot pe X, că multe dintre contractele Nvidia din lanțul de aprovizionare au fost încheiate prin strângere de mână cu Huang, nu prin contracte scrise, și că fără el unele înțelegeri critice se pot pierde.</p>
+          </div>
+          <div class="sec">
+            <p class="sec-label">De ce contează</p>
+            <p>Pentru el, ca IT incident Manager și constructor de automatizări pe stack AI, miza e conducerea companiei care face infrastructura pe care își construiește uneltele: cipurile, modelele și API-urile Nvidia sunt coloana vertebrală a ecosistemului AI, iar o criză de guvernanță la vârf — demisie, anchete ale Congresului și ale serviciilor, presiune din partea a mii de angajați și a celor mai mari clienți — poate schimba strategia de produs și ritmul livrărilor exact când ecosistemul e în plină reașezare. Precedentul invocat chiar de semnatari e revenirea lui Sam Altman la OpenAI după demiterea din 2023: boardul Nvidia e acum sub aceeași presiune publică, iar o eventuală revenire ar rescrie toată povestea ultimelor zile. De urmărit: dacă boardul răspunde petiției și dacă ancheta independentă schimbă ceva înainte ca un succesor permanent să fie numit.</p>
+          </div>
+          <div class="verify">
+            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
+            <p>Verdict: confirmat — petiția există, iar semnăturile și numele semnatarilor sunt relatate independent de mai multe redacții. TechCrunch (domeniu curatoriat, 14 noiembrie) relatează petiția cu cifrele de sâmbătă după-amiază (peste 115.000 de semnături); Moneywise, TradingView/Stocktwits și Digit confirmă independent postarea lui Musk din 13 noiembrie, cererile petiției și lista semnatarilor notabili; Seoul Economic Daily (15 noiembrie, pe baza Business Insider) confirmă creșterea la peste 140.000 de semnături duminică. Notă de integritate: cifrele vin de pe site-ul campaniei, iar identitățile sunt auto-declarate — Moneywise a găsit în listă intrări care par false sau duplicate, iar site-ul spune că nu e afiliat cu Nvidia sau cu Huang și că poate ține semnături noi în revizuire înainte de numărare; cifrele exacte ale semnatarilor trebuie citite cu această rezervă. Boardul Nvidia nu a comentat public petiția.</p>
+            <ul class="sources">
+              <li><a href="https://techcrunch.com/2026/11/14/elon-musk-other-tech-execs-sign-petition-calling-on-nvidia-to-reinstate-jensen-huang/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>TechCrunch — „Elon Musk, other tech execs sign petition calling on Nvidia to reinstate Jensen Huang” (14 nov 2026, 13:41 PST: peste 115.000 de semnături sâmbătă după-amiază, dintre care 5.965 angajați actuali Nvidia, 1.108 foști angajați și 63.063 acționari; semnatari notabili: Elon Musk, Tim Sweeney, Garry Tan, Amjad Masad)<span class="host">techcrunch.com</span></a></li>
+              <li><a href="https://en.sedaily.com/world/2026/11/15/petition-to-reinstate-jensen-huang-tops-140000-signatures" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Seoul Economic Daily — „Petition to Reinstate Jensen Huang Tops 140,000 Signatures” (15 nov 2026, pe baza Business Insider: peste 140.000 de semnături, peste 7.000 de angajați Nvidia, ~1.300 de foști angajați și peste 76.000 de acționari; Musk avertizează că multe contracte din lanțul de aprovizionare au fost încheieri prin strângere de mână cu Huang)<span class="host">en.sedaily.com</span></a></li>
+              <li><a href="https://moneywise.com/news/top-stories/elon-musk-stand-with-jensen-huang-petition" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Moneywise — „Elon Musk backs bid to reinstate Jensen Huang at Nvidia” (14 nov 2026: postarea lui Musk pe X din 13 nov; peste 100.000 de nume la 10:30 ET sâmbătă; Kress CEO interimar, Harvey Jones primul președinte al boardului; identitățile sunt auto-declarate, cu intrări care par false sau duplicate)<span class="host">moneywise.com</span></a></li>
+              <li><a href="https://www.tradingview.com/news/stocktwits:426fea107094b:0-elon-musk-tom-lee-shopify-ceo-sign-stand-with-jensen-petition-to-reinstate-him-as-nvidia-ceo/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>TradingView / Stocktwits — „Elon Musk, Tom Lee, Shopify CEO Sign 'Stand With Jensen' Petition To Reinstate Him As Nvidia CEO” (14 nov 2026: petiția cere readucerea lui Huang cât timp ancheta independentă stabilește faptele; semnatari: Musk, Tom Lee, Tobi Lütke)<span class="host">tradingview.com</span></a></li>
+              <li><a href="https://www.digit.in/news/general/bring-jensen-back-elon-musk-and-over-57000-others-sign-letter-demanding-jensen-huangs-return-as-nvidia-ceo.html" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Digit — „Bring Jensen Back: Elon Musk and over 57,000 others sign letter demanding Jensen Huang's return as Nvidia CEO” (14 nov 2026: scrisoarea deschisă cere boardului anchetă independentă înainte de o decizie finală; campania nu e susținută oficial de Nvidia sau Huang)<span class="host">digit.in</span></a></li>
+            </ul>
+          </div>
+          <div class="adverse">
+            <p class="sec-label">Tabăra adversă</p>
+            <p><strong>Consiliul de administrație al Nvidia</strong> a instalat deja o conducere fără Huang și merge mai departe pe acest drum: directoarea financiară Colette Kress e CEO interimar, directorul Harvey Jones a devenit primul președinte din istoria boardului, iar boardul a început căutarea unui succesor permanent — Financial Times a relatat că l-a contactat pe CEO-ul Arm, Rene Haas. Boardul a transmis că operațiunile, angajamentele față de clienți și foaia de parcurs a produselor continuă fără întreruperi și a numit premature speculațiile despre candidați individuali. Observatorii citați de Seoul Economic Daily văd puține șanse reale de revenire, cât timp Huang face obiectul unor anchete ale Congresului SUA și ale serviciilor de informații. (<a href="https://theoutpost.ai/news-story/musk-and-nvidia-employees-campaign-for-jensen-huang-s-return-33525/" target="_blank" rel="noopener">The Outpost, 15 nov 2026 — campania pentru revenirea lui Huang și poziția boardului</a>)</p>
+          </div>
+          <div class="impact">
+            <span class="badge">Impact direct</span>
+            <p>Impact direct: minim azi — o petiție nu e o decizie și nu cere nimic concret de la el; nu se schimbă nimic în ziua lui și nu apare niciun termen sau vreo acțiune de făcut. Relevanță de context înaltă: dacă presiunea angajaților, acționarilor și clienților mari ar duce la revenirea lui Huang, s-ar schimba conducerea și, posibil, direcția companiei care alimentează cu hardware și software aproape tot ecosistemul AI pe care îl folosește — de la modelele din cloud până la uneltele de coding. De urmărit: răspunsul boardului și ancheta independentă.</p>
+          </div>
+        </article>
+        <!-- 2 · 15 nov · 16:00 -->
         <article id="stire-234" data-cats="tech" data-sev="green" data-subiect="plecarea șefului de securitate Nvidia">
           <div class="a-meta">
             <span class="a-time">15 nov · 16:00</span>
@@ -857,7 +900,7 @@
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <a class="cont-pill" href="#stire-182" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">plecarea șefului de securitate Nvidia</span>
-            <span class="a-num">#1 / 8</span>
+            <span class="a-num">#2 / 9</span>
           </div>
           <h2>Șeful de securitate al Nvidia a plecat discret în august — cu două luni și jumătate înainte ca Huang să demisioneze</h2>
           <div class="followup">
@@ -889,7 +932,7 @@
           </div>
         </article>
 
-        <!-- 2 · 15 nov · 14:00 -->
+        <!-- 3 · 15 nov · 14:00 -->
         <article id="stire-233" data-cats="securitate romania" data-sev="amber" data-subiect="Moscova cere NATO la 1997">
           <div class="a-meta">
             <span class="a-time">15 nov · 14:00</span>
@@ -897,7 +940,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-227" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">Moscova cere NATO la 1997</span>
-            <span class="a-num">#2 / 8</span>
+            <span class="a-num">#3 / 9</span>
           </div>
           <h2>Rusia cere NATO să-și retragă trupele și bazele la configurația din 1997 — inclusiv din România, Polonia și țările baltice</h2>
           <div class="followup">
@@ -933,7 +976,7 @@
           </div>
         </article>
 
-        <!-- 3 · 15 nov · 13:00 -->
+        <!-- 4 · 15 nov · 13:00 -->
         <article id="stire-232" data-cats="securitate romania" data-sev="amber" data-subiect="Oprea duce Marea Neagră la Bruxelles">
           <div class="a-meta">
             <span class="a-time">15 nov · 13:00</span>
@@ -941,7 +984,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-228" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">Oprea duce Marea Neagră la Bruxelles</span>
-            <span class="a-num">#3 / 8</span>
+            <span class="a-num">#4 / 9</span>
           </div>
           <h2>MApN confirmă cele trei nave lovite de drone lângă Sulina, fără victime; Oprea duce dosarul Mării Negre la Bruxelles, marți–miercuri</h2>
           <div class="followup">
@@ -971,7 +1014,7 @@
           </div>
         </article>
 
-        <!-- 4 · 15 nov · 12:00 -->
+        <!-- 5 · 15 nov · 12:00 -->
         <article id="stire-231" data-cats="securitate romania" data-sev="amber" data-subiect="a patra navă lovită">
           <div class="a-meta">
             <span class="a-time">15 nov · 12:00</span>
@@ -979,7 +1022,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-228" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">a patra navă lovită</span>
-            <span class="a-num">#4 / 8</span>
+            <span class="a-num">#5 / 9</span>
           </div>
           <h2>A patra navă comercială lovită de dronă lângă coasta României în două zile — petrolierul Ali Najafov, cu 14 oameni la bord, așteaptă evacuarea lângă Sulina</h2>
           <div class="followup">
@@ -1008,7 +1051,7 @@
           </div>
         </article>
 
-        <!-- 5 · 15 nov · 10:00 -->
+        <!-- 6 · 15 nov · 10:00 -->
         <article id="stire-230" data-cats="tech" data-sev="amber" data-subiect="amprenta Blackwell în modele chineze">
           <div class="a-meta">
             <span class="a-time">15 nov · 10:00</span>
@@ -1016,7 +1059,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-225" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">amprenta Blackwell în modele chineze</span>
-            <span class="a-num">#5 / 8</span>
+            <span class="a-num">#6 / 9</span>
           </div>
           <h2>Cipuri Nvidia Blackwell interzise la export, în spatele celor mai puternice modele AI din China — amprenta lor, găsită în greutățile publicate</h2>
           <div class="followup">
@@ -1049,7 +1092,7 @@
           </div>
         </article>
 
-        <!-- 6 · 15 nov · 09:00 -->
+        <!-- 7 · 15 nov · 09:00 -->
         <article id="stire-228" data-cats="securitate romania" data-sev="red" data-subiect="trei nave lovite în Marea Neagră">
           <div class="a-meta">
             <span class="a-time">15 nov · 09:00</span>
@@ -1058,7 +1101,7 @@
             <span class="spot-tag">Știrea zilei</span>
             <a class="cont-pill" href="#stire-221" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">trei nave lovite în Marea Neagră</span>
-            <span class="a-num">#6 / 8</span>
+            <span class="a-num">#7 / 9</span>
           </div>
           <h2>Trei nave comerciale lovite de drone în două zile lângă coasta României, în Marea Neagră — petrolierul Evia Petrol V și vrachierul Marsol au luat foc sâmbătă seară, după Larissa 1</h2>
           <div class="followup">
@@ -1090,14 +1133,14 @@
           </div>
         </article>
 
-        <!-- 7 · 15 nov · 09:00 -->
+        <!-- 8 · 15 nov · 09:00 -->
         <article id="stire-229" data-cats="securitate" data-sev="amber" data-subiect="noua doctrină USAF">
           <div class="a-meta">
             <span class="a-time">15 nov · 09:00</span>
             <span class="a-cat">Securitate &amp; NATO</span>
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="subj-pill">noua doctrină USAF</span>
-            <span class="a-num">#7 / 8</span>
+            <span class="a-num">#8 / 9</span>
           </div>
           <h2>Forțele Aeriene ale SUA își schimbă doctrina: Force Design 2026 pune senzorii, rețelele și AI-ul în centrul apărării aeriene, nu interceptarea dronelor una câte una</h2>
           <div class="sec">
@@ -1123,7 +1166,7 @@
           </div>
         </article>
 
-        <!-- 8 · 15 nov · 08:00 -->
+        <!-- 9 · 15 nov · 08:00 -->
         <article id="stire-227" data-cats="securitate romania" data-sev="amber" data-subiect="avertismentul ambasadorilor SUA">
           <div class="a-meta">
             <span class="a-time">15 nov · 08:00</span>
@@ -1131,7 +1174,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-215" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">avertismentul ambasadorilor SUA</span>
-            <span class="a-num">#8 / 8</span>
+            <span class="a-num">#9 / 9</span>
           </div>
           <h2>Opt foști ambasadori ai SUA, între care patru în România, avertizează: concesiile teritoriale pentru Putin ar submina NATO și ar crește riscul unui război mai amplu în Europa</h2>
           <div class="followup">
@@ -6067,8 +6110,8 @@
 
       <footer>
         <div class="rule" aria-hidden="true"></div>
-        <p>Sfârșitul ediției de azi · Ultima actualizare: duminică, 15 noiembrie 2026, 14:00<br />Monitorizarea rulează la circa 3 ore, în fereastra L–V 06:00–22:00 · S–D 07:30–22:00 — dă refresh pentru noutăți.</p>
-        <a class="to-top" href="#stire-233">↑ Înapoi la cea mai nouă știre</a>
+        <p>Sfârșitul ediției de azi · Ultima actualizare: duminică, 15 noiembrie 2026, 18:00<br />Monitorizarea rulează la circa 3 ore, în fereastra L–V 06:00–22:00 · S–D 07:30–22:00 — dă refresh pentru noutăți.</p>
+        <a class="to-top" href="#stire-235">↑ Înapoi la cea mai nouă știre</a>
       </footer>
     </div>
 
