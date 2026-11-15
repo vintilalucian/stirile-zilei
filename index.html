@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="color-scheme" content="light dark" />
-    <meta name="tirile-versiune" content="2026-11-15T12:00:00+01:00|5|red" />
+    <meta name="tirile-versiune" content="2026-11-15T13:00:00+01:00|6|red" />
     <link rel="icon" href="data:," />
     <title>Știrile zilei</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -699,9 +699,9 @@
     <div class="topbar">
       <div class="topbar-inner">
         <span class="dot" aria-hidden="true"></span>
-        <span><strong>Duminică, 15 noiembrie 2026</strong> · actualizat la <strong>12:00</strong></span>
+        <span><strong>Duminică, 15 noiembrie 2026</strong> · actualizat la <strong>13:00</strong></span>
         <span aria-hidden="true">·</span>
-        <span>5 știri azi</span>
+        <span>6 știri azi</span>
         <span class="spacer"></span>
         <button class="refresh-btn" type="button" id="refreshBtn" aria-label="Reîmprospătează pagina">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg>
@@ -768,30 +768,30 @@
       <section class="dashboard" aria-label="Panou de ansamblu">
         <div class="dash-head">
           <span class="dash-title">Dashboard · Azi</span>
-          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 12:00</span>
+          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 13:00</span>
           <span class="dash-meta">Fereastră monitorizare <strong>L–V 06:00–22:00 · S–D 07:30–22:00</strong> · pas ~3 ore</span>
         </div>
 
         <div class="kpi-grid five" role="group" aria-label="Filtrează după categorie — apasă pe un tile">
           <button class="kpi" type="button" data-filter="toate" aria-pressed="true">
             <span class="kpi-top"><span class="kpi-label">Toate știrile</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">5</span>
-            <span class="kpi-sub">știri verificate azi, în 4 rulări</span>
+            <span class="kpi-value">6</span>
+            <span class="kpi-sub">știri verificate azi, în 5 rulări</span>
             <span class="kpi-bar" aria-hidden="true"><i style="width:100%"></i></span>
             <span class="kpi-hint">Apasă pentru toate</span>
           </button>
           <button class="kpi" type="button" data-filter="securitate" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">Securitate &amp; NATO</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">4</span>
-            <span class="kpi-sub">a patra navă lovită · trei nave lovite în Marea Neagră · noua doctrină USAF · avertismentul ambasadorilor SUA</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:80%"></i></span>
+            <span class="kpi-value">5</span>
+            <span class="kpi-sub">Oprea duce Marea Neagră la Bruxelles · a patra navă lovită · trei nave lovite în Marea Neagră · noua doctrină USAF · avertismentul ambasadorilor SUA</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:83%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="romania" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">România</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">3</span>
-            <span class="kpi-sub">a patra navă lovită · trei nave lovite în Marea Neagră · avertismentul ambasadorilor SUA</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:60%"></i></span>
+            <span class="kpi-value">4</span>
+            <span class="kpi-sub">Oprea duce Marea Neagră la Bruxelles · a patra navă lovită · trei nave lovite în Marea Neagră · avertismentul ambasadorilor SUA</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:67%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="belgia" aria-pressed="false">
@@ -805,7 +805,7 @@
             <span class="kpi-top"><span class="kpi-label">Tech &amp; AI</span><span class="kpi-check" aria-hidden="true">✓</span></span>
             <span class="kpi-value">1</span>
             <span class="kpi-sub">amprenta Blackwell în modele chineze</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:20%"></i></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:17%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
         </div>
@@ -819,7 +819,7 @@
       </section>
 
       <div class="filter-status" aria-live="polite">
-        <span class="filter-label">Se afișează: <strong>Toate categoriile — 5 din 5 știri</strong></span>
+        <span class="filter-label">Se afișează: <strong>Toate categoriile — 6 din 6 știri</strong></span>
         <button class="filter-reset" type="button" hidden>Resetează filtrul</button>
       </div>
 
@@ -849,7 +849,45 @@
       <p class="empty">Nicio știre în această categorie azi.</p>
 
       <main>
-        <!-- 1 · 15 nov · 12:00 -->
+        <!-- 1 · 15 nov · 13:00 -->
+        <article id="stire-232" data-cats="securitate romania" data-sev="amber" data-subiect="Oprea duce Marea Neagră la Bruxelles">
+          <div class="a-meta">
+            <span class="a-time">15 nov · 13:00</span>
+            <span class="a-cat">Securitate &amp; NATO · România</span>
+            <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
+            <a class="cont-pill" href="#stire-228" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
+            <span class="subj-pill">Oprea duce Marea Neagră la Bruxelles</span>
+            <span class="a-num">#1 / 6</span>
+          </div>
+          <h2>MApN confirmă cele trei nave lovite de drone lângă Sulina, fără victime; Oprea duce dosarul Mării Negre la Bruxelles, marți–miercuri</h2>
+          <div class="followup">
+            <span class="tag">Urmare la</span>
+            <p><a href="#stire-228">„Trei nave comerciale lovite de drone în două zile lângă coasta României, în Marea Neagră — petrolierul Evia Petrol V și vrachierul Marsol au luat foc sâmbătă seară, după Larissa 1” — duminică, 15 noiembrie 2026, ora 09:00.</a> (Prima confirmare oficială completă a serii de sâmbătă, pentru cele trei nave relatate în cardul de la 09:00.)</p>
+          </div>
+          <div class="sec">
+            <p class="sec-label">Ce s-a întâmplat</p>
+            <p>Ministerul Apărării Naționale a confirmat duminică cele trei nave comerciale lovite de drone sâmbătă seară, în apropierea gurilor Dunării: petrolierul Evia Petrol V (pavilion grec, în jurul orei 21:10, la circa 4 mile marine est-sud-est de Sulina), vrachierul Marsol (în jurul orei 21:45, la circa 5 mile marine sud-est de Canalul Sulina) și petrolierul Ali Najafov (în cursul nopții). Incendiile izbucnite la bord au fost stinse de echipaje, fără victime. Două avioane F-16 au decolat de la Fetești după ce radarul a detectat o țintă aeriană la est de Insula Șerpilor, iar autoritățile au transmis două mesaje RO-Alert în estul județului Tulcea (primul la 20:51, al doilea încheiat duminică la 00:27).</p>
+          </div>
+          <div class="sec">
+            <p class="sec-label">De ce contează</p>
+            <p>Este prima confirmare oficială completă a serii de sâmbătă și mută dosarul din plan operațional în plan diplomatic — ministrul Radu Oprea a anunțat că va ridica securitatea Mării Negre la reuniunea miniștrilor apărării din statele membre UE, marți și miercuri la Bruxelles. În plus, România a declarat duminică apele de la Sulina periculoase pentru navigație, invocând „obiecte plutitoare venite dinspre nord” — un semnal practic pentru traficul comercial de la gurile Dunării.</p>
+          </div>
+          <div class="verify">
+            <p class="sec-label">Verificare <span class="status">Sursă primară + confirmat</span></p>
+            <p>Verdict: sursă primară + confirmat. MApN / ministrul Radu Oprea — declarație scrisă proprie, duminică (sursă primară): confirmarea celor trei nave lovite sâmbătă seară lângă gurile Dunării, incendiile stinse de echipaje, fără victime. G4Media (15 noiembrie 2026) — ministrul Apărării cere sprijinul aliaților după loviturile de sâmbătă și duce securitatea Mării Negre la reuniunea miniștrilor apărării din UE, marți–miercuri la Bruxelles. Presa România (15 noiembrie 2026, 13:09) — trei nave comerciale lovite de drone lângă gurile Dunării; MApN: nu sunt victime. Maritime.bg (15 noiembrie 2026) — avertismentul de navigație de duminică pentru apele de la Sulina, declarate periculoase pentru navigație.</p>
+            <ul class="sources">
+              <li><a href="https://www.g4media.ro/ministrul-apararii-cere-sprijinul-aliatilor-dupa-ce-trei-nave-au-fost-lovite-de-drone-sambata-in-apropierea-gurilor-dunarii.html" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>G4Media — „Ministrul Apărării cere sprijinul aliaților după ce trei nave au fost lovite de drone, sâmbătă, în apropierea gurilor Dunării” (15 nov)<span class="host">g4media.ro</span></a></li>
+              <li><a href="https://presaromania.ro/trei-nave-comerciale-lovite-de-drone-langa-gurile-dunarii-mapn-nu-sunt-victime/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Presa România — „Trei nave comerciale, lovite de drone lângă gurile Dunării; MApN: nu sunt victime” (15 nov, 13:09)<span class="host">presaromania.ro</span></a></li>
+              <li><a href="https://www.maritime.bg/158201/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>maritime.bg — avertismentul de navigație de duminică pentru apele de la Sulina (15 nov)<span class="host">maritime.bg</span></a></li>
+            </ul>
+          </div>
+          <div class="impact">
+            <span class="badge">Impact direct</span>
+            <p>Impact direct minim pentru familie și rutină. Relevanță profesională directă: dosarul Mării Negre ajunge marți–miercuri pe masa miniștrilor apărării din UE, la Bruxelles, iar avertismentul de navigație de la Sulina arată că zona rămâne activă — de urmărit posibile cerințe noi de raportare sau fluxuri în zona operațională.</p>
+          </div>
+        </article>
+
+        <!-- 2 · 15 nov · 12:00 -->
         <article id="stire-231" data-cats="securitate romania" data-sev="amber" data-subiect="a patra navă lovită">
           <div class="a-meta">
             <span class="a-time">15 nov · 12:00</span>
@@ -857,7 +895,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-228" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">a patra navă lovită</span>
-            <span class="a-num">#1 / 5</span>
+            <span class="a-num">#2 / 6</span>
           </div>
           <h2>A patra navă comercială lovită de dronă lângă coasta României în două zile — petrolierul Ali Najafov, cu 14 oameni la bord, așteaptă evacuarea lângă Sulina</h2>
           <div class="followup">
@@ -886,7 +924,7 @@
           </div>
         </article>
 
-        <!-- 2 · 15 nov · 10:00 -->
+        <!-- 3 · 15 nov · 10:00 -->
         <article id="stire-230" data-cats="tech" data-sev="amber" data-subiect="amprenta Blackwell în modele chineze">
           <div class="a-meta">
             <span class="a-time">15 nov · 10:00</span>
@@ -894,7 +932,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-225" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">amprenta Blackwell în modele chineze</span>
-            <span class="a-num">#2 / 5</span>
+            <span class="a-num">#3 / 6</span>
           </div>
           <h2>Cipuri Nvidia Blackwell interzise la export, în spatele celor mai puternice modele AI din China — amprenta lor, găsită în greutățile publicate</h2>
           <div class="followup">
@@ -927,7 +965,7 @@
           </div>
         </article>
 
-        <!-- 3 · 15 nov · 09:00 -->
+        <!-- 4 · 15 nov · 09:00 -->
         <article id="stire-228" data-cats="securitate romania" data-sev="red" data-subiect="trei nave lovite în Marea Neagră">
           <div class="a-meta">
             <span class="a-time">15 nov · 09:00</span>
@@ -936,7 +974,7 @@
             <span class="spot-tag">Știrea zilei</span>
             <a class="cont-pill" href="#stire-221" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">trei nave lovite în Marea Neagră</span>
-            <span class="a-num">#3 / 5</span>
+            <span class="a-num">#4 / 6</span>
           </div>
           <h2>Trei nave comerciale lovite de drone în două zile lângă coasta României, în Marea Neagră — petrolierul Evia Petrol V și vrachierul Marsol au luat foc sâmbătă seară, după Larissa 1</h2>
           <div class="followup">
@@ -968,14 +1006,14 @@
           </div>
         </article>
 
-        <!-- 4 · 15 nov · 09:00 -->
+        <!-- 5 · 15 nov · 09:00 -->
         <article id="stire-229" data-cats="securitate" data-sev="amber" data-subiect="noua doctrină USAF">
           <div class="a-meta">
             <span class="a-time">15 nov · 09:00</span>
             <span class="a-cat">Securitate &amp; NATO</span>
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="subj-pill">noua doctrină USAF</span>
-            <span class="a-num">#4 / 5</span>
+            <span class="a-num">#5 / 6</span>
           </div>
           <h2>Forțele Aeriene ale SUA își schimbă doctrina: Force Design 2026 pune senzorii, rețelele și AI-ul în centrul apărării aeriene, nu interceptarea dronelor una câte una</h2>
           <div class="sec">
@@ -1001,7 +1039,7 @@
           </div>
         </article>
 
-        <!-- 5 · 15 nov · 08:00 -->
+        <!-- 6 · 15 nov · 08:00 -->
         <article id="stire-227" data-cats="securitate romania" data-sev="amber" data-subiect="avertismentul ambasadorilor SUA">
           <div class="a-meta">
             <span class="a-time">15 nov · 08:00</span>
@@ -1009,7 +1047,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-215" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">avertismentul ambasadorilor SUA</span>
-            <span class="a-num">#5 / 5</span>
+            <span class="a-num">#6 / 6</span>
           </div>
           <h2>Opt foști ambasadori ai SUA, între care patru în România, avertizează: concesiile teritoriale pentru Putin ar submina NATO și ar crește riscul unui război mai amplu în Europa</h2>
           <div class="followup">
@@ -5945,8 +5983,8 @@
 
       <footer>
         <div class="rule" aria-hidden="true"></div>
-        <p>Sfârșitul ediției de azi · Ultima actualizare: duminică, 15 noiembrie 2026, 10:00<br />Monitorizarea rulează la circa 3 ore, în fereastra L–V 06:00–22:00 · S–D 07:30–22:00 — dă refresh pentru noutăți.</p>
-        <a class="to-top" href="#stire-230">↑ Înapoi la cea mai nouă știre</a>
+        <p>Sfârșitul ediției de azi · Ultima actualizare: duminică, 15 noiembrie 2026, 13:00<br />Monitorizarea rulează la circa 3 ore, în fereastra L–V 06:00–22:00 · S–D 07:30–22:00 — dă refresh pentru noutăți.</p>
+        <a class="to-top" href="#stire-232">↑ Înapoi la cea mai nouă știre</a>
       </footer>
     </div>
 
