@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="color-scheme" content="light dark" />
-    <meta name="tirile-versiune" content="2026-11-16T07:00:00+01:00|1|amber" />
+    <meta name="tirile-versiune" content="2026-11-16T09:00:00+01:00|2|amber" />
     <link rel="icon" href="data:," />
     <title>Știrile zilei</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -699,9 +699,9 @@
     <div class="topbar">
       <div class="topbar-inner">
         <span class="dot" aria-hidden="true"></span>
-        <span><strong>Luni, 16 noiembrie 2026</strong> · actualizat la <strong>07:00</strong></span>
+        <span><strong>Luni, 16 noiembrie 2026</strong> · actualizat la <strong>09:00</strong></span>
         <span aria-hidden="true">·</span>
-        <span>1 știre azi</span>
+        <span>2 știri azi</span>
         <span class="spacer"></span>
         <button class="refresh-btn" type="button" id="refreshBtn" aria-label="Reîmprospătează pagina">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg>
@@ -739,7 +739,7 @@
 
       <!-- Chenar permanent: știrea cea mai importantă a zilei — sub fereastra
            „Ultimele știri", ÎNAINTEA dashboardului, vizibilă din prima, fără scroll.
-           Nivelul de azi: GALBEN (sev-amber) — de urmărit: un aliat NATO își închide complet frontiera terestră cu Rusia ca răspuns la o tentativă de sabotaj atribuită GRU — a doua tentativă asupra unui producător eston de tehnologie de apărare din august încoace; e singura știre a zilei și cea mai gravă dintre cele verificate, de aceea nu apare mențiunea despre celelalte știri cu aceeași severitate.
+           Nivelul de azi: GALBEN (sev-amber) — de urmărit: un aliat NATO își închide complet frontiera terestră cu Rusia ca răspuns la o tentativă de sabotaj atribuită GRU — a doua tentativă asupra unui producător eston de tehnologie de apărare din august încoace; rămâne știrea zilei (marcată ca atare pe card), iar știrea de la 09:00 despre restricțiile de export de cipuri AI are aceeași severitate maximă a zilei, deci scriptul adaugă mențiunea „Mai este și o altă știre cu aceeași severitate".
            Chenarul rămâne în afara logicii de filtrare: vizibil indiferent de filtrul de categorie. -->
       <section class="spot sev-amber" aria-label="Știrea cea mai importantă a zilei">
         <div class="spot-head">
@@ -768,15 +768,15 @@
       <section class="dashboard" aria-label="Panou de ansamblu">
         <div class="dash-head">
           <span class="dash-title">Dashboard · Azi</span>
-          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 07:00</span>
+          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 09:00</span>
           <span class="dash-meta">Fereastră monitorizare <strong>L–V 06:00–22:00 · S–D 07:30–22:00</strong> · pas ~3 ore</span>
         </div>
 
         <div class="kpi-grid five" role="group" aria-label="Filtrează după categorie — apasă pe un tile">
           <button class="kpi" type="button" data-filter="toate" aria-pressed="true">
             <span class="kpi-top"><span class="kpi-label">Toate știrile</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">1</span>
-            <span class="kpi-sub">știre verificată azi, în 1 rulare</span>
+            <span class="kpi-value">2</span>
+            <span class="kpi-sub">știri verificate azi, în 2 rulări</span>
             <span class="kpi-bar" aria-hidden="true"><i style="width:100%"></i></span>
             <span class="kpi-hint">Apasă pentru toate</span>
           </button>
@@ -784,7 +784,7 @@
             <span class="kpi-top"><span class="kpi-label">Securitate &amp; NATO</span><span class="kpi-check" aria-hidden="true">✓</span></span>
             <span class="kpi-value">1</span>
             <span class="kpi-sub">Estonia închide granița cu Rusia</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:100%"></i></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:50%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="romania" aria-pressed="false">
@@ -803,9 +803,9 @@
           </button>
           <button class="kpi" type="button" data-filter="tech" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">Tech &amp; AI</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">0</span>
-            <span class="kpi-sub"></span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:0%"></i></span>
+            <span class="kpi-value">1</span>
+            <span class="kpi-sub">restricții export cipuri AI</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:50%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
         </div>
@@ -819,7 +819,7 @@
       </section>
 
       <div class="filter-status" aria-live="polite">
-        <span class="filter-label">Se afișează: <strong>Toate categoriile — 1 din 1 știri</strong></span>
+        <span class="filter-label">Se afișează: <strong>Toate categoriile — 2 din 2 știri</strong></span>
         <button class="filter-reset" type="button" hidden>Resetează filtrul</button>
       </div>
 
@@ -849,7 +849,47 @@
       <p class="empty">Nicio știre în această categorie azi.</p>
 
       <main>
-        <!-- 1 · 16 nov · 07:00 -->
+        <!-- 1 · 16 nov · 09:00 -->
+        <article id="stire-238" data-cats="tech" data-sev="amber" data-subiect="restricții export cipuri AI">
+          <div class="a-meta">
+            <span class="a-time">16 nov · 09:00</span>
+            <span class="a-cat">Tech &amp; AI</span>
+            <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
+            <a class="cont-pill" href="#stire-213" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
+            <span class="subj-pill">restricții export cipuri AI</span>
+            <span class="a-num">#1 / 2</span>
+          </div>
+          <h2>Congresul SUA avansează restricții mai dure la exportul de cipuri AI către China, după demisia lui Jensen Huang</h2>
+          <div class="followup">
+            <span class="tag">Urmare la</span>
+            <p><a href="#stire-213">„Plecarea lui Jensen Huang lasă un gol în finanțarea startupurilor AI: Nvidia, cel mai mare investitor al sectorului, devine mai prudentă” — sâmbătă, 14 noiembrie 2026, ora 09:00.</a> (Continuarea directă a arcului Nvidia/Huang urmărit în pagină: după demisie, Congresul trece de la întrebări despre guvernanța companiei la restricții de export pentru cipurile ei.)</p>
+          </div>
+          <div class="sec">
+            <p class="sec-label">Ce s-a întâmplat</p>
+            <p>După demisia lui Jensen Huang de la Nvidia (12 noiembrie), lideri ai ambelor partide din Congresul SUA susțin înăsprirea regulilor de export pentru cipurile AI către China. Mai multe proiecte de lege — Chip Security Act (obligă companiile să urmărească unde ajung procesoarele avansate, ca să împiedice contrabanda), AI Overwatch Act (dă Congresului mai multă putere asupra exporturilor, tratând vânzările de cipuri mai mult ca vânzările de armament), MATCH Act (presează aliații să restricționeze vânzările și mentenanța echipamentelor de fabricare a cipurilor către China) și Remote Access Security Act (împiedică firmele chineze să închirieze centre de date din străinătate ca să acceseze cipuri Nvidia) — ar putea fi atașate la legea anuală de apărare (NDAA), un text care trebuie adoptat. Liderul majorității din Senat, John Thune, a declarat pentru Semafor că există o „probabilitate mare” să fie impuse noi restricții, dar a recunoscut, împreună cu președintele Comisiei pentru servicii armate, Roger Wicker, că nu există încă un acord pentru păstrarea lor în textul final.</p>
+          </div>
+          <div class="sec">
+            <p class="sec-label">De ce contează</p>
+            <p>Este continuarea directă a arcului Nvidia/Huang urmărit în pagină (demisia, reacțiile guvernelor asiatice, petiția pentru revenirea lui Huang). Cipurile AI sunt infrastructura pe care se construiesc automatizările cu API-uri AI — o bifurcare a lanțului de aprovizionare AI SUA–China, cu efecte asupra prețurilor, disponibilității și regulilor de acces la hardware. Profesional, deciziile de securitate a lanțului de aprovizionare luate la nivel de stat sunt exact terenul de incident management. De urmărit: Huang ar urma să depună mărturie în Congres înainte de Ziua Recunoștinței (26 noiembrie), potrivit Reuters.</p>
+          </div>
+          <div class="verify">
+            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
+            <p>Verdict: confirmat — sursă curatoriată: The Verge, 15 noiembrie 2026. Confirmări din afara listei curatoriate: Semafor („A high probability: Congress pushes tighter export controls following Nvidia scandal”); Financial Times (relatarea despre atașarea măsurilor la NDAA); Reuters (via Korea Times — „China's access to Nvidia chips in doubt as curbs gain traction in US Congress”); LA Times („Congress weighs tougher China chip curbs as OpenAI joins the push”). OpenAI a confirmat parlamentarilor că susține pachetul de export, potrivit unor surse citate de Bloomberg.</p>
+            <ul class="sources">
+              <li><a href="https://www.theverge.com/ai-artificial-intelligence/1033984/congress-export-rules-ai-chips-china" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>The Verge — relatarea despre avansarea restricțiilor de export pentru cipurile AI către China în Congresul SUA (15 nov 2026, domeniu curatoriat)<span class="host">theverge.com</span></a></li>
+            </ul>
+          </div>
+          <div class="opposing">
+            <p class="sec-label">Tabăra adversă</p>
+            <p>Secretarul Comerțului, Howard Lutnick, ar fi frânat ancheta asupra companiilor suspectate că deviază cipuri Nvidia către China (Axios). Precedent: anul trecut, GAIN AI Act — o versiune anterioară a AI Overwatch Act — a fost scos din textul final al NDAA după presiuni din partea Nvidia, a industriei de cipuri și a Casei Albe (Semafor).</p>
+          </div>
+          <div class="impact">
+            <span class="badge">Impact direct</span>
+            <p>Impact direct: minim — nicio restricție nouă nu e în vigoare până la publicarea textului final al NDAA, iar negocierile dintre cele două camere continuă. Relevanță de context: semnal despre bifurcarea ecosistemului AI și despre fragilitatea lanțului de aprovizionare pe care se construiesc automatizările personale.</p>
+          </div>
+        </article>
+
+        <!-- 2 · 16 nov · 07:00 -->
         <article id="stire-237" data-cats="securitate" data-sev="amber" data-subiect="Estonia închide granița cu Rusia">
           <div class="a-meta">
             <span class="a-time">16 nov · 07:00</span>
@@ -857,7 +897,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="spot-tag">Știrea zilei</span>
             <span class="subj-pill">Estonia închide granița cu Rusia</span>
-            <span class="a-num">#1 / 1</span>
+            <span class="a-num">#2 / 2</span>
           </div>
           <h2>Estonia închide de la 1 decembrie toate punctele de trecere a frontierei cu Rusia, după o tentativă de incendiere la producătorul de drone Threod Systems, atribuită de serviciile estone GRU-ului rus</h2>
           <div class="sec">
@@ -5653,8 +5693,8 @@
 
       <footer>
         <div class="rule" aria-hidden="true"></div>
-        <p>Sfârșitul ediției de azi · Ultima actualizare: luni, 16 noiembrie 2026, 07:00<br />Monitorizarea rulează la circa 3 ore, în fereastra L–V 06:00–22:00 · S–D 07:30–22:00 — dă refresh pentru noutăți.</p>
-        <a class="to-top" href="#stire-237">↑ Înapoi la cea mai nouă știre</a>
+        <p>Sfârșitul ediției de azi · Ultima actualizare: luni, 16 noiembrie 2026, 09:00<br />Monitorizarea rulează la circa 3 ore, în fereastra L–V 06:00–22:00 · S–D 07:30–22:00 — dă refresh pentru noutăți.</p>
+        <a class="to-top" href="#stire-238">↑ Înapoi la cea mai nouă știre</a>
       </footer>
     </div>
 
