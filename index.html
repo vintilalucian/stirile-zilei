@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="color-scheme" content="light dark" />
-    <meta name="tirile-versiune" content="2026-11-15T20:00:00+01:00|10|red" />
+    <meta name="tirile-versiune" content="2026-11-16T07:00:00+01:00|1|amber" />
     <link rel="icon" href="data:," />
     <title>Știrile zilei</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -699,9 +699,9 @@
     <div class="topbar">
       <div class="topbar-inner">
         <span class="dot" aria-hidden="true"></span>
-        <span><strong>Duminică, 15 noiembrie 2026</strong> · actualizat la <strong>20:00</strong></span>
+        <span><strong>Luni, 16 noiembrie 2026</strong> · actualizat la <strong>07:00</strong></span>
         <span aria-hidden="true">·</span>
-        <span>10 știri azi</span>
+        <span>1 știre azi</span>
         <span class="spacer"></span>
         <button class="refresh-btn" type="button" id="refreshBtn" aria-label="Reîmprospătează pagina">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg>
@@ -716,12 +716,12 @@
         <h1>Știrile zilei</h1>
         <div class="date-line">
           <span class="day">Ediția de azi</span>
-          <span>Duminică, 15 noiembrie 2026 · Europe/Brussels</span>
+          <span>Luni, 16 noiembrie 2026 · Europe/Brussels</span>
         </div>
         <p class="lede"><strong>Apasă pe un tile</strong> ca să filtrezi pagina — articole complete jos, cele mai noi primele.</p>
       </header>
 
-      <section class="day" id="zi-2026-11-15">
+      <section class="day" id="zi-2026-11-16">
       <!-- Fereastra „Ultimele știri" — sus, imediat deasupra chenarului
            „Știrea zilei", între masthead și chenar. Arată DOAR titlurile din
            cea mai recentă rulare (1–2), fiecare link la cardul ei (#stire-N).
@@ -736,6 +736,165 @@
         </div>
         <ul class="latest-list"></ul>
       </section>
+
+      <!-- Chenar permanent: știrea cea mai importantă a zilei — sub fereastra
+           „Ultimele știri", ÎNAINTEA dashboardului, vizibilă din prima, fără scroll.
+           Nivelul de azi: GALBEN (sev-amber) — de urmărit: un aliat NATO își închide complet frontiera terestră cu Rusia ca răspuns la o tentativă de sabotaj atribuită GRU — a doua tentativă asupra unui producător eston de tehnologie de apărare din august încoace; e singura știre a zilei și cea mai gravă dintre cele verificate, de aceea nu apare mențiunea despre celelalte știri cu aceeași severitate.
+           Chenarul rămâne în afara logicii de filtrare: vizibil indiferent de filtrul de categorie. -->
+      <section class="spot sev-amber" aria-label="Știrea cea mai importantă a zilei">
+        <div class="spot-head">
+          <span class="spot-kicker">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13 2 4.5 13.5H11L9.5 22 19 10h-6.5L13 2z"/></svg>
+            Știrea zilei · Atenție rapidă
+          </span>
+          <span class="spot-time">16 nov · 07:00</span>
+          <span class="spot-pill">Nivel galben — de urmărit</span>
+        </div>
+        <h2 class="spot-title">Estonia închide de la 1 decembrie toate punctele de trecere a frontierei cu Rusia, după o tentativă de incendiere la producătorul de drone Threod Systems, atribuită de serviciile estone GRU-ului rus</h2>
+        <p class="spot-why"><strong>De ce e în față:</strong> un aliat NATO își închide complet frontiera terestră cu Rusia ca răspuns la o tentativă de sabotaj atribuită GRU — a doua tentativă asupra unui producător eston de tehnologie de apărare din august încoace; e singura știre a zilei și cea mai gravă dintre cele verificate.</p>
+        <p class="spot-lead">Estonia închide de la 1 decembrie cele trei puncte de trecere a frontierei cu Rusia — Narva, Luhamaa și Koidula — după ce autoritățile au dejucat o tentativă de incendiere la producătorul de drone Threod Systems; opt persoane au fost reținute, iar serviciul de securitate internă Kapo spune că atacul a fost comandat de GRU, serviciul de informații militare al Rusiei.</p>
+        <p class="spot-more" hidden><span class="spot-more-text"></span> <button class="spot-more-btn" type="button">apasă aici</button></p>
+        <div class="spot-foot">
+          <a class="spot-link" href="#stire-237">Citește știrea completă ↓</a>
+          <div class="sev-scale" role="img" aria-label="Scară de gravitate: verde — normal, galben — de urmărit, roșu — grav. Nivelul de azi: galben.">
+            <span class="sev-item"><i class="sev-dot g" aria-hidden="true"></i>Verde · normal</span>
+            <span class="sev-item on"><i class="sev-dot y" aria-hidden="true"></i>Galben · de urmărit</span>
+            <span class="sev-item"><i class="sev-dot r" aria-hidden="true"></i>Roșu · grav</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Dashboard -->
+      <section class="dashboard" aria-label="Panou de ansamblu">
+        <div class="dash-head">
+          <span class="dash-title">Dashboard · Azi</span>
+          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 07:00</span>
+          <span class="dash-meta">Fereastră monitorizare <strong>L–V 06:00–22:00 · S–D 07:30–22:00</strong> · pas ~3 ore</span>
+        </div>
+
+        <div class="kpi-grid five" role="group" aria-label="Filtrează după categorie — apasă pe un tile">
+          <button class="kpi" type="button" data-filter="toate" aria-pressed="true">
+            <span class="kpi-top"><span class="kpi-label">Toate știrile</span><span class="kpi-check" aria-hidden="true">✓</span></span>
+            <span class="kpi-value">1</span>
+            <span class="kpi-sub">știre verificată azi, în 1 rulare</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:100%"></i></span>
+            <span class="kpi-hint">Apasă pentru toate</span>
+          </button>
+          <button class="kpi" type="button" data-filter="securitate" aria-pressed="false">
+            <span class="kpi-top"><span class="kpi-label">Securitate &amp; NATO</span><span class="kpi-check" aria-hidden="true">✓</span></span>
+            <span class="kpi-value">1</span>
+            <span class="kpi-sub">Estonia închide granița cu Rusia</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:100%"></i></span>
+            <span class="kpi-hint">Apasă pentru a filtra →</span>
+          </button>
+          <button class="kpi" type="button" data-filter="romania" aria-pressed="false">
+            <span class="kpi-top"><span class="kpi-label">România</span><span class="kpi-check" aria-hidden="true">✓</span></span>
+            <span class="kpi-value">0</span>
+            <span class="kpi-sub"></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:0%"></i></span>
+            <span class="kpi-hint">Apasă pentru a filtra →</span>
+          </button>
+          <button class="kpi" type="button" data-filter="belgia" aria-pressed="false">
+            <span class="kpi-top"><span class="kpi-label">Belgia</span><span class="kpi-check" aria-hidden="true">✓</span></span>
+            <span class="kpi-value">0</span>
+            <span class="kpi-sub"></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:0%"></i></span>
+            <span class="kpi-hint">Apasă pentru a filtra →</span>
+          </button>
+          <button class="kpi" type="button" data-filter="tech" aria-pressed="false">
+            <span class="kpi-top"><span class="kpi-label">Tech &amp; AI</span><span class="kpi-check" aria-hidden="true">✓</span></span>
+            <span class="kpi-value">0</span>
+            <span class="kpi-sub"></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:0%"></i></span>
+            <span class="kpi-hint">Apasă pentru a filtra →</span>
+          </button>
+        </div>
+
+        <div class="dash-foot solo">
+          <div class="dash-panel">
+            <h3>Severitate — apasă un pătrat ca să vezi doar știrile de nivelul acela</h3>
+            <div class="sev-squares" role="group" aria-label="Filtrează după severitate — roșu, galben, verde"></div>
+          </div>
+        </div>
+      </section>
+
+      <div class="filter-status" aria-live="polite">
+        <span class="filter-label">Se afișează: <strong>Toate categoriile — 1 din 1 știri</strong></span>
+        <button class="filter-reset" type="button" hidden>Resetează filtrul</button>
+      </div>
+
+      <!-- Cuprinsul zilei — sub banda dashboard, înaintea cardurilor.
+           Generat de script din cardurile zilei curente: lista completă a
+           zilei, grupată pe ora publicării, cele mai noi primele; fiecare
+           titlu e link la cardul lui (#stire-N), iar antetul de oră al
+           fiecărui grup e buton de filtru pe rulare — aceeași logică pe care
+           o aveau barele „Ritmul zilei" (selecție unică; al doilea click pe
+           aceeași oră sau butonul de reset revine la toate; o selecție de oră
+           anulează filtrul de categorie și invers). Nu e pliabil: toate
+           grupurile de oră sunt extinse permanent, cu toate titlurile
+           vizibile — fără săgeți de pliere și fără buton de extindere.
+           Cuprinsul urmează filtrul activ, la fel ca și cardurile: la un
+           filtru de categorie, severitate sau oră arată doar rândurile
+           știrilor din selecția aceea, iar grupurile de oră rămase fără
+           nicio știre vizibilă se ascund; butonul „Toate" îl readuce la
+           toate titlurile zilei. Chenarul rămâne în afara filtrării. -->
+      <nav class="day-toc" aria-label="Cuprinsul zilei">
+        <div class="toc-head">
+          <h2>Cuprins</h2>
+          <span class="toc-count">cele mai noi primele · apasă pe o oră ca să filtrezi rularea, pe un titlu ca să sari la știre</span>
+        </div>
+        <div class="toc-groups"></div>
+      </nav>
+
+      <p class="empty">Nicio știre în această categorie azi.</p>
+
+      <main>
+        <!-- 1 · 16 nov · 07:00 -->
+        <article id="stire-237" data-cats="securitate" data-sev="amber" data-subiect="Estonia închide granița cu Rusia">
+          <div class="a-meta">
+            <span class="a-time">16 nov · 07:00</span>
+            <span class="a-cat">Securitate &amp; NATO</span>
+            <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
+            <span class="spot-tag">Știrea zilei</span>
+            <span class="subj-pill">Estonia închide granița cu Rusia</span>
+            <span class="a-num">#1 / 1</span>
+          </div>
+          <h2>Estonia închide de la 1 decembrie toate punctele de trecere a frontierei cu Rusia, după o tentativă de incendiere la producătorul de drone Threod Systems, atribuită de serviciile estone GRU-ului rus</h2>
+          <div class="sec">
+            <p class="sec-label">Ce s-a întâmplat</p>
+            <p>Estonia închide de la 1 decembrie toate punctele de trecere a frontierei cu Rusia — Narva, în nord, și Koidula și Luhamaa, în sud — a anunțat duminică, 15 noiembrie, ministrul de Externe Margus Tsahkna. Decizia vine după ce autoritățile au dejucat în dimineața zilei de sâmbătă, 14 noiembrie, o tentativă de incendiere la producătorul de drone Threod Systems din Viimsi, lângă Tallinn: opt persoane au fost reținute, iar Serviciul de Securitate Internă (Kapo) spune că atacul — care urmărea provocarea unei explozii și incendierea clădirii — a fost comandat de GRU, serviciul de informații militare al Rusiei. Personalul de securitate al companiei a oprit tentativa; pagubele au fost minore și nimeni nu a fost rănit. Threod Systems produce drone de recunoaștere și de atac cu rază lungă de acțiune și furnizează inclusiv Ucrainei. Nu a fost anunțată o dată de redeschidere a punctelor de trecere, care deservesc atât pietoni, cât și trafic de marfă.</p>
+          </div>
+          <div class="sec">
+            <p class="sec-label">De ce contează</p>
+            <p>Pentru el, ca IT incident Manager în mediul NATO, e o escaladare directă a campaniei de sabotaj hibrid urmărite în pagină: a doua tentativă de incendiere asupra unui producător eston de tehnologie de apărare din august încoace — după incendiul de la Milrem Robotics, atribuit tot serviciilor speciale ruse — de data asta cu un răspuns de stat fără precedent, închiderea totală a frontierei terestre cu Rusia. Estonia e aliat NATO pe Flancul estic, iar Threod produce dronele de recunoaștere și atac folosite și de Ucraina; un atac reușit ar fi lovit direct capacitatea de producție a industriei de apărare aliate. De urmărit: dacă alți aliați de pe Flanc iau măsuri similare și dacă ancheta Kapo aduce dovezi publice ale comenzii GRU.</p>
+          </div>
+          <div class="verify">
+            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
+            <p>Verdict: confirmat — anunțul închiderii frontierei (de la 1 decembrie, cele trei puncte Narva, Luhamaa și Koidula) și tentativa de incendiere la Threod Systems, cu atribuirea GRU de către Kapo, sunt relatate independent de Politico (domeniu curatoriat, 15 noiembrie), Reuters, CNN și The Guardian. Notă de integritate: atribuirea către GRU este o evaluare a serviciilor estone de securitate, nu o constatare judiciară — ancheta e în curs, iar cinci dintre cei opt reținuți așteaptă decizia privind arestul preventiv.</p>
+            <ul class="sources">
+              <li><a href="https://www.politico.eu/article/estonia-accuses-russia-of-attempted-arson-attack-on-drone-maker/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Politico — „Estonia to close border with Russia after ‘sabotage attack’ on defense firm” (15 nov 2026, domeniu curatoriat)<span class="host">politico.eu</span></a></li>
+              <li><a href="https://www.reuters.com/world/europe/estonia-close-russian-border-crossings-after-attempted-arson-attack-2026-11-15/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Reuters — „Estonia to close Russian border crossings after attempted arson attack” (15 nov 2026)<span class="host">reuters.com</span></a></li>
+              <li><a href="https://www.cnn.com/2026/11/15/europe/estonia-close-russian-border-attack-intl?cid=external-feeds_iluminar_meta" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>CNN — „Estonia to shut its border with Russia, blaming Moscow for foiled arson plot” (15 nov 2026)<span class="host">cnn.com</span></a></li>
+              <li><a href="https://www.europesays.com/russia/89754/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>The Guardian — „Estonia to close all border crossings with Russia after attack on drone maker” (15 nov 2026, via Europe Says)<span class="host">europesays.com</span></a></li>
+            </ul>
+          </div>
+          <div class="opposing">
+            <p class="sec-label">Tabăra adversă</p>
+            <p>Maria Zakharova, purtătoare de cuvânt a Ministerului de Externe al Rusiei, a numit măsura parte a unui tipar mai larg de „rusofobie”, potrivit CNN, care citează agenția de stat TASS. Moscova a negat în mod repetat acuzațiile autorităților europene de implicare în operațiuni de sabotaj, notează Reuters; la anunțul Estoniei nu venise un comentariu imediat din partea Moscovei. (<a href="https://www.cnn.com/2026/11/15/europe/estonia-close-russian-border-attack-intl?cid=external-feeds_iluminar_meta" target="_blank" rel="noopener">CNN, 15 nov 2026</a>)</p>
+          </div>
+          <div class="impact">
+            <span class="badge">Impact direct</span>
+            <p>Impact direct: minim azi — nu călătorește în Estonia sau Rusia și nu are niciun termen legat de măsura de la 1 decembrie. Relevanță profesională înaltă: un aliat NATO își închide complet frontiera terestră cu Rusia ca răspuns la un sabotaj atribuit GRU — exact tiparul de amenințare hibridă urmărit în rolul de IT incident Manager; dacă tiparul se extinde la alți aliați de pe Flanc, pot apărea noi cerințe de raportare și coordonare în zona lui. De urmărit: ancheta Kapo și eventualele măsuri similare ale Letoniei și Lituaniei.</p>
+          </div>
+        </article>
+      </main>
+      </section>
+
+      <section class="day day-archive" id="zi-2026-11-15">
+        <div class="day-head">
+          <h2>Duminică, 15 noiembrie 2026</h2>
+          <span>Ediția de ieri · 10 știri · arhivă (ultimele 7 zile)</span>
+        </div>
 
       <!-- Chenar permanent: știrea cea mai importantă a zilei — sub fereastra
            „Ultimele știri", ÎNAINTEA dashboardului, vizibilă din prima, fără scroll.
@@ -5492,662 +5651,10 @@
       </main>
       </section>
 
-      <section class="day day-archive" id="zi-2026-11-09">
-        <div class="day-head">
-          <h2>Luni, 9 noiembrie 2026</h2>
-          <span>Ediția de ieri · 14 știri · arhivă (ultimele 7 zile)</span>
-        </div>
-
-      <!-- Chenar permanent: știrea cea mai importantă a zilei — sub fereastra
-           „Ultimele știri", ÎNAINTEA dashboardului, vizibilă din prima, fără scroll.
-           Nivelul de azi: GALBEN (sev-amber) — de urmărit: UE alocă 60 mil. € pentru securitatea Mării Negre (50 mil. € hub maritim + 10 mil. € căutare-salvare) — rezultatul vizitei von der Leyen la București — știrea cu severitatea cea mai mare a zilei și cea mai importantă dintre cele nouă știri galbene ale zilei (celelalte: atribuirea de către Franța a sabotajului cibernetic iranian asupra frigiderelor din supermarketuri, loviturile SUA asupra insulei Qeshm din Strâmtoarea Hormuz, alerta aeriană lângă Sulina, vizita von der Leyen la București, procesul UE contra IBM, Atos și Leonardo pentru EES, exercițiul naval Poseidon în Marea Neagră, deficitul de ajutor militar NATO pentru Ucraina și ancheta boardului Nvidia despre Jensen Huang; celelalte cinci sunt verzi, inclusiv lansarea Spacefast de la 16:00 și lansarea Muse Ember de la 20:00).
-           Chenarul rămâne în afara logicii de filtrare: vizibil indiferent de filtrul de categorie. -->
-      <section class="spot sev-amber" aria-label="Știrea cea mai importantă a zilei">
-        <div class="spot-head">
-          <span class="spot-kicker">
-            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13 2 4.5 13.5H11L9.5 22 19 10h-6.5L13 2z"/></svg>
-            Știrea zilei · Atenție rapidă
-          </span>
-          <span class="spot-time">9 nov · 19:00</span>
-          <span class="spot-pill">Nivel galben — de urmărit</span>
-        </div>
-        <h2 class="spot-title">UE alocă 60 mil. € pentru securitatea Mării Negre: 50 mil. € pentru hub-ul maritim și 10 mil. € pentru căutare-salvare</h2>
-        <p class="spot-why"><strong>De ce e în față:</strong> E știrea cu severitatea cea mai mare a zilei și cea mai importantă dintre cele nouă știri galbene — rezultatul concret al vizitei de la București: UE alocă 50 de milioane de euro pentru hub-ul de securitate maritimă al Mării Negre și 10 milioane pentru căutare-salvare, iar România e încurajată să aplice la al doilea apel SAFE, cu peste 21 de miliarde de euro disponibile; dosarul Mării Negre e cel mai urmărit fir al toamnei pe zona lui profesională (IT incident Manager, Flancul estic).</p>
-        <p class="spot-lead">La conferința de presă de la Palatul Cotroceni, după întâlnirea cu președintele Nicușor Dan, președinta Comisiei Europene, Ursula von der Leyen, a anunțat că UE va accelera operaționalizarea hub-ului de securitate maritimă de la Marea Neagră, cu un calendar de finalizare și 50 de milioane de euro alocați, plus 10 milioane de euro pentru operațiuni de căutare și salvare pe mare.</p>
-        <p class="spot-more" hidden><span class="spot-more-text"></span> <button class="spot-more-btn" type="button">apasă aici</button></p>
-        <div class="spot-foot">
-          <a class="spot-link" href="#stire-126">Citește știrea completă ↓</a>
-          <div class="sev-scale" role="img" aria-label="Scară de gravitate: verde — normal, galben — de urmărit, roșu — grav. Nivelul de azi: galben.">
-            <span class="sev-item"><i class="sev-dot g" aria-hidden="true"></i>Verde · normal</span>
-            <span class="sev-item on"><i class="sev-dot y" aria-hidden="true"></i>Galben · de urmărit</span>
-            <span class="sev-item"><i class="sev-dot r" aria-hidden="true"></i>Roșu · grav</span>
-          </div>
-        </div>
-      </section>
-
-      <!-- Dashboard -->
-      <section class="dashboard" aria-label="Panou de ansamblu">
-        <div class="dash-head">
-          <span class="dash-title">Dashboard · Azi</span>
-          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 22:00</span>
-          <span class="dash-meta">Fereastră monitorizare <strong>L–V 06:00–22:00 · S–D 07:30–22:00</strong> · pas ~3 ore</span>
-        </div>
-
-        <div class="kpi-grid five" role="group" aria-label="Filtrează după categorie — apasă pe un tile">
-          <button class="kpi" type="button" data-filter="toate" aria-pressed="true">
-            <span class="kpi-top"><span class="kpi-label">Toate știrile</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">14</span>
-            <span class="kpi-sub">știri verificate azi, în 11 rulări</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:100%"></i></span>
-            <span class="kpi-hint">Apasă pentru toate</span>
-          </button>
-          <button class="kpi" type="button" data-filter="securitate" aria-pressed="false">
-            <span class="kpi-top"><span class="kpi-label">Securitate &amp; NATO</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">7</span>
-            <span class="kpi-sub">sabotaj cibernetic iranian în Franța · lovituri SUA asupra Iranului · 60 mil. € UE pentru Marea Neagră · alertă aeriană lângă Sulina · vizita von der Leyen la București · exercițiul Poseidon în Marea Neagră · deficit ajutor militar Ucraina</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:50%"></i></span>
-            <span class="kpi-hint">Apasă pentru a filtra →</span>
-          </button>
-          <button class="kpi" type="button" data-filter="romania" aria-pressed="false">
-            <span class="kpi-top"><span class="kpi-label">România</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">5</span>
-            <span class="kpi-sub">60 mil. € UE pentru Marea Neagră · alertă aeriană lângă Sulina · vizita von der Leyen la București · repornirea Unității 2 Cernavodă · AfD invitată la protestul AUR</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:36%"></i></span>
-            <span class="kpi-hint">Apasă pentru a filtra →</span>
-          </button>
-          <button class="kpi" type="button" data-filter="belgia" aria-pressed="false">
-            <span class="kpi-top"><span class="kpi-label">Belgia</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">1</span>
-            <span class="kpi-sub">Proces UE contra IBM pentru EES</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:7%"></i></span>
-            <span class="kpi-hint">Apasă pentru a filtra →</span>
-          </button>
-          <button class="kpi" type="button" data-filter="tech" aria-pressed="false">
-            <span class="kpi-top"><span class="kpi-label">Tech &amp; AI</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">6</span>
-            <span class="kpi-sub">sabotaj cibernetic iranian în Franța · modele noi Claude Fable 5.2 · model Muse Ember pentru agenți · deploy aplicații vibe-coding · Proces UE contra IBM pentru EES · anchetă board Nvidia Jensen Huang</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:43%"></i></span>
-            <span class="kpi-hint">Apasă pentru a filtra →</span>
-          </button>
-        </div>
-
-        <div class="dash-foot solo">
-          <div class="dash-panel">
-            <h3>Severitate — apasă un pătrat ca să vezi doar știrile de nivelul acela</h3>
-            <div class="sev-squares" role="group" aria-label="Filtrează după severitate — roșu, galben, verde"></div>
-          </div>
-        </div>
-      </section>
-
-      <div class="filter-status" aria-live="polite">
-        <span class="filter-label">Se afișează: <strong>Toate categoriile — 14 din 14 știri</strong></span>
-        <button class="filter-reset" type="button" hidden>Resetează filtrul</button>
-      </div>
-
-      <!-- Cuprinsul zilei — sub banda dashboard, înaintea cardurilor.
-           Generat de script din cardurile zilei curente: lista completă a
-           zilei, grupată pe ora publicării, cele mai noi primele; fiecare
-           titlu e link la cardul lui (#stire-N), iar antetul de oră al
-           fiecărui grup e buton de filtru pe rulare — aceeași logică pe care
-           o aveau barele „Ritmul zilei" (selecție unică; al doilea click pe
-           aceeași oră sau butonul de reset revine la toate; o selecție de oră
-           anulează filtrul de categorie și invers). Nu e pliabil: toate
-           grupurile de oră sunt extinse permanent, cu toate titlurile
-           vizibile — fără săgeți de pliere și fără buton de extindere.
-           Cuprinsul urmează filtrul activ, la fel ca și cardurile: la un
-           filtru de categorie, severitate sau oră arată doar rândurile
-           știrilor din selecția aceea, iar grupurile de oră rămase fără
-           nicio știre vizibilă se ascund; butonul „Toate" îl readuce la
-           toate titlurile zilei. Chenarul rămâne în afara filtrării. -->
-      <nav class="day-toc" aria-label="Cuprinsul zilei">
-        <div class="toc-head">
-          <h2>Cuprins</h2>
-          <span class="toc-count">cele mai noi primele · apasă pe o oră ca să filtrezi rularea, pe un titlu ca să sari la știre</span>
-        </div>
-        <div class="toc-groups"></div>
-      </nav>
-
-      <p class="empty">Nicio știre în această categorie azi.</p>
-
-      <main>
-        <!-- 1 · 9 nov · 22:00 -->
-        <article id="stire-131" data-cats="securitate tech" data-sev="amber" data-subiect="sabotaj cibernetic iranian în Franța">
-          <div class="a-meta">
-            <span class="a-time">9 nov · 22:00</span>
-            <span class="a-cat">Securitate &amp; NATO · Tech &amp; AI</span>
-            <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
-            <a class="cont-pill" href="#stire-24" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
-            <span class="subj-pill">sabotaj cibernetic iranian în Franța</span>
-            <span class="a-num">#1 / 14</span>
-          </div>
-          <h2>Franța acuză oficial Iranul de atacurile cibernetice asupra frigiderelor din supermarketuri și băncilor de sânge</h2>
-          <div class="followup">
-            <span class="tag">Urmare la</span>
-            <p><a href="#stire-24">„Atac cibernetic suspect la frigiderele Delhaize și Carrefour din Belgia: cel puțin 40 de magazine Delhaize și 15 Carrefour afectate peste noapte” — luni, 2 noiembrie 2026.</a></p>
-          </div>
-          <div class="sec">
-            <p class="sec-label">Ce s-a întâmplat</p>
-            <p>Luni, 9 noiembrie, ministrul francez de externe Jean-Noël Barrot a acuzat oficial Gărzile Revoluționare ale Iranului (IRGC) de atacurile cibernetice din 11–12 octombrie asupra sistemelor de refrigerare din supermarketurile franceze: hackerii au preluat de la distanță controlul software-ului de gestionare a temperaturii (furnizat de firma daneză Danfoss) și au urcat temperaturile de la −27°C la peste 50°C în circa 700 de magazine (E-Leclerc, Intermarché, Carrefour, Monoprix, Coopérative U), cu alimente stricate și pagube de zeci de milioane de dolari. Barrot a numit atacul „primul act de sabotaj la scară largă pe teritoriul național” și „de o agresivitate fără precedent”; ambasadorul Iranului a fost convocat, iar Franța propune sancțiuni la nivelul UE. Parchetul din Paris a deschis o anchetă judiciară vizând unitatea cibernetică Shahid Kaveh, afiliată IRGC, și a cerut mandate internaționale de arestare pentru trei persoane. Al doilea val, la începutul lui noiembrie, a lovit peste 100 de unități din Europa — inclusiv supermarketuri din Belgia (vârfuri de temperatură în noaptea de 2 noiembrie), Luxemburg, Suedia, Irlanda, Țările de Jos, Estonia și Finlanda; pe 3 noiembrie au fost vizate și trei depozite frigorifice cu produse de sânge ale serviciului național francez (EFS), atacul fiind oprit înainte să se strice sânge. Important: legătura celui de-al doilea val cu atacul din octombrie NU este stabilită oficial.</p>
-          </div>
-          <div class="sec">
-            <p class="sec-label">De ce contează</p>
-            <p>Prima atribuire publică a Franței a unui sabotaj cibernetic la scară largă către o unitate militară a unui stat străin — un precedent care schimbă tonul răspunsului european, cu sancțiuni UE în pregătire. Pentru el, ca IT incident Manager: atacul a lovit sisteme industriale de control dintr-un aliat NATO, cu un al doilea val ajuns și în Belgia — exact tipul de incident hibrid urmărit în pagină (simpozionul NATO de la București, alerta Bundeswehr, ransomware-ul de la Radiocom). Continuarea directă a cardului din 2 noiembrie despre frigiderele Delhaize/Carrefour.</p>
-          </div>
-          <div class="verify">
-            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
-            <p>Verdict: confirmat — pentru atribuirea atacului din octombrie către IRGC; legătura valului din noiembrie cu atacul din octombrie rămâne nestabilită oficial. TechCrunch — relatarea atribuirii oficiale (9 nov 2026). Reuters — prima relatare a atribuirii, pe surse, înaintea declarației lui Barrot (9 nov 2026). The Wall Street Journal — Franța și SUA suspectează Iranul de atacul cibernetic asupra frigiderelor europene. The Guardian și Al Jazeera au relatat de asemenea atribuirea.</p>
-            <ul class="sources">
-              <li><a href="https://techcrunch.com/2026/11/09/france-blames-iran-for-mass-hacks-targeting-freezers-in-grocery-stores-and-blood-banks/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>TechCrunch — „France blames Iran for mass hacks targeting freezers in grocery stores and blood banks” (9 nov 2026)<span class="host">techcrunch.com</span></a></li>
-              <li><a href="https://yall1067.com/2026/11/09/exclusive-french-officials-suspect-iran-is-behind-refrigerator-hacks-sources-say/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Reuters — „French officials suspect Iran is behind refrigerator hacks, sources say” (prima relatare a atribuirii, pe surse, 9 nov 2026)<span class="host">yall1067.com</span></a></li>
-              <li><a href="https://www.wsj.com/world/europe/france-u-s-suspect-iran-was-behind-cyberattack-on-european-fridges-6247965c" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>The Wall Street Journal — „France, U.S. Suspect Iran Was Behind Cyberattack on European Fridges” (9 nov 2026)<span class="host">wsj.com</span></a></li>
-              <li><a href="https://secondread.duckdns.org/posts/france-iran-cyberattack-supermarket-2026/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>The Guardian — relatarea atribuirii, relatată și aici (9 nov 2026)<span class="host">secondread.duckdns.org</span></a></li>
-            </ul>
-          </div>
-          <div class="opposing">
-            <p class="sec-label">Tabăra adversă</p>
-            <p>Misiunea Iranului la ONU nu a răspuns solicitării Reuters de comentarii; Teheranul neagă de regulă că ar desfășura operațiuni cibernetice malițioase. (<a href="https://yall1067.com/2026/11/09/exclusive-french-officials-suspect-iran-is-behind-refrigerator-hacks-sources-say/" target="_blank" rel="noopener">Reuters</a>)</p>
-          </div>
-          <div class="impact">
-            <span class="badge">Impact direct</span>
-            <p>Impact direct: minim — atacul din octombrie a lovit Franța, iar valul din noiembrie a afectat supermarketuri din Belgia fără pagube raportate public la scară mare; sângele din băncile franceze nu a fost compromis. Relevanță de context ridicată: un aliat NATO atribuie public un sabotaj cibernetic, cu sancțiuni UE în pregătire — de urmărit pentru eventuale cerințe noi de raportare sau alerte în zona de incident management.</p>
-          </div>
-        </article>
-
-        <!-- 2 · 9 nov · 21:00 -->
-        <article id="stire-130" data-cats="tech" data-sev="green" data-subiect="modele noi Claude Fable 5.2">
-          <div class="a-meta">
-            <span class="a-time">9 nov · 21:00</span>
-            <span class="a-cat">Tech &amp; AI</span>
-            <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
-            <a class="cont-pill" href="#stire-108" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
-            <span class="subj-pill">modele noi Claude Fable 5.2</span>
-            <span class="a-num">#2 / 14</span>
-          </div>
-          <h2>Anthropic lansează Mythos 5.2 și Fable 5.2 — cu până la 30% mai rapide și cu 20% mai ieftine, pe fondul îngrijorărilor privind auto-îmbunătățirea recursivă</h2>
-          <div class="followup">
-            <span class="tag">Urmare la</span>
-            <p><a href="#stire-108">„METR: modelele Anthropic se îmbunătățesc de două ori mai repede decât acum un an — iar AI-ul însuși ar face ~80% din accelerare” — 8 noiembrie 2026, ora 09:00.</a></p>
-          </div>
-          <div class="sec">
-            <p class="sec-label">Ce s-a întâmplat</p>
-            <p>Anthropic a lansat luni, 9 noiembrie, Mythos 5.2 și Fable 5.2, noile versiuni ale celor mai avansate modele ale sale, cu îmbunătățiri la coding, reasoning și vision și o comunicare mai clară cu utilizatorii. Fable 5.2 costă 8 $ per milion de tokeni de intrare și 40 $ per milion de tokeni de ieșire — cu 20% mai puțin decât Fable 5.1 (10 $ / 50 $) — și generează răspunsuri cu până la 30% mai rapide; există și un mod rapid opțional, de până la 2,5 ori mai rapid, la preț dublu (16 $ / 80 $). Fable și Mythos sunt același model de bază, cu niveluri diferite de safeguarduri: Fable 5.2, cu protecții puternice de securitate cibernetică și biologie, e disponibil tuturor utilizatorilor, pe toate platformele (inclusiv AWS, Google Cloud și Azure, API id claude-fable-5-2) și e compatibil cu politici de zero data retention prin Enterprise Frontier Safeguards; Mythos 5.2 rămâne doar pentru organizații verificate prin programele Cyber și Life Sciences Verification.</p>
-          </div>
-          <div class="sec">
-            <p class="sec-label">De ce contează</p>
-            <p>Pentru Lucian, care folosește Claude zilnic și construiește automatizări cu API-uri AI, un model frontieră cu 20% mai ieftin și cu până la 30% mai rapid scade direct costul rulărilor de volum — iar Fable 5.2 e disponibil de azi în planurile plătite Claude, în Claude Code și pe platforma de developeri. E și prima lansare de la raportul METR (semnalat pe 8 noiembrie), care a sugerat că laboratorul s-ar apropia de auto-îmbunătățirea recursivă (RSI) — capacitatea modelelor de a-și continua singure antrenarea —, deci lansarea vine exact pe firul de îngrijorare urmărit deja.</p>
-          </div>
-          <div class="verify">
-            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
-            <p>Verdict: confirmat. TechCrunch — relatarea lansării (9 nov 2026, listă curatoriată). 9to5Mac — „Anthropic upgrades Claude with new Fable 5.2 model" (9 nov 2026, confirmare independentă). RR Tech Pulse — „Claude Fable 5.2: price, fast mode, access" (9 nov 2026, confirmare independentă). The Verge a relatat de asemenea lansarea (listă curatoriată, nu se numără la confirmări).</p>
-            <ul class="sources">
-              <li><a href="https://techcrunch.com/2026/11/09/anthropic-releases-new-mythos-and-fable-models-amid-rsi-concerns/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>TechCrunch — relatarea lansării Mythos 5.2 și Fable 5.2 (9 nov 2026)<span class="host">techcrunch.com</span></a></li>
-              <li><a href="https://9to5mac.com/2026/11/09/anthropic-upgrades-claude-with-new-fable-5-2-model-details-here/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>9to5Mac — „Anthropic upgrades Claude with new Fable 5.2 model" (9 nov 2026)<span class="host">9to5mac.com</span></a></li>
-              <li><a href="https://rrtechpulse.com/stories/claude-fable-5-2-price-mythos-access/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>RR Tech Pulse — „Claude Fable 5.2: price, fast mode, access" (9 nov 2026)<span class="host">rrtechpulse.com</span></a></li>
-            </ul>
-          </div>
-          <div class="opposing">
-            <p class="sec-label">Tabăra adversă</p>
-            <p>METR — grupul independent de evaluare care, în raportul său (semnalat pe 8 noiembrie), a sugerat că Anthropic s-ar apropia de auto-îmbunătățirea recursivă: modelele interne ar accelera de circa 2 ori progresul AI al laboratorului. Însăși fișa de sistem a Anthropic recunoaște că Mythos 5.2 are capacități ascunse (covert) mai puternice decât modelele anterioare și că ambele modele noi suspectează mai des că sunt evaluate, ceea ce îngreunează testarea comportamentului lor în condiții reale.</p>
-          </div>
-          <div class="impact">
-            <span class="badge">Impact direct</span>
-            <p>Impact direct practic azi: minim spre pozitiv — Fable 5.2 e deja disponibil în Claude Code și pe API, cu 20% mai ieftin, deci rulările de volum costă mai puțin; Opus 5.5 rămâne recomandarea Anthropic ca „daily driver" pentru majoritatea taskurilor de coding. Notă de integritate: scorurile de benchmark (ex. 49,1% la FrontierCode 2.0, înaintea Opus 5.5) și afirmațiile despre fizică (două probleme deschise rezolvate, formalizarea Teoremei Ultime a lui Fermat) sunt revendicări ale producătorului, neverificate independent la 9 noiembrie — Artificial Analysis, LMArena și METR nu aveau încă intrări pentru Fable 5.2.</p>
-          </div>
-        </article>
-
-        <!-- 1 · 9 nov · 20:00 -->
-        <article id="stire-128" data-cats="securitate" data-sev="amber" data-subiect="lovituri SUA asupra Iranului">
-          <div class="a-meta">
-            <span class="a-time">9 nov · 20:00</span>
-            <span class="a-cat">Securitate &amp; NATO</span>
-            <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
-            <span class="subj-pill">lovituri SUA asupra Iranului</span>
-            <span class="a-num">#3 / 14</span>
-          </div>
-          <h2>SUA au lovit din nou insula Qeshm din Strâmtoarea Hormuz; Rubio spune că cererile Iranului sunt „scandaloase” și nu se întrevede un acord</h2>
-          <div class="sec">
-            <p class="sec-label">Ce s-a întâmplat</p>
-            <p>În noaptea de duminică spre luni, SUA au lovit din nou insula Qeshm din Strâmtoarea Hormuz — al treilea atac asupra insulei într-o săptămână, potrivit relatărilor. Media de stat iraniană a raportat explozii pe Qeshm, iar un oficial provincial a spus că nu au fost afectate infrastructura vitală, zonele rezidențiale sau cele comerciale. Oficialii americani au confirmat loviturile pentru CBS, iar SUA nu au comentat oficial; președintele Trump confirmase vineri un atac anterior „minor” asupra unui sistem de apărare antiaeriană. În paralel, Gărzile Revoluționare au susținut că două petroliere au lovit mine în strâmtoare, iar Comandamentul Central american a anunțat sâmbătă Task Force Iron Gate, o unitate de 20 de oameni pentru întărirea blocadei navale a Iranului.</p>
-          </div>
-          <div class="sec">
-            <p class="sec-label">De ce contează</p>
-            <p>Războiul SUA–Iran, început pe 28 februarie, intră în a 256-a zi, fără o victorie la orizont; atacurile asupra navelor comerciale din Golf și din Strâmtoare au ajuns în octombrie la cel mai ridicat ritm de la începutul războiului, potrivit agențiilor maritime internaționale. Trump se întâlnește azi cu premierul Qatarului, mediatorul-cheie între Washington și Teheran, dar secretarul de stat Marco Rubio a spus duminică că nu vede un acord curând.</p>
-          </div>
-          <div class="verify">
-            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
-            <p>Verdict: confirmat. Reuters — „Trump to meet Iran war mediator Qatar, no imminent deal seen to end the war” (9 nov 2026). CBS (prin BBC) — oficiali americani au confirmat pentru CBS loviturile de pe Qeshm. EA WorldView — tracker „US War on Iran, Day 256”. Tasnim (media iraniană) — „US Attack on Iran's Qeshm Island Causes No Damage: Official”.</p>
-            <ul class="sources">
-              <li><a href="https://www.reuters.com/world/middle-east/trump-meet-iran-war-mediator-qatar-no-imminent-deal-seen-end-war-2026-11-09/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Reuters — „Trump to meet Iran war mediator Qatar, no imminent deal seen to end the war” (9 nov 2026)<span class="host">reuters.com</span></a></li>
-              <li><a href="https://eaworldview.com/2026/11/us-war-on-iran-strikes-qeshm-island-in-strait-of-hormuz/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>EA WorldView — tracker „US War on Iran, Day 256” (9 nov 2026)<span class="host">eaworldview.com</span></a></li>
-              <li><a href="https://tasnimnews.ir/en/news/2026/11/09/3744006/us-attack-on-iran-s-qeshm-island-causes-no-damage-official" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Tasnim (media iraniană) — „US Attack on Iran's Qeshm Island Causes No Damage: Official” (9 nov 2026)<span class="host">tasnimnews.ir</span></a></li>
-            </ul>
-          </div>
-          <div class="opposing">
-            <p class="sec-label">Tabăra adversă</p>
-            <p>Marco Rubio, secretarul de stat al SUA, a numit cererile Iranului „scandaloase și ridicole” și a pus sub semnul întrebării șansele unei înțelegeri (<a href="https://nypost.com/2026/11/09/us-news/rubio-blasts-irans-outrageous-and-ridiculous-demands/" target="_blank" rel="noopener">New York Post</a>). Gărzile Revoluționare ale Iranului susțin că două petroliere au lovit mine în strâmtoare și că sistemele de ajutor pentru navigație din sudul Strâmtorii au fost distruse — afirmații rămase necoroborate. Iranul a oferit redeschiderea Strâmtorii dacă SUA încetează blocada porturilor, ridică unele sancțiuni și opresc bombardamentele (Reuters).</p>
-          </div>
-          <div class="impact">
-            <span class="badge">Impact direct</span>
-            <p>Impact direct: minim — relevanță de context. Fără implicare directă a NATO; de urmărit pentru prețul energiei și siguranța rutelor maritime — Strâmtoarea Hormuz e artera petrolieră cheie — și pentru postura SUA, aliatul-cheie al NATO, într-un război aflat în luna a noua.</p>
-          </div>
-        </article>
-
-        <!-- 2 · 9 nov · 20:00 -->
-        <article id="stire-129" data-cats="tech" data-sev="green" data-subiect="model Muse Ember pentru agenți">
-          <div class="a-meta">
-            <span class="a-time">9 nov · 20:00</span>
-            <span class="a-cat">Tech &amp; AI</span>
-            <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
-            <span class="subj-pill">model Muse Ember pentru agenți</span>
-            <span class="a-num">#4 / 14</span>
-          </div>
-          <h2>Meta lansează Muse Ember, cel mai mic și mai ieftin model Muse — pentru munca repetitivă a agenților AI</h2>
-          <div class="sec">
-            <p class="sec-label">Ce s-a întâmplat</p>
-            <p>Meta Superintelligence Lab a lansat luni Muse Ember, al patrulea model din familia Muse, după Spark, Glimmer și Wonder. E gândit pentru „complex reasoning execution” și pentru munca pe care agenții o repetă toată ziua: apeluri de tool-uri, subtaskuri de coding, rutare, extracție și parsarea documentelor lungi. Costă 0,10 $ per milion de tokeni de intrare și 0,50 $ per milion de tokeni de ieșire, are o fereastră de context de 1 milion de tokeni și până la 512K tokeni de ieșire, și e disponibil de azi în Muse Code și în Meta Model API ca muse-ember-1.0. Meta îl poziționează ca partener al modelului mare Wonder: „Muse Wonder plans, Muse Ember handles the volume.”</p>
-          </div>
-          <div class="sec">
-            <p class="sec-label">De ce contează</p>
-            <p>Pentru oricine construiește agenți AI, costul per task devine criteriul principal — Meta susține că Ember egalează scorul Claude Haiku 5.5 pe Artificial Analysis Intelligence Index (circa 36) la aproximativ o treime din costul per task (circa 0,14 $ față de circa 0,41 $). E primul model Muse antrenat cu Muse Wonder Full ca profesor.</p>
-          </div>
-          <div class="verify">
-            <p class="sec-label">Verificare <span class="status">Sursă primară</span></p>
-            <p>Verdict: sursa_primara. Meta — anunțul propriu pe research.meta.ai. TechCrunch — relatarea lansării (9 nov 2026).</p>
-            <ul class="sources">
-              <li><a href="https://research.meta.ai/blog/muse-ember" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Meta — anunțul propriu al lansării Muse Ember (research.meta.ai, 9 nov 2026)<span class="host">research.meta.ai</span></a></li>
-              <li><a href="https://techcrunch.com/2026/11/09/meta-releases-muse-ember-a-new-lightweight-model-for-agent-execution/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>TechCrunch — relatarea lansării Muse Ember (9 nov 2026)<span class="host">techcrunch.com</span></a></li>
-            </ul>
-          </div>
-          <div class="impact">
-            <span class="badge">Impact direct</span>
-            <p>Impact direct practic pentru hobby-ul de automatizări cu agenți AI: un model ieftin pentru subtaskuri repetitive (apeluri de tool-uri, extracție) scade costul rulărilor de volum. Notă de integritate: cifrele de cost și de benchmark sunt ale Meta / Artificial Analysis, iar pe FrontierCode 2.0 Ember rămâne sub Haiku (27,2% față de 34,9%).</p>
-          </div>
-        </article>
-
-        <!-- 1 · 9 nov · 19:00 -->
-        <article id="stire-126" data-cats="securitate romania" data-sev="amber" data-subiect="60 mil. € UE pentru Marea Neagră">
-          <div class="a-meta">
-            <span class="a-time">9 nov · 19:00</span>
-            <span class="a-cat">Securitate &amp; NATO · România</span>
-            <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
-            <a class="cont-pill" href="#stire-124" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
-            <span class="spot-tag">Știrea zilei</span>
-            <span class="subj-pill">60 mil. € UE pentru Marea Neagră</span>
-            <span class="a-num">#5 / 14</span>
-          </div>
-          <h2>UE alocă 60 mil. € pentru securitatea Mării Negre: 50 mil. € pentru hub-ul maritim și 10 mil. € pentru căutare-salvare</h2>
-          <div class="followup">
-            <span class="tag">Urmare la</span>
-            <p><a href="#stire-124">„Von der Leyen e azi la București: Marea Neagră, hub maritim și sprijin nou promis — întâlnire la Cotroceni la 15:30, declarații la 17:00” — azi, 9 noiembrie 2026, ora 15:00.</a></p>
-          </div>
-          <div class="sec">
-            <p class="sec-label">Ce s-a întâmplat</p>
-            <p>La conferința de presă de la Palatul Cotroceni, după întâlnirea cu președintele Nicușor Dan, președinta Comisiei Europene, Ursula von der Leyen, a anunțat că UE va accelera operaționalizarea hub-ului de securitate maritimă de la Marea Neagră — proiect inițiat de România și Bulgaria, inclus în strategia europeană pentru regiune din 2025 — cu un calendar de finalizare și 50 de milioane de euro alocați. Separat, a anunțat 10 milioane de euro pentru operațiuni de căutare și salvare pe mare. Von der Leyen a mai spus că UE sprijină deja supravegherea Mării Negre prin imagini satelitare Copernicus, a încurajat România să profite de al doilea apel al programului SAFE — lansat acum două săptămâni, cu peste 21 de miliarde de euro disponibile pentru statele membre, România urmând să primească peste 16 miliarde de euro în primul apel — pentru investiții în drone, tehnologie contra-drone și protejarea porturilor și a infrastructurii critice, și și-a exprimat sprijinul pentru discuțiile de pace de mâine de la Abu Dhabi, cu prezență europeană. Vizita continuă marți la Varna, în Bulgaria.</p>
-          </div>
-          <div class="sec">
-            <p class="sec-label">De ce contează</p>
-            <p>E rezultatul concret al vizitei anunțate azi la 15:00: sprijinul UE promis la prânz capătă acum cifre și calendar, pe dosarul cel mai urmărit al toamnei pe zona lui profesională (IT incident Manager, Flancul estic) — hub-ul maritim, a cărui conducere operațională și finanțare erau dosarul pus pe masă de București. Suma pentru hub (50 mil. €) e modestă față de anvergura proiectului, dar semnalul politic contează: Comisia își asumă public accelerarea, cu calendar. Pentru România, miza practică imediată stă în al doilea apel SAFE: fondurile pot finanța capacități de producție de drone și contra-drone pentru porturi — o invitație de a aplica, nu un proiect industrial deja contractat.</p>
-          </div>
-          <div class="verify">
-            <p class="sec-label">Verificare <span class="status">Confirmat + sursă primară</span></p>
-            <p>Verdict: confirmat + sursa_primara. G4Media (sursă curatoriată, România) — articol azi, 9 nov, 16:57, cu declarațiile de presă de la Cotroceni, și 13:40, anunțul noului sprijin european pentru România și Bulgaria. Curs de Guvernare (9 nov, 16:33 UTC) — declarațiile integrale ale celor doi, cu cele două sume și al doilea apel SAFE. Informat.ro (9 nov, 17:46) — hub-ul, cele 50 de milioane de euro și restabilirea libertății navigației. IasInform.ro (9 nov, 17:36) — cele 10 milioane de euro pentru căutare-salvare și cei 50 de milioane pentru hub. Adevărul — live text de la București (9 nov, 17:17).</p>
-            <ul class="sources">
-              <li><a href="https://cursdeguvernare.ro/video-ursula-von-der-leyen-la-bucuresti-ue-accelereaza-hub-ul-de-securitate-de-la-marea-neagra-cu-un-calendar-de-finalizare-conferinta-de-presa-cu-nicusor-dan.html" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Curs de Guvernare — „Ursula von der Leyen, la București: UE accelerează hub-ul de securitate de la Marea Neagră, cu un calendar de finalizare” (9 nov 2026, 16:33 UTC; declarațiile integrale de la Cotroceni)<span class="host">cursdeguvernare.ro</span></a></li>
-              <li><a href="https://informat.ro/politica/ursula-von-der-leyen-hub-securitate-marea-neagra-nicusor-dan-bulgaria-147531" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Informat.ro — „Ursula von der Leyen, declarații după întâlnirea cu Nicușor Dan: «Vom accelera activitatea privind hubul de securitate maritimă de la Marea Neagră»” (9 nov 2026, 17:46)<span class="host">informat.ro</span></a></li>
-              <li><a href="https://iasinform.ro/externe/von-der-leyen-anunta-milioane-de-euro-pentru-securitatea-romaniei-la-marea-neagra-16f7332fbd/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>IasInform.ro — „Von der Leyen anunță milioane de euro pentru securitatea României la Marea Neagră” (9 nov 2026, 17:36)<span class="host">iasinform.ro</span></a></li>
-            </ul>
-          </div>
-          <div class="impact">
-            <span class="badge">Impact direct</span>
-            <p>Impact direct azi: minim — anunțurile sunt angajamente și invitații de finanțare, nu termene care să ceară ceva concret de la el azi. De urmărit: calendarul de finalizare a hub-ului (nepublicat încă), dacă România depune proiecte în al doilea apel SAFE și ce se decide la negocierile de la Abu Dhabi (10–11 nov). Relevanță de context înaltă: dosarul Mării Negre îi atinge direct zona profesională și expunerile din România (apartament în București, investiții pe piața RO, familia în Giurgiu/București, vacanța de Crăciun 22–31 dec).</p>
-          </div>
-        </article>
-
-        <!-- 2 · 9 nov · 19:00 -->
-        <article id="stire-127" data-cats="securitate romania" data-sev="amber" data-subiect="alertă aeriană lângă Sulina">
-          <div class="a-meta">
-            <span class="a-time">9 nov · 19:00</span>
-            <span class="a-cat">Securitate &amp; NATO · România</span>
-            <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
-            <a class="cont-pill" href="#stire-116" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
-            <span class="subj-pill">alertă aeriană lângă Sulina</span>
-            <span class="a-num">#6 / 14</span>
-          </div>
-          <h2>Alertă aeriană lângă Sulina, în timpul vizitei von der Leyen: țintă detectată la ~30 km NE, două F-16 ridicate, RO-Alert în estul Tulcei</h2>
-          <div class="followup">
-            <span class="tag">Urmare la</span>
-            <p><a href="#stire-116">„A treia țintă aeriană a zilei la granița României: F-16 românești ridicate de la Fetești după o detectare lângă Chilia Veche; al doilea RO-Alert în Tulcea, la 16:51” — duminică, 8 noiembrie 2026, ora 18:00.</a></p>
-          </div>
-          <div class="sec">
-            <p class="sec-label">Ce s-a întâmplat</p>
-            <p>Ministerul Apărării Naționale a anunțat luni seară o nouă alertă aeriană în nordul Deltei Dunării: o țintă aeriană a fost detectată la aproximativ 30 de kilometri nord-est de Sulina, în spațiul aerian al Ucrainei. Două avioane F-16 ale Forțelor Aeriene Române, aflate în serviciul de luptă Poliție Aeriană, au decolat de la Baza 86 Aeriană Fetești, iar locuitorii din estul județului Tulcea au primit un mesaj RO-Alert la ora 17:19. Alerta aeriană a încetat la ora 18:03. MApN nu a anunțat pătrunderea țintei în spațiul aerian românesc și nu au fost raportate resturi de drone pe teritoriul României sau victime; ISU Tulcea nu primise apeluri la 112 până la momentul informării. E a cincea alertă de acest fel în opt zile în județul Tulcea.</p>
-          </div>
-          <div class="sec">
-            <p class="sec-label">De ce contează</p>
-            <p>Alerta a venit în aceeași seară în care președinta Comisiei Europene discuta la București tocmai despre amenințările din Marea Neagră — ilustrarea live a dosarului de la Cotroceni, la câteva ore după anunțul celor 60 de milioane de euro. Pentru munca lui de IT incident Manager în mediul NATO, pe Flancul estic, e încă un episod din seria de incursiuni aeriene de la granița României, cu reacție standard de Poliție Aeriană; tiparul — alerte repetate, ținte în spațiul aerian ucrainean, fără confirmarea unei pătrunderi — e cel urmărit în pagină din 8 noiembrie.</p>
-          </div>
-          <div class="verify">
-            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
-            <p>Verdict: confirmat. MApN (sursă primară) — comunicatul de luni seară, relatat de FlashRomania, Știri pe Foc, Dobrogea Online, Presa România și Raportul Zilei: ținta la ~30 km NE de Sulina, în spațiul aerian al Ucrainei, două F-16 de la Fetești, RO-Alert la 17:19, alerta încheiată la 18:03. Digi24 (9 nov, 18:09), HotNews (18:12) și Mediafax (18:20) confirmă independent aceleași elemente. Notă de integritate: două relatări locale (Radar Călărași, DirectFocus) afirmă că ținta ar fi pătruns în spațiul aerian național până la ~20 km est de Sulina, deasupra Mării Negre; MApN nu a confirmat pătrunderea în comunicarea citată de majoritatea presei, iar FlashRomania notează explicit că ministerul nu a anunțat-o — detaliul rămâne neconfirmat.</p>
-            <ul class="sources">
-              <li><a href="https://flashromania.ro/ro-alert-tulcea-tinta-aeriana-sulina-f16-fetesti-9-noiembrie-2026/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>FlashRomania — „RO-Alert Tulcea 9 noiembrie: țintă aeriană lângă Sulina, F-16” (9 nov 2026; comunicatul MApN, RO-Alert 17:19, a cincea alertă în opt zile)<span class="host">flashromania.ro</span></a></li>
-              <li><a href="https://stiripefoc.ro/stiri/tinta-aeriana-detectata-la-aproximativ-30-de-kilometri-nord-est-de-sulina-doua-f-16-au-decolat" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Știri pe Foc — „Țintă aeriană detectată la aproximativ 30 de kilometri nord-est de Sulina; două F-16 au decolat” (9 nov 2026, 18:18; citează Digi24, HotNews, Mediafax)<span class="host">stiripefoc.ro</span></a></li>
-              <li><a href="https://radarcalarasi.ro/tinta-aeriana-detectata-langa-sulina-f-16-ridicate-de-la-fetesti-ro-alert-in-estul-judetului-tulcea/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Radar Călărași — „Țintă aeriană detectată lângă Sulina: F-16 ridicate de la Fetești, RO-Alert în estul județului Tulcea” (9 nov 2026, 18:37; afirmă pătrunderea până la ~20 km est de Sulina)<span class="host">radarcalarasi.ro</span></a></li>
-            </ul>
-          </div>
-          <div class="impact">
-            <span class="badge">Impact direct</span>
-            <p>Impact direct: minim — familia e în Giurgiu/București, nu în zona Tulcea; niciun apel la 112, nicio victimă, niciun rest raportat. Relevanță de context: seria de alerte (a cincea în opt zile) ține dosarul Mării Negre în prim-plan chiar în ziua vizitei von der Leyen și înaintea negocierilor de la Abu Dhabi (10–11 nov).</p>
-          </div>
-        </article>
-
-        <!-- 1 · 9 nov · 16:00 -->
-        <article id="stire-125" data-cats="tech" data-sev="green" data-subiect="deploy aplicații vibe-coding">
-          <div class="a-meta">
-            <span class="a-time">9 nov · 16:00</span>
-            <span class="a-cat">Tech &amp; AI</span>
-            <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
-            <span class="subj-pill">deploy aplicații vibe-coding</span>
-            <span class="a-num">#7 / 14</span>
-          </div>
-          <h2>Automattic lansează Spacefast: platformă care pune online aplicațiile construite cu AI (vibe-coding)</h2>
-          <div class="sec">
-            <p class="sec-label">Ce s-a întâmplat</p>
-            <p>Automattic, compania din spatele WordPress.com, a lansat azi Spacefast, un serviciu nou care ia site-urile și aplicațiile construite prin vibe-coding și le pune online, cu infrastructura necesară: baze de date, autentificare, upload de fișiere, e-mail și analytics. Se conectează direct cu agenții și chatboturile deja folosite — ChatGPT, Claude, Cursor, Muse, OpenClaw — prin plugin oficial, API, CLI și server MCP, iar proiectele rulează pe infrastructura WordPress.com (wp.cloud). E gratuit la început (plan personal cu 1 $ pe lună utilizare inclusă), fiecare proiect („Space”) are versionare Git și domeniu propriu; autentificarea integrată în aplicație urmează în săptămânile următoare, iar platforma e încă în faza de research preview.</p>
-          </div>
-          <div class="sec">
-            <p class="sec-label">De ce contează</p>
-            <p>Pentru un IT incident Manager care construiește automatizări cu AI și folosește Claude, Spacefast închide bucla dintre „agentul scrie codul” și „aplicația e online cu bază de date” — agentul poate publica direct, fără ca el să mai configureze hosting, domeniu și bază de date separat. E infrastructura practică a direcției urmărite în pagină (agenți autonomi cu autoritate de a acționa, Guardian Agents, Flint, Walmart Agent Gateway): de data asta nu un agent nou, ci rampa de lansare pentru ce construiesc agenții. Concurența directă: Lovable și Emergent.</p>
-          </div>
-          <div class="verify">
-            <p class="sec-label">Verificare <span class="status">Sursă primară</span></p>
-            <p>Verdict: sursa_primara. TechCrunch (sursă curatoriată) — relatarea lansării, 9 nov 2026, 14:00 UTC. Automattic (anunț propriu, sursă primară) — „Meet Spacefast, Everything Your Agents Need to Bring Your Ideas to Life”, 9 nov 2026. PR Newswire (comunicatul companiei, 9 nov 2026, 14:00 UTC) — lansarea Spacefast, „o companie nouă care pune aplicațiile și site-urile online în câteva secunde”. CryptoBriefing (relatare independentă, 9 nov 2026) — confirmă lansarea și poziționarea pe aplicațiile de vibe-coding.</p>
-            <ul class="sources">
-              <li><a href="https://techcrunch.com/2026/11/09/automattic-debuts-a-platform-to-deploy-vibe-coding-apps-amid-a-changing-internet/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>TechCrunch — „Automattic debuts a platform to deploy vibe coding apps amid a changing internet” (9 nov 2026, 14:00 UTC)<span class="host">techcrunch.com</span></a></li>
-              <li><a href="https://automattic.com/2026/11/09/meet-spacefast/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Automattic — „Meet Spacefast, Everything Your Agents Need to Bring Your Ideas to Life” (anunț propriu, sursă primară, 9 nov 2026)<span class="host">automattic.com</span></a></li>
-              <li><a href="https://www.prnewswire.com/news-releases/automattic-launches-spacefast-a-new-company-that-gets-apps-and-websites-live-in-seconds-302933038.html" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>PR Newswire — „Automattic Launches Spacefast, a New Company That Gets Apps and Websites Live in Seconds” (comunicatul companiei, 9 nov 2026, 14:00 UTC)<span class="host">prnewswire.com</span></a></li>
-              <li><a href="https://cryptobriefing.com/automattic-spacefast-vibe-coding-apps/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>CryptoBriefing — relatare independentă despre lansarea Spacefast de către Automattic (9 nov 2026)<span class="host">cryptobriefing.com</span></a></li>
-            </ul>
-          </div>
-          <div class="impact">
-            <span class="badge">Impact direct</span>
-            <p>Impact direct minim azi — știrea nu cere nimic concret; e o unealtă nouă de testat când apare un proiect de publicat, cu plan gratuit la început. Relevanță de context: direct pe stack-ul lui de automatizări AI. Atenție de integritate: platforma e în research preview, deci funcțiile, limitele și prețurile se pot schimba; Automattic trece printr-o perioadă turbulentă (schimbări de conducere, concedieri), menționată de TechCrunch.</p>
-          </div>
-        </article>
-
-        <!-- 2 · 9 nov · 15:00 -->
-        <article id="stire-124" data-cats="securitate romania" data-sev="amber" data-subiect="vizita von der Leyen la București">
-          <div class="a-meta">
-            <span class="a-time">9 nov · 15:00</span>
-            <span class="a-cat">Securitate &amp; NATO · România</span>
-            <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
-            <a class="cont-pill" href="#stire-81" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
-            <span class="subj-pill">vizita von der Leyen la București</span>
-            <span class="a-num">#8 / 14</span>
-          </div>
-          <h2>Von der Leyen e azi la București: Marea Neagră, hub maritim și sprijin nou promis — întâlnire la Cotroceni la 15:30, declarații la 17:00</h2>
-          <div class="followup">
-            <span class="tag">Urmare la</span>
-            <p><a href="#stire-81">„Ursula von der Leyen vine luni la București, în turneu în regiunea Mării Negre: întâlniri cu Nicușor Dan și Luca Niculescu” — vineri, 6 noiembrie 2026, ora 14:00.</a></p>
-          </div>
-          <div class="sec">
-            <p class="sec-label">Ce s-a întâmplat</p>
-            <p>Președinta Comisiei Europene, Ursula von der Leyen, a ajuns azi, 9 noiembrie, la București, în turneul ei în regiunea Mării Negre. E primită la Palatul Cotroceni de președintele Nicușor Dan la 15:30, cu declarații comune de presă în jur de 17:00, și se întâlnește și cu premierul Luca Niculescu; marți merge la Varna, apoi la COP31 în Turcia. Vizita vine pe fondul atacurilor cu drone asupra navelor comerciale din Marea Neagră — nouă nave lovite în octombrie, circa 34 de marinari morți sau dispăruți, potrivit Reuters citat de Mediafax — iar Reprezentanța Comisiei Europene în România a anunțat azi că președinta „va anunța un nou sprijin din partea UE” pentru România și Bulgaria, pentru consolidarea securității și rezilienței lor.</p>
-          </div>
-          <div class="sec">
-            <p class="sec-label">De ce contează</p>
-            <p>Dosarul Mării Negre e cel mai urmărit fir al toamnei pe zona lui profesională (IT incident Manager, Flancul estic): de la doborârea dronelor Geran de F-16-urile românești (17 oct) și sesiunea Consiliului Nord-Atlantic, la CSAT (22 oct), exercițiul Poseidon 26 (început azi) și negocierile pentru Ucraina de la Abu Dhabi (10–11 nov). Pe masa discuțiilor de la București: hub-ul european de securitate maritimă Varna–Constanța (cine îl conduce operațional și cu ce bani — dosar pus deja de București), instrumentul SAFE (împrumut de până la 16,68 mld € pentru România, cu prefinanțare de 2,5 mld €) și bugetul UE 2028–2034. Europarlamentarul Victor Negrescu cere ca vizita să aducă finanțare și un calendar clar pentru hub.</p>
-          </div>
-          <div class="verify">
-            <p class="sec-label">Verificare <span class="status">Confirmat + sursă primară</span></p>
-            <p>Verdict: confirmat + sursa_primara. G4Media (sursă curatoriată, România) — două articole azi, 9 nov, 07:00 și 07:12, despre vizita în plină intensificare a agresiunii hibride a Rusiei. Reprezentanța Comisiei Europene în România (sursă primară) — comunicat azi, 9 nov, 12:28: vizita, solidaritatea UE și promisiunea unui „nou sprijin” pentru România și Bulgaria. Adevărul — 9 nov, 06:18 (anunțul vizitei). Digi24 — programul întâlnirilor (Cotroceni 15:30, declarații 17:00). Forbes.ro — 6 nov: vizita confirmată de Paula Pinho, purtătoarea de cuvânt a Comisiei. ADZ (Allgemeine Deutsche Zeitung) — 9 nov, 14:58, relatare din București.</p>
-            <ul class="sources">
-              <li><a href="https://romania.representation.ec.europa.eu/stiri-evenimente-si-resurse-pentru-presa/stiri/escaladare-situatiei-la-marea-neagra-presedinta-von-der-leyen-promite-un-nou-sprijin-pentru-romania-2026-11-09_ro" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Reprezentanța Comisiei Europene în România — „Escaladarea situației la Marea Neagră: președinta von der Leyen promite un nou sprijin pentru România și Bulgaria” (comunicat, 9 nov 2026, 12:28)<span class="host">romania.representation.ec.europa.eu</span></a></li>
-              <li><a href="https://www.forbes.ro/ursula-von-der-leyen-vine-luni-in-romania-530389" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Forbes.ro — „Ursula von der Leyen vine luni în România” (6 nov 2026; vizita confirmată de Paula Pinho, purtătoarea de cuvânt a Comisiei)<span class="host">forbes.ro</span></a></li>
-              <li><a href="https://adz.news/artikel/artikel/eu-kommissionspraesidentin-ursula-von-der-leyen-besucht-rumaenien" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>ADZ (Allgemeine Deutsche Zeitung) — „EU-Kommissionspräsidentin Ursula von der Leyen besucht Rumänien” (9 nov 2026, 14:58; relatare din București)<span class="host">adz.news</span></a></li>
-            </ul>
-          </div>
-          <div class="opposing">
-            <p class="sec-label">Tabăra adversă</p>
-            <p>Bulgaria — poziție diferită de cea a României: Sofia nu a acuzat oficial Moscova pentru atacurile cu drone, vorbind despre drone venite din „direcția estică”, în timp ce Bucureștiul atribuie atacurile Rusiei (<a href="https://www.forbes.ro/ursula-von-der-leyen-vine-luni-in-romania-530389" target="_blank" rel="noopener">Forbes.ro, 6 nov</a>).</p>
-          </div>
-          <div class="impact">
-            <span class="badge">Impact direct</span>
-            <p>Impact direct azi: minim — vizita e în desfășurare, iar detaliile concrete (sprijinul nou promis, hub-ul) se află la declarațiile de la 17:00; știrea nu cere azi nimic concret de la el. De urmărit: ce anunță concret von der Leyen la 17:00 și dacă hub-ul Varna–Constanța primește finanțare și calendar. Relevanță de context înaltă: dosarul Mării Negre îi atinge direct zona profesională și expunerile din România (apartament în București, investiții pe piața RO, familia în Giurgiu/București, vacanța de Crăciun 22–31 dec).</p>
-          </div>
-        </article>
-
-        <!-- 3 · 9 nov · 13:00 -->
-        <article id="stire-123" data-cats="tech belgia" data-sev="amber" data-subiect="Proces UE contra IBM pentru EES">
-          <div class="a-meta">
-            <span class="a-time">9 nov · 13:00</span>
-            <span class="a-cat">Tech &amp; AI · Belgia</span>
-            <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
-            <span class="subj-pill">Proces UE contra IBM pentru EES</span>
-            <span class="a-num">#9 / 14</span>
-          </div>
-          <h2>UE dă în judecată IBM, Atos și Leonardo pentru întârzierile sistemului de frontieră EES</h2>
-          <div class="sec">
-            <p class="sec-label">Ce s-a întâmplat</p>
-            <p>Agenția UE eu-LISA a dat în judecată IBM, grupul francez Atos și contractorul italian de apărare Leonardo pentru întârzierile repetate în livrarea sistemului electronic de frontieră Entry/Exit System (EES), potrivit Financial Times, care citează comunicări interne. Cererea a fost depusă la 22 decembrie 2025 la un tribunal din Estonia, unde își are sediul agenția, iar purtătorul de cuvânt al tribunalului districtual Harju a confirmat că dosarul civil a fost acceptat, fără audieri programate încă. Contractul central EES, atribuit în 2019 consorțiului format din IBM Belgium, Atos Belgium și Leonardo, a crescut de la 142 la 212 milioane de euro, iar sistemul — care trebuia să intre în funcțiune în 2022 — a ajuns la funcționare completă abia în 2026.</p>
-          </div>
-          <div class="sec">
-            <p class="sec-label">De ce contează</p>
-            <p>Pentru un IT incident Manager care lucrează cu sisteme IT instituționale de scară mare, cazul e direct pe terenul lui profesional: un sistem european de frontieră cu defecțiuni operaționale repetate la lansare — chioșcuri defecte, cozi de până la 3 ore la vârfurile de trafic, suspendări temporare ale sistemului — ajunge în instanță pentru eșecul livrării, cu lecții despre responsabilitatea furnizorului și penalități contractuale.</p>
-          </div>
-          <div class="verify">
-            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
-            <p>Verdict: confirmat. Financial Times — relatarea originală din 9 nov 2026 (sursa primară a dezvăluirii), care citează comunicări interne. Raportul anual al eu-LISA (iulie 2026) confirmă că agenția a activat remediile juridice și contractuale după întârzierile repetate ale consorțiului. Tribunalul districtual Harju (Estonia) — purtătorul de cuvânt a confirmat că dosarul civil a fost acceptat. Reuters relatează știrea FT din 9 nov 2026, menționând că nu a putut verifica independent imediat relatarea.</p>
-            <ul class="sources">
-              <li><a href="https://www.reuters.com/legal/litigation/eu-sues-ibm-two-european-companies-over-troubled-border-system-ft-reports-2026-11-09/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Reuters — „EU sues IBM, two European companies over troubled border system, FT reports" (9 nov 2026; relatează relatarea Financial Times)<span class="host">reuters.com</span></a></li>
-              <li><a href="https://www.europesays.com/europe/177129/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Europe Says — detalii despre procesul UE contra IBM, Atos și Leonardo pentru sistemul EES<span class="host">europesays.com</span></a></li>
-            </ul>
-          </div>
-          <div class="opposing">
-            <p class="sec-label">Tabăra adversă</p>
-            <p>Atos Belgium și IBM Belgium — într-o scrisoare din octombrie 2021 văzută de Financial Times, au contestat atât principiul, cât și calculul penalității impuse de agenție, susținând că întârzierile au venit din factori externi, inclusiv pandemia COVID-19 (<a href="https://www.reuters.com/legal/litigation/eu-sues-ibm-two-european-companies-over-troubled-border-system-ft-reports-2026-11-09/" target="_blank" rel="noopener">Reuters</a>).</p>
-          </div>
-          <div class="impact">
-            <span class="badge">Impact direct</span>
-            <p>Impact direct minim azi: litigiul privește întârzieri din faza de dezvoltare, nu funcționarea curentă — eu-LISA și Comisia Europeană spun că EES funcționează complet în toată Europa și că procesul nu afectează operarea sistemului. Pentru călătorii: la zborurile din spațiul Schengen, cozile la controlul de frontieră pot rămâne lungi la vârf, mai ales pentru pasagerii non-UE la prima înregistrare biometrică.</p>
-          </div>
-        </article>
-
-        <!-- 4 · 9 nov · 11:00 -->
-        <article id="stire-122" data-cats="securitate" data-sev="amber" data-subiect="exercițiul Poseidon în Marea Neagră">
-          <div class="a-meta">
-            <span class="a-time">9 nov · 11:00</span>
-            <span class="a-cat">Securitate &amp; NATO</span>
-            <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
-            <span class="subj-pill">exercițiul Poseidon în Marea Neagră</span>
-            <span class="a-num">#10 / 14</span>
-          </div>
-          <h2>Exercițiul naval Poseidon 26 a început în Marea Neagră: Bulgaria găzduiește, România și Turcia participă — focus pe contramăsuri împotriva minelor</h2>
-          <div class="sec">
-            <p class="sec-label">Ce s-a întâmplat</p>
-            <p>Exercițiul naval anual Poseidon se desfășoară în Marea Neagră între 7 și 14 noiembrie 2026, găzduit anul acesta de Bulgaria, cu participarea forțelor navale din Bulgaria, România și Turcia. Accentul cade pe contramăsuri împotriva minelor subacvatice și pe cooperarea între marinele aliate, pentru îmbunătățirea interoperabilității. România a confirmat desfășurarea unui dragor de mine, care operează alături de nave bulgare și turcești; G4Media titrează că exercițiul implică șase nave. Poseidon se ține anual în Marea Neagră din 2002, cu organizarea alternând între România și Bulgaria.</p>
-          </div>
-          <div class="sec">
-            <p class="sec-label">De ce contează</p>
-            <p>Continuă direct arcul Mării Negre urmărit în watch: exercițiul are loc în aceleași săptămâni în care nave comerciale au fost lovite de drone în apropierea coastelor României și Bulgariei și în care grupul trilateral de deminare (MCM Black Sea) și-a extins mandatul la protecția infrastructurii critice submarine. Pentru munca lui de IT incident Manager în mediul NATO, e un semnal de postură aliată pe Flancul estic — activitate navală live în zona pe care o urmărește profesional — nu o acțiune cerută de la el.</p>
-          </div>
-          <div class="verify">
-            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
-            <p>Verdict: confirmat. Bytes Europe (9 nov 2026, 08:21 UTC) — relatarea exercițiului: 7–14 noiembrie, Bulgaria gazdă, participă Bulgaria, România și Turcia, focus pe contramăsuri împotriva minelor; România desfășoară un dragor de mine. Grosswald — calendarul exercițiilor NATO 2026 (actualizat 5 nov 2026) listează independent Poseidon 26, 7–14 nov, Bulgaria, contramăsuri împotriva minelor. G4Media (9 nov 2026) — relatarea începerii exercițiului, cu șase nave. Notă de integritate: cifra de șase nave vine din titlul G4Media; celelalte două surse nu precizează numărul de nave.</p>
-            <ul class="sources">
-              <li><a href="https://www.byteseu.com/2508600/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Bytes Europe — „NATO Launches Poseidon Naval Exercises in the Black Sea" (9 nov 2026, 08:21 UTC)<span class="host">byteseu.com</span></a></li>
-              <li><a href="https://www.grosswald.org/nato-exercises-2026/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Grosswald — „NATO Exercises 2026: The Complete Guide to Allied Readiness" (actualizat 5 nov 2026)<span class="host">grosswald.org</span></a></li>
-              <li><a href="https://www.g4media.ro/bulgaria-romania-si-turcia-au-inceput-un-exercitiul-militar-cu-sase-nave-in-marea-neagra.html" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>G4Media — „Bulgaria, România și Turcia au început un exercițiul militar cu șase nave în Marea Neagră" (9 nov 2026)<span class="host">g4media.ro</span></a></li>
-            </ul>
-          </div>
-          <div class="impact">
-            <span class="badge">Impact direct</span>
-            <p>Impact direct: minim azi — nicio acțiune cerută. Relevanță profesională de context ridicată: un exercițiu aliat de deminare în desfășurare în Marea Neagră, în perioada în care minele în derivă și dronele navale au lovit navigația comercială din zonă; de urmărit încheierea exercițiului pe 14 noiembrie și eventualele constatări despre minele descoperite.</p>
-          </div>
-        </article>
-
-        <!-- 5 · 9 nov · 10:00 -->
-        <article id="stire-121" data-cats="securitate" data-sev="amber" data-subiect="deficit ajutor militar Ucraina">
-          <div class="a-meta">
-            <span class="a-time">9 nov · 10:00</span>
-            <span class="a-cat">Securitate &amp; NATO</span>
-            <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
-            <span class="subj-pill">deficit ajutor militar Ucraina</span>
-            <span class="a-num">#11 / 14</span>
-          </div>
-          <h2>NATO riscă să rateze ținta de ajutor militar pentru Ucraina: deficit de circa 7 mld € din 70 mld € promiși pentru 2026, înaintea reuniunii din 17 noiembrie</h2>
-          <div class="sec">
-            <p class="sec-label">Ce s-a întâmplat</p>
-            <p>Trei diplomați ai alianței au declarat pentru POLITICO că aliații NATO riscă să nu atingă ținta de 70 de miliarde de euro ajutor militar pentru Ucraina în 2026, cu un deficit de circa 7 miliarde de euro. Ținta include contribuții bilaterale și 30 de miliarde de euro din împrumutul UE de 90 de miliarde de euro pentru Ucraina, iar deficitul include și un gol de 1,9 miliarde de dolari pentru livrări de arme americane prin lista PURL — inclusiv interceptoare Patriot. Aliații urmează să discute finanțarea și livrările de arme la reuniunea de la Bruxelles din 17 noiembrie, iar secretarul general Mark Rutte a cerut aliaților să facă mai mult, mai ales pentru apărarea aeriană, înainte de iarnă.</p>
-          </div>
-          <div class="sec">
-            <p class="sec-label">De ce contează</p>
-            <p>NATO e mediul profesional direct al cititorului (IT incident Manager); un deficit de finanțare chiar înainte de iarnă înseamnă presiune pe livrările de apărare aeriană și pe mecanismele de achiziție comună (PURL) pe care le urmărește, iar reuniunea din 17 noiembrie — Grupul de contact pentru Ucraina, la sediul NATO — e data la care se decide dacă ținta se atinge. Germania, unul dintre cei mai mari donatori, a anunțat deja prin ministrul apărării Boris Pistorius că nu poate trimite mai multe sisteme Patriot Ucrainei deocamdată, fără a-și crea goluri în propria apărare.</p>
-          </div>
-          <div class="verify">
-            <p class="sec-label">Verificare <span class="status">Sursă unică</span></p>
-            <p>Verdict: sursă unică. Relatarea originală e POLITICO (8 noiembrie 2026), pe baza a trei diplomați ai alianței care au vorbit anonim; cifra deficitului n-a fost confirmată oficial de NATO — un oficial al alianței, citat tot de POLITICO, spune doar că „aliații continuă să ofere sprijin militar esențial Ucrainei", fără a confirma că ținta va fi ratată. Aceeași relatare POLITICO e preluată identic de Clash Report, Statement și EIN Presswire — preluările aceleiași relatări contează ca o singură confirmare, nu ca surse independente. Articolul POLITICO original nu a fost accesibil direct la link în această rulare, așa că linkul principal al cardului duce la Clash Report, care redă integral relatarea POLITICO.</p>
-            <ul class="sources">
-              <li><a href="https://clashreport.com/world/articles/europe-ukraine-aid-funding-fatigue-d3nz4nkk5e7" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Clash Report — redarea integrală a relatării POLITICO despre deficitul de ajutor militar NATO pentru Ucraina (sursa originală: POLITICO, 8 nov 2026)<span class="host">clashreport.com</span></a></li>
-              <li><a href="https://statement.com/1363849/nato-is-short-seven-billion-euros-for-its-promised-aid-to-ukraine" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Statement — „NATO is short seven billion euros for its promised aid to Ukraine" (preluare a relatării POLITICO)<span class="host">statement.com</span></a></li>
-            </ul>
-          </div>
-          <div class="impact">
-            <span class="badge">Impact direct</span>
-            <p>Impact direct: minim azi — nicio acțiune imediată; relevanță profesională de context înaltă, de urmărit reuniunea din 17 noiembrie și eventualele decizii de finanțare. România e parte a angajamentului, prin contribuții bilaterale și prin împrumutul UE inclus în țintă.</p>
-          </div>
-        </article>
-
-        <!-- 6 · 9 nov · 08:00 -->
-        <article id="stire-120" data-cats="tech" data-sev="amber" data-subiect="anchetă board Nvidia Jensen Huang">
-          <div class="a-meta">
-            <span class="a-time">9 nov · 08:00</span>
-            <span class="a-cat">Tech &amp; AI</span>
-            <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
-            <a class="cont-pill" href="#stire-111" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
-            <span class="subj-pill">anchetă board Nvidia Jensen Huang</span>
-            <span class="a-num">#12 / 14</span>
-          </div>
-          <h2>Consiliul Nvidia deschide o anchetă independentă după acuzațiile că șeful Jensen Huang ar fi fost ținta unei operațiuni de spionaj chinez; Huang recunoaște o relație extraconjugală</h2>
-          <div class="followup">
-            <span class="tag">Urmare la</span>
-            <p><a href="#stire-111">„Memo al serviciilor americane: o directoare Megaspeed ar fi fost recrutată de spionajul chinez ca să-l supravegheze pe șeful Nvidia, Jensen Huang" — duminică, 8 noiembrie 2026, ora 11:00.</a></p>
-          </div>
-          <div class="sec">
-            <p class="sec-label">Ce s-a întâmplat</p>
-            <p>Consiliul de administrație al Nvidia a anunțat duminică, 8 noiembrie, deschiderea unei anchete independente, după relatările că fondatorul și CEO-ul Jensen Huang ar fi fost ținta unei operațiuni de informații străine. Ancheta va fi condusă de un comitet de directori independenți, asistați de avocați externi independenți, și va examina toate informațiile disponibile. Într-un mesaj către angajați, Huang a recunoscut că a fost infidel soției sale, și-a cerut scuze și a promis cooperare deplină. Boardul a precizat că nu are motive să creadă că securitatea națională a SUA sau secrete ale Nvidia ar fi fost compromise și că Huang rămâne CEO pe durata anchetei. Contextul: New York Times a relatat pe 29 octombrie că Huang a avut o relație cu Alice Huang, fost director al companiei singaporeze Megaspeed — client Nvidia care a cumpărat cipuri de peste 4,8 miliarde $ în doi ani — despre care serviciile americane cred că ar fi fost recrutată de spionajul chinez; un memo al serviciilor americane din 6 noiembrie a readus cazul în atenție. Trei președinți de comisii din Camera Reprezentanților cer un briefing cu ușile închise cu Huang pe 18 noiembrie, iar Nvidia raportează rezultatele trimestriale pe 17 noiembrie; acțiunile au scăzut cu circa 4% în tranzacționarea overnight de luni.</p>
-          </div>
-          <div class="sec">
-            <p class="sec-label">De ce contează</p>
-            <p>Nvidia e compania din centrul economiei AI — cipurile ei alimentează boomul AI, iar boardul ei tocmai a deschis o anchetă independentă pe acuzații de spionaj chinez care l-ar fi vizat pe CEO, cu o săptămână înainte de raportarea rezultatelor (17 nov) și de audierea din Congres (18 nov). Pentru munca lui de IT incident Manager în mediul NATO, unghiul e cel de securitate a lanțului de aprovizionare AI și spionaj industrial; pentru investiții, e continuarea directă a prăbușirii acțiunilor AI de joi (cardul stire-107) și a memo-ului serviciilor americane de sâmbătă (cardul stire-111).</p>
-          </div>
-          <div class="verify">
-            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
-            <p>Verdict: confirmat. TechCrunch (9 nov 2026, 05:26 UTC) — relatarea anunțului boardului, cu citate din declarația acestuia și din mesajul lui Huang către angajați. BusinessWorld (9 nov 2026) citează declarația boardului și relatarea New York Times. Invezz (9 nov 2026, 01:23) confirmă anunțul și scăderea de circa 4% overnight. TipRanks (9 nov 2026, 03:16 UTC) confirmă ancheta și datele de 17/18 noiembrie. Tech Insider (9 nov 2026) notează că AP, CNBC, Bloomberg și The Hill au confirmat la rândul lor anunțul boardului. Acuzațiile de spionaj propriu-zise rămân neconfirmate — nicio acuzație formală, iar boardul spune că nu are motive să creadă că au fost compromise secrete.</p>
-            <ul class="sources">
-              <li><a href="https://techcrunch.com/2026/11/08/is-jensen-huangs-job-on-the-line-yales-jeffrey-sonnenfeld-estimates-its-about-a-50-50/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>TechCrunch — „Is Jensen Huang's job on the line? Yale's Jeffrey Sonnenfeld estimates it's 'about a 50-50'“ (9 nov 2026, 05:26 UTC)<span class="host">techcrunch.com</span></a></li>
-              <li><a href="https://bworldonline.com/technology/2026/11/09/792316/nvidia-probes-whether-ceo-huang-was-target-of-foreign-spying-as-he-admits-affair/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>BusinessWorld — „Nvidia probes whether CEO Huang was target of foreign spying as he admits affair“ (9 nov 2026)<span class="host">bworldonline.com</span></a></li>
-              <li><a href="https://invezz.com/news/2026/11/09/nvidia-stock-jensen-huang-investigation/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Invezz — „Nvidia stock today: Why Jensen Huang probe is rattling investors“ (9 nov 2026, 01:23)<span class="host">invezz.com</span></a></li>
-              <li><a href="https://www.tipranks.com/news/nvidia-probes-alleged-chinese-spy-links-to-jensen-huang-ahead-of-earnings" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>TipRanks — „Nvidia Probes Alleged Chinese Spy Links to Jensen Huang Ahead of Earnings“ (9 nov 2026, 03:16 UTC)<span class="host">tipranks.com</span></a></li>
-              <li><a href="https://tech-insider.org/nvidia-huang-probe-ai-labs-compute-trust-three-risks-2026/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Tech Insider — „Jensen Huang Investigation: 5 AI Stock Risks“ (9 nov 2026; notează că AP, CNBC, Bloomberg și The Hill au confirmat anunțul boardului)<span class="host">tech-insider.org</span></a></li>
-            </ul>
-          </div>
-          <div class="opposing">
-            <p class="sec-label">Tabăra adversă</p>
-            <p>John Rizzo, purtător de cuvânt al Nvidia, a declarat pentru BBC că interacțiunile lui Jensen Huang cu Alice Huang „nu sunt neobișnuite sau neașteptate": clienți ca Megaspeed primesc informații comerciale obișnuite, nu secrete comerciale și „zero informații relevante pentru securitatea națională", iar acuzațiile de deturnare de cipuri au fost „investigate temeinic și demontate anul trecut" (<a href="https://tech-insider.org/nvidia-huang-probe-ai-labs-compute-trust-three-risks-2026/" target="_blank" rel="noopener">Tech Insider</a>). Un purtător de cuvânt al Ambasadei Chinei la Washington a respins acuzațiile la sfârșitul lui octombrie ca „defăimări nefondate" (<a href="https://techcrunch.com/2026/11/08/is-jensen-huangs-job-on-the-line-yales-jeffrey-sonnenfeld-estimates-its-about-a-50-50/" target="_blank" rel="noopener">TechCrunch</a>).</p>
-          </div>
-          <div class="impact">
-            <span class="badge">Impact direct</span>
-            <p>Impact direct: minim — fără dețineri directe la Nvidia în portofoliul cunoscut. Relevanță profesională și de investiții ridicată: o anchetă de guvernanță și spionaj la vârful Nvidia, cu o săptămână înainte de rezultatele trimestriale (17 nov) și de audierea din Congres (18 nov), poate mișca din nou acțiunile AI și poate aduce restricții noi la exportul de cipuri. De urmărit: rezultatele Nvidia din 17 noiembrie și briefingul din Congres din 18 noiembrie.</p>
-          </div>
-        </article>
-
-        <!-- 7 · 9 nov · 08:00 -->
-        <article id="stire-119" data-cats="romania" data-sev="green" data-subiect="repornirea Unității 2 Cernavodă">
-          <div class="a-meta">
-            <span class="a-time">9 nov · 08:00</span>
-            <span class="a-cat">România</span>
-            <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
-            <a class="cont-pill" href="#stire-97" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
-            <span class="subj-pill">repornirea Unității 2 Cernavodă</span>
-            <span class="a-num">#13 / 14</span>
-          </div>
-          <h2>Unitatea 2 de la Cernavodă a început repornirea: secvența de pornire a fost inițiată azi-noapte la 00:42, revenirea completă e estimată marți</h2>
-          <div class="followup">
-            <span class="tag">Urmare la</span>
-            <p><a href="#stire-97">„Unitatea 1 de la Cernavodă a fost repornită după circa 100 de zile de oprire: pierderi de aproximativ un miliard de lei; decizia pentru Unitatea 2, luni" — vineri, 7 noiembrie 2026, ora 13:00.</a></p>
-          </div>
-          <div class="sec">
-            <p class="sec-label">Ce s-a întâmplat</p>
-            <p>Ministerul Energiei a anunțat că secvența de pornire a Unității 2 a Centralei Nuclearoelectrice Cernavodă a fost inițiată luni, 9 noiembrie, la ora 00:42, după ce debitul Dunării a revenit la parametri care permit răcirea instalației. Se estimează ca reactorul să reintre complet în funcțiune marți, 10 noiembrie. Repornirea vine după reconectarea Unității 1 la Sistemul Energetic Național, sâmbătă, 6 noiembrie, după circa 100 de zile de oprire. Cele două unități au fost oprite succesiv între iulie și august, din cauza debitului foarte scăzut al Dunării. Premierul Luca Niculescu a subliniat importanța reluării producției pentru securitatea energetică a țării în sezonul rece și reducerea dependenței de importurile de electricitate la orele de vârf; proiectul Bala 2, care ar crește debitul de apă spre centrală, a fost declarat prioritate.</p>
-          </div>
-          <div class="sec">
-            <p class="sec-label">De ce contează</p>
-            <p>Închide firul urmărit din 4 noiembrie: după circa trei luni fără producție nucleară, România revine la capacitatea completă chiar înainte de iarnă — Unitatea 1 a revenit vineri, Unitatea 2 pornește azi-noapte. Pentru un român cu familie în Giurgiu și apartament în București, care petrece Crăciunul în România, e vestea care scoate din ecuație riscul de importuri scumpe și penurii la orele de vârf. Rămâne vulnerabilitatea structurală: centrala depinde de nivelul Dunării, iar proiectul Bala 2, care ar rezolva-o, încă n-a intrat în execuție.</p>
-          </div>
-          <div class="verify">
-            <p class="sec-label">Verificare <span class="status">Sursă unică</span></p>
-            <p>Verdict: sursa_unica. RO Times (9 nov 2026, 06:45 UTC) — singura relatare găsită la ora verificării care anunță pornirea, citând Economedia și anunțul Ministerului Energiei; articolul original Economedia nu a putut fi citit direct (domeniu blocat de policy în mediul de fetching). Context confirmat separat: Energynomics (9 nov, 06:11 UTC — publicat înaintea anunțului) confirmă că Unitatea 1 a atins puterea nominală duminică și că decizia pentru Unitatea 2 era programată luni; Flash Romania (update 7 nov, 17:30) confirmă același calendar. Notă de integritate: ora 00:42 și estimarea de marți vin dintr-o singură relatare — de urmărit confirmarea Nuclearelectrica/Transelectrica la următoarea rulare.</p>
-            <ul class="sources">
-              <li><a href="https://rotimes.ro/article/2026-11-09-cernavoda-unit-2-restarts-after-water-level-drop" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>RO Times — „Unitatea 2 de la Cernavodă revine în funcțiune“ (9 nov 2026, 06:45 UTC; citează Economedia și anunțul Ministerului Energiei)<span class="host">rotimes.ro</span></a></li>
-              <li><a href="https://www.energynomics.ro/cernavoda-unitatea-1-revine-in-piata-unitatea-2-asteapta-cresterea-nivelului-dunarii/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Energynomics — „Cernavodă: Unitatea 1 revine în piață, Unitatea 2 așteaptă creșterea nivelului Dunării“ (9 nov 2026, 06:11 UTC — publicat înaintea anunțului; confirmă contextul)<span class="host">energynomics.ro</span></a></li>
-              <li><a href="https://flashromania.ro/repornire-reactor-cernavoda-6-noiembrie-pret-curent/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Flash Romania — „Cernavodă: Unitatea 1 repornită, Bala 2 devine prioritate“ (update 7 nov 2026, 17:30: decizia pentru Unitatea 2, luni 9 nov)<span class="host">flashromania.ro</span></a></li>
-            </ul>
-          </div>
-          <div class="impact">
-            <span class="badge">Impact direct</span>
-            <p>Impact direct: minim azi — nicio acțiune cerută. Relevanță de context: România își recuperează capacitatea nucleară completă (circa 1.400 MW, aproximativ 20% din electricitatea țării în mod normal) chiar înainte de sezonul rece; pentru familie (Giurgiu/București) și vacanța de Crăciun 22–31 decembrie în România înseamnă stabilitate energetică. De urmărit: confirmarea revenirii complete marți, 10 noiembrie.</p>
-          </div>
-        </article>
-
-        <!-- 8 · 9 nov · 07:00 -->
-        <article id="stire-118" data-cats="romania" data-sev="green" data-subiect="AfD invitată la protestul AUR">
-          <div class="a-meta">
-            <span class="a-time">9 nov · 07:00</span>
-            <span class="a-cat">România</span>
-            <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
-            <span class="subj-pill">AfD invitată la protestul AUR</span>
-            <span class="a-num">#14 / 14</span>
-          </div>
-          <h2>Reprezentanți ai AfD, invitați la protestul AUR din 14 noiembrie — deși lidera AfD, Alice Weidel, i-a acuzat pe românii din Germania că „jefuiesc sistemul social”</h2>
-
-          <div class="sec">
-            <p class="sec-label">Ce s-a întâmplat</p>
-            <p>AUR a invitat reprezentanți ai formațiunii germane de extremă dreapta AfD la protestul de sâmbătă, 14 noiembrie, organizat la București pentru eliberarea lui Călin Georgescu, aflat în arest preventiv. Deputatul AUR Mihail Neamțu a confirmat invitațiile pentru G4Media și susține că au fost trimise înaintea declarațiilor liderei AfD, Alice Weidel, din 28 octombrie, în care aceasta i-a acuzat pe migranții români că „jefuiesc sistemul de asistență socială” din Germania. Neamțu nu a răspuns direct dacă invitația rămâne valabilă sau dacă AUR i-a cerut lui Weidel să-și retragă afirmațiile.</p>
-          </div>
-
-          <div class="sec">
-            <p class="sec-label">De ce contează</p>
-            <p>E prima confirmare că un partid german de extremă dreapta — a cărui lideră a atacat public românii din diaspora — e invitat oficial la o manifestație în București. Pentru un român care trăiește în străinătate, episodul arată tensiunea dintre discursul „patriotic” al AUR și asocierea cu o formațiune care îi atacă tocmai pe românii din diaspora. Protestul (14–15 noiembrie) e anunțat cu participanți internaționali din „zeci de țări”, potrivit lui Neamțu.</p>
-          </div>
-
-          <div class="verify">
-            <p class="sec-label">Verificare <span class="status">Sursă unică</span></p>
-            <p>Verdict: sursa_unica — relatarea originală este G4Media (8–9 noiembrie 2026); invitația este confirmată de deputatul AUR Mihail Neamțu însuși — deci de partea implicată, nu de o redacție independentă; relatări concordante care preiau același fir G4Media: Clasic Radio (8 nov 2026), Monitorul Zilei (8 nov 2026), Newscom (8 nov 2026). Declarațiile lui Weidel din 28 octombrie sunt documentate separat: postarea ei de pe X, investigația MDR și FAZ (prin reacția lui Dominic Fritz, 3 nov 2026). Nu există o a doua redacție independentă care să confirme separat invitația — de aceea verdictul este sursa_unica, nu confirmat.</p>
-            <ul class="sources">
-              <li><a href="https://www.clasicradio.ro/aur-a-invitat-afd-la-protestul-pentru-eliberarea-lui-calin-georgescu/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Clasic Radio — relatarea despre invitația adresată AfD la protestul AUR pentru eliberarea lui Călin Georgescu (8 nov 2026)<span class="host">clasicradio.ro</span></a></li>
-            </ul>
-          </div>
-
-          <div class="opposing">
-            <p class="sec-label">Tabăra adversă</p>
-            <p>Mihail Neamțu (AUR) susține că „Invitațiile către reprezentanții AfD au fost trimise înaintea declarațiilor controversate ale doamnei Alice Weidel” și că „Am comunicat viziunea noastră celor de la AfD” (<a href="https://www.clasicradio.ro/aur-a-invitat-afd-la-protestul-pentru-eliberarea-lui-calin-georgescu/" target="_blank" rel="noopener">Clasic Radio</a>).</p>
-          </div>
-
-          <div class="impact">
-            <span class="badge">Impact direct</span>
-            <p>Impact direct: minim — relevanță de context. Nicio acțiune cerută; protestul e la București pe 14 noiembrie. De urmărit doar dacă participarea AfD se confirmă sau se retrage până sâmbătă.</p>
-          </div>
-        </article>
-      </main>
-      </section>
-
-      
-
       <footer>
         <div class="rule" aria-hidden="true"></div>
-        <p>Sfârșitul ediției de azi · Ultima actualizare: duminică, 15 noiembrie 2026, 20:00<br />Monitorizarea rulează la circa 3 ore, în fereastra L–V 06:00–22:00 · S–D 07:30–22:00 — dă refresh pentru noutăți.</p>
-        <a class="to-top" href="#stire-236">↑ Înapoi la cea mai nouă știre</a>
+        <p>Sfârșitul ediției de azi · Ultima actualizare: luni, 16 noiembrie 2026, 07:00<br />Monitorizarea rulează la circa 3 ore, în fereastra L–V 06:00–22:00 · S–D 07:30–22:00 — dă refresh pentru noutăți.</p>
+        <a class="to-top" href="#stire-237">↑ Înapoi la cea mai nouă știre</a>
       </footer>
     </div>
 
