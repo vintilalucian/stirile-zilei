@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="color-scheme" content="light dark" />
-    <meta name="tirile-versiune" content="2026-11-16T12:00:00+01:00|6|amber" />
+    <meta name="tirile-versiune" content="2026-11-16T14:05:00+01:00|7|amber" />
     <link rel="icon" href="data:," />
     <title>Știrile zilei</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -699,9 +699,9 @@
     <div class="topbar">
       <div class="topbar-inner">
         <span class="dot" aria-hidden="true"></span>
-        <span><strong>Luni, 16 noiembrie 2026</strong> · actualizat la <strong>12:00</strong></span>
+        <span><strong>Luni, 16 noiembrie 2026</strong> · actualizat la <strong>14:05</strong></span>
         <span aria-hidden="true">·</span>
-        <span>6 știri azi</span>
+        <span>7 știri azi</span>
         <span class="spacer"></span>
         <button class="refresh-btn" type="button" id="refreshBtn" aria-label="Reîmprospătează pagina">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg>
@@ -739,7 +739,7 @@
 
       <!-- Chenar permanent: știrea cea mai importantă a zilei — sub fereastra
            „Ultimele știri", ÎNAINTEA dashboardului, vizibilă din prima, fără scroll.
-           Nivelul de azi: GALBEN (sev-amber) — de urmărit: escaladare activă SUA–Iran — al treilea portavion american a ajuns în Orientul Mijlociu, SUA au acum trei grupuri navale în regiune, prima dată din aprilie, în plin război lansat de Israel și SUA împotriva Iranului, chiar înaintea întâlnirii trilaterale Trump–Putin–Xi de joi, de la Shenzhen; e știrea zilei (marcată ca atare pe cardul de la 11:00), cea mai importantă dintre cele cinci știri cu severitate galbenă ale zilei, deci scriptul adaugă mențiunea „Mai sunt și alte 4 știri cu aceeași severitate". Știrea de la 10:00 (Plural, 1 mld €) e verde și nu schimbă chenarul. Știrea de la 12:00 (Podul Kerci) e tot galbenă și nu schimbă chenarul.
+           Nivelul de azi: GALBEN (sev-amber) — de urmărit: escaladare activă SUA–Iran — al treilea portavion american a ajuns în Orientul Mijlociu, SUA au acum trei grupuri navale în regiune, prima dată din aprilie, în plin război lansat de Israel și SUA împotriva Iranului, chiar înaintea întâlnirii trilaterale Trump–Putin–Xi de joi, de la Shenzhen; e știrea zilei (marcată ca atare pe cardul de la 11:00), cea mai importantă dintre cele șase știri cu severitate galbenă ale zilei, deci scriptul adaugă mențiunea „Mai sunt și alte 5 știri cu aceeași severitate". Știrea de la 10:00 (Plural, 1 mld €) e verde și nu schimbă chenarul. Știrile de la 12:00 (Podul Kerci) și 14:05 (regele îi mai dă o săptămână lui De Wever) sunt tot galbene și nu schimbă chenarul.
            Chenarul rămâne în afara logicii de filtrare: vizibil indiferent de filtrul de categorie. -->
       <section class="spot sev-amber" aria-label="Știrea cea mai importantă a zilei">
         <div class="spot-head">
@@ -751,7 +751,7 @@
           <span class="spot-pill">Nivel galben — de urmărit</span>
         </div>
         <h2 class="spot-title">Al treilea portavion american a ajuns în Orientul Mijlociu — SUA au acum trei grupuri navale în regiune, prima dată din aprilie</h2>
-        <p class="spot-why"><strong>De ce e în față:</strong> escaladare activă SUA–Iran: trei portavioane americane simultan în Orientul Mijlociu — cea mai mare desfășurare navală americană în regiune din aprilie — în plin război lansat de Israel și SUA împotriva Iranului la finalul lui februarie, cu negocierile Washington–Teheran blocate, chiar înaintea întâlnirii trilaterale Trump–Putin–Xi de joi, de la Shenzhen; e cea mai importantă dintre cele cinci știri cu severitate galbenă ale zilei.</p>
+        <p class="spot-why"><strong>De ce e în față:</strong> escaladare activă SUA–Iran: trei portavioane americane simultan în Orientul Mijlociu — cea mai mare desfășurare navală americană în regiune din aprilie — în plin război lansat de Israel și SUA împotriva Iranului la finalul lui februarie, cu negocierile Washington–Teheran blocate, chiar înaintea întâlnirii trilaterale Trump–Putin–Xi de joi, de la Shenzhen; e cea mai importantă dintre cele șase știri cu severitate galbenă ale zilei.</p>
         <p class="spot-lead">Portavionul USS Theodore Roosevelt a ajuns în Orientul Mijlociu, alăturându-se navelor USS George H.W. Bush și USS George Washington, potrivit informațiilor apărute duminică în presă; dacă rămân toate trei, prezența navală americană în regiune ajunge la cel mai înalt nivel din aprilie. În același weekend, Gărzile Revoluționare iraniene au lansat duminică șase drone asupra bazei americane Al-Rifaa din Bahrain — toate interceptate, fără pagube sau răniți, spun Bahrainul și SUA.</p>
         <p class="spot-more" hidden><span class="spot-more-text"></span> <button class="spot-more-btn" type="button">apasă aici</button></p>
         <div class="spot-foot">
@@ -768,15 +768,15 @@
       <section class="dashboard" aria-label="Panou de ansamblu">
         <div class="dash-head">
           <span class="dash-title">Dashboard · Azi</span>
-          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 12:00</span>
+          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 14:05</span>
           <span class="dash-meta">Fereastră monitorizare <strong>L–V 06:00–22:00 · S–D 07:30–22:00</strong> · pas ~3 ore</span>
         </div>
 
         <div class="kpi-grid five" role="group" aria-label="Filtrează după categorie — apasă pe un tile">
           <button class="kpi" type="button" data-filter="toate" aria-pressed="true">
             <span class="kpi-top"><span class="kpi-label">Toate știrile</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">6</span>
-            <span class="kpi-sub">6 știri verificate azi, în 5 rulări</span>
+            <span class="kpi-value">7</span>
+            <span class="kpi-sub">7 știri verificate azi, în 6 rulări</span>
             <span class="kpi-bar" aria-hidden="true"><i style="width:100%"></i></span>
             <span class="kpi-hint">Apasă pentru toate</span>
           </button>
@@ -784,7 +784,7 @@
             <span class="kpi-top"><span class="kpi-label">Securitate &amp; NATO</span><span class="kpi-check" aria-hidden="true">✓</span></span>
             <span class="kpi-value">4</span>
             <span class="kpi-sub">lovitură asupra Podului Kerci · al treilea portavion SUA · fond €1 mld pentru apărare · Estonia închide granița cu Rusia</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:67%"></i></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:57%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="romania" aria-pressed="false">
@@ -796,16 +796,16 @@
           </button>
           <button class="kpi" type="button" data-filter="belgia" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">Belgia</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">1</span>
-            <span class="kpi-sub">De Wever raportează regelui</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:17%"></i></span>
+            <span class="kpi-value">2</span>
+            <span class="kpi-sub">criza bugetară belgiană · De Wever raportează regelui</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:29%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="tech" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">Tech &amp; AI</span><span class="kpi-check" aria-hidden="true">✓</span></span>
             <span class="kpi-value">2</span>
             <span class="kpi-sub">fond €1 mld pentru apărare · restricții export cipuri AI</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:33%"></i></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:29%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
         </div>
@@ -819,7 +819,7 @@
       </section>
 
       <div class="filter-status" aria-live="polite">
-        <span class="filter-label">Se afișează: <strong>Toate categoriile — 6 din 6 știri</strong></span>
+        <span class="filter-label">Se afișează: <strong>Toate categoriile — 7 din 7 știri</strong></span>
         <button class="filter-reset" type="button" hidden>Resetează filtrul</button>
       </div>
 
@@ -849,14 +849,55 @@
       <p class="empty">Nicio știre în această categorie azi.</p>
 
       <main>
-        <!-- 1 · 16 nov · 12:00 -->
+        <!-- 1 · 16 nov · 14:05 -->
+        <article id="stire-243" data-cats="belgia" data-sev="amber" data-subiect="criza bugetară belgiană">
+          <div class="a-meta">
+            <span class="a-time">16 nov · 14:05</span>
+            <span class="a-cat">Belgia</span>
+            <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
+            <a class="cont-pill" href="#stire-240" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
+            <span class="subj-pill">criza bugetară belgiană</span>
+            <span class="a-num">#1 / 7</span>
+          </div>
+          <h2>Regele îi mai dă o săptămână lui De Wever pentru bugetul 2027 — fără acord, raport înapoi pe 23 noiembrie</h2>
+          <div class="followup">
+            <span class="tag">Urmare la</span>
+            <p><a href="#stire-240">„Criza bugetară belgiană: partidele au picat din nou duminică — doar Vooruit a respins propunerea; De Wever raportează regelui azi, la 11:30” — luni, 16 noiembrie 2026, ora 11:10.</a> (Continuarea directă a crizei urmărite în pagină: De Wever s-a prezentat la rege fără acord, iar regele i-a prelungit termenul cu o săptămână.)</p>
+          </div>
+          <div class="sec">
+            <p class="sec-label">Ce s-a întâmplat</p>
+            <p>După ce negocierile au picat din nou duminică seară, premierul Bart De Wever s-a prezentat luni la regele Philippe fără un acord pe bugetul 2027. Regele i-a cerut să continue negocierile „pentru a ajunge la un acord cât mai curând posibil și a evita astfel o criză politică și bugetară dăunătoare pentru țară” și să revină cu un raport luni, 23 noiembrie. De Wever avea sprijinul a patru din cele cinci partide ale coaliției în weekend, dar negocierile s-au rupt duminică seara târziu; mai multe partide îl indică pe Vooruit (social-democrații flamanzi) și pe ministrul Frank Vandenbroucke ca cei care blochează acordul.</p>
+          </div>
+          <div class="sec">
+            <p class="sec-label">De ce contează</p>
+            <p>Belgia intră în 2027 fără buget votat — De Wever a confirmat deja că anul începe cu buget provizoriu (douzièmes provisoires, câte o doisprezecime lunară din ultimul buget aprobat), deci deciziile fiscale noi rămân înghețate până la un acord. Pentru un rezident în Belgia, asta înseamnă incertitudine fiscală prelungită pentru 2027, nu o schimbare imediată de taxe.</p>
+          </div>
+          <div class="verify">
+            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
+            <p>Verdict: confirmat — The Brussels Times (sursă curatoriată, 16 noiembrie 2026, 12:56) și Brussels Signal (în afara listei, 16 noiembrie) relatează ambele decizia regelui și raportul din 23 noiembrie; Brussels Signal confirmă și că 2027 începe cu douzièmes provisoires, iar Daily Imroz (7 noiembrie) confirmă că De Wever a recunoscut public asta.</p>
+            <ul class="sources">
+              <li><a href="https://www.brusselstimes.com/belgium/2408503/belgian-king-gives-mp-de-wever-one-more-week-to-find-budget-agreement-tbtb" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>The Brussels Times — „Belgian king gives PM De Wever one more week to find budget agreement” (16 nov 2026, 12:56, domeniu curatoriat)<span class="host">brusselstimes.com</span></a></li>
+              <li><a href="https://brusselssignal.eu/2026/11/belgian-socialists-block-budget-deal-de-wever-sent-back-to-the-table/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Brussels Signal — „Belgian socialists block budget deal, De Wever sent back to the table” (16 nov 2026, în afara listei curatoriate)<span class="host">brusselssignal.eu</span></a></li>
+            </ul>
+          </div>
+          <div class="opposing">
+            <p class="sec-label">Tabăra adversă</p>
+            <p>Vooruit — potrivit VRT (citat de Brussels Signal), Vooruit vrea să înjumătățească efortul de circa 1 miliard de euro cerut din indexarea pensiilor și cere mai mult efort de la „cei mai puternici umeri” ai societății; partidele din coaliție îl indică pe Vooruit și pe Frank Vandenbroucke ca blocaj (The Brussels Times).</p>
+          </div>
+          <div class="impact">
+            <span class="badge">Impact direct</span>
+            <p>Impact direct: minim azi — nicio taxă nouă, nicio decizie care să-l privească direct. Relevanță de context înaltă: criza bugetară a țării de rezidență continuă, cu următorul termen luni, 23 noiembrie, când De Wever raportează din nou regelui; de urmărit atunci dacă se ajunge la acord sau cade guvernul.</p>
+          </div>
+        </article>
+
+        <!-- 2 · 16 nov · 12:00 -->
         <article id="stire-242" data-cats="securitate" data-sev="amber" data-subiect="lovitură asupra Podului Kerci">
           <div class="a-meta">
             <span class="a-time">16 nov · 12:00</span>
             <span class="a-cat">Securitate &amp; NATO</span>
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="subj-pill">lovitură asupra Podului Kerci</span>
-            <span class="a-num">#1 / 6</span>
+            <span class="a-num">#2 / 7</span>
           </div>
           <h2>Ucraina a lovit Podul Kerci într-o salvă de peste 1.300 de drone — traficul spre Crimeea, suspendat până la prânz</h2>
           <div class="sec">
@@ -884,7 +925,7 @@
           </div>
         </article>
 
-<!-- 2 · 16 nov · 11:00 -->
+<!-- 3 · 16 nov · 11:00 -->
         <article id="stire-241" data-cats="securitate" data-sev="amber" data-subiect="al treilea portavion SUA">
           <div class="a-meta">
             <span class="a-time">16 nov · 11:00</span>
@@ -892,7 +933,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="spot-tag">Știrea zilei</span>
             <span class="subj-pill">al treilea portavion SUA</span>
-            <span class="a-num">#2 / 6</span>
+            <span class="a-num">#3 / 7</span>
           </div>
           <h2>Al treilea portavion american a ajuns în Orientul Mijlociu — SUA au acum trei grupuri navale în regiune, prima dată din aprilie</h2>
           <div class="sec">
@@ -921,7 +962,7 @@
           </div>
         </article>
 
-        <!-- 3 · 16 nov · 11:00 -->
+        <!-- 4 · 16 nov · 11:00 -->
         <article id="stire-240" data-cats="belgia" data-sev="amber" data-subiect="De Wever raportează regelui">
           <div class="a-meta">
             <span class="a-time">16 nov · 11:00</span>
@@ -929,7 +970,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-220" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">De Wever raportează regelui</span>
-            <span class="a-num">#3 / 6</span>
+            <span class="a-num">#4 / 7</span>
           </div>
           <h2>Criza bugetară belgiană: partidele au picat din nou duminică — doar Vooruit a respins propunerea; De Wever raportează regelui azi, la 11:30</h2>
           <div class="followup">
@@ -962,14 +1003,14 @@
           </div>
         </article>
 
-        <!-- 4 · 16 nov · 10:00 -->
+        <!-- 5 · 16 nov · 10:00 -->
         <article id="stire-239" data-cats="securitate tech" data-sev="green" data-subiect="fond €1 mld pentru apărare">
           <div class="a-meta">
             <span class="a-time">16 nov · 10:00</span>
             <span class="a-cat">Securitate &amp; NATO · Tech &amp; AI</span>
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <span class="subj-pill">fond €1 mld pentru apărare</span>
-            <span class="a-num">#4 / 6</span>
+            <span class="a-num">#5 / 7</span>
           </div>
           <h2>Plural, fondul din spatele companiei de apărare AI Helsing, strânge 1 miliard de euro pentru tehnologia europeană de frontieră</h2>
           <div class="sec">
@@ -996,7 +1037,7 @@
           </div>
         </article>
 
-        <!-- 5 · 16 nov · 09:00 -->
+        <!-- 6 · 16 nov · 09:00 -->
         <article id="stire-238" data-cats="tech" data-sev="amber" data-subiect="restricții export cipuri AI">
           <div class="a-meta">
             <span class="a-time">16 nov · 09:00</span>
@@ -1004,7 +1045,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-213" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">restricții export cipuri AI</span>
-            <span class="a-num">#5 / 6</span>
+            <span class="a-num">#6 / 7</span>
           </div>
           <h2>Congresul SUA avansează restricții mai dure la exportul de cipuri AI către China, după demisia lui Jensen Huang</h2>
           <div class="followup">
@@ -1036,14 +1077,14 @@
           </div>
         </article>
 
-        <!-- 6 · 16 nov · 07:00 -->
+        <!-- 7 · 16 nov · 07:00 -->
         <article id="stire-237" data-cats="securitate" data-sev="amber" data-subiect="Estonia închide granița cu Rusia">
           <div class="a-meta">
             <span class="a-time">16 nov · 07:00</span>
             <span class="a-cat">Securitate &amp; NATO</span>
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="subj-pill">Estonia închide granița cu Rusia</span>
-            <span class="a-num">#6 / 6</span>
+            <span class="a-num">#7 / 7</span>
           </div>
           <h2>Estonia închide de la 1 decembrie toate punctele de trecere a frontierei cu Rusia, după o tentativă de incendiere la producătorul de drone Threod Systems, atribuită de serviciile estone GRU-ului rus</h2>
           <div class="sec">
