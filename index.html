@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="color-scheme" content="light dark" />
-    <meta name="tirile-versiune" content="2026-11-16T09:00:00+01:00|2|amber" />
+    <meta name="tirile-versiune" content="2026-11-16T10:00:00+01:00|3|amber" />
     <link rel="icon" href="data:," />
     <title>Știrile zilei</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -699,9 +699,9 @@
     <div class="topbar">
       <div class="topbar-inner">
         <span class="dot" aria-hidden="true"></span>
-        <span><strong>Luni, 16 noiembrie 2026</strong> · actualizat la <strong>09:00</strong></span>
+        <span><strong>Luni, 16 noiembrie 2026</strong> · actualizat la <strong>10:00</strong></span>
         <span aria-hidden="true">·</span>
-        <span>2 știri azi</span>
+        <span>3 știri azi</span>
         <span class="spacer"></span>
         <button class="refresh-btn" type="button" id="refreshBtn" aria-label="Reîmprospătează pagina">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg>
@@ -739,7 +739,7 @@
 
       <!-- Chenar permanent: știrea cea mai importantă a zilei — sub fereastra
            „Ultimele știri", ÎNAINTEA dashboardului, vizibilă din prima, fără scroll.
-           Nivelul de azi: GALBEN (sev-amber) — de urmărit: un aliat NATO își închide complet frontiera terestră cu Rusia ca răspuns la o tentativă de sabotaj atribuită GRU — a doua tentativă asupra unui producător eston de tehnologie de apărare din august încoace; rămâne știrea zilei (marcată ca atare pe card), iar știrea de la 09:00 despre restricțiile de export de cipuri AI are aceeași severitate maximă a zilei, deci scriptul adaugă mențiunea „Mai este și o altă știre cu aceeași severitate".
+           Nivelul de azi: GALBEN (sev-amber) — de urmărit: un aliat NATO își închide complet frontiera terestră cu Rusia ca răspuns la o tentativă de sabotaj atribuită GRU — a doua tentativă asupra unui producător eston de tehnologie de apărare din august încoace; rămâne știrea zilei (marcată ca atare pe card), iar știrea de la 09:00 despre restricțiile de export de cipuri AI are aceeași severitate maximă a zilei, deci scriptul adaugă mențiunea „Mai este și o altă știre cu aceeași severitate". Știrea de la 10:00 (Plural, 1 mld €) e verde și nu schimbă chenarul.
            Chenarul rămâne în afara logicii de filtrare: vizibil indiferent de filtrul de categorie. -->
       <section class="spot sev-amber" aria-label="Știrea cea mai importantă a zilei">
         <div class="spot-head">
@@ -751,7 +751,7 @@
           <span class="spot-pill">Nivel galben — de urmărit</span>
         </div>
         <h2 class="spot-title">Estonia închide de la 1 decembrie toate punctele de trecere a frontierei cu Rusia, după o tentativă de incendiere la producătorul de drone Threod Systems, atribuită de serviciile estone GRU-ului rus</h2>
-        <p class="spot-why"><strong>De ce e în față:</strong> un aliat NATO își închide complet frontiera terestră cu Rusia ca răspuns la o tentativă de sabotaj atribuită GRU — a doua tentativă asupra unui producător eston de tehnologie de apărare din august încoace; e singura știre a zilei și cea mai gravă dintre cele verificate.</p>
+        <p class="spot-why"><strong>De ce e în față:</strong> un aliat NATO își închide complet frontiera terestră cu Rusia ca răspuns la o tentativă de sabotaj atribuită GRU — a doua tentativă asupra unui producător eston de tehnologie de apărare din august încoace; rămâne știrea zilei: cea mai importantă dintre cele două știri cu severitate galbenă ale zilei.</p>
         <p class="spot-lead">Estonia închide de la 1 decembrie cele trei puncte de trecere a frontierei cu Rusia — Narva, Luhamaa și Koidula — după ce autoritățile au dejucat o tentativă de incendiere la producătorul de drone Threod Systems; opt persoane au fost reținute, iar serviciul de securitate internă Kapo spune că atacul a fost comandat de GRU, serviciul de informații militare al Rusiei.</p>
         <p class="spot-more" hidden><span class="spot-more-text"></span> <button class="spot-more-btn" type="button">apasă aici</button></p>
         <div class="spot-foot">
@@ -768,23 +768,23 @@
       <section class="dashboard" aria-label="Panou de ansamblu">
         <div class="dash-head">
           <span class="dash-title">Dashboard · Azi</span>
-          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 09:00</span>
+          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 10:00</span>
           <span class="dash-meta">Fereastră monitorizare <strong>L–V 06:00–22:00 · S–D 07:30–22:00</strong> · pas ~3 ore</span>
         </div>
 
         <div class="kpi-grid five" role="group" aria-label="Filtrează după categorie — apasă pe un tile">
           <button class="kpi" type="button" data-filter="toate" aria-pressed="true">
             <span class="kpi-top"><span class="kpi-label">Toate știrile</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">2</span>
-            <span class="kpi-sub">știri verificate azi, în 2 rulări</span>
+            <span class="kpi-value">3</span>
+            <span class="kpi-sub">3 știri verificate azi, în 3 rulări</span>
             <span class="kpi-bar" aria-hidden="true"><i style="width:100%"></i></span>
             <span class="kpi-hint">Apasă pentru toate</span>
           </button>
           <button class="kpi" type="button" data-filter="securitate" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">Securitate &amp; NATO</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">1</span>
-            <span class="kpi-sub">Estonia închide granița cu Rusia</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:50%"></i></span>
+            <span class="kpi-value">2</span>
+            <span class="kpi-sub">fond €1 mld pentru apărare · Estonia închide granița cu Rusia</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:67%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="romania" aria-pressed="false">
@@ -803,9 +803,9 @@
           </button>
           <button class="kpi" type="button" data-filter="tech" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">Tech &amp; AI</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">1</span>
-            <span class="kpi-sub">restricții export cipuri AI</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:50%"></i></span>
+            <span class="kpi-value">2</span>
+            <span class="kpi-sub">fond €1 mld pentru apărare · restricții export cipuri AI</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:67%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
         </div>
@@ -819,7 +819,7 @@
       </section>
 
       <div class="filter-status" aria-live="polite">
-        <span class="filter-label">Se afișează: <strong>Toate categoriile — 2 din 2 știri</strong></span>
+        <span class="filter-label">Se afișează: <strong>Toate categoriile — 3 din 3 știri</strong></span>
         <button class="filter-reset" type="button" hidden>Resetează filtrul</button>
       </div>
 
@@ -849,7 +849,41 @@
       <p class="empty">Nicio știre în această categorie azi.</p>
 
       <main>
-        <!-- 1 · 16 nov · 09:00 -->
+        <!-- 1 · 16 nov · 10:00 -->
+        <article id="stire-239" data-cats="securitate tech" data-sev="green" data-subiect="fond €1 mld pentru apărare">
+          <div class="a-meta">
+            <span class="a-time">16 nov · 10:00</span>
+            <span class="a-cat">Securitate &amp; NATO · Tech &amp; AI</span>
+            <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
+            <span class="subj-pill">fond €1 mld pentru apărare</span>
+            <span class="a-num">#1 / 3</span>
+          </div>
+          <h2>Plural, fondul din spatele companiei de apărare AI Helsing, strânge 1 miliard de euro pentru tehnologia europeană de frontieră</h2>
+          <div class="sec">
+            <p class="sec-label">Ce s-a întâmplat</p>
+            <p>Fondul de investiții Plural, condus de fondatori-operatori și investitor timpuriu în compania europeană de apărare AI Helsing, a strâns 1 miliard de euro (1,1 miliarde de dolari) de capital nou, a anunțat luni, 16 noiembrie. Două treimi din sumă merg către al treilea fond early-stage al firmei, iar o treime către un nou fond de „oportunități", pentru investiții de follow-on în companiile din portofoliu. Fondul vizează tehnologia europeană de frontieră — energie, infrastructură AI, apărare și sănătate — iar companiile din portofoliu (Helsing, Proxima Fusion, The Exploration Company) au atras peste 3 miliarde de euro de capital de follow-on în ultimele douăsprezece luni. E cel mai mare fond al firmei, de peste două ori mai mare decât precedentul, și a fost suprasubscris, potrivit Resilience Media.</p>
+          </div>
+          <div class="sec">
+            <p class="sec-label">De ce contează</p>
+            <p>Pentru el, ca IT incident Manager în mediul NATO, e un semnal structural despre ecosistemul european de apărare: capitalul privat pentru tehnologia de frontieră — apărare, infrastructură AI, energie — ajunge la o scară comparabilă cu fondurile guvernamentale de inovare (fondul e comparabil ca mărime cu NATO Innovation Fund, fondul susținut de guvernele aliate, potrivit Resilience Media). Helsing, compania de apărare AI din portofoliul Plural, e deja urmărită în pagină (lansarea sistemului autonom de apărare antiaeriană Contra, 27 octombrie); creșterea finanțării pentru astfel de companii înseamnă mai multe sisteme autonome în teren și, implicit, mai multe decizii de securitate de gestionat. Pentru hobby-ul de automatizări AI: direcția e aceeași — infrastructura AI europeană capătă finanțare serioasă, nu doar startupuri de aplicații.</p>
+          </div>
+          <div class="verify">
+            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
+            <p>Verdict: confirmat — strângerea fondului de 1 miliard de euro (două treimi fondul III early-stage, o treime fondul nou de follow-on), sectoarele vizate și portofoliul (Helsing, Proxima Fusion, The Exploration Company) sunt relatate independent de TechCrunch (domeniu curatoriat, 16 noiembrie), Tech.eu, Crunchbase News și Resilience Media, fiecare cu relatare proprie. Notă de integritate: cifrele de portofoliu (peste 3 miliarde de euro follow-on în 12 luni) sunt comunicate de firmă și preluate de presă, nu verificate independent.</p>
+            <ul class="sources">
+              <li><a href="https://techcrunch.com/2026/11/15/helsing-backer-plural-raises-1-1b-to-fund-europes-next-moonshots/" target="_blank" rel="noopener">TechCrunch — „Helsing backer Plural raises $1.1B to fund Europe's next moonshots” (16 nov 2026, domeniu curatoriat)<span class="host">techcrunch.com</span></a></li>
+              <li><a href="https://tech.eu/2026/11/16/plural-doubles-its-firepower-with-1b-fund-to-help-frontier-founders-build-europe-s-first-trillion-dollar-tech-company/" target="_blank" rel="noopener">Tech.eu — „Plural doubles its firepower with €1B fund to help frontier founders build Europe's first trillion-dollar tech company” (16 nov 2026)<span class="host">tech.eu</span></a></li>
+              <li><a href="https://news.crunchbase.com/venture/plural-closes-billion-euro-fund-european-ai-robotics-defense-startup-investment/" target="_blank" rel="noopener">Crunchbase News — „VC Firm Plural Closes On $1.1B To Invest In European Startups With Potential For ‘GDP-Level Impact’” (16 nov 2026)<span class="host">news.crunchbase.com</span></a></li>
+              <li><a href="https://resiliencemedia.co/plural-locks-down-e1b-for-its-third-fund-to-back-european-startups-building-frontier-tech/" target="_blank" rel="noopener">Resilience Media — „Plural locks down €1B for its third fund to back European startups building ‘frontier’ tech” (16 nov 2026: fond comparabil ca mărime cu NATO Innovation Fund)<span class="host">resiliencemedia.co</span></a></li>
+            </ul>
+          </div>
+          <div class="impact">
+            <span class="badge">Impact direct</span>
+            <p>Impact direct: minim azi — o strângere de fond nu schimbă nimic în ziua lui de lucru și nu cere nicio acțiune. Relevanță de context înaltă: capitalul european pentru tehnologia de apărare ajunge la scara fondurilor guvernamentale de inovare; Helsing — compania de apărare AI urmărită deja în pagină — e portofoliul-simbol al fondului, iar sectoarele vizate (apărare, infrastructură AI, energie) sunt exact ecosistemul din care vin instrumentele și incidentele pe care le gestionează în rolul de IT incident Manager. De urmărit: ce companii europene de apărare și AI primesc finanțare din noul fond și dacă apar runde noi la Helsing.</p>
+          </div>
+        </article>
+
+        <!-- 2 · 16 nov · 09:00 -->
         <article id="stire-238" data-cats="tech" data-sev="amber" data-subiect="restricții export cipuri AI">
           <div class="a-meta">
             <span class="a-time">16 nov · 09:00</span>
@@ -857,7 +891,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-213" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">restricții export cipuri AI</span>
-            <span class="a-num">#1 / 2</span>
+            <span class="a-num">#2 / 3</span>
           </div>
           <h2>Congresul SUA avansează restricții mai dure la exportul de cipuri AI către China, după demisia lui Jensen Huang</h2>
           <div class="followup">
@@ -889,7 +923,7 @@
           </div>
         </article>
 
-        <!-- 2 · 16 nov · 07:00 -->
+        <!-- 3 · 16 nov · 07:00 -->
         <article id="stire-237" data-cats="securitate" data-sev="amber" data-subiect="Estonia închide granița cu Rusia">
           <div class="a-meta">
             <span class="a-time">16 nov · 07:00</span>
@@ -897,7 +931,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="spot-tag">Știrea zilei</span>
             <span class="subj-pill">Estonia închide granița cu Rusia</span>
-            <span class="a-num">#2 / 2</span>
+            <span class="a-num">#3 / 3</span>
           </div>
           <h2>Estonia închide de la 1 decembrie toate punctele de trecere a frontierei cu Rusia, după o tentativă de incendiere la producătorul de drone Threod Systems, atribuită de serviciile estone GRU-ului rus</h2>
           <div class="sec">
@@ -5693,8 +5727,8 @@
 
       <footer>
         <div class="rule" aria-hidden="true"></div>
-        <p>Sfârșitul ediției de azi · Ultima actualizare: luni, 16 noiembrie 2026, 09:00<br />Monitorizarea rulează la circa 3 ore, în fereastra L–V 06:00–22:00 · S–D 07:30–22:00 — dă refresh pentru noutăți.</p>
-        <a class="to-top" href="#stire-238">↑ Înapoi la cea mai nouă știre</a>
+        <p>Sfârșitul ediției de azi · Ultima actualizare: luni, 16 noiembrie 2026, 10:00<br />Monitorizarea rulează la circa 3 ore, în fereastra L–V 06:00–22:00 · S–D 07:30–22:00 — dă refresh pentru noutăți.</p>
+        <a class="to-top" href="#stire-239">↑ Înapoi la cea mai nouă știre</a>
       </footer>
     </div>
 
