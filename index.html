@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="color-scheme" content="light dark" />
-    <meta name="tirile-versiune" content="2026-11-16T11:08:40+01:00|5|amber" />
+    <meta name="tirile-versiune" content="2026-11-16T12:00:00+01:00|6|amber" />
     <link rel="icon" href="data:," />
     <title>Știrile zilei</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -699,9 +699,9 @@
     <div class="topbar">
       <div class="topbar-inner">
         <span class="dot" aria-hidden="true"></span>
-        <span><strong>Luni, 16 noiembrie 2026</strong> · actualizat la <strong>11:00</strong></span>
+        <span><strong>Luni, 16 noiembrie 2026</strong> · actualizat la <strong>12:00</strong></span>
         <span aria-hidden="true">·</span>
-        <span>5 știri azi</span>
+        <span>6 știri azi</span>
         <span class="spacer"></span>
         <button class="refresh-btn" type="button" id="refreshBtn" aria-label="Reîmprospătează pagina">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg>
@@ -739,7 +739,7 @@
 
       <!-- Chenar permanent: știrea cea mai importantă a zilei — sub fereastra
            „Ultimele știri", ÎNAINTEA dashboardului, vizibilă din prima, fără scroll.
-           Nivelul de azi: GALBEN (sev-amber) — de urmărit: escaladare activă SUA–Iran — al treilea portavion american a ajuns în Orientul Mijlociu, SUA au acum trei grupuri navale în regiune, prima dată din aprilie, în plin război lansat de Israel și SUA împotriva Iranului, chiar înaintea întâlnirii trilaterale Trump–Putin–Xi de joi, de la Shenzhen; e știrea zilei (marcată ca atare pe cardul de la 11:00), cea mai importantă dintre cele patru știri cu severitate galbenă ale zilei, deci scriptul adaugă mențiunea „Mai sunt și alte 3 știri cu aceeași severitate". Știrea de la 10:00 (Plural, 1 mld €) e verde și nu schimbă chenarul.
+           Nivelul de azi: GALBEN (sev-amber) — de urmărit: escaladare activă SUA–Iran — al treilea portavion american a ajuns în Orientul Mijlociu, SUA au acum trei grupuri navale în regiune, prima dată din aprilie, în plin război lansat de Israel și SUA împotriva Iranului, chiar înaintea întâlnirii trilaterale Trump–Putin–Xi de joi, de la Shenzhen; e știrea zilei (marcată ca atare pe cardul de la 11:00), cea mai importantă dintre cele cinci știri cu severitate galbenă ale zilei, deci scriptul adaugă mențiunea „Mai sunt și alte 4 știri cu aceeași severitate". Știrea de la 10:00 (Plural, 1 mld €) e verde și nu schimbă chenarul. Știrea de la 12:00 (Podul Kerci) e tot galbenă și nu schimbă chenarul.
            Chenarul rămâne în afara logicii de filtrare: vizibil indiferent de filtrul de categorie. -->
       <section class="spot sev-amber" aria-label="Știrea cea mai importantă a zilei">
         <div class="spot-head">
@@ -751,7 +751,7 @@
           <span class="spot-pill">Nivel galben — de urmărit</span>
         </div>
         <h2 class="spot-title">Al treilea portavion american a ajuns în Orientul Mijlociu — SUA au acum trei grupuri navale în regiune, prima dată din aprilie</h2>
-        <p class="spot-why"><strong>De ce e în față:</strong> escaladare activă SUA–Iran: trei portavioane americane simultan în Orientul Mijlociu — cea mai mare desfășurare navală americană în regiune din aprilie — în plin război lansat de Israel și SUA împotriva Iranului la finalul lui februarie, cu negocierile Washington–Teheran blocate, chiar înaintea întâlnirii trilaterale Trump–Putin–Xi de joi, de la Shenzhen; e cea mai importantă dintre cele patru știri cu severitate galbenă ale zilei.</p>
+        <p class="spot-why"><strong>De ce e în față:</strong> escaladare activă SUA–Iran: trei portavioane americane simultan în Orientul Mijlociu — cea mai mare desfășurare navală americană în regiune din aprilie — în plin război lansat de Israel și SUA împotriva Iranului la finalul lui februarie, cu negocierile Washington–Teheran blocate, chiar înaintea întâlnirii trilaterale Trump–Putin–Xi de joi, de la Shenzhen; e cea mai importantă dintre cele cinci știri cu severitate galbenă ale zilei.</p>
         <p class="spot-lead">Portavionul USS Theodore Roosevelt a ajuns în Orientul Mijlociu, alăturându-se navelor USS George H.W. Bush și USS George Washington, potrivit informațiilor apărute duminică în presă; dacă rămân toate trei, prezența navală americană în regiune ajunge la cel mai înalt nivel din aprilie. În același weekend, Gărzile Revoluționare iraniene au lansat duminică șase drone asupra bazei americane Al-Rifaa din Bahrain — toate interceptate, fără pagube sau răniți, spun Bahrainul și SUA.</p>
         <p class="spot-more" hidden><span class="spot-more-text"></span> <button class="spot-more-btn" type="button">apasă aici</button></p>
         <div class="spot-foot">
@@ -768,23 +768,23 @@
       <section class="dashboard" aria-label="Panou de ansamblu">
         <div class="dash-head">
           <span class="dash-title">Dashboard · Azi</span>
-          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 11:00</span>
+          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 12:00</span>
           <span class="dash-meta">Fereastră monitorizare <strong>L–V 06:00–22:00 · S–D 07:30–22:00</strong> · pas ~3 ore</span>
         </div>
 
         <div class="kpi-grid five" role="group" aria-label="Filtrează după categorie — apasă pe un tile">
           <button class="kpi" type="button" data-filter="toate" aria-pressed="true">
             <span class="kpi-top"><span class="kpi-label">Toate știrile</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">5</span>
-            <span class="kpi-sub">5 știri verificate azi, în 4 rulări</span>
+            <span class="kpi-value">6</span>
+            <span class="kpi-sub">6 știri verificate azi, în 5 rulări</span>
             <span class="kpi-bar" aria-hidden="true"><i style="width:100%"></i></span>
             <span class="kpi-hint">Apasă pentru toate</span>
           </button>
           <button class="kpi" type="button" data-filter="securitate" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">Securitate &amp; NATO</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">3</span>
-            <span class="kpi-sub">al treilea portavion SUA · fond €1 mld pentru apărare · Estonia închide granița cu Rusia</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:60%"></i></span>
+            <span class="kpi-value">4</span>
+            <span class="kpi-sub">lovitură asupra Podului Kerci · al treilea portavion SUA · fond €1 mld pentru apărare · Estonia închide granița cu Rusia</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:67%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="romania" aria-pressed="false">
@@ -798,14 +798,14 @@
             <span class="kpi-top"><span class="kpi-label">Belgia</span><span class="kpi-check" aria-hidden="true">✓</span></span>
             <span class="kpi-value">1</span>
             <span class="kpi-sub">De Wever raportează regelui</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:20%"></i></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:17%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="tech" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">Tech &amp; AI</span><span class="kpi-check" aria-hidden="true">✓</span></span>
             <span class="kpi-value">2</span>
             <span class="kpi-sub">fond €1 mld pentru apărare · restricții export cipuri AI</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:40%"></i></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:33%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
         </div>
@@ -819,7 +819,7 @@
       </section>
 
       <div class="filter-status" aria-live="polite">
-        <span class="filter-label">Se afișează: <strong>Toate categoriile — 5 din 5 știri</strong></span>
+        <span class="filter-label">Se afișează: <strong>Toate categoriile — 6 din 6 știri</strong></span>
         <button class="filter-reset" type="button" hidden>Resetează filtrul</button>
       </div>
 
@@ -849,7 +849,42 @@
       <p class="empty">Nicio știre în această categorie azi.</p>
 
       <main>
-        <!-- 1 · 16 nov · 11:00 -->
+        <!-- 1 · 16 nov · 12:00 -->
+        <article id="stire-242" data-cats="securitate" data-sev="amber" data-subiect="lovitură asupra Podului Kerci">
+          <div class="a-meta">
+            <span class="a-time">16 nov · 12:00</span>
+            <span class="a-cat">Securitate &amp; NATO</span>
+            <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
+            <span class="subj-pill">lovitură asupra Podului Kerci</span>
+            <span class="a-num">#1 / 6</span>
+          </div>
+          <h2>Ucraina a lovit Podul Kerci într-o salvă de peste 1.300 de drone — traficul spre Crimeea, suspendat până la prânz</h2>
+          <div class="sec">
+            <p class="sec-label">Ce s-a întâmplat</p>
+            <p>În noaptea de duminică spre luni, Ucraina a lovit podul peste strâmtoarea Kerci, legătura rutieră și feroviară dintre Rusia și Crimeea, a confirmat guvernatorul instalat de Moscova, Serghei Aksionov, pe Telegram: „Inamicul a lovit podul Crimeii”. Traficul a fost suspendat din jurul orei 02:22 (ora Moscovei) și restricționat până în jurul prânzului, iar serviciile de urgență au fost mobilizate la Kerci; Aksionov nu a dat detalii despre pagube sau victime. Lovitura a venit în cadrul uneia dintre cele mai mari salve de drone ale războiului: Ministerul rus al Apărării spune că a interceptat 1.336 de drone ucrainene peste noapte, în 17 regiuni și deasupra Mării Negre și Mării Azov, circa 600 îndreptându-se spre Moscova, potrivit primarului Serghei Sobianin — cifre ale Moscovei, neverificate independent. Podul a mai fost lovit de Ucraina de mai multe ori de la începutul invaziei din 2022, inclusiv cu o bombă într-un camion în octombrie 2022, care i-a limitat capacitatea luni întregi.</p>
+          </div>
+          <div class="sec">
+            <p class="sec-label">De ce contează</p>
+            <p>Pentru el, ca IT incident Manager în mediul NATO, e un semnal direct din teatrul pe care îl urmărește: podul e artera logistică simbolică a Rusiei spre Crimeea, iar lovitura vine cu trei zile înaintea întâlnirii trilaterale Trump–Putin–Xi de joi, de la Shenzhen (deja în pagină) — presiunea militară ucraineană continuă în paralel cu negocierile, iar Marea Neagră rămâne teatrul activ: tot în weekend Rusia a lovit nave comerciale lângă coasta României, iar România a dus dosarul azi la Consiliul Afaceri Externe al UE. E și un caz de reziliență a infrastructurii critice — domeniul lui direct: o lovitură cu drone care suspendă ore întregi traficul pe o legătură strategică e exact tipul de incident de infrastructură pe care îl gestionează. Reuters notează și contextul invers: Rusia și-a intensificat în ultimele luni loviturile asupra podurilor din Ucraina, inclusiv în Kiev.</p>
+          </div>
+          <div class="verify">
+            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
+            <p>Verdict: confirmat — lovitura asupra podului e confirmată chiar de guvernatorul instalat de Moscova, Serghei Aksionov (Telegram, luni dimineață), și relatată independent de Reuters și AFP, cu relatare proprie și la France 24; Biziday și Politico (domenii curatoriate) o poartă azi. Notă de integritate: amploarea pagubelor NU e confirmată — AFP o evaluează ca minoră, în timp ce canale rusești vorbesc despre o arcadă lovită și deplasată, fără verificare independentă; cifrele despre cele 1.336 de drone sunt ale Ministerului rus al Apărării, neverificate independent; Kievul nu a comentat oficial lovitura, în relatările verificate.</p>
+            <ul class="sources">
+              <li><a href="https://www.biziday.ro/376123-2/" target="_blank" rel="noopener">Biziday — „Ucrainenii au lovit Podul Kerci. Atacul a fost confirmat de ruși” (16 nov 2026, domeniu curatoriat)<span class="host">biziday.ro</span></a></li>
+              <li><a href="https://www.politico.eu/article/russia-claims-ukraine-attacked-crimean-bridge-moscow/" target="_blank" rel="noopener">Politico — „Russia says Ukraine attacked Crimean bridge” (16 nov 2026, 11:36 CET, domeniu curatoriat)<span class="host">politico.eu</span></a></li>
+              <li><a href="https://www.reuters.com/world/ukraine-hits-key-crimean-bridge-curbing-traffic-russian-governor-says-2026-11-16/" target="_blank" rel="noopener">Reuters — „Ukraine hits key Crimean bridge, curbing traffic, Russian governor says” (16 nov 2026)<span class="host">reuters.com</span></a></li>
+              <li><a href="https://articlweblog.com/2026/11/16/bangkok-post-ukraine-hits-russias-crimea-bridge-in-1300-drone-barrage/" target="_blank" rel="noopener">AFP — „Ukraine hits Russia's Crimea bridge in 1,300-drone barrage” (16 nov 2026, reluat de Bangkok Post; pagubele par minore)<span class="host">articlweblog.com</span></a></li>
+              <li><a href="https://asha.news/article/44bf05d1-cb88-4b89-a6a7-17cd394155f7" target="_blank" rel="noopener">France 24 — „Live: 600 Ukrainian drones target Moscow, Crimea bridge strike halts traffic” (16 nov 2026, liveblog, via Asha News)<span class="host">asha.news</span></a></li>
+            </ul>
+          </div>
+          <div class="impact">
+            <span class="badge">Impact direct</span>
+            <p>Impact direct: minim — lovitura nu schimbă nimic în ziua lui de lucru și nu cere nicio acțiune. Relevanță de context înaltă: podul e artera logistică a Rusiei spre Crimeea și un simbol al războiului; lovitura vine cu trei zile înaintea summitului trilateral de la Shenzhen și în același teatru — Marea Neagră — în care Rusia lovește nave comerciale lângă coasta României. De urmărit: confirmarea oficială a pagubelor și eventuala reacție a Moscovei (escaladare pe navele din Marea Neagră sau pe podurile din Ucraina).</p>
+          </div>
+        </article>
+
+<!-- 2 · 16 nov · 11:00 -->
         <article id="stire-241" data-cats="securitate" data-sev="amber" data-subiect="al treilea portavion SUA">
           <div class="a-meta">
             <span class="a-time">16 nov · 11:00</span>
@@ -857,7 +892,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="spot-tag">Știrea zilei</span>
             <span class="subj-pill">al treilea portavion SUA</span>
-            <span class="a-num">#1 / 5</span>
+            <span class="a-num">#2 / 6</span>
           </div>
           <h2>Al treilea portavion american a ajuns în Orientul Mijlociu — SUA au acum trei grupuri navale în regiune, prima dată din aprilie</h2>
           <div class="sec">
@@ -886,7 +921,7 @@
           </div>
         </article>
 
-        <!-- 2 · 16 nov · 11:00 -->
+        <!-- 3 · 16 nov · 11:00 -->
         <article id="stire-240" data-cats="belgia" data-sev="amber" data-subiect="De Wever raportează regelui">
           <div class="a-meta">
             <span class="a-time">16 nov · 11:00</span>
@@ -894,7 +929,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-220" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">De Wever raportează regelui</span>
-            <span class="a-num">#2 / 5</span>
+            <span class="a-num">#3 / 6</span>
           </div>
           <h2>Criza bugetară belgiană: partidele au picat din nou duminică — doar Vooruit a respins propunerea; De Wever raportează regelui azi, la 11:30</h2>
           <div class="followup">
@@ -927,14 +962,14 @@
           </div>
         </article>
 
-        <!-- 3 · 16 nov · 10:00 -->
+        <!-- 4 · 16 nov · 10:00 -->
         <article id="stire-239" data-cats="securitate tech" data-sev="green" data-subiect="fond €1 mld pentru apărare">
           <div class="a-meta">
             <span class="a-time">16 nov · 10:00</span>
             <span class="a-cat">Securitate &amp; NATO · Tech &amp; AI</span>
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <span class="subj-pill">fond €1 mld pentru apărare</span>
-            <span class="a-num">#3 / 5</span>
+            <span class="a-num">#4 / 6</span>
           </div>
           <h2>Plural, fondul din spatele companiei de apărare AI Helsing, strânge 1 miliard de euro pentru tehnologia europeană de frontieră</h2>
           <div class="sec">
@@ -961,7 +996,7 @@
           </div>
         </article>
 
-        <!-- 4 · 16 nov · 09:00 -->
+        <!-- 5 · 16 nov · 09:00 -->
         <article id="stire-238" data-cats="tech" data-sev="amber" data-subiect="restricții export cipuri AI">
           <div class="a-meta">
             <span class="a-time">16 nov · 09:00</span>
@@ -969,7 +1004,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-213" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">restricții export cipuri AI</span>
-            <span class="a-num">#4 / 5</span>
+            <span class="a-num">#5 / 6</span>
           </div>
           <h2>Congresul SUA avansează restricții mai dure la exportul de cipuri AI către China, după demisia lui Jensen Huang</h2>
           <div class="followup">
@@ -1001,14 +1036,14 @@
           </div>
         </article>
 
-        <!-- 5 · 16 nov · 07:00 -->
+        <!-- 6 · 16 nov · 07:00 -->
         <article id="stire-237" data-cats="securitate" data-sev="amber" data-subiect="Estonia închide granița cu Rusia">
           <div class="a-meta">
             <span class="a-time">16 nov · 07:00</span>
             <span class="a-cat">Securitate &amp; NATO</span>
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="subj-pill">Estonia închide granița cu Rusia</span>
-            <span class="a-num">#5 / 5</span>
+            <span class="a-num">#6 / 6</span>
           </div>
           <h2>Estonia închide de la 1 decembrie toate punctele de trecere a frontierei cu Rusia, după o tentativă de incendiere la producătorul de drone Threod Systems, atribuită de serviciile estone GRU-ului rus</h2>
           <div class="sec">
@@ -5804,8 +5839,8 @@
 
       <footer>
         <div class="rule" aria-hidden="true"></div>
-        <p>Sfârșitul ediției de azi · Ultima actualizare: luni, 16 noiembrie 2026, 10:00<br />Monitorizarea rulează la circa 3 ore, în fereastra L–V 06:00–22:00 · S–D 07:30–22:00 — dă refresh pentru noutăți.</p>
-        <a class="to-top" href="#stire-239">↑ Înapoi la cea mai nouă știre</a>
+        <p>Sfârșitul ediției de azi · Ultima actualizare: luni, 16 noiembrie 2026, 12:00<br />Monitorizarea rulează la circa 3 ore, în fereastra L–V 06:00–22:00 · S–D 07:30–22:00 — dă refresh pentru noutăți.</p>
+        <a class="to-top" href="#stire-242">↑ Înapoi la cea mai nouă știre</a>
       </footer>
     </div>
 
