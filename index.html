@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="color-scheme" content="light dark" />
-    <meta name="tirile-versiune" content="2026-11-16T16:05:00+01:00|9|amber" />
+    <meta name="tirile-versiune" content="2026-11-16T17:00:00+01:00|11|amber" />
     <link rel="icon" href="data:," />
     <title>Știrile zilei</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -699,9 +699,9 @@
     <div class="topbar">
       <div class="topbar-inner">
         <span class="dot" aria-hidden="true"></span>
-        <span><strong>Luni, 16 noiembrie 2026</strong> · actualizat la <strong>16:05</strong></span>
+        <span><strong>Luni, 16 noiembrie 2026</strong> · actualizat la <strong>17:00</strong></span>
         <span aria-hidden="true">·</span>
-        <span>9 știri azi</span>
+        <span>11 știri azi</span>
         <span class="spacer"></span>
         <button class="refresh-btn" type="button" id="refreshBtn" aria-label="Reîmprospătează pagina">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg>
@@ -739,7 +739,7 @@
 
       <!-- Chenar permanent: știrea cea mai importantă a zilei — sub fereastra
            „Ultimele știri", ÎNAINTEA dashboardului, vizibilă din prima, fără scroll.
-           Nivelul de azi: GALBEN (sev-amber) — de urmărit: escaladare activă SUA–Iran — al treilea portavion american a ajuns în Orientul Mijlociu, SUA au acum trei grupuri navale în regiune, prima dată din aprilie, în plin război lansat de Israel și SUA împotriva Iranului, chiar înaintea întâlnirii trilaterale Trump–Putin–Xi de joi, de la Shenzhen; e știrea zilei (marcată ca atare pe cardul de la 11:00), cea mai importantă dintre cele șapte știri cu severitate galbenă ale zilei, deci scriptul adaugă mențiunea „Mai sunt și alte 6 știri cu aceeași severitate". Știrea de la 10:00 (Plural, 1 mld €) e verde și nu schimbă chenarul. Știrile de la 12:00 (Podul Kerci), 14:05 (regele îi mai dă o săptămână lui De Wever) și 16:00 (drone în derivă în Marea Neagră) sunt tot galbene și nu schimbă chenarul; știrea de la 16:00 despre itinerariile AI din Google Maps e verde și nu-l schimbă nici ea.
+           Nivelul de azi: GALBEN (sev-amber) — de urmărit: escaladare activă SUA–Iran — al treilea portavion american a ajuns în Orientul Mijlociu, SUA au acum trei grupuri navale în regiune, prima dată din aprilie, în plin război lansat de Israel și SUA împotriva Iranului, chiar înaintea întâlnirii trilaterale Trump–Putin–Xi de joi, de la Shenzhen; e știrea zilei (marcată ca atare pe cardul de la 11:00), cea mai importantă dintre cele șapte știri cu severitate galbenă ale zilei, deci scriptul adaugă mențiunea „Mai sunt și alte 6 știri cu aceeași severitate". Știrea de la 10:00 (Plural, 1 mld €) e verde și nu schimbă chenarul. Știrile de la 12:00 (Podul Kerci), 14:05 (regele îi mai dă o săptămână lui De Wever) și 16:00 (drone în derivă în Marea Neagră) sunt tot galbene și nu schimbă chenarul; știrea de la 16:00 despre itinerariile AI din Google Maps e verde și nu-l schimbă nici ea. Știrile de la 17:00 (Isărescu: România nu are nevoie de un acord cu FMI; Italia susține aderarea Germaniei la GCAP) sunt tot verzi și nu schimbă chenarul.
            Chenarul rămâne în afara logicii de filtrare: vizibil indiferent de filtrul de categorie. -->
       <section class="spot sev-amber" aria-label="Știrea cea mai importantă a zilei">
         <div class="spot-head">
@@ -768,44 +768,44 @@
       <section class="dashboard" aria-label="Panou de ansamblu">
         <div class="dash-head">
           <span class="dash-title">Dashboard · Azi</span>
-          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 16:05</span>
+          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 17:00</span>
           <span class="dash-meta">Fereastră monitorizare <strong>L–V 06:00–22:00 · S–D 07:30–22:00</strong> · pas ~3 ore</span>
         </div>
 
         <div class="kpi-grid five" role="group" aria-label="Filtrează după categorie — apasă pe un tile">
           <button class="kpi" type="button" data-filter="toate" aria-pressed="true">
             <span class="kpi-top"><span class="kpi-label">Toate știrile</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">9</span>
-            <span class="kpi-sub">9 știri verificate azi, în 7 rulări</span>
+            <span class="kpi-value">11</span>
+            <span class="kpi-sub">știri verificate azi, în 8 rulări</span>
             <span class="kpi-bar" aria-hidden="true"><i style="width:100%"></i></span>
             <span class="kpi-hint">Apasă pentru toate</span>
           </button>
           <button class="kpi" type="button" data-filter="securitate" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">Securitate &amp; NATO</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">5</span>
-            <span class="kpi-sub">drone în derivă în Marea Neagră · lovitură asupra Podului Kerci · al treilea portavion SUA · fond €1 mld pentru apărare · Estonia închide granița cu Rusia</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:56%"></i></span>
+            <span class="kpi-value">6</span>
+            <span class="kpi-sub">Germania în GCAP · drone în derivă în Marea Neagră · lovitură asupra Podului Kerci · al treilea portavion SUA · fond €1 mld pentru apărare · Estonia închide granița cu Rusia</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:55%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="romania" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">România</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">1</span>
-            <span class="kpi-sub">drone în derivă în Marea Neagră</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:11%"></i></span>
+            <span class="kpi-value">2</span>
+            <span class="kpi-sub">România și FMI · drone în derivă în Marea Neagră</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:18%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="belgia" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">Belgia</span><span class="kpi-check" aria-hidden="true">✓</span></span>
             <span class="kpi-value">2</span>
             <span class="kpi-sub">criza bugetară belgiană · De Wever raportează regelui</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:22%"></i></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:18%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="tech" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">Tech &amp; AI</span><span class="kpi-check" aria-hidden="true">✓</span></span>
             <span class="kpi-value">3</span>
             <span class="kpi-sub">itinerarii AI în Google Maps · fond €1 mld pentru apărare · restricții export cipuri AI</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:33%"></i></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:27%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
         </div>
@@ -819,7 +819,7 @@
       </section>
 
       <div class="filter-status" aria-live="polite">
-        <span class="filter-label">Se afișează: <strong>Toate categoriile — 9 din 9 știri</strong></span>
+        <span class="filter-label">Se afișează: <strong>Toate categoriile — 11 din 11 știri</strong></span>
         <button class="filter-reset" type="button" hidden>Resetează filtrul</button>
       </div>
 
@@ -849,7 +849,89 @@
       <p class="empty">Nicio știre în această categorie azi.</p>
 
       <main>
-        <!-- 1 · 16 nov · 16:00 -->
+        <!-- 1 · 16 nov · 17:00 -->
+        <article id="stire-247" data-cats="romania" data-sev="green" data-subiect="România și FMI">
+          <div class="a-meta">
+            <span class="a-time">16 nov · 17:00</span>
+            <span class="a-cat">România</span>
+            <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
+            <a class="cont-pill" href="#stire-192" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
+            <span class="subj-pill">România și FMI</span>
+            <span class="a-num">#1 / 11</span>
+          </div>
+          <h2>Isărescu: România nu are nevoie de un acord cu FMI — nu traversează o criză valutară</h2>
+          <div class="followup">
+            <span class="tag">Urmare la</span>
+            <p><a href="#stire-192">„Nazare: România nu e în situația unui acord cu FMI, dar rămâne «pe sârmă» la rating — examenele decisive vin în ianuarie, februarie și martie 2027” — vineri, 13 noiembrie 2026, ora 06:00.</a> (Continuarea directă a firului FMI/rating urmărit în pagină: după ministrul Finanțelor, și guvernatorul BNR respinge un acord cu FMI — dar condiționat de credibilitatea externă a țării.)</p>
+          </div>
+          <div class="sec">
+            <p class="sec-label">Ce s-a întâmplat</p>
+            <p>Guvernatorul BNR, Mugur Isărescu, a declarat luni, 16 noiembrie, la prezentarea Raportului asupra inflației, că România nu are nevoie de un acord de finanțare cu FMI, pentru că nu traversează o criză valutară și dispune de rezerve. „Fondul vine când avem o criză valutară și nu avem rezerve. Nu e cazul României”, a spus el, adăugând că țara are nevoie de bani din investiții străine, fonduri europene și împrumuturi de pe piețele de capital, iar un acord cu FMI ar deveni relevant doar dacă credibilitatea externă a țării s-ar deteriora. Tot la prezentarea raportului, Isărescu a arătat că inflația a scăzut puternic în trimestrul al treilea, dar prețurile energiei rămân o presiune.</p>
+          </div>
+          <div class="sec">
+            <p class="sec-label">De ce contează</p>
+            <p>România tocmai a ieșit din șase luni de criză guvernamentală, iar noul guvern a spus că e „foarte la limită” la trei agenții de rating; declarația guvernatorului BNR e un semnal de calmare pe tema FMI, dar condiționat de respectarea țintelor de deficit convenite cu Comisia Europeană. Relevant pentru expunerile din România (investiția recurentă în TVBETETF, apartamentul din București) și pentru contextul fiscal în care se pregătește bugetul 2027.</p>
+          </div>
+          <div class="verify">
+            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
+            <p>Verdict: confirmat — declarația guvernatorului BNR, Mugur Isărescu, de la prezentarea Raportului asupra inflației (luni, 16 noiembrie), e relatată independent de Forbes.ro (16 nov 2026, 14:19), New Money (16 nov 2026, citând News.ro) și Știri Clare (16 nov 2026); Ziarul Financiar a relatat de asemenea declarația (relatat de craiova.ro, 16 nov 2026). Declarația e a guvernatorului BNR, sursă primară.</p>
+            <ul class="sources">
+              <li><a href="https://www.forbes.ro/isarescu-un-acord-cu-fmi-nu-este-necesar-acum-dar-romania-trebuie-sa-si-protejeze-accesul-la-finantarea-externa-531897" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Forbes.ro — „Isărescu: Un acord cu FMI nu este necesar acum, dar România trebuie să-și protejeze accesul la finanțarea externă” (16 nov 2026, 14:19)<span class="host">forbes.ro</span></a></li>
+              <li><a href="https://newmoney.ro/mugur-isarescu-guvernatorul-bnr-fmi-vine-cand-avem-o-criza-valutara-si-nu-avem-rezerve-nu-e-cazul-romaniei/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>New Money — „Mugur Isărescu, guvernatorul BNR: FMI vine când avem o criză valutară şi nu avem rezerve. Nu e cazul României” (16 nov 2026, citând News.ro)<span class="host">newmoney.ro</span></a></li>
+              <li><a href="https://stiriclare.ro/ro/mugur-isarescu-respinge-un-acord-cu-fmi-romania-nu-are-o-criza.html" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Știri Clare — „Mugur Isărescu respinge un acord cu FMI: România nu are o criză” (16 nov 2026)<span class="host">stiriclare.ro</span></a></li>
+            </ul>
+          </div>
+          <div class="opposing">
+            <p class="sec-label">Tabăra adversă</p>
+            <p>Președintele Nicușor Dan a avertizat pe 10 noiembrie că România riscă să ajungă din nou la FMI dacă nu-și respectă traiectoria de deficit — vezi cardul din 10 noiembrie: <a href="#stire-150">„Nicușor Dan avertizează că România riscă să ajungă din nou la FMI dacă nu-și respectă traiectoria de deficit; ratingul de țară e la limită”</a>.</p>
+          </div>
+          <div class="impact">
+            <span class="badge">Impact direct</span>
+            <p>Impact direct minim azi — nicio decizie de luat; relevanță de context. De urmărit: examenele de rating din ianuarie, februarie și martie 2027 (din cardul din 13 noiembrie).</p>
+          </div>
+        </article>
+
+        <!-- 2 · 16 nov · 17:00 -->
+        <article id="stire-246" data-cats="securitate" data-sev="green" data-subiect="Germania în GCAP">
+          <div class="a-meta">
+            <span class="a-time">16 nov · 17:00</span>
+            <span class="a-cat">Securitate &amp; NATO</span>
+            <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
+            <a class="cont-pill" href="#stire-208" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
+            <span class="subj-pill">Germania în GCAP</span>
+            <span class="a-num">#2 / 11</span>
+          </div>
+          <h2>Italia susține aderarea rapidă a Germaniei la programul avionului de luptă GCAP — după ce presa a scris că Roma o blochează</h2>
+          <div class="followup">
+            <span class="tag">Urmare la</span>
+            <p><a href="#stire-208">„Italia crește cheltuielile pentru avionul de luptă GCAP la 875 mil. € în 2026 și taie din tancuri și blindate; Germania ia în calcul să se alăture” — vineri, 13 noiembrie 2026, ora 19:00.</a> (Continuarea directă: după ce Germania lua în calcul să se alăture programului, Roma dezminte că ar bloca aderarea și spune că o susține pe deplin.)</p>
+          </div>
+          <div class="sec">
+            <p class="sec-label">Ce s-a întâmplat</p>
+            <p>Ministerul italian al Apărării a dezmințit luni, 16 noiembrie, relatarea Financial Times de sâmbătă, potrivit căreia Italia s-ar opune aderării Germaniei la GCAP — programul britanico-italo-japonez pentru un avion de luptă de generația a șasea, cu intrare în serviciu vizată în 2035. Roma spune că susține pe deplin aderarea Germaniei și că a propus statutul de observator doar ca pas rapid de partajare a informațiilor spre aderarea deplină, nu ca blocaj. Germania caută un nou program după prăbușirea proiectului comun cu Franța (FCAS), iar ministrul german al apărării, Boris Pistorius, vrea o decizie până la sfârșitul lui martie; Italia a cheltuit 875 mil. € pe dezvoltarea GCAP în 2026, iar în iulie partenerii au atribuit un contract de dezvoltare de 4,6 mld. £.</p>
+          </div>
+          <div class="sec">
+            <p class="sec-label">De ce contează</p>
+            <p>Germania, cea mai mare armată europeană din NATO, își caută locul într-un program de avion de generația a șasea după eșecul FCAS; felul în care se reașază cooperarea europeană în apărare — cine construiește, cine plătește, cine decide — modelează industria de apărare aliată pentru deceniile următoare.</p>
+          </div>
+          <div class="verify">
+            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
+            <p>Verdict: confirmat — dezmințirea Ministerului italian al Apărării și susținerea aderării rapide a Germaniei la GCAP sunt relatate de Defense News (16 nov 2026, 14:37 UTC) și de Reuters (relatare 14–16 nov, preluată de London Daily News și NewsGovur); relatarea inițială a Financial Times (14 nov 2026, trei surse apropiate discuțiilor) stă la baza dezmințirii italiene.</p>
+            <ul class="sources">
+              <li><a href="https://www.defensenews.com/global/europe/2026/11/16/italy-backs-rapid-german-membership-path-into-gcap-fighter-program/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Defense News — „Italy backs rapid German membership path into GCAP fighter program” (16 nov 2026, 14:37 UTC)<span class="host">defensenews.com</span></a></li>
+            </ul>
+          </div>
+          <div class="opposing">
+            <p class="sec-label">Tabăra adversă</p>
+            <p>Berlinul vrea membru cu drepturi depline și consideră oferta de observator insuficientă — un oficial german a numit-o „inacceptabilă” (Financial Times, 14 nov 2026).</p>
+          </div>
+          <div class="impact">
+            <span class="badge">Impact direct</span>
+            <p>Impact direct minim — relevanță de context. De urmărit: decizia Germaniei până la sfârșitul lui martie 2027.</p>
+          </div>
+        </article>
+
+        <!-- 3 · 16 nov · 16:00 -->
         <article id="stire-245" data-cats="securitate romania" data-sev="amber" data-subiect="drone în derivă în Marea Neagră">
           <div class="a-meta">
             <span class="a-time">16 nov · 16:00</span>
@@ -857,7 +939,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-232" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">drone în derivă în Marea Neagră</span>
-            <span class="a-num">#1 / 9</span>
+            <span class="a-num">#3 / 11</span>
           </div>
           <h2>Două drone în derivă în Marea Neagră, lângă Mangalia și Sfântu Gheorghe — scafandrii EOD intervin azi pentru evaluare pirotehnică</h2>
           <div class="followup">
@@ -887,14 +969,14 @@
           </div>
         </article>
 
-        <!-- 2 · 16 nov · 16:00 -->
+        <!-- 4 · 16 nov · 16:00 -->
         <article id="stire-244" data-cats="tech" data-sev="green" data-subiect="itinerarii AI în Google Maps">
           <div class="a-meta">
             <span class="a-time">16 nov · 16:00</span>
             <span class="a-cat">Tech &amp; AI</span>
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <span class="subj-pill">itinerarii AI în Google Maps</span>
-            <span class="a-num">#2 / 9</span>
+            <span class="a-num">#4 / 11</span>
           </div>
           <h2>Google Maps primește itinerarii AI: Ask Maps planifică excursii și drumuri, cu detalii în timp real la fiecare oprire</h2>
           <div class="sec">
@@ -920,7 +1002,7 @@
           </div>
         </article>
 
-        <!-- 3 · 16 nov · 14:05 -->
+        <!-- 5 · 16 nov · 14:05 -->
         <article id="stire-243" data-cats="belgia" data-sev="amber" data-subiect="criza bugetară belgiană">
           <div class="a-meta">
             <span class="a-time">16 nov · 14:05</span>
@@ -928,7 +1010,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-240" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">criza bugetară belgiană</span>
-            <span class="a-num">#3 / 9</span>
+            <span class="a-num">#5 / 11</span>
           </div>
           <h2>Regele îi mai dă o săptămână lui De Wever pentru bugetul 2027 — fără acord, raport înapoi pe 23 noiembrie</h2>
           <div class="followup">
@@ -961,14 +1043,14 @@
           </div>
         </article>
 
-        <!-- 4 · 16 nov · 12:00 -->
+        <!-- 6 · 16 nov · 12:00 -->
         <article id="stire-242" data-cats="securitate" data-sev="amber" data-subiect="lovitură asupra Podului Kerci">
           <div class="a-meta">
             <span class="a-time">16 nov · 12:00</span>
             <span class="a-cat">Securitate &amp; NATO</span>
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="subj-pill">lovitură asupra Podului Kerci</span>
-            <span class="a-num">#4 / 9</span>
+            <span class="a-num">#6 / 11</span>
           </div>
           <h2>Ucraina a lovit Podul Kerci într-o salvă de peste 1.300 de drone — traficul spre Crimeea, suspendat până la prânz</h2>
           <div class="sec">
@@ -996,7 +1078,7 @@
           </div>
         </article>
 
-<!-- 5 · 16 nov · 11:00 -->
+<!-- 7 · 16 nov · 11:00 -->
         <article id="stire-241" data-cats="securitate" data-sev="amber" data-subiect="al treilea portavion SUA">
           <div class="a-meta">
             <span class="a-time">16 nov · 11:00</span>
@@ -1004,7 +1086,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="spot-tag">Știrea zilei</span>
             <span class="subj-pill">al treilea portavion SUA</span>
-            <span class="a-num">#5 / 9</span>
+            <span class="a-num">#7 / 11</span>
           </div>
           <h2>Al treilea portavion american a ajuns în Orientul Mijlociu — SUA au acum trei grupuri navale în regiune, prima dată din aprilie</h2>
           <div class="sec">
@@ -1033,7 +1115,7 @@
           </div>
         </article>
 
-        <!-- 6 · 16 nov · 11:00 -->
+        <!-- 8 · 16 nov · 11:00 -->
         <article id="stire-240" data-cats="belgia" data-sev="amber" data-subiect="De Wever raportează regelui">
           <div class="a-meta">
             <span class="a-time">16 nov · 11:00</span>
@@ -1041,7 +1123,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-220" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">De Wever raportează regelui</span>
-            <span class="a-num">#6 / 9</span>
+            <span class="a-num">#8 / 11</span>
           </div>
           <h2>Criza bugetară belgiană: partidele au picat din nou duminică — doar Vooruit a respins propunerea; De Wever raportează regelui azi, la 11:30</h2>
           <div class="followup">
@@ -1074,14 +1156,14 @@
           </div>
         </article>
 
-        <!-- 7 · 16 nov · 10:00 -->
+        <!-- 9 · 16 nov · 10:00 -->
         <article id="stire-239" data-cats="securitate tech" data-sev="green" data-subiect="fond €1 mld pentru apărare">
           <div class="a-meta">
             <span class="a-time">16 nov · 10:00</span>
             <span class="a-cat">Securitate &amp; NATO · Tech &amp; AI</span>
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <span class="subj-pill">fond €1 mld pentru apărare</span>
-            <span class="a-num">#7 / 9</span>
+            <span class="a-num">#9 / 11</span>
           </div>
           <h2>Plural, fondul din spatele companiei de apărare AI Helsing, strânge 1 miliard de euro pentru tehnologia europeană de frontieră</h2>
           <div class="sec">
@@ -1108,7 +1190,7 @@
           </div>
         </article>
 
-        <!-- 8 · 16 nov · 09:00 -->
+        <!-- 10 · 16 nov · 09:00 -->
         <article id="stire-238" data-cats="tech" data-sev="amber" data-subiect="restricții export cipuri AI">
           <div class="a-meta">
             <span class="a-time">16 nov · 09:00</span>
@@ -1116,7 +1198,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-213" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">restricții export cipuri AI</span>
-            <span class="a-num">#8 / 9</span>
+            <span class="a-num">#10 / 11</span>
           </div>
           <h2>Congresul SUA avansează restricții mai dure la exportul de cipuri AI către China, după demisia lui Jensen Huang</h2>
           <div class="followup">
@@ -1148,14 +1230,14 @@
           </div>
         </article>
 
-        <!-- 9 · 16 nov · 07:00 -->
+        <!-- 11 · 16 nov · 07:00 -->
         <article id="stire-237" data-cats="securitate" data-sev="amber" data-subiect="Estonia închide granița cu Rusia">
           <div class="a-meta">
             <span class="a-time">16 nov · 07:00</span>
             <span class="a-cat">Securitate &amp; NATO</span>
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="subj-pill">Estonia închide granița cu Rusia</span>
-            <span class="a-num">#9 / 9</span>
+            <span class="a-num">#11 / 11</span>
           </div>
           <h2>Estonia închide de la 1 decembrie toate punctele de trecere a frontierei cu Rusia, după o tentativă de incendiere la producătorul de drone Threod Systems, atribuită de serviciile estone GRU-ului rus</h2>
           <div class="sec">
