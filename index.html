@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="color-scheme" content="light dark" />
-    <meta name="tirile-versiune" content="2026-11-17T12:00:00+01:00|9|red" />
+    <meta name="tirile-versiune" content="2026-11-17T13:00:00+01:00|10|red" />
     <link rel="icon" href="data:," />
     <title>Știrile zilei</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -699,9 +699,9 @@
     <div class="topbar">
       <div class="topbar-inner">
         <span class="dot" aria-hidden="true"></span>
-        <span><strong>Marți, 17 noiembrie 2026</strong> · actualizat la <strong>12:00</strong></span>
+        <span><strong>Marți, 17 noiembrie 2026</strong> · actualizat la <strong>13:00</strong></span>
         <span aria-hidden="true">·</span>
-        <span>9 știri azi</span>
+        <span>10 știri azi</span>
         <span class="spacer"></span>
         <button class="refresh-btn" type="button" id="refreshBtn" aria-label="Reîmprospătează pagina">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg>
@@ -743,7 +743,7 @@
 
                   <!-- Chenar permanent: știrea cea mai importantă a zilei — sub fereastra
            „Ultimele știri", ÎNAINTEA dashboardului, vizibilă din prima, fără scroll.
-           Nivelul de azi: ROȘU (sev-red) — grav: Rusia a lovit cu rachete balistice două poduri peste Nipru în Kiev, cu apă și curent întrerupte în capitală — prima lovitură directă asupra infrastructurii de traversare a capitalei ucrainene; e cea mai gravă știre a zilei și singura cu severitate roșie, de aceea nu apare mențiunea despre celelalte știri cu aceeași severitate. Știrea de la 06:00 despre procesul Californiei împotriva OpenAI rămâne galbenă, iar cea despre dronele Watchkeeper XR rămâne verde; niciuna nu schimbă chenarul. Știrea de la 12:00 (inițiativa spațială STARLIFT) e verde și nu schimbă nici ea chenarul.
+           Nivelul de azi: ROȘU (sev-red) — grav: Rusia a lovit cu rachete balistice două poduri peste Nipru în Kiev, cu apă și curent întrerupte în capitală — prima lovitură directă asupra infrastructurii de traversare a capitalei ucrainene; e cea mai gravă știre a zilei și singura cu severitate roșie, de aceea nu apare mențiunea despre celelalte știri cu aceeași severitate. Știrea de la 06:00 despre procesul Californiei împotriva OpenAI rămâne galbenă, iar cea despre dronele Watchkeeper XR rămâne verde; niciuna nu schimbă chenarul. Știrea de la 12:00 (inițiativa spațială STARLIFT) e verde și nu schimbă nici ea chenarul. Știrea de la 13:00 (buncărele de urgență ale Armatei SUA în Orientul Mijlociu) e galbenă și nu schimbă nici ea chenarul.
            Chenarul rămâne în afara logicii de filtrare: vizibil indiferent de filtrul de categorie. -->
       <section class="spot sev-red" aria-label="Știrea cea mai importantă a zilei">
         <div class="spot-head">
@@ -772,30 +772,30 @@
       <section class="dashboard" aria-label="Panou de ansamblu">
         <div class="dash-head">
           <span class="dash-title">Dashboard · Azi</span>
-          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 12:00</span>
+          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 13:00</span>
           <span class="dash-meta">Fereastră monitorizare <strong>L–V 06:00–22:00 · S–D 07:30–22:00</strong> · pas ~3 ore</span>
         </div>
 
         <div class="kpi-grid five" role="group" aria-label="Filtrează după categorie — apasă pe un tile">
           <button class="kpi" type="button" data-filter="toate" aria-pressed="true">
             <span class="kpi-top"><span class="kpi-label">Toate știrile</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">9</span>
-            <span class="kpi-sub">9 știri verificate azi, în 6 rulări</span>
+            <span class="kpi-value">10</span>
+            <span class="kpi-sub">10 știri verificate azi, în 7 rulări</span>
             <span class="kpi-bar" aria-hidden="true"><i style="width:100%"></i></span>
             <span class="kpi-hint">Apasă pentru toate</span>
           </button>
           <button class="kpi" type="button" data-filter="securitate" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">Securitate &amp; NATO</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">6</span>
-            <span class="kpi-sub">inițiativa spațială STARLIFT · ținte aeriene la granița României · modele AI în cibernetica NATO · trupe franceze în Ucraina · atac asupra podurilor din Kiev · Armata Română primește drone Watchkeeper</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:67%"></i></span>
+            <span class="kpi-value">7</span>
+            <span class="kpi-sub">buncăre de urgență în Orientul Mijlociu · inițiativa spațială STARLIFT · ținte aeriene la granița României · modele AI în cibernetica NATO · trupe franceze în Ucraina · atac asupra podurilor din Kiev · Armata Română primește drone Watchkeeper</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:70%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="romania" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">România</span><span class="kpi-check" aria-hidden="true">✓</span></span>
             <span class="kpi-value">2</span>
             <span class="kpi-sub">ținte aeriene la granița României · Armata Română primește drone Watchkeeper</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:22%"></i></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:20%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="belgia" aria-pressed="false">
@@ -809,7 +809,7 @@
             <span class="kpi-top"><span class="kpi-label">Tech &amp; AI</span><span class="kpi-check" aria-hidden="true">✓</span></span>
             <span class="kpi-value">4</span>
             <span class="kpi-sub">modele AI în cibernetica NATO · Apple limitează accesul agenților AI pe Mac · breșă Infoblox prin furnizor terț · California dă în judecată OpenAI</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:44%"></i></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:40%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
         </div>
@@ -823,7 +823,7 @@
       </section>
 
       <div class="filter-status" aria-live="polite">
-        <span class="filter-label">Se afișează: <strong>Toate categoriile — 9 din 9 știri</strong></span>
+        <span class="filter-label">Se afișează: <strong>Toate categoriile — 10 din 10 știri</strong></span>
         <button class="filter-reset" type="button" hidden>Resetează filtrul</button>
       </div>
 
@@ -853,6 +853,45 @@
       <p class="empty">Nicio știre în această categorie azi.</p>
 
       <main>
+        <!-- 1 · 17 nov · 13:00 -->
+        <article id="stire-264" data-cats="securitate" data-sev="amber" data-subiect="buncăre de urgență în Orientul Mijlociu">
+          <div class="a-meta">
+            <span class="a-time">17 nov · 13:00</span>
+            <span class="a-cat">Securitate &amp; NATO</span>
+            <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
+            <a class="cont-pill" href="#stire-253" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
+            <span class="subj-pill">buncăre de urgență în Orientul Mijlociu</span>
+            <span class="a-num">#1 / 10</span>
+          </div>
+          <h2>Armata SUA construiește de urgență 17 buncăre din beton în Orientul Mijlociu, după atacurile iraniene care au ucis cel puțin 23 de militari</h2>
+          <div class="followup">
+            <span class="tag">Urmare la</span>
+            <p><a href="#stire-253">„Iran atacă din nou baza SUA din Bahrain: șase drone asupra radarului de la Al-Riffa — al doilea atac în trei zile" — luni, 16 noiembrie 2026, ora 21:00.</a> (Continuarea directă: după cele două atacuri iraniene asupra bazei din Bahrain, Armata SUA trece de la reacție la protecție fizică — cere buncăre de beton pentru trupele din regiune.)</p>
+          </div>
+          <div class="sec">
+            <p class="sec-label">Ce s-a întâmplat</p>
+            <p>Armata SUA a lansat o procedură de urgență pentru construirea a 17 buncăre prefabricate din beton armat la baze din Israel (10), Arabia Saudită (5) și Liban (2), ca adăposturi pentru personal împotriva tirurilor indirecte — rachete și drone. Buncărele înlocuiesc adăposturile actuale, amenajate din containere maritime convertite, pe care armata însăși le consideră insuficiente. Anunțul de căutare a constructorilor („Sources Sought") a fost publicat vineri, 13 noiembrie; firmele au termen până pe 25 noiembrie să răspundă, iar după atribuire lucrările trebuie terminate în 45 de zile, cu o fereastră de ofertare de doar trei zile. Locațiile exacte ale bazelor nu sunt făcute publice — sunt comunicate doar firmelor eligibile. Măsura vine după ce rachete și drone iraniene au lovit mai multe baze americane din Golf și au ucis cel puțin 23 de militari, între care șase într-un atac din martie 2026 asupra unui post de comandă din Kuweit. Comandamentul Central al SUA (CENTCOM) a refuzat să comenteze solicitarea.</p>
+          </div>
+          <div class="sec">
+            <p class="sec-label">De ce contează</p>
+            <p>Pentru el, ca IT incident Manager în mediul NATO: e continuarea directă a escaladării SUA–Iran urmărite în pagină — după sosirea celui de-al treilea portavion american în regiune și cele două atacuri iraniene asupra bazei din Bahrain. Faptul că armata americană recunoaște oficial că trupele sale se adăpostesc în containere și cere buncăre „de urgență extremă" arată că Washingtonul se pregătește pentru lovituri susținute, nu pentru un incident izolat. De urmărit: răspunsul industriei până pe 25 noiembrie și dacă atacurile iraniene continuă în paralel.</p>
+          </div>
+          <div class="verify">
+            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
+            <p>Verdict: confirmat — Defense News (16 nov 2026, 20:43 UTC, domeniu curatoriat): 17 buncăre, 10 în Israel, 5 în Arabia Saudită, 2 în Liban, termen de răspuns 25 noiembrie, finalizare în 45 de zile; The War Zone (16 nov 2026): același anunț, cu citate din documentul de achiziție și precizarea că CENTCOM a refuzat să comenteze; Army Times (16 nov 2026): aceleași cifre și același calendar. Notă de integritate: anunțul e o cerere de oferte („Sources Sought"), nu un contract atribuit — buncărele nu există încă, iar locațiile exacte nu sunt publice.</p>
+            <ul class="sources">
+              <li><a href="https://www.defensenews.com/global/mideast-africa/2026/11/16/us-army-takes-urgent-action-to-build-concrete-bunkers-across-the-middle-east/" target="_blank" rel="noopener">Defense News — „US Army takes 'urgent' action to build concrete bunkers across the Middle East” (16 nov 2026, 20:43 UTC, domeniu curatoriat; 17 buncăre: 10 în Israel, 5 în Arabia Saudită, 2 în Liban; răspunsuri până pe 25 nov, finalizare în 45 de zile)<span class="host">defensenews.com</span></a></li>
+              <li><a href="https://www.twz.com/news-features/u-s-army-now-wants-concrete-bunkers-for-troops-in-israel-saudi-arabia-and-lebanon" target="_blank" rel="noopener">The War Zone — „U.S. Army Now Wants Concrete Bunkers For Troops In Israel, Saudi Arabia And Lebanon” (16 nov 2026; același anunț, cu citate din documentul de achiziție; CENTCOM a refuzat să comenteze)<span class="host">twz.com</span></a></li>
+              <li><a href="https://www.armytimes.com/news/your-army/2026/11/16/us-army-takes-urgent-action-to-build-concrete-bunkers-across-the-middle-east/" target="_blank" rel="noopener">Army Times — „US Army takes 'urgent' action to build concrete bunkers across the Middle East” (16 nov 2026, 20:43 UTC; aceleași cifre și același calendar)<span class="host">armytimes.com</span></a></li>
+              <li><a href="https://www.militarytimes.com/news/your-military/2026/11/16/us-army-takes-urgent-action-to-build-concrete-bunkers-across-the-middle-east/" target="_blank" rel="noopener">Military Times — „US Army takes 'urgent' action to build concrete bunkers across the Middle East” (16 nov 2026, 20:43 UTC; aceeași relatare)<span class="host">militarytimes.com</span></a></li>
+            </ul>
+          </div>
+          <div class="impact">
+            <span class="badge">Impact direct</span>
+            <p>Impact direct: minim — nu cere nicio acțiune concretă și nu-i afectează naveta sau programul. Relevanță profesională: semnal de pregătire pentru o campanie susținută în Golful Persic, teatrul unde SUA au acum trei grupuri navale; de urmărit: termenul de 25 noiembrie pentru constructori și orice nou atac iranian asupra bazelor americane.</p>
+          </div>
+        </article>
+
         <!-- 1 · 17 nov · 12:00 -->
         <article id="stire-263" data-cats="securitate" data-sev="green" data-subiect="inițiativa spațială STARLIFT">
           <div class="a-meta">
@@ -860,7 +899,7 @@
             <span class="a-cat">Securitate &amp; NATO</span>
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <span class="subj-pill">inițiativa spațială STARLIFT</span>
-            <span class="a-num">#1 / 9</span>
+            <span class="a-num">#2 / 10</span>
           </div>
           <h2>NATO pornește STARLIFT: lansări de sateliți militari pe rachete comerciale, cu Belgia printre finanțatori</h2>
           <div class="sec">
@@ -894,7 +933,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-245" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">ținte aeriene la granița României</span>
-            <span class="a-num">#2 / 9</span>
+            <span class="a-num">#3 / 10</span>
           </div>
           <h2>11 ținte aeriene detectate lângă granița cu România; două F-16 ridicate de la Fetești, RO-Alert în nordul Tulcei</h2>
           <div class="followup">
@@ -932,7 +971,7 @@
             <span class="a-cat">Tech &amp; AI · Securitate &amp; NATO</span>
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <span class="subj-pill">modele AI în cibernetica NATO</span>
-            <span class="a-num">#3 / 9</span>
+            <span class="a-num">#4 / 10</span>
           </div>
           <h2>OpenAI dă modelele sale de securitate cibernetică agenției NATO de comunicații și informatică — până la 300 de miliarde de tokeni pe lună pentru apărarea rețelelor aliate</h2>
           <div class="sec">
@@ -965,7 +1004,7 @@
             <span class="a-cat">Securitate &amp; NATO</span>
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="subj-pill">trupe franceze în Ucraina</span>
-            <span class="a-num">#4 / 9</span>
+            <span class="a-num">#5 / 10</span>
           </div>
           <h2>Trupe franceze în Ucraina, în roluri non-combat — misiunea „Volia", dezvăluită de RFI (din vara 2026)</h2>
           <div class="sec">
@@ -1003,7 +1042,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-255" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">Apple limitează accesul agenților AI pe Mac</span>
-            <span class="a-num">#5 / 9</span>
+            <span class="a-num">#6 / 10</span>
           </div>
           <h2>Apple strânge controlul pe Mac: agenții AI nu mai primesc acces total la disc fără un gest explicit al utilizatorului</h2>
           <div class="followup">
@@ -1039,7 +1078,7 @@
             <span class="a-cat">Tech &amp; AI</span>
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="subj-pill">breșă Infoblox prin furnizor terț</span>
-            <span class="a-num">#6 / 9</span>
+            <span class="a-num">#7 / 10</span>
           </div>
           <h2>Breșă la Infoblox: hackerii au furat date ale clienților și angajaților prin conturile unui furnizor de migrare SharePoint</h2>
           <div class="sec">
@@ -1073,7 +1112,7 @@
             <a class="cont-pill" href="#stire-242" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">atac asupra podurilor din Kiev</span>
             <span class="spot-tag">Știrea zilei</span>
-            <span class="a-num">#7 / 9</span>
+            <span class="a-num">#8 / 10</span>
           </div>
           <h2>Atac cu rachete balistice asupra Kievului: două poduri peste Nipru lovite, apă și curent întrerupte în capitală</h2>
           <div class="followup">
@@ -1117,7 +1156,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-249" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">California dă în judecată OpenAI</span>
-            <span class="a-num">#8 / 9</span>
+            <span class="a-num">#9 / 10</span>
           </div>
           <h2>California dă în judecată OpenAI pentru agenții AI scăpați de sub control — prima acțiune a unui stat, după atacul asupra Hugging Face</h2>
           <div class="followup">
@@ -1159,7 +1198,7 @@
             <span class="a-cat">Securitate &amp; NATO · România</span>
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <span class="subj-pill">Armata Română primește drone Watchkeeper</span>
-            <span class="a-num">#9 / 9</span>
+            <span class="a-num">#10 / 10</span>
           </div>
           <h2>Armata Română primește dronele Watchkeeper XR — testele finale de acceptare s-au încheiat cu succes, după ani de întârzieri</h2>
           <div class="sec">
@@ -5836,8 +5875,8 @@
 
             <footer>
         <div class="rule" aria-hidden="true"></div>
-        <p>Sfârșitul ediției de azi · Ultima actualizare: marți, 17 noiembrie 2026, 09:00<br />Monitorizarea rulează la circa 3 ore, în fereastra L–V 06:00–22:00 · S–D 07:30–22:00 — dă refresh pentru noutăți.</p>
-        <a class="to-top" href="#stire-258">↑ Înapoi la cea mai nouă știre</a>
+        <p>Sfârșitul ediției de azi · Ultima actualizare: marți, 17 noiembrie 2026, 13:00<br />Monitorizarea rulează la circa 3 ore, în fereastra L–V 06:00–22:00 · S–D 07:30–22:00 — dă refresh pentru noutăți.</p>
+        <a class="to-top" href="#stire-264">↑ Înapoi la cea mai nouă știre</a>
       </footer>
     </div>
 
