@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="color-scheme" content="light dark" />
-    <meta name="tirile-versiune" content="2026-11-17T08:00:00+01:00|3|red" />
+    <meta name="tirile-versiune" content="2026-11-17T09:00:00+01:00|5|red" />
     <link rel="icon" href="data:," />
     <title>Știrile zilei</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -699,9 +699,9 @@
     <div class="topbar">
       <div class="topbar-inner">
         <span class="dot" aria-hidden="true"></span>
-        <span><strong>Marți, 17 noiembrie 2026</strong> · actualizat la <strong>08:00</strong></span>
+        <span><strong>Marți, 17 noiembrie 2026</strong> · actualizat la <strong>09:00</strong></span>
         <span aria-hidden="true">·</span>
-        <span>3 știri azi</span>
+        <span>5 știri azi</span>
         <span class="spacer"></span>
         <button class="refresh-btn" type="button" id="refreshBtn" aria-label="Reîmprospătează pagina">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg>
@@ -772,15 +772,15 @@
       <section class="dashboard" aria-label="Panou de ansamblu">
         <div class="dash-head">
           <span class="dash-title">Dashboard · Azi</span>
-          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 08:00</span>
+          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 09:00</span>
           <span class="dash-meta">Fereastră monitorizare <strong>L–V 06:00–22:00 · S–D 07:30–22:00</strong> · pas ~3 ore</span>
         </div>
 
         <div class="kpi-grid five" role="group" aria-label="Filtrează după categorie — apasă pe un tile">
           <button class="kpi" type="button" data-filter="toate" aria-pressed="true">
             <span class="kpi-top"><span class="kpi-label">Toate știrile</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">3</span>
-            <span class="kpi-sub">3 știri verificate azi, în 2 rulări</span>
+            <span class="kpi-value">5</span>
+            <span class="kpi-sub">5 știri verificate azi, în 3 rulări</span>
             <span class="kpi-bar" aria-hidden="true"><i style="width:100%"></i></span>
             <span class="kpi-hint">Apasă pentru toate</span>
           </button>
@@ -788,14 +788,14 @@
             <span class="kpi-top"><span class="kpi-label">Securitate &amp; NATO</span><span class="kpi-check" aria-hidden="true">✓</span></span>
             <span class="kpi-value">2</span>
             <span class="kpi-sub">atac asupra podurilor din Kiev · Armata Română primește drone Watchkeeper</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:67%"></i></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:40%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="romania" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">România</span><span class="kpi-check" aria-hidden="true">✓</span></span>
             <span class="kpi-value">1</span>
             <span class="kpi-sub">Armata Română primește drone Watchkeeper</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:33%"></i></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:20%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="belgia" aria-pressed="false">
@@ -807,9 +807,9 @@
           </button>
           <button class="kpi" type="button" data-filter="tech" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">Tech &amp; AI</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">1</span>
-            <span class="kpi-sub">California dă în judecată OpenAI</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:33%"></i></span>
+            <span class="kpi-value">3</span>
+            <span class="kpi-sub">Apple limitează accesul agenților AI pe Mac · breșă Infoblox prin furnizor terț · California dă în judecată OpenAI</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:60%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
         </div>
@@ -823,7 +823,7 @@
       </section>
 
       <div class="filter-status" aria-live="polite">
-        <span class="filter-label">Se afișează: <strong>Toate categoriile — 3 din 3 știri</strong></span>
+        <span class="filter-label">Se afișează: <strong>Toate categoriile — 5 din 5 știri</strong></span>
         <button class="filter-reset" type="button" hidden>Resetează filtrul</button>
       </div>
 
@@ -853,7 +853,76 @@
       <p class="empty">Nicio știre în această categorie azi.</p>
 
       <main>
-        <!-- 1 · 17 nov · 08:00 -->
+        <!-- 1 · 17 nov · 09:00 -->
+        <article id="stire-258" data-cats="tech" data-sev="amber" data-subiect="Apple limitează accesul agenților AI pe Mac">
+          <div class="a-meta">
+            <span class="a-time">17 nov · 09:00</span>
+            <span class="a-cat">Tech &amp; AI</span>
+            <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
+            <a class="cont-pill" href="#stire-255" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
+            <span class="subj-pill">Apple limitează accesul agenților AI pe Mac</span>
+            <span class="a-num">#1 / 5</span>
+          </div>
+          <h2>Apple strânge controlul pe Mac: agenții AI nu mai primesc acces total la disc fără un gest explicit al utilizatorului</h2>
+          <div class="followup">
+            <span class="tag">Urmare la</span>
+            <p><a href="#stire-255">„California dă în judecată OpenAI pentru agenții AI scăpați de sub control" — marți, 17 noiembrie 2026, ora 06:00.</a> (Continuarea directă a arcului agenților AI scăpați de sub control: după procesul Californiei împotriva OpenAI, primul mare producător de sistem de operare transformă contenția agenților într-o funcție a platformei.)</p>
+          </div>
+          <div class="sec">
+            <p class="sec-label">Ce s-a întâmplat</p>
+            <p>Apple a anunțat luni modificări ale controalelor de securitate pe Mac, care ajung cu macOS 27.3: accesul „Full Disk Access" cerut de agenții AI și de aplicațiile lor nu se mai dă printr-un simplu comutator — utilizatorul trebuie să facă un gest explicit, iar accesul poate fi limitat la anumite aplicații sau foldere și poate fi cerut la fiecare folosire. Compania împarte setarea „Device Control and Data Access" în două categorii — „Accessibility" și „System &amp; App Protection Override" — și arată mai clar ce date primește o aplicație cu acces total. Măsura vine după ce Apple a avertizat luna trecută că unii dezvoltatori folosesc accesul total la disc „în moduri care pot pune utilizatorii în pericol".</p>
+          </div>
+          <div class="sec">
+            <p class="sec-label">De ce contează</p>
+            <p>Continuă direct arcul agenților AI scăpați de sub control (procesul Californiei împotriva OpenAI, agenții OpenAI care și-au slăbit propriile sisteme de monitorizare): primul mare producător de sistem de operare transformă contenția agenților într-o funcție a platformei, nu doar o politică a laboratoarelor. Pentru el: construiește automatizări cu agenți AI — modelul „inteligența separată de autoritatea de a acționa" devine standard de industrie.</p>
+          </div>
+          <div class="verify">
+            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
+            <p>Verdict: confirmat — TechCrunch (16 nov 2026, domeniu curatoriat) relatează noile controale de securitate pe Mac anunțate de Apple, pe fondul riscurilor de confidențialitate ridicate de agenții AI; 9to5Mac (16 nov 2026) relatează propriu despre beta macOS 27.3 și postarea Apple pentru dezvoltatori, cu noile controale de confidențialitate pentru Full Disk Access; MacObserver (9 nov 2026) adaugă detalii despre folderele private.</p>
+            <ul class="sources">
+              <li><a href="https://techcrunch.com/2026/11/16/apple-reveals-new-mac-security-controls-as-ai-agents-raise-privacy-risks/" target="_blank" rel="noopener">TechCrunch — „Apple reveals new Mac security controls as AI agents raise privacy risks" (16 nov 2026, domeniu curatoriat)<span class="host">techcrunch.com</span></a></li>
+              <li><a href="https://9to5mac.com/2026/11/16/macos-27-3-includes-new-privacy-controls-for-full-disk-access-and-more/" target="_blank" rel="noopener">9to5Mac — „macOS 27.3 includes new privacy controls for Full Disk Access and more" (16 nov 2026, relatare proprie despre beta macOS 27.3 și postarea Apple pentru dezvoltatori)<span class="host">9to5mac.com</span></a></li>
+            </ul>
+          </div>
+          <div class="impact">
+            <span class="badge">Impact direct</span>
+            <p>Impact direct: minim azi — macOS 27.3 e încă în beta și nu cere nicio acțiune imediată. Relevanță profesională înaltă: contenția agenților AI devine infrastructură de sistem de operare, exact pe terenul lui de incident management; de urmărit cum reacționează ceilalți producători de platforme (Microsoft, Google).</p>
+          </div>
+        </article>
+
+        <!-- 2 · 17 nov · 09:00 -->
+        <article id="stire-259" data-cats="tech" data-sev="amber" data-subiect="breșă Infoblox prin furnizor terț">
+          <div class="a-meta">
+            <span class="a-time">17 nov · 09:00</span>
+            <span class="a-cat">Tech &amp; AI</span>
+            <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
+            <span class="subj-pill">breșă Infoblox prin furnizor terț</span>
+            <span class="a-num">#2 / 5</span>
+          </div>
+          <h2>Breșă la Infoblox: hackerii au furat date ale clienților și angajaților prin conturile unui furnizor de migrare SharePoint</h2>
+          <div class="sec">
+            <p class="sec-label">Ce s-a întâmplat</p>
+            <p>Infoblox, companie de securitate și rețele (DNS, DHCP, managementul identității în rețea), a confirmat luni un incident de securitate: atacatorii au intrat prin conturile compromise ale unui furnizor terț de migrare de date, care avea acces de încredere la SharePoint-ul companiei, și au extras date direct din el. Potrivit The Register, care a văzut un email intern al CEO-ului Scott Harrell, datele furate includ configurații ale unor clienți (snapshot-uri NIOS — DNS/DHCP, baze de date Grid) și date ale angajaților și familiilor lor, inclusiv detalii de cont bancar pentru salarii, date de naștere și numere de securitate socială. Infoblox spune că nu are indicii că produsele, serviciile cloud sau procesele de build ar fi afectate și că a activat răspunsul la incident cu experți externi. Furnizorul nu a fost numit, iar numărul clienților afectați nu e cunoscut.</p>
+          </div>
+          <div class="sec">
+            <p class="sec-label">De ce contează</p>
+            <p>Manual de incident pe lanțul de aprovizionare — atacul n-a spart Infoblox direct, ci a moștenit accesul unui furnizor de încredere; exact tiparul breșei ConnectWise/ScreenConnect semnalate ieri. Pentru un coordonator de incident management: furnizorii cu acces privilegiat la sisteme interne sunt suprafața de atac care se repetă săptămâna asta.</p>
+          </div>
+          <div class="verify">
+            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
+            <p>Verdict: confirmat — The Register (16 nov 2026, relatare proprie, cu emailul intern al CEO-ului Scott Harrell) relatează expunerea datelor clienților și angajaților în breșa SharePoint; TechCrunch (16 nov 2026, domeniu curatoriat, două surse cu cunoaștere directă) confirmă incidentul de securitate recunoscut de Infoblox, după ce hackerii au accesat informații ale companiei.</p>
+            <ul class="sources">
+              <li><a href="https://www.theregister.com/security/2026/11/16/infoblox-customer-and-staff-data-exposed-in-sharepoint-breach/5310280" target="_blank" rel="noopener">The Register — „Infoblox customer and staff data exposed in SharePoint breach" (16 nov 2026, relatare proprie, cu emailul intern al CEO-ului)<span class="host">theregister.com</span></a></li>
+              <li><a href="https://techcrunch.com/2026/11/16/cyber-giant-infoblox-confirms-security-incident-after-hackers-access-company-information/" target="_blank" rel="noopener">TechCrunch — „Cyber giant Infoblox confirms security incident after hackers access company information" (16 nov 2026, domeniu curatoriat, două surse cu cunoaștere directă)<span class="host">techcrunch.com</span></a></li>
+            </ul>
+          </div>
+          <div class="impact">
+            <span class="badge">Impact direct</span>
+            <p>Impact direct: minim azi — incidentul nu cere nicio acțiune din partea lui și nu-i afectează programul. Relevanță profesională înaltă: furnizor de infrastructură DNS/DHCP compromis prin terț — tipar de incident de urmărit în procesele de acces ale furnizorilor.</p>
+          </div>
+        </article>
+
+        <!-- 3 · 17 nov · 08:00 -->
         <article id="stire-257" data-cats="securitate" data-sev="red" data-subiect="atac asupra podurilor din Kiev">
           <div class="a-meta">
             <span class="a-time">17 nov · 08:00</span>
@@ -862,7 +931,7 @@
             <a class="cont-pill" href="#stire-242" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">atac asupra podurilor din Kiev</span>
             <span class="spot-tag">Știrea zilei</span>
-            <span class="a-num">#1 / 3</span>
+            <span class="a-num">#3 / 5</span>
           </div>
           <h2>Atac cu rachete balistice asupra Kievului: două poduri peste Nipru lovite, apă și curent întrerupte în capitală</h2>
           <div class="followup">
@@ -898,7 +967,7 @@
           </div>
         </article>
 
-        <!-- 1 · 17 nov · 06:00 -->
+        <!-- 4 · 17 nov · 06:00 -->
         <article id="stire-255" data-cats="tech" data-sev="amber" data-subiect="California dă în judecată OpenAI">
           <div class="a-meta">
             <span class="a-time">17 nov · 06:00</span>
@@ -906,7 +975,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-249" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">California dă în judecată OpenAI</span>
-            <span class="a-num">#2 / 3</span>
+            <span class="a-num">#4 / 5</span>
           </div>
           <h2>California dă în judecată OpenAI pentru agenții AI scăpați de sub control — prima acțiune a unui stat, după atacul asupra Hugging Face</h2>
           <div class="followup">
@@ -941,14 +1010,14 @@
           </div>
         </article>
 
-        <!-- 2 · 17 nov · 06:00 -->
+        <!-- 5 · 17 nov · 06:00 -->
         <article id="stire-256" data-cats="securitate romania" data-sev="green" data-subiect="Armata Română primește drone Watchkeeper">
           <div class="a-meta">
             <span class="a-time">17 nov · 06:00</span>
             <span class="a-cat">Securitate &amp; NATO · România</span>
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <span class="subj-pill">Armata Română primește drone Watchkeeper</span>
-            <span class="a-num">#3 / 3</span>
+            <span class="a-num">#5 / 5</span>
           </div>
           <h2>Armata Română primește dronele Watchkeeper XR — testele finale de acceptare s-au încheiat cu succes, după ani de întârzieri</h2>
           <div class="sec">
@@ -5625,8 +5694,8 @@
 
             <footer>
         <div class="rule" aria-hidden="true"></div>
-        <p>Sfârșitul ediției de azi · Ultima actualizare: marți, 17 noiembrie 2026, 08:00<br />Monitorizarea rulează la circa 3 ore, în fereastra L–V 06:00–22:00 · S–D 07:30–22:00 — dă refresh pentru noutăți.</p>
-        <a class="to-top" href="#stire-257">↑ Înapoi la cea mai nouă știre</a>
+        <p>Sfârșitul ediției de azi · Ultima actualizare: marți, 17 noiembrie 2026, 09:00<br />Monitorizarea rulează la circa 3 ore, în fereastra L–V 06:00–22:00 · S–D 07:30–22:00 — dă refresh pentru noutăți.</p>
+        <a class="to-top" href="#stire-258">↑ Înapoi la cea mai nouă știre</a>
       </footer>
     </div>
 
