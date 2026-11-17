@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="color-scheme" content="light dark" />
-    <meta name="tirile-versiune" content="2026-11-17T15:00:00+01:00|12|red" />
+    <meta name="tirile-versiune" content="2026-11-17T16:00:00+01:00|13|red" />
     <link rel="icon" href="data:," />
     <title>Știrile zilei</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -699,9 +699,9 @@
     <div class="topbar">
       <div class="topbar-inner">
         <span class="dot" aria-hidden="true"></span>
-        <span><strong>Marți, 17 noiembrie 2026</strong> · actualizat la <strong>15:00</strong></span>
+        <span><strong>Marți, 17 noiembrie 2026</strong> · actualizat la <strong>16:00</strong></span>
         <span aria-hidden="true">·</span>
-        <span>12 știri azi</span>
+        <span>13 știri azi</span>
         <span class="spacer"></span>
         <button class="refresh-btn" type="button" id="refreshBtn" aria-label="Reîmprospătează pagina">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg>
@@ -743,7 +743,7 @@
 
                   <!-- Chenar permanent: știrea cea mai importantă a zilei — sub fereastra
            „Ultimele știri", ÎNAINTEA dashboardului, vizibilă din prima, fără scroll.
-           Nivelul de azi: ROȘU (sev-red) — grav: Rusia a lovit cu rachete balistice două poduri peste Nipru în Kiev, cu apă și curent întrerupte în capitală — prima lovitură directă asupra infrastructurii de traversare a capitalei ucrainene; e cea mai gravă știre a zilei și singura cu severitate roșie, de aceea nu apare mențiunea despre celelalte știri cu aceeași severitate. Știrea de la 06:00 despre procesul Californiei împotriva OpenAI rămâne galbenă, iar cea despre dronele Watchkeeper XR rămâne verde; niciuna nu schimbă chenarul. Știrea de la 12:00 (inițiativa spațială STARLIFT) e verde și nu schimbă nici ea chenarul. Știrea de la 13:00 (buncărele de urgență ale Armatei SUA în Orientul Mijlociu) e galbenă și nu schimbă nici ea chenarul. Știrea de la 14:00 (cauza panei Microsoft 365) e galbenă și nu schimbă nici ea chenarul. Știrea de la 15:00 (cisterna Gas Husky scufundată în Marea Neagră) e galbenă și nu schimbă nici ea chenarul.
+           Nivelul de azi: ROȘU (sev-red) — grav: Rusia a lovit cu rachete balistice două poduri peste Nipru în Kiev, cu apă și curent întrerupte în capitală — prima lovitură directă asupra infrastructurii de traversare a capitalei ucrainene; e cea mai gravă știre a zilei și singura cu severitate roșie, de aceea nu apare mențiunea despre celelalte știri cu aceeași severitate. Știrea de la 06:00 despre procesul Californiei împotriva OpenAI rămâne galbenă, iar cea despre dronele Watchkeeper XR rămâne verde; niciuna nu schimbă chenarul. Știrea de la 12:00 (inițiativa spațială STARLIFT) e verde și nu schimbă nici ea chenarul. Știrea de la 13:00 (buncărele de urgență ale Armatei SUA în Orientul Mijlociu) e galbenă și nu schimbă nici ea chenarul. Știrea de la 14:00 (cauza panei Microsoft 365) e galbenă și nu schimbă nici ea chenarul. Știrea de la 15:00 (cisterna Gas Husky scufundată în Marea Neagră) e galbenă și nu schimbă nici ea chenarul. Știrea de la 16:00 (Nvidia își creează un comitet de supraveghere a securității naționale) e galbenă și nu schimbă nici ea chenarul.
            Chenarul rămâne în afara logicii de filtrare: vizibil indiferent de filtrul de categorie. -->
       <section class="spot sev-red" aria-label="Știrea cea mai importantă a zilei">
         <div class="spot-head">
@@ -772,30 +772,30 @@
       <section class="dashboard" aria-label="Panou de ansamblu">
         <div class="dash-head">
           <span class="dash-title">Dashboard · Azi</span>
-          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 15:00</span>
+          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 16:00</span>
           <span class="dash-meta">Fereastră monitorizare <strong>L–V 06:00–22:00 · S–D 07:30–22:00</strong> · pas ~3 ore</span>
         </div>
 
         <div class="kpi-grid five" role="group" aria-label="Filtrează după categorie — apasă pe un tile">
           <button class="kpi" type="button" data-filter="toate" aria-pressed="true">
             <span class="kpi-top"><span class="kpi-label">Toate știrile</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">12</span>
-            <span class="kpi-sub">12 știri verificate azi, în 9 rulări</span>
+            <span class="kpi-value">13</span>
+            <span class="kpi-sub">13 știri verificate azi, în 10 rulări</span>
             <span class="kpi-bar" aria-hidden="true"><i style="width:100%"></i></span>
             <span class="kpi-hint">Apasă pentru toate</span>
           </button>
           <button class="kpi" type="button" data-filter="securitate" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">Securitate &amp; NATO</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">8</span>
-            <span class="kpi-sub">cisterna Gas Husky scufundată în Marea Neagră · buncăre de urgență în Orientul Mijlociu · inițiativa spațială STARLIFT · ținte aeriene la granița României · modele AI în cibernetica NATO · trupe franceze în Ucraina · atac asupra podurilor din Kiev · Armata Română primește drone Watchkeeper</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:67%"></i></span>
+            <span class="kpi-value">9</span>
+            <span class="kpi-sub">comitet Nvidia de securitate națională · cisterna Gas Husky scufundată în Marea Neagră · buncăre de urgență în Orientul Mijlociu · inițiativa spațială STARLIFT · ținte aeriene la granița României · modele AI în cibernetica NATO · trupe franceze în Ucraina · atac asupra podurilor din Kiev · Armata Română primește drone Watchkeeper</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:69%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="romania" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">România</span><span class="kpi-check" aria-hidden="true">✓</span></span>
             <span class="kpi-value">3</span>
             <span class="kpi-sub">cisterna Gas Husky scufundată în Marea Neagră · ținte aeriene la granița României · Armata Română primește drone Watchkeeper</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:25%"></i></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:23%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="belgia" aria-pressed="false">
@@ -807,9 +807,9 @@
           </button>
           <button class="kpi" type="button" data-filter="tech" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">Tech &amp; AI</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">5</span>
-            <span class="kpi-sub">cauza panei Microsoft 365 · modele AI în cibernetica NATO · Apple limitează accesul agenților AI pe Mac · breșă Infoblox prin furnizor terț · California dă în judecată OpenAI</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:42%"></i></span>
+            <span class="kpi-value">6</span>
+            <span class="kpi-sub">comitet Nvidia de securitate națională · cauza panei Microsoft 365 · modele AI în cibernetica NATO · Apple limitează accesul agenților AI pe Mac · breșă Infoblox prin furnizor terț · California dă în judecată OpenAI</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:46%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
         </div>
@@ -823,7 +823,7 @@
       </section>
 
       <div class="filter-status" aria-live="polite">
-        <span class="filter-label">Se afișează: <strong>Toate categoriile — 12 din 12 știri</strong></span>
+        <span class="filter-label">Se afișează: <strong>Toate categoriile — 13 din 13 știri</strong></span>
         <button class="filter-reset" type="button" hidden>Resetează filtrul</button>
       </div>
 
@@ -853,6 +853,49 @@
       <p class="empty">Nicio știre în această categorie azi.</p>
 
       <main>
+        <!-- 1 · 17 nov · 16:00 -->
+        <article id="stire-267" data-cats="tech securitate" data-sev="amber" data-subiect="comitet Nvidia de securitate națională">
+          <div class="a-meta">
+            <span class="a-time">17 nov · 16:00</span>
+            <span class="a-cat">Tech &amp; AI · Securitate &amp; NATO</span>
+            <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
+            <a class="cont-pill" href="#stire-254" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
+            <span class="subj-pill">comitet Nvidia de securitate națională</span>
+            <span class="a-num">#1 / 13</span>
+          </div>
+          <h2>Nvidia își creează un comitet de supraveghere a securității naționale și a controalelor de export — boardul exclude revenirea lui Jensen Huang</h2>
+          <div class="followup">
+            <span class="tag">Urmare la</span>
+            <p><a href="#stire-254">„Huang cântărește revenirea la Nvidia — aliații au montat o „cameră de război", dar boardul spune că nu discută întoarcerea" — luni, 16 noiembrie 2026, ora 21:00.</a> (Continuarea directă: ieri boardul spunea că nu discută întoarcerea lui Huang; azi a mers mai departe — a exclus explicit revenirea și a creat comitetul de supraveghere a securității naționale și a controalelor de export, în timp ce Departamentul Comerțului înăsprește regulile.)</p>
+          </div>
+          <div class="sec">
+            <p class="sec-label">Ce s-a întâmplat</p>
+            <p>Boardul Nvidia a anunțat marți crearea unui comitet permanent, National Security and Export Control Oversight Committee, care va supraveghea la nivel de board politicile de securitate națională, respectarea controalelor de export și riscurile comerțului global. Comitetul va fi prezidat de directoarea Suzanne Nora Johnson, cu Stephen C. Neal și John O. Dabiri ca membri, se va întruni cel puțin trimestrial și va apela la experți externi; echipele existente de securitate națională și conformitate comercială îi vor raporta direct, alături de CEO-ul interimar Colette Kress. Măsura vine la mai puțin de o săptămână după demisia lui Jensen Huang (11 noiembrie), în urma dezvăluirilor despre relația lui cu Alice Huang — femeie pe care oficiali americani o suspectează că ar fi fost recrutată de spionajul chinez — și pe fondul anchetei Departamentului de Justiție asupra companiei Megaspeed, suspectată că ar fi deturnat cipuri Nvidia către China; boardul a deschis și o investigație proprie dacă Huang a împărtășit informații confidențiale. Tot marți, boardul a exclus revenirea lui Huang, în ciuda unei petiții cu peste 180.000 de semnături, inclusiv mii de angajați. În paralel, Departamentul Comerțului a propus luni reguli mai stricte: Malaysia, Thailanda, Indonezia, Singapore și Brazilia intră pe lista destinațiilor cu control la export, iar accesul de la distanță la cipuri AI avansate prin centre de date din străinătate e închis. Rezultatele trimestriale Nvidia, primele sub Kress, vin în seara asta.</p>
+          </div>
+          <div class="sec">
+            <p class="sec-label">De ce contează</p>
+            <p>Pentru el, ca IT incident Manager în mediul NATO: cel mai important producător de cipuri AI din lume își pune conformitatea cu controalele de export sub supraveghere directă a boardului, după un scandal în care un CEO a devenit el însuși vector de risc de securitate națională — exact tipul de incident de guvernanță și de lanț de aprovizionare pe care îl gestionează. Înăsprirea regulilor americane — inclusiv închiderea portiței accesului de la distanță la cipuri AI, semnalată deja în pagină la 18:00 ieri — atinge direct lanțul de aprovizionare AI pe care își construiește automatizările. E continuarea directă a firului Nvidia urmărit în pagină: demisia, petiția pentru revenire, regula de export de ieri.</p>
+          </div>
+          <div class="verify">
+            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
+            <p>Verdict: confirmat. The Wall Street Journal (17 nov 2026): comitetul nou, prezidat de Suzanne Nora Johnson, se întrunește cel puțin trimestrial; investigația boardului dacă Huang a împărtășit informații confidențiale; regula Comerțului adaugă Malaysia, Thailanda, Indonezia, Singapore și Brazilia pe lista destinațiilor cu control la export. CNN (17 nov 2026): confirmă crearea comitetului și regula Comerțului de luni. Morningstar / Dow Jones (17 nov 2026, 10:40 GMT): confirmă comitetul și mandatul lui. TechCrunch (sursa din listă, 17 nov 2026, 6:05 AM PST): relatează anunțul boardului și faptul că Huang a acceptat să depună mărturie în Congres mai târziu în noiembrie. Notă de integritate: estimarea că reducerea vânzărilor către Singapore și Asia de Sud-Est ar putea costa până la 10% din veniturile Nvidia pe termen lung e o estimare a analistului UBS Tim Arcuri (citată de CNN), nu un fapt anunțat de companie.</p>
+            <ul class="sources">
+              <li><a href="https://www.wsj.com/politics/national-security/nvidia-forms-national-security-committee-after-huangs-exit-c3261fc2" target="_blank" rel="noopener">The Wall Street Journal — „Nvidia Forms National-Security Committee After Huang's Exit” (17 nov 2026; comitetul nou, prezidat de Suzanne Nora Johnson, se întrunește cel puțin trimestrial; investigația boardului dacă Huang a împărtășit informații confidențiale; regula Comerțului: Malaysia, Thailanda, Indonezia, Singapore și Brazilia, destinații cu control la export)<span class="host">wsj.com</span></a></li>
+              <li><a href="https://www.cnn.com/2026/11/17/business/jensen-huang-return-risk?cid=external-feeds_iluminar_meta" target="_blank" rel="noopener">CNN — „Why tech bros are desperate to bring Jensen Huang back — and why that would be a mistake” (17 nov 2026; boardul a creat marți comitetul de supraveghere a securității naționale și a controalelor de export; regula Comerțului de luni; reducerea vânzărilor către Singapore și Asia de Sud-Est ar putea costa până la 10% din venituri pe termen lung, potrivit analistului UBS Tim Arcuri)<span class="host">cnn.com</span></a></li>
+              <li><a href="https://www.morningstar.com/news/dow-jones/202611172032/nvidia-forms-national-security-committee-after-huangs-exit" target="_blank" rel="noopener">Morningstar / Dow Jones — „Nvidia Forms National Security Committee After Huang's Exit” (17 nov 2026, 10:40 GMT; comitetul va supraveghea politicile de securitate națională, respectarea controalelor de export și riscurile comerțului global; Suzanne Nora Johnson, președintă)<span class="host">morningstar.com</span></a></li>
+              <li><a href="https://techcrunch.com/2026/11/17/nvidias-first-big-move-after-jensen-huangs-exit-targets-national-security/" target="_blank" rel="noopener">TechCrunch — „Nvidia's first big move after Jensen Huang's exit targets national security” (17 nov 2026, 6:05 AM PST; anunțul boardului: comitet permanent, echipele existente de securitate națională și conformitate comercială raportează direct comitetului și CEO-ului interimar Colette Kress; Huang a acceptat să depună mărturie în Congres mai târziu în noiembrie)<span class="host">techcrunch.com</span></a></li>
+            </ul>
+          </div>
+          <div class="adverse">
+            <p class="sec-label">Tabăra adversă</p>
+            <p>Petiția pentru revenirea lui Jensen Huang (peste 180.000 de semnatari, inclusiv mii de angajați Nvidia) susține că demisia e o greșeală și că Huang ar trebui să revină la conducerea companiei; boardul a exclus marți revenirea. (<a href="https://www.cnn.com/2026/11/17/business/jensen-huang-return-risk?cid=external-feeds_iluminar_meta" target="_blank" rel="noopener">CNN, 17 nov 2026</a>)</p>
+          </div>
+          <div class="impact">
+            <span class="badge">Impact direct</span>
+            <p>Impact direct: minim azi — nu cere nicio acțiune și nu schimbă nimic în programul de azi. Relevanță profesională: un producător-cheie din lanțul de aprovizionare AI își instituționalizează supravegherea conformității cu controalele de export, după un scandal de spionaj suspectat la vârf — exact genul de incident de guvernanță și supply-chain care ajunge pe masa unui IT incident Manager; de urmărit rezultatele trimestriale din seara asta (primele sub Kress), audierea lui Huang în Congres mai târziu în noiembrie și interviul cu ușile închise al consilierului general Tim Teter, pe 2 decembrie, despre presupusa deturnare de cipuri și despre „interferența" Nvidia în politica de export.</p>
+          </div>
+        </article>
+
         <!-- 1 · 17 nov · 15:00 -->
         <article id="stire-266" data-cats="securitate romania" data-sev="amber" data-subiect="cisterna Gas Husky scufundată în Marea Neagră">
           <div class="a-meta">
@@ -861,7 +904,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-261" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">cisterna Gas Husky scufundată în Marea Neagră</span>
-            <span class="a-num">#1 / 12</span>
+            <span class="a-num">#2 / 13</span>
           </div>
           <h2>Cisterna GPL Gas Husky s-a scufundat în largul Bulgariei — a doua navă comercială pierdută în Marea Neagră în două zile; 19 marinari, căutați</h2>
           <div class="followup">
@@ -899,7 +942,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-217" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">cauza panei Microsoft 365</span>
-            <span class="a-num">#2 / 12</span>
+            <span class="a-num">#3 / 13</span>
           </div>
           <h2>Microsoft a explicat pana globală Microsoft 365: un bug din iulie, un failover Teams și 14% din capacitate indisponibilă</h2>
           <div class="followup">
@@ -938,7 +981,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-253" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">buncăre de urgență în Orientul Mijlociu</span>
-            <span class="a-num">#3 / 12</span>
+            <span class="a-num">#4 / 13</span>
           </div>
           <h2>Armata SUA construiește de urgență 17 buncăre din beton în Orientul Mijlociu, după atacurile iraniene care au ucis cel puțin 23 de militari</h2>
           <div class="followup">
@@ -976,7 +1019,7 @@
             <span class="a-cat">Securitate &amp; NATO</span>
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <span class="subj-pill">inițiativa spațială STARLIFT</span>
-            <span class="a-num">#4 / 12</span>
+            <span class="a-num">#5 / 13</span>
           </div>
           <h2>NATO pornește STARLIFT: lansări de sateliți militari pe rachete comerciale, cu Belgia printre finanțatori</h2>
           <div class="sec">
@@ -1010,7 +1053,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-245" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">ținte aeriene la granița României</span>
-            <span class="a-num">#5 / 12</span>
+            <span class="a-num">#6 / 13</span>
           </div>
           <h2>11 ținte aeriene detectate lângă granița cu România; două F-16 ridicate de la Fetești, RO-Alert în nordul Tulcei</h2>
           <div class="followup">
@@ -1048,7 +1091,7 @@
             <span class="a-cat">Tech &amp; AI · Securitate &amp; NATO</span>
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <span class="subj-pill">modele AI în cibernetica NATO</span>
-            <span class="a-num">#6 / 12</span>
+            <span class="a-num">#7 / 13</span>
           </div>
           <h2>OpenAI dă modelele sale de securitate cibernetică agenției NATO de comunicații și informatică — până la 300 de miliarde de tokeni pe lună pentru apărarea rețelelor aliate</h2>
           <div class="sec">
@@ -1081,7 +1124,7 @@
             <span class="a-cat">Securitate &amp; NATO</span>
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="subj-pill">trupe franceze în Ucraina</span>
-            <span class="a-num">#7 / 12</span>
+            <span class="a-num">#8 / 13</span>
           </div>
           <h2>Trupe franceze în Ucraina, în roluri non-combat — misiunea „Volia", dezvăluită de RFI (din vara 2026)</h2>
           <div class="sec">
@@ -1119,7 +1162,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-255" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">Apple limitează accesul agenților AI pe Mac</span>
-            <span class="a-num">#8 / 12</span>
+            <span class="a-num">#9 / 13</span>
           </div>
           <h2>Apple strânge controlul pe Mac: agenții AI nu mai primesc acces total la disc fără un gest explicit al utilizatorului</h2>
           <div class="followup">
@@ -1155,7 +1198,7 @@
             <span class="a-cat">Tech &amp; AI</span>
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="subj-pill">breșă Infoblox prin furnizor terț</span>
-            <span class="a-num">#9 / 12</span>
+            <span class="a-num">#10 / 13</span>
           </div>
           <h2>Breșă la Infoblox: hackerii au furat date ale clienților și angajaților prin conturile unui furnizor de migrare SharePoint</h2>
           <div class="sec">
@@ -1189,7 +1232,7 @@
             <a class="cont-pill" href="#stire-242" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">atac asupra podurilor din Kiev</span>
             <span class="spot-tag">Știrea zilei</span>
-            <span class="a-num">#10 / 12</span>
+            <span class="a-num">#11 / 13</span>
           </div>
           <h2>Atac cu rachete balistice asupra Kievului: două poduri peste Nipru lovite, apă și curent întrerupte în capitală</h2>
           <div class="followup">
@@ -1233,7 +1276,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-249" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">California dă în judecată OpenAI</span>
-            <span class="a-num">#11 / 12</span>
+            <span class="a-num">#12 / 13</span>
           </div>
           <h2>California dă în judecată OpenAI pentru agenții AI scăpați de sub control — prima acțiune a unui stat, după atacul asupra Hugging Face</h2>
           <div class="followup">
@@ -1275,7 +1318,7 @@
             <span class="a-cat">Securitate &amp; NATO · România</span>
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <span class="subj-pill">Armata Română primește drone Watchkeeper</span>
-            <span class="a-num">#12 / 12</span>
+            <span class="a-num">#13 / 13</span>
           </div>
           <h2>Armata Română primește dronele Watchkeeper XR — testele finale de acceptare s-au încheiat cu succes, după ani de întârzieri</h2>
           <div class="sec">
@@ -5952,8 +5995,8 @@
 
             <footer>
         <div class="rule" aria-hidden="true"></div>
-        <p>Sfârșitul ediției de azi · Ultima actualizare: marți, 17 noiembrie 2026, 15:00<br />Monitorizarea rulează la circa 3 ore, în fereastra L–V 06:00–22:00 · S–D 07:30–22:00 — dă refresh pentru noutăți.</p>
-        <a class="to-top" href="#stire-266">↑ Înapoi la cea mai nouă știre</a>
+        <p>Sfârșitul ediției de azi · Ultima actualizare: marți, 17 noiembrie 2026, 16:00<br />Monitorizarea rulează la circa 3 ore, în fereastra L–V 06:00–22:00 · S–D 07:30–22:00 — dă refresh pentru noutăți.</p>
+        <a class="to-top" href="#stire-267">↑ Înapoi la cea mai nouă știre</a>
       </footer>
     </div>
 
