@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="color-scheme" content="light dark" />
-    <meta name="tirile-versiune" content="2026-11-17T10:00:00+01:00|6|red" />
+    <meta name="tirile-versiune" content="2026-11-17T11:00:00+01:00|8|red" />
     <link rel="icon" href="data:," />
     <title>Știrile zilei</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -699,9 +699,9 @@
     <div class="topbar">
       <div class="topbar-inner">
         <span class="dot" aria-hidden="true"></span>
-        <span><strong>Marți, 17 noiembrie 2026</strong> · actualizat la <strong>10:00</strong></span>
+        <span><strong>Marți, 17 noiembrie 2026</strong> · actualizat la <strong>11:00</strong></span>
         <span aria-hidden="true">·</span>
-        <span>6 știri azi</span>
+        <span>8 știri azi</span>
         <span class="spacer"></span>
         <button class="refresh-btn" type="button" id="refreshBtn" aria-label="Reîmprospătează pagina">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg>
@@ -772,30 +772,30 @@
       <section class="dashboard" aria-label="Panou de ansamblu">
         <div class="dash-head">
           <span class="dash-title">Dashboard · Azi</span>
-          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 10:00</span>
+          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 11:00</span>
           <span class="dash-meta">Fereastră monitorizare <strong>L–V 06:00–22:00 · S–D 07:30–22:00</strong> · pas ~3 ore</span>
         </div>
 
         <div class="kpi-grid five" role="group" aria-label="Filtrează după categorie — apasă pe un tile">
           <button class="kpi" type="button" data-filter="toate" aria-pressed="true">
             <span class="kpi-top"><span class="kpi-label">Toate știrile</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">6</span>
-            <span class="kpi-sub">6 știri verificate azi, în 4 rulări</span>
+            <span class="kpi-value">8</span>
+            <span class="kpi-sub">8 știri verificate azi, în 5 rulări</span>
             <span class="kpi-bar" aria-hidden="true"><i style="width:100%"></i></span>
             <span class="kpi-hint">Apasă pentru toate</span>
           </button>
           <button class="kpi" type="button" data-filter="securitate" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">Securitate &amp; NATO</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">3</span>
-            <span class="kpi-sub">trupe franceze în Ucraina · atac asupra podurilor din Kiev · Armata Română primește drone Watchkeeper</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:50%"></i></span>
+            <span class="kpi-value">5</span>
+            <span class="kpi-sub">ținte aeriene la granița României · modele AI în cibernetica NATO · trupe franceze în Ucraina · atac asupra podurilor din Kiev · Armata Română primește drone Watchkeeper</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:63%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="romania" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">România</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">1</span>
-            <span class="kpi-sub">Armata Română primește drone Watchkeeper</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:17%"></i></span>
+            <span class="kpi-value">2</span>
+            <span class="kpi-sub">ținte aeriene la granița României · Armata Română primește drone Watchkeeper</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:25%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="belgia" aria-pressed="false">
@@ -807,8 +807,8 @@
           </button>
           <button class="kpi" type="button" data-filter="tech" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">Tech &amp; AI</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">3</span>
-            <span class="kpi-sub">Apple limitează accesul agenților AI pe Mac · breșă Infoblox prin furnizor terț · California dă în judecată OpenAI</span>
+            <span class="kpi-value">4</span>
+            <span class="kpi-sub">modele AI în cibernetica NATO · Apple limitează accesul agenților AI pe Mac · breșă Infoblox prin furnizor terț · California dă în judecată OpenAI</span>
             <span class="kpi-bar" aria-hidden="true"><i style="width:50%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
@@ -823,7 +823,7 @@
       </section>
 
       <div class="filter-status" aria-live="polite">
-        <span class="filter-label">Se afișează: <strong>Toate categoriile — 6 din 6 știri</strong></span>
+        <span class="filter-label">Se afișează: <strong>Toate categoriile — 8 din 8 știri</strong></span>
         <button class="filter-reset" type="button" hidden>Resetează filtrul</button>
       </div>
 
@@ -853,14 +853,86 @@
       <p class="empty">Nicio știre în această categorie azi.</p>
 
       <main>
-        <!-- 1 · 17 nov · 10:00 -->
+        <!-- 1 · 17 nov · 11:00 -->
+        <article id="stire-261" data-cats="securitate romania" data-sev="amber" data-subiect="ținte aeriene la granița României">
+          <div class="a-meta">
+            <span class="a-time">17 nov · 11:00</span>
+            <span class="a-cat">Securitate &amp; NATO · România</span>
+            <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
+            <a class="cont-pill" href="#stire-245" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
+            <span class="subj-pill">ținte aeriene la granița României</span>
+            <span class="a-num">#1 / 8</span>
+          </div>
+          <h2>11 ținte aeriene detectate lângă granița cu România; două F-16 ridicate de la Fetești, RO-Alert în nordul Tulcei</h2>
+          <div class="followup">
+            <span class="tag">Urmare la</span>
+            <p><a href="#stire-245">„Două drone în derivă în Marea Neagră, lângă Mangalia și Sfântu Gheorghe — scafandrii EOD intervin azi pentru evaluare pirotehnică" — luni, 16 noiembrie 2026, ora 16:00.</a> (Continuarea directă: după dronele în derivă semnalate duminică în largul Mangaliei, radarele MApN au detectat azi-noapte 11 ținte aeriene noi chiar la granița româno-ucraineană — același tipar de activitate aeriană la Marea Neagră, cu alertă pentru populație.)</p>
+          </div>
+          <div class="sec">
+            <p class="sec-label">Ce s-a întâmplat</p>
+            <p>În noaptea de luni spre marți, 16 spre 17 noiembrie, radarele MApN au detectat 11 ținte aeriene în apropierea frontierei româno-ucrainene, pe partea ucraineană: mai întâi patru ținte la circa 4 km est de localitatea Vâlcove, apoi alte șapte la circa 10 km nord-est de orașul Ismail. Ca măsură de precauție, două avioane F-16 ale Forțelor Aeriene Române, aflate în serviciul de luptă Poliție Aeriană, au decolat de la Baza 86 Aeriană Fetești pentru monitorizarea situației. Centrul Național Militar de Comandă a notificat Inspectoratul General pentru Situații de Urgență, iar locuitorii din nordul județului Tulcea au primit un mesaj RO-Alert la ora 23:36; alerta a încetat la ora 00:07. MApN a precizat că nu au fost înregistrate pătrunderi neautorizate în spațiul aerian național.</p>
+          </div>
+          <div class="sec">
+            <p class="sec-label">De ce contează</p>
+            <p>Pentru el, ca IT incident Manager în mediul NATO: al treilea episod în mai puțin de o lună în care activitatea aeriană de la granița de est a României cere ridicare de F-16 și alertare a populației — după doborârea dronelor Geran din octombrie și dronele în derivă de duminică. E exact teatrul urmărit în pagină (Marea Neagră, Flancul estic), iar tiparul — ținte detectate pe partea ucraineană, fără pătrundere confirmată — arată că postura de vigilență rămâne ridicată. De urmărit: dacă MApN publică detalii despre natura țintelor și dacă episoadele se repetă în nopțile următoare.</p>
+          </div>
+          <div class="verify">
+            <p class="sec-label">Verificare <span class="status">Sursă primară + confirmat</span></p>
+            <p>Verdict: sursă primară + confirmat — MApN (comunicat oficial, 17 nov): 11 ținte, F-16 de la Fetești, RO-Alert la 23:36, nicio pătrundere neautorizată; G4Media (domeniu curatoriat, 17 nov, 08:23); Informat.ro (17 nov, 08:04); Universul.com.ro (17 nov, 10:19). Notă de integritate: natura exactă a țintelor n-a fost comunicată de MApN — unele relatări le numesc „drone", dar comunicatul oficial vorbește doar de „ținte aeriene"; de asemenea, în comunicatul MApN apare pentru mesajul RO-Alert ora 02:30, în timp ce IGSU indică 23:36 — ora folosită aici e cea a IGSU.</p>
+            <ul class="sources">
+              <li><a href="https://informat.ro/actualitate/mapn-detectie-drone-granita-romania-ismail-mesaj-ro-alert-148732" target="_blank" rel="noopener">Informat.ro — „MApN: detecție drone la granița României, lângă Ismail; mesaj RO-Alert" (17 nov 2026, 08:04)<span class="host">informat.ro</span></a></li>
+              <li><a href="https://universul.com.ro/2026/11/17/alerta-aeriana-in-nordul-judetului-tulcea-11-tinte-detectate-in-apropierea-granitei-cu-ucraina-doua-avioane-f-16-au-fost-ridicate-de-la-sol/" target="_blank" rel="noopener">Universul.com.ro — „Alertă aeriană în nordul județului Tulcea: 11 ținte detectate în apropierea graniței cu Ucraina, două avioane F-16 au fost ridicate de la sol" (17 nov 2026, 10:19)<span class="host">universul.com.ro</span></a></li>
+              <li><a href="https://www.telegrafonline.ro/alerta-aeriana-la-granita-romaniei-11-tinte-detectate-langa-tulcea-doua-avioane-f16-ridicate-de-la-sol" target="_blank" rel="noopener">TelegrafOnline — „Alertă aeriană la granița României: 11 ținte detectate lângă Tulcea, două avioane F-16 ridicate de la sol" (17 nov 2026)<span class="host">telegrafonline.ro</span></a></li>
+              <li><a href="https://www.euplus.ro/mapn-a-detectat-11-tinte-aeriene-langa-frontiera-cu-ucraina-avioane-f-16-ridicate-de-la-sol-si-mesaj-ro-alert-in-tulcea/" target="_blank" rel="noopener">euplus.ro — „MApN a detectat 11 ținte aeriene lângă frontiera cu Ucraina: avioane F-16 ridicate de la sol și mesaj RO-Alert în Tulcea" (17 nov 2026)<span class="host">euplus.ro</span></a></li>
+            </ul>
+          </div>
+          <div class="impact">
+            <span class="badge">Impact direct</span>
+            <p>Impact direct: minim azi personal — familia e în Giurgiu/București, departe de Tulcea; nicio călătorie sau termen legat de asta. Relevanță profesională înaltă: vigilență ridicată la Marea Neagră, același arc ca doborârile F-16 din octombrie și CSAT-ul din 22 octombrie; de urmărit natura țintelor când MApN publică detalii.</p>
+          </div>
+        </article>
+
+        <!-- 2 · 17 nov · 11:00 -->
+        <article id="stire-262" data-cats="tech securitate" data-sev="green" data-subiect="modele AI în cibernetica NATO">
+          <div class="a-meta">
+            <span class="a-time">17 nov · 11:00</span>
+            <span class="a-cat">Tech &amp; AI · Securitate &amp; NATO</span>
+            <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
+            <span class="subj-pill">modele AI în cibernetica NATO</span>
+            <span class="a-num">#2 / 8</span>
+          </div>
+          <h2>OpenAI dă modelele sale de securitate cibernetică agenției NATO de comunicații și informatică — până la 300 de miliarde de tokeni pe lună pentru apărarea rețelelor aliate</h2>
+          <div class="sec">
+            <p class="sec-label">Ce s-a întâmplat</p>
+            <p>OpenAI a anunțat azi, 17 noiembrie, că pune modelele sale de frontieră pentru securitate cibernetică la dispoziția instituțiilor centrale ale NATO, prin agenția de comunicații și informatică a alianței (NCIA), în cadrul programului Daybreak — programul prin care OpenAI dă acces la modele apărătorilor guvernamentali verificați. Potrivit OpenAI, NATO a folosit până la 300 de miliarde de tokeni de intrare și ieșire pe lună pentru revizuirea codului, investigarea activității suspecte, validarea vulnerabilităților și construirea și testarea de remedieri. Modelele au fost folosite și la exercițiul Crossed Swords 2026, organizat de Centrul NATO de excelență pentru apărare cibernetică din Estonia, unde participanții au construit și testat agenți AI pentru operațiuni cibernetice, cu omul în control. Accesul a fost extins și la ENISA, ANSSI (Franța) și agențiile naționale din Germania și Polonia, iar Ministerul Transformării Digitale al Ucrainei folosește Daybreak pentru apărarea infrastructurii civile.</p>
+          </div>
+          <div class="sec">
+            <p class="sec-label">De ce contează</p>
+            <p>Pentru el, ca IT incident Manager în mediul NATO: agenția de comunicații și informatică a alianței e acum clientul principal al celor mai avansate modele AI pentru apărare cibernetică — exact clasa de tooling pe care o urmărește profesional (agenți AI ca apărători, nu doar ca amenințare). E cealaltă față a arcului agenților AI din pagină: după agenții OpenAI scăpați de sub control (Hugging Face, procesul Californiei), aceleași modele devin infrastructură de apărare, cu rezultate măsurabile — ENISA a găsit patru vulnerabilități în software folosit de instituțiile UE, iar CERT Polska șase în MikroTik RouterOS, cu remedieri publicate. Directorul general al NCIA, Dylan Browne, spune că, pe măsură ce adoptarea crește, agenția va înțelege mai bine consumul de tokeni și economia modelelor, ca să optimizeze costurile și să ia decizii de achiziție informate. De urmărit: cum se traduce asta în procese și cerințe noi în zona agențiilor NATO și ce garanții de control uman se cer pentru agenții defensivi.</p>
+          </div>
+          <div class="verify">
+            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
+            <p>Verdict: confirmat — OpenAI (anunț propriu, 17 nov, relatat de Help Net Security): parteneriatul cu NCIA prin Daybreak, până la 300 mld. tokeni/lună, Crossed Swords 2026; Help Net Security (17 nov, 08:33 UTC, publicație specializată): ENISA — 4 vulnerabilități (din 27 de proiecte revizuite împreună cu CERT-EU, 88 de probleme potențiale, 95% confirmate ca reale), CERT Polska — 6 vulnerabilități în MikroTik RouterOS; BigGo Finance (17 nov) și Blockchain.news (17 nov) confirmă anunțul și cifrele. Notă de integritate: cifra de 300 de miliarde de tokeni pe lună e comunicată de OpenAI însăși și nu e verificată independent; accesul modelelor la rețelele NATO e prezentat de companie, nu de un comunicat NATO separat.</p>
+            <ul class="sources">
+              <li><a href="https://www.helpnetsecurity.com/2026/11/17/openai-nato-ai-cyber-defense/" target="_blank" rel="noopener">Help Net Security — relatarea anunțului OpenAI: modelele de frontieră pentru securitate cibernetică, puse la dispoziția NATO prin NCIA, în programul Daybreak (17 nov 2026, 08:33 UTC)<span class="host">helpnetsecurity.com</span></a></li>
+              <li><a href="https://finance.biggo.com/news/68fc499c-b2f2-4969-8e32-f72aeb892e6e" target="_blank" rel="noopener">BigGo Finance — confirmă anunțul OpenAI și cifrele parteneriatului cu NATO (17 nov 2026)<span class="host">finance.biggo.com</span></a></li>
+              <li><a href="http://blockchain.news/news/openai-nato-ai-cybersecurity" target="_blank" rel="noopener">Blockchain.news — confirmă anunțul OpenAI privind modelele AI pentru securitatea cibernetică a NATO (17 nov 2026)<span class="host">blockchain.news</span></a></li>
+            </ul>
+          </div>
+          <div class="impact">
+            <span class="badge">Impact direct</span>
+            <p>Impact direct: minim azi personal — niciun termen sau acțiune cerută. Relevanță profesională înaltă: agenția de comunicații și informatică a alianței folosește modele AI de frontieră pentru apărarea cibernetică a rețelelor aliate; de urmărit cum se reflectă în procesele de incident management și în cerințele de control uman pentru agenții defensivi.</p>
+          </div>
+        </article>
+
+        <!-- 3 · 17 nov · 10:00 -->
         <article id="stire-260" data-cats="securitate" data-sev="amber" data-subiect="trupe franceze în Ucraina">
           <div class="a-meta">
             <span class="a-time">17 nov · 10:00</span>
             <span class="a-cat">Securitate &amp; NATO</span>
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="subj-pill">trupe franceze în Ucraina</span>
-            <span class="a-num">#1 / 6</span>
+            <span class="a-num">#3 / 8</span>
           </div>
           <h2>Trupe franceze în Ucraina, în roluri non-combat — misiunea „Volia", dezvăluită de RFI (din vara 2026)</h2>
           <div class="sec">
@@ -890,7 +962,7 @@
           </div>
         </article>
 
-        <!-- 2 · 17 nov · 09:00 -->
+        <!-- 4 · 17 nov · 09:00 -->
         <article id="stire-258" data-cats="tech" data-sev="amber" data-subiect="Apple limitează accesul agenților AI pe Mac">
           <div class="a-meta">
             <span class="a-time">17 nov · 09:00</span>
@@ -898,7 +970,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-255" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">Apple limitează accesul agenților AI pe Mac</span>
-            <span class="a-num">#2 / 6</span>
+            <span class="a-num">#4 / 8</span>
           </div>
           <h2>Apple strânge controlul pe Mac: agenții AI nu mai primesc acces total la disc fără un gest explicit al utilizatorului</h2>
           <div class="followup">
@@ -927,14 +999,14 @@
           </div>
         </article>
 
-        <!-- 3 · 17 nov · 09:00 -->
+        <!-- 5 · 17 nov · 09:00 -->
         <article id="stire-259" data-cats="tech" data-sev="amber" data-subiect="breșă Infoblox prin furnizor terț">
           <div class="a-meta">
             <span class="a-time">17 nov · 09:00</span>
             <span class="a-cat">Tech &amp; AI</span>
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="subj-pill">breșă Infoblox prin furnizor terț</span>
-            <span class="a-num">#3 / 6</span>
+            <span class="a-num">#5 / 8</span>
           </div>
           <h2>Breșă la Infoblox: hackerii au furat date ale clienților și angajaților prin conturile unui furnizor de migrare SharePoint</h2>
           <div class="sec">
@@ -959,7 +1031,7 @@
           </div>
         </article>
 
-        <!-- 4 · 17 nov · 08:00 -->
+        <!-- 6 · 17 nov · 08:00 -->
         <article id="stire-257" data-cats="securitate" data-sev="red" data-subiect="atac asupra podurilor din Kiev">
           <div class="a-meta">
             <span class="a-time">17 nov · 08:00</span>
@@ -968,7 +1040,7 @@
             <a class="cont-pill" href="#stire-242" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">atac asupra podurilor din Kiev</span>
             <span class="spot-tag">Știrea zilei</span>
-            <span class="a-num">#4 / 6</span>
+            <span class="a-num">#6 / 8</span>
           </div>
           <h2>Atac cu rachete balistice asupra Kievului: două poduri peste Nipru lovite, apă și curent întrerupte în capitală</h2>
           <div class="followup">
@@ -1004,7 +1076,7 @@
           </div>
         </article>
 
-        <!-- 5 · 17 nov · 06:00 -->
+        <!-- 7 · 17 nov · 06:00 -->
         <article id="stire-255" data-cats="tech" data-sev="amber" data-subiect="California dă în judecată OpenAI">
           <div class="a-meta">
             <span class="a-time">17 nov · 06:00</span>
@@ -1012,7 +1084,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-249" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">California dă în judecată OpenAI</span>
-            <span class="a-num">#5 / 6</span>
+            <span class="a-num">#7 / 8</span>
           </div>
           <h2>California dă în judecată OpenAI pentru agenții AI scăpați de sub control — prima acțiune a unui stat, după atacul asupra Hugging Face</h2>
           <div class="followup">
@@ -1047,14 +1119,14 @@
           </div>
         </article>
 
-        <!-- 6 · 17 nov · 06:00 -->
+        <!-- 8 · 17 nov · 06:00 -->
         <article id="stire-256" data-cats="securitate romania" data-sev="green" data-subiect="Armata Română primește drone Watchkeeper">
           <div class="a-meta">
             <span class="a-time">17 nov · 06:00</span>
             <span class="a-cat">Securitate &amp; NATO · România</span>
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <span class="subj-pill">Armata Română primește drone Watchkeeper</span>
-            <span class="a-num">#6 / 6</span>
+            <span class="a-num">#8 / 8</span>
           </div>
           <h2>Armata Română primește dronele Watchkeeper XR — testele finale de acceptare s-au încheiat cu succes, după ani de întârzieri</h2>
           <div class="sec">
