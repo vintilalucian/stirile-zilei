@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="color-scheme" content="light dark" />
-    <meta name="tirile-versiune" content="2026-11-17T09:00:00+01:00|5|red" />
+    <meta name="tirile-versiune" content="2026-11-17T10:00:00+01:00|6|red" />
     <link rel="icon" href="data:," />
     <title>Știrile zilei</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -699,9 +699,9 @@
     <div class="topbar">
       <div class="topbar-inner">
         <span class="dot" aria-hidden="true"></span>
-        <span><strong>Marți, 17 noiembrie 2026</strong> · actualizat la <strong>09:00</strong></span>
+        <span><strong>Marți, 17 noiembrie 2026</strong> · actualizat la <strong>10:00</strong></span>
         <span aria-hidden="true">·</span>
-        <span>5 știri azi</span>
+        <span>6 știri azi</span>
         <span class="spacer"></span>
         <button class="refresh-btn" type="button" id="refreshBtn" aria-label="Reîmprospătează pagina">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg>
@@ -772,30 +772,30 @@
       <section class="dashboard" aria-label="Panou de ansamblu">
         <div class="dash-head">
           <span class="dash-title">Dashboard · Azi</span>
-          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 09:00</span>
+          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 10:00</span>
           <span class="dash-meta">Fereastră monitorizare <strong>L–V 06:00–22:00 · S–D 07:30–22:00</strong> · pas ~3 ore</span>
         </div>
 
         <div class="kpi-grid five" role="group" aria-label="Filtrează după categorie — apasă pe un tile">
           <button class="kpi" type="button" data-filter="toate" aria-pressed="true">
             <span class="kpi-top"><span class="kpi-label">Toate știrile</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">5</span>
-            <span class="kpi-sub">5 știri verificate azi, în 3 rulări</span>
+            <span class="kpi-value">6</span>
+            <span class="kpi-sub">6 știri verificate azi, în 4 rulări</span>
             <span class="kpi-bar" aria-hidden="true"><i style="width:100%"></i></span>
             <span class="kpi-hint">Apasă pentru toate</span>
           </button>
           <button class="kpi" type="button" data-filter="securitate" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">Securitate &amp; NATO</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">2</span>
-            <span class="kpi-sub">atac asupra podurilor din Kiev · Armata Română primește drone Watchkeeper</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:40%"></i></span>
+            <span class="kpi-value">3</span>
+            <span class="kpi-sub">trupe franceze în Ucraina · atac asupra podurilor din Kiev · Armata Română primește drone Watchkeeper</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:50%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="romania" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">România</span><span class="kpi-check" aria-hidden="true">✓</span></span>
             <span class="kpi-value">1</span>
             <span class="kpi-sub">Armata Română primește drone Watchkeeper</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:20%"></i></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:17%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="belgia" aria-pressed="false">
@@ -809,7 +809,7 @@
             <span class="kpi-top"><span class="kpi-label">Tech &amp; AI</span><span class="kpi-check" aria-hidden="true">✓</span></span>
             <span class="kpi-value">3</span>
             <span class="kpi-sub">Apple limitează accesul agenților AI pe Mac · breșă Infoblox prin furnizor terț · California dă în judecată OpenAI</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:60%"></i></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:50%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
         </div>
@@ -823,7 +823,7 @@
       </section>
 
       <div class="filter-status" aria-live="polite">
-        <span class="filter-label">Se afișează: <strong>Toate categoriile — 5 din 5 știri</strong></span>
+        <span class="filter-label">Se afișează: <strong>Toate categoriile — 6 din 6 știri</strong></span>
         <button class="filter-reset" type="button" hidden>Resetează filtrul</button>
       </div>
 
@@ -853,7 +853,44 @@
       <p class="empty">Nicio știre în această categorie azi.</p>
 
       <main>
-        <!-- 1 · 17 nov · 09:00 -->
+        <!-- 1 · 17 nov · 10:00 -->
+        <article id="stire-260" data-cats="securitate" data-sev="amber" data-subiect="trupe franceze în Ucraina">
+          <div class="a-meta">
+            <span class="a-time">17 nov · 10:00</span>
+            <span class="a-cat">Securitate &amp; NATO</span>
+            <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
+            <span class="subj-pill">trupe franceze în Ucraina</span>
+            <span class="a-num">#1 / 6</span>
+          </div>
+          <h2>Trupe franceze în Ucraina, în roluri non-combat — misiunea „Volia", dezvăluită de RFI (din vara 2026)</h2>
+          <div class="sec">
+            <p class="sec-label">Ce s-a întâmplat</p>
+            <p>Radio France Internationale a dezvăluit luni că militari francezi operează în Ucraina, în roluri non-combat, cel puțin din vara anului 2026. Misiunea, cu numele de cod „Volia", e condusă de un general francez și e formată din echipe mici, în rotații scurte, care antrenează soldați ucraineni și asigură mentenanța echipamentelor livrate de Franța — obuziere Caesar, avioane Mirage 2000 și rachete de precizie. Prezența a fost confirmată independent de Le Monde și de o sursă citată de AFP; guvernul francez nu a confirmat oficial misiunea.</p>
+          </div>
+          <div class="sec">
+            <p class="sec-label">De ce contează</p>
+            <p>Franța e un aliat-cheie NATO și unul dintre principalii furnizori de armament ai Ucrainei; trecerea de la instruirea ucrainenilor în afara țării la prezența directă pe teritoriul ucrainean — chiar și non-combat — marchează o schimbare de postură a Parisului, cu relevanță directă pentru teatrul Ucraina / Flancul estic și pentru dinamica aliaților NATO.</p>
+          </div>
+          <div class="verify">
+            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
+            <p>Verdict: confirmat — Defense News (17 nov 2026, 08:07 UTC, domeniu curatoriat) relatează dezvăluirea RFI despre trupele franceze care operează în Ucraina în roluri non-combat; RFI (16 nov 2026) e ancheta originală care a dezvăluit misiunea „Volia"; Le Monde (16 nov 2026) a confirmat prezența prin relatare proprie; o sursă citată de AFP confirmă că prezența ocazională a francezilor în Ucraina „e o realitate", fără rol de luptă; France Télévisions a publicat o relatare similară (16 nov 2026).</p>
+            <ul class="sources">
+              <li><a href="https://www.defensenews.com/global/europe/2026/11/17/french-troops-operating-in-non-combat-roles-in-ukraine-broadcaster-rfi-reports/" target="_blank" rel="noopener">Defense News — „French troops operating in non-combat roles in Ukraine, broadcaster RFI reports" (17 nov 2026, 08:07 UTC, domeniu curatoriat)<span class="host">defensenews.com</span></a></li>
+              <li><a href="https://www.rfi.fr/en/international/20261116-france-s-covert-military-operation-in-ukraine-revealed-by-rfi-investigation" target="_blank" rel="noopener">RFI — „France's covert military operation in Ukraine revealed by RFI investigation" (16 nov 2026, ancheta originală)<span class="host">rfi.fr</span></a></li>
+              <li><a href="https://www.lemonde.fr/en/international/article/2026/11/16/french-troops-are-now-operating-in-ukraine_6782174_4.html" target="_blank" rel="noopener">Le Monde — „French troops are now operating in Ukraine" (16 nov 2026, confirmare proprie)<span class="host">lemonde.fr</span></a></li>
+            </ul>
+          </div>
+          <div class="opposing">
+            <p class="sec-label">Tabăra adversă</p>
+            <p>Vladimir Putin — în discuțiile cu emisarii SUA din 12 noiembrie a avertizat că trimiterea de trupe occidentale în Ucraina după un acord de pace ar declanșa reluarea războiului, Rusia văzând-o ca o amenințare la adresa securității sale. Poziția oficială franceză, redată de Le Monde: prezența nu constituie o operațiune militară de luptă și aprobarea Parlamentului nu e necesară. (<a href="https://www.defensenews.com/global/2026/11/12/putin-lets-europe-join-ukraine-peace-talks-as-kyiv-says-starshield-disrupted-again/" target="_blank" rel="noopener">Defense News, 12 nov 2026</a>)</p>
+          </div>
+          <div class="impact">
+            <span class="badge">Impact direct</span>
+            <p>Impact direct: minim — nu cere nicio acțiune concretă și nu afectează naveta sau programul. Relevanță profesională de context: de urmărit postura aliaților NATO pe teren și posibila Forță Multinațională pentru Ucraina (MNF-U), al cărei prim exercițiu e în pregătire; pentru el, în rolul de IT incident Manager, e o piesă de context despre dinamica aliaților pe Flancul estic.</p>
+          </div>
+        </article>
+
+        <!-- 2 · 17 nov · 09:00 -->
         <article id="stire-258" data-cats="tech" data-sev="amber" data-subiect="Apple limitează accesul agenților AI pe Mac">
           <div class="a-meta">
             <span class="a-time">17 nov · 09:00</span>
@@ -861,7 +898,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-255" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">Apple limitează accesul agenților AI pe Mac</span>
-            <span class="a-num">#1 / 5</span>
+            <span class="a-num">#2 / 6</span>
           </div>
           <h2>Apple strânge controlul pe Mac: agenții AI nu mai primesc acces total la disc fără un gest explicit al utilizatorului</h2>
           <div class="followup">
@@ -890,14 +927,14 @@
           </div>
         </article>
 
-        <!-- 2 · 17 nov · 09:00 -->
+        <!-- 3 · 17 nov · 09:00 -->
         <article id="stire-259" data-cats="tech" data-sev="amber" data-subiect="breșă Infoblox prin furnizor terț">
           <div class="a-meta">
             <span class="a-time">17 nov · 09:00</span>
             <span class="a-cat">Tech &amp; AI</span>
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="subj-pill">breșă Infoblox prin furnizor terț</span>
-            <span class="a-num">#2 / 5</span>
+            <span class="a-num">#3 / 6</span>
           </div>
           <h2>Breșă la Infoblox: hackerii au furat date ale clienților și angajaților prin conturile unui furnizor de migrare SharePoint</h2>
           <div class="sec">
@@ -922,7 +959,7 @@
           </div>
         </article>
 
-        <!-- 3 · 17 nov · 08:00 -->
+        <!-- 4 · 17 nov · 08:00 -->
         <article id="stire-257" data-cats="securitate" data-sev="red" data-subiect="atac asupra podurilor din Kiev">
           <div class="a-meta">
             <span class="a-time">17 nov · 08:00</span>
@@ -931,7 +968,7 @@
             <a class="cont-pill" href="#stire-242" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">atac asupra podurilor din Kiev</span>
             <span class="spot-tag">Știrea zilei</span>
-            <span class="a-num">#3 / 5</span>
+            <span class="a-num">#4 / 6</span>
           </div>
           <h2>Atac cu rachete balistice asupra Kievului: două poduri peste Nipru lovite, apă și curent întrerupte în capitală</h2>
           <div class="followup">
@@ -967,7 +1004,7 @@
           </div>
         </article>
 
-        <!-- 4 · 17 nov · 06:00 -->
+        <!-- 5 · 17 nov · 06:00 -->
         <article id="stire-255" data-cats="tech" data-sev="amber" data-subiect="California dă în judecată OpenAI">
           <div class="a-meta">
             <span class="a-time">17 nov · 06:00</span>
@@ -975,7 +1012,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-249" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">California dă în judecată OpenAI</span>
-            <span class="a-num">#4 / 5</span>
+            <span class="a-num">#5 / 6</span>
           </div>
           <h2>California dă în judecată OpenAI pentru agenții AI scăpați de sub control — prima acțiune a unui stat, după atacul asupra Hugging Face</h2>
           <div class="followup">
@@ -1010,14 +1047,14 @@
           </div>
         </article>
 
-        <!-- 5 · 17 nov · 06:00 -->
+        <!-- 6 · 17 nov · 06:00 -->
         <article id="stire-256" data-cats="securitate romania" data-sev="green" data-subiect="Armata Română primește drone Watchkeeper">
           <div class="a-meta">
             <span class="a-time">17 nov · 06:00</span>
             <span class="a-cat">Securitate &amp; NATO · România</span>
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <span class="subj-pill">Armata Română primește drone Watchkeeper</span>
-            <span class="a-num">#5 / 5</span>
+            <span class="a-num">#6 / 6</span>
           </div>
           <h2>Armata Română primește dronele Watchkeeper XR — testele finale de acceptare s-au încheiat cu succes, după ani de întârzieri</h2>
           <div class="sec">
