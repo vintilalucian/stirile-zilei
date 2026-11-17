@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="color-scheme" content="light dark" />
-    <meta name="tirile-versiune" content="2026-11-17T11:00:00+01:00|8|red" />
+    <meta name="tirile-versiune" content="2026-11-17T12:00:00+01:00|9|red" />
     <link rel="icon" href="data:," />
     <title>Știrile zilei</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -699,9 +699,9 @@
     <div class="topbar">
       <div class="topbar-inner">
         <span class="dot" aria-hidden="true"></span>
-        <span><strong>Marți, 17 noiembrie 2026</strong> · actualizat la <strong>11:00</strong></span>
+        <span><strong>Marți, 17 noiembrie 2026</strong> · actualizat la <strong>12:00</strong></span>
         <span aria-hidden="true">·</span>
-        <span>8 știri azi</span>
+        <span>9 știri azi</span>
         <span class="spacer"></span>
         <button class="refresh-btn" type="button" id="refreshBtn" aria-label="Reîmprospătează pagina">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg>
@@ -743,7 +743,7 @@
 
                   <!-- Chenar permanent: știrea cea mai importantă a zilei — sub fereastra
            „Ultimele știri", ÎNAINTEA dashboardului, vizibilă din prima, fără scroll.
-           Nivelul de azi: ROȘU (sev-red) — grav: Rusia a lovit cu rachete balistice două poduri peste Nipru în Kiev, cu apă și curent întrerupte în capitală — prima lovitură directă asupra infrastructurii de traversare a capitalei ucrainene; e cea mai gravă știre a zilei și singura cu severitate roșie, de aceea nu apare mențiunea despre celelalte știri cu aceeași severitate. Știrea de la 06:00 despre procesul Californiei împotriva OpenAI rămâne galbenă, iar cea despre dronele Watchkeeper XR rămâne verde; niciuna nu schimbă chenarul.
+           Nivelul de azi: ROȘU (sev-red) — grav: Rusia a lovit cu rachete balistice două poduri peste Nipru în Kiev, cu apă și curent întrerupte în capitală — prima lovitură directă asupra infrastructurii de traversare a capitalei ucrainene; e cea mai gravă știre a zilei și singura cu severitate roșie, de aceea nu apare mențiunea despre celelalte știri cu aceeași severitate. Știrea de la 06:00 despre procesul Californiei împotriva OpenAI rămâne galbenă, iar cea despre dronele Watchkeeper XR rămâne verde; niciuna nu schimbă chenarul. Știrea de la 12:00 (inițiativa spațială STARLIFT) e verde și nu schimbă nici ea chenarul.
            Chenarul rămâne în afara logicii de filtrare: vizibil indiferent de filtrul de categorie. -->
       <section class="spot sev-red" aria-label="Știrea cea mai importantă a zilei">
         <div class="spot-head">
@@ -772,30 +772,30 @@
       <section class="dashboard" aria-label="Panou de ansamblu">
         <div class="dash-head">
           <span class="dash-title">Dashboard · Azi</span>
-          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 11:00</span>
+          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 12:00</span>
           <span class="dash-meta">Fereastră monitorizare <strong>L–V 06:00–22:00 · S–D 07:30–22:00</strong> · pas ~3 ore</span>
         </div>
 
         <div class="kpi-grid five" role="group" aria-label="Filtrează după categorie — apasă pe un tile">
           <button class="kpi" type="button" data-filter="toate" aria-pressed="true">
             <span class="kpi-top"><span class="kpi-label">Toate știrile</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">8</span>
-            <span class="kpi-sub">8 știri verificate azi, în 5 rulări</span>
+            <span class="kpi-value">9</span>
+            <span class="kpi-sub">9 știri verificate azi, în 6 rulări</span>
             <span class="kpi-bar" aria-hidden="true"><i style="width:100%"></i></span>
             <span class="kpi-hint">Apasă pentru toate</span>
           </button>
           <button class="kpi" type="button" data-filter="securitate" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">Securitate &amp; NATO</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">5</span>
-            <span class="kpi-sub">ținte aeriene la granița României · modele AI în cibernetica NATO · trupe franceze în Ucraina · atac asupra podurilor din Kiev · Armata Română primește drone Watchkeeper</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:63%"></i></span>
+            <span class="kpi-value">6</span>
+            <span class="kpi-sub">inițiativa spațială STARLIFT · ținte aeriene la granița României · modele AI în cibernetica NATO · trupe franceze în Ucraina · atac asupra podurilor din Kiev · Armata Română primește drone Watchkeeper</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:67%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="romania" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">România</span><span class="kpi-check" aria-hidden="true">✓</span></span>
             <span class="kpi-value">2</span>
             <span class="kpi-sub">ținte aeriene la granița României · Armata Română primește drone Watchkeeper</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:25%"></i></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:22%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="belgia" aria-pressed="false">
@@ -809,7 +809,7 @@
             <span class="kpi-top"><span class="kpi-label">Tech &amp; AI</span><span class="kpi-check" aria-hidden="true">✓</span></span>
             <span class="kpi-value">4</span>
             <span class="kpi-sub">modele AI în cibernetica NATO · Apple limitează accesul agenților AI pe Mac · breșă Infoblox prin furnizor terț · California dă în judecată OpenAI</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:50%"></i></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:44%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
         </div>
@@ -823,7 +823,7 @@
       </section>
 
       <div class="filter-status" aria-live="polite">
-        <span class="filter-label">Se afișează: <strong>Toate categoriile — 8 din 8 știri</strong></span>
+        <span class="filter-label">Se afișează: <strong>Toate categoriile — 9 din 9 știri</strong></span>
         <button class="filter-reset" type="button" hidden>Resetează filtrul</button>
       </div>
 
@@ -853,7 +853,40 @@
       <p class="empty">Nicio știre în această categorie azi.</p>
 
       <main>
-        <!-- 1 · 17 nov · 11:00 -->
+        <!-- 1 · 17 nov · 12:00 -->
+        <article id="stire-263" data-cats="securitate" data-sev="green" data-subiect="inițiativa spațială STARLIFT">
+          <div class="a-meta">
+            <span class="a-time">17 nov · 12:00</span>
+            <span class="a-cat">Securitate &amp; NATO</span>
+            <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
+            <span class="subj-pill">inițiativa spațială STARLIFT</span>
+            <span class="a-num">#1 / 9</span>
+          </div>
+          <h2>NATO pornește STARLIFT: lansări de sateliți militari pe rachete comerciale, cu Belgia printre finanțatori</h2>
+          <div class="sec">
+            <p class="sec-label">Ce s-a întâmplat</p>
+            <p>Marți, 17 noiembrie, la conferința NATO EDGE 26 de la Izmir, NATO a anunțat începerea implementării inițiativei multinaționale STARLIFT, prin care aliații își asigură locuri de lansare pentru sateliți militari pe rachete comerciale. Zece aliați — între care Belgia — și Coreea de Sud s-au angajat să finanțeze inițiativa prin Agenția NATO de Sprijin și Achiziții (NSPA), după o ceremonie de semnare din 29 octombrie. STARLIFT, dezvoltată din 2024, oferă utilizatorilor militari un serviciu de lansare și un forum pentru operațiuni spațiale cu reacție rapidă, inclusiv lansarea de urgență a unui satelit de înlocuire.</p>
+          </div>
+          <div class="sec">
+            <p class="sec-label">De ce contează</p>
+            <p>Spațiul e domeniu operațional NATO din 2019, iar accesul sigur la lansare stă la baza comunicațiilor, navigației, informațiilor și avertizării timpurii militare — infrastructura de comunicații din zona profesională a cititorului, IT incident Manager. Belgia e printre cele zece state care finanțează inițiativa, iar NSPA e aceeași agenție prin care Ucraina urmează să cumpere armament (subiect prezentat în pagină pe 22 octombrie). Nu e o noutate operațională de azi, ci o piesă de arhitectură instituțională pe termen lung.</p>
+          </div>
+          <div class="verify">
+            <p class="sec-label">Verificare <span class="status">Sursă primară + confirmat</span></p>
+            <p>Verdict: sursă primară + confirmat — NATO (anunț propriu, 17 nov 2026) anunță începerea implementării inițiativei STARLIFT; Korea JoongAng Daily (17 nov 2026) confirmă aderarea Coreei de Sud la inițiativa condusă de NATO; WiseVoter (17 nov 2026) confirmă lansarea programului prin care aliații își rezervă lansări de sateliți militari. Nuanță de integritate: inițiativa în sine datează din octombrie 2024 (14 state fondatoare); noutatea de azi e începerea implementării și angajamentul de finanțare; data capacității operaționale inițiale nu e încă stabilită.</p>
+            <ul class="sources">
+              <li><a href="https://nato.int/en/news-and-events/articles/news/2026/11/17/natos-multinational-space-initiative-starlift-begins" target="_blank" rel="noopener">NATO — anunț propriu: începerea implementării inițiativei multinaționale STARLIFT (17 nov 2026)<span class="host">nato.int</span></a></li>
+              <li><a href="https://www.koreajoongangdaily.com/korea/korea-joins-natoled-starlift-space-initiative-to-boost-launch-capabilities/12977464" target="_blank" rel="noopener">Korea JoongAng Daily — „Korea joins NATO-led Starlift space initiative to boost launch capabilities" (17 nov 2026)<span class="host">koreajoongangdaily.com</span></a></li>
+              <li><a href="https://wisevoter.com/world/2026/11/17/nato-starlift-military-satellite-launch-slots" target="_blank" rel="noopener">WiseVoter — „NATO Launches StarLift to Book Military Satellite Launches" (17 nov 2026)<span class="host">wisevoter.com</span></a></li>
+            </ul>
+          </div>
+          <div class="impact">
+            <span class="badge">Impact direct</span>
+            <p>Impact direct: minim — relevanță de context. Nicio acțiune imediată; de urmărit cum evoluează cerințele de lansare și datele spațiale în zona agențiilor NATO.</p>
+          </div>
+        </article>
+
+        <!-- 2 · 17 nov · 11:00 -->
         <article id="stire-261" data-cats="securitate romania" data-sev="amber" data-subiect="ținte aeriene la granița României">
           <div class="a-meta">
             <span class="a-time">17 nov · 11:00</span>
@@ -861,7 +894,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-245" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">ținte aeriene la granița României</span>
-            <span class="a-num">#1 / 8</span>
+            <span class="a-num">#2 / 9</span>
           </div>
           <h2>11 ținte aeriene detectate lângă granița cu România; două F-16 ridicate de la Fetești, RO-Alert în nordul Tulcei</h2>
           <div class="followup">
@@ -892,14 +925,14 @@
           </div>
         </article>
 
-        <!-- 2 · 17 nov · 11:00 -->
+        <!-- 3 · 17 nov · 11:00 -->
         <article id="stire-262" data-cats="tech securitate" data-sev="green" data-subiect="modele AI în cibernetica NATO">
           <div class="a-meta">
             <span class="a-time">17 nov · 11:00</span>
             <span class="a-cat">Tech &amp; AI · Securitate &amp; NATO</span>
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <span class="subj-pill">modele AI în cibernetica NATO</span>
-            <span class="a-num">#2 / 8</span>
+            <span class="a-num">#3 / 9</span>
           </div>
           <h2>OpenAI dă modelele sale de securitate cibernetică agenției NATO de comunicații și informatică — până la 300 de miliarde de tokeni pe lună pentru apărarea rețelelor aliate</h2>
           <div class="sec">
@@ -925,14 +958,14 @@
           </div>
         </article>
 
-        <!-- 3 · 17 nov · 10:00 -->
+        <!-- 4 · 17 nov · 10:00 -->
         <article id="stire-260" data-cats="securitate" data-sev="amber" data-subiect="trupe franceze în Ucraina">
           <div class="a-meta">
             <span class="a-time">17 nov · 10:00</span>
             <span class="a-cat">Securitate &amp; NATO</span>
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="subj-pill">trupe franceze în Ucraina</span>
-            <span class="a-num">#3 / 8</span>
+            <span class="a-num">#4 / 9</span>
           </div>
           <h2>Trupe franceze în Ucraina, în roluri non-combat — misiunea „Volia", dezvăluită de RFI (din vara 2026)</h2>
           <div class="sec">
@@ -962,7 +995,7 @@
           </div>
         </article>
 
-        <!-- 4 · 17 nov · 09:00 -->
+        <!-- 5 · 17 nov · 09:00 -->
         <article id="stire-258" data-cats="tech" data-sev="amber" data-subiect="Apple limitează accesul agenților AI pe Mac">
           <div class="a-meta">
             <span class="a-time">17 nov · 09:00</span>
@@ -970,7 +1003,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-255" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">Apple limitează accesul agenților AI pe Mac</span>
-            <span class="a-num">#4 / 8</span>
+            <span class="a-num">#5 / 9</span>
           </div>
           <h2>Apple strânge controlul pe Mac: agenții AI nu mai primesc acces total la disc fără un gest explicit al utilizatorului</h2>
           <div class="followup">
@@ -999,14 +1032,14 @@
           </div>
         </article>
 
-        <!-- 5 · 17 nov · 09:00 -->
+        <!-- 6 · 17 nov · 09:00 -->
         <article id="stire-259" data-cats="tech" data-sev="amber" data-subiect="breșă Infoblox prin furnizor terț">
           <div class="a-meta">
             <span class="a-time">17 nov · 09:00</span>
             <span class="a-cat">Tech &amp; AI</span>
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="subj-pill">breșă Infoblox prin furnizor terț</span>
-            <span class="a-num">#5 / 8</span>
+            <span class="a-num">#6 / 9</span>
           </div>
           <h2>Breșă la Infoblox: hackerii au furat date ale clienților și angajaților prin conturile unui furnizor de migrare SharePoint</h2>
           <div class="sec">
@@ -1031,7 +1064,7 @@
           </div>
         </article>
 
-        <!-- 6 · 17 nov · 08:00 -->
+        <!-- 7 · 17 nov · 08:00 -->
         <article id="stire-257" data-cats="securitate" data-sev="red" data-subiect="atac asupra podurilor din Kiev">
           <div class="a-meta">
             <span class="a-time">17 nov · 08:00</span>
@@ -1040,7 +1073,7 @@
             <a class="cont-pill" href="#stire-242" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">atac asupra podurilor din Kiev</span>
             <span class="spot-tag">Știrea zilei</span>
-            <span class="a-num">#6 / 8</span>
+            <span class="a-num">#7 / 9</span>
           </div>
           <h2>Atac cu rachete balistice asupra Kievului: două poduri peste Nipru lovite, apă și curent întrerupte în capitală</h2>
           <div class="followup">
@@ -1076,7 +1109,7 @@
           </div>
         </article>
 
-        <!-- 7 · 17 nov · 06:00 -->
+        <!-- 8 · 17 nov · 06:00 -->
         <article id="stire-255" data-cats="tech" data-sev="amber" data-subiect="California dă în judecată OpenAI">
           <div class="a-meta">
             <span class="a-time">17 nov · 06:00</span>
@@ -1084,7 +1117,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-249" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">California dă în judecată OpenAI</span>
-            <span class="a-num">#7 / 8</span>
+            <span class="a-num">#8 / 9</span>
           </div>
           <h2>California dă în judecată OpenAI pentru agenții AI scăpați de sub control — prima acțiune a unui stat, după atacul asupra Hugging Face</h2>
           <div class="followup">
@@ -1119,14 +1152,14 @@
           </div>
         </article>
 
-        <!-- 8 · 17 nov · 06:00 -->
+        <!-- 9 · 17 nov · 06:00 -->
         <article id="stire-256" data-cats="securitate romania" data-sev="green" data-subiect="Armata Română primește drone Watchkeeper">
           <div class="a-meta">
             <span class="a-time">17 nov · 06:00</span>
             <span class="a-cat">Securitate &amp; NATO · România</span>
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <span class="subj-pill">Armata Română primește drone Watchkeeper</span>
-            <span class="a-num">#8 / 8</span>
+            <span class="a-num">#9 / 9</span>
           </div>
           <h2>Armata Română primește dronele Watchkeeper XR — testele finale de acceptare s-au încheiat cu succes, după ani de întârzieri</h2>
           <div class="sec">
