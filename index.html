@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="color-scheme" content="light dark" />
-    <meta name="tirile-versiune" content="2026-11-18T15:00:00+01:00|14|amber" />
+    <meta name="tirile-versiune" content="2026-11-18T16:00:00+01:00|15|amber" />
     <link rel="icon" href="data:," />
     <title>Știrile zilei</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -699,9 +699,9 @@
     <div class="topbar">
       <div class="topbar-inner">
         <span class="dot" aria-hidden="true"></span>
-        <span><strong>Miercuri, 18 noiembrie 2026</strong> · actualizat la <strong>15:00</strong></span>
+        <span><strong>Miercuri, 18 noiembrie 2026</strong> · actualizat la <strong>16:00</strong></span>
         <span aria-hidden="true">·</span>
-        <span>14 știri azi</span>
+        <span>15 știri azi</span>
         <span class="spacer"></span>
         <button class="refresh-btn" type="button" id="refreshBtn" aria-label="Reîmprospătează pagina">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg>
@@ -782,15 +782,15 @@
       <section class="dashboard" aria-label="Panou de ansamblu">
         <div class="dash-head">
           <span class="dash-title">Dashboard · Azi</span>
-          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 15:00</span>
+          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 16:00</span>
           <span class="dash-meta">Fereastră monitorizare <strong>L–V 06:00–22:00 · S–D 07:30–22:00</strong> · pas ~3 ore</span>
         </div>
 
         <div class="kpi-grid five" role="group" aria-label="Filtrează după categorie — apasă pe un tile">
           <button class="kpi" type="button" data-filter="toate" aria-pressed="true">
             <span class="kpi-top"><span class="kpi-label">Toate știrile</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">14</span>
-            <span class="kpi-sub">14 știri verificate azi, în 9 rulări</span>
+            <span class="kpi-value">15</span>
+            <span class="kpi-sub">15 știri verificate azi, în 10 rulări</span>
             <span class="kpi-bar" aria-hidden="true"><i style="width:100%"></i></span>
             <span class="kpi-hint">Apasă pentru toate</span>
           </button>
@@ -798,14 +798,14 @@
             <span class="kpi-top"><span class="kpi-label">Securitate &amp; NATO</span><span class="kpi-check" aria-hidden="true">✓</span></span>
             <span class="kpi-value">8</span>
             <span class="kpi-sub">Colby avertizează aliații NATO · trupe franceze în Ucraina · împrumut de 45 mld € pentru Ucraina · cisterna Gas Husky, lovită de patru ori · alternative europene la Palantir · prăbușirea Podului Kerci · Marea Britanie, 1.000 de rachete pentru Ucraina · ruptura SUA–aliați la Ramstein</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:57%"></i></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:53%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="romania" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">România</span><span class="kpi-check" aria-hidden="true">✓</span></span>
             <span class="kpi-value">4</span>
             <span class="kpi-sub">cisterna Gas Husky, lovită de patru ori · recesiune ușoară în România · cutremur 5,7 în Vrancea · Revolut sub supraveghere judiciară în Italia</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:29%"></i></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:27%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="belgia" aria-pressed="false">
@@ -817,9 +817,9 @@
           </button>
           <button class="kpi" type="button" data-filter="tech" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">Tech &amp; AI</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">4</span>
-            <span class="kpi-sub">Gemini Tasks gratuit, cu apeluri și plăți · alternative europene la Palantir · Amazon și Google, 28% din Anthropic · Nvidia abandonează China</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:29%"></i></span>
+            <span class="kpi-value">5</span>
+            <span class="kpi-sub">modele de decizie AI · Gemini Tasks gratuit, cu apeluri și plăți · alternative europene la Palantir · Amazon și Google, 28% din Anthropic · Nvidia abandonează China</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:33%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
         </div>
@@ -833,7 +833,7 @@
       </section>
 
       <div class="filter-status" aria-live="polite">
-        <span class="filter-label">Se afișează: <strong>Toate categoriile — 14 din 14 știri</strong></span>
+        <span class="filter-label">Se afișează: <strong>Toate categoriile — 15 din 15 știri</strong></span>
         <button class="filter-reset" type="button" hidden>Resetează filtrul</button>
       </div>
 
@@ -855,7 +855,46 @@
       <p class="empty">Nicio știre în această categorie azi.</p>
 
       <main>
-                <!-- 1 · 18 nov · 15:00 -->
+                <!-- 1 · 18 nov · 16:00 -->
+        <article id="stire-289" data-cats="tech" data-sev="green" data-subiect="modele de decizie AI">
+          <div class="a-meta">
+            <span class="a-time">18 nov · 16:00</span>
+            <span class="a-cat">Tech &amp; AI</span>
+            <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
+            <span class="subj-pill">modele de decizie AI</span>
+            <span class="a-num">#1 / 15</span>
+          </div>
+          <h2>Modelele de decizie AI prind viteză: peste un sfert din cererile pe routerul Vercel nu mai sunt către LLM-uri, iar Microsoft lansează Decision 1.1 pe Azure</h2>
+          <div class="sec">
+            <p class="sec-label">Ce s-a întâmplat</p>
+            <p>În octombrie, peste una din patru cereri pe routerul de modele AI al Vercel au mers către „modele de decizie" — LLM-uri care nu generează text, ci aleg între opțiuni prestabilite și returnează și un grad de încredere — o clasă de modele apărută cu doar o lună înainte. Marți, 17 noiembrie, la Ignite, CEO-ul Microsoft Satya Nadella a anunțat că Microsoft-Decision-1.1 e disponibil pe scară largă în Azure AI Foundry: model mic, multimodal, pentru rutare, clasificare, prioritizare și verificare în sisteme cu agenți; Microsoft spune că e de 50 de ori mai rapid și de 79 de ori mai ieftin decât GPT-Sol 6.1, la 0,042 $ per milion de tokeni de intrare.</p>
+          </div>
+          <div class="sec">
+            <p class="sec-label">De ce contează</p>
+            <p>Pentru el, care construiește automatizări cu API-uri AI (Google Apps Script + Gemini) și urmărește agenții AI: un model ieftin și rapid care decide, rutează și verifică e piesa care face sistemele multi-agent accesibile — exact veriga discutată în pagină (Guardian Agents al Microsoft, Agent Gateway al Walmart, Gemini Tasks). În loc să trimită fiecare decizie mică la un model mare și scump, poate pune un model de decizie „între" agenți, ca filtru și verificator.</p>
+          </div>
+          <div class="verify">
+            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
+            <p>Verdict: confirmat. Microsoft (anunț la Ignite, 17 nov 2026, sursă primară, relatat de TechCrunch); OpenRouter (pagina modelului Microsoft-Decision-1.1, lansat 17 nov: 0,042 $/1M tokeni intrare, nu generează text, returnează probabilități calibrate); dev.to (recapitulare Ignite, 18 nov: Decision 1.1 GA în Foundry, peste 4.000 de clienți l-au folosit deja); EPC Group (18 nov: GA în Foundry, rutare/clasificare/verificare). Notă de integritate: cifrele „50x mai rapid / 79x mai ieftin" sunt ale Microsoft, fără verificare independentă; cifrele „10x mai rapid / 200x mai ieftin" care au circulat pe 17 noiembrie nu apar în anunțul Microsoft.</p>
+            <ul class="sources">
+              <li><a href="https://techcrunch.com/2026/11/17/as-decision-model-use-skyrockets-is-customization-is-the-next-frontier/" target="_blank" rel="noopener">TechCrunch — „As decision model use skyrockets, is customization the next frontier?" (17 nov 2026)<span class="host">techcrunch.com</span></a></li>
+              <li><a href="https://openrouter.ai/microsoft/microsoft-decision-1.1" target="_blank" rel="noopener">OpenRouter — pagina modelului Microsoft-Decision-1.1 (lansat 17 nov 2026)<span class="host">openrouter.ai</span></a></li>
+              <li><a href="https://www.orcarouter.ai/blog/mai-decision-1-ignite-2026" target="_blank" rel="noopener">OrcaRouter — „MAI Decision 1 Is Really Decision 1.1" (18 nov 2026)<span class="host">orcarouter.ai</span></a></li>
+              <li><a href="https://dev.to/paullovelace/microsoft-ignite-2026-copilot-is-now-the-os-for-work-heres-what-actually-changes-for-1o05" target="_blank" rel="noopener">dev.to — „Microsoft Ignite 2026: Copilot Is Now the OS for Work" (18 nov 2026)<span class="host">dev.to</span></a></li>
+              <li><a href="https://www.epcgroup.net/insights/microsoft-ignite-2026-day-1-announcements" target="_blank" rel="noopener">EPC Group — „Microsoft Ignite 2026 Day 1 Announcements" (18 nov 2026)<span class="host">epcgroup.net</span></a></li>
+            </ul>
+          </div>
+          <div class="opposing">
+            <p class="sec-label">Tabăra adversă</p>
+            <p>OrcaRouter (blog, 18 nov 2026) arată că cifrele „10x mai rapid și 200x mai ieftin" vehiculate pe 17 noiembrie nu apar nicăieri în anunțul Microsoft — compania publică 50x mai rapid și 79x mai ieftin față de GPT-Sol 6.1, într-un cadru de testare specific; Achint Srivastava, vicepreședintele Microsoft care a condus proiectul, a avertizat că accentul excesiv pe benchmark-uri e o greșeală. (<a href="https://www.orcarouter.ai/blog/mai-decision-1-ignite-2026" target="_blank" rel="noopener">OrcaRouter — „MAI Decision 1 Is Really Decision 1.1", 18 nov 2026</a>)</p>
+          </div>
+          <div class="impact">
+            <span class="badge">Impact direct</span>
+            <p>Impact direct: minim azi — nu cere nicio acțiune. Relevanță practică directă: dacă își construiește fluxuri cu agenți, modelele de decizie pot prelua triajul, clasificarea și verificarea la costuri mult mai mici decât un LLM mare. De urmărit: dacă Gemini sau OpenRouter oferă echivalente și cum s-ar integra în fluxurile lui cu Google Apps Script.</p>
+          </div>
+        </article>
+
+                <!-- 2 · 18 nov · 15:00 -->
         <article id="stire-288" data-cats="securitate" data-sev="amber" data-subiect="Colby avertizează aliații NATO">
           <div class="a-meta">
             <span class="a-time">18 nov · 15:00</span>
@@ -863,7 +902,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-278" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">Colby avertizează aliații NATO</span>
-            <span class="a-num">#1 / 14</span>
+            <span class="a-num">#2 / 15</span>
           </div>
           <h2>Pentagonul avertizează aliații NATO să nu excludă firmele americane din achizițiile de armament — «aveți nevoie de F-35»</h2>
           <div class="followup">
@@ -897,14 +936,14 @@
           </div>
         </article>
 
-<!-- 2 · 18 nov · 14:00 -->
+<!-- 3 · 18 nov · 14:00 -->
         <article id="stire-286" data-cats="securitate" data-sev="amber" data-subiect="trupe franceze în Ucraina">
           <div class="a-meta">
             <span class="a-time">18 nov · 14:00</span>
             <span class="a-cat">Securitate &amp; NATO</span>
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="subj-pill">trupe franceze în Ucraina</span>
-            <span class="a-num">#2 / 14</span>
+            <span class="a-num">#3 / 15</span>
           </div>
           <h2>Trupe franceze operează în Ucraina în roluri non-combat din vara lui 2026 — misiunea secretă „Volia”, confirmată de Paris pe 17 noiembrie</h2>
           <div class="sec">
@@ -933,14 +972,14 @@
             <p>Impact direct: minim azi — nu cere nicio acțiune și nu schimbă nimic în programul de azi. Relevanță profesională directă: prezența unui aliat NATO pe teren în Ucraina e un semnal de escaladare a implicării europene; de urmărit dacă apar recunoașteri similare din partea altor aliați și cum reacționează Moscova.</p>
           </div>
         </article>
-        <!-- 3 · 18 nov · 14:00 -->
+        <!-- 4 · 18 nov · 14:00 -->
         <article id="stire-287" data-cats="tech" data-sev="green" data-subiect="Gemini Tasks gratuit, cu apeluri și plăți">
           <div class="a-meta">
             <span class="a-time">18 nov · 14:00</span>
             <span class="a-cat">Tech &amp; AI</span>
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <span class="subj-pill">Gemini Tasks gratuit, cu apeluri și plăți</span>
-            <span class="a-num">#3 / 14</span>
+            <span class="a-num">#4 / 15</span>
           </div>
           <h2>Google face Gemini Tasks gratuit și îi dă agentului apeluri telefonice și plăți — dar nu și în Europa</h2>
           <div class="sec">
@@ -965,14 +1004,14 @@
             <p>Impact direct: minim azi — funcția nu e disponibilă în Belgia (SEE exclus); nu cere nicio acțiune. Relevanță de context: direcția agentului AI cu autoritate de plată și apeluri, pe stack-ul Google pe care îl folosește zilnic.</p>
           </div>
         </article>
-        <!-- 4 · 18 nov · 12:00 -->
+        <!-- 5 · 18 nov · 12:00 -->
         <article id="stire-284" data-cats="securitate belgia" data-sev="green" data-subiect="împrumut de 45 mld € pentru Ucraina">
           <div class="a-meta">
             <span class="a-time">18 nov · 12:00</span>
             <span class="a-cat">Securitate &amp; NATO · Belgia</span>
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <span class="subj-pill">împrumut de 45 mld € pentru Ucraina</span>
-            <span class="a-num">#4 / 14</span>
+            <span class="a-num">#5 / 15</span>
           </div>
           <h2>Comisia Europeană propune un împrumut de 45 mld € pentru Ucraina în 2027 — rambursat din reparațiile de război ale Rusiei, cu activele înghețate la Euroclear ca rezervă</h2>
           <div class="sec">
@@ -1002,7 +1041,7 @@
             <p>Impact direct: minim azi — nu cere nicio acțiune și nu schimbă nimic în programul de azi. Relevanță de context: decizia de la Consiliul European din 26–27 noiembrie va arăta dacă formula împrumutului trece; de urmărit dacă disputa pe activele înghețate de la Euroclear revine și cum se poziționează Belgia.</p>
           </div>
         </article>
-        <!-- 5 · 18 nov · 12:00 -->
+        <!-- 6 · 18 nov · 12:00 -->
         <article id="stire-285" data-cats="securitate romania" data-sev="amber" data-subiect="cisterna Gas Husky, lovită de patru ori">
           <div class="a-meta">
             <span class="a-time">18 nov · 12:00</span>
@@ -1010,7 +1049,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-266" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">cisterna Gas Husky, lovită de patru ori</span>
-            <span class="a-num">#5 / 14</span>
+            <span class="a-num">#6 / 15</span>
           </div>
           <h2>Cisterna Gas Husky a fost lovită de patru proiectile, confirmă guvernatorul regiunii Varna — toți cei 19 marinari au fost salvați</h2>
           <div class="followup">
@@ -1044,14 +1083,14 @@
             <p>Impact direct: minim azi — nu cere nicio acțiune și nu schimbă nimic în programul de azi. Relevanță profesională directă: campania împotriva navelor comerciale din Marea Neagră escaladează cu o nouă confirmare oficială a unui atac deliberat; de urmărit reacția NATO și a celor trei state riverane (România, Bulgaria, Turcia) și dacă se anunță măsuri suplimentare de protecție a navigației comerciale.</p>
           </div>
         </article>
-        <!-- 6 · 18 nov · 11:00 -->
+        <!-- 7 · 18 nov · 11:00 -->
         <article id="stire-283" data-cats="securitate tech" data-sev="amber" data-subiect="alternative europene la Palantir">
           <div class="a-meta">
             <span class="a-time">18 nov · 11:00</span>
             <span class="a-cat">Securitate &amp; NATO</span>
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="subj-pill">alternative europene la Palantir</span>
-            <span class="a-num">#6 / 14</span>
+            <span class="a-num">#7 / 15</span>
           </div>
           <h2>Europa caută alternative la Palantir: armatele vor să scape de dependența de SUA pentru software-ul militar critic</h2>
           <div class="sec">
@@ -1080,7 +1119,7 @@
             <p>Impact direct: minim azi — nu cere nicio acțiune și nu schimbă nimic în programul de azi. De urmărit dacă NATO sau aliații europeni încep o migrare efectivă de la Maven către alternative suverane — ar afecta tooling-ul și fluxurile de date din zona lui profesională.</p>
           </div>
         </article>
-        <!-- 7 · 18 nov · 10:00 -->
+        <!-- 8 · 18 nov · 10:00 -->
         <article id="stire-281" data-cats="securitate" data-sev="amber" data-subiect="prăbușirea Podului Kerci">
           <div class="a-meta">
             <span class="a-time">18 nov · 10:00</span>
@@ -1088,7 +1127,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-242" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">prăbușirea Podului Kerci</span>
-            <span class="a-num">#7 / 14</span>
+            <span class="a-num">#8 / 15</span>
           </div>
           <h2>Arcul rutier al Podului Kerci s-a prăbușit în strâmtoare, a doua zi consecutiv de lovituri ucrainene — canalul navigabil spre Marea Azov, blocat</h2>
           <div class="followup">
@@ -1123,14 +1162,14 @@
             <p>Impact direct: minim azi — nu cere nicio acțiune și nu schimbă nimic în programul de azi. Relevanță de context: blocarea canalului Kerci lovește transportul maritim rusesc spre Marea Azov și vine cu două zile înaintea summitului de la Shenzhen; de urmărit durata blocajului și dacă Rusia răspunde cu o nouă escaladare asupra infrastructurii ucrainene.</p>
           </div>
         </article>
-        <!-- 8 · 18 nov · 10:00 -->
+        <!-- 9 · 18 nov · 10:00 -->
         <article id="stire-282" data-cats="romania" data-sev="green" data-subiect="recesiune ușoară în România">
           <div class="a-meta">
             <span class="a-time">18 nov · 10:00</span>
             <span class="a-cat">România</span>
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <span class="subj-pill">recesiune ușoară în România</span>
-            <span class="a-num">#8 / 14</span>
+            <span class="a-num">#9 / 15</span>
           </div>
           <h2>Comisia Europeană: economia României scade cu 0,3% în 2026, inflație medie de 7,9% — cea mai mare din UE; revenire de 1,8% abia în 2027</h2>
           <div class="sec">
@@ -1162,7 +1201,7 @@
             <p>Impact direct: minim azi — nu cere nicio acțiune și nu schimbă nimic în programul de azi. Relevanță practică: costurile în lei din vacanța de Crăciun (22–31 dec, Giurgiu) și valoarea în termeni reali a investițiilor în lei; de urmărit execuția bugetară și dacă Guvernul ia pași suplimentari pentru 2027, cum cere Comisia.</p>
           </div>
         </article>
-        <!-- 9 · 18 nov · 09:00 -->
+        <!-- 10 · 18 nov · 09:00 -->
         <article id="stire-280" data-cats="securitate" data-sev="green" data-subiect="Marea Britanie, 1.000 de rachete pentru Ucraina">
           <div class="a-meta">
             <span class="a-time">18 nov · 09:00</span>
@@ -1170,7 +1209,7 @@
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <a class="cont-pill" href="#stire-278" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">Marea Britanie, 1.000 de rachete pentru Ucraina</span>
-            <span class="a-num">#9 / 14</span>
+            <span class="a-num">#10 / 15</span>
           </div>
           <h2>Marea Britanie trimite Ucrainei peste 1.000 de rachete antiaeriene, parte dintr-un pachet de 240 de milioane de lire — livrările încep la jumătatea lui decembrie</h2>
           <div class="followup">
@@ -1201,14 +1240,14 @@
           </div>
         </article>
 
-        <!-- 10 · 18 nov · 08:00 -->
+        <!-- 11 · 18 nov · 08:00 -->
         <article id="stire-279" data-cats="tech" data-sev="green" data-subiect="Amazon și Google, 28% din Anthropic">
           <div class="a-meta">
             <span class="a-time">18 nov · 08:00</span>
             <span class="a-cat">Tech &amp; AI</span>
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <span class="subj-pill">Amazon și Google, 28% din Anthropic</span>
-            <span class="a-num">#10 / 14</span>
+            <span class="a-num">#11 / 15</span>
           </div>
           <h2>Amazon și Google vor deține împreună aproape 30% din Anthropic după IPO — prețul se fixează azi, tranzacționarea începe joi</h2>
           <div class="sec">
@@ -1235,7 +1274,7 @@
           </div>
         </article>
 
-        <!-- 11 · 18 nov · 07:00 -->
+        <!-- 12 · 18 nov · 07:00 -->
         <article id="stire-277" data-cats="romania" data-sev="amber" data-subiect="cutremur 5,7 în Vrancea">
           <div class="a-meta">
             <span class="a-time">18 nov · 07:00</span>
@@ -1243,7 +1282,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="subj-pill">cutremur 5,7 în Vrancea</span>
             <span class="spot-tag">Știrea zilei</span>
-            <span class="a-num">#11 / 14</span>
+            <span class="a-num">#12 / 15</span>
           </div>
           <h2>Cutremur de 5,7 în Vrancea, resimțit în București — cel mai puternic seism din România în 2026; două persoane rănite, fără pagube materiale raportate</h2>
           <div class="sec">
@@ -1271,7 +1310,7 @@
           </div>
         </article>
 
-        <!-- 12 · 18 nov · 07:00 -->
+        <!-- 13 · 18 nov · 07:00 -->
         <article id="stire-278" data-cats="securitate" data-sev="amber" data-subiect="ruptura SUA–aliați la Ramstein">
           <div class="a-meta">
             <span class="a-time">18 nov · 07:00</span>
@@ -1279,7 +1318,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-268" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">ruptura SUA–aliați la Ramstein</span>
-            <span class="a-num">#12 / 14</span>
+            <span class="a-num">#13 / 15</span>
           </div>
           <h2>Ruptură la Ramstein: Colby critică loviturile Ucrainei în adâncimea Rusiei; Germania și Marea Britanie îl contrazic public</h2>
           <div class="followup">
@@ -1314,14 +1353,14 @@
           </div>
         </article>
 
-        <!-- 13 · 18 nov · 06:00 -->
+        <!-- 14 · 18 nov · 06:00 -->
         <article id="stire-275" data-cats="romania" data-sev="amber" data-subiect="Revolut sub supraveghere judiciară în Italia">
           <div class="a-meta">
             <span class="a-time">18 nov · 06:00</span>
             <span class="a-cat">România · Finanțe</span>
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="subj-pill">Revolut sub supraveghere judiciară în Italia</span>
-            <span class="a-num">#13 / 14</span>
+            <span class="a-num">#14 / 15</span>
           </div>
           <h2>Revolut Italia intră sub administrare judiciară pentru un an — tribunalul din Milano a constatat deficiențe grave la controalele anti-spălare de bani; depozitele clienților nu sunt afectate</h2>
           <div class="sec">
@@ -1353,7 +1392,7 @@
           </div>
         </article>
 
-        <!-- 14 · 18 nov · 06:00 -->
+        <!-- 15 · 18 nov · 06:00 -->
         <article id="stire-276" data-cats="tech" data-sev="amber" data-subiect="Nvidia abandonează China">
           <div class="a-meta">
             <span class="a-time">18 nov · 06:00</span>
@@ -1361,7 +1400,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-267" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">Nvidia abandonează China</span>
-            <span class="a-num">#14 / 14</span>
+            <span class="a-num">#15 / 15</span>
           </div>
           <h2>Nvidia nu mai vinde cipuri H200 în China și e anchetată de SEC — pe primul apel de rezultate după plecarea lui Huang, Kress a anunțat retragerea; venituri de 115,8 mld $ (+103%)</h2>
           <div class="followup">
