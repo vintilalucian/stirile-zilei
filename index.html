@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="color-scheme" content="light dark" />
-    <meta name="tirile-versiune" content="2026-11-18T08:00:00+01:00|5|amber" />
+    <meta name="tirile-versiune" content="2026-11-18T09:00:00+01:00|6|amber" />
     <link rel="icon" href="data:," />
     <title>Știrile zilei</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -699,9 +699,9 @@
     <div class="topbar">
       <div class="topbar-inner">
         <span class="dot" aria-hidden="true"></span>
-        <span><strong>Miercuri, 18 noiembrie 2026</strong> · actualizat la <strong>08:00</strong></span>
+        <span><strong>Miercuri, 18 noiembrie 2026</strong> · actualizat la <strong>09:00</strong></span>
         <span aria-hidden="true">·</span>
-        <span>5 știri azi</span>
+        <span>6 știri azi</span>
         <span class="spacer"></span>
         <button class="refresh-btn" type="button" id="refreshBtn" aria-label="Reîmprospătează pagina">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg>
@@ -782,30 +782,30 @@
       <section class="dashboard" aria-label="Panou de ansamblu">
         <div class="dash-head">
           <span class="dash-title">Dashboard · Azi</span>
-          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 08:00</span>
+          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 09:00</span>
           <span class="dash-meta">Fereastră monitorizare <strong>L–V 06:00–22:00 · S–D 07:30–22:00</strong> · pas ~3 ore</span>
         </div>
 
         <div class="kpi-grid five" role="group" aria-label="Filtrează după categorie — apasă pe un tile">
           <button class="kpi" type="button" data-filter="toate" aria-pressed="true">
             <span class="kpi-top"><span class="kpi-label">Toate știrile</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">5</span>
-            <span class="kpi-sub">5 știri verificate azi, în 3 rulări</span>
+            <span class="kpi-value">6</span>
+            <span class="kpi-sub">6 știri verificate azi, în 4 rulări</span>
             <span class="kpi-bar" aria-hidden="true"><i style="width:100%"></i></span>
             <span class="kpi-hint">Apasă pentru toate</span>
           </button>
           <button class="kpi" type="button" data-filter="securitate" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">Securitate &amp; NATO</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">1</span>
-            <span class="kpi-sub">ruptura SUA–aliați la Ramstein</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:20%"></i></span>
+            <span class="kpi-value">2</span>
+            <span class="kpi-sub">Marea Britanie, 1.000 de rachete pentru Ucraina · ruptura SUA–aliați la Ramstein</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:33%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="romania" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">România</span><span class="kpi-check" aria-hidden="true">✓</span></span>
             <span class="kpi-value">2</span>
             <span class="kpi-sub">cutremur 5,7 în Vrancea · Revolut sub supraveghere judiciară în Italia</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:40%"></i></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:33%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="belgia" aria-pressed="false">
@@ -819,7 +819,7 @@
             <span class="kpi-top"><span class="kpi-label">Tech &amp; AI</span><span class="kpi-check" aria-hidden="true">✓</span></span>
             <span class="kpi-value">2</span>
             <span class="kpi-sub">Amazon și Google, 28% din Anthropic · Nvidia abandonează China</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:40%"></i></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:33%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
         </div>
@@ -833,7 +833,7 @@
       </section>
 
       <div class="filter-status" aria-live="polite">
-        <span class="filter-label">Se afișează: <strong>Toate categoriile — 5 din 5 știri</strong></span>
+        <span class="filter-label">Se afișează: <strong>Toate categoriile — 6 din 6 știri</strong></span>
         <button class="filter-reset" type="button" hidden>Resetează filtrul</button>
       </div>
 
@@ -855,14 +855,53 @@
       <p class="empty">Nicio știre în această categorie azi.</p>
 
       <main>
-        <!-- 1 · 18 nov · 08:00 -->
+        <!-- 1 · 18 nov · 09:00 -->
+        <article id="stire-280" data-cats="securitate" data-sev="green" data-subiect="Marea Britanie, 1.000 de rachete pentru Ucraina">
+          <div class="a-meta">
+            <span class="a-time">18 nov · 09:00</span>
+            <span class="a-cat">Securitate &amp; NATO</span>
+            <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
+            <a class="cont-pill" href="#stire-278" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
+            <span class="subj-pill">Marea Britanie, 1.000 de rachete pentru Ucraina</span>
+            <span class="a-num">#1 / 6</span>
+          </div>
+          <h2>Marea Britanie trimite Ucrainei peste 1.000 de rachete antiaeriene, parte dintr-un pachet de 240 de milioane de lire — livrările încep la jumătatea lui decembrie</h2>
+          <div class="followup">
+            <span class="tag">Urmare la</span>
+            <p><a href="#stire-278">„Ruptură la Ramstein: Colby critică loviturile Ucrainei în adâncimea Rusiei; Germania și Marea Britanie îl contrazic public" — miercuri, 18 noiembrie 2026, ora 07:00.</a> (La aceeași reuniune a Grupului de contact pentru Ucraina de la Bruxelles, unde s-a produs ruptura SUA–aliați relatată în cardul anterior, Marea Britanie a anunțat pachetul concret de apărare antiaeriană pentru iarnă.)</p>
+          </div>
+          <div class="sec">
+            <p class="sec-label">Ce s-a întâmplat</p>
+            <p>Marea Britanie a anunțat marți un pachet de apărare antiaeriană de 240 de milioane de lire (317 milioane de dolari) pentru Ucraina, care include peste 1.000 de rachete antiaeriene cu rază scurtă și lansatoarele aferente, plus peste o duzină de radare de apărare antiaeriană din Marea Britanie și din Europa. Anunțul a fost făcut de ministrul britanic al apărării, Wes Streeting, care a coprezidat la sediul NATO din Bruxelles reuniunea Grupului de contact pentru Ucraina, cu 50 de națiuni participante. Rachetele sunt produse de Thales la Belfast, pe sistemul RapidRanger, cu rachete Starstreak și Lightweight Multirole, și au fost testate, potrivit Londrei, împotriva dronelor Shahed cu reacție folosite de Rusia. Livrările încep la jumătatea lui decembrie, pe lângă cele 400 de rachete sol-aer trimise deja înainte de iarnă. Pachetul face parte din angajamentul de 500 de milioane de lire anunțat la buget pentru apărarea antiaeriană a Ucrainei în această iarnă; premierul Andy Burnham urmează să anunțe joi restul sprijinului, la reuniunea „coaliției celor dispuși".</p>
+          </div>
+          <div class="sec">
+            <p class="sec-label">De ce contează</p>
+            <p>Pentru el, ca IT incident Manager, într-un context de lucru legat direct de arhitectura de descurajare a alianței: e angajamentul concret de la aceeași reuniune de la Bruxelles unde, cu câteva ore înainte, apăruse ruptura publică SUA–aliați pe strategia Ucrainei (cardul de la 07:00) — ajutorul practic continuă în ciuda dezacordului retoric. Apărarea antiaeriană e prioritatea iernii, pe măsură ce Rusia își intensifică loviturile asupra infrastructurii civile ucrainene, iar pachetul britanic vine alături de cel germano-norvegian de 300 de milioane de dolari pentru interceptoare Patriot, anunțat la aceeași reuniune.</p>
+          </div>
+          <div class="verify">
+            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
+            <p>Verdict: sursa_primara + confirmat — Guvernul britanic, gov.uk (anunțul oficial din 17 nov 2026, sursă primară): peste 1.000 de rachete antiaeriene cu rază scurtă și lansatoare, peste o duzină de radare, 240 de milioane de lire, livrări de la jumătatea lui decembrie, parte din 500 de milioane de lire; Reuters (sursă din listă, 17 nov 2026, 15:06 UTC): confirmă cifrele și echivalentul de 317 milioane de dolari, plus eficiența dovedită împotriva dronelor Shahed; Defence Blog (17 nov 2026): detaliul sistemului RapidRanger de la Thales Belfast (Starstreak și Lightweight Multirole) și anunțul lui Burnham de joi; NPR/MTPR (17 nov 2026, relatare AP): confirmă pachetul și radarele.</p>
+            <ul class="sources">
+              <li><a href="https://www.gov.uk/government/news/more-than-1000-air-defence-missiles-for-ukraine-as-uk-delivers-240-million-in-winter-support" target="_blank" rel="noopener">Guvernul britanic (gov.uk) — „More than 1,000 air defence missiles for Ukraine as UK delivers £240 million in winter support" (17 nov 2026; anunțul oficial, sursă primară)<span class="host">gov.uk</span></a></li>
+              <li><a href="https://www.reuters.com/business/aerospace-defense/britain-supply-ukraine-with-more-than-1000-short-range-missiles-2026-11-17/" target="_blank" rel="noopener">Reuters — „Britain to supply Ukraine with more than 1,000 short-range missiles" (17 nov 2026, 15:06 UTC; cifrele pachetului, 317 mil. $, dronele Shahed)<span class="host">reuters.com</span></a></li>
+              <li><a href="https://defence-blog.com/britain-germany-rush-air-defense-to-ukraine-ahead-of-winter/" target="_blank" rel="noopener">Defence Blog — „Britain, Germany rush air defense to Ukraine ahead of winter" (17 nov 2026; RapidRanger, Thales Belfast, anunțul lui Burnham de joi)<span class="host">defence-blog.com</span></a></li>
+              <li><a href="https://www.mtpr.org/2026-11-17/ukraine-strikes-major-russian-bridge-with-drones-and-missiles-as-aerial-attacks-escalate" target="_blank" rel="noopener">Montana Public Radio / AP — „Ukraine strikes major Russian bridge with drones and missiles as aerial attacks escalate" (17 nov 2026; confirmă pachetul de 240 mil. £ și radarele)<span class="host">mtpr.org</span></a></li>
+            </ul>
+          </div>
+          <div class="impact">
+            <span class="badge">Impact direct</span>
+            <p>Impact direct: minim azi — nu cere nicio acțiune și nu schimbă nimic în programul de azi. Relevanță de context: același tip de sprijin aliat ca pachetul germano-norvegian pentru Patriot anunțat la aceeași reuniune; de urmărit livrările de la jumătatea lui decembrie și anunțul premierului Burnham de joi, despre restul celor 500 de milioane de lire.</p>
+          </div>
+        </article>
+
+        <!-- 2 · 18 nov · 08:00 -->
         <article id="stire-279" data-cats="tech" data-sev="green" data-subiect="Amazon și Google, 28% din Anthropic">
           <div class="a-meta">
             <span class="a-time">18 nov · 08:00</span>
             <span class="a-cat">Tech &amp; AI</span>
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <span class="subj-pill">Amazon și Google, 28% din Anthropic</span>
-            <span class="a-num">#1 / 5</span>
+            <span class="a-num">#2 / 6</span>
           </div>
           <h2>Amazon și Google vor deține împreună aproape 30% din Anthropic după IPO — prețul se fixează azi, tranzacționarea începe joi</h2>
           <div class="sec">
@@ -889,7 +928,7 @@
           </div>
         </article>
 
-        <!-- 2 · 18 nov · 07:00 -->
+        <!-- 3 · 18 nov · 07:00 -->
         <article id="stire-277" data-cats="romania" data-sev="amber" data-subiect="cutremur 5,7 în Vrancea">
           <div class="a-meta">
             <span class="a-time">18 nov · 07:00</span>
@@ -897,7 +936,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="subj-pill">cutremur 5,7 în Vrancea</span>
             <span class="spot-tag">Știrea zilei</span>
-            <span class="a-num">#2 / 5</span>
+            <span class="a-num">#3 / 6</span>
           </div>
           <h2>Cutremur de 5,7 în Vrancea, resimțit în București — cel mai puternic seism din România în 2026; două persoane rănite, fără pagube materiale raportate</h2>
           <div class="sec">
@@ -925,7 +964,7 @@
           </div>
         </article>
 
-        <!-- 3 · 18 nov · 07:00 -->
+        <!-- 4 · 18 nov · 07:00 -->
         <article id="stire-278" data-cats="securitate" data-sev="amber" data-subiect="ruptura SUA–aliați la Ramstein">
           <div class="a-meta">
             <span class="a-time">18 nov · 07:00</span>
@@ -933,7 +972,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-268" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">ruptura SUA–aliați la Ramstein</span>
-            <span class="a-num">#3 / 5</span>
+            <span class="a-num">#4 / 6</span>
           </div>
           <h2>Ruptură la Ramstein: Colby critică loviturile Ucrainei în adâncimea Rusiei; Germania și Marea Britanie îl contrazic public</h2>
           <div class="followup">
@@ -968,14 +1007,14 @@
           </div>
         </article>
 
-        <!-- 4 · 18 nov · 06:00 -->
+        <!-- 5 · 18 nov · 06:00 -->
         <article id="stire-275" data-cats="romania" data-sev="amber" data-subiect="Revolut sub supraveghere judiciară în Italia">
           <div class="a-meta">
             <span class="a-time">18 nov · 06:00</span>
             <span class="a-cat">România · Finanțe</span>
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="subj-pill">Revolut sub supraveghere judiciară în Italia</span>
-            <span class="a-num">#4 / 5</span>
+            <span class="a-num">#5 / 6</span>
           </div>
           <h2>Revolut Italia intră sub administrare judiciară pentru un an — tribunalul din Milano a constatat deficiențe grave la controalele anti-spălare de bani; depozitele clienților nu sunt afectate</h2>
           <div class="sec">
@@ -1007,7 +1046,7 @@
           </div>
         </article>
 
-        <!-- 5 · 18 nov · 06:00 -->
+        <!-- 6 · 18 nov · 06:00 -->
         <article id="stire-276" data-cats="tech" data-sev="amber" data-subiect="Nvidia abandonează China">
           <div class="a-meta">
             <span class="a-time">18 nov · 06:00</span>
@@ -1015,7 +1054,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-267" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">Nvidia abandonează China</span>
-            <span class="a-num">#5 / 5</span>
+            <span class="a-num">#6 / 6</span>
           </div>
           <h2>Nvidia nu mai vinde cipuri H200 în China și e anchetată de SEC — pe primul apel de rezultate după plecarea lui Huang, Kress a anunțat retragerea; venituri de 115,8 mld $ (+103%)</h2>
           <div class="followup">
@@ -5669,8 +5708,8 @@
 
             <footer>
         <div class="rule" aria-hidden="true"></div>
-        <p>Sfârșitul ediției de azi · Ultima actualizare: miercuri, 18 noiembrie 2026, 08:00<br />Monitorizarea rulează la circa 3 ore, în fereastra L–V 06:00–22:00 · S–D 07:30–22:00 — dă refresh pentru noutăți.</p>
-        <a class="to-top" href="#stire-277">↑ Înapoi la cea mai nouă știre</a>
+        <p>Sfârșitul ediției de azi · Ultima actualizare: miercuri, 18 noiembrie 2026, 09:00<br />Monitorizarea rulează la circa 3 ore, în fereastra L–V 06:00–22:00 · S–D 07:30–22:00 — dă refresh pentru noutăți.</p>
+        <a class="to-top" href="#stire-280">↑ Înapoi la cea mai nouă știre</a>
       </footer>
     </div>
 
