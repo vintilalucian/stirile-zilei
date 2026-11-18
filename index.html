@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="color-scheme" content="light dark" />
-    <meta name="tirile-versiune" content="2026-11-18T07:00:00+01:00|4|amber" />
+    <meta name="tirile-versiune" content="2026-11-18T08:00:00+01:00|5|amber" />
     <link rel="icon" href="data:," />
     <title>Știrile zilei</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -699,9 +699,9 @@
     <div class="topbar">
       <div class="topbar-inner">
         <span class="dot" aria-hidden="true"></span>
-        <span><strong>Miercuri, 18 noiembrie 2026</strong> · actualizat la <strong>07:00</strong></span>
+        <span><strong>Miercuri, 18 noiembrie 2026</strong> · actualizat la <strong>08:00</strong></span>
         <span aria-hidden="true">·</span>
-        <span>4 știri azi</span>
+        <span>5 știri azi</span>
         <span class="spacer"></span>
         <button class="refresh-btn" type="button" id="refreshBtn" aria-label="Reîmprospătează pagina">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg>
@@ -782,15 +782,15 @@
       <section class="dashboard" aria-label="Panou de ansamblu">
         <div class="dash-head">
           <span class="dash-title">Dashboard · Azi</span>
-          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 07:00</span>
+          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 08:00</span>
           <span class="dash-meta">Fereastră monitorizare <strong>L–V 06:00–22:00 · S–D 07:30–22:00</strong> · pas ~3 ore</span>
         </div>
 
         <div class="kpi-grid five" role="group" aria-label="Filtrează după categorie — apasă pe un tile">
           <button class="kpi" type="button" data-filter="toate" aria-pressed="true">
             <span class="kpi-top"><span class="kpi-label">Toate știrile</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">4</span>
-            <span class="kpi-sub">4 știri verificate azi, în 2 rulări</span>
+            <span class="kpi-value">5</span>
+            <span class="kpi-sub">5 știri verificate azi, în 3 rulări</span>
             <span class="kpi-bar" aria-hidden="true"><i style="width:100%"></i></span>
             <span class="kpi-hint">Apasă pentru toate</span>
           </button>
@@ -798,14 +798,14 @@
             <span class="kpi-top"><span class="kpi-label">Securitate &amp; NATO</span><span class="kpi-check" aria-hidden="true">✓</span></span>
             <span class="kpi-value">1</span>
             <span class="kpi-sub">ruptura SUA–aliați la Ramstein</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:25%"></i></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:20%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="romania" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">România</span><span class="kpi-check" aria-hidden="true">✓</span></span>
             <span class="kpi-value">2</span>
             <span class="kpi-sub">cutremur 5,7 în Vrancea · Revolut sub supraveghere judiciară în Italia</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:50%"></i></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:40%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="belgia" aria-pressed="false">
@@ -817,9 +817,9 @@
           </button>
           <button class="kpi" type="button" data-filter="tech" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">Tech &amp; AI</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">1</span>
-            <span class="kpi-sub">Nvidia abandonează China</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:25%"></i></span>
+            <span class="kpi-value">2</span>
+            <span class="kpi-sub">Amazon și Google, 28% din Anthropic · Nvidia abandonează China</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:40%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
         </div>
@@ -833,7 +833,7 @@
       </section>
 
       <div class="filter-status" aria-live="polite">
-        <span class="filter-label">Se afișează: <strong>Toate categoriile — 4 din 4 știri</strong></span>
+        <span class="filter-label">Se afișează: <strong>Toate categoriile — 5 din 5 știri</strong></span>
         <button class="filter-reset" type="button" hidden>Resetează filtrul</button>
       </div>
 
@@ -855,7 +855,41 @@
       <p class="empty">Nicio știre în această categorie azi.</p>
 
       <main>
-        <!-- 1 · 18 nov · 07:00 -->
+        <!-- 1 · 18 nov · 08:00 -->
+        <article id="stire-279" data-cats="tech" data-sev="green" data-subiect="Amazon și Google, 28% din Anthropic">
+          <div class="a-meta">
+            <span class="a-time">18 nov · 08:00</span>
+            <span class="a-cat">Tech &amp; AI</span>
+            <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
+            <span class="subj-pill">Amazon și Google, 28% din Anthropic</span>
+            <span class="a-num">#1 / 5</span>
+          </div>
+          <h2>Amazon și Google vor deține împreună aproape 30% din Anthropic după IPO — prețul se fixează azi, tranzacționarea începe joi</h2>
+          <div class="sec">
+            <p class="sec-label">Ce s-a întâmplat</p>
+            <p>Anthropic a dezvăluit marți, într-o modificare a prospectului S-1 depus la Comisia americană pentru valori mobiliare (SEC), că Amazon va deține 14,7% din companie după IPO și plasamentul privat concomitent, iar Google 13,7% — împreună 28,4%, în acțiuni fără drept de vot, controlul rămânând la fondatori. Amazon și-a păstrat și o expunere mai mare: dacă și-ar converti toate notele convertibile, ar ajunge la 23,8%, dar a ales să păstreze plafonul de proprietate și ține deocamdată miliardele de dolari în note neconvertite. În același plasament privat, șapte companii tech — AMD, Broadcom, Google, Micron, Microsoft, Nvidia și TSMC Partners — au convenit să cumpere acțiuni fără drept de vot de 26 de miliarde de dolari, Google și Nvidia câte 10 miliarde fiecare. Prețul, în intervalul 70–78 de dolari pe acțiune, se fixează miercuri seară, iar tranzacționarea pe Nasdaq, sub simbolul ANT, începe joi.</p>
+          </div>
+          <div class="sec">
+            <p class="sec-label">De ce contează</p>
+            <p>Pentru el, ca IT incident Manager, care folosește Claude zilnic și își construiește automatizări pe API-uri AI: laboratorul din spatele modelului pe care se bazează va fi deținut în proporție de peste un sfert de cei doi hyperscaleri care îi sunt în același timp investitori, clienți, parteneri de distribuție și concurenți — iar Anthropic însăși avertizează în prospect că amestecul ăsta de roluri poate crea conflicte de interese greu de prevăzut sau de redus. E continuarea firului urmărit în pagină (depunerea S-1, intervalul de preț 70–78 de dolari, evaluarea de până la 1.404 trilioane de dolari) și confirmă concentrarea lanțului de aprovizionare AI în mâinile câtorva giganți — exact fragilitatea semnalată la breșa OpenCode și la lecția cheilor API.</p>
+          </div>
+          <div class="verify">
+            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
+            <p>Verdict: sursa_primara + confirmat — Anthropic, prospectul S-1 modificat depus marți la SEC (sursă primară): Amazon 14,7%, Google 13,7%, 28,4% împreună, acțiuni fără drept de vot, controlul la fondatori; TechCrunch (sursă din listă, 17 nov 2026): relatarea dezvăluirii, cu detaliul notelor convertibile (23,8% potențial) și al plasamentului de 26 de miliarde de dolari; Bloomberg (prin Dealroom, 17 nov 2026): confirmă procentele din S-1 și ghidajul de preț la capătul superior al intervalului sau peste, cu preț miercuri seară și tranzacționare joi. Notă de integritate: procentele descriu scenariul în care IPO-ul și plasamentul privat se închid cum sunt planificate; acțiunile sunt fără drept de vot, deci niciunul dintre cei doi nu capătă control asupra companiei.</p>
+            <ul class="sources">
+              <li><a href="https://techcrunch.com/2026/11/17/amazon-and-google-will-together-own-nearly-30-of-anthropic-after-its-ipo/" target="_blank" rel="noopener">TechCrunch — „Amazon and Google will together own nearly 30% of Anthropic after its IPO" (17 nov 2026; relatarea dezvăluirii, notele convertibile, plasamentul de 26 mld $)<span class="host">techcrunch.com</span></a></li>
+              <li><a href="https://finance.biggo.com/news/a76351a8-7d6f-4bb3-93d4-27d8cc557eb7" target="_blank" rel="noopener">BigGo Finance — „Anthropic IPO Filing Reveals Amazon, Google to Hold 28.4% Combined Stake" (18 nov 2026, 01:25 UTC; procentele din S-1, valorile participațiilor în funcție de prețul final)<span class="host">finance.biggo.com</span></a></li>
+              <li><a href="https://dealroom.co/news/173751-anthropic-guides-its-ipo-to-the-top-of-the-range-or-above-as-a-filing-shows-amazon-and-google-will-own-28-of-it" target="_blank" rel="noopener">Dealroom — „Anthropic guides its IPO to the top of the range or above, as a filing shows Amazon and Google will own 28% of it" (17 nov 2026; surse: Bloomberg — ghidajul de preț și procentele)<span class="host">dealroom.co</span></a></li>
+              <li><a href="https://stocktwits.com/news-articles/markets/equity/anthropic-s-new-ipo-filing-shows-amazon-google-will-own-over-a-quarter-of-the-claude-maker/cNbaxuHR9Ws" target="_blank" rel="noopener">Stocktwits — „Anthropic's New IPO Filing Shows Amazon, Google Will Own Over A Quarter Of The Claude Maker" (17 nov 2026; confirmă 14,7% / 13,7% / 28,4% din S-1)<span class="host">stocktwits.com</span></a></li>
+            </ul>
+          </div>
+          <div class="impact">
+            <span class="badge">Impact direct</span>
+            <p>Impact direct: minim azi — nu cere nicio acțiune și nu schimbă nimic în programul de azi. Relevanță practică: folosește Claude zilnic și construiește automatizări pe API-uri AI, deci concentrarea proprietății la Amazon și Google îl privește direct — modelul pe care se bazează depinde de doi furnizori care sunt și concurenți ai lui; de urmărit prețul fixat diseară și debutul de joi, ca indicator al apetitului pieței pentru laboratoarele AI.</p>
+          </div>
+        </article>
+
+        <!-- 2 · 18 nov · 07:00 -->
         <article id="stire-277" data-cats="romania" data-sev="amber" data-subiect="cutremur 5,7 în Vrancea">
           <div class="a-meta">
             <span class="a-time">18 nov · 07:00</span>
@@ -863,7 +897,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="subj-pill">cutremur 5,7 în Vrancea</span>
             <span class="spot-tag">Știrea zilei</span>
-            <span class="a-num">#1 / 4</span>
+            <span class="a-num">#2 / 5</span>
           </div>
           <h2>Cutremur de 5,7 în Vrancea, resimțit în București — cel mai puternic seism din România în 2026; două persoane rănite, fără pagube materiale raportate</h2>
           <div class="sec">
@@ -891,7 +925,7 @@
           </div>
         </article>
 
-        <!-- 2 · 18 nov · 07:00 -->
+        <!-- 3 · 18 nov · 07:00 -->
         <article id="stire-278" data-cats="securitate" data-sev="amber" data-subiect="ruptura SUA–aliați la Ramstein">
           <div class="a-meta">
             <span class="a-time">18 nov · 07:00</span>
@@ -899,7 +933,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-268" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">ruptura SUA–aliați la Ramstein</span>
-            <span class="a-num">#2 / 4</span>
+            <span class="a-num">#3 / 5</span>
           </div>
           <h2>Ruptură la Ramstein: Colby critică loviturile Ucrainei în adâncimea Rusiei; Germania și Marea Britanie îl contrazic public</h2>
           <div class="followup">
@@ -934,14 +968,14 @@
           </div>
         </article>
 
-        <!-- 3 · 18 nov · 06:00 -->
+        <!-- 4 · 18 nov · 06:00 -->
         <article id="stire-275" data-cats="romania" data-sev="amber" data-subiect="Revolut sub supraveghere judiciară în Italia">
           <div class="a-meta">
             <span class="a-time">18 nov · 06:00</span>
             <span class="a-cat">România · Finanțe</span>
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="subj-pill">Revolut sub supraveghere judiciară în Italia</span>
-            <span class="a-num">#3 / 4</span>
+            <span class="a-num">#4 / 5</span>
           </div>
           <h2>Revolut Italia intră sub administrare judiciară pentru un an — tribunalul din Milano a constatat deficiențe grave la controalele anti-spălare de bani; depozitele clienților nu sunt afectate</h2>
           <div class="sec">
@@ -973,7 +1007,7 @@
           </div>
         </article>
 
-        <!-- 4 · 18 nov · 06:00 -->
+        <!-- 5 · 18 nov · 06:00 -->
         <article id="stire-276" data-cats="tech" data-sev="amber" data-subiect="Nvidia abandonează China">
           <div class="a-meta">
             <span class="a-time">18 nov · 06:00</span>
@@ -981,7 +1015,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-267" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">Nvidia abandonează China</span>
-            <span class="a-num">#4 / 4</span>
+            <span class="a-num">#5 / 5</span>
           </div>
           <h2>Nvidia nu mai vinde cipuri H200 în China și e anchetată de SEC — pe primul apel de rezultate după plecarea lui Huang, Kress a anunțat retragerea; venituri de 115,8 mld $ (+103%)</h2>
           <div class="followup">
@@ -5635,7 +5669,7 @@
 
             <footer>
         <div class="rule" aria-hidden="true"></div>
-        <p>Sfârșitul ediției de azi · Ultima actualizare: miercuri, 18 noiembrie 2026, 07:00<br />Monitorizarea rulează la circa 3 ore, în fereastra L–V 06:00–22:00 · S–D 07:30–22:00 — dă refresh pentru noutăți.</p>
+        <p>Sfârșitul ediției de azi · Ultima actualizare: miercuri, 18 noiembrie 2026, 08:00<br />Monitorizarea rulează la circa 3 ore, în fereastra L–V 06:00–22:00 · S–D 07:30–22:00 — dă refresh pentru noutăți.</p>
         <a class="to-top" href="#stire-277">↑ Înapoi la cea mai nouă știre</a>
       </footer>
     </div>
