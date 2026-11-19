@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="color-scheme" content="light dark" />
-    <meta name="tirile-versiune" content="2026-11-19T13:00:00+01:00|11|amber" />
+    <meta name="tirile-versiune" content="2026-11-19T14:00:00+01:00|12|amber" />
     <link rel="icon" href="data:," />
     <title>Știrile zilei</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -699,9 +699,9 @@
     <div class="topbar">
       <div class="topbar-inner">
         <span class="dot" aria-hidden="true"></span>
-        <span><strong>Joi, 19 noiembrie 2026</strong> · actualizat la <strong>13:00</strong></span>
+        <span><strong>Joi, 19 noiembrie 2026</strong> · actualizat la <strong>14:00</strong></span>
         <span aria-hidden="true">·</span>
-        <span>11 știri azi</span>
+        <span>12 știri azi</span>
         <span class="spacer"></span>
         <button class="refresh-btn" type="button" id="refreshBtn" aria-label="Reîmprospătează pagina">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg>
@@ -782,30 +782,30 @@
       <section class="dashboard" aria-label="Panou de ansamblu">
         <div class="dash-head">
           <span class="dash-title">Dashboard · Azi</span>
-          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 13:00</span>
+          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 14:00</span>
           <span class="dash-meta">Fereastră monitorizare <strong>L–V 06:00–22:00 · S–D 07:30–22:00</strong> · pas ~3 ore</span>
         </div>
 
         <div class="kpi-grid five" role="group" aria-label="Filtrează după categorie — apasă pe un tile">
           <button class="kpi" type="button" data-filter="toate" aria-pressed="true">
             <span class="kpi-top"><span class="kpi-label">Toate știrile</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">11</span>
-            <span class="kpi-sub">11 știri verificate azi, în 6 rulări</span>
+            <span class="kpi-value">12</span>
+            <span class="kpi-sub">12 știri verificate azi, în 7 rulări</span>
             <span class="kpi-bar" aria-hidden="true"><i style="width:100%"></i></span>
             <span class="kpi-hint">Apasă pentru toate</span>
           </button>
           <button class="kpi" type="button" data-filter="securitate" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">Securitate &amp; NATO</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">7</span>
-            <span class="kpi-sub">declarația de la Shenzhen · arme orbitale europene · Neptun Deep: exporturi de gaze · Coaliția de Voință la Berlin · a treia lovitură asupra Podului Kerci · summit nuclear Trump–Putin–Xi · infrastructură critică nepetchabilă</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:64%"></i></span>
+            <span class="kpi-value">8</span>
+            <span class="kpi-sub">acordul SUA–Groenlanda ratificat · declarația de la Shenzhen · arme orbitale europene · Neptun Deep: exporturi de gaze · Coaliția de Voință la Berlin · a treia lovitură asupra Podului Kerci · summit nuclear Trump–Putin–Xi · infrastructură critică nepetchabilă</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:67%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="romania" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">România</span><span class="kpi-check" aria-hidden="true">✓</span></span>
             <span class="kpi-value">2</span>
             <span class="kpi-sub">Neptun Deep: exporturi de gaze · Coaliția de Voință la Berlin</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:18%"></i></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:17%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="belgia" aria-pressed="false">
@@ -819,7 +819,7 @@
             <span class="kpi-top"><span class="kpi-label">Tech &amp; AI</span><span class="kpi-check" aria-hidden="true">✓</span></span>
             <span class="kpi-value">5</span>
             <span class="kpi-sub">agenții AI rescriu economia web · BCE: AI și datoria suverană · IPO Anthropic, cel mai mare din istorie · infrastructură critică nepetchabilă · reorganizare AI la Microsoft</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:45%"></i></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:42%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
         </div>
@@ -833,7 +833,7 @@
       </section>
 
       <div class="filter-status" aria-live="polite">
-        <span class="filter-label">Se afișează: <strong>Toate categoriile — 11 din 11 știri</strong></span>
+        <span class="filter-label">Se afișează: <strong>Toate categoriile — 12 din 12 știri</strong></span>
         <button class="filter-reset" type="button" hidden>Resetează filtrul</button>
       </div>
 
@@ -855,7 +855,40 @@
       <p class="empty">Nicio știre în această categorie azi.</p>
 
       <main>
-                <!-- 1 · 19 nov · 13:00 -->
+                        <!-- 1 · 19 nov · 14:00 -->
+        <article id="stire-310" data-cats="securitate" data-sev="green" data-subiect="acordul SUA–Groenlanda ratificat">
+          <div class="a-meta">
+            <span class="a-time">19 nov · 14:00</span>
+            <span class="a-cat">Securitate &amp; NATO</span>
+            <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
+            <span class="subj-pill">acordul SUA–Groenlanda ratificat</span>
+            <span class="a-num">#1 / 12</span>
+          </div>
+          <h2>Danemarca a ratificat în unanimitate acordul cu SUA pentru Groenlanda — acces militar american extins, suveranitatea daneză reafirmată</h2>
+          <div class="sec">
+            <p class="sec-label">Ce s-a întâmplat</p>
+            <p>Parlamentul danez (Folketing) a ratificat azi, joi 19 noiembrie, în unanimitate — 109 voturi pentru, niciunul împotrivă — acordul de securitate cu Statele Unite privind Groenlanda, semnat pe 22 septembrie la New York de președintele Donald Trump, premierul danez Mette Frederiksen și premierul groenlandez Jens-Frederik Nielsen. Acordul pune capăt unui impas de luni de zile, după ce Trump a amenințat repetat că va prelua controlul insulei bogate în minerale, teritoriu autonom danez cu 57.000 de locuitori, și extinde rolul militar american în Groenlanda: permisiunea de a instala sistemul de apărare antirachetă „Golden Dome", două noi zone de apărare — Narsarsuaq în sud și Mestersvig pe coasta de est — și operațiuni extinse la baza spațială Pituffik. În același timp, textul reafirmă suveranitatea Danemarcei și dreptul groenlandezilor la autodeterminare și nu transferă proprietatea asupra insulei. Parlamentul Groenlandei aprobase deja acordul la 3 noiembrie (16 voturi pentru, niciunul împotrivă, 7 abțineri). Acordul, negociat ca acord executiv, nu e supus votului Senatului SUA și intră în vigoare după ce Ministerul danez de Externe notifică formal Washingtonul că procedurile parlamentare s-au încheiat.</p>
+          </div>
+          <div class="sec">
+            <p class="sec-label">De ce contează</p>
+            <p>Închide criza din interiorul NATO care a zguduit relațiile transatlantice la începutul anului: amenințările SUA asupra unui teritoriu al unui aliat au pus sub semnul întrebării coeziunea alianței exact când Europa își construiește garanțiile de securitate pentru Ucraina. Pentru un profesionist care lucrează în mediul NATO, e context direct: Groenlanda e teritoriu NATO, iar baza Pituffik e piesă de apărare antirachetă și supraveghere radar în Atlanticul de Nord; acordul lămurește cadrul în care SUA își extind prezența acolo, fără să schimbe suveranitatea.</p>
+          </div>
+          <div class="verify">
+            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
+            <p>Verdict: confirmat. Reuters (19 nov 2026, curatoriat), The Arabian Post (19 nov 2026) și Antigua Tribune (19 nov 2026) relatează independent același rezultat: vot 109–0 în Folketing, cele două zone noi de apărare, Pituffik și „Golden Dome", intrarea în vigoare după notificarea diplomatică.</p>
+            <ul class="sources">
+              <li><a href="https://www.reuters.com/world/denmark-expected-ratify-trump-deal-over-greenland-thursday-2026-11-19/" target="_blank" rel="noopener">Reuters — Danemarca urmează să ratifice joi acordul cu Trump privind Groenlanda (19 nov 2026)<span class="host">reuters.com</span></a></li>
+              <li><a href="https://thearabianpost.com/danish-parliament-ratifies-expanded-us-military-access-to-greenland/" target="_blank" rel="noopener">The Arabian Post — Parlamentul danez ratifică accesul militar american extins în Groenlanda (19 nov 2026)<span class="host">thearabianpost.com</span></a></li>
+              <li><a href="https://antiguatribune.com/denmark-parliament-approves-security-deal-with-greenland-and-us/" target="_blank" rel="noopener">Antigua Tribune — Parlamentul Danemarcei aprobă acordul de securitate privind Groenlanda cu SUA (19 nov 2026)<span class="host">antiguatribune.com</span></a></li>
+            </ul>
+          </div>
+          <div class="impact">
+            <span class="badge">Impact direct</span>
+            <p>Impact direct: minim — nicio consecință practică azi pentru România, familie sau activitatea profesională. Relevanță de context: încheie disputa internă NATO despre Groenlanda și clarifică cadrul prezenței militare americane în Atlanticul de Nord; de urmărit cum se reflectă în discuțiile de la summitul liderilor NATO de la Ankara din această săptămână.</p>
+          </div>
+        </article>
+
+<!-- 2 · 19 nov · 13:00 -->
         <article id="stire-308" data-cats="securitate" data-sev="amber" data-subiect="declarația de la Shenzhen">
           <div class="a-meta">
             <span class="a-time">19 nov · 13:00</span>
@@ -863,7 +896,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-300" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">declarația de la Shenzhen</span>
-            <span class="a-num">#1 / 11</span>
+            <span class="a-num">#2 / 12</span>
           </div>
           <h2>Summitul de la Shenzhen s-a încheiat cu o declarație în patru puncte, fără progres pe Ucraina sau pe dezarmarea nucleară</h2>
           <div class="followup">
@@ -898,14 +931,14 @@
           </div>
         </article>
 
-        <!-- 2 · 19 nov · 13:00 -->
+        <!-- 3 · 19 nov · 13:00 -->
         <article id="stire-309" data-cats="securitate" data-sev="green" data-subiect="arme orbitale europene">
           <div class="a-meta">
             <span class="a-time">19 nov · 13:00</span>
             <span class="a-cat">Securitate &amp; NATO</span>
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <span class="subj-pill">arme orbitale europene</span>
-            <span class="a-num">#2 / 11</span>
+            <span class="a-num">#3 / 12</span>
           </div>
           <h2>MBDA și startupul german Atmos studiază lovituri de precizie din orbită — Europa vrea descurajare convențională din spațiu</h2>
           <div class="sec">
@@ -931,14 +964,14 @@
           </div>
         </article>
 
-<!-- 3 · 19 nov · 12:00 -->
+<!-- 4 · 19 nov · 12:00 -->
         <article id="stire-307" data-cats="romania securitate" data-sev="amber" data-subiect="Neptun Deep: exporturi de gaze">
           <div class="a-meta">
             <span class="a-time">19 nov · 12:00</span>
             <span class="a-cat">România · Securitate &amp; NATO</span>
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="subj-pill">Neptun Deep: exporturi de gaze</span>
-            <span class="a-num">#3 / 11</span>
+            <span class="a-num">#4 / 12</span>
           </div>
           <h2>Neptun Deep: România devine exportator regional de gaze din 2027, inclusiv către Ucraina — S&amp;P Global Energy</h2>
           <div class="sec">
@@ -966,7 +999,7 @@
           </div>
         </article>
 
-        <!-- 4 · 19 nov · 11:00 -->
+        <!-- 5 · 19 nov · 11:00 -->
         <article id="stire-305" data-cats="securitate romania" data-sev="amber" data-subiect="Coaliția de Voință la Berlin">
           <div class="a-meta">
             <span class="a-time">19 nov · 11:00</span>
@@ -975,7 +1008,7 @@
             <a class="cont-pill" href="#stire-286" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">Coaliția de Voință la Berlin</span>
             <span class="spot-tag">Știrea zilei</span>
-            <span class="a-num">#4 / 11</span>
+            <span class="a-num">#5 / 12</span>
           </div>
           <h2>Coaliția de Voință se reunește azi la Berlin: garanții de securitate pentru Ucraina, cu Rutte și emisarii lui Trump la masă</h2>
           <div class="followup">
@@ -1009,7 +1042,7 @@
           </div>
         </article>
 
-        <!-- 5 · 19 nov · 11:00 -->
+        <!-- 6 · 19 nov · 11:00 -->
         <article id="stire-306" data-cats="tech" data-sev="green" data-subiect="agenții AI rescriu economia web">
           <div class="a-meta">
             <span class="a-time">19 nov · 11:00</span>
@@ -1017,7 +1050,7 @@
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <a class="cont-pill" href="#stire-298" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">agenții AI rescriu economia web</span>
-            <span class="a-num">#5 / 11</span>
+            <span class="a-num">#6 / 12</span>
           </div>
           <h2>Nadella: agenții AI vor rescrie economia internetului — «dacă nu accepți agentul, o face altcineva»</h2>
           <div class="followup">
@@ -1047,7 +1080,7 @@
           </div>
         </article>
 
-        <!-- 6 · 19 nov · 09:00 -->
+        <!-- 7 · 19 nov · 09:00 -->
         <article id="stire-303" data-cats="securitate" data-sev="amber" data-subiect="a treia lovitură asupra Podului Kerci">
           <div class="a-meta">
             <span class="a-time">19 nov · 09:00</span>
@@ -1055,7 +1088,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-281" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">a treia lovitură asupra Podului Kerci</span>
-            <span class="a-num">#6 / 11</span>
+            <span class="a-num">#7 / 12</span>
           </div>
           <h2>Podul Kerci, lovit a treia oară într-o săptămână — de data asta secțiunea feroviară; traficul, suspendat, cu câteva ore înaintea summitului Trump–Putin–Xi de la Shenzhen</h2>
           <div class="followup">
@@ -1085,14 +1118,14 @@
           </div>
         </article>
 
-        <!-- 7 · 19 nov · 09:00 -->
+        <!-- 8 · 19 nov · 09:00 -->
         <article id="stire-304" data-cats="tech" data-sev="green" data-subiect="BCE: AI și datoria suverană">
           <div class="a-meta">
             <span class="a-time">19 nov · 09:00</span>
             <span class="a-cat">Tech &amp; AI</span>
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <span class="subj-pill">BCE: AI și datoria suverană</span>
-            <span class="a-num">#7 / 11</span>
+            <span class="a-num">#8 / 12</span>
           </div>
           <h2>BCE avertizează: evaluările AI și datoria suverană pot zgudui piețele — infrastructura AI se finanțează tot mai mult din datorii, iar un sfert din datoria suverană a zonei euro ajunge la scadență până la finele lui 2028</h2>
           <div class="sec">
@@ -1119,14 +1152,14 @@
           </div>
         </article>
 
-        <!-- 8 · 19 nov · 07:00 -->
+        <!-- 9 · 19 nov · 07:00 -->
         <article id="stire-300" data-cats="securitate" data-sev="amber" data-subiect="summit nuclear Trump–Putin–Xi">
           <div class="a-meta">
             <span class="a-time">19 nov · 07:00</span>
             <span class="a-cat">Securitate &amp; NATO</span>
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="subj-pill">summit nuclear Trump–Putin–Xi</span>
-            <span class="a-num">#8 / 11</span>
+            <span class="a-num">#9 / 12</span>
           </div>
           <h2>Trump, Putin și Xi se întâlnesc azi la Shenzhen, în primul summit trilateral al celor trei mari puteri nucleare — dezarmarea nucleară pe agendă, la nouă luni după expirarea New START</h2>
           <div class="sec">
@@ -1157,7 +1190,7 @@
           </div>
         </article>
 
-        <!-- 9 · 19 nov · 07:00 -->
+        <!-- 10 · 19 nov · 07:00 -->
         <article id="stire-301" data-cats="tech" data-sev="green" data-subiect="IPO Anthropic, cel mai mare din istorie">
           <div class="a-meta">
             <span class="a-time">19 nov · 07:00</span>
@@ -1165,7 +1198,7 @@
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <a class="cont-pill" href="#stire-279" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">IPO Anthropic, cel mai mare din istorie</span>
-            <span class="a-num">#9 / 11</span>
+            <span class="a-num">#10 / 12</span>
           </div>
           <h2>Anthropic a fixat IPO la 83 $ pe acțiune — 81,3 mld $, cel mai mare debut bursier din istorie; acțiunile încep să se tranzacționeze azi, sub simbolul ANT</h2>
           <div class="followup">
@@ -1196,14 +1229,14 @@
           </div>
         </article>
 
-        <!-- 10 · 19 nov · 06:00 -->
+        <!-- 11 · 19 nov · 06:00 -->
         <article id="stire-289" data-cats="tech securitate" data-sev="amber" data-subiect="infrastructură critică nepetchabilă">
           <div class="a-meta">
             <span class="a-time">19 nov · 06:00</span>
             <span class="a-cat">Tech &amp; AI · Securitate &amp; NATO</span>
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="subj-pill">infrastructură critică nepetchabilă</span>
-            <span class="a-num">#10 / 11</span>
+            <span class="a-num">#11 / 12</span>
           </div>
           <h2>Nadella: mare parte din infrastructura critică e «unpatchable» — atacurile cibernetice asistate de AI lovesc sisteme care nu pot fi actualizate</h2>
           <div class="sec">
@@ -1233,14 +1266,14 @@
           </div>
         </article>
 
-        <!-- 11 · 19 nov · 06:00 -->
+        <!-- 12 · 19 nov · 06:00 -->
         <article id="stire-290" data-cats="tech" data-sev="green" data-subiect="reorganizare AI la Microsoft">
           <div class="a-meta">
             <span class="a-time">19 nov · 06:00</span>
             <span class="a-cat">Tech &amp; AI</span>
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <span class="subj-pill">reorganizare AI la Microsoft</span>
-            <span class="a-num">#11 / 11</span>
+            <span class="a-num">#12 / 12</span>
           </div>
           <h2>Nadella explică de ce le-a cerut celor 60.000 de angajați Microsoft să plece: reorganizare în jurul AI, nu concedieri în masă</h2>
           <div class="sec">
@@ -6042,8 +6075,8 @@
 
                   <footer>
         <div class="rule" aria-hidden="true"></div>
-        <p>Sfârșitul ediției de azi · Ultima actualizare: joi, 19 noiembrie 2026, 13:00<br />Monitorizarea rulează la circa 3 ore, în fereastra L–V 06:00–22:00 · S–D 07:30–22:00 — dă refresh pentru noutăți.</p>
-        <a class="to-top" href="#stire-308">↑ Înapoi la cea mai nouă știre</a>
+        <p>Sfârșitul ediției de azi · Ultima actualizare: joi, 19 noiembrie 2026, 14:00<br />Monitorizarea rulează la circa 3 ore, în fereastra L–V 06:00–22:00 · S–D 07:30–22:00 — dă refresh pentru noutăți.</p>
+        <a class="to-top" href="#stire-310">↑ Înapoi la cea mai nouă știre</a>
       </footer>
     </div>
 
