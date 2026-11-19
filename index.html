@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="color-scheme" content="light dark" />
-    <meta name="tirile-versiune" content="2026-11-19T20:00:00+01:00|18|amber" />
+    <meta name="tirile-versiune" content="2026-11-19T22:00:00+01:00|20|amber" />
     <link rel="icon" href="data:," />
     <title>Știrile zilei</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -699,9 +699,9 @@
     <div class="topbar">
       <div class="topbar-inner">
         <span class="dot" aria-hidden="true"></span>
-        <span><strong>Joi, 19 noiembrie 2026</strong> · actualizat la <strong>20:00</strong></span>
+        <span><strong>Joi, 19 noiembrie 2026</strong> · actualizat la <strong>22:00</strong></span>
         <span aria-hidden="true">·</span>
-        <span>18 știri azi</span>
+        <span>20 știri azi</span>
         <span class="spacer"></span>
         <button class="refresh-btn" type="button" id="refreshBtn" aria-label="Reîmprospătează pagina">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg>
@@ -747,8 +747,11 @@
            Berlin a „Coaliției de Voință", cu secretarul general NATO și emisarii
            americani la masă, pentru garanțiile de securitate ale Ucrainei; e
            știrea zilei (marcată ca atare pe cardul de la 11:00), cea mai importantă
-           dintre cele unsprezece știri cu severitate galbenă ale zilei — celelalte zece
-           sunt atacul cibernetic generat cu AI asupra Comisiei Europene (20:00),
+           dintre cele treisprezece știri cu severitate galbenă ale zilei — celelalte
+           douăsprezece sunt exercițiul comun de descurajare nucleară
+           Franța–Suedia (22:00), declarația lui Macron despre redeschiderea
+           chestiunii aderării Ucrainei la NATO (22:00),
+           atacul cibernetic generat cu AI asupra Comisiei Europene (20:00),
            ancheta Reuters despre agentul Muse al Meta (19:00),
            anunțul Ucrainei că își triplează loviturile adânci (18:00),
            invitația lui Putin către europeni la Moscova (16:00),
@@ -772,7 +775,7 @@
         <h2 class="spot-title">Coaliția de Voință se reunește azi la Berlin: garanții de securitate pentru Ucraina, cu Rutte și emisarii lui Trump la masă</h2>
         <p class="spot-why"><strong>De ce e în față:</strong> reuniunea de azi a liderilor europeni cu secretarul general NATO și emisarii americani decide garanțiile de securitate pentru Ucraina și locul Europei în negocierile cu Rusia.</p>
         <p class="spot-lead">Liderii europeni se reunesc azi la Berlin în formatul „Coaliția de Voință", la invitația cancelarului Friedrich Merz, pentru a reafirma sprijinul pentru Ucraina și a discuta garanții de securitate obligatorii juridic, în vigoare după o încetare a focului. La masă sunt liderii Germaniei, Franței, Marii Britanii, Poloniei și Italiei, secretarul general NATO Mark Rutte și emisarii americani Steve Witkoff și Jared Kushner; România e reprezentată de președintele Nicușor Dan.</p>
-        <p class="spot-more"><span class="spot-more-text">Mai sunt și alte 10 știri cu aceeași severitate —</span> <button class="spot-more-btn" type="button" data-sev-value="amber" aria-label="Apasă aici ca să vezi doar știrile cu severitatea Galben — de urmărit">apasă aici</button></p>
+        <p class="spot-more"><span class="spot-more-text">Mai sunt și alte 12 știri cu aceeași severitate —</span> <button class="spot-more-btn" type="button" data-sev-value="amber" aria-label="Apasă aici ca să vezi doar știrile cu severitatea Galben — de urmărit">apasă aici</button></p>
         <div class="spot-foot">
           <a class="spot-link" href="#stire-305">Citește știrea completă ↓</a>
           <div class="sev-scale" role="img" aria-label="Scară de gravitate: verde — normal, galben — de urmărit, roșu — grav. Nivelul de azi: galben.">
@@ -787,30 +790,30 @@
       <section class="dashboard" aria-label="Panou de ansamblu">
         <div class="dash-head">
           <span class="dash-title">Dashboard · Azi</span>
-          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 20:00</span>
+          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 22:00</span>
           <span class="dash-meta">Fereastră monitorizare <strong>L–V 06:00–22:00 · S–D 07:30–22:00</strong> · pas ~3 ore</span>
         </div>
 
         <div class="kpi-grid five" role="group" aria-label="Filtrează după categorie — apasă pe un tile">
           <button class="kpi" type="button" data-filter="toate" aria-pressed="true">
             <span class="kpi-top"><span class="kpi-label">Toate știrile</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">18</span>
-            <span class="kpi-sub">18 știri verificate azi, în 12 rulări</span>
+            <span class="kpi-value">20</span>
+            <span class="kpi-sub">20 știri verificate azi, în 13 rulări</span>
             <span class="kpi-bar" aria-hidden="true"><i style="width:100%"></i></span>
             <span class="kpi-hint">Apasă pentru toate</span>
           </button>
           <button class="kpi" type="button" data-filter="securitate" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">Securitate &amp; NATO</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">12</span>
-            <span class="kpi-sub">atac cibernetic AI la Comisia Europeană · Ucraina triplează loviturile adânci · Putin invită europenii la Moscova · Putin exclude armistițiul în Marea Neagră · acordul SUA–Groenlanda ratificat · declarația de la Shenzhen · arme orbitale europene · Neptun Deep: exporturi de gaze · Coaliția de Voință la Berlin · a treia lovitură asupra Podului Kerci · summit nuclear Trump–Putin–Xi · infrastructură critică nepetchabilă</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:67%"></i></span>
+            <span class="kpi-value">14</span>
+            <span class="kpi-sub">exercițiu nuclear Franța–Suedia · Ucraina și NATO · atac cibernetic AI la Comisia Europeană · Ucraina triplează loviturile adânci · Putin invită europenii la Moscova · Putin exclude armistițiul în Marea Neagră · acordul SUA–Groenlanda ratificat · declarația de la Shenzhen · arme orbitale europene · Neptun Deep: exporturi de gaze · Coaliția de Voință la Berlin · a treia lovitură asupra Podului Kerci · summit nuclear Trump–Putin–Xi · infrastructură critică nepetchabilă</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:70%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="romania" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">România</span><span class="kpi-check" aria-hidden="true">✓</span></span>
             <span class="kpi-value">2</span>
             <span class="kpi-sub">Neptun Deep: exporturi de gaze · Coaliția de Voință la Berlin</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:11%"></i></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:10%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="belgia" aria-pressed="false">
@@ -824,7 +827,7 @@
             <span class="kpi-top"><span class="kpi-label">Tech &amp; AI</span><span class="kpi-check" aria-hidden="true">✓</span></span>
             <span class="kpi-value">8</span>
             <span class="kpi-sub">atac cibernetic AI la Comisia Europeană · Muse amestecă conversații private · Gemini păstrează conversațiile 2 luni · agenții AI rescriu economia web · BCE: AI și datoria suverană · IPO Anthropic, cel mai mare din istorie · infrastructură critică nepetchabilă · reorganizare AI la Microsoft</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:44%"></i></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:40%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
         </div>
@@ -838,7 +841,7 @@
       </section>
 
       <div class="filter-status" aria-live="polite">
-        <span class="filter-label">Se afișează: <strong>Toate categoriile — 18 din 18 știri</strong></span>
+        <span class="filter-label">Se afișează: <strong>Toate categoriile — 20 din 20 știri</strong></span>
         <button class="filter-reset" type="button" hidden>Resetează filtrul</button>
       </div>
 
@@ -860,14 +863,86 @@
       <p class="empty">Nicio știre în această categorie azi.</p>
 
       <main>
-                        <!-- 1 · 19 nov · 20:00 -->
+                        <!-- 1 · 19 nov · 22:00 -->
+        <article id="stire-317" data-cats="securitate" data-sev="amber" data-subiect="exercițiu nuclear Franța–Suedia">
+          <div class="a-meta">
+            <span class="a-time">19 nov · 22:00</span>
+            <span class="a-cat">Securitate &amp; NATO</span>
+            <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
+            <span class="subj-pill">exercițiu nuclear Franța–Suedia</span>
+            <span class="a-num">#1 / 20</span>
+          </div>
+          <h2>Franța și Suedia, primul exercițiu comun de descurajare nucleară — Rafale cu capacitate nucleară au zburat deasupra Suediei</h2>
+          <div class="sec">
+            <p class="sec-label">Ce s-a întâmplat</p>
+            <p>Franța și Suedia au desfășurat în 16–18 noiembrie, în nordul Suediei, primul lor exercițiu comun în cadrul inițiativei franceze de descurajare avansată propuse de președintele Emmanuel Macron. Avioane Rafale cu capacitate nucleară și un avion-cisternă Airbus A330 MRTT au operat alături de avioane Gripen suedeze. Exercițiul, botezat Excalibur, nu a implicat arme nucleare reale și, potrivit ministerelor apărării din cele două țări, nu a fost îndreptat împotriva vreunei țări. Vine la o lună după un exercițiu similar, în care avioane britanice Typhoon au escortat Rafale franceze într-o misiune simulată de lovitură nucleară.</p>
+          </div>
+          <div class="sec">
+            <p class="sec-label">De ce contează</p>
+            <p>E prima punere în practică a inițiativei lui Macron de extindere a descurajării nucleare franceze către aliații europeni — un pas concret spre autonomia strategică europeană, pe fondul incertitudinii privind garanțiile de securitate americane. Pentru un IT incident Manager în mediul NATO, descurajarea europeană și interoperabilitatea aliaților sunt teme de fond ale Alianței.</p>
+          </div>
+          <div class="verify">
+            <p class="sec-label">Verificare <span class="status">Sursă primară</span></p>
+            <p>Verdict: sursa_primara — exercițiul a fost anunțat chiar de forțele armate franceze și suedeze și a fost relatat de Defense News (19 nov 2026). Nu a fost găsită o a doua confirmare editorială independentă a exercițiului propriu-zis.</p>
+            <ul class="sources">
+              <li><a href="https://www.defensenews.com/global/europe/2026/11/19/france-and-sweden-hold-first-joint-nuclear-deterrence-exercise/" target="_blank" rel="noopener">Defense News — France and Sweden hold first joint nuclear deterrence exercise (19 nov 2026)<span class="host">defensenews.com</span></a></li>
+            </ul>
+          </div>
+          <div class="impact">
+            <span class="badge">Impact direct</span>
+            <p>Impact direct: minim — relevanță de context. Exercițiul nu schimbă nimic în rutina zilnică; contează ca semnal de fond despre direcția descurajării europene și a interoperabilității între aliați.</p>
+          </div>
+        </article>
+
+        <!-- 2 · 19 nov · 22:00 -->
+        <article id="stire-318" data-cats="securitate" data-sev="amber" data-subiect="Ucraina și NATO">
+          <div class="a-meta">
+            <span class="a-time">19 nov · 22:00</span>
+            <span class="a-cat">Securitate &amp; NATO</span>
+            <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
+            <a class="cont-pill" href="#stire-305" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
+            <span class="subj-pill">Ucraina și NATO</span>
+            <span class="a-num">#2 / 20</span>
+          </div>
+          <h2>Macron vrea redeschisă chestiunea aderării Ucrainei la NATO: „trebuie să redeschidem întrebarea"</h2>
+          <div class="followup">
+            <span class="tag">Urmare la</span>
+            <p><a href="#stire-305">„Coaliția de Voință se reunește azi la Berlin: garanții de securitate pentru Ucraina, cu Rutte și emisarii lui Trump la masă" — joi, 19 noiembrie 2026, ora 11:00.</a> (Atunci liderii europeni se reuneau la Berlin pentru garanțiile de securitate ale Ucrainei; acum, după reuniune, Macron cere redeschiderea chestiunii aderării Ucrainei la NATO.)</p>
+          </div>
+          <div class="sec">
+            <p class="sec-label">Ce s-a întâmplat</p>
+            <p>După reuniunea de azi a Coaliției de Voință de la Berlin, președintele francez Emmanuel Macron a declarat că aliații trebuie să redeschidă chestiunea aderării Ucrainei la NATO, invocând „caracterul maximalist" al poziției Rusiei și armata ucraineană „puternică și bine echipată". La reuniune au participat și emisarii președintelui Trump, Steve Witkoff și Jared Kushner, iar liderii europeni au avut un schimb cu Trump. Macron a cerut totodată aliaților „maximum" de efort pentru livrarea sistemelor de apărare antiaeriană de care Ucraina are nevoie acum.</p>
+          </div>
+          <div class="sec">
+            <p class="sec-label">De ce contează</p>
+            <p>E o schimbare de ton față de 2022, când aderarea fusese pusă deoparte de teama unei confruntări directe NATO–Rusia; readuce pe masă garanția de securitate maximală pentru Ucraina, chiar în timp ce negocierile de pace se intensifică — context direct pentru munca în mediul NATO.</p>
+          </div>
+          <div class="verify">
+            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
+            <p>Verdict: confirmat. Reuters (19 nov 2026) și Euronews (19 nov 2026) relatează declarațiile lui Macron de după reuniunea Coaliției de Voință de la Berlin: aderarea Ucrainei la NATO trebuie redeschisă ca discuție între aliați.</p>
+            <ul class="sources">
+              <li><a href="https://www.reuters.com/world/ukraines-nato-membership-is-relevant-european-security-macron-says-2026-11-19/" target="_blank" rel="noopener">Reuters — Ukraine's NATO membership is relevant for European security, Macron says (19 nov 2026)<span class="host">reuters.com</span></a></li>
+              <li><a href="https://app.ekkow.com/1496232180444595063" target="_blank" rel="noopener">Euronews — relatarea declarațiilor lui Macron după reuniunea de la Berlin (19 nov 2026)<span class="host">app.ekkow.com</span></a></li>
+            </ul>
+          </div>
+          <div class="opposing">
+            <p class="sec-label">Tabăra adversă</p>
+            <p>Adjunctul ministrului rus de externe Serghei Riabkov a declarat pe 17 noiembrie că Moscova respinge „categoric" aderarea Ucrainei la NATO. (<a href="https://jbiznews.com/russia-says-it-would-not-accept-ukraine-joining-nato/" target="_blank" rel="noopener">JBizNews, care citează Interfax</a>)</p>
+          </div>
+          <div class="impact">
+            <span class="badge">Impact direct</span>
+            <p>Impact direct: minim — relevanță de context. Declarația nu produce o decizie azi; readuce însă aderarea Ucrainei în discuția aliată, pe fondul negocierilor de pace în desfășurare.</p>
+          </div>
+        </article>
+
+                        <!-- 3 · 19 nov · 20:00 -->
         <article id="stire-316" data-cats="securitate tech" data-sev="amber" data-subiect="atac cibernetic AI la Comisia Europeană">
           <div class="a-meta">
             <span class="a-time">19 nov · 20:00</span>
             <span class="a-cat">Securitate &amp; NATO · Tech &amp; AI</span>
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="subj-pill">atac cibernetic AI la Comisia Europeană</span>
-            <span class="a-num">#1 / 18</span>
+            <span class="a-num">#3 / 20</span>
           </div>
           <h2>Comisia Europeană confirmă un atac cibernetic generat cu AI — sistemele de HR și decontări medicale, offline peste 10 zile</h2>
           <div class="sec">
@@ -894,14 +969,14 @@
           </div>
         </article>
 
-<!-- 2 · 19 nov · 19:00 -->
+<!-- 4 · 19 nov · 19:00 -->
         <article id="stire-315" data-cats="tech" data-sev="amber" data-subiect="Muse amestecă conversații private">
           <div class="a-meta">
             <span class="a-time">19 nov · 19:00</span>
             <span class="a-cat">Tech &amp; AI</span>
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="subj-pill">Muse amestecă conversații private</span>
-            <span class="a-num">#2 / 18</span>
+            <span class="a-num">#4 / 20</span>
           </div>
           <h2>Reuters: agentul AI Muse al Meta amestecă conversații între conturi și ajunge la date private pe care utilizatorii nu le-au împărtășit</h2>
           <div class="sec">
@@ -931,7 +1006,7 @@
           </div>
         </article>
 
-<!-- 3 · 19 nov · 18:00 -->
+<!-- 5 · 19 nov · 18:00 -->
         <article id="stire-313" data-cats="securitate" data-sev="amber" data-subiect="Ucraina triplează loviturile adânci">
           <div class="a-meta">
             <span class="a-time">19 nov · 18:00</span>
@@ -939,7 +1014,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-311" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">Ucraina triplează loviturile adânci</span>
-            <span class="a-num">#3 / 18</span>
+            <span class="a-num">#5 / 20</span>
           </div>
           <h2>Ucraina își dublează livrările de drone și își triplează loviturile adânci în 2027 — în ciuda criticilor Pentagonului</h2>
           <div class="followup">
@@ -971,14 +1046,14 @@
           </div>
         </article>
 
-        <!-- 4 · 19 nov · 18:00 -->
+        <!-- 6 · 19 nov · 18:00 -->
         <article id="stire-314" data-cats="tech" data-sev="green" data-subiect="Gemini păstrează conversațiile 2 luni">
           <div class="a-meta">
             <span class="a-time">19 nov · 18:00</span>
             <span class="a-cat">Tech &amp; AI</span>
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <span class="subj-pill">Gemini păstrează conversațiile 2 luni</span>
-            <span class="a-num">#4 / 18</span>
+            <span class="a-num">#6 / 20</span>
           </div>
           <h2>Google păstrează conversațiile Gemini cu istoricul oprit circa două luni, față de 72 de ore</h2>
           <div class="sec">
@@ -1004,7 +1079,7 @@
           </div>
         </article>
 
-                                        <!-- 5 · 19 nov · 16:00 -->
+                                        <!-- 7 · 19 nov · 16:00 -->
         <article id="stire-312" data-cats="securitate" data-sev="amber" data-subiect="Putin invită europenii la Moscova">
           <div class="a-meta">
             <span class="a-time">19 nov · 16:00</span>
@@ -1012,7 +1087,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-308" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">Putin invită europenii la Moscova</span>
-            <span class="a-num">#5 / 18</span>
+            <span class="a-num">#7 / 20</span>
           </div>
           <h2>Putin invită europenii la Moscova ca să-și clarifice poziția în negocierile pentru Ucraina — după summitul de la Shenzhen</h2>
           <div class="followup">
@@ -1046,7 +1121,7 @@
           </div>
         </article>
 
-<!-- 6 · 19 nov · 15:00 -->
+<!-- 8 · 19 nov · 15:00 -->
         <article id="stire-311" data-cats="securitate" data-sev="amber" data-subiect="Putin exclude armistițiul în Marea Neagră">
           <div class="a-meta">
             <span class="a-time">19 nov · 15:00</span>
@@ -1054,7 +1129,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-303" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">Putin exclude armistițiul în Marea Neagră</span>
-            <span class="a-num">#6 / 18</span>
+            <span class="a-num">#8 / 20</span>
           </div>
           <h2>Putin exclude orice armistițiu în Marea Neagră și pe energie, după loviturile asupra Podului Kerci — promite un răspuns „mult mai dureros"</h2>
           <div class="followup">
@@ -1087,14 +1162,14 @@
           </div>
         </article>
 
-<!-- 7 · 19 nov · 14:00 -->
+<!-- 9 · 19 nov · 14:00 -->
         <article id="stire-310" data-cats="securitate" data-sev="green" data-subiect="acordul SUA–Groenlanda ratificat">
           <div class="a-meta">
             <span class="a-time">19 nov · 14:00</span>
             <span class="a-cat">Securitate &amp; NATO</span>
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <span class="subj-pill">acordul SUA–Groenlanda ratificat</span>
-            <span class="a-num">#7 / 18</span>
+            <span class="a-num">#9 / 20</span>
           </div>
           <h2>Danemarca a ratificat în unanimitate acordul cu SUA pentru Groenlanda — acces militar american extins, suveranitatea daneză reafirmată</h2>
           <div class="sec">
@@ -1120,7 +1195,7 @@
           </div>
         </article>
 
-<!-- 8 · 19 nov · 13:00 -->
+<!-- 10 · 19 nov · 13:00 -->
         <article id="stire-308" data-cats="securitate" data-sev="amber" data-subiect="declarația de la Shenzhen">
           <div class="a-meta">
             <span class="a-time">19 nov · 13:00</span>
@@ -1128,7 +1203,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-300" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">declarația de la Shenzhen</span>
-            <span class="a-num">#8 / 18</span>
+            <span class="a-num">#10 / 20</span>
           </div>
           <h2>Summitul de la Shenzhen s-a încheiat cu o declarație în patru puncte, fără progres pe Ucraina sau pe dezarmarea nucleară</h2>
           <div class="followup">
@@ -1163,14 +1238,14 @@
           </div>
         </article>
 
-        <!-- 9 · 19 nov · 13:00 -->
+        <!-- 11 · 19 nov · 13:00 -->
         <article id="stire-309" data-cats="securitate" data-sev="green" data-subiect="arme orbitale europene">
           <div class="a-meta">
             <span class="a-time">19 nov · 13:00</span>
             <span class="a-cat">Securitate &amp; NATO</span>
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <span class="subj-pill">arme orbitale europene</span>
-            <span class="a-num">#9 / 18</span>
+            <span class="a-num">#11 / 20</span>
           </div>
           <h2>MBDA și startupul german Atmos studiază lovituri de precizie din orbită — Europa vrea descurajare convențională din spațiu</h2>
           <div class="sec">
@@ -1196,14 +1271,14 @@
           </div>
         </article>
 
-<!-- 10 · 19 nov · 12:00 -->
+<!-- 12 · 19 nov · 12:00 -->
         <article id="stire-307" data-cats="romania securitate" data-sev="amber" data-subiect="Neptun Deep: exporturi de gaze">
           <div class="a-meta">
             <span class="a-time">19 nov · 12:00</span>
             <span class="a-cat">România · Securitate &amp; NATO</span>
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="subj-pill">Neptun Deep: exporturi de gaze</span>
-            <span class="a-num">#10 / 18</span>
+            <span class="a-num">#12 / 20</span>
           </div>
           <h2>Neptun Deep: România devine exportator regional de gaze din 2027, inclusiv către Ucraina — S&amp;P Global Energy</h2>
           <div class="sec">
@@ -1231,7 +1306,7 @@
           </div>
         </article>
 
-        <!-- 11 · 19 nov · 11:00 -->
+        <!-- 13 · 19 nov · 11:00 -->
         <article id="stire-305" data-cats="securitate romania" data-sev="amber" data-subiect="Coaliția de Voință la Berlin">
           <div class="a-meta">
             <span class="a-time">19 nov · 11:00</span>
@@ -1240,7 +1315,7 @@
             <a class="cont-pill" href="#stire-286" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">Coaliția de Voință la Berlin</span>
             <span class="spot-tag">Știrea zilei</span>
-            <span class="a-num">#11 / 18</span>
+            <span class="a-num">#13 / 20</span>
           </div>
           <h2>Coaliția de Voință se reunește azi la Berlin: garanții de securitate pentru Ucraina, cu Rutte și emisarii lui Trump la masă</h2>
           <div class="followup">
@@ -1274,7 +1349,7 @@
           </div>
         </article>
 
-        <!-- 12 · 19 nov · 11:00 -->
+        <!-- 14 · 19 nov · 11:00 -->
         <article id="stire-306" data-cats="tech" data-sev="green" data-subiect="agenții AI rescriu economia web">
           <div class="a-meta">
             <span class="a-time">19 nov · 11:00</span>
@@ -1282,7 +1357,7 @@
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <a class="cont-pill" href="#stire-298" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">agenții AI rescriu economia web</span>
-            <span class="a-num">#12 / 18</span>
+            <span class="a-num">#14 / 20</span>
           </div>
           <h2>Nadella: agenții AI vor rescrie economia internetului — «dacă nu accepți agentul, o face altcineva»</h2>
           <div class="followup">
@@ -1312,7 +1387,7 @@
           </div>
         </article>
 
-        <!-- 13 · 19 nov · 09:00 -->
+        <!-- 15 · 19 nov · 09:00 -->
         <article id="stire-303" data-cats="securitate" data-sev="amber" data-subiect="a treia lovitură asupra Podului Kerci">
           <div class="a-meta">
             <span class="a-time">19 nov · 09:00</span>
@@ -1320,7 +1395,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-281" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">a treia lovitură asupra Podului Kerci</span>
-            <span class="a-num">#13 / 18</span>
+            <span class="a-num">#15 / 20</span>
           </div>
           <h2>Podul Kerci, lovit a treia oară într-o săptămână — de data asta secțiunea feroviară; traficul, suspendat, cu câteva ore înaintea summitului Trump–Putin–Xi de la Shenzhen</h2>
           <div class="followup">
@@ -1350,14 +1425,14 @@
           </div>
         </article>
 
-        <!-- 14 · 19 nov · 09:00 -->
+        <!-- 16 · 19 nov · 09:00 -->
         <article id="stire-304" data-cats="tech" data-sev="green" data-subiect="BCE: AI și datoria suverană">
           <div class="a-meta">
             <span class="a-time">19 nov · 09:00</span>
             <span class="a-cat">Tech &amp; AI</span>
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <span class="subj-pill">BCE: AI și datoria suverană</span>
-            <span class="a-num">#14 / 18</span>
+            <span class="a-num">#16 / 20</span>
           </div>
           <h2>BCE avertizează: evaluările AI și datoria suverană pot zgudui piețele — infrastructura AI se finanțează tot mai mult din datorii, iar un sfert din datoria suverană a zonei euro ajunge la scadență până la finele lui 2028</h2>
           <div class="sec">
@@ -1384,14 +1459,14 @@
           </div>
         </article>
 
-        <!-- 15 · 19 nov · 07:00 -->
+        <!-- 17 · 19 nov · 07:00 -->
         <article id="stire-300" data-cats="securitate" data-sev="amber" data-subiect="summit nuclear Trump–Putin–Xi">
           <div class="a-meta">
             <span class="a-time">19 nov · 07:00</span>
             <span class="a-cat">Securitate &amp; NATO</span>
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="subj-pill">summit nuclear Trump–Putin–Xi</span>
-            <span class="a-num">#15 / 18</span>
+            <span class="a-num">#17 / 20</span>
           </div>
           <h2>Trump, Putin și Xi se întâlnesc azi la Shenzhen, în primul summit trilateral al celor trei mari puteri nucleare — dezarmarea nucleară pe agendă, la nouă luni după expirarea New START</h2>
           <div class="sec">
@@ -1422,7 +1497,7 @@
           </div>
         </article>
 
-        <!-- 16 · 19 nov · 07:00 -->
+        <!-- 18 · 19 nov · 07:00 -->
         <article id="stire-301" data-cats="tech" data-sev="green" data-subiect="IPO Anthropic, cel mai mare din istorie">
           <div class="a-meta">
             <span class="a-time">19 nov · 07:00</span>
@@ -1430,7 +1505,7 @@
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <a class="cont-pill" href="#stire-279" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">IPO Anthropic, cel mai mare din istorie</span>
-            <span class="a-num">#16 / 18</span>
+            <span class="a-num">#18 / 20</span>
           </div>
           <h2>Anthropic a fixat IPO la 83 $ pe acțiune — 81,3 mld $, cel mai mare debut bursier din istorie; acțiunile încep să se tranzacționeze azi, sub simbolul ANT</h2>
           <div class="followup">
@@ -1461,14 +1536,14 @@
           </div>
         </article>
 
-        <!-- 17 · 19 nov · 06:00 -->
+        <!-- 19 · 19 nov · 06:00 -->
         <article id="stire-289" data-cats="tech securitate" data-sev="amber" data-subiect="infrastructură critică nepetchabilă">
           <div class="a-meta">
             <span class="a-time">19 nov · 06:00</span>
             <span class="a-cat">Tech &amp; AI · Securitate &amp; NATO</span>
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="subj-pill">infrastructură critică nepetchabilă</span>
-            <span class="a-num">#17 / 18</span>
+            <span class="a-num">#19 / 20</span>
           </div>
           <h2>Nadella: mare parte din infrastructura critică e «unpatchable» — atacurile cibernetice asistate de AI lovesc sisteme care nu pot fi actualizate</h2>
           <div class="sec">
@@ -1498,14 +1573,14 @@
           </div>
         </article>
 
-        <!-- 18 · 19 nov · 06:00 -->
+        <!-- 20 · 19 nov · 06:00 -->
         <article id="stire-290" data-cats="tech" data-sev="green" data-subiect="reorganizare AI la Microsoft">
           <div class="a-meta">
             <span class="a-time">19 nov · 06:00</span>
             <span class="a-cat">Tech &amp; AI</span>
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <span class="subj-pill">reorganizare AI la Microsoft</span>
-            <span class="a-num">#18 / 18</span>
+            <span class="a-num">#20 / 20</span>
           </div>
           <h2>Nadella explică de ce le-a cerut celor 60.000 de angajați Microsoft să plece: reorganizare în jurul AI, nu concedieri în masă</h2>
           <div class="sec">
