@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="color-scheme" content="light dark" />
-    <meta name="tirile-versiune" content="2026-11-19T06:20:12+01:00|2|amber" />
+    <meta name="tirile-versiune" content="2026-11-19T07:00:00+01:00|4|amber" />
     <link rel="icon" href="data:," />
     <title>Știrile zilei</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -699,9 +699,9 @@
     <div class="topbar">
       <div class="topbar-inner">
         <span class="dot" aria-hidden="true"></span>
-        <span><strong>Joi, 19 noiembrie 2026</strong> · actualizat la <strong>06:00</strong></span>
+        <span><strong>Joi, 19 noiembrie 2026</strong> · actualizat la <strong>07:00</strong></span>
         <span aria-hidden="true">·</span>
-        <span>2 știri azi</span>
+        <span>4 știri azi</span>
         <span class="spacer"></span>
         <button class="refresh-btn" type="button" id="refreshBtn" aria-label="Reîmprospătează pagina">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg>
@@ -743,11 +743,13 @@
 
       <!-- Chenar permanent: știrea cea mai importantă a zilei — sub fereastra
            „Ultimele știri", ÎNAINTEA dashboardului, vizibilă din prima, fără scroll.
-           Nivelul de azi: GALBEN (sev-amber) — de urmărit: infrastructură critică
-           nepetchabilă în fața atacurilor cibernetice asistate de AI — declarațiile
-           lui Satya Nadella de la DealBook Summit; e știrea zilei (marcată ca atare
-           pe cardul de la 06:00) și singura știre cu severitate galbenă a zilei,
-           de aceea nu apare mențiunea despre alte știri cu aceeași severitate.
+           Nivelul de azi: GALBEN (sev-amber) — de urmărit: primul summit trilateral
+           Trump–Putin–Xi, azi la Shenzhen, cu dezarmarea nucleară pe agendă; e
+           știrea zilei (marcată ca atare pe cardul de la 07:00), cea mai importantă
+           dintre cele două știri cu severitate galbenă ale zilei — cealaltă e
+           avertismentul lui Nadella despre infrastructura critică nepetchabilă —,
+           de aceea apare mențiunea despre cealaltă știre cu aceeași severitate,
+           cu filtru pe galben la „apasă aici".
            Chenarul rămâne în afara logicii de filtrare: vizibil indiferent de filtrul de categorie. -->
       <section class="spot sev-amber" aria-label="Știrea cea mai importantă a zilei">
         <div class="spot-head">
@@ -755,15 +757,15 @@
             <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13 2 4.5 13.5H11L9.5 22 19 10h-6.5L13 2z"/></svg>
             Știrea zilei · Atenție rapidă
           </span>
-          <span class="spot-time">19 nov · 06:00</span>
+          <span class="spot-time">19 nov · 07:00</span>
           <span class="spot-pill">Nivel galben — de urmărit</span>
         </div>
-        <h2 class="spot-title">Nadella: mare parte din infrastructura critică e «unpatchable» — atacurile cibernetice asistate de AI lovesc sisteme care nu pot fi actualizate</h2>
-        <p class="spot-why"><strong>De ce e în față:</strong> infrastructura critică nepetchabilă în fața atacurilor AI e un semnal structural direct pentru munca lui de IT incident Manager.</p>
-        <p class="spot-lead">La summitul DealBook al New York Times, CEO-ul Microsoft, Satya Nadella, a avertizat că mare parte din infrastructura critică a SUA — firmware, chillere, sisteme HVAC și echipamente din sistemele de transport, multe conectate la internet — rulează pe software cu vulnerabilități care nu pot fi remediate, în timp ce AI accelerează descoperirea vulnerabilităților și transformarea lor în exploituri, iar fereastra de patching s-a prăbușit.</p>
-        <p class="spot-more" hidden><span class="spot-more-text"></span> <button class="spot-more-btn" type="button">apasă aici</button></p>
+        <h2 class="spot-title">Trump, Putin și Xi se întâlnesc azi la Shenzhen, în primul summit trilateral al celor trei mari puteri nucleare — dezarmarea nucleară pe agendă, la nouă luni după expirarea New START</h2>
+        <p class="spot-why"><strong>De ce e în față:</strong> prima întâlnire trilaterală din istorie a liderilor celor trei mari puteri nucleare, cu reducerea arsenalelor nucleare pe agendă — la nouă luni după expirarea New START, fără niciun tratat care să limiteze arsenalele SUA și Rusiei; e știrea cu cea mai mare miză strategică a zilei pentru mediul NATO.</p>
+        <p class="spot-lead">Donald Trump, Xi Jinping și Vladimir Putin se întâlnesc azi, 19 noiembrie, la Shenzhen, pe marginea summitului APEC, în prima întâlnire trilaterală a celor trei lideri. Pe agendă: reducerea arsenalelor nucleare — fără acord așteptat, dar cu prima discuție în trei pe tema controlului armamentelor de când a expirat New START, în februarie.</p>
+        <p class="spot-more"><span class="spot-more-text">Mai este și altă 1 știre cu aceeași severitate —</span> <button class="spot-more-btn" type="button" data-sev-value="amber" aria-label="Apasă aici ca să vezi doar știrile cu severitatea Galben — de urmărit">apasă aici</button></p>
         <div class="spot-foot">
-          <a class="spot-link" href="#stire-289">Citește știrea completă ↓</a>
+          <a class="spot-link" href="#stire-300">Citește știrea completă ↓</a>
           <div class="sev-scale" role="img" aria-label="Scară de gravitate: verde — normal, galben — de urmărit, roșu — grav. Nivelul de azi: galben.">
             <span class="sev-item"><i class="sev-dot g" aria-hidden="true"></i>Verde · normal</span>
             <span class="sev-item on"><i class="sev-dot y" aria-hidden="true"></i>Galben · de urmărit</span>
@@ -776,22 +778,22 @@
       <section class="dashboard" aria-label="Panou de ansamblu">
         <div class="dash-head">
           <span class="dash-title">Dashboard · Azi</span>
-          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 06:00</span>
+          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 07:00</span>
           <span class="dash-meta">Fereastră monitorizare <strong>L–V 06:00–22:00 · S–D 07:30–22:00</strong> · pas ~3 ore</span>
         </div>
 
         <div class="kpi-grid five" role="group" aria-label="Filtrează după categorie — apasă pe un tile">
           <button class="kpi" type="button" data-filter="toate" aria-pressed="true">
             <span class="kpi-top"><span class="kpi-label">Toate știrile</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">2</span>
-            <span class="kpi-sub">2 știri verificate azi, în 1 rulare</span>
+            <span class="kpi-value">4</span>
+            <span class="kpi-sub">4 știri verificate azi, în 2 rulări</span>
             <span class="kpi-bar" aria-hidden="true"><i style="width:100%"></i></span>
             <span class="kpi-hint">Apasă pentru toate</span>
           </button>
           <button class="kpi" type="button" data-filter="securitate" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">Securitate &amp; NATO</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">1</span>
-            <span class="kpi-sub">infrastructură critică nepetchabilă</span>
+            <span class="kpi-value">2</span>
+            <span class="kpi-sub">summit nuclear Trump–Putin–Xi · infrastructură critică nepetchabilă</span>
             <span class="kpi-bar" aria-hidden="true"><i style="width:50%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
@@ -811,9 +813,9 @@
           </button>
           <button class="kpi" type="button" data-filter="tech" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">Tech &amp; AI</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">2</span>
-            <span class="kpi-sub">infrastructură critică nepetchabilă · reorganizare AI la Microsoft</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:100%"></i></span>
+            <span class="kpi-value">3</span>
+            <span class="kpi-sub">IPO Anthropic, cel mai mare din istorie · infrastructură critică nepetchabilă · reorganizare AI la Microsoft</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:75%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
         </div>
@@ -827,7 +829,7 @@
       </section>
 
       <div class="filter-status" aria-live="polite">
-        <span class="filter-label">Se afișează: <strong>Toate categoriile — 2 din 2 știri</strong></span>
+        <span class="filter-label">Se afișează: <strong>Toate categoriile — 4 din 4 știri</strong></span>
         <button class="filter-reset" type="button" hidden>Resetează filtrul</button>
       </div>
 
@@ -849,15 +851,92 @@
       <p class="empty">Nicio știre în această categorie azi.</p>
 
       <main>
-        <!-- 1 · 19 nov · 06:00 -->
+        <!-- 1 · 19 nov · 07:00 -->
+        <article id="stire-300" data-cats="securitate" data-sev="amber" data-subiect="summit nuclear Trump–Putin–Xi">
+          <div class="a-meta">
+            <span class="a-time">19 nov · 07:00</span>
+            <span class="a-cat">Securitate &amp; NATO</span>
+            <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
+            <span class="subj-pill">summit nuclear Trump–Putin–Xi</span>
+            <span class="spot-tag">Știrea zilei</span>
+            <span class="a-num">#1 / 4</span>
+          </div>
+          <h2>Trump, Putin și Xi se întâlnesc azi la Shenzhen, în primul summit trilateral al celor trei mari puteri nucleare — dezarmarea nucleară pe agendă, la nouă luni după expirarea New START</h2>
+          <div class="sec">
+            <p class="sec-label">Ce s-a întâmplat</p>
+            <p>Donald Trump, Xi Jinping și Vladimir Putin se întâlnesc joi, 19 noiembrie, la Shenzhen, pe marginea summitului APEC — prima întâlnire trilaterală a liderilor SUA, Chinei și Rusiei. Trump vrea să discute reducerea arsenalelor nucleare; Casa Albă a confirmat întâlnirea pe 13 noiembrie, iar Ministerul de Externe al Chinei pe 16 noiembrie. Înaintea sesiunii trilaterale, Trump are o întâlnire bilaterală cu Xi, iar Kremlinul a precizat că nu e planificată o întâlnire bilaterală completă Putin–Trump. Oficialii americani au temperat așteptările: nu se așteaptă niciun acord — întâlnirea e descrisă drept „prima conversație" către un posibil cadru nou de control al armamentelor. Ultimul tratat care limita arsenalele SUA și Rusiei, New START, a expirat în februarie 2026, iar China nu a fost niciodată supusă unor astfel de plafoane. Războiul din Ucraina nu e pe agenda trilaterală — negocierile pe Ucraina continuă pe un traseu separat.</p>
+          </div>
+          <div class="sec">
+            <p class="sec-label">De ce contează</p>
+            <p>Direct pe agenda de securitate a Alianței: e prima dată când cei trei lideri discută împreună controlul armamentelor nucleare, într-un moment în care nu mai există niciun tratat care să plafoneze arsenalele SUA și Rusiei, iar arsenalul Chinei crește fără constrângeri. Orice cadru trilateral viitor ar schimba calculele de descurajare ale NATO; deocamdată e doar un prim contact, fără acord așteptat — miza zilei e dacă iese o declarație comună sau un calendar de negocieri.</p>
+          </div>
+          <div class="verify">
+            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
+            <p>Verdict: confirmat. Defense News (17 nov 2026), Korea JoongAng Daily (19 nov 2026) și New Kerala (19 nov 2026) — trei relatări independente despre aceeași întâlnire, confirmată de Casa Albă (13 nov) și de Ministerul de Externe al Chinei (16 nov); Reuters (18 nov 2026) confirmă separat întâlnirea Putin–Trump și ora alocată sesiunii trilaterale.</p>
+            <ul class="sources">
+              <li><a href="https://www.defensenews.com/global/the-americas/2026/11/17/trump-seeks-nuclear-cuts-at-summit-with-putin-and-xi-but-prospects-are-low/" target="_blank" rel="noopener">Defense News — Trump caută reduceri nucleare la summitul cu Putin și Xi, dar perspectivele sunt reduse (17 nov 2026)<span class="host">defensenews.com</span></a></li>
+              <li><a href="https://www.koreajoongangdaily.com/world/trump-xi-putin-set-to-hold-historic-trilateral-summit-usnorth-korea-meeting-uncertain/12980659" target="_blank" rel="noopener">Korea JoongAng Daily — Trump, Xi și Putin, primul summit trilateral istoric la Shenzhen (19 nov 2026)<span class="host">koreajoongangdaily.com</span></a></li>
+              <li><a href="https://www.newkerala.com/news/a/trump-putin-xi-set-hold-trilateral-summit-apec-119.htm" target="_blank" rel="noopener">New Kerala — Trump, Putin și Xi, summit trilateral pe marginea APEC, la Shenzhen (19 nov 2026)<span class="host">newkerala.com</span></a></li>
+              <li><a href="https://www.reuters.com/world/china/putin-trump-meet-apec-summit-no-full-scale-talks-planned-kremlin-says-2026-11-18/" target="_blank" rel="noopener">Reuters — Putin și Trump se întâlnesc la summitul APEC, fără negocieri bilaterale complete planificate (18 nov 2026)<span class="host">reuters.com</span></a></li>
+            </ul>
+          </div>
+          <div class="opposing">
+            <p class="sec-label">Tabăra adversă</p>
+            <p><a href="https://www.reuters.com/world/china/global-markets-view-europe-2026-11-19/" target="_blank" rel="noopener">Beijingul rezistă ca dezarmarea nucleară să fie piesa centrală a întâlnirii, notează Reuters</a>; <a href="https://www.fairwitness.news/trump-xi-putin-meeting-nuclear-arms/" target="_blank" rel="noopener">China a refuzat anterior discuțiile trilaterale de dezarmare — în februarie 2026 a spus că nu se va alătura discuțiilor de dezarmare nucleară în această etapă</a>.</p>
+          </div>
+          <div class="impact">
+            <span class="badge">Impact direct</span>
+            <p>Impact direct: minim azi — nu cere nicio acțiune și nu schimbă nimic în programul de azi. Relevanță de context strategic: prima discuție trilaterală despre controlul armamentelor după expirarea New START; de urmărit dacă apare o declarație comună sau un calendar de negocieri — acela ar fi semnalul care contează pentru Alianță.</p>
+          </div>
+        </article>
+
+        <!-- 2 · 19 nov · 07:00 -->
+        <article id="stire-301" data-cats="tech" data-sev="green" data-subiect="IPO Anthropic, cel mai mare din istorie">
+          <div class="a-meta">
+            <span class="a-time">19 nov · 07:00</span>
+            <span class="a-cat">Tech &amp; AI</span>
+            <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
+            <a class="cont-pill" href="#stire-279" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
+            <span class="subj-pill">IPO Anthropic, cel mai mare din istorie</span>
+            <span class="a-num">#2 / 4</span>
+          </div>
+          <h2>Anthropic a fixat IPO la 83 $ pe acțiune — 81,3 mld $, cel mai mare debut bursier din istorie; acțiunile încep să se tranzacționeze azi, sub simbolul ANT</h2>
+          <div class="followup">
+            <span class="tag">Urmare la</span>
+            <p><a href="#stire-279">„Amazon și Google vor deține împreună aproape 30% din Anthropic după IPO — prețul se fixează azi, tranzacționarea începe joi" — marți, 18 noiembrie 2026, ora 08:00.</a> (Atunci prețul nu era fixat; acum se știe: 83 $ pe acțiune, peste intervalul de 70–78 $, cu 81,3 mld $ strânși — cel mai mare IPO din istorie.)</p>
+          </div>
+          <div class="sec">
+            <p class="sec-label">Ce s-a întâmplat</p>
+            <p>Anthropic, compania din spatele chatbotului Claude, și-a prețuit oferta publică inițială la 83 $ pe acțiune, peste intervalul inițial de 70–78 $, vânzând 980 de milioane de acțiuni și strângând 81,3 mld $ — cel mai mare IPO din istorie, peste recordul SpaceX de 75 mld $ din iunie. La prețul de listare, compania e evaluată la circa 1,5 trilioane $ (pe bază diluată). Acțiunile încep să se tranzacționeze joi, 19 noiembrie, pe Nasdaq, sub simbolul „ANT". E primul laborator major de AI de frontieră care se listează la bursă, înaintea rivalei OpenAI, care nu plănuiește o listare înainte de 2027.</p>
+          </div>
+          <div class="sec">
+            <p class="sec-label">De ce contează</p>
+            <p>Testul major al apetitului pieței pentru AI: primul laborator de frontieră listat la bursă, evaluat la ~1,5 trilioane $ la mai puțin de șase ani de la fondare — un reper pentru tot sectorul AI și pentru portofoliile cu expunere pe tehnologie. Debutul vine într-un moment de corecție: indicele Nasdaq Composite e cu peste 10% sub maximul de acum șase săptămâni, iar reacția de azi arată dacă entuziasmul pentru AI rezistă.</p>
+          </div>
+          <div class="verify">
+            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
+            <p>Verdict: confirmat. TechCrunch (18 nov 2026, 22:11 UTC), CNN (18 nov 2026) și Bloomberg (19 nov 2026) — trei relatări independente despre aceeași prețuire; Reuters (18 nov 2026) confirmă separat suma de 81,31 mld $.</p>
+            <ul class="sources">
+              <li><a href="https://techcrunch.com/2026/11/18/anthropic-reportedly-prices-ipo-at-83-a-share-above-projected-range/?ref=implicator.ai" target="_blank" rel="noopener">TechCrunch — Anthropic a fixat IPO la 83 $ pe acțiune, peste intervalul proiectat (18 nov 2026, 22:11 UTC)<span class="host">techcrunch.com</span></a></li>
+              <li><a href="https://www.cnn.com/2026/11/18/investing/anthropic-ipo-wall-street-ai?cid=external-feeds_iluminar_meta" target="_blank" rel="noopener">CNN — Debutul Anthropic pe Wall Street marchează un nou capitol pentru AI (18 nov 2026)<span class="host">cnn.com</span></a></li>
+              <li><a href="https://bworldonline.com/technology/2026/11/19/794922/anthropic-clinches-biggest-ipo-ever-with-81-billion-offering/" target="_blank" rel="noopener">Bloomberg (via BusinessWorld) — Anthropic obține cel mai mare IPO din istorie, cu o ofertă de 81 mld $ (19 nov 2026)<span class="host">bworldonline.com</span></a></li>
+              <li><a href="https://wtbx.com/2026/11/18/anthropic-prices-blockbuster-ipo-at-83-a-share-source-says/" target="_blank" rel="noopener">Reuters — Anthropic a fixat IPO la 83 $ pe acțiune și a strâns 81,3 mld $, cea mai mare listare din istorie (18 nov 2026)<span class="host">wtbx.com</span></a></li>
+            </ul>
+          </div>
+          <div class="impact">
+            <span class="badge">Impact direct</span>
+            <p>Impact direct: minim — relevanță de context pentru investiții: debutul ANT de azi e un barometru al pieței AI; de urmărit prețul de deschidere față de cei 83 $ de la prețuire.</p>
+          </div>
+        </article>
+
+        <!-- 3 · 19 nov · 06:00 -->
         <article id="stire-289" data-cats="tech securitate" data-sev="amber" data-subiect="infrastructură critică nepetchabilă">
           <div class="a-meta">
             <span class="a-time">19 nov · 06:00</span>
             <span class="a-cat">Tech &amp; AI · Securitate &amp; NATO</span>
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="subj-pill">infrastructură critică nepetchabilă</span>
-            <span class="spot-tag">Știrea zilei</span>
-            <span class="a-num">#1 / 2</span>
+            <span class="a-num">#3 / 4</span>
           </div>
           <h2>Nadella: mare parte din infrastructura critică e «unpatchable» — atacurile cibernetice asistate de AI lovesc sisteme care nu pot fi actualizate</h2>
           <div class="sec">
@@ -887,14 +966,14 @@
           </div>
         </article>
 
-        <!-- 2 · 19 nov · 06:00 -->
+        <!-- 4 · 19 nov · 06:00 -->
         <article id="stire-290" data-cats="tech" data-sev="green" data-subiect="reorganizare AI la Microsoft">
           <div class="a-meta">
             <span class="a-time">19 nov · 06:00</span>
             <span class="a-cat">Tech &amp; AI</span>
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <span class="subj-pill">reorganizare AI la Microsoft</span>
-            <span class="a-num">#2 / 2</span>
+            <span class="a-num">#4 / 4</span>
           </div>
           <h2>Nadella explică de ce le-a cerut celor 60.000 de angajați Microsoft să plece: reorganizare în jurul AI, nu concedieri în masă</h2>
           <div class="sec">
@@ -5696,8 +5775,8 @@
 
                   <footer>
         <div class="rule" aria-hidden="true"></div>
-        <p>Sfârșitul ediției de azi · Ultima actualizare: joi, 19 noiembrie 2026, 06:00<br />Monitorizarea rulează la circa 3 ore, în fereastra L–V 06:00–22:00 · S–D 07:30–22:00 — dă refresh pentru noutăți.</p>
-        <a class="to-top" href="#stire-289">↑ Înapoi la cea mai nouă știre</a>
+        <p>Sfârșitul ediției de azi · Ultima actualizare: joi, 19 noiembrie 2026, 07:00<br />Monitorizarea rulează la circa 3 ore, în fereastra L–V 06:00–22:00 · S–D 07:30–22:00 — dă refresh pentru noutăți.</p>
+        <a class="to-top" href="#stire-300">↑ Înapoi la cea mai nouă știre</a>
       </footer>
     </div>
 
