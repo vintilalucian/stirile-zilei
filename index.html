@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="color-scheme" content="light dark" />
-    <meta name="tirile-versiune" content="2026-11-19T07:00:00+01:00|4|amber" />
+    <meta name="tirile-versiune" content="2026-11-19T09:00:00+01:00|6|amber" />
     <link rel="icon" href="data:," />
     <title>Știrile zilei</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -699,9 +699,9 @@
     <div class="topbar">
       <div class="topbar-inner">
         <span class="dot" aria-hidden="true"></span>
-        <span><strong>Joi, 19 noiembrie 2026</strong> · actualizat la <strong>07:00</strong></span>
+        <span><strong>Joi, 19 noiembrie 2026</strong> · actualizat la <strong>09:00</strong></span>
         <span aria-hidden="true">·</span>
-        <span>4 știri azi</span>
+        <span>6 știri azi</span>
         <span class="spacer"></span>
         <button class="refresh-btn" type="button" id="refreshBtn" aria-label="Reîmprospătează pagina">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg>
@@ -745,10 +745,11 @@
            „Ultimele știri", ÎNAINTEA dashboardului, vizibilă din prima, fără scroll.
            Nivelul de azi: GALBEN (sev-amber) — de urmărit: primul summit trilateral
            Trump–Putin–Xi, azi la Shenzhen, cu dezarmarea nucleară pe agendă; e
-           știrea zilei (marcată ca atare pe cardul de la 07:00), cea mai importantă
-           dintre cele două știri cu severitate galbenă ale zilei — cealaltă e
-           avertismentul lui Nadella despre infrastructura critică nepetchabilă —,
-           de aceea apare mențiunea despre cealaltă știre cu aceeași severitate,
+           e știrea zilei (marcată ca atare pe cardul de la 07:00), cea mai importantă
+           dintre cele trei știri cu severitate galbenă ale zilei — celelalte două
+           sunt avertismentul lui Nadella despre infrastructura critică
+           nepetchabilă și a treia lovitură asupra Podului Kerci (09:00) —,
+           de aceea apare mențiunea despre celelalte știri cu aceeași severitate,
            cu filtru pe galben la „apasă aici".
            Chenarul rămâne în afara logicii de filtrare: vizibil indiferent de filtrul de categorie. -->
       <section class="spot sev-amber" aria-label="Știrea cea mai importantă a zilei">
@@ -763,7 +764,7 @@
         <h2 class="spot-title">Trump, Putin și Xi se întâlnesc azi la Shenzhen, în primul summit trilateral al celor trei mari puteri nucleare — dezarmarea nucleară pe agendă, la nouă luni după expirarea New START</h2>
         <p class="spot-why"><strong>De ce e în față:</strong> prima întâlnire trilaterală din istorie a liderilor celor trei mari puteri nucleare, cu reducerea arsenalelor nucleare pe agendă — la nouă luni după expirarea New START, fără niciun tratat care să limiteze arsenalele SUA și Rusiei; e știrea cu cea mai mare miză strategică a zilei pentru mediul NATO.</p>
         <p class="spot-lead">Donald Trump, Xi Jinping și Vladimir Putin se întâlnesc azi, 19 noiembrie, la Shenzhen, pe marginea summitului APEC, în prima întâlnire trilaterală a celor trei lideri. Pe agendă: reducerea arsenalelor nucleare — fără acord așteptat, dar cu prima discuție în trei pe tema controlului armamentelor de când a expirat New START, în februarie.</p>
-        <p class="spot-more"><span class="spot-more-text">Mai este și altă 1 știre cu aceeași severitate —</span> <button class="spot-more-btn" type="button" data-sev-value="amber" aria-label="Apasă aici ca să vezi doar știrile cu severitatea Galben — de urmărit">apasă aici</button></p>
+        <p class="spot-more"><span class="spot-more-text">Mai sunt și alte 2 știri cu aceeași severitate —</span> <button class="spot-more-btn" type="button" data-sev-value="amber" aria-label="Apasă aici ca să vezi doar știrile cu severitatea Galben — de urmărit">apasă aici</button></p>
         <div class="spot-foot">
           <a class="spot-link" href="#stire-300">Citește știrea completă ↓</a>
           <div class="sev-scale" role="img" aria-label="Scară de gravitate: verde — normal, galben — de urmărit, roșu — grav. Nivelul de azi: galben.">
@@ -778,22 +779,22 @@
       <section class="dashboard" aria-label="Panou de ansamblu">
         <div class="dash-head">
           <span class="dash-title">Dashboard · Azi</span>
-          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 07:00</span>
+          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 09:00</span>
           <span class="dash-meta">Fereastră monitorizare <strong>L–V 06:00–22:00 · S–D 07:30–22:00</strong> · pas ~3 ore</span>
         </div>
 
         <div class="kpi-grid five" role="group" aria-label="Filtrează după categorie — apasă pe un tile">
           <button class="kpi" type="button" data-filter="toate" aria-pressed="true">
             <span class="kpi-top"><span class="kpi-label">Toate știrile</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">4</span>
-            <span class="kpi-sub">4 știri verificate azi, în 2 rulări</span>
+            <span class="kpi-value">6</span>
+            <span class="kpi-sub">6 știri verificate azi, în 3 rulări</span>
             <span class="kpi-bar" aria-hidden="true"><i style="width:100%"></i></span>
             <span class="kpi-hint">Apasă pentru toate</span>
           </button>
           <button class="kpi" type="button" data-filter="securitate" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">Securitate &amp; NATO</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">2</span>
-            <span class="kpi-sub">summit nuclear Trump–Putin–Xi · infrastructură critică nepetchabilă</span>
+            <span class="kpi-value">3</span>
+            <span class="kpi-sub">a treia lovitură asupra Podului Kerci · summit nuclear Trump–Putin–Xi · infrastructură critică nepetchabilă</span>
             <span class="kpi-bar" aria-hidden="true"><i style="width:50%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
@@ -813,9 +814,9 @@
           </button>
           <button class="kpi" type="button" data-filter="tech" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">Tech &amp; AI</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">3</span>
-            <span class="kpi-sub">IPO Anthropic, cel mai mare din istorie · infrastructură critică nepetchabilă · reorganizare AI la Microsoft</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:75%"></i></span>
+            <span class="kpi-value">4</span>
+            <span class="kpi-sub">BCE: AI și datoria suverană · IPO Anthropic, cel mai mare din istorie · infrastructură critică nepetchabilă · reorganizare AI la Microsoft</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:67%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
         </div>
@@ -829,7 +830,7 @@
       </section>
 
       <div class="filter-status" aria-live="polite">
-        <span class="filter-label">Se afișează: <strong>Toate categoriile — 4 din 4 știri</strong></span>
+        <span class="filter-label">Se afișează: <strong>Toate categoriile — 6 din 6 știri</strong></span>
         <button class="filter-reset" type="button" hidden>Resetează filtrul</button>
       </div>
 
@@ -851,7 +852,79 @@
       <p class="empty">Nicio știre în această categorie azi.</p>
 
       <main>
-        <!-- 1 · 19 nov · 07:00 -->
+        <!-- 1 · 19 nov · 09:00 -->
+        <article id="stire-303" data-cats="securitate" data-sev="amber" data-subiect="a treia lovitură asupra Podului Kerci">
+          <div class="a-meta">
+            <span class="a-time">19 nov · 09:00</span>
+            <span class="a-cat">Securitate &amp; NATO</span>
+            <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
+            <a class="cont-pill" href="#stire-281" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
+            <span class="subj-pill">a treia lovitură asupra Podului Kerci</span>
+            <span class="a-num">#1 / 6</span>
+          </div>
+          <h2>Podul Kerci, lovit a treia oară într-o săptămână — de data asta secțiunea feroviară; traficul, suspendat, cu câteva ore înaintea summitului Trump–Putin–Xi de la Shenzhen</h2>
+          <div class="followup">
+            <span class="tag">Urmare la</span>
+            <p><a href="#stire-281">„Arcul rutier al Podului Kerci s-a prăbușit în strâmtoare, a doua zi consecutiv de lovituri ucrainene — canalul navigabil spre Marea Azov, blocat" — marți, 18 noiembrie 2026, ora 10:00.</a> (Atunci arcul rutier se prăbușise în mare; lovitura din noaptea de miercuri spre joi lovește secțiunea feroviară, care rezistase până acum.)</p>
+          </div>
+          <div class="sec">
+            <p class="sec-label">Ce s-a întâmplat</p>
+            <p>Ucraina a lovit în noaptea de miercuri spre joi Podul Kerci, care leagă Rusia de Crimeea — a treia lovitură asupra podului într-o singură săptămână. De data asta a fost vizată secțiunea feroviară: Ministerul rus al Transporturilor a anunțat că, în urma unui atac nocturn cu drone, circulația trenurilor pe pod a fost suspendată temporar și că specialiștii evaluează pagubele; nimeni nu a fost rănit, potrivit ministerului. Serghei Aksionov, guvernatorul Crimeei instalat de Moscova, a confirmat atacul pe Telegram. Loviturile anterioare din săptămână: luni, pagube mai mici, iar marți arcul rutier a fost distrus și s-a prăbușit în strâmtoare. Întinderea exactă a pagubelor la secțiunea feroviară nu e încă stabilită independent.</p>
+          </div>
+          <div class="sec">
+            <p class="sec-label">De ce contează</p>
+            <p>Podul Kerci e singura legătură terestră directă a Rusiei cu Crimeea și o arteră logistică a Flotei Mării Negre: trei lovituri într-o săptămână arată că Ucraina poate ține trecerea sub presiune susținută, iar lovitura de azi închide, cel puțin temporar, și traficul feroviar. Momentul e ales: atacul vine cu câteva ore înaintea summitului trilateral Trump–Putin–Xi de la Shenzhen, unde Ucraina e pe agenda discuțiilor dintre Trump și Putin — Kievul lovește podul în chiar ziua în care războiul se discută la cel mai înalt nivel.</p>
+          </div>
+          <div class="verify">
+            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
+            <p>Verdict: confirmat. Reuters (19 nov 2026), The Times (19 nov 2026) și Deutsche Welle (19 nov 2026, citată de DPA) — trei relatări independente despre același atac; faptul atacului e confirmat chiar de autoritățile ruse — Ministerul Transporturilor și guvernatorul instalat de Moscova, Serghei Aksionov.</p>
+            <ul class="sources">
+              <li><a href="https://www.reuters.com/world/china/third-attack-week-suspends-traffic-over-crimean-bridge-russian-official-says-2026-11-19/" target="_blank" rel="noopener">Reuters — Ucraina lovește Podul Crimeii a treia oară într-o săptămână, înaintea summitului SUA–China–Rusia (19 nov 2026)<span class="host">reuters.com</span></a></li>
+              <li><a href="https://www.thetimes.com/world/asia/article/trump-xi-putin-summit-shenzhen-latest-news-ddskr7pcx" target="_blank" rel="noopener">The Times — Drone ucrainene lovesc podul Rusiei spre Crimeea (19 nov 2026)<span class="host">thetimes.com</span></a></li>
+              <li><a href="https://tafs.uz/en/2026/11/19/crimean-bridge-attacked-for-the-third-time-in-a-week-traffic-suspended-damage-assessed" target="_blank" rel="noopener">Deutsche Welle (via DPA) — Podul Crimeii, atacat a treia oară într-o săptămână: trafic suspendat, pagube evaluate (19 nov 2026)<span class="host">tafs.uz</span></a></li>
+            </ul>
+          </div>
+          <div class="impact">
+            <span class="badge">Impact direct</span>
+            <p>Impact direct: minim azi — nu cere nicio acțiune. Relevanță de context: presiunea susținută asupra logisticii ruse din Marea Neagră, în ziua summitului trilateral de la Shenzhen; de urmărit dacă traficul feroviar se reia și dacă podul rămâne închis — o închidere prelungită ar lovi aprovizionarea Crimeei.</p>
+          </div>
+        </article>
+
+        <!-- 2 · 19 nov · 09:00 -->
+        <article id="stire-304" data-cats="tech" data-sev="green" data-subiect="BCE: AI și datoria suverană">
+          <div class="a-meta">
+            <span class="a-time">19 nov · 09:00</span>
+            <span class="a-cat">Tech &amp; AI</span>
+            <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
+            <span class="subj-pill">BCE: AI și datoria suverană</span>
+            <span class="a-num">#2 / 6</span>
+          </div>
+          <h2>BCE avertizează: evaluările AI și datoria suverană pot zgudui piețele — infrastructura AI se finanțează tot mai mult din datorii, iar un sfert din datoria suverană a zonei euro ajunge la scadență până la finele lui 2028</h2>
+          <div class="sec">
+            <p class="sec-label">Ce s-a întâmplat</p>
+            <p>Banca Centrală Europeană a publicat miercuri, 18 noiembrie, raportul semestrial Financial Stability Review. Concluzia: riscurile pentru stabilitatea financiară a zonei euro „rămân ridicate", pe fondul incertitudinii geoeconomice și al expunerii tot mai mari la AI. Investițiile în infrastructura AI sunt finanțate tot mai mult prin datorii, nu din fluxuri de numerar — fluxul liber de numerar a devenit negativ pentru majoritatea hiper-scalatorilor americani în 2026 și ar urma să rămână negativ până în 2028; necesarul de capital al marilor firme tech americane e estimat la circa 5,5 trilioane $ până în 2030. Firmele americane de tehnologie și AI reprezintă între 16% și 26% din investițiile în acțiuni ale instituțiilor non-bancare din zona euro. În paralel, un sfert din datoria suverană a zonei euro ajunge la scadență înainte de finele lui 2028, iar randamentele pe termen lung sunt la cele mai mari niveluri din ultimele două decenii în mai multe economii avansate. BCE spune că băncile sunt bine plasate să reziste șocurilor, dar vulnerabilitățile sunt mai pronunțate la instituțiile non-bancare.</p>
+          </div>
+          <div class="sec">
+            <p class="sec-label">De ce contează</p>
+            <p>Direct pe expunerea lui pe investiții: avertismentul BCE leagă cele două teme care au dominat piața în ultimele săptămâni — evaluările AI și datoria — și spune că o schimbare de sentiment ar putea propaga pierderile din acțiuni în obligațiuni, exact prin canalul datoriei. Nu e un semnal de panică — BCE subliniază că băncile sunt reziliente și piețele funcționează ordonat — ci un marcaj de risc pentru portofoliile cu expunere pe tehnologie americană și pe datoria suverană europeană.</p>
+          </div>
+          <div class="verify">
+            <p class="sec-label">Verificare <span class="status">Sursă primară + confirmat</span></p>
+            <p>Verdict: sursă primară + confirmat. Banca Centrală Europeană însăși a publicat raportul și comunicatul (18 nov 2026); Reuters (16 nov 2026) relatează discursul vicepreședintelui BCE, Boris Vujčić, cu aceleași concluzii, iar Securities.io (18 nov 2026) confirmă independent conținutul raportului.</p>
+            <ul class="sources">
+              <li><a href="https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.pr261118~83c5c60158.en.html" target="_blank" rel="noopener">BCE — Riscurile din evaluările AI, dezechilibrele fiscale și tensiunile geoeconomice apasă pe perspectiva stabilității financiare (18 nov 2026)<span class="host">ecb.europa.eu</span></a></li>
+              <li><a href="https://www.ecb.europa.eu/press/financial-stability-publications/fsr/html/ecb.fsr202611~e03b919d36.en.html" target="_blank" rel="noopener">BCE — Financial Stability Review, noiembrie 2026 (18 nov 2026)<span class="host">ecb.europa.eu</span></a></li>
+              <li><a href="https://wixx.com/2026/11/16/ecb-vp-says-ai-debt-have-become-prominent-stability-risks/" target="_blank" rel="noopener">Reuters (via Wixx) — Vicepreședintele BCE: AI și datoria au devenit riscuri proeminente de stabilitate (16 nov 2026)<span class="host">wixx.com</span></a></li>
+              <li><a href="https://www.securities.io/ecb-stability-review-flags-ai-debt-and-sovereign-repricing-risks/" target="_blank" rel="noopener">Securities.io — Raportul BCE de stabilitate semnalează riscurile AI, datoriei și reevaluării suverane (18 nov 2026)<span class="host">securities.io</span></a></li>
+            </ul>
+          </div>
+          <div class="impact">
+            <span class="badge">Impact direct</span>
+            <p>Impact direct: minim azi — nu cere nicio acțiune și nu schimbă nimic în program. Relevanță de context pentru investiții: raportul BCE e un reper instituțional pentru expunerea pe AI și pe datoria suverană; de urmărit împreună cu debutul bursier Anthropic de azi (ANT, la 83 $) — prima reacție a pieței la evaluările AI după acest avertisment.</p>
+          </div>
+        </article>
+
+        <!-- 3 · 19 nov · 07:00 -->
         <article id="stire-300" data-cats="securitate" data-sev="amber" data-subiect="summit nuclear Trump–Putin–Xi">
           <div class="a-meta">
             <span class="a-time">19 nov · 07:00</span>
@@ -859,7 +932,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="subj-pill">summit nuclear Trump–Putin–Xi</span>
             <span class="spot-tag">Știrea zilei</span>
-            <span class="a-num">#1 / 4</span>
+            <span class="a-num">#3 / 6</span>
           </div>
           <h2>Trump, Putin și Xi se întâlnesc azi la Shenzhen, în primul summit trilateral al celor trei mari puteri nucleare — dezarmarea nucleară pe agendă, la nouă luni după expirarea New START</h2>
           <div class="sec">
@@ -890,7 +963,7 @@
           </div>
         </article>
 
-        <!-- 2 · 19 nov · 07:00 -->
+        <!-- 4 · 19 nov · 07:00 -->
         <article id="stire-301" data-cats="tech" data-sev="green" data-subiect="IPO Anthropic, cel mai mare din istorie">
           <div class="a-meta">
             <span class="a-time">19 nov · 07:00</span>
@@ -898,7 +971,7 @@
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <a class="cont-pill" href="#stire-279" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">IPO Anthropic, cel mai mare din istorie</span>
-            <span class="a-num">#2 / 4</span>
+            <span class="a-num">#4 / 6</span>
           </div>
           <h2>Anthropic a fixat IPO la 83 $ pe acțiune — 81,3 mld $, cel mai mare debut bursier din istorie; acțiunile încep să se tranzacționeze azi, sub simbolul ANT</h2>
           <div class="followup">
@@ -929,14 +1002,14 @@
           </div>
         </article>
 
-        <!-- 3 · 19 nov · 06:00 -->
+        <!-- 5 · 19 nov · 06:00 -->
         <article id="stire-289" data-cats="tech securitate" data-sev="amber" data-subiect="infrastructură critică nepetchabilă">
           <div class="a-meta">
             <span class="a-time">19 nov · 06:00</span>
             <span class="a-cat">Tech &amp; AI · Securitate &amp; NATO</span>
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="subj-pill">infrastructură critică nepetchabilă</span>
-            <span class="a-num">#3 / 4</span>
+            <span class="a-num">#5 / 6</span>
           </div>
           <h2>Nadella: mare parte din infrastructura critică e «unpatchable» — atacurile cibernetice asistate de AI lovesc sisteme care nu pot fi actualizate</h2>
           <div class="sec">
@@ -966,14 +1039,14 @@
           </div>
         </article>
 
-        <!-- 4 · 19 nov · 06:00 -->
+        <!-- 6 · 19 nov · 06:00 -->
         <article id="stire-290" data-cats="tech" data-sev="green" data-subiect="reorganizare AI la Microsoft">
           <div class="a-meta">
             <span class="a-time">19 nov · 06:00</span>
             <span class="a-cat">Tech &amp; AI</span>
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <span class="subj-pill">reorganizare AI la Microsoft</span>
-            <span class="a-num">#4 / 4</span>
+            <span class="a-num">#6 / 6</span>
           </div>
           <h2>Nadella explică de ce le-a cerut celor 60.000 de angajați Microsoft să plece: reorganizare în jurul AI, nu concedieri în masă</h2>
           <div class="sec">
@@ -5775,8 +5848,8 @@
 
                   <footer>
         <div class="rule" aria-hidden="true"></div>
-        <p>Sfârșitul ediției de azi · Ultima actualizare: joi, 19 noiembrie 2026, 07:00<br />Monitorizarea rulează la circa 3 ore, în fereastra L–V 06:00–22:00 · S–D 07:30–22:00 — dă refresh pentru noutăți.</p>
-        <a class="to-top" href="#stire-300">↑ Înapoi la cea mai nouă știre</a>
+        <p>Sfârșitul ediției de azi · Ultima actualizare: joi, 19 noiembrie 2026, 09:00<br />Monitorizarea rulează la circa 3 ore, în fereastra L–V 06:00–22:00 · S–D 07:30–22:00 — dă refresh pentru noutăți.</p>
+        <a class="to-top" href="#stire-303">↑ Înapoi la cea mai nouă știre</a>
       </footer>
     </div>
 
