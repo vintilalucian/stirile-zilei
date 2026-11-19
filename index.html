@@ -6554,7 +6554,8 @@
 
         function checkForUpdate() {
           if (!window.fetch || !window.DOMParser) return;
-          var url = window.location.href.split('#')[0];
+          var base = window.location.href.split('#')[0];
+          var url = base + (base.indexOf('?') === -1 ? '?_v=' : '&_v=') + Date.now();
           fetch(url, { cache: 'no-store', credentials: 'same-origin' })
             .then(function (res) { return res.ok ? res.text() : null; })
             .then(function (html) {
@@ -6572,6 +6573,8 @@
         }
 
         setInterval(checkForUpdate, CHECK_MS);
+        document.addEventListener('visibilitychange', function () { if (document.visibilityState === 'visible') checkForUpdate(); });
+        window.addEventListener('focus', checkForUpdate);
       })();
     </script>
   </body>
