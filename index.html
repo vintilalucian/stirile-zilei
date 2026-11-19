@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="color-scheme" content="light dark" />
-    <meta name="tirile-versiune" content="2026-11-18T22:00:00+01:00|14|amber" />
+    <meta name="tirile-versiune" content="2026-11-19T06:03:00+01:00|2|amber" />
     <link rel="icon" href="data:," />
     <title>Știrile zilei</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -699,9 +699,9 @@
     <div class="topbar">
       <div class="topbar-inner">
         <span class="dot" aria-hidden="true"></span>
-        <span><strong>Miercuri, 18 noiembrie 2026</strong> · actualizat la <strong>22:00</strong></span>
+        <span><strong>Joi, 19 noiembrie 2026</strong> · actualizat la <strong>06:00</strong></span>
         <span aria-hidden="true">·</span>
-        <span>14 știri azi</span>
+        <span>2 știri azi</span>
         <span class="spacer"></span>
         <button class="refresh-btn" type="button" id="refreshBtn" aria-label="Reîmprospătează pagina">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg>
@@ -720,12 +720,12 @@
         <h1>Știrile zilei</h1>
         <div class="date-line">
           <span class="day">Ediția de azi</span>
-          <span>Miercuri, 18 noiembrie 2026 · Europe/Brussels</span>
+          <span>Joi, 19 noiembrie 2026 · Europe/Brussels</span>
         </div>
         <p class="lede"><strong>Apasă pe un tile</strong> ca să filtrezi pagina — articole complete jos, cele mai noi primele.</p>
       </header>
 
-            <section class="day" id="zi-2026-11-18">
+<section class="day" id="zi-2026-11-19">
       <!-- Fereastra „Ultimele știri" — sus, imediat deasupra chenarului
            „Știrea zilei", între masthead și chenar. Arată DOAR titlurile din
            cea mai recentă rulare (1–2), fiecare link la cardul ei (#stire-N).
@@ -742,6 +742,194 @@
       </section>
 
       <!-- Chenar permanent: știrea cea mai importantă a zilei — sub fereastra
+           „Ultimele știri", ÎNAINTEA dashboardului, vizibilă din prima, fără scroll.
+           Nivelul de azi: GALBEN (sev-amber) — de urmărit: infrastructură critică
+           nepetchabilă în fața atacurilor cibernetice asistate de AI — declarațiile
+           lui Satya Nadella de la DealBook Summit; e știrea zilei (marcată ca atare
+           pe cardul de la 06:00) și singura știre cu severitate galbenă a zilei,
+           de aceea nu apare mențiunea despre alte știri cu aceeași severitate.
+           Chenarul rămâne în afara logicii de filtrare: vizibil indiferent de filtrul de categorie. -->
+      <section class="spot sev-amber" aria-label="Știrea cea mai importantă a zilei">
+        <div class="spot-head">
+          <span class="spot-kicker">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13 2 4.5 13.5H11L9.5 22 19 10h-6.5L13 2z"/></svg>
+            Știrea zilei · Atenție rapidă
+          </span>
+          <span class="spot-time">19 nov · 06:00</span>
+          <span class="spot-pill">Nivel galben — de urmărit</span>
+        </div>
+        <h2 class="spot-title">Nadella: mare parte din infrastructura critică e «unpatchable» — atacurile cibernetice asistate de AI lovesc sisteme care nu pot fi actualizate</h2>
+        <p class="spot-why"><strong>De ce e în față:</strong> infrastructura critică nepetchabilă în fața atacurilor AI e un semnal structural direct pentru munca lui de IT incident Manager.</p>
+        <p class="spot-lead">La summitul DealBook al New York Times, CEO-ul Microsoft, Satya Nadella, a avertizat că mare parte din infrastructura critică a SUA — firmware, chillere, sisteme HVAC și echipamente din sistemele de transport, multe conectate la internet — rulează pe software cu vulnerabilități care nu pot fi remediate, în timp ce AI accelerează descoperirea vulnerabilităților și transformarea lor în exploituri, iar fereastra de patching s-a prăbușit.</p>
+        <p class="spot-more" hidden><span class="spot-more-text"></span> <button class="spot-more-btn" type="button">apasă aici</button></p>
+        <div class="spot-foot">
+          <a class="spot-link" href="#stire-289">Citește știrea completă ↓</a>
+          <div class="sev-scale" role="img" aria-label="Scară de gravitate: verde — normal, galben — de urmărit, roșu — grav. Nivelul de azi: galben.">
+            <span class="sev-item"><i class="sev-dot g" aria-hidden="true"></i>Verde · normal</span>
+            <span class="sev-item on"><i class="sev-dot y" aria-hidden="true"></i>Galben · de urmărit</span>
+            <span class="sev-item"><i class="sev-dot r" aria-hidden="true"></i>Roșu · grav</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Dashboard -->
+      <section class="dashboard" aria-label="Panou de ansamblu">
+        <div class="dash-head">
+          <span class="dash-title">Dashboard · Azi</span>
+          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 06:00</span>
+          <span class="dash-meta">Fereastră monitorizare <strong>L–V 06:00–22:00 · S–D 07:30–22:00</strong> · pas ~3 ore</span>
+        </div>
+
+        <div class="kpi-grid five" role="group" aria-label="Filtrează după categorie — apasă pe un tile">
+          <button class="kpi" type="button" data-filter="toate" aria-pressed="true">
+            <span class="kpi-top"><span class="kpi-label">Toate știrile</span><span class="kpi-check" aria-hidden="true">✓</span></span>
+            <span class="kpi-value">2</span>
+            <span class="kpi-sub">2 știri verificate azi, în 1 rulare</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:100%"></i></span>
+            <span class="kpi-hint">Apasă pentru toate</span>
+          </button>
+          <button class="kpi" type="button" data-filter="securitate" aria-pressed="false">
+            <span class="kpi-top"><span class="kpi-label">Securitate &amp; NATO</span><span class="kpi-check" aria-hidden="true">✓</span></span>
+            <span class="kpi-value">1</span>
+            <span class="kpi-sub">infrastructură critică nepetchabilă</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:50%"></i></span>
+            <span class="kpi-hint">Apasă pentru a filtra →</span>
+          </button>
+          <button class="kpi" type="button" data-filter="romania" aria-pressed="false">
+            <span class="kpi-top"><span class="kpi-label">România</span><span class="kpi-check" aria-hidden="true">✓</span></span>
+            <span class="kpi-value">0</span>
+            <span class="kpi-sub"></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:0%"></i></span>
+            <span class="kpi-hint">Apasă pentru a filtra →</span>
+          </button>
+          <button class="kpi" type="button" data-filter="belgia" aria-pressed="false">
+            <span class="kpi-top"><span class="kpi-label">Belgia</span><span class="kpi-check" aria-hidden="true">✓</span></span>
+            <span class="kpi-value">0</span>
+            <span class="kpi-sub"></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:0%"></i></span>
+            <span class="kpi-hint">Apasă pentru a filtra →</span>
+          </button>
+          <button class="kpi" type="button" data-filter="tech" aria-pressed="false">
+            <span class="kpi-top"><span class="kpi-label">Tech &amp; AI</span><span class="kpi-check" aria-hidden="true">✓</span></span>
+            <span class="kpi-value">2</span>
+            <span class="kpi-sub">infrastructură critică nepetchabilă · reorganizare AI la Microsoft</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:100%"></i></span>
+            <span class="kpi-hint">Apasă pentru a filtra →</span>
+          </button>
+        </div>
+
+        <div class="dash-foot solo">
+          <div class="dash-panel">
+            <h3>Severitate — apasă un pătrat ca să vezi doar știrile de nivelul acela</h3>
+            <div class="sev-squares" role="group" aria-label="Filtrează după severitate — roșu, galben, verde"></div>
+          </div>
+        </div>
+      </section>
+
+      <div class="filter-status" aria-live="polite">
+        <span class="filter-label">Se afișează: <strong>Toate categoriile — 2 din 2 știri</strong></span>
+        <button class="filter-reset" type="button" hidden>Resetează filtrul</button>
+      </div>
+
+      <!-- Cuprinsul zilei — sub banda dashboard, înaintea cardurilor.
+           Generat de script din cardurile zilei curente: lista completă a
+           zilei, grupată pe ora publicării, cele mai noi primele; fiecare
+           titlu e link la cardul lui (#stire-N), iar antetul de oră al
+           fiecărui grup e buton de filtru pe rulare. Cuprinsul urmează
+           filtrul activ, la fel ca și cardurile. Chenarul rămâne în afara
+           filtrării. -->
+      <nav class="day-toc" aria-label="Cuprinsul zilei">
+        <div class="toc-head">
+          <h2>Cuprins</h2>
+          <span class="toc-count">cele mai noi primele · apasă pe o oră ca să filtrezi rularea, pe un titlu ca să sari la știre</span>
+        </div>
+        <div class="toc-groups"></div>
+      </nav>
+
+      <p class="empty">Nicio știre în această categorie azi.</p>
+
+      <main>
+        <!-- 1 · 19 nov · 06:00 -->
+        <article id="stire-289" data-cats="tech securitate" data-sev="amber" data-subiect="infrastructură critică nepetchabilă">
+          <div class="a-meta">
+            <span class="a-time">19 nov · 06:00</span>
+            <span class="a-cat">Tech &amp; AI · Securitate &amp; NATO</span>
+            <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
+            <span class="subj-pill">infrastructură critică nepetchabilă</span>
+            <span class="spot-tag">Știrea zilei</span>
+            <span class="a-num">#1 / 2</span>
+          </div>
+          <h2>Nadella: mare parte din infrastructura critică e «unpatchable» — atacurile cibernetice asistate de AI lovesc sisteme care nu pot fi actualizate</h2>
+          <div class="sec">
+            <p class="sec-label">Ce s-a întâmplat</p>
+            <p>La summitul DealBook al New York Times, miercuri, CEO-ul Microsoft, Satya Nadella, a avertizat că o mare parte din infrastructura critică a SUA rulează pe software cu vulnerabilități care nu pot fi remediate: firmware, chillere (echipamente de răcire din centrele de date), sisteme HVAC și echipamente din sistemele de transport — multe dintre ele conectate la internet. Contextul discuției: un val recent de pene majore, inclusiv la Microsoft Outlook. Nadella a spus că pana Outlook a fost cauzată de un „bug latent" care a dus la o „furtună perfectă". Argumentul lui central: AI accelerează atât descoperirea vulnerabilităților, cât și transformarea lor în exploituri, iar fereastra de patching s-a prăbușit — patchul trebuie să ajungă instant în producție, pentru că e deja exploatat în sălbăticie.</p>
+          </div>
+          <div class="sec">
+            <p class="sec-label">De ce contează</p>
+            <p>Direct pe terenul profesional al cititorului, ca IT incident Manager — gestionarea incidentelor și infrastructura critică. Semnalul e o schimbare de paradigmă: ciclul clasic (găsești vulnerabilitatea, scrii remedierea, testezi, programezi instalarea) nu mai ține când AI găsește și exploatează vulnerabilități mult mai repede decât pot organizațiile să le remedieze.</p>
+          </div>
+          <div class="verify">
+            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
+            <p>Verdict: confirmat. TechCrunch (18 nov 2026, 23:45 UTC), GazeWire (19 nov 2026) și Tech Weekly (19 nov 2026) — trei relatări independente ale acelorași declarații ale lui Satya Nadella de la DealBook Summit.</p>
+            <ul class="sources">
+              <li><a href="https://techcrunch.com/2026/11/18/amidst-fears-of-ai-cyberattacks-satya-nadella-says-lots-of-critical-infrastructure-is-unpatchable/" target="_blank" rel="noopener">TechCrunch — Nadella: mare parte din infrastructura critică e «unpatchable», în contextul temerilor privind atacurile cibernetice asistate de AI (18 nov 2026, 23:45 UTC)<span class="host">techcrunch.com</span></a></li>
+              <li><a href="https://gazewire.com/technology-innovation/cybersecurity/nadella-warns-internet-connected-critical-infrastructure-is-unpatchable" target="_blank" rel="noopener">GazeWire — Nadella avertizează că infrastructura critică conectată la internet e nepetchabilă (19 nov 2026)<span class="host">gazewire.com</span></a></li>
+              <li><a href="https://techweekly.co.za/2026/11/19/as-concerns-about-ai-cyberattacks-rise-satya-nadella-warns-many-critical-infrastructures-are-unpatchable/" target="_blank" rel="noopener">Tech Weekly — Nadella avertizează că multe infrastructuri critice sunt nepetchabile (19 nov 2026)<span class="host">techweekly.co.za</span></a></li>
+            </ul>
+          </div>
+          <div class="opposing">
+            <p class="sec-label">Tabăra adversă</p>
+            <p>Nadella însuși a nuanțat — pana Outlook a fost un „bug latent", nu un atac cibernetic; oficialii au negat că penele recente ar fi fost cauzate de atacuri cibernetice.</p>
+          </div>
+          <div class="impact">
+            <span class="badge">Impact direct</span>
+            <p>Impact direct minim pentru familie; relevanță profesională directă — infrastructura critică și atacurile asistate de AI sunt exact zona lui de incident management, iar semnalul e că fereastra de remediere se scurtează dramatic.</p>
+          </div>
+        </article>
+
+        <!-- 2 · 19 nov · 06:00 -->
+        <article id="stire-290" data-cats="tech" data-sev="green" data-subiect="reorganizare AI la Microsoft">
+          <div class="a-meta">
+            <span class="a-time">19 nov · 06:00</span>
+            <span class="a-cat">Tech &amp; AI</span>
+            <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
+            <span class="subj-pill">reorganizare AI la Microsoft</span>
+            <span class="a-num">#2 / 2</span>
+          </div>
+          <h2>Nadella explică de ce le-a cerut celor 60.000 de angajați Microsoft să plece: reorganizare în jurul AI, nu concedieri în masă</h2>
+          <div class="sec">
+            <p class="sec-label">Ce s-a întâmplat</p>
+            <p>Microsoft a oferit în octombrie buyout-uri voluntare pentru circa 60.000 de angajați, iar miercuri, la DealBook Summit, Satya Nadella a explicat de ce: compania se reorganizează astfel încât fiecare angajat să lucreze cu AI, iar rolurile devin despre gestionarea agenților AI. Nadella a insistat că nu e vorba de înlocuirea angajaților cu AI, în special a inginerilor software — ingineria software „va prospera", dar organizarea muncii se schimbă. Exemplul dat: echipa Cowork (agentul AI din Microsoft 365) are doar 11 dezvoltatori care „construiesc o fabrică de software care construiește produsul". Buyout-ul a fost gândit „ca toată lumea să simtă că are control asupra alegerilor", după ce modul în care s-a vorbit despre revoluția AI a creat „anxietate enormă" în rândul oamenilor.</p>
+          </div>
+          <div class="sec">
+            <p class="sec-label">De ce contează</p>
+            <p>Context profesional — direcția în care se mișcă întreaga industrie IT: munca se mută de la executarea sarcinilor la coordonarea agenților AI; modelul Microsoft e un semnal pentru cum vor arăta echipele IT în următorii ani.</p>
+          </div>
+          <div class="verify">
+            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
+            <p>Verdict: confirmat. TechCrunch (19 nov 2026, 00:42 UTC), Storyboard18 (19 nov 2026) și AI Weekly (19 nov 2026) — relatări independente ale acelorași declarații de la DealBook Summit.</p>
+            <ul class="sources">
+              <li><a href="https://techcrunch.com/2026/11/18/microsoft-ceo-satya-nadella-explains-why-he-asked-60k-employees-to-quit/" target="_blank" rel="noopener">TechCrunch — Nadella explică de ce le-a cerut celor 60.000 de angajați Microsoft să plece (19 nov 2026, 00:42 UTC)<span class="host">techcrunch.com</span></a></li>
+              <li><a href="https://www.storyboard18.com/brand-makers/microsofts-ai-first-shift-satya-nadella-says-employees-will-manage-ai-agents-not-just-do-the-work-ws-l-115054.htm" target="_blank" rel="noopener">Storyboard18 — trecerea Microsoft la AI: angajații vor gestiona agenți AI, nu doar vor executa munca (19 nov 2026)<span class="host">www.storyboard18.com</span></a></li>
+              <li><a href="https://aiweekly.co/alerts/nadella-frames-60000-employee-microsoft-buyout-as-agency" target="_blank" rel="noopener">AI Weekly — Nadella prezintă buyout-ul de 60.000 de angajați ca o chestiune de control asupra alegerilor (19 nov 2026)<span class="host">aiweekly.co</span></a></li>
+            </ul>
+          </div>
+          <div class="impact">
+            <span class="badge">Impact direct</span>
+            <p>Impact direct: minim — relevanță de context profesional (direcția industriei IT și a muncii cu agenți AI).</p>
+          </div>
+        </article>
+
+      </main>
+      </section>
+
+            <section class="day day-archive" id="zi-2026-11-18">
+        <div class="day-head">
+          <h2>Miercuri, 18 noiembrie 2026</h2>
+          <span>Ediția de ieri · 14 știri · arhivă (ultimele 7 zile)</span>
+        </div>
+
+            <!-- Chenar permanent: știrea cea mai importantă a zilei — sub fereastra
            „Ultimele știri", ÎNAINTEA dashboardului, vizibilă din prima, fără scroll.
            Nivelul de azi: GALBEN (sev-amber) — de urmărit: cutremur de 5,7 în
            Vrancea, resimțit în București — cel mai puternic seism din România în
@@ -5229,811 +5417,10 @@
       </main>
       </section>
 
-      <section class="day day-archive" id="zi-2026-11-12">
-        <div class="day-head">
-          <h2>Joi, 12 noiembrie 2026</h2>
-          <span>Ediția de ieri · 18 știri · arhivă (ultimele 7 zile)</span>
-        </div>
-
-      <!-- Chenar permanent: știrea cea mai importantă a zilei — sub fereastra
-           „Ultimele știri”, ÎNAINTEA dashboardului, vizibilă din prima, fără scroll.
-           Nivelul de azi: GALBEN (sev-amber) — de urmărit: demisia lui Jensen Huang de la Nvidia — știrea cu severitatea cea mai mare a zilei și cea mai importantă dintre cele paisprezece știri galbene ale zilei, marcată „Știrea zilei”; mai există alte treisprezece știri galbene azi (patru știri sunt verzi azi: Gemini 4 Hydrogen în Search, de la 21:00, contractul SATIM, de la 19:00, știrea DFA de la 14:00 și United Airlines, de la 10:00; galbenele sunt: Europa la masa negocierilor Ucraina, de la 22:00, pană Microsoft 365 Outlook, de la 22:00, plecarea lui Jensen Huang și viitorul AI open source la Nvidia, de la 20:00, moțiunea AUR împotriva lui Nazare respinsă în Senat, de la 19:00, breach-ul Fireworks AI / Notion, de la 18:00, nava rusă lovită în Baltica, de la 17:00, campania „wfx-loot”, furt de secrete din GitHub Actions, de la 15:00, Ucraina cere SUA să accelereze livrările de interceptori, de la 13:00, emisarii SUA Witkoff și Kushner la Moscova, de la 10:00, discursul lui Rutte la Oslo despre cheltuielile de apărare NATO, de la 08:00, boardul Nvidia se pregătește să-l demită pe Jensen Huang, de la 07:00, startupul britanic Fractile ridică 720 mil. $ pentru cipuri AI, de la 06:00, și CoreWeave își schimbă finanțarea boom-ului AI, de la 06:00), de aceea apare mențiunea despre celelalte știri cu aceeași severitate, cu filtru pe galben la „apasă aici”.
-           Chenarul rămâne în afara logicii de filtrare: vizibil indiferent de filtrul de categorie. -->
-      <section class="spot sev-amber" aria-label="Știrea cea mai importantă a zilei">
-        <div class="spot-head">
-          <span class="spot-kicker">
-            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13 2 4.5 13.5H11L9.5 22 19 10h-6.5L13 2z"/></svg>
-            Știrea zilei · Atenție rapidă
-          </span>
-          <span class="spot-time">12 nov · 16:00</span>
-          <span class="spot-pill">Nivel galben — de urmărit</span>
-        </div>
-        <h2 class="spot-title">Jensen Huang demisionează de la Nvidia: Colette Kress preia interimatul, acțiunile scad cu peste 10%</h2>
-        <p class="spot-why"><strong>De ce e în față:</strong> Închide cel mai urmărit dosar tech–securitate al săptămânii: șeful companiei care domină piața cipurilor AI pleacă pe fondul unui scandal cu dimensiune de spionaj, fără succesor desemnat, cu câteva zile înainte de raportarea rezultatelor. Pentru un IT incident Manager care construiește automatizări pe infrastructură AI, schimbarea la vârful celui mai important furnizor de hardware AI atinge direct lanțul de aprovizionare pe care lucrează și dinamica cursei tehnologice SUA–China pe care o urmărește.</p>
-        <p class="spot-lead">Nvidia a anunțat joi, 12 noiembrie, că Jensen Huang și-a dat demisia din funcțiile de CEO, președinte și membru al boardului, cu efect imediat, după 33 de ani la conducerea companiei pe care a cofondat-o în 1993. Directorul financiar Colette Kress preia funcția de CEO interimar, iar boardul l-a numit pe Harvey C. Jones președinte al boardului — o funcție nou-creată — și a început căutarea unui succesor permanent. Demisia vine la o zi după ședința boardului de miercuri seară, în care s-a discutat îndepărtarea lui, pe fondul anchetei independente privind relația lui cu Alice Huang, directoare a companiei Megaspeed pe care serviciile americane de informații o consideră spion chinez, și al unei a doua relații, cu vicepreședinta Kimberly Powell, care îi raporta direct. Anunțul companiei nu dă niciun motiv al plecării și nu spune că investigația ar fi cauza. Acțiunile Nvidia au scăzut cu peste 10% în tranzacțiile pre-market — Barron's notează −12,5%, la 152,02 $ — iar compania confirmă că rezultatele trimestriale vin marți, 17 noiembrie, cum era programat.</p>
-        <p class="spot-more" hidden><span class="spot-more-text"></span> <button class="spot-more-btn" type="button">apasă aici</button></p>
-        <div class="spot-foot">
-          <a class="spot-link" href="#stire-182">Citește știrea completă ↓</a>
-          <div class="sev-scale" role="img" aria-label="Scară de gravitate: verde — normal, galben — de urmărit, roșu — grav. Nivelul de azi: galben.">
-            <span class="sev-item"><i class="sev-dot g" aria-hidden="true"></i>Verde · normal</span>
-            <span class="sev-item on"><i class="sev-dot y" aria-hidden="true"></i>Galben · de urmărit</span>
-            <span class="sev-item"><i class="sev-dot r" aria-hidden="true"></i>Roșu · grav</span>
-          </div>
-        </div>
-      </section>
-
-      <!-- Dashboard -->
-      <section class="dashboard" aria-label="Panou de ansamblu">
-        <div class="dash-head">
-          <span class="dash-title">Dashboard · Azi</span>
-          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 22:00</span>
-          <span class="dash-meta">Fereastră monitorizare <strong>L–V 06:00–22:00 · S–D 07:30–22:00</strong> · pas ~3 ore</span>
-        </div>
-
-        <div class="kpi-grid five" role="group" aria-label="Filtrează după categorie — apasă pe un tile">
-          <button class="kpi" type="button" data-filter="toate" aria-pressed="true">
-            <span class="kpi-top"><span class="kpi-label">Toate știrile</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">18</span>
-            <span class="kpi-sub">știri verificate azi, în 14 rulări</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:100%"></i></span>
-            <span class="kpi-hint">Apasă pentru toate</span>
-          </button>
-          <button class="kpi" type="button" data-filter="securitate" aria-pressed="false">
-            <span class="kpi-top"><span class="kpi-label">Securitate &amp; NATO</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">6</span>
-            <span class="kpi-sub">Europa la masa negocierilor Ucraina · analiză AI imagini satelit militare · navă rusă lovită în Baltica · Ucraina cere interceptori mai repede · emisarii SUA la Moscova · cheltuieli de apărare NATO</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:33%"></i></span>
-            <span class="kpi-hint">Apasă pentru a filtra →</span>
-          </button>
-          <button class="kpi" type="button" data-filter="romania" aria-pressed="false">
-            <span class="kpi-top"><span class="kpi-label">România</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">1</span>
-            <span class="kpi-sub">deficit România, replica lui Nazare</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:7%"></i></span>
-            <span class="kpi-hint">Apasă pentru a filtra →</span>
-          </button>
-          <button class="kpi" type="button" data-filter="belgia" aria-pressed="false">
-            <span class="kpi-top"><span class="kpi-label">Belgia</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">1</span>
-            <span class="kpi-sub">Digital Fairness Act UE</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:7%"></i></span>
-            <span class="kpi-hint">Apasă pentru a filtra →</span>
-          </button>
-          <button class="kpi" type="button" data-filter="tech" aria-pressed="false">
-            <span class="kpi-top"><span class="kpi-label">Tech &amp; AI</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">12</span>
-            <span class="kpi-sub">pană Microsoft 365 Outlook · Gemini 4 Hydrogen în Search · Nvidia și viitorul open source · analiză AI imagini satelit militare · breach Fireworks AI / Notion · demisia lui Jensen Huang · furt de secrete din GitHub Actions · Digital Fairness Act UE · agenții AI blocați la zboruri · demiterea lui Jensen Huang · cipuri AI britanice Fractile · CoreWeave cere plăți în avans</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:67%"></i></span>
-            <span class="kpi-hint">Apasă pentru a filtra →</span>
-          </button>
-        </div>
-
-        <div class="dash-foot solo">
-          <div class="dash-panel">
-            <h3>Severitate — apasă un pătrat ca să vezi doar știrile de nivelul acela</h3>
-            <div class="sev-squares" role="group" aria-label="Filtrează după severitate — roșu, galben, verde"></div>
-          </div>
-        </div>
-      </section>
-
-      <div class="filter-status" aria-live="polite">
-        <span class="filter-label">Se afișează: <strong>Toate categoriile — 18 din 18 știri</strong></span>
-        <button class="filter-reset" type="button" hidden>Resetează filtrul</button>
-      </div>
-
-      <!-- Cuprinsul zilei — sub banda dashboard, înaintea cardurilor.
-           Generat de script din cardurile zilei curente: lista completă a
-           zilei, grupată pe ora publicării, cele mai noi primele; fiecare
-           titlu e link la cardul lui (#stire-N), iar antetul de oră al
-           fiecărui grup e buton de filtru pe rulare. Nu e pliabil: toate
-           grupurile de oră sunt extinse permanent, cu toate titlurile
-           vizibile. Cuprinsul urmează filtrul activ, la fel ca și cardurile.
-           Chenarul rămâne în afara filtrării. -->
-      <nav class="day-toc" aria-label="Cuprinsul zilei">
-        <div class="toc-head">
-          <h2>Cuprins</h2>
-          <span class="toc-count">cele mai noi primele · apasă pe o oră ca să filtrezi rularea, pe un titlu ca să sari la știre</span>
-        </div>
-        <div class="toc-groups"></div>
-      </nav>
-
-      <p class="empty">Nicio știre în această categorie azi.</p>
-
-      <main>
-        <!-- 1 · 12 nov · 22:00 -->
-        <article id="stire-189" data-cats="securitate" data-sev="amber" data-subiect="Europa la masa negocierilor Ucraina">
-          <div class="a-meta">
-            <span class="a-time">12 nov · 22:00</span>
-            <span class="a-cat">Securitate &amp; NATO</span>
-            <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
-            <a class="cont-pill" href="#stire-177" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
-            <span class="subj-pill">Europa la masa negocierilor Ucraina</span>
-            <span class="a-num">#1 / 18</span>
-          </div>
-          <h2>Putin acceptă europenii la masa negocierilor pentru Ucraina; Kievul spune că Starshield e perturbat din nou</h2>
-          <div class="followup">
-            <span class="tag">Urmare la</span>
-            <p><a href="#stire-177">„Emisarii SUA Witkoff și Kushner s-au întâlnit azi cu Putin la Moscova, după discuțiile de la Abu Dhabi; urmează Dublinul și Zelenski” — joi, 12 noiembrie 2026, ora 10:00.</a> (Rezultatul întâlnirii de la Kremlin anunțate azi-dimineață.)</p>
-          </div>
-          <div class="sec">
-            <p class="sec-label">Ce s-a întâmplat</p>
-            <p>Președintele rus Vladimir Putin a acceptat joi ca reprezentanți europeni să participe la următoarea rundă de negocieri pentru Ucraina, a anunțat emisarul american Steve Witkoff după întâlnirea de la Kremlin cu Putin — a zecea întrevedere directă dintre cei doi. „Europenii se vor alătura la următoarea întâlnire, ceea ce considerăm un moment foarte important, pentru că sunt partenerii noștri”, a spus Witkoff reporterilor, potrivit Reuters. Până acum procesul s-a desfășurat trilateral (SUA–Rusia–Ucraina, cu mediere americană), iar la Abu Dhabi delegația Moscovei refuzase să stea la masă cu echipa europeană. În paralel, președintele ucrainean Volodimir Zelenski a spus că noi restricții afectează comunicațiile prin satelit Starshield folosite de Kiev pe front — perturbări „semnificative”, pe toată linia frontului și în teritoriile controlate de Rusia. Putin a avertizat că desfășurarea de trupe occidentale în Ucraina după un acord de pace ar însemna reluarea războiului și i-a cerut Washingtonului să lucreze cu aliații europeni ca aceștia să decidă „dacă vor pace sau război”. Discuțiile de la Abu Dhabi (10–11 noiembrie) au produs un acord pentru un schimb amplu de prizonieri de război, așteptat în săptămânile următoare.</p>
-          </div>
-          <div class="sec">
-            <p class="sec-label">De ce contează</p>
-            <p>Pentru un IT incident Manager, intrarea Europei la masa negocierilor e schimbarea de format diplomatic a săptămânii: după luni în care procesul a fost trilateral, cu europenii ținuți pe margine, formatul s-ar putea lărgi — dar deocamdată acceptul vine din declarația emisarului american, nu dintr-un comunicat al Kremlinului. Perturbarea Starshield atinge direct comunicațiile de pe front: infrastructura de comunicații prin satelit e exact terenul lui profesional. De urmărit: confirmarea Kremlinului, data următoarei runde și discuția de vineri a liderilor UE despre numirea unui emisar special pentru proces.</p>
-          </div>
-          <div class="verify">
-            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
-            <p>Verdict: confirmat. Defense News (12 noiembrie 2026, 19:56 UTC) — relatarea curatoriată: acceptul lui Putin anunțat de Witkoff, avertismentul privind trupele occidentale, perturbarea Starshield și schimbul de prizonieri convenit la Abu Dhabi. Reuters (12 noiembrie 2026, relatare proprie, Andrew Osborn și Maxim Rodionov) — confirmare independentă: „The Europeans will join at the next meeting”, citatul lui Witkoff, neconfirmarea lui Ușakov. Euronews (12 noiembrie 2026, 18:39 UTC) — Rusia temperează entuziasmul: Moscova cere Europei să înceteze ajutorul militar pentru Ucraina ca o condiție; liderii UE discută vineri numirea unui emisar special, iar Zelenski a cerut un reprezentant comun european până la sfârșitul lunii. Notă de integritate: acceptul e anunțat de partea americană; consilierul lui Putin, Iuri Ușakov, nu l-a confirmat și a numit poziția europeană „o rețetă pentru război fără sfârșit”.</p>
-            <ul class="sources">
-              <li><a href="https://www.defensenews.com/global/2026/11/12/putin-lets-europe-join-ukraine-peace-talks-as-kyiv-says-starshield-disrupted-again/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Defense News — „Putin lets Europe join Ukraine peace talks, as Kyiv says Starshield disrupted again” (12 nov 2026, 19:56 UTC; relatarea curatoriată: acceptul lui Putin anunțat de Witkoff, avertismentul privind trupele occidentale, perturbarea Starshield, schimbul de prizonieri convenit la Abu Dhabi)<span class="host">defensenews.com</span></a></li>
-              <li><a href="https://srnnews.com/putin-lets-europe-join-ukraine-peace-talks-as-kyiv-says-starshield-disrupted-again/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Reuters — „Putin lets Europe join Ukraine peace talks, as Kyiv says Starshield disrupted again” (12 nov 2026, 17:08 UTC; relatare proprie, Andrew Osborn și Maxim Rodionov — confirmare independentă: „The Europeans will join at the next meeting”, citatul lui Witkoff, neconfirmarea lui Ușakov)<span class="host">srnnews.com</span></a></li>
-              <li><a href="https://app.ekkow.com/1493687902411604989" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Euronews — „Russia plays down peace talks with Europe after Witkoff raises hopes of breakthrough” (12 nov 2026, 18:39 UTC; Rusia temperează entuziasmul: Moscova cere Europei să înceteze ajutorul militar pentru Ucraina ca o condiție; liderii UE discută vineri numirea unui emisar special, iar Zelenski a cerut un reprezentant comun european până la sfârșitul lunii)<span class="host">euronews.com</span></a></li>
-            </ul>
-          </div>
-          <div class="adverse">
-            <p class="sec-label">Tabăra adversă</p>
-            <p><strong>Iuri Ușakov, consilierul președintelui Putin</strong>, nu a confirmat că europenii vor participa la următoarea rundă și a spus că europenii trebuie mai întâi să decidă între „pace” și „război”, iar „toate acțiunile lor practice indică tocmai pe cea din urmă”; poziția europeană actuală e „o rețetă pentru război fără sfârșit”. Purtătorul de cuvânt al Kremlinului, Dmitri Peskov, a adăugat că desemnarea unui reprezentant comun european e o condiție prealabilă pentru participarea la negocieri. (<a href="https://app.ekkow.com/1493687902411604989" target="_blank" rel="noopener">Euronews, 12 nov 2026</a>)</p>
-          </div>
-          <div class="impact">
-            <span class="badge">Impact direct</span>
-            <p>Impact direct: minim azi — știrea nu cere nicio acțiune de la el; relevanță profesională înaltă: formatul negocierilor și comunicațiile Starshield sunt pe terenul lui de incident management și infrastructură de comunicații; de urmărit: confirmarea Kremlinului, data următoarei runde, emisarul special al UE (discutat vineri) și evoluția perturbărilor Starshield.</p>
-          </div>
-        </article>
-        <!-- 2 · 12 nov · 22:00 -->
-        <article id="stire-190" data-cats="tech" data-sev="amber" data-subiect="pană Microsoft 365 Outlook">
-          <div class="a-meta">
-            <span class="a-time">12 nov · 22:00</span>
-            <span class="a-cat">Tech &amp; AI</span>
-            <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
-            <span class="subj-pill">pană Microsoft 365 Outlook</span>
-            <span class="a-num">#2 / 18</span>
-          </div>
-          <h2>Pană majoră Microsoft 365: Outlook, Teams și SharePoint au căzut azi pentru zeci de mii de utilizatori; cauza, încă neclară</h2>
-          <div class="sec">
-            <p class="sec-label">Ce s-a întâmplat</p>
-            <p>Microsoft a confirmat joi, 12 noiembrie, o pană majoră a serviciului de email Outlook / Exchange Online: utilizatorii business și personali nu și-au putut accesa căsuțele poștale. Problema, semnalată inițial pentru SUA și Americi, s-a extins ulterior la utilizatori „din orice regiune”. Downdetector a înregistrat un vârf de aproape 130.000 de raportări pentru Outlook (13:27 ora New York-ului, 19:27 CET) și peste 46.000 pentru Microsoft 365. Au fost afectate și Teams, SharePoint, Copilot, OneDrive și Office pentru web. Microsoft a atribuit incidentul (EX1550543) faptului că „un număr mare de servere au devenit indisponibile pe neașteptate”, a oprit toate implementările și redistribuie traficul de conexiune pe infrastructura globală; până seara, raportările scădeau, iar serviciile reveneau treptat, fără o cauză-rădăcină publicată și fără un termen de restabilire completă.</p>
-          </div>
-          <div class="sec">
-            <p class="sec-label">De ce contează</p>
-            <p>Pentru un IT incident Manager, o pană globală la cea mai folosită suită de productivitate enterprise — email, calendare, Teams, SharePoint — e un incident de referință: exact tipul de eveniment pe care îl gestionează profesional (comunicare de incident, impact pe mai multe servicii, cauză neclară la ore după declanșare). E la un curs la Haga azi, iar Teams și Outlook sunt canale de lucru curente — dacă ceva nu merge diseară, cauza e la Microsoft, nu la rețeaua locală. Lecția de proces: centrul de administrare Microsoft, unde se publică detaliile, a fost la rândul lui inaccesibil la începutul incidentului.</p>
-          </div>
-          <div class="verify">
-            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
-            <p>Verdict: confirmat. TechCrunch (12 noiembrie 2026, 11:03 PST / 20:03 CET) — relatarea curatoriată: pană Outlook / Exchange Online, extindere la „orice regiune”, Teams, SharePoint și Copilot indisponibile; cauza: „un număr mare de servere au devenit indisponibile pe neașteptate”. Reuters (12 noiembrie 2026, 18:32 UTC) — confirmare independentă: peste 130.000 de raportări Outlook la 13:27 ET, peste 46.000 pentru Microsoft 365. USA Today (12 noiembrie 2026, actualizări live) — vârf de 128.874 de raportări la 13:09 ET, în scădere spre 92.914 la 13:50 ET; Microsoft „lucrează agresiv” la reducerea impactului. Notă de integritate: nimic din raportări nu indică un incident de securitate — e o defecțiune de infrastructură, cu cauza-rădăcină încă nepublicată; Downdetector a semnalat vârfuri și la alte servicii, neconfirmate însă de acestea.</p>
-            <ul class="sources">
-              <li><a href="https://techcrunch.com/2026/11/12/microsofts-outlook-email-hit-by-new-outage/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>TechCrunch — „Microsoft's Outlook email hit by new outage” (12 nov 2026, 11:03 PST / 20:03 CET; relatarea curatoriată: pană Outlook / Exchange Online, extindere la „orice regiune”, Teams, SharePoint și Copilot indisponibile; cauza: „un număr mare de servere au devenit indisponibile pe neașteptate”)<span class="host">techcrunch.com</span></a></li>
-              <li><a href="https://www.reuters.com/technology/microsoft-365-outlook-down-thousands-us-users-downdetector-shows-2026-11-12/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Reuters — „Microsoft 365, Outlook down for thousands of US users, Downdetector shows” (12 nov 2026, 18:32 UTC; confirmare independentă: peste 130.000 de raportări Outlook la 13:27 ET, peste 46.000 pentru Microsoft 365)<span class="host">reuters.com</span></a></li>
-              <li><a href="https://www.usatoday.com/story/tech/2026/11/12/microsoft-down-outlook-365-outage-reports/92744582007/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>USA Today — „Microsoft outage: Live updates as mass issues reported with Outlook, 365” (12 nov 2026, actualizări live; vârf de 128.874 de raportări la 13:09 ET, în scădere spre 92.914 la 13:50 ET; Microsoft „lucrează agresiv” la reducerea impactului)<span class="host">usatoday.com</span></a></li>
-            </ul>
-          </div>
-          <div class="impact">
-            <span class="badge">Impact direct</span>
-            <p>Impact direct: minim azi — poșta lui personală e pe Gmail, nu pe Outlook; dar Teams și Outlook fac parte din mediul de lucru, iar pana explică eventualele probleme de azi de la curs; de urmărit raportul post-incident Microsoft (cauza-rădăcină) și confirmarea restabilirii complete.</p>
-          </div>
-        </article>
-        <!-- 3 · 12 nov · 21:00 -->
-        <article id="stire-188" data-cats="tech" data-sev="green" data-subiect="Gemini 4 Hydrogen în Search">
-          <div class="a-meta">
-            <span class="a-time">12 nov · 21:00</span>
-            <span class="a-cat">Tech &amp; AI</span>
-            <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
-            <a class="cont-pill" href="#stire-158" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
-            <span class="subj-pill">Gemini 4 Hydrogen în Search</span>
-            <span class="a-num">#3 / 18</span>
-          </div>
-          <h2>Google lansează Gemini 4 Hydrogen: cel mai rapid model Gemini 4 ajunge în Search, în aplicația Gemini și în API</h2>
-          <div class="followup">
-            <span class="tag">Urmare la</span>
-            <p><a href="#stire-158">„Gemini 4 Carbon, cel mai puternic model Google, e acum disponibil pentru dezvoltatori — cu funcția de echipă de agenți „swarm”” — miercuri, 11 noiembrie 2026, ora 11:00.</a> (Al doilea model din familia Gemini 4 lansat în trei zile: Carbon, modelul de frontieră, a fost deschis marți, 10 noiembrie; Hydrogen e varianta rapidă, pentru execuție zilnică.)</p>
-          </div>
-          <div class="sec">
-            <p class="sec-label">Ce s-a întâmplat</p>
-            <p>Google a anunțat joi, 12 noiembrie, Gemini 4 Hydrogen — noul model rapid al familiei Gemini 4, construit pentru execuție rapidă în fluxuri de lucru agentice, adică sarcini în care AI-ul face singur mai mulți pași. Modelul ajunge de azi în Google Search (pentru toți utilizatorii, la nivel global), în aplicația Gemini (prin selectorul de model), în API-ul Gemini prin AI Studio, în Gemini for business și în platforma Antigravity pentru abonații Google AI Pro și Ultra. În Search, Google îl numește „cea mai mare îmbunătățire a modelului de Search de până acum": înțelege mai bine intenția din întrebări cu mai multe părți, greșeli de scriere sau cerințe foarte specifice, dă răspunsuri mai vizuale și mai multe linkuri relevante prin tehnica „query fan-out" (o întrebare e descompusă în mai multe căutări paralele) și devine modelul implicit în AI Mode, folosit și pentru cele mai grele întrebări din AI Overviews. Cifrele anunțate de Google: finalizează sarcini de 2,5 ori mai rapid decât Gemini 3.8 Flash, obține 51 de puncte pe Artificial Analysis Intelligence Index la nivelul implicit de gândire „high" (54 la noul nivel „xhigh"), față de 50 pentru modelul mai puternic Argon, are o fereastră de context de 1 milion de tokeni și costă 1,50 dolari la un milion de tokeni de intrare și 7,50 dolari la un milion de tokeni de ieșire. Modelul are patru niveluri de gândire (low, medium, high, xhigh).</p>
-          </div>
-          <div class="sec">
-            <p class="sec-label">De ce contează</p>
-            <p>Pentru un IT incident Manager care își construiește automatizările pe API-ul Gemini și trăiește zilnic în ecosistemul Google, Hydrogen e piesa practică a familiei Gemini 4: varianta rapidă și ieftină pe care o poate apela direct din API-ul pe care îl folosește deja, în locul lui Carbon (modelul de frontieră, mai scump) sau Argon, pentru sarcinile zilnice de execuție. În același timp, upgrade-ul din Search schimbă direct instrumentul de căutare pe care îl folosește în fiecare zi — răspunsuri mai nuanțate la întrebări complicate și mai multe surse relevante. Faptul că Google lansează al doilea model Gemini 4 în trei zile arată ritmul în care se mișcă acum cursa modelelor — Carbon marți, Hydrogen joi — și că „Flash" dispare ca brand, înlocuit de Hydrogen.</p>
-          </div>
-          <div class="verify">
-            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
-            <p>Verdict: confirmat. Google (blog oficial, 12 noiembrie 2026) — anunțul primar: Hydrogen pentru fluxuri agentice, disponibil în API, aplicația Gemini și Search; 2,5x mai rapid decât Gemini 3.8 Flash; scor 51 pe Artificial Analysis Intelligence Index (54 la xhigh); preț 1,50 $ / 7,50 $ per 1M tokeni. Google Search (blog oficial, 12 noiembrie 2026) — „cea mai mare îmbunătățire a modelului de Search de până acum", disponibil global pentru toți utilizatorii, model implicit în AI Mode. TechCrunch (12 noiembrie 2026, 19:27 UTC) — relatarea: îmbunătățirile din Search, cele patru niveluri de gândire, disponibilitatea în API și Antigravity. 9to5Google (12 noiembrie 2026, 18:01 UTC) — context: înlocuiește brandingul Flash, „major standalone upgrade". Search Engine Land (12 noiembrie 2026, 18:31 UTC) — confirmarea lansării și a disponibilității globale în Search. Notă de integritate: cifrele de viteză și scorurile pe benchmark sunt cele anunțate de Google, nu măsurători independente; Carbon rămâne modelul de frontieră pentru sarcini lungi și complexe.</p>
-            <ul class="sources">
-              <li><a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Google (blog oficial) — „Introducing Gemini 4 Hydrogen” (12 nov 2026; anunțul primar: modelul rapid pentru fluxuri agentice, disponibil în API, aplicația Gemini și Search; 2,5x mai rapid decât Gemini 3.8 Flash; scor 51 pe Artificial Analysis Intelligence Index, 54 la nivelul xhigh; preț 1,50 $ / 7,50 $ per 1M tokeni)<span class="host">blog.google</span></a></li>
-              <li><a href="https://blog.google/products-and-platforms/products/search/gemini-4-hydrogen-search-upgrade/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Google Search (blog oficial) — „Google Search gets a major upgrade with Gemini 4 Hydrogen” (12 nov 2026; „cea mai mare îmbunătățire a modelului de Search de până acum”, disponibil global pentru toți utilizatorii; model implicit în AI Mode și pentru cele mai grele întrebări din AI Overviews)<span class="host">blog.google</span></a></li>
-              <li><a href="https://techcrunch.com/2026/11/12/googles-latest-search-upgrade-promises-better-answers-to-your-most-complicated-questions/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>TechCrunch — „Google's latest Search upgrade promises better answers to your most complicated questions” (12 nov 2026, 19:27 UTC; relatarea curatoriată: îmbunătățirile din Search, patru niveluri de gândire, disponibilitatea în API și Antigravity)<span class="host">techcrunch.com</span></a></li>
-              <li><a href="https://9to5google.com/2026/11/12/gemini-4-hydrogen-launch/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>9to5Google — „Google announces Gemini 4 Hydrogen with ‘significant leaps’” (12 nov 2026, 18:01 UTC; context: înlocuiește brandingul Flash, „major standalone upgrade”, model implicit în AI Mode)<span class="host">9to5google.com</span></a></li>
-              <li><a href="https://searchengineland.com/google-search-gets-major-upgrade-with-gemini-4-hydrogen-501867" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Search Engine Land — „Google Search gets major upgrade with Gemini 4 Hydrogen” (12 nov 2026, 18:31 UTC; confirmarea lansării și a disponibilității globale în Search)<span class="host">searchengineland.com</span></a></li>
-            </ul>
-          </div>
-          <div class="impact">
-            <span class="badge">Impact direct</span>
-            <p>Impact direct: minim azi — nu cere nicio acțiune: Hydrogen e disponibil automat în Search și poate fi selectat în aplicația Gemini și în API; relevanță practică: merită testat în automatizările pe API-ul Gemini ca variantă rapidă și ieftină față de Carbon/Argon, mai ales pentru sarcinile repetitive în mai mulți pași.</p>
-          </div>
-        </article>
-
-        <!-- 4 · 12 nov · 20:00 -->
-        <article id="stire-187" data-cats="tech" data-sev="amber" data-subiect="Nvidia și viitorul open source">
-          <div class="a-meta">
-            <span class="a-time">12 nov · 20:00</span>
-            <span class="a-cat">Tech &amp; AI</span>
-            <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
-            <a class="cont-pill" href="#stire-182" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
-            <span class="subj-pill">Nvidia și viitorul open source</span>
-            <span class="a-num">#4 / 18</span>
-          </div>
-          <h2>Plecarea lui Jensen Huang pune sub semnul întrebării sprijinul Nvidia pentru AI open source</h2>
-          <div class="followup">
-            <span class="tag">Urmare la</span>
-            <p><a href="#stire-182">„Jensen Huang demisionează de la Nvidia: Colette Kress preia interimatul, acțiunile scad cu peste 10%” — joi, 12 noiembrie 2026, ora 16:00.</a></p>
-          </div>
-          <div class="sec">
-            <p class="sec-label">Ce s-a întâmplat</p>
-            <p>Jensen Huang a demisionat joi de la conducerea Nvidia, după 33 de ani, în urma scandalului legat de o presupusă relație cu o persoană suspectată de spionaj pentru China. Huang era cel mai puternic susținător al AI open source din industria americană — promova modelele open-weight ca bune pentru siguranță, inovație și suveranitate și a semnat o scrisoare publică alături de 25 de companii împotriva supra-reglementării modelelor deschise. Acum nu e clar dacă interimatul Colette Kress va continua aceeași direcție: achiziția platformei Hugging Face, de 12,9 miliarde de dolari (anunțată în septembrie, cu închidere vizată în prima jumătate a lui 2027), nu e finalizată, iar Nvidia a convenit și o licență de 6 miliarde de dolari pentru tehnologia startup-ului de coding Poolside.</p>
-          </div>
-          <div class="sec">
-            <p class="sec-label">De ce contează</p>
-            <p>Hugging Face e platforma centrală de modele open — infrastructura pe care o urmărește îndeaproape și o folosește în automatizările lui cu AI; dacă noul management Nvidia răcește sprijinul pentru open source, ecosistemul de modele deschise — inclusiv modelele open Nemotron ale Nvidia — își pierde principalul campion industrial. De urmărit marți, 17 noiembrie, când Nvidia raportează rezultatele trimestriale, prima ocazie în care Kress vorbește public despre direcție.</p>
-          </div>
-          <div class="verify">
-            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
-            <p>Verdict: confirmat. TechCrunch (12 noiembrie 2026, 18:39 UTC) — relatarea curatoriată: plecarea lui Huang pune sub semnul întrebării sprijinul Nvidia pentru AI open source. Inc.com (12 noiembrie 2026, 18:24 UTC) — liderii AI se tem că și-au pierdut campionul open source odată cu plecarea lui Huang. AI Affairs (12 noiembrie 2026) — șeful Hugging Face susține AI-ul deschis după ieșirea lui Huang de la Nvidia, înaintea tranzacției de aproape 13 miliarde de dolari. CryptoBriefing (12 noiembrie 2026) — CEO-ul Hugging Face promite să lupte pentru AI open source după demisia lui Jensen Huang.</p>
-            <ul class="sources">
-              <li><a href="https://techcrunch.com/2026/11/12/jensen-huangs-exit-puts-nvidias-support-for-open-source-in-question/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>TechCrunch — „Jensen Huang's exit puts Nvidia's support for open source in question” (12 nov 2026, 18:39 UTC; relatarea curatoriată)<span class="host">techcrunch.com</span></a></li>
-              <li><a href="https://www.inc.com/aaron-mok/with-jensen-huang-out-ai-leaders-fear-theyve-lost-a-champion-its-a-really-sad-day/91435668" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Inc.com — „With Jensen Huang Out, AI Leaders Fear They've Lost a Champion” (12 nov 2026, 18:24 UTC)<span class="host">inc.com</span></a></li>
-              <li><a href="https://www.aiaffairs.com/markets/hugging-face-open-source-ai-huang-nvidia-acquisition/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>AI Affairs — „Hugging Face chief backs open AI after Huang exits Nvidia ahead of $13 billion deal” (12 nov 2026)<span class="host">aiaffairs.com</span></a></li>
-              <li><a href="https://cryptobriefing.com/hugging-face-ceo-open-source-huang-exit/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>CryptoBriefing — „Hugging Face CEO vows to fight for open-source AI after Jensen Huang's resignation” (12 nov 2026)<span class="host">cryptobriefing.com</span></a></li>
-            </ul>
-          </div>
-          <div class="opposing">
-            <p class="sec-label">Tabăra adversă</p>
-            <p>Clément Delangue, CEO Hugging Face, a promis într-o postare pe X din 12 noiembrie că „vom continua să luptăm pentru AI open source, mai tare ca niciodată” („we'll keep fighting for open-source AI, harder than ever”), numind plecarea lui Huang „o zi foarte tristă”. (<a href="https://techcrunch.com/2026/11/12/hugging-face-ceo-vows-to-keep-fighting-for-open-source-ai-after-jensen-huangs-exit/" target="_blank" rel="noopener">techcrunch.com</a>)</p>
-          </div>
-          <div class="impact">
-            <span class="badge">Impact direct</span>
-            <p>Impact direct: minim azi — nicio schimbare anunțată la Hugging Face și nicio decizie a Nvidia privind achiziția; relevanță de context ridicată: direcția open source a celui mai mare producător de cipuri AI și soarta achiziției de 12,9 miliarde de dolari se decid în următoarele luni. De urmărit: poziția lui Kress și întrebările Departamentului de Justiție al SUA privind efectul achiziției asupra concurenței.</p>
-          </div>
-        </article>
-
-        <!-- 5 · 12 nov · 19:00 -->
-        <article id="stire-185" data-cats="romania" data-sev="amber" data-subiect="deficit România, replica lui Nazare">
-          <div class="a-meta">
-            <span class="a-time">12 nov · 19:00</span>
-            <span class="a-cat">România</span>
-            <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
-            <span class="subj-pill">deficit România, replica lui Nazare</span>
-            <span class="a-num">#5 / 18</span>
-          </div>
-          <h2>Senatul a respins moțiunea AUR împotriva ministrului Finanțelor: Nazare susține că deficitul scade pe ambele metodologii</h2>
-          <div class="sec">
-            <p class="sec-label">Ce s-a întâmplat</p>
-            <p>Senatul a respins moțiunea simplă a AUR împotriva ministrului Finanțelor, Alexandru Nazare, cu 46 de voturi contra (21 pentru, 13 abțineri). Nazare susține că deficitul scade pe ambele metodologii de calcul — cash și ESA.</p>
-          </div>
-          <div class="sec">
-            <p class="sec-label">De ce contează</p>
-            <p>Traiectoria deficitului României rămâne firul fiscal urmărit, iar diferența dintre cele două metodologii de calcul — cash și ESA — decide cum e evaluată România la Bruxelles și cât costă finanțarea statului, cu efect indirect asupra investițiilor și creditului în lei.</p>
-          </div>
-          <div class="verify">
-            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
-            <p>Verdict: confirmat. Digi24 (reluat de Revista Focus, 12 noiembrie 2026) — respingerea moțiunii, cu 46 de voturi contra. Agerpres (reluat de Curs de Guvernare, 11 noiembrie 2026) — citatul lui Nazare: „o singură execuție bugetară și două moduri de a o citi”. Mediafax / News.ro (reluat de Din Popor, 11 noiembrie 2026) — rezultatul votului: 21 pentru, 46 contra, 13 abțineri. Informat.ro (11 noiembrie 2026) — relatare concordantă a votului din Senat.</p>
-            <ul class="sources">
-              <li><a href="https://revistafocus.ro/motiunea-aur-impotriva-lui-alexandru-nazare-respinsa-in-senat-cu-46-de-voturi-contra/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Digi24, reluat de Revista Focus — „Moțiunea AUR împotriva lui Alexandru Nazare, respinsă în Senat cu 46 de voturi contra” (12 nov 2026)<span class="host">revistafocus.ro</span></a></li>
-            </ul>
-          </div>
-          <div class="opposing">
-            <p class="sec-label">Tabăra adversă</p>
-            <p>AUR, prin Petrișor Peiu, liderul senatorilor partidului: diferența cash–ESA e de peste 28 mld lei în semestrul I (circa 41 mld lei cash față de peste 69 mld lei ESA, pe baza datelor Eurostat); AUR cere ca Ministerul Finanțelor să publice, cel puțin trimestrial, ambele cifre.</p>
-          </div>
-          <div class="impact">
-            <span class="badge">Impact direct</span>
-            <p>Impact direct: minim azi — votul nu schimbă nicio taxă și nu cere nicio acțiune.</p>
-          </div>
-        </article>
-
-        <!-- 6 · 12 nov · 19:00 -->
-        <article id="stire-186" data-cats="securitate tech" data-sev="green" data-subiect="analiză AI imagini satelit militare">
-          <div class="a-meta">
-            <span class="a-time">12 nov · 19:00</span>
-            <span class="a-cat">Securitate &amp; NATO · Tech &amp; AI</span>
-            <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
-            <span class="subj-pill">analiză AI imagini satelit militare</span>
-            <span class="a-num">#6 / 18</span>
-          </div>
-          <h2>Germania și Polonia apelează la firma poloneză SATIM pentru analiza AI a imaginilor satelitare militare</h2>
-          <div class="sec">
-            <p class="sec-label">Ce s-a întâmplat</p>
-            <p>SATIM, firmă poloneză de analiză AI a imaginilor radar cu apertură sintetică (SAR), a obținut un contract de la Ministerul polonez al Apărării pentru analiza automată a imaginilor satelitare, în sprijinul programului MikroSAR; compania colaborează deja cu Rheinmetall din Germania pentru programul de recunoaștere prin satelit SPOCK-1.</p>
-          </div>
-          <div class="sec">
-            <p class="sec-label">De ce contează</p>
-            <p>Consolidarea capacităților spațiale proprii ale aliaților de pe flancul estic și încredințarea analizei de imagini unui AI european — de urmărit cum se extind programele MikroSAR și SPOCK-1.</p>
-          </div>
-          <div class="verify">
-            <p class="sec-label">Verificare <span class="status">Sursă unică</span></p>
-            <p>Verdict: sursa_unica. Defense News (12 noiembrie 2026, 16:58 UTC) — relatarea curatoriată a contractului SATIM. PR Newswire (12 noiembrie 2026, 16:31 UTC) — comunicatul companiei (parte implicată, nu verificare independentă). SATIM (2 noiembrie 2026) — comunicatul companiei despre intrarea pipeline-ului SPOCK-1 în teste operaționale. TechTimes (2 noiembrie 2026) — context SPOCK-1.</p>
-            <ul class="sources">
-              <li><a href="https://www.defensenews.com/global/europe/2026/11/12/germany-poland-tap-satim-to-analyze-military-satellite-imagery/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Defense News — „Germany, Poland tap SATIM to analyze military satellite imagery” (12 nov 2026, 16:58 UTC; relatarea curatoriată)<span class="host">defensenews.com</span></a></li>
-            </ul>
-          </div>
-          <div class="impact">
-            <span class="badge">Impact direct</span>
-            <p>Impact direct: minim — un contract de software între o firmă poloneză și două ministere ale apărării; nicio acțiune cerută.</p>
-          </div>
-        </article>
-
-        <!-- 7 · 12 nov · 18:00 -->
-        <article id="stire-184" data-cats="tech" data-sev="amber" data-subiect="breach Fireworks AI / Notion">
-          <div class="a-meta">
-            <span class="a-time">12 nov · 18:00</span>
-            <span class="a-cat">Tech &amp; AI</span>
-            <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
-            <span class="subj-pill">breach Fireworks AI / Notion</span>
-            <span class="a-num">#7 / 18</span>
-          </div>
-          <h2>Atac cibernetic la Fireworks AI: transcrieri ale conversațiilor Notion AI, expuse — sub 1% din spațiile de lucru afectate</h2>
-          <div class="sec">
-            <p class="sec-label">Ce s-a întâmplat</p>
-            <p>Notion a confirmat că un atac cibernetic la furnizorul său de AI, Fireworks AI, a expus transcrieri ale conversațiilor clienților cu Notion AI, folosite pentru funcția Insights. Sunt afectate sub 1% din spațiile de lucru Notion; compania a dezactivat Insights și nu mai servește modele open-weight prin Fireworks. Este a doua breșă la Fireworks în tot atâtea luni — în octombrie atacatorii au ajuns la date de facturare, dataseturi și greutăți parțiale de modele.</p>
-          </div>
-          <div class="sec">
-            <p class="sec-label">De ce contează</p>
-            <p>Incident pe lanțul de aprovizionare AI: conținutul trimis către o funcție AI poate fi procesat de un alt furnizor, iar o breșă la furnizor expune materialul clienților chiar și cu un contract de „zero retenție” a datelor. Pentru un IT incident Manager care construiește automatizări cu chei API și folosește zilnic asistenți AI, lecția directă este că secretele lipite în chat-uri AI pot ajunge la terți printr-o breșă la furnizor, nu doar la serviciul folosit direct.</p>
-          </div>
-          <div class="verify">
-            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
-            <p>Verdict: sursa_primara + confirmat. Notion (9 noiembrie 2026) — advisory-ul propriu de securitate despre incidentul de la furnizorul terț de AI: transcrieri ale conversațiilor cu Notion AI expuse, sub 1% din spațiile de lucru afectate, funcția Insights dezactivată; sursă primară. TechCrunch (12 noiembrie 2026) — relatarea despre atacul asupra Fireworks AI și accesul atacatorilor la transcrierile clienților Notion. BleepingComputer — relatare despre breșă (fără link). Notă de integritate: e a doua breșă la Fireworks AI în două luni — în octombrie atacatorii au ajuns la date de facturare, dataseturi și greutăți parțiale de modele — deși Notion avea un contract de „zero retenție” a datelor cu furnizorul.</p>
-            <ul class="sources">
-              <li><a href="https://www.notion.com/security/advisories/security-incident-involving-a-third-party-ai-vendor-nov9" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Notion — advisory de securitate: „Security incident involving a third-party AI vendor” (9 nov 2026; sursă primară)<span class="host">notion.com</span></a></li>
-              <li><a href="https://techcrunch.com/2026/11/12/cyberattack-on-fireworks-ai-allowed-hackers-to-access-notion-customers-chat-transcripts/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>TechCrunch — „Cyberattack on Fireworks AI allowed hackers to access Notion customers' chat transcripts” (12 nov 2026)<span class="host">techcrunch.com</span></a></li>
-            </ul>
-          </div>
-          <div class="impact">
-            <span class="badge">Impact direct</span>
-            <p>Impact direct: minim — Notion nu este un serviciu folosit (lucrul se face în Obsidian). Relevanță profesională ridicată: incident pe lanțul de aprovizionare AI, al doilea la același furnizor în două luni, cu un contract de zero-retenție care nu a împiedicat expunerea.</p>
-          </div>
-          <div class="action">
-            <span class="badge">Acțiune</span>
-            <p>Dacă ai lipit vreodată o parolă sau o cheie API într-un chat AI, rotește-o acum.</p>
-          </div>
-        </article>
-
-        <!-- 8 · 12 nov · 17:00 -->
-        <article id="stire-183" data-cats="securitate" data-sev="amber" data-subiect="navă rusă lovită în Baltica">
-          <div class="a-meta">
-            <span class="a-time">12 nov · 17:00</span>
-            <span class="a-cat">Securitate &amp; NATO</span>
-            <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
-            <a class="cont-pill" href="#stire-170" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
-            <span class="subj-pill">navă rusă lovită în Baltica</span>
-            <span class="a-num">#8 / 18</span>
-          </div>
-          <h2>Finlanda a detectat o lovitură asupra unei nave de război rusești în Marea Baltică; nava s-a întors la Sankt Petersburg</h2>
-          <div class="followup">
-            <span class="tag">Urmare la</span>
-            <p><a href="#stire-170">„Drone neidentificate au declanșat alerte aeriene în statele baltice; avioane NATO au decolat de două ori, fără să doboare vreo dronă” — miercuri, 11 noiembrie 2026, ora 20:00.</a> (Subiectul continuă firul baltic de ieri: aceeași zonă, aceleași alerte cu drone, același tipar de spillover.)</p>
-          </div>
-          <div class="sec">
-            <p class="sec-label">Ce s-a întâmplat</p>
-            <p>Armata finlandeză a anunțat joi, 12 noiembrie, că forțele sale au detectat miercuri o lovitură asupra unei nave de război rusești în zona Golfului Finlandei și că monitorizează evoluția situației. Nu se știe deocamdată dacă au fost victime și nici ce a provocat lovitura; presa estonă relatează că nava era o navă mică a marinei ruse și că s-a întors ulterior la Sankt Petersburg. Armata finlandeză a precizat că situația de securitate în zonă rămâne stabilă și că Finlanda nu se află sub o amenințare militară imediată, dar a refuzat să dea detalii despre locul, momentul sau modul în care a fost detectat incidentul. Contextul, relatat de Defense News: Ucraina trimite valuri de drone spre regiunea Leningrad — Sankt Petersburg și portul Ust-Luga — iar unele drone au intrat în spațiul aerian al Finlandei și al statelor baltice; miercuri dimineață, Estonia, Letonia și Lituania au emis avertismente pentru populație să se adăpostească din cauza dronelor, iar NATO a trimis avioane de luptă.</p>
-          </div>
-          <div class="sec">
-            <p class="sec-label">De ce contează</p>
-            <p>Războiul ajunge tot mai aproape de teritoriul NATO: după alertele aeriene de miercuri din statele baltice, joi apare o navă de război rusă lovită în Golful Finlandei — Marea Baltică devine un al doilea teatru de fricțiune, după Marea Neagră. Pentru un IT incident Manager, relevanța e profesională directă: același tipar de incident — detecție, atribuire neclară, lanț de decizie sub presiune de timp — într-o zonă unde alianța tocmai și-a ridicat nivelul de alertă. De urmărit: cine a lovit nava și dacă NATO anunță măsuri suplimentare în Baltica.</p>
-          </div>
-          <div class="verify">
-            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
-            <p>Verdict: sursa_primara + confirmat. Forțele de Apărare ale Finlandei (12 noiembrie 2026) — declarația proprie către Reuters: lovitură detectată asupra unei nave de război rusești în Golful Finlandei, situație stabilă, fără amenințare militară imediată; sursă primară. Reuters (12 noiembrie 2026) — relatarea proprie de la Helsinki, pe baza declarației armatei finlandeze. Defense News (12 noiembrie 2026, 15:06 UTC) — relatarea curatoriată: nava mică a marinei ruse, întoarsă la Sankt Petersburg (presa estonă); contextul cu dronele ucrainene spre Leningrad și alertele baltice de miercuri. Notă de integritate: nu se știe cine a lovit nava și nici dacă au fost victime; armata finlandeză nu a dat detalii despre locul, momentul sau modul detectării; NATO nu a atribuit incidentul nimănui.</p>
-            <ul class="sources">
-              <li><a href="https://www.defensenews.com/global/europe/2026/11/12/finland-says-it-detects-strike-on-russian-warship-in-baltic-sea/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Defense News — „Finland says it detects strike on Russian warship in Baltic Sea” (12 nov 2026, 15:06 UTC)<span class="host">defensenews.com</span></a></li>
-              <li><a href="https://srnnews.com/finland-says-it-detects-strike-on-russian-warship-in-baltic-sea/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Reuters, via SRN News — „Finland says it detects strike on Russian warship in Baltic Sea” (12 nov 2026; republicare a firului Reuters)<span class="host">srnnews.com</span></a></li>
-            </ul>
-          </div>
-          <div class="impact">
-            <span class="badge">Impact direct</span>
-            <p>Impact direct: minim azi — cursul de la Haga (11–13 noiembrie) continuă; nicio acțiune cerută. Relevanță profesională ridicată: lovitură asupra unei nave rusești în apele dintre doi aliați NATO, la o zi după alertele aeriene baltice — exact tipul de incident de pe flancul estic urmărit în pagină. De urmărit: atribuirea oficială a loviturii și eventualele măsuri suplimentare ale NATO în Marea Baltică.</p>
-          </div>
-        </article>
-
-        <!-- 9 · 12 nov · 16:00 -->
-        <article id="stire-182" data-cats="tech" data-sev="amber" data-subiect="demisia lui Jensen Huang">
-          <div class="a-meta">
-            <span class="a-time">12 nov · 16:00</span>
-            <span class="a-cat">Tech &amp; AI</span>
-            <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
-            <span class="spot-tag">Știrea zilei</span>
-            <a class="cont-pill" href="#stire-175" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
-            <span class="subj-pill">demisia lui Jensen Huang</span>
-            <span class="a-num">#9 / 18</span>
-          </div>
-          <h2>Jensen Huang demisionează de la Nvidia: Colette Kress preia interimatul, acțiunile scad cu peste 10%</h2>
-          <div class="followup">
-            <span class="tag">Urmare la</span>
-            <p><a href="#stire-175">„Boardul Nvidia se pregătește să-l demită pe Jensen Huang: ședința decisivă a avut loc miercuri seară, acțiunile au căzut cu 8%” — joi, 12 noiembrie 2026, ora 07:00.</a></p>
-          </div>
-          <div class="sec">
-            <p class="sec-label">Ce s-a întâmplat</p>
-            <p>Nvidia a anunțat joi, 12 noiembrie, că Jensen Huang și-a dat demisia din funcțiile de CEO, președinte și membru al boardului, cu efect imediat, după 33 de ani la conducerea companiei pe care a cofondat-o în 1993. Directorul financiar Colette Kress preia funcția de CEO interimar, iar boardul l-a numit pe Harvey C. Jones președinte al boardului — o funcție nou-creată — și a început căutarea unui succesor permanent. Demisia vine la o zi după ședința boardului de miercuri seară, în care s-a discutat îndepărtarea lui, pe fondul anchetei independente privind relația lui cu Alice Huang, directoare a companiei Megaspeed pe care serviciile americane de informații o consideră spion chinez, și al unei a doua relații, cu vicepreședinta Kimberly Powell, care îi raporta direct. Anunțul companiei nu dă niciun motiv al plecării și nu spune că investigația ar fi cauza. Acțiunile Nvidia au scăzut cu peste 10% în tranzacțiile pre-market — Barron's notează −12,5%, la 152,02 $ — iar compania confirmă că rezultatele trimestriale vin marți, 17 noiembrie, cum era programat.</p>
-          </div>
-          <div class="sec">
-            <p class="sec-label">De ce contează</p>
-            <p>Închide cel mai urmărit dosar tech–securitate al săptămânii: șeful companiei care domină piața cipurilor AI pleacă pe fondul unui scandal cu dimensiune de spionaj, fără succesor desemnat, cu câteva zile înainte de raportarea rezultatelor. Pentru un IT incident Manager care construiește automatizări pe infrastructură AI, schimbarea la vârful celui mai important furnizor de hardware AI atinge direct lanțul de aprovizionare pe care lucrează și dinamica cursei tehnologice SUA–China pe care o urmărește.</p>
-          </div>
-          <div class="verify">
-            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
-            <p>Verdict: confirmat. Nvidia (12 noiembrie 2026) — anunțul propriu de tranziție a CEO-ului: demisia cu efect imediat, Kress interimar, Jones președinte al boardului; sursă primară. Reuters (12 noiembrie) — „Nvidia CEO Jensen Huang to step down in big blow to AI boom”: confirmare proprie, acțiuni −10%+ pre-market. The Wall Street Journal (12 noiembrie) — „Jensen Huang Has Been Ousted as Nvidia CEO”: cele două relații extraconjugale, una cu o presupusă spioană chineză. CNN (12 noiembrie) — Kress interimar, boardul caută succesor permanent, acțiuni −10%+ pre-market. USA Today (12 noiembrie) — demisia după ancheta privind presupusa operațiune de spionaj străin. Barron's (12 noiembrie) — acțiuni −12,5%, la 152,02 $, în pre-market. Notă de integritate: comunicatul Nvidia nu dă motivul demisiei și nu leagă plecarea de investigație; acuzația că Alice Huang ar fi spion chinez rămâne o evaluare a serviciilor americane, nu o constatare judiciară.</p>
-            <ul class="sources">
-              <li><a href="https://techcrunch.com/2026/11/12/nvidia-ceo-jensen-huangs-affair-with-alleged-chinese-spy-a-timeline/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>TechCrunch — „The unfolding Jensen Huang scandal: a timeline” (12 nov 2026; cronologia completă a scandalului, inclusiv demisia)<span class="host">techcrunch.com</span></a></li>
-              <li><a href="https://www.reuters.com/business/retail-consumer/nvidia-ceo-jensen-huang-step-down-big-blow-ai-boom-2026-11-12/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Reuters — „Nvidia CEO Jensen Huang to step down in big blow to AI boom” (12 nov 2026)<span class="host">reuters.com</span></a></li>
-              <li><a href="https://www.cnn.com/2026/11/12/tech/jensen-huang-nvidia-resigns?cid=external-feeds_iluminar_meta" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>CNN — „CFO Colette Kress to serve as interim leader after Nvidia CEO Jensen Huang resignation” (12 nov 2026)<span class="host">cnn.com</span></a></li>
-              <li><a href="https://www.usatoday.com/story/tech/2026/11/12/jensen-huang-nvidia-ceo-resigns-affair-investigation/92734431007/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>USA Today — „Jensen Huang resigns as Nvidia CEO amid affair probe” (12 nov 2026)<span class="host">usatoday.com</span></a></li>
-              <li><a href="https://www.barrons.com/articles/nvidia-stock-price-huang-affair-ceo-ouster-26c99dad" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Barron's — „Nvidia CEO Jensen Huang Resigns. Stock Dives 12%.” (12 nov 2026)<span class="host">barrons.com</span></a></li>
-            </ul>
-          </div>
-          <div class="impact">
-            <span class="badge">Impact direct</span>
-            <p>Impact direct: minim azi — știrea nu cere nicio acțiune de la el; relevanță de context înaltă: schimbare de CEO fără succesor la cel mai important furnizor de hardware AI, cu cinci zile înainte de raportarea rezultatelor (17 noiembrie) — de urmărit cine preia permanent conducerea și dacă investigația boardului publică concluzii.</p>
-          </div>
-        </article>
-
-        <!-- 10 · 12 nov · 15:00 -->
-        <article id="stire-181" data-cats="tech" data-sev="amber" data-subiect="furt de secrete din GitHub Actions">
-          <div class="a-meta">
-            <span class="a-time">12 nov · 15:00</span>
-            <span class="a-cat">Tech &amp; AI</span>
-            <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
-            <span class="subj-pill">furt de secrete din GitHub Actions</span>
-            <span class="a-num">#10 / 18</span>
-          </div>
-          <h2>Campanie „wfx-loot”: 4.837 de conturi GitHub deturnate fură secrete din CI în peste 61.000 de repo-uri</h2>
-          <div class="sec">
-            <p class="sec-label">Ce s-a întâmplat</p>
-            <p>Din 10 noiembrie, ora 12:45 UTC, un atacator folosește credențiale GitHub furate ca să deschidă PR-uri-sondă cu titlul „docs: dependency audit notes” din branch-ul „wfx-docs” în 61.764 de repo-uri (4.837 de conturi compromise). În cel puțin 1.806 repo-uri payload-ul a rulat efectiv și a exfiltrat secrete GitHub Actions, tokenuri cloud și chei de servicii AI; atacatorul șterge logurile de rulare și revine în circa un minut. Campania, botezată „wfx-loot” de firma de securitate Aikido, a ajuns și în pachetul Packagist digitalelvis/neuronai-studio 3.14.3 și în două module Go.</p>
-          </div>
-          <div class="sec">
-            <p class="sec-label">De ce contează</p>
-            <p>Folosește GitHub pentru automatizări și pentru repo-ul paginii „Știrile zilei”; un token furat expune fiecare proiect la care contul are acces la scriere. E al doilea incident GitHub + secrete în trei zile în acest jurnal (după scurgerea de chei API din Claude Code, semnalată pe 10 noiembrie) — igiena secretelor din CI e direct pe terenul lui de incident management și de constructor de automatizări.</p>
-          </div>
-          <div class="verify">
-            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
-            <p>Verdict: confirmat. Aikido Security — raportul „wfx-loot” din 12 noiembrie, sursa primară a cercetării. Help Net Security (12 noiembrie) — relatarea campaniei. StepSecurity — peste 21.000 de commituri de injectare în două zile. SafeDep — 8.093 de repo-uri publice cu commituri malițioase, 10–12 noiembrie. The Hacker News — relatare a campaniei. Notă: Aikido precizează că nu atribuie campania actorului din valul GhostAction din octombrie.</p>
-            <ul class="sources">
-              <li><a href="https://www.aikido.dev/blog/compromised-github-accounts-push-ci-secret-stealer-to-tens-of-thousands-of-repositories" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Aikido Security — raportul „wfx-loot” (12 nov 2026; sursa primară a cercetării)<span class="host">aikido.dev</span></a></li>
-              <li><a href="https://www.helpnetsecurity.com/2026/11/12/wfx-loot-github-actions-secret-stealer/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Help Net Security — „wfx-loot” GitHub Actions secret stealer (12 nov 2026)<span class="host">helpnetsecurity.com</span></a></li>
-            </ul>
-          </div>
-          <div class="impact">
-            <span class="badge">Impact direct</span>
-            <p>Impact direct: minim azi, dacă repo-urile lui nu sunt atinse — dar verificarea durează câteva minute și e concretă (vezi linia Acțiune). Profesional: atac pe lanțul de aprovizionare CI, exact terenul lui de incident management.</p>
-          </div>
-          <div class="action">
-            <span class="badge">Acțiune</span>
-            <p>Verifică-ți repo-urile GitHub după PR-ul „docs: dependency audit notes”, branch-ul „wfx-docs” sau commituri „ci: refresh build cache” — dacă apare ceva, tratează contul și toate secretele ca compromise și rotește-le; blochează pachetul Packagist digitalelvis/neuronai-studio 3.14.3.</p>
-          </div>
-        </article>
-
-        <!-- 11 · 12 nov · 14:00 -->
-        <article id="stire-180" data-cats="tech belgia" data-sev="green" data-subiect="Digital Fairness Act UE">
-          <div class="a-meta">
-            <span class="a-time">12 nov · 14:00</span>
-            <span class="a-cat">Tech &amp; AI · Belgia</span>
-            <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
-            <span class="subj-pill">Digital Fairness Act UE</span>
-            <span class="a-num">#11 / 18</span>
-          </div>
-          <h2>Comisia Europeană propune Digital Fairness Act: interzice dark patterns și pune primele reguli UE pentru agenții AI de cumpărături</h2>
-          <div class="sec">
-            <p class="sec-label">Ce s-a întâmplat</p>
-            <p>Comisia Europeană a prezentat miercuri, 11 noiembrie, propunerea de Digital Fairness Act (DFA), cea mai amplă reformă a regulilor UE de protecție a consumatorilor online din ultimii 20 de ani: un regulament care ar înlocui directiva din 2005 și s-ar aplica direct în toate statele membre, fără transpunere națională. Propunerea interzice o listă de zece „dark patterns" — trucuri de design care împing consumatorul spre decizii contra interesului lui: mesaje false că un produs e pe terminate, cronometre de presiune, căsuțe pre-bifate, butonul de refuz ascuns sau formulat ca o alegere greșită. Pentru prima oară, actul reglementează „agentic commerce": magazinele care oferă sisteme AI ce încheie contracte în numele clientului trebuie să-l lase pe acesta să aleagă ce achiziții cer confirmare înainte, iar niciun magazin nu poate obliga clienții să folosească un astfel de sistem. Pachetul mai prevede anularea online cu un click, memento înainte de expirarea perioadelor gratuite și a reînnoirilor automate, prețul afișat cu toate taxele inevitabile incluse de la început, un om real la asistența post-vânzare și reguli pentru loot box-uri și design adictiv. În paralel, Comisia a propus o revizuire a cooperării în protecția consumatorilor, prin care ar putea investiga direct cazuri transfrontaliere mari și amenda cu până la 6% din cifra de afaceri globală. Propunerea merge acum la Parlamentul European și la Consiliu — nu e lege încă.</p>
-          </div>
-          <div class="sec">
-            <p class="sec-label">De ce contează</p>
-            <p>Pentru un IT incident Manager care construiește automatizări cu agenți AI, DFA e primul cadru european care reglementează agenții de cumpărături — cu confirmare explicită per achiziție și fără obligativitatea de a-i folosi — pe firul direct al cardului de azi, de la 10:00, despre United Airlines, care a interzis agenților AI personali să rezerve zboruri: în timp ce companiile americane închid ușa agenților, UE scrie regulile după care vor funcționa aici. Ca utilizator de servicii online în UE, schimbările îl privesc direct: anularea abonamentelor cu un click, memento înainte de reînnoiri și prețul complet afișat de la început.</p>
-          </div>
-          <div class="verify">
-            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
-            <p>Verdict: sursa_primara + confirmat. Comisia Europeană (11 noiembrie 2026) — comunicatul propriu de prezentare a pachetului (IP/26/2407) și textul propunerii, COM(2026) 1100 final. POLITICO Europe (11 noiembrie 2026, 21:16 UTC) — „Brussels takes on the evils of online commerce" (relatarea curatoriată: dark patterns, prețuri dinamice, agentic commerce, asistență umană). Reuters (12 noiembrie 2026) — comentariul Breakingviews despre propunere. Euronews (9 noiembrie 2026) — relatarea pe baza proiectului de text, înainte de prezentare. Notă de integritate: amenda de până la 6% din cifra de afaceri globală ține de revizuirea paralelă a regulamentului de cooperare în protecția consumatorilor, nu de DFA în sine; DFA rămâne o propunere — Parlamentul și Consiliul o negociază, iar textul se poate schimba; cifra Comisiei privind economii de până la 13,7 mld. € pe an pentru consumatori e o modelare a Comisiei, nu un audit independent.</p>
-            <ul class="sources">
-              <li><a href="https://cyprus.representation.ec.europa.eu/news/commission-strengthens-consumer-protection-laws-making-them-fit-digital-age-2026-11-11_en" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Comisia Europeană — „Commission strengthens consumer protection laws, making them fit for the digital age” (11 nov 2026; comunicatul propriu de prezentare a pachetului, IP/26/2407 — sursă primară)<span class="host">cyprus.representation.ec.europa.eu</span></a></li>
-              <li><a href="https://www.europesays.com/be/47216/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>POLITICO Europe (reluat de EuropeSays) — „Brussels takes on the evils of online commerce” (11 nov 2026, 21:16 UTC; relatarea curatoriată — dark patterns, prețuri dinamice, agentic commerce, asistență umană)<span class="host">europesays.com</span></a></li>
-              <li><a href="https://www.reuters.com/commentary/breakingviews/brussels-puts-price-big-tech-digital-trickery-2026-11-12/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Reuters — „Brussels puts a price on Big Tech digital trickery” (12 nov 2026, Breakingviews — comentariu despre propunere)<span class="host">reuters.com</span></a></li>
-              <li><a href="https://commission.europa.eu/document/download/0575d59f-554f-4a9e-b54b-e6b717175809_en?filename=Proposal%20for%20a%20Digital%20Fairness%20Act_0.pdf" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Comisia Europeană — textul propunerii, COM(2026) 1100 final (11 nov 2026; sursă primară)<span class="host">commission.europa.eu</span></a></li>
-            </ul>
-          </div>
-          <div class="opposing">
-            <p class="sec-label">Tabăra adversă</p>
-            <p>Laura Ballarín Cereza, eurodeputată spaniolă, citată de POLITICO, spune că propunerea nu merge destul de departe la designul adictiv: utilizatorii ar trebui scoși implicit din funcții ca autoplay, nu doar să aibă opțiunea de a le dezactiva; patru eurodeputați din grupurile conservator, socialist și liberal cer interzicerea completă a prețurilor dinamice la evenimente culturale și sportive. European Lotteries cere Parlamentului și Consiliului excluderea loteriilor și jocurilor de noroc din sfera actului. (<a href="https://www.europesays.com/be/47216/" target="_blank" rel="noopener">europesays.com</a> · <a href="https://igaming-times.com/news/regulatory/digital-fairness-act-covers-gambling-european-lotteries" target="_blank" rel="noopener">igaming-times.com</a>)</p>
-          </div>
-          <div class="impact">
-            <span class="badge">Impact direct</span>
-            <p>Impact direct: minim — propunerea nu e lege încă și nu cere nicio acțiune azi; relevanță de context înaltă: primul cadru UE pentru agenții AI de cumpărături, pe firul urmărit azi (United Airlines) — de urmărit negocierile din Parlament și Consiliu și forma finală a regulilor pentru agenți.</p>
-          </div>
-        </article>
-
-        <!-- 12 · 12 nov · 13:00 -->
-        <article id="stire-179" data-cats="securitate" data-sev="amber" data-subiect="Ucraina cere interceptori mai repede">
-          <div class="a-meta">
-            <span class="a-time">12 nov · 13:00</span>
-            <span class="a-cat">Securitate &amp; NATO</span>
-            <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
-            <a class="cont-pill" href="#stire-166" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
-            <span class="subj-pill">Ucraina cere interceptori mai repede</span>
-            <span class="a-num">#12 / 18</span>
-          </div>
-          <h2>Ucraina cere SUA să accelereze livrările de interceptori, pe fondul atacurilor Rusiei asupra rețelei electrice; Kievul, pesimist privind armistițiul în Marea Neagră</h2>
-          <div class="followup">
-            <span class="tag">Urmare la</span>
-            <p><a href="#stire-166">„Abu Dhabi: Rusia și Ucraina au convenit un schimb amplu de prizonieri — cel mai mare de până acum, potrivit lui Kushner; fără armistițiu" — miercuri, 11 noiembrie 2026, ora 17:00.</a></p>
-          </div>
-          <div class="sec">
-            <p class="sec-label">Ce s-a întâmplat</p>
-            <p>Ministrul ucrainean de externe Andrii Sybiha i-a cerut marți, la Paris, secretarului de stat american Marco Rubio să accelereze livrările de interceptori pentru apărarea antiaeriană, în timp ce Rusia își intensifică atacurile asupra infrastructurii energetice ucrainene pentru a lovi moralul populației în lunile de iarnă. Sybiha a cerut și sprijin suplimentar pentru rețeaua electrică și a confirmat că partajarea de informații de către SUA și asistența militară prin programul PURL (Priority Ukraine Requirements List) rămân în vigoare. El a spus că propunerile de armistițiu pentru Marea Neagră au fost transmise Rusiei prin intermediari (Turcia, Egipt, India), dar că nu este optimist și încă așteaptă un răspuns de la Moscova.</p>
-          </div>
-          <div class="sec">
-            <p class="sec-label">De ce contează</p>
-            <p>Pentru un IT incident Manager în mediul NATO: campania de lovituri asupra rețelei electrice ucrainene intră în faza de iarnă, iar ritmul livrărilor de interceptori decide dacă apărarea antiaeriană ține pasul; în paralel, dosarul armistițiului în Marea Neagră — direct pe zona Flancului estic urmărită în pagină — rămâne blocat, fără răspuns de la Moscova, chiar în ziua în care emisarii SUA discută cu Putin la Moscova.</p>
-          </div>
-          <div class="verify">
-            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
-            <p>Verdict: confirmat. Reuters (10 noiembrie 2026, John Irish, Paris) — relatarea originală, după discuția lui Sybiha cu Rubio la marginea reuniunii miniștrilor de externe din G7. Common Defense (11 noiembrie 2026) — reluare a cererii. Comunicatul Departamentului de Stat al SUA și postarea lui Sybiha (relatate de IC Brief, 11 noiembrie 2026) confirmă întâlnirea și temele discutate (negocieri, reziliență energetică, cooperare în apărare, Marea Neagră, apărare antiaeriană).</p>
-            <ul class="sources">
-              <li><a href="https://www.defensenews.com/global/europe/2026/11/10/ukraine-urges-us-to-speed-up-interceptor-deliveries-as-russia-targets-power-grid/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Defense News — „Ukraine urges US to speed up interceptor deliveries as Russia targets power grid" (10 nov 2026)<span class="host">defensenews.com</span></a></li>
-              <li><a href="https://kwsn.com/2026/11/10/ukraine-urges-united-states-to-speed-up-interceptor-deliveries-as-russia-targets-power-grid/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Reuters (republicare KWSN) — „Ukraine urges US to speed up interceptor deliveries as Russia targets power grid" (10 nov 2026)<span class="host">kwsn.com</span></a></li>
-              <li><a href="https://www.commondef.com/2026/11/ukraine-presses-u-s-for-faster-interceptors-as-russia-pounds-power-grid/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Common Defense — „Ukraine Presses U.S. for Faster Interceptors as Russia Pounds Power Grid" (11 nov 2026)<span class="host">commondef.com</span></a></li>
-              <li><a href="https://icbrief.org/ukraine/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>IC Brief — Ukraine Daily Brief (11 nov 2026)<span class="host">icbrief.org</span></a></li>
-            </ul>
-          </div>
-          <div class="opposing">
-            <p class="sec-label">Tabăra adversă</p>
-            <p>Rusia neagă că ar viza deliberat civili în război. (<a href="https://www.defensenews.com/global/europe/2026/11/10/ukraine-urges-us-to-speed-up-interceptor-deliveries-as-russia-targets-power-grid/" target="_blank" rel="noopener">defensenews.com</a>)</p>
-          </div>
-          <div class="impact">
-            <span class="badge">Impact direct</span>
-            <p>Impact direct: minim — relevanță de context înaltă: nu cere nicio acțiune azi; de urmărit dacă SUA anunță o accelerare a livrărilor sau un răspuns al Moscovei la propunerea de armistițiu în Marea Neagră, ambele cu efect direct asupra posturii NATO pe Flancul estic.</p>
-          </div>
-        </article>
-
-        <!-- 13 · 12 nov · 10:00 -->
-        <article id="stire-177" data-cats="securitate" data-sev="amber" data-subiect="emisarii SUA la Moscova">
-          <div class="a-meta">
-            <span class="a-time">12 nov · 10:00</span>
-            <span class="a-cat">Securitate &amp; NATO</span>
-            <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
-            <a class="cont-pill" href="#stire-166" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
-            <span class="subj-pill">emisarii SUA la Moscova</span>
-            <span class="a-num">#13 / 18</span>
-          </div>
-          <h2>Emisarii SUA Witkoff și Kushner s-au întâlnit azi cu Putin la Moscova, după discuțiile de la Abu Dhabi; urmează Dublinul și Zelenski</h2>
-          <div class="followup">
-            <span class="tag">Urmare la</span>
-            <p><a href="#stire-166">„Abu Dhabi: Rusia și Ucraina au convenit un schimb amplu de prizonieri — cel mai mare de până acum, potrivit lui Kushner; fără armistițiu" — miercuri, 11 noiembrie 2026, ora 17:00.</a></p>
-          </div>
-          <div class="sec">
-            <p class="sec-label">Ce s-a întâmplat</p>
-            <p>Emisarii președintelui Trump, Steve Witkoff și Jared Kushner, au ajuns joi dimineață la Moscova pentru discuții cu președintele rus Vladimir Putin, după cele două zile de negocieri trilaterale SUA–Rusia–Ucraina de la Abu Dhabi (10–11 noiembrie), încheiate cu un acord pe un schimb amplu de prizonieri, dar fără progres vizibil spre încetarea războiului. Întâlnirea de la Kremlin, așteptată în prima parte a zilei, este a zecea întrevedere directă Witkoff–Putin. După Moscova, cei doi emisari zboară la Dublin pentru a-l informa pe președintele ucrainean Volodimir Zelenski, aflat acolo la reuniunea Comunității Politice Europene.</p>
-          </div>
-          <div class="sec">
-            <p class="sec-label">De ce contează</p>
-            <p>Procesul de pace urmărit în pagină intră în faza deciziei — ce se stabilește la Moscova azi și ce i se prezintă lui Zelenski la Dublin determină dacă runda de la Abu Dhabi rămâne un episod izolat sau devine o negociere reală; pentru un IT incident Manager în mediul NATO, direcția acestui proces modelează postura alianței pe Flancul estic și în Marea Neagră.</p>
-          </div>
-          <div class="verify">
-            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
-            <p>Verdict: confirmat. Reuters (12 noiembrie 2026) — emisarii SUA au ajuns la Moscova pentru cea mai recentă rundă de discuții de pace asupra Ucrainei, cu Putin. CNN (11 noiembrie 2026) — întâlnirea emisarilor lui Trump cu Putin, la Moscova, urmează după încheierea ultimelor discuții despre Ucraina fără niciun progres vizibil. The Times (12 noiembrie 2026) — Zelenski spune că există o „fereastră de oportunitate" pentru un acord de pace anul acesta.</p>
-            <ul class="sources">
-              <li><a href="https://www.reuters.com/world/europe/us-envoys-arrive-moscow-latest-round-ukrainian-peace-talks-with-putin-2026-11-12/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Reuters — „US envoys arrive in Moscow for latest round of Ukrainian peace talks with Putin" (12 nov 2026)<span class="host">reuters.com</span></a></li>
-              <li><a href="https://www.cnn.com/2026/11/11/politics/trump-envoys-russia-trip-peace-talks-intl" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>CNN — „Trump envoys to meet Putin in Moscow after latest Ukraine talks end with no breakthrough" (11 nov 2026)<span class="host">cnn.com</span></a></li>
-              <li><a href="https://www.thetimes.com/world/russia-ukraine-war/article/ukraine-russia-peace-talks-abu-dhabi-progress-zelensky-putin-5mx52v65s" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>The Times — „Zelensky says 'window of opportunity' exists for peace deal this year" (12 nov 2026)<span class="host">thetimes.com</span></a></li>
-            </ul>
-          </div>
-          <div class="opposing">
-            <p class="sec-label">Tabăra adversă</p>
-            <p>Vladimir Medinski, negociatorul-șef rus la Abu Dhabi, a dat puține semne că cererile Moscovei s-ar fi schimbat. (<a href="https://www.cnn.com/2026/11/11/politics/trump-envoys-russia-trip-peace-talks-intl" target="_blank" rel="noopener">cnn.com</a>) Zelenski, în schimb, a spus că există o „fereastră de oportunitate" pentru un acord până la sfârșitul anului. (<a href="https://www.thetimes.com/world/russia-ukraine-war/article/ukraine-russia-peace-talks-abu-dhabi-progress-zelensky-putin-5mx52v65s" target="_blank" rel="noopener">thetimes.com</a>)</p>
-          </div>
-          <div class="impact">
-            <span class="badge">Impact direct</span>
-            <p>Impact direct: minim azi — cursul de la Haga continuă; nicio acțiune cerută. Relevanță de context ridicată: de urmărit ce anunță emisarii după Moscova și ce-i prezintă lui Zelenski la Dublin azi după-amiază, plus cifrele finale ale schimbului de prizonieri.</p>
-          </div>
-        </article>
-
-        <!-- 14 · 12 nov · 10:00 -->
-        <article id="stire-178" data-cats="tech" data-sev="green" data-subiect="agenții AI blocați la zboruri">
-          <div class="a-meta">
-            <span class="a-time">12 nov · 10:00</span>
-            <span class="a-cat">Tech &amp; AI</span>
-            <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
-            <span class="subj-pill">agenții AI blocați la zboruri</span>
-            <span class="a-num">#14 / 18</span>
-          </div>
-          <h2>United Airlines interzice agenților AI personali să rezerve zboruri — prima companie aeriană americană care o face</h2>
-          <div class="sec">
-            <p class="sec-label">Ce s-a întâmplat</p>
-            <p>United Airlines a anunțat pe 11 noiembrie că interzice asistenților AI personali ai terților să caute, rezerve, cumpere sau gestioneze zboruri United — pe site-ul și aplicația proprie, dar și prin agenții de turism și agregatori — și a scris interdicția în Contractul de transport (regula 6.J.6), cu dreptul de a anula rezervările făcute sau modificate de un agent AI (regula 5.H). Motivul invocat: agenții pot expune date sensibile ale clienților, pot face achiziții neintenționate sau pot folosi milele MileagePlus, iar check-in-ul automat ar încălca reguli federale (FAA/DOT) care cer confirmarea personală a pasagerului că bagajele nu conțin articole interzise. Agenții pot în continuare afișa zboruri și tarife, dar nu pot finaliza cumpărarea.</p>
-          </div>
-          <div class="sec">
-            <p class="sec-label">De ce contează</p>
-            <p>E prima linie dură trasată de o companie aeriană americană în comerțul agentic — exact direcția urmărită în pagină (Walmart a deschis poarta agenților, Amazon i-a blocat); pentru cine construiește automatizări cu agenți AI și zboară regulat, granița dintre „asistentul caută" și „asistentul cumpără" tocmai a devenit o regulă scrisă, cu rezervări anulabile.</p>
-          </div>
-          <div class="verify">
-            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
-            <p>Verdict: confirmat. The Verge (11 noiembrie 2026, 16:54 EST) — United nu-i mai permite agentului AI personal să-ți rezerve zborul. USA Today (11 noiembrie 2026) — United Airlines interzice agenților AI personali să rezerve zboruri. Simple Flying (12 noiembrie 2026) — United interzice oficial agenților AI să rezerve zboruri și să facă check-in.</p>
-            <ul class="sources">
-              <li><a href="https://www.theverge.com/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>The Verge — „United won't let your AI agent book your flight" (11 nov 2026, 16:54 EST)<span class="host">theverge.com</span></a></li>
-              <li><a href="https://www.usatoday.com/story/travel/airline-news/2026/11/11/united-ai-travel-agents-booking/92728156007/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>USA Today — „United Airlines bans personal AI agents from booking flights" (11 nov 2026)<span class="host">usatoday.com</span></a></li>
-              <li><a href="https://simpleflying.com/united-airlines-bans-ai-agents-booking-flights-check-in/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Simple Flying — „United Airlines Officially Bans AI Agents From Booking Your Flights And Checking You In" (12 nov 2026)<span class="host">simpleflying.com</span></a></li>
-            </ul>
-          </div>
-          <div class="opposing">
-            <p class="sec-label">Tabăra adversă</p>
-            <p>Walmart susține poziția contrară — a lansat Agent Gateway, un server MCP prin care agenți AI aprobați pot cumpăra în numele clienților, cu limite de cheltuire și aprobări per tranzacție. (<a href="https://techcrunch.com/2026/10/21/while-amazon-blocks-ai-agents-walmart-rolls-out-the-welcome-mat/" target="_blank" rel="noopener">techcrunch.com</a>)</p>
-          </div>
-          <div class="impact">
-            <span class="badge">Impact direct</span>
-            <p>Impact direct practic: rezervările făcute de un agent AI pe United pot fi anulate de companie; cine folosește un asistent AI pentru călătorii trebuie să finalizeze singur cumpărarea. Profesional, ca IT incident Manager: agenții autonomi cu autoritate de plată delegată devin suprafață nouă de incidente — exact tensiunea dintre cele două tabere (United blochează, Walmart deschide cu garduri de control).</p>
-          </div>
-        </article>
-
-        <!-- 15 · 12 nov · 08:00 -->
-        <article id="stire-176" data-cats="securitate" data-sev="amber" data-subiect="cheltuieli de apărare NATO">
-          <div class="a-meta">
-            <span class="a-time">12 nov · 08:00</span>
-            <span class="a-cat">Securitate &amp; NATO</span>
-            <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
-            <a class="cont-pill" href="#stire-161" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
-            <span class="subj-pill">cheltuieli de apărare NATO</span>
-            <span class="a-num">#15 / 18</span>
-          </div>
-          <h2>Rutte la Oslo: Marea Britanie își dublează cheltuielile de apărare în 10 ani; cinci aliați ating ținta NATO de 5% din PIB în 2026</h2>
-          <div class="followup">
-            <span class="tag">Urmare la</span>
-            <p><a href="#stire-161">„NATO vrea să prioritizeze lupta cu Rusia și să reducă forțele pentru misiuni în străinătate" — miercuri, 11 noiembrie 2026, ora 13:00.</a></p>
-          </div>
-          <div class="sec">
-            <p class="sec-label">Ce s-a întâmplat</p>
-            <p>Miercuri, 11 noiembrie, secretarul general al NATO, Mark Rutte, a ținut discursul principal la Atlantic Future Forum, la bordul portavionului britanic HMS Prince of Wales, ancorat la Oslo. Rutte a salutat angajamentul Marii Britanii, anunțat în bugetul recent, de a ajunge la 3% din PIB pentru apărare în 2030, cu un parcurs credibil spre 3,5% (cheltuieli de bază) până în 2035 — ceea ce înseamnă dublarea cheltuielilor britanice de apărare în 10 ani. Potrivit lui, cinci aliați sunt proiectați să atingă sau să depășească ținta integrală de 5% în 2026, iar aliații europeni și Canada au adăugat împreună peste 250 de miliarde de dolari la apărare în 2025–2026. Despre război, Rutte a spus că Rusia lovește în continuare transportul maritim în Marea Neagră și își menține pe mare „flota-fantomă", iar pierderile rusești — morți și răniți grav — depășesc 40.000 pe lună, cu peste 50.000 în octombrie, potrivit primelor raportări. Cu o zi înainte, la bordul aceleiași nave, cele zece țări din Joint Expeditionary Force au semnat inițiativa Northern Navies, pentru cooperare navală mai strânsă în Atlanticul de Nord, Nordul Înalt și Marea Baltică.</p>
-          </div>
-          <div class="sec">
-            <p class="sec-label">De ce contează</p>
-            <p>Traiectoria cheltuielilor de apărare e cadrul care va defini exercițiile, capabilitățile noi și cerințele operaționale ale alianței în anii următori — direct mediul de lucru al unui IT incident Manager într-un mediu NATO, unde fiecare capabilitate nouă înseamnă procese, fluxuri de date și incidente noi de gestionat. Cifrele despre Marea Neagră și Nordul Înalt arată unde se concentrează presiunea operațională: Rusia lovește nave comerciale în Marea Neagră, iar inițiativa Northern Navies și exercițiul Dynamic Merlin (9–13 nov, Marea Baltică) mută accentul pe apărarea maritimă și submarină. La același forum, ministrul norvegian de externe Espen Barth Eide a spus că „era Pax Americana s-a terminat" și că europenii trebuie să preia responsabilități asumate până acum de SUA — aceeași direcție de reașezare a poverii apărării urmărită și în cardul de ieri despre țintele de capabilități NATO.</p>
-          </div>
-          <div class="verify">
-            <p class="sec-label">Verificare <span class="status">Sursă primară</span></p>
-            <p>Verdict: sursa_primara. NATO — transcrierea discursului secretarului general Mark Rutte la Atlantic Future Forum (11 nov 2026, 18:10 CET, la bordul HMS Prince of Wales, Oslo). Confirmări independente ale contextului forumului: gov.uk — „New Royal Navy-Led Northern Navies Initiative" (10 nov 2026, 18:32 UTC), confirmă semnarea inițiativei navale de cele 10 țări JEF; gov.uk — „Scotland at the Heart of Europe's Defence: Summit" (11 nov 2026); Security Signal (11 nov 2026) — declarațiile ministrului norvegian de externe Espen Barth Eide la același forum. Notă de integritate: cifrele despre pierderile rusești (peste 40.000/lună, peste 50.000 în octombrie) sunt afirmațiile lui Rutte din discurs, nu cifre verificate independent.</p>
-            <ul class="sources">
-              <li><a href="https://www.nato.int/en/news-and-events/events/transcripts/2026/11/11/keynote-speech-by-the-nato-secretary-general-at-the-atlantic-future-forum" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>NATO — transcrierea discursului secretarului general Mark Rutte la Atlantic Future Forum (11 nov 2026, 18:10 CET, la bordul HMS Prince of Wales, Oslo; sursă primară)<span class="host">nato.int</span></a></li>
-              <li><a href="https://www.gov.uk/government/news/new-royal-navy-led-northern-navies-initiative" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>gov.uk — „New Royal Navy-Led Northern Navies Initiative" (10 nov 2026, 18:32 UTC; semnarea inițiativei navale de cele 10 țări JEF)<span class="host">gov.uk</span></a></li>
-              <li><a href="https://www.gov.uk/government/news/scotland-at-the-heart-of-europes-defence-summit" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>gov.uk — „Scotland at the Heart of Europe's Defence: Summit" (11 nov 2026)<span class="host">gov.uk</span></a></li>
-              <li><a href="https://www.securitysignal.co/article/2026/11/stara-amerika-sa-nevrati-norsko-vyzyva-spojencov-na-prevzatie-zodpovednosti-ajldg7" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Security Signal (11 nov 2026) — declarațiile ministrului norvegian de externe Espen Barth Eide la același forum<span class="host">securitysignal.co</span></a></li>
-            </ul>
-          </div>
-          <div class="impact">
-            <span class="badge">Impact direct</span>
-            <p>Impact direct: minim azi — discurs de bilanț, nu o decizie nouă; nicio acțiune imediată. Relevanță de context ridicată: direcția cheltuielilor de apărare și concentrarea pe Marea Neagră și Nordul Înalt indică unde vor apărea cerințe operaționale noi în mediul NATO.</p>
-          </div>
-        </article>
-
-        <!-- 16 · 12 nov · 07:00 -->
-        <article id="stire-175" data-cats="tech" data-sev="amber" data-subiect="demiterea lui Jensen Huang">
-          <div class="a-meta">
-            <span class="a-time">12 nov · 07:00</span>
-            <span class="a-cat">Tech &amp; AI</span>
-            <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
-            <a class="cont-pill" href="#stire-172" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
-            <span class="subj-pill">demiterea lui Jensen Huang</span>
-            <span class="a-num">#16 / 18</span>
-          </div>
-          <h2>Boardul Nvidia se pregătește să-l demită pe Jensen Huang: ședința decisivă a avut loc miercuri seară, acțiunile au căzut cu 8%</h2>
-          <div class="followup">
-            <span class="tag">Urmare la</span>
-            <p><a href="#stire-172">„Congresul SUA se pregătește să-l citeze pe Jensen Huang: termen până diseară să accepte audierea în dosarul presupusei spioane chineze" — miercuri, 11 noiembrie 2026, ora 21:00.</a></p>
-          </div>
-          <div class="sec">
-            <p class="sec-label">Ce s-a întâmplat</p>
-            <p>Wall Street Journal a relatat miercuri că boardul Nvidia se pregătește să-l îndepărteze pe cofondatorul și CEO-ul Jensen Huang, după ce au ieșit la iveală două relații extraconjugale — una cu o femeie pe care oficiali americani o consideră spion chinez, cealaltă cu o directoare Nvidia care îi raporta direct. Boardul s-a întrunit miercuri seară ca să decidă soarta lui, iar Reuters confirmă ședința din sursă proprie. Acțiunile Nvidia au scăzut cu circa 8% în tranzacțiile de după închidere, iar compania a pierdut aproximativ 600 de miliarde de dolari din capitalizare în această săptămână.</p>
-          </div>
-          <div class="sec">
-            <p class="sec-label">De ce contează</p>
-            <p>Nvidia este furnizorul dominant de procesoare AI din lume, iar Huang a spus mereu că nu crede în planificarea succesiunii — o schimbare de CEO fără succesor desemnat lovește direct în lanțul de aprovizionare AI și în cursa tehnologică SUA–China. Congresul american pregătește investigații, iar senatorii democrați Elizabeth Warren și Chris Coons au cerut păstrarea tuturor documentelor privind exporturile de cipuri către China.</p>
-          </div>
-          <div class="verify">
-            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
-            <p>Verdict: confirmat. The Wall Street Journal (11 noiembrie 2026) — relatarea originală: boardul Nvidia se pregătește să-l îndepărteze pe Jensen Huang. Reuters (11 noiembrie) — confirmare proprie a ședinței boardului de miercuri seară; Reuters (12 noiembrie) — articolul despre posibilii succesori la conducerea Nvidia. The New York Times, via Reuters (11 noiembrie) — a doua relație, cu vicepreședinta Kimberly Powell, directoare care îi raporta direct lui Huang. TechCrunch (11 noiembrie) — acțiunile Nvidia au scăzut pe fondul relatărilor că boardul pregătește demiterea.</p>
-            <ul class="sources">
-              <li><a href="https://www.wsj.com/business/nvidia-is-preparing-to-oust-nvidia-ceo-jensen-huang-30f421ad" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>The Wall Street Journal — „Nvidia Is Preparing to Oust Nvidia CEO Jensen Huang" (11 nov 2026; relatarea originală — boardul se pregătește să-l îndepărteze pe Huang)<span class="host">wsj.com</span></a></li>
-              <li><a href="https://www.reuters.com/technology/nvidia-is-preparing-oust-ceo-jensen-huang-wsj-reports-2026-11-11/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Reuters — „Nvidia is preparing to oust CEO Jensen Huang, WSJ reports" (11 nov 2026; confirmare proprie a ședinței boardului)<span class="host">reuters.com</span></a></li>
-              <li><a href="https://www.reuters.com/legal/transactional/whos-next-ceo-nvidia-top-engineer-cfo-favored-candidates-2026-11-12/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Reuters — „Who's next as CEO of Nvidia? Top engineer, CFO favored candidates" (12 nov 2026; posibilii succesori ai lui Huang)<span class="host">reuters.com</span></a></li>
-              <li><a href="https://www.reuters.com/business/nvidia-ceo-huang-had-relationship-with-executive-who-reported-him-nyt-reports-2026-11-11/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>The New York Times, via Reuters — „Nvidia CEO Huang had relationship with executive who reported to him, NYT reports" (11 nov 2026; a doua relație, cu vicepreședinta Kimberly Powell)<span class="host">reuters.com</span></a></li>
-              <li><a href="https://techcrunch.com/2026/11/11/nvidias-stock-drops-as-board-reportedly-preps-to-oust-ceo-jensen-huang/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>TechCrunch — „Nvidia's stock drops as board reportedly preps to oust CEO Jensen Huang" (11 nov 2026; căderea acțiunilor după relatările despre demitere)<span class="host">techcrunch.com</span></a></li>
-            </ul>
-          </div>
-          <div class="opposing">
-            <p class="sec-label">Tabăra adversă</p>
-            <p>Guo Jiakun, purtător de cuvânt al Ministerului de Externe al Chinei, citat de Wall Street Journal: „narațiunea despre așa-zișii spioni chinezi se bazează în întregime pe speculații nefondate — nu e decât calomnie și defăimare". (<a href="https://www.wsj.com/tech/ai/a-mystery-businessman-introduced-jensen-huang-to-his-paramourher-husband-1ec3b581" target="_blank" rel="noopener">wsj.com</a>) În plus, editorialul Heard on the Street al WSJ susține că păstrarea unui Huang „ținut în frâu", cu mecanisme independente de control al riscurilor de securitate națională, ar fi varianta mai bună decât demiterea. (<a href="https://www.wsj.com/business/a-reined-in-jensen-huang-is-nvidias-best-option-e79cb305" target="_blank" rel="noopener">wsj.com</a>)</p>
-          </div>
-          <div class="impact">
-            <span class="badge">Impact direct</span>
-            <p>Impact direct: minim — relevanță de context înaltă: o eventuală schimbare la vârful Nvidia atinge infrastructura AI pe care își construiește automatizările și dinamica cursei AI SUA–China pe care o urmărește.</p>
-          </div>
-        </article>
-
-        <!-- 17 · 12 nov · 06:00 -->
-        <article id="stire-173" data-cats="tech" data-sev="amber" data-subiect="cipuri AI britanice Fractile">
-          <div class="a-meta">
-            <span class="a-time">12 nov · 06:00</span>
-            <span class="a-cat">Tech &amp; AI</span>
-            <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
-            <span class="subj-pill">cipuri AI britanice Fractile</span>
-            <span class="a-num">#17 / 18</span>
-          </div>
-          <h2>Startupul britanic Fractile ridică 720 mil. $ pentru cipuri AI de inferență și ajunge la o evaluare de 7 mld. $, cu sprijinul fondului suveran AI al Marii Britanii</h2>
-          <div class="sec">
-            <p class="sec-label">Ce s-a întâmplat</p>
-            <p>Fractile, startup britanic din Londra și Bristol, fondat în 2022, a strâns 720 de milioane de dolari într-o rundă Serie C condusă de Thrive Capital, Founders Fund, Lightspeed Venture Partners și Redpoint, la o evaluare de 7 miliarde de dolari — de circa șase ori mai mult decât evaluarea de aproximativ 1,1 miliarde de dolari din runda din mai 2026. Printre investitori se numără și CapitalG, brațul de venture al Alphabet, BlackRock, DST Global, fondul suveran AI al Marii Britanii și British Business Bank. Compania dezvoltă cipuri specializate pentru inferență — procesul prin care modelele AI generează răspunsuri — cu memorie stivuită direct pe cip, ca să rezolve blocajul lățimii de bandă a memoriei, și promite modele rulate de până la 25 de ori mai rapid, la o zecime din cost. Primul cip comercial e așteptat anul viitor, în 2027. Guvernul britanic prezintă investiția ca politică industrială: Marea Britanie să păstreze în țară o parte mai mare din tehnologia care alimentează economia viitorului și să reducă dependența de furnizori din SUA și Asia.</p>
-          </div>
-          <div class="sec">
-            <p class="sec-label">De ce contează</p>
-            <p>Cursa pentru cipuri AI de inferență e piesa de infrastructură a momentului: modelele tot mai mari costă tot mai mult la rulare, iar cine ieftinește inferența schimbă economia întregului stack AI — inclusiv a automatizărilor construite pe API-uri. Fractile e unul dintre puținii jucători europeni cu finanțare la acest nivel, iar statul britanic intră direct ca investitor, nu doar ca reglementator — semn că hardware-ul AI a devenit politică industrială, nu doar afacere privată. Firul se leagă de saga Nvidia urmărită aici (ancheta independentă a boardului, retragerea lui Huang de la summiturile AI): piața caută alternative la dominația Nvidia, iar o evaluare de 7 mld. $ înainte de primul cip livrat arată cât de mult capital se pariază pe această alternativă.</p>
-          </div>
-          <div class="verify">
-            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
-            <p>Verdict: confirmat. Reuters (11 nov 2026, relatat de LSE) — runda de 720 mil. $, evaluarea de 7 mld. $, conducerea rundei și lista investitorilor. Financial Times (11 nov 2026) — evaluarea de 7 mld. $, în creștere de la circa 1,1 mld. $ în mai, și detaliul că Fractile n-a lansat încă un cip de producție. The Guardian (11 nov 2026, relatat de AveNews) — cancelarul britanic John Healey a spus în Parlament că runda a fost de 500 mil. £ și a numit-o cea mai mare rundă europeană de semiconductori de până acum. Notă de integritate: cifra de 7 mld. $ vine din surse apropiate tranzacției (FT, Reuters) — guvernul britanic a confirmat public doar „peste 5 mld. £”; promisiunile de performanță (de 25 de ori mai rapid, la o zecime din cost) sunt cifre ale companiei, neverificate independent, iar presupusul acord de furnizare de circa 250 mil. $ cu Anthropic n-a fost confirmat oficial de nicio parte.</p>
-            <ul class="sources">
-              <li><a href="https://techcrunch.com/2026/11/11/with-720m-round-britains-fractile-gets-a-leg-up-in-the-race-for-ai-chips/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>TechCrunch — „With $720M round, Britain's Fractile gets a leg up in the race for AI chips” (11 nov 2026, 19:34 UTC; relatarea curatoriată — runda Serie C, fondul suveran AI britanic, evaluarea „peste 5 mld. £” potrivit guvernului)<span class="host">techcrunch.com</span></a></li>
-              <li><a href="https://www.lse.co.uk/news/uk-backed-ai-chip-startup-fractile-hits-7-billion-valuation-in-funding-round-osp4ohh8nq8eeea.html" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Reuters (relatat de LSE, 11 nov 2026, 14:47 UTC) — „UK-backed AI chip startup Fractile hits $7 billion valuation in funding round” (runda de 720 mil. $, evaluarea de 7 mld. $, conducerea rundei și lista investitorilor)<span class="host">lse.co.uk</span></a></li>
-              <li><a href="https://alpha-maven.com/story/venture-capital/uk-chip-start-up-fractile-hits-7bn-valuation-financial-times" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Financial Times (11 nov 2026, relatat de AlphaMaven) — „UK chip start-up Fractile hits $7bn valuation” (evaluarea de 7 mld. $, în creștere de la circa 1,1 mld. $ în mai; compania n-a lansat încă un cip de producție)<span class="host">alpha-maven.com</span></a></li>
-              <li><a href="https://www.avenews.am/en/posts/fractile-500-million-pound-funding" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>The Guardian (11 nov 2026, relatat de AveNews) — „Fractile raises £500 million, UK chancellor says” (cancelarul John Healey, în Parlament: runda de 500 mil. £, evaluare de 7 mld. $, cea mai mare rundă europeană de semiconductori de până acum)<span class="host">avenews.am</span></a></li>
-            </ul>
-          </div>
-          <div class="impact">
-            <span class="badge">Impact direct</span>
-            <p>Impact direct: minim azi — fără dețineri la Fractile și fără un cip pe piață de cumpărat. Relevanță de context înaltă: dacă Fractile livrează în 2027 ce promite, costul inferenței — deci și al rulării agenților AI — poate scădea semnificativ, iar Europa capătă un furnizor propriu de hardware AI; de urmărit livrarea primului cip și confirmarea acordului cu Anthropic.</p>
-          </div>
-        </article>
-
-        <!-- 18 · 12 nov · 06:00 -->
-        <article id="stire-174" data-cats="tech" data-sev="amber" data-subiect="CoreWeave cere plăți în avans">
-          <div class="a-meta">
-            <span class="a-time">12 nov · 06:00</span>
-            <span class="a-cat">Tech &amp; AI</span>
-            <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
-            <span class="subj-pill">CoreWeave cere plăți în avans</span>
-            <span class="a-num">#18 / 18</span>
-          </div>
-          <h2>CoreWeave își schimbă finanțarea boom-ului AI: cere clienților plăți în avans de ~9 mld. $ în 3 luni, ca să nu se mai împrumute scump</h2>
-          <div class="sec">
-            <p class="sec-label">Ce s-a întâmplat</p>
-            <p>CoreWeave, compania americană de cloud specializat pe AI, a raportat pentru trimestrul 3 din 2026 venituri de 3,66 miliarde de dolari, în creștere cu 168% față de anul trecut, peste așteptările analiștilor — dar și o pierdere netă de 709 milioane de dolari (față de 110 milioane în aceeași perioadă a anului trecut) și cheltuieli cu dobânzile de 846 de milioane de dolari pe trimestru. Compania spune că cererea depășește de 10 ori capacitatea disponibilă pentru 2027, iar comenzile contractate (backlog) au ajuns la 132,5 miliarde de dolari. Pentru a finanța extinderea fără să se împrumute pe piața obligațiunilor negarantate la randamentele actuale — „Nu vom folosi piața datoriilor negarantate ca să ne finanțăm afacerea la randamentele curente și nici nu avem nevoie”, a spus CEO-ul Michael Intrator — CoreWeave se bazează tot mai mult pe împrumuturi garantate cu contracte de client și pe plăți în avans: așteaptă circa 9 miliarde de dolari sub formă de plăți anticipate și depozite în următoarele trei luni, din care peste 3 miliarde din contracte noi pentru capacitate deja construită. Compania și-a ridicat și prognoza de venituri pentru 2026, la 13–13,3 miliarde de dolari.</p>
-          </div>
-          <div class="sec">
-            <p class="sec-label">De ce contează</p>
-            <p>CoreWeave e conducta de finanțare a boom-ului AI: închiriază puterea de calcul din spatele modelelor, iar modelul lui de business arată cum se plătește, de fapt, extinderea — nu din profituri, ci din plăți anticipate ale clienților și datorie garantată cu contracte. Când CoreWeave spune că nu se mai împrumută negarantat la prețurile pieței, e un semnal despre costul capitalului pentru toată infrastructura AI — inclusiv pentru laboratoarele ale căror API-uri le folosește zilnic (Anthropic, OpenAI). Firul continuă arcul economiei AI urmărit aici: veniturile OpenAI au trecut de 10 mld. $ pe trimestru, Anthropic se listează la o evaluare uriașă, iar în spate, infrastructura se finanțează tot mai mult din banii clienților, plătiți înainte.</p>
-          </div>
-          <div class="verify">
-            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
-            <p>Verdict: confirmat. TechCrunch (11 nov 2026, 19:54 UTC) — relatarea originală: schimbarea modelului de finanțare, cifrele trimestrului și declarația CEO-ului. EBC Financial Group (11 nov 2026) — confirmare independentă: venituri 3,66 mld. $, pierdere 709 mil. $, plăți anticipate de ~9 mld. $. Motley Fool (11 nov 2026, transcrierea apelului cu investitorii) — confirmă backlogul de 132,5 mld. $, preplățile de 9 mld. $ și prognoza ridicată. Reuters (relatat de HeadlinesXtra, 11 nov 2026) — datoria totală de circa 46,9 mld. $ la finalul lui septembrie. Notă de integritate: backlogul de 132,5 mld. $ e valoare contractată viitoare, nu bani încasați — depinde de livrarea capacității și de îndeplinirea cerințelor de disponibilitate; iar cele 9 mld. $ sunt o așteptare, nu numerar primit; în acest an, preplățile au acoperit deja 70% din contracte, cu finanțare de până la 100% din valoarea contractului în avans (transcrierea apelului cu investitorii).</p>
-            <ul class="sources">
-              <li><a href="https://techcrunch.com/2026/11/11/coreweave-turns-to-customer-prepayments-shorter-contracts-to-fund-ai-growth/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>TechCrunch — „CoreWeave turns to customer prepayments, shorter contracts to fund AI growth” (11 nov 2026, 19:54 UTC; relatarea curatoriată — preplățile clienților, împrumuturile garantate cu contracte, declarația CEO-ului)<span class="host">techcrunch.com</span></a></li>
-              <li><a href="https://www.ebc.com/forex/coreweave-q3-2026-earnings-preview-crwv-stock" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>EBC Financial Group — „CoreWeave Q3 Revenue Jumps 168% to $3.66 Billion, but Loss Widens to $709 Million” (11 nov 2026; venituri 3,66 mld. $, pierdere 709 mil. $, preplăți de ~9 mld. $)<span class="host">ebc.com</span></a></li>
-              <li><a href="https://www.fool.com/earnings/call-transcripts/2026/11/10/coreweave-crwv-q3-2026-earnings-call-transcript/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Motley Fool — „CoreWeave (CRWV) Q3 2026 Earnings Call Transcript” (11 nov 2026; backlog 132,5 mld. $, preplăți 9 mld. $, prognoza ridicată la 13–13,3 mld. $)<span class="host">fool.com</span></a></li>
-              <li><a href="https://investors.coreweave.com/files/content_files/CoreWeave-3Q26-Transcript-_1_.pdf" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>CoreWeave — transcrierea apelului cu investitorii (10 nov 2026; sursă primară a companiei, parte implicată, nu confirmare independentă)<span class="host">investors.coreweave.com</span></a></li>
-              <li><a href="https://headlinesxtra.com/2026/11/11/coreweave-q3-2026-ai-revenue-outlook-debt-capex-november-2026/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>HeadlinesXtra (relatează Reuters, 11 nov 2026) — „CoreWeave Raises 2026 Outlook As AI Revenue Surges” (datoria totală de circa 46,9 mld. $ la finalul lui septembrie)<span class="host">headlinesxtra.com</span></a></li>
-            </ul>
-          </div>
-          <div class="impact">
-            <span class="badge">Impact direct</span>
-            <p>Impact direct: minim azi — fără dețineri la CoreWeave. Relevanță de context: modelul cu plăți în avans mută riscul finanțării infrastructurii AI către clienți — dacă cererea încetinește, presiunea pe prețurile serviciilor AI crește; de urmărit livrarea backlogului de 132,5 mld. $ și evoluția datoriei de 46,9 mld. $.</p>
-          </div>
-        </article>
-
-      </main>
-      </section>
-
-
-      
-
-            <footer>
+                  <footer>
         <div class="rule" aria-hidden="true"></div>
-        <p>Sfârșitul ediției de azi · Ultima actualizare: miercuri, 18 noiembrie 2026, 22:00<br />Monitorizarea rulează la circa 3 ore, în fereastra L–V 06:00–22:00 · S–D 07:30–22:00 — dă refresh pentru noutăți.</p>
-        <a class="to-top" href="#stire-288">↑ Înapoi la cea mai nouă știre</a>
+        <p>Sfârșitul ediției de azi · Ultima actualizare: joi, 19 noiembrie 2026, 06:00<br />Monitorizarea rulează la circa 3 ore, în fereastra L–V 06:00–22:00 · S–D 07:30–22:00 — dă refresh pentru noutăți.</p>
+        <a class="to-top" href="#stire-289">↑ Înapoi la cea mai nouă știre</a>
       </footer>
     </div>
 
