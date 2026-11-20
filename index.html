@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="color-scheme" content="light dark" />
-    <meta name="tirile-versiune" content="2026-11-20T06:00:00+01:00|2|amber" />
+    <meta name="tirile-versiune" content="2026-11-20T07:00:00+01:00|4|amber" />
     <link rel="icon" href="data:," />
     <title>Știrile zilei</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -699,9 +699,9 @@
     <div class="topbar">
       <div class="topbar-inner">
         <span class="dot" aria-hidden="true"></span>
-        <span><strong>Vineri, 20 noiembrie 2026</strong> · actualizat la <strong>06:00</strong></span>
+        <span><strong>Vineri, 20 noiembrie 2026</strong> · actualizat la <strong>07:00</strong></span>
         <span aria-hidden="true">·</span>
-        <span>2 știri azi</span>
+        <span>4 știri azi</span>
         <span class="spacer"></span>
         <button class="refresh-btn" type="button" id="refreshBtn" aria-label="Reîmprospătează pagina">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg>
@@ -748,8 +748,10 @@
            111,50 $, închidere la 97,17 $, +17%) — prima companie AI de frontieră
            listată la bursă, barometrul public al pieței AI, la o zi după
            avertismentul BCE că evaluările AI pot zgudui piețele; e știrea zilei
-           (marcată ca atare pe cardul de la 06:00), singura știre galbenă a zilei,
-           deci nu apare mențiunea despre alte știri cu aceeași severitate.
+           (marcată ca atare pe cardul de la 06:00), cea mai importantă dintre cele
+           trei știri galbene ale zilei — celelalte două sunt agentul AI propriu al
+           Apple pentru Mac (07:00) și puterile extinse ale vicepremierului Neacșu
+           (07:00); mențiunea „alte 2" apare în chenar.
            Chenarul rămâne în afara logicii de filtrare: vizibil indiferent de filtrul de categorie. -->
       <section class="spot sev-amber" aria-label="Știrea cea mai importantă a zilei">
         <div class="spot-head">
@@ -763,6 +765,7 @@
         <h2 class="spot-title">Anthropic a debutat la Nasdaq: acțiunile au deschis la 111,50 $, cu 34% peste prețul IPO, și au închis la 97,17 $ — cel mai mare IPO din istorie</h2>
         <p class="spot-why"><strong>De ce e în față:</strong> primul laborator AI de frontieră listat la bursă, cu cel mai mare IPO din istorie — 81,3 mld $ strânși — și o capitalizare de circa 2 trilioane $ la deschidere; barometrul public al pieței AI, la o zi după avertismentul BCE că evaluările AI pot zgudui piețele.</p>
         <p class="spot-lead">Anthropic a început joi tranzacționarea pe Nasdaq, sub simbolul ANT: acțiunile au deschis la 111,50 $, cu 34% peste prețul IPO de 83 $, și au închis prima zi la 97,17 $ (+17%). Oferta de 980 de milioane de acțiuni a strâns 81,3 mld $ — cel mai mare IPO din istorie. CEO-ul Dario Amodei a reafirmat la deschidere angajamentul companiei de a menține AI sub control uman.</p>
+        <p class="spot-more"><span class="spot-more-text">Mai sunt și alte 2 știri cu aceeași severitate —</span> <button class="spot-more-btn" type="button" data-sev-value="amber" aria-label="Apasă aici ca să vezi doar știrile cu severitatea Galben — de urmărit">apasă aici</button></p>
         <div class="spot-foot">
           <a class="spot-link" href="#stire-321">Citește știrea completă ↓</a>
           <div class="sev-scale" role="img" aria-label="Scară de gravitate: verde — normal, galben — de urmărit, roșu — grav. Nivelul de azi: galben.">
@@ -777,15 +780,15 @@
       <section class="dashboard" aria-label="Panou de ansamblu">
         <div class="dash-head">
           <span class="dash-title">Dashboard · Azi</span>
-          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 06:00</span>
+          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 07:00</span>
           <span class="dash-meta">Fereastră monitorizare <strong>L–V 06:00–22:00 · S–D 07:30–22:00</strong> · pas ~3 ore</span>
         </div>
 
         <div class="kpi-grid five" role="group" aria-label="Filtrează după categorie — apasă pe un tile">
           <button class="kpi" type="button" data-filter="toate" aria-pressed="true">
             <span class="kpi-top"><span class="kpi-label">Toate știrile</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">2</span>
-            <span class="kpi-sub">2 știri verificate azi, în 1 rulare</span>
+            <span class="kpi-value">4</span>
+            <span class="kpi-sub">4 știri verificate azi, în 2 rulări</span>
             <span class="kpi-bar" aria-hidden="true"><i style="width:100%"></i></span>
             <span class="kpi-hint">Apasă pentru toate</span>
           </button>
@@ -798,9 +801,9 @@
           </button>
           <button class="kpi" type="button" data-filter="romania" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">România</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">0</span>
-            <span class="kpi-sub"></span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:0%"></i></span>
+            <span class="kpi-value">1</span>
+            <span class="kpi-sub">Neacșu preia frâiele Guvernului</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:25%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="belgia" aria-pressed="false">
@@ -812,9 +815,9 @@
           </button>
           <button class="kpi" type="button" data-filter="tech" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">Tech &amp; AI</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">2</span>
-            <span class="kpi-sub">debutul record Anthropic la bursă · Gemini preia controlul pe Mac</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:100%"></i></span>
+            <span class="kpi-value">3</span>
+            <span class="kpi-sub">agent AI propriu Apple pe Mac · debutul record Anthropic la bursă · Gemini preia controlul pe Mac</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:75%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
         </div>
@@ -828,7 +831,7 @@
       </section>
 
       <div class="filter-status" aria-live="polite">
-        <span class="filter-label">Se afișează: <strong>Toate categoriile — 2 din 2 știri</strong></span>
+        <span class="filter-label">Se afișează: <strong>Toate categoriile — 4 din 4 știri</strong></span>
         <button class="filter-reset" type="button" hidden>Resetează filtrul</button>
       </div>
 
@@ -850,7 +853,90 @@
       <p class="empty">Nicio știre în această categorie azi.</p>
 
       <main>
-        <!-- 1 · 20 nov · 06:00 -->
+                <!-- 1 · 20 nov · 07:00 -->
+        <article id="stire-323" data-cats="tech" data-sev="amber" data-subiect="agent AI propriu Apple pe Mac">
+          <div class="a-meta">
+            <span class="a-time">20 nov · 07:00</span>
+            <span class="a-cat">Tech &amp; AI</span>
+            <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
+            <a class="cont-pill" href="#stire-322" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
+            <span class="subj-pill">agent AI propriu Apple pe Mac</span>
+            <span class="a-num">#1 / 4</span>
+          </div>
+          <h2>Apple își face propriul agent AI care folosește Macul — și îngreunează accesul agenților terți, cu macOS 27.3</h2>
+          <div class="followup">
+            <span class="tag">Urmare la</span>
+            <p><a href="#stire-322">„Google dă Gemini control pe Mac: agentul poate lucra în aplicații și pe web, în numele utilizatorului — deocamdată doar în SUA" — vineri, 20 noiembrie 2026, ora 06:00.</a> (Atunci Google anunțase „computer use" în Gemini pentru Mac, doar în SUA; acum Bloomberg relatează că și Apple își construiește propriul agent — și, în paralel, ridică bariere pentru agenții terți pe macOS.)</p>
+          </div>
+          <div class="sec">
+            <p class="sec-label">Ce s-a întâmplat</p>
+            <p>Bloomberg a relatat joi, 19 noiembrie, pe baza unor anunțuri de angajare publicate de Apple pe propriul site de cariere, că Apple dezvoltă un agent AI autonom și proactiv, capabil să folosească un Mac „ca o persoană capabilă": navighează pe web, lucrează în aplicații, rulează comenzi, scrie și depanează cod, apelează servicii și alege singur instrumentul potrivit la fiecare pas. Anunțul căuta un senior engineering manager care să conducă echipa; agenții ar urma să planifice și să execute sarcini în mai mulți pași în aplicații, browsere, linii de comandă, cod și API-uri și să coordoneze sub-agenți specializați, cu accent declarat pe permisiuni puternice, sandboxing și transparență. Apple a retras între timp anunțul de pe site, iar compania n-a comentat. Bloomberg notează că lansarea e vizată cel mai devreme la finalul lui 2027 și că dezvoltarea e încă în stadiu incipient. În paralel, Apple îngreunează accesul agenților terți: în versiunea beta a macOS 27.3, activarea controlului computerului de către ChatGPT cere acum 14 pași distincți, față de 4, plus avertismente noi la acordarea accesului total.</p>
+          </div>
+          <div class="sec">
+            <p class="sec-label">De ce contează</p>
+            <p>E continuarea directă a cardului de la 06:00 (Gemini primește control pe Mac): acum și Apple intră în cursa agenților care folosesc calculatorul, iar cele două mișcări împreună arată direcția — agentul devine interfața implicită a sistemului de operare, nu o aplicație terță. Pentru un IT incident Manager care folosește Gemini zilnic, inclusiv în automatizări, miza e dublă: pe de o parte, un agent Apple nativ, construit în jurul permisiunilor și sandboxing-ului, poate deveni opțiunea implicită pe Mac; pe de altă parte, dacă Apple ridică treptat bariere pentru agenții terți (deja 14 pași în loc de 4 în beta 27.3), instrumentele AI pe care le folosește azi în automatizări pot deveni mai greu de operat pe dispozitivele Apple. E aceeași lecție ca la Guardian Agents (Microsoft) și la agenții OpenAI care și-au slăbit monitoarele: cine controlează agentul și cu ce permisiuni decide ce incidente apar.</p>
+          </div>
+          <div class="verify">
+            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
+            <p>Verdict: confirmat. Bloomberg (19 nov 2026, relatarea originară, pe baza anunțurilor de angajare Apple); TechCrunch (19 nov 2026, sursa curatoriată, preia Bloomberg); Digital Trends, Gizmodo, 9to5Mac, Macworld și The Hindu BusinessLine (19–20 nov 2026, confirmări independente ale acelorași anunțuri). Nuanță onestă: anunțul a fost retras de Apple de pe site-ul de cariere, compania n-a comentat, iar data lansării („cel mai devreme la finalul lui 2027") e o estimare Bloomberg, nu un anunț oficial Apple.</p>
+            <ul class="sources">
+              <li><a href="https://techcrunch.com/2026/11/19/apple-may-be-developing-its-own-ai-agent-that-runs-your-mac/" target="_blank" rel="noopener">TechCrunch — Apple may be developing its own AI agent that runs your Mac (19 nov 2026; relatarea Bloomberg, anunțul de angajare, restricțiile macOS 27.3)<span class="host">techcrunch.com</span></a></li>
+              <li><a href="https://www.digitaltrends.com/computing/apple-ai-agent-for-mac/" target="_blank" rel="noopener">Digital Trends — Apple wants its own AI agent for the Mac, and a late 2027 launch is already in view (19 nov 2026; anunțul retras, lansare vizată final 2027)<span class="host">digitaltrends.com</span></a></li>
+              <li><a href="https://9to5mac.com/2026/11/19/report-apple-job-listings-detail-plans-for-autonomous-ai-agents/" target="_blank" rel="noopener">9to5Mac — Report: Apple job listings detail plans for autonomous AI agents (19 nov 2026; citate din anunț, controalele de confidențialitate macOS 27.3)<span class="host">9to5mac.com</span></a></li>
+              <li><a href="https://www.macworld.com/article/3291475/apple-job-listing-gives-away-proactive-agentic-ai-project.html" target="_blank" rel="noopener">Macworld — Apple job listing gives away proactive agentic AI project (19 nov 2026; textul anunțului, comparația cu Gemini pe Mac)<span class="host">macworld.com</span></a></li>
+              <li><a href="https://gizmodo.com/?p=2000842954" target="_blank" rel="noopener">Gizmodo — Apple Is Reportedly Building Its Own Full-Featured AI Agent (19 nov 2026; reacția pieței: Meta −2%, Anthropic −3% după relatarea Bloomberg)<span class="host">gizmodo.com</span></a></li>
+            </ul>
+          </div>
+          <div class="opposing">
+            <p class="sec-label">Tabăra adversă</p>
+            <p>Macworld (19 nov 2026): dacă Apple abia acum își asamblează echipa și stabilește viziunea pentru agentul propriu, compania e „cel puțin un an în urma competitorilor" — agenții OpenAI, Anthropic și Meta sunt deja pe piață, iar Google tocmai a adus computer use în Gemini pe Mac. (<a href="https://www.macworld.com/article/3291475/apple-job-listing-gives-away-proactive-agentic-ai-project.html" target="_blank" rel="noopener">Macworld, 19 nov 2026</a>)</p>
+          </div>
+          <div class="impact">
+            <span class="badge">Impact direct</span>
+            <p>Impact direct: minim azi — agentul Apple e în stadiu incipient, cu lansare vizată abia la finalul lui 2027, iar restricțiile din macOS 27.3 sunt deocamdată în beta. De urmărit: dacă Apple continuă să ridice bariere pentru agenții terți pe Mac, instrumentele AI pe care le folosește azi în automatizări pot deveni mai greu de operat pe dispozitivele Apple; în același timp, un agent Apple nativ, construit în jurul permisiunilor și sandboxing-ului, ar putea deveni referința de control pentru orice agent lăsat să acționeze singur.</p>
+          </div>
+        </article>
+
+        <!-- 2 · 20 nov · 07:00 -->
+        <article id="stire-324" data-cats="romania" data-sev="amber" data-subiect="Neacșu preia frâiele Guvernului">
+          <div class="a-meta">
+            <span class="a-time">20 nov · 07:00</span>
+            <span class="a-cat">România</span>
+            <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
+            <span class="subj-pill">Neacșu preia frâiele Guvernului</span>
+            <span class="a-num">#2 / 4</span>
+          </div>
+          <h2>Marian Neacșu primește avizul pe actele cu impact bugetar ale celor 15 ministere și coordonarea a 10 ministere; Nicușor Dan: „e un profesionist"</h2>
+          <div class="sec">
+            <p class="sec-label">Ce s-a întâmplat</p>
+            <p>Premierul Luca Niculescu a semnat Decizia nr. 463/2026, publicată miercuri, 18 noiembrie, în Monitorul Oficial (nr. 960): vicepremierul și ministrul de Interne Marian Neacșu (PSD) avizează proiectele de acte normative cu impact bugetar elaborate de toate cele 15 ministere — Finanțe, Externe, Apărare, Justiție, Economie, Energie, Transporturi, Agricultură, Mediu, Dezvoltare, Investiții și Proiecte Europene, Muncă, Sănătate, Educație și Cultură — și asigură coordonarea funcțională a 10 dintre ele (Transporturi, Justiție, Apărare, Economie, Agricultură, Mediu, Dezvoltare, Investiții și Proiecte Europene, Muncă, Sănătate), plus a ministrului delegat pentru învățământul preuniversitar. Neacșu coordonează și instituțiile și structurile din aparatul de lucru al Guvernului (Secretariatul General, Cancelaria prim-ministrului) și trebuie să-l informeze permanent pe premier despre aplicarea deciziei. Actul abrogă cadrul din iulie 2025 (Guvernul Bolojan), când Neacșu aviza doar șase ministere. Niculescu a justificat măsura prin nevoia de control mai strict al cheltuielilor: „avem nevoie să fim foarte atenți la toate cheltuielile pe care le aprobăm". Președintele Nicușor Dan, întrebat joi seară la Berlin, după reuniunea Coaliției de Voință, a spus că Neacșu „e un profesionist" care „cunoaște în detaliu administrația românească" și că nu are o putere mai mare decât premierul — „Prim-ministrul poate să corecteze o decizie pe care Viceprim-ministrul o ia" —, dar că relația premier–PSD „trebuie să fie una de flexibilitate", cât timp PSD deține mai mult de jumătate din voturile care țin Guvernul.</p>
+          </div>
+          <div class="sec">
+            <p class="sec-label">De ce contează</p>
+            <p>La o lună de la învestire (20 octombrie), centrul de greutate al Executivului se mută vizibil: orice proiect cu bani publici din cele 15 ministere trece prin avizul unui singur vicepremier PSD, iar 10 ministere-cheie intră sub coordonarea lui funcțională. Pentru expunerile din România — investiția recurentă în TVBETETF (500 RON/lună), apartamentul din București cu credit ipotecar, implementarea legii CEI — direcția fiscală a Guvernului (bugetul 2027, ținta de deficit, rectificarea bugetară) se decide acum printr-un filtru nou, cu un singur om la avizele bugetare. E continuarea arcului guvernamental urmărit în pagină (învestirea din 20 octombrie, prima zi de lucru, întâlnirile cu BNR și mediul de afaceri) — acum cu prima reconfigurare reală de putere din interiorul Executivului.</p>
+          </div>
+          <div class="verify">
+            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
+            <p>Verdict: sursa_primara + confirmat. Sursa primară: Decizia nr. 463/2026, Monitorul Oficial nr. 960 din 18 noiembrie 2026 (textul integral, reprodus de cursdeguvernare.ro și JURIDICE.ro). Confirmări independente: cursdeguvernare.ro (19 nov 2026, textul deciziei și reacția purtătorului de cuvânt Dan Cărbunaru), Media24 (19 nov 2026), ekonews.ro (19 nov 2026, analiza juridică) și monitorulzilei.ro (19 nov 2026). Declarațiile președintelui Nicușor Dan de la Berlin (19 nov 2026, seara): relatate de stirideiasi.ro și asiiromani.eu (cu transcrierea declarațiilor). Nuanță onestă: avizul nu e un drept formal de veto și nu transferă prerogativele constituționale ale premierului — decizia finală rămâne la prim-ministru, cum subliniază și Guvernul, și președintele; eticheta de „premier de facto" e o interpretare politică a opoziției, nu un efect juridic al actului.</p>
+            <ul class="sources">
+              <li><a href="https://cursdeguvernare.ro/marian-neacsu-singurul-vicepremier-primeste-atributii-extinse.html" target="_blank" rel="noopener">cursdeguvernare.ro — Vicepremierul Marian Neacșu devine premier de facto: primește atribuții extinse (19 nov 2026; textul Deciziei 463/2026, reacția Guvernului)<span class="host">cursdeguvernare.ro</span></a></li>
+              <li><a href="https://media24.ro/stire/marian-neacsu-avizeaza-bugetul-a-15-ministere" target="_blank" rel="noopener">Media24 — Marian Neacșu avizează bugetul a 15 ministere, iar Guvernul spune că premierul decide tot el (19 nov 2026; Decizia 463/2026, reacția fostului vicepremier Oana Gheorghiu)<span class="host">media24.ro</span></a></li>
+              <li><a href="https://ekonews.ro/politic/viceprim-ministrul-cum-ii-stabileste-premierul-atributiile/" target="_blank" rel="noopener">ekonews.ro — Viceprim-ministrul: cum îi stabilește premierul atribuțiile (19 nov 2026; analiza juridică, Monitorul Oficial nr. 960)<span class="host">ekonews.ro</span></a></li>
+              <li><a href="https://stirideiasi.ro/nicusor-dan-marian-neacsu-e-un-profesionist-relatia-premier-psd-trebuie-sa-fie-flexibila/" target="_blank" rel="noopener">stirideiasi.ro — Nicușor Dan: Marian Neacșu e un profesionist. Relația premier – PSD trebuie să fie flexibilă (19 nov 2026; declarațiile președintelui de la Berlin)<span class="host">stirideiasi.ro</span></a></li>
+              <li><a href="https://www.asiiromani.eu/2026/11/20/declaratiile-de-presa-sustinute-de-presedintele-romaniei-nicusor-dan-dupa-participarea-la-reuniunea-coalitiei-de-vointa-pentru-ucraina/" target="_blank" rel="noopener">asiiromani.eu — Declarațiile de presă susținute de Președintele României, Nicușor Dan, după participarea la reuniunea Coaliției de Voință (19 nov 2026; transcriere)<span class="host">asiiromani.eu</span></a></li>
+            </ul>
+          </div>
+          <div class="opposing">
+            <p class="sec-label">Tabăra adversă</p>
+            <p>Diana Buzoianu (USR): „A abdicat premierul Luca Niculescu! Trăiască premierul Neacșu!" (Realitatea24, 19 nov 2026); Cristian Tudor Popescu: Niculescu „și-a semnat abdicarea" cedând coordonarea ministerelor PSD către Neacșu (UAR, 19 nov 2026). Purtătorul de cuvânt al Guvernului, Dan Cărbunaru, răspunde că decizia finală o ia tot premierul: „întotdeauna decizia finală în Guvernul României o ia prim-ministrul". (<a href="https://realitatea24.ro/explicatiile-guvernului-dupa-ce-luca-niculescu-a-decis-ca-vicepremierul-marian-neacsu-va-aviza-toate-proiectele-cu-impact-bugetar-decizia-a-starnit-critici-din-opozitie/" target="_blank" rel="noopener">Realitatea24, 19 nov 2026</a>; <a href="https://www.uar.ro/diverse/ctp-niculescu-si-a-semnat-abdicarea-cedand-coordonarea-ministerelor-psd-catre-neacsu/" target="_blank" rel="noopener">UAR, 19 nov 2026</a>)</p>
+          </div>
+          <div class="impact">
+            <span class="badge">Impact direct</span>
+            <p>Impact direct: minim azi — nicio decizie fiscală concretă nu a fost luată încă prin noul mecanism, iar avizul nu schimbă formal cine decide. De urmărit: bugetul 2027 și rectificarea bugetară (priorități anunțate) vor trece prin avizul lui Neacșu — orice întârziere sau blocaj acolo lovește direct contextul fiscal al investițiilor din România (TVBETETF, legea CEI) și, indirect, stabilitatea Guvernului la o lună de la învestire.</p>
+          </div>
+        </article>
+
+<!-- 3 · 20 nov · 06:00 -->
         <article id="stire-321" data-cats="tech" data-sev="amber" data-subiect="debutul record Anthropic la bursă">
           <div class="a-meta">
             <span class="a-time">20 nov · 06:00</span>
@@ -859,7 +945,7 @@
             <a class="cont-pill" href="#stire-301" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">debutul record Anthropic la bursă</span>
             <span class="spot-tag">Știrea zilei</span>
-            <span class="a-num">#1 / 2</span>
+            <span class="a-num">#3 / 4</span>
           </div>
           <h2>Anthropic a debutat la Nasdaq: acțiunile au deschis la 111,50 $, cu 34% peste prețul IPO, și au închis la 97,17 $ — cel mai mare IPO din istorie</h2>
           <div class="followup">
@@ -895,14 +981,14 @@
           </div>
         </article>
 
-        <!-- 2 · 20 nov · 06:00 -->
+        <!-- 4 · 20 nov · 06:00 -->
         <article id="stire-322" data-cats="tech" data-sev="green" data-subiect="Gemini preia controlul pe Mac">
           <div class="a-meta">
             <span class="a-time">20 nov · 06:00</span>
             <span class="a-cat">Tech &amp; AI</span>
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <span class="subj-pill">Gemini preia controlul pe Mac</span>
-            <span class="a-num">#2 / 2</span>
+            <span class="a-num">#4 / 4</span>
           </div>
           <h2>Google dă Gemini control pe Mac: agentul poate lucra în aplicații și pe web, în numele utilizatorului — deocamdată doar în SUA</h2>
           <div class="sec">
@@ -5669,8 +5755,8 @@
 
                   <footer>
         <div class="rule" aria-hidden="true"></div>
-        <p>Sfârșitul ediției de azi · Ultima actualizare: joi, 19 noiembrie 2026, 20:00<br />Monitorizarea rulează la circa 3 ore, în fereastra L–V 06:00–22:00 · S–D 07:30–22:00 — dă refresh pentru noutăți.</p>
-        <a class="to-top" href="#stire-316">↑ Înapoi la cea mai nouă știre</a>
+        <p>Sfârșitul ediției de azi · Ultima actualizare: vineri, 20 noiembrie 2026, 07:00<br />Monitorizarea rulează la circa 3 ore, în fereastra L–V 06:00–22:00 · S–D 07:30–22:00 — dă refresh pentru noutăți.</p>
+        <a class="to-top" href="#stire-323">↑ Înapoi la cea mai nouă știre</a>
       </footer>
     </div>
 
