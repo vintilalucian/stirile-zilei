@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="color-scheme" content="light dark" />
-    <meta name="tirile-versiune" content="2026-11-20T10:00:00+01:00|6|amber" />
+    <meta name="tirile-versiune" content="2026-11-20T11:00:00+01:00|7|amber" />
     <link rel="icon" href="data:," />
     <title>Știrile zilei</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -699,9 +699,9 @@
     <div class="topbar">
       <div class="topbar-inner">
         <span class="dot" aria-hidden="true"></span>
-        <span><strong>Vineri, 20 noiembrie 2026</strong> · actualizat la <strong>10:00</strong></span>
+        <span><strong>Vineri, 20 noiembrie 2026</strong> · actualizat la <strong>11:00</strong></span>
         <span aria-hidden="true">·</span>
-        <span>6 știri azi</span>
+        <span>7 știri azi</span>
         <span class="spacer"></span>
         <button class="refresh-btn" type="button" id="refreshBtn" aria-label="Reîmprospătează pagina">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg>
@@ -749,11 +749,12 @@
            răspunsul promis ieri de Putin după ce a exclus orice armistițiu în
            Marea Neagră și pe energie și prima lui mișcare după summitul de la
            Shenzhen; e știrea zilei (marcată ca atare pe cardul de la 09:00),
-           cea mai importantă dintre cele cinci știri galbene ale zilei —
-           celelalte patru sunt obiectul neidentificat căzut în Polonia (10:00),
+           cea mai importantă dintre cele șase știri galbene ale zilei —
+           celelalte cinci sunt garanțiile de securitate respinse de Rusia
+           (11:00), obiectul neidentificat căzut în Polonia (10:00),
            agentul AI propriu al Apple pentru Mac (07:00), puterile extinse
            ale vicepremierului Neacșu (07:00) și debutul Anthropic la Nasdaq
-           (06:00); mențiunea „alte 4" apare în chenar.
+           (06:00); mențiunea „alte 5" apare în chenar.
            Chenarul rămâne în afara logicii de filtrare: vizibil indiferent de filtrul de categorie. -->
       <section class="spot sev-amber" aria-label="Știrea cea mai importantă a zilei">
         <div class="spot-head">
@@ -767,7 +768,7 @@
         <h2 class="spot-title">Atac masiv rusesc asupra Kievului și Odesei, la câteva ore după summitul Trump–Putin–Xi — 5 morți, trei poduri peste Nipru avariate</h2>
         <p class="spot-why"><strong>De ce e în față:</strong> atacul masiv de azi-noapte este răspunsul promis de Putin la excluderea armistițiului și prima lui mișcare după summitul cu Trump și Xi — escaladare directă pe arcul Mării Negre.</p>
         <p class="spot-lead">În noaptea de joi spre vineri, Rusia a lansat un atac masiv cu rachete balistice și drone asupra Ucrainei, care a durat peste șase ore, la doar câteva ore după întâlnirea trilaterală de la Shenzhen dintre Putin, Trump și Xi. La Kiev au murit cel puțin trei oameni și alți doi la Liov; trei poduri peste Nipru au fost avariate, iar un incendiu a izbucnit într-o clădire din districtul Obolonskyi, lovită de resturi de rachetă. Ministerul rus al Apărării spune că a lovit instalații militare și energetice, infrastructură portuară în regiunea Odesa și transporturi în Kiev, inclusiv o navă cargo cu destinația Odesa.</p>
-        <p class="spot-more"><span class="spot-more-text">Mai sunt și alte 4 știri cu aceeași severitate —</span> <button class="spot-more-btn" type="button" data-sev-value="amber" aria-label="Apasă aici ca să vezi doar știrile cu severitatea Galben — de urmărit">apasă aici</button></p>
+        <p class="spot-more"><span class="spot-more-text">Mai sunt și alte 5 știri cu aceeași severitate —</span> <button class="spot-more-btn" type="button" data-sev-value="amber" aria-label="Apasă aici ca să vezi doar știrile cu severitatea Galben — de urmărit">apasă aici</button></p>
         <div class="spot-foot">
           <a class="spot-link" href="#stire-325">Citește știrea completă ↓</a>
           <div class="sev-scale" role="img" aria-label="Scară de gravitate: verde — normal, galben — de urmărit, roșu — grav. Nivelul de azi: galben.">
@@ -782,30 +783,30 @@
       <section class="dashboard" aria-label="Panou de ansamblu">
         <div class="dash-head">
           <span class="dash-title">Dashboard · Azi</span>
-          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 10:00</span>
+          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 11:00</span>
           <span class="dash-meta">Fereastră monitorizare <strong>L–V 06:00–22:00 · S–D 07:30–22:00</strong> · pas ~3 ore</span>
         </div>
 
         <div class="kpi-grid five" role="group" aria-label="Filtrează după categorie — apasă pe un tile">
           <button class="kpi" type="button" data-filter="toate" aria-pressed="true">
             <span class="kpi-top"><span class="kpi-label">Toate știrile</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">6</span>
-            <span class="kpi-sub">6 știri verificate azi, în 4 rulări</span>
+            <span class="kpi-value">7</span>
+            <span class="kpi-sub">7 știri verificate azi, în 5 rulări</span>
             <span class="kpi-bar" aria-hidden="true"><i style="width:100%"></i></span>
             <span class="kpi-hint">Apasă pentru toate</span>
           </button>
           <button class="kpi" type="button" data-filter="securitate" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">Securitate &amp; NATO</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">2</span>
-            <span class="kpi-sub">obiect neidentificat în Polonia · atac masiv asupra Kievului</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:33%"></i></span>
+            <span class="kpi-value">3</span>
+            <span class="kpi-sub">garanții de securitate Ucraina · obiect neidentificat în Polonia · atac masiv asupra Kievului</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:43%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="romania" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">România</span><span class="kpi-check" aria-hidden="true">✓</span></span>
             <span class="kpi-value">1</span>
             <span class="kpi-sub">Neacșu preia frâiele Guvernului</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:17%"></i></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:14%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
           <button class="kpi" type="button" data-filter="belgia" aria-pressed="false">
@@ -819,7 +820,7 @@
             <span class="kpi-top"><span class="kpi-label">Tech &amp; AI</span><span class="kpi-check" aria-hidden="true">✓</span></span>
             <span class="kpi-value">3</span>
             <span class="kpi-sub">agent AI propriu Apple pe Mac · debutul record Anthropic la bursă · Gemini preia controlul pe Mac</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:50%"></i></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:43%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
         </div>
@@ -833,7 +834,7 @@
       </section>
 
       <div class="filter-status" aria-live="polite">
-        <span class="filter-label">Se afișează: <strong>Toate categoriile — 6 din 6 știri</strong></span>
+        <span class="filter-label">Se afișează: <strong>Toate categoriile — 7 din 7 știri</strong></span>
         <button class="filter-reset" type="button" hidden>Resetează filtrul</button>
       </div>
 
@@ -855,7 +856,49 @@
       <p class="empty">Nicio știre în această categorie azi.</p>
 
       <main>
-                        <!-- 1 · 20 nov · 10:00 -->
+                                <!-- 1 · 20 nov · 11:00 -->
+        <article id="stire-327" data-cats="securitate" data-sev="amber" data-subiect="garanții de securitate Ucraina">
+          <div class="a-meta">
+            <span class="a-time">20 nov · 11:00</span>
+            <span class="a-cat">Securitate &amp; NATO</span>
+            <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
+            <a class="cont-pill" href="#stire-318" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
+            <span class="subj-pill">garanții de securitate Ucraina</span>
+            <span class="a-num">#1 / 7</span>
+          </div>
+          <h2>Rusia respinge garanțiile de securitate tip NATO pentru Ucraina: „cvasi-aderarea" e inacceptabilă</h2>
+          <div class="followup">
+            <span class="tag">Urmare la</span>
+            <p><a href="#stire-318">„Macron vrea redeschisă chestiunea aderării Ucrainei la NATO: „trebuie să redeschidem întrebarea"" — joi, 19 noiembrie 2026, ora 22:00.</a> (Atunci, după reuniunea Coaliției de Voință de la Berlin, Macron cerea redeschiderea discuției despre aderarea Ucrainei la NATO; acum, a doua zi, Moscova respinge tocmai formula de garanții tip articol 5 pe care emisarii americani o prezentaseră ca acceptată de ruși.)</p>
+          </div>
+          <div class="sec">
+            <p class="sec-label">Ce s-a întâmplat</p>
+            <p>Vineri, ministrul adjunct de externe al Rusiei, Serghei Rîabkov, a respins ideea unor garanții de securitate de tip NATO pentru Ucraina și a spus că orice formă de „cvasi-aderare" a Kievului la Alianța occidentală e total inacceptabilă pentru Moscova, potrivit agenției Interfax, citată de Reuters. Declarațiile vin la o zi după ce președintele francez Emmanuel Macron a spus, după summitul Coaliției de Voință de la Berlin, că trebuie redeschisă chestiunea aderării Ucrainei la NATO. La același eveniment, emisarul american Jared Kushner afirmase că el și Steve Witkoff i-au convins pe ruși că garanțiile de securitate pentru Ucraina s-ar baza pe articolul 5 — clauza de apărare colectivă a NATO, care consideră un atac asupra unui membru un atac asupra tuturor. Rîabkov a răspuns direct: „Aș vrea să spun că însăși noțiunea unei formule de cvasi-aderare a Ucrainei la NATO și căutarea unei «soluții creative» în acest domeniu e o variantă inacceptabilă pentru noi. Vorbim despre garanții de securitate în primul rând în termeni de asigurare a securității propriei noastre țări." El a adăugat că Ucraina trebuie „să recunoască caracterul irevocabil al cererii noastre ca acest stat să nu adere la NATO" și că abia atunci „problema garanțiilor de securitate poate fi discutată într-un fel sau altul". Rîabkov a confirmat totodată că o posibilă vizită la Moscova a reprezentanților Marii Britanii, Germaniei și Franței e în pregătire; președintele Vladimir Putin propusese joi ca emisarii europeni să vină la Moscova pentru a-și clarifica poziția înainte de stabilirea formatului discuțiilor.</p>
+          </div>
+          <div class="sec">
+            <p class="sec-label">De ce contează</p>
+            <p>Contradicția e directă și publică: emisarii americani au prezentat la Berlin o Rusie „confortabilă" cu garanții tip articol 5, iar Moscova, o zi mai târziu, respinge tocmai această formulă — ceea ce arată că negocierile de pace sunt departe de un acord asupra garanțiilor, elementul central al oricărei înțelegeri durabile. Ucraina cere de mult o garanție echivalentă cu apărarea colectivă a NATO, iar fără ea orice acord rămâne fragil. Pentru un IT incident Manager în mediul NATO, arhitectura garanțiilor de securitate și poziția Rusiei față de articolul 5 sunt teme de fond ale Alianței, iar blocajul de azi prelungește incertitudinea asupra sprijinului militar european pentru Ucraina. De urmărit: vizita europenilor la Moscova și reacția Washingtonului la respingerea Moscovei.</p>
+          </div>
+          <div class="verify">
+            <p class="sec-label">Verificare <span class="status">Sursă primară</span></p>
+            <p>Verdict: sursă primară — declarația vine chiar de la Ministerul rus de Externe, prin adjunctul ministrului Serghei Rîabkov, citat de agenția Interfax și relatat de Reuters (20 nov 2026). Nuanță onestă: declarația lui Rîabkov nu e deocamdată confirmată de o a doua redacție independentă — republicările sunt ale aceleiași știri Reuters — și contrazice direct afirmația lui Kushner de la Berlin; contradicția rămâne nerezolvată. Contextul (declarația lui Macron de la Berlin și afirmația lui Kushner) e confirmat independent de TBS News (20 nov 2026), care relatează că liderii europeni sunt gata de negocieri și că Zelenski a spus că Putin „a respins mereu fiecare propunere".</p>
+            <ul class="sources">
+              <li><a href="https://www.reuters.com/world/russia-pushes-back-against-us-idea-nato-style-security-guarantees-for-ukraine-2026-11-20/" target="_blank" rel="noopener">Reuters — Russia pushes back against US idea of NATO-style security guarantees for Ukraine (20 nov 2026; declarația lui Rîabkov, citatul Interfax, afirmația lui Kushner, vizita europenilor la Moscova)<span class="host">reuters.com</span></a></li>
+              <li><a href="https://www.tbsnews.net/world/european-leaders-ready-negotiate-russia-end-ukraine-war-1608501" target="_blank" rel="noopener">TBS News — European leaders ready to negotiate with Russia to end Ukraine war (20 nov 2026; afirmația lui Kushner, poziția lui Zelenski, invitația lui Putin)<span class="host">tbsnews.net</span></a></li>
+              <li><a href="https://eutoday.net/berlin-summit-europe-rejects-new-yalta/" target="_blank" rel="noopener">EU Today — Europe rejects a new Yalta as Berlin summit exposes divisions over Trump's peace strategy (analiza summitului de la Berlin; contradicția dintre afirmația lui Kushner și opoziția Moscovei față de garanțiile tip articol 5)<span class="host">eutoday.net</span></a></li>
+            </ul>
+          </div>
+          <div class="opposing">
+            <p class="sec-label">Tabăra adversă</p>
+            <p>Emisarul american Jared Kushner susține că el și Steve Witkoff i-au convins pe ruși că garanțiile de securitate pentru Ucraina s-ar baza pe articolul 5 — adică Moscova ar fi „confortabilă" cu această formulă. (<a href="https://www.reuters.com/world/russia-pushes-back-against-us-idea-nato-style-security-guarantees-for-ukraine-2026-11-20/" target="_blank" rel="noopener">Reuters, 20 nov 2026</a>)</p>
+          </div>
+          <div class="impact">
+            <span class="badge">Impact direct</span>
+            <p>Impact direct: minim azi — nu cere nicio acțiune și nu schimbă nimic imediat pentru el sau pentru familie. De urmărit: vizita reprezentanților Marii Britanii, Germaniei și Franței la Moscova, reacția Washingtonului la respingerea Moscovei și orice clarificare a formulei de garanții; dacă garanțiile rămân blocate, negocierile de pace stagnează și presiunea pe sprijinul militar european pentru Ucraina crește.</p>
+          </div>
+        </article>
+
+<!-- 2 · 20 nov · 10:00 -->
         <article id="stire-326" data-cats="securitate" data-sev="amber" data-subiect="obiect neidentificat în Polonia">
           <div class="a-meta">
             <span class="a-time">20 nov · 10:00</span>
@@ -863,7 +906,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-325" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">obiect neidentificat în Polonia</span>
-            <span class="a-num">#1 / 6</span>
+            <span class="a-num">#2 / 7</span>
           </div>
           <h2>Obiect neidentificat căzut în Polonia, lângă Chmielek, în timpul atacului asupra Ucrainei — armata investighează două posibile încălcări ale spațiului aerian</h2>
           <div class="followup">
@@ -894,7 +937,7 @@
           </div>
         </article>
 
-<!-- 2 · 20 nov · 09:00 -->
+<!-- 3 · 20 nov · 09:00 -->
         <article id="stire-325" data-cats="securitate" data-sev="amber" data-subiect="atac masiv asupra Kievului">
           <div class="a-meta">
             <span class="a-time">20 nov · 09:00</span>
@@ -903,7 +946,7 @@
             <a class="cont-pill" href="#stire-311" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">atac masiv asupra Kievului</span>
             <span class="spot-tag">Știrea zilei</span>
-            <span class="a-num">#2 / 6</span>
+            <span class="a-num">#3 / 7</span>
           </div>
           <h2>Atac masiv rusesc asupra Kievului și Odesei, la câteva ore după summitul Trump–Putin–Xi — 5 morți, trei poduri peste Nipru avariate</h2>
           <div class="followup">
@@ -937,7 +980,7 @@
           </div>
         </article>
 
-                <!-- 3 · 20 nov · 07:00 -->
+                <!-- 4 · 20 nov · 07:00 -->
         <article id="stire-323" data-cats="tech" data-sev="amber" data-subiect="agent AI propriu Apple pe Mac">
           <div class="a-meta">
             <span class="a-time">20 nov · 07:00</span>
@@ -945,7 +988,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-322" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">agent AI propriu Apple pe Mac</span>
-            <span class="a-num">#3 / 6</span>
+            <span class="a-num">#4 / 7</span>
           </div>
           <h2>Apple își face propriul agent AI care folosește Macul — și îngreunează accesul agenților terți, cu macOS 27.3</h2>
           <div class="followup">
@@ -981,14 +1024,14 @@
           </div>
         </article>
 
-        <!-- 4 · 20 nov · 07:00 -->
+        <!-- 5 · 20 nov · 07:00 -->
         <article id="stire-324" data-cats="romania" data-sev="amber" data-subiect="Neacșu preia frâiele Guvernului">
           <div class="a-meta">
             <span class="a-time">20 nov · 07:00</span>
             <span class="a-cat">România</span>
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <span class="subj-pill">Neacșu preia frâiele Guvernului</span>
-            <span class="a-num">#4 / 6</span>
+            <span class="a-num">#5 / 7</span>
           </div>
           <h2>Marian Neacșu primește avizul pe actele cu impact bugetar ale celor 15 ministere și coordonarea a 10 ministere; Nicușor Dan: „e un profesionist"</h2>
           <div class="sec">
@@ -1020,7 +1063,7 @@
           </div>
         </article>
 
-<!-- 5 · 20 nov · 06:00 -->
+<!-- 6 · 20 nov · 06:00 -->
         <article id="stire-321" data-cats="tech" data-sev="amber" data-subiect="debutul record Anthropic la bursă">
           <div class="a-meta">
             <span class="a-time">20 nov · 06:00</span>
@@ -1028,7 +1071,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-301" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">debutul record Anthropic la bursă</span>
-            <span class="a-num">#5 / 6</span>
+            <span class="a-num">#6 / 7</span>
           </div>
           <h2>Anthropic a debutat la Nasdaq: acțiunile au deschis la 111,50 $, cu 34% peste prețul IPO, și au închis la 97,17 $ — cel mai mare IPO din istorie</h2>
           <div class="followup">
@@ -1064,14 +1107,14 @@
           </div>
         </article>
 
-        <!-- 6 · 20 nov · 06:00 -->
+        <!-- 7 · 20 nov · 06:00 -->
         <article id="stire-322" data-cats="tech" data-sev="green" data-subiect="Gemini preia controlul pe Mac">
           <div class="a-meta">
             <span class="a-time">20 nov · 06:00</span>
             <span class="a-cat">Tech &amp; AI</span>
             <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
             <span class="subj-pill">Gemini preia controlul pe Mac</span>
-            <span class="a-num">#6 / 6</span>
+            <span class="a-num">#7 / 7</span>
           </div>
           <h2>Google dă Gemini control pe Mac: agentul poate lucra în aplicații și pe web, în numele utilizatorului — deocamdată doar în SUA</h2>
           <div class="sec">
@@ -5838,8 +5881,8 @@
 
                   <footer>
         <div class="rule" aria-hidden="true"></div>
-        <p>Sfârșitul ediției de azi · Ultima actualizare: vineri, 20 noiembrie 2026, 10:00<br />Monitorizarea rulează la circa 3 ore, în fereastra L–V 06:00–22:00 · S–D 07:30–22:00 — dă refresh pentru noutăți.</p>
-        <a class="to-top" href="#stire-326">↑ Înapoi la cea mai nouă știre</a>
+        <p>Sfârșitul ediției de azi · Ultima actualizare: vineri, 20 noiembrie 2026, 11:00<br />Monitorizarea rulează la circa 3 ore, în fereastra L–V 06:00–22:00 · S–D 07:30–22:00 — dă refresh pentru noutăți.</p>
+        <a class="to-top" href="#stire-327">↑ Înapoi la cea mai nouă știre</a>
       </footer>
     </div>
 
