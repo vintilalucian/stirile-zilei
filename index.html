@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="color-scheme" content="light dark" />
-    <meta name="tirile-versiune" content="2026-11-20T20:00:00+01:00|18|amber" />
+    <meta name="tirile-versiune" content="2026-11-21T08:00:00+01:00|1|amber" />
     <link rel="icon" href="data:," />
     <title>Știrile zilei</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -699,9 +699,9 @@
     <div class="topbar">
       <div class="topbar-inner">
         <span class="dot" aria-hidden="true"></span>
-        <span><strong>Vineri, 20 noiembrie 2026</strong> · actualizat la <strong>20:00</strong></span>
+        <span><strong>Sâmbătă, 21 noiembrie 2026</strong> · actualizat la <strong>08:00</strong></span>
         <span aria-hidden="true">·</span>
-        <span>18 știri azi</span>
+        <span>1 știre azi</span>
         <span class="spacer"></span>
         <button class="refresh-btn" type="button" id="refreshBtn" aria-label="Reîmprospătează pagina">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg>
@@ -720,12 +720,12 @@
         <h1>Știrile zilei</h1>
         <div class="date-line">
           <span class="day">Ediția de azi</span>
-          <span>Vineri, 20 noiembrie 2026 · Europe/Brussels</span>
+          <span>Sâmbătă, 21 noiembrie 2026 · Europe/Brussels</span>
         </div>
         <p class="lede"><strong>Apasă pe un tile</strong> ca să filtrezi pagina — articole complete jos, cele mai noi primele.</p>
       </header>
 
-<section class="day" id="zi-2026-11-20">
+<section class="day" id="zi-2026-11-21">
       <!-- Fereastra „Ultimele știri" — sus, imediat deasupra chenarului
            „Știrea zilei", între masthead și chenar. Arată DOAR titlurile din
            cea mai recentă rulare (1–2), fiecare link la cardul ei (#stire-N).
@@ -740,6 +740,169 @@
         </div>
         <ul class="latest-list"></ul>
       </section>
+
+      <!-- Chenar permanent: știrea cea mai importantă a zilei — sub fereastra
+           „Ultimele știri", ÎNAINTEA dashboardului, vizibilă din prima, fără scroll.
+           Nivelul de azi: GALBEN (sev-amber) — de urmărit: Trump spune că
+           discuțiile cu Putin despre Ucraina, purtate în marja summitului APEC
+           de la Shenzhen, au fost „foarte bune" și că există „o șansă reală"
+           de acord, dar refuză să discute garanțiile de securitate pentru
+           Ucraina înainte de un acord; e singura știre a zilei și are
+           severitatea maximă a zilei, deci e știrea zilei (marcată ca atare
+           pe cardul de la 08:00) și nu apare mențiunea despre alte știri cu
+           aceeași severitate.
+           Chenarul rămâne în afara logicii de filtrare: vizibil indiferent de filtrul de categorie. -->
+      <section class="spot sev-amber" aria-label="Știrea cea mai importantă a zilei">
+        <div class="spot-head">
+          <span class="spot-kicker">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13 2 4.5 13.5H11L9.5 22 19 10h-6.5L13 2z"/></svg>
+            Știrea zilei · Atenție rapidă
+          </span>
+          <span class="spot-time">21 nov · 08:00</span>
+          <span class="spot-pill">Nivel galben — de urmărit</span>
+        </div>
+        <h2 class="spot-title">Trump: discuțiile cu Putin despre Ucraina au fost „foarte bune" — dar garanțiile de securitate rămân după un acord</h2>
+        <p class="spot-why"><strong>De ce e în față:</strong> garanțiile de securitate sunt întrebarea centrală a oricărui aranjament post-război și a posturii NATO pe Flancul estic, iar ordinea propusă de Trump — acord mai întâi, garanții după — lasă deschis tocmai punctul pe care Kievul și aliații europeni îl consideră esențial pentru ca un acord să reziste.</p>
+        <p class="spot-lead">Vineri, 20 noiembrie, la conferința de presă de la Casa Albă de după întoarcerea din China, Trump a spus că discuțiile cu Putin despre Ucraina, purtate în marja summitului APEC de la Shenzhen, au fost „foarte bune" și că „există o șansă reală" să se ajungă la un acord — dar a refuzat să discute garanțiile de securitate pentru Ucraina înainte de un acord, deși consilierul său Jared Kushner spusese cu o zi înainte, după discuții la Berlin, că Trump e deschis la garanții de tip Articol 5, idee respinsă de Moscova în aceeași zi.</p>
+        <p class="spot-more" hidden><span class="spot-more-text"></span> <button class="spot-more-btn" type="button" data-sev-value="amber" aria-label="Apasă aici ca să vezi doar știrile cu severitatea Galben — de urmărit">apasă aici</button></p>
+        <div class="spot-foot">
+          <a class="spot-link" href="#stire-339">Citește știrea completă ↓</a>
+          <div class="sev-scale" role="img" aria-label="Scară de gravitate: verde — normal, galben — de urmărit, roșu — grav. Nivelul de azi: galben.">
+            <span class="sev-item"><i class="sev-dot g" aria-hidden="true"></i>Verde · normal</span>
+            <span class="sev-item on"><i class="sev-dot y" aria-hidden="true"></i>Galben · de urmărit</span>
+            <span class="sev-item"><i class="sev-dot r" aria-hidden="true"></i>Roșu · grav</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Dashboard -->
+      <section class="dashboard" aria-label="Panou de ansamblu">
+        <div class="dash-head">
+          <span class="dash-title">Dashboard · Azi</span>
+          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 08:00</span>
+          <span class="dash-meta">Fereastră monitorizare <strong>L–V 06:00–22:00 · S–D 07:30–22:00</strong> · pas ~3 ore</span>
+        </div>
+
+        <div class="kpi-grid five" role="group" aria-label="Filtrează după categorie — apasă pe un tile">
+          <button class="kpi" type="button" data-filter="toate" aria-pressed="true">
+            <span class="kpi-top"><span class="kpi-label">Toate știrile</span><span class="kpi-check" aria-hidden="true">✓</span></span>
+            <span class="kpi-value">1</span>
+            <span class="kpi-sub">1 știre verificată azi, în 1 rulare</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:100%"></i></span>
+            <span class="kpi-hint">Apasă pentru toate</span>
+          </button>
+          <button class="kpi" type="button" data-filter="securitate" aria-pressed="false">
+            <span class="kpi-top"><span class="kpi-label">Securitate &amp; NATO</span><span class="kpi-check" aria-hidden="true">✓</span></span>
+            <span class="kpi-value">1</span>
+            <span class="kpi-sub">pace Ucraina: discuții Trump–Putin</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:100%"></i></span>
+            <span class="kpi-hint">Apasă pentru a filtra →</span>
+          </button>
+          <button class="kpi" type="button" data-filter="romania" aria-pressed="false">
+            <span class="kpi-top"><span class="kpi-label">România</span><span class="kpi-check" aria-hidden="true">✓</span></span>
+            <span class="kpi-value">0</span>
+            <span class="kpi-sub"></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:0%"></i></span>
+            <span class="kpi-hint">Apasă pentru a filtra →</span>
+          </button>
+          <button class="kpi" type="button" data-filter="belgia" aria-pressed="false">
+            <span class="kpi-top"><span class="kpi-label">Belgia</span><span class="kpi-check" aria-hidden="true">✓</span></span>
+            <span class="kpi-value">0</span>
+            <span class="kpi-sub"></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:0%"></i></span>
+            <span class="kpi-hint">Apasă pentru a filtra →</span>
+          </button>
+          <button class="kpi" type="button" data-filter="tech" aria-pressed="false">
+            <span class="kpi-top"><span class="kpi-label">Tech &amp; AI</span><span class="kpi-check" aria-hidden="true">✓</span></span>
+            <span class="kpi-value">0</span>
+            <span class="kpi-sub"></span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:0%"></i></span>
+            <span class="kpi-hint">Apasă pentru a filtra →</span>
+          </button>
+        </div>
+
+        <div class="dash-foot solo">
+          <div class="dash-panel">
+            <h3>Severitate — apasă un pătrat ca să vezi doar știrile de nivelul acela</h3>
+            <div class="sev-squares" role="group" aria-label="Filtrează după severitate — roșu, galben, verde"></div>
+          </div>
+        </div>
+      </section>
+
+      <div class="filter-status" aria-live="polite">
+        <span class="filter-label">Se afișează: <strong>Toate categoriile — 1 din 1 știri</strong></span>
+        <button class="filter-reset" type="button" hidden>Resetează filtrul</button>
+      </div>
+
+      <!-- Cuprinsul zilei — sub banda dashboard, înaintea cardurilor.
+           Generat de script din cardurile zilei curente: lista completă a
+           zilei, grupată pe ora publicării, cele mai noi primele; fiecare
+           titlu e link la cardul lui (#stire-N), iar antetul de oră al
+           fiecărui grup e buton de filtru pe rulare. Cuprinsul urmează
+           filtrul activ, la fel ca și cardurile. Chenarul rămâne în afara
+           filtrării. -->
+      <nav class="day-toc" aria-label="Cuprinsul zilei">
+        <div class="toc-head">
+          <h2>Cuprins</h2>
+          <span class="toc-count">cele mai noi primele · apasă pe o oră ca să filtrezi rularea, pe un titlu ca să sari la știre</span>
+        </div>
+        <div class="toc-groups"></div>
+      </nav>
+
+      <p class="empty">Nicio știre în această categorie azi.</p>
+
+      <main>
+        <!-- 1 · 21 nov · 08:00 -->
+        <article id="stire-339" data-cats="securitate" data-sev="amber" data-subiect="pace Ucraina: discuții Trump–Putin">
+          <div class="a-meta">
+            <span class="a-time">21 nov · 08:00</span>
+            <span class="a-cat">Securitate &amp; NATO</span>
+            <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
+            <a class="cont-pill" href="#stire-325" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
+            <span class="subj-pill">pace Ucraina: discuții Trump–Putin</span>
+            <span class="spot-tag">Știrea zilei</span>
+            <span class="a-num">#1 / 1</span>
+          </div>
+          <h2>Trump: discuțiile cu Putin despre Ucraina au fost „foarte bune" — dar garanțiile de securitate rămân după un acord</h2>
+          <div class="followup">
+            <span class="tag">Urmare la</span>
+            <p><a href="#stire-325">„Atac masiv rusesc asupra Kievului și Odesei, la câteva ore după summitul Trump–Putin–Xi — 5 morți, trei poduri peste Nipru avariate" — vineri, 20 noiembrie 2026, ora 09:00.</a> (Atunci atacul masiv asupra Kievului și Odesei venea la câteva ore după summitul de la Shenzhen; acum Trump vorbește despre discuțiile cu Putin din marja aceluiași summit și despre șansa unui acord, dar amână garanțiile de securitate pentru Ucraina după încheierea lui.)</p>
+          </div>
+          <div class="sec">
+            <p class="sec-label">Ce s-a întâmplat</p>
+            <p>Vineri, 20 noiembrie, la conferința de presă de la Casa Albă de după întoarcerea din China, președintele american Donald Trump a spus că discuțiile cu liderul rus Vladimir Putin despre Ucraina, purtate în marja summitului APEC de la Shenzhen, au fost „foarte bune" și că „există o șansă reală" să se ajungă la un acord. În același timp, Trump a refuzat să discute garanțiile de securitate pentru Ucraina înainte de un acord: „Nu vreau să vorbesc despre garanții de securitate, pentru că mai întâi trebuie să ajungem la un acord." Cu o zi înainte, consilierul său Jared Kushner spusese, după discuții la Berlin, că Trump e deschis la garanții de tip Articol 5 și că partea rusă ar fi „confortabilă" cu conceptul — însă Moscova a respins ideea în aceeași zi.</p>
+          </div>
+          <div class="sec">
+            <p class="sec-label">De ce contează</p>
+            <p>Garanțiile de securitate sunt întrebarea centrală a oricărui aranjament post-război și a posturii NATO pe Flancul estic. Ordinea propusă de Trump — acord mai întâi, garanții după — lasă deschis tocmai punctul pe care Kievul și aliații europeni îl consideră esențial pentru ca un acord să reziste, iar contradicția dintre optimismul lui Kushner și respingerea Moscovei arată că negocierile rămân blocate pe acest dosar.</p>
+          </div>
+          <div class="verify">
+            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
+            <p>Verdict: confirmat — Reuters (20 nov 2026) relatează declarațiile lui Trump de la conferința de presă de la Casa Albă: discuțiile cu Putin au fost „foarte bune", există „o șansă reală" de acord, iar garanțiile de securitate nu se discută înainte de un acord. Bytes Europe (20/21 nov 2026) confirmă independent aceleași declarații și respingerea de către Rusia a garanțiilor de tip NATO. Benzinga, via TradingView, confirmă aceleași fapte, inclusiv respingerea de către Moscova a „cvasi-aderării" Kievului la NATO. Republicările verbatim ale firului Reuters nu se numără separat.</p>
+            <ul class="sources">
+              <li><a href="https://www.reuters.com/world/china/trump-says-he-putin-had-very-good-talks-ukraine-2026-11-20/" target="_blank" rel="noopener">Reuters — Trump says he, Putin had very good talks on Ukraine (20 nov 2026; declarațiile de la Casa Albă despre discuțiile cu Putin și garanțiile de securitate)<span class="host">reuters.com</span></a></li>
+              <li><a href="https://www.byteseu.com/2535111/" target="_blank" rel="noopener">Bytes Europe — Trump Claims Putin Wants Peace as Russia Rejects NATO-Style Security Guarantees (20/21 nov 2026; confirmare independentă, respingerea garanțiilor de tip NATO de către Rusia)<span class="host">byteseu.com</span></a></li>
+              <li><a href="https://www.tradingview.com/news/benzinga:91ba5f9ba094b:0-trump-defends-putin-as-friend-says-ukraine-peace-deal-has-real-good-chance-while-russia-rejects-quasi-membership-of-nato-for-kyiv/" target="_blank" rel="noopener">Benzinga (via TradingView) — Trump Defends Putin As 'Friend,' Says Ukraine Peace Deal Has 'Real Good Chance' While Russia Rejects 'Quasi-Membership' of NATO for Kyiv (confirmare independentă a acelorași declarații)<span class="host">tradingview.com</span></a></li>
+            </ul>
+          </div>
+          <div class="opposing">
+            <p class="sec-label">Tabăra adversă</p>
+            <p>Serghei Riabkov, adjunctul ministrului rus de externe, a declarat vineri că orice formă de „cvasi-aderare" a Kievului la alianța occidentală e total inacceptabilă pentru Moscova. (<a href="https://www.reuters.com/world/russia-pushes-back-against-us-idea-nato-style-security-guarantees-for-ukraine-2026-11-20/" target="_blank" rel="noopener">Reuters, 20 nov 2026</a>)</p>
+          </div>
+          <div class="impact">
+            <span class="badge">Impact direct</span>
+            <p>Impact direct azi: minim — nicio acțiune imediată. Relevanță de context profesională înaltă: garanțiile de securitate modelează postura NATO și orice aranjament post-război; de urmărit dacă poziția SUA se clarifică la următoarea rundă de discuții.</p>
+          </div>
+        </article>
+
+      </main>
+      </section>
+
+<section class="day day-archive" id="zi-2026-11-20">
+        <div class="day-head">
+          <h2>Vineri, 20 noiembrie 2026</h2>
+          <span>Ediția de ieri · 18 știri · arhivă (ultimele 7 zile)</span>
+        </div>
 
       <!-- Chenar permanent: știrea cea mai importantă a zilei — sub fereastra
            „Ultimele știri", ÎNAINTEA dashboardului, vizibilă din prima, fără scroll.
@@ -5529,780 +5692,13 @@
       </main>
       </section>
 
-      <section class="day day-archive" id="zi-2026-11-14">
-        <div class="day-head">
-          <h2>Sâmbătă, 14 noiembrie 2026</h2>
-          <span>Ediția de ieri · 17 știri · arhivă (ultimele 7 zile)</span>
-        </div>
 
-      <!-- Chenar permanent: știrea cea mai importantă a zilei — sub fereastra
-           „Ultimele știri", ÎNAINTEA dashboardului, vizibilă din prima, fără scroll.
-           Nivelul de azi: GALBEN (sev-amber) — de urmărit: SUA au pus pe masă retragerea Ucrainei din Donbas în schimbul aderării la NATO, spune Zelenski — prima dată când Washingtonul ridică ideea, marcată „Știrea zilei"; mai există alte 11 știri galbene azi, de aceea apare mențiunea despre celelalte știri cu aceeași severitate, cu filtru pe galben la „apasă aici".
-           Chenarul rămâne în afara logicii de filtrare: vizibil indiferent de filtrul de categorie. -->
-      <section class="spot sev-amber" aria-label="Știrea cea mai importantă a zilei">
-        <div class="spot-head">
-          <span class="spot-kicker">
-            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13 2 4.5 13.5H11L9.5 22 19 10h-6.5L13 2z"/></svg>
-            Știrea zilei · Atenție rapidă
-          </span>
-          <span class="spot-time">14 nov · 13:00</span>
-          <span class="spot-pill">Nivel galben — de urmărit</span>
-        </div>
-        <h2 class="spot-title">SUA au pus pe masă retragerea Ucrainei din Donbas în schimbul aderării la NATO, spune Zelenski — prima dată când Washingtonul ridică ideea</h2>
-        <p class="spot-why"><strong>De ce e în față:</strong> pentru prima dată, Washingtonul ar fi pus pe masă aderarea Ucrainei la NATO în schimbul Donbasului — NATO revine pe agenda negocierilor de pace, iar asta poate remodela arhitectura de securitate a Flancului estic, zona lui profesională directă.</p>
-        <p class="spot-lead">Președintele Volodimir Zelenski a dezvăluit sâmbătă, 14 noiembrie, că negociatorii americani Jared Kushner și Steve Witkoff au întrebat, pentru prima dată, dacă Ucraina ar fi dispusă să-și retragă trupele din Donbas în schimbul aderării la NATO: „The Americans raised a question: 'What if Ukraine joins NATO? Would Ukraine withdraw from Donbas?' This was the first time this had been raised". Întrebarea a venit după două zile de negocieri mediate de SUA la Abu Dhabi și după întâlnirile separate ale emisarilor cu Putin la Moscova și cu Zelenski la Dublin.</p>
-        <p class="spot-more"><span class="spot-more-text">Mai sunt și alte 11 știri cu aceeași severitate —</span> <button class="spot-more-btn" type="button" data-sev-value="amber">apasă aici</button></p>
-        <div class="spot-foot">
-          <a class="spot-link" href="#stire-215">Citește știrea completă ↓</a>
-          <div class="sev-scale" role="img" aria-label="Scară de gravitate: verde — normal, galben — de urmărit, roșu — grav. Nivelul de azi: galben.">
-            <span class="sev-item"><i class="sev-dot g" aria-hidden="true"></i>Verde · normal</span>
-            <span class="sev-item on"><i class="sev-dot y" aria-hidden="true"></i>Galben · de urmărit</span>
-            <span class="sev-item"><i class="sev-dot r" aria-hidden="true"></i>Roșu · grav</span>
-          </div>
-        </div>
-      </section>
-
-      <!-- Dashboard -->
-      <section class="dashboard" aria-label="Panou de ansamblu">
-        <div class="dash-head">
-          <span class="dash-title">Dashboard · Azi</span>
-          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 21:00</span>
-          <span class="dash-meta">Fereastră monitorizare <strong>L–V 06:00–22:00 · S–D 07:30–22:00</strong> · pas ~3 ore</span>
-        </div>
-
-        <div class="kpi-grid five" role="group" aria-label="Filtrează după categorie — apasă pe un tile">
-          <button class="kpi" type="button" data-filter="toate" aria-pressed="true">
-            <span class="kpi-top"><span class="kpi-label">Toate știrile</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">17</span>
-            <span class="kpi-sub">știri verificate azi, în 12 rulări</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:100%"></i></span>
-            <span class="kpi-hint">Apasă pentru toate</span>
-          </button>
-          <button class="kpi" type="button" data-filter="securitate" aria-pressed="false">
-            <span class="kpi-top"><span class="kpi-label">Securitate &amp; NATO</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">7</span>
-            <span class="kpi-sub">alerte aeriene la Tulcea · formatul E5 pentru negocierile cu Rusia · dronă lovește navă în apele României · atac cu drone în Marea Baltică · Donbas pentru aderarea la NATO · Germania: servicii secrete cu puteri noi · ofițer NATO arestat pentru spionaj</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:44%"></i></span>
-            <span class="kpi-hint">Apasă pentru a filtra →</span>
-          </button>
-          <button class="kpi" type="button" data-filter="romania" aria-pressed="false">
-            <span class="kpi-top"><span class="kpi-label">România</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">3</span>
-            <span class="kpi-sub">alerte aeriene la Tulcea · dronă lovește navă în apele României · România câștigă Roșia Montană</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:19%"></i></span>
-            <span class="kpi-hint">Apasă pentru a filtra →</span>
-          </button>
-          <button class="kpi" type="button" data-filter="belgia" aria-pressed="false">
-            <span class="kpi-top"><span class="kpi-label">Belgia</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">1</span>
-            <span class="kpi-sub">criza bugetară belgiană</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:6%"></i></span>
-            <span class="kpi-hint">Apasă pentru a filtra →</span>
-          </button>
-          <button class="kpi" type="button" data-filter="tech" aria-pressed="false">
-            <span class="kpi-top"><span class="kpi-label">Tech &amp; AI</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">6</span>
-            <span class="kpi-sub">reacții asiatice la plecarea lui Huang · amendă Meta 805 milioane € · LangChain, evaluare 3 mld. $ · pana Microsoft 365 rezolvată · SignDrop: zero-day Windows · finanțare AI după plecarea lui Huang</span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:38%"></i></span>
-            <span class="kpi-hint">Apasă pentru a filtra →</span>
-          </button>
-        </div>
-
-        <div class="dash-foot solo">
-          <div class="dash-panel">
-            <h3>Severitate — apasă un pătrat ca să vezi doar știrile de nivelul acela</h3>
-            <div class="sev-squares" role="group" aria-label="Filtrează după severitate — roșu, galben, verde"></div>
-          </div>
-        </div>
-      </section>
-
-      <div class="filter-status" aria-live="polite">
-        <span class="filter-label">Se afișează: <strong>Toate categoriile — 17 din 17 știri</strong></span>
-        <button class="filter-reset" type="button" hidden>Resetează filtrul</button>
-      </div>
-
-      <!-- Cuprinsul zilei — sub banda dashboard, înaintea cardurilor.
-           Generat de script din cardurile zilei curente: lista completă a
-           zilei, grupată pe ora publicării, cele mai noi primele; fiecare
-           titlu e link la cardul lui (#stire-N), iar antetul de oră al
-           fiecărui grup e buton de filtru pe rulare — aceeași logică pe care
-           o aveau barele „Ritmul zilei" (selecție unică; al doilea click pe
-           aceeași oră sau butonul de reset revine la toate; o selecție de oră
-           anulează filtrul de categorie și invers). Nu e pliabil: toate
-           grupurile de oră sunt extinse permanent, cu toate titlurile
-           vizibile — fără săgeți de pliere și fără buton de extindere.
-           Cuprinsul urmează filtrul activ, la fel ca și cardurile: la un
-           filtru de categorie, severitate sau oră arată doar rândurile
-           știrilor din selecția aceea, iar grupurile de oră rămase fără
-           nicio știre vizibilă se ascund; butonul „Toate" îl readuce la
-           toate titlurile zilei. Chenarul rămâne în afara filtrării. -->
-      <nav class="day-toc" aria-label="Cuprinsul zilei">
-        <div class="toc-head">
-          <h2>Cuprins</h2>
-          <span class="toc-count">cele mai noi primele · apasă pe o oră ca să filtrezi rularea, pe un titlu ca să sari la știre</span>
-        </div>
-        <div class="toc-groups"></div>
-      </nav>
-
-      <p class="empty">Nicio știre în această categorie azi.</p>
-
-      <main>
-        <!-- 1 · 14 nov · 21:00 -->
-          <article id="stire-226" data-cats="worldwide" data-sev="amber" data-subiect="cauza opririi zborurilor în SUA">
-            <div class="a-meta">
-              <span class="a-time">14 nov · 21:00</span>
-              <span class="a-cat">Worldwide / Transport aerian</span>
-              <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
-              <a class="cont-pill" href="#stire-210" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
-              <span class="subj-pill">cauza opririi zborurilor în SUA</span>
-              <span class="a-num">#1 / 17</span>
-            </div>
-            <h2>Oprirea zborurilor în SUA, explicată: un router a inundat rețeaua FAA în timpul unui upgrade de rutină; ~10.000 de zboruri anulate vineri</h2>
-            <div class="followup">
-              <span class="tag">Urmare la</span>
-              <p><a href="#stire-210">„FAA a oprit toate plecările din SUA timp de ~4 ore — a doua oprire națională de la 11 septembrie 2001” — sâmbătă, 14 noiembrie 2026, ora 08:00.</a> (Cardul de la 08:00 a relatat oprirea la sol; acesta aduce explicația oficială a cauzei, anunțată sâmbătă de secretarul Transporturilor.)</p>
-            </div>
-            <div class="sec">
-              <p class="sec-label">Ce s-a întâmplat</p>
-              <p>Secretarul american al Transporturilor, Sean Duffy, a explicat sâmbătă, 14 noiembrie, cauza opririi naționale de vineri: în timpul unei lucrări de mentenanță de rutină, contractorul L3Harris înlocuia cablul de cupru cu fibră optică la o locație îndepărtată a FAA, iar un router instalat atunci a început să inunde celelalte routere ale rețelei de control al traficului aerian cu circa 1.000 de încercări de conectare la fiecare 4–5 secunde. Instabilitatea a durat circa 45 de minute în 17 din cele 22 de centre regionale de control, iar oprirea la sol a durat circa 4–5 ore. Vineri au fost anulate circa 10.000 de zboruri și peste 7.000 au fost întârziate (Reuters); sâmbătă au mai fost anulate peste 3.700 de zboruri și 2.000 au fost întârziate, administratorul FAA Bryan Bedford estimând până la 5.000 de anulări sâmbătă, cu revenirea la programul complet până duminică seară.</p>
-            </div>
-            <div class="sec">
-              <p class="sec-label">De ce contează</p>
-              <p>Călătorește frecvent cu avionul, inclusiv transatlantic, iar vacanța de Crăciun în România (22–31 decembrie) intră în programul de iarnă — o pană de 45 de minute la un singur router a blocat plecările din toată SUA, un caz concret de incident pe infrastructură critică veche (routere fabricate în 2001, linii de cupru din anii '80), exact terenul lui profesional de incident management. Lecția de reziliență: un singur punct de eșec într-o rețea națională.</p>
-            </div>
-            <div class="verify">
-              <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
-              <p>Verdict: confirmat. TechCrunch (sursă din lista monitorizată) — relatarea conferinței de presă de sâmbătă a lui Duffy, 14 nov 2026, 17:45 UTC. Reuters — amploarea perturbărilor și cifrele, 14 nov 2026. USA Today — persistența întârzierilor sâmbătă și estimarea lui Bedford, 14 nov 2026. Nuanță: cauza exactă nu e încă stabilită — Duffy: nu se știe dacă a fost eroare de instalare a L3Harris sau un router defect; ancheta de root-cause e în curs. Oficialii au subliniat că nu există niciun indiciu de atac cibernetic și nicio legătură cu instrumentul AI lansat joi de FAA pentru controlorii de trafic. L3Harris nu a comentat încă.</p>
-              <ul class="sources">
-              <li><a href="https://techcrunch.com/2026/11/14/transportation-secretary-blames-routine-equipment-upgrade-for-grounding-flights-nationwide/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>TechCrunch — „Transportation secretary blames routine equipment upgrade for grounding flights nationwide” (14 nov 2026, 17:45 UTC; relatarea conferinței de presă a lui Duffy: routerul instalat de L3Harris a inundat rețeaua FAA în timpul upgrade-ului de rutină)<span class="host">techcrunch.com</span></a></li>
-              <li><a href="https://www.reuters.com/business/aerospace-defense/thousands-us-flights-canceled-delayed-air-travel-system-recovers-shutdown-2026-11-14/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Reuters — mii de zboruri din SUA anulate și întârziate, pe măsură ce sistemul de transport aerian își revine după oprire (14 nov 2026; amploarea perturbărilor și cifrele: ~10.000 de anulări vineri, peste 7.000 întârziate; sâmbătă peste 3.700 anulate și 2.000 întârziate)<span class="host">reuters.com</span></a></li>
-              <li><a href="https://www.usatoday.com/story/news/nation/2026/11/14/flight-airports-delays-cancellations-faa-ground-stop/92778770007/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>USA Today — întârzierile și anulările persistă sâmbătă, după oprirea la sol a FAA (14 nov 2026; persistența perturbărilor și estimarea administratorului FAA Bryan Bedford: până la 5.000 de anulări sâmbătă, revenire la programul complet până duminică seară)<span class="host">usatoday.com</span></a></li>
-              </ul>
-            </div>
-            <div class="impact">
-              <span class="badge">Impact direct</span>
-              <p>Impact direct: minim — relevanță de context și profesională; de reținut la planificarea zborurilor spre/din SUA în perioada următoare (perturbările continuă în weekend, înaintea sezonului de Thanksgiving).</p>
-            </div>
-          </article>
-
-        <!-- 2 · 14 nov · 20:00 -->
-          <article id="stire-225" data-cats="tech" data-sev="amber" data-subiect="reacții asiatice la plecarea lui Huang">
-            <div class="a-meta">
-              <span class="a-time">14 nov · 20:00</span>
-              <span class="a-cat">Tech &amp; AI</span>
-              <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
-              <a class="cont-pill" href="#stire-213" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
-              <span class="subj-pill">reacții asiatice la plecarea lui Huang</span>
-              <span class="a-num">#2 / 17</span>
-            </div>
-            <h2>Guvernele din Asia reacționează la plecarea lui Jensen Huang de la Nvidia: Coreea de Sud obține confirmarea celor 260.000 de GPU-uri, iar Beijingul respinge acuzațiile de spionaj</h2>
-            <div class="followup">
-              <span class="tag">Urmare la</span>
-              <p><a href="#stire-213">„Plecarea lui Jensen Huang lasă un gol în finanțarea startupurilor AI: Nvidia, cel mai mare investitor al sectorului, devine mai prudentă” — sâmbătă, 14 noiembrie 2026, ora 09:00.</a> (Cardul de azi-dimineață a urmărit banii — Nvidia devine mai prudentă ca investitor în startupuri; acesta urmărește cipurile: guvernele asiatice cer garanții că livrările continuă.)</p>
-            </div>
-            <div class="sec">
-              <p class="sec-label">Ce s-a întâmplat</p>
-              <p>Plecarea lui Jensen Huang de la Nvidia, anunțată joi, 12 noiembrie, a declanșat reacții oficiale în Asia, unde guvernele depind de cipurile companiei pentru planurile naționale de AI, scrie TechCrunch. În Coreea de Sud, Ministerul Științei a anunțat vineri, 13 noiembrie, că Nvidia a reconfirmat, la nivel de companie, livrarea a 260.000 de GPU-uri avansate și continuarea proiectelor comune — între care infrastructură de calcul AI cu Samsung, SK, Hyundai și Naver — iar consiliul guvernamental pentru strategia AI a ținut o ședință de urgență pentru a evalua impactul demisiei. În China, Ministerul de Externe a respins pe 10 noiembrie acuzațiile că o femeie de afaceri chineză legată de Huang ar fi spion, numindu-le nefondate, în timp ce o analiză Reuters a documentelor de achiziții arată că proiecte chineze de calcul AI de peste 3 miliarde de dolari depind de procesoare Nvidia restricționate. Japonia a anunțat că va monitoriza îndeaproape Nvidia, iar ministrul taiwanez al economiei, Kung Ming-shin, a spus că plecarea lui Huang e puțin probabil să schimbe semnificativ creșterea industriei globale de AI.</p>
-            </div>
-            <div class="sec">
-              <p class="sec-label">De ce contează</p>
-              <p>Livrările de GPU-uri sunt coloana vertebrală a planurilor naționale de AI din Asia, iar confirmarea de la Seul arată că, cel puțin pentru Coreea de Sud, angajamentele Nvidia supraviețuiesc plecării lui Huang — o veste bună după cardul de azi-dimineață, în care interimatul Colette Kress era văzut ca mult mai prudent la investițiile în startupuri. Pentru el, ca IT incident Manager care își construiește automatizările pe modele și API-uri AI, miza e stabilitatea lanțului de aprovizionare AI: Nvidia rămâne furnizorul dominant de cipuri pentru infrastructura AI, iar o întrerupere a livrărilor sau o escaladare a controalelor de export s-ar simți în costuri și în disponibilitatea modelelor. De urmărit: rezultatele trimestriale Nvidia din 17 noiembrie — primele de la plecarea lui Huang — și dacă interimatul confirmă oficial, din partea companiei, angajamentele de livrare și investiții.</p>
-            </div>
-            <div class="verify">
-              <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
-              <p>Verdict: confirmat. TechCrunch (14 noiembrie 2026, 16:34 UTC, relatarea curatoriată) — reacțiile guvernelor din Coreea de Sud, Taiwan, Japonia și China; 260.000 de GPU-uri reconfirmate pentru Coreea de Sud; respingerea acuzațiilor de către Beijing; proiecte chineze de peste 3 mld. $ expuse, pe baza analizei Reuters. Reuters (13 noiembrie 2026) — confirmare independentă: ministrul sud-coreean al științei, Bae Kyung-hoon, a spus că Nvidia a confirmat livrarea celor 260.000 de GPU-uri în pofida demisiei lui Huang; proiectele comune continuă. Money Today (13 noiembrie 2026, via Yonhap) — confirmare independentă: postarea ministrului Bae, ședința de urgență a ministerului din 13 noiembrie, planul guvernului de 50.000 de GPU-uri (circa 21.000 asigurate, restul până la începutul lui 2027). Seoul Economic Daily (13 noiembrie 2026) — confirmare independentă: reconfirmarea la nivel de companie a livrării și a cooperării. Notă de integritate: confirmarea livrărilor vine de la guvernul sud-coreean, nu dintr-un comunicat propriu al Nvidia emis după demisie; cifrele despre proiectele chineze (peste 3 mld. $) sunt relatate de TechCrunch pe baza analizei Reuters, fără o relatare independentă citită integral aici.</p>
-              <ul class="sources">
-              <li><a href="https://techcrunch.com/2026/11/14/asian-governments-react-to-nvidia-ceo-jensen-huangs-exit/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>TechCrunch — „Asian governments react to Nvidia CEO Jensen Huang's exit” (14 nov 2026, 16:34 UTC; relatarea curatoriată: reacțiile guvernelor asiatice; Coreea de Sud — 260.000 GPU-uri reconfirmate; China — respingerea acuzațiilor; proiecte chineze de peste 3 mld. $ expuse)<span class="host">techcrunch.com</span></a></li>
-              <li><a href="https://www.reuters.com/world/asia-pacific/south-korea-says-nvidia-will-keep-gpu-pledges-after-huangs-resignation-2026-11-13/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Reuters — „South Korea says Nvidia will keep GPU pledges after Huang's resignation” (13 nov 2026; confirmare independentă: ministrul Bae Kyung-hoon, 260.000 GPU-uri, proiecte comune continuă)<span class="host">reuters.com</span></a></li>
-              <li><a href="https://www.mt.co.kr/en/tech/2026/11/13/2026111318065591045" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Money Today — „Deputy PM Bae: 'Nvidia cooperation will continue despite Jensen Huang's resignation'” (13 nov 2026; confirmare independentă, via Yonhap: postarea ministrului, ședința de urgență din 13 nov, planul de 50.000 GPU-uri)<span class="host">mt.co.kr</span></a></li>
-              <li><a href="https://en.sedaily.com/business/2026/11/13/nvidia-reaffirms-260000-gpu-supply-to-korea-despite-huangs" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Seoul Economic Daily — „Nvidia Reaffirms 260,000 GPU Supply to Korea Despite Huang's Exit” (13 nov 2026; confirmare independentă: reconfirmarea la nivel de companie)<span class="host">en.sedaily.com</span></a></li>
-              </ul>
-            </div>
-            <div class="adverse">
-              <p class="sec-label">Tabăra adversă</p>
-              <p>Ministrul taiwanez al economiei, Kung Ming-shin, a spus că plecarea lui Huang e puțin probabil să schimbe semnificativ creșterea industriei globale de AI, potrivit presei locale citate de TechCrunch — o poziție calmă, opusă temerilor că demisia ar destabiliza ecosistemul AI. (https://techcrunch.com/2026/11/14/asian-governments-react-to-nvidia-ceo-jensen-huangs-exit/)</p>
-            </div>
-            <div class="impact">
-              <span class="badge">Impact direct</span>
-              <p>Impact direct: minim azi — nicio acțiune cerută de la el; livrările de cipuri către Coreea de Sud sunt reconfirmate, iar instrumentele AI pe care le folosește zilnic nu sunt afectate imediat. Relevanță de context: lanțul de aprovizionare AI — hardware, finanțare, controale de export — e în plină reașezare după plecarea lui Huang; de urmărit rezultatele Nvidia din 17 noiembrie și poziția oficială a interimatului Colette Kress privind angajamentele de livrare și investiții.</p>
-            </div>
-          </article>
-
-        <!-- 3 · 14 nov · 19:00 -->
-          <article id="stire-223" data-cats="securitate romania" data-sev="amber" data-subiect="alerte aeriene la Tulcea">
-            <div class="a-meta">
-              <span class="a-time">14 nov · 19:00</span>
-              <span class="a-cat">Securitate &amp; NATO · România</span>
-              <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
-              <a class="cont-pill" href="#stire-127" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
-              <span class="subj-pill">alerte aeriene la Tulcea</span>
-              <span class="a-num">#3 / 17</span>
-            </div>
-            <h2>Țintă aeriană lângă Insula Șerpilor: F-16 ridicate de la Fetești și două mesaje RO-Alert în Tulcea — a treia alertă în mai puțin de opt ore</h2>
-            <div class="followup">
-              <span class="tag">Urmare la</span>
-              <p><a href="#stire-127">„Alertă aeriană lângă Sulina, în timpul vizitei von der Leyen: țintă detectată la ~30 km NE, două F-16 ridicate, RO-Alert în estul Tulcei” — luni, 9 noiembrie 2026, ora 19:00.</a></p>
-            </div>
-            <div class="sec">
-              <p class="sec-label">Ce s-a întâmplat</p>
-              <p>În noaptea de vineri spre sâmbătă și sâmbătă dimineața, 13–14 noiembrie 2026, radarele Ministerului Apărării Naționale au detectat ținte aeriene în zona Insulei Șerpilor, în Marea Neagră. Două aeronave F-16 ale Forțelor Aeriene Române, aflate în serviciul de luptă Poliție Aeriană, au decolat de la Baza 86 Aeriană Fetești. Pentru populația din județul Tulcea au fost transmise trei mesaje RO-Alert în mai puțin de opt ore: vineri, 13 noiembrie, la ora 21:53, pentru nordul județului, după detectarea unei ținte la sud-est de Insula Șerpilor, în spațiul aerian ucrainean; sâmbătă, 14 noiembrie, la ora 04:45, pentru estul județului, și la ora 05:39, pentru nordul județului. Alerta aeriană de sâmbătă dimineața a încetat la ora 05:52, cea de vineri seară la ora 22:58. MApN nu a raportat pătrunderi în spațiul aerian național sau fragmente căzute pe teritoriul României și nu a precizat tipul țintei și nici distanța față de granița României.</p>
-            </div>
-            <div class="sec">
-              <p class="sec-label">De ce contează</p>
-              <p>Alertele aeriene în Delta Dunării au devenit aproape zilnice — a șaptea zi cu alertă în nordul Dobrogei din 6 noiembrie — iar noaptea trecută a adus trei în mai puțin de opt ore, cu F-16 ridicate de fiecare dată. E cel mai apropiat de România front al războiului din Ucraina: Insula Șerpilor se află la circa 45 de kilometri de țărmurile României și Ucrainei, iar incidentele se înmulțesc exact în apele și în spațiul aerian de lângă granița maritimă românească — vineri seară, tot în aceeași zonă, cargoul Larissa 1 a fost lovit de o dronă în apele teritoriale ale României. Pentru el, ca IT incident Manager, e un semnal de presiune continuă, nu un incident izolat: alertele se repetă, iar răspunsul — ridicare de F-16 și avertizare a populației — e acum rutină operațională.</p>
-            </div>
-            <div class="verify">
-              <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
-              <p>Verdict: sursă primară + confirmat. MApN (sursă primară, Informație de presă nr. 367, 14 noiembrie 2026) — țintă aeriană detectată de radare în zona Insulei Șerpilor; două F-16 ridicate de la Baza 86 Fetești; mesaje RO-Alert la 04:45 (estul Tulcei) și 05:39 (nordul Tulcei); alerta încetată la 05:52; comunicatul nu precizează tipul țintei și nici distanța față de graniță. G4Media (14 noiembrie 2026, sursă curatoriată din lista monitorizată) a relatat evenimentul cu același conținut. Digi24 (14 noiembrie 2026) — confirmare independentă: trei mesaje RO-Alert în Tulcea în mai puțin de șase ore, două F-16 ridicate. Antena 3 (14 noiembrie 2026) — confirmare independentă: țintă aeriană în zona Insulei Șerpilor, mesaj RO-Alert în Tulcea, două F-16 ridicate. Notă de integritate: unele relatări descriu ținta drept „dronă", în timp ce comunicatul oficial MApN folosește formularea „țintă aeriană" — natura exactă a obiectului rămâne neprecizată oficial; domeniile g4media.ro și digi24.ro nu pot fi citite direct din acest mediu (blocaj de policy la citirea paginii), așa că verificarea se sprijină pe comunicatul MApN și pe relatările accesibile integral.</p>
-              <ul class="sources">
-              <li><a href="https://flashromania.ro/ro-alert-tulcea-13-14-noiembrie-2026-alerta-aeriana-insula-serpilor/" target="_blank" rel="noopener">Flash Romania — „RO-Alert Tulcea: trei alerte aeriene în opt ore, 13–14 noiembrie" (14 nov 2026, 09:50; trei mesaje RO-Alert între 13 nov 21:53 și 14 nov 05:39, de fiecare dată cu două F-16 ridicate de la Fetești; a șaptea zi cu alertă în nordul Dobrogei din 6 noiembrie; MApN nu a raportat pătrunderi în spațiul aerian național sau fragmente căzute pe teritoriul României)<span class="host">flashromania.ro</span></a></li>
-              <li><a href="https://tvuno.ro/2026/11/14/tinta-aeriana-langa-insula-serpilor-f-16-ridicate-de-la-fetesti-doua-mesaje-ro-alert-in-judetul-tulcea/" target="_blank" rel="noopener">TV Uno — „Țintă aeriană lângă Insula Șerpilor: F-16 ridicate de la Fetești, două mesaje RO-Alert în județul Tulcea" (14 nov 2026, 10:24; F-16 ridicate de la Fetești, RO-Alert la 04:45 (estul Tulcei) și 05:39 (nordul Tulcei), alerta încetată la 05:52; notează diferența de formulare — unele informări spun „dronă", comunicatul MApN spune „țintă aeriană")<span class="host">tvuno.ro</span></a></li>
-              <li><a href="https://condica.ro/stire/tinta-aeriana-detectata-langa-insula-serpilor-doua-f-16-au-decolat" target="_blank" rel="noopener">Condica — „Țintă aeriană detectată lângă Insula Șerpilor; două F-16 au decolat" (agregator) (14 nov 2026; listează 20 de surse cu același conținut, între care G4Media (sursă curatoriată din lista monitorizată), Digi24, Antena 3, Mediafax și Agerpres: țintă aeriană lângă Insula Șerpilor, două F-16 de la Fetești, mesaje RO-Alert în Tulcea)<span class="host">condica.ro</span></a></li>
-              </ul>
-            </div>
-            <div class="impact">
-              <span class="badge">Impact direct</span>
-              <p>Impact direct: minim — alertele vizează județul Tulcea, departe de sudul țării; nu s-au raportat pătrunderi în spațiul aerian național sau fragmente căzute pe teritoriul României. Relevanță de context: pentru vacanța de Crăciun în România (22–31 decembrie) și pentru zona lui profesională — presiunea aeriană aproape zilnică la granița maritimă a României, cu F-16 ridicate și populație avertizată, e un semnal de urmărit, nu un incident izolat: a șaptea zi cu alertă din 6 noiembrie.</p>
-            </div>
-          </article>
-
-        <!-- 4 · 14 nov · 19:00 -->
-          <article id="stire-224" data-cats="securitate" data-sev="green" data-subiect="formatul E5 pentru negocierile cu Rusia">
-            <div class="a-meta">
-              <span class="a-time">14 nov · 19:00</span>
-              <span class="a-cat">Securitate &amp; NATO</span>
-              <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
-              <a class="cont-pill" href="#stire-156" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
-              <span class="subj-pill">formatul E5 pentru negocierile cu Rusia</span>
-              <span class="a-num">#4 / 17</span>
-            </div>
-            <h2>Liderii UE au decis formatul E5 pentru negocierile cu Rusia: Germania, Franța, Marea Britanie, Italia și Polonia vorbesc pentru Europa, alături de Comisie și Consiliu</h2>
-            <div class="followup">
-              <span class="tag">Urmare la</span>
-              <p><a href="#stire-156">„Prima zi a negocierilor de pace de la Abu Dhabi s-a încheiat fără acord; Zelenski cere Europei un reprezentant unic până la sfârșitul lui noiembrie” — miercuri, 11 noiembrie 2026, ora 10:00.</a></p>
-            </div>
-            <div class="sec">
-              <p class="sec-label">Ce s-a întâmplat</p>
-              <p>Liderii Uniunii Europene au decis vineri, 13 noiembrie, la summitul informal de la Dublin, cine va reprezenta Europa la viitoarele negocieri de pace pentru Ucraina: formatul E5 — oficiali de securitate națională din Germania, Franța, Marea Britanie, Italia și Polonia — alături de reprezentanți ai Comisiei Europene și ai Consiliului European. Președintele Consiliului European, António Costa, a anunțat după summit că Bruxellesul va trimite diplomați din cele cinci țări și din instituțiile UE la următoarea rundă de discuții cu Rusia. Președintele Volodimir Zelenski și emisarul american Jared Kushner au confirmat că Europa va participa direct la următoarea rundă de negocieri, după ce până acum discuțiile s-au purtat în format trilateral SUA–Ucraina–Rusia. Decizia a dominat un summit convocat inițial pentru inteligența artificială. Nu au fost anunțate data, locul și nivelul reprezentanților.</p>
-            </div>
-            <div class="sec">
-              <p class="sec-label">De ce contează</p>
-              <p>Pentru prima dată, Europa are o formulă agreată prin care intră la masa negocierilor pentru Ucraina — până acum, discuțiile de la Abu Dhabi s-au purtat fără europeni, iar Zelenski ceruse Europei un reprezentant până la sfârșitul lui noiembrie. Formatul E5 înseamnă că poziția europeană va fi negociată de cele cinci mari capitale plus instituțiile de la Bruxelles, nu de toate cele 27 de state membre — o alegere care dă viteză, dar lasă în afară statele mai mici, inclusiv cele baltice, direct expuse. Pentru zona lui profesională — securitatea Flancului estic și a Mării Negre — contează cine și cum negociază garanțiile de securitate: următorul test e întâlnirea Trump–Putin de la Shenzhen, din 18–19 noiembrie, pe care liderii europeni o privesc cu îngrijorarea unui acord încheiat peste capul țărilor direct vizate.</p>
-            </div>
-            <div class="verify">
-              <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
-              <p>Verdict: confirmat. Politico Europe (13 noiembrie 2026, 19:49; sursă curatoriată din lista monitorizată) — liderii UE au convenit formatul E5: oficiali de securitate națională din Germania, Franța, Marea Britanie, Italia și Polonia, plus Comisia Europeană și Consiliul European, vor reprezenta blocul la viitoarele negocieri; subiectul a fost adăugat pe agendă la cererea premierului italian Giorgia Meloni; cancelarul german Friedrich Merz ar fi preferat inițial un grup mai restrân Berlin–Paris–Londra, iar șefa diplomației europene, Kaja Kallas, a susținut că ea e cea mai potrivită să conducă discuțiile. France 24 (relatare live, 13 noiembrie 2026) — președintele Consiliului European, António Costa, a anunțat trimiterea diplomaților din cele cinci țări și din instituțiile UE la următoarea rundă; Zelenski și Kushner au confirmat participarea Europei. Euronews (13 noiembrie 2026) — disputa privind reprezentarea Europei a dominat summitul de la Dublin, convocat inițial pentru inteligența artificială; Zelenski a cerut europenilor să decidă cine îi reprezintă până la sfârșitul lunii.</p>
-              <ul class="sources">
-              <li><a href="https://dailyguardian.eu/eu-deal-on-ukraine-talks-overshadows-ai-focused-summit-in-dublin-politico/" target="_blank" rel="noopener">Politico Europe — „EU deal on Ukraine talks overshadows AI-focused summit in Dublin" (republicare Daily Guardian) (13 nov 2026, 19:49; formatul E5, cererea Meloni, preferința inițială a lui Merz pentru trio, poziția Kallas; întâlnirea Trump–Putin la Shenzhen, 18–19 nov)<span class="host">dailyguardian.eu</span></a></li>
-              <li><a href="https://osint-baltic.com/gulf-of-finland-corvette-en/" target="_blank" rel="noopener">OSINT Baltic — „Under Escort to St Petersburg: Security Watch, 14 November, 14:00" (14 nov 2026; confirmare independentă: la 13 nov, la Dublin, liderii UE au decis ca Europa să fie reprezentată la negocierile pentru Ucraina de instituțiile UE și de E5 (Marea Britanie, Franța, Germania, Italia, Polonia); garanțiile de securitate, prin Coaliția de Voință în coordonare cu NATO; statele baltice rămân în afara formatului)<span class="host">osint-baltic.com</span></a></li>
-              <li><a href="https://laveduta.news/article/italy-five-power-ukraine-format-emilia-romagna" target="_blank" rel="noopener">La Veduta — „Italy Named to Europe's Five-Power Ukraine Table as Dublin Summit Turns to Peace" (14 nov 2026; citează Politico Europe și France 24: președintele Consiliului European, António Costa, a anunțat vineri trimiterea diplomaților din cele cinci țări și din instituțiile UE la următoarea rundă de discuții; Zelenski și Jared Kushner au confirmat participarea Europei; nu sunt precizate data și locul negocierilor)<span class="host">laveduta.news</span></a></li>
-              </ul>
-            </div>
-            <div class="adverse">
-              <p class="sec-label">Tabăra adversă</p>
-              <p>Șefa diplomației europene, Kaja Kallas, a susținut că ea e cea mai potrivită să conducă discuțiile în numele UE, iar cancelarul german Friedrich Merz a preferat inițial un grup mai restrân, format doar din Berlin, Paris și Londra. Ambele poziții au fost depășite de compromisul E5. (<a href="https://dailyguardian.eu/eu-deal-on-ukraine-talks-overshadows-ai-focused-summit-in-dublin-politico/" target="_blank" rel="noopener">Politico Europe, 13 noiembrie 2026</a>)</p>
-            </div>
-            <div class="impact">
-              <span class="badge">Impact direct</span>
-              <p>Impact direct: minim — decizia privește formatul diplomatic al negocierilor, fără efect imediat asupra vieții de zi cu zi. Relevanță de context: formatul decide cine negociază garanțiile de securitate pentru Ucraina și Flancul estic — subiectul central al arcului de securitate urmărit zilnic; de urmărit întâlnirea Trump–Putin de la Shenzhen (18–19 noiembrie) și următoarea rundă de negocieri, unde formatul E5 va fi testat prima dată.</p>
-            </div>
-          </article>
-
-        <!-- 5 · 14 nov · 18:00 -->
-          <article id="stire-222" data-cats="tech" data-sev="green" data-subiect="amendă Meta 805 milioane €">
-            <div class="a-meta">
-              <span class="a-time">14 nov · 18:00</span>
-              <span class="a-cat">Tech &amp; AI</span>
-              <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
-              <span class="subj-pill">amendă Meta 805 milioane €</span>
-              <span class="a-num">#5 / 17</span>
-            </div>
-            <h2>Italia amendează Meta cu 805 milioane €: aplicația Facebook a accesat fotografiile utilizatorilor Android fără consimțământ specific</h2>
-            <div class="sec">
-              <p class="sec-label">Ce s-a întâmplat</p>
-              <p>Autoritatea italiană pentru protecția datelor (Garante) a amendat sâmbătă, 14 noiembrie 2026, Meta Platforms Ireland Limited cu 805 milioane de euro (circa 887 de milioane de dolari, aproximativ 0,47% din cifra de afaceri globală a grupului). Motivul: aplicația Facebook pentru Android a accesat fotografii, videoclipuri și metadatele aferente din galeriile a circa 20 de milioane de utilizatori italieni, fără consimțământ specific și fără informare adecvată, prin funcția „Obțineți sugestii din galerie când navigați pe Facebook”, activă din 2023 și pornită implicit. Ancheta a pornit în iulie 2025, după o sesizare a Centrului de Protecție a Consumatorilor din Bolzano. În 60 de zile, Meta trebuie să dezactiveze implicit funcția și să ceară consimțământ separat și specific, să comunice Garante în 30 de zile măsurile pornite și în 90 de zile măsurile adoptate. Temeiul încălcării e articolul 122 din Codul italian de confidențialitate, care transpune directiva europeană ePrivacy; Garante a respins și excepția de necompetență invocată de Meta în favoarea autorității irlandeze, pentru că ePrivacy nu prevede mecanismul ghișeului unic.</p>
-            </div>
-            <div class="sec">
-              <p class="sec-label">De ce contează</p>
-              <p>Pentru un utilizator zilnic de Facebook pe Android, în Europa, e cea mai mare amendă de confidențialitate impusă vreodată de o autoritate italiană unui gigant tech — și stabilește că galeria telefonului face parte din sfera privată a persoanei: orice acces cere consimțământ liber și informat, indiferent dacă datele sunt transmise mai departe sau dacă există un prejudiciu. Meta e compania din spatele asistentului Muse, pe care îl folosește zilnic, și a aplicației Facebook, deci direcția aplicării regulilor europene de confidențialitate asupra produselor Meta îl privește direct. De urmărit: Garante și-a rezervat dreptul de a evalua separat funcția nouă, lansată în 2026, care procesează în cloud conținutul galeriilor — exact unghiul care ar putea atinge folosirea fotografiilor personale pentru antrenarea modelelor AI.</p>
-            </div>
-            <div class="verify">
-              <p class="sec-label">Verificare <span class="status">Sursă primară + confirmat</span></p>
-              <p>Verdict: sursă primară + confirmat. Garante (sursă primară, comunicat 14 noiembrie 2026, Roma, docweb 10321080) — amenda de 805 milioane €, funcția de sugestii din galerie activă din 2023, circa 20 de milioane de utilizatori Android în Italia, 60 de zile pentru dezactivarea implicită și consimțământ separat, articolul 122 din Codul de confidențialitate. Reuters (14 noiembrie 2026, 13:07 UTC) — confirmare independentă: amenda, funcția prin care Facebook sugera conținut din galeriile personale, termenul de 60 de zile; ancheta, începută în 2025, nu a acoperit posibila folosire a conținutului pentru antrenarea modelelor AI, practică negată de Meta. AFP (14 noiembrie 2026, via Rapporteur) — confirmare: amenda e printre cele mai mari impuse vreodată de o autoritate italiană unui gigant tech; amintește și amenda de 25 de miliarde de dolari din New Mexico, de la finalul lui octombrie. Notă de integritate: câteva relatări de dimineață (TokenPost, Crypto Briefing) au semnalat că anunțul nu apăruse încă în registrul public al Garante; documentul oficial (docweb 10321080) și relatările Reuters/AFP de după-amiază confirmă decizia — verdictul se bazează pe documentul primar și pe cele două agenții.</p>
-              <ul class="sources">
-                <li><a href="https://www.garanteprivacy.it/home/docweb/-/docweb-display/docweb/10321080" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Garante — „Facebook: il Garante Privacy sanziona Meta per 805 milioni di euro" (14 nov 2026, sursă primară)<span class="host">garanteprivacy.it</span></a></li>
-                <li><a href="https://www.reuters.com/world/italy-fines-meta-887-million-over-android-users-data-access-2026-11-14/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Reuters — „Italy fines Meta $887 million over Android users' data access" (14 nov 2026, 13:07 UTC)<span class="host">reuters.com</span></a></li>
-                <li><a href="https://www.rapporteur.com/news/italy-fines-meta-880mn-over-photo-privacy-authority/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Rapporteur (AFP) — „Italy fines Meta €805mn over photo privacy: authority" (14 nov 2026)<span class="host">rapporteur.com</span></a></li>
-              </ul>
-            </div>
-            <div class="opposing">
-              <p class="sec-label">Tabăra adversă</p>
-              <p><strong>Meta</strong> — neagă că ar fi folosit conținutul din galerii pentru antrenarea modelelor AI — ancheta Garante nu a examinat acest aspect — și a invocat competența autorității irlandeze, excepție respinsă de Garante pentru că directiva ePrivacy nu prevede mecanismul ghișeului unic. Compania nu a comentat încă public decizia și o poate contesta. (<a href="https://www.reuters.com/world/italy-fines-meta-887-million-over-android-users-data-access-2026-11-14/" target="_blank" rel="noopener">Reuters, 14 noiembrie 2026</a>)</p>
-            </div>
-            <div class="impact">
-              <span class="badge">Impact direct</span>
-              <p>Impact direct: minim — decizia privește utilizatorii italieni și funcția de sugestii din galerie a aplicației Facebook pentru Android; nicio acțiune necesară acum. Relevanță de context: folosește zilnic Facebook pe Android și produse Meta; în 60 de zile funcția trebuie dezactivată implicit și consimțământul cerut separat — de urmărit dacă Meta extinde schimbarea la nivel european și evaluarea separată a funcției din 2026 care procesează galeriile în cloud.</p>
-            </div>
-          </article>
-
-        <!-- 6 · 14 nov · 17:00 -->
-          <article id="stire-221" data-cats="securitate romania" data-sev="amber" data-subiect="dronă lovește navă în apele României">
-            <div class="a-meta">
-              <span class="a-time">14 nov · 17:00</span>
-              <span class="a-cat">Securitate &amp; NATO · România</span>
-              <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
-              <a class="cont-pill" href="#stire-134" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
-              <span class="subj-pill">dronă lovește navă în apele României</span>
-              <span class="a-num">#6 / 17</span>
-            </div>
-            <h2>Dronă lovește cargoul Larissa 1 în apele teritoriale ale României, lângă Sfântu Gheorghe — al doilea caz confirmat în apele românești; F-16 ridicate, RO-Alert în Tulcea</h2>
-            <div class="followup">
-              <span class="tag">Urmare la</span>
-              <p><a href="#stire-134">„Rusia anunță că a lovit două nave de marfă și un petrolier în Marea Neagră, în apropiere de Odesa” — marți, 10 noiembrie 2026, ora 08:00.</a> (Un nou episod al campaniei de lovituri asupra navelor comerciale din Marea Neagră — de data asta chiar în apele teritoriale ale României.)</p>
-            </div>
-            <div class="sec">
-              <p class="sec-label">Ce s-a întâmplat</p>
-              <p>Cargoul Larissa 1, sub pavilion Palau, a fost lovit de o dronă în noaptea de vineri spre sâmbătă, 13 spre 14 noiembrie, în jurul orei 21:40, în apele teritoriale ale României, la aproximativ 6,8 mile marine (circa 12–13 kilometri) nord-est de Sfântu Gheorghe, județul Tulcea. Nava, construită în 1999, cu un deadweight de 17.064 de tone și administrată de companii din Turcia, se îndrepta spre rada portului Sulina, cu destinația finală Ucraina. Drona a avariat macaraua de marfă; comandantul a raportat autorităților navale de la Sulina că niciun marinar nu a fost rănit și că impactul nu a provocat incendiu. Ministrul Apărării, Ștefan-Radu Oprea, a confirmat sâmbătă, în Portul Militar Constanța, lovirea navei și a spus că nu poate oferi detalii despre proveniența dronei până la finalizarea verificărilor tehnice; ancheta e în desfășurare, iar MApN colaborează cu Marina Militară, Ministerul Afacerilor Interne și Paza de Coastă. Separat, în aceeași noapte și sâmbătă dimineața, radarele MApN au detectat o țintă aeriană în zona Insulei Șerpilor, iar două avioane F-16 românești au decolat de la Baza 86 Fetești pentru Poliție Aeriană; în nordul județului Tulcea au fost transmise mesaje RO-Alert (vineri la 21:53, sâmbătă la 04:45 și 05:39), iar alerta s-a încheiat la 05:52. Ministerul nu a anunțat public vreo legătură între ținta de lângă Insula Șerpilor și drona care a lovit nava.</p>
-            </div>
-            <div class="sec">
-              <p class="sec-label">De ce contează</p>
-              <p>Al doilea caz confirmat de navă comercială lovită în apele teritoriale ale României — după YARA J — și o escaladare directă a arcului urmărit aici: loviturile asupra navelor comerciale din Marea Neagră, care au dus deja NATO la patrule suplimentare și CSAT la accelerarea supravegherii maritime și a luptei anti-dronă. Pentru un IT incident Manager cu responsabilități pe Flancul estic, e un incident de securitate în apele teritoriale ale unui aliat NATO, cu F-16 ridicate și RO-Alert — exact tipul de eveniment care poate genera cerințe noi de raportare și fluxuri de date în zona lui de lucru. De urmărit: reuniunea miniștrilor apărării de marți și miercuri la Bruxelles, unde situația din Marea Neagră e pe agenda UE și NATO, și concluziile anchetei MApN privind proveniența dronei.</p>
-            </div>
-            <div class="verify">
-              <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
-              <p>Verdict: confirmat. Biziday (14 noiembrie 2026, 13:08 CET, relatarea curatoriată) — nava Larissa 1, sub pavilion Palau, lovită de o dronă la circa 13 km de Sfântu Gheorghe, în drum spre Sulina și mai departe spre Ucraina; ministrul Apărării confirmă că nu sunt victime și că impactul nu a fost urmat de incendiu. Digi24 (14 noiembrie 2026, citat de Xchg) — confirmarea MApN și declarația ministrului Oprea din Portul Militar Constanța. Antena 3 CNN (14 noiembrie 2026, citată de Ziua de Constanța) — nava și ora impactului, 21:40. Ziua de Constanța (14 noiembrie 2026, 08:36 UTC) — confirmare independentă: cargoul lovit la 6,8 mile marine nord-est de Sfântu Gheorghe; separat, ținta aeriană lângă Insula Șerpilor, două F-16 de la Fetești, RO-Alert în Tulcea. Maritime.bg (14 noiembrie 2026, 10:00 EET) — confirmare independentă: Larissa 1 (IMO 9154268, construit 1999, 17.064 dwt), lovit la 6,8 mile marine nord-est de Sfântu Gheorghe; al doilea caz confirmat în apele teritoriale ale României, după YARA J. Notă: proveniența dronei nu e stabilită — ministrul a refuzat atribuirea până la expertiză, iar MApN nu a anunțat public vreo legătură între drona care a lovit nava și ținta detectată lângă Insula Șerpilor.</p>
-              <ul class="sources">
-                <li><a href="https://www.biziday.ro/375944-2/?utm_source=rss&utm_medium=rss&utm_campaign=375944-2" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Biziday — nava Larissa 1, sub pavilion Palau, lovită de o dronă la circa 13 km de Sfântu Gheorghe (14 nov 2026; relatarea curatoriată, 13:08 CET)<span class="host">biziday.ro</span></a></li>
-                <li><a href="https://ziuaz.ro/articol/alerta-in-marea-neagra-nava-cargo-lovita-de-drona-langa-sfantu-gheorghe-mapn-a-detectat-o-tinta-aeriana-langa-insula-serpilor" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Ziua de Constanța — „Alertă în Marea Neagră: navă cargo lovită de dronă lângă Sfântu Gheorghe" (14 nov 2026; confirmare independentă)<span class="host">ziuaz.ro</span></a></li>
-                <li><a href="https://www.maritime.bg/158067/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Maritime.bg — Larissa 1 lovit la 6,8 mile marine nord-est de Sfântu Gheorghe (14 nov 2026; confirmare independentă)<span class="host">maritime.bg</span></a></li>
-                <li><a href="https://tvuno.ro/2026/11/14/nava-lovita-de-o-drona-in-marea-neagra-la-aproximativ-12-km-de-sfantu-gheorghe/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>TV Uno — „Navă lovită de o dronă în Marea Neagră, la aproximativ 12 km de Sfântu Gheorghe" (14 nov 2026)<span class="host">tvuno.ro</span></a></li>
-              </ul>
-            </div>
-            <div class="impact">
-              <span class="badge">Impact direct</span>
-              <p>Impact direct azi: minim personal — fără victime, fără impact personal sau asupra călătoriilor; relevanță profesională înaltă: incident de securitate în apele teritoriale ale României, pe arcul Marea Neagră urmărit în watch (drone doborâte de F-16 lângă Sulina, sesiunea NAC, patrule NATO suplimentare, CSAT din 22 octombrie). De urmărit: ancheta MApN privind proveniența dronei și reuniunea miniștrilor apărării de marți–miercuri la Bruxelles.</p>
-            </div>
-          </article>
-
-        <!-- 7 · 14 nov · 16:00 -->
-          <article id="stire-220" data-cats="belgia" data-sev="amber" data-subiect="criza bugetară belgiană">
-            <div class="a-meta">
-              <span class="a-time">14 nov · 16:00</span>
-              <span class="a-cat">Belgia</span>
-              <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
-              <span class="subj-pill">criza bugetară belgiană</span>
-              <span class="a-num">#7 / 17</span>
-            </div>
-            <h2>Criza bugetară belgiană: De Wever a discutat vineri seară cu vicepremierii; conducerea guvernului se reunește duminică, iar luni raportează regelui</h2>
-            <div class="sec">
-              <p class="sec-label">Ce s-a întâmplat</p>
-              <p>Premierul Bart De Wever a avut vineri seară, 13 noiembrie, discuții individuale cu vicepremierii despre economiile de circa 10 miliarde de euro până în 2029, menite să aducă deficitul Belgiei în limitele regulilor europene de cheltuieli. Conducerea guvernului se reunește duminică, 15 noiembrie, în formulă completă, iar luni, 16 noiembrie, De Wever raportează regelui Philippe progresul negocierilor. Joi, în parlament, De Wever a spus că speră să-i aducă regelui «un mesaj pozitiv» luni, deși a recunoscut că liderii de partid s-au arătat dispuși la concesii doar în principiu — «Sper că e adevărat».</p>
-            </div>
-            <div class="sec">
-              <p class="sec-label">De ce contează</p>
-              <p>Criza bugetară belgiană continuă direct pe agenda țării în care trăiește: bugetul 2027 decide taxe și servicii, iar fără un acord votat până la finalul anului Belgia intră în 2027 cu «douăsprezecimi» provizorii. Deficitul a ajuns la 5,2% din PIB (2025), față de plafonul UE de 3%, iar datoria a trecut de 110% din PIB — de aici presiunea Bruxelles-ului și miza celor 10 miliarde de euro.</p>
-            </div>
-            <div class="verify">
-              <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
-              <p>Verdict: confirmat. Belga, agenția națională de presă (via News Made Clear, 14 nov, 04:41 UTC) — discuțiile individuale de vineri seară și reuniunea de duminică a conducerii; Valyrian News Network (14 nov) — discuțiile de vineri s-au încheiat fără progres, următoarea întâlnire a conducerii e duminică; Palatul Regal (comunicat 6 nov, relatat de AP și Reuters) — raportul către rege, luni 16 nov; The Brussels Times (12 nov) — declarația din parlament de joi. Notă de integritate: articolul Brussels Times a fost editat în timpul citirii (o frază despre pregătirea următorilor pași «împreună cu partidele majorității vineri» a devenit «împreună cu partenerii de coaliție», fără menționarea zilei de vineri) — de aceea discuțiile de vineri NU sunt atribuite Brussels Times, ci Belga.</p>
-              <ul class="sources">
-                <li><a href="https://www.brusselstimes.com/belgium/2404343/de-wever-hopes-to-deliver-a-positive-message-to-the-king-on-monday" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>The Brussels Times — „De Wever hopes to deliver a 'positive message' to the king on Monday" (12 nov 2026)<span class="host">brusselstimes.com</span></a></li>
-                <li><a href="https://www.newsmadeclear.com/en/news/e150bed4-a73b-4b9a-8eb4-70cb568b4fc7" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>News Made Clear (Belga) — „De Wever holds talks with Belgian deputy prime ministers over budget cuts" (14 nov 2026)<span class="host">newsmadeclear.com</span></a></li>
-                <li><a href="https://vnn.valyrian.tech/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Valyrian News Network — „Belgium Budget Talks Stall Before De Wever's Monday Deadline" (14 nov 2026)<span class="host">vnn.valyrian.tech</span></a></li>
-                <li><a href="https://jbiznews.com/belgiums-de-wever-stays-king-philippe-rejects-resignation-orders-budget-talks-resumed/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>JBizNews — „Belgium's De Wever Stays: King Philippe Rejects Resignation, Orders Budget Talks Resumed" (6 nov 2026, pentru raportul de luni 16 nov din comunicatul Palatului Regal)<span class="host">jbiznews.com</span></a></li>
-              </ul>
-            </div>
-            <div class="adverse">
-              <p class="sec-label">Tabăra adversă</p>
-              <p>Pierre-Yves Dermagne, liderul grupului PS în Cameră, i-a spus lui De Wever în parlament că se comportă de parcă regele i-ar fi acceptat demisia. Barbara Pas (Vlaams Belang) a comparat ritmul procesului bugetar cu procesiunea lentă de la Echternach, iar Matti Vandemaele (Groen) a spus că guvernul «încă se chinuie și se ceartă».</p>
-            </div>
-            <div class="impact">
-              <span class="badge">Impact direct</span>
-              <p>Impact direct azi: minim — nicio decizie luată, niciun vot. Relevanță de context înaltă: luni, 16 noiembrie, e următorul punct de verificare — raportul către rege; dacă negocierile pică din nou, criza guvernamentală se redeschide, cu alegeri anticipate ca scenariu. De urmărit luni dimineață.</p>
-            </div>
-          </article>
-
-        <!-- 8 · 14 nov · 15:00 -->
-          <article id="stire-218" data-cats="securitate" data-sev="amber" data-subiect="atac cu drone în Marea Baltică">
-            <div class="a-meta">
-              <span class="a-time">14 nov · 15:00</span>
-              <span class="a-cat">Securitate &amp; NATO</span>
-              <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
-              <span class="subj-pill">atac cu drone în Marea Baltică</span>
-              <span class="a-num">#8 / 17</span>
-            </div>
-            <h2>Ucraina lovește cu drone o corvetă rusă în Golful Finlandei — primul atac asupra unei nave rusești în Marea Baltică</h2>
-            <div class="sec">
-              <p class="sec-label">Ce s-a întâmplat</p>
-              <p>Forțele de Apărare ale Finlandei au confirmat că au detectat o lovitură asupra unei nave de război rusești în Golful Finlandei, în dimineața zilei de miercuri 11 noiembrie. Serviciul de Securitate al Ucrainei (SBU) a revendicat atacul cu drone asupra corvetei Naro-Fominsk, o navă mică purtătoare de rachete Kalibr și Oniks din Flota Baltică a Rusiei, în cadrul unei operațiuni mai ample împotriva portului petrolier Ust-Luga. Finlanda și Estonia spun că situația de securitate rămâne stabilă și că nu există o amenințare militară imediată; potrivit presei estone, nava s-ar fi întors la Sankt Petersburg, iar amploarea pagubelor nu a fost verificată independent.</p>
-            </div>
-            <div class="sec">
-              <p class="sec-label">De ce contează</p>
-              <p>Războiul cu drone se extinde din Marea Neagră în Marea Baltică — prima lovitură ucraineană asupra unei nave rusești în această mare; drone ucrainene au intrat și în spațiul aerian al Finlandei și al țărilor baltice, iar NATO a trimis avioane de luptă ca răspuns. Continuă direct arcul amenințărilor hibride și al atacurilor cu drone asupra navelor, urmărit în pagină.</p>
-            </div>
-            <div class="verify">
-              <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
-              <p>Verdict: confirmat. Reuters (12 nov, relatarea originală pe baza declarației Forțelor de Apărare finlandeze) și Janes (12 nov, confirmare directă de la Forțele de Apărare finlandeze); sursa primară este declarația Forțelor de Apărare ale Finlandei. Revendicarea SBU este a unei părți implicate, nu o confirmare independentă, iar Ministerul rus al Apărării nu a confirmat public atacul.</p>
-              <ul class="sources">
-                <li><a href="https://www.defensenews.com/global/europe/2026/11/12/finland-says-it-detects-strike-on-russian-warship-in-baltic-sea/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Defense News — „Finland says it detects strike on Russian warship in Baltic Sea" (12 nov 2026)<span class="host">defensenews.com</span></a></li>
-                <li><a href="https://kwsn.com/2026/11/12/finland-says-it-detects-strike-on-russian-warship-in-baltic-sea/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Reuters, via KWSN — „Finland says it detects strike on Russian warship in Baltic Sea" (12 nov 2026; relatarea originală, pe baza declarației Forțelor de Apărare finlandeze)<span class="host">kwsn.com</span></a></li>
-                <li><a href="https://www.janes.com/defence-intelligence-insights/defence-news/sea/finland-detects-strike-on-russian-warship-ukraine-claims-attack" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Janes — „Finland detects strike on Russian warship; Ukraine claims attack" (12 nov 2026; confirmare directă de la Forțele de Apărare finlandeze)<span class="host">janes.com</span></a></li>
-              </ul>
-            </div>
-            <div class="impact">
-              <span class="badge">Impact direct</span>
-              <p>Impact direct minim — Finlanda și Estonia spun că nu există amenințare imediată; relevanță profesională de context înaltă: războiul cu drone ajunge în Marea Baltică și atinge spațiul aerian NATO, exact pe arcul hibrid urmărit.</p>
-            </div>
-          </article>
-
-        <!-- 9 · 14 nov · 15:00 -->
-          <article id="stire-219" data-cats="tech" data-sev="green" data-subiect="LangChain, evaluare 3 mld. $">
-            <div class="a-meta">
-              <span class="a-time">14 nov · 15:00</span>
-              <span class="a-cat">Tech &amp; AI</span>
-              <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
-              <span class="subj-pill">LangChain, evaluare 3 mld. $</span>
-              <span class="a-num">#9 / 17</span>
-            </div>
-            <h2>LangChain ridică 300 mil. $ la o evaluare de 3 mld. $ — platforma LangSmith devine «sistemul de operare» al agenților AI</h2>
-            <div class="sec">
-              <p class="sec-label">Ce s-a întâmplat</p>
-              <p>LangChain a anunțat pe 13 noiembrie o rundă Serie C de 300 de milioane de dolari la o evaluare de 3 miliarde de dolari, condusă de CapitalG (fondul de creștere al Alphabet), cu participarea GIC din Singapore, DFJ Growth, IVP și Sapphire Ventures; evaluarea este mai mult decât dublă față de 1,25 mld. $ de acum un an. Banii merg în LangSmith, platforma de rulare, îmbunătățire și guvernare a agenților AI în producție. Compania spune că peste 7.000 de organizații folosesc LangSmith (printre care Nvidia, Toyota, Salesforce, Workday) și că platforma procesează peste 1 miliard de evenimente pe zi; pe 20 noiembrie prezintă noi capabilități LangSmith.</p>
-            </div>
-            <div class="sec">
-              <p class="sec-label">De ce contează</p>
-              <p>Guvernarea agenților AI devine produs central — aceeași direcție urmărită în pagină (Guardian Agents de la Microsoft, ChatGPT Wallet, Walmart Agent Gateway): agenții autonomi au nevoie de control, observabilitate și limite. Pentru automatizările cu API-uri AI, LangSmith și LangGraph sunt tooling direct relevant.</p>
-            </div>
-            <div class="verify">
-              <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
-              <p>Verdict: confirmat. TechCrunch (13 nov, relatarea anunțului), Crunchbase News (13 nov) și The Wall Street Journal (primul care a relatat runda, 12 nov). Cifrele de utilizare (7.000 de organizații, 1 mld. de evenimente pe zi) sunt revendicări ale companiei, neauditate independent.</p>
-              <ul class="sources">
-                <li><a href="https://techcrunch.com/2026/11/13/ai-agent-startup-langchain-hits-3b-valuation/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>TechCrunch — „AI agent startup LangChain hits $3B valuation" (13 nov 2026; relatarea anunțului)<span class="host">techcrunch.com</span></a></li>
-                <li><a href="https://www.businesswire.com/news/home/20261113716429/en/LangChain-Raises-$300M-to-Enable-Every-Company-to-Own-Their-Intelligence" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Business Wire — „LangChain Raises $300M to Enable Every Company to Own Their Intelligence" (13 nov 2026; anunțul oficial al rundei)<span class="host">businesswire.com</span></a></li>
-                <li><a href="https://news.crunchbase.com/venture/biggest-startup-funding-rounds-agentic-ai-infrastructure-mirendil-mercor/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Crunchbase News — „Biggest Startup Funding Rounds" (13 nov 2026; confirmare independentă a rundei Serie C)<span class="host">news.crunchbase.com</span></a></li>
-                <li><a href="https://www.langchain.com/blog/series-c" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>LangChain Blog — anunțul Seriei C (13 nov 2026; sursa companiei: cifrele de utilizare LangSmith)<span class="host">langchain.com</span></a></li>
-              </ul>
-            </div>
-            <div class="impact">
-              <span class="badge">Impact direct</span>
-              <p>Impact direct minim azi; relevanță de context: confirmă maturizarea ecosistemului de agenți AI pe care se construiesc automatizările; de urmărit evenimentul din 20 noiembrie pentru noile capabilități LangSmith.</p>
-            </div>
-          </article>
-
-        <!-- 10 · 14 nov · 14:00 -->
-          <article id="stire-217" data-cats="tech" data-sev="green" data-subiect="pana Microsoft 365 rezolvată">
-            <div class="a-meta">
-              <span class="a-time">14 nov · 14:00</span>
-              <span class="a-cat">Tech &amp; AI</span>
-              <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
-              <a class="cont-pill" href="#stire-204" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
-              <span class="subj-pill">pana Microsoft 365 rezolvată</span>
-              <span class="a-num">#10 / 17</span>
-            </div>
-            <h2>Pana Microsoft 365 s-a încheiat: Microsoft declară serviciile complet restabilite după ~36 de ore; cauza a fost o problemă introdusă la o actualizare de capacitate a rețelei, nu un atac cibernetic și nu AI</h2>
-            <div class="followup">
-              <span class="tag">Urmare la</span>
-              <p><a href="#stire-204">„Pana Microsoft 365 intră în recuperare: Microsoft a finalizat remedieri pe o parte din infrastructură, cozile de e-mail revin spre normal; restabilirea completă, încă neconfirmată” — vineri, 13 noiembrie 2026, ora 16:00.</a> (Închiderea firului: după recuperarea parțială de ieri, Microsoft declară acum incidentul remediat și numește cauza preliminară.)</p>
-            </div>
-            <div class="sec">
-              <p class="sec-label">Ce s-a întâmplat</p>
-              <p>Microsoft a declarat sâmbătă, 14 noiembrie, la 04:17 UTC, că incidentul Microsoft 365 (MO1550821) / Exchange Online (EX1550543) este remediat: serviciile din mediile afectate anterior și-au revenit complet, iar cozile de e-mail întârziate au fost procesate. Pana a început joi, 12 noiembrie, la 16:17 UTC, și a afectat Outlook, Teams, Copilot, SharePoint, Intune și alte servicii în peste 70 de țări, timp de circa 36 de ore. Microsoft spune că problema a fost introdusă în timpul unei actualizări anterioare a capacității rețelei și a ieșit la suprafață după o schimbare ulterioară de rețea; compania a precizat explicit că a fost „o problemă tehnică, fără legătură cu activitatea cibernetică sau cu AI / agenții”.</p>
-            </div>
-            <div class="sec">
-              <p class="sec-label">De ce contează</p>
-              <p>Închide arcul celei mai mari pene enterprise urmărite în această săptămână — după cardurile din 12 noiembrie seara și 13 noiembrie (11:00 și 16:00), acum există confirmarea finală a restabilirii și cauza preliminară numită. Pentru un IT incident Manager, cauza și cronologia sunt material de referință: o schimbare de rețea aparent minoră, moștenită dintr-o actualizare de capacitate, a ținut jos suita de productivitate a sute de milioane de utilizatori timp de o zi și jumătate. Raportul post-incident preliminar e promis în două zile lucrătoare, cel final în cinci — acela va fi testul de responsabilitate al incidentului.</p>
-            </div>
-            <div class="verify">
-              <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
-              <p>Verdict: confirmat. BBC Business (14 noiembrie 2026) — „Microsoft says Outlook and Teams outage is fully resolved”: confirmă restabilirea completă și scuzele Microsoft. The Verge (14 noiembrie 2026, relatare de Tom Warren) — pana s-a încheiat după aproape două zile; cauza: problemă de rețea legată de o actualizare anterioară de capacitate; legătura cu schimbări de configurare Azure VNet nu e confirmată public de Microsoft. Microsoft 365 Status (@MSFT365Status, sursă primară, 14 nov, 04:17 UTC) — „We have completed our efforts to address the underlying issue of the incident and restored service to the remaining impacted customers and regions”, incident MO1550821. Digital Trends (14 noiembrie 2026) — confirmare independentă: servicii restabilite după peste 24 de ore de întrerupere, peste 7,4 milioane de raportări pe Downdetector; cauza: actualizare de capacitate a rețelei expusă de o schimbare ulterioară; nicio dovadă de activitate malițioasă.</p>
-              <ul class="sources">
-                <li><a href="https://www.digitaltrends.com/computing/microsoft-365-outage-resolved/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Digital Trends — „Microsoft 365 outage resolved” (14 nov 2026; confirmare independentă: servicii restabilite după peste 24 de ore de întrerupere, peste 7,4 milioane de raportări pe Downdetector; cauza: actualizare de capacitate a rețelei expusă de o schimbare ulterioară; nicio dovadă de activitate malițioasă)<span class="host">digitaltrends.com</span></a></li>
-                <li><a href="https://status.cloud.microsoft/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Microsoft 365 Status — pagina oficială de status Microsoft (incident MO1550821; sursă primară, 14 nov, 04:17 UTC: incidentul e remediat, serviciile restabilite pentru clienții și regiunile rămase afectate)<span class="host">status.cloud.microsoft</span></a></li>
-              </ul>
-            </div>
-            <div class="impact">
-              <span class="badge">Impact direct</span>
-              <p>Impact direct minim azi — e sâmbătă, zi liberă, iar poșta personală e pe Gmail, nu pe Outlook; serviciile sunt din nou funcționale, iar e-mailurile întârziate din timpul penei pot sosi în continuare cu întârziere. Relevanță profesională: închiderea incidentului, cauza preliminară numită și calendarul raportului post-incident (preliminar în două zile lucrătoare, final în cinci).</p>
-            </div>
-          </article>
-
-        <!-- 11 · 14 nov · 13:00 -->
-          <article id="stire-215" data-cats="securitate" data-sev="amber" data-subiect="Donbas pentru aderarea la NATO">
-            <div class="a-meta">
-              <span class="a-time">14 nov · 13:00</span>
-              <span class="a-cat">Securitate &amp; NATO</span>
-              <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
-              <span class="spot-tag">Știrea zilei</span>
-              <a class="cont-pill" href="#stire-206" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
-              <span class="subj-pill">Donbas pentru aderarea la NATO</span>
-              <span class="a-num">#11 / 17</span>
-            </div>
-            <h2>SUA au pus pe masă retragerea Ucrainei din Donbas în schimbul aderării la NATO, spune Zelenski — prima dată când Washingtonul ridică ideea</h2>
-            <div class="followup">
-              <span class="tag">Urmare la</span>
-              <p><a href="#stire-206">„Kremlinul se eschivează după anunțul că Europa intră la masa negocierilor pentru Ucraina; Kievul: restricțiile Starshield continuă și azi” — vineri, 13 noiembrie 2026, ora 18:00.</a> (Continuarea firului negocierilor de pace: după rundele de la Abu Dhabi și anunțul participării europene la masă.)</p>
-            </div>
-            <div class="sec">
-              <p class="sec-label">Ce s-a întâmplat</p>
-              <p>Președintele Volodimir Zelenski a dezvăluit sâmbătă, 14 noiembrie, că negociatorii americani Jared Kushner și Steve Witkoff au întrebat, pentru prima dată, dacă Ucraina ar fi dispusă să-și retragă trupele din Donbas în schimbul aderării la NATO: „The Americans raised a question: 'What if Ukraine joins NATO? Would Ukraine withdraw from Donbas?' This was the first time this had been raised". Întrebarea a venit după două zile de negocieri mediate de SUA la Abu Dhabi și după întâlnirile separate ale emisarilor cu Putin la Moscova și cu Zelenski la Dublin. Zelenski a spus că nu va ceda teritoriu și că ar supune o astfel de propunere referendumului doar dacă ar include garanții concrete de securitate din partea NATO și a UE, o armată ucraineană puternică, fără constrângeri, și fonduri pentru reconstrucție — fără recunoașterea teritoriilor ocupate ca rusești. El a mai spus că Rusia a respins la Abu Dhabi propunerea unui armistițiu vizând țintele energetice.</p>
-            </div>
-            <div class="sec">
-              <p class="sec-label">De ce contează</p>
-              <p>NATO revine pe agenda negocierilor de pace după ce oficialii americani spuseseră anterior că aderarea Ucrainei e scoasă de pe masă — o răsturnare care schimbă termenii oricărui acord și, implicit, arhitectura de securitate a Flancului estic. Pentru un IT incident Manager, orice decizie privind garanții de tip Articol 5 pentru Ucraina ar remodela postura alianței și cerințele operaționale din zona lui profesională directă.</p>
-            </div>
-            <div class="verify">
-              <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
-              <p>Verdict: confirmat. BBC News (14 nov 2026, relatarea curatoriată) — declarațiile lui Zelenski de sâmbătă; AFP (14 nov 2026) — aceeași relatare, cu respingerea de către Rusia a armistițiului energetic; Politico Europe (14 nov 2026) — „US suggested Ukraine could give up Donbas for NATO membership, Zelenskyy says", cu precizarea că Zelenski cere garanții concrete și că nu există încă detalii; AAP (14 nov 2026) — confirmare independentă. Notă de integritate: formularea exactă a ofertei americane diferă între cele două relatări ale lui Zelenski însuși — în postarea Telegram din 10 noiembrie el a scris că SUA au întrebat dacă Kievul ar „schimba Donbasul pe securitate", nu aderare formală la NATO, ci „ceva similar"; Casa Albă și Departamentul de Stat nu au comentat public până acum.</p>
-              <ul class="sources">
-                <li><a href="https://worldrightnowlive.com/story/us-has-floated-ukraine-ceding-donbas-for-nato-membership-zelensky-says" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>BBC News, via World Right Now — „US floats Donbas withdrawal in exchange for Nato membership" (14 nov 2026)<span class="host">worldrightnowlive.com</span></a></li>
-                <li><a href="https://www.rapporteur.com/news/us-proposes-ukraine-cede-territory-in-exchange-for-joining-nato-zelenskyy/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>AFP, via Rapporteur — „US proposes Ukraine cede territory in exchange for joining NATO: Zelenskyy" (14 nov 2026)<span class="host">rapporteur.com</span></a></li>
-                <li><a href="https://dailyguardian.eu/us-suggested-ukraine-could-give-up-donbas-for-nato-membership-zelenskyy-says-politico/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Politico Europe, via Daily Guardian — „US suggested Ukraine could give up Donbas for NATO membership, Zelenskyy says" (14 nov 2026)<span class="host">dailyguardian.eu</span></a></li>
-                <li><a href="https://raydn.us/story/4664-zelenskiy-says-us-negotiators-asked-if-ukraine-would-cede-donbas-in-return-for" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Raydn — „Zelenskiy says US negotiators asked if Ukraine would cede Donbas in return for security guarantees" (14 nov 2026; nuanța Telegram)<span class="host">raydn.us</span></a></li>
-              </ul>
-            </div>
-            <div class="adverse">
-              <p class="sec-label">Tabăra adversă</p>
-              <p><strong>Kremlinul (Vladimir Putin)</strong> — a cerut retragerea Ucrainei din Donbas ca precondiție a păcii și respinge categoric aderarea Ucrainei la NATO; Putin le-a spus emisarilor americani că singura linie pe care Rusia o acceptă e frontiera de stat. (<a href="https://silentdossier.com/articles/will-ukraine-give-up-donbas-to-join-nato-zelensky-us-question" target="_blank" rel="noopener">Silent Dossier</a>)</p>
-            </div>
-            <div class="impact">
-              <span class="badge">Impact direct</span>
-              <p>Impact direct: minim azi — nicio acțiune cerută. Relevanță de context ridicată: dacă NATO revine pe masa negocierilor, postura alianței pe Flancul estic și cerințele operaționale din zona lui profesională se pot schimba. De urmărit: confirmarea (sau infirmarea) ofertei de către Washington și reacția aliaților europeni — orice aderare cere acordul unanim al celor 32 de aliați.</p>
-            </div>
-          </article>
-
-        <!-- 12 · 14 nov · 13:00 -->
-          <article id="stire-216" data-cats="tech" data-sev="amber" data-subiect="SignDrop: zero-day Windows">
-            <div class="a-meta">
-              <span class="a-time">14 nov · 13:00</span>
-              <span class="a-cat">Tech &amp; AI</span>
-              <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
-              <span class="subj-pill">SignDrop: zero-day Windows</span>
-              <span class="a-num">#12 / 17</span>
-            </div>
-            <h2>Zero-day Windows „SignDrop": un cont obișnuit poate ajunge la drepturi SYSTEM pe Windows 11 26H2 — fără patch deocamdată</h2>
-            <div class="sec">
-              <p class="sec-label">Ce s-a întâmplat</p>
-              <p>Cercetătorul cunoscut ca Nightmare Eclipse a publicat marți, 10 noiembrie, codul demonstrativ al unei vulnerabilități zero-day numite SignDrop, în Common Log File System (CLFS) din Windows: un utilizator local obișnuit poate obține drepturi SYSTEM pe unele sisteme Windows 11 26H2 (inclusiv builduri experimentale) și Windows Server 2025 Experimental. Atacul păcălește Windows Defender să deschidă un fișier de log special creat, prin funcția legitimă de actualizare a semnăturilor antivirus, iar CLFS creează fișierul de autentificare asociat cu privilegii SYSTEM. Ironia: breșa pornește tocmai de la o măsură de securitate introdusă de Microsoft în octombrie 2025 împotriva altor vulnerabilități CLFS. Analistul Will Dormann a reprodus exploitul și confirmă că funcționează ca descris, dar nu pe toate sistemele — pare să ceară o instalare 26H2 mai veche de 90 de zile, cu modul de autentificare CLFS 0 sau 1. Compania de securitate Cyderes l-a reprodus și ea. Microsoft spune că investighează, că nu are dovezi de exploatare în teren și că Defender blochează tentativele; nu există încă patch, aviz sau CVE.</p>
-            </div>
-            <div class="sec">
-              <p class="sec-label">De ce contează</p>
-              <p>Pentru un IT incident Manager, un zero-day public, fără patch, pe cel mai răspândit sistem de operare desktop e exact tipul de incident care generează valuri de activitate: orice compromitere locală (phishing, malware) poate escalada la SYSTEM, iar cercetătorul susține că tehnica poate ocoli și protecția antivirus/EDR. Pentru el personal, lecția de igienă rămâne: un cont local compromis nu mai e „doar" un cont local.</p>
-            </div>
-            <div class="verify">
-              <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
-              <p>Verdict: confirmat. Ars Technica (13 nov 2026, relatarea curatoriată) — dezvăluirea, reproducerea de către Will Dormann, declarația Microsoft; SecurityWeek (via Sys Articles, 14 nov 2026) — detaliile tehnice CLFS și testele pe 26H2; The Hacker News (via Daily Inference, 13 nov 2026) — niciun patch, aviz sau CVE în update-urile din noiembrie; Cyderes — reproducere independentă. Notă de integritate: estimarea cercetătorului că 80% din instalările Windows ar fi vulnerabile e numită de Cyderes „nefondată"; condiția reală (26H2 mai vechi de 90 de zile) restrânge mult aria afectată.</p>
-              <ul class="sources">
-                <li><a href="https://dailyinference.news/articles/2026-11-13-public-windows-exploit-lifts-ordinary-accounts-to-system-on-some-pcs/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Daily Inference — „Public Windows exploit lifts ordinary accounts to SYSTEM on some PCs" (13 nov 2026)<span class="host">dailyinference.news</span></a></li>
-                <li><a href="https://gigaguidetech.com/windows-11-signdrop-zero-day/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>GigaGuideTech — „Windows 11 SignDrop Zero-Day: Who Is Affected and What to Do" (13 nov 2026)<span class="host">gigaguidetech.com</span></a></li>
-                <li><a href="https://sysarticles.com/daily-tech-brief-2026-11-14/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Sys Articles (după SecurityWeek) — „Windows SignDrop Zero-Day Exploit &amp; NVIDIA GR00T 2 Robotics Model Revealed" (14 nov 2026)<span class="host">sysarticles.com</span></a></li>
-                <li><a href="https://nsaneforums.com/news/security-privacy-news/windows-0-day-dropped-by-disgruntled-researcher-hands-hackers-system-rights-r37443/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Nsane Forums (reproducere Ars Technica) — „Windows 0-day dropped by disgruntled researcher hands hackers System rights" (14 nov 2026)<span class="host">nsaneforums.com</span></a></li>
-              </ul>
-            </div>
-            <div class="impact">
-              <span class="badge">Impact direct</span>
-              <p>Impact direct: minim azi — nu administrează sisteme Windows și nu există exploatare raportată în teren; relevanță profesională: zero-day public fără patch pe Windows 11, cu escaladare la SYSTEM și posibilă ocolire a protecției antivirus — de urmărit avizul Microsoft și patch-ul. Atenție: autentificarea CLFS nu se dezactivează ca soluție — Microsoft avertizează că asta redeschide riscuri mai vechi.</p>
-            </div>
-          </article>
-
-        <!-- 13 · 14 nov · 11:00 -->
-          <article id="stire-214" data-cats="romania" data-sev="green" data-subiect="România câștigă Roșia Montană">
-            <div class="a-meta">
-              <span class="a-time">14 nov · 11:00</span>
-              <span class="a-cat">România</span>
-              <span class="sev-pill is-green"><i aria-hidden="true"></i>Verde · normal</span>
-              <span class="subj-pill">România câștigă Roșia Montană</span>
-              <span class="a-num">#13 / 17</span>
-            </div>
-            <h2>România câștigă definitiv arbitrajul Roșia Montană — statul scapă de despăgubiri de 6,5 miliarde de dolari cerute de Gabriel Resources</h2>
-            <div class="sec">
-              <p class="sec-label">Ce s-a întâmplat</p>
-              <p>Comitetul ad-hoc al ICSID a respins integral, pe 13 noiembrie 2026, cererea de anulare formulată de Gabriel Resources Ltd. și Gabriel Resources (Jersey) Ltd. împotriva hotărârii arbitrale din 8 martie 2024, prin care fuseseră respinse pretențiile de circa 6,5 miliarde de dolari (aproximativ 31,5 miliarde de lei, circa 1,5% din PIB-ul estimat al României pentru 2026). Anunțul a fost făcut sâmbătă, 14 noiembrie, de Ministerul Finanțelor. Decizia epuizează ultima cale extraordinară de atac prevăzută de Convenția ICSID, astfel încât hotărârea din 2024 rămâne definitivă și obligatorie; comitetul a dispus ca reclamanții să suporte cheltuielile procedurii de anulare, iar Ministerul Finanțelor spune că va continua demersurile pentru recuperarea cheltuielilor de judecată. Litigiul, deschis în 2015, a durat peste 11 ani, iar procedura de anulare s-a desfășurat între iulie 2024 și noiembrie 2026. Peisajul minier de la Roșia Montană, înscris în 2021 pe Lista Patrimoniului Mondial UNESCO, rămâne protejat.</p>
-            </div>
-            <div class="sec">
-              <p class="sec-label">De ce contează</p>
-              <p>Cea mai mare pretenție financiară formulată vreodată împotriva României într-un arbitraj internațional dispare definitiv din balanța riscurilor bugetare — circa 1,5% din PIB care nu mai apasă pe deficit, în anul în care guvernul nou-învestit pregătește rectificarea bugetară și bugetul pe 2027. Pentru expunerile lui în România (investiția recurentă în TVBETETF), e context fiscal favorabil: presiunea pe finanțele publice scade cu o datorie contingentă uriașă. Atenție însă: victoria nu rezolvă disputa privind licența minieră (refuzul prelungirii din iunie 2024, contestat de RMGC în instanțele naționale) și nici dificultățile economice locale din Roșia Montană.</p>
-            </div>
-            <div class="verify">
-              <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
-              <p>Verdict: sursa_primara + confirmat. Ministerul Finanțelor (comunicat, 14 nov 2026, sursa primară) — decizia din 13 nov, comitetul ad-hoc (Eduardo Zuleta, președinte; Lawrence Boo; Maxi Scherer), epuizarea căii de atac, cheltuielile în sarcina reclamanților. Forbes.ro (14 nov, 10:14) — confirmare independentă, citează comunicatul. Adevărul Financiar (14 nov, 07:23) — confirmare independentă: suma circa 31,5 mld lei, 1,5% din PIB 2026; comitetul a respins toate motivele. New Money, via News.ro (14 nov, 09:36) — confirmare independentă. Notă de integritate: Monitorul Zilei (pe baza Profit.ro) semnalează că, la momentul verificării lor, registrul public ICSID pentru dosarul ARB/15/31 afișa încă procedura de anulare ca „Pending", cu ultima evoluție publicată la 3 noiembrie 2026 — decizia din 13 noiembrie e relatată pe baza anunțului Ministerului Finanțelor și nu apărea încă în registrul ICSID.</p>
-              <ul class="sources">
-                <li><a href="https://www.forbes.ro/ministerul-finantelor-anunta-ca-romania-castiga-definitiv-arbitrajul-rosia-montana-531706" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Forbes.ro — „Ministerul Finanţelor anunţă că România câştigă definitiv arbitrajul Roşia Montană" (14 nov 2026)<span class="host">forbes.ro</span></a></li>
-                <li><a href="https://adevarulfinanciar.ro/macroeconomie/romania-scapa-definitiv-de-despagubiri-de-65-2571436.html" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Adevărul Financiar — „România scapă definitiv de despăgubiri de 6,5 miliarde de dolari în dosarul Roșia Montană" (14 nov 2026)<span class="host">adevarulfinanciar.ro</span></a></li>
-                <li><a href="https://newmoney.ro/ministerul-finantelor-romania-castiga-definitiv-arbitrajul-rosia-montana-hotararea-prin-care-au-fost-respinse-integral-pretentiile-gabriel-resources-de-circa-65-mld-dolari-ramane-definitiva-si/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>New Money, via News.ro — „Ministerul Finanţelor: România câştigã definitiv arbitrajul Roşia Montanã" (14 nov 2026)<span class="host">newmoney.ro</span></a></li>
-                <li><a href="https://ziarulpozitiv.ro/romania-castiga-definitiv-arbitrajul-rosia-montana/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Ziarul Pozitiv — „România câștigă definitiv arbitrajul Roșia Montană" (14 nov 2026)<span class="host">ziarulpozitiv.ro</span></a></li>
-                <li><a href="https://monitorulzilei.ro/2026/11/14/romania-castiga-definitiv-disputa-de-la-rosia-montana/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Monitorul Zilei, via Profit.ro — „România câștigă definitiv disputa de la Roșia Montană" (14 nov 2026; nuanța despre registrul ICSID încă „Pending")<span class="host">monitorulzilei.ro</span></a></li>
-              </ul>
-            </div>
-            <div class="adverse">
-              <p class="sec-label">Tabăra adversă</p>
-              <p><strong>Gabriel Resources Ltd. și Gabriel Resources (Jersey) Ltd.</strong> — companiile reclamante au susținut că România a încălcat tratatele bilaterale de investiții cu Canada și Regatul Unit și au cerut despăgubiri de circa 6,5 miliarde de dolari. Poziția lor a fost respinsă integral de tribunal în martie 2024, iar acum le-a fost respinsă și cererea de anulare; compania anunțase pe 5 noiembrie că dezbaterile s-au închis și decizia era așteptată până pe 13 noiembrie. (<a href="https://www.forbes.ro/ministerul-finantelor-anunta-ca-romania-castiga-definitiv-arbitrajul-rosia-montana-531706" target="_blank" rel="noopener">Forbes.ro, 14 nov 2026</a>)</p>
-            </div>
-            <div class="impact">
-              <span class="badge">Impact direct</span>
-              <p>Impact direct: minim azi — nicio acțiune cerută. Relevanță de context: dispare o datorie contingentă de circa 1,5% din PIB de pe bugetul României, în contextul rectificării bugetare și al pregătirii bugetului 2027 — semnal favorabil pentru piața românească și investiția lui recurentă în TVBETETF. De urmărit: recuperarea cheltuielilor de judecată de către stat și disputa separată privind licența minieră.</p>
-            </div>
-          </article>
-
-        <!-- 14 · 14 nov · 09:00 -->
-          <article id="stire-212" data-cats="securitate" data-sev="amber" data-subiect="Germania: servicii secrete cu puteri noi">
-            <div class="a-meta">
-              <span class="a-time">14 nov · 09:00</span>
-              <span class="a-cat">Securitate &amp; NATO</span>
-              <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
-              <span class="subj-pill">Germania: servicii secrete cu puteri noi</span>
-              <span class="a-num">#14 / 17</span>
-            </div>
-            <h2>Germania dă serviciilor secrete puteri de acțiune împotriva amenințărilor hibride — BND poate sabota în străinătate, BfV poate riposta cibernetic</h2>
-            <div class="sec">
-              <p class="sec-label">Ce s-a întâmplat</p>
-              <p>Parlamentul german, Bundestagul, a votat vineri, 13 noiembrie, o reformă amplă a legislației serviciilor de informații: BND, serviciul extern, va putea desfășura operațiuni sub acoperire în străinătate, inclusiv sabotaj — paralizarea serverelor grupărilor de hackeri susținute de state, perturbarea rețelelor de dezinformare sau blocarea lanțurilor de aprovizionare cu arme. BfV, serviciul intern, primește pentru prima oară puteri operative: poate lua măsuri de protecție asupra bunurilor și sistemelor IT când e identificată o amenințare concretă — dezamorsarea explozivilor, devierea fluxurilor de date în timpul atacurilor cibernetice, ștergerea sau falsificarea datelor stocate cu scop malițios. Ambele servicii pot intra sub acoperire în locuințe și sedii pentru pregătirea supravegherii, dar fără forță împotriva persoanelor; asasinatele țintite rămân strict interzise. Votul a fost 309 la 190, cu 71 de abțineri, potrivit BBC (Al Jazeera dă 308 la 190 — diferența de un vot nu e explicată în relatările de până acum). Ministrul de Interne Alexander Dobrindt, care a promovat legea, a numit-o „reforma secolului". Contextul invocat de guvern: în august a fost găsită o dronă cu exploziv la aeroportul Leipzig-Halle, lângă avioane-cargo ucrainene, iar autoritățile germane spun că Rusia e în spate. Principalele prevederi intră în vigoare la 31 decembrie 2026.</p>
-            </div>
-            <div class="sec">
-              <p class="sec-label">De ce contează</p>
-              <p>Cea mai mare reformă a serviciilor secrete germane de la al Doilea Război Mondial: Germania, cel mai mare aliat european al NATO, trece de la „doar observă" la „acționează" împotriva amenințărilor hibride — spionaj, sabotaj, atacuri cibernetice, dezinformare. Pentru un IT incident Manager într-un mediu NATO, e context direct: aceleași tipare (drone cu exploziv la huburi logistice, atacuri cibernetice atribuite Rusiei) sunt cele pe care le urmărește zilnic, iar precedentul de la Leipzig arată că țintele includ infrastructura logistică aliată. Reforma rupe și principiul separării stricte dintre poliție și servicii, moștenit din perioada postbelică.</p>
-            </div>
-            <div class="verify">
-              <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
-              <p>Verdict: confirmat. BBC (13 noiembrie 2026, 15:42, relatarea curatoriată) — votul, puterile BND/BfV, citatul lui Dobrindt, replica lui Bünger. Deutsche Welle (13 noiembrie 2026) — confirmare independentă: BND poate răspunde atacurilor cibernetice cu contraatacuri proprii, de la ștergerea datelor până la distrugerea fizică a armelor (drone); intrări sub acoperire, fără forță împotriva persoanelor; președintele BKA, Holger Münch: infracționalitatea din străinătate a crescut cu 24% în primele 6 luni din 2026. Al Jazeera (14 noiembrie 2026) — confirmare independentă: votul 308-190, 71 abțineri; prevederile intră în vigoare la 31 decembrie, după finalizarea procesului legislativ. Notă: BBC dă 309 voturi pentru, Al Jazeera 308 — ambele sunt de acord la 190 împotrivă și 71 abțineri.</p>
-              <ul class="sources">
-              <li><a href="https://thegenevatimes.ch/german-spies-handed-new-powers-to-tackle-hybrid-threats-from-abroad/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" <path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>BBC — „German spies handed new powers to tackle ’hybrid threats’ from abroad" (13 nov 2026, 15:42; relatarea curatoriată — textul integral al articolului BBC, republicat (accesul direct la bbc.co.uk e blocat de policy în acest mediu): votul, puterile BND/BfV, citatul lui Dobrindt, replica lui Bünger)<span class="host">thegenevatimes.ch</span></a></li>
-              <li><a href="https://p.dw.com/p/5PQR9" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" <path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Deutsche Welle — „Cyber attacks and hybrid warfare: Germany gives sweeping powers to its police and intelligence services" (13 nov 2026; confirmare independentă: BND poate răspunde atacurilor cibernetice cu contraatacuri proprii, de la ștergerea datelor până la distrugerea fizică a armelor (drone); intrări sub acoperire, fără forță împotriva persoanelor; BKA: infracționalitatea din străinătate +24% în primele 6 luni din 2026)<span class="host">p.dw.com</span></a></li>
-              <li><a href="https://barbadosgazette.com/german-spies-granted-sweeping-new-powers/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" <path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Al Jazeera — „German spies granted sweeping new powers" (14 nov 2026; confirmare independentă (text republicat): votul 308-190, 71 abțineri; prevederile intră în vigoare la 31 decembrie, după finalizarea procesului legislativ; Florian Bigge (Körber-Stiftung): reforma e „rezultatul direct al Zeitenwende")<span class="host">barbadosgazette.com</span></a></li>
-              </ul>
-            </div>
-            <div class="adverse">
-              <p class="sec-label">Tabăra adversă</p>
-              <p><strong>Clara Bünger</strong>, purtătoarea de cuvânt pe securitate a Partidului de Stânga (Die Linke), a spus că Dobrindt creează „o nouă poliție secretă germană". AfD și Die Linke au votat împotriva legii, iar Verzii s-au abținut. (<a href="https://thegenevatimes.ch/german-spies-handed-new-powers-to-tackle-hybrid-threats-from-abroad/" target="_blank" rel="noopener">BBC, via Geneva Times, 13 nov 2026</a>)</p>
-            </div>
-            <div class="impact">
-              <span class="badge">Impact direct</span>
-              <p>Impact direct: minim azi personal — nicio acțiune cerută; relevanță profesională înaltă: Germania e cel mai mare aliat european din NATO, iar amenințările hibride (drone, sabotaj, atacuri cibernetice) sunt exact tipul de incidente din aria lui de lucru. De urmărit: intrarea în vigoare la 31 decembrie 2026 și primele operațiuni BND — plus dacă alți aliați urmează exemplul.</p>
-            </div>
-          </article>
-
-          <!-- 15 · 14 nov · 09:00 -->
-          <article id="stire-213" data-cats="tech" data-sev="amber" data-subiect="finanțare AI după plecarea lui Huang">
-            <div class="a-meta">
-              <span class="a-time">14 nov · 09:00</span>
-              <span class="a-cat">Tech &amp; AI</span>
-              <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
-              <a class="cont-pill" href="#stire-182" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
-              <span class="subj-pill">finanțare AI după plecarea lui Huang</span>
-              <span class="a-num">#15 / 17</span>
-            </div>
-            <h2>Plecarea lui Jensen Huang lasă un gol în finanțarea startupurilor AI: Nvidia, cel mai mare investitor al sectorului, devine mai prudentă</h2>
-            <div class="followup">
-              <span class="tag">Urmare la</span>
-              <p><a href="#stire-182">„Jensen Huang demisionează de la Nvidia: Colette Kress preia interimatul, acțiunile scad cu peste 10%" — joi, 12 noiembrie 2026, ora 16:00.</a> (După demisie, întrebarea era ce se întâmplă cu banii: Nvidia era nu doar furnizorul de cipuri, ci și cel mai mare finanțator al ecosistemului AI.)</p>
-            </div>
-            <div class="sec">
-              <p class="sec-label">Ce s-a întâmplat</p>
-              <p>Investitori și fondatori spun că plecarea lui Jensen Huang lasă ecosistemul AI fără unul dintre cei mai mari campioni ai lui și fără una dintre cele mai mari surse de bani, scrie TechCrunch. În ultimii ani, Nvidia a turnat zeci de miliarde de dolari anual în startupuri și a participat numai anul acesta la 105 runde de finanțare, de multe ori ca cel mai mare investitor, potrivit PitchBook. Interimatul Colette Kress e văzută ca mult mai prudentă decât Huang la investițiile în startupuri: se așteaptă ca Nvidia să fie mai selectivă la companiile noi și să scrie cecuri mai mici în portofoliul existent — ceea ce ar împinge evaluările în jos. Printre cele mai mari pariuri ale lui Huang: CoreWeave (susținut când era încă privat), două runde Crusoe (inclusiv Seria E de 1,4 mld. $), achiziția Hugging Face de 13 mld. $ (închidere așteptată în 2027) și 800 mil. $ în Seria B de 2 mld. $ a Reflection AI, înainte ca startupul să aibă venituri semnificative. The Information scrie că discuțiile de investiții pentru Enscale și Permus sunt puse acum sub semnul întrebării, iar acțiunile CoreWeave și Iren au scăzut cu circa 7% pe 12 noiembrie.</p>
-            </div>
-            <div class="sec">
-              <p class="sec-label">De ce contează</p>
-              <p>Finanțarea Nvidia a fost motorul boomului AI: multe startupuri de infrastructură își ridicau jumătate din rundă de la Nvidia, la evaluări de peste 1 mld. $, iar prezența Nvidia pe lista investitorilor îi liniștea și pe ceilalți. O Nvidia mai prudentă încetinește ritmul lansărilor de modele open-weight și al infrastructurii AI — inclusiv proiectele pe care le urmărește el (Hugging Face, Mistral AI) — și poate tempera evaluările din tot sectorul. Pentru investițiile lui, e un semnal de prudență în sectorul AI.</p>
-            </div>
-            <div class="verify">
-              <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
-              <p>Verdict: confirmat. TechCrunch (13 noiembrie 2026, 22:43 UTC, relatarea curatoriată) — 105 runde în 2026 (PitchBook), Kress mai prudentă, cecuri mai mici și evaluări în jos; exemplele CoreWeave, Crusoe, Hugging Face, Reflection AI. The Information (12 noiembrie 2026, relatat de Digital Today) — confirmare independentă: investitorii și directorii din semiconductoare se așteaptă ca Nvidia să încetinească ritmul investițiilor; discuțiile pentru Enscale (garanție de peste 5 mld. $) și Permus (cel puțin 2 mld. $), în dubiu; acțiunile CoreWeave și Iren au scăzut cu ~7% pe 12 noiembrie.</p>
-              <ul class="sources">
-              <li><a href="https://techcrunch.com/2026/11/13/jensen-huangs-departure-blasts-big-hole-in-ai-startup-funding-vcs-and-founders-say/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" <path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>TechCrunch — „Jensen Huang’s departure blasts big hole in AI startup funding, VCs and founders say" (13 nov 2026, 22:43 UTC; relatarea curatoriată: 105 runde în 2026 (PitchBook), Kress mai prudentă, cecuri mai mici, evaluări în jos; CoreWeave, Crusoe, Hugging Face, Reflection AI)<span class="host">techcrunch.com</span></a></li>
-              <li><a href="https://www.digitaltoday.co.kr/en/view/125539/jensen-huang-resignation-throws-nvidia-investment-talks-into-doubt-for-enscale-and-permus" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" <path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>The Information, via Digital Today — „Jensen Huang resignation throws Nvidia investment talks into doubt for Enscale and Permus" (13 nov 2026; confirmare independentă: investitorii se așteaptă ca Nvidia să încetinească ritmul investițiilor; discuțiile pentru Enscale și Permus, în dubiu; acțiunile CoreWeave și Iren au scăzut cu ~7% pe 12 nov)<span class="host">digitaltoday.co.kr</span></a></li>
-              </ul>
-            </div>
-            <div class="adverse">
-              <p class="sec-label">Tabăra adversă</p>
-              <p><strong>Dharmesh Thakker</strong>, partener general la Battery Ventures, se așteaptă ca rivalii Big Tech — Google, Amazon, Microsoft și AMD — să concureze pentru „coroana de investitor" a Nvidia: golul lăsat de retragerea ei ar putea fi umplut, cel puțin parțial. (<a href="https://techcrunch.com/2026/11/13/jensen-huangs-departure-blasts-big-hole-in-ai-startup-funding-vcs-and-founders-say/" target="_blank" rel="noopener">TechCrunch, 13 nov 2026</a>)</p>
-            </div>
-            <div class="impact">
-              <span class="badge">Impact direct</span>
-              <p>Impact direct: minim azi personal — relevanță de context: urmărește AI și investițiile; o Nvidia mai prudentă poate tempera evaluările din sectorul AI și ritmul modelelor open-weight. De urmărit: primele decizii de investiții ale lui Kress și soarta achiziției Hugging Face.</p>
-            </div>
-          </article>
-
-          <!-- 16 · 14 nov · 08:00 -->
-          <article id="stire-210" data-cats="worldwide" data-sev="amber" data-subiect="blocaj aerian în SUA">
-            <div class="a-meta">
-              <span class="a-time">14 nov · 08:00</span>
-              <span class="a-cat">Worldwide / Transport aerian</span>
-              <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
-              <span class="subj-pill">blocaj aerian în SUA</span>
-              <span class="a-num">#16 / 17</span>
-            </div>
-            <h2>FAA a oprit toate plecările din SUA timp de ~4 ore — a doua oprire națională de la 11 septembrie 2001</h2>
-            <div class="sec">
-              <p class="sec-label">Ce s-a întâmplat</p>
-              <p>Vineri după-amiază, 13 noiembrie 2026, Administrația Federală a Aviației din SUA (FAA) a ordonat oprirea la sol a tuturor zborurilor cu plecare din Statele Unite, invocând „circumstanțe extraordinare" și motive de siguranță. Cauza a fost o pană de telecomunicații care a afectat centrele regionale de control al traficului aerian (Air Route Traffic Control Centers). Oprirea a durat circa patru ore și a fost ridicată în jurul orei 20:15 (ora Coastei de Est); peste 1.000 de zboruri au fost anulate și aproape 10.000 întârziate, potrivit FlightAware, citat de Reuters. Este doar a doua oprire națională de acest fel de la 11 septembrie 2001 (precedenta: 11 ianuarie 2023).</p>
-              <p>Secretarul pentru Securitate Internă, Markwayne Mullin, a spus că nu există indicii că ar fi fost un act ostil, iar FBI nu crede că e vorba de un atac cibernetic; secretarul Transporturilor, Sean Duffy, a pus cauza pe seama echipamentelor vechi — comutatoare și routere suprasolicitate, linii de cupru din anii '80.</p>
-            </div>
-            <div class="sec">
-              <p class="sec-label">De ce contează</p>
-              <p>Incident major de infrastructură critică, cu lanț de eșec în cascadă pe un sistem vechi — exact tipul de incident pe care îl gestionează un IT incident Manager; plus relevanță de călătorie: zboară frecvent, iar FAA a cerut și Europei, prin Eurocontrol, să nu mai trimită zboruri spre SUA pe durata opririi.</p>
-            </div>
-            <div class="verify">
-              <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
-              <p>Verdict: confirmat. Reuters — „Old air traffic control equipment regularly disrupts US flights" (14 noiembrie 2026): echipamentele vechi de control al traficului aerian perturbă regulat zborurile din SUA, iar FlightAware numără peste 1.000 de zboruri anulate și aproape 10.000 întârziate. USA Today — „FAA's nationwide ground stop not 'another 9/11,' federal officials say": oficialii federali spun că oprirea națională nu a fost „un alt 11 septembrie" și că nu există indicii de atac cibernetic. Palm Beach Post — oprirea a lovit și aeroporturile din Florida. The Hindu Business Line — oprirea națională a urmat unei pene de comunicații în controlul traficului aerian. Sursa curatoriată (agenda): TechCrunch.</p>
-              <ul class="sources">
-                <li><a href="https://www.reuters.com/business/aerospace-defense/old-air-traffic-control-equipment-regularly-disrupts-us-flights-2026-11-14/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Reuters — „Old air traffic control equipment regularly disrupts US flights" (14 nov 2026)<span class="host">reuters.com</span></a></li>
-                <li><a href="https://www.usatoday.com/story/news/politics/2026/11/13/faa-ground-stop-no-threat-cyberattack/92767434007/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>USA Today — „FAA's nationwide ground stop not 'another 9/11,' federal officials say" (13 nov 2026)<span class="host">usatoday.com</span></a></li>
-                <li><a href="https://www.palmbeachpost.com/story/business/transportation/2026/11/13/flights-departing-us-airports-including-florida-grounded-faa/92765733007/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Palm Beach Post — zborurile cu plecare din aeroporturile SUA, inclusiv Florida, oprite la sol de FAA (13 nov 2026)<span class="host">palmbeachpost.com</span></a></li>
-                <li><a href="https://www.thehindubusinessline.com/economy/logistics/us-grounds-all-flights-nationwide-after-air-traffic-control-communication-outage/article71700537.ece" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>The Hindu Business Line — „US grounds all flights nationwide after air traffic control communication outage"<span class="host">thehindubusinessline.com</span></a></li>
-                <li><a href="https://techcrunch.com/2026/11/13/u-s-government-grounds-all-flights-across-the-united-states-due-to-extraordinary-cirumstances/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>TechCrunch — sursa curatoriată (agenda): guvernul SUA oprește la sol toate zborurile din Statele Unite din „circumstanțe extraordinare" (13 nov 2026)<span class="host">techcrunch.com</span></a></li>
-              </ul>
-            </div>
-            <div class="impact">
-              <span class="badge">Impact direct</span>
-              <p>Impact direct: minim — relevanță de context. Nicio călătorie în SUA planificată azi; efectele se resimt însă în programul zborurilor transatlantice din weekend. Lecția de incident management: un sistem vechi, cu echipamente suprasolicitate, poate cădea simultan peste tot — iar cauza exactă a suprasolicitării încă nu a fost stabilită de autorități.</p>
-            </div>
-          </article>
-
-        <!-- 17 · 14 nov · 08:00 -->
-          <article id="stire-211" data-cats="securitate" data-sev="amber" data-subiect="ofițer NATO arestat pentru spionaj">
-            <div class="a-meta">
-              <span class="a-time">14 nov · 08:00</span>
-              <span class="a-cat">Securitate &amp; NATO</span>
-              <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
-              <span class="subj-pill">ofițer NATO arestat pentru spionaj</span>
-              <span class="a-num">#17 / 17</span>
-            </div>
-            <h2>Ofițer american de la un comandament NATO din Marea Britanie, arestat sub acuzația că încerca să spioneze pentru Rusia</h2>
-            <div class="sec">
-              <p class="sec-label">Ce s-a întâmplat</p>
-              <p>Locotenent-colonelul Brandon Carroll Tyner, 41 de ani, ofițer de resurse umane în Armata SUA, repartizat la Imjin Barracks (Gloucestershire), sediul Corpului Aliat de Reacție Rapidă al NATO, a fost arestat marți, 10 noiembrie, lângă Gloucester, într-o operațiune sub acoperire a poliției britanice de combatere a terorismului, împreună cu FBI și armata americană. Este suspectat de infracțiuni în baza secțiunilor 1 și 3 din Legea britanică a Securității Naționale din 2023 (obținerea/divulgarea de informații protejate și sprijinirea unui serviciu străin de informații), iar acuzațiile vizează Rusia. Armata SUA l-a identificat oficial vineri, 13 noiembrie; autoritățile britanice urmează să-l pună sub acuzare duminică sau luni, după care SUA intenționează să-l judece după Codul Uniform de Justiție Militară.</p>
-            </div>
-            <div class="sec">
-              <p class="sec-label">De ce contează</p>
-              <p>Amenințare internă (insider threat) chiar într-un comandament NATO — exact terenul profesional al unui IT incident Manager; cazul vine la o săptămână după alerta Bundeswehr privind sabotajul și pe fondul campaniei hibride rusești în Europa.</p>
-            </div>
-            <div class="verify">
-              <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
-              <p>Verdict: confirmat. Defense News (sursa curatoriată) — „US Army names officer held on 'allegations of espionage'" (13 noiembrie 2026): armata americană îl numește oficial pe ofițerul reținut sub acuzații de spionaj. USA Today — arestarea militarului american suspectat că spiona pentru Rusia. AP, via KXL — ofițerul urmează să fie pus sub acuzare în Marea Britanie, potrivit unui oficial. Glasgow Times / PA — militarul american staționat în Marea Britanie, suspectat de spionaj pentru Rusia, numit oficial de armata SUA.</p>
-              <ul class="sources">
-                <li><a href="https://www.defensenews.com/global/europe/2026/11/13/us-army-names-officer-held-on-allegations-of-espionage/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Defense News — „US Army names officer held on 'allegations of espionage'" (13 nov 2026; sursa curatoriată)<span class="host">defensenews.com</span></a></li>
-                <li><a href="https://www.usatoday.com/story/news/world/2026/11/12/us-soldier-arrest-spying-russia/92749374007/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>USA Today — militar american arestat sub acuzația de spionaj pentru Rusia (12 nov 2026)<span class="host">usatoday.com</span></a></li>
-                <li><a href="https://www.kxl.com/us-officer-accused-of-russian-spying-is-set-to-be-charged-in-uk-official-says/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>AP, via KXL — „US officer accused of Russian spying is set to be charged in UK, official says"<span class="host">kxl.com</span></a></li>
-                <li><a href="https://www.glasgowtimes.co.uk/news/national/26729048.uk-based-american-soldier-suspected-spying-russia-named-us-military/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>Glasgow Times / PA — militarul american din Marea Britanie, suspectat de spionaj pentru Rusia, numit de armata SUA<span class="host">glasgowtimes.co.uk</span></a></li>
-              </ul>
-            </div>
-            <div class="opposing">
-              <p class="sec-label">Tabăra adversă</p>
-              <p><strong>Kremlinul</strong> — prin purtătorul de cuvânt Dmitri Peskov, a negat orice legătură cu ofițerul și a spus că Rusia nu are nimic de-a face cu arestarea. (<a href="https://www.kxl.com/us-officer-accused-of-russian-spying-is-set-to-be-charged-in-uk-official-says/" target="_blank" rel="noopener">AP, via KXL</a>)</p>
-            </div>
-            <div class="impact">
-              <span class="badge">Impact direct</span>
-              <p>Impact direct: minim — relevanță profesională de context înaltă. Un oficial american a precizat că nu se crede că vreo informație ar fi ajuns la autoritățile ruse și că anchetatorii l-au oprit înainte de orice transfer; acuzațiile nu sunt o condamnare, iar motivul presupus nu a fost făcut public. De urmărit: punerea sub acuzare (duminică/luni) și ce informații ar fi vizat.</p>
-            </div>
-          </article>
-
-      </main>
-      </section>
 
 
                   <footer>
         <div class="rule" aria-hidden="true"></div>
-        <p>Sfârșitul ediției de azi · Ultima actualizare: vineri, 20 noiembrie 2026, 20:00<br />Monitorizarea rulează la circa 3 ore, în fereastra L–V 06:00–22:00 · S–D 07:30–22:00 — dă refresh pentru noutăți.</p>
-        <a class="to-top" href="#stire-337">↑ Înapoi la cea mai nouă știre</a>
+        <p>Sfârșitul ediției de azi · Ultima actualizare: sâmbătă, 21 noiembrie 2026, 08:00<br />Monitorizarea rulează la circa 3 ore, în fereastra L–V 06:00–22:00 · S–D 07:30–22:00 — dă refresh pentru noutăți.</p>
+        <a class="to-top" href="#stire-339">↑ Înapoi la cea mai nouă știre</a>
       </footer>
     </div>
 
