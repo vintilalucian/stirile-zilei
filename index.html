@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="color-scheme" content="light dark" />
-    <meta name="tirile-versiune" content="2026-11-21T08:00:00+01:00|1|amber" />
+    <meta name="tirile-versiune" content="2026-11-21T09:00:00+01:00|2|amber" />
     <link rel="icon" href="data:," />
     <title>Știrile zilei</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -699,9 +699,9 @@
     <div class="topbar">
       <div class="topbar-inner">
         <span class="dot" aria-hidden="true"></span>
-        <span><strong>Sâmbătă, 21 noiembrie 2026</strong> · actualizat la <strong>08:00</strong></span>
+        <span><strong>Sâmbătă, 21 noiembrie 2026</strong> · actualizat la <strong>09:00</strong></span>
         <span aria-hidden="true">·</span>
-        <span>1 știre azi</span>
+        <span>2 știri azi</span>
         <span class="spacer"></span>
         <button class="refresh-btn" type="button" id="refreshBtn" aria-label="Reîmprospătează pagina">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg>
@@ -747,10 +747,11 @@
            discuțiile cu Putin despre Ucraina, purtate în marja summitului APEC
            de la Shenzhen, au fost „foarte bune" și că există „o șansă reală"
            de acord, dar refuză să discute garanțiile de securitate pentru
-           Ucraina înainte de un acord; e singura știre a zilei și are
-           severitatea maximă a zilei, deci e știrea zilei (marcată ca atare
-           pe cardul de la 08:00) și nu apare mențiunea despre alte știri cu
-           aceeași severitate.
+           Ucraina înainte de un acord; rămâne știrea zilei (marcată ca atare
+           pe cardul de la 08:00), cea mai importantă dintre cele două știri
+           galbene ale zilei — cealaltă e acordul ONU de la Geneva privind
+           regulile pentru armele autonome (09:00); mențiunea „alte 1 știri"
+           apare în chenar.
            Chenarul rămâne în afara logicii de filtrare: vizibil indiferent de filtrul de categorie. -->
       <section class="spot sev-amber" aria-label="Știrea cea mai importantă a zilei">
         <div class="spot-head">
@@ -764,7 +765,7 @@
         <h2 class="spot-title">Trump: discuțiile cu Putin despre Ucraina au fost „foarte bune" — dar garanțiile de securitate rămân după un acord</h2>
         <p class="spot-why"><strong>De ce e în față:</strong> garanțiile de securitate sunt întrebarea centrală a oricărui aranjament post-război și a posturii NATO pe Flancul estic, iar ordinea propusă de Trump — acord mai întâi, garanții după — lasă deschis tocmai punctul pe care Kievul și aliații europeni îl consideră esențial pentru ca un acord să reziste.</p>
         <p class="spot-lead">Vineri, 20 noiembrie, la conferința de presă de la Casa Albă de după întoarcerea din China, Trump a spus că discuțiile cu Putin despre Ucraina, purtate în marja summitului APEC de la Shenzhen, au fost „foarte bune" și că „există o șansă reală" să se ajungă la un acord — dar a refuzat să discute garanțiile de securitate pentru Ucraina înainte de un acord, deși consilierul său Jared Kushner spusese cu o zi înainte, după discuții la Berlin, că Trump e deschis la garanții de tip Articol 5, idee respinsă de Moscova în aceeași zi.</p>
-        <p class="spot-more" hidden><span class="spot-more-text"></span> <button class="spot-more-btn" type="button" data-sev-value="amber" aria-label="Apasă aici ca să vezi doar știrile cu severitatea Galben — de urmărit">apasă aici</button></p>
+        <p class="spot-more"><span class="spot-more-text">Mai sunt și alte 1 știri cu aceeași severitate —</span> <button class="spot-more-btn" type="button" data-sev-value="amber" aria-label="Apasă aici ca să vezi doar știrile cu severitatea Galben — de urmărit">apasă aici</button></p>
         <div class="spot-foot">
           <a class="spot-link" href="#stire-339">Citește știrea completă ↓</a>
           <div class="sev-scale" role="img" aria-label="Scară de gravitate: verde — normal, galben — de urmărit, roșu — grav. Nivelul de azi: galben.">
@@ -779,22 +780,22 @@
       <section class="dashboard" aria-label="Panou de ansamblu">
         <div class="dash-head">
           <span class="dash-title">Dashboard · Azi</span>
-          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 08:00</span>
+          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 09:00</span>
           <span class="dash-meta">Fereastră monitorizare <strong>L–V 06:00–22:00 · S–D 07:30–22:00</strong> · pas ~3 ore</span>
         </div>
 
         <div class="kpi-grid five" role="group" aria-label="Filtrează după categorie — apasă pe un tile">
           <button class="kpi" type="button" data-filter="toate" aria-pressed="true">
             <span class="kpi-top"><span class="kpi-label">Toate știrile</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">1</span>
-            <span class="kpi-sub">1 știre verificată azi, în 1 rulare</span>
+            <span class="kpi-value">2</span>
+            <span class="kpi-sub">2 știri verificate azi, în 2 rulări</span>
             <span class="kpi-bar" aria-hidden="true"><i style="width:100%"></i></span>
             <span class="kpi-hint">Apasă pentru toate</span>
           </button>
           <button class="kpi" type="button" data-filter="securitate" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">Securitate &amp; NATO</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">1</span>
-            <span class="kpi-sub">pace Ucraina: discuții Trump–Putin</span>
+            <span class="kpi-value">2</span>
+            <span class="kpi-sub">reguli pentru armele autonome · pace Ucraina: discuții Trump–Putin</span>
             <span class="kpi-bar" aria-hidden="true"><i style="width:100%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
@@ -814,9 +815,9 @@
           </button>
           <button class="kpi" type="button" data-filter="tech" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">Tech &amp; AI</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">0</span>
-            <span class="kpi-sub"></span>
-            <span class="kpi-bar" aria-hidden="true"><i style="width:0%"></i></span>
+            <span class="kpi-value">1</span>
+            <span class="kpi-sub">reguli pentru armele autonome</span>
+            <span class="kpi-bar" aria-hidden="true"><i style="width:50%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
         </div>
@@ -830,7 +831,7 @@
       </section>
 
       <div class="filter-status" aria-live="polite">
-        <span class="filter-label">Se afișează: <strong>Toate categoriile — 1 din 1 știri</strong></span>
+        <span class="filter-label">Se afișează: <strong>Toate categoriile — 2 din 2 știri</strong></span>
         <button class="filter-reset" type="button" hidden>Resetează filtrul</button>
       </div>
 
@@ -852,6 +853,49 @@
       <p class="empty">Nicio știre în această categorie azi.</p>
 
       <main>
+        <!-- 2 · 21 nov · 09:00 -->
+        <article id="stire-340" data-cats="securitate tech" data-sev="amber" data-subiect="reguli pentru armele autonome">
+          <div class="a-meta">
+            <span class="a-time">21 nov · 09:00</span>
+            <span class="a-cat">Securitate &amp; NATO · Tech &amp; AI</span>
+            <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
+            <a class="cont-pill" href="#stire-252" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
+            <span class="subj-pill">reguli pentru armele autonome</span>
+            <span class="a-num">#2 / 2</span>
+          </div>
+          <h2>Statele au convenit la ONU să negocieze reguli pentru „roboții ucigași" până în 2028 — dar caracterul obligatoriu rămâne deschis</h2>
+          <div class="followup">
+            <span class="tag">Urmare la</span>
+            <p><a href="#stire-252">„SUA și Rusia se opun regulilor obligatorii pentru armele autonome — negocierile de la Geneva încep azi" — luni, 16 noiembrie 2026, ora 20:00.</a></p>
+          </div>
+          <div class="sec">
+            <p class="sec-label">Ce s-a întâmplat</p>
+            <p>Discuțiile ONU de la Geneva privind armele cu puțină sau fără supraveghere umană s-au încheiat sâmbătă dimineața, după o noapte întreagă de negocieri (după ora 4:00), cu un angajament de a continua discuțiile pentru a elabora noi reguli în următorii doi ani. Circa 100 de țări susținuseră reguli obligatorii într-un termen scurt, dar marile puteri producătoare de armament — SUA, Rusia și Israelul — s-au opus, așa că acordul rezultat e diluat și lasă deschis dacă viitoarele măsuri vor fi obligatorii din punct de vedere juridic. Cele 128 de state membre ale Convenției privind anumite arme convenționale se reuniseră de luni la Geneva, pe fondul îngrijorării crescânde față de folosirea sistemelor autonome letale în conflicte, inclusiv în Ucraina, Sudan și Orientul Mijlociu.</p>
+          </div>
+          <div class="sec">
+            <p class="sec-label">De ce contează</p>
+            <p>Pentru el, ca IT incident Manager în mediul NATO, e direct în domeniul lui de lucru: armele autonome sunt deja folosite în Ucraina, iar regulile care le vor guverna — control uman, trasabilitate — se scriu acum și vor modela sistemele AI militare ale Alianței. E continuarea directă a negocierilor începute luni, prezentate în pagină pe 16 noiembrie: președintele reuniunii propusese un mandat de doi ani pentru un protocol obligatoriu, iar rezultatul de azi e exact compromisul prevăzut atunci — discuții încă doi ani, fără garanția caracterului obligatoriu. Președintele elvețian al reuniunii, Julien Thoeni, a numit acordul o realizare semnificativă pentru dezarmarea umanitară, după peste 10 ani de discuții.</p>
+          </div>
+          <div class="verify">
+            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
+            <p>Verdict: confirmat — Reuters (21 nov, depeșa de la Geneva) e relatarea curatoriată; AsiaOne (21 nov) și TBS News (21 nov) relatează independent același rezultat (acordul de a continua discuțiile până în 2028, opoziția Rusiei, dezamăgirea grupurilor pentru drepturile omului), iar Political.org (20 nov) confirmă independent cadrul (Conferința de revizuire a Convenției privind anumite arme convenționale, mandatul de doi ani, problema consensului celor 128 de state). Notă de integritate: mai multe site-uri republică depeșa Reuters integral — acestea contează ca o singură confirmare, nu ca surse independente.</p>
+            <ul class="sources">
+              <li><a href="https://www.reuters.com/world/states-agree-to-un-talks-aiming-regulate-killer-robots-by-2028-2026-11-21/" target="_blank" rel="noopener">Reuters — „States agree to UN talks aiming to regulate 'killer robots' by 2028" (21 nov 2026)<span class="host">reuters.com</span></a></li>
+              <li><a href="https://asiaone.news/un-nations-set-2028-deadline-for-talks-on-controversial-killer-robots/" target="_blank" rel="noopener">AsiaOne — „UN Nations Set 2028 Deadline for Talks on Controversial 'Killer Robots'" (21 nov 2026, 06:58 UTC)<span class="host">asiaone.news</span></a></li>
+              <li><a href="https://www.tbsnews.net/world/states-agree-un-talks-aiming-regulate-killer-robots-2028-1609426" target="_blank" rel="noopener">TBS News — „States agree to UN talks aiming to regulate 'killer robots' by 2028" (21 nov 2026)<span class="host">tbsnews.net</span></a></li>
+              <li><a href="https://political.org/2026/11/20/states-agree-to-un-talks-aimed-at-regulating-killer-robots-by-2028-but-binding-treaty-left-open/" target="_blank" rel="noopener">Political.org — „States Agree to UN Talks Aimed at Regulating 'Killer Robots' by 2028, but Binding Treaty Left Open" (20 nov 2026)<span class="host">political.org</span></a></li>
+            </ul>
+          </div>
+          <div class="opposing">
+            <p class="sec-label">Tabăra adversă</p>
+            <p>Rusia, SUA și Israelul — cele trei mari puteri producătoare de armament — s-au opus unui protocol obligatoriu privind armele autonome; opoziția Rusiei a slăbit acordul final, care lasă deschis dacă viitoarele reguli vor fi obligatorii. Un diplomat prezent la discuții a spus că „puterile militare au reușit să impună multe obstacole" obiectivului unui protocol, deși posibilitatea rămâne deschisă, cu un mandat pe termen scurt. (<a href="https://www.reuters.com/world/states-agree-to-un-talks-aiming-regulate-killer-robots-by-2028-2026-11-21/" target="_blank" rel="noopener">Reuters, 21 nov 2026</a>)</p>
+          </div>
+          <div class="impact">
+            <span class="badge">Impact direct</span>
+            <p>Impact direct: minim azi — nicio regulă nouă nu intră în vigoare și nu cere nimic de la el. Relevanță de context: e exact dosarul urmărit în pagină din 16 noiembrie — negocierile de la Geneva au produs un mandat de doi ani, nu tratatul obligatoriu cerut de circa 100 de state; de urmărit: dacă în cei doi ani se ajunge la un protocol și dacă vreo țară iese din cadrul ONU (unii observatori și foști oficiali militari spun că statele ar trebui să ia în calcul un proces nou, în afara cadrului actual, unde consensul celor 128 de state permite unui singur stat să dilueze rezultatul).</p>
+          </div>
+        </article>
+
         <!-- 1 · 21 nov · 08:00 -->
         <article id="stire-339" data-cats="securitate" data-sev="amber" data-subiect="pace Ucraina: discuții Trump–Putin">
           <div class="a-meta">
@@ -861,7 +905,7 @@
             <a class="cont-pill" href="#stire-325" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">pace Ucraina: discuții Trump–Putin</span>
             <span class="spot-tag">Știrea zilei</span>
-            <span class="a-num">#1 / 1</span>
+            <span class="a-num">#1 / 2</span>
           </div>
           <h2>Trump: discuțiile cu Putin despre Ucraina au fost „foarte bune" — dar garanțiile de securitate rămân după un acord</h2>
           <div class="followup">
@@ -5697,8 +5741,8 @@
 
                   <footer>
         <div class="rule" aria-hidden="true"></div>
-        <p>Sfârșitul ediției de azi · Ultima actualizare: sâmbătă, 21 noiembrie 2026, 08:00<br />Monitorizarea rulează la circa 3 ore, în fereastra L–V 06:00–22:00 · S–D 07:30–22:00 — dă refresh pentru noutăți.</p>
-        <a class="to-top" href="#stire-339">↑ Înapoi la cea mai nouă știre</a>
+        <p>Sfârșitul ediției de azi · Ultima actualizare: sâmbătă, 21 noiembrie 2026, 09:00<br />Monitorizarea rulează la circa 3 ore, în fereastra L–V 06:00–22:00 · S–D 07:30–22:00 — dă refresh pentru noutăți.</p>
+        <a class="to-top" href="#stire-340">↑ Înapoi la cea mai nouă știre</a>
       </footer>
     </div>
 
