@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="color-scheme" content="light dark" />
-    <meta name="tirile-versiune" content="2026-11-21T09:00:00+01:00|2|amber" />
+    <meta name="tirile-versiune" content="2026-11-21T10:00:00+01:00|4|amber" />
     <link rel="icon" href="data:," />
     <title>Știrile zilei</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -699,9 +699,9 @@
     <div class="topbar">
       <div class="topbar-inner">
         <span class="dot" aria-hidden="true"></span>
-        <span><strong>Sâmbătă, 21 noiembrie 2026</strong> · actualizat la <strong>09:00</strong></span>
+        <span><strong>Sâmbătă, 21 noiembrie 2026</strong> · actualizat la <strong>10:00</strong></span>
         <span aria-hidden="true">·</span>
-        <span>2 știri azi</span>
+        <span>4 știri azi</span>
         <span class="spacer"></span>
         <button class="refresh-btn" type="button" id="refreshBtn" aria-label="Reîmprospătează pagina">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg>
@@ -748,9 +748,11 @@
            de la Shenzhen, au fost „foarte bune" și că există „o șansă reală"
            de acord, dar refuză să discute garanțiile de securitate pentru
            Ucraina înainte de un acord; rămâne știrea zilei (marcată ca atare
-           pe cardul de la 08:00), cea mai importantă dintre cele două știri
-           galbene ale zilei — cealaltă e acordul ONU de la Geneva privind
-           regulile pentru armele autonome (09:00); mențiunea „alte 1 știri"
+           pe cardul de la 08:00), cea mai importantă dintre cele patru știri
+           galbene ale zilei — celelalte trei sunt acordul ONU de la Geneva
+           privind regulile pentru armele autonome (09:00), acordul Trump–Xi
+           privind controlul uman al IA militare (10:00) și raportul CSIS
+           despre stocurile de rachete ale SUA (10:00); mențiunea „alte 3 știri"
            apare în chenar.
            Chenarul rămâne în afara logicii de filtrare: vizibil indiferent de filtrul de categorie. -->
       <section class="spot sev-amber" aria-label="Știrea cea mai importantă a zilei">
@@ -765,7 +767,7 @@
         <h2 class="spot-title">Trump: discuțiile cu Putin despre Ucraina au fost „foarte bune" — dar garanțiile de securitate rămân după un acord</h2>
         <p class="spot-why"><strong>De ce e în față:</strong> garanțiile de securitate sunt întrebarea centrală a oricărui aranjament post-război și a posturii NATO pe Flancul estic, iar ordinea propusă de Trump — acord mai întâi, garanții după — lasă deschis tocmai punctul pe care Kievul și aliații europeni îl consideră esențial pentru ca un acord să reziste.</p>
         <p class="spot-lead">Vineri, 20 noiembrie, la conferința de presă de la Casa Albă de după întoarcerea din China, Trump a spus că discuțiile cu Putin despre Ucraina, purtate în marja summitului APEC de la Shenzhen, au fost „foarte bune" și că „există o șansă reală" să se ajungă la un acord — dar a refuzat să discute garanțiile de securitate pentru Ucraina înainte de un acord, deși consilierul său Jared Kushner spusese cu o zi înainte, după discuții la Berlin, că Trump e deschis la garanții de tip Articol 5, idee respinsă de Moscova în aceeași zi.</p>
-        <p class="spot-more"><span class="spot-more-text">Mai sunt și alte 1 știri cu aceeași severitate —</span> <button class="spot-more-btn" type="button" data-sev-value="amber" aria-label="Apasă aici ca să vezi doar știrile cu severitatea Galben — de urmărit">apasă aici</button></p>
+        <p class="spot-more"><span class="spot-more-text">Mai sunt și alte 3 știri cu aceeași severitate —</span> <button class="spot-more-btn" type="button" data-sev-value="amber" aria-label="Apasă aici ca să vezi doar știrile cu severitatea Galben — de urmărit">apasă aici</button></p>
         <div class="spot-foot">
           <a class="spot-link" href="#stire-339">Citește știrea completă ↓</a>
           <div class="sev-scale" role="img" aria-label="Scară de gravitate: verde — normal, galben — de urmărit, roșu — grav. Nivelul de azi: galben.">
@@ -780,22 +782,22 @@
       <section class="dashboard" aria-label="Panou de ansamblu">
         <div class="dash-head">
           <span class="dash-title">Dashboard · Azi</span>
-          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 09:00</span>
+          <span class="live-pill"><i aria-hidden="true"></i>Actualizat 10:00</span>
           <span class="dash-meta">Fereastră monitorizare <strong>L–V 06:00–22:00 · S–D 07:30–22:00</strong> · pas ~3 ore</span>
         </div>
 
         <div class="kpi-grid five" role="group" aria-label="Filtrează după categorie — apasă pe un tile">
           <button class="kpi" type="button" data-filter="toate" aria-pressed="true">
             <span class="kpi-top"><span class="kpi-label">Toate știrile</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">2</span>
-            <span class="kpi-sub">2 știri verificate azi, în 2 rulări</span>
+            <span class="kpi-value">4</span>
+            <span class="kpi-sub">4 știri verificate azi, în 3 rulări</span>
             <span class="kpi-bar" aria-hidden="true"><i style="width:100%"></i></span>
             <span class="kpi-hint">Apasă pentru toate</span>
           </button>
           <button class="kpi" type="button" data-filter="securitate" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">Securitate &amp; NATO</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">2</span>
-            <span class="kpi-sub">reguli pentru armele autonome · pace Ucraina: discuții Trump–Putin</span>
+            <span class="kpi-value">4</span>
+            <span class="kpi-sub">control uman asupra IA militare · stocuri de rachete SUA epuizate · reguli pentru armele autonome · pace Ucraina: discuții Trump–Putin</span>
             <span class="kpi-bar" aria-hidden="true"><i style="width:100%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
@@ -815,8 +817,8 @@
           </button>
           <button class="kpi" type="button" data-filter="tech" aria-pressed="false">
             <span class="kpi-top"><span class="kpi-label">Tech &amp; AI</span><span class="kpi-check" aria-hidden="true">✓</span></span>
-            <span class="kpi-value">1</span>
-            <span class="kpi-sub">reguli pentru armele autonome</span>
+            <span class="kpi-value">2</span>
+            <span class="kpi-sub">control uman asupra IA militare · reguli pentru armele autonome</span>
             <span class="kpi-bar" aria-hidden="true"><i style="width:50%"></i></span>
             <span class="kpi-hint">Apasă pentru a filtra →</span>
           </button>
@@ -831,7 +833,7 @@
       </section>
 
       <div class="filter-status" aria-live="polite">
-        <span class="filter-label">Se afișează: <strong>Toate categoriile — 2 din 2 știri</strong></span>
+        <span class="filter-label">Se afișează: <strong>Toate categoriile — 4 din 4 știri</strong></span>
         <button class="filter-reset" type="button" hidden>Resetează filtrul</button>
       </div>
 
@@ -853,6 +855,78 @@
       <p class="empty">Nicio știre în această categorie azi.</p>
 
       <main>
+        <!-- 3 · 21 nov · 10:00 -->
+        <article id="stire-341" data-cats="securitate tech" data-sev="amber" data-subiect="control uman asupra IA militare">
+          <div class="a-meta">
+            <span class="a-time">21 nov · 10:00</span>
+            <span class="a-cat">Securitate &amp; NATO · Tech &amp; AI</span>
+            <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
+            <a class="cont-pill" href="#stire-340" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
+            <span class="subj-pill">control uman asupra IA militare</span>
+            <span class="a-num">#3 / 4</span>
+          </div>
+          <h2>Trump și Xi au convenit ca deciziile militare cu IA să rămână sub control uman — acord anunțat verbal, fără detalii despre aplicare</h2>
+          <div class="followup">
+            <span class="tag">Urmare la</span>
+            <p><a href="#stire-340">„Statele au convenit la ONU să negocieze reguli pentru „roboții ucigași" până în 2028 — dar caracterul obligatoriu rămâne deschis" — sâmbătă, 21 noiembrie 2026, ora 09:00.</a></p>
+          </div>
+          <div class="sec">
+            <p class="sec-label">Ce s-a întâmplat</p>
+            <p>Președintele american Donald Trump și președintele chinez Xi Jinping au convenit, la întâlnirea de la Shenzhen, ca oamenii să fie mereu implicați în deciziile militare care folosesc inteligența artificială și ca „superinteligența" să nu poată declanșa autonom operațiuni militare majore, a spus vineri secretarul Trezoreriei Scott Bessent, la CNBC, după întoarcerea din China. Bessent a descris acordul drept una dintre marile realizări ale vizitei lui Trump în Asia și a spus că garanțiile privind controlul uman nu sunt afectate de competiția celor două țări pentru supremația în IA. Trump a vorbit și despre „bariere comune" (joint guardrails) convenite cu Xi în domeniul IA.</p>
+          </div>
+          <div class="sec">
+            <p class="sec-label">De ce contează</p>
+            <p>E continuarea directă a cardului de la 09:00: în timp ce la Geneva statele au convenit să negocieze încă doi ani un tratat privind armele autonome, cele două mari puteri anunță bilateral același principiu — niciun control autonom asupra operațiunilor militare majore. Pentru el, ca IT incident Manager în mediul NATO, principiul controlului uman e direct în domeniul lui de lucru: va modela standardele de control și trasabilitate ale sistemelor AI militare ale Alianței. De urmărit: dacă acordul verbal devine ceva scris și dacă Rusia — una dintre cele trei puteri care s-au opus protocolului obligatoriu la Geneva — adoptă aceeași linie.</p>
+          </div>
+          <div class="verify">
+            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
+            <p>Verdict: confirmat — Reuters (20 nov 2026, depeșa de la Washington) relatează declarațiile lui Bessent la CNBC; Bloomberg (20 nov 2026) confirmă independent același acord și citatul lui Bessent; The Times (21 nov 2026) confirmă independent, din declarațiile lui Trump și Bessent.</p>
+            <ul class="sources">
+              <li><a href="https://www.reuters.com/world/china/trump-xi-agreed-that-military-ai-decisions-should-involve-humans-bessent-says-2026-11-20/" target="_blank" rel="noopener">Reuters — „Trump, Xi agreed that military AI decisions should involve humans, Bessent says" (20 nov 2026)<span class="host">reuters.com</span></a></li>
+              <li><a href="https://news.bloombergtax.com/artificial-intelligence/trump-xi-agreed-on-ai-limits-in-military-action-bessent-says" target="_blank" rel="noopener">Bloomberg — „Trump, Xi Agreed on AI Curb in Military Action, Bessent Says" (20 nov 2026)<span class="host">news.bloombergtax.com</span></a></li>
+              <li><a href="https://www.thetimes.com/us/american-politics/article/trump-press-conference-data-centres-china-vkrw9qfhh" target="_blank" rel="noopener">The Times — „Trump hails ‘electric’ meeting with Putin and Xi" (21 nov 2026; acordul privind controlul uman al IA militare)<span class="host">thetimes.com</span></a></li>
+            </ul>
+          </div>
+          <div class="impact">
+            <span class="badge">Impact direct</span>
+            <p>Impact direct: minim azi — e doar un anunț verbal, fără document publicat sau mecanism de verificare, și nu cere nimic de la el. Relevanță de context: dacă acordul devine angajament scris, stabilește un precedent pentru controlul uman al IA militare între cele două mari puteri — de urmărit la următoarele runde SUA–China și la negocierile ONU de la Geneva.</p>
+          </div>
+        </article>
+        <article id="stire-342" data-cats="securitate" data-sev="amber" data-subiect="stocuri de rachete SUA epuizate">
+          <div class="a-meta">
+            <span class="a-time">21 nov · 10:00</span>
+            <span class="a-cat">Securitate &amp; NATO</span>
+            <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
+            <span class="subj-pill">stocuri de rachete SUA epuizate</span>
+            <span class="a-num">#4 / 4</span>
+          </div>
+          <h2>SUA au consumat între o treime și două treimi din stocurile-cheie de rachete în războiul cu Iranul — refacerea lor poate dura ani, avertizează CSIS</h2>
+          <div class="sec">
+            <p class="sec-label">Ce s-a întâmplat</p>
+            <p>Statele Unite au consumat între o treime și două treimi din stocurile-cheie de muniții în campania de 39 de zile din războiul cu Iranul, până la încetarea focului din 8 aprilie, plus operațiunile ulterioare, potrivit unei analize din noiembrie a Centrului pentru Studii Strategice și Internaționale (CSIS), cu date la 3 noiembrie. Patriot, THAAD și rachetele Standard sunt trecute la „folosite intens, fără înlocuitori" — stocurile sunt în stare critică; Tomahawk, JASSM și rachetele de precizie PrSM sunt „folosite intens", cu unii înlocuitori. Doar munițiile cu rază scurtă nu au constrângeri semnificative. CSIS concluzionează că SUA au destule muniții pentru a relua lupta împotriva Iranului, dar împotriva Chinei „există o mare îngrijorare", iar refacerea stocurilor cere un angajament multianual.</p>
+          </div>
+          <div class="sec">
+            <p class="sec-label">De ce contează</p>
+            <p>Pentru el, ca IT incident Manager în mediul NATO, e direct în domeniul lui de lucru: capacitatea SUA de a susține simultan Ucraina și un alt teatru depinde de aceste stocuri. Patriot și THAAD sunt sistemele pe care se sprijină apărarea aeriană a aliaților, inclusiv în România și pe Flancul estic, iar o „fereastră de vulnerabilitate de câțiva ani" — cum o numește analiza — pune presiune pe producția europeană de apărare și pe angajamentele de finanțare ale aliaților. De urmărit: dacă administrația de la Washington accelerează producția sau își recalibrează angajamentele față de aliați.</p>
+          </div>
+          <div class="verify">
+            <p class="sec-label">Verificare <span class="status">Confirmat</span></p>
+            <p>Verdict: confirmat — Defense News (19 nov 2026) relatează analiza CSIS din noiembrie (date la 3 nov); IISS (analiză independentă, sept 2026) confirmă aceleași estimări CSIS (1.060–1.430 de interceptoare Patriot consumate, 45–61% din stocul estimat de 2.330; 190–290 THAAD dintr-un stoc de circa 360; refacere de 3 ani sau mai mult); fact-checkul EuropeSays confirmă cadrul și cifrele. Notă de integritate: cifrele sunt estimări din surse deschise — stocurile reale sunt clasificate, iar Pentagonul contestă caracterizarea deficitului.</p>
+            <ul class="sources">
+              <li><a href="https://www.defensenews.com/air/2026/11/19/us-missile-shortages-create-a-range-problem-report-shows/" target="_blank" rel="noopener">Defense News — „US missile shortages create a range problem, report shows" (19 nov 2026)<span class="host">defensenews.com</span></a></li>
+              <li><a href="https://www.iiss.org/publications/strategic-comments/2026/09/the-iran-war-and-the-depletion-of-the-us-munitions-arsenal/?utm_source=chatgpt.com" target="_blank" rel="noopener">IISS — „The Iran war and the depletion of the US munitions arsenal" (sept 2026)<span class="host">iiss.org</span></a></li>
+              <li><a href="https://www.europesays.com/unitedstates/64666/" target="_blank" rel="noopener">EuropeSays — „Fact Check Team: Are US missile stockpiles running low? Here's what we know" (oct 2026)<span class="host">europesays.com</span></a></li>
+            </ul>
+          </div>
+          <div class="opposing">
+            <p class="sec-label">Tabăra adversă</p>
+            <p>Pentagonul contestă că stocurile ar fi în pericol: purtătorul de cuvânt Sean Parnell a numit false afirmațiile despre deficit, iar secretarul Pete Hegseth a minimalizat public penuria, recunoscând totuși că refacerea unor muniții va dura luni, iar a altora ani. (<a href="https://www.europesays.com/unitedstates/64666/" target="_blank" rel="noopener">EuropeSays, oct 2026</a>; <a href="https://www.iiss.org/publications/strategic-comments/2026/09/the-iran-war-and-the-depletion-of-the-us-munitions-arsenal/?utm_source=chatgpt.com" target="_blank" rel="noopener">IISS, sept 2026</a>)</p>
+          </div>
+          <div class="impact">
+            <span class="badge">Impact direct</span>
+            <p>Impact direct: minim azi — nu schimbă nimic în ziua lui și nu cere nicio acțiune. De urmărit: comenzile de muniții pentru anul fiscal 2027 și calendarele de livrare ale Departamentului Apărării vor arăta primii indicatori ai refacerii stocurilor — și cât de mult se poate baza Alianța pe sprijinul american în paralel cu războiul din Ucraina.</p>
+          </div>
+        </article>
         <!-- 2 · 21 nov · 09:00 -->
         <article id="stire-340" data-cats="securitate tech" data-sev="amber" data-subiect="reguli pentru armele autonome">
           <div class="a-meta">
@@ -861,7 +935,7 @@
             <span class="sev-pill is-amber"><i aria-hidden="true"></i>Galben · de urmărit</span>
             <a class="cont-pill" href="#stire-252" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">reguli pentru armele autonome</span>
-            <span class="a-num">#2 / 2</span>
+            <span class="a-num">#2 / 4</span>
           </div>
           <h2>Statele au convenit la ONU să negocieze reguli pentru „roboții ucigași" până în 2028 — dar caracterul obligatoriu rămâne deschis</h2>
           <div class="followup">
@@ -905,7 +979,7 @@
             <a class="cont-pill" href="#stire-325" aria-label="Istoric — sari la știrea anterioară din același fir">Istoric</a>
             <span class="subj-pill">pace Ucraina: discuții Trump–Putin</span>
             <span class="spot-tag">Știrea zilei</span>
-            <span class="a-num">#1 / 2</span>
+            <span class="a-num">#1 / 4</span>
           </div>
           <h2>Trump: discuțiile cu Putin despre Ucraina au fost „foarte bune" — dar garanțiile de securitate rămân după un acord</h2>
           <div class="followup">
@@ -5741,8 +5815,8 @@
 
                   <footer>
         <div class="rule" aria-hidden="true"></div>
-        <p>Sfârșitul ediției de azi · Ultima actualizare: sâmbătă, 21 noiembrie 2026, 09:00<br />Monitorizarea rulează la circa 3 ore, în fereastra L–V 06:00–22:00 · S–D 07:30–22:00 — dă refresh pentru noutăți.</p>
-        <a class="to-top" href="#stire-340">↑ Înapoi la cea mai nouă știre</a>
+        <p>Sfârșitul ediției de azi · Ultima actualizare: sâmbătă, 21 noiembrie 2026, 10:00<br />Monitorizarea rulează la circa 3 ore, în fereastra L–V 06:00–22:00 · S–D 07:30–22:00 — dă refresh pentru noutăți.</p>
+        <a class="to-top" href="#stire-341">↑ Înapoi la cea mai nouă știre</a>
       </footer>
     </div>
 
